@@ -1,0 +1,280 @@
+{
+  "search_metadata": {
+    "id": "6826c22b1290d94ac31b2a57",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/e61a52f83785d38b/6826c22b1290d94ac31b2a57.json",
+    "created_at": "2025-05-16 04:42:19 UTC",
+    "processed_at": "2025-05-16 04:42:19 UTC",
+    "google_url": "https://www.google.com/search?q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/e61a52f83785d38b/6826c22b1290d94ac31b2a57.html",
+    "total_time_taken": 5.71
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Chinese Hospital Association Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Chinese Hospital Association Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 137,
+    "time_taken_displayed": 0.35,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Patient access to payer healthcare information and FHIR ...",
+      "link": "https://www.wolterskluwer.com/en/expert-insights/patient-access-to-payer-healthcare-information-and-fhir-api-use",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wolterskluwer.com/en/expert-insights/patient-access-to-payer-healthcare-information-and-fhir-api-use&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQFnoECBsQAQ",
+      "displayed_link": "https://www.wolterskluwer.com \u203a Home \u203a Expert Insights",
+      "favicon": "https://serpapi.com/searches/6826c22b1290d94ac31b2a57/images/1479ab26076f91d7fbcf43869106f2dd7da4eac8e93c01988f4bf52c7453819e.png",
+      "date": "Dec 3, 2020",
+      "snippet": "Patient access to payer healthcare information and FHIR API use. By ... CMS finalized the Patient Access API and Provider Directory API ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "API",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "Association"
+      ],
+      "must_include": {
+        "word": "Association",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Chinese+Hospital+%22Association%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQ5t4CegQILRAB"
+      },
+      "source": "Wolters Kluwer"
+    },
+    {
+      "position": 2,
+      "title": "Interoperability & Data API Guidelines",
+      "link": "https://www.smchealth.org/node/6722",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.smchealth.org/node/6722&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQFnoECB0QAQ",
+      "displayed_link": "https://www.smchealth.org \u203a node",
+      "favicon": "https://serpapi.com/searches/6826c22b1290d94ac31b2a57/images/1479ab26076f91d7fbcf43869106f2dd6f79f5e7a6de92157f85297d3500b2d6.png",
+      "date": "Feb 16, 2024",
+      "snippet": "Our policy emphasizes the responsible use of FHIR API, safeguarding mental health ... provider-directory/v2/1639ac79-9144-4699-a38b ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "provider-directory"
+      ],
+      "missing": [
+        "Association",
+        "Advantage"
+      ],
+      "source": "San Mateo County Health"
+    },
+    {
+      "position": 3,
+      "title": "FHIR: Real World Solutions",
+      "link": "https://www.intersystems.com/fhir/fhir-real-world-solutions/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.intersystems.com/fhir/fhir-real-world-solutions/&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQFnoECB4QAQ",
+      "displayed_link": "https://www.intersystems.com \u203a fhir \u203a fhir-real-world-s...",
+      "favicon": "https://serpapi.com/searches/6826c22b1290d94ac31b2a57/images/1479ab26076f91d7fbcf43869106f2dd64023a629216dffd6cc7a45a51877478.png",
+      "snippet": "PDeX leverages FHIR for health plans, enabling compliance with the final CMS Interoperability Rule that requires sharing of provider directory content via FHIR ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "plans",
+        "provider directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Association",
+        "Advantage"
+      ],
+      "source": "InterSystems"
+    },
+    {
+      "position": 4,
+      "title": "CMS Interoperability and Prior Authorization Final Rule ...",
+      "link": "https://www.intersystems.com/resources/cms0057f-qa-interoperability-prior-authorization/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.intersystems.com/resources/cms0057f-qa-interoperability-prior-authorization/&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQFnoECBkQAQ",
+      "displayed_link": "https://www.intersystems.com \u203a resources",
+      "favicon": "https://serpapi.com/searches/6826c22b1290d94ac31b2a57/images/1479ab26076f91d7fbcf43869106f2dd1aeae969ddd80605bee3eff3b5353899.png",
+      "snippet": "It expands the set of data payers must make available to members via the Patient Access API that was implemented for CMS-9115-F. This is an HL7 FHIR-based API.",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "API"
+      ],
+      "source": "InterSystems"
+    },
+    {
+      "position": 5,
+      "title": "Developing a Mobile Health App?",
+      "link": "https://hmsa.com/help-center/developing-a-mobile-health-app/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hmsa.com/help-center/developing-a-mobile-health-app/&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQFnoECBwQAQ",
+      "displayed_link": "https://hmsa.com \u203a help-center \u203a d...",
+      "favicon": "https://serpapi.com/searches/6826c22b1290d94ac31b2a57/images/1479ab26076f91d7fbcf43869106f2dda4b0eb07afd8326a4a0304798ea405a8.png",
+      "date": "Dec 18, 2024",
+      "snippet": "... Provider Directory, and Formulary Application Programming Interface (API). ... HL7 FHIR Release 4.0.1 3; HL7 FHIR US Core IG STU 3.1.1 4; HL7 ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "API",
+        "FHIR",
+        "FHIR"
+      ],
+      "source": "Hawaii Medical Service Association"
+    },
+    {
+      "position": 6,
+      "title": "Members Medicare",
+      "link": "https://www.hamaspik.com/members/medicare",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hamaspik.com/members/medicare&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQFnoECBgQAQ",
+      "displayed_link": "https://www.hamaspik.com \u203a members \u203a medicare",
+      "favicon": "https://serpapi.com/searches/6826c22b1290d94ac31b2a57/images/1479ab26076f91d7fbcf43869106f2dddc296fe90c3249a7132f8f66938ba5d6.png",
+      "date": "Dec 31, 2024",
+      "snippet": "The network features many of New York's leading long-term care providers and their affiliated doctors. Provider Directory ... (FHIR) repository and ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Hamaspik"
+    },
+    {
+      "position": 7,
+      "title": "Surmounting Barriers to Healthcare Data and Information",
+      "link": "https://telehealthandmedicinetoday.com/index.php/journal/article/view/425/914",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://telehealthandmedicinetoday.com/index.php/journal/article/view/425/914&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQFnoECBUQAQ",
+      "displayed_link": "https://telehealthandmedicinetoday.com \u203a article \u203a view",
+      "favicon": "https://serpapi.com/searches/6826c22b1290d94ac31b2a57/images/1479ab26076f91d7fbcf43869106f2ddf850b1d4788ef6a5c9171361edfe8c7d.png",
+      "author": "by MBA Bharath Perugu",
+      "snippet": "... provider directory information available to the public via an API. ... healthcare data standard with an application programming interface (FHIR ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "API",
+        "FHIR"
+      ],
+      "source": "Telehealth and Medicine Today"
+    },
+    {
+      "position": 8,
+      "title": "Community Health Group | San Diego County Health Plans for ...",
+      "link": "https://www.chgsd.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chgsd.com/&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQFnoECDQQAQ",
+      "displayed_link": "https://www.chgsd.com",
+      "favicon": "https://serpapi.com/searches/6826c22b1290d94ac31b2a57/images/1479ab26076f91d7fbcf43869106f2ddb6acd1ea08a52fdf22ffb6ed5480686e.png",
+      "snippet": "FHIR Developer API \u00b7 Mission, Vision Statement \u00b7 MOU \u00b7 Population Health \u00b7 Quality ... Search Provider Directory \u00b7 Provider Portal Sign in. Claims. Submitting a ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Medi-Cal",
+            "link": "https://www.chgsd.com/chg-plans/medi-cal"
+          },
+          {
+            "title": "Service Authorization Request",
+            "link": "https://www.chgsd.com/providers/authorizations/service-authorization-request"
+          },
+          {
+            "title": "Provider Disputes",
+            "link": "https://www.chgsd.com/providers/provider-services/provider-disputes"
+          },
+          {
+            "title": "My Health Plan",
+            "link": "https://www.chgsd.com/members/my-health-plan"
+          }
+        ]
+      },
+      "missing": [
+        "Association"
+      ],
+      "must_include": {
+        "word": "Association",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Chinese+Hospital+%22Association%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQ5t4CegQINRAB"
+      },
+      "source": "Community Health Group"
+    },
+    {
+      "position": 9,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQFnoECDcQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/6826c22b1290d94ac31b2a57/images/1479ab26076f91d7fbcf43869106f2dd48547f26ee7936706ae93781cf592821.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 10,
+      "title": "2026 Quality Rating System Measure Technical ...",
+      "link": "https://www.cms.gov/files/document/2026qrsmeasuretechspecs508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/2026qrsmeasuretechspecs508.pdf&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQFnoECC8QAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document",
+      "favicon": "https://serpapi.com/searches/6826c22b1290d94ac31b2a57/images/1479ab26076f91d7fbcf43869106f2dd6c68385ec3ab508d1a79ac83a1659b52.png",
+      "date": "Mar 31, 2025",
+      "snippet": "care services; however, it recognizes that a provider directory generally ... Fast Healthcare Interoperability Resources (FHIR) Standards. CARIN ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 277
+          },
+          "extensions": [
+            "277 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=McImaM65BIOhiLMP3pz2sQQ&start=10&sa=N&sstk=Af40H4V_cjBIlw9LpLffyk8GkPz1XE5_gTtbwieCX-yZuLT87VCUuVjlsNa7SD1UN0-iI0gDH7MeJwxFg0uObW-A6NLJTgS9Vg0umA&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=McImaM65BIOhiLMP3pz2sQQ&start=10&sa=N&sstk=Af40H4V_cjBIlw9LpLffyk8GkPz1XE5_gTtbwieCX-yZuLT87VCUuVjlsNa7SD1UN0-iI0gDH7MeJwxFg0uObW-A6NLJTgS9Vg0umA&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=McImaM65BIOhiLMP3pz2sQQ&start=20&sa=N&sstk=Af40H4V_cjBIlw9LpLffyk8GkPz1XE5_gTtbwieCX-yZuLT87VCUuVjlsNa7SD1UN0-iI0gDH7MeJwxFg0uObW-A6NLJTgS9Vg0umA&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=McImaM65BIOhiLMP3pz2sQQ&start=30&sa=N&sstk=Af40H4V_cjBIlw9LpLffyk8GkPz1XE5_gTtbwieCX-yZuLT87VCUuVjlsNa7SD1UN0-iI0gDH7MeJwxFg0uObW-A6NLJTgS9Vg0umA&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=McImaM65BIOhiLMP3pz2sQQ&start=40&sa=N&sstk=Af40H4V_cjBIlw9LpLffyk8GkPz1XE5_gTtbwieCX-yZuLT87VCUuVjlsNa7SD1UN0-iI0gDH7MeJwxFg0uObW-A6NLJTgS9Vg0umA&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=McImaM65BIOhiLMP3pz2sQQ&start=50&sa=N&sstk=Af40H4V_cjBIlw9LpLffyk8GkPz1XE5_gTtbwieCX-yZuLT87VCUuVjlsNa7SD1UN0-iI0gDH7MeJwxFg0uObW-A6NLJTgS9Vg0umA&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=McImaM65BIOhiLMP3pz2sQQ&start=60&sa=N&sstk=Af40H4V_cjBIlw9LpLffyk8GkPz1XE5_gTtbwieCX-yZuLT87VCUuVjlsNa7SD1UN0-iI0gDH7MeJwxFg0uObW-A6NLJTgS9Vg0umA&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=McImaM65BIOhiLMP3pz2sQQ&start=70&sa=N&sstk=Af40H4V_cjBIlw9LpLffyk8GkPz1XE5_gTtbwieCX-yZuLT87VCUuVjlsNa7SD1UN0-iI0gDH7MeJwxFg0uObW-A6NLJTgS9Vg0umA&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=McImaM65BIOhiLMP3pz2sQQ&start=80&sa=N&sstk=Af40H4V_cjBIlw9LpLffyk8GkPz1XE5_gTtbwieCX-yZuLT87VCUuVjlsNa7SD1UN0-iI0gDH7MeJwxFg0uObW-A6NLJTgS9Vg0umA&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=McImaM65BIOhiLMP3pz2sQQ&start=90&sa=N&sstk=Af40H4V_cjBIlw9LpLffyk8GkPz1XE5_gTtbwieCX-yZuLT87VCUuVjlsNa7SD1UN0-iI0gDH7MeJwxFg0uObW-A6NLJTgS9Vg0umA&ved=2ahUKEwiOloXFlqeNAxWDEGIAHV6OPUYQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Chinese+Hospital+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

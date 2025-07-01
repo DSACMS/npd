@@ -1,0 +1,191 @@
+{
+  "search_metadata": {
+    "id": "6826c3184de49aabf6354fc7",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/ffcbc418bd1c7492/6826c3184de49aabf6354fc7.json",
+    "created_at": "2025-05-16 04:46:16 UTC",
+    "processed_at": "2025-05-16 04:46:16 UTC",
+    "google_url": "https://www.google.com/search?q=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/ffcbc418bd1c7492/6826c3184de49aabf6354fc7.html",
+    "total_time_taken": 1.86
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Marshfield Clinic Health System, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Marshfield Clinic Health System, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 4,
+    "time_taken_displayed": 0.25,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "Is there a national healthcare database?",
+      "snippet": "HCUP's Nationwide databases can be used to identify, track, and analyze national trends in healthcare utilization, access, charges, quality, and outcomes. HCUP's State-specific databases can be used to investigate State-specific and multi-State trends in healthcare utilization, access, charges, quality, and outcomes.",
+      "title": "Database Information - Hcup- us.ahrq.gov",
+      "date": "Jan 22, 2025",
+      "link": "https://hcup-us.ahrq.gov/databases.jsp#:~:text=HCUP's%20Nationwide%20databases%20can%20be,charges%2C%20quality%2C%20and%20outcomes.&text=HCUP's%20State%2Dspecific%20databases%20can,charges%2C%20quality%2C%20and%20outcomes.",
+      "displayed_link": "https://hcup-us.ahrq.gov \u203a databases",
+      "source_logo": "https://serpapi.com/searches/6826c3184de49aabf6354fc7/images/5806892abb5c7098474059c46fb3a04e0381b7350813d8a0dba988a561c551c1.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa1VqZFlVSGh0TFZvNFUyZE9SVXhRVFcxcFgyWTNOM0pGZDNoSmIzaHBOSEZTYm5aaFpESXpUV05xTVdoM1IxQkNkemRWYW1GbGMwUXlkVEkyV1dwaVVITTJZbk0xWW5neFVsVkZNek5QUjNvMWJXSnVZWEpCUVVRMlp4SVhSMk5OYldGUE0zVk5kVGRLZDA0MFVIVjJkWFpyVVhjYUlrRkRSRmhNTkcxMGVTMWFiR1ZDTUc5TFZUVkhUbUZwVWkwMlozRXpNRlZYU1djIiwiZmN2IjoiMyIsImVpIjoiR2NNbWFPM3VNdTdKd040UHV2dXZrUXciLCJxYyI6ImN3WEJ1dzJBTUF3RlFHb3FSbmdEMERBQk83Q0JaUnZ5cEh5UUV5RlJzRHQzODFFa2VqcnAyYUNabFlya2trZENmX3Z3QWxaRmNhTktPTVFlcVVNdXh4M3RvWG5BR0s2anhRdTVpVE14bHVuTDY3Yl8iLCJxdWVzdGlvbiI6IklzIHRoZXJlIGEgbmF0aW9uYWwgaGVhbHRoY2FyZSBkYXRhYmFzZT8iLCJsayI6IkdpZHBjeUIwYUdWeVpTQmhJRzVoZEdsdmJtRnNJR2hsWVd4MGFHTmhjbVVnWkdGMFlXSmhjMlUiLCJicyI6ImMtT0s0Tkx3TEZZb3lVZ3RTbFZJVk1oTExNbk16MHZNVWNoSVRjd3B5VWhPQklxbUpKWWtKaVVXcDlwTHZMQTIwcFJTenlST09aY1RsMXg0Um1LSlFrcC1hckdDVWxKcWNZbVNRbWFlUW5aT1lyRkNibXBpbnIzRUpUNGpXU25wY3JnaWtCb1VKUUtNQUEiLCJpZCI6ImZjX0djTW1hTzN1TXU3SndONFB1dnV2a1F3XzIifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa1VqZFlVSGh0TFZvNFUyZE9SVXhRVFcxcFgyWTNOM0pGZDNoSmIzaHBOSEZTYm5aaFpESXpUV05xTVdoM1IxQkNkemRWYW1GbGMwUXlkVEkyV1dwaVVITTJZbk0xWW5neFVsVkZNek5QUjNvMWJXSnVZWEpCUVVRMlp4SVhSMk5OYldGUE0zVk5kVGRLZDA0MFVIVjJkWFpyVVhjYUlrRkRSRmhNTkcxMGVTMWFiR1ZDTUc5TFZUVkhUbUZwVWkwMlozRXpNRlZYU1djIiwiZmN2IjoiMyIsImVpIjoiR2NNbWFPM3VNdTdKd040UHV2dXZrUXciLCJxYyI6ImN3WEJ1dzJBTUF3RlFHb3FSbmdEMERBQk83Q0JaUnZ5cEh5UUV5RlJzRHQzODFFa2VqcnAyYUNabFlya2trZENmX3Z3QWxaRmNhTktPTVFlcVVNdXh4M3RvWG5BR0s2anhRdTVpVE14bHVuTDY3Yl8iLCJxdWVzdGlvbiI6IklzIHRoZXJlIGEgbmF0aW9uYWwgaGVhbHRoY2FyZSBkYXRhYmFzZT8iLCJsayI6IkdpZHBjeUIwYUdWeVpTQmhJRzVoZEdsdmJtRnNJR2hsWVd4MGFHTmhjbVVnWkdGMFlXSmhjMlUiLCJicyI6ImMtT0s0Tkx3TEZZb3lVZ3RTbFZJVk1oTExNbk16MHZNVWNoSVRjd3B5VWhPQklxbUpKWWtKaVVXcDlwTHZMQTIwcFJTenlST09aY1RsMXg0Um1LSlFrcC1hckdDVWxKcWNZbVNRbWFlUW5aT1lyRkNibXBpbnIzRUpUNGpXU25wY3JnaWtCb1VKUUtNQUEiLCJpZCI6ImZjX0djTW1hTzN1TXU3SndONFB1dnV2a1F3XzIifQ%3D%3D"
+    },
+    {
+      "question": "What does \"best\" in klas mean?",
+      "snippet": "Best in KLAS is a designation given to healthcare technology and services companies that have been ranked highest by healthcare providers in the annual KLAS Research report.",
+      "title": "Best in KLAS: What Is It? And Why Does a High Score Matter?",
+      "link": "https://www.performancehealthus.com/blog/best-in-klas-what-is-it-why-does-high-score-matter#:~:text=Best%20in%20KLAS%20is%20a,the%20annual%20KLAS%20Research%20report.",
+      "displayed_link": "https://www.performancehealthus.com \u203a blog \u203a best-in-k...",
+      "source_logo": "https://serpapi.com/searches/6826c3184de49aabf6354fc7/images/5806892abb5c7098474059c46fb3a04eb3d578a59c9cbd813782741863fd2444.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa1VqZFlVSGh0TFZvNFUyZE9SVXhRVFcxcFgyWTNOM0pGZDNoSmIzaHBOSEZTYm5aaFpESXpUV05xTVdoM1IxQkNkemRWYW1GbGMwUXlkVEkyV1dwaVVITTJZbk0xWW5neFVsVkZNek5QUjNvMWJXSnVZWEpCUVVRMlp4SVhSMk5OYldGUE0zVk5kVGRLZDA0MFVIVjJkWFpyVVhjYUlrRkRSRmhNTkcxMGVTMWFiR1ZDTUc5TFZUVkhUbUZwVWkwMlozRXpNRlZYU1djIiwiZmN2IjoiMyIsImVpIjoiR2NNbWFPM3VNdTdKd040UHV2dXZrUXciLCJxYyI6ImN3WEJ1dzJBTUF3RlFHb3FSbmdEMERBQk83Q0JaUnZ5cEh5UUV5RlJzRHQzODFFa2VqcnAyYUNabFlya2trZENmX3Z3QWxaRmNhTktPTVFlcVVNdXh4M3RvWG5BR0s2anhRdTVpVE14bHVuTDY3Yl8iLCJxdWVzdGlvbiI6IldoYXQgZG9lcyBcImJlc3RcIiBpbiBrbGFzIG1lYW4/IiwibGsiOiJHaHQzYUdGMElHUnZaWE1nWW1WemRDQnBiaUJyYkdGeklHMWxZVzQiLCJicyI6ImMtT0s0Tkx3TEZZb3lVZ3RTbFZJVk1oTExNbk16MHZNVWNoSVRjd3B5VWhPQklxbUpKWWtKaVVXcDlwTHZMQTIwcFJTenlST09aY1RsMXg0Um1LSlFrcC1hckdDVWxKcWNZbVNRbWFlUW5aT1lyRkNibXBpbnIzRUpUNGpXU25wY3JnaWtCb1VKUUtNQUEiLCJpZCI6ImZjX0djTW1hTzN1TXU3SndONFB1dnV2a1F3XzIifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa1VqZFlVSGh0TFZvNFUyZE9SVXhRVFcxcFgyWTNOM0pGZDNoSmIzaHBOSEZTYm5aaFpESXpUV05xTVdoM1IxQkNkemRWYW1GbGMwUXlkVEkyV1dwaVVITTJZbk0xWW5neFVsVkZNek5QUjNvMWJXSnVZWEpCUVVRMlp4SVhSMk5OYldGUE0zVk5kVGRLZDA0MFVIVjJkWFpyVVhjYUlrRkRSRmhNTkcxMGVTMWFiR1ZDTUc5TFZUVkhUbUZwVWkwMlozRXpNRlZYU1djIiwiZmN2IjoiMyIsImVpIjoiR2NNbWFPM3VNdTdKd040UHV2dXZrUXciLCJxYyI6ImN3WEJ1dzJBTUF3RlFHb3FSbmdEMERBQk83Q0JaUnZ5cEh5UUV5RlJzRHQzODFFa2VqcnAyYUNabFlya2trZENmX3Z3QWxaRmNhTktPTVFlcVVNdXh4M3RvWG5BR0s2anhRdTVpVE14bHVuTDY3Yl8iLCJxdWVzdGlvbiI6IldoYXQgZG9lcyBcImJlc3RcIiBpbiBrbGFzIG1lYW4%2FIiwibGsiOiJHaHQzYUdGMElHUnZaWE1nWW1WemRDQnBiaUJyYkdGeklHMWxZVzQiLCJicyI6ImMtT0s0Tkx3TEZZb3lVZ3RTbFZJVk1oTExNbk16MHZNVWNoSVRjd3B5VWhPQklxbUpKWWtKaVVXcDlwTHZMQTIwcFJTenlST09aY1RsMXg0Um1LSlFrcC1hckdDVWxKcWNZbVNRbWFlUW5aT1lyRkNibXBpbnIzRUpUNGpXU25wY3JnaWtCb1VKUUtNQUEiLCJpZCI6ImZjX0djTW1hTzN1TXU3SndONFB1dnV2a1F3XzIifQ%3D%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "BEST IN KLAS 2024 SOFTWARE & SERVICES",
+      "link": "https://www.nuance.com/asset/en_us/collateral/healthcare/report/ar-best-in-klas-software-and-services-2024-en-us.pdf?srsltid=AfmBOopKuISfMSp4fN246_rlFANcHhabzBi22phskipvgdPQ4g603_aB",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.nuance.com/asset/en_us/collateral/healthcare/report/ar-best-in-klas-software-and-services-2024-en-us.pdf%3Fsrsltid%3DAfmBOopKuISfMSp4fN246_rlFANcHhabzBi22phskipvgdPQ4g603_aB&ved=2ahUKEwit34O0l6eNAxXuJNAFHbr9K8IQFnoECBkQAQ",
+      "displayed_link": "https://www.nuance.com \u203a healthcare \u203a report",
+      "favicon": "https://serpapi.com/searches/6826c3184de49aabf6354fc7/images/9f84ca34030614ce208381f64703913a214199abef2cdc8589cf7acdfdf52fb7.png",
+      "snippet": "... FHIR API Adoption to Support Third-. Party Connectivity. 3. Utility: Duplicate ... provider directory API, and payer-to-payer data exchange. Complex ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "provider directory API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Marshfield+Clinic+Health+System,+Inc.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwit34O0l6eNAxXuJNAFHbr9K8IQ5t4CegQIKBAB"
+      },
+      "source": "Nuance Communications"
+    },
+    {
+      "position": 2,
+      "title": "Vital Directions - for Health & Health Care",
+      "link": "https://nam.edu/wp-content/uploads/2018/02/Vital-Directions-for-Health-and-Health-Care-Final-Publication-022718.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nam.edu/wp-content/uploads/2018/02/Vital-Directions-for-Health-and-Health-Care-Final-Publication-022718.pdf&ved=2ahUKEwit34O0l6eNAxXuJNAFHbr9K8IQFnoECBQQAQ",
+      "displayed_link": "https://nam.edu \u203a wp-content \u203a uploads \u203a 2018/02",
+      "favicon": "https://serpapi.com/searches/6826c3184de49aabf6354fc7/images/9f84ca34030614ce208381f64703913a74dadc72812f12df481b2804c1c70ca2.png",
+      "date": "Jul 8, 2016",
+      "snippet": "... Provider directory. There is no national provider directory that ... (FHIR), will enhance data liquidity and enable an ecosystem of new ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 493
+          },
+          "extensions": [
+            "493 pages"
+          ]
+        }
+      },
+      "source": "National Academy of Medicine"
+    },
+    {
+      "position": 3,
+      "title": "Health IT Interoperability",
+      "link": "https://interoperability422.rssing.com/chan-70074396/latest.php",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://interoperability422.rssing.com/chan-70074396/latest.php&ved=2ahUKEwit34O0l6eNAxXuJNAFHbr9K8IQFnoECBgQAQ",
+      "displayed_link": "https://interoperability422.rssing.com \u203a latest",
+      "snippet": "... patient safety. Integrating diverse systems through standardized protocols, such as FHIR APIs mandated by the Cures Act Final Rule, is essential for ...",
+      "snippet_highlighted_words": [
+        "systems",
+        "FHIR APIs"
+      ],
+      "source": "RSSing.com"
+    },
+    {
+      "position": 4,
+      "title": "Contract for BadgerCare Plus and/or Medicaid SSI HMO ...",
+      "link": "https://www.forwardhealth.wi.gov/WIPortal/content/Managed%20Care%20Organization/Contracts/pdf/2022_2023_BCP_and_SSI_ContractV2.pdf.spage",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.forwardhealth.wi.gov/WIPortal/content/Managed%2520Care%2520Organization/Contracts/pdf/2022_2023_BCP_and_SSI_ContractV2.pdf.spage&ved=2ahUKEwit34O0l6eNAxXuJNAFHbr9K8IQFnoECBYQAQ",
+      "displayed_link": "https://www.forwardhealth.wi.gov \u203a content \u203a pdf",
+      "favicon": "https://serpapi.com/searches/6826c3184de49aabf6354fc7/images/9f84ca34030614ce208381f64703913a1ca82556ab9f9370b1a3a14803a06dac.png",
+      "snippet": "Provider Directory API: The HMO shall make their Member-enrolled HMO provider directory information publicly available via an HL7 FHIR complaint standards ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "provider directory",
+        "FHIR"
+      ],
+      "source": "ForwardHealth Portal (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Best in KLAS healthcare",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Best+in+KLAS+healthcare&sa=X&ved=2ahUKEwit34O0l6eNAxXuJNAFHbr9K8IQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+healthcare&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Best in KLAS 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Best+in+KLAS+2025&sa=X&ved=2ahUKEwit34O0l6eNAxXuJNAFHbr9K8IQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Ensemble Health Partners",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Ensemble+Health+Partners&sa=X&ved=2ahUKEwit34O0l6eNAxXuJNAFHbr9K8IQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Ensemble+Health+Partners&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Best in KLAS 2024",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Best+in+KLAS+2024&sa=X&ved=2ahUKEwit34O0l6eNAxXuJNAFHbr9K8IQ1QJ6BAgwEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+2024&safe=active"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 4 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=Marshfield+Clinic+Health+System,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Marshfield+Clinic+Health+System%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

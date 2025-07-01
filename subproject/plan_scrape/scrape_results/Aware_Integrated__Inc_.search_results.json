@@ -1,0 +1,336 @@
+{
+  "search_metadata": {
+    "id": "6826c19b28b27bc913241291",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/82c85f8f2efeab76/6826c19b28b27bc913241291.json",
+    "created_at": "2025-05-16 04:39:55 UTC",
+    "processed_at": "2025-05-16 04:39:55 UTC",
+    "google_url": "https://www.google.com/search?q=Aware+Integrated%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Aware+Integrated%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/82c85f8f2efeab76/6826c19b28b27bc913241291.html",
+    "total_time_taken": 0.96
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Aware Integrated, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Aware Integrated, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 406,
+    "time_taken_displayed": 0.23,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Request for Information; National Directory of Healthcare ...",
+      "link": "https://www.federalregister.gov/documents/2022/10/07/2022-21904/request-for-information-national-directory-of-healthcare-providers-and-services",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2022/10/07/2022-21904/request-for-information-national-directory-of-healthcare-providers-and-services&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00QFnoECBkQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2022/10/07 \u203a request-...",
+      "favicon": "https://serpapi.com/searches/6826c19b28b27bc913241291/images/aca0513080ba23eabdf996cceaca41238f562cbfef94f6604ce06048b1bda40b.png",
+      "date": "Oct 7, 2022",
+      "snippet": "... FHIR API, to update its own provider directory with the latest information. This would allow the payer to present a provider directory ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "provider directory",
+        "provider directory"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "CMS-9115-F - Interoperability and Patient Access",
+      "link": "https://www.cms.gov/files/document/cms-9115-f.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/cms-9115-f.pdf&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00QFnoECBsQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a cms-91...",
+      "favicon": "https://serpapi.com/searches/6826c19b28b27bc913241291/images/aca0513080ba23eabdf996cceaca4123de77ef81138c26d7dc23489394e8113c.png",
+      "date": "Mar 6, 2020",
+      "snippet": "specialty) required for this Provider Directory API can all be represented through FHIR Release. 4.0.1. Additional implementation guidance ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 474
+          },
+          "extensions": [
+            "474 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00QFnoECBwQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2019/03/04 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/6826c19b28b27bc913241291/images/aca0513080ba23eabdf996cceaca4123668f76237ef6515b44026fee90af94e6.png",
+      "date": "Mar 4, 2019",
+      "snippet": "MA plans would be required to update provider directory information available through the API ... FHIR-based API discussed in section III.",
+      "snippet_highlighted_words": [
+        "plans",
+        "provider directory",
+        "API",
+        "FHIR",
+        "API"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "CMS-0057-F",
+      "link": "https://www.cms.gov/files/document/cms-0057-f.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/cms-0057-f.pdf&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00QFnoECBgQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a cms-00...",
+      "favicon": "https://serpapi.com/searches/6826c19b28b27bc913241291/images/aca0513080ba23eabdf996cceaca4123733209269795bcd20cb1bcb370e5221c.png",
+      "snippet": "... Provider Directory, Payer-to-Payer, and Prior Authorization. APIs. Since the ... (FHIR\u00ae). Release 4.0.1 at 45 CFR 170.215(a)(1) (HL7 FHIR). \u2022 HL7\u00ae FHIR ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "FHIR",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 822
+          },
+          "extensions": [
+            "822 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Health Plan \u2013 ESI FHIR Interaction Model - Developer Portal",
+      "link": "https://developer.express-scripts.com/assets/content/solutions/regulatory/fhirPbmGuide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.express-scripts.com/assets/content/solutions/regulatory/fhirPbmGuide.pdf&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00QFnoECBoQAQ",
+      "displayed_link": "https://developer.express-scripts.com \u203a regulatory",
+      "favicon": "https://serpapi.com/searches/6826c19b28b27bc913241291/images/aca0513080ba23eabdf996cceaca4123c1046245e32c32a17125bbc717322c27.png",
+      "snippet": "... Provider Directory endpoints on the ESI FHIR server public? A: The Health Plan has the responsibility to provide a public FHIR API for Provider Directory.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "FHIR API",
+        "Provider Directory"
+      ],
+      "source": "Express Scripts"
+    },
+    {
+      "position": 6,
+      "title": "Interoperability Vendors with a",
+      "link": "https://quantori.com/Interoperability_Vendors_with_a_unique_set_of_features_newly_termed_Datasynthex_Vendors.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://quantori.com/Interoperability_Vendors_with_a_unique_set_of_features_newly_termed_Datasynthex_Vendors.pdf&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00QFnoECCMQAQ",
+      "displayed_link": "https://quantori.com \u203a Interoperability_Vendors_...",
+      "favicon": "https://serpapi.com/searches/6826c19b28b27bc913241291/images/aca0513080ba23eabdf996cceaca4123f5605d729eb36156a3a2d25837947bec.png",
+      "date": "Jun 15, 2023",
+      "snippet": "\u25cb FHIR API. \u25cb Patient-facing app. \u25cb Representation State. Transfer (REST) based. FHIR API with patient-facing app for patient access APIs. 1Up.",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "FHIR API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 13
+          },
+          "extensions": [
+            "13 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Inc."
+      ],
+      "must_include": {
+        "word": "Inc.",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Aware+Integrated,+%22Inc.%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q5t4CegQILRAB"
+      },
+      "source": "Quantori"
+    },
+    {
+      "position": 7,
+      "title": "Interoperability Standards Priorities Task Force Report",
+      "link": "https://www.healthit.gov/sites/default/files/page/2019-12/2019-10-16_ISP_TF_Final_Report_signed_508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/page/2019-12/2019-10-16_ISP_TF_Final_Report_signed_508.pdf&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00QFnoECB4QAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a page",
+      "favicon": "https://serpapi.com/searches/6826c19b28b27bc913241291/images/aca0513080ba23eabdf996cceaca412304391466b85291c5b5211185a8244123.jpeg",
+      "date": "Oct 16, 2019",
+      "snippet": "ONC/USCDI: Support the development and eventually require the use of FHIR profiles to support real-time formulary and pharmacy benefit checks by ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 48
+          },
+          "extensions": [
+            "48 pages"
+          ]
+        }
+      },
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "How Health Information Exchanges Support Integration for ...",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/dbf3c475dff9ef1d5bdbcdef7792889a/hie-support-integration-bh-settings.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/dbf3c475dff9ef1d5bdbcdef7792889a/hie-support-integration-bh-settings.pdf&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00QFnoECD8QAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/6826c19b28b27bc913241291/images/aca0513080ba23eabdf996cceaca4123afb314c4a2496950e887f3205d3bc8c1.png",
+      "date": "Dec 31, 2024",
+      "snippet": "The portal provides both eHealth integration with other intra-state and extra-state health systems and a provider directory ... FHIR integration ...",
+      "snippet_highlighted_words": [
+        "integration",
+        "provider directory",
+        "FHIR integration"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 71
+          },
+          "extensions": [
+            "71 pages"
+          ]
+        }
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 9,
+      "title": "Prepared by Health Policy Alternatives, Inc. January 29, ...",
+      "link": "https://calhospital.org/wp-content/uploads/2024/01/HPA-Summary-CMS-Final-Rule-on-Interoperability-and-Prior-Authorization.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://calhospital.org/wp-content/uploads/2024/01/HPA-Summary-CMS-Final-Rule-on-Interoperability-and-Prior-Authorization.pdf&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00QFnoECDkQAQ",
+      "displayed_link": "https://calhospital.org \u203a uploads \u203a 2024/01 \u203a HPA...",
+      "favicon": "https://serpapi.com/searches/6826c19b28b27bc913241291/images/aca0513080ba23eabdf996cceaca41230e745dbed7b00887625e75035b2c2843.png",
+      "date": "Jan 29, 2024",
+      "snippet": "maintain a Provider Access API\u2014that is, a FHIR API to exchange data with providers who have ... Connect Core for the Provider Directory API that ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR API",
+        "Provider Directory API"
+      ],
+      "source": "California Hospital Association"
+    },
+    {
+      "position": 10,
+      "title": "CMS.gov",
+      "link": "http://leadingageil.org/resources/enews/CMS3.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://leadingageil.org/resources/enews/CMS3.pdf&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00QFnoECDgQAQ",
+      "displayed_link": "http://leadingageil.org \u203a resources \u203a enews \u203a CMS3",
+      "favicon": "https://serpapi.com/searches/6826c19b28b27bc913241291/images/aca0513080ba23eabdf996cceaca41236f07a2aa229233f17312dd42b6176835.png",
+      "date": "Feb 26, 2021",
+      "snippet": "Access API and Provider Directory API policies for MA, Medicaid, and ... help payers and developers build and maintain a FHIR-based API, as well.",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "Inc."
+      ],
+      "must_include": {
+        "word": "Inc.",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Aware+Integrated,+%22Inc.%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q5t4CegQIOxAB"
+      },
+      "source": "LeadingAge Illinois"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "cms-0057-f",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=cms-0057-f&sa=X&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-0057-f&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability and prior authorization final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=CMS+Interoperability+and+prior+authorization+final+rule&sa=X&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+and+prior+authorization+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-0057-f fact sheet",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=cms-0057-f+fact+sheet&sa=X&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-0057-f+fact+sheet&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-9115-f",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=cms-9115-f&sa=X&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-9115-f&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-9115 final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=CMS-9115+final+rule&sa=X&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-9115+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-0057-P",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=CMS-0057-P&sa=X&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-0057-P&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "National directory of Healthcare Providers & Services",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=National+directory+of+Healthcare+Providers+%26+Services&sa=X&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=National+directory+of+Healthcare+Providers+%26+Services&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-0057-f summary",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=cms-0057-f+summary&sa=X&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q1QJ6BAgwEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-0057-f+summary&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Aware+Integrated,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=m8EmaIfzIsqJptQPnayM6AQ&start=10&sa=N&sstk=Af40H4X1w1DmDKQx5GmKRMDrIWy5caj1azVewJ8I5raFksO4PBESn1e77IM2DT060Sy-C8Vk3ReaQNu99LBrx8h8JAINdyvxXN126w&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Aware+Integrated,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=m8EmaIfzIsqJptQPnayM6AQ&start=10&sa=N&sstk=Af40H4X1w1DmDKQx5GmKRMDrIWy5caj1azVewJ8I5raFksO4PBESn1e77IM2DT060Sy-C8Vk3ReaQNu99LBrx8h8JAINdyvxXN126w&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=Aware+Integrated,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=m8EmaIfzIsqJptQPnayM6AQ&start=20&sa=N&sstk=Af40H4X1w1DmDKQx5GmKRMDrIWy5caj1azVewJ8I5raFksO4PBESn1e77IM2DT060Sy-C8Vk3ReaQNu99LBrx8h8JAINdyvxXN126w&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=Aware+Integrated,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=m8EmaIfzIsqJptQPnayM6AQ&start=30&sa=N&sstk=Af40H4X1w1DmDKQx5GmKRMDrIWy5caj1azVewJ8I5raFksO4PBESn1e77IM2DT060Sy-C8Vk3ReaQNu99LBrx8h8JAINdyvxXN126w&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=Aware+Integrated,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=m8EmaIfzIsqJptQPnayM6AQ&start=40&sa=N&sstk=Af40H4X1w1DmDKQx5GmKRMDrIWy5caj1azVewJ8I5raFksO4PBESn1e77IM2DT060Sy-C8Vk3ReaQNu99LBrx8h8JAINdyvxXN126w&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=Aware+Integrated,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=m8EmaIfzIsqJptQPnayM6AQ&start=50&sa=N&sstk=Af40H4X1w1DmDKQx5GmKRMDrIWy5caj1azVewJ8I5raFksO4PBESn1e77IM2DT060Sy-C8Vk3ReaQNu99LBrx8h8JAINdyvxXN126w&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=Aware+Integrated,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=m8EmaIfzIsqJptQPnayM6AQ&start=60&sa=N&sstk=Af40H4X1w1DmDKQx5GmKRMDrIWy5caj1azVewJ8I5raFksO4PBESn1e77IM2DT060Sy-C8Vk3ReaQNu99LBrx8h8JAINdyvxXN126w&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=Aware+Integrated,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=m8EmaIfzIsqJptQPnayM6AQ&start=70&sa=N&sstk=Af40H4X1w1DmDKQx5GmKRMDrIWy5caj1azVewJ8I5raFksO4PBESn1e77IM2DT060Sy-C8Vk3ReaQNu99LBrx8h8JAINdyvxXN126w&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=Aware+Integrated,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=m8EmaIfzIsqJptQPnayM6AQ&start=80&sa=N&sstk=Af40H4X1w1DmDKQx5GmKRMDrIWy5caj1azVewJ8I5raFksO4PBESn1e77IM2DT060Sy-C8Vk3ReaQNu99LBrx8h8JAINdyvxXN126w&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=Aware+Integrated,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=m8EmaIfzIsqJptQPnayM6AQ&start=90&sa=N&sstk=Af40H4X1w1DmDKQx5GmKRMDrIWy5caj1azVewJ8I5raFksO4PBESn1e77IM2DT060Sy-C8Vk3ReaQNu99LBrx8h8JAINdyvxXN126w&ved=2ahUKEwjHrOD9laeNAxXKhIkEHR0WA00Q8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Aware+Integrated%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Aware+Integrated%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Aware+Integrated%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Aware+Integrated%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Aware+Integrated%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Aware+Integrated%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Aware+Integrated%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Aware+Integrated%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Aware+Integrated%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Aware+Integrated%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Aware+Integrated%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

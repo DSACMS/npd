@@ -1,0 +1,327 @@
+{
+  "search_metadata": {
+    "id": "6826c206392e0bdbfd34ef7b",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/356333f9c8c47bd9/6826c206392e0bdbfd34ef7b.json",
+    "created_at": "2025-05-16 04:41:42 UTC",
+    "processed_at": "2025-05-16 04:41:42 UTC",
+    "google_url": "https://www.google.com/search?q=California+Physicians%27+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=California+Physicians%27+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/356333f9c8c47bd9/6826c206392e0bdbfd34ef7b.html",
+    "total_time_taken": 1.13
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "California Physicians' Service Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "California Physicians' Service Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 790,
+    "time_taken_displayed": 0.28,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "APL 22-026 - Department of Health Care Services - CA.gov",
+      "link": "https://www.dhcs.ca.gov/formsandpubs/Documents/MMCDAPLsandPolicyLetters/APL2022/APL22-026.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.dhcs.ca.gov/formsandpubs/Documents/MMCDAPLsandPolicyLetters/APL2022/APL22-026.pdf&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQFnoECB4QAQ",
+      "displayed_link": "https://www.dhcs.ca.gov \u203a Documents \u203a APL22-026",
+      "favicon": "https://serpapi.com/searches/6826c206392e0bdbfd34ef7b/images/3502c4dba2e151acc8183e857a922c88e85850c315e1996844e30197b3866408.png",
+      "date": "Nov 29, 2022",
+      "snippet": "The data exchange standards for the Provider Directory Application Programming Interface is available at: http://hl7.org/fhir/us/davinci-pdex- ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "fhir"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 7
+          },
+          "extensions": [
+            "7 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=California+Physicians'+Service+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ5t4CegQILxAB"
+      },
+      "source": "DHCS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Provider Directory Companion Guide",
+      "link": "https://pdex.sapc.ph.lacounty.gov/doc/Provider%20Directory%20Companion%20Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pdex.sapc.ph.lacounty.gov/doc/Provider%2520Directory%2520Companion%2520Guide.pdf&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQFnoECCEQAQ",
+      "displayed_link": "https://pdex.sapc.ph.lacounty.gov \u203a doc",
+      "favicon": "https://serpapi.com/searches/6826c206392e0bdbfd34ef7b/images/3502c4dba2e151acc8183e857a922c887af6244272bdf158bea2241d031cd9e0.png",
+      "date": "Jul 16, 2024",
+      "snippet": "Da Vinci Provider Directory is an initiative using FHIR standards to improve provider directories in healthcare. It aims to standardize provider ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "provider"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=California+Physicians'+Service+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ5t4CegQILhAB"
+      },
+      "source": "COUNTY OF LOS ANGELES (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "FHIR API Developer Resources",
+      "link": "https://clevercarehealthplan.com/fhir-api-developer-resources/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://clevercarehealthplan.com/fhir-api-developer-resources/&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQFnoECBsQAQ",
+      "displayed_link": "https://clevercarehealthplan.com \u203a fhir-api-developer-re...",
+      "favicon": "https://serpapi.com/searches/6826c206392e0bdbfd34ef7b/images/3502c4dba2e151acc8183e857a922c88c2b4e29dbdc1c38391c5a554c84fc17f.png",
+      "date": "Dec 1, 2021",
+      "snippet": "Clever Care has implemented a secure, standards-based Patient Access and Provider Directory APIs using HL7 FHIR standards for health care ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Physicians'"
+      ],
+      "must_include": {
+        "word": "Physicians'",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=California+%22Physicians'%22+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ5t4CegQIMRAB"
+      },
+      "source": "Clever Care Health Plan"
+    },
+    {
+      "position": 4,
+      "title": "Documentation",
+      "link": "https://www.scfhp.com/for-developers/documentation/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.scfhp.com/for-developers/documentation/&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQFnoECBcQAQ",
+      "displayed_link": "https://www.scfhp.com \u203a for-developers \u203a documentation",
+      "favicon": "https://serpapi.com/searches/6826c206392e0bdbfd34ef7b/images/3502c4dba2e151acc8183e857a922c88a99759984996b8065f11ad8d401a040d.png",
+      "snippet": "The Provider Directory API uses OAuth 2.0 Client Credentials authorization for connecting with the FHIR resources. The Patient Access API uses OAuth 2.0 ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "API"
+      ],
+      "source": "Santa Clara Family Health Plan"
+    },
+    {
+      "position": 5,
+      "title": "Interoperability and Patient Access",
+      "link": "https://www.cahealthwellness.com/members/medicaid/resources/interoperability-and-patient-access.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cahealthwellness.com/members/medicaid/resources/interoperability-and-patient-access.html&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQFnoECCIQAQ",
+      "displayed_link": "https://www.cahealthwellness.com \u203a medicaid \u203a resources",
+      "favicon": "https://serpapi.com/searches/6826c206392e0bdbfd34ef7b/images/3502c4dba2e151acc8183e857a922c88bba00dedff8d0944720ee602bddcb331.png",
+      "snippet": "As a developer, how do I access and use the Provider Directory API? Go to our Partner PortalExternal Link and scroll to the \"FHIR \u2013 Provider Directory\", click ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Physicians'"
+      ],
+      "must_include": {
+        "word": "Physicians'",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=California+%22Physicians'%22+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ5t4CegQIMBAB"
+      },
+      "source": "California Health & Wellness"
+    },
+    {
+      "position": 6,
+      "title": "State Efforts to Coordinate Provider Directory Accuracy - ASPE",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQFnoECB0QAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/6826c206392e0bdbfd34ef7b/images/3502c4dba2e151acc8183e857a922c88aaef0c73b423a256f6f1b1f0a19e2609.png",
+      "date": "Dec 27, 2023",
+      "snippet": "These FHIR APIs improve the accessibility and transparency of provider directory data. Notes: a. Centers for Medicare & Medicaid Services (CMS).",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory",
+        "Medicare",
+        "Services"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 45
+          },
+          "extensions": [
+            "45 pages"
+          ]
+        }
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 7,
+      "title": "API access for application developers",
+      "link": "https://www.sharphealthplan.com/api-access-for-developers",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.sharphealthplan.com/api-access-for-developers&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQFnoECBgQAQ",
+      "displayed_link": "https://www.sharphealthplan.com \u203a api-access-for-devel...",
+      "favicon": "https://serpapi.com/searches/6826c206392e0bdbfd34ef7b/images/3502c4dba2e151acc8183e857a922c88e806c3f7a8daa8ada9501d37f6121439.png",
+      "snippet": "Sharp Health Plan has adopted and developed FHIR resources to deliver clear, standardized data formats to registered application developers ... Provider Directory ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "Sharp Health Plan"
+    },
+    {
+      "position": 8,
+      "title": "FHIR Developer API",
+      "link": "https://www.chgsd.com/about-us/fhir-developer-api",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chgsd.com/about-us/fhir-developer-api&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQFnoECDgQAQ",
+      "displayed_link": "https://www.chgsd.com \u203a about-us \u203a fhir-developer-api",
+      "favicon": "https://serpapi.com/searches/6826c206392e0bdbfd34ef7b/images/3502c4dba2e151acc8183e857a922c88e686b7cd697713bc3c2f18be0e2a76e7.png",
+      "snippet": "FHIR Developer API. Community Health Group. FHIR ... Access Public APIs. Provider Directory:https://api-chgsd-prd.safhir.io/v1/api/provider-directory/metadata.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "FHIR",
+        "Provider Directory",
+        "api",
+        "api",
+        "provider-directory"
+      ],
+      "missing": [
+        "Physicians'"
+      ],
+      "must_include": {
+        "word": "Physicians'",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=California+%22Physicians'%22+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ5t4CegQIOhAB"
+      },
+      "source": "Community Health Group"
+    },
+    {
+      "position": 9,
+      "title": "Data Exchange Framework Legislative Update",
+      "link": "https://www.chhs.ca.gov/wp-content/uploads/2022/03/CalHHS_Data-Exchange-Framework-Legislative-Update_April-2022_Draft_To-AG_web.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chhs.ca.gov/wp-content/uploads/2022/03/CalHHS_Data-Exchange-Framework-Legislative-Update_April-2022_Draft_To-AG_web.pdf&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQFnoECEAQAQ",
+      "displayed_link": "https://www.chhs.ca.gov \u203a uploads \u203a 2022/03",
+      "favicon": "https://serpapi.com/searches/6826c206392e0bdbfd34ef7b/images/3502c4dba2e151acc8183e857a922c88130b38d15c7dc6827d4dcc168c466e84.png",
+      "date": "Apr 7, 2022",
+      "snippet": "... Provider Directory. API using a FHIR-based API could be expanded to include: 1. All payers licensed in California, including Qualified Health ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "API",
+        "FHIR",
+        "API",
+        "California"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 69
+          },
+          "extensions": [
+            "69 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=California+Physicians'+Service+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ5t4CegQIQhAB"
+      },
+      "source": "California Health and Human Services (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "Interoperability and Patient Access Fact Sheet",
+      "link": "https://www.cms.gov/newsroom/fact-sheets/interoperability-and-patient-access-fact-sheet",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/newsroom/fact-sheets/interoperability-and-patient-access-fact-sheet&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQFnoECD4QAQ",
+      "displayed_link": "https://www.cms.gov \u203a newsroom \u203a interoperability-and-...",
+      "favicon": "https://serpapi.com/searches/6826c206392e0bdbfd34ef7b/images/3502c4dba2e151acc8183e857a922c884c0572c9c942701de45c7e428ebc4400.png",
+      "date": "Mar 9, 2020",
+      "snippet": "Provider Directory API: CMS-regulated payers noted above (except QHP ... FHIR API endpoint. Making the list of providers who do not ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR API"
+      ],
+      "missing": [
+        "California"
+      ],
+      "must_include": {
+        "word": "California",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=%22California%22+Physicians'+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ5t4CegQIPRAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Clever Care Health Plan Provider phone number",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Clever+Care+Health+Plan+Provider+phone+number&sa=X&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+Health+Plan+Provider+phone+number&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care health plan provider search",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Clever+Care+health+plan+provider+search&sa=X&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+health+plan+provider+search&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care agent portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Clever+Care+agent+portal&sa=X&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+agent+portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care Formulary 2024",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Clever+Care+Formulary+2024&sa=X&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+Formulary+2024&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=California+Physicians'+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BsImaKvzLZui5NoP4PH34A8&start=10&sa=N&sstk=Af40H4VKivAZ2RoPf0xOTjxddSxqCYu2on7Df_Cht7pRvdW2xVV5I6IW0TQKhAC0n7o7d-RgQR0RFDoTx2VMy-CND0JmchAHDOSvxA&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=California+Physicians'+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BsImaKvzLZui5NoP4PH34A8&start=10&sa=N&sstk=Af40H4VKivAZ2RoPf0xOTjxddSxqCYu2on7Df_Cht7pRvdW2xVV5I6IW0TQKhAC0n7o7d-RgQR0RFDoTx2VMy-CND0JmchAHDOSvxA&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=California+Physicians'+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BsImaKvzLZui5NoP4PH34A8&start=20&sa=N&sstk=Af40H4VKivAZ2RoPf0xOTjxddSxqCYu2on7Df_Cht7pRvdW2xVV5I6IW0TQKhAC0n7o7d-RgQR0RFDoTx2VMy-CND0JmchAHDOSvxA&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=California+Physicians'+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BsImaKvzLZui5NoP4PH34A8&start=30&sa=N&sstk=Af40H4VKivAZ2RoPf0xOTjxddSxqCYu2on7Df_Cht7pRvdW2xVV5I6IW0TQKhAC0n7o7d-RgQR0RFDoTx2VMy-CND0JmchAHDOSvxA&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=California+Physicians'+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BsImaKvzLZui5NoP4PH34A8&start=40&sa=N&sstk=Af40H4VKivAZ2RoPf0xOTjxddSxqCYu2on7Df_Cht7pRvdW2xVV5I6IW0TQKhAC0n7o7d-RgQR0RFDoTx2VMy-CND0JmchAHDOSvxA&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=California+Physicians'+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BsImaKvzLZui5NoP4PH34A8&start=50&sa=N&sstk=Af40H4VKivAZ2RoPf0xOTjxddSxqCYu2on7Df_Cht7pRvdW2xVV5I6IW0TQKhAC0n7o7d-RgQR0RFDoTx2VMy-CND0JmchAHDOSvxA&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=California+Physicians'+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BsImaKvzLZui5NoP4PH34A8&start=60&sa=N&sstk=Af40H4VKivAZ2RoPf0xOTjxddSxqCYu2on7Df_Cht7pRvdW2xVV5I6IW0TQKhAC0n7o7d-RgQR0RFDoTx2VMy-CND0JmchAHDOSvxA&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=California+Physicians'+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BsImaKvzLZui5NoP4PH34A8&start=70&sa=N&sstk=Af40H4VKivAZ2RoPf0xOTjxddSxqCYu2on7Df_Cht7pRvdW2xVV5I6IW0TQKhAC0n7o7d-RgQR0RFDoTx2VMy-CND0JmchAHDOSvxA&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=California+Physicians'+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BsImaKvzLZui5NoP4PH34A8&start=80&sa=N&sstk=Af40H4VKivAZ2RoPf0xOTjxddSxqCYu2on7Df_Cht7pRvdW2xVV5I6IW0TQKhAC0n7o7d-RgQR0RFDoTx2VMy-CND0JmchAHDOSvxA&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=California+Physicians'+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BsImaKvzLZui5NoP4PH34A8&start=90&sa=N&sstk=Af40H4VKivAZ2RoPf0xOTjxddSxqCYu2on7Df_Cht7pRvdW2xVV5I6IW0TQKhAC0n7o7d-RgQR0RFDoTx2VMy-CND0JmchAHDOSvxA&ved=2ahUKEwirju6wlqeNAxUbEVkFHeD4HfwQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=California+Physicians%27+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=California+Physicians%27+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=California+Physicians%27+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=California+Physicians%27+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=California+Physicians%27+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=California+Physicians%27+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=California+Physicians%27+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=California+Physicians%27+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=California+Physicians%27+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=California+Physicians%27+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=California+Physicians%27+Service+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

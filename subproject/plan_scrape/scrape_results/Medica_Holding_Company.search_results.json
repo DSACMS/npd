@@ -1,0 +1,360 @@
+{
+  "search_metadata": {
+    "id": "6826c325fd81c824e530e87c",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/4494773c9d272bfa/6826c325fd81c824e530e87c.json",
+    "created_at": "2025-05-16 04:46:29 UTC",
+    "processed_at": "2025-05-16 04:46:29 UTC",
+    "google_url": "https://www.google.com/search?q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/4494773c9d272bfa/6826c325fd81c824e530e87c.html",
+    "total_time_taken": 1.43
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Medica Holding Company Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Medica Holding Company Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 556,
+    "time_taken_displayed": 0.25,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "What is the provider access API?",
+      "snippet": "The purpose of the Provider Access API is to enable Providers to query a Payer API for information about the members of the health plan where they have a current, or upcoming treatment relationship. The API will enable a provider to ask a Payer \"What do you know about my Patients?\"",
+      "title": "Provider Access API - Da Vinci Payer Data Exchange v2.1.0",
+      "link": "https://build.fhir.org/ig/HL7/davinci-epdx/provider-access-api.html#:~:text=The%20purpose%20of%20the%20Provider,you%20know%20about%20my%20Patients%3F%22",
+      "displayed_link": "https://build.fhir.org \u203a davinci-epdx \u203a provider-access-api",
+      "source_logo": "https://serpapi.com/searches/6826c325fd81c824e530e87c/images/8e94fd25cefa006b233805995bbe7c74edf6893a21ff36a9afde17da2cb5a384.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalpXZzVOMUZSYWxJNFF6SnBWa3B2U0dGV1JraGZjSHAzWldSV1UxUnhWM2x1WW5kZlpIQmhVMHN4WTJ4TGFHOXlaV1E0U2tsNVptWkVaMHRmUlVRMU5WWXpVRVp0TVhKemJreHBTMEp3YmtJeFNHeGFiM0poVFhSMWR4SVhTbk5OYldGTFprSk9jMkl0Y0hSUlVIQlBja3R2UVdzYUlrRkRSRmhNTkd0NE5rSXdYelpCVlZBMmFteFpUbTUxZWxkS2JrcEtSa0pWVkdjIiwiZmN2IjoiMyIsImVpIjoiSnNNbWFLZkJOc2ItcHRRUHBPcktvQWsiLCJxYyI6ImMtTnl6VTFOeVV4T1ZNakl6MG5KekV0WFNNN1BMVWpNcTFTQUNCZWxLaVNtbENYbWxTU21weW9VRk9XWFphYWtGaW1rWkJhbEpwZmtGMVVxSkJaa0txUmxaQllKTU5SLW1wRm9Ed0EiLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIHByb3ZpZGVyIGFjY2VzcyBBUEk/IiwibGsiOiJHaDkzYUdGMElHbHpJSFJvWlNCd2NtOTJhV1JsY2lCaFkyTmxjM01nWVhCcCIsImJzIjoiYy1QeTRGSUl6MGdzVWNnc1ZpakpTRlVvS01vdnkweEpMVkpJVEU1T0xTNVdjQXp3dEplWTRHV2tLQ1ZmamtkWllrRW0xeGxHcmd4a281eFQ4MHBTaTRvVjB2S0xGSHhUVXpLVEU0dFNGZFNnek13VWhlRFVvckpNb0c0Rlo5OWdoVXlRMnZ5QzFLTEVwTXljekpKS2hjUzhGSVdDeEpKTW9DRXdTOUl5OHhKekZJcEtjMUx0SmM2eUdNVktSU2NqV1pHTHNDSVhaa1V4eklyazNHSVNyZUJ5NDVKSENSaFVoZUJ3LVY1aXBDQWxWNDViRlNoWTlMaUVZZWFBUEdwZ1lHcXU0R1l2OFVyU1NFUktDS1lYNUQ2d1RKb0FJd0EiLCJpZCI6ImZjX0pzTW1hS2ZCTnNiLXB0UVBwT3JLb0FrXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalpXZzVOMUZSYWxJNFF6SnBWa3B2U0dGV1JraGZjSHAzWldSV1UxUnhWM2x1WW5kZlpIQmhVMHN4WTJ4TGFHOXlaV1E0U2tsNVptWkVaMHRmUlVRMU5WWXpVRVp0TVhKemJreHBTMEp3YmtJeFNHeGFiM0poVFhSMWR4SVhTbk5OYldGTFprSk9jMkl0Y0hSUlVIQlBja3R2UVdzYUlrRkRSRmhNTkd0NE5rSXdYelpCVlZBMmFteFpUbTUxZWxkS2JrcEtSa0pWVkdjIiwiZmN2IjoiMyIsImVpIjoiSnNNbWFLZkJOc2ItcHRRUHBPcktvQWsiLCJxYyI6ImMtTnl6VTFOeVV4T1ZNakl6MG5KekV0WFNNN1BMVWpNcTFTQUNCZWxLaVNtbENYbWxTU21weW9VRk9XWFphYWtGaW1rWkJhbEpwZmtGMVVxSkJaa0txUmxaQllKTU5SLW1wRm9Ed0EiLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIHByb3ZpZGVyIGFjY2VzcyBBUEk%2FIiwibGsiOiJHaDkzYUdGMElHbHpJSFJvWlNCd2NtOTJhV1JsY2lCaFkyTmxjM01nWVhCcCIsImJzIjoiYy1QeTRGSUl6MGdzVWNnc1ZpakpTRlVvS01vdnkweEpMVkpJVEU1T0xTNVdjQXp3dEplWTRHV2tLQ1ZmamtkWllrRW0xeGxHcmd4a281eFQ4MHBTaTRvVjB2S0xGSHhUVXpLVEU0dFNGZFNnek13VWhlRFVvckpNb0c0Rlo5OWdoVXlRMnZ5QzFLTEVwTXljekpKS2hjUzhGSVdDeEpKTW9DRXdTOUl5OHhKekZJcEtjMUx0SmM2eUdNVktSU2NqV1pHTHNDSVhaa1V4eklyazNHSVNyZUJ5NDVKSENSaFVoZUJ3LVY1aXBDQWxWNDViRlNoWTlMaUVZZWFBUEdwZ1lHcXU0R1l2OFVyU1NFUktDS1lYNUQ2d1RKb0FJd0EiLCJpZCI6ImZjX0pzTW1hS2ZCTnNiLXB0UVBwT3JLb0FrXzMifQ%3D%3D"
+    },
+    {
+      "question": "What is the Centers for Medicare & Medicaid Services CMS interoperability and patient access final rule?",
+      "snippet": "The CMS Interoperability and Patient Access final rule establishes policies that break down barriers in the nation's health system to enable better patient access to their health information, improve interoperability and unleash innovation, while reducing burden on payers and providers.",
+      "title": "Interoperability and Patient Access Fact Sheet - CMS",
+      "date": "Mar 9, 2020",
+      "link": "https://www.cms.gov/newsroom/fact-sheets/interoperability-and-patient-access-fact-sheet#:~:text=The%20CMS%20Interoperability%20and%20Patient,burden%20on%20payers%20and%20providers.",
+      "displayed_link": "https://www.cms.gov \u203a newsroom \u203a interoperability-and-...",
+      "source_logo": "https://serpapi.com/searches/6826c325fd81c824e530e87c/images/8e94fd25cefa006b233805995bbe7c74121372fcbfad6c0252440d4a6add94bd.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalpXZzVOMUZSYWxJNFF6SnBWa3B2U0dGV1JraGZjSHAzWldSV1UxUnhWM2x1WW5kZlpIQmhVMHN4WTJ4TGFHOXlaV1E0U2tsNVptWkVaMHRmUlVRMU5WWXpVRVp0TVhKemJreHBTMEp3YmtJeFNHeGFiM0poVFhSMWR4SVhTbk5OYldGTFprSk9jMkl0Y0hSUlVIQlBja3R2UVdzYUlrRkRSRmhNTkd0NE5rSXdYelpCVlZBMmFteFpUbTUxZWxkS2JrcEtSa0pWVkdjIiwiZmN2IjoiMyIsImVpIjoiSnNNbWFLZkJOc2ItcHRRUHBPcktvQWsiLCJxYyI6ImMtTnl6VTFOeVV4T1ZNakl6MG5KekV0WFNNN1BMVWpNcTFTQUNCZWxLaVNtbENYbWxTU21weW9VRk9XWFphYWtGaW1rWkJhbEpwZmtGMVVxSkJaa0txUmxaQllKTU5SLW1wRm9Ed0EiLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIENlbnRlcnMgZm9yIE1lZGljYXJlIFx1MDAyNiBNZWRpY2FpZCBTZXJ2aWNlcyBDTVMgaW50ZXJvcGVyYWJpbGl0eSBhbmQgcGF0aWVudCBhY2Nlc3MgZmluYWwgcnVsZT8iLCJsayI6ImN5M01NUXFBTUJCRTBYdFlUZVdsck5iTkNBTkpESnNvZUhzajJQM2k4WmZOV1FlajR6Z0RoVWx1UWF4X0txRXpiams3dkhUb3MyZGoySzZzOGNCcVFyT2hPWUg1WkhPa2FobHhaYjQiLCJicyI6ImMtUHk0RklJejBnc1VjZ3NWaWpKU0ZVb0tNb3Z5MHhKTFZKSVRFNU9MUzVXY0F6d3RKZVk0R1drS0NWZmprZFpZa0VtMXhsR3JneGtvNXhUODBwU2k0b1YwdktMRkh4VFV6S1RFNHRTRmRTZ3pNd1VoZURVb3JKTW9HNEZaOTlnaFV5UTJ2eUMxS0xFcE15Y3pKSktoY1M4RklXQ3hKSk1vQ0V3UzlJeTh4SnpGSXBLYzFMdEpjNnlHTVZLUlNjaldaR0xzQ0lYWmtVeHpJcmszR0lTcmVCeTQ1SkhDUmhVaGVCdy1WNWlwQ0FsVjQ1YkZTaFk5TGlFWWVhQVBHcGdZR3F1NEdZdjhVclNTRVJLQ0tZWDVENndUSm9BSXdBIiwiaWQiOiJmY19Kc01tYUtmQk5zYi1wdFFQcE9yS29Ba18zIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalpXZzVOMUZSYWxJNFF6SnBWa3B2U0dGV1JraGZjSHAzWldSV1UxUnhWM2x1WW5kZlpIQmhVMHN4WTJ4TGFHOXlaV1E0U2tsNVptWkVaMHRmUlVRMU5WWXpVRVp0TVhKemJreHBTMEp3YmtJeFNHeGFiM0poVFhSMWR4SVhTbk5OYldGTFprSk9jMkl0Y0hSUlVIQlBja3R2UVdzYUlrRkRSRmhNTkd0NE5rSXdYelpCVlZBMmFteFpUbTUxZWxkS2JrcEtSa0pWVkdjIiwiZmN2IjoiMyIsImVpIjoiSnNNbWFLZkJOc2ItcHRRUHBPcktvQWsiLCJxYyI6ImMtTnl6VTFOeVV4T1ZNakl6MG5KekV0WFNNN1BMVWpNcTFTQUNCZWxLaVNtbENYbWxTU21weW9VRk9XWFphYWtGaW1rWkJhbEpwZmtGMVVxSkJaa0txUmxaQllKTU5SLW1wRm9Ed0EiLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIENlbnRlcnMgZm9yIE1lZGljYXJlIFx1MDAyNiBNZWRpY2FpZCBTZXJ2aWNlcyBDTVMgaW50ZXJvcGVyYWJpbGl0eSBhbmQgcGF0aWVudCBhY2Nlc3MgZmluYWwgcnVsZT8iLCJsayI6ImN5M01NUXFBTUJCRTBYdFlUZVdsck5iTkNBTkpESnNvZUhzajJQM2k4WmZOV1FlajR6Z0RoVWx1UWF4X0txRXpiams3dkhUb3MyZGoySzZzOGNCcVFyT2hPWUg1WkhPa2FobHhaYjQiLCJicyI6ImMtUHk0RklJejBnc1VjZ3NWaWpKU0ZVb0tNb3Z5MHhKTFZKSVRFNU9MUzVXY0F6d3RKZVk0R1drS0NWZmprZFpZa0VtMXhsR3JneGtvNXhUODBwU2k0b1YwdktMRkh4VFV6S1RFNHRTRmRTZ3pNd1VoZURVb3JKTW9HNEZaOTlnaFV5UTJ2eUMxS0xFcE15Y3pKSktoY1M4RklXQ3hKSk1vQ0V3UzlJeTh4SnpGSXBLYzFMdEpjNnlHTVZLUlNjaldaR0xzQ0lYWmtVeHpJcmszR0lTcmVCeTQ1SkhDUmhVaGVCdy1WNWlwQ0FsVjQ1YkZTaFk5TGlFWWVhQVBHcGdZR3F1NEdZdjhVclNTRVJLQ0tZWDVENndUSm9BSXdBIiwiaWQiOiJmY19Kc01tYUtmQk5zYi1wdFFQcE9yS29Ba18zIn0%3D"
+    },
+    {
+      "question": "What is the patient access API?",
+      "snippet": "The patient access API allows you to download your health information from The Health Plan to a third-party application or \u201capp\u201d of your choosing.",
+      "title": "Patient Access APIs (To Access Your Data Through a 3rd Party App)",
+      "link": "https://www.healthplan.org/interoperability-publicly-available-apps/patient-access-api#:~:text=The%20patient%20access%20API%20allows,%E2%80%9Capp%E2%80%9D%20of%20your%20choosing.",
+      "displayed_link": "https://www.healthplan.org \u203a patient-access-api",
+      "source_logo": "https://serpapi.com/searches/6826c325fd81c824e530e87c/images/8e94fd25cefa006b233805995bbe7c74b9c545552dd547b4c2b760a70c5bd0be.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalpXZzVOMUZSYWxJNFF6SnBWa3B2U0dGV1JraGZjSHAzWldSV1UxUnhWM2x1WW5kZlpIQmhVMHN4WTJ4TGFHOXlaV1E0U2tsNVptWkVaMHRmUlVRMU5WWXpVRVp0TVhKemJreHBTMEp3YmtJeFNHeGFiM0poVFhSMWR4SVhTbk5OYldGTFprSk9jMkl0Y0hSUlVIQlBja3R2UVdzYUlrRkRSRmhNTkd0NE5rSXdYelpCVlZBMmFteFpUbTUxZWxkS2JrcEtSa0pWVkdjIiwiZmN2IjoiMyIsImVpIjoiSnNNbWFLZkJOc2ItcHRRUHBPcktvQWsiLCJxYyI6ImMtTnl6VTFOeVV4T1ZNakl6MG5KekV0WFNNN1BMVWpNcTFTQUNCZWxLaVNtbENYbWxTU21weW9VRk9XWFphYWtGaW1rWkJhbEpwZmtGMVVxSkJaa0txUmxaQllKTU5SLW1wRm9Ed0EiLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIHBhdGllbnQgYWNjZXNzIEFQST8iLCJsayI6IkdoNTNhR0YwSUdseklIUm9aU0J3WVhScFpXNTBJR0ZqWTJWemN5QmhjR2siLCJicyI6ImMtUHk0RklJejBnc1VjZ3NWaWpKU0ZVb0tNb3Z5MHhKTFZKSVRFNU9MUzVXY0F6d3RKZVk0R1drS0NWZmprZFpZa0VtMXhsR3JneGtvNXhUODBwU2k0b1YwdktMRkh4VFV6S1RFNHRTRmRTZ3pNd1VoZURVb3JKTW9HNEZaOTlnaFV5UTJ2eUMxS0xFcE15Y3pKSktoY1M4RklXQ3hKSk1vQ0V3UzlJeTh4SnpGSXBLYzFMdEpjNnlHTVZLUlNjaldaR0xzQ0lYWmtVeHpJcmszR0lTcmVCeTQ1SkhDUmhVaGVCdy1WNWlwQ0FsVjQ1YkZTaFk5TGlFWWVhQVBHcGdZR3F1NEdZdjhVclNTRVJLQ0tZWDVENndUSm9BSXdBIiwiaWQiOiJmY19Kc01tYUtmQk5zYi1wdFFQcE9yS29Ba18zIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalpXZzVOMUZSYWxJNFF6SnBWa3B2U0dGV1JraGZjSHAzWldSV1UxUnhWM2x1WW5kZlpIQmhVMHN4WTJ4TGFHOXlaV1E0U2tsNVptWkVaMHRmUlVRMU5WWXpVRVp0TVhKemJreHBTMEp3YmtJeFNHeGFiM0poVFhSMWR4SVhTbk5OYldGTFprSk9jMkl0Y0hSUlVIQlBja3R2UVdzYUlrRkRSRmhNTkd0NE5rSXdYelpCVlZBMmFteFpUbTUxZWxkS2JrcEtSa0pWVkdjIiwiZmN2IjoiMyIsImVpIjoiSnNNbWFLZkJOc2ItcHRRUHBPcktvQWsiLCJxYyI6ImMtTnl6VTFOeVV4T1ZNakl6MG5KekV0WFNNN1BMVWpNcTFTQUNCZWxLaVNtbENYbWxTU21weW9VRk9XWFphYWtGaW1rWkJhbEpwZmtGMVVxSkJaa0txUmxaQllKTU5SLW1wRm9Ed0EiLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIHBhdGllbnQgYWNjZXNzIEFQST8iLCJsayI6IkdoNTNhR0YwSUdseklIUm9aU0J3WVhScFpXNTBJR0ZqWTJWemN5QmhjR2siLCJicyI6ImMtUHk0RklJejBnc1VjZ3NWaWpKU0ZVb0tNb3Z5MHhKTFZKSVRFNU9MUzVXY0F6d3RKZVk0R1drS0NWZmprZFpZa0VtMXhsR3JneGtvNXhUODBwU2k0b1YwdktMRkh4VFV6S1RFNHRTRmRTZ3pNd1VoZURVb3JKTW9HNEZaOTlnaFV5UTJ2eUMxS0xFcE15Y3pKSktoY1M4RklXQ3hKSk1vQ0V3UzlJeTh4SnpGSXBLYzFMdEpjNnlHTVZLUlNjaldaR0xzQ0lYWmtVeHpJcmszR0lTcmVCeTQ1SkhDUmhVaGVCdy1WNWlwQ0FsVjQ1YkZTaFk5TGlFWWVhQVBHcGdZR3F1NEdZdjhVclNTRVJLQ0tZWDVENndUSm9BSXdBIiwiaWQiOiJmY19Kc01tYUtmQk5zYi1wdFFQcE9yS29Ba18zIn0%3D"
+    },
+    {
+      "question": "What is CMS 0057 F?",
+      "snippet": "The CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F) is often described as an API mandate \u2013 but that's only part of the story. The rule introduces four FHIR\u00ae APIs, but also defines what data must flow through them, how quickly it must be updated, and which operational processes must surround them.",
+      "title": "Understanding CMS-0057-F | Blog Post | CareEvolution",
+      "date": "Apr 10, 2025",
+      "link": "https://careevolution.com/post/understanding-cms-0057-f/#:~:text=The%20CMS%20Interoperability%20and%20Prior,operational%20processes%20must%20surround%20them.",
+      "displayed_link": "https://careevolution.com \u203a post \u203a understanding-cms-00...",
+      "source_logo": "https://serpapi.com/searches/6826c325fd81c824e530e87c/images/8e94fd25cefa006b233805995bbe7c74d2fcd45402158c8cd125ea485089d340.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalpXZzVOMUZSYWxJNFF6SnBWa3B2U0dGV1JraGZjSHAzWldSV1UxUnhWM2x1WW5kZlpIQmhVMHN4WTJ4TGFHOXlaV1E0U2tsNVptWkVaMHRmUlVRMU5WWXpVRVp0TVhKemJreHBTMEp3YmtJeFNHeGFiM0poVFhSMWR4SVhTbk5OYldGTFprSk9jMkl0Y0hSUlVIQlBja3R2UVdzYUlrRkRSRmhNTkd0NE5rSXdYelpCVlZBMmFteFpUbTUxZWxkS2JrcEtSa0pWVkdjIiwiZmN2IjoiMyIsImVpIjoiSnNNbWFLZkJOc2ItcHRRUHBPcktvQWsiLCJxYyI6ImMtTnl6VTFOeVV4T1ZNakl6MG5KekV0WFNNN1BMVWpNcTFTQUNCZWxLaVNtbENYbWxTU21weW9VRk9XWFphYWtGaW1rWkJhbEpwZmtGMVVxSkJaa0txUmxaQllKTU5SLW1wRm9Ed0EiLCJxdWVzdGlvbiI6IldoYXQgaXMgQ01TIDAwNTcgRj8iLCJsayI6IkdoSjNhR0YwSUdseklHTnRjeUF3TURVM0lHWSIsImJzIjoiYy1QeTRGSUl6MGdzVWNnc1ZpakpTRlVvS01vdnkweEpMVkpJVEU1T0xTNVdjQXp3dEplWTRHV2tLQ1ZmamtkWllrRW0xeGxHcmd4a281eFQ4MHBTaTRvVjB2S0xGSHhUVXpLVEU0dFNGZFNnek13VWhlRFVvckpNb0c0Rlo5OWdoVXlRMnZ5QzFLTEVwTXljekpKS2hjUzhGSVdDeEpKTW9DRXdTOUl5OHhKekZJcEtjMUx0SmM2eUdNVktSU2NqV1pHTHNDSVhaa1V4eklyazNHSVNyZUJ5NDVKSENSaFVoZUJ3LVY1aXBDQWxWNDViRlNoWTlMaUVZZWFBUEdwZ1lHcXU0R1l2OFVyU1NFUktDS1lYNUQ2d1RKb0FJd0EiLCJpZCI6ImZjX0pzTW1hS2ZCTnNiLXB0UVBwT3JLb0FrXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalpXZzVOMUZSYWxJNFF6SnBWa3B2U0dGV1JraGZjSHAzWldSV1UxUnhWM2x1WW5kZlpIQmhVMHN4WTJ4TGFHOXlaV1E0U2tsNVptWkVaMHRmUlVRMU5WWXpVRVp0TVhKemJreHBTMEp3YmtJeFNHeGFiM0poVFhSMWR4SVhTbk5OYldGTFprSk9jMkl0Y0hSUlVIQlBja3R2UVdzYUlrRkRSRmhNTkd0NE5rSXdYelpCVlZBMmFteFpUbTUxZWxkS2JrcEtSa0pWVkdjIiwiZmN2IjoiMyIsImVpIjoiSnNNbWFLZkJOc2ItcHRRUHBPcktvQWsiLCJxYyI6ImMtTnl6VTFOeVV4T1ZNakl6MG5KekV0WFNNN1BMVWpNcTFTQUNCZWxLaVNtbENYbWxTU21weW9VRk9XWFphYWtGaW1rWkJhbEpwZmtGMVVxSkJaa0txUmxaQllKTU5SLW1wRm9Ed0EiLCJxdWVzdGlvbiI6IldoYXQgaXMgQ01TIDAwNTcgRj8iLCJsayI6IkdoSjNhR0YwSUdseklHTnRjeUF3TURVM0lHWSIsImJzIjoiYy1QeTRGSUl6MGdzVWNnc1ZpakpTRlVvS01vdnkweEpMVkpJVEU1T0xTNVdjQXp3dEplWTRHV2tLQ1ZmamtkWllrRW0xeGxHcmd4a281eFQ4MHBTaTRvVjB2S0xGSHhUVXpLVEU0dFNGZFNnek13VWhlRFVvckpNb0c0Rlo5OWdoVXlRMnZ5QzFLTEVwTXljekpKS2hjUzhGSVdDeEpKTW9DRXdTOUl5OHhKekZJcEtjMUx0SmM2eUdNVktSU2NqV1pHTHNDSVhaa1V4eklyazNHSVNyZUJ5NDVKSENSaFVoZUJ3LVY1aXBDQWxWNDViRlNoWTlMaUVZZWFBUEdwZ1lHcXU0R1l2OFVyU1NFUktDS1lYNUQ2d1RKb0FJd0EiLCJpZCI6ImZjX0pzTW1hS2ZCTnNiLXB0UVBwT3JLb0FrXzMifQ%3D%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "CMS 9115-F Interoperability and Patient Access Final Rule ...",
+      "link": "https://www.cms.gov/files/document/cms-9115-f-interoperability-and-patient-access-final-rule-compiled-faqs.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/cms-9115-f-interoperability-and-patient-access-final-rule-compiled-faqs.pdf&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQFnoECBgQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a cms-91...",
+      "favicon": "https://serpapi.com/searches/6826c325fd81c824e530e87c/images/88c6976e1bdbfa20e187fdee2d569d936c6a445f70374d28c0bf2b417fd6cee2.png",
+      "date": "May 1, 2020",
+      "snippet": "... plans to build a Provider Directory API that is conformant to the ... \u2022 FHIR API validation: These tests validate that the FHIR APIs conform to ...",
+      "snippet_highlighted_words": [
+        "plans",
+        "Provider Directory API",
+        "FHIR API",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 26
+          },
+          "extensions": [
+            "26 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Holding",
+        "Company"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Advancing Interoperability and Improving Prior ...",
+      "link": "https://www.federalregister.gov/documents/2024/02/08/2024-00895/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-advancing-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2024/02/08/2024-00895/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-advancing-interoperability&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQFnoECBoQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2024/02/08 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/6826c325fd81c824e530e87c/images/88c6976e1bdbfa20e187fdee2d569d937b37a5d43321e9ad01f07f0beffc3eca.png",
+      "date": "Feb 8, 2024",
+      "snippet": "... Provider Directory API. We encourage developers to integrate within ... Making data available via a FHIR API gives patients a wider range of ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR API"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Interoperability and Patient Access Final Rule FAQ ...",
+      "link": "https://www.cms.gov/files/document/faqs-interoperability-patient-access-and-cop-event-notifications-may-2021.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/faqs-interoperability-patient-access-and-cop-event-notifications-may-2021.pdf&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQFnoECBcQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a faqs-int...",
+      "favicon": "https://serpapi.com/searches/6826c325fd81c824e530e87c/images/88c6976e1bdbfa20e187fdee2d569d9324fde9590329d108918dfcb2ebb4363d.png",
+      "date": "May 7, 2021",
+      "snippet": "What are the requirements for the Provider Directory API for Medicare. Advantage ... FHIR APIs conform to the FHIR. IGs that specify the API ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Medicare",
+        "Advantage",
+        "FHIR",
+        "FHIR",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 17
+          },
+          "extensions": [
+            "17 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Holding",
+        "Company"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "HHS' final interoperability rules standardize APIs for patient ...",
+      "link": "https://www.mobihealthnews.com/news/hhs-final-interoperability-rules-standardize-apis-patient-health-data-access-through-apps",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mobihealthnews.com/news/hhs-final-interoperability-rules-standardize-apis-patient-health-data-access-through-apps&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQFnoECBwQAQ",
+      "displayed_link": "https://www.mobihealthnews.com \u203a news \u203a hhs-final-inte...",
+      "favicon": "https://serpapi.com/searches/6826c325fd81c824e530e87c/images/88c6976e1bdbfa20e187fdee2d569d93e06636d7fd7e3b5d7876e16e821e99bd.jpeg",
+      "date": "Mar 9, 2020",
+      "snippet": "... API (HL7 FHIR version 4.0. ... Another policy outlined in the final rule calls for the implementation of a Provider Directory API among the CMS- ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "source": "MobiHealthNews"
+    },
+    {
+      "position": 5,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2020/05/01/2020-05050/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2020/05/01/2020-05050/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQFnoECBkQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2020/05/01 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/6826c325fd81c824e530e87c/images/88c6976e1bdbfa20e187fdee2d569d93cca6e681937e6ec1b2eb7e2b4ce4e9b5.png",
+      "date": "May 1, 2020",
+      "snippet": "The basic information (name, phone number, address, and specialty) required for this Provider Directory API can all be represented through FHIR ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "missing": [
+        "Holding"
+      ],
+      "must_include": {
+        "word": "Holding",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Medica+%22Holding%22+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ5t4CegQILBAB"
+      },
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "CMS Proposed Expansion of Interoperability Requirements ...",
+      "link": "https://www.cblawyers.com/wp-content/uploads/2020/12/12.14.2020-FINAL-Coppersmith-Briefs-Proposed-CMS-Interoperability-Expansion.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cblawyers.com/wp-content/uploads/2020/12/12.14.2020-FINAL-Coppersmith-Briefs-Proposed-CMS-Interoperability-Expansion.pdf&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQFnoECB0QAQ",
+      "displayed_link": "https://www.cblawyers.com \u203a uploads \u203a 2020/12",
+      "favicon": "https://serpapi.com/searches/6826c325fd81c824e530e87c/images/88c6976e1bdbfa20e187fdee2d569d93ddeb2093b1d5fcbb15cc2aa6cc73ad87.png",
+      "date": "Dec 14, 2020",
+      "snippet": "Healthcare Interoperability Resources (FHIR)-based Patient Access API and Provider Directory API, and to participate in a Payer-to-Payer ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "Holding"
+      ],
+      "must_include": {
+        "word": "Holding",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Medica+%22Holding%22+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ5t4CegQIMBAB"
+      },
+      "source": "Coppersmith Brockelman PLC"
+    },
+    {
+      "position": 7,
+      "title": "Implementation Guide Registry",
+      "link": "https://fhir.org/guides/registry/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://fhir.org/guides/registry/&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQFnoECBsQAQ",
+      "displayed_link": "https://fhir.org \u203a guides \u203a registry",
+      "favicon": "https://serpapi.com/searches/6826c325fd81c824e530e87c/images/88c6976e1bdbfa20e187fdee2d569d93236d4c8e8d733086c28d8190b316f191.png",
+      "snippet": "Provider Directory IG : This implementation guide is based upon STU3 FHIR standard and is the Australian variant of the Provider Directory IG. It outlines ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Holding",
+        "Advantage"
+      ],
+      "source": "FHIR.org"
+    },
+    {
+      "position": 8,
+      "title": "The questions we should all be asking about interoperability",
+      "link": "https://medium.com/@duncangreenberg/the-questions-we-should-all-be-asking-about-interoperability-3c33a38392df",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medium.com/%40duncangreenberg/the-questions-we-should-all-be-asking-about-interoperability-3c33a38392df&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQFnoECD8QAQ",
+      "displayed_link": "2 months ago",
+      "favicon": "https://serpapi.com/searches/6826c325fd81c824e530e87c/images/88c6976e1bdbfa20e187fdee2d569d93f6ec2e1a18e4696cb44c3fb5e82c601a.png",
+      "snippet": "Provider Directory API. (Goes live in January 2027). Under this ... They voiced disappointment that TEFCA landed on pre-FHIR technical standards ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "source": "Medium \u00b7 Duncan Greenberg"
+    },
+    {
+      "position": 9,
+      "title": "CMS Final Rule Questions and Answers log",
+      "link": "https://confluence.hl7.org/display/DVP/CMS+Final+Rule+Questions+and+Answers+log?src=spaceshortcut",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/display/DVP/CMS%2BFinal%2BRule%2BQuestions%2Band%2BAnswers%2Blog%3Fsrc%3Dspaceshortcut&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQFnoECD4QAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a display \u203a DVP \u203a CMS+Final...",
+      "favicon": "https://serpapi.com/searches/6826c325fd81c824e530e87c/images/88c6976e1bdbfa20e187fdee2d569d9382f23768cfd3a6edce47fc9eeae41c84.png",
+      "date": "Jul 28, 2020",
+      "snippet": "b) If the receiving payer utilizes the FHIR API to receive the ... MA-PD plans should build a Provider Directory API that will provide ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "plans",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "Holding",
+        "Company"
+      ],
+      "source": "HL7 Confluence"
+    },
+    {
+      "position": 10,
+      "title": "Health Plan \u2013 ESI FHIR Interaction Model - Developer Portal",
+      "link": "https://developer.express-scripts.com/assets/content/solutions/regulatory/fhirPbmGuide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.express-scripts.com/assets/content/solutions/regulatory/fhirPbmGuide.pdf&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQFnoECDwQAQ",
+      "displayed_link": "https://developer.express-scripts.com \u203a regulatory",
+      "favicon": "https://serpapi.com/searches/6826c325fd81c824e530e87c/images/88c6976e1bdbfa20e187fdee2d569d934c6c0e78c421a4db30def754272c77c7.png",
+      "snippet": "... Provider Directory endpoints on the ESI FHIR server public? A: The Health Plan has the responsibility to provide a public FHIR API for Provider Directory.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "FHIR API",
+        "Provider Directory"
+      ],
+      "source": "Express Scripts"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "cms-9115-f",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=cms-9115-f&sa=X&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ1QJ6BAg7EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-9115-f&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability and prior authorization final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CMS+Interoperability+and+prior+authorization+final+rule&sa=X&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ1QJ6BAg6EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+and+prior+authorization+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-0057-f",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=cms-0057-f&sa=X&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-0057-f&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms interoperability and prior authorization final rule (cms-0057-f)",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=cms+interoperability+and+prior+authorization+final+rule+(cms-0057-f)&sa=X&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms+interoperability+and+prior+authorization+final+rule+%28cms-0057-f%29&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-0057-f fact sheet",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=cms-0057-f+fact+sheet&sa=X&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-0057-f+fact+sheet&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability Fact Sheet",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CMS+Interoperability+Fact+Sheet&sa=X&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+Fact+Sheet&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS API requirements",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CMS+API+requirements&sa=X&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+API+requirements&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=JsMmaKfBNsb-ptQPpOrKoAk&start=10&sa=N&sstk=Af40H4Vw89W3lNNxoiLMuFoAudQ_pEh3crKNfYRb9X_tLbYyv-V-l5asz6mPzlCAkymW2eSvF3TBUgBr3sc6PZKlwP-a8Ff9cmjDIQ&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=JsMmaKfBNsb-ptQPpOrKoAk&start=10&sa=N&sstk=Af40H4Vw89W3lNNxoiLMuFoAudQ_pEh3crKNfYRb9X_tLbYyv-V-l5asz6mPzlCAkymW2eSvF3TBUgBr3sc6PZKlwP-a8Ff9cmjDIQ&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=JsMmaKfBNsb-ptQPpOrKoAk&start=20&sa=N&sstk=Af40H4Vw89W3lNNxoiLMuFoAudQ_pEh3crKNfYRb9X_tLbYyv-V-l5asz6mPzlCAkymW2eSvF3TBUgBr3sc6PZKlwP-a8Ff9cmjDIQ&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=JsMmaKfBNsb-ptQPpOrKoAk&start=30&sa=N&sstk=Af40H4Vw89W3lNNxoiLMuFoAudQ_pEh3crKNfYRb9X_tLbYyv-V-l5asz6mPzlCAkymW2eSvF3TBUgBr3sc6PZKlwP-a8Ff9cmjDIQ&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=JsMmaKfBNsb-ptQPpOrKoAk&start=40&sa=N&sstk=Af40H4Vw89W3lNNxoiLMuFoAudQ_pEh3crKNfYRb9X_tLbYyv-V-l5asz6mPzlCAkymW2eSvF3TBUgBr3sc6PZKlwP-a8Ff9cmjDIQ&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=JsMmaKfBNsb-ptQPpOrKoAk&start=50&sa=N&sstk=Af40H4Vw89W3lNNxoiLMuFoAudQ_pEh3crKNfYRb9X_tLbYyv-V-l5asz6mPzlCAkymW2eSvF3TBUgBr3sc6PZKlwP-a8Ff9cmjDIQ&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=JsMmaKfBNsb-ptQPpOrKoAk&start=60&sa=N&sstk=Af40H4Vw89W3lNNxoiLMuFoAudQ_pEh3crKNfYRb9X_tLbYyv-V-l5asz6mPzlCAkymW2eSvF3TBUgBr3sc6PZKlwP-a8Ff9cmjDIQ&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=JsMmaKfBNsb-ptQPpOrKoAk&start=70&sa=N&sstk=Af40H4Vw89W3lNNxoiLMuFoAudQ_pEh3crKNfYRb9X_tLbYyv-V-l5asz6mPzlCAkymW2eSvF3TBUgBr3sc6PZKlwP-a8Ff9cmjDIQ&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=JsMmaKfBNsb-ptQPpOrKoAk&start=80&sa=N&sstk=Af40H4Vw89W3lNNxoiLMuFoAudQ_pEh3crKNfYRb9X_tLbYyv-V-l5asz6mPzlCAkymW2eSvF3TBUgBr3sc6PZKlwP-a8Ff9cmjDIQ&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=JsMmaKfBNsb-ptQPpOrKoAk&start=90&sa=N&sstk=Af40H4Vw89W3lNNxoiLMuFoAudQ_pEh3crKNfYRb9X_tLbYyv-V-l5asz6mPzlCAkymW2eSvF3TBUgBr3sc6PZKlwP-a8Ff9cmjDIQ&ved=2ahUKEwin7KC6l6eNAxVGv4kEHSS1EpQQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medica+Holding+Company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

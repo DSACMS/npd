@@ -1,0 +1,259 @@
+{
+  "search_metadata": {
+    "id": "6826c1e477e3d9f4e36afe5c",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/336f589c62762ee0/6826c1e477e3d9f4e36afe5c.json",
+    "created_at": "2025-05-16 04:41:08 UTC",
+    "processed_at": "2025-05-16 04:41:08 UTC",
+    "google_url": "https://www.google.com/search?q=Blue+Cross+and+Blue+Shield+of+North+Carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Blue+Cross+and+Blue+Shield+of+North+Carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/336f589c62762ee0/6826c1e477e3d9f4e36afe5c.html",
+    "total_time_taken": 1.07
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Blue Cross and Blue Shield of North Carolina Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Blue Cross and Blue Shield of North Carolina Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 48,
+    "time_taken_displayed": 0.33,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "What is the provider line for BCBS of NC?",
+      "snippet": "Please contact the Provider Blue Line at 800-214-4844 if you need additional assistance.",
+      "title": "Frequently asked questions | Providers - Blue Cross NC",
+      "link": "https://www.bluecrossnc.com/providers/faq#:~:text=Please%20contact%20the%20Provider%20Blue,if%20you%20need%20additional%20assistance.",
+      "displayed_link": "https://www.bluecrossnc.com \u203a providers \u203a faq",
+      "source_logo": null,
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalRGOVVhbVY0TFVZdFdVZGtRbUZtVUVsT1VXZHJNRWhJWjBob1ZUZzNkRXBFU2t3M05rVkhOVk5YV1dOSVdEbGlUamR4VDFsMFRWOUxWbU5XVnpGak5YWmtRVk5qWmtoNFdsUnpSMlZ0VUhWaFRtWlhOSEJzTTBOSmR4SVhOVTFGYldGUVluZExja2MxZDA0MFVITTVVSFY1VVZFYUlrRkRSRmhNTkd0SlV6SkJaa0pYYTFGcWFFeFFVVXBCYUVaNU1sSkxMVkF6UmxFIiwiZmN2IjoiMyIsImVpIjoiNU1FbWFQYndLckc1d040UHM5UHV5UVEiLCJxYyI6ImN4M0hzUTJBTUF3RVFHb3FSdmdKS0ZpQVFhaE1iSWlsRUVkT1FLSmdkeERYWGItczZSUUV0MXBCbWZHM1JwWEVzQTNadkVVRWNrdWFDWWV3ZmhFUVg1UWI3WUxpZGltTGc5VWxOUE1iVkJSYlZCLTZaeG94dnciLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIHByb3ZpZGVyIGxpbmUgZm9yIEJDQlMgb2YgTkM/IiwibGsiOiJHaWgzYUdGMElHbHpJSFJvWlNCd2NtOTJhV1JsY2lCc2FXNWxJR1p2Y2lCaVkySnpJRzltSUc1aiIsImJzIjoiYzMxUVFVN0RNQkJVcno1eGpISmFxVUlDVG1BSkllQVFFVi1obHg2UXVEbk9WdDRxdGFPMVV3UnY0QVU4aDFmd0E3NkJFNnFvcVZBdmxuZG5abmQyeElzNGY3WTZBZ1dJRnFGbHY2VWFHUnB5Q0N2UFVLcHlDWDRGQzFWa24ydDVrWi05SHVWWHBnbzkzeG14RmxjUGpGQTJIWUppSHdKb1ZfLVZTMHZZMUJEZldoellUMWlUMFl4RjluTXZaWDZadmxEMVJEUHFoakljNkRZN25kRGllbktIOWNtUDZ6WlY4amFlc1ZCSk1MUUM4cFlNaGlMN25zdlRmTjY3ZHVZUW5Zd1JIelB4ZUhSSHk1UmUzVVhybWQ1MUpPLW1FWHFPRnBSbW45TFNSZloxSjJfem16R3dBVFU3OU45aC14dFBacjgiLCJpZCI6ImZjXzVNRW1hUGJ3S3JHNXdONFBzOVB1eVFRXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalRGOVVhbVY0TFVZdFdVZGtRbUZtVUVsT1VXZHJNRWhJWjBob1ZUZzNkRXBFU2t3M05rVkhOVk5YV1dOSVdEbGlUamR4VDFsMFRWOUxWbU5XVnpGak5YWmtRVk5qWmtoNFdsUnpSMlZ0VUhWaFRtWlhOSEJzTTBOSmR4SVhOVTFGYldGUVluZExja2MxZDA0MFVITTVVSFY1VVZFYUlrRkRSRmhNTkd0SlV6SkJaa0pYYTFGcWFFeFFVVXBCYUVaNU1sSkxMVkF6UmxFIiwiZmN2IjoiMyIsImVpIjoiNU1FbWFQYndLckc1d040UHM5UHV5UVEiLCJxYyI6ImN4M0hzUTJBTUF3RVFHb3FSdmdKS0ZpQVFhaE1iSWlsRUVkT1FLSmdkeERYWGItczZSUUV0MXBCbWZHM1JwWEVzQTNadkVVRWNrdWFDWWV3ZmhFUVg1UWI3WUxpZGltTGc5VWxOUE1iVkJSYlZCLTZaeG94dnciLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIHByb3ZpZGVyIGxpbmUgZm9yIEJDQlMgb2YgTkM%2FIiwibGsiOiJHaWgzYUdGMElHbHpJSFJvWlNCd2NtOTJhV1JsY2lCc2FXNWxJR1p2Y2lCaVkySnpJRzltSUc1aiIsImJzIjoiYzMxUVFVN0RNQkJVcno1eGpISmFxVUlDVG1BSkllQVFFVi1obHg2UXVEbk9WdDRxdGFPMVV3UnY0QVU4aDFmd0E3NkJFNnFvcVZBdmxuZG5abmQyeElzNGY3WTZBZ1dJRnFGbHY2VWFHUnB5Q0N2UFVLcHlDWDRGQzFWa24ydDVrWi05SHVWWHBnbzkzeG14RmxjUGpGQTJIWUppSHdKb1ZfLVZTMHZZMUJEZldoellUMWlUMFl4RjluTXZaWDZadmxEMVJEUHFoakljNkRZN25kRGllbktIOWNtUDZ6WlY4amFlc1ZCSk1MUUM4cFlNaGlMN25zdlRmTjY3ZHVZUW5Zd1JIelB4ZUhSSHk1UmUzVVhybWQ1MUpPLW1FWHFPRnBSbW45TFNSZloxSjJfem16R3dBVFU3OU45aC14dFBacjgiLCJpZCI6ImZjXzVNRW1hUGJ3S3JHNXdONFBzOVB1eVFRXzMifQ%3D%3D"
+    },
+    {
+      "question": "Are Blue Cross and Blue Shield types of Medicare?",
+      "snippet": "These plans combine the benefits of Original Medicare with additional benefits, such as dental, vision, and prescription drug coverage. Blue Cross and Blue Shield (BCBS) is one private insurance company that administers MedicareAdvantage plans through 33 local companies throughout the United States.",
+      "title": "What to Know About Blue Cross and Blue Shield Medicare Advantage ...",
+      "date": "Apr 28, 2025",
+      "link": "https://www.healthline.com/health/blue-cross-medicare-review#:~:text=These%20plans%20combine%20the%20benefits,companies%20throughout%20the%20United%20States.",
+      "displayed_link": "https://www.healthline.com \u203a health \u203a blue-cross-medicar...",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMVzf3h2MzeRaqklK9HOsxa_DPjigK702MZXVwBpG-tQ&s",
+      "source_logo": "https://serpapi.com/searches/6826c1e477e3d9f4e36afe5c/images/03f904b267ef89286ea87c614628aab53523899e41593d0a8757155f082444c9.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalRGOVVhbVY0TFVZdFdVZGtRbUZtVUVsT1VXZHJNRWhJWjBob1ZUZzNkRXBFU2t3M05rVkhOVk5YV1dOSVdEbGlUamR4VDFsMFRWOUxWbU5XVnpGak5YWmtRVk5qWmtoNFdsUnpSMlZ0VUhWaFRtWlhOSEJzTTBOSmR4SVhOVTFGYldGUVluZExja2MxZDA0MFVITTVVSFY1VVZFYUlrRkRSRmhNTkd0SlV6SkJaa0pYYTFGcWFFeFFVVXBCYUVaNU1sSkxMVkF6UmxFIiwiZmN2IjoiMyIsImVpIjoiNU1FbWFQYndLckc1d040UHM5UHV5UVEiLCJxYyI6ImN4M0hzUTJBTUF3RVFHb3FSdmdKS0ZpQVFhaE1iSWlsRUVkT1FLSmdkeERYWGItczZSUUV0MXBCbWZHM1JwWEVzQTNadkVVRWNrdWFDWWV3ZmhFUVg1UWI3WUxpZGltTGc5VWxOUE1iVkJSYlZCLTZaeG94dnciLCJxdWVzdGlvbiI6IkFyZSBCbHVlIENyb3NzIGFuZCBCbHVlIFNoaWVsZCB0eXBlcyBvZiBNZWRpY2FyZT8iLCJsayI6ImM1TXlTQ3hLVlVqS0tVMVZTQzdLTHk1V1NNeExnWENMTXpKVGMxSVVTaW9MVW9zVjh0TVVjbE5UTXBPQmlnRSIsImJzIjoiYzMxUVFVN0RNQkJVcno1eGpISmFxVUlDVG1BSkllQVFFVi1obHg2UXVEbk9WdDRxdGFPMVV3UnY0QVU4aDFmd0E3NkJFNnFvcVZBdmxuZG5abmQyeElzNGY3WTZBZ1dJRnFGbHY2VWFHUnB5Q0N2UFVLcHlDWDRGQzFWa24ydDVrWi05SHVWWHBnbzkzeG14RmxjUGpGQTJIWUppSHdKb1ZfLVZTMHZZMUJEZldoellUMWlUMFl4RjluTXZaWDZadmxEMVJEUHFoakljNkRZN25kRGllbktIOWNtUDZ6WlY4amFlc1ZCSk1MUUM4cFlNaGlMN25zdlRmTjY3ZHVZUW5Zd1JIelB4ZUhSSHk1UmUzVVhybWQ1MUpPLW1FWHFPRnBSbW45TFNSZloxSjJfem16R3dBVFU3OU45aC14dFBacjgiLCJpZCI6ImZjXzVNRW1hUGJ3S3JHNXdONFBzOVB1eVFRXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalRGOVVhbVY0TFVZdFdVZGtRbUZtVUVsT1VXZHJNRWhJWjBob1ZUZzNkRXBFU2t3M05rVkhOVk5YV1dOSVdEbGlUamR4VDFsMFRWOUxWbU5XVnpGak5YWmtRVk5qWmtoNFdsUnpSMlZ0VUhWaFRtWlhOSEJzTTBOSmR4SVhOVTFGYldGUVluZExja2MxZDA0MFVITTVVSFY1VVZFYUlrRkRSRmhNTkd0SlV6SkJaa0pYYTFGcWFFeFFVVXBCYUVaNU1sSkxMVkF6UmxFIiwiZmN2IjoiMyIsImVpIjoiNU1FbWFQYndLckc1d040UHM5UHV5UVEiLCJxYyI6ImN4M0hzUTJBTUF3RVFHb3FSdmdKS0ZpQVFhaE1iSWlsRUVkT1FLSmdkeERYWGItczZSUUV0MXBCbWZHM1JwWEVzQTNadkVVRWNrdWFDWWV3ZmhFUVg1UWI3WUxpZGltTGc5VWxOUE1iVkJSYlZCLTZaeG94dnciLCJxdWVzdGlvbiI6IkFyZSBCbHVlIENyb3NzIGFuZCBCbHVlIFNoaWVsZCB0eXBlcyBvZiBNZWRpY2FyZT8iLCJsayI6ImM1TXlTQ3hLVlVqS0tVMVZTQzdLTHk1V1NNeExnWENMTXpKVGMxSVVTaW9MVW9zVjh0TVVjbE5UTXBPQmlnRSIsImJzIjoiYzMxUVFVN0RNQkJVcno1eGpISmFxVUlDVG1BSkllQVFFVi1obHg2UXVEbk9WdDRxdGFPMVV3UnY0QVU4aDFmd0E3NkJFNnFvcVZBdmxuZG5abmQyeElzNGY3WTZBZ1dJRnFGbHY2VWFHUnB5Q0N2UFVLcHlDWDRGQzFWa24ydDVrWi05SHVWWHBnbzkzeG14RmxjUGpGQTJIWUppSHdKb1ZfLVZTMHZZMUJEZldoellUMWlUMFl4RjluTXZaWDZadmxEMVJEUHFoakljNkRZN25kRGllbktIOWNtUDZ6WlY4amFlc1ZCSk1MUUM4cFlNaGlMN25zdlRmTjY3ZHVZUW5Zd1JIelB4ZUhSSHk1UmUzVVhybWQ1MUpPLW1FWHFPRnBSbW45TFNSZloxSjJfem16R3dBVFU3OU45aC14dFBacjgiLCJpZCI6ImZjXzVNRW1hUGJ3S3JHNXdONFBzOVB1eVFRXzMifQ%3D%3D"
+    },
+    {
+      "question": "What is the phone number for BCBS NC member services?",
+      "snippet": "Simply log in to Blue Connect or call Customer Service at 877-258-3334.",
+      "title": "877-258-3334",
+      "link": "https://www.bluecrossnc.com/members/faq#:~:text=Simply%20log%20in%20to%20Blue,at%20877%2D258%2D3334.",
+      "displayed_link": "https://www.bluecrossnc.com \u203a members \u203a faq",
+      "source_logo": null,
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalRGOVVhbVY0TFVZdFdVZGtRbUZtVUVsT1VXZHJNRWhJWjBob1ZUZzNkRXBFU2t3M05rVkhOVk5YV1dOSVdEbGlUamR4VDFsMFRWOUxWbU5XVnpGak5YWmtRVk5qWmtoNFdsUnpSMlZ0VUhWaFRtWlhOSEJzTTBOSmR4SVhOVTFGYldGUVluZExja2MxZDA0MFVITTVVSFY1VVZFYUlrRkRSRmhNTkd0SlV6SkJaa0pYYTFGcWFFeFFVVXBCYUVaNU1sSkxMVkF6UmxFIiwiZmN2IjoiMyIsImVpIjoiNU1FbWFQYndLckc1d040UHM5UHV5UVEiLCJxYyI6ImN4M0hzUTJBTUF3RVFHb3FSdmdKS0ZpQVFhaE1iSWlsRUVkT1FLSmdkeERYWGItczZSUUV0MXBCbWZHM1JwWEVzQTNadkVVRWNrdWFDWWV3ZmhFUVg1UWI3WUxpZGltTGc5VWxOUE1iVkJSYlZCLTZaeG94dnciLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIHBob25lIG51bWJlciBmb3IgQkNCUyBOQyBtZW1iZXIgc2VydmljZXM/IiwibGsiOiJHaU5pWTJKemJtTWdiV1Z0WW1WeUlITmxjblpwWTJWeklIQm9iMjVsSUc1MWJXSmxjZyIsImJzIjoiYzMxUVFVN0RNQkJVcno1eGpISmFxVUlDVG1BSkllQVFFVi1obHg2UXVEbk9WdDRxdGFPMVV3UnY0QVU4aDFmd0E3NkJFNnFvcVZBdmxuZG5abmQyeElzNGY3WTZBZ1dJRnFGbHY2VWFHUnB5Q0N2UFVLcHlDWDRGQzFWa24ydDVrWi05SHVWWHBnbzkzeG14RmxjUGpGQTJIWUppSHdKb1ZfLVZTMHZZMUJEZldoellUMWlUMFl4RjluTXZaWDZadmxEMVJEUHFoakljNkRZN25kRGllbktIOWNtUDZ6WlY4amFlc1ZCSk1MUUM4cFlNaGlMN25zdlRmTjY3ZHVZUW5Zd1JIelB4ZUhSSHk1UmUzVVhybWQ1MUpPLW1FWHFPRnBSbW45TFNSZloxSjJfem16R3dBVFU3OU45aC14dFBacjgiLCJpZCI6ImZjXzVNRW1hUGJ3S3JHNXdONFBzOVB1eVFRXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalRGOVVhbVY0TFVZdFdVZGtRbUZtVUVsT1VXZHJNRWhJWjBob1ZUZzNkRXBFU2t3M05rVkhOVk5YV1dOSVdEbGlUamR4VDFsMFRWOUxWbU5XVnpGak5YWmtRVk5qWmtoNFdsUnpSMlZ0VUhWaFRtWlhOSEJzTTBOSmR4SVhOVTFGYldGUVluZExja2MxZDA0MFVITTVVSFY1VVZFYUlrRkRSRmhNTkd0SlV6SkJaa0pYYTFGcWFFeFFVVXBCYUVaNU1sSkxMVkF6UmxFIiwiZmN2IjoiMyIsImVpIjoiNU1FbWFQYndLckc1d040UHM5UHV5UVEiLCJxYyI6ImN4M0hzUTJBTUF3RVFHb3FSdmdKS0ZpQVFhaE1iSWlsRUVkT1FLSmdkeERYWGItczZSUUV0MXBCbWZHM1JwWEVzQTNadkVVRWNrdWFDWWV3ZmhFUVg1UWI3WUxpZGltTGc5VWxOUE1iVkJSYlZCLTZaeG94dnciLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIHBob25lIG51bWJlciBmb3IgQkNCUyBOQyBtZW1iZXIgc2VydmljZXM%2FIiwibGsiOiJHaU5pWTJKemJtTWdiV1Z0WW1WeUlITmxjblpwWTJWeklIQm9iMjVsSUc1MWJXSmxjZyIsImJzIjoiYzMxUVFVN0RNQkJVcno1eGpISmFxVUlDVG1BSkllQVFFVi1obHg2UXVEbk9WdDRxdGFPMVV3UnY0QVU4aDFmd0E3NkJFNnFvcVZBdmxuZG5abmQyeElzNGY3WTZBZ1dJRnFGbHY2VWFHUnB5Q0N2UFVLcHlDWDRGQzFWa24ydDVrWi05SHVWWHBnbzkzeG14RmxjUGpGQTJIWUppSHdKb1ZfLVZTMHZZMUJEZldoellUMWlUMFl4RjluTXZaWDZadmxEMVJEUHFoakljNkRZN25kRGllbktIOWNtUDZ6WlY4amFlc1ZCSk1MUUM4cFlNaGlMN25zdlRmTjY3ZHVZUW5Zd1JIelB4ZUhSSHk1UmUzVVhybWQ1MUpPLW1FWHFPRnBSbW45TFNSZloxSjJfem16R3dBVFU3OU45aC14dFBacjgiLCJpZCI6ImZjXzVNRW1hUGJ3S3JHNXdONFBzOVB1eVFRXzMifQ%3D%3D"
+    },
+    {
+      "question": "What is the phone number for prior authorization for BCBS of North Carolina?",
+      "snippet": "In-network providers can request a prior review and authorization by calling Blue Cross NC Utilization Management at 800-672-7897, Monday through Friday, 8 AM to 5 PM ET.",
+      "title": "Request prior review and authorization - Blue Cross NC",
+      "link": "https://www.bluecrossnc.com/members/knowledge-center/request-prior-review#:~:text=In%2Dnetwork%20providers%20can%20request,AM%20to%205%20PM%20ET.",
+      "displayed_link": "https://www.bluecrossnc.com \u203a knowledge-center \u203a requ...",
+      "source_logo": null,
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalRGOVVhbVY0TFVZdFdVZGtRbUZtVUVsT1VXZHJNRWhJWjBob1ZUZzNkRXBFU2t3M05rVkhOVk5YV1dOSVdEbGlUamR4VDFsMFRWOUxWbU5XVnpGak5YWmtRVk5qWmtoNFdsUnpSMlZ0VUhWaFRtWlhOSEJzTTBOSmR4SVhOVTFGYldGUVluZExja2MxZDA0MFVITTVVSFY1VVZFYUlrRkRSRmhNTkd0SlV6SkJaa0pYYTFGcWFFeFFVVXBCYUVaNU1sSkxMVkF6UmxFIiwiZmN2IjoiMyIsImVpIjoiNU1FbWFQYndLckc1d040UHM5UHV5UVEiLCJxYyI6ImN4M0hzUTJBTUF3RVFHb3FSdmdKS0ZpQVFhaE1iSWlsRUVkT1FLSmdkeERYWGItczZSUUV0MXBCbWZHM1JwWEVzQTNadkVVRWNrdWFDWWV3ZmhFUVg1UWI3WUxpZGltTGc5VWxOUE1iVkJSYlZCLTZaeG94dnciLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIHBob25lIG51bWJlciBmb3IgcHJpb3IgYXV0aG9yaXphdGlvbiBmb3IgQkNCUyBvZiBOb3J0aCBDYXJvbGluYT8iLCJsayI6ImN3WEJ3UTJBTUF3RHdEMTRlUXZtU2FxaVJJSzRNdW1INmJrN1RoXy1naGVLNnNBdzhjNHlMQ1VGMngxVWZ0Ykp3Z3JXUk8zSHAzNCIsImJzIjoiYzMxUVFVN0RNQkJVcno1eGpISmFxVUlDVG1BSkllQVFFVi1obHg2UXVEbk9WdDRxdGFPMVV3UnY0QVU4aDFmd0E3NkJFNnFvcVZBdmxuZG5abmQyeElzNGY3WTZBZ1dJRnFGbHY2VWFHUnB5Q0N2UFVLcHlDWDRGQzFWa24ydDVrWi05SHVWWHBnbzkzeG14RmxjUGpGQTJIWUppSHdKb1ZfLVZTMHZZMUJEZldoellUMWlUMFl4RjluTXZaWDZadmxEMVJEUHFoakljNkRZN25kRGllbktIOWNtUDZ6WlY4amFlc1ZCSk1MUUM4cFlNaGlMN25zdlRmTjY3ZHVZUW5Zd1JIelB4ZUhSSHk1UmUzVVhybWQ1MUpPLW1FWHFPRnBSbW45TFNSZloxSjJfem16R3dBVFU3OU45aC14dFBacjgiLCJpZCI6ImZjXzVNRW1hUGJ3S3JHNXdONFBzOVB1eVFRXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoalRGOVVhbVY0TFVZdFdVZGtRbUZtVUVsT1VXZHJNRWhJWjBob1ZUZzNkRXBFU2t3M05rVkhOVk5YV1dOSVdEbGlUamR4VDFsMFRWOUxWbU5XVnpGak5YWmtRVk5qWmtoNFdsUnpSMlZ0VUhWaFRtWlhOSEJzTTBOSmR4SVhOVTFGYldGUVluZExja2MxZDA0MFVITTVVSFY1VVZFYUlrRkRSRmhNTkd0SlV6SkJaa0pYYTFGcWFFeFFVVXBCYUVaNU1sSkxMVkF6UmxFIiwiZmN2IjoiMyIsImVpIjoiNU1FbWFQYndLckc1d040UHM5UHV5UVEiLCJxYyI6ImN4M0hzUTJBTUF3RVFHb3FSdmdKS0ZpQVFhaE1iSWlsRUVkT1FLSmdkeERYWGItczZSUUV0MXBCbWZHM1JwWEVzQTNadkVVRWNrdWFDWWV3ZmhFUVg1UWI3WUxpZGltTGc5VWxOUE1iVkJSYlZCLTZaeG94dnciLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIHBob25lIG51bWJlciBmb3IgcHJpb3IgYXV0aG9yaXphdGlvbiBmb3IgQkNCUyBvZiBOb3J0aCBDYXJvbGluYT8iLCJsayI6ImN3WEJ3UTJBTUF3RHdEMTRlUXZtU2FxaVJJSzRNdW1INmJrN1RoXy1naGVLNnNBdzhjNHlMQ1VGMngxVWZ0Ykp3Z3JXUk8zSHAzNCIsImJzIjoiYzMxUVFVN0RNQkJVcno1eGpISmFxVUlDVG1BSkllQVFFVi1obHg2UXVEbk9WdDRxdGFPMVV3UnY0QVU4aDFmd0E3NkJFNnFvcVZBdmxuZG5abmQyeElzNGY3WTZBZ1dJRnFGbHY2VWFHUnB5Q0N2UFVLcHlDWDRGQzFWa24ydDVrWi05SHVWWHBnbzkzeG14RmxjUGpGQTJIWUppSHdKb1ZfLVZTMHZZMUJEZldoellUMWlUMFl4RjluTXZaWDZadmxEMVJEUHFoakljNkRZN25kRGllbktIOWNtUDZ6WlY4amFlc1ZCSk1MUUM4cFlNaGlMN25zdlRmTjY3ZHVZUW5Zd1JIelB4ZUhSSHk1UmUzVVhybWQ1MUpPLW1FWHFPRnBSbW45TFNSZloxSjJfem16R3dBVFU3OU45aC14dFBacjgiLCJpZCI6ImZjXzVNRW1hUGJ3S3JHNXdONFBzOVB1eVFRXzMifQ%3D%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "API access | Policies & best practices",
+      "link": "https://www.bluecrossnc.com/policies-best-practices/notice-privacy-practices/api-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bluecrossnc.com/policies-best-practices/notice-privacy-practices/api-access&ved=2ahUKEwj28s-glqeNAxWxHNAFHbOpO0kQFnoECBoQAQ",
+      "displayed_link": "https://www.bluecrossnc.com \u203a notice-privacy-practices",
+      "snippet": "How to connect your app to a Blue Cross NC member's information. Provider Directory API. How to build access to Blue Cross NC provider network information.",
+      "snippet_highlighted_words": [
+        "Blue Cross NC",
+        "Provider Directory API",
+        "Blue Cross NC"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Blue+Cross+and+Blue+Shield+of+North+Carolina+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj28s-glqeNAxWxHNAFHbOpO0kQ5t4CegQIKxAB"
+      },
+      "source": "Blue Cross NC"
+    },
+    {
+      "position": 2,
+      "title": "The State of Payer Patient Access APIs - Flexpa - Substack",
+      "link": "https://flexpa.substack.com/p/the-state-of-payer-patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://flexpa.substack.com/p/the-state-of-payer-patient-access&ved=2ahUKEwj28s-glqeNAxWxHNAFHbOpO0kQFnoECB0QAQ",
+      "displayed_link": "8 likes \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/searches/6826c1e477e3d9f4e36afe5c/images/519e09f8a39aeb6c340e1fad95132a957568d94a273bddeda31543a5862410b8.png",
+      "snippet": "These include patient access, provider directory, and payer-to-payer exchange APIs. ... FHIR API: The CMS rule said the following data must \u201cat a ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR API"
+      ],
+      "source": "Substack \u00b7 Flexpa"
+    },
+    {
+      "position": 3,
+      "title": "Medicare Insurance| Regulatory, Policy, Analysis, Insights",
+      "link": "https://hitconsultant.net/tag/medicare/page/43",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hitconsultant.net/tag/medicare/page/43&ved=2ahUKEwj28s-glqeNAxWxHNAFHbOpO0kQFnoECBYQAQ",
+      "displayed_link": "https://hitconsultant.net \u203a tag \u203a medicare \u203a page",
+      "favicon": "https://serpapi.com/searches/6826c1e477e3d9f4e36afe5c/images/519e09f8a39aeb6c340e1fad95132a95c997d60a87506311ffd7b84e3c695810.png",
+      "snippet": "The newest member of the suite is the HealthShare Provider Directory ... CareCloud EHR Integrates With Google Cloud Healthcare API for FHIR. CareCloud ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "API",
+        "FHIR"
+      ],
+      "source": "HIT Consultant"
+    },
+    {
+      "position": 4,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwj28s-glqeNAxWxHNAFHbOpO0kQFnoECBsQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/6826c1e477e3d9f4e36afe5c/images/519e09f8a39aeb6c340e1fad95132a953a5f6415967653b09ca07f9a381e4af4.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 5,
+      "title": "Attachments B, C, D, E, G, H, I.docx",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/Attachments%20B,%20C,%20D,%20E,%20G,%20H,%20I.docx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/Attachments%2520B,%2520C,%2520D,%2520E,%2520G,%2520H,%2520I.docx&ved=2ahUKEwj28s-glqeNAxWxHNAFHbOpO0kQFnoECBgQAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a pdf \u203a Ellkay",
+      "favicon": "https://serpapi.com/searches/6826c1e477e3d9f4e36afe5c/images/519e09f8a39aeb6c340e1fad95132a95f44acfe9da3de6c522c6dc99b9e2219f.png",
+      "snippet": "ELLKAY's solutions meet FHIR standards and contains all data elements that are included as a part of the USCDI Core patient profile. As new data elements are ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "Gobierno de Puerto Rico (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "PARTICIPATING ADDENDUM MMIS-PROVIDER SERVICES ...",
+      "link": "https://s3-us-west-2.amazonaws.com/naspovaluepoint/1634709128_MMIS%20HHS%20Technology%20Group%20LLC%20South%20Dakota.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://s3-us-west-2.amazonaws.com/naspovaluepoint/1634709128_MMIS%2520HHS%2520Technology%2520Group%2520LLC%2520South%2520Dakota.pdf&ved=2ahUKEwj28s-glqeNAxWxHNAFHbOpO0kQFnoECBcQAQ",
+      "displayed_link": "https://s3-us-west-2.amazonaws.com \u203a naspovalu...",
+      "favicon": "https://serpapi.com/searches/6826c1e477e3d9f4e36afe5c/images/519e09f8a39aeb6c340e1fad95132a95830e7c201a6a9c52501f194be4b69068.png",
+      "date": "Mar 7, 2023",
+      "snippet": "... Provider Directory Mapping (FHIR). 1 day. Fri 11/26/21. Fri 11/26/21. 6. Provider Directory Demo (FHIR). 1 day. Fri 10/22/21. Fri 10/22/21. 7.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Amazon.com"
+    },
+    {
+      "position": 7,
+      "title": "ELLKAY Redacted Technical Proposal.pdf",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/ELLKAY%20Redacted%20Technical%20Proposal.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/ELLKAY%2520Redacted%2520Technical%2520Proposal.pdf&ved=2ahUKEwj28s-glqeNAxWxHNAFHbOpO0kQFnoECCAQAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a 2024-PRMP-HIE-001",
+      "favicon": "https://serpapi.com/searches/6826c1e477e3d9f4e36afe5c/images/519e09f8a39aeb6c340e1fad95132a956916b784821ce3b99d07cfdfc2c91828.png",
+      "date": "Jul 7, 2024",
+      "snippet": "Provider Directory: The vendor must ... o ELLKAY is continuing to expand our FHIR API capabilities as additional requests are made. \u2022 API design ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR API",
+        "API"
+      ],
+      "source": "Gobierno de Puerto Rico (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Helpful Hints",
+      "link": "https://confluence.hl7.org/download/attachments/81018510/ProjectBallotHealthMetrics_2022JanWGM_20211221.xlsx?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/81018510/ProjectBallotHealthMetrics_2022JanWGM_20211221.xlsx%3Fapi%3Dv2&ved=2ahUKEwj28s-glqeNAxWxHNAFHbOpO0kQFnoECDAQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a download \u203a attachments",
+      "favicon": "https://serpapi.com/searches/6826c1e477e3d9f4e36afe5c/images/519e09f8a39aeb6c340e1fad95132a95530c85e13df1dcd2980935fb16a4e896.png",
+      "snippet": "... FHIR Infrastructure Work Group, FHIR Management Group, Clinical, We will ... Provider Directory, Endpoint Directory, Utilizes the work done for the ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "HL7 - Confluence"
+    },
+    {
+      "position": 9,
+      "title": "Transcript",
+      "link": "https://www.healthit.gov/sites/default/files/facas/2021-02-10_HITAC_Transcript.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/facas/2021-02-10_HITAC_Transcript.pdf&ved=2ahUKEwj28s-glqeNAxWxHNAFHbOpO0kQFnoECC8QAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a facas",
+      "favicon": "https://serpapi.com/searches/6826c1e477e3d9f4e36afe5c/images/519e09f8a39aeb6c340e1fad95132a95372d1dc24d6d25529e3a5db8d4ce64ec.jpeg",
+      "date": "Feb 10, 2021",
+      "snippet": "So, CCD versus FHIR is going to be an ongoing problem. Steven Lane. Les, let me just respond to your comment about the patient use case and ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "All Pages",
+      "link": "https://www.communityplans.net/all-pages/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.communityplans.net/all-pages/&ved=2ahUKEwj28s-glqeNAxWxHNAFHbOpO0kQFnoECDUQAQ",
+      "displayed_link": "https://www.communityplans.net \u203a all-pages",
+      "snippet": "Beyond Patient Access \u2013 the Next Wave of FHIR Use Cases for Payers ... National Provider Directory RFI Roundtable Call \u00b7 Marketplace & Medicare Joint ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "Medicare"
+      ],
+      "source": "Association For Community Affiliated Plans"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Blue+Cross+and+Blue+Shield+of+North+Carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=5MEmaPbwKrG5wN4Ps9PuyQQ&start=10&sa=N&sstk=Af40H4VLQVCOvjxScU42n-vvLaVbbn7h4SwcMpEyeNrmGyyg4rSTKuI6i3LlI6_lqnfdjMB-PKf2f8GNFz7aaDkNxlkl3I3Zh9prGg&ved=2ahUKEwj28s-glqeNAxWxHNAFHbOpO0kQ8NMDegQICBAK",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Blue+Cross+and+Blue+Shield+of+North+Carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=5MEmaPbwKrG5wN4Ps9PuyQQ&start=10&sa=N&sstk=Af40H4VLQVCOvjxScU42n-vvLaVbbn7h4SwcMpEyeNrmGyyg4rSTKuI6i3LlI6_lqnfdjMB-PKf2f8GNFz7aaDkNxlkl3I3Zh9prGg&ved=2ahUKEwj28s-glqeNAxWxHNAFHbOpO0kQ8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=Blue+Cross+and+Blue+Shield+of+North+Carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=5MEmaPbwKrG5wN4Ps9PuyQQ&start=20&sa=N&sstk=Af40H4VLQVCOvjxScU42n-vvLaVbbn7h4SwcMpEyeNrmGyyg4rSTKuI6i3LlI6_lqnfdjMB-PKf2f8GNFz7aaDkNxlkl3I3Zh9prGg&ved=2ahUKEwj28s-glqeNAxWxHNAFHbOpO0kQ8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=Blue+Cross+and+Blue+Shield+of+North+Carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=5MEmaPbwKrG5wN4Ps9PuyQQ&start=30&sa=N&sstk=Af40H4VLQVCOvjxScU42n-vvLaVbbn7h4SwcMpEyeNrmGyyg4rSTKuI6i3LlI6_lqnfdjMB-PKf2f8GNFz7aaDkNxlkl3I3Zh9prGg&ved=2ahUKEwj28s-glqeNAxWxHNAFHbOpO0kQ8tMDegQICBAI"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Blue+Cross+and+Blue+Shield+of+North+Carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Blue+Cross+and+Blue+Shield+of+North+Carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Blue+Cross+and+Blue+Shield+of+North+Carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Blue+Cross+and+Blue+Shield+of+North+Carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Blue+Cross+and+Blue+Shield+of+North+Carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30"
+    }
+  }
+}

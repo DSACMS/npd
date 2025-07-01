@@ -1,0 +1,37 @@
+{
+  "search_metadata": {
+    "id": "6861d14c5fda0b282eaff626",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/f41c09857b1efa3b/6861d14c5fda0b282eaff626.json",
+    "created_at": "2025-06-29 23:50:36 UTC",
+    "processed_at": "2025-06-29 23:50:36 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Achampionpayer.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Achampionpayer.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/f41c09857b1efa3b/6861d14c5fda0b282eaff626.html",
+    "total_time_taken": 0.95
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:championpayer.com \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:championpayer.com \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 0,
+    "time_taken_displayed": 0.26,
+    "organic_results_state": "Fully empty",
+    "query_feedback": {
+      "title": "Your search did not match any documents"
+    },
+    "showing_results_for": "site:championpayer.com PROVIDER DIRECTORY FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "site:championpayer.com PROVIDER DIRECTORY FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "error": "Google hasn't returned any results for this query."
+}

@@ -1,0 +1,252 @@
+{
+  "search_metadata": {
+    "id": "6826c28100a197c195348cbc",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/ed53b9609d3212db/6826c28100a197c195348cbc.json",
+    "created_at": "2025-05-16 04:43:45 UTC",
+    "processed_at": "2025-05-16 04:43:45 UTC",
+    "google_url": "https://www.google.com/search?q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/ed53b9609d3212db/6826c28100a197c195348cbc.html",
+    "total_time_taken": 3.98
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Group 1001 Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Group 1001 Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 160,
+    "time_taken_displayed": 0.32,
+    "organic_results_state": "Results for exact spelling",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    }
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "CMS Final Rule Questions and Answers log - Da Vinci",
+      "link": "https://confluence.hl7.org/display/DVP/CMS+Final+Rule+Questions+and+Answers+log",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/display/DVP/CMS%2BFinal%2BRule%2BQuestions%2Band%2BAnswers%2Blog&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0QFnoECBgQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a display \u203a DVP \u203a CMS+Final...",
+      "favicon": "https://serpapi.com/searches/6826c28100a197c195348cbc/images/9a084a50bd50c6a0fbdae0c8372241ee8b598d858d402be62d39dc5d9858041b.png",
+      "snippet": "b) If the receiving payer utilizes the FHIR API to receive the data is the ... MA-PD plans should build a Provider Directory API that will provide ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "plans",
+        "Provider Directory API"
+      ],
+      "source": "HL7 - Confluence"
+    },
+    {
+      "position": 2,
+      "title": "Three-Way Contract (DOCX)",
+      "link": "https://www.cms.gov/files/document/txcontract04012024.docx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/txcontract04012024.docx&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0QFnoECBkQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a txcontract04012024",
+      "favicon": "https://serpapi.com/searches/6826c28100a197c195348cbc/images/9a084a50bd50c6a0fbdae0c8372241ee348a2915d0e3824249eb5582a93de5a7.png",
+      "date": "Apr 1, 2024",
+      "snippet": "... (API) and a Provider Directory API using the required Health Level 7 (HL7\u00ae) Fast Healthcare Interoperability Resources (FHIR)-based standards.",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "STATE OF NORTH CAROLINA - NC Medicaid",
+      "link": "https://medicaid.ncdhhs.gov/request-proposal-interoperability-patient-access/download?attachment",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medicaid.ncdhhs.gov/request-proposal-interoperability-patient-access/download%3Fattachment&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0QFnoECBoQAQ",
+      "displayed_link": "https://medicaid.ncdhhs.gov \u203a download \u203a attach...",
+      "favicon": "https://serpapi.com/searches/6826c28100a197c195348cbc/images/9a084a50bd50c6a0fbdae0c8372241eef4c28350f28d14c383b536a552f763d0.png",
+      "date": "Apr 12, 2023",
+      "snippet": "... Provider Directory Fast. Healthcare Interoperability Resources (FHIR) API that meets the Provider Directory API portion of the Rule that ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "API",
+        "Provider Directory API"
+      ],
+      "source": "NC Medicaid (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "ig-registry/fhir-ig-list.json at master",
+      "link": "https://github.com/FHIR/ig-registry/blob/master/fhir-ig-list.json",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/FHIR/ig-registry/blob/master/fhir-ig-list.json&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0QFnoECB8QAQ",
+      "displayed_link": "https://github.com \u203a FHIR \u203a ig-registry \u203a blob \u203a fhir-ig-list",
+      "favicon": "https://serpapi.com/searches/6826c28100a197c195348cbc/images/9a084a50bd50c6a0fbdae0c8372241ee5d948600d44c2436161337bb8fe12b4a.png",
+      "snippet": "... fhir.argonaut.pd\", \"description\" : \"This implementation guide is based upon STU3 FHIR standard and outlines the key data elements for any provider directory ...",
+      "snippet_highlighted_words": [
+        "fhir",
+        "FHIR",
+        "provider directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Group+1001+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0Q5t4CegQIKhAB"
+      },
+      "source": "GitHub"
+    },
+    {
+      "position": 5,
+      "title": "state of vermont contract # 45815",
+      "link": "https://dvha.vermont.gov/sites/dvha/files/doc_library/VITL_SFY24_Contract__45815.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dvha.vermont.gov/sites/dvha/files/doc_library/VITL_SFY24_Contract__45815.pdf&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0QFnoECBsQAQ",
+      "displayed_link": "https://dvha.vermont.gov \u203a files \u203a doc_library",
+      "favicon": "https://serpapi.com/searches/6826c28100a197c195348cbc/images/9a084a50bd50c6a0fbdae0c8372241eebeaed314edc37dbb8445113e057e4278.png",
+      "date": "Aug 29, 2023",
+      "snippet": "Provide State access to a FHIR REST API and to a FHIR Bulk Data Access API for data from ... provider directory and care management system ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "FHIR",
+        "API",
+        "provider directory"
+      ],
+      "source": "Department of Vermont Health Access (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "PARTICIPATING ADDENDUM MMIS-PROVIDER SERVICES ...",
+      "link": "https://s3-us-west-2.amazonaws.com/naspovaluepoint/1634709128_MMIS%20HHS%20Technology%20Group%20LLC%20South%20Dakota.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://s3-us-west-2.amazonaws.com/naspovaluepoint/1634709128_MMIS%2520HHS%2520Technology%2520Group%2520LLC%2520South%2520Dakota.pdf&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0QFnoECB4QAQ",
+      "displayed_link": "https://s3-us-west-2.amazonaws.com \u203a 16347091...",
+      "favicon": "https://serpapi.com/searches/6826c28100a197c195348cbc/images/9a084a50bd50c6a0fbdae0c8372241ee8aa3663b1215f78fbb83ff0fbb9decd6.png",
+      "date": "Mar 7, 2023",
+      "snippet": "... Provider Directory Mapping (FHIR). 1 day. Fri 11/26/21. Fri 11/26/21. 6. Provider Directory Demo (FHIR). 1 day. Fri 10/22/21. Fri 10/22/21. 7.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Amazon.com"
+    },
+    {
+      "position": 7,
+      "title": "Calendar Year 2025 HealthChoice Managed Care ...",
+      "link": "https://health.maryland.gov/mmcp/healthchoice/Documents/CY%202025%20HealthChoice%20MCO%20Agreement.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://health.maryland.gov/mmcp/healthchoice/Documents/CY%25202025%2520HealthChoice%2520MCO%2520Agreement.pdf&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0QFnoECC0QAQ",
+      "displayed_link": "https://health.maryland.gov \u203a mmcp \u203a Documents",
+      "date": "May 10, 2024",
+      "snippet": "To provide Enrollees with a network provider directory and ensure it ... Additionally, CMS is adopting the standards for FHIR-based APIs finalized ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR",
+        "APIs"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 137
+          },
+          "extensions": [
+            "137 pages"
+          ]
+        }
+      },
+      "source": "Maryland.gov"
+    },
+    {
+      "position": 8,
+      "title": "Encounter Disposition",
+      "link": "https://www.healthit.gov/isp/taxonomy/term/1196/uscdi-v3",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/isp/taxonomy/term/1196/uscdi-v3&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0QFnoECC4QAQ",
+      "displayed_link": "https://www.healthit.gov \u203a taxonomy \u203a term \u203a uscdi-v3",
+      "favicon": "https://serpapi.com/searches/6826c28100a197c195348cbc/images/9a084a50bd50c6a0fbdae0c8372241ee91b5b2d1e81fa9b1a2e2daf04e5fe575.jpeg",
+      "snippet": "Healthcare Directory, Provider Directory \u00b7 Listing of Providers for Access by ... FHIR API for patient and population services. Other Implementation ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Group+1001+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0Q5t4CegQIORAB"
+      },
+      "source": "National Coordinator for Health Information Technology (ONC) (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "STATE OF COLORADO CONTRACT",
+      "link": "https://hcpf.colorado.gov/sites/hcpf/files/COA%20Phase%20III%20Contract%20March%202025.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hcpf.colorado.gov/sites/hcpf/files/COA%2520Phase%2520III%2520Contract%2520March%25202025.pdf&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0QFnoECDQQAQ",
+      "displayed_link": "https://hcpf.colorado.gov \u203a sites \u203a hcpf \u203a files",
+      "favicon": "https://serpapi.com/searches/6826c28100a197c195348cbc/images/9a084a50bd50c6a0fbdae0c8372241eeff5d91b1407044894cfd4f86819a609b.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory accuracy and appointment wait times. This survey ... FHIR \u2013 Fast Healthcare Interoperability Resources. 2.1.56. FQHC ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Group+1001+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0Q5t4CegQIOBAB"
+      },
+      "source": "Colorado Department of Health Care Policy and Financing (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "Helpful Hints - Confluence Mobile - HL7 International",
+      "link": "https://confluence.hl7.org/download/attachments/101358253/ProjectBallotHealthMetrics_2022MayWGM_Final.xlsx?version=2&modificationDate=1652037527734&api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/101358253/ProjectBallotHealthMetrics_2022MayWGM_Final.xlsx%3Fversion%3D2%26modificationDate%3D1652037527734%26api%3Dv2&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0QFnoECCwQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a download \u203a attachments",
+      "favicon": "https://serpapi.com/searches/6826c28100a197c195348cbc/images/9a084a50bd50c6a0fbdae0c8372241ee771e7583fd87a5b9adb760867705ce4d.png",
+      "snippet": "... FHIR Infrastructure Work Group, N/A, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 0, 0. 17, FHIR ... provider directory) and drug benefits (formulary). Mark Scrimshire, Tony ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Group",
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "Carnegie Mellon University (CMU)"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=hMImaLbqLc6hwPAP7LKE6AY&start=10&sa=N&sstk=Af40H4W3TNDhgd4TAkTRRoytnVcTlVn29JEj6lW-SzzeXs_Ghg2QcSP0RPDSUSOMFAY-ZRk2eM-myex1CF8fQL-ZW8KnyvZyRZi01g&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0Q8NMDegQICRAS",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=hMImaLbqLc6hwPAP7LKE6AY&start=10&sa=N&sstk=Af40H4W3TNDhgd4TAkTRRoytnVcTlVn29JEj6lW-SzzeXs_Ghg2QcSP0RPDSUSOMFAY-ZRk2eM-myex1CF8fQL-ZW8KnyvZyRZi01g&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0Q8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=hMImaLbqLc6hwPAP7LKE6AY&start=20&sa=N&sstk=Af40H4W3TNDhgd4TAkTRRoytnVcTlVn29JEj6lW-SzzeXs_Ghg2QcSP0RPDSUSOMFAY-ZRk2eM-myex1CF8fQL-ZW8KnyvZyRZi01g&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0Q8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=hMImaLbqLc6hwPAP7LKE6AY&start=30&sa=N&sstk=Af40H4W3TNDhgd4TAkTRRoytnVcTlVn29JEj6lW-SzzeXs_Ghg2QcSP0RPDSUSOMFAY-ZRk2eM-myex1CF8fQL-ZW8KnyvZyRZi01g&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0Q8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=hMImaLbqLc6hwPAP7LKE6AY&start=40&sa=N&sstk=Af40H4W3TNDhgd4TAkTRRoytnVcTlVn29JEj6lW-SzzeXs_Ghg2QcSP0RPDSUSOMFAY-ZRk2eM-myex1CF8fQL-ZW8KnyvZyRZi01g&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0Q8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=hMImaLbqLc6hwPAP7LKE6AY&start=50&sa=N&sstk=Af40H4W3TNDhgd4TAkTRRoytnVcTlVn29JEj6lW-SzzeXs_Ghg2QcSP0RPDSUSOMFAY-ZRk2eM-myex1CF8fQL-ZW8KnyvZyRZi01g&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0Q8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=hMImaLbqLc6hwPAP7LKE6AY&start=60&sa=N&sstk=Af40H4W3TNDhgd4TAkTRRoytnVcTlVn29JEj6lW-SzzeXs_Ghg2QcSP0RPDSUSOMFAY-ZRk2eM-myex1CF8fQL-ZW8KnyvZyRZi01g&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0Q8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=hMImaLbqLc6hwPAP7LKE6AY&start=70&sa=N&sstk=Af40H4W3TNDhgd4TAkTRRoytnVcTlVn29JEj6lW-SzzeXs_Ghg2QcSP0RPDSUSOMFAY-ZRk2eM-myex1CF8fQL-ZW8KnyvZyRZi01g&ved=2ahUKEwi2vPjslqeNAxXOEBAIHWwZAW0Q8tMDegQICRAQ"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Group+1001+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70"
+    }
+  }
+}

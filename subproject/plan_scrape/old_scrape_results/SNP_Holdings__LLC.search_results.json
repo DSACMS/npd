@@ -1,0 +1,361 @@
+{
+  "search_metadata": {
+    "id": "6826c392484c097ca8d3fac9",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/69530ca4417c3acf/6826c392484c097ca8d3fac9.json",
+    "created_at": "2025-05-16 04:48:18 UTC",
+    "processed_at": "2025-05-16 04:48:18 UTC",
+    "google_url": "https://www.google.com/search?q=SNP+Holdings%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=SNP+Holdings%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/69530ca4417c3acf/6826c392484c097ca8d3fac9.html",
+    "total_time_taken": 0.68
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "SNP Holdings, LLC Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "SNP Holdings, LLC Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 71,
+    "time_taken_displayed": 0.25,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "CMS-9115-F - Interoperability and Patient Access",
+      "link": "https://www.cms.gov/files/document/cms-9115-f.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/cms-9115-f.pdf&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQFnoECBwQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a cms-91...",
+      "favicon": "https://serpapi.com/searches/6826c392484c097ca8d3fac9/images/7c45d813f2594371615b152f38a1d9d6891d8b29e6f841e454b7feecd8dbea4f.png",
+      "date": "Mar 6, 2020",
+      "snippet": "specialty) required for this Provider Directory API can all be represented through FHIR Release. 4.0.1. Additional implementation guidance ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 474
+          },
+          "extensions": [
+            "474 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Holdings,"
+      ],
+      "must_include": {
+        "word": "Holdings,",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=SNP+%22Holdings,%22+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ5t4CegQIMBAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "New Options for Managing Your Digital Medical Records",
+      "link": "https://www.healthnet.com/content/healthnet/en_us/members/managing-your-digital-medical-records.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthnet.com/content/healthnet/en_us/members/managing-your-digital-medical-records.html&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQFnoECBkQAQ",
+      "displayed_link": "https://www.healthnet.com \u203a content \u203a en_us \u203a members",
+      "favicon": "https://serpapi.com/searches/6826c392484c097ca8d3fac9/images/7c45d813f2594371615b152f38a1d9d639f1a7bc2011cb952168f516828b59e9.png",
+      "date": "Aug 2, 2024",
+      "snippet": "As a developer, how do I access and use the Provider Directory API? Go to our Partner PortalExternal Link and scroll to the \"FHIR \u2013 Provider ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "Provider"
+      ],
+      "missing": [
+        "Holdings,"
+      ],
+      "must_include": {
+        "word": "Holdings,",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=SNP+%22Holdings,%22+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ5t4CegQILhAB"
+      },
+      "source": "Health Net"
+    },
+    {
+      "position": 3,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQFnoECCEQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/6826c392484c097ca8d3fac9/images/7c45d813f2594371615b152f38a1d9d66d69759aff15e8049530fd7c933ecc3b.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 4,
+      "title": "Community Health Group | San Diego County Health Plans for ...",
+      "link": "https://www.chgsd.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chgsd.com/&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQFnoECBoQAQ",
+      "displayed_link": "https://www.chgsd.com",
+      "favicon": "https://serpapi.com/searches/6826c392484c097ca8d3fac9/images/7c45d813f2594371615b152f38a1d9d6f5936d9038b589f6a4942b538bcc08fc.png",
+      "snippet": "FHIR Developer API \u00b7 Mission, Vision Statement \u00b7 MOU \u00b7 Population Health \u00b7 Quality ... Search Provider Directory \u00b7 Provider Portal Sign in. Claims. Submitting a ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Medi-Cal",
+            "link": "https://www.chgsd.com/chg-plans/medi-cal"
+          },
+          {
+            "title": "Service Authorization Request",
+            "link": "https://www.chgsd.com/providers/authorizations/service-authorization-request"
+          },
+          {
+            "title": "Provider Disputes",
+            "link": "https://www.chgsd.com/providers/provider-services/provider-disputes"
+          },
+          {
+            "title": "My Health Plan",
+            "link": "https://www.chgsd.com/members/my-health-plan"
+          }
+        ]
+      },
+      "missing": [
+        "LLC"
+      ],
+      "must_include": {
+        "word": "LLC",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=SNP+Holdings,+%22LLC%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ5t4CegQIJxAB"
+      },
+      "source": "Community Health Group"
+    },
+    {
+      "position": 5,
+      "title": "2024 Family Care and Family Care Partnership Contract with ...",
+      "link": "https://www.dhs.wisconsin.gov/familycare/mcos/fc-fcp-2024-contract-nov-amend.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.dhs.wisconsin.gov/familycare/mcos/fc-fcp-2024-contract-nov-amend.pdf&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQFnoECBgQAQ",
+      "displayed_link": "https://www.dhs.wisconsin.gov \u203a familycare \u203a mcos",
+      "favicon": "https://serpapi.com/searches/6826c392484c097ca8d3fac9/images/7c45d813f2594371615b152f38a1d9d6e16fb7ca003d3c0a7739f943b79f80ab.png",
+      "date": "Jan 31, 2025",
+      "snippet": "Programming Interface (API, Provider Directory API, and Payer-to-Payer Data ... FHIR compliant standards-based API available to third-party ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "Holdings,"
+      ],
+      "must_include": {
+        "word": "Holdings,",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=SNP+%22Holdings,%22+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ5t4CegQILxAB"
+      },
+      "source": "Wisconsin Department of Health Services (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "2026 Quality Rating System Measure Technical ...",
+      "link": "https://www.cms.gov/files/document/2026qrsmeasuretechspecs508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/2026qrsmeasuretechspecs508.pdf&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQFnoECBsQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document",
+      "favicon": "https://serpapi.com/searches/6826c392484c097ca8d3fac9/images/7c45d813f2594371615b152f38a1d9d6e172c80e71497f7fb35ad6c3588b0e17.png",
+      "date": "Mar 31, 2025",
+      "snippet": "care services; however, it recognizes that a provider directory ... a set of resources that payers can display to consumers via a FHIR API.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 277
+          },
+          "extensions": [
+            "277 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Holdings,",
+        "Advantage"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQFnoECBYQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/6826c392484c097ca8d3fac9/images/7c45d813f2594371615b152f38a1d9d68fae916fbc3e19d281a31e452c63a5fe.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 8,
+      "title": "BOARD OF GOVERNORS MEETING",
+      "link": "https://www.lacare.org/sites/default/files/files/bog_meeting_packet_20221006.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/files/bog_meeting_packet_20221006.pdf&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQFnoECDwQAQ",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files \u203a files",
+      "favicon": "https://serpapi.com/searches/6826c392484c097ca8d3fac9/images/7c45d813f2594371615b152f38a1d9d693941083a6b35d9f89cff30777fb052e.png",
+      "date": "Oct 6, 2022",
+      "snippet": "via new HL7 FHIR Technical Standards. Note: An API or Application ... Provider Directory API (Application Program Interface). L.A. Care ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory API"
+      ],
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 9,
+      "title": "Formulary & Prescription",
+      "link": "https://www.chgsd.com/chg-plans/communicare-advantage/2025-plan-information/formulary-and-prescription",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chgsd.com/chg-plans/communicare-advantage/2025-plan-information/formulary-and-prescription&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQFnoECEIQAQ",
+      "displayed_link": "https://www.chgsd.com \u203a 2025-plan-information \u203a for...",
+      "favicon": "https://serpapi.com/searches/6826c392484c097ca8d3fac9/images/7c45d813f2594371615b152f38a1d9d6073eaaf982a86a606bd4220691589abe.png",
+      "snippet": "FHIR Developer API \u00b7 Mission, Vision Statement \u00b7 MOU \u00b7 Population Health \u00b7 Quality ... Search Provider Directory \u00b7 Provider Portal Sign in. Claims. Submitting a ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Holdings,"
+      ],
+      "must_include": {
+        "word": "Holdings,",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=SNP+%22Holdings,%22+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ5t4CegQIQxAB"
+      },
+      "source": "Community Health Group"
+    },
+    {
+      "position": 10,
+      "title": "EXECUTIVE COMMITTEE MEETING Board of Governors",
+      "link": "https://www.lacare.org/sites/default/files/executive_committee_packet_20220426.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/executive_committee_packet_20220426.pdf&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQFnoECDsQAQ",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files \u203a ex...",
+      "favicon": "https://serpapi.com/searches/6826c392484c097ca8d3fac9/images/7c45d813f2594371615b152f38a1d9d6868131d0f10b3c5c275285a26bd34e5b.png",
+      "date": "Apr 26, 2022",
+      "snippet": "The first phase is complete with public facing provider directory API's (Application Program ... Resources (FHIR) format, in compliance ...",
+      "snippet_highlighted_words": [
+        "provider directory API's",
+        "FHIR"
+      ],
+      "missing": [
+        "Holdings,"
+      ],
+      "must_include": {
+        "word": "Holdings,",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=SNP+%22Holdings,%22+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ5t4CegQIQRAB"
+      },
+      "source": "L.A. Care Health Plan"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "cms-9115-f",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=cms-9115-f&sa=X&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ1QJ6BAg6EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-9115-f&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-9115-f fact sheet",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=cms-9115-f+fact+sheet&sa=X&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-9115-f+fact+sheet&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-0057",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=CMS-0057&sa=X&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-0057&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-9115 final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=CMS-9115+final+rule&sa=X&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-9115+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability and Patient Access final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=CMS+Interoperability+and+Patient+Access+final+rule&sa=X&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+and+Patient+Access+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Provider Access API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Provider+Access+API&sa=X&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+Access+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "What is the purpose of Interoperability and Patient Access final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=What+is+the+purpose+of+Interoperability+and+Patient+Access+final+rule&sa=X&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=What+is+the+purpose+of+Interoperability+and+Patient+Access+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=CMS+Interoperability+API&sa=X&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+API&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=SNP+Holdings,+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=ksMmaLr_KaSnptQP4ev5qA0&start=10&sa=N&sstk=Af40H4Xt9nMEThMRdnfVddvoQ6O9q0-QvaVztiHy1-UnvtbLvqkoSPxONIR-SasXiyW90wwq3hCpa2UUEYnqphrG7OhgeXRcl1Na2A&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ8NMDegQICBAK",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=SNP+Holdings,+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=ksMmaLr_KaSnptQP4ev5qA0&start=10&sa=N&sstk=Af40H4Xt9nMEThMRdnfVddvoQ6O9q0-QvaVztiHy1-UnvtbLvqkoSPxONIR-SasXiyW90wwq3hCpa2UUEYnqphrG7OhgeXRcl1Na2A&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=SNP+Holdings,+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=ksMmaLr_KaSnptQP4ev5qA0&start=20&sa=N&sstk=Af40H4Xt9nMEThMRdnfVddvoQ6O9q0-QvaVztiHy1-UnvtbLvqkoSPxONIR-SasXiyW90wwq3hCpa2UUEYnqphrG7OhgeXRcl1Na2A&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=SNP+Holdings,+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=ksMmaLr_KaSnptQP4ev5qA0&start=30&sa=N&sstk=Af40H4Xt9nMEThMRdnfVddvoQ6O9q0-QvaVztiHy1-UnvtbLvqkoSPxONIR-SasXiyW90wwq3hCpa2UUEYnqphrG7OhgeXRcl1Na2A&ved=2ahUKEwi6kNTtl6eNAxWkk4kEHeF1HtUQ8tMDegQICBAI"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=SNP+Holdings%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=SNP+Holdings%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=SNP+Holdings%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=SNP+Holdings%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=SNP+Holdings%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30"
+    }
+  }
+}

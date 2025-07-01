@@ -1,0 +1,30 @@
+{
+  "filename": "test_encoding_issue.csv",
+  "filename_without_extension": "test_encoding_issue",
+  "full_path": "/Users/ftrotter/gitgov/ftrotter/csviper/test_encoding_issue.csv",
+  "file_size_bytes": 51,
+  "delimiter": ",",
+  "quote_character": "\"",
+  "original_column_names": [
+    "name",
+    "age",
+    "city"
+  ],
+  "normalized_column_names": [
+    "name",
+    "age",
+    "city"
+  ],
+  "column_name_mapping": {
+    "name": "name",
+    "age": "age",
+    "city": "city"
+  },
+  "max_column_lengths": {
+    "name": 4,
+    "age": 2,
+    "city": 11
+  },
+  "total_columns": 3,
+  "column_headers_hash": "c82e8845a0433d9971df66ecaafea87f"
+}

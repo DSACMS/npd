@@ -1,0 +1,34 @@
+{
+  "search_metadata": {
+    "id": "6861d15ee3e176397018c66b",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/c4f3c6ca8b5cd2cb/6861d15ee3e176397018c66b.json",
+    "created_at": "2025-06-29 23:50:54 UTC",
+    "processed_at": "2025-06-29 23:50:54 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Aclearspringhealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Aclearspringhealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/c4f3c6ca8b5cd2cb/6861d15ee3e176397018c66b.html",
+    "total_time_taken": 1.7
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:clearspringhealthcare.com \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:clearspringhealthcare.com \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 0,
+    "time_taken_displayed": 0.09,
+    "organic_results_state": "Fully empty",
+    "query_feedback": {
+      "title": "Your search did not match any documents"
+    }
+  },
+  "error": "Google hasn't returned any results for this query."
+}

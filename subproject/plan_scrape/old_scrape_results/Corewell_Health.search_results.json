@@ -1,0 +1,188 @@
+{
+  "search_metadata": {
+    "id": "6826c244c83b3f1046ba676b",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/11aa43c63b652a56/6826c244c83b3f1046ba676b.json",
+    "created_at": "2025-05-16 04:42:44 UTC",
+    "processed_at": "2025-05-16 04:42:44 UTC",
+    "google_url": "https://www.google.com/search?q=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/11aa43c63b652a56/6826c244c83b3f1046ba676b.html",
+    "total_time_taken": 0.85
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Corewell Health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Corewell Health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 4,
+    "time_taken_displayed": 0.22,
+    "organic_results_state": "Results for exact spelling",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    }
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "ONC, CMS give some breathing room for interop rules ...",
+      "link": "https://www.healthcareitnews.com/news/onc-cms-give-some-breathing-room-interop-rules-during-covid-19",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcareitnews.com/news/onc-cms-give-some-breathing-room-interop-rules-during-covid-19&ved=2ahUKEwiQgqLOlqeNAxU0hIkEHWJ3JSsQFnoECB8QAQ&usg=AOvVaw2Zpiw_KoHvdu1GDo4cQNZm",
+      "displayed_link": "https://www.healthcareitnews.com \u203a news \u203a onc-cms-giv...",
+      "favicon": "https://serpapi.com/searches/6826c244c83b3f1046ba676b/images/87412f8731c6e7e317db8db52ffee1fb267ec56195fae410b15eeed17bc44c20.png",
+      "date": "Apr 22, 2020",
+      "snippet": "Moreover, CMS said it will extend for six months its enforcement of API provisions for the Patient Access API and Provider Directory ... National ...",
+      "snippet_highlighted_words": [
+        "API",
+        "API",
+        "Provider Directory"
+      ],
+      "source": "Healthcare IT News"
+    },
+    {
+      "position": 2,
+      "title": "Best in KLAS Report 2024.pdf",
+      "link": "https://www.performancehealthus.com/hubfs/Best%20in%20KLAS%20Report%202024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.performancehealthus.com/hubfs/Best%2520in%2520KLAS%2520Report%25202024.pdf&ved=2ahUKEwiQgqLOlqeNAxU0hIkEHWJ3JSsQFnoECCYQAQ&usg=AOvVaw3Ufy45ttv2xfx5-eUfJ8rw",
+      "displayed_link": "https://www.performancehealthus.com \u203a hubfs",
+      "favicon": "https://serpapi.com/searches/6826c244c83b3f1046ba676b/images/87412f8731c6e7e317db8db52ffee1fbb4f4665208074937eec62ea423cfdf88.png",
+      "date": "Feb 7, 2024",
+      "snippet": "... FHIR 92.2. Data Analytics Platforms (Payers). Clarify Health Solutions ... provider directory API, and payer-to-payer data exchange ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Health",
+        "provider directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 279
+          },
+          "extensions": [
+            "279 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Corewell+Health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiQgqLOlqeNAxU0hIkEHWJ3JSsQ5t4CegQIKxAB"
+      },
+      "source": "Performance Health Partners"
+    },
+    {
+      "position": 3,
+      "title": "Community Care Hub IT Playbook",
+      "link": "https://acl.gov/sites/default/files/programs/2024-07/Community%20Care%20Hub%20IT%20Playbook.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://acl.gov/sites/default/files/programs/2024-07/Community%2520Care%2520Hub%2520IT%2520Playbook.pdf&ved=2ahUKEwiQgqLOlqeNAxU0hIkEHWJ3JSsQFnoECCAQAQ&usg=AOvVaw1bGcFOIP-S_x2-Sw8YZnxh",
+      "displayed_link": "https://acl.gov \u203a sites \u203a default \u203a files \u203a programs",
+      "favicon": "https://serpapi.com/searches/6826c244c83b3f1046ba676b/images/87412f8731c6e7e317db8db52ffee1fb3adda651015420a1b78a607589d3e489.png",
+      "snippet": "This FHIR IG provides standardized specification for querying and exchanging social care provider directory data mapped to FHIR format. This guide consists ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 140
+          },
+          "extensions": [
+            "140 pages"
+          ]
+        }
+      },
+      "source": "ACL Administration for Community Living (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Med-tech collaborations in 2024",
+      "link": "https://www.bioworld.com/content/medtech-collaborations-2024",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bioworld.com/content/medtech-collaborations-2024&ved=2ahUKEwiQgqLOlqeNAxU0hIkEHWJ3JSsQFnoECCEQAQ&usg=AOvVaw3QXZFGdImSNr3Ni2AeYdeg",
+      "displayed_link": "https://www.bioworld.com \u203a content \u203a medtech-collabo...",
+      "favicon": "https://serpapi.com/searches/6826c244c83b3f1046ba676b/images/87412f8731c6e7e317db8db52ffee1fb575b522ff858399bb2a6c77fab08162d.png",
+      "snippet": "Te Toka Tumai Auckland and Intersystems to launch FHIR-based NHI API, Te ... Trilliant Health to offer its Provider Directory and the national version ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Health",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Corewell+Health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiQgqLOlqeNAxU0hIkEHWJ3JSsQ5t4CegQIIhAB"
+      },
+      "source": "BioWorld MedTech"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Best in KLAS healthcare",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Best+in+KLAS+healthcare&sa=X&ved=2ahUKEwiQgqLOlqeNAxU0hIkEHWJ3JSsQ1QJ6BAgOEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+healthcare&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Best in KLAS 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Best+in+KLAS+2025&sa=X&ved=2ahUKEwiQgqLOlqeNAxU0hIkEHWJ3JSsQ1QJ6BAgPEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Best in KLAS 2024",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Best+in+KLAS+2024&sa=X&ved=2ahUKEwiQgqLOlqeNAxU0hIkEHWJ3JSsQ1QJ6BAgMEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+2024&safe=active"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 4 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Corewell+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

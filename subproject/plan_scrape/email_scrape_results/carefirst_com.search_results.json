@@ -1,0 +1,157 @@
+{
+  "search_metadata": {
+    "id": "6861d1120d0b293de1a5ebe7",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/568a6158c2037e00/6861d1120d0b293de1a5ebe7.json",
+    "created_at": "2025-06-29 23:49:38 UTC",
+    "processed_at": "2025-06-29 23:49:38 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/568a6158c2037e00/6861d1120d0b293de1a5ebe7.html",
+    "total_time_taken": 2.81
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:carefirst.com \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:carefirst.com \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 5,
+    "time_taken_displayed": 0.2,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "FHIR Provider Directory - | CareFirst Developer Portal",
+      "link": "https://developer.carefirst.com/product/fhir-provider-directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.carefirst.com/product/fhir-provider-directory&ved=2ahUKEwiDvM-E6ZeOAxXuXfEDHQ4EKWMQFnoECB4QAQ",
+      "displayed_link": "https://developer.carefirst.com \u203a product \u203a fhir-provider-...",
+      "favicon": "https://serpapi.com/searches/6861d1120d0b293de1a5ebe7/images/684325e38f3466192b5ac3b09884e29d37058f4ac6940d41e3bf1329a9898f90.png",
+      "snippet": "FHIR Provider Directory product enables member to see which providers are in-network for a given insurance plan. These APIs follow the HL7 R4 FHIR specification ...",
+      "snippet_highlighted_words": [
+        "FHIR Provider Directory",
+        "FHIR"
+      ],
+      "source": "CareFirst Developer Portal"
+    },
+    {
+      "position": 2,
+      "title": "Custom Card - CareFirst Developer Portal",
+      "link": "https://developer.carefirst.com/content/html_widgets/wnhv2.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.carefirst.com/content/html_widgets/wnhv2.html&ved=2ahUKEwiDvM-E6ZeOAxXuXfEDHQ4EKWMQFnoECBwQAQ",
+      "displayed_link": "https://developer.carefirst.com \u203a html_widgets \u203a wnhv2",
+      "favicon": "https://serpapi.com/searches/6861d1120d0b293de1a5ebe7/images/684325e38f3466192b5ac3b09884e29daf5f1acea5e6ceebb0546f5c35a5d218.png",
+      "snippet": "api-cf-fhir-provider-directory-v1.",
+      "snippet_highlighted_words": [
+        "fhir",
+        "provider-directory"
+      ],
+      "source": "CareFirst Developer Portal"
+    },
+    {
+      "position": 3,
+      "title": "CareFirst Developer Portal: Home -",
+      "link": "https://developer.carefirst.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.carefirst.com/&ved=2ahUKEwiDvM-E6ZeOAxXuXfEDHQ4EKWMQFnoECB8QAQ",
+      "displayed_link": "https://developer.carefirst.com",
+      "favicon": "https://serpapi.com/searches/6861d1120d0b293de1a5ebe7/images/684325e38f3466192b5ac3b09884e29dcbb59bd39bea18e79f5260eac7438ade.png",
+      "snippet": "CareFirst's patient-first products help our members access their healthcare easily. FHIR Provider Directory. Interoperability Provider. Directory. FHIR Patient ...",
+      "snippet_highlighted_words": [
+        "FHIR Provider Directory",
+        "FHIR"
+      ],
+      "source": "CareFirst Developer Portal"
+    },
+    {
+      "position": 4,
+      "title": "Getting Started - CareFirst Developer Portal",
+      "link": "https://developer.carefirst.com/content/html_widgets/unugx.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.carefirst.com/content/html_widgets/unugx.html&ved=2ahUKEwiDvM-E6ZeOAxXuXfEDHQ4EKWMQFnoECB0QAQ",
+      "displayed_link": "https://developer.carefirst.com \u203a html_widgets \u203a unugx",
+      "favicon": "https://serpapi.com/searches/6861d1120d0b293de1a5ebe7/images/684325e38f3466192b5ac3b09884e29d98ede9e84f70222fe866ebbd7e890d11.png",
+      "snippet": "Provider Directory: This is a public facing API not requiring authorization from the member. This API implements Plan-Net FHIR guides. 3. Payer-to-Payer ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "CareFirst Developer Portal"
+    },
+    {
+      "position": 5,
+      "title": "Documentation - | CareFirst Developer Portal",
+      "link": "https://developer.carefirst.com/help-center/documentation",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.carefirst.com/help-center/documentation&ved=2ahUKEwiDvM-E6ZeOAxXuXfEDHQ4EKWMQFnoECCIQAQ",
+      "displayed_link": "https://developer.carefirst.com \u203a help-center \u203a document...",
+      "favicon": "https://serpapi.com/searches/6861d1120d0b293de1a5ebe7/images/684325e38f3466192b5ac3b09884e29d4836aef482c045463cfcab21e67a3cdd.png",
+      "snippet": "https://chpdc-apix-pit.carefirst.com/extfhirpayeraccess/v1/fhir/metadata ... Sandbox Provider Directory API Endpoints. LOB, API Endpoint. CHPDC, https://chpdc ...",
+      "snippet_highlighted_words": [
+        "fhir",
+        "Provider Directory"
+      ],
+      "source": "CareFirst Developer Portal"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Provider directory fhir fire ly linkedin com google com login",
+      "link": "https://www.google.com/search?safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&q=Provider+directory+fhir+fire+ly+linkedin+com+google+com+login&sa=X&ved=2ahUKEwiDvM-E6ZeOAxXuXfEDHQ4EKWMQ1QJ6BAgOEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+directory+fhir+fire+ly+linkedin+com+google+com+login&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Provider directory fhir fire ly linkedin com google com sign",
+      "link": "https://www.google.com/search?safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&q=Provider+directory+fhir+fire+ly+linkedin+com+google+com+sign&sa=X&ved=2ahUKEwiDvM-E6ZeOAxXuXfEDHQ4EKWMQ1QJ6BAgPEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+directory+fhir+fire+ly+linkedin+com+google+com+sign&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Https provider directory fhir fire ly linkedin com google com",
+      "link": "https://www.google.com/search?safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&q=Https+provider+directory+fhir+fire+ly+linkedin+com+google+com&sa=X&ved=2ahUKEwiDvM-E6ZeOAxXuXfEDHQ4EKWMQ1QJ6BAgQEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Https+provider+directory+fhir+fire+ly+linkedin+com+google+com&safe=active"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 5 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=site:carefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Acarefirst.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "search_metadata": {
+    "id": "6826c26ef2593ae8afe5e9dc",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/3a3b20e07276b016/6826c26ef2593ae8afe5e9dc.json",
+    "created_at": "2025-05-16 04:43:26 UTC",
+    "processed_at": "2025-05-16 04:43:26 UTC",
+    "google_url": "https://www.google.com/search?q=Elevance+Health%2C+Inc.+%26+BCBSMA+%26+BCBSRI+%26+BCBSVT+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Elevance+Health%2C+Inc.+%26+BCBSMA+%26+BCBSRI+%26+BCBSVT+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/3a3b20e07276b016/6826c26ef2593ae8afe5e9dc.html",
+    "total_time_taken": 2.53
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Elevance Health, Inc. & BCBSMA & BCBSRI & BCBSVT Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Elevance Health, Inc. & BCBSMA & BCBSRI & BCBSVT Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 0,
+    "time_taken_displayed": 0.3,
+    "organic_results_state": "Fully empty",
+    "query_feedback": {
+      "title": "Your search did not match any documents"
+    },
+    "spelling_fix": "Elevance Health, Inc. & BCBSMA & BCBSRI & BCBSM Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "showing_results_for": "Elevance Health, Inc. & BCBSMA & BCBSRI & BCBSVT Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "error": "Google hasn't returned any results for this query."
+}

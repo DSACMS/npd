@@ -1,0 +1,5 @@
+payer_name,payer_stub,payer_homepage_url,payer_provider_directory_fhir_url
+humana,humana,https://www.humana.com,https://fhir.humana.com/api
+devoted,devoted,https://www.devoted.com,https://fhir.devoted.com/fhir
+iehp,iehp,https://www.iehp.org/,https://fhir.iehp.org/provider-directory
+

@@ -1,0 +1,395 @@
+practitioner_role_id,specialty_code,specialty_display,specialty_system
+dacaa96c-71d6-479a-9483-72889ea591e7,208D00000X,Allopathic & Osteopathic Physicians; General Practice,oid:2.16.840.1.114222.4.11.1066
+dacaa96c-71d6-479a-9483-72889ea591e7,208D00000X,Allopathic & Osteopathic Physicians; General Practice,oid:2.16.840.1.114222.4.11.1066
+397a98e6-21fa-428b-a04b-4e21fc552fff,208D00000X,Allopathic & Osteopathic Physicians; General Practice,oid:2.16.840.1.114222.4.11.1066
+397a98e6-21fa-428b-a04b-4e21fc552fff,208D00000X,Allopathic & Osteopathic Physicians; General Practice,oid:2.16.840.1.114222.4.11.1066
+56a1ce17-03cc-4a0d-b0aa-685439012a13,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+56a1ce17-03cc-4a0d-b0aa-685439012a13,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+56a1ce17-03cc-4a0d-b0aa-685439012a13,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+56a1ce17-03cc-4a0d-b0aa-685439012a13,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+56a1ce17-03cc-4a0d-b0aa-685439012a13,152WV0400X,"Eye and Vision Services Providers; Optometrist, Vision Therapy",oid:2.16.840.1.114222.4.11.1066
+56a1ce17-03cc-4a0d-b0aa-685439012a13,152WV0400X,"Eye and Vision Services Providers; Optometrist, Vision Therapy",oid:2.16.840.1.114222.4.11.1066
+56a1ce17-03cc-4a0d-b0aa-685439012a13,152WV0400X,"Eye and Vision Services Providers; Optometrist, Vision Therapy",oid:2.16.840.1.114222.4.11.1066
+56a1ce17-03cc-4a0d-b0aa-685439012a13,152WV0400X,"Eye and Vision Services Providers; Optometrist, Vision Therapy",oid:2.16.840.1.114222.4.11.1066
+9dfa2582-0e52-4fa4-9773-4ff0126272b0,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+9dfa2582-0e52-4fa4-9773-4ff0126272b0,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+9dfa2582-0e52-4fa4-9773-4ff0126272b0,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+9dfa2582-0e52-4fa4-9773-4ff0126272b0,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+96c71afa-13a3-4619-9e5f-c3a08133758f,103T00000X,Behavioral Health & Social Service Providers; Psychologist,oid:2.16.840.1.114222.4.11.1066
+96c71afa-13a3-4619-9e5f-c3a08133758f,103T00000X,Behavioral Health & Social Service Providers; Psychologist,oid:2.16.840.1.114222.4.11.1066
+96c71afa-13a3-4619-9e5f-c3a08133758f,103T00000X,Behavioral Health & Social Service Providers; Psychologist,oid:2.16.840.1.114222.4.11.1066
+96c71afa-13a3-4619-9e5f-c3a08133758f,103T00000X,Behavioral Health & Social Service Providers; Psychologist,oid:2.16.840.1.114222.4.11.1066
+9b63e857-50e2-4aa4-83aa-caa11594b6c8,208000000X,Allopathic & Osteopathic Physicians; Pediatrics,oid:2.16.840.1.114222.4.11.1066
+9b63e857-50e2-4aa4-83aa-caa11594b6c8,208000000X,Allopathic & Osteopathic Physicians; Pediatrics,oid:2.16.840.1.114222.4.11.1066
+9b63e857-50e2-4aa4-83aa-caa11594b6c8,208000000X,Allopathic & Osteopathic Physicians; Pediatrics,oid:2.16.840.1.114222.4.11.1066
+9b63e857-50e2-4aa4-83aa-caa11594b6c8,208000000X,Allopathic & Osteopathic Physicians; Pediatrics,oid:2.16.840.1.114222.4.11.1066
+9b63e857-50e2-4aa4-83aa-caa11594b6c8,208000000X,Allopathic & Osteopathic Physicians; Pediatrics,oid:2.16.840.1.114222.4.11.1066
+9b63e857-50e2-4aa4-83aa-caa11594b6c8,208000000X,Allopathic & Osteopathic Physicians; Pediatrics,oid:2.16.840.1.114222.4.11.1066
+9b63e857-50e2-4aa4-83aa-caa11594b6c8,208M00000X,Allopathic & Osteopathic Physicians; Hospitalist,oid:2.16.840.1.114222.4.11.1066
+9b63e857-50e2-4aa4-83aa-caa11594b6c8,208M00000X,Allopathic & Osteopathic Physicians; Hospitalist,oid:2.16.840.1.114222.4.11.1066
+9b63e857-50e2-4aa4-83aa-caa11594b6c8,208M00000X,Allopathic & Osteopathic Physicians; Hospitalist,oid:2.16.840.1.114222.4.11.1066
+9b63e857-50e2-4aa4-83aa-caa11594b6c8,208M00000X,Allopathic & Osteopathic Physicians; Hospitalist,oid:2.16.840.1.114222.4.11.1066
+9b63e857-50e2-4aa4-83aa-caa11594b6c8,208M00000X,Allopathic & Osteopathic Physicians; Hospitalist,oid:2.16.840.1.114222.4.11.1066
+9b63e857-50e2-4aa4-83aa-caa11594b6c8,208M00000X,Allopathic & Osteopathic Physicians; Hospitalist,oid:2.16.840.1.114222.4.11.1066
+e31b401f-4eaf-47b6-b53a-0851062caa3a,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+e31b401f-4eaf-47b6-b53a-0851062caa3a,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+e31b401f-4eaf-47b6-b53a-0851062caa3a,207RC0000X,"Allopathic & Osteopathic Physicians; Internal Medicine, Cardiovascular Disease",oid:2.16.840.1.114222.4.11.1066
+e31b401f-4eaf-47b6-b53a-0851062caa3a,207RC0000X,"Allopathic & Osteopathic Physicians; Internal Medicine, Cardiovascular Disease",oid:2.16.840.1.114222.4.11.1066
+e31b401f-4eaf-47b6-b53a-0851062caa3a,207RI0011X,"Allopathic & Osteopathic Physicians; Internal Medicine, Interventional Cardiology",oid:2.16.840.1.114222.4.11.1066
+e31b401f-4eaf-47b6-b53a-0851062caa3a,207RI0011X,"Allopathic & Osteopathic Physicians; Internal Medicine, Interventional Cardiology",oid:2.16.840.1.114222.4.11.1066
+b320ac1e-e7c8-45ef-9ee5-495a697d6e7f,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+b320ac1e-e7c8-45ef-9ee5-495a697d6e7f,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+b320ac1e-e7c8-45ef-9ee5-495a697d6e7f,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+b320ac1e-e7c8-45ef-9ee5-495a697d6e7f,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+61a549e5-d743-4559-a935-0ae2c20de911,363L00000X,Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner,oid:2.16.840.1.114222.4.11.1066
+61a549e5-d743-4559-a935-0ae2c20de911,363L00000X,Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner,oid:2.16.840.1.114222.4.11.1066
+003a96a0-c97b-4df9-91d9-274bf6b83a87,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+003a96a0-c97b-4df9-91d9-274bf6b83a87,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+003a96a0-c97b-4df9-91d9-274bf6b83a87,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+003a96a0-c97b-4df9-91d9-274bf6b83a87,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+422e706b-c128-4636-989c-06af40b45925,363L00000X,Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner,oid:2.16.840.1.114222.4.11.1066
+422e706b-c128-4636-989c-06af40b45925,363L00000X,Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner,oid:2.16.840.1.114222.4.11.1066
+422e706b-c128-4636-989c-06af40b45925,363L00000X,Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner,oid:2.16.840.1.114222.4.11.1066
+422e706b-c128-4636-989c-06af40b45925,363L00000X,Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner,oid:2.16.840.1.114222.4.11.1066
+422e706b-c128-4636-989c-06af40b45925,363L00000X,Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner,oid:2.16.840.1.114222.4.11.1066
+422e706b-c128-4636-989c-06af40b45925,363L00000X,Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner,oid:2.16.840.1.114222.4.11.1066
+422e706b-c128-4636-989c-06af40b45925,363L00000X,Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner,oid:2.16.840.1.114222.4.11.1066
+422e706b-c128-4636-989c-06af40b45925,363L00000X,Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner,oid:2.16.840.1.114222.4.11.1066
+422e706b-c128-4636-989c-06af40b45925,363L00000X,Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner,oid:2.16.840.1.114222.4.11.1066
+422e706b-c128-4636-989c-06af40b45925,363L00000X,Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner,oid:2.16.840.1.114222.4.11.1066
+f2799a49-e2b4-4859-9299-6debaa62f094,363LP0808X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health",oid:2.16.840.1.114222.4.11.1066
+f2799a49-e2b4-4859-9299-6debaa62f094,363LP0808X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health",oid:2.16.840.1.114222.4.11.1066
+f2799a49-e2b4-4859-9299-6debaa62f094,363LP0808X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health",oid:2.16.840.1.114222.4.11.1066
+f2799a49-e2b4-4859-9299-6debaa62f094,363LP0808X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health",oid:2.16.840.1.114222.4.11.1066
+f2799a49-e2b4-4859-9299-6debaa62f094,363LP0808X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health",oid:2.16.840.1.114222.4.11.1066
+f2799a49-e2b4-4859-9299-6debaa62f094,363LP0808X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health",oid:2.16.840.1.114222.4.11.1066
+f2799a49-e2b4-4859-9299-6debaa62f094,363LP0808X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health",oid:2.16.840.1.114222.4.11.1066
+f2799a49-e2b4-4859-9299-6debaa62f094,363LP0808X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health",oid:2.16.840.1.114222.4.11.1066
+5b2f60ce-2abe-4f78-ba32-fc53938d1937,208D00000X,Allopathic & Osteopathic Physicians; General Practice,oid:2.16.840.1.114222.4.11.1066
+5b2f60ce-2abe-4f78-ba32-fc53938d1937,208D00000X,Allopathic & Osteopathic Physicians; General Practice,oid:2.16.840.1.114222.4.11.1066
+6dbca648-936a-4cdc-8f83-a16b69fc19eb,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+6dbca648-936a-4cdc-8f83-a16b69fc19eb,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+097a60b8-eafe-4d7c-bb54-b4a2cd657975,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+097a60b8-eafe-4d7c-bb54-b4a2cd657975,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+097a60b8-eafe-4d7c-bb54-b4a2cd657975,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+097a60b8-eafe-4d7c-bb54-b4a2cd657975,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+097a60b8-eafe-4d7c-bb54-b4a2cd657975,261QF0400X,"Ambulatory Health Care Facilities; Clinic/Center, Federally Qualified Health Center (FQHC)",oid:2.16.840.1.114222.4.11.1066
+097a60b8-eafe-4d7c-bb54-b4a2cd657975,261QF0400X,"Ambulatory Health Care Facilities; Clinic/Center, Federally Qualified Health Center (FQHC)",oid:2.16.840.1.114222.4.11.1066
+097a60b8-eafe-4d7c-bb54-b4a2cd657975,261QF0400X,"Ambulatory Health Care Facilities; Clinic/Center, Federally Qualified Health Center (FQHC)",oid:2.16.840.1.114222.4.11.1066
+097a60b8-eafe-4d7c-bb54-b4a2cd657975,261QF0400X,"Ambulatory Health Care Facilities; Clinic/Center, Federally Qualified Health Center (FQHC)",oid:2.16.840.1.114222.4.11.1066
+5abeea6b-c6ee-42d1-97e8-8769c961d16e,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+5abeea6b-c6ee-42d1-97e8-8769c961d16e,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+7b38bdd7-3980-4205-8645-1af81ebcaa43,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+7b38bdd7-3980-4205-8645-1af81ebcaa43,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+7b38bdd7-3980-4205-8645-1af81ebcaa43,152WV0400X,"Eye and Vision Services Providers; Optometrist, Vision Therapy",oid:2.16.840.1.114222.4.11.1066
+7b38bdd7-3980-4205-8645-1af81ebcaa43,152WV0400X,"Eye and Vision Services Providers; Optometrist, Vision Therapy",oid:2.16.840.1.114222.4.11.1066
+65586bc3-9b04-417d-b9da-9217a208c770,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+65586bc3-9b04-417d-b9da-9217a208c770,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+66e75c1f-8052-4058-a9eb-74dcf327f8be,207V00000X,Allopathic & Osteopathic Physicians; Obstetrics & Gynecology,oid:2.16.840.1.114222.4.11.1066
+66e75c1f-8052-4058-a9eb-74dcf327f8be,207V00000X,Allopathic & Osteopathic Physicians; Obstetrics & Gynecology,oid:2.16.840.1.114222.4.11.1066
+66e75c1f-8052-4058-a9eb-74dcf327f8be,207VG0400X,"Allopathic & Osteopathic Physicians; Obstetrics & Gynecology, Gynecology",oid:2.16.840.1.114222.4.11.1066
+66e75c1f-8052-4058-a9eb-74dcf327f8be,207VG0400X,"Allopathic & Osteopathic Physicians; Obstetrics & Gynecology, Gynecology",oid:2.16.840.1.114222.4.11.1066
+f1b09759-592a-4668-a34e-f6e29aabe76a,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+f1b09759-592a-4668-a34e-f6e29aabe76a,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+f1b09759-592a-4668-a34e-f6e29aabe76a,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+f1b09759-592a-4668-a34e-f6e29aabe76a,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+099d72ab-8d14-402b-b41d-b8a4335ec43a,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+099d72ab-8d14-402b-b41d-b8a4335ec43a,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+099d72ab-8d14-402b-b41d-b8a4335ec43a,207RC0000X,"Allopathic & Osteopathic Physicians; Internal Medicine, Cardiovascular Disease",oid:2.16.840.1.114222.4.11.1066
+099d72ab-8d14-402b-b41d-b8a4335ec43a,207RC0000X,"Allopathic & Osteopathic Physicians; Internal Medicine, Cardiovascular Disease",oid:2.16.840.1.114222.4.11.1066
+099d72ab-8d14-402b-b41d-b8a4335ec43a,207RC0001X,"Allopathic & Osteopathic Physicians; Internal Medicine, Clinical Cardiac Electrophysiology",oid:2.16.840.1.114222.4.11.1066
+099d72ab-8d14-402b-b41d-b8a4335ec43a,207RC0001X,"Allopathic & Osteopathic Physicians; Internal Medicine, Clinical Cardiac Electrophysiology",oid:2.16.840.1.114222.4.11.1066
+fbd71342-2077-4f7e-a36e-a0f723d7075c,208000000X,Allopathic & Osteopathic Physicians; Pediatrics,oid:2.16.840.1.114222.4.11.1066
+fbd71342-2077-4f7e-a36e-a0f723d7075c,208000000X,Allopathic & Osteopathic Physicians; Pediatrics,oid:2.16.840.1.114222.4.11.1066
+cfcb6b11-2424-4adc-af38-b3fdf42531a0,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+cfcb6b11-2424-4adc-af38-b3fdf42531a0,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+cfcb6b11-2424-4adc-af38-b3fdf42531a0,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+cfcb6b11-2424-4adc-af38-b3fdf42531a0,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+cfcb6b11-2424-4adc-af38-b3fdf42531a0,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+cfcb6b11-2424-4adc-af38-b3fdf42531a0,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+cfcb6b11-2424-4adc-af38-b3fdf42531a0,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+cfcb6b11-2424-4adc-af38-b3fdf42531a0,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+1bec3689-c0a6-419e-82e3-3f2b8ff75af7,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+1bec3689-c0a6-419e-82e3-3f2b8ff75af7,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+1bec3689-c0a6-419e-82e3-3f2b8ff75af7,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+1bec3689-c0a6-419e-82e3-3f2b8ff75af7,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+48b74471-daaf-4ae8-a159-bfc4c96b2fef,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+48b74471-daaf-4ae8-a159-bfc4c96b2fef,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+e84747b8-d10e-4a94-94c7-a4ad4949a471,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+e84747b8-d10e-4a94-94c7-a4ad4949a471,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+01c4128b-fd44-46d6-ac69-f51e3dee6fa3,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+01c4128b-fd44-46d6-ac69-f51e3dee6fa3,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+ec0116f0-2b0b-4fbb-bcbe-3b23aaf4726b,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+ec0116f0-2b0b-4fbb-bcbe-3b23aaf4726b,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+ec0116f0-2b0b-4fbb-bcbe-3b23aaf4726b,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+ec0116f0-2b0b-4fbb-bcbe-3b23aaf4726b,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+ec0116f0-2b0b-4fbb-bcbe-3b23aaf4726b,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+ec0116f0-2b0b-4fbb-bcbe-3b23aaf4726b,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+ec0116f0-2b0b-4fbb-bcbe-3b23aaf4726b,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+ec0116f0-2b0b-4fbb-bcbe-3b23aaf4726b,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+713c9ef1-fade-4d16-bc0b-5bd18ef55ffd,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+713c9ef1-fade-4d16-bc0b-5bd18ef55ffd,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+713c9ef1-fade-4d16-bc0b-5bd18ef55ffd,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+713c9ef1-fade-4d16-bc0b-5bd18ef55ffd,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+574f34f7-ee50-436e-913d-2fba7d270f57,207SG0201X,"Allopathic & Osteopathic Physicians; Medical Genetics, Clinical Genetics (M.D.)",oid:2.16.840.1.114222.4.11.1066
+574f34f7-ee50-436e-913d-2fba7d270f57,207SG0201X,"Allopathic & Osteopathic Physicians; Medical Genetics, Clinical Genetics (M.D.)",oid:2.16.840.1.114222.4.11.1066
+02c2aa1f-8a42-4bec-942b-ec6cf81582c0,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+02c2aa1f-8a42-4bec-942b-ec6cf81582c0,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+644f297f-5712-4b76-af4c-d9796046212f,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+644f297f-5712-4b76-af4c-d9796046212f,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+644f297f-5712-4b76-af4c-d9796046212f,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+644f297f-5712-4b76-af4c-d9796046212f,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+069d2b72-54b8-4e50-8da5-4556c478d577,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+069d2b72-54b8-4e50-8da5-4556c478d577,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+069d2b72-54b8-4e50-8da5-4556c478d577,152WV0400X,"Eye and Vision Services Providers; Optometrist, Vision Therapy",oid:2.16.840.1.114222.4.11.1066
+069d2b72-54b8-4e50-8da5-4556c478d577,152WV0400X,"Eye and Vision Services Providers; Optometrist, Vision Therapy",oid:2.16.840.1.114222.4.11.1066
+b5501f47-4da2-4770-b5fb-5dd25d445e96,363LX0001X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Obstetrics & Gynecology",oid:2.16.840.1.114222.4.11.1066
+b5501f47-4da2-4770-b5fb-5dd25d445e96,363LX0001X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Obstetrics & Gynecology",oid:2.16.840.1.114222.4.11.1066
+b5501f47-4da2-4770-b5fb-5dd25d445e96,363LX0001X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Obstetrics & Gynecology",oid:2.16.840.1.114222.4.11.1066
+b5501f47-4da2-4770-b5fb-5dd25d445e96,363LX0001X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Obstetrics & Gynecology",oid:2.16.840.1.114222.4.11.1066
+8e537610-f49d-4291-a356-1bf1240e28b9,235Z00000X,"""Speech, Language and Hearing Service Providers""; Speech-Language Pathologist",oid:2.16.840.1.114222.4.11.1066
+8e537610-f49d-4291-a356-1bf1240e28b9,235Z00000X,"""Speech, Language and Hearing Service Providers""; Speech-Language Pathologist",oid:2.16.840.1.114222.4.11.1066
+fd00668d-1175-4359-bbee-e26002bfa411,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+fd00668d-1175-4359-bbee-e26002bfa411,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+566944e5-ea13-4b70-aa53-083b440c56e4,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+566944e5-ea13-4b70-aa53-083b440c56e4,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+5271aae7-6c3a-4e51-bad7-f1cb46ad28e0,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+5271aae7-6c3a-4e51-bad7-f1cb46ad28e0,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+0bc2f1d2-6f4b-42f6-80dd-9b408cb4e817,207X00000X,Allopathic & Osteopathic Physicians; Orthopaedic Surgery,oid:2.16.840.1.114222.4.11.1066
+0bc2f1d2-6f4b-42f6-80dd-9b408cb4e817,207X00000X,Allopathic & Osteopathic Physicians; Orthopaedic Surgery,oid:2.16.840.1.114222.4.11.1066
+92f33548-0a83-4116-a600-63eec1956597,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+92f33548-0a83-4116-a600-63eec1956597,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+92f33548-0a83-4116-a600-63eec1956597,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+92f33548-0a83-4116-a600-63eec1956597,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+92f33548-0a83-4116-a600-63eec1956597,152WV0400X,"Eye and Vision Services Providers; Optometrist, Vision Therapy",oid:2.16.840.1.114222.4.11.1066
+92f33548-0a83-4116-a600-63eec1956597,152WV0400X,"Eye and Vision Services Providers; Optometrist, Vision Therapy",oid:2.16.840.1.114222.4.11.1066
+92f33548-0a83-4116-a600-63eec1956597,152WV0400X,"Eye and Vision Services Providers; Optometrist, Vision Therapy",oid:2.16.840.1.114222.4.11.1066
+92f33548-0a83-4116-a600-63eec1956597,152WV0400X,"Eye and Vision Services Providers; Optometrist, Vision Therapy",oid:2.16.840.1.114222.4.11.1066
+cdd0e564-d447-419c-bc89-9076b01b3a24,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+cdd0e564-d447-419c-bc89-9076b01b3a24,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+cdd0e564-d447-419c-bc89-9076b01b3a24,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+cdd0e564-d447-419c-bc89-9076b01b3a24,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+cdd0e564-d447-419c-bc89-9076b01b3a24,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+cdd0e564-d447-419c-bc89-9076b01b3a24,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+08c06cb9-c145-42aa-b243-f24087ddb956,204E00000X,Allopathic & Osteopathic Physicians; Oral & Maxillofacial Surgery,oid:2.16.840.1.114222.4.11.1066
+08c06cb9-c145-42aa-b243-f24087ddb956,204E00000X,Allopathic & Osteopathic Physicians; Oral & Maxillofacial Surgery,oid:2.16.840.1.114222.4.11.1066
+08c06cb9-c145-42aa-b243-f24087ddb956,204E00000X,Allopathic & Osteopathic Physicians; Oral & Maxillofacial Surgery,oid:2.16.840.1.114222.4.11.1066
+08c06cb9-c145-42aa-b243-f24087ddb956,204E00000X,Allopathic & Osteopathic Physicians; Oral & Maxillofacial Surgery,oid:2.16.840.1.114222.4.11.1066
+08c06cb9-c145-42aa-b243-f24087ddb956,204E00000X,Allopathic & Osteopathic Physicians; Oral & Maxillofacial Surgery,oid:2.16.840.1.114222.4.11.1066
+08c06cb9-c145-42aa-b243-f24087ddb956,204E00000X,Allopathic & Osteopathic Physicians; Oral & Maxillofacial Surgery,oid:2.16.840.1.114222.4.11.1066
+9982d55d-1e69-43dc-8f29-8e3b86796132,225X00000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Occupational Therapist",oid:2.16.840.1.114222.4.11.1066
+9982d55d-1e69-43dc-8f29-8e3b86796132,225X00000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Occupational Therapist",oid:2.16.840.1.114222.4.11.1066
+1752d11d-a43c-4f4a-b9dd-d2c91b9cc2b3,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+1752d11d-a43c-4f4a-b9dd-d2c91b9cc2b3,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+ef370183-3e36-481a-9cc3-acd7d68834a3,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+ef370183-3e36-481a-9cc3-acd7d68834a3,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+aede2473-11c7-412f-9f4f-365abc809be2,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+aede2473-11c7-412f-9f4f-365abc809be2,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+aede2473-11c7-412f-9f4f-365abc809be2,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+aede2473-11c7-412f-9f4f-365abc809be2,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+30992dbf-6c94-4b73-b8e7-81a6033a0b23,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+30992dbf-6c94-4b73-b8e7-81a6033a0b23,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+30992dbf-6c94-4b73-b8e7-81a6033a0b23,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+30992dbf-6c94-4b73-b8e7-81a6033a0b23,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+0c5e70a8-5999-4318-b25c-42208afa6bf2,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+0c5e70a8-5999-4318-b25c-42208afa6bf2,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+5cfad549-bae6-4a75-a14c-f39bebc8c8e3,207V00000X,Allopathic & Osteopathic Physicians; Obstetrics & Gynecology,oid:2.16.840.1.114222.4.11.1066
+5cfad549-bae6-4a75-a14c-f39bebc8c8e3,207V00000X,Allopathic & Osteopathic Physicians; Obstetrics & Gynecology,oid:2.16.840.1.114222.4.11.1066
+5cfad549-bae6-4a75-a14c-f39bebc8c8e3,207VE0102X,"Allopathic & Osteopathic Physicians; Obstetrics & Gynecology, Reproductive Endocrinology",oid:2.16.840.1.114222.4.11.1066
+5cfad549-bae6-4a75-a14c-f39bebc8c8e3,207VE0102X,"Allopathic & Osteopathic Physicians; Obstetrics & Gynecology, Reproductive Endocrinology",oid:2.16.840.1.114222.4.11.1066
+4776237b-2fcf-4481-ba1c-eecdd7cbb77f,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+4776237b-2fcf-4481-ba1c-eecdd7cbb77f,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+4776237b-2fcf-4481-ba1c-eecdd7cbb77f,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+4776237b-2fcf-4481-ba1c-eecdd7cbb77f,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+30b0a1a2-cc58-4ee2-ba79-f7a39c025d37,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+30b0a1a2-cc58-4ee2-ba79-f7a39c025d37,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+30b0a1a2-cc58-4ee2-ba79-f7a39c025d37,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+30b0a1a2-cc58-4ee2-ba79-f7a39c025d37,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+468c9229-7541-4b38-a266-ab0b62d529ca,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+468c9229-7541-4b38-a266-ab0b62d529ca,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+468c9229-7541-4b38-a266-ab0b62d529ca,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+468c9229-7541-4b38-a266-ab0b62d529ca,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+d0cdbe81-f668-4e2e-b4df-8c1aba36e236,207N00000X,Allopathic & Osteopathic Physicians; Dermatology,oid:2.16.840.1.114222.4.11.1066
+d0cdbe81-f668-4e2e-b4df-8c1aba36e236,207N00000X,Allopathic & Osteopathic Physicians; Dermatology,oid:2.16.840.1.114222.4.11.1066
+d0cdbe81-f668-4e2e-b4df-8c1aba36e236,207ND0900X,"Allopathic & Osteopathic Physicians; Dermatology, Dermatopathology",oid:2.16.840.1.114222.4.11.1066
+d0cdbe81-f668-4e2e-b4df-8c1aba36e236,207ND0900X,"Allopathic & Osteopathic Physicians; Dermatology, Dermatopathology",oid:2.16.840.1.114222.4.11.1066
+7b5d786b-a721-4914-95f7-4365e0546c9d,208D00000X,Allopathic & Osteopathic Physicians; General Practice,oid:2.16.840.1.114222.4.11.1066
+7b5d786b-a721-4914-95f7-4365e0546c9d,208D00000X,Allopathic & Osteopathic Physicians; General Practice,oid:2.16.840.1.114222.4.11.1066
+8891b59e-fbe2-4ee1-afb7-bc2d24b51757,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+8891b59e-fbe2-4ee1-afb7-bc2d24b51757,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+f87d9bc3-fbed-4a4b-b0c5-d018ea5e6424,207P00000X,Allopathic & Osteopathic Physicians; Emergency Medicine,oid:2.16.840.1.114222.4.11.1066
+f87d9bc3-fbed-4a4b-b0c5-d018ea5e6424,207P00000X,Allopathic & Osteopathic Physicians; Emergency Medicine,oid:2.16.840.1.114222.4.11.1066
+f87d9bc3-fbed-4a4b-b0c5-d018ea5e6424,2081S0010X,"Allopathic & Osteopathic Physicians; Physical Medicine & Rehabilitation, Sports Medicine",oid:2.16.840.1.114222.4.11.1066
+f87d9bc3-fbed-4a4b-b0c5-d018ea5e6424,2081S0010X,"Allopathic & Osteopathic Physicians; Physical Medicine & Rehabilitation, Sports Medicine",oid:2.16.840.1.114222.4.11.1066
+5f88036f-6d87-4ac2-90f7-23d8adce5f6b,2084P0800X,"Allopathic & Osteopathic Physicians; Psychiatry & Neurology, Psychiatry",oid:2.16.840.1.114222.4.11.1066
+5f88036f-6d87-4ac2-90f7-23d8adce5f6b,2084P0800X,"Allopathic & Osteopathic Physicians; Psychiatry & Neurology, Psychiatry",oid:2.16.840.1.114222.4.11.1066
+e0397863-7832-450f-a525-c8c1fdca7988,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+e0397863-7832-450f-a525-c8c1fdca7988,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+90e0b64a-cbc5-4b54-9631-77395c85dbcc,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+90e0b64a-cbc5-4b54-9631-77395c85dbcc,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+90e0b64a-cbc5-4b54-9631-77395c85dbcc,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+90e0b64a-cbc5-4b54-9631-77395c85dbcc,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+90e0b64a-cbc5-4b54-9631-77395c85dbcc,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+90e0b64a-cbc5-4b54-9631-77395c85dbcc,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+059b330c-a872-40ba-a5cc-5ed5a136714d,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+059b330c-a872-40ba-a5cc-5ed5a136714d,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+00a7f90e-80d5-4e9f-b690-8c4cd44475e3,208000000X,Allopathic & Osteopathic Physicians; Pediatrics,oid:2.16.840.1.114222.4.11.1066
+00a7f90e-80d5-4e9f-b690-8c4cd44475e3,208000000X,Allopathic & Osteopathic Physicians; Pediatrics,oid:2.16.840.1.114222.4.11.1066
+00a7f90e-80d5-4e9f-b690-8c4cd44475e3,261QR1300X,"Ambulatory Health Care Facilities; Clinic/Center, Rural Health",oid:2.16.840.1.114222.4.11.1066
+00a7f90e-80d5-4e9f-b690-8c4cd44475e3,261QR1300X,"Ambulatory Health Care Facilities; Clinic/Center, Rural Health",oid:2.16.840.1.114222.4.11.1066
+2c7e671a-ec53-41e9-a9ec-28100a68fa51,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+2c7e671a-ec53-41e9-a9ec-28100a68fa51,1041C0700X,"Behavioral Health & Social Service Providers; Social Worker, Clinical",oid:2.16.840.1.114222.4.11.1066
+e3f963dc-7d33-41c0-b891-629ef7234db9,103T00000X,Behavioral Health & Social Service Providers; Psychologist,oid:2.16.840.1.114222.4.11.1066
+e3f963dc-7d33-41c0-b891-629ef7234db9,103T00000X,Behavioral Health & Social Service Providers; Psychologist,oid:2.16.840.1.114222.4.11.1066
+31743a97-ee1b-4752-8b37-f5114b90d28e,207Y00000X,Allopathic & Osteopathic Physicians; Otolaryngology,oid:2.16.840.1.114222.4.11.1066
+31743a97-ee1b-4752-8b37-f5114b90d28e,207Y00000X,Allopathic & Osteopathic Physicians; Otolaryngology,oid:2.16.840.1.114222.4.11.1066
+31743a97-ee1b-4752-8b37-f5114b90d28e,207Y00000X,Allopathic & Osteopathic Physicians; Otolaryngology,oid:2.16.840.1.114222.4.11.1066
+31743a97-ee1b-4752-8b37-f5114b90d28e,207Y00000X,Allopathic & Osteopathic Physicians; Otolaryngology,oid:2.16.840.1.114222.4.11.1066
+477283cf-17a0-415e-a591-95a831227566,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+477283cf-17a0-415e-a591-95a831227566,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+c3faefe2-6b71-444f-a42d-847183fab753,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+c3faefe2-6b71-444f-a42d-847183fab753,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+2b081246-e655-44ae-bb3b-17f65d47cc54,207Y00000X,Allopathic & Osteopathic Physicians; Otolaryngology,oid:2.16.840.1.114222.4.11.1066
+2b081246-e655-44ae-bb3b-17f65d47cc54,207Y00000X,Allopathic & Osteopathic Physicians; Otolaryngology,oid:2.16.840.1.114222.4.11.1066
+2b081246-e655-44ae-bb3b-17f65d47cc54,207YP0228X,"Allopathic & Osteopathic Physicians; Otolaryngology, Pediatric Otolaryngology",oid:2.16.840.1.114222.4.11.1066
+2b081246-e655-44ae-bb3b-17f65d47cc54,207YP0228X,"Allopathic & Osteopathic Physicians; Otolaryngology, Pediatric Otolaryngology",oid:2.16.840.1.114222.4.11.1066
+aec4ba0f-8b2d-4a99-9b41-6a2f6eb91265,207V00000X,Allopathic & Osteopathic Physicians; Obstetrics & Gynecology,oid:2.16.840.1.114222.4.11.1066
+aec4ba0f-8b2d-4a99-9b41-6a2f6eb91265,207V00000X,Allopathic & Osteopathic Physicians; Obstetrics & Gynecology,oid:2.16.840.1.114222.4.11.1066
+aec4ba0f-8b2d-4a99-9b41-6a2f6eb91265,207V00000X,Allopathic & Osteopathic Physicians; Obstetrics & Gynecology,oid:2.16.840.1.114222.4.11.1066
+aec4ba0f-8b2d-4a99-9b41-6a2f6eb91265,207V00000X,Allopathic & Osteopathic Physicians; Obstetrics & Gynecology,oid:2.16.840.1.114222.4.11.1066
+aec4ba0f-8b2d-4a99-9b41-6a2f6eb91265,207V00000X,Allopathic & Osteopathic Physicians; Obstetrics & Gynecology,oid:2.16.840.1.114222.4.11.1066
+aec4ba0f-8b2d-4a99-9b41-6a2f6eb91265,207V00000X,Allopathic & Osteopathic Physicians; Obstetrics & Gynecology,oid:2.16.840.1.114222.4.11.1066
+453875cf-12a0-4671-86bb-0f2a14e83ecf,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+453875cf-12a0-4671-86bb-0f2a14e83ecf,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+453875cf-12a0-4671-86bb-0f2a14e83ecf,207RN0300X,"Allopathic & Osteopathic Physicians; Internal Medicine, Nephrology",oid:2.16.840.1.114222.4.11.1066
+453875cf-12a0-4671-86bb-0f2a14e83ecf,207RN0300X,"Allopathic & Osteopathic Physicians; Internal Medicine, Nephrology",oid:2.16.840.1.114222.4.11.1066
+a6d9211b-5b75-4645-95f2-f273b00c40da,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+a6d9211b-5b75-4645-95f2-f273b00c40da,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+a6d9211b-5b75-4645-95f2-f273b00c40da,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+a6d9211b-5b75-4645-95f2-f273b00c40da,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+3dcb00ae-ca9c-4f64-9ab7-c388c39decc3,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+3dcb00ae-ca9c-4f64-9ab7-c388c39decc3,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+d1a90de3-5815-4007-857e-9128ab5e3123,208600000X,Allopathic & Osteopathic Physicians; Surgery,oid:2.16.840.1.114222.4.11.1066
+d1a90de3-5815-4007-857e-9128ab5e3123,208600000X,Allopathic & Osteopathic Physicians; Surgery,oid:2.16.840.1.114222.4.11.1066
+d1a90de3-5815-4007-857e-9128ab5e3123,2086S0129X,"Allopathic & Osteopathic Physicians; Surgery, Vascular Surgery",oid:2.16.840.1.114222.4.11.1066
+d1a90de3-5815-4007-857e-9128ab5e3123,2086S0129X,"Allopathic & Osteopathic Physicians; Surgery, Vascular Surgery",oid:2.16.840.1.114222.4.11.1066
+d02a83a2-2156-46e6-8272-95aa22077eec,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+d02a83a2-2156-46e6-8272-95aa22077eec,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+bc419c21-6704-4ffc-a10e-ff5a7507db99,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+bc419c21-6704-4ffc-a10e-ff5a7507db99,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+f2417c1e-65f6-41aa-bdf2-f23d5537d3bb,2084P0800X,"Allopathic & Osteopathic Physicians; Psychiatry & Neurology, Psychiatry",oid:2.16.840.1.114222.4.11.1066
+f2417c1e-65f6-41aa-bdf2-f23d5537d3bb,2084P0800X,"Allopathic & Osteopathic Physicians; Psychiatry & Neurology, Psychiatry",oid:2.16.840.1.114222.4.11.1066
+f2417c1e-65f6-41aa-bdf2-f23d5537d3bb,2084P0805X,"Allopathic & Osteopathic Physicians; Psychiatry & Neurology, Geriatric Psychiatry",oid:2.16.840.1.114222.4.11.1066
+f2417c1e-65f6-41aa-bdf2-f23d5537d3bb,2084P0805X,"Allopathic & Osteopathic Physicians; Psychiatry & Neurology, Geriatric Psychiatry",oid:2.16.840.1.114222.4.11.1066
+354cf557-f924-4d49-bd1c-9857b565594c,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+354cf557-f924-4d49-bd1c-9857b565594c,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+57bda955-3688-4762-829e-be37e19a83fd,207RN0300X,"Allopathic & Osteopathic Physicians; Internal Medicine, Nephrology",oid:2.16.840.1.114222.4.11.1066
+57bda955-3688-4762-829e-be37e19a83fd,207RN0300X,"Allopathic & Osteopathic Physicians; Internal Medicine, Nephrology",oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,208000000X,Allopathic & Osteopathic Physicians; Pediatrics,oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,208000000X,Allopathic & Osteopathic Physicians; Pediatrics,oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,208000000X,Allopathic & Osteopathic Physicians; Pediatrics,oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,208000000X,Allopathic & Osteopathic Physicians; Pediatrics,oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,208000000X,Allopathic & Osteopathic Physicians; Pediatrics,oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,208000000X,Allopathic & Osteopathic Physicians; Pediatrics,oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,2081S0010X,"Allopathic & Osteopathic Physicians; Physical Medicine & Rehabilitation, Sports Medicine",oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,2081S0010X,"Allopathic & Osteopathic Physicians; Physical Medicine & Rehabilitation, Sports Medicine",oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,2081S0010X,"Allopathic & Osteopathic Physicians; Physical Medicine & Rehabilitation, Sports Medicine",oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,2081S0010X,"Allopathic & Osteopathic Physicians; Physical Medicine & Rehabilitation, Sports Medicine",oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,2081S0010X,"Allopathic & Osteopathic Physicians; Physical Medicine & Rehabilitation, Sports Medicine",oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,2081S0010X,"Allopathic & Osteopathic Physicians; Physical Medicine & Rehabilitation, Sports Medicine",oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,208VP0000X,"Allopathic & Osteopathic Physicians; Pain Medicine, Pain Medicine",oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,208VP0000X,"Allopathic & Osteopathic Physicians; Pain Medicine, Pain Medicine",oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,208VP0000X,"Allopathic & Osteopathic Physicians; Pain Medicine, Pain Medicine",oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,208VP0000X,"Allopathic & Osteopathic Physicians; Pain Medicine, Pain Medicine",oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,208VP0000X,"Allopathic & Osteopathic Physicians; Pain Medicine, Pain Medicine",oid:2.16.840.1.114222.4.11.1066
+39f6951e-8a08-43a9-8f08-034ac033ef01,208VP0000X,"Allopathic & Osteopathic Physicians; Pain Medicine, Pain Medicine",oid:2.16.840.1.114222.4.11.1066
+684e3222-e5c8-4fe5-8be3-d60223d5f39e,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+684e3222-e5c8-4fe5-8be3-d60223d5f39e,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+684e3222-e5c8-4fe5-8be3-d60223d5f39e,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+684e3222-e5c8-4fe5-8be3-d60223d5f39e,363A00000X,Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant,oid:2.16.840.1.114222.4.11.1066
+cb9ae2cb-fd73-4668-abac-07e118e40938,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+cb9ae2cb-fd73-4668-abac-07e118e40938,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+61e3b1d3-fbf8-4751-b1d9-4a0a6171f177,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+61e3b1d3-fbf8-4751-b1d9-4a0a6171f177,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+c1fa2c00-92a4-4dab-893c-7fda7c600900,207QG0300X,"Allopathic & Osteopathic Physicians; Family Medicine, Geriatric Medicine",oid:2.16.840.1.114222.4.11.1066
+c1fa2c00-92a4-4dab-893c-7fda7c600900,207QG0300X,"Allopathic & Osteopathic Physicians; Family Medicine, Geriatric Medicine",oid:2.16.840.1.114222.4.11.1066
+c1fa2c00-92a4-4dab-893c-7fda7c600900,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+c1fa2c00-92a4-4dab-893c-7fda7c600900,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+4e4a56ba-682e-470e-abc3-dcd683aa8761,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+4e4a56ba-682e-470e-abc3-dcd683aa8761,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+4e683c4e-2f0c-4b2a-83e2-0a84479070fc,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+4e683c4e-2f0c-4b2a-83e2-0a84479070fc,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+adff9e99-74dd-46b9-a403-61056f80a168,207Y00000X,Allopathic & Osteopathic Physicians; Otolaryngology,oid:2.16.840.1.114222.4.11.1066
+adff9e99-74dd-46b9-a403-61056f80a168,207Y00000X,Allopathic & Osteopathic Physicians; Otolaryngology,oid:2.16.840.1.114222.4.11.1066
+adff9e99-74dd-46b9-a403-61056f80a168,207Y00000X,Allopathic & Osteopathic Physicians; Otolaryngology,oid:2.16.840.1.114222.4.11.1066
+adff9e99-74dd-46b9-a403-61056f80a168,207Y00000X,Allopathic & Osteopathic Physicians; Otolaryngology,oid:2.16.840.1.114222.4.11.1066
+9de96fa9-0964-4e58-b394-87f7f57b9dba,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+9de96fa9-0964-4e58-b394-87f7f57b9dba,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+9de96fa9-0964-4e58-b394-87f7f57b9dba,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+9de96fa9-0964-4e58-b394-87f7f57b9dba,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+9de96fa9-0964-4e58-b394-87f7f57b9dba,207RE0101X,"Allopathic & Osteopathic Physicians; Internal Medicine, ""Endocrinology, Diabetes & Metabolism""",oid:2.16.840.1.114222.4.11.1066
+9de96fa9-0964-4e58-b394-87f7f57b9dba,207RE0101X,"Allopathic & Osteopathic Physicians; Internal Medicine, ""Endocrinology, Diabetes & Metabolism""",oid:2.16.840.1.114222.4.11.1066
+9de96fa9-0964-4e58-b394-87f7f57b9dba,207RE0101X,"Allopathic & Osteopathic Physicians; Internal Medicine, ""Endocrinology, Diabetes & Metabolism""",oid:2.16.840.1.114222.4.11.1066
+9de96fa9-0964-4e58-b394-87f7f57b9dba,207RE0101X,"Allopathic & Osteopathic Physicians; Internal Medicine, ""Endocrinology, Diabetes & Metabolism""",oid:2.16.840.1.114222.4.11.1066
+3ab6c02e-1fdc-48cb-be5e-a25ca13bb900,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+3ab6c02e-1fdc-48cb-be5e-a25ca13bb900,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+b0f4325e-c9e6-47d7-9654-78365df3603c,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+b0f4325e-c9e6-47d7-9654-78365df3603c,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+5c9f058c-dc1c-4aad-b8c6-680bb0273111,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+5c9f058c-dc1c-4aad-b8c6-680bb0273111,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+5c9f058c-dc1c-4aad-b8c6-680bb0273111,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+5c9f058c-dc1c-4aad-b8c6-680bb0273111,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+5c9f058c-dc1c-4aad-b8c6-680bb0273111,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+5c9f058c-dc1c-4aad-b8c6-680bb0273111,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+5c9f058c-dc1c-4aad-b8c6-680bb0273111,207RC0000X,"Allopathic & Osteopathic Physicians; Internal Medicine, Cardiovascular Disease",oid:2.16.840.1.114222.4.11.1066
+5c9f058c-dc1c-4aad-b8c6-680bb0273111,207RC0000X,"Allopathic & Osteopathic Physicians; Internal Medicine, Cardiovascular Disease",oid:2.16.840.1.114222.4.11.1066
+5c9f058c-dc1c-4aad-b8c6-680bb0273111,207RC0000X,"Allopathic & Osteopathic Physicians; Internal Medicine, Cardiovascular Disease",oid:2.16.840.1.114222.4.11.1066
+5c9f058c-dc1c-4aad-b8c6-680bb0273111,207RC0000X,"Allopathic & Osteopathic Physicians; Internal Medicine, Cardiovascular Disease",oid:2.16.840.1.114222.4.11.1066
+5c9f058c-dc1c-4aad-b8c6-680bb0273111,207RC0000X,"Allopathic & Osteopathic Physicians; Internal Medicine, Cardiovascular Disease",oid:2.16.840.1.114222.4.11.1066
+5c9f058c-dc1c-4aad-b8c6-680bb0273111,207RC0000X,"Allopathic & Osteopathic Physicians; Internal Medicine, Cardiovascular Disease",oid:2.16.840.1.114222.4.11.1066
+c617aab9-b6c1-4000-82fd-43f80bf35430,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+c617aab9-b6c1-4000-82fd-43f80bf35430,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+954a3703-d3d2-4623-b606-db300fa66cc2,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+954a3703-d3d2-4623-b606-db300fa66cc2,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+9a4281ad-589c-441d-8d40-2106cd8c0a1a,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+9a4281ad-589c-441d-8d40-2106cd8c0a1a,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+fc370018-48e8-4fc4-ab04-48fb54d5f557,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+fc370018-48e8-4fc4-ab04-48fb54d5f557,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+fc370018-48e8-4fc4-ab04-48fb54d5f557,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+fc370018-48e8-4fc4-ab04-48fb54d5f557,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+fc370018-48e8-4fc4-ab04-48fb54d5f557,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+fc370018-48e8-4fc4-ab04-48fb54d5f557,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+fc370018-48e8-4fc4-ab04-48fb54d5f557,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+fc370018-48e8-4fc4-ab04-48fb54d5f557,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+fc370018-48e8-4fc4-ab04-48fb54d5f557,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+fc370018-48e8-4fc4-ab04-48fb54d5f557,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+fc370018-48e8-4fc4-ab04-48fb54d5f557,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+fc370018-48e8-4fc4-ab04-48fb54d5f557,225100000X,"""Respiratory, Developmental, Rehabilitative and Restorative Service Providers""; Physical Therapist",oid:2.16.840.1.114222.4.11.1066
+3817e9f2-d294-4120-aa7d-85af6f2c2815,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+3817e9f2-d294-4120-aa7d-85af6f2c2815,207W00000X,Allopathic & Osteopathic Physicians; Ophthalmology,oid:2.16.840.1.114222.4.11.1066
+85cfa527-f9f4-49b6-abb0-65028131234e,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+85cfa527-f9f4-49b6-abb0-65028131234e,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+85cfa527-f9f4-49b6-abb0-65028131234e,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+85cfa527-f9f4-49b6-abb0-65028131234e,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+85cfa527-f9f4-49b6-abb0-65028131234e,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+85cfa527-f9f4-49b6-abb0-65028131234e,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+85cfa527-f9f4-49b6-abb0-65028131234e,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+85cfa527-f9f4-49b6-abb0-65028131234e,207Q00000X,Allopathic & Osteopathic Physicians; Family Medicine,oid:2.16.840.1.114222.4.11.1066
+2a060846-47b3-4ac1-9633-a55a7e94a13a,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+2a060846-47b3-4ac1-9633-a55a7e94a13a,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+2a060846-47b3-4ac1-9633-a55a7e94a13a,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+2a060846-47b3-4ac1-9633-a55a7e94a13a,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+5098ff84-e013-432b-9adf-3ddae5759d3d,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+5098ff84-e013-432b-9adf-3ddae5759d3d,363LF0000X,"Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family",oid:2.16.840.1.114222.4.11.1066
+d0fe4f4a-7e0e-4f8b-9c73-896aacaac363,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+d0fe4f4a-7e0e-4f8b-9c73-896aacaac363,152W00000X,Eye and Vision Services Providers; Optometrist,oid:2.16.840.1.114222.4.11.1066
+d0fe4f4a-7e0e-4f8b-9c73-896aacaac363,152WV0400X,"Eye and Vision Services Providers; Optometrist, Vision Therapy",oid:2.16.840.1.114222.4.11.1066
+d0fe4f4a-7e0e-4f8b-9c73-896aacaac363,152WV0400X,"Eye and Vision Services Providers; Optometrist, Vision Therapy",oid:2.16.840.1.114222.4.11.1066
+28be8291-878d-48c6-ba0a-79de02ec72ce,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+28be8291-878d-48c6-ba0a-79de02ec72ce,106H00000X,Behavioral Health & Social Service Providers; Marriage & Family Therapist,oid:2.16.840.1.114222.4.11.1066
+6fb8aa9b-fc53-45ac-a967-cf78062dec59,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+6fb8aa9b-fc53-45ac-a967-cf78062dec59,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+6fb8aa9b-fc53-45ac-a967-cf78062dec59,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+6fb8aa9b-fc53-45ac-a967-cf78062dec59,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+6fb8aa9b-fc53-45ac-a967-cf78062dec59,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066
+6fb8aa9b-fc53-45ac-a967-cf78062dec59,207R00000X,Allopathic & Osteopathic Physicians; Internal Medicine,oid:2.16.840.1.114222.4.11.1066

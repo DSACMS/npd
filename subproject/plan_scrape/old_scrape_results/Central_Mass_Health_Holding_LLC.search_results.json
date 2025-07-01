@@ -1,0 +1,264 @@
+{
+  "search_metadata": {
+    "id": "6826c21d2f47f8603cf09685",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/998b58250898084a/6826c21d2f47f8603cf09685.json",
+    "created_at": "2025-05-16 04:42:05 UTC",
+    "processed_at": "2025-05-16 04:42:05 UTC",
+    "google_url": "https://www.google.com/search?q=Central+Mass+Health+Holding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Central+Mass+Health+Holding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/998b58250898084a/6826c21d2f47f8603cf09685.html",
+    "total_time_taken": 0.95
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Central Mass Health Holding LLC Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Central Mass Health Holding LLC Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 75,
+    "time_taken_displayed": 0.19,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Health Information Technology Council Report to the ...",
+      "link": "https://malegislature.gov/Bills/192/HD4164.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://malegislature.gov/Bills/192/HD4164.pdf&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQFnoECBIQAQ",
+      "displayed_link": "https://malegislature.gov \u203a Bills",
+      "favicon": "https://serpapi.com/searches/6826c21d2f47f8603cf09685/images/b9673dd4cff919eb8619a2140b5e3a0845eddcb4a73a7a6806edfccb53e5c70d.jpeg",
+      "snippet": "Service options being considered include a FHIR API to. Provider Directory, FHIR Exchange and Routing Services and FHIR-HL7 Broker and Message. Transformation ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory",
+        "FHIR",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 24
+          },
+          "extensions": [
+            "24 pages"
+          ]
+        }
+      },
+      "source": "General Court of the Commonwealth of Massachusetts (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "2020 Annual Report (DOCX)",
+      "link": "https://www.mass.gov/doc/2020-annual-report-1/download",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mass.gov/doc/2020-annual-report-1/download&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQFnoECB8QAQ",
+      "displayed_link": "https://www.mass.gov \u203a doc \u203a download",
+      "favicon": "https://serpapi.com/searches/6826c21d2f47f8603cf09685/images/b9673dd4cff919eb8619a2140b5e3a0841e3c6f901b0763a2026571e84c6f0b9.png",
+      "snippet": "Service options being considered include a FHIR API to Provider Directory, FHIR Exchange and Routing Services and FHIR-HL7 Broker and Message Transformation ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory",
+        "FHIR",
+        "FHIR"
+      ],
+      "source": "Mass.gov"
+    },
+    {
+      "position": 3,
+      "title": "PARTICIPATING ADDENDUM MMIS-PROVIDER SERVICES ...",
+      "link": "https://s3-us-west-2.amazonaws.com/naspovaluepoint/1634709128_MMIS%20HHS%20Technology%20Group%20LLC%20South%20Dakota.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://s3-us-west-2.amazonaws.com/naspovaluepoint/1634709128_MMIS%2520HHS%2520Technology%2520Group%2520LLC%2520South%2520Dakota.pdf&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQFnoECBUQAQ",
+      "displayed_link": "https://s3-us-west-2.amazonaws.com \u203a 16347091...",
+      "favicon": "https://serpapi.com/searches/6826c21d2f47f8603cf09685/images/b9673dd4cff919eb8619a2140b5e3a086092e103e6f598e4b3050c694532cc9b.png",
+      "date": "Mar 7, 2023",
+      "snippet": "... Provider Directory Mapping (FHIR). 1 day. Fri 11/26/21. Fri 11/26/21. 6. Provider Directory Demo (FHIR). 1 day. Fri 10/22/21. Fri 10/22/21. 7.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Amazon.com"
+    },
+    {
+      "position": 4,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQFnoECBoQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/6826c21d2f47f8603cf09685/images/b9673dd4cff919eb8619a2140b5e3a086804d6c788f075a1891fd42d56eeb492.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Central"
+      ],
+      "must_include": {
+        "word": "Central",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=%22Central%22+Mass+Health+Holding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQ5t4CegQIIBAB"
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 5,
+      "title": "Policy Update - CMS Releases Advancing Interoperability ...",
+      "link": "https://www.mcdermottplus.com/wp-content/uploads/2024/01/Prior-Authorization-Final-Rule-Summary-McDermottConsulting.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mcdermottplus.com/wp-content/uploads/2024/01/Prior-Authorization-Final-Rule-Summary-McDermottConsulting.pdf&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQFnoECBgQAQ",
+      "displayed_link": "https://www.mcdermottplus.com \u203a 2024/01 \u203a Pri...",
+      "favicon": "https://serpapi.com/searches/6826c21d2f47f8603cf09685/images/b9673dd4cff919eb8619a2140b5e3a08d6413fa6baf7cfc625236237fb7ba67d.png",
+      "date": "Jan 17, 2024",
+      "snippet": "... API meet certain technical standards: HL7 FHIR Release. 4.0.1, US ... Provider Access, Provider Directory, Payer-to-Payer and Prior Authorization ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 12
+          },
+          "extensions": [
+            "12 pages"
+          ]
+        }
+      },
+      "source": "McDermott+"
+    },
+    {
+      "position": 6,
+      "title": "Florida Health Care Connections (FX)",
+      "link": "https://ahca.myflorida.com/content/download/24936/file/FX_Special_Assessment_Final_Report_FX-D7_6.20.24.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ahca.myflorida.com/content/download/24936/file/FX_Special_Assessment_Final_Report_FX-D7_6.20.24.pdf&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQFnoECBwQAQ",
+      "displayed_link": "https://ahca.myflorida.com \u203a download \u203a file \u203a F...",
+      "favicon": "https://serpapi.com/searches/6826c21d2f47f8603cf09685/images/b9673dd4cff919eb8619a2140b5e3a0810bc85aad8e66ac4588bf84dfb9bd2a0.png",
+      "date": "Jun 20, 2024",
+      "snippet": "... Provider Directory API making available information about enrolled ... FHIR or Fast Healthcare Information Retrieval API) across the.",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "Healthcare",
+        "API"
+      ],
+      "source": "Florida Agency for Health Care Administration"
+    },
+    {
+      "position": 7,
+      "title": "OHS 2024 Health IT Annual Report - CT.gov",
+      "link": "https://portal.ct.gov/ohs/-/media/ohs/health-it-advisory-council/publications/ohs-2024-health-it-annual-report.pdf?rev=a6ee38ab896e4ff3b16dc6b85434896f",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://portal.ct.gov/ohs/-/media/ohs/health-it-advisory-council/publications/ohs-2024-health-it-annual-report.pdf%3Frev%3Da6ee38ab896e4ff3b16dc6b85434896f&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQFnoECBYQAQ",
+      "displayed_link": "https://portal.ct.gov \u203a media \u203a ohs \u203a publications",
+      "favicon": "https://serpapi.com/searches/6826c21d2f47f8603cf09685/images/b9673dd4cff919eb8619a2140b5e3a0857df6e3a94811c56f7d2ead537a894fa.png",
+      "date": "Mar 28, 2025",
+      "snippet": "... FHIR) with security labels for sensitive health data mapped to the USCDI v. ... provider directory application programming interfaces (APIs). In ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "health",
+        "provider directory",
+        "APIs"
+      ],
+      "source": "CT.GOV-Connecticut's Official State Website (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "RFP Questions and Clarifications Memorandum",
+      "link": "https://rfps.its.ms.gov/Procurement/rfps/4243/4243vendqamemo.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://rfps.its.ms.gov/Procurement/rfps/4243/4243vendqamemo.pdf&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQFnoECDMQAQ",
+      "displayed_link": "https://rfps.its.ms.gov \u203a Procurement \u203a rfps",
+      "date": "Apr 18, 2023",
+      "snippet": "connections from their existing Web Services interfaces to Fast Healthcare. Interoperability Resources (FHIR) APIs. ... and Provider Directory API ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "APIs",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 105
+          },
+          "extensions": [
+            "105 pages"
+          ]
+        }
+      },
+      "source": "State of Mississippi (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "STATE OF MICHIGAN CENTRAL PROCUREMENT ...",
+      "link": "https://www.michigan.gov/-/media/Project/Websites/dtmb/Procurement/Contracts/Folder26/6200168_CN19toPresent.pdf?rev=a06c21da5dd84766a2e505518e5400f4",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.michigan.gov/-/media/Project/Websites/dtmb/Procurement/Contracts/Folder26/6200168_CN19toPresent.pdf%3Frev%3Da06c21da5dd84766a2e505518e5400f4&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQFnoECDcQAQ",
+      "displayed_link": "https://www.michigan.gov \u203a Contracts \u203a Folder26",
+      "favicon": "https://serpapi.com/searches/6826c21d2f47f8603cf09685/images/b9673dd4cff919eb8619a2140b5e3a08db95d5a99479aa5b886ca12869f18ede.png",
+      "date": "Sep 30, 2011",
+      "snippet": "... FHIR module and related functionality are not impacted. Successful ... Provider Directory. \u2022 Patient Access. Type text here. Page 108. 56.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "State of Michigan (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "Board of Governors Meeting",
+      "link": "https://www.lacare.org/sites/default/files/20220728%20Board%20of%20Governors%20Meeting%20Packet.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/20220728%2520Board%2520of%2520Governors%2520Meeting%2520Packet.pdf&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQFnoECDEQAQ",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/6826c21d2f47f8603cf09685/images/b9673dd4cff919eb8619a2140b5e3a088ed798998ca174ddb61fe15b44d6f65d.png",
+      "date": "Jul 28, 2022",
+      "snippet": "Complete test of Fast Healthcare Interoperability Resources (FHIR) APIs to external partners. ... complete Provider Directory. This allows ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "APIs",
+        "Provider Directory"
+      ],
+      "source": "L.A. Care Health Plan"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Central+Mass+Health+Holding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=HsImaPndGJebkdUPiMm0qAc&start=10&sa=N&sstk=Af40H4UiHHlDG9Fhcr6KKZ3o2qmTqMkTkYjGOV8nciqMpKYg6vZVNqDgTcPKrf6ZVVjyvYeYlYe-xiQSVVb2fv0qmE56HznVfj_ZbQ&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQ8NMDegQICRAO",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Central+Mass+Health+Holding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=HsImaPndGJebkdUPiMm0qAc&start=10&sa=N&sstk=Af40H4UiHHlDG9Fhcr6KKZ3o2qmTqMkTkYjGOV8nciqMpKYg6vZVNqDgTcPKrf6ZVVjyvYeYlYe-xiQSVVb2fv0qmE56HznVfj_ZbQ&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=Central+Mass+Health+Holding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=HsImaPndGJebkdUPiMm0qAc&start=20&sa=N&sstk=Af40H4UiHHlDG9Fhcr6KKZ3o2qmTqMkTkYjGOV8nciqMpKYg6vZVNqDgTcPKrf6ZVVjyvYeYlYe-xiQSVVb2fv0qmE56HznVfj_ZbQ&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=Central+Mass+Health+Holding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=HsImaPndGJebkdUPiMm0qAc&start=30&sa=N&sstk=Af40H4UiHHlDG9Fhcr6KKZ3o2qmTqMkTkYjGOV8nciqMpKYg6vZVNqDgTcPKrf6ZVVjyvYeYlYe-xiQSVVb2fv0qmE56HznVfj_ZbQ&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=Central+Mass+Health+Holding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=HsImaPndGJebkdUPiMm0qAc&start=40&sa=N&sstk=Af40H4UiHHlDG9Fhcr6KKZ3o2qmTqMkTkYjGOV8nciqMpKYg6vZVNqDgTcPKrf6ZVVjyvYeYlYe-xiQSVVb2fv0qmE56HznVfj_ZbQ&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=Central+Mass+Health+Holding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=HsImaPndGJebkdUPiMm0qAc&start=50&sa=N&sstk=Af40H4UiHHlDG9Fhcr6KKZ3o2qmTqMkTkYjGOV8nciqMpKYg6vZVNqDgTcPKrf6ZVVjyvYeYlYe-xiQSVVb2fv0qmE56HznVfj_ZbQ&ved=2ahUKEwj55JG8lqeNAxWXTaQEHYgkDXUQ8tMDegQICRAM"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Central+Mass+Health+Holding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Central+Mass+Health+Holding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Central+Mass+Health+Holding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Central+Mass+Health+Holding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Central+Mass+Health+Holding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Central+Mass+Health+Holding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Central+Mass+Health+Holding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50"
+    }
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "search_metadata": {
+    "id": "6826c3b2dc74d00826490c1a",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/29b9a5bf4a718960/6826c3b2dc74d00826490c1a.json",
+    "created_at": "2025-05-16 04:48:50 UTC",
+    "processed_at": "2025-05-16 04:48:50 UTC",
+    "google_url": "https://www.google.com/search?q=Singh+Holdings+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Singh+Holdings+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/29b9a5bf4a718960/6826c3b2dc74d00826490c1a.html",
+    "total_time_taken": 0.9
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Singh Holdings LLC Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Singh Holdings LLC Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 37,
+    "time_taken_displayed": 0.23,
+    "organic_results_state": "Results for exact spelling",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    }
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Da Vinci Video Presentations",
+      "link": "https://confluence.hl7.org/spaces/DVP/pages/78678039/Da+Vinci+Video+Presentations",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/spaces/DVP/pages/78678039/Da%2BVinci%2BVideo%2BPresentations&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQFnoECCwQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a spaces \u203a DVP \u203a pages \u203a Da+...",
+      "favicon": "https://serpapi.com/searches/6826c3b2dc74d00826490c1a/images/0bf729b0670266a811a816f80f80afa781b3429a0180dc9d100555dfaaea7727.png",
+      "snippet": "... FHIR API landscape around people, processes and data. Learn about the ... Provider Directory: Building a Solid Foundation for the Provider Directory API ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "Holdings",
+        "Advantage"
+      ],
+      "source": "HL7 - Confluence"
+    },
+    {
+      "position": 2,
+      "title": "Revised Draft Health Information Technology Advisory ...",
+      "link": "https://www.healthit.gov/sites/default/files/facas/2020-02-19_Revised_Draft%20HITAC%20Annual%20Report%20for%20FY19.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/facas/2020-02-19_Revised_Draft%2520HITAC%2520Annual%2520Report%2520for%2520FY19.pdf&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQFnoECB0QAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a facas",
+      "favicon": "https://serpapi.com/searches/6826c3b2dc74d00826490c1a/images/0bf729b0670266a811a816f80f80afa73f184cc3e936662cc2e2781c1aa85160.jpeg",
+      "date": "Feb 19, 2020",
+      "snippet": "\u2022 Publish available electronic provider directory ... generation HL7\u00ae FHIR\u00ae-based API to support the 2015 Edition API requirements.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR",
+        "API",
+        "API"
+      ],
+      "missing": [
+        "Holdings"
+      ],
+      "must_include": {
+        "word": "Holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Singh+%22Holdings%22+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQ5t4CegQIJBAB"
+      },
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Attachments B, C, D, E, G, H, I.docx",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/Attachments%20B,%20C,%20D,%20E,%20G,%20H,%20I.docx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/Attachments%2520B,%2520C,%2520D,%2520E,%2520G,%2520H,%2520I.docx&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQFnoECBoQAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a pdf \u203a Ellkay",
+      "favicon": "https://serpapi.com/searches/6826c3b2dc74d00826490c1a/images/0bf729b0670266a811a816f80f80afa79ebd174d97fff567d457f885a3f3e6fc.png",
+      "snippet": "ELLKAY's solutions meet FHIR standards and contains all data elements that are included as a part of the USCDI Core patient profile. As new data elements are ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "missing": [
+        "Holdings"
+      ],
+      "must_include": {
+        "word": "Holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Singh+%22Holdings%22+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQ5t4CegQIIRAB"
+      },
+      "source": "Gobierno de Puerto Rico (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "California State Medi-Cal Health Information Technology Plan ...",
+      "link": "https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQFnoECBkQAQ",
+      "displayed_link": "https://www.dhcs.ca.gov \u203a Documents \u203a OHIT \u203a C...",
+      "favicon": "https://serpapi.com/searches/6826c3b2dc74d00826490c1a/images/0bf729b0670266a811a816f80f80afa7004365687723b1b88e7ead43687c038a.png",
+      "date": "Mar 1, 2022",
+      "snippet": "requirements to use Fast Healthcare Interoperability Resources (FHIR) for certification, ... and provider directory. The only service area which ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 246
+          },
+          "extensions": [
+            "246 pages"
+          ]
+        }
+      },
+      "source": "DHCS (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "ELLKAY Redacted Technical Proposal.pdf",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/ELLKAY%20Redacted%20Technical%20Proposal.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/ELLKAY%2520Redacted%2520Technical%2520Proposal.pdf&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQFnoECBwQAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a 2024-PRMP-HIE-001",
+      "favicon": "https://serpapi.com/searches/6826c3b2dc74d00826490c1a/images/0bf729b0670266a811a816f80f80afa7a2dec211d5a2768eea313c88a22830e8.png",
+      "date": "Jul 7, 2024",
+      "snippet": "Current FHIR API capabilities o ELLKAY has currently enabled the following R4 FHIR APIs: ... Enable FHIR Connectivity for a Pilot Group.",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "FHIR",
+        "FHIR",
+        "Group"
+      ],
+      "missing": [
+        "Holdings"
+      ],
+      "must_include": {
+        "word": "Holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Singh+%22Holdings%22+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQ5t4CegQIIhAB"
+      },
+      "source": "Gobierno de Puerto Rico (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "ncvhs - National Committee on Vital and Health Statistics",
+      "link": "https://ncvhs.hhs.gov/wp-content/uploads/2023/10/NCVHS-Standards-Subcommittee-Hearing-Summary-Jan-18-19-2023-FINAL-508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ncvhs.hhs.gov/wp-content/uploads/2023/10/NCVHS-Standards-Subcommittee-Hearing-Summary-Jan-18-19-2023-FINAL-508.pdf&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQFnoECB4QAQ",
+      "displayed_link": "https://ncvhs.hhs.gov \u203a uploads \u203a 2023/10 \u203a NCV...",
+      "favicon": "https://serpapi.com/searches/6826c3b2dc74d00826490c1a/images/0bf729b0670266a811a816f80f80afa7d6758f4c64e3c0f0e5533916a64839c3.png",
+      "date": "Oct 6, 2023",
+      "snippet": "... Provider Directory APIs, which enabled ... CMS has proposed the development of an FHIR-based API requirement that automates the process for ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 67
+          },
+          "extensions": [
+            "67 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Singh+Holdings+LLC+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQ5t4CegQIIBAB"
+      },
+      "source": "National Committee on Vital and Health Statistics (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "interoperable health information: Topics by ...",
+      "link": "https://www.science.gov/topicpages/i/interoperable+health+information.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.science.gov/topicpages/i/interoperable%2Bhealth%2Binformation.html&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQFnoECDIQAQ",
+      "displayed_link": "https://www.science.gov \u203a topicpages \u203a interoperable+he...",
+      "favicon": "https://serpapi.com/searches/6826c3b2dc74d00826490c1a/images/0bf729b0670266a811a816f80f80afa77cfdc2831401dc42ed2f7e40fc8eb0fa.png",
+      "snippet": "Signaling our adoption of the emerging FHIR standard, we called the new platform SMART on FHIR. ... provider directory; quantifying use, cost, and clinical ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "provider directory"
+      ],
+      "missing": [
+        "LLC"
+      ],
+      "must_include": {
+        "word": "LLC",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Singh+Holdings+%22LLC%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQ5t4CegQINhAB"
+      },
+      "source": "Science.gov"
+    },
+    {
+      "position": 8,
+      "title": "Vital Directions - for Health & Health Care",
+      "link": "https://nam.edu/wp-content/uploads/2018/02/Vital-Directions-for-Health-and-Health-Care-Final-Publication-022718.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nam.edu/wp-content/uploads/2018/02/Vital-Directions-for-Health-and-Health-Care-Final-Publication-022718.pdf&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQFnoECDMQAQ",
+      "displayed_link": "https://nam.edu \u203a wp-content \u203a uploads \u203a 2018/02",
+      "favicon": "https://serpapi.com/searches/6826c3b2dc74d00826490c1a/images/0bf729b0670266a811a816f80f80afa7c1923b9f257db683b5fabbab6cf2893a.png",
+      "date": "Jul 8, 2016",
+      "snippet": "... Provider directory. There is no national provider directory that ... (FHIR), will enhance data liquidity and enable an ecosystem of new ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 493
+          },
+          "extensions": [
+            "493 pages"
+          ]
+        }
+      },
+      "source": "National Academy of Medicine"
+    },
+    {
+      "position": 9,
+      "title": "Information Management Governance Security Risks",
+      "link": "https://search.proquest.com/openview/19b1d289dc52f8ed896a62bdf4e568b7/1?pq-origsite=gscholar&cbl=18750&diss=y",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://search.proquest.com/openview/19b1d289dc52f8ed896a62bdf4e568b7/1%3Fpq-origsite%3Dgscholar%26cbl%3D18750%26diss%3Dy&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQFnoECDEQAQ",
+      "displayed_link": "https://search.proquest.com \u203a openview",
+      "favicon": "https://serpapi.com/searches/6826c3b2dc74d00826490c1a/images/0bf729b0670266a811a816f80f80afa7381d984d8a14f0efd0ecf5cda294fd76.png",
+      "author": "by MA Thomas",
+      "snippet": "FHIR standard for structured patient data and standards for patient authorization. ... Federated Provider Directory Network. 5. Enhanced Enterprise APIs.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "ProQuest"
+    },
+    {
+      "position": 10,
+      "title": "Health Information Exchange (HIE) | PPT",
+      "link": "https://www.slideshare.net/slideshow/g3-healthinfoexchange-8811500/8811500",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.slideshare.net/slideshow/g3-healthinfoexchange-8811500/8811500&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQFnoECDgQAQ",
+      "displayed_link": "https://www.slideshare.net \u203a Technology",
+      "favicon": "https://serpapi.com/searches/6826c3b2dc74d00826490c1a/images/0bf729b0670266a811a816f80f80afa7d156a3cec527c3f5632c61d4a55ac03d.png",
+      "date": "Aug 9, 2011",
+      "snippet": "It also provides an update on the Provider Directory Taskforce ... Emerging models like FHIR and blockchain may address these ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Holdings",
+        "LLC",
+        "Advantage"
+      ],
+      "source": "SlideShare"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Singh+Holdings+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=ssMmaI2iM7eH7NYP0t7c2QQ&start=10&sa=N&sstk=Af40H4XbOvkl471CZjtzDDcBLN_jgcAxn3wQZaabvs5dnmk5Vo9o84ba8rU9wO2gr7S4c2ikykCdciKACNM5afNKI3oUAUuiB9GjCA&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQ8NMDegQIChAG",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Singh+Holdings+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=ssMmaI2iM7eH7NYP0t7c2QQ&start=10&sa=N&sstk=Af40H4XbOvkl471CZjtzDDcBLN_jgcAxn3wQZaabvs5dnmk5Vo9o84ba8rU9wO2gr7S4c2ikykCdciKACNM5afNKI3oUAUuiB9GjCA&ved=2ahUKEwiNw_78l6eNAxW3A9sEHVIvN0sQ8tMDegQIChAE"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Singh+Holdings+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Singh+Holdings+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Singh+Holdings+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10"
+    }
+  }
+}

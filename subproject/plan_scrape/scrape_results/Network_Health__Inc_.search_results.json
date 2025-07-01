@@ -1,0 +1,282 @@
+{
+  "search_metadata": {
+    "id": "6826c356fdfbab934bf42ada",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/e8fe4ff08e6a5adc/6826c356fdfbab934bf42ada.json",
+    "created_at": "2025-05-16 04:47:18 UTC",
+    "processed_at": "2025-05-16 04:47:18 UTC",
+    "google_url": "https://www.google.com/search?q=Network+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Network+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/e8fe4ff08e6a5adc/6826c356fdfbab934bf42ada.html",
+    "total_time_taken": 0.86
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Network Health, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Network Health, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 987,
+    "time_taken_displayed": 0.24,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Provider Directory API",
+      "link": "https://developers.humana.com/apis/provider-directory-api/doc",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developers.humana.com/apis/provider-directory-api/doc&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQFnoECBYQAQ&usg=AOvVaw2kBJ24O27Fz3IIFrJaY3xQ",
+      "displayed_link": "https://developers.humana.com \u203a apis \u203a doc",
+      "favicon": "https://serpapi.com/searches/6826c356fdfbab934bf42ada/images/5147a0054fa9fb2bd8b40d3f73b0e524eefcb329ac5d2ab31933bed9bd992ae3.png",
+      "snippet": "The Provider Directory service ... This service includes multiple FHIR APIs: InsurancePlan, PractitionerRole, Practitioner, Organization, and Location.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Humana Data Exchange"
+    },
+    {
+      "position": 2,
+      "title": "CMS/ONC Patient access API",
+      "link": "https://www.healthadvantage-hmo.com/interoperability/patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthadvantage-hmo.com/interoperability/patient-access&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQFnoECBgQAQ&usg=AOvVaw3Ghj3oCtOkekPBUBbieY9Y",
+      "displayed_link": "https://www.healthadvantage-hmo.com \u203a interoperability",
+      "favicon": "https://serpapi.com/searches/6826c356fdfbab934bf42ada/images/5147a0054fa9fb2bd8b40d3f73b0e524f6f16e727cb3eee137da1c2fde635738.png",
+      "snippet": "The Arkansas Blue Cross and Blue Shield1 Interoperability API provides third-party app developers access to FHIR ... The Provider Directory API will allow ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "source": "Health Advantage HMO"
+    },
+    {
+      "position": 3,
+      "title": "Provider Directory API",
+      "link": "https://1up.health/resources/provider-directory-api/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://1up.health/resources/provider-directory-api/&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQFnoECBoQAQ&usg=AOvVaw1zdDQ8Jfsa7V7_2NvpGgfO",
+      "displayed_link": "https://1up.health \u203a Resources",
+      "favicon": "https://serpapi.com/searches/6826c356fdfbab934bf42ada/images/5147a0054fa9fb2bd8b40d3f73b0e5246db4bbcd80b7d3ff7f267f1c5404c823.png",
+      "snippet": "What Is The Provider Directory API? FHIR\u00ae API conformant with the relevant technical requirements outlined in 45 CFR \u00a7170.215 that is accessible via a ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "Inc."
+      ],
+      "must_include": {
+        "word": "Inc.",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Network+Health,+%22Inc.%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQ5t4CegQIHhAB"
+      },
+      "source": "1upHealth"
+    },
+    {
+      "position": 4,
+      "title": "Network and Insurance Plan Data File Specification",
+      "link": "https://help.ayin.com/hc/en-us/articles/360021377099-Network-and-Insurance-Plan-Data-File-Specification",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://help.ayin.com/hc/en-us/articles/360021377099-Network-and-Insurance-Plan-Data-File-Specification&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQFnoECCAQAQ&usg=AOvVaw3anlPx22rqchGy5hyVTw0_",
+      "displayed_link": "https://help.ayin.com \u203a en-us \u203a articles \u203a 360021377099-...",
+      "favicon": "https://serpapi.com/searches/6826c356fdfbab934bf42ada/images/5147a0054fa9fb2bd8b40d3f73b0e5242f984712998747af9c660804b84229f1.png",
+      "date": "Jun 10, 2024",
+      "snippet": "This file format provides the information needed for populating a provider directory API compliant with CMS Interoperability requirements.",
+      "snippet_highlighted_words": [
+        "provider directory API"
+      ],
+      "source": "Ayin Help Center"
+    },
+    {
+      "position": 5,
+      "title": "Analyzing the 2024 CMS Interoperability Rule",
+      "link": "https://www.taliun.com/analyzing-the-2024-cms-interoperability-rule-focusing-on-directory-application-scenarios",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.taliun.com/analyzing-the-2024-cms-interoperability-rule-focusing-on-directory-application-scenarios&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQFnoECBcQAQ&usg=AOvVaw1-rdsIThiG1tzQw9O3PyeY",
+      "displayed_link": "https://www.taliun.com \u203a analyzing-the-2024-cms-inter...",
+      "favicon": "https://serpapi.com/searches/6826c356fdfbab934bf42ada/images/5147a0054fa9fb2bd8b40d3f73b0e5241b386654c0f8036c0fbfce24845a637a.png",
+      "snippet": "... FHIR (Fast Healthcare Interoperability Resources) for data transfer. ... Provider Directory API data to display in-network providers for different health plans.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Healthcare",
+        "Provider Directory API",
+        "network",
+        "health plans"
+      ],
+      "source": "Taliun"
+    },
+    {
+      "position": 6,
+      "title": "Provider directory API access guide",
+      "link": "https://www.capbluecross.com/wps/portal/cap/about/developer/provider-directory-api-access-guide",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.capbluecross.com/wps/portal/cap/about/developer/provider-directory-api-access-guide&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQFnoECB8QAQ&usg=AOvVaw3-jGYbLFNLCHz4c4JwAdCH",
+      "displayed_link": "https://www.capbluecross.com \u203a cap \u203a about \u203a developer",
+      "favicon": "https://serpapi.com/searches/6826c356fdfbab934bf42ada/images/5147a0054fa9fb2bd8b40d3f73b0e524caca8834bdf8a5a2f4566718c3c13ae3.png",
+      "snippet": "This documentation presumes that anyone accessing the API is familiar with the implementation guide for provider directory, FHIR US DAVINCI-PDEX v4.0.1.",
+      "snippet_highlighted_words": [
+        "API",
+        "provider directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Inc."
+      ],
+      "must_include": {
+        "word": "Inc.",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Network+Health,+%22Inc.%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQ5t4CegQIIxAB"
+      },
+      "source": "Capital Blue Cross"
+    },
+    {
+      "position": 7,
+      "title": "Request for Information; National Directory of Healthcare ...",
+      "link": "https://www.federalregister.gov/documents/2022/10/07/2022-21904/request-for-information-national-directory-of-healthcare-providers-and-services",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2022/10/07/2022-21904/request-for-information-national-directory-of-healthcare-providers-and-services&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQFnoECCEQAQ&usg=AOvVaw3YPknDjwjfEEMjI0oBFujU",
+      "displayed_link": "https://www.federalregister.gov \u203a 2022/10/07 \u203a request-...",
+      "favicon": "https://serpapi.com/searches/6826c356fdfbab934bf42ada/images/5147a0054fa9fb2bd8b40d3f73b0e524d9da0766c9d2a1890f669ac1fae584e4.png",
+      "date": "Oct 7, 2022",
+      "snippet": "... FHIR API, to update its own provider directory with the latest information. This would allow the payer to present a provider directory ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "provider directory",
+        "provider directory"
+      ],
+      "missing": [
+        "Inc."
+      ],
+      "must_include": {
+        "word": "Inc.",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Network+Health,+%22Inc.%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQ5t4CegQIIhAB"
+      },
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Final CMS Interoperability Regulation: What You Need to ...",
+      "link": "https://www.himss.org/resources/final-cms-interoperability-regulation-what-you-need-to-know/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.himss.org/resources/final-cms-interoperability-regulation-what-you-need-to-know/&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQFnoECDEQAQ&usg=AOvVaw3ajbDrgmJDp57gIv_lHQ_F",
+      "displayed_link": "https://www.himss.org \u203a resources \u203a final-cms-interoper...",
+      "favicon": "https://serpapi.com/searches/6826c356fdfbab934bf42ada/images/5147a0054fa9fb2bd8b40d3f73b0e5246930dc08de6063418aadf7dd1690dbc6.png",
+      "snippet": "... (FHIR\u00ae) standard, including for patients to use APIs to be able to ... Provider Directory API. At a minimum, these payers must make available via ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Patient Access Api",
+            "link": "https://www.himss.org/resources/final-cms-interoperability-regulation-what-you-need-to-know/#:~:text=Patient%20Access%20API,-Beginning%20January%201%2C%202021"
+          },
+          {
+            "title": "Provider Directory Api",
+            "link": "https://www.himss.org/resources/final-cms-interoperability-regulation-what-you-need-to-know/#:~:text=Provider%20Directory%20API,-CMS%20is%20requiring%20MA%20organizations"
+          },
+          {
+            "title": "Payer-To-Payer Data Exchange",
+            "link": "https://www.himss.org/resources/final-cms-interoperability-regulation-what-you-need-to-know/#:~:text=Payer%2Dto%2DPayer%20Data%20Exchange,-At%20a%20patient%27s%20request"
+          }
+        ]
+      },
+      "source": "Healthcare Information and Management Systems Society | HIMSS"
+    },
+    {
+      "position": 9,
+      "title": "Interoperability APIs",
+      "link": "https://quartzbenefits.com/contact-quartz/interoperability-apis/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://quartzbenefits.com/contact-quartz/interoperability-apis/&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQFnoECC8QAQ&usg=AOvVaw2Z2q0VzQrTcOmchSlETElO",
+      "displayed_link": "https://quartzbenefits.com \u203a Contact Quartz",
+      "favicon": "https://serpapi.com/searches/6826c356fdfbab934bf42ada/images/5147a0054fa9fb2bd8b40d3f73b0e524bb3dbe21518c050c85a6b9b21f0fefae.png",
+      "snippet": "FHIR Provider Directory API. As mandated by the Centers for Medicare and Medicaid Services, the Quartz FHIR Provider Directory API meets the FHIR specification ...",
+      "snippet_highlighted_words": [
+        "FHIR Provider Directory API",
+        "Medicare",
+        "FHIR Provider Directory API",
+        "FHIR"
+      ],
+      "missing": [
+        "Inc."
+      ],
+      "must_include": {
+        "word": "Inc.",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Network+Health,+%22Inc.%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQ5t4CegQIMhAB"
+      },
+      "source": "Quartz Benefits"
+    },
+    {
+      "position": 10,
+      "title": "Home - Da Vinci PDex Plan Net v1.2.0",
+      "link": "https://build.fhir.org/ig/HL7/davinci-pdex-plan-net/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://build.fhir.org/ig/HL7/davinci-pdex-plan-net/&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQFnoECDQQAQ&usg=AOvVaw0NsxAuddvAaIYAJktzpzbU",
+      "displayed_link": "https://build.fhir.org \u203a davinci-pdex-plan-net",
+      "favicon": "https://serpapi.com/searches/6826c356fdfbab934bf42ada/images/5147a0054fa9fb2bd8b40d3f73b0e524918dbc747b4e764dc1b420788d5b47b5.png",
+      "snippet": "This implementation guide defines a FHIR interface to a health insurer's insurance plans, their associated networks, and the organizations and providers that ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "health",
+        "plans"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Plan-Net Network",
+            "link": "https://build.fhir.org/ig/HL7/davinci-pdex-plan-net/StructureDefinition-plannet-Network.html"
+          },
+          {
+            "title": "Provider Role Codes",
+            "link": "https://build.fhir.org/ig/HL7/davinci-pdex-plan-net/CodeSystem-ProviderRoleCS.html"
+          },
+          {
+            "title": "Plan-Net Organization",
+            "link": "https://build.fhir.org/ig/HL7/davinci-pdex-plan-net/StructureDefinition-plannet-Organization.html"
+          },
+          {
+            "title": "New Patients",
+            "link": "https://build.fhir.org/ig/HL7/davinci-pdex-plan-net/StructureDefinition-newpatients.html"
+          }
+        ]
+      },
+      "missing": [
+        "Inc.",
+        "Advantage"
+      ],
+      "source": "FHIR specification"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Network+Health,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=VsMmaPqbIejAhbIPisutgAg&start=10&sa=N&sstk=Af40H4V2iMY82Dbt5GD9xaHE0Q87arm6gtBNvuvPQt7mTaKP_RB4mJIJrWhVKFhsoEedNYUoUrnqMH3z8flMqHcin_SNCTaplLvbOA&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQ8NMDegQICBAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Network+Health,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=VsMmaPqbIejAhbIPisutgAg&start=10&sa=N&sstk=Af40H4V2iMY82Dbt5GD9xaHE0Q87arm6gtBNvuvPQt7mTaKP_RB4mJIJrWhVKFhsoEedNYUoUrnqMH3z8flMqHcin_SNCTaplLvbOA&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQ8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=Network+Health,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=VsMmaPqbIejAhbIPisutgAg&start=20&sa=N&sstk=Af40H4V2iMY82Dbt5GD9xaHE0Q87arm6gtBNvuvPQt7mTaKP_RB4mJIJrWhVKFhsoEedNYUoUrnqMH3z8flMqHcin_SNCTaplLvbOA&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQ8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=Network+Health,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=VsMmaPqbIejAhbIPisutgAg&start=30&sa=N&sstk=Af40H4V2iMY82Dbt5GD9xaHE0Q87arm6gtBNvuvPQt7mTaKP_RB4mJIJrWhVKFhsoEedNYUoUrnqMH3z8flMqHcin_SNCTaplLvbOA&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQ8tMDegQICBAI",
+      "5": "https://www.google.com/search?q=Network+Health,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=VsMmaPqbIejAhbIPisutgAg&start=40&sa=N&sstk=Af40H4V2iMY82Dbt5GD9xaHE0Q87arm6gtBNvuvPQt7mTaKP_RB4mJIJrWhVKFhsoEedNYUoUrnqMH3z8flMqHcin_SNCTaplLvbOA&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQ8tMDegQICBAK",
+      "6": "https://www.google.com/search?q=Network+Health,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=VsMmaPqbIejAhbIPisutgAg&start=50&sa=N&sstk=Af40H4V2iMY82Dbt5GD9xaHE0Q87arm6gtBNvuvPQt7mTaKP_RB4mJIJrWhVKFhsoEedNYUoUrnqMH3z8flMqHcin_SNCTaplLvbOA&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQ8tMDegQICBAM",
+      "7": "https://www.google.com/search?q=Network+Health,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=VsMmaPqbIejAhbIPisutgAg&start=60&sa=N&sstk=Af40H4V2iMY82Dbt5GD9xaHE0Q87arm6gtBNvuvPQt7mTaKP_RB4mJIJrWhVKFhsoEedNYUoUrnqMH3z8flMqHcin_SNCTaplLvbOA&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQ8tMDegQICBAO",
+      "8": "https://www.google.com/search?q=Network+Health,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=VsMmaPqbIejAhbIPisutgAg&start=70&sa=N&sstk=Af40H4V2iMY82Dbt5GD9xaHE0Q87arm6gtBNvuvPQt7mTaKP_RB4mJIJrWhVKFhsoEedNYUoUrnqMH3z8flMqHcin_SNCTaplLvbOA&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQ8tMDegQICBAQ",
+      "9": "https://www.google.com/search?q=Network+Health,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=VsMmaPqbIejAhbIPisutgAg&start=80&sa=N&sstk=Af40H4V2iMY82Dbt5GD9xaHE0Q87arm6gtBNvuvPQt7mTaKP_RB4mJIJrWhVKFhsoEedNYUoUrnqMH3z8flMqHcin_SNCTaplLvbOA&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQ8tMDegQICBAS",
+      "10": "https://www.google.com/search?q=Network+Health,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=VsMmaPqbIejAhbIPisutgAg&start=90&sa=N&sstk=Af40H4V2iMY82Dbt5GD9xaHE0Q87arm6gtBNvuvPQt7mTaKP_RB4mJIJrWhVKFhsoEedNYUoUrnqMH3z8flMqHcin_SNCTaplLvbOA&ved=2ahUKEwj6nv3Ql6eNAxVoYEEAHYplC4AQ8tMDegQICBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

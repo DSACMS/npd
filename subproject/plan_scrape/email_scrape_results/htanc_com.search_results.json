@@ -1,0 +1,34 @@
+{
+  "search_metadata": {
+    "id": "6861d246ac1765364b98ac81",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/59b126f41b5c6b0f/6861d246ac1765364b98ac81.json",
+    "created_at": "2025-06-29 23:54:46 UTC",
+    "processed_at": "2025-06-29 23:54:46 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Ahtanc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Ahtanc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/59b126f41b5c6b0f/6861d246ac1765364b98ac81.html",
+    "total_time_taken": 25.86
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:htanc.com \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:htanc.com \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 0,
+    "time_taken_displayed": 0.2,
+    "organic_results_state": "Fully empty",
+    "query_feedback": {
+      "title": "Your search did not match any documents"
+    }
+  },
+  "error": "Google hasn't returned any results for this query."
+}

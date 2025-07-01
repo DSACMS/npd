@@ -1,0 +1,3 @@
+practitioner_role_fhir_url,practitioner_fhir_url,practitioner_reference,npi,is_npi_invalid,family_name,given_name
+https://fhir.devoted.com/fhir/PractitionerRole/practitioner-role-1003137407-183974,https://fhir.devoted.com/fhir/Practitioner/practitioner-1003137407,Practitioner/practitioner-1003137407,0,?,Henderson,Kamal Hanee
+https://fhir.devoted.com/fhir/PractitionerRole/practitioner-role-1003137407-183975,https://fhir.devoted.com/fhir/Practitioner/practitioner-1003137407,Practitioner/practitioner-1003137407,0,?,Henderson,Kamal Hanee

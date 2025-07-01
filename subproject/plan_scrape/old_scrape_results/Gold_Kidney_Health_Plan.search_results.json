@@ -1,0 +1,350 @@
+{
+  "search_metadata": {
+    "id": "6826c27f73d175fbc0240539",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/a46f285b1d04daca/6826c27f73d175fbc0240539.json",
+    "created_at": "2025-05-16 04:43:43 UTC",
+    "processed_at": "2025-05-16 04:43:43 UTC",
+    "google_url": "https://www.google.com/search?q=Gold+Kidney+Health+Plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Gold+Kidney+Health+Plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/a46f285b1d04daca/6826c27f73d175fbc0240539.html",
+    "total_time_taken": 1.71
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Gold Kidney Health Plan Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Gold Kidney Health Plan Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 81,
+    "time_taken_displayed": 0.33,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Implementation Guide Registry",
+      "link": "https://fhir.org/guides/registry/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://fhir.org/guides/registry/&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQFnoECBgQAQ",
+      "displayed_link": "https://fhir.org \u203a guides \u203a registry",
+      "favicon": "https://serpapi.com/searches/6826c27f73d175fbc0240539/images/777c7f622d5087327771da38c5fd5092ce3364e5828e31ed806a47bb02c6b1c9.png",
+      "snippet": "Provider Directory IG : This implementation guide is based upon STU3 FHIR standard and is the Australian variant of the Provider Directory IG. It outlines ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Gold+Kidney+Health+Plan+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ5t4CegQIHBAB"
+      },
+      "source": "FHIR.org"
+    },
+    {
+      "position": 2,
+      "title": "Medicare Program; Contract Year 2024 Policy and ...",
+      "link": "https://www.federalregister.gov/documents/2023/04/12/2023-07115/medicare-program-contract-year-2024-policy-and-technical-changes-to-the-medicare-advantage-program",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2023/04/12/2023-07115/medicare-program-contract-year-2024-policy-and-technical-changes-to-the-medicare-advantage-program&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQFnoECCEQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2023/04/12 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/6826c27f73d175fbc0240539/images/777c7f622d5087327771da38c5fd509240e1201220eb2a2e495b70d94682939a.png",
+      "date": "Apr 12, 2023",
+      "snippet": "First, we proposed to mirror the provider directory requirements for Medicaid managed care plans at \u00a7 438.10(h)(1)(vii) by adding the phrase ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "care plans"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQFnoECCAQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/6826c27f73d175fbc0240539/images/777c7f622d5087327771da38c5fd5092a148164f6f803388fb71f769ee2410c2.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR",
+        "care"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 4,
+      "title": "2026 Quality Rating System Measure Technical ...",
+      "link": "https://www.cms.gov/files/document/2026qrsmeasuretechspecs508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/2026qrsmeasuretechspecs508.pdf&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQFnoECCIQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document",
+      "favicon": "https://serpapi.com/searches/6826c27f73d175fbc0240539/images/777c7f622d5087327771da38c5fd509222f02923897ddd92be1e18f842b1d4da.png",
+      "date": "Mar 31, 2025",
+      "snippet": "care services; however, it recognizes that a provider directory ... a set of resources that payers can display to consumers via a FHIR API.",
+      "snippet_highlighted_words": [
+        "care",
+        "provider directory",
+        "FHIR API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 277
+          },
+          "extensions": [
+            "277 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Gold+Kidney+Health+Plan+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ5t4CegQILBAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQFnoECB0QAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/6826c27f73d175fbc0240539/images/777c7f622d5087327771da38c5fd5092056b616f194d7c50530fdb9f8410f82d.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR",
+        "care"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 6,
+      "title": "Federal Register/Vol. 88, No. 70/Wednesday, April 12, ...",
+      "link": "https://www.govinfo.gov/content/pkg/FR-2023-04-12/pdf/2023-07115.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.govinfo.gov/content/pkg/FR-2023-04-12/pdf/2023-07115.pdf&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQFnoECB8QAQ",
+      "displayed_link": "https://www.govinfo.gov \u203a content \u203a pkg \u203a pdf",
+      "favicon": "https://serpapi.com/searches/6826c27f73d175fbc0240539/images/777c7f622d5087327771da38c5fd509297f8f0ca852a64cf414eef9f410203e0.png",
+      "date": "Apr 12, 2023",
+      "snippet": "... Provider Directory Model is located at: https:// \u00b7 www.cms.gov ... (FHIR\u00ae) standard Application. Programming Interface (API) for electronic ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 226
+          },
+          "extensions": [
+            "226 pages"
+          ]
+        }
+      },
+      "source": "GovInfo (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "2023 UnitedHealthcare Care Provider Administrative Guide",
+      "link": "https://www.mypreferredprovider.com/media/2v3pam2q/2023-uhc-administrative-guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mypreferredprovider.com/media/2v3pam2q/2023-uhc-administrative-guide.pdf&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQFnoECBYQAQ",
+      "displayed_link": "https://www.mypreferredprovider.com \u203a media",
+      "favicon": "https://serpapi.com/searches/6826c27f73d175fbc0240539/images/777c7f622d5087327771da38c5fd5092ccc0f41dcb3b154903263666ca926de2.png",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify information in ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR",
+        "care"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 421
+          },
+          "extensions": [
+            "421 pages"
+          ]
+        }
+      },
+      "source": "My Preferred Provider"
+    },
+    {
+      "position": 8,
+      "title": "ig-registry/fhir-ig-list.json at master",
+      "link": "https://github.com/FHIR/ig-registry/blob/master/fhir-ig-list.json",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/FHIR/ig-registry/blob/master/fhir-ig-list.json&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQFnoECDsQAQ",
+      "displayed_link": "https://github.com \u203a FHIR \u203a ig-registry \u203a blob \u203a fhir-ig-list",
+      "favicon": "https://serpapi.com/searches/6826c27f73d175fbc0240539/images/777c7f622d5087327771da38c5fd5092ebe97cdbe6c2c7f9a6995a584b0a85e7.png",
+      "snippet": "... fhir.argonaut.pd\", \"description\" : \"This implementation guide is based upon STU3 FHIR standard and outlines the key data elements for any provider directory ...",
+      "snippet_highlighted_words": [
+        "fhir",
+        "FHIR",
+        "provider directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Gold+Kidney+Health+Plan+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ5t4CegQIPxAB"
+      },
+      "source": "GitHub"
+    },
+    {
+      "position": 9,
+      "title": "Pjt Insight Project List",
+      "link": "https://confluence.hl7.org/download/attachments/144994722/ProjectBallotHealthMetrics_2023JanWGM_Final.xlsx?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/144994722/ProjectBallotHealthMetrics_2023JanWGM_Final.xlsx%3Fapi%3Dv2&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQFnoECDwQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a download \u203a attachments",
+      "favicon": "https://serpapi.com/searches/6826c27f73d175fbc0240539/images/777c7f622d5087327771da38c5fd5092e982b2d6e4ddc6229e115140515d2f94.png",
+      "snippet": "Develop a FHIR R4 based implementation guide for an API similar to the CMS Medicare Blue Button 2.0 API, FHIR R3 based, that will allow consumer-directed ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Medicare",
+        "API",
+        "FHIR"
+      ],
+      "source": "HL7 - Confluence"
+    },
+    {
+      "position": 10,
+      "title": "2025-quality-rating-system-measure-technical- ...",
+      "link": "https://www.cms.gov/files/document/2025-quality-rating-system-measure-technical-specifications.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/2025-quality-rating-system-measure-technical-specifications.pdf&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQFnoECDcQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a 2025-q...",
+      "favicon": "https://serpapi.com/searches/6826c27f73d175fbc0240539/images/777c7f622d5087327771da38c5fd50923c95076d637af016c84cccd3c5d4ef4c.png",
+      "date": "Apr 1, 2024",
+      "snippet": "care services; however, it recognizes that a provider directory generally ... Fast Healthcare Interoperability Resources (FHIR) Standards.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "Healthcare",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 315
+          },
+          "extensions": [
+            "315 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Gold+Kidney+Health+Plan+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ5t4CegQIOhAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "UHC provider manual 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=UHC+provider+manual+2025&sa=X&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+provider+manual+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-4201-f",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=cms-4201-f&sa=X&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-4201-f&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc Medicare advantage Timely filing limit for corrected claims",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&sa=X&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "FHIR Implementation Guide",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=FHIR+Implementation+Guide&sa=X&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=FHIR+Implementation+Guide&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-4201-p",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=cms-4201-p&sa=X&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-4201-p&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "PO Box 31387 SALT Lake City, UT 84131",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=PO+Box+31387+SALT+Lake+City,+UT+84131&sa=X&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=PO+Box+31387+SALT+Lake+City%2C+UT+84131&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "2025 Medicare Advantage final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=2025+Medicare+Advantage+final+rule&sa=X&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ1QJ6BAgwEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=2025+Medicare+Advantage+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "BIN 610279 PCN: 7777",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=BIN+610279+PCN:+7777&sa=X&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ1QJ6BAgvEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BIN+610279+PCN%3A+7777&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Gold+Kidney+Health+Plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=gMImaKe8JISsptQPnrKTkAI&start=10&sa=N&sstk=Af40H4VsIoc05mGSdmZrVzjlVZRElr50rioYw54BOrIKR2dWnV6WyCnZtj7WXjyebpm7J1vymVQ2x4dKiddlmRfB1GVXD0gNxxEBVg&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ8NMDegQICRAO",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Gold+Kidney+Health+Plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=gMImaKe8JISsptQPnrKTkAI&start=10&sa=N&sstk=Af40H4VsIoc05mGSdmZrVzjlVZRElr50rioYw54BOrIKR2dWnV6WyCnZtj7WXjyebpm7J1vymVQ2x4dKiddlmRfB1GVXD0gNxxEBVg&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=Gold+Kidney+Health+Plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=gMImaKe8JISsptQPnrKTkAI&start=20&sa=N&sstk=Af40H4VsIoc05mGSdmZrVzjlVZRElr50rioYw54BOrIKR2dWnV6WyCnZtj7WXjyebpm7J1vymVQ2x4dKiddlmRfB1GVXD0gNxxEBVg&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=Gold+Kidney+Health+Plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=gMImaKe8JISsptQPnrKTkAI&start=30&sa=N&sstk=Af40H4VsIoc05mGSdmZrVzjlVZRElr50rioYw54BOrIKR2dWnV6WyCnZtj7WXjyebpm7J1vymVQ2x4dKiddlmRfB1GVXD0gNxxEBVg&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=Gold+Kidney+Health+Plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=gMImaKe8JISsptQPnrKTkAI&start=40&sa=N&sstk=Af40H4VsIoc05mGSdmZrVzjlVZRElr50rioYw54BOrIKR2dWnV6WyCnZtj7WXjyebpm7J1vymVQ2x4dKiddlmRfB1GVXD0gNxxEBVg&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=Gold+Kidney+Health+Plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=gMImaKe8JISsptQPnrKTkAI&start=50&sa=N&sstk=Af40H4VsIoc05mGSdmZrVzjlVZRElr50rioYw54BOrIKR2dWnV6WyCnZtj7WXjyebpm7J1vymVQ2x4dKiddlmRfB1GVXD0gNxxEBVg&ved=2ahUKEwin_PrqlqeNAxUElokEHR7ZBCIQ8tMDegQICRAM"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Gold+Kidney+Health+Plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Gold+Kidney+Health+Plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Gold+Kidney+Health+Plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Gold+Kidney+Health+Plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Gold+Kidney+Health+Plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Gold+Kidney+Health+Plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Gold+Kidney+Health+Plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50"
+    }
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "search_metadata": {
+    "id": "6826c2d21248154847a69151",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/d955325331a7b604/6826c2d21248154847a69151.json",
+    "created_at": "2025-05-16 04:45:06 UTC",
+    "processed_at": "2025-05-16 04:45:06 UTC",
+    "google_url": "https://www.google.com/search?q=Indiana+University+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Indiana+University+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/d955325331a7b604/6826c2d21248154847a69151.html",
+    "total_time_taken": 2.07
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Indiana University Health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Indiana University Health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 115,
+    "time_taken_displayed": 0.21,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQFnoECBgQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/6826c2d21248154847a69151/images/9b607da46c12c60ac69914887486d15054f1799ce90d1b882b2b1ee923765056.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 2,
+      "title": "Surmounting Barriers to Healthcare Data and Information",
+      "link": "https://telehealthandmedicinetoday.com/index.php/journal/article/view/425/914",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://telehealthandmedicinetoday.com/index.php/journal/article/view/425/914&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQFnoECBwQAQ",
+      "displayed_link": "https://telehealthandmedicinetoday.com \u203a article \u203a view",
+      "favicon": "https://serpapi.com/searches/6826c2d21248154847a69151/images/9b607da46c12c60ac69914887486d150dd04004cf05a2ea450cbfb9d10e765bc.png",
+      "author": "by MBA Bharath Perugu",
+      "snippet": "The second required payers to make their provider directory ... healthcare data standard with an application programming interface (FHIR APIs).",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "healthcare",
+        "FHIR APIs"
+      ],
+      "source": "Telehealth and Medicine Today"
+    },
+    {
+      "position": 3,
+      "title": "Streamlining Prior Authorization: Final Report ...",
+      "link": "https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQFnoECBoQAQ",
+      "displayed_link": "https://24315998.fs1.hubspotusercontent-na1.net \u203a ...",
+      "snippet": "Interoperability Resources (FHIR)-enabled and integrable within Electronic Health ... APIs and provider directory infor- mation through the Provider Directory API ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Health",
+        "APIs",
+        "provider directory",
+        "Provider Directory API"
+      ],
+      "source": "hubspotusercontent-na1.net"
+    },
+    {
+      "position": 4,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQFnoECBcQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/6826c2d21248154847a69151/images/9b607da46c12c60ac69914887486d15022317e71e7d474c66d408c8d5586bedd.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 5,
+      "title": "BEST IN KLAS 2024 SOFTWARE & SERVICES",
+      "link": "https://www.nuance.com/asset/en_us/collateral/healthcare/report/ar-best-in-klas-software-and-services-2024-en-us.pdf?srsltid=AfmBOoqGnUz4WuzPMCVlgmFTks99DO-xyN8rZqBWYXSZ4lVqqOEVuMoF",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.nuance.com/asset/en_us/collateral/healthcare/report/ar-best-in-klas-software-and-services-2024-en-us.pdf%3Fsrsltid%3DAfmBOoqGnUz4WuzPMCVlgmFTks99DO-xyN8rZqBWYXSZ4lVqqOEVuMoF&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQFnoECCIQAQ",
+      "displayed_link": "https://www.nuance.com \u203a healthcare \u203a report",
+      "favicon": "https://serpapi.com/searches/6826c2d21248154847a69151/images/9b607da46c12c60ac69914887486d1504d11bc9c2c6dc803d26cf65550107595.png",
+      "snippet": "... FHIR API Adoption to Support Third-. Party Connectivity. 3. Utility: Duplicate ... provider directory API, and payer-to-payer data exchange. Complex ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "provider directory API"
+      ],
+      "source": "Nuance Communications"
+    },
+    {
+      "position": 6,
+      "title": "American Health Law Association The Year in Review ...",
+      "link": "https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQFnoECBsQAQ",
+      "displayed_link": "https://www.bradley.com \u203a publications \u203a 2022/02",
+      "favicon": "https://serpapi.com/searches/6826c2d21248154847a69151/images/9b607da46c12c60ac69914887486d1505dabc867d93bbfc90f3557a8c8107e0d.png",
+      "date": "Feb 17, 2022",
+      "snippet": "... FHIR\u00ae Roadmap for \u00b7 TEFCA Exchange (January 2022). The TEF is a set of ... Provider Directory API (applicable January 1, 2021, with ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 315
+          },
+          "extensions": [
+            "315 pages"
+          ]
+        }
+      },
+      "source": "Bradley Arant"
+    },
+    {
+      "position": 7,
+      "title": "Transcript",
+      "link": "https://www.healthit.gov/sites/default/files/facas/2021-02-10_HITAC_Transcript.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/facas/2021-02-10_HITAC_Transcript.pdf&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQFnoECBkQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a facas",
+      "favicon": "https://serpapi.com/searches/6826c2d21248154847a69151/images/9b607da46c12c60ac69914887486d1503a0c4eb9535e4ed780d2a9b16cb0e464.jpeg",
+      "date": "Feb 10, 2021",
+      "snippet": "We can turn around and expose that as a FHIR API with Audacious Inquiry and Texas Health Services. ... provider directory, and we have about 450.",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Health",
+        "provider directory"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Sessions",
+      "link": "https://mesconference.org/wp-content/uploads/2017/07/MESC2017SessionsWeb-170726.xlsx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mesconference.org/wp-content/uploads/2017/07/MESC2017SessionsWeb-170726.xlsx&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQFnoECDYQAQ",
+      "displayed_link": "https://mesconference.org \u203a uploads \u203a 2017/07",
+      "snippet": "In addition to CAQH Provider directory information through FHIR the PoC will be demonstrating how an exciting new technology called BlockChain can be used ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "source": "Medicaid Enterprise Systems Conference (MESC)"
+    },
+    {
+      "position": 9,
+      "title": "Health Information Exchange (HIE) Operations and ...",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Conduent/CONDUENT%20Redacted%20Technical%20Proposal.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Conduent/CONDUENT%2520Redacted%2520Technical%2520Proposal.pdf&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQFnoECDsQAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a pdf \u203a Conduent",
+      "favicon": "https://serpapi.com/searches/6826c2d21248154847a69151/images/9b607da46c12c60ac69914887486d150f6d959948bcb29fd31bf9a05af49c567.png",
+      "date": "Jul 9, 2024",
+      "snippet": "List API, and Provider Directory API. Our solution also ... Current Fast Healthcare Interoperability Resources (FHIR) API Capabilities.",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "Healthcare",
+        "FHIR",
+        "API"
+      ],
+      "source": "Gobierno de Puerto Rico (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "Community Care Hub IT Playbook",
+      "link": "https://acl.gov/sites/default/files/programs/2024-05/Community%20Care%20Hub%20IT%20Playbook.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://acl.gov/sites/default/files/programs/2024-05/Community%2520Care%2520Hub%2520IT%2520Playbook.pdf&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQFnoECDkQAQ",
+      "displayed_link": "https://acl.gov \u203a sites \u203a default \u203a files \u203a programs",
+      "favicon": "https://serpapi.com/searches/6826c2d21248154847a69151/images/9b607da46c12c60ac69914887486d15093018ba2b5071009d11003d169558472.png",
+      "date": "May 1, 2024",
+      "snippet": "... Provider Directory FHIR standard. This approach allows use of this IG by the healthcare providers, payers, and consumer applications for ...",
+      "snippet_highlighted_words": [
+        "Provider Directory FHIR",
+        "healthcare"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 142
+          },
+          "extensions": [
+            "142 pages"
+          ]
+        }
+      },
+      "source": "ACL Administration for Community Living (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "UHC provider manual 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=UHC+provider+manual+2025&sa=X&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+provider+manual+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC Medicare Advantage timely filing limit",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=UHC+Medicare+Advantage+timely+filing+limit&sa=X&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+Medicare+Advantage+timely+filing+limit&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc Medicare advantage Timely filing limit for corrected claims",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&sa=X&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC Provider Portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=UHC+Provider+Portal&sa=X&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+Provider+Portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC care survey 25 1",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=UHC+care+survey+25+1&sa=X&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+care+survey+25+1&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "BIN 610279 PCN: 7777",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=BIN+610279+PCN:+7777&sa=X&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQ1QJ6BAgvEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BIN+610279+PCN%3A+7777&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "P.O. Box 31386 Salt Lake City UT 84131",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=P.O.+Box+31386+Salt+Lake+City+UT+84131&sa=X&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQ1QJ6BAgwEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=P.O.+Box+31386+Salt+Lake+City+UT+84131&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "PO Box 31387 SALT Lake City, UT 84131",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=PO+Box+31387+SALT+Lake+City,+UT+84131&sa=X&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQ1QJ6BAguEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=PO+Box+31387+SALT+Lake+City%2C+UT+84131&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Indiana+University+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=08ImaPykLdPL1sQPzKXkgAU&start=10&sa=N&sstk=Af40H4UtY_iQ6XnyA-l1eCjysjUSluHbZP0tahFSIo5sMWzSZUK39gSjXCeZLfl9c7aB3Irzmfv-7OZ-cD48IlzS9KiB5CSvk-rwJw&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQ8NMDegQIChAO",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Indiana+University+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=08ImaPykLdPL1sQPzKXkgAU&start=10&sa=N&sstk=Af40H4UtY_iQ6XnyA-l1eCjysjUSluHbZP0tahFSIo5sMWzSZUK39gSjXCeZLfl9c7aB3Irzmfv-7OZ-cD48IlzS9KiB5CSvk-rwJw&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=Indiana+University+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=08ImaPykLdPL1sQPzKXkgAU&start=20&sa=N&sstk=Af40H4UtY_iQ6XnyA-l1eCjysjUSluHbZP0tahFSIo5sMWzSZUK39gSjXCeZLfl9c7aB3Irzmfv-7OZ-cD48IlzS9KiB5CSvk-rwJw&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQ8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=Indiana+University+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=08ImaPykLdPL1sQPzKXkgAU&start=30&sa=N&sstk=Af40H4UtY_iQ6XnyA-l1eCjysjUSluHbZP0tahFSIo5sMWzSZUK39gSjXCeZLfl9c7aB3Irzmfv-7OZ-cD48IlzS9KiB5CSvk-rwJw&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQ8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=Indiana+University+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=08ImaPykLdPL1sQPzKXkgAU&start=40&sa=N&sstk=Af40H4UtY_iQ6XnyA-l1eCjysjUSluHbZP0tahFSIo5sMWzSZUK39gSjXCeZLfl9c7aB3Irzmfv-7OZ-cD48IlzS9KiB5CSvk-rwJw&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQ8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=Indiana+University+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=08ImaPykLdPL1sQPzKXkgAU&start=50&sa=N&sstk=Af40H4UtY_iQ6XnyA-l1eCjysjUSluHbZP0tahFSIo5sMWzSZUK39gSjXCeZLfl9c7aB3Irzmfv-7OZ-cD48IlzS9KiB5CSvk-rwJw&ved=2ahUKEwi82s2Sl6eNAxXTpZUCHcwSGVAQ8tMDegQIChAM"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Indiana+University+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Indiana+University+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Indiana+University+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Indiana+University+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Indiana+University+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Indiana+University+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Indiana+University+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50"
+    }
+  }
+}

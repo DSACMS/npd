@@ -1,0 +1,338 @@
+{
+  "search_metadata": {
+    "id": "6826c25ef7e996b032d2f29b",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/8e8452e2fbb91b93/6826c25ef7e996b032d2f29b.json",
+    "created_at": "2025-05-16 04:43:10 UTC",
+    "processed_at": "2025-05-16 04:43:10 UTC",
+    "google_url": "https://www.google.com/search?q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/8e8452e2fbb91b93/6826c25ef7e996b032d2f29b.html",
+    "total_time_taken": 5.66
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Educators Mutual Insurance Association Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Educators Mutual Insurance Association Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 871,
+    "time_taken_displayed": 0.24,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Policies and Technology for Interoperability and Burden ...",
+      "link": "https://www.cms.gov/policies-and-technology-interoperability-and-burden-reduction",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/policies-and-technology-interoperability-and-burden-reduction&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8QFnoECBkQAQ",
+      "displayed_link": "https://www.cms.gov \u203a policies-and-technology-interope...",
+      "favicon": "https://serpapi.com/searches/6826c25ef7e996b032d2f29b/images/956b833fa018f12830d280fe479cc845827f8a1fca0cd0b60adff9debf01ed33.png",
+      "date": "Sep 10, 2024",
+      "snippet": "HL7 FHIR Bulk Data Access(Flat FHIR) Specification. Policy. CMS ... provider directory information available via the Provider Directory API.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "provider directory",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "Association"
+      ],
+      "must_include": {
+        "word": "Association",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Educators+Mutual+Insurance+%22Association%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q5t4CegQILxAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "CMS/ONC Patient access API",
+      "link": "https://www.blueadvantagearkansas.com/interoperability/patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.blueadvantagearkansas.com/interoperability/patient-access&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8QFnoECB8QAQ",
+      "displayed_link": "https://www.blueadvantagearkansas.com \u203a interoperability",
+      "favicon": "https://serpapi.com/searches/6826c25ef7e996b032d2f29b/images/956b833fa018f12830d280fe479cc84542ec279e6909e636feb8ab9cfe35dcd3.png",
+      "snippet": "The Arkansas Blue Cross and Blue Shield1 Interoperability API provides third-party app developers access to FHIR ... The Provider Directory API will allow ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "source": "BlueAdvantage Administrators of Arkansas"
+    },
+    {
+      "position": 3,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2020/05/01/2020-05050/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2020/05/01/2020-05050/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8QFnoECB4QAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2020/05/01 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/6826c25ef7e996b032d2f29b/images/956b833fa018f12830d280fe479cc84529fb446901ff29556d9501760f521da6.png",
+      "date": "May 1, 2020",
+      "snippet": "The basic information (name, phone number, address, and specialty) required for this Provider Directory API can all be represented through FHIR ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "missing": [
+        "Mutual"
+      ],
+      "must_include": {
+        "word": "Mutual",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Educators+%22Mutual%22+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q5t4CegQIMBAB"
+      },
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "State Efforts to Coordinate Provider Directory Accuracy - ASPE",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8QFnoECCAQAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/6826c25ef7e996b032d2f29b/images/956b833fa018f12830d280fe479cc8456f453d1f8a5669e43aa9dec388fea172.png",
+      "date": "Dec 27, 2023",
+      "snippet": "These FHIR APIs improve the accessibility and transparency of provider directory data. Notes: a. Centers for Medicare & Medicaid Services (CMS).",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory",
+        "Medicare"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 45
+          },
+          "extensions": [
+            "45 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Mutual"
+      ],
+      "must_include": {
+        "word": "Mutual",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Educators+%22Mutual%22+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q5t4CegQIMRAB"
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 5,
+      "title": "Healthcare CMS Interoperability and Patient Access",
+      "link": "https://www.agnos.io/blog/healthcare-cms",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.agnos.io/blog/healthcare-cms&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8QFnoECBoQAQ",
+      "displayed_link": "https://www.agnos.io \u203a blog \u203a healthcare-cms",
+      "favicon": "https://serpapi.com/searches/6826c25ef7e996b032d2f29b/images/956b833fa018f12830d280fe479cc845343ecf141ed5f33c1f03e82c6f353b80.png",
+      "date": "Jul 9, 2021",
+      "snippet": "... provider directory information available via the Provider Directory API. ... FHIR and also HL7 v2, integration with Epic / Cerner, and CMS ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "source": "agnos.io"
+    },
+    {
+      "position": 6,
+      "title": "CMS-9123-P Reducing Provider and Patient Burden",
+      "link": "https://www.cms.gov/files/document/121020-reducing-provider-and-patient-burden-cms-9123-p.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/121020-reducing-provider-and-patient-burden-cms-9123-p.pdf&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8QFnoECCIQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a 121020...",
+      "favicon": "https://serpapi.com/searches/6826c25ef7e996b032d2f29b/images/956b833fa018f12830d280fe479cc84599f86c526798abb8bbc02423ba3c2672.png",
+      "date": "Jan 1, 2021",
+      "snippet": "payers implement and maintain the Provider Directory API conformant with the HL7 FHIR Da. Vinci Payer Data Exchange Plan Net IG. The Provider ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "Provider"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 347
+          },
+          "extensions": [
+            "347 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Mutual"
+      ],
+      "must_include": {
+        "word": "Mutual",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Educators+%22Mutual%22+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q5t4CegQILhAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "Interoperability & Data API Guidelines",
+      "link": "https://www.smchealth.org/node/6722",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.smchealth.org/node/6722&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8QFnoECBsQAQ",
+      "displayed_link": "https://www.smchealth.org \u203a node",
+      "favicon": "https://serpapi.com/searches/6826c25ef7e996b032d2f29b/images/956b833fa018f12830d280fe479cc845c6a06cf3a2063daeb6105d14a6b0bc7e.png",
+      "date": "Feb 16, 2024",
+      "snippet": "... FHIR API. A county software vendor security review and assessment ... provider-directory/v2/1639ac79-9144-4699-a38b-eb956f258677 ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "provider-directory"
+      ],
+      "missing": [
+        "Mutual",
+        "Association",
+        "Advantage"
+      ],
+      "source": "San Mateo County Health"
+    },
+    {
+      "position": 8,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8QFnoECD4QAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2019/03/04 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/6826c25ef7e996b032d2f29b/images/956b833fa018f12830d280fe479cc845fef96664ed73ba19b499c278170e1b9d.png",
+      "date": "Mar 4, 2019",
+      "snippet": "MA plans would be required to update provider directory information available through the API ... FHIR-based API discussed in section III.",
+      "snippet_highlighted_words": [
+        "plans",
+        "provider directory",
+        "API",
+        "FHIR",
+        "API"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "Interoperability website resources",
+      "link": "https://www.harvardpilgrim.org/public/interoperability-website-resources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.harvardpilgrim.org/public/interoperability-website-resources&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8QFnoECD8QAQ",
+      "displayed_link": "https://www.harvardpilgrim.org \u203a public \u203a interoperabil...",
+      "favicon": "https://serpapi.com/searches/6826c25ef7e996b032d2f29b/images/956b833fa018f12830d280fe479cc845a81dde6b0dc938ab9aa840251fade086.png",
+      "snippet": "Medicare Advantage members may also access formulary and provider directory information. ... FHIR test credentials. Applicable technical requirements and ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "provider directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Association"
+      ],
+      "must_include": {
+        "word": "Association",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Educators+Mutual+Insurance+%22Association%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q5t4CegQIRxAB"
+      },
+      "source": "Harvard Pilgrim Health Care"
+    },
+    {
+      "position": 10,
+      "title": "CareSource Interoperability Overview",
+      "link": "https://www.caresource.com/about-us/legal/interoperability-apis/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.caresource.com/about-us/legal/interoperability-apis/&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8QFnoECD0QAQ",
+      "displayed_link": "https://www.caresource.com \u203a legal \u203a interoperability-apis",
+      "favicon": "https://serpapi.com/searches/6826c25ef7e996b032d2f29b/images/956b833fa018f12830d280fe479cc8455c69826a8612700f5e88480362610d41.png",
+      "snippet": "Use the HL7 FHIR (Fast Healthcare Interoperability Resource) for patient and publicly available provider data ... Provider Directory API \u00b7 HL7 FHIR Da Vinci \u2013 ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "missing": [
+        "Mutual"
+      ],
+      "must_include": {
+        "word": "Mutual",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Educators+%22Mutual%22+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q5t4CegQIRhAB"
+      },
+      "source": "CareSource"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability Fact Sheet",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CMS+Interoperability+Fact+Sheet&sa=X&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q1QJ6BAg8EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+Fact+Sheet&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-9115-F Federal Register",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CMS-9115-F+Federal+Register&sa=X&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q1QJ6BAg7EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-9115-F+Federal+Register&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-0057-F",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CMS-0057-F&sa=X&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q1QJ6BAg6EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-0057-F&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability and Prior Authorization final rule (CMS-0057-F)",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CMS+Interoperability+and+Prior+Authorization+final+rule+(CMS-0057-F)&sa=X&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+and+Prior+Authorization+final+rule+%28CMS-0057-F%29&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Patient Access API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CMS+Patient+Access+API&sa=X&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Patient+Access+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-9123-P",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CMS-9123-P&sa=X&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-9123-P&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-9115-F Fact Sheet",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CMS-9115-F+Fact+Sheet&sa=X&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-9115-F+Fact+Sheet&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability faq",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CMS+Interoperability+faq&sa=X&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+faq&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=ZMImaJzsAbjR5NoPvtzm-Ak&start=10&sa=N&sstk=Af40H4XY8xzKhRmq3yC5XlTYHs6wrI50V7L_gb3ThHEio8i5ECjK2qT_mS_z1OyH_5ifplJOL6Zt0J_VYHmcWwThZQjQ9sQLSGv5YQ&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q8NMDegQIChAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=ZMImaJzsAbjR5NoPvtzm-Ak&start=10&sa=N&sstk=Af40H4XY8xzKhRmq3yC5XlTYHs6wrI50V7L_gb3ThHEio8i5ECjK2qT_mS_z1OyH_5ifplJOL6Zt0J_VYHmcWwThZQjQ9sQLSGv5YQ&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=ZMImaJzsAbjR5NoPvtzm-Ak&start=20&sa=N&sstk=Af40H4XY8xzKhRmq3yC5XlTYHs6wrI50V7L_gb3ThHEio8i5ECjK2qT_mS_z1OyH_5ifplJOL6Zt0J_VYHmcWwThZQjQ9sQLSGv5YQ&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=ZMImaJzsAbjR5NoPvtzm-Ak&start=30&sa=N&sstk=Af40H4XY8xzKhRmq3yC5XlTYHs6wrI50V7L_gb3ThHEio8i5ECjK2qT_mS_z1OyH_5ifplJOL6Zt0J_VYHmcWwThZQjQ9sQLSGv5YQ&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=ZMImaJzsAbjR5NoPvtzm-Ak&start=40&sa=N&sstk=Af40H4XY8xzKhRmq3yC5XlTYHs6wrI50V7L_gb3ThHEio8i5ECjK2qT_mS_z1OyH_5ifplJOL6Zt0J_VYHmcWwThZQjQ9sQLSGv5YQ&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=ZMImaJzsAbjR5NoPvtzm-Ak&start=50&sa=N&sstk=Af40H4XY8xzKhRmq3yC5XlTYHs6wrI50V7L_gb3ThHEio8i5ECjK2qT_mS_z1OyH_5ifplJOL6Zt0J_VYHmcWwThZQjQ9sQLSGv5YQ&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q8tMDegQIChAM",
+      "7": "https://www.google.com/search?q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=ZMImaJzsAbjR5NoPvtzm-Ak&start=60&sa=N&sstk=Af40H4XY8xzKhRmq3yC5XlTYHs6wrI50V7L_gb3ThHEio8i5ECjK2qT_mS_z1OyH_5ifplJOL6Zt0J_VYHmcWwThZQjQ9sQLSGv5YQ&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q8tMDegQIChAO",
+      "8": "https://www.google.com/search?q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=ZMImaJzsAbjR5NoPvtzm-Ak&start=70&sa=N&sstk=Af40H4XY8xzKhRmq3yC5XlTYHs6wrI50V7L_gb3ThHEio8i5ECjK2qT_mS_z1OyH_5ifplJOL6Zt0J_VYHmcWwThZQjQ9sQLSGv5YQ&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q8tMDegQIChAQ",
+      "9": "https://www.google.com/search?q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=ZMImaJzsAbjR5NoPvtzm-Ak&start=80&sa=N&sstk=Af40H4XY8xzKhRmq3yC5XlTYHs6wrI50V7L_gb3ThHEio8i5ECjK2qT_mS_z1OyH_5ifplJOL6Zt0J_VYHmcWwThZQjQ9sQLSGv5YQ&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q8tMDegQIChAS",
+      "10": "https://www.google.com/search?q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=ZMImaJzsAbjR5NoPvtzm-Ak&start=90&sa=N&sstk=Af40H4XY8xzKhRmq3yC5XlTYHs6wrI50V7L_gb3ThHEio8i5ECjK2qT_mS_z1OyH_5ifplJOL6Zt0J_VYHmcWwThZQjQ9sQLSGv5YQ&ved=2ahUKEwicrqvdlqeNAxW4KFkFHT6uGZ8Q8tMDegQIChAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Educators+Mutual+Insurance+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

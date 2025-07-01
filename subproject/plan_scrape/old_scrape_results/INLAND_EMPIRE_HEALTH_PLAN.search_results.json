@@ -1,0 +1,342 @@
+{
+  "search_metadata": {
+    "id": "6826c2c11de0647ae182a356",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/b4d7d39d422a616a/6826c2c11de0647ae182a356.json",
+    "created_at": "2025-05-16 04:44:49 UTC",
+    "processed_at": "2025-05-16 04:44:49 UTC",
+    "google_url": "https://www.google.com/search?q=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/b4d7d39d422a616a/6826c2c11de0647ae182a356.html",
+    "total_time_taken": 1.78
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "INLAND EMPIRE HEALTH PLAN Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "INLAND EMPIRE HEALTH PLAN Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 9,
+    "time_taken_displayed": 0.18,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_images": [
+    {
+      "source": "https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREXLLe7Gw85ncQeWR8SwpqmTLEPEHfpiBt8jdLsyENv_iVV1NuF6OCrSA&s",
+      "original": "https://defacto.health/wp-content/uploads/2024/06/fireworks.jpg",
+      "title": "State of Provider Directory APIs 2024 \u2013 Defacto Health",
+      "source_name": "Defacto Health"
+    },
+    {
+      "source": "https://www.iehp.org/content/dam/iehp-org/en/documents/governing-board-meetings/governing-board-reports/feb-2024/IEHP%20and%20IEHP%20Health%20Access%20Board%20Report%20346-February%205%202024.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRHJSGpa98JnOUDx6VjgfnMlCZn30weG2m3-_XadeBA6isqAC6M80zkS923g&s",
+      "original": "x-raw-image:///b83f1cbdf327ffce4d2e8ec0d109ca2b124715c9b7c3dde0ef010ad75563cd66",
+      "title": "REGULAR MEETING OF THE GOVERNING BOARD OF THE INLAND EMPIRE ...",
+      "source_name": "IEHP"
+    },
+    {
+      "source": "https://lacare.org/sites/default/files/20240307_Board_of_Governors_Meeting_Packet_0.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT44owxSn2k7fhKNLdkSaxZqNvLyShn9Gn7B8Pj1AyGfjpWrFjp0kJWqFWJKg&s",
+      "original": "x-raw-image:///860e28a368f95b8b795cd38abc0129cf91dcfd595a8766c653e7ed0281187aa3",
+      "title": "BOARD OF GOVERNORS",
+      "source_name": "L.A. Care Health Plan"
+    },
+    {
+      "source": "https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306-ADA.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEK9vlw3Mt1rZLlMkdJn7PJUoBF2EwjYH2P0CS6JADv5p4HSOqMlXRnkMtxQ&s",
+      "original": "x-raw-image:///42e26b7c8ceea2f2c8f63c92105d483df8da1db731faefa96f60800b6cbba321",
+      "title": "Health Care Payments Data Program",
+      "source_name": "HCAI - CA.gov"
+    },
+    {
+      "source": "https://www.lacare.org/sites/default/files/executive_committee_packet_20220426.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYcMfGHGZ1i62yL9gT-LEqaLlWSYqGq7ced0XC54ZtRVVMSKa4ZJJjcBCMjw&s",
+      "original": "x-raw-image:///ea0492d3fb0a6c127564348a804814eb3aa34f8b358b60c528cbf721f4fa23b4",
+      "title": "EXECUTIVE COMMITTEE MEETING Board of Governors",
+      "source_name": "L.A. Care Health Plan"
+    },
+    {
+      "source": "https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr8oir7MgE5fhT3ntlID9XjLUjSqEvYjCQXIwrn8H7qieB3iCO7XDSvaQ&s",
+      "original": "x-raw-image:///12349acd5d9af4efc01771c327dc729ed11bea70f335ee69836ad5a0d7f5ac83",
+      "title": "California State Medi-Cal",
+      "source_name": "DHCS - CA.gov"
+    },
+    {
+      "source": "https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5IpkFpAtQ6ugX_Fdda3X5S7yMTZmidFXbRqn4UQf8e3aar-vjbd1TIr8&s",
+      "original": "x-raw-image:///f127285cbc6ccad63f8e88e94c7eb105953ff1d7be22df0a782b558930a3d2cf",
+      "title": "Health Care Payments Data Program",
+      "source_name": "HCAI - CA.gov"
+    },
+    {
+      "source": "https://www.communityplans.net/all-pages/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6rAI2FNzQBXN3CUcccfqzAuOuMcO_vRujSHyhSw3Dfk3TDlUG9TRvH24&s",
+      "original": "http://www.communityplans.net/Portals/0/Plan%20Documents/Compliance/Org%20Charts/CHP%20Org%20Chart.jpg",
+      "title": "Association For Community Affiliated Plans || All Pages ...",
+      "source_name": "Association For Community Affiliated Plans"
+    },
+    {
+      "source": "https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkKWXuYuerB1x93H2YoikcIJndWtj2-GsivGpjFuz_xZc8GsG8tdZc830&s",
+      "original": "x-raw-image:///6aeae1924cf197d4d8cd33a1bb508c01f321cc1c4076ad61052eda575ef7c2a4",
+      "title": "California State Medi-Cal",
+      "source_name": "DHCS - CA.gov"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Is Inland Empire Health Plan Medicare?",
+      "snippet": "IEHP DualChoice (HMO D-SNP) is an HMO Plan with a Medicare contract. Enrollment in IEHP DualChoice (HMO D-SNP) depends on contract renewal. Information on this page is current as of October 15, 2024.",
+      "title": "IEHP DualChoice",
+      "link": "https://www.iehp.org/en/browse-plans/dualchoice#:~:text=IEHP%20DualChoice%20(HMO%20D%2DSNP)%20is%20an%20HMO%20Plan,as%20of%20October%2015%2C%202024.",
+      "displayed_link": "https://www.iehp.org \u203a browse-plans \u203a dualchoice",
+      "source_logo": "https://serpapi.com/searches/6826c2c11de0647ae182a356/images/39d07995848c1408935e0f03e9d3733628dc3746d44076fbb7de8dc89d70f6e8.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobE1HbGhYM1JoT1hGblMxOXBRakJ5VUZaNWNrMURkVVJNWTE5RFJ6SlphV3gzVmpneVdHOURRVVpUT0V4V05tWXpiekpLZWsxT1RtMU9jbE5DTkZwa1RpMUpWbVJSVVdNeWRpMWtNSGxGYTBwTFYzcDZTbUZDVmpWMGR4SVhkM05KYldGS2RtNUtiMHRKZUdNNFVISmxhVFJ0UVhjYUlrRkRSRmhNTkd4Qk5rUmZlR0p4UkdsMFdrWmlUR2hwU2xOVFQwcFFTWGhwZWxFIiwiZmN2IjoiMyIsImVpIjoid3NJbWFKdm5Kb0tJeGM4UHJlaTRtQXciLCJxYyI6ImN3M0t6UW1BTUF3R1VNLWVIT0hicERkeGpkQkVHLWhQQ0tYZ3dSMGN5ZEhzOWZIV1EydW15cEJpNm9Ja2xIdUNUVU1SMWtnVGlRZlZUcGZBdkExbGNmRE1zVGVfUWFZNGtfcTJQTi03aHg4IiwicXVlc3Rpb24iOiJJcyBJbmxhbmQgRW1waXJlIEhlYWx0aCBQbGFuIE1lZGljYXJlPyIsImxrIjoiR2lWcGN5QnBibXhoYm1RZ1pXMXdhWEpsSUdobFlXeDBhQ0J3YkdGdUlHMWxaR2xqWVhKbCIsImJzIjoiYy1NSzRWTHpMRmJ3ek10SnpFdFJjTTB0eUN4S1ZmQklUY3dweVZBSUFJb3AtS2FtWkNZbkZxWGFTeHpQTjFLWFVzMHNWc2lFS0U2RktNNkFLQzRBS2M2Rkt1WXE0YklMejBnc1VRQ3FMc2xJVlNqSXlNOUxWY2dyelUxS0xWSkl5eV9DWTE5eVRtSm1ickc5eEhadEkzMHBYZHhXUWRTaG1DekFDQUEiLCJpZCI6ImZjX3dzSW1hSnZuSm9LSXhjOFByZWk0bUF3XzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobE1HbGhYM1JoT1hGblMxOXBRakJ5VUZaNWNrMURkVVJNWTE5RFJ6SlphV3gzVmpneVdHOURRVVpUT0V4V05tWXpiekpLZWsxT1RtMU9jbE5DTkZwa1RpMUpWbVJSVVdNeWRpMWtNSGxGYTBwTFYzcDZTbUZDVmpWMGR4SVhkM05KYldGS2RtNUtiMHRKZUdNNFVISmxhVFJ0UVhjYUlrRkRSRmhNTkd4Qk5rUmZlR0p4UkdsMFdrWmlUR2hwU2xOVFQwcFFTWGhwZWxFIiwiZmN2IjoiMyIsImVpIjoid3NJbWFKdm5Kb0tJeGM4UHJlaTRtQXciLCJxYyI6ImN3M0t6UW1BTUF3R1VNLWVIT0hicERkeGpkQkVHLWhQQ0tYZ3dSMGN5ZEhzOWZIV1EydW15cEJpNm9Ja2xIdUNUVU1SMWtnVGlRZlZUcGZBdkExbGNmRE1zVGVfUWFZNGtfcTJQTi03aHg4IiwicXVlc3Rpb24iOiJJcyBJbmxhbmQgRW1waXJlIEhlYWx0aCBQbGFuIE1lZGljYXJlPyIsImxrIjoiR2lWcGN5QnBibXhoYm1RZ1pXMXdhWEpsSUdobFlXeDBhQ0J3YkdGdUlHMWxaR2xqWVhKbCIsImJzIjoiYy1NSzRWTHpMRmJ3ek10SnpFdFJjTTB0eUN4S1ZmQklUY3dweVZBSUFJb3AtS2FtWkNZbkZxWGFTeHpQTjFLWFVzMHNWc2lFS0U2RktNNkFLQzRBS2M2Rkt1WXE0YklMejBnc1VRQ3FMc2xJVlNqSXlNOUxWY2dyelUxS0xWSkl5eV9DWTE5eVRtSm1ickc5eEhadEkzMHBYZHhXUWRTaG1DekFDQUEiLCJpZCI6ImZjX3dzSW1hSnZuSm9LSXhjOFByZWk0bUF3XzMifQ%3D%3D"
+    },
+    {
+      "question": "What is the phone number for Inland Empire Health Plan claims?",
+      "snippet": null,
+      "title": "AI Overview",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Member+Services&sa=X&ved=2ahUKEwib0LmKl6eNAxUCRPEDHS00DsMQxccNegQIUBAB",
+      "displayed_link": null,
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobE1HbGhYM1JoT1hGblMxOXBRakJ5VUZaNWNrMURkVVJNWTE5RFJ6SlphV3gzVmpneVdHOURRVVpUT0V4V05tWXpiekpLZWsxT1RtMU9jbE5DTkZwa1RpMUpWbVJSVVdNeWRpMWtNSGxGYTBwTFYzcDZTbUZDVmpWMGR4SVhkM05KYldGS2RtNUtiMHRKZUdNNFVISmxhVFJ0UVhjYUlrRkRSRmhNTkd4Qk5rUmZlR0p4UkdsMFdrWmlUR2hwU2xOVFQwcFFTWGhwZWxFIiwiZmN2IjoiMyIsImVpIjoid3NJbWFKdm5Kb0tJeGM4UHJlaTRtQXciLCJxYyI6ImN3M0t6UW1BTUF3R1VNLWVIT0hicERkeGpkQkVHLWhQQ0tYZ3dSMGN5ZEhzOWZIV1EydW15cEJpNm9Ja2xIdUNUVU1SMWtnVGlRZlZUcGZBdkExbGNmRE1zVGVfUWFZNGtfcTJQTi03aHg4IiwicXVlc3Rpb24iOiJXaGF0IGlzIHRoZSBwaG9uZSBudW1iZXIgZm9yIElubGFuZCBFbXBpcmUgSGVhbHRoIFBsYW4gY2xhaW1zPyIsImxrIjoiR2kxcGJteGhibVFnWlcxd2FYSmxJR2hsWVd4MGFDQndiR0Z1SUdOc1lXbHRjeUJ3YUc5dVpTQnVkVzFpWlhJIiwiYnMiOiJjLU1LNFZMekxGYnd6TXRKekV0UmNNMHR5Q3hLVmZCSVRjd3B5VkFJQUlvcC1LYW1aQ1luRnFYYVN4elBOMUtYVXMwc1ZzaUVLRTZGS002QUtDNEFLYzZGS3VZcTRiSUx6MGdzVVFDcUxzbElWU2pJeU05TFZjZ3J6VTFLTFZKSXl5X0NZMTl5VG1KbWJyRzl4SFp0STMwcFhkeFdRZFNobUN6QUNBQSIsImlkIjoiZmNfd3NJbWFKdm5Kb0tJeGM4UHJlaTRtQXdfMyJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobE1HbGhYM1JoT1hGblMxOXBRakJ5VUZaNWNrMURkVVJNWTE5RFJ6SlphV3gzVmpneVdHOURRVVpUT0V4V05tWXpiekpLZWsxT1RtMU9jbE5DTkZwa1RpMUpWbVJSVVdNeWRpMWtNSGxGYTBwTFYzcDZTbUZDVmpWMGR4SVhkM05KYldGS2RtNUtiMHRKZUdNNFVISmxhVFJ0UVhjYUlrRkRSRmhNTkd4Qk5rUmZlR0p4UkdsMFdrWmlUR2hwU2xOVFQwcFFTWGhwZWxFIiwiZmN2IjoiMyIsImVpIjoid3NJbWFKdm5Kb0tJeGM4UHJlaTRtQXciLCJxYyI6ImN3M0t6UW1BTUF3R1VNLWVIT0hicERkeGpkQkVHLWhQQ0tYZ3dSMGN5ZEhzOWZIV1EydW15cEJpNm9Ja2xIdUNUVU1SMWtnVGlRZlZUcGZBdkExbGNmRE1zVGVfUWFZNGtfcTJQTi03aHg4IiwicXVlc3Rpb24iOiJXaGF0IGlzIHRoZSBwaG9uZSBudW1iZXIgZm9yIElubGFuZCBFbXBpcmUgSGVhbHRoIFBsYW4gY2xhaW1zPyIsImxrIjoiR2kxcGJteGhibVFnWlcxd2FYSmxJR2hsWVd4MGFDQndiR0Z1SUdOc1lXbHRjeUJ3YUc5dVpTQnVkVzFpWlhJIiwiYnMiOiJjLU1LNFZMekxGYnd6TXRKekV0UmNNMHR5Q3hLVmZCSVRjd3B5VkFJQUlvcC1LYW1aQ1luRnFYYVN4elBOMUtYVXMwc1ZzaUVLRTZGS002QUtDNEFLYzZGS3VZcTRiSUx6MGdzVVFDcUxzbElWU2pJeU05TFZjZ3J6VTFLTFZKSXl5X0NZMTl5VG1KbWJyRzl4SFp0STMwcFhkeFdRZFNobUN6QUNBQSIsImlkIjoiZmNfd3NJbWFKdm5Kb0tJeGM4UHJlaTRtQXdfMyJ9"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "State of Provider Directory APIs 2024",
+      "link": "https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/&ved=2ahUKEwib0LmKl6eNAxUCRPEDHS00DsMQFnoECBkQAQ&usg=AOvVaw0XnNDExfmnTKGRRZu_aoJb",
+      "displayed_link": "https://defacto.health \u203a 2024/06/24 \u203a state-of-provider-di...",
+      "favicon": "https://serpapi.com/searches/6826c2c11de0647ae182a356/images/a05b7c767b959bfd7258ad029dd2a3258dd3c324bf86a71ef34875ad59b8a7dc.png",
+      "date": "Jun 24, 2024",
+      "snippet": "... Provider Directory data via FHIR APIs: UnitedHealthcare; Elevance (Anthem); Humana; Aetna; Molina; L.A. Care; Amerihealth Caritas; CareSource ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Defacto Health"
+    },
+    {
+      "position": 2,
+      "title": "regular meeting of the governing board",
+      "link": "https://www.iehp.org/content/dam/iehp-org/en/documents/governing-board-meetings/governing-board-reports/feb-2024/IEHP%20and%20IEHP%20Health%20Access%20Board%20Report%20346-February%205%202024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.iehp.org/content/dam/iehp-org/en/documents/governing-board-meetings/governing-board-reports/feb-2024/IEHP%2520and%2520IEHP%2520Health%2520Access%2520Board%2520Report%2520346-February%25205%25202024.pdf&ved=2ahUKEwib0LmKl6eNAxUCRPEDHS00DsMQFnoECB8QAQ&usg=AOvVaw1PQYU_X8RWj7vELYWpXe5D",
+      "displayed_link": "https://www.iehp.org \u203a documents \u203a feb-2024 \u203a I...",
+      "favicon": "https://serpapi.com/searches/6826c2c11de0647ae182a356/images/a05b7c767b959bfd7258ad029dd2a3255167d4fbdcb7b7e4a435583328f064bc.png",
+      "date": "Feb 5, 2024",
+      "snippet": "Healthcare Interoperability Resources (FHIR) standards ... o Provide a Provider Directory API that is updated monthly and available 24/7.",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 256
+          },
+          "extensions": [
+            "256 pages"
+          ]
+        }
+      },
+      "source": "IEHP"
+    },
+    {
+      "position": 3,
+      "title": "Health Care Payments Data Program - HCAI",
+      "link": "https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306.pdf&ved=2ahUKEwib0LmKl6eNAxUCRPEDHS00DsMQFnoECBsQAQ&usg=AOvVaw0SnE6Fb9dPf1fH-XRhh_HL",
+      "displayed_link": "https://hcai.ca.gov \u203a uploads \u203a 2020/12 \u203a HPD-L...",
+      "favicon": "https://serpapi.com/searches/6826c2c11de0647ae182a356/images/a05b7c767b959bfd7258ad029dd2a325977230d489d23030ec83d7566a0f381f.png",
+      "date": "Mar 9, 2020",
+      "snippet": "Hierarchical X12 274 Health Care Provider Directory. While there is ... (FHIR\u00ae), which are open-source Health Level Seven International ...",
+      "snippet_highlighted_words": [
+        "Health",
+        "Provider Directory",
+        "FHIR",
+        "Health"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 207
+          },
+          "extensions": [
+            "207 pages"
+          ]
+        }
+      },
+      "source": "HCAI - Department of Health Care Access and Information (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "EXECUTIVE COMMITTEE MEETING Board of Governors",
+      "link": "https://www.lacare.org/sites/default/files/executive_committee_packet_20220426.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/executive_committee_packet_20220426.pdf&ved=2ahUKEwib0LmKl6eNAxUCRPEDHS00DsMQFnoECBUQAQ&usg=AOvVaw3CV7Sk9tGmN8r-oOb9Vly2",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files \u203a ex...",
+      "favicon": "https://serpapi.com/searches/6826c2c11de0647ae182a356/images/a05b7c767b959bfd7258ad029dd2a3254a9fcf780b557965ccbc6c2409781fb3.png",
+      "date": "Apr 26, 2022",
+      "snippet": "The first phase is complete with public facing provider directory API's (Application Program ... Resources (FHIR) format, in compliance ...",
+      "snippet_highlighted_words": [
+        "provider directory API's",
+        "Program",
+        "FHIR"
+      ],
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 5,
+      "title": "California State Medi-Cal Health Information Technology Plan ...",
+      "link": "https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf&ved=2ahUKEwib0LmKl6eNAxUCRPEDHS00DsMQFnoECB4QAQ&usg=AOvVaw0ntu-GHQghDJbHLNxzWZSn",
+      "displayed_link": "https://www.dhcs.ca.gov \u203a Documents \u203a OHIT \u203a C...",
+      "favicon": "https://serpapi.com/searches/6826c2c11de0647ae182a356/images/a05b7c767b959bfd7258ad029dd2a32509419ae4b8cc78c98e825c33c09c0016.png",
+      "date": "Mar 1, 2022",
+      "snippet": "requirements to use Fast Healthcare Interoperability Resources (FHIR) for certification, ... and provider directory. The only service area ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 246
+          },
+          "extensions": [
+            "246 pages"
+          ]
+        }
+      },
+      "source": "DHCS (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "CalAIM and Health Data Sharing: A Road Map for Effective ...",
+      "link": "https://www.chcf.org/wp-content/uploads/2021/04/CalAIMHealthDataSharingRoadMapECMILOS.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chcf.org/wp-content/uploads/2021/04/CalAIMHealthDataSharingRoadMapECMILOS.pdf&ved=2ahUKEwib0LmKl6eNAxUCRPEDHS00DsMQFnoECBoQAQ&usg=AOvVaw1paQPleViWdB8EMBRU1gid",
+      "displayed_link": "https://www.chcf.org \u203a uploads \u203a 2021/04 \u203a CalAI...",
+      "favicon": "https://serpapi.com/searches/6826c2c11de0647ae182a356/images/a05b7c767b959bfd7258ad029dd2a325799680f9568691f9c3ea0c20610a0b6e.png",
+      "snippet": "In particular, the ONC rule adopted HL7 FHIR APIs as the foundational standard for application-based exchange of health information. ... \u201cSymphony Provider ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "health",
+        "Provider"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 47
+          },
+          "extensions": [
+            "47 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=INLAND+EMPIRE+HEALTH+PLAN+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwib0LmKl6eNAxUCRPEDHS00DsMQ5t4CegQIIxAB"
+      },
+      "source": "California Health Care Foundation"
+    },
+    {
+      "position": 7,
+      "title": "Board of Governors Meeting",
+      "link": "https://lacare.org/sites/default/files/20220505%20Board%20of%20Governors%20Meeting%20Packet.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://lacare.org/sites/default/files/20220505%2520Board%2520of%2520Governors%2520Meeting%2520Packet.pdf&ved=2ahUKEwib0LmKl6eNAxUCRPEDHS00DsMQFnoECBgQAQ&usg=AOvVaw0an3MW9Y6cLoPyo1AP8d3Q",
+      "displayed_link": "https://lacare.org \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/6826c2c11de0647ae182a356/images/a05b7c767b959bfd7258ad029dd2a3257da903f4fcca158d391b2838052ef7e4.png",
+      "date": "May 5, 2022",
+      "snippet": "... Provider Directory Utility; and. \u2022 employ the newly established data ... (FHIR) format, in compliance with federal and state regulatory ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 8,
+      "title": "All Pages",
+      "link": "https://www.communityplans.net/all-pages/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.communityplans.net/all-pages/&ved=2ahUKEwib0LmKl6eNAxUCRPEDHS00DsMQFnoECDEQAQ&usg=AOvVaw0PaRoaEwAmnJDegiCUrTs-",
+      "displayed_link": "https://www.communityplans.net \u203a all-pages",
+      "snippet": "Beyond Patient Access \u2013 the Next Wave of FHIR Use Cases for Payers ... National Provider Directory RFI Roundtable Call \u00b7 Marketplace & Medicare Joint ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "Medicare"
+      ],
+      "source": "Association For Community Affiliated Plans"
+    },
+    {
+      "position": 9,
+      "title": "Intervoice Communication of Puerto Rico Technical Proposal",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Intervoice/Fifth%20Response.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Intervoice/Fifth%2520Response.pdf&ved=2ahUKEwib0LmKl6eNAxUCRPEDHS00DsMQFnoECDIQAQ&usg=AOvVaw3HK53oSGr7xTiPnmzhvZZj",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a 2024-PRMP-HIE-001",
+      "favicon": "https://serpapi.com/searches/6826c2c11de0647ae182a356/images/a05b7c767b959bfd7258ad029dd2a32578f638c311f9e4a9a39403416e5deb61.png",
+      "date": "Mar 13, 2024",
+      "snippet": "... provider directory. Additionally, one of ... Technologies (SMART) on FHIR, and all Integrating the Healthcare Enterprise (IHE) protocols.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR",
+        "Healthcare"
+      ],
+      "source": "Gobierno de Puerto Rico (.gov)"
+    }
+  ],
+  "top_stories_link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&udm=2&source=univ&fir=v4XQpnmXe55sKM%252Cv625w1Kum3_OvM%252C_%253Bzv8n870cP7hqqM%252CBaZqIRYu8HeI3M%252C_%253Bi1v5aKMoDobenM%252C3IUzcGjdlXMTWM%252C_%253B8qLujHxr4kKDBM%252CO-V28bTJXZOlTM%252C_%253BEmwK-9OSBOrO7M%252CHKOgbxc3lQc__M%252C_%253B7_SaXc2aNBKNIM%252CZzgQFt-qH8W2QM%252C_%253B1spsvFwoJ_HArM%252CMt1YwoPAIF7IgM%252C_%253BdJy6jwkDHKXatM%252CshoeGLs1bV17aM%252C_%253B1JfxTJLh6mpcUM%252CZzgQFt-qH8W2QM%252C_&usg=AI4_-kQLCnN_ldzyEU7K9lruiRx4Bwg3LQ&sa=X&ved=2ahUKEwib0LmKl6eNAxUCRPEDHS00DsMQ7Al6BAgwEAU",
+  "top_stories_serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active",
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 9 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=INLAND+EMPIRE+HEALTH+PLAN+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "search_metadata": {
+    "id": "6826c23a50849c6bc22f0f2a",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/23f0b2e902d3b75f/6826c23a50849c6bc22f0f2a.json",
+    "created_at": "2025-05-16 04:42:34 UTC",
+    "processed_at": "2025-05-16 04:42:34 UTC",
+    "google_url": "https://www.google.com/search?q=Commonwealth+of+PA+Pub+Schools+Retirement+System+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Commonwealth+of+PA+Pub+Schools+Retirement+System+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/23f0b2e902d3b75f/6826c23a50849c6bc22f0f2a.html",
+    "total_time_taken": 1.85
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Commonwealth of PA Pub Schools Retirement System Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Commonwealth of PA Pub Schools Retirement System Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 40,
+    "time_taken_displayed": 0.33,
+    "organic_results_state": "Showing results for exact spelling despite spelling suggestion",
+    "spelling_fix": "Commonwealth of PA Public Schools Retirement System Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "FY 2024-2025 ACAP Agreement",
+      "link": "https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/services/disabilities-aging/documents/acap/2024-2025-acap-agreement.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/services/disabilities-aging/documents/acap/2024-2025-acap-agreement.pdf&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQFnoECB0QAQ&usg=AOvVaw1XMI3EC5SkifPFmnF-mG4u",
+      "displayed_link": "https://www.pa.gov \u203a dhs \u203a services \u203a documents",
+      "favicon": "https://serpapi.com/searches/6826c23a50849c6bc22f0f2a/images/4624cad7c39165096c10e5b688c25f45699ba85e50ff49c239b0e2ab178d745c.png",
+      "date": "Jul 1, 2024",
+      "snippet": "Interoperability Resources (FHIR) application programming interface. ... Information included in a paper Provider directory must be updated.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 115
+          },
+          "extensions": [
+            "115 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Commonwealth+of+PA+Pub+Schools+Retirement+System+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQ5t4CegQILRAB"
+      },
+      "source": "Commonwealth of Pennsylvania (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Federal Register/Vol. 89, No. 150/Monday, August 5, 2024/ ...",
+      "link": "https://www.govinfo.gov/content/pkg/FR-2024-08-05/pdf/2024-14975.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.govinfo.gov/content/pkg/FR-2024-08-05/pdf/2024-14975.pdf&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQFnoECBoQAQ&usg=AOvVaw0KS6tj9frvLj5pFyS5c-mQ",
+      "displayed_link": "https://www.govinfo.gov \u203a content \u203a pkg \u203a pdf",
+      "favicon": "https://serpapi.com/searches/6826c23a50849c6bc22f0f2a/images/4624cad7c39165096c10e5b688c25f45ed10a83737a52f7a0614893c9d8909f3.png",
+      "date": "Aug 5, 2024",
+      "snippet": "... (FHIR\u00ae) solutions and evolving standards related to public health ... Provider Directory API to make available information such as ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "public",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 314
+          },
+          "extensions": [
+            "314 pages"
+          ]
+        }
+      },
+      "source": "GovInfo (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Medicare Program; Contract Year 2024 Policy and ...",
+      "link": "https://www.federalregister.gov/documents/2023/04/12/2023-07115/medicare-program-contract-year-2024-policy-and-technical-changes-to-the-medicare-advantage-program",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2023/04/12/2023-07115/medicare-program-contract-year-2024-policy-and-technical-changes-to-the-medicare-advantage-program&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQFnoECCYQAQ&usg=AOvVaw1zEHyCTkXJF1IQXxq_9XMC",
+      "displayed_link": "https://www.federalregister.gov \u203a 2023/04/12 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/6826c23a50849c6bc22f0f2a/images/4624cad7c39165096c10e5b688c25f4588cdfe5b3b3278ee766be28e919d2498.png",
+      "date": "Apr 12, 2023",
+      "snippet": "First, we proposed to mirror the provider directory requirements for Medicaid managed care plans at \u00a7 438.10(h)(1)(vii) by adding the phrase ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "plans"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Commonwealth of Pennsylvania",
+      "link": "https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/services/disabilities-aging/documents/acap/ACAP%20Agreement%20FY%2021%20-%2022%20FINAL%20with%20Signature%20page%20attached.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/services/disabilities-aging/documents/acap/ACAP%2520Agreement%2520FY%252021%2520-%252022%2520FINAL%2520with%2520Signature%2520page%2520attached.pdf&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQFnoECB8QAQ&usg=AOvVaw1Yd7GyGgJjoN448LP30PYg",
+      "displayed_link": "https://www.pa.gov \u203a services \u203a documents \u203a acap",
+      "favicon": "https://serpapi.com/searches/6826c23a50849c6bc22f0f2a/images/4624cad7c39165096c10e5b688c25f455e6061200bfd5db8565109611850d89b.png",
+      "date": "Jul 1, 2021",
+      "snippet": "Interoperability Resources (FHIR) application programming interface. ... Information included in a paper Provider directory must be updated.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Commonwealth+of+PA+Pub+Schools+Retirement+System+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQ5t4CegQILBAB"
+      },
+      "source": "Commonwealth of Pennsylvania (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "I.C.6 Management Information Systems",
+      "link": "https://finance.ky.gov/eProcurement/HumanaResponse/74_I_C_6_Management%20Information%20System_PROPRIETARY.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://finance.ky.gov/eProcurement/HumanaResponse/74_I_C_6_Management%2520Information%2520System_PROPRIETARY.pdf&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQFnoECBkQAQ&usg=AOvVaw3fB6WoM7muFaf5_eh3Vjb9",
+      "displayed_link": "https://finance.ky.gov \u203a HumanaResponse \u203a 74_I...",
+      "favicon": "https://serpapi.com/searches/6826c23a50849c6bc22f0f2a/images/4624cad7c39165096c10e5b688c25f459990e6738f4a261ab16061035ae11120.png",
+      "snippet": "Provider Information Management System (PIMS), which is the primary provider directory system that ... As referenced earlier, we leverage HL7 FHIR\u00ae Standards and ...",
+      "snippet_highlighted_words": [
+        "System",
+        "provider directory system",
+        "FHIR"
+      ],
+      "source": "Kentucky.gov"
+    },
+    {
+      "position": 6,
+      "title": "Wisconsin Foster Care Medical Home CONTRACT",
+      "link": "https://www.forwardhealth.wi.gov/WIPortal/content/Managed%20Care%20Organization/Contracts/pdf/2024_2025_FCMH_Contract.pdf.spage",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.forwardhealth.wi.gov/WIPortal/content/Managed%2520Care%2520Organization/Contracts/pdf/2024_2025_FCMH_Contract.pdf.spage&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQFnoECB4QAQ&usg=AOvVaw3Fgayxdo2EhmDbzpsshlWr",
+      "displayed_link": "https://www.forwardhealth.wi.gov \u203a content \u203a pdf",
+      "favicon": "https://serpapi.com/searches/6826c23a50849c6bc22f0f2a/images/4624cad7c39165096c10e5b688c25f45b0709b9643de1de5db6ca77105f9b66c.png",
+      "snippet": "Provider Directory API: The PIHP shall make their Member-enrolled. PIHP provider directory information publicly available via an HL7 FHIR complaint standards ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "provider directory",
+        "FHIR"
+      ],
+      "source": "ForwardHealth Portal (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "Marketplace",
+      "link": "https://www.ntst.com/marketplace",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ntst.com/marketplace&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQFnoECBYQAQ&usg=AOvVaw3MnZkP6XEv_Ff9FU6xS-5x",
+      "displayed_link": "https://www.ntst.com \u203a marketplace",
+      "favicon": "https://serpapi.com/searches/6826c23a50849c6bc22f0f2a/images/4624cad7c39165096c10e5b688c25f45796c511de5c9b4741626135c298c2f57.png",
+      "snippet": "Provider Directory. Radiology Solutions. Radiology Solutions. Reporting ... Our ONC Certified FHIR APIs drive simplicity and scalability, empowering ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR APIs"
+      ],
+      "source": "Netsmart Technologies"
+    },
+    {
+      "position": 8,
+      "title": "American Health Law Association The Year in Review ...",
+      "link": "https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQFnoECDwQAQ&usg=AOvVaw1HP4fOeNxZ1mu5uTZ0Qmr6",
+      "displayed_link": "https://www.bradley.com \u203a publications \u203a 2022/02",
+      "favicon": "https://serpapi.com/searches/6826c23a50849c6bc22f0f2a/images/4624cad7c39165096c10e5b688c25f45ccdfd2b65d9c1090812eec65b49ff8cf.png",
+      "date": "Feb 17, 2022",
+      "snippet": "... FHIR\u00ae Roadmap for \u00b7 TEFCA Exchange (January 2022). The TEF is a set of ... Provider Directory API (applicable January 1, 2021, with ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 315
+          },
+          "extensions": [
+            "315 pages"
+          ]
+        }
+      },
+      "source": "Bradley Arant"
+    },
+    {
+      "position": 9,
+      "title": "Vital Directions - for Health & Health Care",
+      "link": "https://nam.edu/wp-content/uploads/2018/02/Vital-Directions-for-Health-and-Health-Care-Final-Publication-022718.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nam.edu/wp-content/uploads/2018/02/Vital-Directions-for-Health-and-Health-Care-Final-Publication-022718.pdf&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQFnoECDsQAQ&usg=AOvVaw0g_ThFUy-hsk5X8A_rjY2l",
+      "displayed_link": "https://nam.edu \u203a wp-content \u203a uploads \u203a 2018/02",
+      "favicon": "https://serpapi.com/searches/6826c23a50849c6bc22f0f2a/images/4624cad7c39165096c10e5b688c25f45d3828002e920485ad740d7238caedb53.png",
+      "date": "Jul 8, 2016",
+      "snippet": "... Provider directory. There is no national provider directory that ... (FHIR), will enhance data liquidity and enable an ecosystem of new ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 493
+          },
+          "extensions": [
+            "493 pages"
+          ]
+        }
+      },
+      "source": "National Academy of Medicine"
+    },
+    {
+      "position": 10,
+      "title": "Videos by Speaker - iHealthFlix",
+      "link": "https://ihealthflix.com/speaker",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ihealthflix.com/speaker&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQFnoECDkQAQ&usg=AOvVaw3h_zgdgDn2jmsn453vwWfR",
+      "displayed_link": "https://ihealthflix.com \u203a speaker",
+      "favicon": "https://serpapi.com/searches/6826c23a50849c6bc22f0f2a/images/4624cad7c39165096c10e5b688c25f45559eee8ed757e5747341ca466f406751.png",
+      "snippet": "... provider directory inaccuracies. 30% of provider data changes every year and studies found over 45% of provider directory locations had at least one error.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "provider directory"
+      ],
+      "source": "ihealthflix.com"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "CMS FAQ Medicare Advantage",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CMS+FAQ+Medicare+Advantage&sa=X&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+FAQ+Medicare+Advantage&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "88 fed. reg. 22120",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=88+fed.+reg.+22120&sa=X&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=88+fed.+reg.+22120&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Contract Year 2025 Policy and Technical changes to the Medicare Advantage Program",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Contract+Year+2025+Policy+and+Technical+changes+to+the+Medicare+Advantage+Program&sa=X&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Contract+Year+2025+Policy+and+Technical+changes+to+the+Medicare+Advantage+Program&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Medicare regulation",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Medicare+regulation&sa=X&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medicare+regulation&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CY 2025 Medicare Parts C and D annual Calendar",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CY+2025+Medicare+Parts+C+and+D+annual+Calendar&sa=X&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CY+2025+Medicare+Parts+C+and+D+annual+Calendar&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Do Medicare Advantage plans follow CMS guidelines",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Do+Medicare+Advantage+plans+follow+CMS+guidelines&sa=X&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Do+Medicare+Advantage+plans+follow+CMS+guidelines&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Changes to Medicare",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Changes+to+Medicare&sa=X&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Changes+to+Medicare&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Medicare 2026",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Medicare+2026&sa=X&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medicare+2026&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Commonwealth+of+PA+Pub+Schools+Retirement+System+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=O8ImaNbPHICSwbkPocCRQQ&start=10&sa=N&sstk=Af40H4XzgL0Fblb0_jcj116TpMRpRMDXil6Y5xQgRYGVMd6-kkokMSjRUUBw7c1uz7gQMBZ0JT4pNmHM-cba81y-od_aPVURwzta6Q&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQ8NMDegQICRAG",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Commonwealth+of+PA+Pub+Schools+Retirement+System+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=O8ImaNbPHICSwbkPocCRQQ&start=10&sa=N&sstk=Af40H4XzgL0Fblb0_jcj116TpMRpRMDXil6Y5xQgRYGVMd6-kkokMSjRUUBw7c1uz7gQMBZ0JT4pNmHM-cba81y-od_aPVURwzta6Q&ved=2ahUKEwiW2f_JlqeNAxUASTABHSFgJAgQ8tMDegQICRAE"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Commonwealth+of+PA+Pub+Schools+Retirement+System+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Commonwealth+of+PA+Pub+Schools+Retirement+System+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Commonwealth+of+PA+Pub+Schools+Retirement+System+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10"
+    }
+  }
+}

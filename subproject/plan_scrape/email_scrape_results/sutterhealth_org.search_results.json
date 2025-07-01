@@ -1,0 +1,80 @@
+{
+  "search_metadata": {
+    "id": "6861d57d09a51aad2e6c2296",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/b93b300863ab0842/6861d57d09a51aad2e6c2296.json",
+    "created_at": "2025-06-30 00:08:29 UTC",
+    "processed_at": "2025-06-30 00:08:29 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/b93b300863ab0842/6861d57d09a51aad2e6c2296.html",
+    "total_time_taken": 1.31
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:sutterhealth.org \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:sutterhealth.org \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 1,
+    "time_taken_displayed": 0.11,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Secure US Drug Formulary Server Capability Statement",
+      "link": "https://api-sut-prd.sutterhealth.org/v1/api",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://api-sut-prd.sutterhealth.org/v1/api&ved=2ahUKEwidsIif7ZeOAxWzZWwGHSLRFsAQFnoECBkQAQ",
+      "displayed_link": "https://api-sut-prd.sutterhealth.org \u203a api",
+      "snippet": "The complete list of FHIR ... This capability statement should meet the CMS Interoperability and Patient Access Final Rule requirement for provider directory ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "Sutter Health"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 1 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=site:sutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=f4d4ab88b266eb8a&gl=us&hl=en&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Asutterhealth.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

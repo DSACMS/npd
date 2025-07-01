@@ -1,0 +1,82 @@
+{
+  "search_metadata": {
+    "id": "6861d0c7bde979a8c0a769f1",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/247a891d8cf312d0/6861d0c7bde979a8c0a769f1.json",
+    "created_at": "2025-06-29 23:48:23 UTC",
+    "processed_at": "2025-06-29 23:48:23 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/247a891d8cf312d0/6861d0c7bde979a8c0a769f1.html",
+    "total_time_taken": 4.32
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:bcbsal.org \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:bcbsal.org \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 2,
+    "time_taken_displayed": 0.13,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Getting Started Quick Start Guide",
+      "link": "https://www.bcbsal.org/web/documents/1511503/9929524/FHIR+Documentation.pdf/92c3f9a2-1359-f6d6-86a0-8c7adf079236?t=1624550202958",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bcbsal.org/web/documents/1511503/9929524/FHIR%2BDocumentation.pdf/92c3f9a2-1359-f6d6-86a0-8c7adf079236%3Ft%3D1624550202958&ved=2ahUKEwi_6uHh6JeOAxWAHUQIHXbSMn4QFnoECBgQAQ",
+      "displayed_link": "https://www.bcbsal.org \u203a web \u203a documents \u203a FHI...",
+      "favicon": "https://serpapi.com/searches/6861d0c7bde979a8c0a769f1/images/5a9fc0501bd8a267bf9895b2319a77f2b009ab22335988798e22a72afc8037c9.jpeg",
+      "snippet": "Provider Directory. Overview. The Provider Directory API accesses the BCBSAL FHIR server portion of the Provider and. Pharmacy Directories. Utilizing only read ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Blue Cross and Blue Shield of Alabama"
+    },
+    {
+      "position": 2,
+      "title": "FHIR Documentation",
+      "link": "https://www.bcbsal.org/web/documents/1511503/29390937/FHIR+Documentation.pdf/1fb15554-03da-d549-5cb5-555482ca70dd?t=1719000437584",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bcbsal.org/web/documents/1511503/29390937/FHIR%2BDocumentation.pdf/1fb15554-03da-d549-5cb5-555482ca70dd%3Ft%3D1719000437584&ved=2ahUKEwi_6uHh6JeOAxWAHUQIHXbSMn4QFnoECBkQAQ",
+      "displayed_link": "https://www.bcbsal.org \u203a web \u203a documents \u203a FHI...",
+      "favicon": "https://serpapi.com/searches/6861d0c7bde979a8c0a769f1/images/5a9fc0501bd8a267bf9895b2319a77f2693f84908c926eb098114c56b3a61534.jpeg",
+      "snippet": "This section describes the FHIR profiles, resources and RESTful capabilities that the. Provider Directory API supports. A profile is a set of rules which allows ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "Blue Cross and Blue Shield of Alabama"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Abcbsal.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

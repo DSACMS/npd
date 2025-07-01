@@ -1,0 +1,108 @@
+{
+  "search_metadata": {
+    "id": "6861d317b6a867f666058614",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/b838d30dc34a15d9/6861d317b6a867f666058614.json",
+    "created_at": "2025-06-29 23:58:15 UTC",
+    "processed_at": "2025-06-29 23:58:15 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/b838d30dc34a15d9/6861d317b6a867f666058614.html",
+    "total_time_taken": 0.95
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:memorialhermann.org \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:memorialhermann.org \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 1,
+    "time_taken_displayed": 0.12,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_images": [
+    {
+      "source": "https://healthplan.memorialhermann.org/about-us/cmstpadev-documentation",
+      "thumbnail": "https://serpapi.com/searches/6861d317b6a867f666058614/images/ef66cec9aef45f3fc583877e723b030dd37698f22b47d06141d3b9ab91b8538b.jpeg",
+      "original": "https://healthplan.memorialhermann.org/-/media/memorial-hermann/healthplan/images/general/edw-account-log-in.png?la=en&h=276&w=400",
+      "title": "CMS Third-Party Application Developers Documentation ...",
+      "source_name": "Memorial Hermann Health Plan"
+    },
+    {
+      "source": "https://healthplan.memorialhermann.org/about-us/cmstpadev-documentation",
+      "thumbnail": "https://serpapi.com/searches/6861d317b6a867f666058614/images/ef66cec9aef45f3fc2aa5d78517266392adb5af6314b47430f0146ba961ee838.jpeg",
+      "original": "https://healthplan.memorialhermann.org/assets/images/logo-healthplan.svg",
+      "title": "CMS Third-Party Application Developers Documentation ...",
+      "source_name": "Memorial Hermann Health Plan"
+    },
+    {
+      "source": "https://healthplan.memorialhermann.org/about-us/cmstpadev-documentation",
+      "thumbnail": "https://serpapi.com/searches/6861d317b6a867f666058614/images/ef66cec9aef45f3fc83d2fca738954ab37aa5eae8a0022422074683666409e5e.jpeg",
+      "original": "https://healthplan.memorialhermann.org/assets/images/mh-logo-white.svg",
+      "title": "CMS Third-Party Application Developers Documentation ...",
+      "source_name": "Memorial Hermann Health Plan"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "CMS Third-Party Application Developers Documentation",
+      "link": "https://healthplan.memorialhermann.org/about-us/cmstpadev-documentation",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://healthplan.memorialhermann.org/about-us/cmstpadev-documentation&ved=2ahUKEwit-KX66peOAxVck68BHSm7LlUQFnoECBwQAQ",
+      "displayed_link": "https://healthplan.memorialhermann.org \u203a about-us \u203a c...",
+      "favicon": "https://serpapi.com/searches/6861d317b6a867f666058614/images/7a835d2241bf41ef8b9041792b49e5dbf70c6571865ef8609b3959e8d429c4aa.png",
+      "snippet": "The Provider Directory API accesses the Memorial Hermann Provider and Pharmacy Directories. This section describes the FHIR resources and RESTful capabilities ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Access And Authentication",
+            "link": "https://healthplan.memorialhermann.org/about-us/cmstpadev-documentation#:~:text=Access%20and%20Authentication,-This%20section%20provides%20steps%20for"
+          },
+          {
+            "title": "Consumer Access Api",
+            "link": "https://healthplan.memorialhermann.org/about-us/cmstpadev-documentation#:~:text=Consumer%20Access%20API,-Security"
+          },
+          {
+            "title": "Provider Directory Api",
+            "link": "https://healthplan.memorialhermann.org/about-us/cmstpadev-documentation#:~:text=Provider%20Directory%20API,-Overview"
+          }
+        ]
+      },
+      "source": "Memorial Hermann Health Plan"
+    }
+  ],
+  "top_stories_link": "https://www.google.com/search?safe=active&sca_esv=f4d4ab88b266eb8a&gl=us&hl=en&q=site:memorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&udm=2&source=univ&fir=X87o2QfESgH70M%252Csl0-XmN7ybUnzM%252C_%253BGWDakpEq4quxcM%252Csl0-XmN7ybUnzM%252C_%253B81FYhL1Teldt0M%252Csl0-XmN7ybUnzM%252C_&usg=AI4_-kR8K27ljH-INwLE0E_VkXs8bx9X_w&sa=X&ved=2ahUKEwit-KX66peOAxVck68BHSm7LlUQ7Al6BAgQEAU",
+  "top_stories_serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active",
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Amemorialhermann.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

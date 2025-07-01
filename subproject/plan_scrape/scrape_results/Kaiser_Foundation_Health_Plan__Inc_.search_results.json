@@ -1,0 +1,317 @@
+{
+  "search_metadata": {
+    "id": "6826c2eed868dd1687eac5c3",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/ad626368c998c527/6826c2eed868dd1687eac5c3.json",
+    "created_at": "2025-05-16 04:45:34 UTC",
+    "processed_at": "2025-05-16 04:45:34 UTC",
+    "google_url": "https://www.google.com/search?q=Kaiser+Foundation+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Kaiser+Foundation+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/ad626368c998c527/6826c2eed868dd1687eac5c3.html",
+    "total_time_taken": 2.71
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Kaiser Foundation Health Plan, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Kaiser Foundation Health Plan, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 245,
+    "time_taken_displayed": 0.34,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Technical information",
+      "link": "https://healthy.kaiserpermanente.org/northern-california/pages/technical-information",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://healthy.kaiserpermanente.org/northern-california/pages/technical-information&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQFnoECBkQAQ",
+      "displayed_link": "https://healthy.kaiserpermanente.org \u203a pages \u203a technical-i...",
+      "favicon": "https://serpapi.com/searches/6826c2eed868dd1687eac5c3/images/f8c83d3ecbe550dbd1bc58716b519e1090c2a479d7da6db406e835b1f71f06e6.png",
+      "snippet": "... provider directory, to learn about their benefits, medications, and providers ... FHIR standards-based, Application Programming Interface (API) resources.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Kaiser+Foundation+Health+Plan,+Inc.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ5t4CegQILxAB"
+      },
+      "source": "Kaiser Permanente"
+    },
+    {
+      "position": 2,
+      "title": "Request for Information; National Directory of Healthcare ...",
+      "link": "https://www.federalregister.gov/documents/2022/10/07/2022-21904/request-for-information-national-directory-of-healthcare-providers-and-services",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2022/10/07/2022-21904/request-for-information-national-directory-of-healthcare-providers-and-services&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQFnoECBgQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2022/10/07 \u203a request-...",
+      "favicon": "https://serpapi.com/searches/6826c2eed868dd1687eac5c3/images/f8c83d3ecbe550dbd1bc58716b519e10a0713799330d3ae0e21e08cf4f0e75c3.png",
+      "date": "Oct 7, 2022",
+      "snippet": "... FHIR API, to update its own provider directory with the latest information. This would allow the payer to present a provider directory ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "provider directory",
+        "provider directory"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "New ONC Regulations Mandate FHIR for EHRs and Create ...",
+      "link": "https://www.smiledigitalhealth.com/hubfs/2025/WP/FEB-2025-No%20Escaping%20FHIR%20New%20ONC%20Regulations%20Mandate%20FHIR%20for%20EHRs%20and%20Create%20Opportunities%20for%20Growth.pdf.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.smiledigitalhealth.com/hubfs/2025/WP/FEB-2025-No%2520Escaping%2520FHIR%2520New%2520ONC%2520Regulations%2520Mandate%2520FHIR%2520for%2520EHRs%2520and%2520Create%2520Opportunities%2520for%2520Growth.pdf.pdf&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQFnoECBcQAQ",
+      "displayed_link": "https://www.smiledigitalhealth.com \u203a hubfs \u203a FEB...",
+      "favicon": "https://serpapi.com/searches/6826c2eed868dd1687eac5c3/images/f8c83d3ecbe550dbd1bc58716b519e104ca5272e9217c3604959394bc4cde682.png",
+      "snippet": "Provider Directory by ensuring that they have ... Smile Digital Health is an enterprise FHIR platform ... Kaiser Family Foundation. https://www.kff ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "Health",
+        "FHIR",
+        "Kaiser",
+        "Foundation"
+      ],
+      "source": "Smile Digital Health"
+    },
+    {
+      "position": 4,
+      "title": "Digital transformation and interoperability are critical to ...",
+      "link": "https://www.hfsresearch.com/research/digital-transformation-and-interoperability-are-critical-to-health-plan-well-being/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hfsresearch.com/research/digital-transformation-and-interoperability-are-critical-to-health-plan-well-being/&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQFnoECBwQAQ",
+      "displayed_link": "https://www.hfsresearch.com \u203a Research & Insights",
+      "favicon": "https://serpapi.com/searches/6826c2eed868dd1687eac5c3/images/f8c83d3ecbe550dbd1bc58716b519e10c9d81fe10d01776f1eced56bbb735101.png",
+      "date": "Jan 3, 2023",
+      "snippet": "This rule enables several APIs, such as the Patient Access API, Provider Directory ... Another reason health plans lag in FHIR API execution is ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory",
+        "health plans",
+        "FHIR API"
+      ],
+      "missing": [
+        "Inc.",
+        "Advantage"
+      ],
+      "source": "HFS Research"
+    },
+    {
+      "position": 5,
+      "title": "Community Health Group | San Diego County Health Plans for ...",
+      "link": "https://www.chgsd.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chgsd.com/&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQFnoECBUQAQ",
+      "displayed_link": "https://www.chgsd.com",
+      "favicon": "https://serpapi.com/searches/6826c2eed868dd1687eac5c3/images/f8c83d3ecbe550dbd1bc58716b519e10f5f839a461a01db9cd711db7aff3c6e8.png",
+      "snippet": "FHIR Developer API \u00b7 Mission, Vision Statement \u00b7 MOU \u00b7 Population Health \u00b7 Quality ... Search Provider Directory \u00b7 Provider Portal Sign in. Claims. Submitting a ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Health",
+        "Provider Directory"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Medi-Cal",
+            "link": "https://www.chgsd.com/chg-plans/medi-cal"
+          },
+          {
+            "title": "Service Authorization Request",
+            "link": "https://www.chgsd.com/providers/authorizations/service-authorization-request"
+          },
+          {
+            "title": "Provider Disputes",
+            "link": "https://www.chgsd.com/providers/provider-services/provider-disputes"
+          },
+          {
+            "title": "My Health Plan",
+            "link": "https://www.chgsd.com/members/my-health-plan"
+          }
+        ]
+      },
+      "missing": [
+        "Kaiser",
+        "Foundation"
+      ],
+      "source": "Community Health Group"
+    },
+    {
+      "position": 6,
+      "title": "How Health Information Exchanges Support Integration for ...",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/dbf3c475dff9ef1d5bdbcdef7792889a/hie-support-integration-bh-settings.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/dbf3c475dff9ef1d5bdbcdef7792889a/hie-support-integration-bh-settings.pdf&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQFnoECBsQAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/6826c2eed868dd1687eac5c3/images/f8c83d3ecbe550dbd1bc58716b519e10a331c2cafbe63f354c2944cd24637ed2.png",
+      "date": "Dec 31, 2024",
+      "snippet": "In theory, a HL7 Fast Healthcare Interoperability Resources (FHIR) ... and a provider directory linking health care providers across a majority of ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "provider directory",
+        "health"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 71
+          },
+          "extensions": [
+            "71 pages"
+          ]
+        }
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 7,
+      "title": "Premium Reports",
+      "link": "https://klasresearch.com/reports",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://klasresearch.com/reports&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQFnoECBQQAQ",
+      "displayed_link": "https://klasresearch.com \u203a reports",
+      "favicon": "https://serpapi.com/searches/6826c2eed868dd1687eac5c3/images/f8c83d3ecbe550dbd1bc58716b519e10948c9efb0712cfe688d5099b681bfb0c.png",
+      "snippet": "Building on a previously established API, the stakeholders created a FHIR API ... health plans to have a patient access API and a provider directory API.",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR API",
+        "health plans",
+        "API",
+        "provider directory API"
+      ],
+      "source": "KLAS Research"
+    },
+    {
+      "position": 8,
+      "title": "National Directory of Healthcare Providers & Services (NDH) RFI ...",
+      "link": "https://downloads.regulations.gov/CMS-2022-0163-0370/attachment_1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://downloads.regulations.gov/CMS-2022-0163-0370/attachment_1.pdf&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQFnoECD4QAQ",
+      "displayed_link": "https://downloads.regulations.gov \u203a attachment_1",
+      "snippet": "across the healthcare industry. The FHIR-based NDH can patriciate in the QHIN exchange and provide trusted provider directory data to TEFCA FHIR data exchange.",
+      "snippet_highlighted_words": [
+        "healthcare",
+        "FHIR",
+        "provider directory",
+        "FHIR"
+      ],
+      "source": "Regulations.gov"
+    },
+    {
+      "position": 9,
+      "title": "2024 CCO Health IT Roadmap",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT/Documents/PCS_CO_CG_MP_LN2024HealthITRoadmap.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT/Documents/PCS_CO_CG_MP_LN2024HealthITRoadmap.pdf&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQFnoECDwQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a OHIT \u203a Documents",
+      "favicon": "https://serpapi.com/searches/6826c2eed868dd1687eac5c3/images/f8c83d3ecbe550dbd1bc58716b519e1037ae4dd46064d93543b893bbb5ccc254.png",
+      "date": "Dec 30, 2024",
+      "snippet": "The new powerful Provider Directory search includes the ability for additional filtering on the results page, convenient listing format, and ...",
+      "snippet_highlighted_words": [
+        "Provider Directory"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 10,
+      "title": "Consumer-Mediated Data Exchange for Research",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6682295/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pmc.ncbi.nlm.nih.gov/articles/PMC6682295/&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQFnoECD0QAQ",
+      "displayed_link": "https://pmc.ncbi.nlm.nih.gov \u203a articles \u203a PMC6682295",
+      "author": "by Y Bracha",
+      "snippet": "... FHIR API to aggregate data from multiple health care systems. A year later ... provider directory, with a user interface designed to help participants ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "health",
+        "provider directory"
+      ],
+      "source": "National Institutes of Health (NIH) (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Kaiser Permanente",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Kaiser+Permanente&sa=X&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ1QJ6BAg7EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+Permanente&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Api Kaiser login",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Api+Kaiser+login&sa=X&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ1QJ6BAg6EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Api+Kaiser+login&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Kaiser api schedule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Kaiser+api+schedule&sa=X&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+api+schedule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Some features are no longer available Kaiser",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Some+features+are+no+longer+available+Kaiser&sa=X&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Some+features+are+no+longer+available+Kaiser&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Kaiser accessibility",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Kaiser+accessibility&sa=X&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+accessibility&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Kaiser Permanente login help",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Kaiser+Permanente+login+help&sa=X&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+Permanente+login+help&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Kaiser Permanente corporate phone number",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Kaiser+Permanente+corporate+phone+number&sa=X&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+Permanente+corporate+phone+number&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Kaiser Permanente chat",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Kaiser+Permanente+chat&sa=X&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+Permanente+chat&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Kaiser+Foundation+Health+Plan,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=8MImaP6GD_qRwbkPlJH20Ag&start=10&sa=N&sstk=Af40H4WUB7DA0820nZ50t2P1E64-7WnK3OIBdcZTToLAhTfXgijY8G_vz-T3CtojYBTlkRjAUeopTuirumBzQEF7o5c70RnSQMHpcg&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ8NMDegQIChAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Kaiser+Foundation+Health+Plan,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=8MImaP6GD_qRwbkPlJH20Ag&start=10&sa=N&sstk=Af40H4WUB7DA0820nZ50t2P1E64-7WnK3OIBdcZTToLAhTfXgijY8G_vz-T3CtojYBTlkRjAUeopTuirumBzQEF7o5c70RnSQMHpcg&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=Kaiser+Foundation+Health+Plan,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=8MImaP6GD_qRwbkPlJH20Ag&start=20&sa=N&sstk=Af40H4WUB7DA0820nZ50t2P1E64-7WnK3OIBdcZTToLAhTfXgijY8G_vz-T3CtojYBTlkRjAUeopTuirumBzQEF7o5c70RnSQMHpcg&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=Kaiser+Foundation+Health+Plan,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=8MImaP6GD_qRwbkPlJH20Ag&start=30&sa=N&sstk=Af40H4WUB7DA0820nZ50t2P1E64-7WnK3OIBdcZTToLAhTfXgijY8G_vz-T3CtojYBTlkRjAUeopTuirumBzQEF7o5c70RnSQMHpcg&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=Kaiser+Foundation+Health+Plan,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=8MImaP6GD_qRwbkPlJH20Ag&start=40&sa=N&sstk=Af40H4WUB7DA0820nZ50t2P1E64-7WnK3OIBdcZTToLAhTfXgijY8G_vz-T3CtojYBTlkRjAUeopTuirumBzQEF7o5c70RnSQMHpcg&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=Kaiser+Foundation+Health+Plan,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=8MImaP6GD_qRwbkPlJH20Ag&start=50&sa=N&sstk=Af40H4WUB7DA0820nZ50t2P1E64-7WnK3OIBdcZTToLAhTfXgijY8G_vz-T3CtojYBTlkRjAUeopTuirumBzQEF7o5c70RnSQMHpcg&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ8tMDegQIChAM",
+      "7": "https://www.google.com/search?q=Kaiser+Foundation+Health+Plan,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=8MImaP6GD_qRwbkPlJH20Ag&start=60&sa=N&sstk=Af40H4WUB7DA0820nZ50t2P1E64-7WnK3OIBdcZTToLAhTfXgijY8G_vz-T3CtojYBTlkRjAUeopTuirumBzQEF7o5c70RnSQMHpcg&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ8tMDegQIChAO",
+      "8": "https://www.google.com/search?q=Kaiser+Foundation+Health+Plan,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=8MImaP6GD_qRwbkPlJH20Ag&start=70&sa=N&sstk=Af40H4WUB7DA0820nZ50t2P1E64-7WnK3OIBdcZTToLAhTfXgijY8G_vz-T3CtojYBTlkRjAUeopTuirumBzQEF7o5c70RnSQMHpcg&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ8tMDegQIChAQ",
+      "9": "https://www.google.com/search?q=Kaiser+Foundation+Health+Plan,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=8MImaP6GD_qRwbkPlJH20Ag&start=80&sa=N&sstk=Af40H4WUB7DA0820nZ50t2P1E64-7WnK3OIBdcZTToLAhTfXgijY8G_vz-T3CtojYBTlkRjAUeopTuirumBzQEF7o5c70RnSQMHpcg&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ8tMDegQIChAS",
+      "10": "https://www.google.com/search?q=Kaiser+Foundation+Health+Plan,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=8MImaP6GD_qRwbkPlJH20Ag&start=90&sa=N&sstk=Af40H4WUB7DA0820nZ50t2P1E64-7WnK3OIBdcZTToLAhTfXgijY8G_vz-T3CtojYBTlkRjAUeopTuirumBzQEF7o5c70RnSQMHpcg&ved=2ahUKEwj-vpmgl6eNAxX6SDABHZSIHYoQ8tMDegQIChAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+Foundation+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+Foundation+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+Foundation+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+Foundation+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+Foundation+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+Foundation+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+Foundation+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+Foundation+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+Foundation+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+Foundation+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Kaiser+Foundation+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

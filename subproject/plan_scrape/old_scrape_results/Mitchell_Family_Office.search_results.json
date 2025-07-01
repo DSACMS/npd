@@ -1,0 +1,319 @@
+{
+  "search_metadata": {
+    "id": "6826c34b4707f142ab84ee91",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/4d353c4cfeae5a61/6826c34b4707f142ab84ee91.json",
+    "created_at": "2025-05-16 04:47:07 UTC",
+    "processed_at": "2025-05-16 04:47:07 UTC",
+    "google_url": "https://www.google.com/search?q=Mitchell+Family+Office+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Mitchell+Family+Office+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/4d353c4cfeae5a61/6826c34b4707f142ab84ee91.html",
+    "total_time_taken": 0.58
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Mitchell Family Office Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Mitchell Family Office Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 76,
+    "time_taken_displayed": 0.25,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "How Health Information Exchanges Support Integration for ...",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/dbf3c475dff9ef1d5bdbcdef7792889a/hie-support-integration-bh-settings.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/dbf3c475dff9ef1d5bdbcdef7792889a/hie-support-integration-bh-settings.pdf&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0QFnoECB0QAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/6826c34b4707f142ab84ee91/images/a6a24549f53b188754258f64b2ade73205c0274eb9f56dc56201260b71ad379b.png",
+      "date": "Dec 31, 2024",
+      "snippet": "Improved interoperability solutions, such as investing in technologies and standards like FHIR APIs and USCDI+, can enhance interoperability and ...",
+      "snippet_highlighted_words": [
+        "FHIR APIs"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 71
+          },
+          "extensions": [
+            "71 pages"
+          ]
+        }
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 2,
+      "title": "Pragmatic Approaches to Interoperability in the U.S.",
+      "link": "https://telehealthandmedicinetoday.com/index.php/journal/article/download/421/910/5884",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://telehealthandmedicinetoday.com/index.php/journal/article/download/421/910/5884&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0QFnoECBgQAQ",
+      "displayed_link": "https://telehealthandmedicinetoday.com \u203a download",
+      "favicon": "https://serpapi.com/searches/6826c34b4707f142ab84ee91/images/a6a24549f53b188754258f64b2ade73259c54693866d273ec8c7b1a518d4d9c9.png",
+      "author": "by B Perugu",
+      "snippet": "Guidance for Patient Access APIs, Provider Directory. APIs, data ... SMART on FHIR \u2013 azure API for FHIR. [Internet]. 2023. Available from ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "Provider Directory",
+        "APIs",
+        "FHIR",
+        "API",
+        "FHIR"
+      ],
+      "missing": [
+        "Family",
+        "Advantage"
+      ],
+      "source": "Telehealth and Medicine Today"
+    },
+    {
+      "position": 3,
+      "title": "Streamlining Prior Authorization: Final Report ...",
+      "link": "https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0QFnoECBcQAQ",
+      "displayed_link": "https://24315998.fs1.hubspotusercontent-na1.net \u203a ...",
+      "snippet": "A broader FHIR-based interoperability rule was put into effect by CMS in July of 202158 ... APIs and provider directory infor- mation through the Provider ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "APIs",
+        "provider directory",
+        "Provider"
+      ],
+      "source": "hubspotusercontent-na1.net"
+    },
+    {
+      "position": 4,
+      "title": "Announcement of Calendar Year (CY) 2020 Medicare ...",
+      "link": "https://www.cms.gov/medicare/health-plans/medicareadvtgspecratestats/downloads/announcement2020.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/medicare/health-plans/medicareadvtgspecratestats/downloads/announcement2020.pdf&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0QFnoECBwQAQ",
+      "displayed_link": "https://www.cms.gov \u203a health-plans \u203a downloads",
+      "favicon": "https://serpapi.com/searches/6826c34b4707f142ab84ee91/images/a6a24549f53b188754258f64b2ade73229d247e06217362539f3758ca85a2ca4.png",
+      "date": "Apr 1, 2019",
+      "snippet": "types, make provider directory data available through a standardized API. ... developed a Fast Healthcare Interoperability Resources (FHIR) ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "API",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 242
+          },
+          "extensions": [
+            "242 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Improving Health Through Interoperability and Information ...",
+      "link": "https://bipartisanpolicy.org/wp-content/uploads/2019/03/BPC-Improving-Health-Interoperability.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://bipartisanpolicy.org/wp-content/uploads/2019/03/BPC-Improving-Health-Interoperability.pdf&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0QFnoECBsQAQ",
+      "displayed_link": "https://bipartisanpolicy.org \u203a uploads \u203a 2019/03",
+      "favicon": "https://serpapi.com/searches/6826c34b4707f142ab84ee91/images/a6a24549f53b188754258f64b2ade732bd83b720d34910c209626001d4e438d9.png",
+      "snippet": "34 Providers also cite the lack of a common provider directory and lack of standards for accurately ... Resources (FHIR) specifications developed by HL7. Page 13 ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 24
+          },
+          "extensions": [
+            "24 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Mitchell+Family+Office+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0Q5t4CegQILBAB"
+      },
+      "source": "Bipartisan Policy Center"
+    },
+    {
+      "position": 6,
+      "title": "Board of Governors Meeting",
+      "link": "https://www.lacare.org/sites/default/files/20220728%20Board%20of%20Governors%20Meeting%20Packet.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/20220728%2520Board%2520of%2520Governors%2520Meeting%2520Packet.pdf&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0QFnoECBkQAQ",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/6826c34b4707f142ab84ee91/images/a6a24549f53b188754258f64b2ade732973a8ece1cde90edc6d4c266eab45c2b.png",
+      "date": "Jul 28, 2022",
+      "snippet": "Complete test of Fast Healthcare Interoperability Resources (FHIR) APIs to external partners. ... complete Provider Directory. This allows ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "APIs",
+        "Provider Directory"
+      ],
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 7,
+      "title": "2020 ONC Annual Meeting Agenda",
+      "link": "https://www.healthit.gov/sites/default/files/2019-12/ONC2020AgendaBasic_0.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/2019-12/ONC2020AgendaBasic_0.pdf&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0QFnoECB4QAQ",
+      "displayed_link": "https://www.healthit.gov \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/6826c34b4707f142ab84ee91/images/a6a24549f53b188754258f64b2ade732e33e883bf4606b963307ae7b8fd42194.jpeg",
+      "snippet": "This session will present data on the market reach of FHIR among EHR developers using CHPL data, how FHIR has been deployed in health care apps based upon the ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Mitchell+Family+Office+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0Q5t4CegQILhAB"
+      },
+      "source": "National Coordinator for Health Information Technology (ONC) (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "April 23, 2021 Ms. Lee Carsner, Executive Director Fiscal ...",
+      "link": "https://www.capitol.tn.gov/Archives/Joint/committees/fiscal-review/contracts/5.%20RFS%20318.65-00026%20TennCare%20(Volunteer%20State%20Health%20Plan%20-%20amd%2050).pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.capitol.tn.gov/Archives/Joint/committees/fiscal-review/contracts/5.%2520RFS%2520318.65-00026%2520TennCare%2520(Volunteer%2520State%2520Health%2520Plan%2520-%2520amd%252050).pdf&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0QFnoECEAQAQ",
+      "displayed_link": "https://www.capitol.tn.gov \u203a committees \u203a contracts",
+      "favicon": "https://serpapi.com/searches/6826c34b4707f142ab84ee91/images/a6a24549f53b188754258f64b2ade7328e6c64610dc32cff8478482bf9afdfaf.png",
+      "date": "Jul 1, 2021",
+      "snippet": "The Provider Directory API shall be. Page 114. Amendment 50 (cont.) 108 provided via an HL7 FHIR compliant standards-based API. The online ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Mitchell+Family+Office+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0Q5t4CegQIQxAB"
+      },
+      "source": "tenn. general assembly (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "Health Information Technology Oversight Council",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/2016-0609%20Materials.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%2520Meeting%2520Docs/2016-0609%2520Materials.pdf&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0QFnoECDoQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HPA \u203a OHIT-HITOC",
+      "favicon": "https://serpapi.com/searches/6826c34b4707f142ab84ee91/images/a6a24549f53b188754258f64b2ade73228b003b8a1c3f4f9d66e3727515890c9.png",
+      "date": "Jun 9, 2016",
+      "snippet": "(APIs, FHIR). Oregon ... including the OCCP, Provider Directory, and Clinical Quality Metrics Registry under the agency's Office of Health.",
+      "snippet_highlighted_words": [
+        "APIs",
+        "FHIR",
+        "Provider Directory",
+        "Office"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 10,
+      "title": "Advance Notice of Methodological Changes for Calendar ...",
+      "link": "https://www.cms.gov/Medicare/Health-Plans/MedicareAdvtgSpecRateStats/Downloads/Advance2020Part2.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/Medicare/Health-Plans/MedicareAdvtgSpecRateStats/Downloads/Advance2020Part2.pdf&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0QFnoECDsQAQ",
+      "displayed_link": "https://www.cms.gov \u203a Health-Plans \u203a Downloads",
+      "favicon": "https://serpapi.com/searches/6826c34b4707f142ab84ee91/images/a6a24549f53b188754258f64b2ade732dca1d19789efcfece2e4863d9a8f018e.png",
+      "date": "Jan 30, 2019",
+      "snippet": "centralized repository for provider directory data, often referred to as a \u201csource of truth.\u201d As a consequence, the current process of ...",
+      "snippet_highlighted_words": [
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 210
+          },
+          "extensions": [
+            "210 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Medicare advantage moop 2024",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Medicare+advantage+moop+2024&sa=X&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0Q1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medicare+advantage+moop+2024&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "2025 medicare advantage moop",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=2025+medicare+advantage+moop&sa=X&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0Q1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=2025+medicare+advantage+moop&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Key 2024 medicare advantage dates",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Key+2024+medicare+advantage+dates&sa=X&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0Q1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Key+2024+medicare+advantage+dates&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Cms data medicare advantage",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Cms+data+medicare+advantage&sa=X&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0Q1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Cms+data+medicare+advantage&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Medicare Advantage percentage",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Medicare+Advantage+percentage&sa=X&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0Q1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medicare+Advantage+percentage&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Medicare advantage changes for 2025 pdf",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Medicare+advantage+changes+for+2025+pdf&sa=X&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0Q1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medicare+advantage+changes+for+2025+pdf&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "2025 medicare advantage star ratings pdf",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=2025+medicare+advantage+star+ratings+pdf&sa=X&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0Q1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=2025+medicare+advantage+star+ratings+pdf&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Risk Adjustment data Technical Assistance for Medicare Advantage Organizations participant Guide",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Risk+Adjustment+data+Technical+Assistance+for+Medicare+Advantage+Organizations+participant+Guide&sa=X&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0Q1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Risk+Adjustment+data+Technical+Assistance+for+Medicare+Advantage+Organizations+participant+Guide&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Mitchell+Family+Office+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=TMMmaKisB4qSwbkPlZSRaA&start=10&sa=N&sstk=Af40H4VhLGZbUjf9WOeqV3LuvWuiyRzBRrprjQbOAyofFHIFAZElvqkTpk7aTfy46V9oqADIz6y5Zc5ASPcohCwMY6HCNg7uVcgGdQ&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0Q8NMDegQICBAI",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Mitchell+Family+Office+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=TMMmaKisB4qSwbkPlZSRaA&start=10&sa=N&sstk=Af40H4VhLGZbUjf9WOeqV3LuvWuiyRzBRrprjQbOAyofFHIFAZElvqkTpk7aTfy46V9oqADIz6y5Zc5ASPcohCwMY6HCNg7uVcgGdQ&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0Q8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=Mitchell+Family+Office+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=TMMmaKisB4qSwbkPlZSRaA&start=20&sa=N&sstk=Af40H4VhLGZbUjf9WOeqV3LuvWuiyRzBRrprjQbOAyofFHIFAZElvqkTpk7aTfy46V9oqADIz6y5Zc5ASPcohCwMY6HCNg7uVcgGdQ&ved=2ahUKEwiogoHMl6eNAxUKSTABHRVKBA0Q8tMDegQICBAG"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Mitchell+Family+Office+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Mitchell+Family+Office+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Mitchell+Family+Office+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Mitchell+Family+Office+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20"
+    }
+  }
+}

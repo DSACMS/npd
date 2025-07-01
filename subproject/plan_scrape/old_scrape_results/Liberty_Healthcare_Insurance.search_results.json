@@ -1,0 +1,310 @@
+{
+  "search_metadata": {
+    "id": "6826c2f53f79f54f06a58578",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/6e1182bf5cbd8554/6826c2f53f79f54f06a58578.json",
+    "created_at": "2025-05-16 04:45:41 UTC",
+    "processed_at": "2025-05-16 04:45:41 UTC",
+    "google_url": "https://www.google.com/search?q=Liberty+Healthcare+Insurance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Liberty+Healthcare+Insurance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/6e1182bf5cbd8554/6826c2f53f79f54f06a58578.html",
+    "total_time_taken": 5.5
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Liberty Healthcare Insurance Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Liberty Healthcare Insurance Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 94,
+    "time_taken_displayed": 0.31,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "2024 - 07 FAST National Directory of Healthcare Providers ...",
+      "link": "https://confluence.hl7.org/spaces/FHIR/pages/239242167/2024+-+07+FAST+National+Directory+of+Healthcare+Providers+Services+NDH+Da+Vinci+Plan+Net?src=contextnavpagetreemode",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/spaces/FHIR/pages/239242167/2024%2B-%2B07%2BFAST%2BNational%2BDirectory%2Bof%2BHealthcare%2BProviders%2BServices%2BNDH%2BDa%2BVinci%2BPlan%2BNet%3Fsrc%3Dcontextnavpagetreemode&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQFnoECBsQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a spaces \u203a FHIR \u203a pages \u203a 202...",
+      "favicon": "https://serpapi.com/searches/6826c2f53f79f54f06a58578/images/12dfaa443de45bfd316b83014afb3b9437e82cb8eb81dc39c051ad10e1229d11.png",
+      "date": "Jul 18, 2024",
+      "snippet": "Ability to manage provider directory ... national-directory.fast.hl7.org/fhir/InsurancePlan?name=Medicare Advantage Plan&_include=InsurancePlan: ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "fhir",
+        "Medicare Advantage"
+      ],
+      "source": "Carnegie Mellon University (CMU)"
+    },
+    {
+      "position": 2,
+      "title": "LIBERTY Dental Plan - Interoperability-API",
+      "link": "https://interoperability.libertydentalplan.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://interoperability.libertydentalplan.com/&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQFnoECB8QAQ",
+      "displayed_link": "https://interoperability.libertydentalplan.com",
+      "favicon": "https://serpapi.com/searches/6826c2f53f79f54f06a58578/images/12dfaa443de45bfd316b83014afb3b943d5839ed6dd69cffe12d58879aba215a.png",
+      "snippet": "The Provider Directory API will allow developers to retrieve, as applicable ... FHIR API Developer Resources: Patient \u00b7 Practitioner \u00b7 Coverage \u00b7 Claims ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR API"
+      ],
+      "missing": [
+        "Medicare",
+        "Advantage"
+      ],
+      "source": "LIBERTY Dental Plan"
+    },
+    {
+      "position": 3,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQFnoECBoQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/6826c2f53f79f54f06a58578/images/12dfaa443de45bfd316b83014afb3b94c58f471efcb7b8c114077479e5a962f1.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 4,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQFnoECB4QAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/6826c2f53f79f54f06a58578/images/12dfaa443de45bfd316b83014afb3b9478c96bad27b5fafd5bcbbcf30f7de963.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 5,
+      "title": "Interoperability and Patient Access - Wellcare by Health Net",
+      "link": "https://wellcare.healthnetcalifornia.com/member-resources/member-rights/interoperability-and-patient-access.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://wellcare.healthnetcalifornia.com/member-resources/member-rights/interoperability-and-patient-access.html&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQFnoECB0QAQ",
+      "displayed_link": "https://wellcare.healthnetcalifornia.com \u203a member-rights",
+      "favicon": "https://serpapi.com/searches/6826c2f53f79f54f06a58578/images/12dfaa443de45bfd316b83014afb3b94c3c0fdf85607d40f79c5eca86d47cb13.png",
+      "snippet": "As a developer, how do I access and use the Patient Access API? Go to our Partner PortalExternal Link and scroll to the \u201cFHIR \u2013 Provider Directory\u201d, click it ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "Wellcare by Health Net"
+    },
+    {
+      "position": 6,
+      "title": "MES Technical Reference Architecture - Alabama Medicaid",
+      "link": "https://medicaid.alabama.gov/documents/2.0_Newsroom/2.4_Procurement/2.4_Active_Procurements/2.4_PL08_Technical_Reference_Architecture_2-14-24.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medicaid.alabama.gov/documents/2.0_Newsroom/2.4_Procurement/2.4_Active_Procurements/2.4_PL08_Technical_Reference_Architecture_2-14-24.pdf&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQFnoECBkQAQ",
+      "displayed_link": "https://medicaid.alabama.gov \u203a 2.4_Procurement",
+      "favicon": "https://serpapi.com/searches/6826c2f53f79f54f06a58578/images/12dfaa443de45bfd316b83014afb3b945f1e2ce456325eef49d0001fe40af3af.png",
+      "snippet": "Provider Directory. US Core Implementation Guide ... Each MES application must provide an API for other applications to use when exchanging information. ... \u2022 FHIR\u00ae ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "API",
+        "FHIR"
+      ],
+      "source": "Alabama Medicaid (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "New Options for Managing Your Digital Medical Records",
+      "link": "https://www.healthnet.com/content/healthnet/en_us/members/managing-your-digital-medical-records.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthnet.com/content/healthnet/en_us/members/managing-your-digital-medical-records.html&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQFnoECBwQAQ",
+      "displayed_link": "https://www.healthnet.com \u203a content \u203a en_us \u203a members",
+      "favicon": "https://serpapi.com/searches/6826c2f53f79f54f06a58578/images/12dfaa443de45bfd316b83014afb3b94d05d1beb80131a32ea31d6a507a0326e.png",
+      "date": "Aug 2, 2024",
+      "snippet": "As a developer, how do I access and use the Provider Directory API? Go to our Partner PortalExternal Link and scroll to the \"FHIR \u2013 Provider ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "Provider"
+      ],
+      "source": "Health Net"
+    },
+    {
+      "position": 8,
+      "title": "DHCF Organizational Chart \u2013 Agency Structure - DC Council",
+      "link": "https://dccouncil.gov/wp-content/uploads/2022/03/dhcfatt.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dccouncil.gov/wp-content/uploads/2022/03/dhcfatt.pdf&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQFnoECDsQAQ",
+      "displayed_link": "https://dccouncil.gov \u203a 2022/03 \u203a dhcfatt",
+      "favicon": "https://serpapi.com/searches/6826c2f53f79f54f06a58578/images/12dfaa443de45bfd316b83014afb3b9484007a10055790115edfd85f545a673b.png",
+      "snippet": "The new system will allow Patients, Providers and Payers to exchange patient's health information through FHIR standard APIs. ... provider directory, CRISP ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 369
+          },
+          "extensions": [
+            "369 pages"
+          ]
+        }
+      },
+      "source": "dccouncil.gov"
+    },
+    {
+      "position": 9,
+      "title": "LIBERTY-Dental-Plan-of-Arkansas-Inc.-REDACTED ...",
+      "link": "https://humanservices.arkansas.gov/wp-content/uploads/LIBERTY-Dental-Plan-of-Arkansas-Inc.-REDACTED-Technical-Proposal-710-23-0081.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://humanservices.arkansas.gov/wp-content/uploads/LIBERTY-Dental-Plan-of-Arkansas-Inc.-REDACTED-Technical-Proposal-710-23-0081.pdf&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQFnoECDoQAQ",
+      "displayed_link": "https://humanservices.arkansas.gov \u203a uploads \u203a L...",
+      "favicon": "https://serpapi.com/searches/6826c2f53f79f54f06a58578/images/12dfaa443de45bfd316b83014afb3b9447d649184b62634a61cd23e5ead1c5ba.png",
+      "date": "Nov 6, 2023",
+      "snippet": "\u2022 A link to the LIBERTY's current Provider Directory with the capability to search for network Providers by geographic locations, type of ...",
+      "snippet_highlighted_words": [
+        "LIBERTY's",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 269
+          },
+          "extensions": [
+            "269 pages"
+          ]
+        }
+      },
+      "source": "Arkansas Department of Human Services (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "Exhibit A \u2013 Managed Care Uniform Terms and Conditions v1.4",
+      "link": "https://www.hhs.texas.gov/sites/default/files/documents/amended-star-plus-4.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.texas.gov/sites/default/files/documents/amended-star-plus-4.pdf&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQFnoECDkQAQ",
+      "displayed_link": "https://www.hhs.texas.gov \u203a amended-star-plus-4",
+      "favicon": "https://serpapi.com/searches/6826c2f53f79f54f06a58578/images/12dfaa443de45bfd316b83014afb3b94a29f278e3d6ac8489445cf527f945301.png",
+      "date": "Mar 1, 2025",
+      "snippet": "Application Programming Interface (API) and a provider directory API using the required ... http://hl7.org/fhir/. The MCO must comply with ...",
+      "snippet_highlighted_words": [
+        "API",
+        "provider directory API",
+        "fhir"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 348
+          },
+          "extensions": [
+            "348 pages"
+          ]
+        }
+      },
+      "source": "Texas Health and Human Services (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "United health care providers 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=United+health+care+providers+2025&sa=X&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=United+health+care+providers+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "United HealthCare Michigan provider phone number",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=United+HealthCare+Michigan+provider+phone+number&sa=X&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=United+HealthCare+Michigan+provider+phone+number&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc Provider Appeal address",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Uhc+Provider+Appeal+address&sa=X&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+Provider+Appeal+address&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "United Healthcare Provider Manual",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=United+Healthcare+Provider+Manual&sa=X&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=United+Healthcare+Provider+Manual&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc Provider Guidelines",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Uhc+Provider+Guidelines&sa=X&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+Provider+Guidelines&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "United healthcare Prior Authorization appeal form",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=United+healthcare+Prior+Authorization+appeal+form&sa=X&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=United+healthcare+Prior+Authorization+appeal+form&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Medicare Advantage Provider Manual",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Medicare+Advantage+Provider+Manual&sa=X&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medicare+Advantage+Provider+Manual&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UMR Provider Manual",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=UMR+Provider+Manual&sa=X&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UMR+Provider+Manual&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Liberty+Healthcare+Insurance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=-sImaK3XKdKyhbIPnPLPqQ0&start=10&sa=N&sstk=Af40H4UB6XjnmVncpI4sG_XCfbzbJPcu4RuK6TJSzNRA358-wVXtj_Z4fqyQfDMeirjmtxb12DvQD5RpiV955jzbVU2wKCFhrhQphg&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQ8NMDegQICxAO",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Liberty+Healthcare+Insurance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=-sImaK3XKdKyhbIPnPLPqQ0&start=10&sa=N&sstk=Af40H4UB6XjnmVncpI4sG_XCfbzbJPcu4RuK6TJSzNRA358-wVXtj_Z4fqyQfDMeirjmtxb12DvQD5RpiV955jzbVU2wKCFhrhQphg&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQ8tMDegQICxAE",
+      "3": "https://www.google.com/search?q=Liberty+Healthcare+Insurance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=-sImaK3XKdKyhbIPnPLPqQ0&start=20&sa=N&sstk=Af40H4UB6XjnmVncpI4sG_XCfbzbJPcu4RuK6TJSzNRA358-wVXtj_Z4fqyQfDMeirjmtxb12DvQD5RpiV955jzbVU2wKCFhrhQphg&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQ8tMDegQICxAG",
+      "4": "https://www.google.com/search?q=Liberty+Healthcare+Insurance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=-sImaK3XKdKyhbIPnPLPqQ0&start=30&sa=N&sstk=Af40H4UB6XjnmVncpI4sG_XCfbzbJPcu4RuK6TJSzNRA358-wVXtj_Z4fqyQfDMeirjmtxb12DvQD5RpiV955jzbVU2wKCFhrhQphg&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQ8tMDegQICxAI",
+      "5": "https://www.google.com/search?q=Liberty+Healthcare+Insurance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=-sImaK3XKdKyhbIPnPLPqQ0&start=40&sa=N&sstk=Af40H4UB6XjnmVncpI4sG_XCfbzbJPcu4RuK6TJSzNRA358-wVXtj_Z4fqyQfDMeirjmtxb12DvQD5RpiV955jzbVU2wKCFhrhQphg&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQ8tMDegQICxAK",
+      "6": "https://www.google.com/search?q=Liberty+Healthcare+Insurance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=-sImaK3XKdKyhbIPnPLPqQ0&start=50&sa=N&sstk=Af40H4UB6XjnmVncpI4sG_XCfbzbJPcu4RuK6TJSzNRA358-wVXtj_Z4fqyQfDMeirjmtxb12DvQD5RpiV955jzbVU2wKCFhrhQphg&ved=2ahUKEwitvJall6eNAxVSWUEAHRz5M9UQ8tMDegQICxAM"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Liberty+Healthcare+Insurance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Liberty+Healthcare+Insurance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Liberty+Healthcare+Insurance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Liberty+Healthcare+Insurance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Liberty+Healthcare+Insurance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Liberty+Healthcare+Insurance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Liberty+Healthcare+Insurance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50"
+    }
+  }
+}

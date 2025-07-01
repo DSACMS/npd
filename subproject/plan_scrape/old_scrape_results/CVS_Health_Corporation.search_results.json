@@ -1,0 +1,275 @@
+{
+  "search_metadata": {
+    "id": "6826c2021cff19d4fdecba54",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/defa981fc2836af8/6826c2021cff19d4fdecba54.json",
+    "created_at": "2025-05-16 04:41:38 UTC",
+    "processed_at": "2025-05-16 04:41:38 UTC",
+    "google_url": "https://www.google.com/search?q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/defa981fc2836af8/6826c2021cff19d4fdecba54.html",
+    "total_time_taken": 3.1
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "CVS Health Corporation Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "CVS Health Corporation Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 95,
+    "time_taken_displayed": 0.25,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "OneRecord Launches Aetna, a CVS Health Company",
+      "link": "https://onerecord.com/blog/onerecord-launches-aetna-a-cvs-health-company-as",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://onerecord.com/blog/onerecord-launches-aetna-a-cvs-health-company-as&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQFnoECBIQAQ",
+      "displayed_link": "https://onerecord.com \u203a blog \u203a onerecord-launches-aetn...",
+      "favicon": "https://serpapi.com/searches/6826c2021cff19d4fdecba54/images/925ca3bfcf184a0d9c8cfe3038da721dec59b1786c7a0259f153342820226fd2.png",
+      "date": "Aug 26, 2021",
+      "snippet": "Our next big feature we are working on is utilizing Aetna's Provider Directory API so members can search for providers in Aetna's Medicare and ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Medicare"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=CVS+Health+Corporation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQ5t4CegQILBAB"
+      },
+      "source": "OneRecord"
+    },
+    {
+      "position": 2,
+      "title": "FHIR Interoperability: What is it and Why Should We Care?",
+      "link": "https://www.managedhealthcareexecutive.com/view/fhir-interoperability-what-it-and-why-should-we-care",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.managedhealthcareexecutive.com/view/fhir-interoperability-what-it-and-why-should-we-care&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQFnoECBMQAQ",
+      "displayed_link": "https://www.managedhealthcareexecutive.com \u203a view \u203a f...",
+      "favicon": "https://serpapi.com/searches/6826c2021cff19d4fdecba54/images/925ca3bfcf184a0d9c8cfe3038da721d9336b30253eae96ea714dfd105d6135f.png",
+      "date": "Jun 11, 2020",
+      "snippet": "... Provider Directory API among the CMS-regulated payers. This API ... How can FHIR API-based data exchange support a patient-centered approach to ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "API",
+        "FHIR API"
+      ],
+      "missing": [
+        "Corporation"
+      ],
+      "must_include": {
+        "word": "Corporation",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=CVS+Health+%22Corporation%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQ5t4CegQIMBAB"
+      },
+      "source": "Managed Healthcare Executive"
+    },
+    {
+      "position": 3,
+      "title": "Da Vinci Plan-Net - (AKA Provider Directory)",
+      "link": "https://confluence.hl7.org/download/attachments/113675188/Plan-Net%20IG%20Intro%2020210722.pdf?version=2&modificationDate=1626977036842&api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/113675188/Plan-Net%2520IG%2520Intro%252020210722.pdf%3Fversion%3D2%26modificationDate%3D1626977036842%26api%3Dv2&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQFnoECCEQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a download \u203a attachments",
+      "favicon": "https://serpapi.com/searches/6826c2021cff19d4fdecba54/images/925ca3bfcf184a0d9c8cfe3038da721dc1c59f579bfb937a081914d51c4981a2.png",
+      "snippet": "Guide as one way to meet Provider Directory API requirement. \u00a9 2019 Health ... Plan-Net defines a FHIR interface to a health insurer's insurance plans,.",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Health",
+        "FHIR",
+        "health",
+        "plans"
+      ],
+      "source": "HL7 - Confluence"
+    },
+    {
+      "position": 4,
+      "title": "Interoperability and Your Health Information",
+      "link": "https://www.ccok.com/members/interoperability.asp",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ccok.com/members/interoperability.asp&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQFnoECBUQAQ",
+      "displayed_link": "https://www.ccok.com \u203a members \u203a interoperability",
+      "snippet": "Provider Directory API. https://apis.ssctech.com/interop-ccok/open/fhir/R4 ... Our APIs are based on the Health Level 7\u00ae (HL7) Fast Healthcare Interoperability ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "fhir",
+        "Health",
+        "Healthcare"
+      ],
+      "missing": [
+        "Corporation"
+      ],
+      "must_include": {
+        "word": "Corporation",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=CVS+Health+%22Corporation%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQ5t4CegQILRAB"
+      },
+      "source": "CommunityCare Health Insurance Plans"
+    },
+    {
+      "position": 5,
+      "title": "API access for application developers",
+      "link": "https://www.sharphealthplan.com/api-access-for-developers",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.sharphealthplan.com/api-access-for-developers&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQFnoECBgQAQ",
+      "displayed_link": "https://www.sharphealthplan.com \u203a api-access-for-devel...",
+      "favicon": "https://serpapi.com/searches/6826c2021cff19d4fdecba54/images/925ca3bfcf184a0d9c8cfe3038da721de632f21035dfadef938136ca0786eba6.png",
+      "snippet": "Sharp Health Plan has adopted and developed FHIR resources to deliver clear, standardized data formats to registered application developers ... Provider Directory ...",
+      "snippet_highlighted_words": [
+        "Health",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Corporation"
+      ],
+      "must_include": {
+        "word": "Corporation",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=CVS+Health+%22Corporation%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQ5t4CegQILhAB"
+      },
+      "source": "Sharp Health Plan"
+    },
+    {
+      "position": 6,
+      "title": "The Impact New CMS Guidelines Could Have on Interoperability ...",
+      "link": "https://www.managedhealthcareexecutive.com/view/the-impact-new-cms-guidelines-could-have-on-interoperability-patient-care",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.managedhealthcareexecutive.com/view/the-impact-new-cms-guidelines-could-have-on-interoperability-patient-care&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQFnoECBQQAQ",
+      "displayed_link": "https://www.managedhealthcareexecutive.com \u203a view \u203a t...",
+      "favicon": "https://serpapi.com/searches/6826c2021cff19d4fdecba54/images/925ca3bfcf184a0d9c8cfe3038da721d6525f99e0590b88e1cb0253857da2146.png",
+      "snippet": "... Healthcare Interoperability Resources (FHIR). In addition, the CMS rule requires that provider directory data must be available to the public through ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "provider directory"
+      ],
+      "missing": [
+        "Corporation"
+      ],
+      "must_include": {
+        "word": "Corporation",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=CVS+Health+%22Corporation%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQ5t4CegQIKhAB"
+      },
+      "source": "Managed Healthcare Executive"
+    },
+    {
+      "position": 7,
+      "title": "Overview of Aetna's Interoperability API Developer Portal",
+      "link": "https://developerportal.aetna.com/gettingstarted",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developerportal.aetna.com/gettingstarted&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQFnoECBYQAQ",
+      "displayed_link": "https://developerportal.aetna.com \u203a gettingstarted",
+      "favicon": "https://serpapi.com/searches/6826c2021cff19d4fdecba54/images/925ca3bfcf184a0d9c8cfe3038da721dbd56d9dca5cb9daabb6cce0c7d1a8115.jpeg",
+      "snippet": "Provider Directory API - Allows ... The FHIR Authorization Server's token endpoint URL. PROD - https://api.cvshealth.com/provider/fhir/auth/oauth2/v1/token.",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "api",
+        "cvshealth",
+        "fhir"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=CVS+Health+Corporation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQ5t4CegQILxAB"
+      },
+      "source": "Aetna Developer Portal"
+    },
+    {
+      "position": 8,
+      "title": "Value-based care creating a new era of interoperability",
+      "link": "https://www.healthcarefinancenews.com/news/value-based-care-creating-new-era-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcarefinancenews.com/news/value-based-care-creating-new-era-interoperability&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQFnoECDIQAQ",
+      "displayed_link": "https://www.healthcarefinancenews.com \u203a news \u203a value...",
+      "favicon": "https://serpapi.com/searches/6826c2021cff19d4fdecba54/images/925ca3bfcf184a0d9c8cfe3038da721d3156246911313eb0c83c176118eb34a4.png",
+      "date": "May 19, 2022",
+      "snippet": "CMS exercised enforcement discretion for the Patient Access API and Provider Directory API ... FHIR standard. Clinical interoperability is ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "missing": [
+        "Corporation"
+      ],
+      "must_include": {
+        "word": "Corporation",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=CVS+Health+%22Corporation%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQ5t4CegQINhAB"
+      },
+      "source": "Healthcare Finance News"
+    },
+    {
+      "position": 9,
+      "title": "HHS Finalizes Interoperability Rules",
+      "link": "https://www.covingtondigitalhealth.com/2020/03/hhs-finalizes-interoperability-rules/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.covingtondigitalhealth.com/2020/03/hhs-finalizes-interoperability-rules/&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQFnoECDkQAQ",
+      "displayed_link": "https://www.covingtondigitalhealth.com \u203a EHR/EMR",
+      "favicon": "https://serpapi.com/searches/6826c2021cff19d4fdecba54/images/925ca3bfcf184a0d9c8cfe3038da721d23301e0f21ba11781dcf1071f370dece.png",
+      "date": "Mar 17, 2020",
+      "snippet": "... Healthcare Interoperability Resources\u00ae (FHIR) 4.0.1. Information Blocking ... Provider Directory API: Plans must make provider directory ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "Provider Directory API",
+        "Plans",
+        "provider directory"
+      ],
+      "source": "Covington Digital Health"
+    },
+    {
+      "position": 10,
+      "title": "Spotlight on Recent Federal Regulatory Actions",
+      "link": "https://www.fticonsulting.com/insights/articles/spotlight-recent-federal-regulatory-actions-open-public-comment",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.fticonsulting.com/insights/articles/spotlight-recent-federal-regulatory-actions-open-public-comment&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQFnoECDQQAQ",
+      "displayed_link": "https://www.fticonsulting.com \u203a insights \u203a articles \u203a spotl...",
+      "favicon": "https://serpapi.com/searches/6826c2021cff19d4fdecba54/images/925ca3bfcf184a0d9c8cfe3038da721d34b1a855cb90feb17c58115350d7581d.png",
+      "date": "Nov 18, 2022",
+      "snippet": "... FHIR\u201d), Application ... Standardized provider-directory data elements, including information related to social determinants of health.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider-directory",
+        "health"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=CVS+Health+Corporation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQ5t4CegQIPBAB"
+      },
+      "source": "FTI Consulting"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BcImaPzuF6zk5NoP96_o2AE&start=10&sa=N&sstk=Af40H4WDiG8Xv3g_xe3ZxB9BPL_eI26cgKJnR7L-nhb_RLuXWlW-HYNqbNsAii8gyi8aq6nGuI-E4eGn0oVDuckIcyG--qmoTTQaRA&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQ8NMDegQICRAS",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BcImaPzuF6zk5NoP96_o2AE&start=10&sa=N&sstk=Af40H4WDiG8Xv3g_xe3ZxB9BPL_eI26cgKJnR7L-nhb_RLuXWlW-HYNqbNsAii8gyi8aq6nGuI-E4eGn0oVDuckIcyG--qmoTTQaRA&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BcImaPzuF6zk5NoP96_o2AE&start=20&sa=N&sstk=Af40H4WDiG8Xv3g_xe3ZxB9BPL_eI26cgKJnR7L-nhb_RLuXWlW-HYNqbNsAii8gyi8aq6nGuI-E4eGn0oVDuckIcyG--qmoTTQaRA&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BcImaPzuF6zk5NoP96_o2AE&start=30&sa=N&sstk=Af40H4WDiG8Xv3g_xe3ZxB9BPL_eI26cgKJnR7L-nhb_RLuXWlW-HYNqbNsAii8gyi8aq6nGuI-E4eGn0oVDuckIcyG--qmoTTQaRA&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BcImaPzuF6zk5NoP96_o2AE&start=40&sa=N&sstk=Af40H4WDiG8Xv3g_xe3ZxB9BPL_eI26cgKJnR7L-nhb_RLuXWlW-HYNqbNsAii8gyi8aq6nGuI-E4eGn0oVDuckIcyG--qmoTTQaRA&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BcImaPzuF6zk5NoP96_o2AE&start=50&sa=N&sstk=Af40H4WDiG8Xv3g_xe3ZxB9BPL_eI26cgKJnR7L-nhb_RLuXWlW-HYNqbNsAii8gyi8aq6nGuI-E4eGn0oVDuckIcyG--qmoTTQaRA&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BcImaPzuF6zk5NoP96_o2AE&start=60&sa=N&sstk=Af40H4WDiG8Xv3g_xe3ZxB9BPL_eI26cgKJnR7L-nhb_RLuXWlW-HYNqbNsAii8gyi8aq6nGuI-E4eGn0oVDuckIcyG--qmoTTQaRA&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=BcImaPzuF6zk5NoP96_o2AE&start=70&sa=N&sstk=Af40H4WDiG8Xv3g_xe3ZxB9BPL_eI26cgKJnR7L-nhb_RLuXWlW-HYNqbNsAii8gyi8aq6nGuI-E4eGn0oVDuckIcyG--qmoTTQaRA&ved=2ahUKEwi8hZuwlqeNAxUsMlkFHfcXGhsQ8tMDegQICRAQ"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CVS+Health+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70"
+    }
+  }
+}

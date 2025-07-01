@@ -1,0 +1,257 @@
+{
+  "search_metadata": {
+    "id": "6826c3810d0b2979d894f66e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/66441a87b32bdd53/6826c3810d0b2979d894f66e.json",
+    "created_at": "2025-05-16 04:48:01 UTC",
+    "processed_at": "2025-05-16 04:48:01 UTC",
+    "google_url": "https://www.google.com/search?q=Providence+St+Joseph+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Providence+St+Joseph+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/66441a87b32bdd53/6826c3810d0b2979d894f66e.html",
+    "total_time_taken": 1.38
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Providence St Joseph Health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Providence St Joseph Health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 80,
+    "time_taken_displayed": 0.32,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Oregon's Strategic Plan for Health Information Technology ...",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/20240201_HITOCApprovedChanges_DraftOregonsStrategicPlanforHealthIT2024-2028.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%2520Meeting%2520Docs/20240201_HITOCApprovedChanges_DraftOregonsStrategicPlanforHealthIT2024-2028.pdf&ved=2ahUKEwjByPLll6eNAxV_QTABHaLrEBcQFnoECB0QAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HPA \u203a OHIT-HITOC",
+      "favicon": "https://serpapi.com/searches/6826c3810d0b2979d894f66e/images/18a4e1639a1f685d3ae9774256f46c6bc8b280ed9c5b22bdad0f9c028a07bf18.png",
+      "date": "Feb 1, 2024",
+      "snippet": "and Provider Directory API and to participate in Payer-to-Payer Data Exchange. ... 27 HL7 is Health Level Seven International\u00ae; FHIR ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Health",
+        "FHIR"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 2,
+      "title": "Da Vinci Working Session - NPAG",
+      "link": "https://s3.amazonaws.com/amo_hub_content/Association361/files/Da%20Vinci%20overview%20for%20NPAG.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://s3.amazonaws.com/amo_hub_content/Association361/files/Da%2520Vinci%2520overview%2520for%2520NPAG.pdf&ved=2ahUKEwjByPLll6eNAxV_QTABHaLrEBcQFnoECBkQAQ",
+      "displayed_link": "https://s3.amazonaws.com \u203a Association361 \u203a files",
+      "favicon": "https://serpapi.com/searches/6826c3810d0b2979d894f66e/images/18a4e1639a1f685d3ae9774256f46c6b8519361fbac94d17fc39c2d6caaf89bf.png",
+      "date": "Sep 24, 2019",
+      "snippet": "Da Vinci is demonstrating the ability to exchange information between payers and providers using HL7\u00ae FHIR\u00ae and CDS Hooks\u00ae as part of the ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "Amazon.com"
+    },
+    {
+      "position": 3,
+      "title": "Da Vinci Video Presentations",
+      "link": "https://confluence.hl7.org/spaces/DVP/pages/78678039/Da+Vinci+Video+Presentations",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/spaces/DVP/pages/78678039/Da%2BVinci%2BVideo%2BPresentations&ved=2ahUKEwjByPLll6eNAxV_QTABHaLrEBcQFnoECCsQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a spaces \u203a DVP \u203a pages \u203a Da+...",
+      "favicon": "https://serpapi.com/searches/6826c3810d0b2979d894f66e/images/18a4e1639a1f685d3ae9774256f46c6bd052f75acbb80eed1a0fcd014c232a66.png",
+      "snippet": "... FHIR API landscape around people, processes and data. Learn about the ... Provider Directory: Building a Solid Foundation for the Provider Directory API ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Providence+St+Joseph+Health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjByPLll6eNAxV_QTABHaLrEBcQ5t4CegQILhAB"
+      },
+      "source": "HL7 - Confluence"
+    },
+    {
+      "position": 4,
+      "title": "Health Information Technology Oversight Council",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/HITOC_MeetingMaterials_20190404.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%2520Meeting%2520Docs/HITOC_MeetingMaterials_20190404.pdf&ved=2ahUKEwjByPLll6eNAxV_QTABHaLrEBcQFnoECBoQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HPA \u203a OHIT-HITOC",
+      "favicon": "https://serpapi.com/searches/6826c3810d0b2979d894f66e/images/18a4e1639a1f685d3ae9774256f46c6bc176047d927704989731da338380c5fa.png",
+      "date": "Apr 4, 2019",
+      "snippet": "\u2022 Includes API (FHIR?) ability. \u2022 CHPL/ONC EHR Reporting Program ... \u2022 Provider directory or something similar expanded from health care to social ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "Provider directory",
+        "health"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 5,
+      "title": "Pjt Insight Project List",
+      "link": "https://confluence.hl7.org/download/attachments/144994722/ProjectBallotHealthMetrics_2023JanWGM_Final.xlsx?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/144994722/ProjectBallotHealthMetrics_2023JanWGM_Final.xlsx%3Fapi%3Dv2&ved=2ahUKEwjByPLll6eNAxV_QTABHaLrEBcQFnoECBsQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a download \u203a attachments",
+      "favicon": "https://serpapi.com/searches/6826c3810d0b2979d894f66e/images/18a4e1639a1f685d3ae9774256f46c6b34b50cfc9c6eb83a05ad3db4b6d827dc.png",
+      "snippet": "Develop a FHIR R4 based implementation guide for an API similar to the CMS Medicare Blue Button 2.0 API, FHIR R3 based, that will allow consumer-directed ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Medicare",
+        "API",
+        "FHIR"
+      ],
+      "source": "HL7 - Confluence"
+    },
+    {
+      "position": 6,
+      "title": "Transcript-Full Committee Meeting-November 18, 2020",
+      "link": "https://ncvhs.hhs.gov/wp-content/uploads/2020/12/Transcript-Full-Committee-Meeting-Nov-18-2020-508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ncvhs.hhs.gov/wp-content/uploads/2020/12/Transcript-Full-Committee-Meeting-Nov-18-2020-508.pdf&ved=2ahUKEwjByPLll6eNAxV_QTABHaLrEBcQFnoECBQQAQ",
+      "displayed_link": "https://ncvhs.hhs.gov \u203a uploads \u203a 2020/12 \u203a Trans...",
+      "favicon": "https://serpapi.com/searches/6826c3810d0b2979d894f66e/images/18a4e1639a1f685d3ae9774256f46c6b39d5768e8a8ec6a852b1c94c1d553895.png",
+      "snippet": "Providence St. ... So it has more for the patient access API, then it has the provider directory API in there ... Health Level 7's FHIR, which has been referenced a.",
+      "snippet_highlighted_words": [
+        "Providence St",
+        "API",
+        "provider directory API",
+        "Health",
+        "FHIR"
+      ],
+      "source": "National Committee on Vital and Health Statistics (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "Best in KLAS Report 2024.pdf",
+      "link": "https://www.performancehealthus.com/hubfs/Best%20in%20KLAS%20Report%202024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.performancehealthus.com/hubfs/Best%2520in%2520KLAS%2520Report%25202024.pdf&ved=2ahUKEwjByPLll6eNAxV_QTABHaLrEBcQFnoECBwQAQ",
+      "displayed_link": "https://www.performancehealthus.com \u203a hubfs",
+      "favicon": "https://serpapi.com/searches/6826c3810d0b2979d894f66e/images/18a4e1639a1f685d3ae9774256f46c6b81647daca91d84eaa23b7e222123e64d.png",
+      "date": "Feb 7, 2024",
+      "snippet": "... FHIR 92.2. Data Analytics Platforms (Payers). Clarify Health Solutions ... provider directory API, and payer-to-payer data exchange ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Health",
+        "provider directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 279
+          },
+          "extensions": [
+            "279 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Providence+St+Joseph+Health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjByPLll6eNAxV_QTABHaLrEBcQ5t4CegQIKhAB"
+      },
+      "source": "Performance Health Partners"
+    },
+    {
+      "position": 8,
+      "title": "Board of Governors Meeting",
+      "link": "https://www.lacare.org/sites/default/files/20220728%20Board%20of%20Governors%20Meeting%20Packet.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/20220728%2520Board%2520of%2520Governors%2520Meeting%2520Packet.pdf&ved=2ahUKEwjByPLll6eNAxV_QTABHaLrEBcQFnoECDEQAQ",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/6826c3810d0b2979d894f66e/images/18a4e1639a1f685d3ae9774256f46c6bc770b429bcf2241d398bbd5f276ef492.png",
+      "date": "Jul 28, 2022",
+      "snippet": "Complete test of Fast Healthcare Interoperability Resources (FHIR) APIs to external partners. ... complete Provider Directory. This allows ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "APIs",
+        "Provider Directory"
+      ],
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 9,
+      "title": "PARTNERSHIP HEALTHPLAN OF CALIFORNIA",
+      "link": "https://www.partnershiphp.org/Providers/HealthServices/Documents/Physicians_Advisory_Committee_PAC/2023/PAC_Packet_04-12-2023-FINAL_pg.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.partnershiphp.org/Providers/HealthServices/Documents/Physicians_Advisory_Committee_PAC/2023/PAC_Packet_04-12-2023-FINAL_pg.pdf&ved=2ahUKEwjByPLll6eNAxV_QTABHaLrEBcQFnoECDAQAQ",
+      "displayed_link": "https://www.partnershiphp.org \u203a Documents \u203a PA...",
+      "date": "Apr 12, 2023",
+      "snippet": "Leverages Fast Healthcare Intraoperative Resources (FHIR) DaVinci implementation guide ... MPCR102 \u2013 Provider Directory Accuracy. MPCR400 ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 147
+          },
+          "extensions": [
+            "147 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Providence+St+Joseph+Health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjByPLll6eNAxV_QTABHaLrEBcQ5t4CegQIORAB"
+      },
+      "source": "Partnership HealthPlan"
+    },
+    {
+      "position": 10,
+      "title": "Report on Medication Reconciliation Hackathon - CT.gov",
+      "link": "https://portal.ct.gov/-/media/OHS/Health-IT-Advisory-Council/Presentations/Report-on-Medication-Reconciliation-Hackathon_10_June_19_v1_0-FINAL.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://portal.ct.gov/-/media/OHS/Health-IT-Advisory-Council/Presentations/Report-on-Medication-Reconciliation-Hackathon_10_June_19_v1_0-FINAL.pdf&ved=2ahUKEwjByPLll6eNAxV_QTABHaLrEBcQFnoECDIQAQ",
+      "displayed_link": "https://portal.ct.gov \u203a media \u203a OHS \u203a Presentations",
+      "favicon": "https://serpapi.com/searches/6826c3810d0b2979d894f66e/images/18a4e1639a1f685d3ae9774256f46c6becf488c8625f75eba6d363d70a5c89c8.png",
+      "date": "Apr 6, 2019",
+      "snippet": "The recently announced. 21st Century Cures Act NPRMs from ONC and CMS specify the use of FHIR as the API for EHR certification and access to ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 83
+          },
+          "extensions": [
+            "83 pages"
+          ]
+        }
+      },
+      "source": "CT.GOV-Connecticut's Official State Website (.gov)"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Providence+St+Joseph+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=gsMmaMH_GP-CwbkPotfDuAE&start=10&sa=N&sstk=Af40H4WOk4VvtUUY2FJSQXvtpV7eTfCLUtM1oeqQ9V7rSrWUh1nTPVc9DOfFDEabg866xP03j7DxRESp9wp3BECHy31xbqlTY76HTg&ved=2ahUKEwjByPLll6eNAxV_QTABHaLrEBcQ8NMDegQIChAG",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Providence+St+Joseph+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=gsMmaMH_GP-CwbkPotfDuAE&start=10&sa=N&sstk=Af40H4WOk4VvtUUY2FJSQXvtpV7eTfCLUtM1oeqQ9V7rSrWUh1nTPVc9DOfFDEabg866xP03j7DxRESp9wp3BECHy31xbqlTY76HTg&ved=2ahUKEwjByPLll6eNAxV_QTABHaLrEBcQ8tMDegQIChAE"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Providence+St+Joseph+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Providence+St+Joseph+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Providence+St+Joseph+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10"
+    }
+  }
+}

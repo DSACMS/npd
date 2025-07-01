@@ -1,0 +1,34 @@
+{
+  "search_metadata": {
+    "id": "6861d16ff0114acc1159a880",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/d0152c3f2bba7554/6861d16ff0114acc1159a880.json",
+    "created_at": "2025-06-29 23:51:11 UTC",
+    "processed_at": "2025-06-29 23:51:11 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Acommonwealthcare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Acommonwealthcare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/d0152c3f2bba7554/6861d16ff0114acc1159a880.html",
+    "total_time_taken": 1.39
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:commonwealthcare.org \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:commonwealthcare.org \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 0,
+    "time_taken_displayed": 0.13,
+    "organic_results_state": "Fully empty",
+    "query_feedback": {
+      "title": "Your search did not match any documents"
+    }
+  },
+  "error": "Google hasn't returned any results for this query."
+}

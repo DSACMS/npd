@@ -1,0 +1,46 @@
+{
+  "filename": "test_edge_cases.csv",
+  "filename_without_extension": "test_edge_cases",
+  "full_path": "/Users/ftrotter/gitgov/ftrotter/csviper/test_data/test_edge_cases.csv",
+  "file_size_bytes": 151,
+  "delimiter": ",",
+  "quote_character": "\"",
+  "original_column_names": [
+    "1st Column",
+    "Special@#$%Characters",
+    "  Spaces  ",
+    "duplicate",
+    "duplicate",
+    "123numbers",
+    "UPPERCASE",
+    "lowercase"
+  ],
+  "normalized_column_names": [
+    "_1st_Column",
+    "Special_Characters",
+    "Spaces",
+    "duplicate_001",
+    "_123numbers",
+    "UPPERCASE",
+    "lowercase"
+  ],
+  "column_name_mapping": {
+    "1st Column": "_1st_Column",
+    "Special@#$%Characters": "Special_Characters",
+    "  Spaces  ": "Spaces",
+    "duplicate": "duplicate_001",
+    "123numbers": "_123numbers",
+    "UPPERCASE": "UPPERCASE",
+    "lowercase": "lowercase"
+  },
+  "max_column_lengths": {
+    "_1st_Column": 6,
+    "Special_Characters": 6,
+    "Spaces": 6,
+    "duplicate_001": 6,
+    "_123numbers": 6,
+    "UPPERCASE": 6,
+    "lowercase": 6
+  },
+  "total_columns": 8
+}

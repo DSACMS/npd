@@ -1,0 +1,195 @@
+{
+  "search_metadata": {
+    "id": "6861d26028b27b48714d7f5a",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/b9430e7dff6bf5a2/6861d26028b27b48714d7f5a.json",
+    "created_at": "2025-06-29 23:55:12 UTC",
+    "processed_at": "2025-06-29 23:55:12 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/b9430e7dff6bf5a2/6861d26028b27b48714d7f5a.html",
+    "total_time_taken": 2.68
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:humana.com \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:humana.com \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 10,
+    "time_taken_displayed": 0.2,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Provider Directory API",
+      "link": "https://developers.humana.com/apis/provider-directory-api/doc",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developers.humana.com/apis/provider-directory-api/doc&ved=2ahUKEwjX4Oij6peOAxUkFVkFHbguPToQFnoECCIQAQ",
+      "displayed_link": "https://developers.humana.com \u203a apis \u203a doc",
+      "favicon": "https://serpapi.com/searches/6861d26028b27b48714d7f5a/images/51548209337423e445d849e50c13a1a1e055b245026b0f8e68ece800620af25d.png",
+      "snippet": "The Provider Directory service ... This service includes multiple FHIR APIs: InsurancePlan, PractitionerRole, Practitioner, Organization, and Location.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Humana Data Exchange"
+    },
+    {
+      "position": 2,
+      "title": "Directory Type",
+      "link": "https://fhir.humana.com/documentation/glossary/DirectoryType",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://fhir.humana.com/documentation/glossary/DirectoryType&ved=2ahUKEwjX4Oij6peOAxUkFVkFHbguPToQFnoECBkQAQ",
+      "displayed_link": "https://fhir.humana.com \u203a documentation \u203a glossary \u203a Di...",
+      "snippet": "Humana FHIR. Directory Type. DirectoryType. Code indicating the Humana Provider Directory Type. \"MedicalDental\" = Medical and Dental Provider Directory ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "Provider Directory"
+      ],
+      "source": "Humana"
+    },
+    {
+      "position": 3,
+      "title": "Humana FHIR Documentation",
+      "link": "https://fhir.humana.com/documentation/glossary",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://fhir.humana.com/documentation/glossary&ved=2ahUKEwjX4Oij6peOAxUkFVkFHbguPToQFnoECCAQAQ",
+      "displayed_link": "https://fhir.humana.com \u203a documentation \u203a glossary",
+      "snippet": "Humana FHIR. Glossary of Terms. Patient. Covered Role Pointer. Identifier for each ... Code indicating the Humana Provider Directory Type. \"MedicalDental ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "Humana"
+    },
+    {
+      "position": 4,
+      "title": "Healthcare APIs \u2013 Humana Data Exchange",
+      "link": "https://developers.humana.com/apis",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developers.humana.com/apis&ved=2ahUKEwjX4Oij6peOAxUkFVkFHbguPToQFnoECBoQAQ",
+      "displayed_link": "https://developers.humana.com \u203a apis",
+      "favicon": "https://serpapi.com/searches/6861d26028b27b48714d7f5a/images/51548209337423e445d849e50c13a1a135adc6aac875ab7690a2ce64cbc9ba9a.png",
+      "snippet": "Provider Directory. Identify which providers and pharmacies are in-network ... HL7 FHIR Conformance. Looking for Humana's FHIR Capability Statement?Learn ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "FHIR"
+      ],
+      "source": "Humana Data Exchange"
+    },
+    {
+      "position": 5,
+      "title": "Explore Data Exchange APIs",
+      "link": "https://developers.humana.com/marketplace",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developers.humana.com/marketplace&ved=2ahUKEwjX4Oij6peOAxUkFVkFHbguPToQFnoECCgQAQ",
+      "displayed_link": "https://developers.humana.com \u203a marketplace",
+      "favicon": "https://serpapi.com/searches/6861d26028b27b48714d7f5a/images/51548209337423e445d849e50c13a1a1e26fac49ecbec4031cf481507e097f70.png",
+      "snippet": "Provider Directory. Identify which providers and pharmacies are in-network for a given Humana insurance plan. HL7 FHIR. CATEGORY. HL7 FHIR. 22. Enrollment. 5.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "FHIR"
+      ],
+      "source": "Humana"
+    },
+    {
+      "position": 6,
+      "title": "Patient API",
+      "link": "https://developers.humana.com/patient-api/doc",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developers.humana.com/patient-api/doc&ved=2ahUKEwjX4Oij6peOAxUkFVkFHbguPToQFnoECBsQAQ",
+      "displayed_link": "https://developers.humana.com \u203a patient-api \u203a doc",
+      "favicon": "https://serpapi.com/searches/6861d26028b27b48714d7f5a/images/51548209337423e445d849e50c13a1a1b9ef097b0842ec1083dc76dca3968e39.png",
+      "snippet": "Provider Directory \u00b7 Overview; ENDPOINTS; InsurancePlan \u00b7 Location ... fhir.humana.com/api/Patient/5a357166754b59777137634248494434654c336d68773d3d ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "fhir"
+      ],
+      "source": "Humana Data Exchange"
+    },
+    {
+      "position": 7,
+      "title": "FHIR Sandbox Registration",
+      "link": "https://developers.humana.com/apis/registerapp",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developers.humana.com/apis/registerapp&ved=2ahUKEwjX4Oij6peOAxUkFVkFHbguPToQFnoECBcQAQ",
+      "displayed_link": "https://developers.humana.com \u203a apis \u203a registerapp",
+      "favicon": "https://serpapi.com/searches/6861d26028b27b48714d7f5a/images/51548209337423e445d849e50c13a1a177b8de6996e7bde359afeb68f13c8eaa.png",
+      "snippet": "Provider Directory \u00b7 Overview; ENDPOINTS; InsurancePlan \u00b7 Location \u00b7 Organization \u00b7 Practitioner \u00b7 PractitionerRole. Capability Statement. Conformance. FHIR ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Humana Data Exchange"
+    },
+    {
+      "position": 8,
+      "title": "Drug Formulary API",
+      "link": "https://developers.humana.com/apis/drug-formulary-api/doc",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developers.humana.com/apis/drug-formulary-api/doc&ved=2ahUKEwjX4Oij6peOAxUkFVkFHbguPToQFnoECDAQAQ",
+      "displayed_link": "https://developers.humana.com \u203a apis \u203a doc",
+      "favicon": "https://serpapi.com/searches/6861d26028b27b48714d7f5a/images/51548209337423e445d849e50c13a1a1b6c1c54ea3e81fa55cb2a385d69d336f.png",
+      "snippet": "Provider Directory \u00b7 Overview; ENDPOINTS ... These APIs follow the HL7 R4 FHIR specification, as well as the DaVinci DrugFormulary specifications.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Humana Data Exchange"
+    },
+    {
+      "position": 9,
+      "title": "MedicationKnowledge API",
+      "link": "https://developers.humana.com/apis/medicationknowledge-api/doc",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developers.humana.com/apis/medicationknowledge-api/doc&ved=2ahUKEwjX4Oij6peOAxUkFVkFHbguPToQFnoECC8QAQ",
+      "displayed_link": "https://developers.humana.com \u203a apis \u203a doc",
+      "favicon": "https://serpapi.com/searches/6861d26028b27b48714d7f5a/images/51548209337423e445d849e50c13a1a1472f8283c9b0a9884a78562f8211461b.png",
+      "date": "Jun 30, 2021",
+      "snippet": "Provider Directory \u00b7 Overview; ENDPOINTS; InsurancePlan \u00b7 Location ... fhir/us/davinci-drug-formulary/StructureDefinition-usdf-CoveragePlan ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "fhir"
+      ],
+      "source": "Humana Data Exchange"
+    },
+    {
+      "position": 10,
+      "title": "AllergyIntolerance API",
+      "link": "https://developers.humana.com/apis/allergyintolerance-api/doc",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developers.humana.com/apis/allergyintolerance-api/doc&ved=2ahUKEwjX4Oij6peOAxUkFVkFHbguPToQFnoECDEQAQ",
+      "displayed_link": "https://developers.humana.com \u203a apis \u203a doc",
+      "favicon": "https://serpapi.com/searches/6861d26028b27b48714d7f5a/images/51548209337423e445d849e50c13a1a1a0fac2badd3168c5f857abc8c0f3c6a1.png",
+      "snippet": "Provider Directory \u00b7 Overview; ENDPOINTS; InsurancePlan \u00b7 Location \u00b7 Organization \u00b7 Practitioner \u00b7 PractitionerRole ... fhir.humana.com/AllergyIntolerance ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "fhir"
+      ],
+      "source": "Humana Data Exchange"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Ahumana.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

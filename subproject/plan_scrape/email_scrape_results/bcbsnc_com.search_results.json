@@ -1,0 +1,136 @@
+{
+  "search_metadata": {
+    "id": "6861d0db00a197a9d702a3c6",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/6e2241e980f12d28/6861d0db00a197a9d702a3c6.json",
+    "created_at": "2025-06-29 23:48:43 UTC",
+    "processed_at": "2025-06-29 23:48:43 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/6e2241e980f12d28/6861d0db00a197a9d702a3c6.html",
+    "total_time_taken": 1.05
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:bcbsnc.com \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:bcbsnc.com \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 5,
+    "time_taken_displayed": 0.19,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Provider Directory API",
+      "link": "https://apiportal.bcbsnc.com/fhir/exh/product/17/api/8",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://apiportal.bcbsnc.com/fhir/exh/product/17/api/8&ved=2ahUKEwiKo8zp6JeOAxW2U1UIHSXEAYwQFnoECBgQAQ",
+      "displayed_link": "https://apiportal.bcbsnc.com \u203a fhir \u203a exh \u203a product \u203a api",
+      "favicon": "https://serpapi.com/searches/6861d0db00a197a9d702a3c6/images/5c6bbb7da96e8d06e1f7ea34f8fe38697e5a0abbcbf22eeabe0a09e6bd68c1a7.png",
+      "snippet": "The Provider Directory API accesses the FHIR server portion of the Provider Directories. Utilizing read-only RESTful GET API calls (PUT and POST are not ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Blue Cross NC"
+    },
+    {
+      "position": 2,
+      "title": "Provider Directory API | API Developer Portal",
+      "link": "https://apiportal.bcbsnc.com/fhir/exh/taxonomy/term/5",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://apiportal.bcbsnc.com/fhir/exh/taxonomy/term/5&ved=2ahUKEwiKo8zp6JeOAxW2U1UIHSXEAYwQFnoECB4QAQ",
+      "displayed_link": "https://apiportal.bcbsnc.com \u203a exh \u203a taxonomy \u203a term",
+      "favicon": "https://serpapi.com/searches/6861d0db00a197a9d702a3c6/images/5c6bbb7da96e8d06e1f7ea34f8fe38694ced333c8b98b4eda64300e029fc9d86.png",
+      "snippet": "The Provider Directory API accesses the FHIR server portion of the Provider Directories. Utilizing read-only RESTful GET API calls (PUT and POST are not",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "North Carolina Blue Cross Blue Shield"
+    },
+    {
+      "position": 3,
+      "title": "Forums | API Developer Portal",
+      "link": "https://apiportal.bcbsnc.com/fhir/exh/forum",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://apiportal.bcbsnc.com/fhir/exh/forum&ved=2ahUKEwiKo8zp6JeOAxW2U1UIHSXEAYwQFnoECBoQAQ",
+      "displayed_link": "https://apiportal.bcbsnc.com \u203a fhir \u203a exh \u203a forum",
+      "favicon": "https://serpapi.com/searches/6861d0db00a197a9d702a3c6/images/5c6bbb7da96e8d06e1f7ea34f8fe3869da898a369d60817b4d1439e4c406a6dc.png",
+      "snippet": "The Provider Directory API accesses the FHIR server portion of the Provider Directories. Utilizing read-only RESTful GET API calls (PUT and POST are not ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Blue Cross NC"
+    },
+    {
+      "position": 4,
+      "title": "Provider Directory API | API Developer Portal",
+      "link": "https://apiportal.bcbsnc.com/fhir/bcbsnc/forum/5",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://apiportal.bcbsnc.com/fhir/bcbsnc/forum/5&ved=2ahUKEwiKo8zp6JeOAxW2U1UIHSXEAYwQFnoECBkQAQ",
+      "displayed_link": "https://apiportal.bcbsnc.com \u203a fhir \u203a bcbsnc \u203a forum",
+      "favicon": "https://serpapi.com/searches/6861d0db00a197a9d702a3c6/images/5c6bbb7da96e8d06e1f7ea34f8fe38691723cfbc2a1f9187961f4c3192845b58.png",
+      "snippet": "Provider Directory API ; Support. Looking for help? Check out the frequently asked questions on our support page. ; Contact us. Send us a message. We'll get back ...",
+      "snippet_highlighted_words": [
+        "Provider Directory"
+      ],
+      "source": "Blue Cross NC"
+    },
+    {
+      "position": 5,
+      "title": "API Products | API Developer Portal",
+      "link": "https://apiportal.bcbsnc.com/fhir/bcbsnc/product",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://apiportal.bcbsnc.com/fhir/bcbsnc/product&ved=2ahUKEwiKo8zp6JeOAxW2U1UIHSXEAYwQFnoECBcQAQ",
+      "displayed_link": "https://apiportal.bcbsnc.com \u203a fhir \u203a bcbsnc \u203a product",
+      "favicon": "https://serpapi.com/searches/6861d0db00a197a9d702a3c6/images/5c6bbb7da96e8d06e1f7ea34f8fe3869ac8a06115230138c897651766633c92f.png",
+      "snippet": "API Products ; Patient Access API \u00b7 Patient Access API ; Payer-to-Payer API \u00b7 Payer-to-Payer API ; Provider Directory API \u00b7 Provider Directory API ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "Provider Directory"
+      ],
+      "source": "Blue Cross NC"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 5 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=site:bcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Abcbsnc.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

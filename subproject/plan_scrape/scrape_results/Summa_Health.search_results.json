@@ -1,0 +1,270 @@
+{
+  "search_metadata": {
+    "id": "6826c3b9db99ec73f1db9816",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/a6d202e812516638/6826c3b9db99ec73f1db9816.json",
+    "created_at": "2025-05-16 04:48:57 UTC",
+    "processed_at": "2025-05-16 04:48:57 UTC",
+    "google_url": "https://www.google.com/search?q=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/a6d202e812516638/6826c3b9db99ec73f1db9816.html",
+    "total_time_taken": 14.52
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Summa Health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Summa Health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 10,
+    "time_taken_displayed": 0.33,
+    "organic_results_state": "Results for exact spelling",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    }
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Information Technology Interoperability and Use for Better ...",
+      "link": "https://nam.edu/wp-content/uploads/2016/09/Information-Technology-Interoperability-and-Use-for-Better-Care-and-Evidence.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nam.edu/wp-content/uploads/2016/09/Information-Technology-Interoperability-and-Use-for-Better-Care-and-Evidence.pdf&ved=2ahUKEwiZ3dmGmKeNAxX9RTABHTUoHhkQFnoECBkQAQ",
+      "displayed_link": "https://nam.edu \u203a wp-content \u203a uploads \u203a 2016/09",
+      "favicon": "https://serpapi.com/searches/6826c3b9db99ec73f1db9816/images/c5c9eb998f5d300d34cb0fe08ec3bf0a91803ca652b52b023d9546fa0ae99751.png",
+      "author": "by JB Perlin",
+      "snippet": "Provider directory. There is no national provider di- rectory ... licensed Health Level Seven draft standard called FHIR. (Mandel et al ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "Health",
+        "FHIR"
+      ],
+      "source": "National Academy of Medicine"
+    },
+    {
+      "position": 2,
+      "title": "6200168 - CLIENT NETWORK SERVICES, LLC.",
+      "link": "https://www.michigan.gov/dtmb/-/media/Project/Websites/dtmb/Procurement/Contracts/003/6200168%20CN19toPresent.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.michigan.gov/dtmb/-/media/Project/Websites/dtmb/Procurement/Contracts/003/6200168%2520CN19toPresent.pdf&ved=2ahUKEwiZ3dmGmKeNAxX9RTABHTUoHhkQFnoECBoQAQ",
+      "displayed_link": "https://www.michigan.gov \u203a dtmb \u203a Contracts",
+      "favicon": "https://serpapi.com/searches/6826c3b9db99ec73f1db9816/images/c5c9eb998f5d300d34cb0fe08ec3bf0a019c63f0ae49a43d32e9b660f919659b.png",
+      "date": "Mar 21, 2022",
+      "snippet": "... (FHIR) Application Programming Interfaces (APIs) that are standards ... Provider Directory. \u2022 Patient Access. Type text here. Page 207. 56.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "APIs",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 926
+          },
+          "extensions": [
+            "926 pages"
+          ]
+        }
+      },
+      "source": "State of Michigan (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "CalAIM and Health Data Sharing: A Road Map for Effective ...",
+      "link": "https://www.chcf.org/wp-content/uploads/2021/04/CalAIMHealthDataSharingRoadMapECMILOS.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chcf.org/wp-content/uploads/2021/04/CalAIMHealthDataSharingRoadMapECMILOS.pdf&ved=2ahUKEwiZ3dmGmKeNAxX9RTABHTUoHhkQFnoECCMQAQ",
+      "displayed_link": "https://www.chcf.org \u203a uploads \u203a 2021/04 \u203a CalAI...",
+      "favicon": "https://serpapi.com/searches/6826c3b9db99ec73f1db9816/images/c5c9eb998f5d300d34cb0fe08ec3bf0a0f7867894b90fe4aa306d056c8e8c08a.png",
+      "snippet": "In particular, the ONC rule adopted HL7 FHIR APIs as the foundational standard for application-based exchange of health information. The CMS rule requires ...",
+      "snippet_highlighted_words": [
+        "FHIR APIs",
+        "health"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 47
+          },
+          "extensions": [
+            "47 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Summa+Health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiZ3dmGmKeNAxX9RTABHTUoHhkQ5t4CegQIKxAB"
+      },
+      "source": "California Health Care Foundation"
+    },
+    {
+      "position": 4,
+      "title": "Intervoice Communication of Puerto Rico Technical Proposal",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Intervoice/Fifth%20Response.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Intervoice/Fifth%2520Response.pdf&ved=2ahUKEwiZ3dmGmKeNAxX9RTABHTUoHhkQFnoECB0QAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a 2024-PRMP-HIE-001",
+      "favicon": "https://serpapi.com/searches/6826c3b9db99ec73f1db9816/images/c5c9eb998f5d300d34cb0fe08ec3bf0a7b11cf105059b9beaa470b54c3ec783b.png",
+      "date": "Mar 13, 2024",
+      "snippet": "standard and leverages FHIR-based databases and FHIR APIs for most of the clinical data being stored. Data are made available by routing the ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR APIs"
+      ],
+      "source": "Gobierno de Puerto Rico (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "STATE OF MICHIGAN CENTRAL PROCUREMENT ...",
+      "link": "https://www.michigan.gov/-/media/Project/Websites/dtmb/Procurement/Contracts/Folder18/071B6200168_Table_of_Contents.pdf?rev=0b32a66de4f5409c997063b77a3dbc5c",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.michigan.gov/-/media/Project/Websites/dtmb/Procurement/Contracts/Folder18/071B6200168_Table_of_Contents.pdf%3Frev%3D0b32a66de4f5409c997063b77a3dbc5c&ved=2ahUKEwiZ3dmGmKeNAxX9RTABHTUoHhkQFnoECBsQAQ",
+      "displayed_link": "https://www.michigan.gov \u203a Contracts \u203a Folder18",
+      "favicon": "https://serpapi.com/searches/6826c3b9db99ec73f1db9816/images/c5c9eb998f5d300d34cb0fe08ec3bf0a69d458e82dafcd4800c41f020da956ed.png",
+      "date": "Oct 21, 2021",
+      "snippet": "are also required to make provider directory information publicly available via a FHIR-based Provider. Directory API. CNSI offers an ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR",
+        "API"
+      ],
+      "source": "State of Michigan (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Title Page",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/CentralisHealth/CENTRALIS%20HEALTH%20Redacted%20Technical%20Proposal.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/CentralisHealth/CENTRALIS%2520HEALTH%2520Redacted%2520Technical%2520Proposal.pdf&ved=2ahUKEwiZ3dmGmKeNAxX9RTABHTUoHhkQFnoECBwQAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a pdf \u203a CentralisHealth",
+      "favicon": "https://serpapi.com/searches/6826c3b9db99ec73f1db9816/images/c5c9eb998f5d300d34cb0fe08ec3bf0a35577d6a9ac761d55d7716e19e53af4a.png",
+      "date": "Jul 3, 2024",
+      "snippet": "Presently, Centralis Health doesn't have a FHIR API in production as no specific use case ... provider directory services for individuals and.",
+      "snippet_highlighted_words": [
+        "Health",
+        "FHIR API",
+        "provider directory"
+      ],
+      "source": "Gobierno de Puerto Rico (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "Vital Directions - for Health & Health Care",
+      "link": "https://nam.edu/wp-content/uploads/2018/02/Vital-Directions-for-Health-and-Health-Care-Final-Publication-022718.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nam.edu/wp-content/uploads/2018/02/Vital-Directions-for-Health-and-Health-Care-Final-Publication-022718.pdf&ved=2ahUKEwiZ3dmGmKeNAxX9RTABHTUoHhkQFnoECDUQAQ",
+      "displayed_link": "https://nam.edu \u203a wp-content \u203a uploads \u203a 2018/02",
+      "favicon": "https://serpapi.com/searches/6826c3b9db99ec73f1db9816/images/c5c9eb998f5d300d34cb0fe08ec3bf0aaeff65e7043601f4eedac66502bf8d12.png",
+      "date": "Jul 8, 2016",
+      "snippet": "... Provider directory. There is no national provider directory that ... (FHIR), will enhance data liquidity and enable an ecosystem of new ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 493
+          },
+          "extensions": [
+            "493 pages"
+          ]
+        }
+      },
+      "source": "National Academy of Medicine"
+    },
+    {
+      "position": 8,
+      "title": "Season 3",
+      "link": "https://thebigunlock.com/category/podcasts/season3/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://thebigunlock.com/category/podcasts/season3/&ved=2ahUKEwiZ3dmGmKeNAxX9RTABHTUoHhkQFnoECC4QAQ",
+      "displayed_link": "https://thebigunlock.com \u203a podcasts",
+      "favicon": "https://serpapi.com/searches/6826c3b9db99ec73f1db9816/images/c5c9eb998f5d300d34cb0fe08ec3bf0a2cdb166e3e7b2bd7ca3b532f0bc64482.png",
+      "snippet": "There's DICOM and HL7 and now FHIR, the nature of data is different. ... We rolled out a brand-new provider directory to help people search for providers and ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 5.0,
+            "reviews": 5
+          },
+          "extensions": [
+            "5.0(5)"
+          ]
+        }
+      },
+      "source": "The Big Unlock Podcast"
+    },
+    {
+      "position": 9,
+      "title": "The Beat",
+      "link": "https://feeds.simplecast.com/F2qS_sm2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://feeds.simplecast.com/F2qS_sm2&ved=2ahUKEwiZ3dmGmKeNAxX9RTABHTUoHhkQFnoECC0QAQ",
+      "displayed_link": "https://feeds.simplecast.com \u203a ...",
+      "snippet": "... FHIR, generative AI, and national networks to improve data connectivity and ... provider directory, supporting the development of a statewide health ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory",
+        "health"
+      ],
+      "source": "Simplecast"
+    },
+    {
+      "position": 10,
+      "title": "Cms Onc Rules And The It Foundation Of Healthcare Progress",
+      "link": "https://ngl.rafael4life.co.za/html/887a665997.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ngl.rafael4life.co.za/html/887a665997.html&ved=2ahUKEwiZ3dmGmKeNAxX9RTABHTUoHhkQFnoECDAQAQ",
+      "displayed_link": "https://ngl.rafael4life.co.za \u203a html",
+      "snippet": "Given that the API is proposed to be aligned with the Fast Healthcare Interoperability Resources (FHIR), which Apple has aggressively supported through its ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Healthcare",
+        "FHIR"
+      ],
+      "source": "rafael4life.co.za"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 10 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Summa+Health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

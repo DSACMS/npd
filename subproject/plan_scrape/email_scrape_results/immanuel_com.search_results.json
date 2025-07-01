@@ -1,0 +1,34 @@
+{
+  "search_metadata": {
+    "id": "6861d2775989b965909ef5a0",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/a1dc7b3e1dd21f5c/6861d2775989b965909ef5a0.json",
+    "created_at": "2025-06-29 23:55:35 UTC",
+    "processed_at": "2025-06-29 23:55:35 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Aimmanuel.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Aimmanuel.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/a1dc7b3e1dd21f5c/6861d2775989b965909ef5a0.html",
+    "total_time_taken": 0.61
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:immanuel.com \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:immanuel.com \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 0,
+    "time_taken_displayed": 0.17,
+    "organic_results_state": "Fully empty",
+    "query_feedback": {
+      "title": "Your search did not match any documents"
+    }
+  },
+  "error": "Google hasn't returned any results for this query."
+}

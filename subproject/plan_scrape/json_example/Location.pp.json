@@ -1,0 +1,28 @@
+{
+  "resourceType": "Location",
+  "id": "f1cc0b90-94ab-4e7a-b4f9-4dd87270f719",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2024-10-24T15:52:54.724-07:00",
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location|7.0.0"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "iehp.org/nddb-cl_id",
+      "value": "1089"
+    }
+  ],
+  "status": "inactive",
+  "name": "HARVEST MEDICAL CLINIC-HEMET",
+  "address": {
+    "line": [
+      "301 E FLORIDA AVE",
+      "STE E"
+    ],
+    "city": "HEMET",
+    "state": "CA",
+    "postalCode": "92543"
+  }
+}

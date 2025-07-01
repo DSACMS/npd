@@ -1,0 +1,29 @@
+{
+  "filename": "PPEF_Reassignment_Extract_2025.04.01.csv",
+  "filename_without_extension": "PPEF_Reassignment_Extract_2025.04.01",
+  "full_path": "/Users/ftrotter/Downloads/Medicare_Fee-For-Service_Public_Provider_Enrollment/2025-Q1/PPEF_Reassignment_Extract_2025.04.01.csv",
+  "file_size_bytes": 110876247,
+  "delimiter": ",",
+  "quote_character": "\"",
+  "encoding": "iso-8859-1",
+  "encoding_confidence": "high",
+  "encoding_notes": "Detected automatically. Can be manually overridden if needed.",
+  "original_column_names": [
+    "REASGN_BNFT_ENRLMT_ID",
+    "RCV_BNFT_ENRLMT_ID"
+  ],
+  "normalized_column_names": [
+    "reasgn_bnft_enrlmt_id",
+    "rcv_bnft_enrlmt_id"
+  ],
+  "column_name_mapping": {
+    "REASGN_BNFT_ENRLMT_ID": "reasgn_bnft_enrlmt_id",
+    "RCV_BNFT_ENRLMT_ID": "rcv_bnft_enrlmt_id"
+  },
+  "max_column_lengths": {
+    "REASGN_BNFT_ENRLMT_ID": 15,
+    "RCV_BNFT_ENRLMT_ID": 15
+  },
+  "total_columns": 2,
+  "column_headers_hash": "cf957595735a217d33ed37e184f0e3d3"
+}

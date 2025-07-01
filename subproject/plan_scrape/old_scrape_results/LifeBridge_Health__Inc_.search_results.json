@@ -1,0 +1,179 @@
+{
+  "search_metadata": {
+    "id": "6826c2fb80f30ed8d91dc087",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/7888e1c3df882b64/6826c2fb80f30ed8d91dc087.json",
+    "created_at": "2025-05-16 04:45:47 UTC",
+    "processed_at": "2025-05-16 04:45:47 UTC",
+    "google_url": "https://www.google.com/search?q=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/7888e1c3df882b64/6826c2fb80f30ed8d91dc087.html",
+    "total_time_taken": 6.9
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "LifeBridge Health, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "LifeBridge Health, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 3,
+    "time_taken_displayed": 0.22,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "What does \"best\" in klas mean?",
+      "snippet": "Best in KLAS is a designation given to healthcare technology and services companies that have been ranked highest by healthcare providers in the annual KLAS Research report.",
+      "title": "Best in KLAS: What Is It? And Why Does a High Score Matter?",
+      "link": "https://www.performancehealthus.com/blog/best-in-klas-what-is-it-why-does-high-score-matter#:~:text=Best%20in%20KLAS%20is%20a,the%20annual%20KLAS%20Research%20report.",
+      "displayed_link": "https://www.performancehealthus.com \u203a blog \u203a best-in-k...",
+      "source_logo": "https://serpapi.com/searches/6826c2fb80f30ed8d91dc087/images/2ab6da55c28d2c845a6ae124e35b267b7bf2581b365c39c07ef09186ed776f8e.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa1NGOTJNREpwTlhkaFgyeEZZMHQ1ZFVSR01WZG1SRVpPVTIwelJXaHNURXhJY0hGUFJHVlpNVWhmV2xoSlMwVkdjMU0xTldSaWNrNXVMVVJ1V2pGU05VeDViVGh3Yldwc2RERkRYMGhFVm5oSlYwUkpkMmRyTUU5cGR4SVhRV05OYldGUVEwTkxaakpLTjA1WlVEWTNhbFpwVVdNYUlrRkRSRmhNTkd3d2VsOXpRVXRLVDJkallXRnVlSEJXUzNFd2VuVTFXamxvU0ZFIiwiZmN2IjoiMyIsImVpIjoiQWNNbWFQQ0NLZjJKN05ZUDY3alZpUWMiLCJxYyI6ImN3M0pzUTJBTUF3RVFGcW9HTUdMSUJvV01mRkRYZ3BKWkVXUktKaUVaZUhhbTdiRUE3dlRUa2lFcGhhRk9jZ0ZZMUNIcUhYTlRmLXRYam9OTGtaSGFNVnYwVW81SW4wZW5uZGMxZzgiLCJxdWVzdGlvbiI6IldoYXQgZG9lcyBcImJlc3RcIiBpbiBrbGFzIG1lYW4/IiwibGsiOiJHaHQzYUdGMElHUnZaWE1nWW1WemRDQnBiaUJyYkdGeklHMWxZVzQiLCJicyI6ImMtTnk0cElMejBnc1VVakpUeTFXVUVwS0xTNVJVc2pNVThqT1NTeFd5RTFOekxPWHVNUm5KQ3NsWFE1WEJGS0Rvb1RMaDBzSmJFWkdhbUpPU1VaeVlsR3FRbTUtU21xT1FtYXhnbTlxU2laSXhGNWlhNG1Sc3BSaU9TNkZ1VkNGQW93QSIsImlkIjoiZmNfQWNNbWFQQ0NLZjJKN05ZUDY3alZpUWNfMyJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa1NGOTJNREpwTlhkaFgyeEZZMHQ1ZFVSR01WZG1SRVpPVTIwelJXaHNURXhJY0hGUFJHVlpNVWhmV2xoSlMwVkdjMU0xTldSaWNrNXVMVVJ1V2pGU05VeDViVGh3Yldwc2RERkRYMGhFVm5oSlYwUkpkMmRyTUU5cGR4SVhRV05OYldGUVEwTkxaakpLTjA1WlVEWTNhbFpwVVdNYUlrRkRSRmhNTkd3d2VsOXpRVXRLVDJkallXRnVlSEJXUzNFd2VuVTFXamxvU0ZFIiwiZmN2IjoiMyIsImVpIjoiQWNNbWFQQ0NLZjJKN05ZUDY3alZpUWMiLCJxYyI6ImN3M0pzUTJBTUF3RVFGcW9HTUdMSUJvV01mRkRYZ3BKWkVXUktKaUVaZUhhbTdiRUE3dlRUa2lFcGhhRk9jZ0ZZMUNIcUhYTlRmLXRYam9OTGtaSGFNVnYwVW81SW4wZW5uZGMxZzgiLCJxdWVzdGlvbiI6IldoYXQgZG9lcyBcImJlc3RcIiBpbiBrbGFzIG1lYW4%2FIiwibGsiOiJHaHQzYUdGMElHUnZaWE1nWW1WemRDQnBiaUJyYkdGeklHMWxZVzQiLCJicyI6ImMtTnk0cElMejBnc1VVakpUeTFXVUVwS0xTNVJVc2pNVThqT1NTeFd5RTFOekxPWHVNUm5KQ3NsWFE1WEJGS0Rvb1RMaDBzSmJFWkdhbUpPU1VaeVlsR3FRbTUtU21xT1FtYXhnbTlxU2laSXhGNWlhNG1Sc3BSaU9TNkZ1VkNGQW93QSIsImlkIjoiZmNfQWNNbWFQQ0NLZjJKN05ZUDY3alZpUWNfMyJ9"
+    },
+    {
+      "question": "What healthcare model is Medicare?",
+      "snippet": "Original Medicare A fee-for-service health insurance program that has 2 parts: Part A and Part B. You typically pay a portion of the costs for covered services as you get them.",
+      "title": "How does Medicare work?",
+      "link": "https://www.medicare.gov/basics/get-started-with-medicare/medicare-basics/how-does-medicare-work#:~:text=Original%20Medicare-,Original%20Medicare,services%20as%20you%20get%20them.",
+      "displayed_link": "https://www.medicare.gov \u203a basics \u203a medicare-basics \u203a h...",
+      "source_logo": "https://serpapi.com/searches/6826c2fb80f30ed8d91dc087/images/2ab6da55c28d2c845a6ae124e35b267bc57674c152fc9a0d34ed1700c37d44fd.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa1NGOTJNREpwTlhkaFgyeEZZMHQ1ZFVSR01WZG1SRVpPVTIwelJXaHNURXhJY0hGUFJHVlpNVWhmV2xoSlMwVkdjMU0xTldSaWNrNXVMVVJ1V2pGU05VeDViVGh3Yldwc2RERkRYMGhFVm5oSlYwUkpkMmRyTUU5cGR4SVhRV05OYldGUVEwTkxaakpLTjA1WlVEWTNhbFpwVVdNYUlrRkRSRmhNTkd3d2VsOXpRVXRLVDJkallXRnVlSEJXUzNFd2VuVTFXamxvU0ZFIiwiZmN2IjoiMyIsImVpIjoiQWNNbWFQQ0NLZjJKN05ZUDY3alZpUWMiLCJxYyI6ImN3M0pzUTJBTUF3RVFGcW9HTUdMSUJvV01mRkRYZ3BKWkVXUktKaUVaZUhhbTdiRUE3dlRUa2lFcGhhRk9jZ0ZZMUNIcUhYTlRmLXRYam9OTGtaSGFNVnYwVW81SW4wZW5uZGMxZzgiLCJxdWVzdGlvbiI6IldoYXQgaGVhbHRoY2FyZSBtb2RlbCBpcyBNZWRpY2FyZT8iLCJsayI6IkdpRjNhR0YwSUdobFlXeDBhR05oY21VZ2JXOWtaV3dnYVhNZ2JXVmthV05oY21VIiwiYnMiOiJjLU55NHBJTHowZ3NVVWpKVHkxV1VFcEtMUzVSVXNqTVU4ak9TU3hXeUUxTnpMT1h1TVJuSkNzbFhRNVhCRktEb29UTGgwc0piRVpHYW1KT1NVWnlZbEdxUW01LVNtcU9RbWF4Z205cVNpWkl4RjVpYTRtUnNwUmlPUzZGdVZDRkFvd0EiLCJpZCI6ImZjX0FjTW1hUENDS2YySjdOWVA2N2pWaVFjXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa1NGOTJNREpwTlhkaFgyeEZZMHQ1ZFVSR01WZG1SRVpPVTIwelJXaHNURXhJY0hGUFJHVlpNVWhmV2xoSlMwVkdjMU0xTldSaWNrNXVMVVJ1V2pGU05VeDViVGh3Yldwc2RERkRYMGhFVm5oSlYwUkpkMmRyTUU5cGR4SVhRV05OYldGUVEwTkxaakpLTjA1WlVEWTNhbFpwVVdNYUlrRkRSRmhNTkd3d2VsOXpRVXRLVDJkallXRnVlSEJXUzNFd2VuVTFXamxvU0ZFIiwiZmN2IjoiMyIsImVpIjoiQWNNbWFQQ0NLZjJKN05ZUDY3alZpUWMiLCJxYyI6ImN3M0pzUTJBTUF3RVFGcW9HTUdMSUJvV01mRkRYZ3BKWkVXUktKaUVaZUhhbTdiRUE3dlRUa2lFcGhhRk9jZ0ZZMUNIcUhYTlRmLXRYam9OTGtaSGFNVnYwVW81SW4wZW5uZGMxZzgiLCJxdWVzdGlvbiI6IldoYXQgaGVhbHRoY2FyZSBtb2RlbCBpcyBNZWRpY2FyZT8iLCJsayI6IkdpRjNhR0YwSUdobFlXeDBhR05oY21VZ2JXOWtaV3dnYVhNZ2JXVmthV05oY21VIiwiYnMiOiJjLU55NHBJTHowZ3NVVWpKVHkxV1VFcEtMUzVSVXNqTVU4ak9TU3hXeUUxTnpMT1h1TVJuSkNzbFhRNVhCRktEb29UTGgwc0piRVpHYW1KT1NVWnlZbEdxUW01LVNtcU9RbWF4Z205cVNpWkl4RjVpYTRtUnNwUmlPUzZGdVZDRkFvd0EiLCJpZCI6ImZjX0FjTW1hUENDS2YySjdOWVA2N2pWaVFjXzMifQ%3D%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Best in KLAS Report 2024.pdf",
+      "link": "https://www.performancehealthus.com/hubfs/Best%20in%20KLAS%20Report%202024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.performancehealthus.com/hubfs/Best%2520in%2520KLAS%2520Report%25202024.pdf&ved=2ahUKEwiwh8Gol6eNAxX9BNsEHWtcNXEQFnoECCcQAQ",
+      "displayed_link": "https://www.performancehealthus.com \u203a hubfs",
+      "favicon": "https://serpapi.com/searches/6826c2fb80f30ed8d91dc087/images/85192513bbf2e46b9c5adec07e8319de06898a2f068b8109cc2c39411af6c6dc.png",
+      "date": "Feb 7, 2024",
+      "snippet": "... FHIR 92.2. Data Analytics Platforms (Payers). Clarify Health Solutions ... provider directory API, and payer-to-payer data exchange ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Health",
+        "provider directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 279
+          },
+          "extensions": [
+            "279 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=LifeBridge+Health,+Inc.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiwh8Gol6eNAxX9BNsEHWtcNXEQ5t4CegQIKBAB"
+      },
+      "source": "Performance Health Partners"
+    },
+    {
+      "position": 2,
+      "title": "Attachments B, C, D, E, G, H, I.docx",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/Attachments%20B,%20C,%20D,%20E,%20G,%20H,%20I.docx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/Attachments%2520B,%2520C,%2520D,%2520E,%2520G,%2520H,%2520I.docx&ved=2ahUKEwiwh8Gol6eNAxX9BNsEHWtcNXEQFnoECCMQAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a pdf \u203a Ellkay",
+      "favicon": "https://serpapi.com/searches/6826c2fb80f30ed8d91dc087/images/85192513bbf2e46b9c5adec07e8319de60a83671293d3b991a9bf4f30caca7b9.png",
+      "snippet": "Application Programming Interface (API) Services. \u2022 Current FHIR API capabilities. o ELLKAY has currently enabled the following R4 FHIR APIs: \u2022 Account ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR API",
+        "FHIR"
+      ],
+      "source": "Gobierno de Puerto Rico (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "ELLKAY Redacted Technical Proposal.pdf",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/ELLKAY%20Redacted%20Technical%20Proposal.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/ELLKAY%2520Redacted%2520Technical%2520Proposal.pdf&ved=2ahUKEwiwh8Gol6eNAxX9BNsEHWtcNXEQFnoECB4QAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a 2024-PRMP-HIE-001",
+      "favicon": "https://serpapi.com/searches/6826c2fb80f30ed8d91dc087/images/85192513bbf2e46b9c5adec07e8319de9f6665581f12ad95e092083ca83c1103.png",
+      "date": "Jul 7, 2024",
+      "snippet": "The vendor confirms that. Provider Directory ... Current FHIR API capabilities o ELLKAY has currently enabled the following R4 FHIR APIs:.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "source": "Gobierno de Puerto Rico (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Best in KLAS healthcare",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Best+in+KLAS+healthcare&sa=X&ved=2ahUKEwiwh8Gol6eNAxX9BNsEHWtcNXEQ1QJ6BAgrEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+healthcare&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Best in KLAS 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Best+in+KLAS+2025&sa=X&ved=2ahUKEwiwh8Gol6eNAxX9BNsEHWtcNXEQ1QJ6BAgsEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Best in KLAS 2024",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Best+in+KLAS+2024&sa=X&ved=2ahUKEwiwh8Gol6eNAxX9BNsEHWtcNXEQ1QJ6BAguEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+2024&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Ensemble Health Partners",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Ensemble+Health+Partners&sa=X&ved=2ahUKEwiwh8Gol6eNAxX9BNsEHWtcNXEQ1QJ6BAgtEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Ensemble+Health+Partners&safe=active"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 3 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=LifeBridge+Health,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=LifeBridge+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

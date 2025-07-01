@@ -1,0 +1,272 @@
+{
+  "search_metadata": {
+    "id": "6826c331526c48e117952f7c",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/0883f36144336a13/6826c331526c48e117952f7c.json",
+    "created_at": "2025-05-16 04:46:41 UTC",
+    "processed_at": "2025-05-16 04:46:41 UTC",
+    "google_url": "https://www.google.com/search?q=Mercy+Care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Mercy+Care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/0883f36144336a13/6826c331526c48e117952f7c.html",
+    "total_time_taken": 24.02
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Mercy Care Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Mercy Care Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 54,
+    "time_taken_displayed": 0.26,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability & patient access rule",
+      "link": "https://www.mercycarehealthplans.com/interoperability-patient-access-rule/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mercycarehealthplans.com/interoperability-patient-access-rule/&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQFnoECBcQAQ",
+      "displayed_link": "https://www.mercycarehealthplans.com \u203a interoperabilit...",
+      "favicon": "https://serpapi.com/searches/6826c331526c48e117952f7c/images/af05ac40ba657dd28d4e167f105bf7385adbe42c511b9a1c4eb1cd042328b5d7.png",
+      "snippet": "App developers API support. Guidance for developers: MercyCare interoperability APIs \u00b7 Developer guidance for provider directory FHIR API \u00b7 FHIR API Provider ...",
+      "snippet_highlighted_words": [
+        "API",
+        "MercyCare",
+        "APIs",
+        "provider directory FHIR API",
+        "FHIR API Provider"
+      ],
+      "source": "MercyCare Health Plans"
+    },
+    {
+      "position": 2,
+      "title": "Aetna's Interoperability API Developer ...",
+      "link": "https://developerportal.aetna.com/managedcontent/pdfs/Previous_Releases.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developerportal.aetna.com/managedcontent/pdfs/Previous_Releases.pdf&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQFnoECCAQAQ",
+      "displayed_link": "https://developerportal.aetna.com \u203a pdfs \u203a Previo...",
+      "favicon": "https://serpapi.com/searches/6826c331526c48e117952f7c/images/af05ac40ba657dd28d4e167f105bf7381c9315743966face88a7900ce70944b0.jpeg",
+      "date": "Aug 13, 2021",
+      "snippet": "9/29/2023. Bulk FHIR is now available for Medicare Provider Directory. This allows for exporting bulk data so hundreds of requests are no ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Medicare Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 10
+          },
+          "extensions": [
+            "10 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Mercy+Care+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQ5t4CegQIKxAB"
+      },
+      "source": "Aetna Developer Portal"
+    },
+    {
+      "position": 3,
+      "title": "Setting Healthcare on FHIR",
+      "link": "https://newsletter.smartbrief.com/whitepapers/1AE45CE8-77F6-4FCE-A1A5-76240109A59F/White_Paper_-_Setting_Healthcare_on_FHIR.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://newsletter.smartbrief.com/whitepapers/1AE45CE8-77F6-4FCE-A1A5-76240109A59F/White_Paper_-_Setting_Healthcare_on_FHIR.pdf&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQFnoECBgQAQ",
+      "displayed_link": "https://newsletter.smartbrief.com \u203a whitepapers",
+      "favicon": "https://serpapi.com/searches/6826c331526c48e117952f7c/images/af05ac40ba657dd28d4e167f105bf7387861bbd938ed158672b26e010f34c6e5.png",
+      "snippet": "Access API, Provider Directory API, and Payer-to-Payer API. While the future of FHIR is still being determined, it is certain that FHIR will play a pivotal ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "API",
+        "FHIR",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 14
+          },
+          "extensions": [
+            "14 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Mercy+Care+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQ5t4CegQILRAB"
+      },
+      "source": "SmartBrief"
+    },
+    {
+      "position": 4,
+      "title": "Craig Behm - PA General Assembly",
+      "link": "https://www.legis.state.pa.us/WU01/LI/TR/Transcripts/2024_0534_0006_TSTMNY.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.legis.state.pa.us/WU01/LI/TR/Transcripts/2024_0534_0006_TSTMNY.pdf&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQFnoECBYQAQ",
+      "displayed_link": "https://www.legis.state.pa.us \u203a Transcripts \u203a 2024_...",
+      "favicon": "https://serpapi.com/searches/6826c331526c48e117952f7c/images/af05ac40ba657dd28d4e167f105bf738b9ca23d2d51c2fab05d1cc4a4ce107ed.png",
+      "date": "Feb 28, 2024",
+      "snippet": "FHIR APIs. Push Notifications. Reports. EHNAC. Flat Files. 3. Page 3. Key ... Exchange provider directory go live, the first. Washington D.C. ...",
+      "snippet_highlighted_words": [
+        "FHIR APIs",
+        "provider directory"
+      ],
+      "source": "legis.state.pa.us"
+    },
+    {
+      "position": 5,
+      "title": "News 7/31/19",
+      "link": "https://histalk2.com/2019/07/30/news-7-31-19/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://histalk2.com/2019/07/30/news-7-31-19/&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQFnoECBoQAQ",
+      "displayed_link": "https://histalk2.com \u203a 2019/07/30 \u203a news-7-31-19",
+      "favicon": "https://serpapi.com/searches/6826c331526c48e117952f7c/images/af05ac40ba657dd28d4e167f105bf738681689f96d70473fe0ad0754ef3a6cd2.jpeg",
+      "date": "Jul 30, 2019",
+      "snippet": "CareMesh announces the first National Provider Directory based on FHIR. NIH issues two notices to promote the use of FHIR in funded clinical ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "FHIR"
+      ],
+      "source": "HIStalk"
+    },
+    {
+      "position": 6,
+      "title": "Health Information Technology Council Report to the ...",
+      "link": "https://malegislature.gov/Bills/193/HD5163.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://malegislature.gov/Bills/193/HD5163.pdf&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQFnoECBkQAQ",
+      "displayed_link": "https://malegislature.gov \u203a Bills",
+      "favicon": "https://serpapi.com/searches/6826c331526c48e117952f7c/images/af05ac40ba657dd28d4e167f105bf73807b12890c4eddb2a929d6c35118783cd.jpeg",
+      "date": "Jan 1, 2023",
+      "snippet": "CG API-FHIR 2023 Technical Update ... Accurate and up-to-date provider directory listings ensure providers and other care team.",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "provider directory",
+        "care"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 38
+          },
+          "extensions": [
+            "38 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Mercy+Care+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQ5t4CegQILBAB"
+      },
+      "source": "General Court of the Commonwealth of Massachusetts (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "Michigan Health Information Technology Commission",
+      "link": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder4/Folder5/Folder3/Folder105/Folder2/Folder205/Folder1/Folder305/Health_Information_Technology_Commission_November_2020_Presentation_v2.pdf?rev=85f5c0803e874d1393125952f4adda20",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder4/Folder5/Folder3/Folder105/Folder2/Folder205/Folder1/Folder305/Health_Information_Technology_Commission_November_2020_Presentation_v2.pdf%3Frev%3D85f5c0803e874d1393125952f4adda20&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQFnoECCEQAQ",
+      "displayed_link": "https://www.michigan.gov \u203a Folder1 \u203a Folder305",
+      "favicon": "https://serpapi.com/searches/6826c331526c48e117952f7c/images/af05ac40ba657dd28d4e167f105bf738ba3d23d33a8d05ff50aaa70f33105d2e.png",
+      "date": "Jan 1, 2021",
+      "snippet": "and/or FHIR API end point. COMPLIANCE TIMELINE: August 1, 2020. Page ... \u2022 Provider Directory API. (applicable January 1,. 2021)+ 6 months.",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory API"
+      ],
+      "source": "State of Michigan (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Health Information Technology Oversight Council",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/2016-0609%20Materials.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%2520Meeting%2520Docs/2016-0609%2520Materials.pdf&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQFnoECDgQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HPA \u203a OHIT-HITOC",
+      "favicon": "https://serpapi.com/searches/6826c331526c48e117952f7c/images/af05ac40ba657dd28d4e167f105bf738a0ea56bb4d64f7f34cbbe8fa74320f20.png",
+      "date": "Jun 9, 2016",
+      "snippet": "(APIs, FHIR). Oregon. Administrative. Rules needed to establish ... \u2022 Possible activities include onboarding to: a statewide provider directory, ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 9,
+      "title": "2022 Annual Report (DOCX)",
+      "link": "https://www.mass.gov/doc/2022-annual-report-docx/download",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mass.gov/doc/2022-annual-report-docx/download&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQFnoECDAQAQ",
+      "displayed_link": "https://www.mass.gov \u203a doc \u203a download",
+      "favicon": "https://serpapi.com/searches/6826c331526c48e117952f7c/images/af05ac40ba657dd28d4e167f105bf738f2cead6e656a0711ea0814e72ffd4d9d.png",
+      "snippet": "The Mass HIway Account Management team worked closely with Orion Health on the creation of onboarding and testing documentation for a new Provider Directory (PD) ...",
+      "snippet_highlighted_words": [
+        "Health",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Mercy+Care+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQ5t4CegQINBAB"
+      },
+      "source": "Mass.gov"
+    },
+    {
+      "position": 10,
+      "title": "BEST IN KLAS 2024 SOFTWARE & SERVICES",
+      "link": "https://www.nuance.com/asset/en_us/collateral/healthcare/report/ar-best-in-klas-software-and-services-2024-en-us.pdf?srsltid=AfmBOopGyM8RTSOYHRwtouT2tekSznEdgXEoRT7I2XzyjwHHIV75YWFA",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.nuance.com/asset/en_us/collateral/healthcare/report/ar-best-in-klas-software-and-services-2024-en-us.pdf%3Fsrsltid%3DAfmBOopGyM8RTSOYHRwtouT2tekSznEdgXEoRT7I2XzyjwHHIV75YWFA&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQFnoECDEQAQ",
+      "displayed_link": "https://www.nuance.com \u203a healthcare \u203a report",
+      "favicon": "https://serpapi.com/searches/6826c331526c48e117952f7c/images/af05ac40ba657dd28d4e167f105bf738e2c54e011f5c65799657d9359c09615b.png",
+      "snippet": "... FHIR API Adoption to Support Third-. Party Connectivity. 3. Utility: Duplicate ... provider directory API, and payer-to-payer data exchange. Complex ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "provider directory API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Mercy+Care+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQ5t4CegQINRAB"
+      },
+      "source": "Nuance Communications"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Mercy+Care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=ScMmaJuZJZP_p84PkcugwAY&start=10&sa=N&sstk=Af40H4XdToT9RRcWQIgm7EMusiRRoa4BAp6qdxij-_Q-LFAxR-iapoImVICv6ZD5dOBcdO30zZ8ynDddqpTEo9eI30pQQ5xEDo8g3g&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQ8NMDegQIBxAK",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Mercy+Care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=ScMmaJuZJZP_p84PkcugwAY&start=10&sa=N&sstk=Af40H4XdToT9RRcWQIgm7EMusiRRoa4BAp6qdxij-_Q-LFAxR-iapoImVICv6ZD5dOBcdO30zZ8ynDddqpTEo9eI30pQQ5xEDo8g3g&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQ8tMDegQIBxAE",
+      "3": "https://www.google.com/search?q=Mercy+Care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=ScMmaJuZJZP_p84PkcugwAY&start=20&sa=N&sstk=Af40H4XdToT9RRcWQIgm7EMusiRRoa4BAp6qdxij-_Q-LFAxR-iapoImVICv6ZD5dOBcdO30zZ8ynDddqpTEo9eI30pQQ5xEDo8g3g&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQ8tMDegQIBxAG",
+      "4": "https://www.google.com/search?q=Mercy+Care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=ScMmaJuZJZP_p84PkcugwAY&start=30&sa=N&sstk=Af40H4XdToT9RRcWQIgm7EMusiRRoa4BAp6qdxij-_Q-LFAxR-iapoImVICv6ZD5dOBcdO30zZ8ynDddqpTEo9eI30pQQ5xEDo8g3g&ved=2ahUKEwjb4efKl6eNAxWT_8kDHZElCGgQ8tMDegQIBxAI"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Mercy+Care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Mercy+Care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Mercy+Care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Mercy+Care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Mercy+Care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30"
+    }
+  }
+}

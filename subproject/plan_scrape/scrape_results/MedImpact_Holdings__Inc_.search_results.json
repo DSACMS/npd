@@ -1,0 +1,141 @@
+{
+  "search_metadata": {
+    "id": "6826c3247a3b05dadd6f3071",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/efdd323372171cfc/6826c3247a3b05dadd6f3071.json",
+    "created_at": "2025-05-16 04:46:28 UTC",
+    "processed_at": "2025-05-16 04:46:28 UTC",
+    "google_url": "https://www.google.com/search?q=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/efdd323372171cfc/6826c3247a3b05dadd6f3071.html",
+    "total_time_taken": 1.53
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "MedImpact Holdings, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "MedImpact Holdings, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 4,
+    "time_taken_displayed": 0.22,
+    "organic_results_state": "Results for exact spelling",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    }
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "CMS Interoperability and Patient Access Final Rule",
+      "link": "https://cookcountyhealth.org/wp-content/uploads/CMS-Interoperability-RFP-11022020_Final_11_02_20_FP_.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://cookcountyhealth.org/wp-content/uploads/CMS-Interoperability-RFP-11022020_Final_11_02_20_FP_.pdf&ved=2ahUKEwjd-sO5l6eNAxX6bvEDHdSqFogQFnoECB4QAQ",
+      "displayed_link": "https://cookcountyhealth.org \u203a uploads \u203a CMS-I...",
+      "favicon": "https://serpapi.com/searches/6826c3247a3b05dadd6f3071/images/09ab5d108fd2700f3c62203b51b2ac37e4eedec61857a4173b7f4345a49b58bb.png",
+      "date": "Nov 2, 2020",
+      "snippet": "What FHIR implementation guides do you support for claims, encounters, clinical, formulary and provider directory data? 5.4.3.2. Does your ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "missing": [
+        "Holdings,",
+        "Inc."
+      ],
+      "source": "Cook County Health"
+    },
+    {
+      "position": 2,
+      "title": "Health Information Technology Oversight Council",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/20150604-Meeting-Materials.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%2520Meeting%2520Docs/20150604-Meeting-Materials.pdf&ved=2ahUKEwjd-sO5l6eNAxX6bvEDHdSqFogQFnoECBgQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HPA \u203a OHIT-HITOC",
+      "favicon": "https://serpapi.com/searches/6826c3247a3b05dadd6f3071/images/09ab5d108fd2700f3c62203b51b2ac372e21591176414178bd3f09a27e076e48.png",
+      "date": "Jun 4, 2015",
+      "snippet": "FamilyCare maintains a provider directory (Applied Statistics & Management, Inc. ... FHIR-based DSTU.CQM standards we should adopt for this.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "Inc",
+        "FHIR"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 3,
+      "title": "All Pages",
+      "link": "https://www.communityplans.net/all-pages/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.communityplans.net/all-pages/&ved=2ahUKEwjd-sO5l6eNAxX6bvEDHdSqFogQFnoECB0QAQ",
+      "displayed_link": "https://www.communityplans.net \u203a all-pages",
+      "snippet": "Beyond Patient Access \u2013 the Next Wave of FHIR Use Cases for Payers ... National Provider Directory RFI Roundtable Call \u00b7 Marketplace & Medicare Joint ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "Medicare"
+      ],
+      "missing": [
+        "Holdings,"
+      ],
+      "must_include": {
+        "word": "Holdings,",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=MedImpact+%22Holdings,%22+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjd-sO5l6eNAxX6bvEDHdSqFogQ5t4CegQIJRAB"
+      },
+      "source": "Association For Community Affiliated Plans"
+    },
+    {
+      "position": 4,
+      "title": "2021 ANNUAL REPORT",
+      "link": "https://www.ncpdp.org/NCPDP/media/pdf/AnnualReport/AnnualReport_2021.pdf?ext=.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ncpdp.org/NCPDP/media/pdf/AnnualReport/AnnualReport_2021.pdf%3Fext%3D.pdf&ved=2ahUKEwjd-sO5l6eNAxX6bvEDHdSqFogQFnoECBoQAQ",
+      "displayed_link": "https://www.ncpdp.org \u203a NCPDP \u203a media \u203a pdf",
+      "favicon": "https://serpapi.com/searches/6826c3247a3b05dadd6f3071/images/09ab5d108fd2700f3c62203b51b2ac373d844915fc8989a2ddc0bf398127146e.png",
+      "snippet": "The No Surprises. Act went into effect January 2022 requiring all health plans' provider directory information to be updated and verified at least every 90 ...",
+      "snippet_highlighted_words": [
+        "plans",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 56
+          },
+          "extensions": [
+            "56 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Holdings,",
+        "Advantage"
+      ],
+      "source": "NCPDP"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=MedImpact+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

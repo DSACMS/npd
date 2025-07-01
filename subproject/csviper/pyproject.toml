@@ -1,0 +1,107 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+line_length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+
+[tool.coverage.run]
+source = ["src/csviper"]
+omit = ["tests/*", "*/migrations/*", "*/settings/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "pass",
+    "raise ImportError",
+]
+
+
+[project]
+name = "csviper"
+version = "0.1.0"
+authors = [
+  { name="CSViper Team", email="fred.trotter@gmail.com" },
+]
+description = "A CLI tool for analyzing CSV files and generating SQL import scripts"
+readme = "ReadMe.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Database",
+    "Topic :: Utilities",
+]
+license = {text = "MIT"}
+
+dependencies = [
+    "click>=8.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov",
+    "black",
+    "flake8",
+]
+mysql = [
+    "pymysql>=1.0.0",
+    "sqlalchemy>=1.4.0",
+]
+postgresql = [
+    "psycopg2-binary>=2.8.0",
+    "sqlalchemy>=1.4.0",
+]
+full = [
+    "pymysql>=1.0.0",
+    "psycopg2-binary>=2.8.0",
+    "sqlalchemy>=1.4.0",
+    "python-dotenv>=0.19.0",
+]
+
+[project.scripts]
+csviper = "csviper.__main__:cli"
+
+[project.urls]
+Homepage = "https://github.com/ftrotter/csviper"
+Issues = "https://github.com/ftrotter/csviper/issues"

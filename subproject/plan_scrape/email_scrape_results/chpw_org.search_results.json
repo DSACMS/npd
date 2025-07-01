@@ -1,0 +1,58 @@
+{
+  "search_metadata": {
+    "id": "6861d152a7d78499125a4809",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/68424fc6510d78e2/6861d152a7d78499125a4809.json",
+    "created_at": "2025-06-29 23:50:42 UTC",
+    "processed_at": "2025-06-29 23:50:42 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Achpw.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Achpw.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/68424fc6510d78e2/6861d152a7d78499125a4809.html",
+    "total_time_taken": 4.58
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:chpw.org \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:chpw.org \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 0,
+    "time_taken_displayed": 0.23,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "site:chpw.org PROVIDER DIRECTORY FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "site:chpw.org PROVIDER DIRECTORY FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "inline_images": [
+    {
+      "source": "https://www.chpw.org/contact-us/chpw-interoperability-developer-portal/",
+      "thumbnail": "https://serpapi.com/searches/6861d152a7d78499125a4809/images/865ce9a8f9b63446a35250a17d32f77a5564bf9082f9bc72eddf4bb9d163af23.jpeg",
+      "original": "https://www.chpw.org/wp-content/uploads/2020/05/Feature_TermsofUse.jpg",
+      "title": "CHPW Interoperability Developer Portal - Washington State ...",
+      "source_name": "Community Health Plan of Washington"
+    },
+    {
+      "source": "https://www.chpw.org/contact-us/chpw-interoperability-developer-portal/",
+      "thumbnail": "https://serpapi.com/searches/6861d152a7d78499125a4809/images/865ce9a8f9b63446387bb28fd91e0140eca4506c8214b4a01b926739175b33ce.jpeg",
+      "original": "https://www.chpw.org/wp-content/themes/chpw/images/logos/chpw-applehealth-medicaid-plan-logo-mobile.svg",
+      "title": "CHPW Interoperability Developer Portal - Washington State ...",
+      "source_name": "Community Health Plan of Washington"
+    },
+    {
+      "source": "https://providerdirectoryapi.chpw.org/swagger-ui/",
+      "thumbnail": "https://serpapi.com/searches/6861d152a7d78499125a4809/images/865ce9a8f9b634460e80ddc6a67e9f3f4e961c64ba265ae9574c69aa39f79260.jpeg",
+      "original": "https://providerdirectoryapi.chpw.org/swagger-ui/astronaut.png",
+      "title": "Swagger UI",
+      "source_name": "providerdirectoryapi.chpw.org"
+    }
+  ],
+  "top_stories_link": "https://www.google.com/search?safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&q=site:chpw.org+PROVIDER+DIRECTORY+FHIR+-fire.ly+-linkedin.com+-google.com&udm=2&source=univ&fir=k1GgJOt_IV74VM%252CvDuyajhEZCtTPM%252C_%253BzXrbXoYlNfak9M%252CvDuyajhEZCtTPM%252C_%253BNsYfKRZeVrNoAM%252Cu6FUiJ4nmGToaM%252C_&usg=AI4_-kQe0wpHgn5tZLFFMnL8lJ_iXW44FQ&sa=X&ved=2ahUKEwi4ov-j6ZeOAxXVS_EDHb9JL8sQ7Al6BAgREAU",
+  "top_stories_serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Achpw.org+PROVIDER+DIRECTORY+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active"
+}

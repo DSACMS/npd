@@ -1,0 +1,255 @@
+{
+  "search_metadata": {
+    "id": "6826c20e6e2237f3a6281c92",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/bf288e92a36df2dd/6826c20e6e2237f3a6281c92.json",
+    "created_at": "2025-05-16 04:41:50 UTC",
+    "processed_at": "2025-05-16 04:41:50 UTC",
+    "google_url": "https://www.google.com/search?q=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/bf288e92a36df2dd/6826c20e6e2237f3a6281c92.html",
+    "total_time_taken": 2.78
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "CareFirst, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "CareFirst, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 10,
+    "time_taken_displayed": 0.2,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "FHIR Provider Directory - | CareFirst Developer Portal",
+      "link": "https://developer.carefirst.com/product/fhir-provider-directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.carefirst.com/product/fhir-provider-directory&ved=2ahUKEwig-Ku1lqeNAxW55MkDHUjsBx4QFnoECBsQAQ",
+      "displayed_link": "https://developer.carefirst.com \u203a product \u203a fhir-provider-...",
+      "favicon": "https://serpapi.com/searches/6826c20e6e2237f3a6281c92/images/7e33d931eae22d9a7ad08583f1c1447dc11da1cadd087a30db126dd792c9705c.png",
+      "snippet": "FHIR Provider Directory product enables member to see which providers are in-network for a given insurance plan. These APIs follow the HL7 R4 FHIR specification ...",
+      "snippet_highlighted_words": [
+        "FHIR Provider Directory",
+        "FHIR"
+      ],
+      "source": "CareFirst Developer Portal"
+    },
+    {
+      "position": 2,
+      "title": "CareFirst Developer Portal: Home -",
+      "link": "https://developer.carefirst.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.carefirst.com/&ved=2ahUKEwig-Ku1lqeNAxW55MkDHUjsBx4QFnoECBgQAQ",
+      "displayed_link": "https://developer.carefirst.com",
+      "favicon": "https://serpapi.com/searches/6826c20e6e2237f3a6281c92/images/7e33d931eae22d9a7ad08583f1c1447ded7e52aba0bf60ae6f0e33895dde0885.png",
+      "snippet": "CareFirst's patient-first products help our members access their healthcare easily. FHIR Provider Directory. Interoperability Provider. Directory. FHIR Patient ...",
+      "snippet_highlighted_words": [
+        "CareFirst's",
+        "FHIR Provider Directory",
+        "FHIR"
+      ],
+      "source": "CareFirst Developer Portal"
+    },
+    {
+      "position": 3,
+      "title": "Documentation - | CareFirst Developer Portal",
+      "link": "https://developer.carefirst.com/help-center/documentation",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.carefirst.com/help-center/documentation&ved=2ahUKEwig-Ku1lqeNAxW55MkDHUjsBx4QFnoECB4QAQ",
+      "displayed_link": "https://developer.carefirst.com \u203a help-center \u203a document...",
+      "favicon": "https://serpapi.com/searches/6826c20e6e2237f3a6281c92/images/7e33d931eae22d9a7ad08583f1c1447deb3ae416e75616a502a409fe3da44344.png",
+      "snippet": "POST https://idp-pit.carefirst.com/fhir-oauth2/pub/{{lob}}/token. Headers ... Sandbox Provider Directory API Endpoints. LOB, API Endpoint. CHPDC, https ...",
+      "snippet_highlighted_words": [
+        "carefirst",
+        "fhir",
+        "Provider Directory API",
+        "API"
+      ],
+      "source": "CareFirst Developer Portal"
+    },
+    {
+      "position": 4,
+      "title": "FAQ - | CareFirst Developer Portal",
+      "link": "https://developer.carefirst.com/help-center/faq",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.carefirst.com/help-center/faq&ved=2ahUKEwig-Ku1lqeNAxW55MkDHUjsBx4QFnoECB8QAQ",
+      "displayed_link": "https://developer.carefirst.com \u203a help-center \u203a faq",
+      "favicon": "https://serpapi.com/searches/6826c20e6e2237f3a6281c92/images/7e33d931eae22d9a7ad08583f1c1447d57466f04ba7a130a9810506eb106f794.png",
+      "snippet": "Provider Directory: This is a public facing API not requiring authorization from the member. This API implements Plan-Net FHIR guides. 3. Payer-to-Payer ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "API",
+        "API",
+        "FHIR"
+      ],
+      "source": "CareFirst Developer Portal"
+    },
+    {
+      "position": 5,
+      "title": "Untitled",
+      "link": "https://developer.carefirst.com/content/html_widgets/pRKFY.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.carefirst.com/content/html_widgets/pRKFY.html&ved=2ahUKEwig-Ku1lqeNAxW55MkDHUjsBx4QFnoECCAQAQ",
+      "displayed_link": "https://developer.carefirst.com \u203a html_widgets \u203a pRKFY",
+      "favicon": "https://serpapi.com/searches/6826c20e6e2237f3a6281c92/images/7e33d931eae22d9a7ad08583f1c1447dde7939b0c011fc7f120d4cc3a8ff40d7.png",
+      "snippet": "https://idp-pit.carefirst.com/fhir-oauth2/sec ... CareFirst BlueCross Blue Shield Medicare Advantage Dual Prime (aka MD DSNP) ... Sandbox Provider Directory API ...",
+      "snippet_highlighted_words": [
+        "carefirst",
+        "fhir",
+        "CareFirst",
+        "Medicare Advantage",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "Inc."
+      ],
+      "must_include": {
+        "word": "Inc.",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CareFirst,+%22Inc.%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwig-Ku1lqeNAxW55MkDHUjsBx4Q5t4CegQILhAB"
+      },
+      "source": "CareFirst Developer Portal"
+    },
+    {
+      "position": 6,
+      "title": "Interoperability Product Documentation",
+      "link": "https://developer.interop.molinahealthcare.com/content/Interoperability%20Product%20Documentation.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.interop.molinahealthcare.com/content/Interoperability%2520Product%2520Documentation.pdf&ved=2ahUKEwig-Ku1lqeNAxW55MkDHUjsBx4QFnoECB0QAQ",
+      "displayed_link": "https://developer.interop.molinahealthcare.com \u203a c...",
+      "snippet": "If you are a third-party developer, you are working on a FHIR-based health care application under contract from a health plan company. ... Provider Directory APIs ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "company",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 783
+          },
+          "extensions": [
+            "783 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CareFirst,+Inc.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwig-Ku1lqeNAxW55MkDHUjsBx4Q5t4CegQILRAB"
+      },
+      "source": "Molina Healthcare"
+    },
+    {
+      "position": 7,
+      "title": "DHCF Organizational Chart \u2013 Agency Structure - DC Council",
+      "link": "https://dccouncil.gov/wp-content/uploads/2022/03/dhcfatt.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dccouncil.gov/wp-content/uploads/2022/03/dhcfatt.pdf&ved=2ahUKEwig-Ku1lqeNAxW55MkDHUjsBx4QFnoECBcQAQ",
+      "displayed_link": "https://dccouncil.gov \u203a 2022/03 \u203a dhcfatt",
+      "favicon": "https://serpapi.com/searches/6826c20e6e2237f3a6281c92/images/7e33d931eae22d9a7ad08583f1c1447d2f4211707862d36e5f48e95a67bf594b.png",
+      "snippet": "The new system will allow Patients, Providers and Payers to exchange patient's health information through FHIR standard APIs. ... provider directory, CRISP ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 369
+          },
+          "extensions": [
+            "369 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CareFirst,+Inc.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwig-Ku1lqeNAxW55MkDHUjsBx4Q5t4CegQIHBAB"
+      },
+      "source": "dccouncil.gov"
+    },
+    {
+      "position": 8,
+      "title": "2022 State Medicaid Health IT Plan (SMHP) Update - | dhcf",
+      "link": "https://dhcf.dc.gov/sites/default/files/dc/sites/dhcf/page_content/attachments/2022-SMHP-Update-Full-Report.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dhcf.dc.gov/sites/default/files/dc/sites/dhcf/page_content/attachments/2022-SMHP-Update-Full-Report.pdf&ved=2ahUKEwig-Ku1lqeNAxW55MkDHUjsBx4QFnoECDAQAQ",
+      "displayed_link": "https://dhcf.dc.gov \u203a page_content \u203a attachments",
+      "favicon": "https://serpapi.com/searches/6826c20e6e2237f3a6281c92/images/7e33d931eae22d9a7ad08583f1c1447d21ea6a6518b16a07f1ee19eccb4bdc40.png",
+      "date": "Dec 13, 2016",
+      "snippet": "FHIR-based directory that includes data from 21 ... Provider Directory: The DC HIE Provider Directory is a comprehensive database that is.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "Provider Directory"
+      ],
+      "source": "DC.gov"
+    },
+    {
+      "position": 9,
+      "title": "CareFirst BlueCross BlueShield Jobs In Owings Mills, MD",
+      "link": "https://www.zippia.com/carefirst-careers-18106/jobs/owings-mills-md/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.zippia.com/carefirst-careers-18106/jobs/owings-mills-md/&ved=2ahUKEwig-Ku1lqeNAxW55MkDHUjsBx4QFnoECDMQAQ",
+      "displayed_link": "https://www.zippia.com \u203a carefirst-careers-18106 \u203a owin...",
+      "favicon": "https://serpapi.com/searches/6826c20e6e2237f3a6281c92/images/7e33d931eae22d9a7ad08583f1c1447d1d23a649da57bf36f6a4b7c39ea84558.png",
+      "snippet": "... provider directory, other member facing materials, network generation ... + Knowledge of Interoperability Standards (FHIR, CCDA, HL7) . + Knowledgeable ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "source": "Zippia"
+    },
+    {
+      "position": 10,
+      "title": "Season 3",
+      "link": "https://thebigunlock.com/category/podcasts/season3/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://thebigunlock.com/category/podcasts/season3/&ved=2ahUKEwig-Ku1lqeNAxW55MkDHUjsBx4QFnoECDUQAQ",
+      "displayed_link": "https://thebigunlock.com \u203a podcasts",
+      "favicon": "https://serpapi.com/searches/6826c20e6e2237f3a6281c92/images/7e33d931eae22d9a7ad08583f1c1447dcf7c40eff27c9a7edcbca57cc56f1fc5.png",
+      "snippet": "There's DICOM and HL7 and now FHIR, the nature of data is different. ... We rolled out a brand-new provider directory to help people search for providers and ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 5.0,
+            "reviews": 5
+          },
+          "extensions": [
+            "5.0(5)"
+          ]
+        }
+      },
+      "source": "The Big Unlock Podcast"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CareFirst%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

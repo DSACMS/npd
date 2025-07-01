@@ -1,0 +1,371 @@
+{
+  "search_metadata": {
+    "id": "6826c18ab255a8a823f586b0",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/89afc9a54522de00/6826c18ab255a8a823f586b0.json",
+    "created_at": "2025-05-16 04:39:38 UTC",
+    "processed_at": "2025-05-16 04:39:38 UTC",
+    "google_url": "https://www.google.com/search?q=Alignment+Healthcare+USA%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Alignment+Healthcare+USA%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/89afc9a54522de00/6826c18ab255a8a823f586b0.html",
+    "total_time_taken": 3.72
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Alignment Healthcare USA, LLC Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Alignment Healthcare USA, LLC Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 171,
+    "time_taken_displayed": 0.25,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Home - FHIR Human Services Directory v1.0.0",
+      "link": "https://build.fhir.org/ig/HL7/FHIR-IG-Human-Services-Directory/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://build.fhir.org/ig/HL7/FHIR-IG-Human-Services-Directory/&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQFnoECBQQAQ",
+      "displayed_link": "https://build.fhir.org \u203a FHIR-IG-Human-Services-Direct...",
+      "favicon": "https://serpapi.com/searches/6826c18ab255a8a823f586b0/images/314601a5fcde5ea809fd2c118f53c55736352f188785f22d0bb14bb8d959dd4e.png",
+      "snippet": "The FHIR Human Services and Resource Directory FHIR IG has been aligned with the PDEX Plan Net Provider Directory IG (and US Core by inheritance), rather than ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "aligned",
+        "Provider Directory",
+        "US"
+      ],
+      "missing": [
+        "USA,",
+        "Advantage"
+      ],
+      "source": "FHIR specification"
+    },
+    {
+      "position": 2,
+      "title": "CMS-9115-F - Interoperability and Patient Access",
+      "link": "https://www.cms.gov/files/document/cms-9115-f.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/cms-9115-f.pdf&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQFnoECCEQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a cms-91...",
+      "favicon": "https://serpapi.com/searches/6826c18ab255a8a823f586b0/images/314601a5fcde5ea809fd2c118f53c55709f294e8b92a51f51c19d80f533c3a7c.png",
+      "date": "Mar 6, 2020",
+      "snippet": "specialty) required for this Provider Directory API can all be represented through FHIR Release. 4.0.1. Additional implementation guidance ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 474
+          },
+          "extensions": [
+            "474 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Analyzing the 2024 CMS Interoperability Rule",
+      "link": "https://www.taliun.com/analyzing-the-2024-cms-interoperability-rule-focusing-on-directory-application-scenarios",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.taliun.com/analyzing-the-2024-cms-interoperability-rule-focusing-on-directory-application-scenarios&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQFnoECBgQAQ",
+      "displayed_link": "https://www.taliun.com \u203a analyzing-the-2024-cms-inter...",
+      "favicon": "https://serpapi.com/searches/6826c18ab255a8a823f586b0/images/314601a5fcde5ea809fd2c118f53c55765b3cd71dda636ed90d2317328e3208f.png",
+      "snippet": "... FHIR (Fast Healthcare Interoperability Resources) for data transfer. ... Provider Directory API data to display in-network providers for different health plans.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Healthcare",
+        "Provider Directory API",
+        "plans"
+      ],
+      "missing": [
+        "USA,",
+        "Advantage"
+      ],
+      "source": "Taliun"
+    },
+    {
+      "position": 4,
+      "title": "Interoperability and Patient Access - Proposed Rule (CMS-9115-P)",
+      "link": "https://www.anesthesiallc.com/images/eAlertsSource/Interoperability-and-Patient-Access---Proposed-Rule-CMS-9115-P.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.anesthesiallc.com/images/eAlertsSource/Interoperability-and-Patient-Access---Proposed-Rule-CMS-9115-P.pdf&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQFnoECBUQAQ",
+      "displayed_link": "https://www.anesthesiallc.com \u203a eAlertsSource \u203a I...",
+      "snippet": "MA plans ... lookup use case, API access to a provider directory could allow for a referring provider's health ... FHIR-based API discussed in section III. of this.",
+      "snippet_highlighted_words": [
+        "plans",
+        "API",
+        "provider directory",
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "USA,"
+      ],
+      "must_include": {
+        "word": "USA,",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Alignment+Healthcare+%22USA,%22+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ5t4CegQIIxAB"
+      },
+      "source": "Anesthesia Business Consultants"
+    },
+    {
+      "position": 5,
+      "title": "Interoperability Standards Priorities Task Force Report",
+      "link": "https://www.healthit.gov/sites/default/files/page/2019-12/2019-10-16_ISP_TF_Final_Report_signed_508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/page/2019-12/2019-10-16_ISP_TF_Final_Report_signed_508.pdf&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQFnoECB0QAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a page",
+      "favicon": "https://serpapi.com/searches/6826c18ab255a8a823f586b0/images/314601a5fcde5ea809fd2c118f53c557100c7145a32f32607bfee01ed99c903f.jpeg",
+      "date": "Oct 16, 2019",
+      "snippet": "Healthcare Interoperability Resources (FHIR)-based referral ... A FHIR-based API for RTPB information would allow a single Rx authorization.",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "FHIR",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 48
+          },
+          "extensions": [
+            "48 pages"
+          ]
+        }
+      },
+      "missing": [
+        "USA,",
+        "Advantage"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "State Medicaid Health Information Technology Plan (SMHP)",
+      "link": "https://www.hhs.texas.gov/sites/default/files/documents/medicaid-health-it-plan.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.texas.gov/sites/default/files/documents/medicaid-health-it-plan.pdf&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQFnoECB4QAQ",
+      "displayed_link": "https://www.hhs.texas.gov \u203a files \u203a documents \u203a m...",
+      "favicon": "https://serpapi.com/searches/6826c18ab255a8a823f586b0/images/314601a5fcde5ea809fd2c118f53c557e8e34214b974ae3cbf976ebbc878da15.png",
+      "date": "Mar 25, 2022",
+      "snippet": "networks available via a FHIR-based Provider Directory API to facilitate public access to accurate information about in-network providers ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 116
+          },
+          "extensions": [
+            "116 pages"
+          ]
+        }
+      },
+      "missing": [
+        "USA,"
+      ],
+      "must_include": {
+        "word": "USA,",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Alignment+Healthcare+%22USA,%22+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ5t4CegQIJBAB"
+      },
+      "source": "Texas Health and Human Services (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "How Health Information Exchanges Support Integration for ...",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/dbf3c475dff9ef1d5bdbcdef7792889a/hie-support-integration-bh-settings.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/dbf3c475dff9ef1d5bdbcdef7792889a/hie-support-integration-bh-settings.pdf&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQFnoECBYQAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/6826c18ab255a8a823f586b0/images/314601a5fcde5ea809fd2c118f53c55757669d3d52f74aecfbad556cf41371e5.png",
+      "date": "Dec 31, 2024",
+      "snippet": "In theory, a HL7 Fast Healthcare Interoperability Resources (FHIR) Application Programming ... and a provider directory linking health care ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "provider directory",
+        "health care"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 71
+          },
+          "extensions": [
+            "71 pages"
+          ]
+        }
+      },
+      "missing": [
+        "USA,"
+      ],
+      "must_include": {
+        "word": "USA,",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Alignment+Healthcare+%22USA,%22+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ5t4CegQIJhAB"
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 8,
+      "title": "Interoperability without Data Quality: A FHIR-Storm",
+      "link": "https://verinovum.com/wp-content/uploads/2023/03/VN_Interoperability-FHIR_Part-2.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://verinovum.com/wp-content/uploads/2023/03/VN_Interoperability-FHIR_Part-2.pdf&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQFnoECEkQAQ",
+      "displayed_link": "https://verinovum.com \u203a uploads \u203a 2023/03 \u203a V...",
+      "favicon": "https://serpapi.com/searches/6826c18ab255a8a823f586b0/images/314601a5fcde5ea809fd2c118f53c5573244784bfdc41fe2298f01d0e7510e3d.png",
+      "date": "Mar 30, 2023",
+      "snippet": "It calls on the healthcare industry to adopt standardized APIs (like the approach deployed for FHIR), which will allow individuals to access ...",
+      "snippet_highlighted_words": [
+        "healthcare",
+        "APIs",
+        "FHIR"
+      ],
+      "missing": [
+        "USA,"
+      ],
+      "must_include": {
+        "word": "USA,",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Alignment+Healthcare+%22USA,%22+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ5t4CegQIShAB"
+      },
+      "source": "Verinovum"
+    },
+    {
+      "position": 9,
+      "title": "ONC's HTI-2 'big step forward for interoperability,' experts say",
+      "link": "https://www.fiercehealthcare.com/health-tech/oncs-hti-2-proposed-rule-big-step-forward-interoperability-health-it-experts-say-ehr",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.fiercehealthcare.com/health-tech/oncs-hti-2-proposed-rule-big-step-forward-interoperability-health-it-experts-say-ehr&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQFnoECEEQAQ",
+      "displayed_link": "https://www.fiercehealthcare.com \u203a health-tech \u203a oncs-h...",
+      "favicon": "https://serpapi.com/searches/6826c18ab255a8a823f586b0/images/314601a5fcde5ea809fd2c118f53c557011506161d673aaf5fecc4b253a0dff8.png",
+      "date": "Jul 12, 2024",
+      "snippet": "... API, Prior Authorization API and Provider Directory API. Key ... FHIR standards and USCDI v4 (by January 2028). The rule also will ...",
+      "snippet_highlighted_words": [
+        "API",
+        "API",
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "missing": [
+        "USA,",
+        "Advantage"
+      ],
+      "source": "Fierce Healthcare"
+    },
+    {
+      "position": 10,
+      "title": "CAQH Index Report",
+      "link": "https://www.caqh.org/hubfs/43908627/drupal/2024-01/2023_CAQH_Index_Report.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.caqh.org/hubfs/43908627/drupal/2024-01/2023_CAQH_Index_Report.pdf&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQFnoECEMQAQ",
+      "displayed_link": "https://www.caqh.org \u203a hubfs \u203a drupal \u203a 2023_C...",
+      "favicon": "https://serpapi.com/searches/6826c18ab255a8a823f586b0/images/314601a5fcde5ea809fd2c118f53c557bd1235469b9beae9127903c8279eabe8.png",
+      "snippet": "Number of claim payments paid in bulk. \u2022 Interactions with FHIR for Patient Access and. Provider Directory APIs. \u2022 Use of artificial intelligence (AI) for ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory APIs"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 74
+          },
+          "extensions": [
+            "74 pages"
+          ]
+        }
+      },
+      "missing": [
+        "USA,",
+        "Advantage"
+      ],
+      "source": "CAQH.org"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "cms-9115-f fact sheet",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=cms-9115-f+fact+sheet&sa=X&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ1QJ6BAg_EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-9115-f+fact+sheet&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability and Patient Access final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CMS+Interoperability+and+Patient+Access+final+rule&sa=X&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ1QJ6BAg-EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+and+Patient+Access+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-0057",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CMS-0057&sa=X&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ1QJ6BAhAEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-0057&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-9115 final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CMS-9115+final+rule&sa=X&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ1QJ6BAg9EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-9115+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Provider Access API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Provider+Access+API&sa=X&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+Access+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "What is the purpose of Interoperability and Patient Access final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=What+is+the+purpose+of+Interoperability+and+Patient+Access+final+rule&sa=X&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ1QJ6BAg8EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=What+is+the+purpose+of+Interoperability+and+Patient+Access+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=CMS+Interoperability+API&sa=X&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ1QJ6BAg6EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Prior authorization metrics",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Prior+authorization+metrics&sa=X&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ1QJ6BAg7EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Prior+authorization+metrics&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Alignment+Healthcare+USA,+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=jcEmaKraD-CA9u8PhPa5gQw&start=10&sa=N&sstk=Af40H4VcjKJy61DYCbm3l0UMZzhPJDi20k5O4QfoAp8qYi0T8Ga5ECOAI8Nj2tdTo2umoeJENOhlBjcRihN9PGxpWJA7gtSHg5-vvg&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ8NMDegQIDRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Alignment+Healthcare+USA,+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=jcEmaKraD-CA9u8PhPa5gQw&start=10&sa=N&sstk=Af40H4VcjKJy61DYCbm3l0UMZzhPJDi20k5O4QfoAp8qYi0T8Ga5ECOAI8Nj2tdTo2umoeJENOhlBjcRihN9PGxpWJA7gtSHg5-vvg&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ8tMDegQIDRAE",
+      "3": "https://www.google.com/search?q=Alignment+Healthcare+USA,+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=jcEmaKraD-CA9u8PhPa5gQw&start=20&sa=N&sstk=Af40H4VcjKJy61DYCbm3l0UMZzhPJDi20k5O4QfoAp8qYi0T8Ga5ECOAI8Nj2tdTo2umoeJENOhlBjcRihN9PGxpWJA7gtSHg5-vvg&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ8tMDegQIDRAG",
+      "4": "https://www.google.com/search?q=Alignment+Healthcare+USA,+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=jcEmaKraD-CA9u8PhPa5gQw&start=30&sa=N&sstk=Af40H4VcjKJy61DYCbm3l0UMZzhPJDi20k5O4QfoAp8qYi0T8Ga5ECOAI8Nj2tdTo2umoeJENOhlBjcRihN9PGxpWJA7gtSHg5-vvg&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ8tMDegQIDRAI",
+      "5": "https://www.google.com/search?q=Alignment+Healthcare+USA,+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=jcEmaKraD-CA9u8PhPa5gQw&start=40&sa=N&sstk=Af40H4VcjKJy61DYCbm3l0UMZzhPJDi20k5O4QfoAp8qYi0T8Ga5ECOAI8Nj2tdTo2umoeJENOhlBjcRihN9PGxpWJA7gtSHg5-vvg&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ8tMDegQIDRAK",
+      "6": "https://www.google.com/search?q=Alignment+Healthcare+USA,+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=jcEmaKraD-CA9u8PhPa5gQw&start=50&sa=N&sstk=Af40H4VcjKJy61DYCbm3l0UMZzhPJDi20k5O4QfoAp8qYi0T8Ga5ECOAI8Nj2tdTo2umoeJENOhlBjcRihN9PGxpWJA7gtSHg5-vvg&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ8tMDegQIDRAM",
+      "7": "https://www.google.com/search?q=Alignment+Healthcare+USA,+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=jcEmaKraD-CA9u8PhPa5gQw&start=60&sa=N&sstk=Af40H4VcjKJy61DYCbm3l0UMZzhPJDi20k5O4QfoAp8qYi0T8Ga5ECOAI8Nj2tdTo2umoeJENOhlBjcRihN9PGxpWJA7gtSHg5-vvg&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ8tMDegQIDRAO",
+      "8": "https://www.google.com/search?q=Alignment+Healthcare+USA,+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=jcEmaKraD-CA9u8PhPa5gQw&start=70&sa=N&sstk=Af40H4VcjKJy61DYCbm3l0UMZzhPJDi20k5O4QfoAp8qYi0T8Ga5ECOAI8Nj2tdTo2umoeJENOhlBjcRihN9PGxpWJA7gtSHg5-vvg&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ8tMDegQIDRAQ",
+      "9": "https://www.google.com/search?q=Alignment+Healthcare+USA,+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=jcEmaKraD-CA9u8PhPa5gQw&start=80&sa=N&sstk=Af40H4VcjKJy61DYCbm3l0UMZzhPJDi20k5O4QfoAp8qYi0T8Ga5ECOAI8Nj2tdTo2umoeJENOhlBjcRihN9PGxpWJA7gtSHg5-vvg&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ8tMDegQIDRAS",
+      "10": "https://www.google.com/search?q=Alignment+Healthcare+USA,+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=jcEmaKraD-CA9u8PhPa5gQw&start=90&sa=N&sstk=Af40H4VcjKJy61DYCbm3l0UMZzhPJDi20k5O4QfoAp8qYi0T8Ga5ECOAI8Nj2tdTo2umoeJENOhlBjcRihN9PGxpWJA7gtSHg5-vvg&ved=2ahUKEwjq1Pb2laeNAxVggP0HHQR7LsAQ8tMDegQIDRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Alignment+Healthcare+USA%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Alignment+Healthcare+USA%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Alignment+Healthcare+USA%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Alignment+Healthcare+USA%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Alignment+Healthcare+USA%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Alignment+Healthcare+USA%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Alignment+Healthcare+USA%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Alignment+Healthcare+USA%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Alignment+Healthcare+USA%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Alignment+Healthcare+USA%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Alignment+Healthcare+USA%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

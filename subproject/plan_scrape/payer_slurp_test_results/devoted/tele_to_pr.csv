@@ -1,0 +1,5 @@
+practitioner_role_fhir_url,telecom_system,telecom_value,telecom_use
+https://fhir.devoted.com/fhir/PractitionerRole/practitioner-role-1003137407-183974,phone,3364811730,work
+https://fhir.devoted.com/fhir/PractitionerRole/practitioner-role-1003137407-183974,fax,3364811739,work
+https://fhir.devoted.com/fhir/PractitionerRole/practitioner-role-1003137407-183975,phone,3369967076,work
+https://fhir.devoted.com/fhir/PractitionerRole/practitioner-role-1003137407-183975,fax,3369967832,work

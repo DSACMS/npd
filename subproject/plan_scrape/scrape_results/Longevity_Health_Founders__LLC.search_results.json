@@ -1,0 +1,159 @@
+{
+  "search_metadata": {
+    "id": "6826c305550cc473a334c7d2",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/87e0f990fcacbb45/6826c305550cc473a334c7d2.json",
+    "created_at": "2025-05-16 04:45:57 UTC",
+    "processed_at": "2025-05-16 04:45:57 UTC",
+    "google_url": "https://www.google.com/search?q=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/87e0f990fcacbb45/6826c305550cc473a334c7d2.html",
+    "total_time_taken": 3.86
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Longevity Health Founders, LLC Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Longevity Health Founders, LLC Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 4,
+    "time_taken_displayed": 0.24,
+    "organic_results_state": "Results for exact spelling",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    }
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "2024 Family Care and Family Care Partnership Contract with ...",
+      "link": "https://www.dhs.wisconsin.gov/familycare/mcos/fc-fcp-2024-contract-nov-amend.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.dhs.wisconsin.gov/familycare/mcos/fc-fcp-2024-contract-nov-amend.pdf&ved=2ahUKEwjiq-irl6eNAxUXG9AFHV9DJY0QFnoECBoQAQ",
+      "displayed_link": "https://www.dhs.wisconsin.gov \u203a familycare \u203a mcos",
+      "favicon": "https://serpapi.com/searches/6826c305550cc473a334c7d2/images/439cb0913f09c6460cfd4a32d7e28193f499483bfb662c9bf544127fb5ff6efa.png",
+      "date": "Jan 31, 2025",
+      "snippet": "The provider directory shall include providers that are under contract with the ... FHIR compliant standards-based API available to third ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "providers",
+        "FHIR",
+        "API"
+      ],
+      "source": "Wisconsin Department of Health Services (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Vital Directions - for Health & Health Care",
+      "link": "https://nam.edu/wp-content/uploads/2018/02/Vital-Directions-for-Health-and-Health-Care-Final-Publication-022718.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nam.edu/wp-content/uploads/2018/02/Vital-Directions-for-Health-and-Health-Care-Final-Publication-022718.pdf&ved=2ahUKEwjiq-irl6eNAxUXG9AFHV9DJY0QFnoECCUQAQ",
+      "displayed_link": "https://nam.edu \u203a wp-content \u203a uploads \u203a 2018/02",
+      "favicon": "https://serpapi.com/searches/6826c305550cc473a334c7d2/images/439cb0913f09c6460cfd4a32d7e2819308ec4a9fdd4e095731b68e2f95fb35ac.png",
+      "date": "Jul 8, 2016",
+      "snippet": "... Provider directory. There is no national provider directory that ... (FHIR), will enhance data liquidity and enable an ecosystem of new ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 493
+          },
+          "extensions": [
+            "493 pages"
+          ]
+        }
+      },
+      "source": "National Academy of Medicine"
+    },
+    {
+      "position": 3,
+      "title": "2021 ANNUAL REPORT",
+      "link": "https://www.ncpdp.org/NCPDP/media/pdf/AnnualReport/AnnualReport_2021.pdf?ext=.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ncpdp.org/NCPDP/media/pdf/AnnualReport/AnnualReport_2021.pdf%3Fext%3D.pdf&ved=2ahUKEwjiq-irl6eNAxUXG9AFHV9DJY0QFnoECB0QAQ",
+      "displayed_link": "https://www.ncpdp.org \u203a NCPDP \u203a media \u203a pdf",
+      "favicon": "https://serpapi.com/searches/6826c305550cc473a334c7d2/images/439cb0913f09c6460cfd4a32d7e28193786521b4ff8b3d21f0814ca766169cfa.png",
+      "snippet": "The No Surprises. Act went into effect January 2022 requiring all health plans' provider directory information to be updated and verified at least every 90 ...",
+      "snippet_highlighted_words": [
+        "health plans",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 56
+          },
+          "extensions": [
+            "56 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Longevity+Health+Founders,+LLC+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjiq-irl6eNAxUXG9AFHV9DJY0Q5t4CegQIHhAB"
+      },
+      "source": "NCPDP"
+    },
+    {
+      "position": 4,
+      "title": "The Beat",
+      "link": "https://feeds.simplecast.com/F2qS_sm2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://feeds.simplecast.com/F2qS_sm2&ved=2ahUKEwjiq-irl6eNAxUXG9AFHV9DJY0QFnoECBsQAQ",
+      "displayed_link": "https://feeds.simplecast.com \u203a ...",
+      "snippet": "... FHIR, generative AI, and national networks to improve data connectivity and ... provider directory, supporting the development of a statewide health ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory",
+        "health"
+      ],
+      "source": "Simplecast"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 4 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=Longevity+Health+Founders,+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Longevity+Health+Founders%2C+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

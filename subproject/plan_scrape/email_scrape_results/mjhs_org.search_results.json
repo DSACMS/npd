@@ -1,0 +1,37 @@
+{
+  "search_metadata": {
+    "id": "6861d482e82707b32aebcb7e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/5a3fffbb9b014025/6861d482e82707b32aebcb7e.json",
+    "created_at": "2025-06-30 00:04:18 UTC",
+    "processed_at": "2025-06-30 00:04:18 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Amjhs.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Amjhs.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/5a3fffbb9b014025/6861d482e82707b32aebcb7e.html",
+    "total_time_taken": 1.86
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:mjhs.org \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:mjhs.org \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 0,
+    "time_taken_displayed": 0.21,
+    "organic_results_state": "Fully empty",
+    "query_feedback": {
+      "title": "Your search did not match any documents"
+    },
+    "showing_results_for": "site:mjhs.org PROVIDER DIRECTORY FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "site:mjhs.org PROVIDER DIRECTORY FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "error": "Google hasn't returned any results for this query."
+}

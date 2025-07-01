@@ -1,0 +1,206 @@
+{
+  "search_metadata": {
+    "id": "6826c27ebadf0be32df34acb",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/f6b3fabcc53bbbe3/6826c27ebadf0be32df34acb.json",
+    "created_at": "2025-05-16 04:43:42 UTC",
+    "processed_at": "2025-05-16 04:43:42 UTC",
+    "google_url": "https://www.google.com/search?q=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/f6b3fabcc53bbbe3/6826c27ebadf0be32df34acb.html",
+    "total_time_taken": 0.82
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Gemstone Holdings, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Gemstone Holdings, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 6,
+    "time_taken_displayed": 0.22,
+    "organic_results_state": "Results for exact spelling",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    }
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Provider Directory Workshop, April 6, 2016 Page 1 ...",
+      "link": "https://oncprojectracking.healthit.gov/wiki/download/attachments/9700978/Provider%20Directory%20Workshop%20Transcript%20%28draft%29%202016-04-06.pdf?version=1&modificationDate=1463069356000&api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://oncprojectracking.healthit.gov/wiki/download/attachments/9700978/Provider%2520Directory%2520Workshop%2520Transcript%2520%2528draft%2529%25202016-04-06.pdf%3Fversion%3D1%26modificationDate%3D1463069356000%26api%3Dv2&ved=2ahUKEwig357qlqeNAxXCR_EDHSmeN2QQFnoECBgQAQ&usg=AOvVaw18Hf75XArII8YbqZNnRLVb",
+      "displayed_link": "https://oncprojectracking.healthit.gov \u203a attachments",
+      "date": "Apr 6, 2016",
+      "snippet": "... FHIR. And so I would just encourage folks to use this form as a way ... provider directory topic, the idea that there is a lot of use ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Hype Cycle for U.S. Healthcare Payers, 2018",
+      "link": "https://f.hubspotusercontent00.net/hubfs/8011857/Admere_August2020/Pdf/Gartner_US-Payers_2018.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://f.hubspotusercontent00.net/hubfs/8011857/Admere_August2020/Pdf/Gartner_US-Payers_2018.pdf&ved=2ahUKEwig357qlqeNAxXCR_EDHSmeN2QQFnoECBsQAQ&usg=AOvVaw3Vogh3dgm1bGTsHzlAuEtQ",
+      "displayed_link": "https://f.hubspotusercontent00.net \u203a hubfs \u203a Pdf",
+      "favicon": "https://serpapi.com/searches/6826c27ebadf0be32df34acb/images/d4bcc01481ae77925a60071f98c4a4b2d29d133bf7e960f342d7ebedea997a68.png",
+      "snippet": "Reduce the risk of state and federal regulatory penalties for poor provider directory data quality. ... Plan to leverage FHIR for continuous connections between ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Holdings,"
+      ],
+      "must_include": {
+        "word": "Holdings,",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Gemstone+%22Holdings,%22+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwig357qlqeNAxXCR_EDHSmeN2QQ5t4CegQIKBAB"
+      },
+      "source": "hubspotusercontent00.net"
+    },
+    {
+      "position": 3,
+      "title": "AGENDA - Mono County",
+      "link": "https://monocounty.ca.gov/sites/default/files/fileattachments/board_of_supervisors/meeting/33423/02_february_20_2024_agenda_packet.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://monocounty.ca.gov/sites/default/files/fileattachments/board_of_supervisors/meeting/33423/02_february_20_2024_agenda_packet.pdf&ved=2ahUKEwig357qlqeNAxXCR_EDHSmeN2QQFnoECBoQAQ&usg=AOvVaw2Q8yAYLUjXClsrb9CvsWKV",
+      "displayed_link": "https://monocounty.ca.gov \u203a sites \u203a files \u203a meeting",
+      "favicon": "https://serpapi.com/searches/6826c27ebadf0be32df34acb/images/d4bcc01481ae77925a60071f98c4a4b27091d96c09eb6eb2eea9dd5e2ed5c6b4.png",
+      "date": "Feb 20, 2002",
+      "snippet": "standards-based API (HL7 FHIR Release 4.0.1) that allows patients to access ... Provider Directory API \u2013 CalMHSA will make provider directory ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "Provider Directory API",
+        "provider directory"
+      ],
+      "missing": [
+        "Holdings,",
+        "Advantage"
+      ],
+      "source": "Mono County (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Season 4",
+      "link": "https://thebigunlock.com/category/podcasts/season-4/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://thebigunlock.com/category/podcasts/season-4/&ved=2ahUKEwig357qlqeNAxXCR_EDHSmeN2QQFnoECBkQAQ&usg=AOvVaw0Q4AhmPcrW0D3kE_oKmV8w",
+      "displayed_link": "https://thebigunlock.com \u203a podcasts",
+      "favicon": "https://serpapi.com/searches/6826c27ebadf0be32df34acb/images/d4bcc01481ae77925a60071f98c4a4b2de2776a9275012ce8696d54331d8c901.png",
+      "snippet": "... provider directory data. When a provider updates a piece of demographic data ... FHIR. It is amazing for exchanging data in a structured way or it's a ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 5.0,
+            "reviews": 5
+          },
+          "extensions": [
+            "5.0(5)"
+          ]
+        }
+      },
+      "missing": [
+        "Holdings,"
+      ],
+      "must_include": {
+        "word": "Holdings,",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Gemstone+%22Holdings,%22+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwig357qlqeNAxXCR_EDHSmeN2QQ5t4CegQIKRAB"
+      },
+      "source": "The Big Unlock Podcast"
+    },
+    {
+      "position": 5,
+      "title": "acronyms/acronyms.csv at master \u00b7 department-of-veterans ...",
+      "link": "https://github.com/department-of-veterans-affairs/acronyms/blob/master/acronyms.csv",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/department-of-veterans-affairs/acronyms/blob/master/acronyms.csv&ved=2ahUKEwig357qlqeNAxXCR_EDHSmeN2QQFnoECBwQAQ&usg=AOvVaw2NBqjsN6fzQpeRKx6bs33r",
+      "displayed_link": "https://github.com \u203a acronyms \u203a blob \u203a master \u203a acronyms",
+      "favicon": "https://serpapi.com/searches/6826c27ebadf0be32df34acb/images/d4bcc01481ae77925a60071f98c4a4b2cbff13b5417ff64610334fddae7f85ae.png",
+      "snippet": "FHIR, Fast Healthcare Interoperability Resources. 1981. FI, Fiscal Intermediary ... Health Provider Directory. 2378. HPDM, High Performance Development Model.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Holdings,",
+        "Advantage"
+      ],
+      "source": "GitHub"
+    },
+    {
+      "position": 6,
+      "title": "Blockchain Enabled Applications: Understand the ...",
+      "link": "https://dokumen.pub/blockchain-enabled-applications-understand-the-blockchain-ecosystem-and-how-to-make-it-work-for-you-2nbsped-1484265335-9781484265338.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dokumen.pub/blockchain-enabled-applications-understand-the-blockchain-ecosystem-and-how-to-make-it-work-for-you-2nbsped-1484265335-9781484265338.html&ved=2ahUKEwig357qlqeNAxXCR_EDHSmeN2QQFnoECDAQAQ&usg=AOvVaw3r4tx3f9EU_obS7_82Lt_X",
+      "displayed_link": "https://dokumen.pub \u203a ...",
+      "favicon": "https://serpapi.com/searches/6826c27ebadf0be32df34acb/images/d4bcc01481ae77925a60071f98c4a4b216447779aa8de9fbc05481461b28a261.png",
+      "snippet": "... Medicare Advantage organizations that don't correct serious provider directory deficiencies. ... FHIR, which could be extended to include auditability in ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "provider directory",
+        "FHIR"
+      ],
+      "source": "dokumen.pub"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "VA acronyms list",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=VA+acronyms+list&sa=X&ved=2ahUKEwig357qlqeNAxXCR_EDHSmeN2QQ1QJ6BAgvEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=VA+acronyms+list&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Department of homeland security acronym",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Department+of+homeland+security+acronym&sa=X&ved=2ahUKEwig357qlqeNAxXCR_EDHSmeN2QQ1QJ6BAguEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Department+of+homeland+security+acronym&safe=active"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 6 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=Gemstone+Holdings,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Gemstone+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

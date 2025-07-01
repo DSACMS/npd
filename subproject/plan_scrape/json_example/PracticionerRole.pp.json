@@ -1,0 +1,2246 @@
+{
+  "resourceType": "Bundle",
+  "id": "5d3194e7-9c19-41a1-9dbd-3e60f83c7c9d",
+  "type": "searchset",
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://fhir.iehp.org/provider-directory/PractitionerRole"
+    },
+    {
+      "relation": "next",
+      "url": "https://fhir.iehp.org/provider-directory/PractitionerRole?_count=20&_offset=20"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/dacaa96c-71d6-479a-9483-72889ea591e7",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "dacaa96c-71d6-479a-9483-72889ea591e7",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.297-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/e877bafd-bee3-4cf4-91c4-fd893fa95053"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MCR~1679669360"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/8f9cf86f-af79-4e24-bde4-9b4bb174437c"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208D00000X",
+                "display": "Allopathic & Osteopathic Physicians; General Practice"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208D00000X",
+                "display": "Allopathic & Osteopathic Physicians; General Practice"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/f1cc0b90-94ab-4e7a-b4f9-4dd87270f719"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "9516528420",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9519292753",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/397a98e6-21fa-428b-a04b-4e21fc552fff",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "397a98e6-21fa-428b-a04b-4e21fc552fff",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.297-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/e877bafd-bee3-4cf4-91c4-fd893fa95053"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MCR~1265545123"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/5b7769b5-af64-433d-8ee1-960b667599e2"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208D00000X",
+                "display": "Allopathic & Osteopathic Physicians; General Practice"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208D00000X",
+                "display": "Allopathic & Osteopathic Physicians; General Practice"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/43710f16-c168-42c1-a437-8ee66336cd6e"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "7608638366",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "8007209553",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/56a1ce17-03cc-4a0d-b0aa-685439012a13",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "56a1ce17-03cc-4a0d-b0aa-685439012a13",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.323-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/2a5871ff-e2b9-49aa-93cf-e902185d1466"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "CCA~1205994050"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/ba7c04b5-d284-4548-b29d-83b67e91844c"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "152W00000X",
+                "display": "Eye and Vision Services Providers; Optometrist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "152W00000X",
+                "display": "Eye and Vision Services Providers; Optometrist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "152W00000X",
+                "display": "Eye and Vision Services Providers; Optometrist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "152W00000X",
+                "display": "Eye and Vision Services Providers; Optometrist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "152WV0400X",
+                "display": "Eye and Vision Services Providers; Optometrist, Vision Therapy"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "152WV0400X",
+                "display": "Eye and Vision Services Providers; Optometrist, Vision Therapy"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "152WV0400X",
+                "display": "Eye and Vision Services Providers; Optometrist, Vision Therapy"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "152WV0400X",
+                "display": "Eye and Vision Services Providers; Optometrist, Vision Therapy"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/bb586b3f-534c-4802-ad17-c88dbc6f81a8"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "9094639655",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9094634655",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/9dfa2582-0e52-4fa4-9773-4ff0126272b0",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "9dfa2582-0e52-4fa4-9773-4ff0126272b0",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.323-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/e877bafd-bee3-4cf4-91c4-fd893fa95053"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MCR~1508089897"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/fdaeaec9-3e7d-4a32-a279-185e00673797"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363LF0000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363LF0000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363LF0000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363LF0000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/315f3ce3-bc8a-4b1a-8b2e-a19369f10aa6"
+          },
+          {
+            "reference": "Location/47a81d85-4738-4bac-a2fa-0e7d64560955"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "9098831686",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "8554228029",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/96c71afa-13a3-4619-9e5f-c3a08133758f",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "96c71afa-13a3-4619-9e5f-c3a08133758f",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.323-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/ee6cc674-b68b-4755-9515-e1483a321806"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MED~1861662702"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/f37f48e7-44a3-42ce-a341-b72ebd15a80f"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "103T00000X",
+                "display": "Behavioral Health & Social Service Providers; Psychologist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "103T00000X",
+                "display": "Behavioral Health & Social Service Providers; Psychologist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "103T00000X",
+                "display": "Behavioral Health & Social Service Providers; Psychologist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "103T00000X",
+                "display": "Behavioral Health & Social Service Providers; Psychologist"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/1036cf1c-a721-4b5b-85c7-9c48452ca47d"
+          },
+          {
+            "reference": "Location/161865f9-7726-4665-8117-9c298afb383d"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "3108599127",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "8182797512",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "3107391167",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "8188210095",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/9b63e857-50e2-4aa4-83aa-caa11594b6c8",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "9b63e857-50e2-4aa4-83aa-caa11594b6c8",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.336-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/ee6cc674-b68b-4755-9515-e1483a321806"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MED~1336155258"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/8005e3c5-fb27-43b1-a0c7-5179bdae1671"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208000000X",
+                "display": "Allopathic & Osteopathic Physicians; Pediatrics"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208000000X",
+                "display": "Allopathic & Osteopathic Physicians; Pediatrics"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208000000X",
+                "display": "Allopathic & Osteopathic Physicians; Pediatrics"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208000000X",
+                "display": "Allopathic & Osteopathic Physicians; Pediatrics"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208000000X",
+                "display": "Allopathic & Osteopathic Physicians; Pediatrics"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208000000X",
+                "display": "Allopathic & Osteopathic Physicians; Pediatrics"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208M00000X",
+                "display": "Allopathic & Osteopathic Physicians; Hospitalist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208M00000X",
+                "display": "Allopathic & Osteopathic Physicians; Hospitalist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208M00000X",
+                "display": "Allopathic & Osteopathic Physicians; Hospitalist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208M00000X",
+                "display": "Allopathic & Osteopathic Physicians; Hospitalist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208M00000X",
+                "display": "Allopathic & Osteopathic Physicians; Hospitalist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208M00000X",
+                "display": "Allopathic & Osteopathic Physicians; Hospitalist"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/4deccc57-461b-4748-9560-f35336e91e7c"
+          },
+          {
+            "reference": "Location/d7a367cb-8fa8-4968-bfee-c49a98505c80"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "9512436976",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9512433868",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9517697191",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/e31b401f-4eaf-47b6-b53a-0851062caa3a",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "e31b401f-4eaf-47b6-b53a-0851062caa3a",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.336-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/e877bafd-bee3-4cf4-91c4-fd893fa95053"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MCR~1366443053"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/937c74c6-8c0b-4cd3-8849-a54d6b6e0c77"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207R00000X",
+                "display": "Allopathic & Osteopathic Physicians; Internal Medicine"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207R00000X",
+                "display": "Allopathic & Osteopathic Physicians; Internal Medicine"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207RC0000X",
+                "display": "Allopathic & Osteopathic Physicians; Internal Medicine, Cardiovascular Disease"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207RC0000X",
+                "display": "Allopathic & Osteopathic Physicians; Internal Medicine, Cardiovascular Disease"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207RI0011X",
+                "display": "Allopathic & Osteopathic Physicians; Internal Medicine, Interventional Cardiology"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207RI0011X",
+                "display": "Allopathic & Osteopathic Physicians; Internal Medicine, Interventional Cardiology"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/6d3c1ea1-0f1a-43f6-a2e9-5c422b993d98"
+          },
+          {
+            "reference": "Location/62f2f027-c594-4c1f-859f-da1259d82422"
+          }
+        ],
+        "healthcareService": [
+          {
+            "reference": "HealthcareService/c527d341-e5fd-4d23-9b10-b2757c934e38"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "7603223276",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "7603604436",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "7603251203",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "7603604446",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/b320ac1e-e7c8-45ef-9ee5-495a697d6e7f",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "b320ac1e-e7c8-45ef-9ee5-495a697d6e7f",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.336-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/e877bafd-bee3-4cf4-91c4-fd893fa95053"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MCR~1568629889"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/a9c41379-e472-4f23-86b3-2f73ce5f8e28"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207Q00000X",
+                "display": "Allopathic & Osteopathic Physicians; Family Medicine"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207Q00000X",
+                "display": "Allopathic & Osteopathic Physicians; Family Medicine"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207Q00000X",
+                "display": "Allopathic & Osteopathic Physicians; Family Medicine"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207Q00000X",
+                "display": "Allopathic & Osteopathic Physicians; Family Medicine"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/e45cb802-4ac5-401a-88d2-481f99af7e7d"
+          },
+          {
+            "reference": "Location/fc90eb82-d603-46c5-98df-595d27af5697"
+          },
+          {
+            "reference": "Location/0576eb7a-e400-40a2-bc12-71234c975ba3"
+          },
+          {
+            "reference": "Location/035dcfca-073e-43a5-b161-59ddd85134ad"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "7603273846",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "7603275140",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "7604167639",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "7605371669",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "7603184730",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "7605617373",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "7609927171",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/61a549e5-d743-4559-a935-0ae2c20de911",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "61a549e5-d743-4559-a935-0ae2c20de911",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.367-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/ee6cc674-b68b-4755-9515-e1483a321806"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MED~1144680653"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/fa8850d1-c6b5-4b15-a6b7-cafca1f428b8"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363L00000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363L00000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/b4713432-82c0-4ac6-99f9-ad7ca892be45"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "9094699014",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9094699013",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/003a96a0-c97b-4df9-91d9-274bf6b83a87",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "003a96a0-c97b-4df9-91d9-274bf6b83a87",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.382-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/ee6cc674-b68b-4755-9515-e1483a321806"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MED~1841316874"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/ed339230-ce58-48fe-a79d-8f4879158f84"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "106H00000X",
+                "display": "Behavioral Health & Social Service Providers; Marriage & Family Therapist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "106H00000X",
+                "display": "Behavioral Health & Social Service Providers; Marriage & Family Therapist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "106H00000X",
+                "display": "Behavioral Health & Social Service Providers; Marriage & Family Therapist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "106H00000X",
+                "display": "Behavioral Health & Social Service Providers; Marriage & Family Therapist"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/5a9926b8-6b58-4c61-9d7f-9b29ee4333b0"
+          },
+          {
+            "reference": "Location/847b155b-fdee-46dc-b775-baadadc8b739"
+          },
+          {
+            "reference": "Location/452a6fe3-f0d2-4568-b01c-203367080201"
+          },
+          {
+            "reference": "Location/1ecdc649-50d1-48f5-93b4-46b51d0b8d0d"
+          },
+          {
+            "reference": "Location/f73221ab-7879-411e-b3c0-2d7fb408d7b1"
+          },
+          {
+            "reference": "Location/dba510dd-7147-4fec-b1b3-9b603b8f6503"
+          },
+          {
+            "reference": "Location/fcf42aae-f8b3-421b-85cf-8769c561cc49"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "4423279315",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "9099442544",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "9099870993",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "4423279311",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9093628002",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9095605915",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/422e706b-c128-4636-989c-06af40b45925",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "422e706b-c128-4636-989c-06af40b45925",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.382-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/ee6cc674-b68b-4755-9515-e1483a321806"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MED~1164473187"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/71c0440f-baf2-4cfd-b6d0-78464137e21f"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363L00000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363L00000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363L00000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363L00000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363L00000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363L00000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363L00000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363L00000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363L00000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363L00000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/967e33a2-5e72-4301-8343-c419fa3554c5"
+          },
+          {
+            "reference": "Location/2dc86d87-0366-4291-86df-62077a759cb6"
+          },
+          {
+            "reference": "Location/818d2e17-796d-4c2b-91d5-2bbb7d0da0a6"
+          },
+          {
+            "reference": "Location/037aa466-7be1-483a-bf41-28e622b6a769"
+          },
+          {
+            "reference": "Location/efe9ef98-e74a-46f9-8435-e1e378169318"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "8586334697",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "9093554261",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "9093812933",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "9093861882",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "9098817330",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9093564459",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9093818983",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9093861880",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9098817320",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9512256400",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/f2799a49-e2b4-4859-9299-6debaa62f094",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "f2799a49-e2b4-4859-9299-6debaa62f094",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.381-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/ee6cc674-b68b-4755-9515-e1483a321806"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MED~1730500620"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/4d4214e1-5d12-4e93-be58-f56166c03c6f"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363LP0808X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363LP0808X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363LP0808X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363LP0808X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363LP0808X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363LP0808X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363LP0808X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363LP0808X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/a3d0eb12-17d8-4ecd-9e5c-0cb96416fdeb"
+          },
+          {
+            "reference": "Location/0ab7f528-f6e9-43fa-8ee4-e0740335731b"
+          },
+          {
+            "reference": "Location/8a2fd274-0621-4200-8a58-0cb581e0aaca"
+          },
+          {
+            "reference": "Location/75b8277c-3b15-42f1-9e73-2af805d6e5c4"
+          },
+          {
+            "reference": "Location/129b70ba-cae8-4256-aebd-2d070b532770"
+          },
+          {
+            "reference": "Location/e6c513c0-9820-46f2-900b-e23baa8e1f2e"
+          },
+          {
+            "reference": "Location/9bc4d6f4-0088-4c5b-867a-72b36408437f"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "9092815858",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "9095903898",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "9099029199",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "9099468243",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "9099893932",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "9512133449",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9092815800",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9094649675",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9099029111",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9099464222",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9099803567",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9512133450",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/5b2f60ce-2abe-4f78-ba32-fc53938d1937",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "5b2f60ce-2abe-4f78-ba32-fc53938d1937",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.397-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/ee6cc674-b68b-4755-9515-e1483a321806"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MED~1841227493"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/251c7094-988e-431c-aa0a-7345773afb6f"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208D00000X",
+                "display": "Allopathic & Osteopathic Physicians; General Practice"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "208D00000X",
+                "display": "Allopathic & Osteopathic Physicians; General Practice"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/5d1fe394-5385-458d-a04a-d0e214ee9498"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "9093365751",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9093369715",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/6dbca648-936a-4cdc-8f83-a16b69fc19eb",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "6dbca648-936a-4cdc-8f83-a16b69fc19eb",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.397-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/e877bafd-bee3-4cf4-91c4-fd893fa95053"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MCR~1801425145"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/d95c6a27-14be-43bf-93c9-40706f2c4424"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363LF0000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363LF0000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/e3480a92-3c1a-451c-946f-c337eb7920ed"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "9093827115",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9093827100",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/097a60b8-eafe-4d7c-bb54-b4a2cd657975",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "097a60b8-eafe-4d7c-bb54-b4a2cd657975",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.400-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/2a5871ff-e2b9-49aa-93cf-e902185d1466"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "CCA~1508379017"
+          }
+        ],
+        "active": true,
+        "organization": {
+          "type": "Practitioner",
+          "identifier": {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "NPI",
+                  "display": "National provider identifier"
+                }
+              ]
+            },
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1508379017"
+          }
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207Q00000X",
+                "display": "Allopathic & Osteopathic Physicians; Family Medicine"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207Q00000X",
+                "display": "Allopathic & Osteopathic Physicians; Family Medicine"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207Q00000X",
+                "display": "Allopathic & Osteopathic Physicians; Family Medicine"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207Q00000X",
+                "display": "Allopathic & Osteopathic Physicians; Family Medicine"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "261QF0400X",
+                "display": "Ambulatory Health Care Facilities; Clinic/Center, Federally Qualified Health Center (FQHC)"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "261QF0400X",
+                "display": "Ambulatory Health Care Facilities; Clinic/Center, Federally Qualified Health Center (FQHC)"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "261QF0400X",
+                "display": "Ambulatory Health Care Facilities; Clinic/Center, Federally Qualified Health Center (FQHC)"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "261QF0400X",
+                "display": "Ambulatory Health Care Facilities; Clinic/Center, Federally Qualified Health Center (FQHC)"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/73d6ab1a-8ed0-42e5-853c-39de35a5f966"
+          },
+          {
+            "reference": "Location/f135eb7a-d19a-4fc7-9a67-56312c001995"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "7605309977",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "9093014042",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "7604444258",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9093014041",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/5abeea6b-c6ee-42d1-97e8-8769c961d16e",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "5abeea6b-c6ee-42d1-97e8-8769c961d16e",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.411-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/ee6cc674-b68b-4755-9515-e1483a321806"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MED~1588364640"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/71dd5ced-b875-4f98-9502-d7fca7e7848e"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363LF0000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363LF0000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Nurse Practitioner, Family"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/0e197d2b-f247-44e7-b69c-9dd4edd9544f"
+          },
+          {
+            "reference": "Location/9711bee9-c6f6-41ce-b22a-27c78c25f3bd"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "7602433255",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "7608435933",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "7602434009",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "7602455866",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/7b38bdd7-3980-4205-8645-1af81ebcaa43",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "7b38bdd7-3980-4205-8645-1af81ebcaa43",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.438-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/ee6cc674-b68b-4755-9515-e1483a321806"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MED~1245801125"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/3c790f70-a885-4503-9769-68dbb3fa609f"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "152W00000X",
+                "display": "Eye and Vision Services Providers; Optometrist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "152W00000X",
+                "display": "Eye and Vision Services Providers; Optometrist"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "152WV0400X",
+                "display": "Eye and Vision Services Providers; Optometrist, Vision Therapy"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "152WV0400X",
+                "display": "Eye and Vision Services Providers; Optometrist, Vision Therapy"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/f6b96db7-cd88-4eef-b5b8-d1edce43a249"
+          }
+        ],
+        "healthcareService": [
+          {
+            "reference": "HealthcareService/776393a4-528a-460a-9a2b-2e13d1bae8a9"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "9518458625",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9518454749",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/65586bc3-9b04-417d-b9da-9217a208c770",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "65586bc3-9b04-417d-b9da-9217a208c770",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.439-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/ee6cc674-b68b-4755-9515-e1483a321806"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MED~1992227813"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/8535dc83-d4fd-4fea-8e7d-c6ff2a9b5b4f"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363A00000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "363A00000X",
+                "display": "Physician Assistants & Advanced Practice Nursing Providers; Physician Assistant"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/3aeeaf08-5f81-46b4-91e5-68022cb3c52e"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "9095801300",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9095801775",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/66e75c1f-8052-4058-a9eb-74dcf327f8be",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "66e75c1f-8052-4058-a9eb-74dcf327f8be",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.442-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/ee6cc674-b68b-4755-9515-e1483a321806"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MED~1285614693"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/9e886a71-89c5-417d-b6ce-d1d87d542c3b"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207V00000X",
+                "display": "Allopathic & Osteopathic Physicians; Obstetrics & Gynecology"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207V00000X",
+                "display": "Allopathic & Osteopathic Physicians; Obstetrics & Gynecology"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207VG0400X",
+                "display": "Allopathic & Osteopathic Physicians; Obstetrics & Gynecology, Gynecology"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207VG0400X",
+                "display": "Allopathic & Osteopathic Physicians; Obstetrics & Gynecology, Gynecology"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/ad34fe9a-2a4f-446f-ba4f-ba5217c00537"
+          }
+        ],
+        "healthcareService": [
+          {
+            "reference": "HealthcareService/7e757c06-884b-4978-82c3-c7690429e86b"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "9099200765",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9099462277",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fhir.iehp.org/provider-directory/PractitionerRole/f1b09759-592a-4668-a34e-f6e29aabe76a",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "f1b09759-592a-4668-a34e-f6e29aabe76a",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2024-10-24T15:56:41.444-07:00",
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|7.0.0",
+            "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole|1.1.0"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+            "valueReference": {
+              "reference": "Organization/ee6cc674-b68b-4755-9515-e1483a321806"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "iehp.org/nddb-practitioner-role",
+            "value": "MED~1013414515"
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/9dbf923f-14bb-43a5-a394-740cb3d86cee"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207Q00000X",
+                "display": "Allopathic & Osteopathic Physicians; Family Medicine"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207Q00000X",
+                "display": "Allopathic & Osteopathic Physicians; Family Medicine"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207Q00000X",
+                "display": "Allopathic & Osteopathic Physicians; Family Medicine"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "oid:2.16.840.1.114222.4.11.1066",
+                "code": "207Q00000X",
+                "display": "Allopathic & Osteopathic Physicians; Family Medicine"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/a16b88d5-ddf7-4a36-a39c-eadb8e735c07"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "fax",
+            "value": "9094692120",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "9094699494",
+            "use": "work"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }
+  ]
+}

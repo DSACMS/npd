@@ -1,0 +1,50 @@
+{
+  "resourceType": "Organization",
+  "id": "e877bafd-bee3-4cf4-91c4-fd893fa95053",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2024-10-24T15:52:20.301-07:00",
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|7.0.0",
+      "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization|2.0.0",
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization|1.1.0",
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network|1.1.0",
+      "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/profile-organization|2.0.1",
+      "http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-requestor|2.0.1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "iehp.org/network-abbr",
+      "value": "NTWK-MCR"
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS",
+          "code": "ntwk",
+          "display": "Network"
+        }
+      ]
+    }
+  ],
+  "name": "IEHP Medicare",
+  "address": [
+    {
+      "use": "work",
+      "type": "physical",
+      "line": [
+        "10801 6TH STREET"
+      ],
+      "city": "RANCHO CUCAMONGA",
+      "state": "CA",
+      "postalCode": "91730"
+    }
+  ],
+  "partOf": {
+    "reference": "Organization/73799ed8-361c-4785-a342-c8a7d7710719"
+  }
+}

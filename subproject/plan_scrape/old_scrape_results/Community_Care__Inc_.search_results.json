@@ -1,0 +1,296 @@
+{
+  "search_metadata": {
+    "id": "6826c23c759dbcf7e3f4070e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/10d2a6042ae2868b/6826c23c759dbcf7e3f4070e.json",
+    "created_at": "2025-05-16 04:42:36 UTC",
+    "processed_at": "2025-05-16 04:42:36 UTC",
+    "google_url": "https://www.google.com/search?q=Community+Care%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Community+Care%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/10d2a6042ae2868b/6826c23c759dbcf7e3f4070e.html",
+    "total_time_taken": 4.06
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Community Care, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Community Care, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 887,
+    "time_taken_displayed": 0.3,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability and Your Health Information",
+      "link": "https://www.ccok.com/members/interoperability.asp",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ccok.com/members/interoperability.asp&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQFnoECBYQAQ",
+      "displayed_link": "https://www.ccok.com \u203a members \u203a interoperability",
+      "snippet": "Medicare Plans. [opens in a new window] \u00b7 Health and Wellness Health ... Provider Directory API. https://apis.ssctech.com/interop-ccok/open/fhir/R4 ...",
+      "snippet_highlighted_words": [
+        "Medicare Plans",
+        "Health",
+        "Health",
+        "Provider Directory API",
+        "fhir"
+      ],
+      "source": "CommunityCare Health Insurance Plans"
+    },
+    {
+      "position": 2,
+      "title": "Community Interoperability APIs",
+      "link": "https://www.communityhealthchoice.org/interoperability-apis/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.communityhealthchoice.org/interoperability-apis/&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQFnoECBgQAQ",
+      "displayed_link": "https://www.communityhealthchoice.org \u203a interoperabilit...",
+      "favicon": "https://serpapi.com/searches/6826c23c759dbcf7e3f4070e/images/a3c3cf42077d08f1e7838d51c72164aea88ec860117cb666b388b372d3864a50.png",
+      "snippet": "Use the HL7 Fast Healthcare Interoperability Resources (FHIR); Use the ... The Provider Directory API will allow third party applications and payers to ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Community+Care,+Inc.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ5t4CegQIJhAB"
+      },
+      "source": "Community Health Choice"
+    },
+    {
+      "position": 3,
+      "title": "Interoperability and Patient Access Fact Sheet",
+      "link": "https://www.cms.gov/newsroom/fact-sheets/interoperability-and-patient-access-fact-sheet",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/newsroom/fact-sheets/interoperability-and-patient-access-fact-sheet&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQFnoECBkQAQ",
+      "displayed_link": "https://www.cms.gov \u203a newsroom \u203a interoperability-and-...",
+      "favicon": "https://serpapi.com/searches/6826c23c759dbcf7e3f4070e/images/a3c3cf42077d08f1e7838d51c72164ae0b3e546c8028aeefa533d94e3995e2b5.png",
+      "date": "Mar 9, 2020",
+      "snippet": "Provider Directory API: CMS-regulated payers noted above (except QHP ... FHIR API endpoint. Making the list of providers who do not ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR API"
+      ],
+      "missing": [
+        "Inc."
+      ],
+      "must_include": {
+        "word": "Inc.",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Community+Care,+%22Inc.%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ5t4CegQIIhAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "FHIR Provider Directory - | CareFirst Developer Portal",
+      "link": "https://developer.carefirst.com/product/fhir-provider-directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.carefirst.com/product/fhir-provider-directory&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQFnoECBsQAQ",
+      "displayed_link": "https://developer.carefirst.com \u203a product \u203a fhir-provider-...",
+      "favicon": "https://serpapi.com/searches/6826c23c759dbcf7e3f4070e/images/a3c3cf42077d08f1e7838d51c72164aefa6a08308af4fa7a5631a75fd184cd30.png",
+      "snippet": "FHIR Provider Directory product enables member to see which providers are in-network for a given insurance plan. These APIs follow the HL7 R4 FHIR specification ...",
+      "snippet_highlighted_words": [
+        "FHIR Provider Directory",
+        "FHIR"
+      ],
+      "source": "CareFirst Developer Portal"
+    },
+    {
+      "position": 5,
+      "title": "Home - FHIR Human Services Directory v1.0.0",
+      "link": "https://build.fhir.org/ig/HL7/FHIR-IG-Human-Services-Directory/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://build.fhir.org/ig/HL7/FHIR-IG-Human-Services-Directory/&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQFnoECBoQAQ",
+      "displayed_link": "https://build.fhir.org \u203a FHIR-IG-Human-Services-Direct...",
+      "favicon": "https://serpapi.com/searches/6826c23c759dbcf7e3f4070e/images/a3c3cf42077d08f1e7838d51c72164ae08090a69f6af0a388cebd53f9eee58f9.png",
+      "snippet": "The FHIR Human Services and Resource Directory FHIR IG has been aligned with the PDEX Plan Net Provider Directory IG (and US Core by inheritance), rather than ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Community+Care,+Inc.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ5t4CegQIJxAB"
+      },
+      "source": "FHIR specification"
+    },
+    {
+      "position": 6,
+      "title": "FHIR API Developer Resources",
+      "link": "https://clevercarehealthplan.com/fhir-api-developer-resources/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://clevercarehealthplan.com/fhir-api-developer-resources/&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQFnoECBcQAQ",
+      "displayed_link": "https://clevercarehealthplan.com \u203a fhir-api-developer-re...",
+      "favicon": "https://serpapi.com/searches/6826c23c759dbcf7e3f4070e/images/a3c3cf42077d08f1e7838d51c72164aea09ccd856b9427aaa090b7409ab5c28a.png",
+      "date": "Dec 1, 2021",
+      "snippet": "Clever Care has implemented a secure, standards-based Patient Access and Provider Directory APIs using HL7 FHIR standards for health care ...",
+      "snippet_highlighted_words": [
+        "Care",
+        "Provider Directory",
+        "FHIR",
+        "health care"
+      ],
+      "source": "Clever Care Health Plan"
+    },
+    {
+      "position": 7,
+      "title": "Interop API Developer",
+      "link": "https://www.independenthealth.com/individuals-and-families/tools-forms-and-more/interop-api-developer",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.independenthealth.com/individuals-and-families/tools-forms-and-more/interop-api-developer&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQFnoECBwQAQ",
+      "displayed_link": "https://www.independenthealth.com \u203a interop-api-develo...",
+      "favicon": "https://serpapi.com/searches/6826c23c759dbcf7e3f4070e/images/a3c3cf42077d08f1e7838d51c72164ae70957788d1c712785108fa729bd32e89.png",
+      "snippet": "PROD FHIR Provider Directory API. Support: Patient Access. Registration questions: InteroperabilityRequests@independenthealth.com; Developer Support (FHIR API ...",
+      "snippet_highlighted_words": [
+        "FHIR Provider Directory API",
+        "FHIR API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Community+Care,+Inc.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ5t4CegQIJRAB"
+      },
+      "source": "Independent Health"
+    },
+    {
+      "position": 8,
+      "title": "Request for Information; National Directory of Healthcare ...",
+      "link": "https://www.federalregister.gov/documents/2022/10/07/2022-21904/request-for-information-national-directory-of-healthcare-providers-and-services",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2022/10/07/2022-21904/request-for-information-national-directory-of-healthcare-providers-and-services&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQFnoECDoQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2022/10/07 \u203a request-...",
+      "favicon": "https://serpapi.com/searches/6826c23c759dbcf7e3f4070e/images/a3c3cf42077d08f1e7838d51c72164ae6504dba9707c3816be326d7c6b42ebbb.png",
+      "date": "Oct 7, 2022",
+      "snippet": "... FHIR API, to update its own provider directory with the latest information. This would allow the payer to present a provider directory ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "provider directory",
+        "provider directory"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "Final CMS Interoperability Regulation: What You Need to ...",
+      "link": "https://www.himss.org/resources/final-cms-interoperability-regulation-what-you-need-to-know/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.himss.org/resources/final-cms-interoperability-regulation-what-you-need-to-know/&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQFnoECDwQAQ",
+      "displayed_link": "https://www.himss.org \u203a resources \u203a final-cms-interoper...",
+      "favicon": "https://serpapi.com/searches/6826c23c759dbcf7e3f4070e/images/a3c3cf42077d08f1e7838d51c72164ae319996a6bd0341d4a12c4b7c7b437e62.png",
+      "snippet": "... (FHIR\u00ae) standard, including for patients to use APIs to be able to ... Provider Directory API. At a minimum, these payers must make available via ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "source": "Healthcare Information and Management Systems Society | HIMSS"
+    },
+    {
+      "position": 10,
+      "title": "Documentation for Patient Access and Provider Directory ...",
+      "link": "https://www.medica.com/~/media/Documents/Corp/Privacy/Interop-API-Developer-Documentation",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.medica.com/~/media/Documents/Corp/Privacy/Interop-API-Developer-Documentation&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQFnoECDkQAQ",
+      "displayed_link": "https://www.medica.com \u203a media \u203a Corp \u203a Privacy",
+      "favicon": "https://serpapi.com/searches/6826c23c759dbcf7e3f4070e/images/a3c3cf42077d08f1e7838d51c72164aefa6b7266d56240f0899a13a9a6a789c1.png",
+      "snippet": "4 Provider Directory API. Base URL: https://api.medica.com/fhir/providerdirectory/v1/api. Details on each endpoint are below. Location. A Location is the ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "api",
+        "fhir",
+        "api"
+      ],
+      "missing": [
+        "Inc.",
+        "Advantage"
+      ],
+      "source": "Medica"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "CommunityCare Provider Portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=CommunityCare+Provider+Portal&sa=X&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CommunityCare+Provider+Portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Community Care Medicare",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Community+Care+Medicare&sa=X&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Care+Medicare&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Community Care payment Portal sign in",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Community+Care+payment+Portal+sign+in&sa=X&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Care+payment+Portal+sign+in&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Community Care Member login",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Community+Care+Member+login&sa=X&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Care+Member+login&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Community care HMO state of Oklahoma",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Community+care+HMO+state+of+Oklahoma&sa=X&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+care+HMO+state+of+Oklahoma&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Community care insurance Accepted",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Community+care+insurance+Accepted&sa=X&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+care+insurance+Accepted&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Community Care Health plan",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Community+Care+Health+plan&sa=X&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Care+Health+plan&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Care web",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Care+web&sa=X&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Care+web&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Community+Care,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=P8ImaKKSKs_L0PEP_P6eyA8&start=10&sa=N&sstk=Af40H4UdiaUc3PUBWouL1m7sLAivb0NIGFzwU5-0Af8Aq5fmr6VsmPVV0JcCxW9Rq9WeK4VGeOCATUC9ncHgmQdkCk-zNWeHZqIybg&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ8NMDegQIBxAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Community+Care,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=P8ImaKKSKs_L0PEP_P6eyA8&start=10&sa=N&sstk=Af40H4UdiaUc3PUBWouL1m7sLAivb0NIGFzwU5-0Af8Aq5fmr6VsmPVV0JcCxW9Rq9WeK4VGeOCATUC9ncHgmQdkCk-zNWeHZqIybg&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ8tMDegQIBxAE",
+      "3": "https://www.google.com/search?q=Community+Care,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=P8ImaKKSKs_L0PEP_P6eyA8&start=20&sa=N&sstk=Af40H4UdiaUc3PUBWouL1m7sLAivb0NIGFzwU5-0Af8Aq5fmr6VsmPVV0JcCxW9Rq9WeK4VGeOCATUC9ncHgmQdkCk-zNWeHZqIybg&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ8tMDegQIBxAG",
+      "4": "https://www.google.com/search?q=Community+Care,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=P8ImaKKSKs_L0PEP_P6eyA8&start=30&sa=N&sstk=Af40H4UdiaUc3PUBWouL1m7sLAivb0NIGFzwU5-0Af8Aq5fmr6VsmPVV0JcCxW9Rq9WeK4VGeOCATUC9ncHgmQdkCk-zNWeHZqIybg&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ8tMDegQIBxAI",
+      "5": "https://www.google.com/search?q=Community+Care,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=P8ImaKKSKs_L0PEP_P6eyA8&start=40&sa=N&sstk=Af40H4UdiaUc3PUBWouL1m7sLAivb0NIGFzwU5-0Af8Aq5fmr6VsmPVV0JcCxW9Rq9WeK4VGeOCATUC9ncHgmQdkCk-zNWeHZqIybg&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ8tMDegQIBxAK",
+      "6": "https://www.google.com/search?q=Community+Care,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=P8ImaKKSKs_L0PEP_P6eyA8&start=50&sa=N&sstk=Af40H4UdiaUc3PUBWouL1m7sLAivb0NIGFzwU5-0Af8Aq5fmr6VsmPVV0JcCxW9Rq9WeK4VGeOCATUC9ncHgmQdkCk-zNWeHZqIybg&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ8tMDegQIBxAM",
+      "7": "https://www.google.com/search?q=Community+Care,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=P8ImaKKSKs_L0PEP_P6eyA8&start=60&sa=N&sstk=Af40H4UdiaUc3PUBWouL1m7sLAivb0NIGFzwU5-0Af8Aq5fmr6VsmPVV0JcCxW9Rq9WeK4VGeOCATUC9ncHgmQdkCk-zNWeHZqIybg&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ8tMDegQIBxAO",
+      "8": "https://www.google.com/search?q=Community+Care,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=P8ImaKKSKs_L0PEP_P6eyA8&start=70&sa=N&sstk=Af40H4UdiaUc3PUBWouL1m7sLAivb0NIGFzwU5-0Af8Aq5fmr6VsmPVV0JcCxW9Rq9WeK4VGeOCATUC9ncHgmQdkCk-zNWeHZqIybg&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ8tMDegQIBxAQ",
+      "9": "https://www.google.com/search?q=Community+Care,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=P8ImaKKSKs_L0PEP_P6eyA8&start=80&sa=N&sstk=Af40H4UdiaUc3PUBWouL1m7sLAivb0NIGFzwU5-0Af8Aq5fmr6VsmPVV0JcCxW9Rq9WeK4VGeOCATUC9ncHgmQdkCk-zNWeHZqIybg&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ8tMDegQIBxAS",
+      "10": "https://www.google.com/search?q=Community+Care,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=P8ImaKKSKs_L0PEP_P6eyA8&start=90&sa=N&sstk=Af40H4UdiaUc3PUBWouL1m7sLAivb0NIGFzwU5-0Af8Aq5fmr6VsmPVV0JcCxW9Rq9WeK4VGeOCATUC9ncHgmQdkCk-zNWeHZqIybg&ved=2ahUKEwjirYHMlqeNAxXPJTQIHXy_B_kQ8tMDegQIBxAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Care%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Care%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Care%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Care%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Care%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Care%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Care%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Care%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Care%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Care%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Care%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

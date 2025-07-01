@@ -1,0 +1,230 @@
+{
+  "search_metadata": {
+    "id": "6826c3e1e22fede7ea885af9",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/6ae1c8e5f515ca06/6826c3e1e22fede7ea885af9.json",
+    "created_at": "2025-05-16 04:49:37 UTC",
+    "processed_at": "2025-05-16 04:49:37 UTC",
+    "google_url": "https://www.google.com/search?q=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/6ae1c8e5f515ca06/6826c3e1e22fede7ea885af9.html",
+    "total_time_taken": 7.96
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Troy Holdings, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Troy Holdings, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 9,
+    "time_taken_displayed": 0.23,
+    "organic_results_state": "Results for exact spelling",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    }
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Sheet1",
+      "link": "https://mesconference.org/wp-content/uploads/2018/07/MESC2018_Sessions_180727-WEB.xlsx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mesconference.org/wp-content/uploads/2018/07/MESC2018_Sessions_180727-WEB.xlsx&ved=2ahUKEwiq0oOXmKeNAxVWSzABHXcfNWcQFnoECBkQAQ",
+      "displayed_link": "https://mesconference.org \u203a uploads \u203a 2018/07",
+      "snippet": "... provider directory ... The MITA TAC is working with the SAMHSA team and leveraging their knowledge on how to use clouds, FHIR, SMART on FHIR, OAuth2.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR",
+        "FHIR"
+      ],
+      "source": "Medicaid Enterprise Systems Conference (MESC)"
+    },
+    {
+      "position": 2,
+      "title": "CHHS_Advisory Group_Meeting 2 Chat Log",
+      "link": "https://www.cdii.ca.gov/wp-content/uploads/2021/10/Zoom-Chat-Log-Data-Exchange-Framework-October-7-2021.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cdii.ca.gov/wp-content/uploads/2021/10/Zoom-Chat-Log-Data-Exchange-Framework-October-7-2021.pdf&ved=2ahUKEwiq0oOXmKeNAxVWSzABHXcfNWcQFnoECB4QAQ",
+      "displayed_link": "https://www.cdii.ca.gov \u203a uploads \u203a 2021/10 \u203a Z...",
+      "favicon": "https://serpapi.com/searches/6826c3e1e22fede7ea885af9/images/a46a540d5d9137ed74a82dcf91dbc00b0d1f4a798416327cc8c84ab830282b43.png",
+      "date": "Oct 7, 2021",
+      "snippet": "Provider Directory. (falls under Cures Act Interoperabilty rule I believe) and a unique patient identifier used throughout the continuum sure ...",
+      "snippet_highlighted_words": [
+        "Provider Directory"
+      ],
+      "missing": [
+        "Holdings,",
+        "Inc."
+      ],
+      "source": "Center for Data Insights and Innovation (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Joint Health IT Policy and Standards Committee",
+      "link": "https://www.healthit.gov/sites/default/files/facas/HITJC_Transcript_Final_2016-04-19.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/facas/HITJC_Transcript_Final_2016-04-19.pdf&ved=2ahUKEwiq0oOXmKeNAxVWSzABHXcfNWcQFnoECB8QAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a facas",
+      "favicon": "https://serpapi.com/searches/6826c3e1e22fede7ea885af9/images/a46a540d5d9137ed74a82dcf91dbc00b0e0789aa22b849627a4275a8a3b290df.jpeg",
+      "date": "Apr 19, 2016",
+      "snippet": "sense notion of using HL7 FHIR and using in particular the resources that align to the API requirements ... provider directory and it's going to ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "provider directory"
+      ],
+      "missing": [
+        "Holdings,"
+      ],
+      "must_include": {
+        "word": "Holdings,",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Troy+%22Holdings,%22+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiq0oOXmKeNAxVWSzABHXcfNWcQ5t4CegQILBAB"
+      },
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "interoperable health information: Topics by ...",
+      "link": "https://www.science.gov/topicpages/i/interoperable+health+information.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.science.gov/topicpages/i/interoperable%2Bhealth%2Binformation.html&ved=2ahUKEwiq0oOXmKeNAxVWSzABHXcfNWcQFnoECBwQAQ",
+      "displayed_link": "https://www.science.gov \u203a topicpages \u203a interoperable+he...",
+      "favicon": "https://serpapi.com/searches/6826c3e1e22fede7ea885af9/images/a46a540d5d9137ed74a82dcf91dbc00bc6d57bee7b79c0ccb189487408cf22ec.png",
+      "snippet": "Signaling our adoption of the emerging FHIR standard, we called the new platform SMART on FHIR. ... provider directory; quantifying use, cost, and clinical ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "Science.gov"
+    },
+    {
+      "position": 5,
+      "title": "CS Kansas Draft Protest Letter 6-3-2024 (908617-4).DOCX",
+      "link": "https://admin.ks.gov/media/cms/CareSource_Bid_Protest_5d4febae93561.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://admin.ks.gov/media/cms/CareSource_Bid_Protest_5d4febae93561.pdf&ved=2ahUKEwiq0oOXmKeNAxVWSzABHXcfNWcQFnoECB0QAQ",
+      "displayed_link": "https://admin.ks.gov \u203a media \u203a cms",
+      "favicon": "https://serpapi.com/searches/6826c3e1e22fede7ea885af9/images/a46a540d5d9137ed74a82dcf91dbc00b4bdb00fde9b340b2f5d0c7d9c24dd5e0.png",
+      "date": "Jun 3, 2024",
+      "snippet": "... provider directory, including information included in the directory ... (FHIR). 2676. 2677. 4. CareInsights: Our modern data platform ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 270
+          },
+          "extensions": [
+            "270 pages"
+          ]
+        }
+      },
+      "source": "Kansas Department of Administration (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "277218 - Work-and-turn 1 - Bla277218",
+      "link": "https://mesconference.org/wp-content/uploads/2018/08/MESC2018_Program-FINAL.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mesconference.org/wp-content/uploads/2018/08/MESC2018_Program-FINAL.pdf&ved=2ahUKEwiq0oOXmKeNAxVWSzABHXcfNWcQFnoECBsQAQ",
+      "displayed_link": "https://mesconference.org \u203a uploads \u203a 2018/08",
+      "date": "Aug 16, 2018",
+      "snippet": "OCP is a FHIR API based system that embraces many of the approaches that Medicaid intends to ... Master Provider Directory (MPD). Data ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory"
+      ],
+      "source": "Medicaid Enterprise Systems Conference (MESC)"
+    },
+    {
+      "position": 7,
+      "title": "4/09/2018 HIT, Transparency, and Evaluation Workgroup",
+      "link": "https://www.health.ny.gov/technology/innovation_plan_initiative/docs/hit_wrkgrp_2018-04-09.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.health.ny.gov/technology/innovation_plan_initiative/docs/hit_wrkgrp_2018-04-09.pdf&ved=2ahUKEwiq0oOXmKeNAxVWSzABHXcfNWcQFnoECDEQAQ",
+      "displayed_link": "https://www.health.ny.gov \u203a technology \u203a docs",
+      "favicon": "https://serpapi.com/searches/6826c3e1e22fede7ea885af9/images/a46a540d5d9137ed74a82dcf91dbc00bd54b3dd9f9c979c32c589defe12bedba.jpeg",
+      "date": "Apr 9, 2018",
+      "snippet": "Provider Directory Project. 11:45 \u2013 12:00. Mahesh Nattanmai. James ... FHIR, minimum data set requirements. \u2022 Pull-only approach \u2013 no push ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Holdings,"
+      ],
+      "must_include": {
+        "word": "Holdings,",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Troy+%22Holdings,%22+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiq0oOXmKeNAxVWSzABHXcfNWcQ5t4CegQINxAB"
+      },
+      "source": "New York State Department of Health (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "mandeepbagga/infy-whitepapers-no-img \u00b7 Datasets at ...",
+      "link": "https://huggingface.co/datasets/mandeepbagga/infy-whitepapers-no-img/viewer",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://huggingface.co/datasets/mandeepbagga/infy-whitepapers-no-img/viewer&ved=2ahUKEwiq0oOXmKeNAxVWSzABHXcfNWcQFnoECC8QAQ",
+      "displayed_link": "https://huggingface.co \u203a infy-whitepapers-no-img \u203a viewer",
+      "favicon": "https://serpapi.com/searches/6826c3e1e22fede7ea885af9/images/a46a540d5d9137ed74a82dcf91dbc00b5b49adf3015643f0d63d93291992acf3.png",
+      "snippet": "... FHIR-compliant cloud/on- premises based patient access API and provider directory API up and running. However, organizations must also think of other ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "provider directory API"
+      ],
+      "source": "Hugging Face"
+    },
+    {
+      "position": 9,
+      "title": "The Beat",
+      "link": "https://feeds.simplecast.com/F2qS_sm2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://feeds.simplecast.com/F2qS_sm2&ved=2ahUKEwiq0oOXmKeNAxVWSzABHXcfNWcQFnoECC4QAQ",
+      "displayed_link": "https://feeds.simplecast.com \u203a ...",
+      "snippet": "... FHIR, generative AI, and national networks to improve data connectivity and ... provider directory, supporting the development of a statewide health ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "Simplecast"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 9 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=Troy+Holdings,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Troy+Holdings%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

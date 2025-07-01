@@ -1,0 +1,30 @@
+{
+  "filename": "othername_pfile_20050523-20250608.csv",
+  "filename_without_extension": "othername_pfile_20050523-20250608",
+  "full_path": "/Users/ftrotter/Downloads/NPPES_Data_Dissemination_June_2025_V2/othername_pfile_20050523-20250608.csv",
+  "file_size_bytes": 31002390,
+  "delimiter": ",",
+  "quote_character": "\"",
+  "original_column_names": [
+    "NPI",
+    "Provider Other Organization Name",
+    "Provider Other Organization Name Type Code"
+  ],
+  "normalized_column_names": [
+    "npi",
+    "provider_other_organization_name",
+    "provider_other_organization_name_type_code"
+  ],
+  "column_name_mapping": {
+    "NPI": "npi",
+    "Provider Other Organization Name": "provider_other_organization_name",
+    "Provider Other Organization Name Type Code": "provider_other_organization_name_type_code"
+  },
+  "max_column_lengths": {
+    "NPI": 10,
+    "Provider Other Organization Name": 98,
+    "Provider Other Organization Name Type Code": 1
+  },
+  "total_columns": 3,
+  "column_headers_hash": "cec1b1abe20b70ea74dc3e3cb2320edc"
+}

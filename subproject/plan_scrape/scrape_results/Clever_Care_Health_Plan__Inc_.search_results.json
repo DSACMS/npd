@@ -1,0 +1,248 @@
+{
+  "search_metadata": {
+    "id": "6826c2319df9ddef217a11b3",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/1c4ae76f766f8f95/6826c2319df9ddef217a11b3.json",
+    "created_at": "2025-05-16 04:42:25 UTC",
+    "processed_at": "2025-05-16 04:42:25 UTC",
+    "google_url": "https://www.google.com/search?q=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/1c4ae76f766f8f95/6826c2319df9ddef217a11b3.html",
+    "total_time_taken": 5.16
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Clever Care Health Plan, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Clever Care Health Plan, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 7,
+    "time_taken_displayed": 0.21,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "FHIR API Developer Resources",
+      "link": "https://clevercarehealthplan.com/fhir-api-developer-resources/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://clevercarehealthplan.com/fhir-api-developer-resources/&ved=2ahUKEwj1tLLHlqeNAxX2FlkFHeRtDvQQFnoECB4QAQ",
+      "displayed_link": "https://clevercarehealthplan.com \u203a fhir-api-developer-re...",
+      "favicon": "https://serpapi.com/searches/6826c2319df9ddef217a11b3/images/8d19a027bc04aeeac77bdf06a7218996249415801d347ca6aae9ac197889c462.png",
+      "date": "Dec 1, 2021",
+      "snippet": "Clever Care has implemented a secure, standards-based Patient Access and Provider Directory APIs using HL7 FHIR standards for health care ...",
+      "snippet_highlighted_words": [
+        "Clever Care",
+        "Provider Directory",
+        "FHIR",
+        "health care"
+      ],
+      "source": "Clever Care Health Plan"
+    },
+    {
+      "position": 2,
+      "title": "WSO2 Provides Clever Care with Cloud-Native ...",
+      "link": "https://wso2.com/customers/clever-care-achieves-cloud-native-interoperability/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://wso2.com/customers/clever-care-achieves-cloud-native-interoperability/&ved=2ahUKEwj1tLLHlqeNAxX2FlkFHeRtDvQQFnoECB0QAQ",
+      "displayed_link": "https://wso2.com \u203a customers \u203a clever-care-achieves-clou...",
+      "favicon": "https://serpapi.com/searches/6826c2319df9ddef217a11b3/images/8d19a027bc04aeeac77bdf06a72189963d96e01a26a5138ede482f322315f9b6.png",
+      "snippet": "Are auto-generated and support any FHIR implementation guide. As part of the Provider Directory API, Clever Care is required to expose providers and ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API",
+        "Clever Care"
+      ],
+      "source": "WSO2"
+    },
+    {
+      "position": 3,
+      "title": "NCVHS Subcommittee on Standards",
+      "link": "https://ncvhs.hhs.gov/wp-content/uploads/2021/08/Public-Comments-Standards-Subcommittee-Listening-Session-August-25-2021.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ncvhs.hhs.gov/wp-content/uploads/2021/08/Public-Comments-Standards-Subcommittee-Listening-Session-August-25-2021.pdf&ved=2ahUKEwj1tLLHlqeNAxX2FlkFHeRtDvQQFnoECB8QAQ",
+      "displayed_link": "https://ncvhs.hhs.gov \u203a uploads \u203a 2021/08 \u203a Publi...",
+      "favicon": "https://serpapi.com/searches/6826c2319df9ddef217a11b3/images/8d19a027bc04aeeac77bdf06a7218996f1b6e12d3c559c33eb67bf76c30ea5c8.png",
+      "date": "Aug 25, 2021",
+      "snippet": "Health Care Price Transparency: X304 - 832 Health Care Fee Schedule. X109 - 274 Health Care Provider Directory. X253 - 274 Health Care ...",
+      "snippet_highlighted_words": [
+        "Health Care",
+        "Health Care",
+        "Schedule",
+        "Health Care Provider Directory",
+        "Health Care"
+      ],
+      "source": "National Committee on Vital and Health Statistics (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Uncategorized",
+      "link": "https://thebigunlock.com/category/uncategorized/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://thebigunlock.com/category/uncategorized/&ved=2ahUKEwj1tLLHlqeNAxX2FlkFHeRtDvQQFnoECBgQAQ",
+      "displayed_link": "https://thebigunlock.com \u203a category \u203a uncategorized",
+      "favicon": "https://serpapi.com/searches/6826c2319df9ddef217a11b3/images/8d19a027bc04aeeac77bdf06a721899696fca62fe72656dfd8fa71d24856a774.png",
+      "snippet": "So, you know, we have the FHIR API standards of the CMS and ONC are working with HL7 organizations. Now it is the 21st Century Cures Act, there's something ...",
+      "snippet_highlighted_words": [
+        "FHIR API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 5.0,
+            "reviews": 5
+          },
+          "extensions": [
+            "5.0(5)"
+          ]
+        }
+      },
+      "source": "The Big Unlock Podcast"
+    },
+    {
+      "position": 5,
+      "title": "Season 3",
+      "link": "https://thebigunlock.com/category/podcasts/season3/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://thebigunlock.com/category/podcasts/season3/&ved=2ahUKEwj1tLLHlqeNAxX2FlkFHeRtDvQQFnoECBsQAQ",
+      "displayed_link": "https://thebigunlock.com \u203a podcasts",
+      "favicon": "https://serpapi.com/searches/6826c2319df9ddef217a11b3/images/8d19a027bc04aeeac77bdf06a7218996c0c7e1995d8784e63433fa56529d9320.png",
+      "snippet": "... FHIR standards, smart application ... We rolled out a brand-new provider directory to help people search for providers and schedule really easily.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory",
+        "schedule"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 5.0,
+            "reviews": 5
+          },
+          "extensions": [
+            "5.0(5)"
+          ]
+        }
+      },
+      "source": "The Big Unlock Podcast"
+    },
+    {
+      "position": 6,
+      "title": "Pulse+IT Magazine - August 2014",
+      "link": "https://issuu.com/pulseitmagazine/docs/pulseit_august2014",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://issuu.com/pulseitmagazine/docs/pulseit_august2014&ved=2ahUKEwj1tLLHlqeNAxX2FlkFHeRtDvQQFnoECBYQAQ",
+      "displayed_link": "https://issuu.com \u203a pulseitmagazine \u203a docs \u203a pulseit_au...",
+      "favicon": "https://serpapi.com/searches/6826c2319df9ddef217a11b3/images/8d19a027bc04aeeac77bdf06a72189969c52fd24b21aaa37d24725bbe4d28699.png",
+      "snippet": "... Provider Directory Training and Education Leaders in ... About FHIR FHIR stands for Fast (to design and implement) Healthcare Interoperability Resources.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR FHIR",
+        "Healthcare"
+      ],
+      "source": "Issuu"
+    },
+    {
+      "position": 7,
+      "title": "Blockchain Enabled Applications: Understand the ...",
+      "link": "https://dokumen.pub/blockchain-enabled-applications-understand-the-blockchain-ecosystem-and-how-to-make-it-work-for-you-2nbsped-1484265335-9781484265338.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dokumen.pub/blockchain-enabled-applications-understand-the-blockchain-ecosystem-and-how-to-make-it-work-for-you-2nbsped-1484265335-9781484265338.html&ved=2ahUKEwj1tLLHlqeNAxX2FlkFHeRtDvQQFnoECBkQAQ",
+      "displayed_link": "https://dokumen.pub \u203a ...",
+      "favicon": "https://serpapi.com/searches/6826c2319df9ddef217a11b3/images/8d19a027bc04aeeac77bdf06a7218996aaadae68bff3da0f62eaa95ff3e73595.png",
+      "snippet": "... Medicare Advantage organizations that don't correct serious provider directory deficiencies. ... healthcare called FHIR, which could be extended to include ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "provider directory",
+        "healthcare",
+        "FHIR"
+      ],
+      "source": "dokumen.pub"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Clever Care Health Plan Provider phone number",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Clever+Care+Health+Plan+Provider+phone+number&sa=X&ved=2ahUKEwj1tLLHlqeNAxX2FlkFHeRtDvQQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+Health+Plan+Provider+phone+number&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care health plan provider search",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Clever+Care+health+plan+provider+search&sa=X&ved=2ahUKEwj1tLLHlqeNAxX2FlkFHeRtDvQQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+health+plan+provider+search&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care agent portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Clever+Care+agent+portal&sa=X&ved=2ahUKEwj1tLLHlqeNAxX2FlkFHeRtDvQQ1QJ6BAgwEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+agent+portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care Formulary 2024",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Clever+Care+Formulary+2024&sa=X&ved=2ahUKEwj1tLLHlqeNAxX2FlkFHeRtDvQQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+Formulary+2024&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care Health Plan reviews",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Clever+Care+Health+Plan+reviews&sa=X&ved=2ahUKEwj1tLLHlqeNAxX2FlkFHeRtDvQQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+Health+Plan+reviews&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care Summary of Benefits",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Clever+Care+Summary+of+Benefits&sa=X&ved=2ahUKEwj1tLLHlqeNAxX2FlkFHeRtDvQQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+Summary+of+Benefits&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care Health Plan star rating",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Clever+Care+Health+Plan+star+rating&sa=X&ved=2ahUKEwj1tLLHlqeNAxX2FlkFHeRtDvQQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+Health+Plan+star+rating&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever health",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Clever+health&sa=X&ved=2ahUKEwj1tLLHlqeNAxX2FlkFHeRtDvQQ1QJ6BAgvEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+health&safe=active"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 7 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=Clever+Care+Health+Plan,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+Health+Plan%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

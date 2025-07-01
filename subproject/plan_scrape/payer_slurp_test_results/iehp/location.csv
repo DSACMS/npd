@@ -1,0 +1,3 @@
+location_fhir_url,name,status,address
+https://fhir.iehp.org/provider-directory/Location/f1cc0b90-94ab-4e7a-b4f9-4dd87270f719,HARVEST MEDICAL CLINIC-HEMET,inactive,"301 E FLORIDA AVE, STE E, HEMET, CA, 92543"
+https://fhir.iehp.org/provider-directory/Location/43710f16-c168-42c1-a437-8ee66336cd6e,INDIO FAMILY CARE CENTER-INDIO,active,"47923 OASIS ST, INDIO, CA, 92201"

@@ -1,0 +1,5 @@
+practitioner_role_fhir_url,telecom_system,telecom_value,telecom_use
+https://fhir.iehp.org/provider-directory/PractitionerRole/dacaa96c-71d6-479a-9483-72889ea591e7,fax,9516528420,work
+https://fhir.iehp.org/provider-directory/PractitionerRole/dacaa96c-71d6-479a-9483-72889ea591e7,phone,9519292753,work
+https://fhir.iehp.org/provider-directory/PractitionerRole/397a98e6-21fa-428b-a04b-4e21fc552fff,fax,7608638366,work
+https://fhir.iehp.org/provider-directory/PractitionerRole/397a98e6-21fa-428b-a04b-4e21fc552fff,phone,8007209553,work

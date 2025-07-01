@@ -1,0 +1,294 @@
+{
+  "search_metadata": {
+    "id": "6826c1e571a41df64e1ef62d",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/2f62ad9b96feb4c1/6826c1e571a41df64e1ef62d.json",
+    "created_at": "2025-05-16 04:41:09 UTC",
+    "processed_at": "2025-05-16 04:41:09 UTC",
+    "google_url": "https://www.google.com/search?q=BlueCross+BlueShield+Association%2C+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=BlueCross+BlueShield+Association%2C+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/2f62ad9b96feb4c1/6826c1e571a41df64e1ef62d.html",
+    "total_time_taken": 8.0
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "BlueCross BlueShield Association, Federal Employee Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "BlueCross BlueShield Association, Federal Employee Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 220,
+    "time_taken_displayed": 0.26,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "CMS/ONC Patient access API",
+      "link": "https://www.healthadvantage-hmo.com/interoperability/patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthadvantage-hmo.com/interoperability/patient-access&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQFnoECBUQAQ",
+      "displayed_link": "https://www.healthadvantage-hmo.com \u203a interoperability",
+      "favicon": "https://serpapi.com/searches/6826c1e571a41df64e1ef62d/images/de5723728ae6184101d52bb79c88d9b97144750984b1672e4b33f793929cf81a.png",
+      "snippet": "The Arkansas Blue Cross and Blue Shield1 Interoperability API provides third-party app developers access to FHIR ... The Provider Directory API will allow ...",
+      "snippet_highlighted_words": [
+        "Blue Cross",
+        "Blue Shield",
+        "API",
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "source": "Health Advantage HMO"
+    },
+    {
+      "position": 2,
+      "title": "API access | Policies & best practices",
+      "link": "https://www.bluecrossnc.com/policies-best-practices/notice-privacy-practices/api-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bluecrossnc.com/policies-best-practices/notice-privacy-practices/api-access&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQFnoECBwQAQ",
+      "displayed_link": "https://www.bluecrossnc.com \u203a notice-privacy-practices",
+      "snippet": "How to connect your app to a Blue Cross NC member's information. Provider Directory API. How to build access to Blue Cross NC provider network information.",
+      "snippet_highlighted_words": [
+        "Blue Cross",
+        "Provider Directory API",
+        "Blue Cross"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=BlueCross+BlueShield+Association,+Federal+Employee+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQ5t4CegQILhAB"
+      },
+      "source": "Blue Cross NC"
+    },
+    {
+      "position": 3,
+      "title": "May 17, 2024 Centers for Medicare & Medicaid Services ...",
+      "link": "https://downloads.regulations.gov/CMS-2024-0008-0160/attachment_1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://downloads.regulations.gov/CMS-2024-0008-0160/attachment_1.pdf&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQFnoECB0QAQ",
+      "displayed_link": "https://downloads.regulations.gov \u203a attachment_1",
+      "date": "May 17, 2024",
+      "snippet": "national provider directory and require providers to maintain data in such a system. ... Using the FHIR API already under development as the path ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 15
+          },
+          "extensions": [
+            "15 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Employee"
+      ],
+      "must_include": {
+        "word": "Employee",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=BlueCross+BlueShield+Association,+Federal+%22Employee%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQ5t4CegQILBAB"
+      },
+      "source": "Regulations.gov"
+    },
+    {
+      "position": 4,
+      "title": "How to Access Our APIs & Data",
+      "link": "https://www.anthem.com/developers",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.anthem.com/developers&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQFnoECBkQAQ",
+      "displayed_link": "https://www.anthem.com \u203a developers",
+      "favicon": "https://serpapi.com/searches/6826c1e571a41df64e1ef62d/images/de5723728ae6184101d52bb79c88d9b9f58484c1c4606f2d5f4e3459fd0f6e7b.png",
+      "snippet": "This RESTful API conforms to the R4 FHIR standard, SMART on FHIR, and CARIN ... Provider Directory API. Anthem offers a Provider Directory service that ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "FHIR",
+        "Provider Directory API",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Association,",
+        "Employee"
+      ],
+      "source": "Anthem"
+    },
+    {
+      "position": 5,
+      "title": "Developer resources | Independence Blue Cross (IBX) - IBX",
+      "link": "https://www.ibx.com/developer-resources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ibx.com/developer-resources&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQFnoECBYQAQ",
+      "displayed_link": "https://www.ibx.com \u203a developer-resources",
+      "favicon": "https://serpapi.com/searches/6826c1e571a41df64e1ef62d/images/de5723728ae6184101d52bb79c88d9b9d184ebf8d2aff3749948251632d888db.png",
+      "snippet": "The Provider Directory API will allow developers to retrieve, as applicable ... Uses the HL7 FHIR standard for sharing public non-member specific data ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "source": "Independence Blue Cross (IBX)"
+    },
+    {
+      "position": 6,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2020/05/01/2020-05050/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2020/05/01/2020-05050/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQFnoECBsQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2020/05/01 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/6826c1e571a41df64e1ef62d/images/de5723728ae6184101d52bb79c88d9b96f9f10fc704a4d7f7ac0bb15c726af8b.png",
+      "date": "May 1, 2020",
+      "snippet": "The basic information (name, phone number, address, and specialty) required for this Provider Directory API can all be represented through FHIR ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "CMS-9115-F - Interoperability and Patient Access",
+      "link": "https://www.cms.gov/files/document/cms-9115-f.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/cms-9115-f.pdf&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQFnoECBoQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a cms-91...",
+      "favicon": "https://serpapi.com/searches/6826c1e571a41df64e1ef62d/images/de5723728ae6184101d52bb79c88d9b98330144449b1dd782bf4904dea2d1a1d.png",
+      "date": "Mar 6, 2020",
+      "snippet": "specialty) required for this Provider Directory API can all be represented through FHIR Release. 4.0.1. Additional implementation guidance ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 474
+          },
+          "extensions": [
+            "474 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "State Efforts to Coordinate Provider Directory Accuracy - ASPE",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQFnoECDEQAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/6826c1e571a41df64e1ef62d/images/de5723728ae6184101d52bb79c88d9b9003b8be8a9518a599bf189e598a90bef.png",
+      "date": "Dec 27, 2023",
+      "snippet": "These FHIR APIs improve the accessibility and transparency of provider directory data. Notes: a. Centers for Medicare & Medicaid Services (CMS).",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory",
+        "Medicare"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 45
+          },
+          "extensions": [
+            "45 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Employee"
+      ],
+      "must_include": {
+        "word": "Employee",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=BlueCross+BlueShield+Association,+Federal+%22Employee%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQ5t4CegQIORAB"
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 9,
+      "title": "The Official Blog of HL7 | payer data exchange",
+      "link": "https://blog.hl7.org/topic/payer-data-exchange",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://blog.hl7.org/topic/payer-data-exchange&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQFnoECDAQAQ",
+      "displayed_link": "https://blog.hl7.org \u203a topic \u203a payer-data-exchange",
+      "favicon": "https://serpapi.com/searches/6826c1e571a41df64e1ef62d/images/de5723728ae6184101d52bb79c88d9b9d2dc22a4ef2e7744560881d512326d79.png",
+      "date": "Apr 16, 2025",
+      "snippet": "... FHIR Accelerator, PDex, burden reduction, FHIR API \u00b7 0 Comments. Early ... Provider Directory (Plan-Net) to share details on available ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR API",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Employee"
+      ],
+      "must_include": {
+        "word": "Employee",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=BlueCross+BlueShield+Association,+Federal+%22Employee%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQ5t4CegQIOxAB"
+      },
+      "source": "HL7 Blog"
+    },
+    {
+      "position": 10,
+      "title": "Interoperability: A Primer",
+      "link": "https://s3.amazonaws.com/amo_hub_content/Association361/files/Interoperability%20101%20-%20Webinar%20-%20BCBSA.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://s3.amazonaws.com/amo_hub_content/Association361/files/Interoperability%2520101%2520-%2520Webinar%2520-%2520BCBSA.pdf&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQFnoECDIQAQ",
+      "displayed_link": "https://s3.amazonaws.com \u203a Association361 \u203a files",
+      "favicon": "https://serpapi.com/searches/6826c1e571a41df64e1ef62d/images/de5723728ae6184101d52bb79c88d9b94d4a7bd00b5c6d05384f5ef985f26b19.png",
+      "snippet": "data, provider directory data, clinical data, drug benefit data ... FHIR infrastructure/ scaling, macro level obstacles across technology stack.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 35
+          },
+          "extensions": [
+            "35 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Employee"
+      ],
+      "must_include": {
+        "word": "Employee",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=BlueCross+BlueShield+Association,+Federal+%22Employee%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQ5t4CegQIOhAB"
+      },
+      "source": "Amazon.com"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=BlueCross+BlueShield+Association,+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=7MEmaMPCNr6JwbkPoq6yuAI&start=10&sa=N&sstk=Af40H4W1pZBlPbdF59F9jf99GXk4HW4QcXz-p2SuNuuhfnZoxpoYxNktpp3P0fKzuHYCFLZlS2yFlhyT1kaMAxlq1kYUTp7kB0VzaA&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=BlueCross+BlueShield+Association,+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=7MEmaMPCNr6JwbkPoq6yuAI&start=10&sa=N&sstk=Af40H4W1pZBlPbdF59F9jf99GXk4HW4QcXz-p2SuNuuhfnZoxpoYxNktpp3P0fKzuHYCFLZlS2yFlhyT1kaMAxlq1kYUTp7kB0VzaA&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=BlueCross+BlueShield+Association,+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=7MEmaMPCNr6JwbkPoq6yuAI&start=20&sa=N&sstk=Af40H4W1pZBlPbdF59F9jf99GXk4HW4QcXz-p2SuNuuhfnZoxpoYxNktpp3P0fKzuHYCFLZlS2yFlhyT1kaMAxlq1kYUTp7kB0VzaA&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=BlueCross+BlueShield+Association,+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=7MEmaMPCNr6JwbkPoq6yuAI&start=30&sa=N&sstk=Af40H4W1pZBlPbdF59F9jf99GXk4HW4QcXz-p2SuNuuhfnZoxpoYxNktpp3P0fKzuHYCFLZlS2yFlhyT1kaMAxlq1kYUTp7kB0VzaA&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=BlueCross+BlueShield+Association,+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=7MEmaMPCNr6JwbkPoq6yuAI&start=40&sa=N&sstk=Af40H4W1pZBlPbdF59F9jf99GXk4HW4QcXz-p2SuNuuhfnZoxpoYxNktpp3P0fKzuHYCFLZlS2yFlhyT1kaMAxlq1kYUTp7kB0VzaA&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=BlueCross+BlueShield+Association,+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=7MEmaMPCNr6JwbkPoq6yuAI&start=50&sa=N&sstk=Af40H4W1pZBlPbdF59F9jf99GXk4HW4QcXz-p2SuNuuhfnZoxpoYxNktpp3P0fKzuHYCFLZlS2yFlhyT1kaMAxlq1kYUTp7kB0VzaA&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=BlueCross+BlueShield+Association,+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=7MEmaMPCNr6JwbkPoq6yuAI&start=60&sa=N&sstk=Af40H4W1pZBlPbdF59F9jf99GXk4HW4QcXz-p2SuNuuhfnZoxpoYxNktpp3P0fKzuHYCFLZlS2yFlhyT1kaMAxlq1kYUTp7kB0VzaA&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=BlueCross+BlueShield+Association,+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=7MEmaMPCNr6JwbkPoq6yuAI&start=70&sa=N&sstk=Af40H4W1pZBlPbdF59F9jf99GXk4HW4QcXz-p2SuNuuhfnZoxpoYxNktpp3P0fKzuHYCFLZlS2yFlhyT1kaMAxlq1kYUTp7kB0VzaA&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=BlueCross+BlueShield+Association,+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=7MEmaMPCNr6JwbkPoq6yuAI&start=80&sa=N&sstk=Af40H4W1pZBlPbdF59F9jf99GXk4HW4QcXz-p2SuNuuhfnZoxpoYxNktpp3P0fKzuHYCFLZlS2yFlhyT1kaMAxlq1kYUTp7kB0VzaA&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=BlueCross+BlueShield+Association,+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=7MEmaMPCNr6JwbkPoq6yuAI&start=90&sa=N&sstk=Af40H4W1pZBlPbdF59F9jf99GXk4HW4QcXz-p2SuNuuhfnZoxpoYxNktpp3P0fKzuHYCFLZlS2yFlhyT1kaMAxlq1kYUTp7kB0VzaA&ved=2ahUKEwjD6MOklqeNAxW-RDABHSKXDCcQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BlueCross+BlueShield+Association%2C+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BlueCross+BlueShield+Association%2C+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BlueCross+BlueShield+Association%2C+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BlueCross+BlueShield+Association%2C+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BlueCross+BlueShield+Association%2C+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BlueCross+BlueShield+Association%2C+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BlueCross+BlueShield+Association%2C+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BlueCross+BlueShield+Association%2C+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BlueCross+BlueShield+Association%2C+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BlueCross+BlueShield+Association%2C+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BlueCross+BlueShield+Association%2C+Federal+Employee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

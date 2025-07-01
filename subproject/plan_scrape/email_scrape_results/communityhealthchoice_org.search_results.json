@@ -1,0 +1,82 @@
+{
+  "search_metadata": {
+    "id": "6861d17a2c2bb4cd9e214b1d",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/9434a5e492406fa6/6861d17a2c2bb4cd9e214b1d.json",
+    "created_at": "2025-06-29 23:51:22 UTC",
+    "processed_at": "2025-06-29 23:51:22 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/9434a5e492406fa6/6861d17a2c2bb4cd9e214b1d.html",
+    "total_time_taken": 1.38
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:communityhealthchoice.org \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:communityhealthchoice.org \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 2,
+    "time_taken_displayed": 0.2,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Community Interoperability APIs",
+      "link": "https://www.communityhealthchoice.org/interoperability-apis/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.communityhealthchoice.org/interoperability-apis/&ved=2ahUKEwjc4LG16ZeOAxXTrlYBHUeXNL0QFnoECBYQAQ",
+      "displayed_link": "https://www.communityhealthchoice.org \u203a interoperabilit...",
+      "favicon": "https://serpapi.com/searches/6861d17a2c2bb4cd9e214b1d/images/5d9003c9c1366eb8b60f8d69a2783c000d24a541a2463ad11361b3df706c30c9.png",
+      "snippet": "Use the HL7 Fast Healthcare Interoperability Resources (FHIR); Use the ... The Provider Directory API will allow third party applications and payers to ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "Community Health Choice"
+    },
+    {
+      "position": 2,
+      "title": "Amended STAR PLUS 1 Revised Operational 9-1-2024",
+      "link": "https://www.communityhealthchoice.org/wp-content/uploads/2024/07/amended-starplus.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.communityhealthchoice.org/wp-content/uploads/2024/07/amended-starplus.pdf&ved=2ahUKEwjc4LG16ZeOAxXTrlYBHUeXNL0QFnoECBkQAQ",
+      "displayed_link": "https://www.communityhealthchoice.org \u203a 2024/07",
+      "favicon": "https://serpapi.com/searches/6861d17a2c2bb4cd9e214b1d/images/5d9003c9c1366eb8b60f8d69a2783c005ecf6d23b15d616948e4893dfdd860e1.png",
+      "date": "Mar 1, 2024",
+      "snippet": "Provider directory must comply with the requirements of 1 Tex. Admin ... http://hl7.org/fhir/. The MCO must comply with the patient ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "fhir"
+      ],
+      "source": "communityhealthchoice.org"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Acommunityhealthchoice.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

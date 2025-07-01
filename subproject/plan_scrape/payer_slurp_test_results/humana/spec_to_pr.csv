@@ -1,0 +1,3 @@
+practitioner_role_fhir_url,specialty_code,specialty_display,specialty_system
+https://fhir.humana.com/api/PractitionerRole/f9faccef1660792a47c6d2a46cc81f4fbb8f6dd4c49d9e6ad9aef93ea7db6ec7,363LA2100X,Acute Care Nurse Practitioner,http://nucc.org/provider-taxonomy
+https://fhir.humana.com/api/PractitionerRole/22cb05f3854cefb24f03368e1ede131d685cfe58abf7112ba5d648193b96c55f,363LP0808X,Psychiatric/Mental Health Nurse Practitioner,http://nucc.org/provider-taxonomy

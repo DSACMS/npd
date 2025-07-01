@@ -1,0 +1,3 @@
+practitioner_role_fhir_url,organization_fhir_url,organization_reference
+https://fhir.iehp.org/provider-directory/PractitionerRole/dacaa96c-71d6-479a-9483-72889ea591e7,https://fhir.iehp.org/provider-directory/Organization/e877bafd-bee3-4cf4-91c4-fd893fa95053,Organization/e877bafd-bee3-4cf4-91c4-fd893fa95053
+https://fhir.iehp.org/provider-directory/PractitionerRole/397a98e6-21fa-428b-a04b-4e21fc552fff,https://fhir.iehp.org/provider-directory/Organization/e877bafd-bee3-4cf4-91c4-fd893fa95053,Organization/e877bafd-bee3-4cf4-91c4-fd893fa95053

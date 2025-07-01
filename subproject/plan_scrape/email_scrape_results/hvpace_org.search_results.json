@@ -1,0 +1,34 @@
+{
+  "search_metadata": {
+    "id": "6861d265932b0ecd58b6d41f",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/df1c089ad31f16ed/6861d265932b0ecd58b6d41f.json",
+    "created_at": "2025-06-29 23:55:17 UTC",
+    "processed_at": "2025-06-29 23:55:17 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Ahvpace.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Ahvpace.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/df1c089ad31f16ed/6861d265932b0ecd58b6d41f.html",
+    "total_time_taken": 1.49
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:hvpace.org \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:hvpace.org \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 0,
+    "time_taken_displayed": 0.11,
+    "organic_results_state": "Fully empty",
+    "query_feedback": {
+      "title": "Your search did not match any documents"
+    }
+  },
+  "error": "Google hasn't returned any results for this query."
+}

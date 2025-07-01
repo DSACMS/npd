@@ -1,0 +1,22 @@
+# Core dependencies
+click>=8.0.0
+python-dotenv>=0.19.0
+chardet>=5.0.0
+
+# Optional database dependencies (install as needed)
+# For MySQL support:
+# pymysql>=1.0.0
+# sqlalchemy>=1.4.0
+
+# For PostgreSQL support:
+# psycopg2-binary>=2.8.0
+# sqlalchemy>=1.4.0
+
+# For full functionality:
+# python-dotenv>=0.19.0
+
+# Development dependencies
+# pytest>=6.0
+# pytest-cov
+# black
+# flake8

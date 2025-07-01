@@ -1,0 +1,257 @@
+{
+  "search_metadata": {
+    "id": "6861d48973ae60db12e0c076",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/031343668216f1aa/6861d48973ae60db12e0c076.json",
+    "created_at": "2025-06-30 00:04:25 UTC",
+    "processed_at": "2025-06-30 00:04:25 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/031343668216f1aa/6861d48973ae60db12e0c076.html",
+    "total_time_taken": 1.82
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:molinahealthcare.com \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:molinahealthcare.com \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 6,
+    "time_taken_displayed": 0.17,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_images": [
+    {
+      "source": "https://developer.interop.molinahealthcare.com/content/Provider%20Online%20Directory%20Developer%20Documentation.pdf",
+      "thumbnail": "https://serpapi.com/searches/6861d48973ae60db12e0c076/images/924ac65e6179fa3eb86e125e98641b2f5ff0b5fe36d56514ecd618a32c5b9481.jpeg",
+      "original": "x-raw-image:///ec0fc9f3672d0099a4c02ddfcf72d5680f22c9cf785b16b70a83003d6482e967",
+      "title": "Interoperability: Provider Online Directory Developer ...",
+      "source_name": "Molina Healthcare"
+    },
+    {
+      "source": "https://developer.interop.molinahealthcare.com/content/Interoperability%20Product%20Documentation.pdf",
+      "thumbnail": "https://serpapi.com/searches/6861d48973ae60db12e0c076/images/924ac65e6179fa3e0c04ce9386bfe488e26942810d166d52690adec2bf17bdf6.png",
+      "original": "x-raw-image:///54e5ad2b8295c7550713f76441a5507796b9c83051e54bd43743fa939b14952f",
+      "title": "Interoperability Product Documentation",
+      "source_name": "Microsoft Azure API Management - developer portal"
+    },
+    {
+      "source": "https://www.molinahealthcare.com/-/media/Molina/PublicWebsite/PDF/Providers/va/VA-ALL-PHB-21533-22-MCC-VA-Provider-Manual-FINAL_508c.pdf",
+      "thumbnail": "https://serpapi.com/searches/6861d48973ae60db12e0c076/images/924ac65e6179fa3ebb0de6d071f7db3cb5efe63ce81171bf1863d0f75fb3525d.jpeg",
+      "original": "x-raw-image:///6aa015efb3e85729ce14ce88bab021bf27ecb1360b616a82b351cf0f5c7a83e8",
+      "title": "Molina Complete Care Provider Manual",
+      "source_name": "Molina Healthcare"
+    },
+    {
+      "source": "https://developer.interop.molinahealthcare.com/content/Interoperability%20Product%20Documentation%205.80.003.004_OOB.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ3PG0Dg1r4Dydu37NXMCqbDiO9LTrPOhNUF9Xj07MOPZ38Fpc5tzUWbB6vA&s",
+      "original": "x-raw-image:///34d7e0c2b166b02a01b2ec1afdbffd0d816c86d32589e69ae8686b46312e71f9",
+      "title": "Interoperability Product Documentation",
+      "source_name": "Microsoft Azure API Management - developer portal"
+    },
+    {
+      "source": "https://developer.interop.molinahealthcare.com/content/Interoperability%20Product%20Documentation%205.80.003.004_OOB.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAo1EjTElDaB8fimxT94QNc2CDfHjZyTEqgokEbiUe5XKjhJbC-_asdWyLCg&s",
+      "original": "x-raw-image:///77ea813a2d767acee151eb6df7c69f40b1b6117b187302bf72417ba74912df8d",
+      "title": "Interoperability Product Documentation",
+      "source_name": "Microsoft Azure API Management - developer portal"
+    },
+    {
+      "source": "https://developer.interop.molinahealthcare.com/content/Interoperability%20Product%20Documentation%205.80.004.000_genericOOB-IDP.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp4GscmIvt8G_wm2hgh6Tkg_0xs5Y_KhkzJJ4hGfUXgN-o8mW3PXyZLMM&s",
+      "original": "x-raw-image:///e075f73c5ebb7b10cc50810a6ba31c2e706f1f63d9d475f18f735219d339d83c",
+      "title": "Interoperability Product Documentation",
+      "source_name": "Microsoft Azure API Management - developer portal"
+    },
+    {
+      "source": "https://www.molinahealthcare.com/-/media/Molina/PublicWebsite/PDF/Providers/va/VA-ALL-PHB-11131-22_V3_MCC-VA-Provider-Manual_FINAL.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi0BrcdqZI2V7PZs8lNUo0l9DBS7YDmrwnI9Ej7_4hNMy_5Hh9GuD8WzY&s",
+      "original": "x-raw-image:///22171b9961efa2730d9b2b2e4512006538578e64f281f699d72b62d174183597",
+      "title": "PROVIDER MANUAL (Provider Handbook)",
+      "source_name": "Molina Marketplace"
+    },
+    {
+      "source": "https://developer.interop.molinahealthcare.com/content/Interoperability%20Product%20Documentation%205.80.004.000_genericOOB-IDP.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwtjMGCwKR5HA_Po4-mRqBz7see0ubmUZNq2oMrk2f8Q6-QHN7_DIoWkg&s",
+      "original": "x-raw-image:///3ff29656f65eacee31860fabcf7b11b6553271d9aeb543a232904fb69ba449a8",
+      "title": "Interoperability Product Documentation",
+      "source_name": "Microsoft Azure API Management - developer portal"
+    },
+    {
+      "source": "https://www.molinahealthcare.com/-/media/Molina/PublicWebsite/PDF/Providers/va/VA-ALL-PHB-11131-22_V3_MCC-VA-Provider-Manual_FINAL.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSABDorqNSpDGFEorpUnJ4eb-ekLMQjLBvjqLAniBisfLjuoFjLbrpUH4o&s",
+      "original": "x-raw-image:///7a8fa293e80ee06b94036892ef4758e42612af088f9dbf76caee9a4fee1577ed",
+      "title": "PROVIDER MANUAL (Provider Handbook)",
+      "source_name": "Molina Marketplace"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Provider Online Directory Developer Documentation",
+      "link": "https://developer.interop.molinahealthcare.com/content/Provider%20Online%20Directory%20Developer%20Documentation.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.interop.molinahealthcare.com/content/Provider%2520Online%2520Directory%2520Developer%2520Documentation.pdf&ved=2ahUKEwjV6our7JeOAxV5ExAIHYGqC4YQFnoECBoQAQ",
+      "displayed_link": "https://developer.interop.molinahealthcare.com \u203a c...",
+      "snippet": "The Argonaut project Provider Directory guide is based upon the FHIR STU3 API and contains the foundation for a robust provider directory. It describes the ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 5
+          },
+          "extensions": [
+            "5 pages"
+          ]
+        }
+      },
+      "source": "Molina Healthcare"
+    },
+    {
+      "position": 2,
+      "title": "Interoperability Product Documentation - Using",
+      "link": "https://developer.interop.molinahealthcare.com/content/Interoperability%20Product%20Documentation.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.interop.molinahealthcare.com/content/Interoperability%2520Product%2520Documentation.pdf&ved=2ahUKEwjV6our7JeOAxV5ExAIHYGqC4YQFnoECB0QAQ",
+      "displayed_link": "https://developer.interop.molinahealthcare.com \u203a c...",
+      "snippet": "Here you can learn the capabilities of the Developer Portal and our FHIR APIs, and get started on building FHIR-based applications. ... Provider Directory APIs.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 780
+          },
+          "extensions": [
+            "780 pages"
+          ]
+        }
+      },
+      "source": "Molina Healthcare"
+    },
+    {
+      "position": 3,
+      "title": "Microsoft Azure API Management - developer portal: Home",
+      "link": "https://developer.interop.molinahealthcare.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.interop.molinahealthcare.com/&ved=2ahUKEwjV6our7JeOAxV5ExAIHYGqC4YQFnoECBcQAQ",
+      "displayed_link": "https://developer.interop.molinahealthcare.com",
+      "snippet": "Provider Directory. APIs that will give detailed information about a payer's network of physicians and facilities with the goal of connecting patients to care ...",
+      "snippet_highlighted_words": [
+        "Provider Directory"
+      ],
+      "source": "Molina Healthcare"
+    },
+    {
+      "position": 4,
+      "title": "Interoperability Product Documentation",
+      "link": "https://developer.interop.molinahealthcare.com/content/Interoperability%20Product%20Documentation%205.80.003.004_OOB.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.interop.molinahealthcare.com/content/Interoperability%2520Product%2520Documentation%25205.80.003.004_OOB.pdf&ved=2ahUKEwjV6our7JeOAxV5ExAIHYGqC4YQFnoECBsQAQ",
+      "displayed_link": "https://developer.interop.molinahealthcare.com \u203a c...",
+      "snippet": "Here you can learn the capabilities of the Developer Portal and our FHIR APls, and get started on building FHIR-based applications. ... Provider Directory ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "Molina Healthcare"
+    },
+    {
+      "position": 5,
+      "title": "PROVIDER MANUAL",
+      "link": "https://www.molinahealthcare.com/-/media/Molina/PublicWebsite/PDF/Providers/va/VA-ALL-PHB-11131-22_V3_MCC-VA-Provider-Manual_FINAL.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.molinahealthcare.com/-/media/Molina/PublicWebsite/PDF/Providers/va/VA-ALL-PHB-11131-22_V3_MCC-VA-Provider-Manual_FINAL.pdf&ved=2ahUKEwjV6our7JeOAxV5ExAIHYGqC4YQFnoECBgQAQ",
+      "displayed_link": "https://www.molinahealthcare.com \u203a Providers",
+      "favicon": "https://serpapi.com/searches/6861d48973ae60db12e0c076/images/d6b7ed336ae6d8eba35a3e6b31aa1b7334d8646a02ac1e3d68af14242231299f.png",
+      "author": "by CCM Care",
+      "snippet": "Maintaining an accurate and current Provider directory is a state and ... (FHIR). CCDA or CCD document should include signed clinical note or conform ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 135
+          },
+          "extensions": [
+            "135 pages"
+          ]
+        }
+      },
+      "source": "Molina Healthcare"
+    },
+    {
+      "position": 6,
+      "title": "Provider Manual",
+      "link": "https://www.molinahealthcare.com/-/media/Molina/PublicWebsite/PDF/Providers/va/VA-ALL-PHB-11131-22_V2_MCC-VA-Provider-Manual_FINAL_508c.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.molinahealthcare.com/-/media/Molina/PublicWebsite/PDF/Providers/va/VA-ALL-PHB-11131-22_V2_MCC-VA-Provider-Manual_FINAL_508c.pdf&ved=2ahUKEwjV6our7JeOAxV5ExAIHYGqC4YQFnoECBwQAQ",
+      "displayed_link": "https://www.molinahealthcare.com \u203a Providers",
+      "favicon": "https://serpapi.com/searches/6861d48973ae60db12e0c076/images/d6b7ed336ae6d8eba35a3e6b31aa1b73192c3e672d86df55978a8078474e06a5.png",
+      "author": "by CCM Care",
+      "snippet": "Maintaining an accurate and current Provider directory is a state and federal regulatory requirement, as well as an NCQA required element. Invalid information ...",
+      "snippet_highlighted_words": [
+        "Provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 134
+          },
+          "extensions": [
+            "134 pages"
+          ]
+        }
+      },
+      "source": "Molina Healthcare"
+    }
+  ],
+  "top_stories_link": "https://www.google.com/search?safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&q=site:molinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&udm=2&source=univ&fir=mQAtZ_PJD-xJQM%252C44liLAaxLNaqwM%252C_%253BVceVgiut5VQPvM%252Ci-lG68aoee1zRM%252C_%253BKVfos-8VoGqPmM%252CC0nAVaEwFO9_wM%252C_%253BKrBmscLg1zRY1M%252CYlz5qUHdb-20xM%252C_%253Bznp2LTqB6ndpoM%252CYlz5qUHdb-20xM%252C_%253BEHu7Xjz3deDjMM%252CEiAjiJP6cITT1M%252C_%253Bc6LvYZkbFyIT-M%252C6b8An98H0A7nKM%252C_%253B7qxe9laW8j8V8M%252CEiAjiJP6cITT1M%252C_%253Ba-AO6JOij3p40M%252C6b8An98H0A7nKM%252C_&usg=AI4_-kST9vEXAm9HT19I8NIdMF_URDNSBw&sa=X&ved=2ahUKEwjV6our7JeOAxV5ExAIHYGqC4YQ7Al6BAgZEAU",
+  "top_stories_serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active",
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 6 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=site:molinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Amolinahealthcare.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

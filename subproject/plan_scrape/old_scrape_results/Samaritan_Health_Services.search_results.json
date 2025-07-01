@@ -1,0 +1,228 @@
+{
+  "search_metadata": {
+    "id": "6826c393703f172c78d32546",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/c834feddb2474343/6826c393703f172c78d32546.json",
+    "created_at": "2025-05-16 04:48:19 UTC",
+    "processed_at": "2025-05-16 04:48:19 UTC",
+    "google_url": "https://www.google.com/search?q=Samaritan+Health+Services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Samaritan+Health+Services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/c834feddb2474343/6826c393703f172c78d32546.html",
+    "total_time_taken": 10.58
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Samaritan Health Services Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Samaritan Health Services Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 41,
+    "time_taken_displayed": 0.26,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "ITC Infotech's FHIR based Interoperability Solution",
+      "link": "https://www.itcinfotech.com/wp-content/uploads/2020/08/ITC-Infotech-Azure-FHIR-Interoperability-Solution.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.itcinfotech.com/wp-content/uploads/2020/08/ITC-Infotech-Azure-FHIR-Interoperability-Solution.pdf&ved=2ahUKEwjp-efyl6eNAxXhg4kEHbwfIm4QFnoECCEQAQ",
+      "displayed_link": "https://www.itcinfotech.com \u203a uploads \u203a 2020/08",
+      "favicon": "https://serpapi.com/searches/6826c393703f172c78d32546/images/b9986295eaa01f4bf25270490a2fe8c94b0bb37f99aed4beb69819aa156d6fe1.png",
+      "snippet": "to provide FHIR APIs. \u25ab Patient Access API (applicable January 1, 2021). \u25ab Provider Directory API (applicable January 1, 2021). \u25ab Payer-to-Payer Data ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory API"
+      ],
+      "source": "ITC Infotech"
+    },
+    {
+      "position": 2,
+      "title": "Health Information Technology Council Report to the ...",
+      "link": "https://malegislature.gov/Bills/192/HD4164.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://malegislature.gov/Bills/192/HD4164.pdf&ved=2ahUKEwjp-efyl6eNAxXhg4kEHbwfIm4QFnoECBwQAQ",
+      "displayed_link": "https://malegislature.gov \u203a Bills",
+      "favicon": "https://serpapi.com/searches/6826c393703f172c78d32546/images/b9986295eaa01f4bf25270490a2fe8c98d1bbf68deec05c27feaecff4916ad8c.jpeg",
+      "snippet": "Service options being considered include a FHIR API to. Provider Directory, FHIR Exchange and Routing Services and FHIR-HL7 Broker and Message. Transformation ...",
+      "snippet_highlighted_words": [
+        "Service",
+        "FHIR API",
+        "Provider Directory",
+        "FHIR",
+        "Services",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 24
+          },
+          "extensions": [
+            "24 pages"
+          ]
+        }
+      },
+      "source": "General Court of the Commonwealth of Massachusetts (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Health Information Technology Oversight Council",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/2016-0609%20Materials.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%2520Meeting%2520Docs/2016-0609%2520Materials.pdf&ved=2ahUKEwjp-efyl6eNAxXhg4kEHbwfIm4QFnoECBoQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HPA \u203a OHIT-HITOC",
+      "favicon": "https://serpapi.com/searches/6826c393703f172c78d32546/images/b9986295eaa01f4bf25270490a2fe8c9b93ff2db2e0c7bae7334875ac2854b24.png",
+      "date": "Jun 9, 2016",
+      "snippet": "FHIR/ etc.] CEO Name ... \u25bb Oregon will stand-up a set of healthcare provider directory services that will connect but not replace disparate.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "healthcare provider directory services"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 4,
+      "title": "Network of Networks Definitions Group",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/NNG%20Meetings%20Docs/NetworkofNetwork_DefGroup_MeetingMaterials20190314.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/NNG%2520Meetings%2520Docs/NetworkofNetwork_DefGroup_MeetingMaterials20190314.pdf&ved=2ahUKEwjp-efyl6eNAxXhg4kEHbwfIm4QFnoECCgQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HPA \u203a OHIT-HITOC",
+      "favicon": "https://serpapi.com/searches/6826c393703f172c78d32546/images/b9986295eaa01f4bf25270490a2fe8c9beb1837471030a61a6632d1e173dcad1.png",
+      "date": "Mar 14, 2019",
+      "snippet": "ensure the Provider Directory maintains initial and long-term quality information. ... \u2022 Includes API (FHIR?) ability. \u2022 CHPL/ONC EHR Reporting ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "API",
+        "FHIR"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 5,
+      "title": "BEST IN KLAS 2024 SOFTWARE & SERVICES",
+      "link": "https://www.nuance.com/asset/en_us/collateral/healthcare/report/ar-best-in-klas-software-and-services-2024-en-us.pdf?srsltid=AfmBOor5kc6S2sXW4p0NH3X9YhQjX4WRRAtlf-rBNorfLrUT2gdLFw_3",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.nuance.com/asset/en_us/collateral/healthcare/report/ar-best-in-klas-software-and-services-2024-en-us.pdf%3Fsrsltid%3DAfmBOor5kc6S2sXW4p0NH3X9YhQjX4WRRAtlf-rBNorfLrUT2gdLFw_3&ved=2ahUKEwjp-efyl6eNAxXhg4kEHbwfIm4QFnoECB8QAQ",
+      "displayed_link": "https://www.nuance.com \u203a healthcare \u203a report",
+      "favicon": "https://serpapi.com/searches/6826c393703f172c78d32546/images/b9986295eaa01f4bf25270490a2fe8c9c1e7563cced37724ed71ef3aa7383b9d.png",
+      "snippet": "... FHIR API Adoption to Support Third-. Party Connectivity. 3. Utility: Duplicate ... provider directory API, and payer-to-payer data exchange. Complex ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "provider directory API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Samaritan+Health+Services+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjp-efyl6eNAxXhg4kEHbwfIm4Q5t4CegQIKhAB"
+      },
+      "source": "Nuance Communications"
+    },
+    {
+      "position": 6,
+      "title": "Michigan Health Information Technology Commission",
+      "link": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder1/Folder58/August_2016_HIT_Commission_Presentation_Final.pdf?rev=431e1814b84a4db6bfc1e7c70ff43b87",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder1/Folder58/August_2016_HIT_Commission_Presentation_Final.pdf%3Frev%3D431e1814b84a4db6bfc1e7c70ff43b87&ved=2ahUKEwjp-efyl6eNAxXhg4kEHbwfIm4QFnoECCAQAQ",
+      "displayed_link": "https://www.michigan.gov \u203a Folder1 \u203a Folder58",
+      "favicon": "https://serpapi.com/searches/6826c393703f172c78d32546/images/b9986295eaa01f4bf25270490a2fe8c985ef6d458dfb8b97754119863682da64.png",
+      "date": "Aug 18, 2016",
+      "snippet": "\u2022 491,815 unique providers in statewide Health Provider Directory ... \u2022 Runs as web service with rich FHIR API for easy integration.",
+      "snippet_highlighted_words": [
+        "Health Provider Directory",
+        "service",
+        "FHIR API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Samaritan+Health+Services+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjp-efyl6eNAxXhg4kEHbwfIm4Q5t4CegQIKRAB"
+      },
+      "source": "State of Michigan (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "DISTRICT OF COLUMBIA HEALTH INFORMATION ...",
+      "link": "https://dhcf.dc.gov/sites/default/files/dc/sites/dhcf/page_content/attachments/FINAL_HIEPB%20October%202022%20Slides_10.27.2022.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dhcf.dc.gov/sites/default/files/dc/sites/dhcf/page_content/attachments/FINAL_HIEPB%2520October%25202022%2520Slides_10.27.2022.pdf&ved=2ahUKEwjp-efyl6eNAxXhg4kEHbwfIm4QFnoECBkQAQ",
+      "displayed_link": "https://dhcf.dc.gov \u203a page_content \u203a attachments",
+      "favicon": "https://serpapi.com/searches/6826c393703f172c78d32546/images/b9986295eaa01f4bf25270490a2fe8c9b51284d26eadd3450f450ea05fa52b1a.png",
+      "date": "Oct 27, 2022",
+      "snippet": "Provider Directory. Image Exchange. Design, Development, Implementation (DDI) ... HHS-sponsored HL7 FHIR Implementation efforts to standardize.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "DC.gov"
+    },
+    {
+      "position": 8,
+      "title": "May 16, 2023 Ms. Juliet Charron State ...",
+      "link": "https://www.medicaid.gov/medicaid/section-1115-demonstrations/downloads/id-behavioral-health-transformation-ca-05162023.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.medicaid.gov/medicaid/section-1115-demonstrations/downloads/id-behavioral-health-transformation-ca-05162023.pdf&ved=2ahUKEwjp-efyl6eNAxXhg4kEHbwfIm4QFnoECDMQAQ",
+      "displayed_link": "https://www.medicaid.gov \u203a medicaid \u203a downloads",
+      "date": "May 16, 2023",
+      "snippet": "As part of these efforts, Idaho seeks to develop a behavioral health provider directory ... FHIR APIs. Refine data exchange's data ...",
+      "snippet_highlighted_words": [
+        "health provider directory",
+        "FHIR"
+      ],
+      "source": "Medicaid (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "Final Sessions",
+      "link": "https://mesconference.org/wp-content/uploads/2018/07/MESC2018_Sessions_180718-WEB.xlsx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mesconference.org/wp-content/uploads/2018/07/MESC2018_Sessions_180718-WEB.xlsx&ved=2ahUKEwjp-efyl6eNAxXhg4kEHbwfIm4QFnoECDIQAQ",
+      "displayed_link": "https://mesconference.org \u203a uploads \u203a 2018/07",
+      "snippet": "The MITA TAC is working with the SAMHSA team and leveraging their knowledge on how to use clouds, FHIR, SMART on FHIR, OAuth2. ... Provider Directory (MPD).",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "Medicaid Enterprise Systems Conference (MESC)"
+    },
+    {
+      "position": 10,
+      "title": "SUD Implementation Plan CMS' Opioid and Other ...",
+      "link": "https://www.medicaid.gov/medicaid/section-1115-demonstrations/downloads/id-behavioral-health-transformation-sud-imp-plan-appvl.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.medicaid.gov/medicaid/section-1115-demonstrations/downloads/id-behavioral-health-transformation-sud-imp-plan-appvl.pdf&ved=2ahUKEwjp-efyl6eNAxXhg4kEHbwfIm4QFnoECDEQAQ",
+      "displayed_link": "https://www.medicaid.gov \u203a medicaid \u203a downloads",
+      "snippet": "As part of these efforts, Idaho seeks to develop a behavioral health provider directory ... FHIR APIs. Refine data exchange's data extraction engine ...",
+      "snippet_highlighted_words": [
+        "health provider directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Samaritan+Health+Services+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjp-efyl6eNAxXhg4kEHbwfIm4Q5t4CegQINxAB"
+      },
+      "source": "Medicaid (.gov)"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Samaritan+Health+Services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=ncMmaKm3HuGHptQPvL-I8QY&start=10&sa=N&sstk=Af40H4UOz9kf0D9txIWL_dgb2KeMihzaokSyJ1QjTSstEYWHgALWLLbB1sLJ0mCJJ6Hj7GePL28Oe043ZuUHfCvTD8nLkfUo8lZ-lw&ved=2ahUKEwjp-efyl6eNAxXhg4kEHbwfIm4Q8NMDegQICxAG",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Samaritan+Health+Services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=ncMmaKm3HuGHptQPvL-I8QY&start=10&sa=N&sstk=Af40H4UOz9kf0D9txIWL_dgb2KeMihzaokSyJ1QjTSstEYWHgALWLLbB1sLJ0mCJJ6Hj7GePL28Oe043ZuUHfCvTD8nLkfUo8lZ-lw&ved=2ahUKEwjp-efyl6eNAxXhg4kEHbwfIm4Q8tMDegQICxAE"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Samaritan+Health+Services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Samaritan+Health+Services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Samaritan+Health+Services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10"
+    }
+  }
+}

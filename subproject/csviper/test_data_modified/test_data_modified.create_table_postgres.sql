@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS REPLACE_ME_DB_NAME.REPLACE_ME_TABLE_NAME;
+
+CREATE TABLE REPLACE_ME_DB_NAME.REPLACE_ME_TABLE_NAME (
+    "full_name" VARCHAR(12),
+    "years_old" VARCHAR(3),
+    "email" VARCHAR(22),
+    "phone" VARCHAR(9),
+    "birth_date" VARCHAR(11),
+    "annual_salary" VARCHAR(6)
+);

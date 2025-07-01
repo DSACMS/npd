@@ -1,0 +1,314 @@
+{
+  "search_metadata": {
+    "id": "6826c35019c5f67091a7698f",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/fecd5ed93d05489d/6826c35019c5f67091a7698f.json",
+    "created_at": "2025-05-16 04:47:12 UTC",
+    "processed_at": "2025-05-16 04:47:12 UTC",
+    "google_url": "https://www.google.com/search?q=Molina+Healthcare%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Molina+Healthcare%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/fecd5ed93d05489d/6826c35019c5f67091a7698f.html",
+    "total_time_taken": 2.23
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Molina Healthcare, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Molina Healthcare, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 74,
+    "time_taken_displayed": 0.23,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Provider Online Directory Developer Documentation",
+      "link": "https://developer.interop.molinahealthcare.com/content/Provider%20Online%20Directory%20Developer%20Documentation.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.interop.molinahealthcare.com/content/Provider%2520Online%2520Directory%2520Developer%2520Documentation.pdf&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQFnoECBEQAQ&usg=AOvVaw0aLLPrljHyDxKKzw_J2ynm",
+      "displayed_link": "https://developer.interop.molinahealthcare.com \u203a c...",
+      "snippet": "The Argonaut project Provider Directory guide is based upon the FHIR STU3 API and contains the foundation for a robust provider directory. It describes the ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "API",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 5
+          },
+          "extensions": [
+            "5 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Molina+Healthcare,+Inc.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQ5t4CegQILhAB"
+      },
+      "source": "Molina Healthcare"
+    },
+    {
+      "position": 2,
+      "title": "Microsoft Azure API Management - developer portal - Molina ...",
+      "link": "https://developer.interop.molinahealthcare.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.interop.molinahealthcare.com/&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQFnoECBAQAQ&usg=AOvVaw2Yxp2ERYZl9w8wvFyLun8b",
+      "displayed_link": "https://developer.interop.molinahealthcare.com",
+      "snippet": "Our APIs allow access to clinical, administrative and formulary drug plan information about a patient, as well as provide detailed provider directory ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "provider directory"
+      ],
+      "source": "Molina Healthcare"
+    },
+    {
+      "position": 3,
+      "title": "Interoperability Product Documentation",
+      "link": "https://developer.interop.molinahealthcare.com/content/Interoperability%20Product%20Documentation.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.interop.molinahealthcare.com/content/Interoperability%2520Product%2520Documentation.pdf&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQFnoECBIQAQ&usg=AOvVaw3O0YLM9OSG_2o5aFNJPsq0",
+      "displayed_link": "https://developer.interop.molinahealthcare.com \u203a c...",
+      "snippet": "Here you can learn the capabilities of the Developer Portal and our FHIR APIs, and get started on building FHIR-based applications. ... Provider Directory APIs.",
+      "snippet_highlighted_words": [
+        "FHIR APIs",
+        "FHIR",
+        "Provider Directory APIs"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 783
+          },
+          "extensions": [
+            "783 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Molina+Healthcare,+Inc.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQ5t4CegQIMBAB"
+      },
+      "source": "Molina Healthcare"
+    },
+    {
+      "position": 4,
+      "title": "State of Provider Directory APIs 2024",
+      "link": "https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQFnoECBoQAQ&usg=AOvVaw0XnNDExfmnTKGRRZu_aoJb",
+      "displayed_link": "https://defacto.health \u203a 2024/06/24 \u203a state-of-provider-di...",
+      "favicon": "https://serpapi.com/searches/6826c35019c5f67091a7698f/images/f7688f0160e6aa5609d62312318467434af23edcb5035c8825179cc552deae35.png",
+      "date": "Jun 24, 2024",
+      "snippet": "... Provider Directory data via FHIR APIs: UnitedHealthcare; Elevance (Anthem); Humana; Aetna; Molina; L.A. Care; Amerihealth Caritas; CareSource ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR APIs",
+        "Molina"
+      ],
+      "missing": [
+        "Inc."
+      ],
+      "must_include": {
+        "word": "Inc.",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Molina+Healthcare,+%22Inc.%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQ5t4CegQILxAB"
+      },
+      "source": "Defacto Health"
+    },
+    {
+      "position": 5,
+      "title": "Everything You Need to Know About the Healthcare ...",
+      "link": "https://waitingroom.substack.com/p/everything-you-need-to-know-about",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://waitingroom.substack.com/p/everything-you-need-to-know-about&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQFnoECBgQAQ&usg=AOvVaw1ttm22w-aGSO_GYGu_1Mz9",
+      "displayed_link": "4 years ago",
+      "favicon": "https://serpapi.com/searches/6826c35019c5f67091a7698f/images/f7688f0160e6aa5609d6231231846743df3f49cb1338c26957284513b4d016fd.jpeg",
+      "snippet": "Provider directory software like Ribbon Health. In March, CMS and ... Molina and Oscar Health are required to implement FHIR APIs. Payer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "Molina",
+        "FHIR APIs"
+      ],
+      "missing": [
+        "Inc."
+      ],
+      "must_include": {
+        "word": "Inc.",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Molina+Healthcare,+%22Inc.%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQ5t4CegQIKhAB"
+      },
+      "source": "Substack \u00b7 Waiting Room"
+    },
+    {
+      "position": 6,
+      "title": "Medicaid Managed Care Quality Strategy",
+      "link": "https://medicaid.utah.gov/Documents/pdfs/OMH%20Quality%20Strategy.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medicaid.utah.gov/Documents/pdfs/OMH%2520Quality%2520Strategy.pdf&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQFnoECBUQAQ&usg=AOvVaw1J8R4RiwitqeJL3JJm_ASp",
+      "displayed_link": "https://medicaid.utah.gov \u203a Documents \u203a pdfs",
+      "favicon": "https://serpapi.com/searches/6826c35019c5f67091a7698f/images/f7688f0160e6aa5609d623123184674333e56930f38839c1c4be0ecd693d93ea.png",
+      "snippet": "\u25cb Provider Directory API. Effective March 31, 2026. \u25cb New policies put into ... FHIR: Fast healthcare interoperability resources. A standard for ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "healthcare"
+      ],
+      "missing": [
+        "Inc."
+      ],
+      "must_include": {
+        "word": "Inc.",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Molina+Healthcare,+%22Inc.%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQ5t4CegQILRAB"
+      },
+      "source": "Utah.gov"
+    },
+    {
+      "position": 7,
+      "title": "Washington State Medicaid Transformation Project (MTP) ...",
+      "link": "https://www.medicaid.gov/medicaid/section-1115-demonstrations/downloads/wa-medcaid-transfmtn-qtrly-mntrng-rpt-inclu-narrativ-oct-dec-2023.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.medicaid.gov/medicaid/section-1115-demonstrations/downloads/wa-medcaid-transfmtn-qtrly-mntrng-rpt-inclu-narrativ-oct-dec-2023.pdf&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQFnoECBkQAQ&usg=AOvVaw11hN-l3JAW5pVpZ17FHZyV",
+      "displayed_link": "https://www.medicaid.gov \u203a medicaid \u203a downloads",
+      "date": "Dec 31, 2023",
+      "snippet": "Provider Directory Application Programming Interface (API): o ... to the Fast Healthcare Interoperability Resources (FHIR) server.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "API",
+        "Healthcare",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 39
+          },
+          "extensions": [
+            "39 pages"
+          ]
+        }
+      },
+      "source": "Medicaid (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Texas Value-Based Payment and Quality Improvement ...",
+      "link": "https://www.hhs.texas.gov/sites/default/files/documents/nov-2024-vbpqiac-agenda-item-8.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.texas.gov/sites/default/files/documents/nov-2024-vbpqiac-agenda-item-8.pdf&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQFnoECDMQAQ&usg=AOvVaw3wjbAccdB5qheacR5t1YK5",
+      "displayed_link": "https://www.hhs.texas.gov \u203a files \u203a documents \u203a n...",
+      "favicon": "https://serpapi.com/searches/6826c35019c5f67091a7698f/images/f7688f0160e6aa5609d62312318467435166401d52bcec1f7be2f427e1f9c40e.png",
+      "date": "Dec 31, 2024",
+      "snippet": "... Interface (API) standards for Patient Access, Provider Access, Provider Directory,. Payer-to-Payer, and Prior Authorization APIs.",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory",
+        "APIs"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 85
+          },
+          "extensions": [
+            "85 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Molina+Healthcare,+Inc.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQ5t4CegQINRAB"
+      },
+      "source": "Texas Health and Human Services (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "CS Kansas Draft Protest Letter 6-3-2024 (908617-4).DOCX",
+      "link": "https://admin.ks.gov/media/cms/CareSource_Bid_Protest_5d4febae93561.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://admin.ks.gov/media/cms/CareSource_Bid_Protest_5d4febae93561.pdf&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQFnoECDcQAQ&usg=AOvVaw3S3zJ2RBBD5tx4csDm6Pui",
+      "displayed_link": "https://admin.ks.gov \u203a media \u203a cms",
+      "favicon": "https://serpapi.com/searches/6826c35019c5f67091a7698f/images/f7688f0160e6aa5609d62312318467434a18cd217b2323c0128c95aafc69949b.png",
+      "date": "Jun 3, 2024",
+      "snippet": "... provider directory, including information included in the directory ... (FHIR). 2676. 2677. 4. CareInsights: Our modern data platform ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 270
+          },
+          "extensions": [
+            "270 pages"
+          ]
+        }
+      },
+      "source": "Kansas Department of Administration (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "STATE OF WASHINGTON October 25th, 2024 ...",
+      "link": "https://app.leg.wa.gov/ReportsToTheLegislature/Home/GetPDF?fileName=MTP%20DY8%20reporting%20period%204%20April%201-June%2030%202024_8f873f8d-21b9-476d-a6e2-6042835d1b32.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://app.leg.wa.gov/ReportsToTheLegislature/Home/GetPDF%3FfileName%3DMTP%2520DY8%2520reporting%2520period%25204%2520April%25201-June%252030%25202024_8f873f8d-21b9-476d-a6e2-6042835d1b32.pdf&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQFnoECDYQAQ&usg=AOvVaw2Jvu6irp1CZZe2DjToG2lW",
+      "displayed_link": "https://app.leg.wa.gov \u203a Home \u203a GetPDF",
+      "date": "Oct 25, 2024",
+      "snippet": "Provider Directory Application Programming Interface (API) ... Healthcare Interoperability Resources (FHIR) server. Their.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "API",
+        "Healthcare",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 103
+          },
+          "extensions": [
+            "103 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Inc.",
+        "Advantage"
+      ],
+      "source": "| WA.gov"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Molina+Healthcare,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=UsMmaNWMC8ulptQP7LepsQs&start=10&sa=N&sstk=Af40H4UKsOFMvmvzf64-Rybrco5giHY6rAc7Ay_-0W9rJd2TxTQd48_rFRCAs4U0dmo83aZC_Duh7tig50ZcdRwjqOUcuJlM1fjtew&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQ8NMDegQICxAQ",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Molina+Healthcare,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=UsMmaNWMC8ulptQP7LepsQs&start=10&sa=N&sstk=Af40H4UKsOFMvmvzf64-Rybrco5giHY6rAc7Ay_-0W9rJd2TxTQd48_rFRCAs4U0dmo83aZC_Duh7tig50ZcdRwjqOUcuJlM1fjtew&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQ8tMDegQICxAE",
+      "3": "https://www.google.com/search?q=Molina+Healthcare,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=UsMmaNWMC8ulptQP7LepsQs&start=20&sa=N&sstk=Af40H4UKsOFMvmvzf64-Rybrco5giHY6rAc7Ay_-0W9rJd2TxTQd48_rFRCAs4U0dmo83aZC_Duh7tig50ZcdRwjqOUcuJlM1fjtew&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQ8tMDegQICxAG",
+      "4": "https://www.google.com/search?q=Molina+Healthcare,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=UsMmaNWMC8ulptQP7LepsQs&start=30&sa=N&sstk=Af40H4UKsOFMvmvzf64-Rybrco5giHY6rAc7Ay_-0W9rJd2TxTQd48_rFRCAs4U0dmo83aZC_Duh7tig50ZcdRwjqOUcuJlM1fjtew&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQ8tMDegQICxAI",
+      "5": "https://www.google.com/search?q=Molina+Healthcare,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=UsMmaNWMC8ulptQP7LepsQs&start=40&sa=N&sstk=Af40H4UKsOFMvmvzf64-Rybrco5giHY6rAc7Ay_-0W9rJd2TxTQd48_rFRCAs4U0dmo83aZC_Duh7tig50ZcdRwjqOUcuJlM1fjtew&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQ8tMDegQICxAK",
+      "6": "https://www.google.com/search?q=Molina+Healthcare,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=UsMmaNWMC8ulptQP7LepsQs&start=50&sa=N&sstk=Af40H4UKsOFMvmvzf64-Rybrco5giHY6rAc7Ay_-0W9rJd2TxTQd48_rFRCAs4U0dmo83aZC_Duh7tig50ZcdRwjqOUcuJlM1fjtew&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQ8tMDegQICxAM",
+      "7": "https://www.google.com/search?q=Molina+Healthcare,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=UsMmaNWMC8ulptQP7LepsQs&start=60&sa=N&sstk=Af40H4UKsOFMvmvzf64-Rybrco5giHY6rAc7Ay_-0W9rJd2TxTQd48_rFRCAs4U0dmo83aZC_Duh7tig50ZcdRwjqOUcuJlM1fjtew&ved=2ahUKEwjV_fLOl6eNAxXLkokEHexbKrYQ8tMDegQICxAO"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Molina+Healthcare%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Molina+Healthcare%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Molina+Healthcare%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Molina+Healthcare%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Molina+Healthcare%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Molina+Healthcare%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Molina+Healthcare%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Molina+Healthcare%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60"
+    }
+  }
+}

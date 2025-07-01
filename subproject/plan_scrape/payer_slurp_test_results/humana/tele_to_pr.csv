@@ -1,0 +1,3 @@
+practitioner_role_fhir_url,telecom_system,telecom_value,telecom_use
+https://fhir.humana.com/api/PractitionerRole/f9faccef1660792a47c6d2a46cc81f4fbb8f6dd4c49d9e6ad9aef93ea7db6ec7,phone,3307294298,work
+https://fhir.humana.com/api/PractitionerRole/22cb05f3854cefb24f03368e1ede131d685cfe58abf7112ba5d648193b96c55f,phone,3307294298,work

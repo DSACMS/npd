@@ -1,0 +1,287 @@
+{
+  "search_metadata": {
+    "id": "6826c26dd996126eb3b206a3",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/937aaa9778dd799c/6826c26dd996126eb3b206a3.json",
+    "created_at": "2025-05-16 04:43:25 UTC",
+    "processed_at": "2025-05-16 04:43:25 UTC",
+    "google_url": "https://www.google.com/search?q=Elevance+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Elevance+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/937aaa9778dd799c/6826c26dd996126eb3b206a3.html",
+    "total_time_taken": 1.18
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Elevance Health, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Elevance Health, Inc. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 43,
+    "time_taken_displayed": 0.22,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "Does Anthem have an API?",
+      "snippet": "The Patient Access API enables Anthem members to securely access and exchange their medical, pharmacy, dental, and vision claims and clinical data. This API will allow an individual to export up to 5 years of historical information.",
+      "title": "How to Access Our APIs & Data | Anthem",
+      "link": "https://www.anthem.com/developers#:~:text=The%20Patient%20Access%20API%20enables,5%20years%20of%20historical%20information.",
+      "displayed_link": "https://www.anthem.com \u203a developers",
+      "source_logo": "https://serpapi.com/searches/6826c26dd996126eb3b206a3/images/034b2e25aa358e260008d9b534cdc0b0910bcd72982300a113281c9f6e4f5020.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa01ITnNaMjlGVGtKb1pFNWxXakJhYkcxaWNIVlFlbFF6T1ZsT2FWWkROVVZ0VVUxVU4zcG5ZMFpMY25GWWExcHlUMlJ1U25KNVJWVTVSekJyUjNKc2VWUXlhQzExYTNaMlkzVjNXVmwzWjFOdWNGUlVUMng2U25NMVp4SVhZbU5KYldGT1UxcE1jSFpTTlU1dlVIUmxkbmt5VVVrYUlrRkRSRmhNTkd0Vk1sOWZTMVo0TVRsVVR6VTNTMGhGWlVSRlpIUTJRbkYwVGtFIiwiZmN2IjoiMyIsImVpIjoiYmNJbWFOU1pMcHZSNU5vUHRldnkyUUkiLCJxYyI6IkNrSmxiR1YyWVc1alpTQm9aV0ZzZEdnZ2FXNWpJRzFsWkdsallYSmxJR0ZrZG1GdWRHRm5aU0J3Y205MmFXUmxjaUJrYVhKbFkzUnZjbmtnWVhCcElHWm9hWElRQUgwNTRpMF8iLCJxdWVzdGlvbiI6IkRvZXMgQW50aGVtIGhhdmUgYW4gQVBJPyIsImxrIjoiR2hka2IyVnpJR0Z1ZEdobGJTQm9ZWFpsSUdGdUlHRndhUSIsImJzIjoiYy1PeTRKSnd5VTh0Vm5ETUs4bEl6VlhJU0N4TFZVak1VM0FNOExTWDJGdG9KQ2tsbmdLU1RrU1ZUaXpJNU5MZ0VnalBTQ3hSeUN4V0NQVndodWo0b1c0a0tNVmZEaFV1elVnR3FSUmdCQUEiLCJpZCI6ImZjX2JjSW1hTlNaTHB2UjVOb1B0ZXZ5MlFJXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa01ITnNaMjlGVGtKb1pFNWxXakJhYkcxaWNIVlFlbFF6T1ZsT2FWWkROVVZ0VVUxVU4zcG5ZMFpMY25GWWExcHlUMlJ1U25KNVJWVTVSekJyUjNKc2VWUXlhQzExYTNaMlkzVjNXVmwzWjFOdWNGUlVUMng2U25NMVp4SVhZbU5KYldGT1UxcE1jSFpTTlU1dlVIUmxkbmt5VVVrYUlrRkRSRmhNTkd0Vk1sOWZTMVo0TVRsVVR6VTNTMGhGWlVSRlpIUTJRbkYwVGtFIiwiZmN2IjoiMyIsImVpIjoiYmNJbWFOU1pMcHZSNU5vUHRldnkyUUkiLCJxYyI6IkNrSmxiR1YyWVc1alpTQm9aV0ZzZEdnZ2FXNWpJRzFsWkdsallYSmxJR0ZrZG1GdWRHRm5aU0J3Y205MmFXUmxjaUJrYVhKbFkzUnZjbmtnWVhCcElHWm9hWElRQUgwNTRpMF8iLCJxdWVzdGlvbiI6IkRvZXMgQW50aGVtIGhhdmUgYW4gQVBJPyIsImxrIjoiR2hka2IyVnpJR0Z1ZEdobGJTQm9ZWFpsSUdGdUlHRndhUSIsImJzIjoiYy1PeTRKSnd5VTh0Vm5ETUs4bEl6VlhJU0N4TFZVak1VM0FNOExTWDJGdG9KQ2tsbmdLU1RrU1ZUaXpJNU5MZ0VnalBTQ3hSeUN4V0NQVndodWo0b1c0a0tNVmZEaFV1elVnR3FSUmdCQUEiLCJpZCI6ImZjX2JjSW1hTlNaTHB2UjVOb1B0ZXZ5MlFJXzMifQ%3D%3D"
+    },
+    {
+      "question": "What is UHC API?",
+      "snippet": "Application Programming Interface (API) is a free digital solution that allows health care professionals to automate administrative transactions.",
+      "title": "Application Programming Interface (API) - UHCprovider.com",
+      "link": "https://www.uhcprovider.com/en/resource-library/Application-Programming-Interface.html#:~:text=Application%20Programming%20Interface%20(API)%20is,professionals%20to%20automate%20administrative%20transactions.",
+      "displayed_link": "https://www.uhcprovider.com \u203a resource-library \u203a Appli...",
+      "source_logo": "https://serpapi.com/searches/6826c26dd996126eb3b206a3/images/034b2e25aa358e260008d9b534cdc0b0b49cb8eabd29b98466c866d5bbb6dec3.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa01ITnNaMjlGVGtKb1pFNWxXakJhYkcxaWNIVlFlbFF6T1ZsT2FWWkROVVZ0VVUxVU4zcG5ZMFpMY25GWWExcHlUMlJ1U25KNVJWVTVSekJyUjNKc2VWUXlhQzExYTNaMlkzVjNXVmwzWjFOdWNGUlVUMng2U25NMVp4SVhZbU5KYldGT1UxcE1jSFpTTlU1dlVIUmxkbmt5VVVrYUlrRkRSRmhNTkd0Vk1sOWZTMVo0TVRsVVR6VTNTMGhGWlVSRlpIUTJRbkYwVGtFIiwiZmN2IjoiMyIsImVpIjoiYmNJbWFOU1pMcHZSNU5vUHRldnkyUUkiLCJxYyI6IkNrSmxiR1YyWVc1alpTQm9aV0ZzZEdnZ2FXNWpJRzFsWkdsallYSmxJR0ZrZG1GdWRHRm5aU0J3Y205MmFXUmxjaUJrYVhKbFkzUnZjbmtnWVhCcElHWm9hWElRQUgwNTRpMF8iLCJxdWVzdGlvbiI6IldoYXQgaXMgVUhDIEFQST8iLCJsayI6IkdnOTNhR0YwSUdseklIVm9ZeUJoY0drIiwiYnMiOiJjLU95NEpKd3lVOHRWbkRNSzhsSXpWWElTQ3hMVlVqTVUzQU04TFNYMkZ0b0pDa2xuZ0tTVGtTVlRpekk1TkxnRWdqUFNDeFJ5Q3hXQ1BWd2h1ajRvVzRrS01WZkRoVXV6VWdHcVJSZ0JBQSIsImlkIjoiZmNfYmNJbWFOU1pMcHZSNU5vUHRldnkyUUlfMyJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa01ITnNaMjlGVGtKb1pFNWxXakJhYkcxaWNIVlFlbFF6T1ZsT2FWWkROVVZ0VVUxVU4zcG5ZMFpMY25GWWExcHlUMlJ1U25KNVJWVTVSekJyUjNKc2VWUXlhQzExYTNaMlkzVjNXVmwzWjFOdWNGUlVUMng2U25NMVp4SVhZbU5KYldGT1UxcE1jSFpTTlU1dlVIUmxkbmt5VVVrYUlrRkRSRmhNTkd0Vk1sOWZTMVo0TVRsVVR6VTNTMGhGWlVSRlpIUTJRbkYwVGtFIiwiZmN2IjoiMyIsImVpIjoiYmNJbWFOU1pMcHZSNU5vUHRldnkyUUkiLCJxYyI6IkNrSmxiR1YyWVc1alpTQm9aV0ZzZEdnZ2FXNWpJRzFsWkdsallYSmxJR0ZrZG1GdWRHRm5aU0J3Y205MmFXUmxjaUJrYVhKbFkzUnZjbmtnWVhCcElHWm9hWElRQUgwNTRpMF8iLCJxdWVzdGlvbiI6IldoYXQgaXMgVUhDIEFQST8iLCJsayI6IkdnOTNhR0YwSUdseklIVm9ZeUJoY0drIiwiYnMiOiJjLU95NEpKd3lVOHRWbkRNSzhsSXpWWElTQ3hMVlVqTVUzQU04TFNYMkZ0b0pDa2xuZ0tTVGtTVlRpekk1TkxnRWdqUFNDeFJ5Q3hXQ1BWd2h1ajRvVzRrS01WZkRoVXV6VWdHcVJSZ0JBQSIsImlkIjoiZmNfYmNJbWFOU1pMcHZSNU5vUHRldnkyUUlfMyJ9"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "How to Access Our APIs & Data",
+      "link": "https://www.anthem.com/developers",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.anthem.com/developers&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQFnoECCMQAQ&usg=AOvVaw1hVUKeY71s0tvfh6jgNQpX",
+      "displayed_link": "https://www.anthem.com \u203a developers",
+      "favicon": "https://serpapi.com/searches/6826c26dd996126eb3b206a3/images/c6231fbe48bc36774e8015ac669f1775237bcdbe4a83aa6826cff03387737854.png",
+      "snippet": "Provider Directory API. Anthem offers a Provider Directory ... What is the Health Level 7 Fast Healthcare Interoperability Resources (HL7\u00ae FHIR\u00ae) standard?",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Provider Directory",
+        "Health",
+        "Healthcare",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Elevance+Health,+Inc.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQ5t4CegQILRAB"
+      },
+      "source": "Anthem"
+    },
+    {
+      "position": 2,
+      "title": "Home - FHIR Human Services Directory v1.0.0",
+      "link": "https://build.fhir.org/ig/HL7/FHIR-IG-Human-Services-Directory/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://build.fhir.org/ig/HL7/FHIR-IG-Human-Services-Directory/&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQFnoECBoQAQ&usg=AOvVaw06P3ow5Id6JX8X8UKrtwhB",
+      "displayed_link": "https://build.fhir.org \u203a FHIR-IG-Human-Services-Direct...",
+      "favicon": "https://serpapi.com/searches/6826c26dd996126eb3b206a3/images/c6231fbe48bc36774e8015ac669f177515ee439e643def6ba580f630f15071d1.png",
+      "snippet": "The FHIR Human Services and Resource Directory FHIR IG has been aligned with the PDEX Plan Net Provider Directory IG (and US Core by inheritance), rather than ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Elevance+Health,+Inc.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQ5t4CegQIJRAB"
+      },
+      "source": "FHIR specification"
+    },
+    {
+      "position": 3,
+      "title": "ASTP HTI-2 Proposed Rule Task Force 2024 Group 2",
+      "link": "https://www.healthit.gov/sites/default/files/facas/2024-08-07_HTI-2_Proposed_Rule_TF_Group_2_Meeting_Slides_508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/facas/2024-08-07_HTI-2_Proposed_Rule_TF_Group_2_Meeting_Slides_508.pdf&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQFnoECBwQAQ&usg=AOvVaw1x81JLH1goxJaBQTbaVHsq",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a facas",
+      "favicon": "https://serpapi.com/searches/6826c26dd996126eb3b206a3/images/c6231fbe48bc36774e8015ac669f17759eaf53e57e3383f8dfd779a49006e664.jpeg",
+      "date": "Aug 7, 2024",
+      "snippet": "These proposed certification criteria reference a set of. FHIR ... ASTP proposes to adopt a \u201cProvider directory API \u2013 health plan ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider directory API",
+        "health"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Elevance+Health,+Inc.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQ5t4CegQILhAB"
+      },
+      "source": "National Coordinator for Health Information Technology (ONC) (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "FHIR Interoperability: What is it and Why Should We Care?",
+      "link": "https://www.managedhealthcareexecutive.com/view/fhir-interoperability-what-it-and-why-should-we-care",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.managedhealthcareexecutive.com/view/fhir-interoperability-what-it-and-why-should-we-care&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQFnoECCkQAQ&usg=AOvVaw0krgf9PDalyS8oD7p4nXDJ",
+      "displayed_link": "https://www.managedhealthcareexecutive.com \u203a view \u203a f...",
+      "favicon": "https://serpapi.com/searches/6826c26dd996126eb3b206a3/images/c6231fbe48bc36774e8015ac669f177565404da95f9142d193a06cbe8d977e12.png",
+      "date": "Jun 11, 2020",
+      "snippet": "... Provider Directory API among the CMS-regulated payers. This API ... How can FHIR API-based data exchange support a patient-centered approach to ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "API",
+        "FHIR API"
+      ],
+      "missing": [
+        "Inc."
+      ],
+      "must_include": {
+        "word": "Inc.",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Elevance+Health,+%22Inc.%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQ5t4CegQIMxAB"
+      },
+      "source": "Managed Healthcare Executive"
+    },
+    {
+      "position": 5,
+      "title": "View Source",
+      "link": "https://confluence.hl7.org/plugins/viewsource/viewpagesrc.action?pageId=248710899",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/plugins/viewsource/viewpagesrc.action%3FpageId%3D248710899&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQFnoECB4QAQ&usg=AOvVaw2qAaLOFE-RRpMorRpGMlYy",
+      "displayed_link": "https://confluence.hl7.org \u203a plugins \u203a viewpagesrc.action",
+      "favicon": "https://serpapi.com/searches/6826c26dd996126eb3b206a3/images/c6231fbe48bc36774e8015ac669f1775c6125f7269d5a46c06479c96a8326f27.png",
+      "snippet": "FHIR 45337 and FHIR 45338 are duplicates. FHIR ... (PAAPI, Formulary, Provider Directory) If you want to use all of these resources. ... Sheljina Ibrahim(Elevance ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "FHIR",
+        "Provider Directory",
+        "Elevance"
+      ],
+      "missing": [
+        "Inc."
+      ],
+      "must_include": {
+        "word": "Inc.",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Elevance+Health,+%22Inc.%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQ5t4CegQINBAB"
+      },
+      "source": "Carnegie Mellon University (CMU)"
+    },
+    {
+      "position": 6,
+      "title": "Flexpa",
+      "link": "https://twitter.com/Flexpa",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://twitter.com/Flexpa&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQFnoECBsQAQ&usg=AOvVaw1INop8beuDj8Iduf_LCzAG",
+      "displayed_link": "580+ followers",
+      "favicon": "https://serpapi.com/searches/6826c26dd996126eb3b206a3/images/c6231fbe48bc36774e8015ac669f17753e7522cdc81451dbf43fb85953860520.png",
+      "snippet": "... Provider Directory. We've transformed 8 million NPPES ... In FHIR, the meta.tag field can be used very flexibly to \"tag\" a healthcare ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "healthcare"
+      ],
+      "source": "X \u00b7 Flexpa"
+    },
+    {
+      "position": 7,
+      "title": "Da Vinci Video Presentations",
+      "link": "https://confluence.hl7.org/spaces/DVP/pages/78678039/Da+Vinci+Video+Presentations",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/spaces/DVP/pages/78678039/Da%2BVinci%2BVideo%2BPresentations&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQFnoECDAQAQ&usg=AOvVaw3ltMQksI3PjjB1TssNPBTe",
+      "displayed_link": "https://confluence.hl7.org \u203a spaces \u203a DVP \u203a pages \u203a Da+...",
+      "favicon": "https://serpapi.com/searches/6826c26dd996126eb3b206a3/images/c6231fbe48bc36774e8015ac669f1775a3c10ab55b62990e8bba64c9b8b8ce79.png",
+      "snippet": "... FHIR API landscape around people, processes and data. Learn about the ... Provider Directory: Building a Solid Foundation for the Provider Directory API ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Elevance+Health,+Inc.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQ5t4CegQIMhAB"
+      },
+      "source": "HL7 - Confluence"
+    },
+    {
+      "position": 8,
+      "title": "hti-2 proposed rule task force 2024 meeting group 2",
+      "link": "https://www.healthit.gov/sites/default/files/facas/2024-08-07_HTI-2_Proposed_Rule_TF_2024_Group_2_Transcript_508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/facas/2024-08-07_HTI-2_Proposed_Rule_TF_2024_Group_2_Transcript_508.pdf&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQFnoECD4QAQ&usg=AOvVaw3Kn1v17mkpnBZzkb2mfVD4",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a facas",
+      "favicon": "https://serpapi.com/searches/6826c26dd996126eb3b206a3/images/c6231fbe48bc36774e8015ac669f17754d15ea7b96f092717314247df8535967.jpeg",
+      "snippet": "Sheryl Turney, Elevance Health ... to say \u201csupport FHIR API,\u201d that concept, but that ... Provider Directory API Health Plan Coverage for Patients or maybe Patient-.",
+      "snippet_highlighted_words": [
+        "Elevance Health",
+        "FHIR API",
+        "Provider Directory API Health"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "Premium Reports",
+      "link": "https://klasresearch.com/reports",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://klasresearch.com/reports&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQFnoECDsQAQ&usg=AOvVaw2AVHw7AvauBUJJKwiDDsZo",
+      "displayed_link": "https://klasresearch.com \u203a reports",
+      "favicon": "https://serpapi.com/searches/6826c26dd996126eb3b206a3/images/c6231fbe48bc36774e8015ac669f1775eac3ddc4065147db885a97b7c236e932.png",
+      "snippet": "Building on a previously established API, the stakeholders created a FHIR API ... health plans to have a patient access API and a provider directory API.",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR API",
+        "health plans",
+        "API",
+        "provider directory API"
+      ],
+      "source": "KLAS Research"
+    },
+    {
+      "position": 10,
+      "title": "OHS Health Information Technology Annual Report - CT.gov",
+      "link": "https://portal.ct.gov/ohs/-/media/ohs/health-it-advisory-council/publications/ohs-health-information-technology-annual-report-2025.pdf?rev=7e53d8e899fb48b3a736cbd76aa3f2e9",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://portal.ct.gov/ohs/-/media/ohs/health-it-advisory-council/publications/ohs-health-information-technology-annual-report-2025.pdf%3Frev%3D7e53d8e899fb48b3a736cbd76aa3f2e9&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQFnoECD8QAQ&usg=AOvVaw2vhSLWGH-LLxKF8B8YYcgZ",
+      "displayed_link": "https://portal.ct.gov \u203a media \u203a ohs \u203a publications",
+      "favicon": "https://serpapi.com/searches/6826c26dd996126eb3b206a3/images/c6231fbe48bc36774e8015ac669f1775c663b31fb6a25e9a6a9f76fed2de8515.png",
+      "date": "Mar 28, 2025",
+      "snippet": "Fast Healthcare Interoperability Resources (FHIR) Questionnaire ... access and provider directory application programming interfaces (API).",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "provider directory",
+        "API"
+      ],
+      "source": "CT.GOV-Connecticut's Official State Website (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Anthem machine readable files",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Anthem+machine+readable+files&sa=X&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Anthem+machine+readable+files&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Machine-readable files healthcare",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Machine-readable+files+healthcare&sa=X&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQ1QJ6BAg6EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Machine-readable+files+healthcare&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Elevance+Health,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=bcImaNSZLpvR5NoPtevy2QI&start=10&sa=N&sstk=Af40H4XztSofuiN-JdNFMx_LRDqa82mEaMw3Nr0kGwjV4ksesBdkxkfor5yDsQSPFYJzWqETo2XNxg4UQPX4pPqZcGs8zZgPPWmCCg&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQ8NMDegQIDBAI",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Elevance+Health,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=bcImaNSZLpvR5NoPtevy2QI&start=10&sa=N&sstk=Af40H4XztSofuiN-JdNFMx_LRDqa82mEaMw3Nr0kGwjV4ksesBdkxkfor5yDsQSPFYJzWqETo2XNxg4UQPX4pPqZcGs8zZgPPWmCCg&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQ8tMDegQIDBAE",
+      "3": "https://www.google.com/search?q=Elevance+Health,+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=bcImaNSZLpvR5NoPtevy2QI&start=20&sa=N&sstk=Af40H4XztSofuiN-JdNFMx_LRDqa82mEaMw3Nr0kGwjV4ksesBdkxkfor5yDsQSPFYJzWqETo2XNxg4UQPX4pPqZcGs8zZgPPWmCCg&ved=2ahUKEwiUhP3hlqeNAxWbKFkFHbW1PCsQ8tMDegQIDBAG"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Elevance+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Elevance+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Elevance+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Elevance+Health%2C+Inc.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20"
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "search_metadata": {
+    "id": "6826c3e0217ade62bfc91ae4",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/ab6166c80684c058/6826c3e0217ade62bfc91ae4.json",
+    "created_at": "2025-05-16 04:49:36 UTC",
+    "processed_at": "2025-05-16 04:49:36 UTC",
+    "google_url": "https://www.google.com/search?q=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/ab6166c80684c058/6826c3e0217ade62bfc91ae4.html",
+    "total_time_taken": 0.91
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Triton Health Systems, L.L.C. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Triton Health Systems, L.L.C. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 4,
+    "time_taken_displayed": 0.23,
+    "organic_results_state": "Results for exact spelling",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    }
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Solicitation 8070000048 - Oklahoma.gov",
+      "link": "https://oklahoma.gov/content/dam/ok/en/omes/documents/Solicitation8070000048_0.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://oklahoma.gov/content/dam/ok/en/omes/documents/Solicitation8070000048_0.pdf&ved=2ahUKEwiz-ZaTmKeNAxWGMdAFHdKKA3IQFnoECBsQAQ",
+      "displayed_link": "https://oklahoma.gov \u203a dam \u203a omes \u203a documents",
+      "favicon": "https://serpapi.com/searches/6826c3e0217ade62bfc91ae4/images/b25808eb64df6e4c59d8cc4d07a0073e2139ea5212f0d9e8817d3a3ee6a21725.png",
+      "date": "Oct 29, 2019",
+      "snippet": "FHIR \u2013 FAST HEALTHCARE INTEROPERABILITY RESOURCESHEO \u2013 HEALTH-E OKLAHOMA ... systems including the master person index and provider directory.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "HEALTHCARE",
+        "HEALTH",
+        "systems",
+        "provider directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Triton+Health+Systems,+L.L.C.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiz-ZaTmKeNAxWGMdAFHdKKA3IQ5t4CegQIJhAB"
+      },
+      "source": "oklahoma.gov"
+    },
+    {
+      "position": 2,
+      "title": "2021 Qualified Registries",
+      "link": "https://qpp-cm-prod-content.s3.amazonaws.com/uploads/1232/2021%20Qualified%20Registry%20Qualified%20Posting.xlsx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://qpp-cm-prod-content.s3.amazonaws.com/uploads/1232/2021%2520Qualified%2520Registry%2520Qualified%2520Posting.xlsx&ved=2ahUKEwiz-ZaTmKeNAxWGMdAFHdKKA3IQFnoECBkQAQ",
+      "displayed_link": "https://qpp-cm-prod-content.s3.amazonaws.com \u203a ...",
+      "snippet": "... provider directory, data normalization \u2022 Health Information Service Provider ... Extensive data interoparabilty services via API, FHIR, HL7, etc. All ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "Health",
+        "services",
+        "API",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Triton+Health+Systems,+L.L.C.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiz-ZaTmKeNAxWGMdAFHdKKA3IQ5t4CegQIJBAB"
+      },
+      "source": "Amazon Web Services (AWS)"
+    },
+    {
+      "position": 3,
+      "title": "2022 Qualified Registries",
+      "link": "https://qpp-cm-prod-content.s3.amazonaws.com/uploads/1692/2022%20Qualified%20Registry%20Qualified%20Posting.xlsx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://qpp-cm-prod-content.s3.amazonaws.com/uploads/1692/2022%2520Qualified%2520Registry%2520Qualified%2520Posting.xlsx&ved=2ahUKEwiz-ZaTmKeNAxWGMdAFHdKKA3IQFnoECBoQAQ",
+      "displayed_link": "https://qpp-cm-prod-content.s3.amazonaws.com \u203a ...",
+      "snippet": "... provider directory, data normalization \u2022 HISP Services- secure email ... (FHIR), Health Level Seven (HL7), and etc. 44576, APM Entity, APM Performance ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "Services",
+        "FHIR",
+        "Health"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Triton+Health+Systems,+L.L.C.+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiz-ZaTmKeNAxWGMdAFHdKKA3IQ5t4CegQIJRAB"
+      },
+      "source": "Amazon Web Services"
+    },
+    {
+      "position": 4,
+      "title": "The Beat",
+      "link": "https://feeds.simplecast.com/F2qS_sm2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://feeds.simplecast.com/F2qS_sm2&ved=2ahUKEwiz-ZaTmKeNAxWGMdAFHdKKA3IQFnoECBgQAQ",
+      "displayed_link": "https://feeds.simplecast.com \u203a ...",
+      "snippet": "... FHIR, generative AI, and national networks to improve data connectivity and ... provider directory, supporting the development of a statewide health ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory",
+        "health"
+      ],
+      "source": "Simplecast"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 4 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=Triton+Health+Systems,+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Triton+Health+Systems%2C+L.L.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

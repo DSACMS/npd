@@ -1,0 +1,251 @@
+{
+  "search_metadata": {
+    "id": "6826c38eeeabd3f3cc10456c",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/4d5c0f38ceddf844/6826c38eeeabd3f3cc10456c.json",
+    "created_at": "2025-05-16 04:48:14 UTC",
+    "processed_at": "2025-05-16 04:48:14 UTC",
+    "google_url": "https://www.google.com/search?q=SANTA+CLARA+COUNTY+HEALTH+AUTHORITY+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=SANTA+CLARA+COUNTY+HEALTH+AUTHORITY+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/4d5c0f38ceddf844/6826c38eeeabd3f3cc10456c.html",
+    "total_time_taken": 1.25
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "SANTA CLARA COUNTY HEALTH AUTHORITY Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "SANTA CLARA COUNTY HEALTH AUTHORITY Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 32,
+    "time_taken_displayed": 0.21,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "The Provider Directory & Patient Access Application ...",
+      "link": "https://bhdp.santaclaracounty.gov/resources/provider-directory-patient-access-application-program-interface-api",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://bhdp.santaclaracounty.gov/resources/provider-directory-patient-access-application-program-interface-api&ved=2ahUKEwiBrIjsl6eNAxXdGtAFHfLgL9sQFnoECBIQAQ",
+      "displayed_link": "https://bhdp.santaclaracounty.gov \u203a Resources",
+      "favicon": "https://serpapi.com/searches/6826c38eeeabd3f3cc10456c/images/04488e33fbadb5c2fd1e97d61d8d7b8509956794c6bbb112a1c0d96648c25ae2.png",
+      "snippet": "The Provider Directory guide is built on the Fast Healthcare ... (FHIR) STU3 API and serves as the cornerstone of a comprehensive provider directory.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "Healthcare",
+        "FHIR",
+        "API",
+        "provider directory"
+      ],
+      "missing": [
+        "AUTHORITY",
+        "Advantage"
+      ],
+      "source": "Santa Clara County (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Documentation",
+      "link": "https://www.scfhp.com/for-developers/documentation/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.scfhp.com/for-developers/documentation/&ved=2ahUKEwiBrIjsl6eNAxXdGtAFHfLgL9sQFnoECBEQAQ",
+      "displayed_link": "https://www.scfhp.com \u203a for-developers \u203a documentation",
+      "favicon": "https://serpapi.com/searches/6826c38eeeabd3f3cc10456c/images/04488e33fbadb5c2fd1e97d61d8d7b85ef65735d69d693c8139fb2ea86276604.png",
+      "snippet": "The Provider Directory API uses OAuth 2.0 Client Credentials authorization for connecting with the FHIR resources. The Patient Access API uses OAuth 2.0 ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "API"
+      ],
+      "source": "Santa Clara Family Health Plan"
+    },
+    {
+      "position": 3,
+      "title": "Member health data",
+      "link": "https://bhsd.santaclaracounty.gov/member-support/member-health-data",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://bhsd.santaclaracounty.gov/member-support/member-health-data&ved=2ahUKEwiBrIjsl6eNAxXdGtAFHfLgL9sQFnoECBgQAQ",
+      "displayed_link": "https://bhsd.santaclaracounty.gov \u203a member-support",
+      "favicon": "https://serpapi.com/searches/6826c38eeeabd3f3cc10456c/images/04488e33fbadb5c2fd1e97d61d8d7b851729a52b6a3e083155155bbae9d99150.png",
+      "snippet": "... (FHIR) STU3 API and serves as the cornerstone of a comprehensive provider directory. It delineates the scenarios and search criteria for locating a ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "provider directory"
+      ],
+      "missing": [
+        "AUTHORITY",
+        "Advantage"
+      ],
+      "source": "County of Santa Clara Behavioral Health Services (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "California State Medi-Cal Health Information Technology Plan ...",
+      "link": "https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf&ved=2ahUKEwiBrIjsl6eNAxXdGtAFHfLgL9sQFnoECBMQAQ",
+      "displayed_link": "https://www.dhcs.ca.gov \u203a Documents \u203a OHIT \u203a C...",
+      "favicon": "https://serpapi.com/searches/6826c38eeeabd3f3cc10456c/images/04488e33fbadb5c2fd1e97d61d8d7b850b5ba777ad2e0d230e8a1ce5ac576ae8.png",
+      "date": "Mar 1, 2022",
+      "snippet": "requirements to use Fast Healthcare Interoperability Resources (FHIR) for certification, ... and provider directory. The only service area ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 246
+          },
+          "extensions": [
+            "246 pages"
+          ]
+        }
+      },
+      "source": "DHCS (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Necessary Investments and Funding Opportunities",
+      "link": "https://www.chcf.org/wp-content/uploads/2022/06/ClosingGapCAsDataExchangeNecessaryInvestments.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chcf.org/wp-content/uploads/2022/06/ClosingGapCAsDataExchangeNecessaryInvestments.pdf&ved=2ahUKEwiBrIjsl6eNAxXdGtAFHfLgL9sQFnoECBsQAQ",
+      "displayed_link": "https://www.chcf.org \u203a uploads \u203a 2022/06 \u203a Closi...",
+      "favicon": "https://serpapi.com/searches/6826c38eeeabd3f3cc10456c/images/04488e33fbadb5c2fd1e97d61d8d7b85a3b1f30c9d00773fb1c3a77990c22405.png",
+      "date": "Jun 17, 2022",
+      "snippet": "Fast Healthcare Interoperability Resources (FHIR), can facilitate ... Provider directory. CMS MES 75-25 FFP \u2014 operations. Page 20. 20.",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "Provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 34
+          },
+          "extensions": [
+            "34 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=SANTA+CLARA+COUNTY+HEALTH+AUTHORITY+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiBrIjsl6eNAxXdGtAFHfLgL9sQ5t4CegQILRAB"
+      },
+      "source": "California Health Care Foundation"
+    },
+    {
+      "position": 6,
+      "title": "Health Care Payments Data Program - HCAI",
+      "link": "https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306.pdf&ved=2ahUKEwiBrIjsl6eNAxXdGtAFHfLgL9sQFnoECBUQAQ",
+      "displayed_link": "https://hcai.ca.gov \u203a uploads \u203a 2020/12 \u203a HPD-L...",
+      "favicon": "https://serpapi.com/searches/6826c38eeeabd3f3cc10456c/images/04488e33fbadb5c2fd1e97d61d8d7b8591a87244d5256adc45dbf37dd144d64d.png",
+      "date": "Mar 9, 2020",
+      "snippet": "IHA Symphony Provider Directory. The Symphony Provider Directory is California's statewide provider data management solution, helping plans ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "Provider Directory",
+        "plans"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 207
+          },
+          "extensions": [
+            "207 pages"
+          ]
+        }
+      },
+      "source": "HCAI - Department of Health Care Access and Information (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "RFP Sample",
+      "link": "https://media.governmentnavigator.com/media/bid/1715877443_eRFP_-PRC-FY24-0333_Managed_Care_Automation_Platform_5152024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://media.governmentnavigator.com/media/bid/1715877443_eRFP_-PRC-FY24-0333_Managed_Care_Automation_Platform_5152024.pdf&ved=2ahUKEwiBrIjsl6eNAxXdGtAFHfLgL9sQFnoECBYQAQ",
+      "displayed_link": "https://media.governmentnavigator.com \u203a bid \u203a 1...",
+      "date": "May 15, 2024",
+      "snippet": "\u2022 Provider data reporting including 274 network adequacy, provider directory, network ... client via FHIR API. Standard. C. Document Management.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR API"
+      ],
+      "source": "Government Navigator"
+    },
+    {
+      "position": 8,
+      "title": "EXECUTIVE COMMITTEE MEETING Board of Governors",
+      "link": "https://www.lacare.org/sites/default/files/executive_committee_packet_20220426.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/executive_committee_packet_20220426.pdf&ved=2ahUKEwiBrIjsl6eNAxXdGtAFHfLgL9sQFnoECDIQAQ",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files \u203a ex...",
+      "favicon": "https://serpapi.com/searches/6826c38eeeabd3f3cc10456c/images/04488e33fbadb5c2fd1e97d61d8d7b858b2cdc2b3dbee3079a1a0f39c9fd914b.png",
+      "date": "Apr 26, 2022",
+      "snippet": "The first phase is complete with public facing provider directory API's (Application Program ... Resources (FHIR) format, in compliance ...",
+      "snippet_highlighted_words": [
+        "provider directory API's",
+        "FHIR"
+      ],
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 9,
+      "title": "Health Information Technology Oversight Council",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/HITOC_MeetingMaterials_20190404.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%2520Meeting%2520Docs/HITOC_MeetingMaterials_20190404.pdf&ved=2ahUKEwiBrIjsl6eNAxXdGtAFHfLgL9sQFnoECDgQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HPA \u203a OHIT-HITOC",
+      "favicon": "https://serpapi.com/searches/6826c38eeeabd3f3cc10456c/images/04488e33fbadb5c2fd1e97d61d8d7b853471a398334a2e53ebd35ef19e8be424.png",
+      "date": "Apr 4, 2019",
+      "snippet": "\u2022 Includes API (FHIR?) ability. \u2022 CHPL/ONC EHR Reporting Program ... \u2022 Provider directory or something similar expanded from health care to social ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "Provider directory",
+        "health"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 10,
+      "title": "State of Colorado - Office of eHealth Innovation",
+      "link": "https://oehi.colorado.gov/sites/oehi/files/documents/Care%20Coordination%20Environmental%20Scan%20Action%20Plan%20Final_V3%28002%29%20%282%29.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://oehi.colorado.gov/sites/oehi/files/documents/Care%2520Coordination%2520Environmental%2520Scan%2520Action%2520Plan%2520Final_V3%2528002%2529%2520%25282%2529.pdf&ved=2ahUKEwiBrIjsl6eNAxXdGtAFHfLgL9sQFnoECDMQAQ",
+      "displayed_link": "https://oehi.colorado.gov \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/6826c38eeeabd3f3cc10456c/images/04488e33fbadb5c2fd1e97d61d8d7b85d01a9c7dec473bc0bc4029adc7cd692d.png",
+      "snippet": "FHIR. Fast Healthcare Interoperability Resources. FISMA. Federal Information ... Healthcare Provider Directory. HRSN. Health-Related Social Needs. IAPD.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Healthcare",
+        "Healthcare Provider Directory",
+        "Health"
+      ],
+      "source": "Office of eHealth Innovation (.gov)"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=SANTA+CLARA+COUNTY+HEALTH+AUTHORITY+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=j8MmaMGoFd21wN4P8sG_2Q0&start=10&sa=N&sstk=Af40H4XSlXovUK7k7l5GbGalS24VXRYkhbZycFD9SGe8eoneibwVduDr_DLemtzBJ8_eNOxTW2wy1T3jMHOb2WLyaXkk1J1iV28P8g&ved=2ahUKEwiBrIjsl6eNAxXdGtAFHfLgL9sQ8NMDegQIChAI",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=SANTA+CLARA+COUNTY+HEALTH+AUTHORITY+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=j8MmaMGoFd21wN4P8sG_2Q0&start=10&sa=N&sstk=Af40H4XSlXovUK7k7l5GbGalS24VXRYkhbZycFD9SGe8eoneibwVduDr_DLemtzBJ8_eNOxTW2wy1T3jMHOb2WLyaXkk1J1iV28P8g&ved=2ahUKEwiBrIjsl6eNAxXdGtAFHfLgL9sQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=SANTA+CLARA+COUNTY+HEALTH+AUTHORITY+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=j8MmaMGoFd21wN4P8sG_2Q0&start=20&sa=N&sstk=Af40H4XSlXovUK7k7l5GbGalS24VXRYkhbZycFD9SGe8eoneibwVduDr_DLemtzBJ8_eNOxTW2wy1T3jMHOb2WLyaXkk1J1iV28P8g&ved=2ahUKEwiBrIjsl6eNAxXdGtAFHfLgL9sQ8tMDegQIChAG"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=SANTA+CLARA+COUNTY+HEALTH+AUTHORITY+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=SANTA+CLARA+COUNTY+HEALTH+AUTHORITY+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=SANTA+CLARA+COUNTY+HEALTH+AUTHORITY+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=SANTA+CLARA+COUNTY+HEALTH+AUTHORITY+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20"
+    }
+  }
+}

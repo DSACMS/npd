@@ -1,0 +1,99 @@
+{
+  "search_metadata": {
+    "id": "6861d5b9fd9b9075b7debc61",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/4a2d389171cf4f61/6861d5b9fd9b9075b7debc61.json",
+    "created_at": "2025-06-30 00:09:29 UTC",
+    "processed_at": "2025-06-30 00:09:29 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/4a2d389171cf4f61/6861d5b9fd9b9075b7debc61.html",
+    "total_time_taken": 4.45
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:villagecare.org \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:villagecare.org \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 2,
+    "time_taken_displayed": 0.13,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "VillageCareMAX",
+      "link": "https://fhir.villagecare.org/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://fhir.villagecare.org/&ved=2ahUKEwiIt_y87ZeOAxXm7DQHHcxIIVYQFnoECBsQAQ",
+      "displayed_link": "https://fhir.villagecare.org",
+      "favicon": "https://serpapi.com/searches/6861d5b9fd9b9075b7debc61/images/353738b090f84ca0c211a3a37f66b8b0e09bb5570567eee0ceadd095bffe670e.png",
+      "snippet": "Provider Directory Documentation. FAQs & Member Education Resources. How do I share my VillageCareMAX health information with applications on my smartphone ...",
+      "snippet_highlighted_words": [
+        "Provider Directory"
+      ],
+      "source": "VillageCare"
+    },
+    {
+      "position": 2,
+      "title": "Notice and Disclaimer for Connecting Third Party Health ...",
+      "link": "https://fhir.villagecare.org/static/assets/village-care/tos-member.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://fhir.villagecare.org/static/assets/village-care/tos-member.pdf&ved=2ahUKEwiIt_y87ZeOAxXm7DQHHcxIIVYQFnoECBwQAQ",
+      "displayed_link": "https://fhir.villagecare.org \u203a assets \u203a tos-member",
+      "favicon": "https://serpapi.com/searches/6861d5b9fd9b9075b7debc61/images/353738b090f84ca0c211a3a37f66b8b09c9e100a792dc224b8b803b1b980ad08.png",
+      "snippet": "DEVELOPERS; THE ACCURACY OR CURRENCY OF ANY PROVIDER DIRECTORY. INFORMATION MADE AVAILABLE THROUGH OUR API; OR THE ACCURACY,. COMPLETENESS OR TIMELINESS OF ...",
+      "snippet_highlighted_words": [
+        "PROVIDER DIRECTORY"
+      ],
+      "source": "VillageCare"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Provider directory fhir fire ly linkedin com google com login",
+      "link": "https://www.google.com/search?safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&q=Provider+directory+fhir+fire+ly+linkedin+com+google+com+login&sa=X&ved=2ahUKEwiIt_y87ZeOAxXm7DQHHcxIIVYQ1QJ6BAgTEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+directory+fhir+fire+ly+linkedin+com+google+com+login&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Provider directory fhir fire ly linkedin com google com sign",
+      "link": "https://www.google.com/search?safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&q=Provider+directory+fhir+fire+ly+linkedin+com+google+com+sign&sa=X&ved=2ahUKEwiIt_y87ZeOAxXm7DQHHcxIIVYQ1QJ6BAgUEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+directory+fhir+fire+ly+linkedin+com+google+com+sign&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Https provider directory fhir fire ly linkedin com google com",
+      "link": "https://www.google.com/search?safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&q=Https+provider+directory+fhir+fire+ly+linkedin+com+google+com&sa=X&ved=2ahUKEwiIt_y87ZeOAxXm7DQHHcxIIVYQ1QJ6BAgREAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Https+provider+directory+fhir+fire+ly+linkedin+com+google+com&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Avillagecare.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

@@ -1,0 +1,361 @@
+{
+  "search_metadata": {
+    "id": "6826c3cad6eb7213e05c587b",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/853963576720489c/6826c3cad6eb7213e05c587b.json",
+    "created_at": "2025-05-16 04:49:14 UTC",
+    "processed_at": "2025-05-16 04:49:14 UTC",
+    "google_url": "https://www.google.com/search?q=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/853963576720489c/6826c3cad6eb7213e05c587b.html",
+    "total_time_taken": 7.19
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "The Cigna Group Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "The Cigna Group Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 108,
+    "time_taken_displayed": 0.22,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "Is Cigna Medicare Advantage the same as Cigna HealthSpring?",
+      "snippet": "HealthSpring is a Medicare plan that is administered through Cigna's health insurance company. Medicare Part C, also known as Medicare Advantage, Medicare Part D prescription drug plans (PDPs), and Medicare supplement insurance (Medigap) policies are all available through Cigna-HealthSpring.",
+      "title": "HealthSpring and Medicare: benefits, costs, options, and more",
+      "link": "https://www.medicalnewstoday.com/articles/healthspring-medicare#:~:text=HealthSpring%20is%20a%20Medicare%20plan,all%20available%20through%20Cigna%2DHealthSpring.",
+      "displayed_link": "https://www.medicalnewstoday.com \u203a articles \u203a healthspr...",
+      "source_logo": "https://serpapi.com/searches/6826c3cad6eb7213e05c587b/images/606d936f1454383c414d002477030811ba423a94bf69766c359fc0ab0ca5c0b2.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobGNrUTRkVGxsT1RkRGVrSmFiRTFzVDJWcVV6QnZPSFZtTm5SbGQyeENNV2hIYkMwMFYybFdXVFpYUWpGWmRURlFWams0TURKb1IxSnhUMkUzV1ZsV05rNU1XSEZCY1ZkMFExUXRlVGRHYmkxdVoxZzVaVlUyVURsM1FSSVhNR05OYldGTWRrVkpPVlJZTVhOUlVHb3RjbTh0VVUwYUlrRkRSRmhNTkc0MFlYUnlkaTFuVmxSVGMxQm9kVzluZEdabmR6aElaMGs1TTJjIiwiZmN2IjoiMyIsImVpIjoiMGNNbWFMdkVJOVRYMXNRUGotcm8tUU0iLCJxYyI6IkNqNTBhR1VnWTJsbmJtRWdaM0p2ZFhBZ2JXVmthV05oY21VZ1lXUjJZVzUwWVdkbElIQnliM1pwWkdWeUlHUnBjbVZqZEc5eWVTQmhjR2tnWm1ocGNoQUFmWloyTHo4IiwicXVlc3Rpb24iOiJJcyBDaWduYSBNZWRpY2FyZSBBZHZhbnRhZ2UgdGhlIHNhbWUgYXMgQ2lnbmEgSGVhbHRoU3ByaW5nPyIsImxrIjoiYzVPeXlpeFdTTTVNejB0VXlFMU55VXhPTEVwVlNFd3BTOHdyU1V4UFZTakpTRlVvVHN3RkNzRVVaYVFtNXBSa0ZCY1VaZWFsQXdBIiwiYnMiOiJjNFdQc1U3RFFCQkVSWHNWcFdXYWxRSWxTbklsUkxJUVRWSWdJUVVwOWVMYi1CYnduWFczMkIxZFBpRF94bl93QzNFdU1xRklSTGZTenJ5WlVWX3FmaEhoa1N1SDhFU0dTd3dFRDZaRkoxZ1JpQ1dJV0JQZ0lKb1Rmb2hkTm9GZFZXU2JkejNMN3poQ21aNzFRTUNUaElQSUprSk1CUFdzcmxjV0JYb0V3Z3RUZ0NrMHdiZHMtblB0d3lHMXlMNnY5RTAtNm42bGNrS2E4T3BOVFJOeFgyTWZmbllidTVLY2NFdXh5SDVldGM0bjNWX2YyVVZIbjFxcnlkeDNZRHdzNExNeEtIUnN4Szd2VktPd2Q5Q3gyR0hKMXVoeGZtdDdtX2pfVGFuRjVjVU8iLCJpZCI6ImZjXzBjTW1hTHZFSTlUWDFzUVBqLXJvLVFNXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobGNrUTRkVGxsT1RkRGVrSmFiRTFzVDJWcVV6QnZPSFZtTm5SbGQyeENNV2hIYkMwMFYybFdXVFpYUWpGWmRURlFWams0TURKb1IxSnhUMkUzV1ZsV05rNU1XSEZCY1ZkMFExUXRlVGRHYmkxdVoxZzVaVlUyVURsM1FSSVhNR05OYldGTWRrVkpPVlJZTVhOUlVHb3RjbTh0VVUwYUlrRkRSRmhNTkc0MFlYUnlkaTFuVmxSVGMxQm9kVzluZEdabmR6aElaMGs1TTJjIiwiZmN2IjoiMyIsImVpIjoiMGNNbWFMdkVJOVRYMXNRUGotcm8tUU0iLCJxYyI6IkNqNTBhR1VnWTJsbmJtRWdaM0p2ZFhBZ2JXVmthV05oY21VZ1lXUjJZVzUwWVdkbElIQnliM1pwWkdWeUlHUnBjbVZqZEc5eWVTQmhjR2tnWm1ocGNoQUFmWloyTHo4IiwicXVlc3Rpb24iOiJJcyBDaWduYSBNZWRpY2FyZSBBZHZhbnRhZ2UgdGhlIHNhbWUgYXMgQ2lnbmEgSGVhbHRoU3ByaW5nPyIsImxrIjoiYzVPeXlpeFdTTTVNejB0VXlFMU55VXhPTEVwVlNFd3BTOHdyU1V4UFZTakpTRlVvVHN3RkNzRVVaYVFtNXBSa0ZCY1VaZWFsQXdBIiwiYnMiOiJjNFdQc1U3RFFCQkVSWHNWcFdXYWxRSWxTbklsUkxJUVRWSWdJUVVwOWVMYi1CYnduWFczMkIxZFBpRF94bl93QzNFdU1xRklSTGZTenJ5WlVWX3FmaEhoa1N1SDhFU0dTd3dFRDZaRkoxZ1JpQ1dJV0JQZ0lKb1Rmb2hkTm9GZFZXU2JkejNMN3poQ21aNzFRTUNUaElQSUprSk1CUFdzcmxjV0JYb0V3Z3RUZ0NrMHdiZHMtblB0d3lHMXlMNnY5RTAtNm42bGNrS2E4T3BOVFJOeFgyTWZmbllidTVLY2NFdXh5SDVldGM0bjNWX2YyVVZIbjFxcnlkeDNZRHdzNExNeEtIUnN4Szd2VktPd2Q5Q3gyR0hKMXVoeGZtdDdtX2pfVGFuRjVjVU8iLCJpZCI6ImZjXzBjTW1hTHZFSTlUWDFzUVBqLXJvLVFNXzMifQ%3D%3D"
+    },
+    {
+      "question": "What is a Tier 1 provider for Cigna?",
+      "snippet": "Tier 1 includes all physicians who have earned the Cigna Care Designation, although it is important to note that not all Tier 1 providers have the Cigna Care Designation. Cigna Care Designation is a program that distinguishes physicians in certain specialties who meet specific quality and cost-efficiency measures.",
+      "title": "Resources - Cigna Tiered Benefits - CHCP",
+      "link": "https://static.cigna.com/assets/chcp/resourceLibrary/medicalResourcesList/medicalClinicalHealthandWellness/medicalClinHealthWellCignaTieredBenefits.html#:~:text=Tier%201%20includes%20all%20physicians,quality%20and%20cost%2Defficiency%20measures.",
+      "displayed_link": "https://static.cigna.com \u203a chcp \u203a medicalResourcesList",
+      "source_logo": "https://serpapi.com/searches/6826c3cad6eb7213e05c587b/images/606d936f1454383c414d0024770308115dc1baf1c069e34b1d0e7dfec7b6aeb9.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobGNrUTRkVGxsT1RkRGVrSmFiRTFzVDJWcVV6QnZPSFZtTm5SbGQyeENNV2hIYkMwMFYybFdXVFpYUWpGWmRURlFWams0TURKb1IxSnhUMkUzV1ZsV05rNU1XSEZCY1ZkMFExUXRlVGRHYmkxdVoxZzVaVlUyVURsM1FSSVhNR05OYldGTWRrVkpPVlJZTVhOUlVHb3RjbTh0VVUwYUlrRkRSRmhNTkc0MFlYUnlkaTFuVmxSVGMxQm9kVzluZEdabmR6aElaMGs1TTJjIiwiZmN2IjoiMyIsImVpIjoiMGNNbWFMdkVJOVRYMXNRUGotcm8tUU0iLCJxYyI6IkNqNTBhR1VnWTJsbmJtRWdaM0p2ZFhBZ2JXVmthV05oY21VZ1lXUjJZVzUwWVdkbElIQnliM1pwWkdWeUlHUnBjbVZqZEc5eWVTQmhjR2tnWm1ocGNoQUFmWloyTHo4IiwicXVlc3Rpb24iOiJXaGF0IGlzIGEgVGllciAxIHByb3ZpZGVyIGZvciBDaWduYT8iLCJsayI6IkdpTjNhR0YwSUdseklHRWdkR2xsY2lBeElIQnliM1pwWkdWeUlHWnZjaUJqYVdkdVlRIiwiYnMiOiJjNFdQc1U3RFFCQkVSWHNWcFdXYWxRSWxTbklsUkxJUVRWSWdJUVVwOWVMYi1CYnduWFczMkIxZFBpRF94bl93QzNFdU1xRklSTGZTenJ5WlVWX3FmaEhoa1N1SDhFU0dTd3dFRDZaRkoxZ1JpQ1dJV0JQZ0lKb1Rmb2hkTm9GZFZXU2JkejNMN3poQ21aNzFRTUNUaElQSUprSk1CUFdzcmxjV0JYb0V3Z3RUZ0NrMHdiZHMtblB0d3lHMXlMNnY5RTAtNm42bGNrS2E4T3BOVFJOeFgyTWZmbllidTVLY2NFdXh5SDVldGM0bjNWX2YyVVZIbjFxcnlkeDNZRHdzNExNeEtIUnN4Szd2VktPd2Q5Q3gyR0hKMXVoeGZtdDdtX2pfVGFuRjVjVU8iLCJpZCI6ImZjXzBjTW1hTHZFSTlUWDFzUVBqLXJvLVFNXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobGNrUTRkVGxsT1RkRGVrSmFiRTFzVDJWcVV6QnZPSFZtTm5SbGQyeENNV2hIYkMwMFYybFdXVFpYUWpGWmRURlFWams0TURKb1IxSnhUMkUzV1ZsV05rNU1XSEZCY1ZkMFExUXRlVGRHYmkxdVoxZzVaVlUyVURsM1FSSVhNR05OYldGTWRrVkpPVlJZTVhOUlVHb3RjbTh0VVUwYUlrRkRSRmhNTkc0MFlYUnlkaTFuVmxSVGMxQm9kVzluZEdabmR6aElaMGs1TTJjIiwiZmN2IjoiMyIsImVpIjoiMGNNbWFMdkVJOVRYMXNRUGotcm8tUU0iLCJxYyI6IkNqNTBhR1VnWTJsbmJtRWdaM0p2ZFhBZ2JXVmthV05oY21VZ1lXUjJZVzUwWVdkbElIQnliM1pwWkdWeUlHUnBjbVZqZEc5eWVTQmhjR2tnWm1ocGNoQUFmWloyTHo4IiwicXVlc3Rpb24iOiJXaGF0IGlzIGEgVGllciAxIHByb3ZpZGVyIGZvciBDaWduYT8iLCJsayI6IkdpTjNhR0YwSUdseklHRWdkR2xsY2lBeElIQnliM1pwWkdWeUlHWnZjaUJqYVdkdVlRIiwiYnMiOiJjNFdQc1U3RFFCQkVSWHNWcFdXYWxRSWxTbklsUkxJUVRWSWdJUVVwOWVMYi1CYnduWFczMkIxZFBpRF94bl93QzNFdU1xRklSTGZTenJ5WlVWX3FmaEhoa1N1SDhFU0dTd3dFRDZaRkoxZ1JpQ1dJV0JQZ0lKb1Rmb2hkTm9GZFZXU2JkejNMN3poQ21aNzFRTUNUaElQSUprSk1CUFdzcmxjV0JYb0V3Z3RUZ0NrMHdiZHMtblB0d3lHMXlMNnY5RTAtNm42bGNrS2E4T3BOVFJOeFgyTWZmbllidTVLY2NFdXh5SDVldGM0bjNWX2YyVVZIbjFxcnlkeDNZRHdzNExNeEtIUnN4Szd2VktPd2Q5Q3gyR0hKMXVoeGZtdDdtX2pfVGFuRjVjVU8iLCJpZCI6ImZjXzBjTW1hTHZFSTlUWDFzUVBqLXJvLVFNXzMifQ%3D%3D"
+    },
+    {
+      "question": "What are the Cigna Medicare Advantage incentives?",
+      "snippet": "What is Cigna Medicare Advantage Incentives program? The Cigna Medicare Advantage Incentives program is designed to help you achieve your health goals. Get rewarded for getting your Yearly Health Check-Up, additional screenings and other healthy activities \u2013 plus you can earn rewards for completing these actions.",
+      "title": "Frequently Asked Questions Rewards - Cigna Healthy Today",
+      "link": "https://cignahealthytoday.com/help/faq-rewards#:~:text=What%20is%20Cigna%20Medicare%20Advantage,rewards%20for%20completing%20these%20actions.",
+      "displayed_link": "https://cignahealthytoday.com \u203a help \u203a faq-rewards",
+      "source_logo": "https://serpapi.com/searches/6826c3cad6eb7213e05c587b/images/606d936f1454383c414d002477030811e7a4d5b29ec4fba95e9e83d118474c71.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobGNrUTRkVGxsT1RkRGVrSmFiRTFzVDJWcVV6QnZPSFZtTm5SbGQyeENNV2hIYkMwMFYybFdXVFpYUWpGWmRURlFWams0TURKb1IxSnhUMkUzV1ZsV05rNU1XSEZCY1ZkMFExUXRlVGRHYmkxdVoxZzVaVlUyVURsM1FSSVhNR05OYldGTWRrVkpPVlJZTVhOUlVHb3RjbTh0VVUwYUlrRkRSRmhNTkc0MFlYUnlkaTFuVmxSVGMxQm9kVzluZEdabmR6aElaMGs1TTJjIiwiZmN2IjoiMyIsImVpIjoiMGNNbWFMdkVJOVRYMXNRUGotcm8tUU0iLCJxYyI6IkNqNTBhR1VnWTJsbmJtRWdaM0p2ZFhBZ2JXVmthV05oY21VZ1lXUjJZVzUwWVdkbElIQnliM1pwWkdWeUlHUnBjbVZqZEc5eWVTQmhjR2tnWm1ocGNoQUFmWloyTHo4IiwicXVlc3Rpb24iOiJXaGF0IGFyZSB0aGUgQ2lnbmEgTWVkaWNhcmUgQWR2YW50YWdlIGluY2VudGl2ZXM/IiwibGsiOiJHakIzYUdGMElHRnlaU0IwYUdVZ1kybG5ibUVnYldWa2FXTmhjbVVnWVdSMllXNTBZV2RsSUdsdVkyVnVkR2wyWlhNIiwiYnMiOiJjNFdQc1U3RFFCQkVSWHNWcFdXYWxRSWxTbklsUkxJUVRWSWdJUVVwOWVMYi1CYnduWFczMkIxZFBpRF94bl93QzNFdU1xRklSTGZTenJ5WlVWX3FmaEhoa1N1SDhFU0dTd3dFRDZaRkoxZ1JpQ1dJV0JQZ0lKb1Rmb2hkTm9GZFZXU2JkejNMN3poQ21aNzFRTUNUaElQSUprSk1CUFdzcmxjV0JYb0V3Z3RUZ0NrMHdiZHMtblB0d3lHMXlMNnY5RTAtNm42bGNrS2E4T3BOVFJOeFgyTWZmbllidTVLY2NFdXh5SDVldGM0bjNWX2YyVVZIbjFxcnlkeDNZRHdzNExNeEtIUnN4Szd2VktPd2Q5Q3gyR0hKMXVoeGZtdDdtX2pfVGFuRjVjVU8iLCJpZCI6ImZjXzBjTW1hTHZFSTlUWDFzUVBqLXJvLVFNXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobGNrUTRkVGxsT1RkRGVrSmFiRTFzVDJWcVV6QnZPSFZtTm5SbGQyeENNV2hIYkMwMFYybFdXVFpYUWpGWmRURlFWams0TURKb1IxSnhUMkUzV1ZsV05rNU1XSEZCY1ZkMFExUXRlVGRHYmkxdVoxZzVaVlUyVURsM1FSSVhNR05OYldGTWRrVkpPVlJZTVhOUlVHb3RjbTh0VVUwYUlrRkRSRmhNTkc0MFlYUnlkaTFuVmxSVGMxQm9kVzluZEdabmR6aElaMGs1TTJjIiwiZmN2IjoiMyIsImVpIjoiMGNNbWFMdkVJOVRYMXNRUGotcm8tUU0iLCJxYyI6IkNqNTBhR1VnWTJsbmJtRWdaM0p2ZFhBZ2JXVmthV05oY21VZ1lXUjJZVzUwWVdkbElIQnliM1pwWkdWeUlHUnBjbVZqZEc5eWVTQmhjR2tnWm1ocGNoQUFmWloyTHo4IiwicXVlc3Rpb24iOiJXaGF0IGFyZSB0aGUgQ2lnbmEgTWVkaWNhcmUgQWR2YW50YWdlIGluY2VudGl2ZXM%2FIiwibGsiOiJHakIzYUdGMElHRnlaU0IwYUdVZ1kybG5ibUVnYldWa2FXTmhjbVVnWVdSMllXNTBZV2RsSUdsdVkyVnVkR2wyWlhNIiwiYnMiOiJjNFdQc1U3RFFCQkVSWHNWcFdXYWxRSWxTbklsUkxJUVRWSWdJUVVwOWVMYi1CYnduWFczMkIxZFBpRF94bl93QzNFdU1xRklSTGZTenJ5WlVWX3FmaEhoa1N1SDhFU0dTd3dFRDZaRkoxZ1JpQ1dJV0JQZ0lKb1Rmb2hkTm9GZFZXU2JkejNMN3poQ21aNzFRTUNUaElQSUprSk1CUFdzcmxjV0JYb0V3Z3RUZ0NrMHdiZHMtblB0d3lHMXlMNnY5RTAtNm42bGNrS2E4T3BOVFJOeFgyTWZmbllidTVLY2NFdXh5SDVldGM0bjNWX2YyVVZIbjFxcnlkeDNZRHdzNExNeEtIUnN4Szd2VktPd2Q5Q3gyR0hKMXVoeGZtdDdtX2pfVGFuRjVjVU8iLCJpZCI6ImZjXzBjTW1hTHZFSTlUWDFzUVBqLXJvLVFNXzMifQ%3D%3D"
+    },
+    {
+      "question": "How do I update provider information with Cigna?",
+      "snippet": "You may update your information online, by phone or by fax: Online: Visit our website CignaforHCP.com (log into your provider account and fill out the Update Provider Information form under \"Working With Cigna\" tab).",
+      "title": "Keep Us Posted So We Can Keep You Informed - Cigna Healthcare",
+      "link": "https://static.cigna.com/assets/chcp/resourceLibrary/behavioralResources/communications/newsletters/2014/4thQtr2014/keepUsPostedSoWeCanKeepYouInformed.html#:~:text=You%20may%20update%20your%20information,Working%20With%20Cigna%22%20tab).",
+      "displayed_link": "https://static.cigna.com \u203a communications \u203a newsletters",
+      "source_logo": "https://serpapi.com/searches/6826c3cad6eb7213e05c587b/images/606d936f1454383c414d0024770308118a86de829c664d32127810707d842452.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobGNrUTRkVGxsT1RkRGVrSmFiRTFzVDJWcVV6QnZPSFZtTm5SbGQyeENNV2hIYkMwMFYybFdXVFpYUWpGWmRURlFWams0TURKb1IxSnhUMkUzV1ZsV05rNU1XSEZCY1ZkMFExUXRlVGRHYmkxdVoxZzVaVlUyVURsM1FSSVhNR05OYldGTWRrVkpPVlJZTVhOUlVHb3RjbTh0VVUwYUlrRkRSRmhNTkc0MFlYUnlkaTFuVmxSVGMxQm9kVzluZEdabmR6aElaMGs1TTJjIiwiZmN2IjoiMyIsImVpIjoiMGNNbWFMdkVJOVRYMXNRUGotcm8tUU0iLCJxYyI6IkNqNTBhR1VnWTJsbmJtRWdaM0p2ZFhBZ2JXVmthV05oY21VZ1lXUjJZVzUwWVdkbElIQnliM1pwWkdWeUlHUnBjbVZqZEc5eWVTQmhjR2tnWm1ocGNoQUFmWloyTHo4IiwicXVlc3Rpb24iOiJIb3cgZG8gSSB1cGRhdGUgcHJvdmlkZXIgaW5mb3JtYXRpb24gd2l0aCBDaWduYT8iLCJsayI6IkdpMW9iM2NnZEc4Z2RYQmtZWFJsSUhCeWIzWnBaR1Z5SUdsdVptOXliV0YwYVc5dUlIZHBkR2dnWTJsbmJtRSIsImJzIjoiYzRXUHNVN0RRQkJFUlhzVnBXV2FsUUlsU25JbFJMSVFUVklnSVFVcDllTGItQmJ3blhXMzJCMWRQaURfeG5fd0MzRXVNcUZJUkxmU3pyeVpVVl9xZmhIaGtTdUg4RVNHU3d3RUQ2WkZKMWdSaUNXSVdCUGdJSm9UZm9oZE5vRmRWV1NiZHozTDd6aENtWjcxUU1DVGhJUElKa0pNQlBXc3JsY1dCWG9Fd2d0VGdDazB3YmRzLW5QdHd5RzF5TDZ2OUUwLTZuNmxja0thOE9wTlRSTnhYMk1mZm5ZYnU1S2NjRXV4eUg1ZXRjNG4zVl9mMlVWSG4xcXJ5ZHgzWUR3czRMTXhLSFJzeEs3dlZLT3dkOUN4MkdISjF1aHhmbXQ3bV9qX1RhbkY1Y1VPIiwiaWQiOiJmY18wY01tYUx2RUk5VFgxc1FQai1yby1RTV8zIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobGNrUTRkVGxsT1RkRGVrSmFiRTFzVDJWcVV6QnZPSFZtTm5SbGQyeENNV2hIYkMwMFYybFdXVFpYUWpGWmRURlFWams0TURKb1IxSnhUMkUzV1ZsV05rNU1XSEZCY1ZkMFExUXRlVGRHYmkxdVoxZzVaVlUyVURsM1FSSVhNR05OYldGTWRrVkpPVlJZTVhOUlVHb3RjbTh0VVUwYUlrRkRSRmhNTkc0MFlYUnlkaTFuVmxSVGMxQm9kVzluZEdabmR6aElaMGs1TTJjIiwiZmN2IjoiMyIsImVpIjoiMGNNbWFMdkVJOVRYMXNRUGotcm8tUU0iLCJxYyI6IkNqNTBhR1VnWTJsbmJtRWdaM0p2ZFhBZ2JXVmthV05oY21VZ1lXUjJZVzUwWVdkbElIQnliM1pwWkdWeUlHUnBjbVZqZEc5eWVTQmhjR2tnWm1ocGNoQUFmWloyTHo4IiwicXVlc3Rpb24iOiJIb3cgZG8gSSB1cGRhdGUgcHJvdmlkZXIgaW5mb3JtYXRpb24gd2l0aCBDaWduYT8iLCJsayI6IkdpMW9iM2NnZEc4Z2RYQmtZWFJsSUhCeWIzWnBaR1Z5SUdsdVptOXliV0YwYVc5dUlIZHBkR2dnWTJsbmJtRSIsImJzIjoiYzRXUHNVN0RRQkJFUlhzVnBXV2FsUUlsU25JbFJMSVFUVklnSVFVcDllTGItQmJ3blhXMzJCMWRQaURfeG5fd0MzRXVNcUZJUkxmU3pyeVpVVl9xZmhIaGtTdUg4RVNHU3d3RUQ2WkZKMWdSaUNXSVdCUGdJSm9UZm9oZE5vRmRWV1NiZHozTDd6aENtWjcxUU1DVGhJUElKa0pNQlBXc3JsY1dCWG9Fd2d0VGdDazB3YmRzLW5QdHd5RzF5TDZ2OUUwLTZuNmxja0thOE9wTlRSTnhYMk1mZm5ZYnU1S2NjRXV4eUg1ZXRjNG4zVl9mMlVWSG4xcXJ5ZHgzWUR3czRMTXhLSFJzeEs3dlZLT3dkOUN4MkdISjF1aHhmbXQ3bV9qX1RhbkY1Y1VPIiwiaWQiOiJmY18wY01tYUx2RUk5VFgxc1FQai1yby1RTV8zIn0%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Service APIs",
+      "link": "https://developer.cigna.com/service-apis",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.cigna.com/service-apis&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8QFnoECBsQAQ",
+      "displayed_link": "https://developer.cigna.com \u203a service-apis",
+      "favicon": "https://serpapi.com/searches/6826c3cad6eb7213e05c587b/images/b47e532e12f82eabbbbcf53eaff573ad7395d892720fd63c6f7ae634bee2ca49.png",
+      "snippet": "The Provider Directory API accesses the Cigna FHIR server portion of the Provider and Pharmacy Directories. Using only read-only RESTful GET API calls, you can ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "the Cigna FHIR",
+        "API"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Provider Directory",
+            "link": "https://developer.cigna.com/service-apis/provider-directory/documentation"
+          },
+          {
+            "title": "Patient Access",
+            "link": "https://developer.cigna.com/service-apis/patient-access/getting-started"
+          },
+          {
+            "title": "Developer",
+            "link": "https://developer.cigna.com/docs/service-apis/payer-to-payer"
+          }
+        ]
+      },
+      "missing": [
+        "Group",
+        "Medicare",
+        "Advantage"
+      ],
+      "source": "Cigna Developer Portal"
+    },
+    {
+      "position": 2,
+      "title": "Interoperability APIs",
+      "link": "https://quartzbenefits.com/contact-quartz/interoperability-apis/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://quartzbenefits.com/contact-quartz/interoperability-apis/&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8QFnoECBgQAQ",
+      "displayed_link": "https://quartzbenefits.com \u203a Contact Quartz",
+      "favicon": "https://serpapi.com/searches/6826c3cad6eb7213e05c587b/images/b47e532e12f82eabbbbcf53eaff573adace8679f9d30d0a7ed5615401c448313.png",
+      "snippet": "FHIR Provider Directory API. As mandated by the Centers for Medicare and Medicaid Services, the Quartz FHIR Provider Directory API meets the FHIR specification ...",
+      "snippet_highlighted_words": [
+        "FHIR Provider Directory API",
+        "Medicare",
+        "FHIR Provider Directory API",
+        "FHIR"
+      ],
+      "source": "Quartz Benefits"
+    },
+    {
+      "position": 3,
+      "title": "061719-cigna-comments-on-tefca-draft-2. ...",
+      "link": "https://www.healthit.gov/sites/default/files/webform/tefca_comment_form/061719-cigna-comments-on-tefca-draft-2.final_.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/webform/tefca_comment_form/061719-cigna-comments-on-tefca-draft-2.final_.pdf&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8QFnoECB8QAQ",
+      "displayed_link": "https://www.healthit.gov \u203a tefca_comment_form",
+      "favicon": "https://serpapi.com/searches/6826c3cad6eb7213e05c587b/images/b47e532e12f82eabbbbcf53eaff573add9ec4e2095f04c309b8f277cd148c54a.jpeg",
+      "date": "Jun 17, 2019",
+      "snippet": "... provider directory, and payer networks, should be published ... Therefore, Cigna requests ONC adopt FHIR Release 4 (or the most ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "Cigna",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 8
+          },
+          "extensions": [
+            "8 pages"
+          ]
+        }
+      },
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Interoperability Vendors with a",
+      "link": "https://quantori.com/Interoperability_Vendors_with_a_unique_set_of_features_newly_termed_Datasynthex_Vendors.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://quantori.com/Interoperability_Vendors_with_a_unique_set_of_features_newly_termed_Datasynthex_Vendors.pdf&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8QFnoECB4QAQ",
+      "displayed_link": "https://quantori.com \u203a Interoperability_Vendors_...",
+      "favicon": "https://serpapi.com/searches/6826c3cad6eb7213e05c587b/images/b47e532e12f82eabbbbcf53eaff573ad8801c213b7a890ef6347aa878fe04f28.png",
+      "date": "Jun 15, 2023",
+      "snippet": "\u25cb FHIR API. \u25cb Patient-facing app. \u25cb Representation State. Transfer (REST) based. FHIR API with patient-facing app for patient access APIs. 1Up.",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "FHIR API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 13
+          },
+          "extensions": [
+            "13 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Group"
+      ],
+      "must_include": {
+        "word": "Group",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=The+Cigna+%22Group%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8Q5t4CegQIIRAB"
+      },
+      "source": "Quantori"
+    },
+    {
+      "position": 5,
+      "title": "FHIR Interoperability: What is it and Why Should We Care?",
+      "link": "https://www.managedhealthcareexecutive.com/view/fhir-interoperability-what-it-and-why-should-we-care",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.managedhealthcareexecutive.com/view/fhir-interoperability-what-it-and-why-should-we-care&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8QFnoECCQQAQ",
+      "displayed_link": "https://www.managedhealthcareexecutive.com \u203a view \u203a f...",
+      "favicon": "https://serpapi.com/searches/6826c3cad6eb7213e05c587b/images/b47e532e12f82eabbbbcf53eaff573add9955726a237f151cd3c0e64e02a96c5.png",
+      "date": "Jun 11, 2020",
+      "snippet": "... Provider Directory API among the CMS-regulated payers. This API ... How can FHIR API-based data exchange support a patient-centered approach to ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "API",
+        "FHIR API"
+      ],
+      "source": "Managed Healthcare Executive"
+    },
+    {
+      "position": 6,
+      "title": "Changelog - Flexpa Docs",
+      "link": "https://www.flexpa.com/docs/changelog",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/changelog&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8QFnoECBkQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a changelog",
+      "favicon": "https://serpapi.com/searches/6826c3cad6eb7213e05c587b/images/b47e532e12f82eabbbbcf53eaff573ad545681b5a17a0e6d0627a5798bdfaa5f.png",
+      "snippet": "This directory allows you to search for healthcare providers and organizations using FHIR's standard search capabilities. The Provider Directory includes:.",
+      "snippet_highlighted_words": [
+        "FHIR's",
+        "Provider Directory"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 7,
+      "title": "Kristin Julason Damato Vice President Global Public Policy ...",
+      "link": "https://downloads.regulations.gov/CMS-2022-0163-0532/attachment_1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://downloads.regulations.gov/CMS-2022-0163-0532/attachment_1.pdf&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8QFnoECCAQAQ",
+      "displayed_link": "https://downloads.regulations.gov \u203a attachment_1",
+      "date": "Dec 6, 2022",
+      "snippet": "... provider directory validations at the state and ... A directory of payer and provider Fast Healthcare Interoperability Resources. (FHIR) ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 6
+          },
+          "extensions": [
+            "6 pages"
+          ]
+        }
+      },
+      "source": "Regulations.gov"
+    },
+    {
+      "position": 8,
+      "title": "Meet CMS Patient Access API Rule Compliance",
+      "link": "https://onerecord.com/for-payers",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://onerecord.com/for-payers&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8QFnoECDsQAQ",
+      "displayed_link": "https://onerecord.com \u203a for-payers",
+      "favicon": "https://serpapi.com/searches/6826c3cad6eb7213e05c587b/images/b47e532e12f82eabbbbcf53eaff573ad9f537ef09faff11dfc76d6659452ed81.png",
+      "date": "Jul 1, 2021",
+      "snippet": "Authorize OneRecord with your EHR vendor today. Share FHIR endpoint ... Do you have a plan for Patient Access API and Provider Directory API set ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "Group"
+      ],
+      "must_include": {
+        "word": "Group",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=The+Cigna+%22Group%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8Q5t4CegQIOhAB"
+      },
+      "source": "OneRecord"
+    },
+    {
+      "position": 9,
+      "title": "Texas Value-Based Payment and Quality Improvement ...",
+      "link": "https://www.hhs.texas.gov/sites/default/files/documents/nov-2024-vbpqiac-agenda-item-8.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.texas.gov/sites/default/files/documents/nov-2024-vbpqiac-agenda-item-8.pdf&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8QFnoECDwQAQ",
+      "displayed_link": "https://www.hhs.texas.gov \u203a files \u203a documents \u203a n...",
+      "favicon": "https://serpapi.com/searches/6826c3cad6eb7213e05c587b/images/b47e532e12f82eabbbbcf53eaff573addb6385792c8d8421e93f99ab4ea5dd9f.png",
+      "date": "Dec 31, 2024",
+      "snippet": "Interoperability Resources (FHIR\u00ae) data. Most ... Interface (API) standards for Patient Access, Provider Access, Provider Directory,.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 85
+          },
+          "extensions": [
+            "85 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=The+Cigna+Group+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8Q5t4CegQIPRAB"
+      },
+      "source": "Texas Health and Human Services (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "Health Care Payments Data Program - HCAI",
+      "link": "https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306-ADA.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306-ADA.pdf&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8QFnoECDcQAQ",
+      "displayed_link": "https://hcai.ca.gov \u203a uploads \u203a 2020/12 \u203a HPD-L...",
+      "favicon": "https://serpapi.com/searches/6826c3cad6eb7213e05c587b/images/b47e532e12f82eabbbbcf53eaff573ad6bf36cf6fff6aefcdceb5153b6c6ee78.png",
+      "date": "Mar 9, 2020",
+      "snippet": "(FHIR\u00ae), which are open-source Health Level ... licensing data, could be used to supplement the provider-directory type of information from.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "supplement",
+        "provider-directory"
+      ],
+      "source": "HCAI - Department of Health Care Access and Information (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Humana API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Humana+API&sa=X&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8Q1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Humana+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Aetna API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Aetna+API&sa=X&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8Q1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Aetna+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Cigna Interoperability",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Cigna+Interoperability&sa=X&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8Q1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Cigna+Interoperability&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Cigna software",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Cigna+software&sa=X&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8Q1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Cigna+software&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=0cMmaLvEI9TX1sQPj-ro-QM&start=10&sa=N&sstk=Af40H4WK0xtieZBIMRAySly58YrwyXwA6A-aQ_rzxXJcXd-EWbHXqJtPAzsgELJkI-0eXslVwPy--5UYROJKQYI-po3mwMjuzScTvQ&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8Q8NMDegQICRAQ",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=0cMmaLvEI9TX1sQPj-ro-QM&start=10&sa=N&sstk=Af40H4WK0xtieZBIMRAySly58YrwyXwA6A-aQ_rzxXJcXd-EWbHXqJtPAzsgELJkI-0eXslVwPy--5UYROJKQYI-po3mwMjuzScTvQ&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8Q8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=0cMmaLvEI9TX1sQPj-ro-QM&start=20&sa=N&sstk=Af40H4WK0xtieZBIMRAySly58YrwyXwA6A-aQ_rzxXJcXd-EWbHXqJtPAzsgELJkI-0eXslVwPy--5UYROJKQYI-po3mwMjuzScTvQ&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8Q8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=0cMmaLvEI9TX1sQPj-ro-QM&start=30&sa=N&sstk=Af40H4WK0xtieZBIMRAySly58YrwyXwA6A-aQ_rzxXJcXd-EWbHXqJtPAzsgELJkI-0eXslVwPy--5UYROJKQYI-po3mwMjuzScTvQ&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8Q8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=0cMmaLvEI9TX1sQPj-ro-QM&start=40&sa=N&sstk=Af40H4WK0xtieZBIMRAySly58YrwyXwA6A-aQ_rzxXJcXd-EWbHXqJtPAzsgELJkI-0eXslVwPy--5UYROJKQYI-po3mwMjuzScTvQ&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8Q8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=0cMmaLvEI9TX1sQPj-ro-QM&start=50&sa=N&sstk=Af40H4WK0xtieZBIMRAySly58YrwyXwA6A-aQ_rzxXJcXd-EWbHXqJtPAzsgELJkI-0eXslVwPy--5UYROJKQYI-po3mwMjuzScTvQ&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8Q8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=0cMmaLvEI9TX1sQPj-ro-QM&start=60&sa=N&sstk=Af40H4WK0xtieZBIMRAySly58YrwyXwA6A-aQ_rzxXJcXd-EWbHXqJtPAzsgELJkI-0eXslVwPy--5UYROJKQYI-po3mwMjuzScTvQ&ved=2ahUKEwj78NKLmKeNAxXUq5UCHQ81Oj8Q8tMDegQICRAO"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=The+Cigna+Group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60"
+    }
+  }
+}

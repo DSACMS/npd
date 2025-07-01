@@ -1,0 +1,329 @@
+{
+  "search_metadata": {
+    "id": "6826c3274fa3baab8a30444c",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/5e5befcf71fc736d/6826c3274fa3baab8a30444c.json",
+    "created_at": "2025-05-16 04:46:31 UTC",
+    "processed_at": "2025-05-16 04:46:31 UTC",
+    "google_url": "https://www.google.com/search?q=Medical+Associates+Clinic%2C+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Medical+Associates+Clinic%2C+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/5e5befcf71fc736d/6826c3274fa3baab8a30444c.html",
+    "total_time_taken": 5.07
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Medical Associates Clinic, P.C. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Medical Associates Clinic, P.C. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 136,
+    "time_taken_displayed": 0.27,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "CMS-9123-P Reducing Provider and Patient Burden",
+      "link": "https://www.cms.gov/files/document/121020-reducing-provider-and-patient-burden-cms-9123-p.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/121020-reducing-provider-and-patient-burden-cms-9123-p.pdf&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0QFnoECBsQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a 121020...",
+      "favicon": "https://serpapi.com/searches/6826c3274fa3baab8a30444c/images/112ea0249c78a675120906435d938594998bf921b811eec5bce3d93ca31fcf08.png",
+      "date": "Jan 1, 2021",
+      "snippet": "payers implement and maintain the Provider Directory API conformant with the HL7 FHIR Da. Vinci Payer Data Exchange Plan Net IG. The Provider ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "Provider"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 347
+          },
+          "extensions": [
+            "347 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Associates"
+      ],
+      "must_include": {
+        "word": "Associates",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Medical+%22Associates%22+Clinic,+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q5t4CegQILBAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0QFnoECCUQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/6826c3274fa3baab8a30444c/images/112ea0249c78a675120906435d938594047494eb47a215c9a87524cff43eecc2.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR",
+        "care"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 3,
+      "title": "Health Information Technology Council Report to the ...",
+      "link": "https://malegislature.gov/Bills/192/HD4164.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://malegislature.gov/Bills/192/HD4164.pdf&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0QFnoECBkQAQ",
+      "displayed_link": "https://malegislature.gov \u203a Bills",
+      "favicon": "https://serpapi.com/searches/6826c3274fa3baab8a30444c/images/112ea0249c78a675120906435d938594441f4e14a1b1ab7c482bada95a54faa1.jpeg",
+      "snippet": "Service options being considered include a FHIR API to. Provider Directory, FHIR Exchange and Routing Services and FHIR-HL7 Broker and Message. Transformation ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory",
+        "FHIR",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 24
+          },
+          "extensions": [
+            "24 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Clinic,"
+      ],
+      "must_include": {
+        "word": "Clinic,",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Medical+Associates+%22Clinic,%22+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q5t4CegQIKxAB"
+      },
+      "source": "General Court of the Commonwealth of Massachusetts (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "CMS ISSUES FINAL RULE REGARDING UPDATES ON ...",
+      "link": "https://hancockdaniel.com/2020/06/cms-issues-final-rule-regarding-updates-on-conditions-of-participation-for-hospitals-and-other-requirements-for-health-plans-and-providers/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hancockdaniel.com/2020/06/cms-issues-final-rule-regarding-updates-on-conditions-of-participation-for-hospitals-and-other-requirements-for-health-plans-and-providers/&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0QFnoECBYQAQ",
+      "displayed_link": "https://hancockdaniel.com \u203a 2020/06 \u203a cms-issues-final-r...",
+      "favicon": "https://serpapi.com/searches/6826c3274fa3baab8a30444c/images/112ea0249c78a675120906435d938594f604c57a5d98e9ed95635c506d3ab000.png",
+      "date": "Jun 9, 2020",
+      "snippet": "... FHIR API endpoint. The purpose behind making the list of providers ... PROVIDER DIRECTORY API. The CMS-regulated payers noted above ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "PROVIDER DIRECTORY API"
+      ],
+      "missing": [
+        "Associates",
+        "Clinic,"
+      ],
+      "source": "Hancock Daniel"
+    },
+    {
+      "position": 5,
+      "title": "Craig Behm - PA General Assembly",
+      "link": "https://www.legis.state.pa.us/WU01/LI/TR/Transcripts/2024_0534_0006_TSTMNY.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.legis.state.pa.us/WU01/LI/TR/Transcripts/2024_0534_0006_TSTMNY.pdf&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0QFnoECB0QAQ",
+      "displayed_link": "https://www.legis.state.pa.us \u203a Transcripts \u203a 2024_...",
+      "favicon": "https://serpapi.com/searches/6826c3274fa3baab8a30444c/images/112ea0249c78a675120906435d9385942cdf3a80c250f578dd62cea1c3b556bb.png",
+      "date": "Feb 28, 2024",
+      "snippet": "FHIR APIs. Push Notifications. Reports. EHNAC. Flat Files. 3. Page 3. Key ... Exchange provider directory go live, the first. Washington D.C. ...",
+      "snippet_highlighted_words": [
+        "FHIR APIs",
+        "provider directory"
+      ],
+      "missing": [
+        "Associates"
+      ],
+      "must_include": {
+        "word": "Associates",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Medical+%22Associates%22+Clinic,+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q5t4CegQILRAB"
+      },
+      "source": "legis.state.pa.us"
+    },
+    {
+      "position": 6,
+      "title": "Advancing Interoperability in Home and Community Based ...",
+      "link": "https://www.healthit.gov/sites/default/files/2018-12/AdvancingInteropinHCBS.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/2018-12/AdvancingInteropinHCBS.pdf&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0QFnoECBUQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/6826c3274fa3baab8a30444c/images/112ea0249c78a675120906435d9385949957033a0205f8a93d6c7472be3b6ebb.jpeg",
+      "date": "Nov 30, 2018",
+      "snippet": "\u2013 This IG provides robust formal guidance on how to leverage FHIR to exchange eLTSS Dataset data. It will also be able to support continued ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "missing": [
+        "Associates",
+        "Advantage"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "Information Technology Interoperability and Use for Better ...",
+      "link": "https://nam.edu/perspectives/information-technology-interoperability-and-use-for-better-care-and-evidence-a-vital-direction-for-health-and-health-care/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nam.edu/perspectives/information-technology-interoperability-and-use-for-better-care-and-evidence-a-vital-direction-for-health-and-health-care/&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0QFnoECBwQAQ",
+      "displayed_link": "https://nam.edu \u203a perspectives \u203a information-technology-...",
+      "favicon": "https://serpapi.com/searches/6826c3274fa3baab8a30444c/images/112ea0249c78a675120906435d9385947697745804c06c7979f84583991ce960.png",
+      "author": "by JB Perlin",
+      "snippet": "Provider directory. There is no national provider ... SMART on FHIR: A standards-based, interoperable apps platform for electronic health records.",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "provider",
+        "FHIR"
+      ],
+      "source": "National Academy of Medicine"
+    },
+    {
+      "position": 8,
+      "title": "Health Information Technology Oversight Council",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/HITOC_MeetingMaterials_20190404.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%2520Meeting%2520Docs/HITOC_MeetingMaterials_20190404.pdf&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0QFnoECDcQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HPA \u203a OHIT-HITOC",
+      "favicon": "https://serpapi.com/searches/6826c3274fa3baab8a30444c/images/112ea0249c78a675120906435d938594dbf7a292acf2c806567bc5703bff5337.png",
+      "date": "Apr 4, 2019",
+      "snippet": "\u2022 Includes API (FHIR?) ability ... \u2022 Provider directory or something similar expanded from health care to social services with enough.",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "Provider directory",
+        "care"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 9,
+      "title": "State Medicaid Health Information Technology Plan - DHHS",
+      "link": "https://dhhs.ne.gov/Documents/NE%201115%20SUD%20Renewal_Appendix%202%20-%20HIT%20Plan.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dhhs.ne.gov/Documents/NE%25201115%2520SUD%2520Renewal_Appendix%25202%2520-%2520HIT%2520Plan.pdf&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0QFnoECDwQAQ",
+      "displayed_link": "https://dhhs.ne.gov \u203a Documents",
+      "favicon": "https://serpapi.com/searches/6826c3274fa3baab8a30444c/images/112ea0249c78a675120906435d938594392b3225a0aad1d1516ead6f0f147811.png",
+      "date": "Mar 14, 2022",
+      "snippet": "Interfaces (APIs) and Fast Healthcare Interoperability Resources (FHIR) technology. The contract with Edifecs, Inc. for work on the IPA ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "Healthcare",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 67
+          },
+          "extensions": [
+            "67 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Associates",
+        "Advantage"
+      ],
+      "source": "DHHS (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "2024 July Changes MCO Contract - NJ.gov",
+      "link": "https://www.nj.gov/humanservices/dmahs/info/resources/care/hmo-contract.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.nj.gov/humanservices/dmahs/info/resources/care/hmo-contract.pdf&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0QFnoECDYQAQ",
+      "displayed_link": "https://www.nj.gov \u203a info \u203a care \u203a hmo-contract",
+      "favicon": "https://serpapi.com/searches/6826c3274fa3baab8a30444c/images/112ea0249c78a675120906435d938594a6a3a2a3aaee46faaa58fd6fe5d0d044.png",
+      "date": "Jul 1, 2024",
+      "snippet": "... Provider Directory API (applicable January 1, 2021 with enforcement ... FHIR Release 4.0.1 o 45 CFR 170.215(b)(1)(i) HL7 FHIR US Core ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 935
+          },
+          "extensions": [
+            "935 pages"
+          ]
+        }
+      },
+      "source": "nj.gov"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "UHC provider manual 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=UHC+provider+manual+2025&sa=X&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+provider+manual+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc Medicare Advantage Provider manual",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Uhc+Medicare+Advantage+Provider+manual&sa=X&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+Medicare+Advantage+Provider+manual&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc Medicare advantage Timely filing limit for corrected claims",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&sa=X&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC care survey 25 1",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=UHC+care+survey+25+1&sa=X&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+care+survey+25+1&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Medical+Associates+Clinic,+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=LMMmaMieCvrcwN4Poe6X6A0&start=10&sa=N&sstk=Af40H4W2q-edR29SbNG3UbXkjrZy86qaGPKrsWlBqr37J_ULHozl4mlsS75RQRiaBL8F-tVLHwWuGaS8BsUpN3R4m5Uvc8BrtqsIsw&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q8NMDegQICBAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Medical+Associates+Clinic,+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=LMMmaMieCvrcwN4Poe6X6A0&start=10&sa=N&sstk=Af40H4W2q-edR29SbNG3UbXkjrZy86qaGPKrsWlBqr37J_ULHozl4mlsS75RQRiaBL8F-tVLHwWuGaS8BsUpN3R4m5Uvc8BrtqsIsw&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=Medical+Associates+Clinic,+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=LMMmaMieCvrcwN4Poe6X6A0&start=20&sa=N&sstk=Af40H4W2q-edR29SbNG3UbXkjrZy86qaGPKrsWlBqr37J_ULHozl4mlsS75RQRiaBL8F-tVLHwWuGaS8BsUpN3R4m5Uvc8BrtqsIsw&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=Medical+Associates+Clinic,+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=LMMmaMieCvrcwN4Poe6X6A0&start=30&sa=N&sstk=Af40H4W2q-edR29SbNG3UbXkjrZy86qaGPKrsWlBqr37J_ULHozl4mlsS75RQRiaBL8F-tVLHwWuGaS8BsUpN3R4m5Uvc8BrtqsIsw&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q8tMDegQICBAI",
+      "5": "https://www.google.com/search?q=Medical+Associates+Clinic,+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=LMMmaMieCvrcwN4Poe6X6A0&start=40&sa=N&sstk=Af40H4W2q-edR29SbNG3UbXkjrZy86qaGPKrsWlBqr37J_ULHozl4mlsS75RQRiaBL8F-tVLHwWuGaS8BsUpN3R4m5Uvc8BrtqsIsw&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q8tMDegQICBAK",
+      "6": "https://www.google.com/search?q=Medical+Associates+Clinic,+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=LMMmaMieCvrcwN4Poe6X6A0&start=50&sa=N&sstk=Af40H4W2q-edR29SbNG3UbXkjrZy86qaGPKrsWlBqr37J_ULHozl4mlsS75RQRiaBL8F-tVLHwWuGaS8BsUpN3R4m5Uvc8BrtqsIsw&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q8tMDegQICBAM",
+      "7": "https://www.google.com/search?q=Medical+Associates+Clinic,+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=LMMmaMieCvrcwN4Poe6X6A0&start=60&sa=N&sstk=Af40H4W2q-edR29SbNG3UbXkjrZy86qaGPKrsWlBqr37J_ULHozl4mlsS75RQRiaBL8F-tVLHwWuGaS8BsUpN3R4m5Uvc8BrtqsIsw&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q8tMDegQICBAO",
+      "8": "https://www.google.com/search?q=Medical+Associates+Clinic,+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=LMMmaMieCvrcwN4Poe6X6A0&start=70&sa=N&sstk=Af40H4W2q-edR29SbNG3UbXkjrZy86qaGPKrsWlBqr37J_ULHozl4mlsS75RQRiaBL8F-tVLHwWuGaS8BsUpN3R4m5Uvc8BrtqsIsw&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q8tMDegQICBAQ",
+      "9": "https://www.google.com/search?q=Medical+Associates+Clinic,+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=LMMmaMieCvrcwN4Poe6X6A0&start=80&sa=N&sstk=Af40H4W2q-edR29SbNG3UbXkjrZy86qaGPKrsWlBqr37J_ULHozl4mlsS75RQRiaBL8F-tVLHwWuGaS8BsUpN3R4m5Uvc8BrtqsIsw&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q8tMDegQICBAS",
+      "10": "https://www.google.com/search?q=Medical+Associates+Clinic,+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=LMMmaMieCvrcwN4Poe6X6A0&start=90&sa=N&sstk=Af40H4W2q-edR29SbNG3UbXkjrZy86qaGPKrsWlBqr37J_ULHozl4mlsS75RQRiaBL8F-tVLHwWuGaS8BsUpN3R4m5Uvc8BrtqsIsw&ved=2ahUKEwjI5OK8l6eNAxV6LtAFHSH3Bd0Q8tMDegQICBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medical+Associates+Clinic%2C+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medical+Associates+Clinic%2C+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medical+Associates+Clinic%2C+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medical+Associates+Clinic%2C+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medical+Associates+Clinic%2C+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medical+Associates+Clinic%2C+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medical+Associates+Clinic%2C+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medical+Associates+Clinic%2C+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medical+Associates+Clinic%2C+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medical+Associates+Clinic%2C+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medical+Associates+Clinic%2C+P.C.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "search_metadata": {
+    "id": "6826c21423df78f5f575aa3e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/bbfed84853b90c26/6826c21423df78f5f575aa3e.json",
+    "created_at": "2025-05-16 04:41:56 UTC",
+    "processed_at": "2025-05-16 04:41:56 UTC",
+    "google_url": "https://www.google.com/search?q=Centene+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Centene+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/bbfed84853b90c26/6826c21423df78f5f575aa3e.html",
+    "total_time_taken": 8.02
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Centene Corporation Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Centene Corporation Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 144,
+    "time_taken_displayed": 0.23,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability and Patient Access",
+      "link": "https://www.azcompletehealth.com/members/medicaid/helpful-links/interoperability-and-patient-access.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.azcompletehealth.com/members/medicaid/helpful-links/interoperability-and-patient-access.html&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQFnoECBoQAQ",
+      "displayed_link": "https://www.azcompletehealth.com \u203a helpful-links \u203a inter...",
+      "favicon": "https://serpapi.com/searches/6826c21423df78f5f575aa3e/images/ffa3cb569fa7996c0d52c8df7627ab726b02d4c81e94ea18ccbd4266e07538c6.png",
+      "snippet": "Looking to access and use the Provider Directory API? Go to our Partner PortalExternal Link and scroll to the \u201cFHIR \u2013 Provider Directory\u201d, click it and go to ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "Arizona Complete Health"
+    },
+    {
+      "position": 2,
+      "title": "Interoperability and Patient Access",
+      "link": "https://www.ambetterhealth.com/en/ca/resources/interoperability-and-patient-access/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ambetterhealth.com/en/ca/resources/interoperability-and-patient-access/&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQFnoECBwQAQ",
+      "displayed_link": "https://www.ambetterhealth.com \u203a resources \u203a interopera...",
+      "snippet": "As a developer, how do I access and use the Provider Directory API? Go to our Partner PortalExternal Link and scroll to the \"FHIR \u2013 Provider Directory\", click ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "Ambetter Health"
+    },
+    {
+      "position": 3,
+      "title": "Interoperability",
+      "link": "https://www.iowatotalcare.com/providers/resources/interoperability.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.iowatotalcare.com/providers/resources/interoperability.html&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQFnoECCAQAQ",
+      "displayed_link": "https://www.iowatotalcare.com \u203a providers \u203a resources",
+      "favicon": "https://serpapi.com/searches/6826c21423df78f5f575aa3e/images/ffa3cb569fa7996c0d52c8df7627ab726ec9e55df2333656bf1e41fa4adebd6e.png",
+      "snippet": "Our provider directory information will be made publically available via our API. ... FHIR is a Health Level Seven International (HL7\u00ae) standard for ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "API",
+        "FHIR"
+      ],
+      "source": "Iowa Total Care"
+    },
+    {
+      "position": 4,
+      "title": "Interoperability and Patient Access",
+      "link": "https://www.sunshinehealth.com/members/smi/resources/interoperability-and-patient-access.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.sunshinehealth.com/members/smi/resources/interoperability-and-patient-access.html&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQFnoECCMQAQ",
+      "displayed_link": "https://www.sunshinehealth.com \u203a smi \u203a resources \u203a int...",
+      "favicon": "https://serpapi.com/searches/6826c21423df78f5f575aa3e/images/ffa3cb569fa7996c0d52c8df7627ab7250cc1977d4aca1a71cc88a3c62f1698b.png",
+      "snippet": "As a developer, how do I access and use the Provider Directory API? Go to our Partner PortalExternal Link and scroll to the \u201cFHIR \u2013 Provider Directory ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "Sunshine Health"
+    },
+    {
+      "position": 5,
+      "title": "New Options for Managing Your Digital Medical Records",
+      "link": "https://www.healthnet.com/content/healthnet/en_us/members/managing-your-digital-medical-records.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthnet.com/content/healthnet/en_us/members/managing-your-digital-medical-records.html&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQFnoECBkQAQ",
+      "displayed_link": "https://www.healthnet.com \u203a content \u203a en_us \u203a members",
+      "favicon": "https://serpapi.com/searches/6826c21423df78f5f575aa3e/images/ffa3cb569fa7996c0d52c8df7627ab72da9bac196fb35b99a3bef5f4a03b4584.png",
+      "date": "Aug 2, 2024",
+      "snippet": "As a developer, how do I access and use the Provider Directory API? Go to our Partner PortalExternal Link and scroll to the \"FHIR \u2013 Provider ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "Provider"
+      ],
+      "source": "Health Net"
+    },
+    {
+      "position": 6,
+      "title": "OneRecord Launches Aetna, a CVS Health Company",
+      "link": "https://onerecord.com/blog/onerecord-launches-aetna-a-cvs-health-company-as",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://onerecord.com/blog/onerecord-launches-aetna-a-cvs-health-company-as&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQFnoECB0QAQ",
+      "displayed_link": "https://onerecord.com \u203a blog \u203a onerecord-launches-aetn...",
+      "favicon": "https://serpapi.com/searches/6826c21423df78f5f575aa3e/images/ffa3cb569fa7996c0d52c8df7627ab725b07d3e27ecf629f19b7a2cd0b637390.png",
+      "date": "Aug 26, 2021",
+      "snippet": "Our next big feature we are working on is utilizing Aetna's Provider Directory API so members can search for providers in Aetna's Medicare and ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Medicare"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Centene+Corporation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ5t4CegQIHxAB"
+      },
+      "source": "OneRecord"
+    },
+    {
+      "position": 7,
+      "title": "e-Health Advisory Committee Annual Report",
+      "link": "https://www.hhs.texas.gov/sites/default/files/documents/laws-regulations/reports-presentations/2021/hhs-ehac-report-feb-2021.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.texas.gov/sites/default/files/documents/laws-regulations/reports-presentations/2021/hhs-ehac-report-feb-2021.pdf&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQFnoECCIQAQ",
+      "displayed_link": "https://www.hhs.texas.gov \u203a reports-presentations",
+      "favicon": "https://serpapi.com/searches/6826c21423df78f5f575aa3e/images/ffa3cb569fa7996c0d52c8df7627ab724290fd726dcd2ac38d916956005e6c5f.png",
+      "snippet": "including patient access APIs, provider directory APIs, payer-to-payer data ... \u25cb CMS adopted FHIR API-based Interop portfolio; allows legacy data connection.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 67
+          },
+          "extensions": [
+            "67 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Centene+Corporation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ5t4CegQIJRAB"
+      },
+      "source": "Texas Health and Human Services (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Board of Governors Meeting",
+      "link": "https://www.lacare.org/sites/default/files/20221006%20Board%20of%20Governors%20Meeting%20Packet.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/20221006%2520Board%2520of%2520Governors%2520Meeting%2520Packet.pdf&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQFnoECDoQAQ",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/6826c21423df78f5f575aa3e/images/ffa3cb569fa7996c0d52c8df7627ab72199d2b7c8cc0a5c932bd2e3d2335831a.png",
+      "snippet": "Provider Directory API (Application Program Interface). L.A. Care Implemented Provider Directory API in March 2022. Examples where third parties and providers ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Provider Directory API"
+      ],
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 9,
+      "title": "Flexpa",
+      "link": "https://twitter.com/Flexpa",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://twitter.com/Flexpa&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQFnoECDsQAQ",
+      "displayed_link": "580+ followers",
+      "favicon": "https://serpapi.com/searches/6826c21423df78f5f575aa3e/images/ffa3cb569fa7996c0d52c8df7627ab72a9511b17f35294a6407c7191e97db1e8.png",
+      "snippet": "... Provider Directory. We've transformed 8 million NPPES ... In FHIR, the meta.tag field can be used very flexibly to \"tag\" a healthcare ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Corporation"
+      ],
+      "must_include": {
+        "word": "Corporation",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Centene+%22Corporation%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ5t4CegQIPBAB"
+      },
+      "source": "X \u00b7 Flexpa"
+    },
+    {
+      "position": 10,
+      "title": "Data Sharing Privacy and Consent: The New Payer ...",
+      "link": "https://www.hyland.com/-/media/Project/Hyland/HylandV2DotCom/pdfs-gated/The-New-Payer-Requirements-and-the-Connected-Content-Technologies-Required-to-Fulfill-Member-Regulat.pdf?sc_lang=en",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hyland.com/-/media/Project/Hyland/HylandV2DotCom/pdfs-gated/The-New-Payer-Requirements-and-the-Connected-Content-Technologies-Required-to-Fulfill-Member-Regulat.pdf%3Fsc_lang%3Den&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQFnoECEEQAQ",
+      "displayed_link": "https://www.hyland.com \u203a Hyland \u203a pdfs-gated",
+      "favicon": "https://serpapi.com/searches/6826c21423df78f5f575aa3e/images/ffa3cb569fa7996c0d52c8df7627ab726506609897f2d5b9c5fc676a146dbbc6.png",
+      "date": "Jan 1, 2022",
+      "snippet": "plan, current provider directory data, and formulary ... Now, with common API standards, mandated FHIR formats, and forced compliance to release ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "API",
+        "FHIR"
+      ],
+      "missing": [
+        "Corporation"
+      ],
+      "must_include": {
+        "word": "Corporation",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Centene+%22Corporation%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ5t4CegQIQhAB"
+      },
+      "source": "Hyland Software"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Carolina Provider Portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Carolina+Provider+Portal&sa=X&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Carolina+Provider+Portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Carolina access Medicaid provider Phone Number",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Carolina+access+Medicaid+provider+Phone+Number&sa=X&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Carolina+access+Medicaid+provider+Phone+Number&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Find a provider Carolina complete health",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Find+a+provider+Carolina+complete+health&sa=X&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Find+a+provider+Carolina+complete+health&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Centene Medicaid OTC catalog",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Centene+Medicaid+OTC+catalog&sa=X&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Centene+Medicaid+OTC+catalog&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "My Complete Health",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=My+Complete+Health&sa=X&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=My+Complete+Health&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Medicaid healthy food card NC eligibility",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Medicaid+healthy+food+card+NC+eligibility&sa=X&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medicaid+healthy+food+card+NC+eligibility&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Medicaid OTC NC",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Medicaid+OTC+NC&sa=X&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medicaid+OTC+NC&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Carolina Health Choice",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Carolina+Health+Choice&sa=X&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Carolina+Health+Choice&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Centene+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=HMImaLrHD4m4wN4P9PXNuQQ&start=10&sa=N&sstk=Af40H4UDhkGR8zp68z8qIlpIegm2-mmqMjrm48f7jQFHsmKusijqdOJ5Tu_7vyBKywLP67x2oAC_TzH6W-PQw3s94bPPXiG6gwzd0g&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ8NMDegQICxAM",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Centene+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=HMImaLrHD4m4wN4P9PXNuQQ&start=10&sa=N&sstk=Af40H4UDhkGR8zp68z8qIlpIegm2-mmqMjrm48f7jQFHsmKusijqdOJ5Tu_7vyBKywLP67x2oAC_TzH6W-PQw3s94bPPXiG6gwzd0g&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ8tMDegQICxAE",
+      "3": "https://www.google.com/search?q=Centene+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=HMImaLrHD4m4wN4P9PXNuQQ&start=20&sa=N&sstk=Af40H4UDhkGR8zp68z8qIlpIegm2-mmqMjrm48f7jQFHsmKusijqdOJ5Tu_7vyBKywLP67x2oAC_TzH6W-PQw3s94bPPXiG6gwzd0g&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ8tMDegQICxAG",
+      "4": "https://www.google.com/search?q=Centene+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=HMImaLrHD4m4wN4P9PXNuQQ&start=30&sa=N&sstk=Af40H4UDhkGR8zp68z8qIlpIegm2-mmqMjrm48f7jQFHsmKusijqdOJ5Tu_7vyBKywLP67x2oAC_TzH6W-PQw3s94bPPXiG6gwzd0g&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ8tMDegQICxAI",
+      "5": "https://www.google.com/search?q=Centene+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=HMImaLrHD4m4wN4P9PXNuQQ&start=40&sa=N&sstk=Af40H4UDhkGR8zp68z8qIlpIegm2-mmqMjrm48f7jQFHsmKusijqdOJ5Tu_7vyBKywLP67x2oAC_TzH6W-PQw3s94bPPXiG6gwzd0g&ved=2ahUKEwi6xY67lqeNAxUJHNAFHfR6M0cQ8tMDegQICxAK"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Centene+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Centene+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Centene+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Centene+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Centene+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Centene+Corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40"
+    }
+  }
+}

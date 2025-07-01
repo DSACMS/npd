@@ -1,0 +1,288 @@
+{
+  "search_metadata": {
+    "id": "6826c1cf50d43e4e59534859",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/360f1630026618b8/6826c1cf50d43e4e59534859.json",
+    "created_at": "2025-05-16 04:40:47 UTC",
+    "processed_at": "2025-05-16 04:40:47 UTC",
+    "google_url": "https://www.google.com/search?q=Blue+Cross+Blue+Shield+of+Michigan+Mutual+Ins.+Co.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Blue+Cross+Blue+Shield+of+Michigan+Mutual+Ins.+Co.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/360f1630026618b8/6826c1cf50d43e4e59534859.html",
+    "total_time_taken": 7.9
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Blue Cross Blue Shield of Michigan Mutual Ins. Co. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Blue Cross Blue Shield of Michigan Mutual Ins. Co. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 77,
+    "time_taken_displayed": 0.27,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Patient Access API and Payer to Payer Data Transfer",
+      "link": "https://www.bcbsm.com/important-information/privacy-practices/patient-access/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bcbsm.com/important-information/privacy-practices/patient-access/&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQFnoECCEQAQ",
+      "displayed_link": "https://www.bcbsm.com \u203a privacy-practices \u203a patient-ac...",
+      "favicon": "https://serpapi.com/searches/6826c1cf50d43e4e59534859/images/8fa91da58be6b025aeafcc2d98ff67002e8e520643998a7e50c2a42145b5b578.png",
+      "snippet": "View our publicly accessible endpoints under the Provider Directory and Drug Formulary. Provider Directory: https://api.interopstation.com/bcbsm/fhir/Endpoint ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "Provider Directory",
+        "api",
+        "fhir"
+      ],
+      "missing": [
+        "Mutual"
+      ],
+      "must_include": {
+        "word": "Mutual",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Blue+Cross+Blue+Shield+of+Michigan+%22Mutual%22+Ins.+Co.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQ5t4CegQIMBAB"
+      },
+      "source": "Blue Cross Blue Shield of Michigan"
+    },
+    {
+      "position": 2,
+      "title": "State of Provider Directory APIs 2024",
+      "link": "https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQFnoECBkQAQ",
+      "displayed_link": "https://defacto.health \u203a 2024/06/24 \u203a state-of-provider-di...",
+      "favicon": "https://serpapi.com/searches/6826c1cf50d43e4e59534859/images/8fa91da58be6b025aeafcc2d98ff670086ce3865b667d975c20f97e42fa0e7e3.png",
+      "date": "Jun 24, 2024",
+      "snippet": "Across Medicare fee-for-service and Medicare Advantage, available Provider Directory APIs ... Provider Directory data via FHIR APIs:.",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "Provider Directory APIs",
+        "Provider Directory",
+        "FHIR APIs"
+      ],
+      "missing": [
+        "Mutual",
+        "Co."
+      ],
+      "source": "Defacto Health"
+    },
+    {
+      "position": 3,
+      "title": "State Efforts to Coordinate Provider Directory Accuracy - ASPE",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQFnoECBgQAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/6826c1cf50d43e4e59534859/images/8fa91da58be6b025aeafcc2d98ff67005557a4618cf81c9e796e848b6b7abfbc.png",
+      "date": "Dec 27, 2023",
+      "snippet": "These FHIR APIs improve the accessibility and transparency of provider directory data. Notes: a. Centers for Medicare & Medicaid Services (CMS).",
+      "snippet_highlighted_words": [
+        "FHIR APIs",
+        "provider directory",
+        "Medicare"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 45
+          },
+          "extensions": [
+            "45 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Mutual",
+        "Co."
+      ],
+      "source": "HHS.gov"
+    },
+    {
+      "position": 4,
+      "title": "Health Data, Technology, and Interoperability: Patient ...",
+      "link": "https://links.gha.org/c/7/eyJhaSI6Njg2ODA0OTYsImUiOiJrb21Aa29tYWhvbnlsYXcuY29tIiwicmkiOiJjb250YWN0LWUyMjRhYjNhYzdjZmU4MTE4MGQxMDJiZmMwYTgwMTcyLWNkM2FiZGQzMmJjNjRkNWU4ODZlNDQ4ZWJhYTQyZDBiIiwicnEiOiIwMi1iMjQxOTctNWY3NmY1OTEzNTBjNDNkZjlkOWUzNTgwMDdhZDdjMTQiLCJwaCI6bnVsbCwibSI6ZmFsc2UsInVpIjoiOSIsInVuIjoiIiwidSI6Imh0dHBzOi8vd3d3LmhlYWx0aGl0Lmdvdi9zaXRlcy9kZWZhdWx0L2ZpbGVzL3BhZ2UvMjAyNC0wNy9PTkNfSFRJLTJfUHJvcG9zZWRfUnVsZS5wZGY_X2NsZGVlPWRCZk02MzdKZS1na25MMy1CaXp6OE9uTmlId29uMGRwb2Z5d1Z0TF9XT05CcTZwei1WU2FzczdDMm1Fa1AyOXYmcmVjaXBpZW50aWQ9Y29udGFjdC1lMjI0YWIzYWM3Y2ZlODExODBkMTAyYmZjMGE4MDE3Mi1jZDNhYmRkMzJiYzY0ZDVlODg2ZTQ0OGViYWE0MmQwYiZlc2lkPTg5MTgxMzBlLWNmNDItZWYxMS04NDA5LTAwMGQzYTM2Y2I4OSJ9/dlJzcdwVkC0rLQSfZfQBEA",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://links.gha.org/c/7/eyJhaSI6Njg2ODA0OTYsImUiOiJrb21Aa29tYWhvbnlsYXcuY29tIiwicmkiOiJjb250YWN0LWUyMjRhYjNhYzdjZmU4MTE4MGQxMDJiZmMwYTgwMTcyLWNkM2FiZGQzMmJjNjRkNWU4ODZlNDQ4ZWJhYTQyZDBiIiwicnEiOiIwMi1iMjQxOTctNWY3NmY1OTEzNTBjNDNkZjlkOWUzNTgwMDdhZDdjMTQiLCJwaCI6bnVsbCwibSI6ZmFsc2UsInVpIjoiOSIsInVuIjoiIiwidSI6Imh0dHBzOi8vd3d3LmhlYWx0aGl0Lmdvdi9zaXRlcy9kZWZhdWx0L2ZpbGVzL3BhZ2UvMjAyNC0wNy9PTkNfSFRJLTJfUHJvcG9zZWRfUnVsZS5wZGY_X2NsZGVlPWRCZk02MzdKZS1na25MMy1CaXp6OE9uTmlId29uMGRwb2Z5d1Z0TF9XT05CcTZwei1WU2FzczdDMm1Fa1AyOXYmcmVjaXBpZW50aWQ9Y29udGFjdC1lMjI0YWIzYWM3Y2ZlODExODBkMTAyYmZjMGE4MDE3Mi1jZDNhYmRkMzJiYzY0ZDVlODg2ZTQ0OGViYWE0MmQwYiZlc2lkPTg5MTgxMzBlLWNmNDItZWYxMS04NDA5LTAwMGQzYTM2Y2I4OSJ9/dlJzcdwVkC0rLQSfZfQBEA&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQFnoECB8QAQ",
+      "displayed_link": "https://links.gha.org \u203a ...",
+      "snippet": "... FHIR-based application programming interfaces (APIs) for public health ... Provider Directory. 184 For the purposes of the CMS Interoperability and ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "APIs",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Mutual",
+        "Co."
+      ],
+      "source": "Georgia Hospital Association"
+    },
+    {
+      "position": 5,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQFnoECBoQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/6826c1cf50d43e4e59534859/images/8fa91da58be6b025aeafcc2d98ff6700730b63a2ad2ddb5070768d156af7a2e7.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 6,
+      "title": "Health Data, Technology, and Interoperability: Patient ...",
+      "link": "https://www.federalregister.gov/documents/2024/08/05/2024-14975/health-data-technology-and-interoperability-patient-engagement-information-sharing-and-public-health",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2024/08/05/2024-14975/health-data-technology-and-interoperability-patient-engagement-information-sharing-and-public-health&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQFnoECCAQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2024/08/05 \u203a health-...",
+      "favicon": "https://serpapi.com/searches/6826c1cf50d43e4e59534859/images/8fa91da58be6b025aeafcc2d98ff670076a7096136fd926c9085139803202b16.png",
+      "date": "Aug 5, 2024",
+      "snippet": "... in new support for FHIR API usage and adoption. FHIR API usage and ... Provider Directory API (85 FR 25563 through 25564). In the CMS ...",
+      "snippet_highlighted_words": [
+        "in",
+        "FHIR API",
+        "FHIR API",
+        "Provider Directory API",
+        "In"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "CAQH Index Report",
+      "link": "https://www.caqh.org/hubfs/43908627/drupal/2024-01/2023_CAQH_Index_Report.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.caqh.org/hubfs/43908627/drupal/2024-01/2023_CAQH_Index_Report.pdf&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQFnoECBsQAQ",
+      "displayed_link": "https://www.caqh.org \u203a hubfs \u203a drupal \u203a 2023_C...",
+      "favicon": "https://serpapi.com/searches/6826c1cf50d43e4e59534859/images/8fa91da58be6b025aeafcc2d98ff6700227c5c16fbf0f8b58f5f17a769c18a44.png",
+      "snippet": "Number of claim payments paid in bulk. \u2022 Interactions with FHIR for Patient Access and. Provider Directory APIs. \u2022 Use of artificial intelligence (AI) for ...",
+      "snippet_highlighted_words": [
+        "in",
+        "FHIR",
+        "Provider Directory APIs"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 74
+          },
+          "extensions": [
+            "74 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Mutual",
+        "Co.",
+        "Advantage"
+      ],
+      "source": "CAQH.org"
+    },
+    {
+      "position": 8,
+      "title": "Helpful Hints",
+      "link": "https://confluence.hl7.org/download/attachments/81018510/ProjectBallotHealthMetrics_2022JanWGM_20211221.xlsx?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/81018510/ProjectBallotHealthMetrics_2022JanWGM_20211221.xlsx%3Fapi%3Dv2&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQFnoECDQQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a download \u203a attachments",
+      "favicon": "https://serpapi.com/searches/6826c1cf50d43e4e59534859/images/8fa91da58be6b025aeafcc2d98ff6700a6231e51f0ded582d7dd5ec557445346.png",
+      "snippet": "This work will be defined using the available FHIR tooling and in accordance ... Provider Directory, Endpoint Directory, Utilizes the work done for the ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "in",
+        "Provider Directory"
+      ],
+      "source": "HL7 - Confluence"
+    },
+    {
+      "position": 9,
+      "title": "Federal Register/Vol. 89, No. 150/Monday, August 5, 2024/ ...",
+      "link": "https://www.govinfo.gov/content/pkg/FR-2024-08-05/pdf/2024-14975.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.govinfo.gov/content/pkg/FR-2024-08-05/pdf/2024-14975.pdf&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQFnoECDMQAQ",
+      "displayed_link": "https://www.govinfo.gov \u203a content \u203a pkg \u203a pdf",
+      "favicon": "https://serpapi.com/searches/6826c1cf50d43e4e59534859/images/8fa91da58be6b025aeafcc2d98ff67001780864cb0141ef3884c28752e2bb0b5.png",
+      "date": "Aug 5, 2024",
+      "snippet": "... (FHIR\u00ae) solutions and evolving standards related to public health ... Provider Directory API to make available information such as ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 314
+          },
+          "extensions": [
+            "314 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Co."
+      ],
+      "must_include": {
+        "word": "Co.",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Blue+Cross+Blue+Shield+of+Michigan+Mutual+Ins.+%22Co.%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQ5t4CegQIPBAB"
+      },
+      "source": "GovInfo (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "Michigan Health Information Technology Commission",
+      "link": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder1/Folder58/August_2016_HIT_Commission_Presentation_Final.pdf?rev=431e1814b84a4db6bfc1e7c70ff43b87",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder1/Folder58/August_2016_HIT_Commission_Presentation_Final.pdf%3Frev%3D431e1814b84a4db6bfc1e7c70ff43b87&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQFnoECDUQAQ",
+      "displayed_link": "https://www.michigan.gov \u203a Folder1 \u203a Folder58",
+      "favicon": "https://serpapi.com/searches/6826c1cf50d43e4e59534859/images/8fa91da58be6b025aeafcc2d98ff6700b3676e971fa9e41c8f75ae33a5a1e5de.png",
+      "date": "Aug 18, 2016",
+      "snippet": "\u2022 491,815 unique providers in statewide Health Provider Directory ... \u2022 Runs as web service with rich FHIR API for easy integration.",
+      "snippet_highlighted_words": [
+        "in",
+        "Provider Directory",
+        "FHIR API"
+      ],
+      "missing": [
+        "Mutual",
+        "Co.",
+        "Advantage"
+      ],
+      "source": "State of Michigan (.gov)"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Blue+Cross+Blue+Shield+of+Michigan+Mutual+Ins.+Co.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=1sEmaOOGHoWuwbkP6pWWQA&start=10&sa=N&sstk=Af40H4UDu2DC9gukpdZzGWanRCBlCQcsk9fXErcvrQeo9f3mbyufL1yjUwDxevDwbda5VUcsUjcOPf-5Dwgr4EBqd9j7ZWF4t7Jwdw&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQ8NMDegQIChAO",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Blue+Cross+Blue+Shield+of+Michigan+Mutual+Ins.+Co.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=1sEmaOOGHoWuwbkP6pWWQA&start=10&sa=N&sstk=Af40H4UDu2DC9gukpdZzGWanRCBlCQcsk9fXErcvrQeo9f3mbyufL1yjUwDxevDwbda5VUcsUjcOPf-5Dwgr4EBqd9j7ZWF4t7Jwdw&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=Blue+Cross+Blue+Shield+of+Michigan+Mutual+Ins.+Co.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=1sEmaOOGHoWuwbkP6pWWQA&start=20&sa=N&sstk=Af40H4UDu2DC9gukpdZzGWanRCBlCQcsk9fXErcvrQeo9f3mbyufL1yjUwDxevDwbda5VUcsUjcOPf-5Dwgr4EBqd9j7ZWF4t7Jwdw&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQ8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=Blue+Cross+Blue+Shield+of+Michigan+Mutual+Ins.+Co.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=1sEmaOOGHoWuwbkP6pWWQA&start=30&sa=N&sstk=Af40H4UDu2DC9gukpdZzGWanRCBlCQcsk9fXErcvrQeo9f3mbyufL1yjUwDxevDwbda5VUcsUjcOPf-5Dwgr4EBqd9j7ZWF4t7Jwdw&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQ8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=Blue+Cross+Blue+Shield+of+Michigan+Mutual+Ins.+Co.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=1sEmaOOGHoWuwbkP6pWWQA&start=40&sa=N&sstk=Af40H4UDu2DC9gukpdZzGWanRCBlCQcsk9fXErcvrQeo9f3mbyufL1yjUwDxevDwbda5VUcsUjcOPf-5Dwgr4EBqd9j7ZWF4t7Jwdw&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQ8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=Blue+Cross+Blue+Shield+of+Michigan+Mutual+Ins.+Co.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=1sEmaOOGHoWuwbkP6pWWQA&start=50&sa=N&sstk=Af40H4UDu2DC9gukpdZzGWanRCBlCQcsk9fXErcvrQeo9f3mbyufL1yjUwDxevDwbda5VUcsUjcOPf-5Dwgr4EBqd9j7ZWF4t7Jwdw&ved=2ahUKEwjjyeyZlqeNAxUFVzABHeqKBQgQ8tMDegQIChAM"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Blue+Cross+Blue+Shield+of+Michigan+Mutual+Ins.+Co.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Blue+Cross+Blue+Shield+of+Michigan+Mutual+Ins.+Co.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Blue+Cross+Blue+Shield+of+Michigan+Mutual+Ins.+Co.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Blue+Cross+Blue+Shield+of+Michigan+Mutual+Ins.+Co.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Blue+Cross+Blue+Shield+of+Michigan+Mutual+Ins.+Co.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Blue+Cross+Blue+Shield+of+Michigan+Mutual+Ins.+Co.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Blue+Cross+Blue+Shield+of+Michigan+Mutual+Ins.+Co.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50"
+    }
+  }
+}

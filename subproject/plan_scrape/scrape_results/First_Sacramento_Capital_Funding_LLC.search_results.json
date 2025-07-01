@@ -1,0 +1,246 @@
+{
+  "search_metadata": {
+    "id": "6826c27b89ec1963e3820358",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/92caf3309ae43d86/6826c27b89ec1963e3820358.json",
+    "created_at": "2025-05-16 04:43:39 UTC",
+    "processed_at": "2025-05-16 04:43:39 UTC",
+    "google_url": "https://www.google.com/search?q=First+Sacramento+Capital+Funding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=First+Sacramento+Capital+Funding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/92caf3309ae43d86/6826c27b89ec1963e3820358.html",
+    "total_time_taken": 2.56
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "First Sacramento Capital Funding LLC Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "First Sacramento Capital Funding LLC Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 43,
+    "time_taken_displayed": 0.2,
+    "organic_results_state": "Results for exact spelling",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    }
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "California State Medi-Cal Health Information Technology Plan ...",
+      "link": "https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf&ved=2ahUKEwi2v5_plqeNAxXoppUCHRtLHlsQFnoECBwQAQ",
+      "displayed_link": "https://www.dhcs.ca.gov \u203a Documents \u203a OHIT \u203a C...",
+      "favicon": "https://serpapi.com/searches/6826c27b89ec1963e3820358/images/866c6ddf4ccae0affe56d587bf85b14918a5162fea9291ab78f78cd01ee7432b.png",
+      "date": "Mar 1, 2022",
+      "snippet": "requirements to use Fast Healthcare Interoperability Resources (FHIR) for certification, ... and provider directory. The only service area which ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 246
+          },
+          "extensions": [
+            "246 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Capital"
+      ],
+      "must_include": {
+        "word": "Capital",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=First+Sacramento+%22Capital%22+Funding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi2v5_plqeNAxXoppUCHRtLHlsQ5t4CegQIHRAB"
+      },
+      "source": "DHCS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "PARTICIPATING ADDENDUM MMIS-PROVIDER SERVICES ...",
+      "link": "https://s3-us-west-2.amazonaws.com/naspovaluepoint/1634709128_MMIS%20HHS%20Technology%20Group%20LLC%20South%20Dakota.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://s3-us-west-2.amazonaws.com/naspovaluepoint/1634709128_MMIS%2520HHS%2520Technology%2520Group%2520LLC%2520South%2520Dakota.pdf&ved=2ahUKEwi2v5_plqeNAxXoppUCHRtLHlsQFnoECBsQAQ",
+      "displayed_link": "https://s3-us-west-2.amazonaws.com \u203a 16347091...",
+      "favicon": "https://serpapi.com/searches/6826c27b89ec1963e3820358/images/866c6ddf4ccae0affe56d587bf85b149605d1bfd1c2e5d78d183f758daf1ec18.png",
+      "date": "Mar 7, 2023",
+      "snippet": "... Provider Directory Mapping (FHIR). 1 day. Fri 11/26/21. Fri 11/26/21. 6. Provider Directory Demo (FHIR). 1 day. Fri 10/22/21. Fri 10/22/21. 7.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Amazon.com"
+    },
+    {
+      "position": 3,
+      "title": "BOARD OF GOVERNORS MEETING",
+      "link": "https://www.lacare.org/sites/default/files/files/bog_meeting_packet_20221006.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/files/bog_meeting_packet_20221006.pdf&ved=2ahUKEwi2v5_plqeNAxXoppUCHRtLHlsQFnoECCEQAQ",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files \u203a files",
+      "favicon": "https://serpapi.com/searches/6826c27b89ec1963e3820358/images/866c6ddf4ccae0affe56d587bf85b149a29e9adf4abc773980069ec35a92aefd.png",
+      "date": "Oct 6, 2022",
+      "snippet": "via new HL7 FHIR Technical Standards. Note: An API or Application ... Provider Directory API (Application Program Interface). L.A. Care ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory API"
+      ],
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 4,
+      "title": "PARTNERSHIP HEALTHPLAN OF CALIFORNIA",
+      "link": "https://www.partnershiphp.org/Providers/HealthServices/Documents/Physicians_Advisory_Committee_PAC/2023/PAC_Packet_04-12-2023-FINAL_pg.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.partnershiphp.org/Providers/HealthServices/Documents/Physicians_Advisory_Committee_PAC/2023/PAC_Packet_04-12-2023-FINAL_pg.pdf&ved=2ahUKEwi2v5_plqeNAxXoppUCHRtLHlsQFnoECBkQAQ",
+      "displayed_link": "https://www.partnershiphp.org \u203a Documents \u203a PA...",
+      "date": "Apr 12, 2023",
+      "snippet": "Leverages Fast Healthcare Intraoperative Resources (FHIR) DaVinci implementation guide ... MPCR102 \u2013 Provider Directory Accuracy. MPCR400 ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 147
+          },
+          "extensions": [
+            "147 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=First+Sacramento+Capital+Funding+LLC+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi2v5_plqeNAxXoppUCHRtLHlsQ5t4CegQIGhAB"
+      },
+      "source": "Partnership HealthPlan"
+    },
+    {
+      "position": 5,
+      "title": "Board of Governors Meeting",
+      "link": "https://www.lacare.org/sites/default/files/20220728%20Board%20of%20Governors%20Meeting%20Packet.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/20220728%2520Board%2520of%2520Governors%2520Meeting%2520Packet.pdf&ved=2ahUKEwi2v5_plqeNAxXoppUCHRtLHlsQFnoECCoQAQ",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/6826c27b89ec1963e3820358/images/866c6ddf4ccae0affe56d587bf85b14907341ce0588955fbb336df60761196da.png",
+      "date": "Jul 28, 2022",
+      "snippet": "insights in FHIR format, which L.A. ... The first phase is complete with public facing provider directory Application Program Interfaces.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "first",
+        "provider directory"
+      ],
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 6,
+      "title": "277218 - Work-and-turn 1 - Bla277218",
+      "link": "https://mesconference.org/wp-content/uploads/2018/08/MESC2018_Program-FINAL.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mesconference.org/wp-content/uploads/2018/08/MESC2018_Program-FINAL.pdf&ved=2ahUKEwi2v5_plqeNAxXoppUCHRtLHlsQFnoECBcQAQ",
+      "displayed_link": "https://mesconference.org \u203a uploads \u203a 2018/08",
+      "date": "Aug 16, 2018",
+      "snippet": "OCP is a FHIR API based system that embraces many of the approaches that Medicaid intends to ... procuring an enhanced provider directory or eCQM ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "provider directory"
+      ],
+      "source": "Medicaid Enterprise Systems Conference (MESC)"
+    },
+    {
+      "position": 7,
+      "title": "CS Kansas Draft Protest Letter 6-3-2024 (908617-4).DOCX",
+      "link": "https://admin.ks.gov/media/cms/CareSource_Bid_Protest_5d4febae93561.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://admin.ks.gov/media/cms/CareSource_Bid_Protest_5d4febae93561.pdf&ved=2ahUKEwi2v5_plqeNAxXoppUCHRtLHlsQFnoECDEQAQ",
+      "displayed_link": "https://admin.ks.gov \u203a media \u203a cms",
+      "favicon": "https://serpapi.com/searches/6826c27b89ec1963e3820358/images/866c6ddf4ccae0affe56d587bf85b14916eee7fc73a415d475cebf0588929095.png",
+      "date": "Jun 3, 2024",
+      "snippet": "... provider directory, including information included in the directory ... (FHIR). 2676. 2677. 4. CareInsights: Our modern data platform ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 270
+          },
+          "extensions": [
+            "270 pages"
+          ]
+        }
+      },
+      "source": "Kansas Department of Administration (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Powerful Women",
+      "link": "https://arizent.brightspotcdn.com/cd/11/63c3711f49df8bb138f382fb5350/hdm-0618.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://arizent.brightspotcdn.com/cd/11/63c3711f49df8bb138f382fb5350/hdm-0618.pdf&ved=2ahUKEwi2v5_plqeNAxXoppUCHRtLHlsQFnoECC4QAQ",
+      "displayed_link": "https://arizent.brightspotcdn.com \u203a hdm-0618",
+      "date": "Jun 1, 2018",
+      "snippet": "\u201cCMS is going to be releasing Medicare claims data, and what's different about Blue Button. 2.0 is its going to be using the open API. FHIR ...",
+      "snippet_highlighted_words": [
+        "Medicare",
+        "API",
+        "FHIR"
+      ],
+      "source": "brightspotcdn.com"
+    },
+    {
+      "position": 9,
+      "title": "25 2018 Annual Meeting Board of Trustees - 1",
+      "link": "https://www.ama-assn.org/system/files/2019-12/a18-bot-reports.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ama-assn.org/system/files/2019-12/a18-bot-reports.pdf&ved=2ahUKEwi2v5_plqeNAxXoppUCHRtLHlsQFnoECDQQAQ",
+      "displayed_link": "https://www.ama-assn.org \u203a files \u203a a18-bot-reports",
+      "favicon": "https://serpapi.com/searches/6826c27b89ec1963e3820358/images/866c6ddf4ccae0affe56d587bf85b149d074926b372bea1167a0ba3ca44960a5.png",
+      "author": "by H ACTION",
+      "snippet": "\u201cSafe opioid prescription: a SMART on FHIR approach to clinical decision ... provider directory; and directs the Government. Accountability Office (GAO) ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "American Medical Association"
+    },
+    {
+      "position": 10,
+      "title": "Videos by Speaker - iHealthFlix",
+      "link": "https://ihealthflix.com/speaker",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ihealthflix.com/speaker&ved=2ahUKEwi2v5_plqeNAxXoppUCHRtLHlsQFnoECCwQAQ",
+      "displayed_link": "https://ihealthflix.com \u203a speaker",
+      "favicon": "https://serpapi.com/searches/6826c27b89ec1963e3820358/images/866c6ddf4ccae0affe56d587bf85b149d3e3bcca77a37a4b4715e69ba54ff70b.png",
+      "snippet": "... provider directory inaccuracies. 30% of provider data changes every year and studies found over 45% of provider directory locations had at least one error.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "provider directory"
+      ],
+      "source": "ihealthflix.com"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=First+Sacramento+Capital+Funding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=fcImaPYM6M3WxA-blvnYBQ&start=10&sa=N&sstk=Af40H4Ura0dNYPAOz8BbuqOUmemfFmz7KhFkSEYYdAoDraWCPiYIlZ98eACXBZ0FJbrhnJfN6me3_WHP0thNPfJHP5qGskacjZ2Cgg&ved=2ahUKEwi2v5_plqeNAxXoppUCHRtLHlsQ8NMDegQIBxAG",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=First+Sacramento+Capital+Funding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=fcImaPYM6M3WxA-blvnYBQ&start=10&sa=N&sstk=Af40H4Ura0dNYPAOz8BbuqOUmemfFmz7KhFkSEYYdAoDraWCPiYIlZ98eACXBZ0FJbrhnJfN6me3_WHP0thNPfJHP5qGskacjZ2Cgg&ved=2ahUKEwi2v5_plqeNAxXoppUCHRtLHlsQ8tMDegQIBxAE"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=First+Sacramento+Capital+Funding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=First+Sacramento+Capital+Funding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=First+Sacramento+Capital+Funding+LLC+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10"
+    }
+  }
+}

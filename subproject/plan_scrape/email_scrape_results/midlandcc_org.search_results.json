@@ -1,0 +1,34 @@
+{
+  "search_metadata": {
+    "id": "6861d32a8c60ca2e083bab0b",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/1b3ab1c496e11f3e/6861d32a8c60ca2e083bab0b.json",
+    "created_at": "2025-06-29 23:58:34 UTC",
+    "processed_at": "2025-06-29 23:58:34 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Amidlandcc.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Amidlandcc.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/1b3ab1c496e11f3e/6861d32a8c60ca2e083bab0b.html",
+    "total_time_taken": 0.71
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:midlandcc.org \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:midlandcc.org \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 0,
+    "time_taken_displayed": 0.14,
+    "organic_results_state": "Fully empty",
+    "query_feedback": {
+      "title": "Your search did not match any documents"
+    }
+  },
+  "error": "Google hasn't returned any results for this query."
+}

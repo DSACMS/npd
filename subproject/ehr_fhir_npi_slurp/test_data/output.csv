@@ -1,0 +1,16 @@
+list_source,certified_api_developer_name,distinct_url_count
+https://app.meldrx.com/api/Directories/fhir/endpoints,Darena Solutions LLC,2
+https://doxpodfhir-dmezayd2cbead2f8.centralus-01.azurewebsites.net/api,DOX EMR,1
+https://fhir-usa.unify.chbase.com/.well-known/endpoint,"TruBridge, Inc.",2
+https://fhir.eclinicalworks.com/ecwopendev/external/practiceList?pageId=1,"eClinicalWorks, LLC",1
+https://fhir.pointclickcare.com/R4endpoints.json,PointClickCare Technologies Inc.,1
+https://fhirurls.prognocis.com/fhirurlpublication/api/endpoint,Bizmatics Inc.,1
+https://open.epic.com/Endpoints/Brands,Epic Systems Corporation,1
+https://open.platform.veradigm.com/fhirendpoints/download/R4?endpointFilter=Patient,Veradigm,1
+https://providerapi.advancedmd.com/v1/r4/endpoints,AdvancedMD,1
+https://public-api.gastro.prod.fhir.ema-api.com/public/fhir/r4/Endpoint?_include=Endpoint:managingOrganization&connection-type=hl7-fhir-rest,"Modernizing Medicine Gastroenterology, LLC",1
+https://raw.githubusercontent.com/oracle-samples/ignite-endpoints/refs/heads/main/oracle_health_fhir_endpoints/millennium_patient_r4_endpoints.json,Cerner Corporation,1
+https://resources.insynchcs.com/docrepos/InSyncDocs/insync-fhir-org-list.json,"Qualifacts Systems, LLC",2
+https://revolutionehr.dynamicfhir.com/fhir/r4/endpoints,"Health Innovation Technologies, Inc.",1
+https://service-base-urls.api.fhir.athena.io/athena-fhir-service-base-urls.json,"athenahealth, Inc.",1
+https://www.practicefusion.com/assets/static_files/ServiceBaseURLs.json,Practice Fusion,3

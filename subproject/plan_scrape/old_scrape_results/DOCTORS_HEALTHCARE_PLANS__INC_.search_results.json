@@ -1,0 +1,269 @@
+{
+  "search_metadata": {
+    "id": "6826c2496c4c0cb8f43757d3",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/d9dd3c51afecce67/6826c2496c4c0cb8f43757d3.json",
+    "created_at": "2025-05-16 04:42:49 UTC",
+    "processed_at": "2025-05-16 04:42:49 UTC",
+    "google_url": "https://www.google.com/search?q=DOCTORS+HEALTHCARE+PLANS%2C+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=DOCTORS+HEALTHCARE+PLANS%2C+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/d9dd3c51afecce67/6826c2496c4c0cb8f43757d3.html",
+    "total_time_taken": 14.7
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "DOCTORS HEALTHCARE PLANS, INC. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "DOCTORS HEALTHCARE PLANS, INC. Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 474,
+    "time_taken_displayed": 0.27,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Provider Directory API",
+      "link": "https://developers.humana.com/provider-directory-api/doc",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developers.humana.com/provider-directory-api/doc&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQFnoECB0QAQ",
+      "displayed_link": "https://developers.humana.com \u203a doc",
+      "favicon": "https://serpapi.com/searches/6826c2496c4c0cb8f43757d3/images/35034744f3993c991e3b218f3e433918cd0942fade2968b0ba5527a8313d04e0.png",
+      "snippet": "The Provider Directory service ... This service includes multiple FHIR APIs: InsurancePlan, PractitionerRole, Practitioner, Organization, and Location.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "HEALTHCARE"
+      ],
+      "must_include": {
+        "word": "HEALTHCARE",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=DOCTORS+%22HEALTHCARE%22+PLANS,+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ5t4CegQILxAB"
+      },
+      "source": "Humana Data Exchange"
+    },
+    {
+      "position": 2,
+      "title": "CMS/ONC Patient access API",
+      "link": "https://www.healthadvantage-hmo.com/interoperability/patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthadvantage-hmo.com/interoperability/patient-access&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQFnoECBsQAQ",
+      "displayed_link": "https://www.healthadvantage-hmo.com \u203a interoperability",
+      "favicon": "https://serpapi.com/searches/6826c2496c4c0cb8f43757d3/images/35034744f3993c991e3b218f3e433918f856248aaf76f989c0c0a88ff66af613.png",
+      "snippet": "The Arkansas Blue Cross and Blue Shield1 Interoperability API provides third-party app developers access to FHIR ... The Provider Directory API will allow ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "source": "Health Advantage HMO"
+    },
+    {
+      "position": 3,
+      "title": "Request for Information; National Directory of Healthcare ...",
+      "link": "https://www.federalregister.gov/documents/2022/10/07/2022-21904/request-for-information-national-directory-of-healthcare-providers-and-services",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2022/10/07/2022-21904/request-for-information-national-directory-of-healthcare-providers-and-services&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQFnoECCMQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2022/10/07 \u203a request-...",
+      "favicon": "https://serpapi.com/searches/6826c2496c4c0cb8f43757d3/images/35034744f3993c991e3b218f3e433918d3571fdbb6c535eb4bc4c2a988abbd86.png",
+      "date": "Oct 7, 2022",
+      "snippet": "... FHIR API, to update its own provider directory with the latest information. This would allow the payer to present a provider directory ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "provider directory",
+        "provider directory"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Provider directory API access guide",
+      "link": "https://www.capbluecross.com/wps/portal/cap/about/developer/provider-directory-api-access-guide",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.capbluecross.com/wps/portal/cap/about/developer/provider-directory-api-access-guide&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQFnoECCAQAQ",
+      "displayed_link": "https://www.capbluecross.com \u203a cap \u203a about \u203a developer",
+      "favicon": "https://serpapi.com/searches/6826c2496c4c0cb8f43757d3/images/35034744f3993c991e3b218f3e4339187c79771879774ade9ea64dfb84014aee.png",
+      "snippet": "This documentation presumes that anyone accessing the API is familiar with the implementation guide for provider directory, FHIR US DAVINCI-PDEX v4.0.1.",
+      "snippet_highlighted_words": [
+        "API",
+        "provider directory",
+        "FHIR"
+      ],
+      "missing": [
+        "INC."
+      ],
+      "must_include": {
+        "word": "INC.",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=DOCTORS+HEALTHCARE+PLANS,+%22INC.%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ5t4CegQILhAB"
+      },
+      "source": "Capital Blue Cross"
+    },
+    {
+      "position": 5,
+      "title": "Patient access to payer healthcare information and FHIR ...",
+      "link": "https://www.wolterskluwer.com/en/expert-insights/patient-access-to-payer-healthcare-information-and-fhir-api-use",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wolterskluwer.com/en/expert-insights/patient-access-to-payer-healthcare-information-and-fhir-api-use&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQFnoECB8QAQ",
+      "displayed_link": "https://www.wolterskluwer.com \u203a Home \u203a Expert Insights",
+      "favicon": "https://serpapi.com/searches/6826c2496c4c0cb8f43757d3/images/35034744f3993c991e3b218f3e4339184a61e266fffe542d087399374d1d9705.png",
+      "date": "Dec 3, 2020",
+      "snippet": "Patient access to payer healthcare information and FHIR API use. By ... CMS finalized the Patient Access API and Provider Directory API ...",
+      "snippet_highlighted_words": [
+        "healthcare",
+        "FHIR API",
+        "API",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "PLANS,",
+        "INC."
+      ],
+      "source": "Wolters Kluwer"
+    },
+    {
+      "position": 6,
+      "title": "UnitedHealthcare Interoperability APIs | Legal",
+      "link": "https://www.uhc.com/legal/interoperability-apis",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhc.com/legal/interoperability-apis&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQFnoECBoQAQ",
+      "displayed_link": "https://www.uhc.com \u203a Legal",
+      "favicon": "https://serpapi.com/searches/6826c2496c4c0cb8f43757d3/images/35034744f3993c991e3b218f3e433918452236fc511e9c703f3f761b4de8861a.png",
+      "snippet": "Base URL for Sandbox API calls https://sandbox.fhir.flex.optum.com/R4. To ... 30 calendar days of a payer receiving provider directory information OR an update to ...",
+      "snippet_highlighted_words": [
+        "API",
+        "fhir",
+        "provider directory"
+      ],
+      "source": "United Healthcare"
+    },
+    {
+      "position": 7,
+      "title": "CMS Third-Party Application Developers Documentation",
+      "link": "https://healthplan.memorialhermann.org/about-us/cmstpadev-documentation",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://healthplan.memorialhermann.org/about-us/cmstpadev-documentation&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQFnoECBkQAQ",
+      "displayed_link": "https://healthplan.memorialhermann.org \u203a about-us \u203a c...",
+      "favicon": "https://serpapi.com/searches/6826c2496c4c0cb8f43757d3/images/35034744f3993c991e3b218f3e43391864aa8f97df5cb36a6001906398385be1.png",
+      "snippet": "The Provider Directory API accesses the Memorial Hermann Provider and Pharmacy Directories. This section describes the FHIR resources and RESTful capabilities ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "source": "Memorial Hermann Health Plan"
+    },
+    {
+      "position": 8,
+      "title": "Provider Access API",
+      "link": "https://1up.health/resources/provider-access-api/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://1up.health/resources/provider-access-api/&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQFnoECDYQAQ",
+      "displayed_link": "https://1up.health \u203a Resources",
+      "favicon": "https://serpapi.com/searches/6826c2496c4c0cb8f43757d3/images/35034744f3993c991e3b218f3e433918429e08b6a0094c154c073f2a94bba1ac.png",
+      "snippet": "Payer-to-Payer Data Exchange on FHIR\u00ae Overview \u00b7 Prior Authorization API Overview \u00b7 Provider Directory API Overview \u00b7 Patient Access API Overview ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory API",
+        "API"
+      ],
+      "missing": [
+        "INC."
+      ],
+      "must_include": {
+        "word": "INC.",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=DOCTORS+HEALTHCARE+PLANS,+%22INC.%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ5t4CegQINxAB"
+      },
+      "source": "1upHealth"
+    },
+    {
+      "position": 9,
+      "title": "Inovalon's FHIR-Based Patient Access API Solution",
+      "link": "https://www.inovalon.com/blog/inovalon-consumer-health-gateway-fhir-based-patient-access-api-solution/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.inovalon.com/blog/inovalon-consumer-health-gateway-fhir-based-patient-access-api-solution/&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQFnoECDsQAQ",
+      "displayed_link": "https://www.inovalon.com \u203a blog \u203a inovalon-consumer...",
+      "favicon": "https://serpapi.com/searches/6826c2496c4c0cb8f43757d3/images/35034744f3993c991e3b218f3e433918c16c41c6534d6d6f5c2eda94705c024e.png",
+      "snippet": "By July 2021, all Medicare Advantage, Medicaid, CHIP and ACA plans must provide a FHIR\u00ae-based Patient Access API and Provider Directory API, as mandated in ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "plans",
+        "FHIR",
+        "API",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "DOCTORS"
+      ],
+      "must_include": {
+        "word": "DOCTORS",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=%22DOCTORS%22+HEALTHCARE+PLANS,+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ5t4CegQIQBAB"
+      },
+      "source": "Inovalon"
+    },
+    {
+      "position": 10,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2020/05/01/2020-05050/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2020/05/01/2020-05050/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQFnoECDkQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2020/05/01 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/6826c2496c4c0cb8f43757d3/images/35034744f3993c991e3b218f3e43391826ff49ada0dd0e1a19c74050ed360210.png",
+      "date": "May 1, 2020",
+      "snippet": "The basic information (name, phone number, address, and specialty) required for this Provider Directory API can all be represented through FHIR ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "source": "Federal Register (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "National directory of Healthcare Providers & Services",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=National+directory+of+Healthcare+Providers+%26+Services&sa=X&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=National+directory+of+Healthcare+Providers+%26+Services&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "FHIR Provider Directory",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=FHIR+Provider+Directory&sa=X&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=FHIR+Provider+Directory&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Humana Research database",
+      "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Humana+Research+database&sa=X&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Humana+Research+database&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=DOCTORS+HEALTHCARE+PLANS,+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=V8ImaLevLYuCwbkPk8jt4A0&start=10&sa=N&sstk=Af40H4Vb54SoTMBmE-mD3fjeaOI4f5YwoZzzHjJFADqdlevlf1eGxxZe4zpn0dViy_Ea03deVXg4ImW8APb66W3NKObDLP_Qef3MUQ&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ8NMDegQIChAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=DOCTORS+HEALTHCARE+PLANS,+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=V8ImaLevLYuCwbkPk8jt4A0&start=10&sa=N&sstk=Af40H4Vb54SoTMBmE-mD3fjeaOI4f5YwoZzzHjJFADqdlevlf1eGxxZe4zpn0dViy_Ea03deVXg4ImW8APb66W3NKObDLP_Qef3MUQ&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=DOCTORS+HEALTHCARE+PLANS,+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=V8ImaLevLYuCwbkPk8jt4A0&start=20&sa=N&sstk=Af40H4Vb54SoTMBmE-mD3fjeaOI4f5YwoZzzHjJFADqdlevlf1eGxxZe4zpn0dViy_Ea03deVXg4ImW8APb66W3NKObDLP_Qef3MUQ&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=DOCTORS+HEALTHCARE+PLANS,+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=V8ImaLevLYuCwbkPk8jt4A0&start=30&sa=N&sstk=Af40H4Vb54SoTMBmE-mD3fjeaOI4f5YwoZzzHjJFADqdlevlf1eGxxZe4zpn0dViy_Ea03deVXg4ImW8APb66W3NKObDLP_Qef3MUQ&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=DOCTORS+HEALTHCARE+PLANS,+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=V8ImaLevLYuCwbkPk8jt4A0&start=40&sa=N&sstk=Af40H4Vb54SoTMBmE-mD3fjeaOI4f5YwoZzzHjJFADqdlevlf1eGxxZe4zpn0dViy_Ea03deVXg4ImW8APb66W3NKObDLP_Qef3MUQ&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=DOCTORS+HEALTHCARE+PLANS,+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=V8ImaLevLYuCwbkPk8jt4A0&start=50&sa=N&sstk=Af40H4Vb54SoTMBmE-mD3fjeaOI4f5YwoZzzHjJFADqdlevlf1eGxxZe4zpn0dViy_Ea03deVXg4ImW8APb66W3NKObDLP_Qef3MUQ&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ8tMDegQIChAM",
+      "7": "https://www.google.com/search?q=DOCTORS+HEALTHCARE+PLANS,+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=V8ImaLevLYuCwbkPk8jt4A0&start=60&sa=N&sstk=Af40H4Vb54SoTMBmE-mD3fjeaOI4f5YwoZzzHjJFADqdlevlf1eGxxZe4zpn0dViy_Ea03deVXg4ImW8APb66W3NKObDLP_Qef3MUQ&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ8tMDegQIChAO",
+      "8": "https://www.google.com/search?q=DOCTORS+HEALTHCARE+PLANS,+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=V8ImaLevLYuCwbkPk8jt4A0&start=70&sa=N&sstk=Af40H4Vb54SoTMBmE-mD3fjeaOI4f5YwoZzzHjJFADqdlevlf1eGxxZe4zpn0dViy_Ea03deVXg4ImW8APb66W3NKObDLP_Qef3MUQ&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ8tMDegQIChAQ",
+      "9": "https://www.google.com/search?q=DOCTORS+HEALTHCARE+PLANS,+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=V8ImaLevLYuCwbkPk8jt4A0&start=80&sa=N&sstk=Af40H4Vb54SoTMBmE-mD3fjeaOI4f5YwoZzzHjJFADqdlevlf1eGxxZe4zpn0dViy_Ea03deVXg4ImW8APb66W3NKObDLP_Qef3MUQ&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ8tMDegQIChAS",
+      "10": "https://www.google.com/search?q=DOCTORS+HEALTHCARE+PLANS,+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=V8ImaLevLYuCwbkPk8jt4A0&start=90&sa=N&sstk=Af40H4Vb54SoTMBmE-mD3fjeaOI4f5YwoZzzHjJFADqdlevlf1eGxxZe4zpn0dViy_Ea03deVXg4ImW8APb66W3NKObDLP_Qef3MUQ&ved=2ahUKEwj3tr3XlqeNAxULQTABHRNkG9wQ8tMDegQIChAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=DOCTORS+HEALTHCARE+PLANS%2C+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=DOCTORS+HEALTHCARE+PLANS%2C+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=DOCTORS+HEALTHCARE+PLANS%2C+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=DOCTORS+HEALTHCARE+PLANS%2C+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=DOCTORS+HEALTHCARE+PLANS%2C+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=DOCTORS+HEALTHCARE+PLANS%2C+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=DOCTORS+HEALTHCARE+PLANS%2C+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=DOCTORS+HEALTHCARE+PLANS%2C+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=DOCTORS+HEALTHCARE+PLANS%2C+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=DOCTORS+HEALTHCARE+PLANS%2C+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=DOCTORS+HEALTHCARE+PLANS%2C+INC.+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

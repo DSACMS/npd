@@ -1,0 +1,37 @@
+{
+  "search_metadata": {
+    "id": "6861d567a3f7303389c80bf7",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/e0a0428b04fd0f91/6861d567a3f7303389c80bf7.json",
+    "created_at": "2025-06-30 00:08:07 UTC",
+    "processed_at": "2025-06-30 00:08:07 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Assspr.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Assspr.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/e0a0428b04fd0f91/6861d567a3f7303389c80bf7.html",
+    "total_time_taken": 4.99
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:ssspr.com \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:ssspr.com \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 0,
+    "time_taken_displayed": 0.27,
+    "organic_results_state": "Fully empty",
+    "query_feedback": {
+      "title": "Your search did not match any documents"
+    },
+    "showing_results_for": "site:ssspr.com PROVIDER DIRECTORY FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "site:ssspr.com PROVIDER DIRECTORY FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "error": "Google hasn't returned any results for this query."
+}

@@ -1,0 +1,61 @@
+{
+  "filename": "PPEF_Enrollment_Extract_2025.04.01.csv",
+  "filename_without_extension": "PPEF_Enrollment_Extract_2025.04.01",
+  "full_path": "/Users/ftrotter/Downloads/Medicare_Fee-For-Service_Public_Provider_Enrollment/2025-Q1/PPEF_Enrollment_Extract_2025.04.01.csv",
+  "file_size_bytes": 309112162,
+  "delimiter": ",",
+  "quote_character": "\"",
+  "encoding": "iso-8859-1",
+  "encoding_confidence": "high",
+  "encoding_notes": "Detected automatically. Can be manually overridden if needed.",
+  "original_column_names": [
+    "NPI",
+    "PECOS_ASCT_CNTL_ID",
+    "ENRLMT_ID",
+    "PROVIDER_TYPE_CD",
+    "PROVIDER_TYPE_DESC",
+    "STATE_CD",
+    "FIRST_NAME",
+    "MDL_NAME",
+    "LAST_NAME",
+    "ORG_NAME"
+  ],
+  "normalized_column_names": [
+    "npi",
+    "pecos_asct_cntl_id",
+    "enrlmt_id",
+    "provider_type_cd",
+    "provider_type_desc",
+    "state_cd",
+    "first_name",
+    "mdl_name",
+    "last_name",
+    "org_name"
+  ],
+  "column_name_mapping": {
+    "NPI": "npi",
+    "PECOS_ASCT_CNTL_ID": "pecos_asct_cntl_id",
+    "ENRLMT_ID": "enrlmt_id",
+    "PROVIDER_TYPE_CD": "provider_type_cd",
+    "PROVIDER_TYPE_DESC": "provider_type_desc",
+    "STATE_CD": "state_cd",
+    "FIRST_NAME": "first_name",
+    "MDL_NAME": "mdl_name",
+    "LAST_NAME": "last_name",
+    "ORG_NAME": "org_name"
+  },
+  "max_column_lengths": {
+    "NPI": 10,
+    "PECOS_ASCT_CNTL_ID": 10,
+    "ENRLMT_ID": 15,
+    "PROVIDER_TYPE_CD": 5,
+    "PROVIDER_TYPE_DESC": 92,
+    "STATE_CD": 2,
+    "FIRST_NAME": 25,
+    "MDL_NAME": 25,
+    "LAST_NAME": 35,
+    "ORG_NAME": 70
+  },
+  "total_columns": 10,
+  "column_headers_hash": "9dd713a028f1631f23c369a519b9573f"
+}

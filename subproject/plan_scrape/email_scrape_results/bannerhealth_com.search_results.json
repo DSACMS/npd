@@ -1,0 +1,37 @@
+{
+  "search_metadata": {
+    "id": "6861d0ba6feec45f57463841",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/945cce88b16029b4/6861d0ba6feec45f57463841.json",
+    "created_at": "2025-06-29 23:48:10 UTC",
+    "processed_at": "2025-06-29 23:48:10 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Abannerhealth.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Abannerhealth.com+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/945cce88b16029b4/6861d0ba6feec45f57463841.html",
+    "total_time_taken": 6.72
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:bannerhealth.com \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:bannerhealth.com \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 0,
+    "time_taken_displayed": 0.24,
+    "organic_results_state": "Fully empty",
+    "query_feedback": {
+      "title": "Your search did not match any documents"
+    },
+    "showing_results_for": "site:bannerhealth.com PROVIDER DIRECTORY FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "site:bannerhealth.com PROVIDER DIRECTORY FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "error": "Google hasn't returned any results for this query."
+}

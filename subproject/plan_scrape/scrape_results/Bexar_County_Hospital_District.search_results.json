@@ -1,0 +1,292 @@
+{
+  "search_metadata": {
+    "id": "6826c1b84707f1e84827693f",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/db0aa7cb84fff676/6826c1b84707f1e84827693f.json",
+    "created_at": "2025-05-16 04:40:24 UTC",
+    "processed_at": "2025-05-16 04:40:24 UTC",
+    "google_url": "https://www.google.com/search?q=Bexar+County+Hospital+District+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Bexar+County+Hospital+District+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/db0aa7cb84fff676/6826c1b84707f1e84827693f.html",
+    "total_time_taken": 0.9
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Bexar County Hospital District Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Bexar County Hospital District Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 39,
+    "time_taken_displayed": 0.25,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability for Texas: Powering Health 2024",
+      "link": "https://www.hhs.texas.gov/sites/default/files/documents/interoperability-texas-powering-health-dec-2024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.texas.gov/sites/default/files/documents/interoperability-texas-powering-health-dec-2024.pdf&ved=2ahUKEwi4-82LlqeNAxUa6ckDHdHBKi4QFnoECBsQAQ",
+      "displayed_link": "https://www.hhs.texas.gov \u203a files \u203a documents \u203a in...",
+      "favicon": "https://serpapi.com/searches/6826c1b84707f1e84827693f/images/4a5a23645d797b732a700e6a4d705d7b4ed38f4d8c2d654732d2778bf4fe596e.png",
+      "date": "Dec 1, 2024",
+      "snippet": "Provider Directory API: Available provider names; provider addresses, phone numbers, and specialties. The project leveraged the FHIR ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 32
+          },
+          "extensions": [
+            "32 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Bexar",
+        "District",
+        "Advantage"
+      ],
+      "source": "Texas Health and Human Services (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "State Medicaid Health Information Technology Plan (SMHP)",
+      "link": "https://www.hhs.texas.gov/sites/default/files/documents/medicaid-health-it-plan.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.texas.gov/sites/default/files/documents/medicaid-health-it-plan.pdf&ved=2ahUKEwi4-82LlqeNAxUa6ckDHdHBKi4QFnoECBkQAQ",
+      "displayed_link": "https://www.hhs.texas.gov \u203a files \u203a documents \u203a m...",
+      "favicon": "https://serpapi.com/searches/6826c1b84707f1e84827693f/images/4a5a23645d797b732a700e6a4d705d7b36aa35305649d57e245828d456ed88e7.png",
+      "date": "Mar 25, 2022",
+      "snippet": "networks available via a FHIR-based Provider Directory API to facilitate public access to accurate information about in-network providers ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 116
+          },
+          "extensions": [
+            "116 pages"
+          ]
+        }
+      },
+      "missing": [
+        "District"
+      ],
+      "must_include": {
+        "word": "District",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=Bexar+County+Hospital+%22District%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi4-82LlqeNAxUa6ckDHdHBKi4Q5t4CegQILxAB"
+      },
+      "source": "Texas Health and Human Services (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwi4-82LlqeNAxUa6ckDHdHBKi4QFnoECBIQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/6826c1b84707f1e84827693f/images/4a5a23645d797b732a700e6a4d705d7b35e18ffb399c0eaad69e2af5513bc634.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Bexar",
+        "District"
+      ],
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 4,
+      "title": "Three-Way Contract (DOCX)",
+      "link": "https://www.cms.gov/files/document/txcontract04012024.docx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/txcontract04012024.docx&ved=2ahUKEwi4-82LlqeNAxUa6ckDHdHBKi4QFnoECBEQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a txcontract04012024",
+      "favicon": "https://serpapi.com/searches/6826c1b84707f1e84827693f/images/4a5a23645d797b732a700e6a4d705d7b1baf67ee47f180bffa2a8441cde790dd.png",
+      "date": "Apr 1, 2024",
+      "snippet": "... (API) and a Provider Directory API using the required Health Level 7 (HL7\u00ae) Fast Healthcare Interoperability Resources (FHIR)-based standards.",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "Health",
+        "Healthcare",
+        "FHIR"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Transcript",
+      "link": "https://www.healthit.gov/sites/default/files/facas/2021-02-10_HITAC_Transcript.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/facas/2021-02-10_HITAC_Transcript.pdf&ved=2ahUKEwi4-82LlqeNAxUa6ckDHdHBKi4QFnoECBgQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a facas",
+      "favicon": "https://serpapi.com/searches/6826c1b84707f1e84827693f/images/4a5a23645d797b732a700e6a4d705d7bd3e08a243116f8ac75e5f41eabc94718.jpeg",
+      "date": "Feb 10, 2021",
+      "snippet": "We can turn around and expose that as a FHIR API with Audacious Inquiry and Texas Health Services. ... provider directory, and we have about 450.",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Health",
+        "provider directory"
+      ],
+      "missing": [
+        "Bexar",
+        "District"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "HOUSE OF DELEGATES HANDBOOK - INFO (A-22)",
+      "link": "https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf&ved=2ahUKEwi4-82LlqeNAxUa6ckDHdHBKi4QFnoECBUQAQ",
+      "displayed_link": "https://www.ama-assn.org \u203a system \u203a files \u203a a22-...",
+      "favicon": "https://serpapi.com/searches/6826c1b84707f1e84827693f/images/4a5a23645d797b732a700e6a4d705d7ba3c6a683ab0d649e91848871b58dabb5.png",
+      "date": "Dec 17, 2021",
+      "snippet": "AMA/CAQH Provider Directory. White Paper \u2013 Co-branded white ... FHIR\u00ae implementation guide for the capture and use of SDOH data. 18.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "Co",
+        "FHIR"
+      ],
+      "missing": [
+        "Bexar",
+        "Advantage"
+      ],
+      "source": "American Medical Association"
+    },
+    {
+      "position": 7,
+      "title": "Marketplace",
+      "link": "https://www.ntst.com/marketplace",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ntst.com/marketplace&ved=2ahUKEwi4-82LlqeNAxUa6ckDHdHBKi4QFnoECBYQAQ",
+      "displayed_link": "https://www.ntst.com \u203a marketplace",
+      "favicon": "https://serpapi.com/searches/6826c1b84707f1e84827693f/images/4a5a23645d797b732a700e6a4d705d7b5c9c59700c731e812ef2e0577488d5b2.png",
+      "snippet": "Provider Directory. Radiology Solutions. Radiology Solutions. Reporting ... Our ONC Certified FHIR APIs drive simplicity and scalability, empowering ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR APIs"
+      ],
+      "missing": [
+        "Bexar",
+        "District"
+      ],
+      "source": "Netsmart Technologies"
+    },
+    {
+      "position": 8,
+      "title": "2023 UnitedHealthcare Care Provider Administrative Guide",
+      "link": "https://www.mypreferredprovider.com/media/w3ylnrgu/2023-uhc-administrative-guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mypreferredprovider.com/media/w3ylnrgu/2023-uhc-administrative-guide.pdf&ved=2ahUKEwi4-82LlqeNAxUa6ckDHdHBKi4QFnoECDIQAQ",
+      "displayed_link": "https://www.mypreferredprovider.com \u203a media",
+      "favicon": "https://serpapi.com/searches/6826c1b84707f1e84827693f/images/4a5a23645d797b732a700e6a4d705d7bf020e410a69165f6c2cf9258385b6147.png",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify information in ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 421
+          },
+          "extensions": [
+            "421 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Bexar",
+        "District"
+      ],
+      "source": "My Preferred Provider"
+    },
+    {
+      "position": 9,
+      "title": "2023 UnitedHealthcare Care Provider Administrative Guide",
+      "link": "https://health.maryland.gov/pophealth/Documents/Local%20Health%20Department%20Billing%20Manual/2023-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://health.maryland.gov/pophealth/Documents/Local%2520Health%2520Department%2520Billing%2520Manual/2023-UHC-Administrative-Guide.pdf&ved=2ahUKEwi4-82LlqeNAxUa6ckDHdHBKi4QFnoECDMQAQ",
+      "displayed_link": "https://health.maryland.gov \u203a Documents \u203a 2023-...",
+      "snippet": "... health care provider or specialist listed in our health care provider directory on uhcprovider.com/findprovider. The approved health care provider documents ...",
+      "snippet_highlighted_words": [
+        "health",
+        "health",
+        "provider directory",
+        "health"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 421
+          },
+          "extensions": [
+            "421 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Bexar",
+        "District"
+      ],
+      "source": "Maryland.gov"
+    },
+    {
+      "position": 10,
+      "title": "Mini-MRIs arrive in Canada, assist at point of care",
+      "link": "https://www.canhealth.com/wp-content/uploads/2022/01/Canadian-Healthcare-Technology-2022-01.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.canhealth.com/wp-content/uploads/2022/01/Canadian-Healthcare-Technology-2022-01.pdf&ved=2ahUKEwi4-82LlqeNAxUa6ckDHdHBKi4QFnoECDoQAQ",
+      "displayed_link": "https://www.canhealth.com \u203a uploads \u203a 2022/01",
+      "favicon": "https://serpapi.com/searches/6826c1b84707f1e84827693f/images/4a5a23645d797b732a700e6a4d705d7bbd24fe85450c4d1df309b3a27f1e5a8f.png",
+      "date": "Jan 26, 2022",
+      "snippet": "Medical services plans and providers should make supplier index data openly ac- cessible in a Provider Directory API. ... Using FHIR for API: More ...",
+      "snippet_highlighted_words": [
+        "plans",
+        "Provider Directory API",
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "Bexar",
+        "District"
+      ],
+      "source": "Canadian Healthcare Technology"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Bexar+County+Hospital+District+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=uMEmaLi_JprSp84P0YOr8QI&start=10&sa=N&sstk=Af40H4WWu8BzV1XyNQ9ArxcAiFVU7L1aDYkXxiJlVwFKZuBYiH-uJPj43ngEOKH1dWd2b9FPbhZvLwH1iQ15xOtpdLDWes9qvWtXLw&ved=2ahUKEwi4-82LlqeNAxUa6ckDHdHBKi4Q8NMDegQICRAG",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Bexar+County+Hospital+District+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=uMEmaLi_JprSp84P0YOr8QI&start=10&sa=N&sstk=Af40H4WWu8BzV1XyNQ9ArxcAiFVU7L1aDYkXxiJlVwFKZuBYiH-uJPj43ngEOKH1dWd2b9FPbhZvLwH1iQ15xOtpdLDWes9qvWtXLw&ved=2ahUKEwi4-82LlqeNAxUa6ckDHdHBKi4Q8tMDegQICRAE"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Bexar+County+Hospital+District+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Bexar+County+Hospital+District+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Bexar+County+Hospital+District+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10"
+    }
+  }
+}

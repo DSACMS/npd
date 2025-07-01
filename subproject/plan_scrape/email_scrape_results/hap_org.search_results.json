@@ -1,0 +1,191 @@
+{
+  "search_metadata": {
+    "id": "6861d205dd2e16acc8ec0b0c",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/c736b7091cfe9f58/6861d205dd2e16acc8ec0b0c.json",
+    "created_at": "2025-06-29 23:53:41 UTC",
+    "processed_at": "2025-06-29 23:53:41 UTC",
+    "google_url": "https://www.google.com/search?q=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/c736b7091cfe9f58/6861d205dd2e16acc8ec0b0c.html",
+    "total_time_taken": 2.45
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "site:hap.org \"PROVIDER DIRECTORY\"  \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "site:hap.org \"PROVIDER DIRECTORY\" \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 5,
+    "time_taken_displayed": 0.2,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_images": [
+    {
+      "source": "https://developer.hap.org/providerdirectoryapi",
+      "thumbnail": "https://serpapi.com/searches/6861d205dd2e16acc8ec0b0c/images/b8f1858a39cff64963fece20325502f4a6e651235e2769b4dc607f77b9aea2d9.jpeg",
+      "original": "https://developer.hap.org/images/haplogo.png",
+      "title": "HAP Developer Portal | Provider Directory API",
+      "source_name": "HAP Developer Portal"
+    },
+    {
+      "source": "https://developer.hap.org/patientaccessapi",
+      "thumbnail": "https://serpapi.com/searches/6861d205dd2e16acc8ec0b0c/images/b8f1858a39cff6496370e3b2945f839d05fdb8578e2fe5eaa746e2b2869adbd4.jpeg",
+      "original": "https://developer.hap.org/images/pkce.jpg",
+      "title": "HAP Developer Portal | Patient Access API",
+      "source_name": "HAP Developer Portal"
+    },
+    {
+      "source": "https://developer.hap.org/",
+      "thumbnail": "https://serpapi.com/searches/6861d205dd2e16acc8ec0b0c/images/b8f1858a39cff649e172a107ea65ae64cd9c88f28530b33525fb8b0d4bdbfec5.jpeg",
+      "original": "https://developer.hap.org/images/api-standard.png",
+      "title": "HAP Developer Portal | Home",
+      "source_name": "HAP"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Provider Directory API",
+      "link": "https://developer.hap.org/providerdirectoryapi",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.hap.org/providerdirectoryapi&ved=2ahUKEwip1I_46ZeOAxXNVkEAHcwZNtAQFnoECBsQAQ",
+      "displayed_link": "https://developer.hap.org \u203a providerdirectoryapi",
+      "favicon": "https://serpapi.com/searches/6861d205dd2e16acc8ec0b0c/images/17855fb7bd9f20f4160ee64d887743fcafa16438bacb164685aafcb48140b289.png",
+      "snippet": "The Provider Directory API accesses the HAP FHIR server Provider and Pharmacy Directories. You can create an application to access data about providers and ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "HAP Developer Portal"
+    },
+    {
+      "position": 2,
+      "title": "HAP Developer Portal | Home",
+      "link": "https://developer.hap.org/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.hap.org/&ved=2ahUKEwip1I_46ZeOAxXNVkEAHcwZNtAQFnoECB0QAQ",
+      "displayed_link": "https://developer.hap.org",
+      "favicon": "https://serpapi.com/searches/6861d205dd2e16acc8ec0b0c/images/17855fb7bd9f20f4160ee64d887743fca8df877caa4efabf6e3253b2b016506e.png",
+      "snippet": "Provider Directory API. The Provider Directory API accesses the HAP FHIR server Provider and Pharmacy Directories. You can create an application to access ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "HAP Developer Portal"
+    },
+    {
+      "position": 3,
+      "title": "Patient Access API",
+      "link": "https://developer.hap.org/patientaccessapi",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.hap.org/patientaccessapi&ved=2ahUKEwip1I_46ZeOAxXNVkEAHcwZNtAQFnoECBkQAQ",
+      "displayed_link": "https://developer.hap.org \u203a patientaccessapi",
+      "favicon": "https://serpapi.com/searches/6861d205dd2e16acc8ec0b0c/images/17855fb7bd9f20f4160ee64d887743fc2e56e38d8c15f2f7f0e861f2156a40c4.png",
+      "snippet": "Provider Directory API \u00b7 Legal ... Below you will find the FHIR profiles, resource, and RESTful capabilities the HAP Patient Access API supports.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "HAP Developer Portal"
+    },
+    {
+      "position": 4,
+      "title": "Health Alliance Plan",
+      "link": "https://developer.hap.org/login",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.hap.org/login&ved=2ahUKEwip1I_46ZeOAxXNVkEAHcwZNtAQFnoECBwQAQ",
+      "displayed_link": "https://developer.hap.org \u203a login",
+      "favicon": "https://serpapi.com/searches/6861d205dd2e16acc8ec0b0c/images/17855fb7bd9f20f4160ee64d887743fcc67c4f94823dc4a0d73f49241173f0e5.png",
+      "snippet": "Provider Directory API \u00b7 Legal Requirements \u00b7 Register \u00b7 Login. Helping ... HAP on FHIR APIs. Get information about the FHIR APIs that are available. Log ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "FHIR"
+      ],
+      "source": "HAP Developer Portal"
+    },
+    {
+      "position": 5,
+      "title": "Health Alliance Plan - Forgot Password?",
+      "link": "https://developer.hap.org/admin/account/password/new",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.hap.org/admin/account/password/new&ved=2ahUKEwip1I_46ZeOAxXNVkEAHcwZNtAQFnoECCEQAQ",
+      "displayed_link": "https://developer.hap.org \u203a account \u203a password \u203a new",
+      "favicon": "https://serpapi.com/searches/6861d205dd2e16acc8ec0b0c/images/17855fb7bd9f20f4160ee64d887743fca3cf299829c0159a63a463f707488bce.png",
+      "snippet": "Provider Directory API \u00b7 Legal Requirements \u00b7 Register \u00b7 Login. Helping Developers ... HAP on FHIR APIs. Get information about the FHIR APIs that are available.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "FHIR"
+      ],
+      "source": "HAP Developer Portal"
+    }
+  ],
+  "top_stories_link": "https://www.google.com/search?safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&q=site:hap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&udm=2&source=univ&fir=CKACG0_3h1TDGM%252C10Sv1SHus9rrpM%252C_%253BzT5vW4oHIuYLhM%252CZZg7wuaEDBK1zM%252C_%253B-Sl0NMaOaHMi4M%252CJ-4nKOS5SjSvSM%252C_&usg=AI4_-kSgBRCdW2ErBblBjJ8XduTRQ2si2A&sa=X&ved=2ahUKEwip1I_46ZeOAxXNVkEAHcwZNtAQ7Al6BAgNEAU",
+  "top_stories_serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active",
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Provider directory fhir fire ly linkedin com google com login",
+      "link": "https://www.google.com/search?safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&q=Provider+directory+fhir+fire+ly+linkedin+com+google+com+login&sa=X&ved=2ahUKEwip1I_46ZeOAxXNVkEAHcwZNtAQ1QJ6BAguEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+directory+fhir+fire+ly+linkedin+com+google+com+login&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Provider directory fhir fire ly linkedin com google com sign",
+      "link": "https://www.google.com/search?safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&q=Provider+directory+fhir+fire+ly+linkedin+com+google+com+sign&sa=X&ved=2ahUKEwip1I_46ZeOAxXNVkEAHcwZNtAQ1QJ6BAgsEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+directory+fhir+fire+ly+linkedin+com+google+com+sign&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Https provider directory fhir fire ly linkedin com google com",
+      "link": "https://www.google.com/search?safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&q=Https+provider+directory+fhir+fire+ly+linkedin+com+google+com&sa=X&ved=2ahUKEwip1I_46ZeOAxXNVkEAHcwZNtAQ1QJ6BAgtEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Https+provider+directory+fhir+fire+ly+linkedin+com+google+com&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Provider directory fhir fire ly linkedin com google com password",
+      "link": "https://www.google.com/search?safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&q=Provider+directory+fhir+fire+ly+linkedin+com+google+com+password&sa=X&ved=2ahUKEwip1I_46ZeOAxXNVkEAHcwZNtAQ1QJ6BAgrEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+directory+fhir+fire+ly+linkedin+com+google+com+password&safe=active"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 5 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=site:hap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=f4d4ab88b266eb8a&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&oq=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=site%3Ahap.org+%22PROVIDER+DIRECTORY%22++%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

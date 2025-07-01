@@ -1,0 +1,299 @@
+{
+  "search_metadata": {
+    "id": "6826c1fe49579acf8f1fff56",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/ef37e1909683e372/6826c1fe49579acf8f1fff56.json",
+    "created_at": "2025-05-16 04:41:34 UTC",
+    "processed_at": "2025-05-16 04:41:34 UTC",
+    "google_url": "https://www.google.com/search?q=BlueCross+BlueShield+of+Tennessee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=BlueCross+BlueShield+of+Tennessee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/ef37e1909683e372/6826c1fe49579acf8f1fff56.html",
+    "total_time_taken": 0.75
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "BlueCross BlueShield of Tennessee Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "BlueCross BlueShield of Tennessee Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 62,
+    "time_taken_displayed": 0.24,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "Is the BlueCross BlueShield of Tennessee the same as the Blue Cross Blue Shield?",
+      "snippet": "BlueCross BlueShield of Tennessee is the largest health benefit plan company in Tennessee. It is an independent, not-for-profit organization governed by its own board of directors. The organization is part of a nationwide association of health care plans licensed by the Blue Cross and Blue Shield Association.",
+      "title": "BlueCross BlueShield of Tennessee - Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/BlueCross_BlueShield_of_Tennessee#:~:text=BlueCross%20BlueShield%20of%20Tennessee%20is,Cross%20and%20Blue%20Shield%20Association.",
+      "displayed_link": "https://en.wikipedia.org \u203a wiki \u203a BlueCross_BlueShield_...",
+      "source_logo": "https://serpapi.com/searches/6826c1fe49579acf8f1fff56/images/91bce5b5571663bb84be9e15babf1ca28d676da8da1ab74a4cba265796e2804f.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobGVtSjFlRXMzUkc1YWVVeGFUMnhDTUU5c2FHdERXazV4YURsMmFGQlBNWFpwYURodWRWTktlVE4yVmpSVk1uVkJjVXBOY1RRM1J6SlNUblJtYkdZNU5FTm9Wa1JUZWtzd1VGWlNiSGR4YldGZmEwSTVlV0V6YnpOT1VSSVhYM05GYldGUVExbEhPRTlLY0hSUlVITTBUMHh0VVVVYUlrRkRSRmhNTkc1cVZsRnFXVFkzV2tGd1h5MXBTVWR1VjA0emJUaDFhSGxtWW5jIiwiZmN2IjoiMyIsImVpIjoiX3NFbWFQQ1lHOE9KcHRRUHM0T0xtUUUiLCJxYyI6ImN4WEdzUTJFUUF3RVFHSWlJdUtOYVlJV3ZnVnpYc0FTM0NIN1FDS2diMEwwRTAzN203YVR5VXNFX292VnVDbktqTXFjR1VGaXAxb1NKMFF2eVZVVzR2QnltZEtoNWt5MS1BMDVEUE5xM2pWUF93N2pCdyIsInF1ZXN0aW9uIjoiSXMgdGhlIEJsdWVDcm9zcyBCbHVlU2hpZWxkIG9mIFRlbm5lc3NlZSB0aGUgc2FtZSBhcyB0aGUgQmx1ZSBDcm9zcyBCbHVlIFNoaWVsZD8iLCJsayI6ImM1UHl6Q3hXU01vcFRWVklMc292aGpLTE16SlRjMUlVOHRNVVNsTHo4bEtMaTFOVEZVb3lnT0tKdWFrS2lialVBd0EiLCJicyI6ImMyMlBQMjdDTUJUR2haanFpVEhLd3V0WXVvQXZFQ2xoaWJwVUFva09MRTd5d0s1U0dfbVpJSTdCRlhxQUhxR1g2SVV3anRRb1ViYW5wLV8zX1dIZkVfYWVFemlKa05abnpLd2hDdGRHS3F3ck1BZllvdFpJaEJoVUpMNFFSRWRBaDBETEpOR1A1Rzl4cmdpS3g3Y01nbkRTdjZrYk5SM1hzdy0yM0VuaFFMV3hKMnNhVmFHRldtbUVnN0dRWnVtbVZ6V0pfcWI4T1o0WFpVSDl1QjdNUHRscWJaQmFnMjVvYVJxdjJPSFJOTmNRY0VGMWxBNXEzeXlKZnA4NGo1ZlZnd3YtYnNCZFJqbTJaNHRNYU1qaFREZ01WQnFFTm42Y0JYTEMtZjYzRlgtTlgwb1BxQUFNa29iQWJISUgiLCJpZCI6ImZjX19zRW1hUENZRzhPSnB0UVBzNE9MbVFFXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobGVtSjFlRXMzUkc1YWVVeGFUMnhDTUU5c2FHdERXazV4YURsMmFGQlBNWFpwYURodWRWTktlVE4yVmpSVk1uVkJjVXBOY1RRM1J6SlNUblJtYkdZNU5FTm9Wa1JUZWtzd1VGWlNiSGR4YldGZmEwSTVlV0V6YnpOT1VSSVhYM05GYldGUVExbEhPRTlLY0hSUlVITTBUMHh0VVVVYUlrRkRSRmhNTkc1cVZsRnFXVFkzV2tGd1h5MXBTVWR1VjA0emJUaDFhSGxtWW5jIiwiZmN2IjoiMyIsImVpIjoiX3NFbWFQQ1lHOE9KcHRRUHM0T0xtUUUiLCJxYyI6ImN4WEdzUTJFUUF3RVFHSWlJdUtOYVlJV3ZnVnpYc0FTM0NIN1FDS2diMEwwRTAzN203YVR5VXNFX292VnVDbktqTXFjR1VGaXAxb1NKMFF2eVZVVzR2QnltZEtoNWt5MS1BMDVEUE5xM2pWUF93N2pCdyIsInF1ZXN0aW9uIjoiSXMgdGhlIEJsdWVDcm9zcyBCbHVlU2hpZWxkIG9mIFRlbm5lc3NlZSB0aGUgc2FtZSBhcyB0aGUgQmx1ZSBDcm9zcyBCbHVlIFNoaWVsZD8iLCJsayI6ImM1UHl6Q3hXU01vcFRWVklMc292aGpLTE16SlRjMUlVOHRNVVNsTHo4bEtMaTFOVEZVb3lnT0tKdWFrS2lialVBd0EiLCJicyI6ImMyMlBQMjdDTUJUR2haanFpVEhLd3V0WXVvQXZFQ2xoaWJwVUFva09MRTd5d0s1U0dfbVpJSTdCRlhxQUhxR1g2SVV3anRRb1ViYW5wLV8zX1dIZkVfYWVFemlKa05abnpLd2hDdGRHS3F3ck1BZllvdFpJaEJoVUpMNFFSRWRBaDBETEpOR1A1Rzl4cmdpS3g3Y01nbkRTdjZrYk5SM1hzdy0yM0VuaFFMV3hKMnNhVmFHRldtbUVnN0dRWnVtbVZ6V0pfcWI4T1o0WFpVSDl1QjdNUHRscWJaQmFnMjVvYVJxdjJPSFJOTmNRY0VGMWxBNXEzeXlKZnA4NGo1ZlZnd3YtYnNCZFJqbTJaNHRNYU1qaFREZ01WQnFFTm42Y0JYTEMtZjYzRlgtTlgwb1BxQUFNa29iQWJISUgiLCJpZCI6ImZjX19zRW1hUENZRzhPSnB0UVBzNE9MbVFFXzMifQ%3D%3D"
+    },
+    {
+      "question": "What is the provider line for BCBS of Tennessee?",
+      "snippet": "If you have questions about working with us, please find helpful resources on this website or call our Provider Service Line at 1-800-924-7141.",
+      "title": "1-800-924-7141",
+      "link": "https://provider.bcbst.com/#:~:text=If%20you%20have%20questions%20about,%2D800%2D924%2D7141.",
+      "displayed_link": null,
+      "source_logo": "https://serpapi.com/searches/6826c1fe49579acf8f1fff56/images/91bce5b5571663bb84be9e15babf1ca29b7c5b5f04e4c157daa5edcb60138b46.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobGVtSjFlRXMzUkc1YWVVeGFUMnhDTUU5c2FHdERXazV4YURsMmFGQlBNWFpwYURodWRWTktlVE4yVmpSVk1uVkJjVXBOY1RRM1J6SlNUblJtYkdZNU5FTm9Wa1JUZWtzd1VGWlNiSGR4YldGZmEwSTVlV0V6YnpOT1VSSVhYM05GYldGUVExbEhPRTlLY0hSUlVITTBUMHh0VVVVYUlrRkRSRmhNTkc1cVZsRnFXVFkzV2tGd1h5MXBTVWR1VjA0emJUaDFhSGxtWW5jIiwiZmN2IjoiMyIsImVpIjoiX3NFbWFQQ1lHOE9KcHRRUHM0T0xtUUUiLCJxYyI6ImN4WEdzUTJFUUF3RVFHSWlJdUtOYVlJV3ZnVnpYc0FTM0NIN1FDS2diMEwwRTAzN203YVR5VXNFX292VnVDbktqTXFjR1VGaXAxb1NKMFF2eVZVVzR2QnltZEtoNWt5MS1BMDVEUE5xM2pWUF93N2pCdyIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgcHJvdmlkZXIgbGluZSBmb3IgQkNCUyBvZiBUZW5uZXNzZWU/IiwibGsiOiJHaDlpWTJKeklHOW1JSFJsYm01bGMzTmxaU0J3Y205MmFXUmxjaUJzYVc1bCIsImJzIjoiYzIyUFAyN0NNQlRHaFpqcWlUSEt3dXRZdW9BdkVDbGhpYnBVQW9rT0xFN3l3SzVTR19tWklJN0JGWHFBSHFHWDZJVXdqdFFvVWJhbnAtXzNfV0hmRV9hZUV6aUprTlpuekt3aEN0ZEdLcXdyTUFmWW90WkloQmhVSkw0UVJFZEFoMERMSk5HUDVHOXhyZ2lLeDdjTWduRFN2NmtiTlIzWHN3LTIzRW5oUUxXeEoyc2FWYUdGV21tRWc3R1FadW1tVnpXSl9xYjhPWjRYWlVIOXVCN01QdGxxYlpCYWcyNW9hUnF2Mk9IUk5OY1FjRUYxbEE1cTN5eUpmcDg0ajVmVmd3di1ic0JkUmptMlo0dE1hTWpoVERnTVZCcUVObjZjQlhMQy1mNjNGWC1OWDBvUHFBQU1rb2JBYkhJSCIsImlkIjoiZmNfX3NFbWFQQ1lHOE9KcHRRUHM0T0xtUUVfMyJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobGVtSjFlRXMzUkc1YWVVeGFUMnhDTUU5c2FHdERXazV4YURsMmFGQlBNWFpwYURodWRWTktlVE4yVmpSVk1uVkJjVXBOY1RRM1J6SlNUblJtYkdZNU5FTm9Wa1JUZWtzd1VGWlNiSGR4YldGZmEwSTVlV0V6YnpOT1VSSVhYM05GYldGUVExbEhPRTlLY0hSUlVITTBUMHh0VVVVYUlrRkRSRmhNTkc1cVZsRnFXVFkzV2tGd1h5MXBTVWR1VjA0emJUaDFhSGxtWW5jIiwiZmN2IjoiMyIsImVpIjoiX3NFbWFQQ1lHOE9KcHRRUHM0T0xtUUUiLCJxYyI6ImN4WEdzUTJFUUF3RVFHSWlJdUtOYVlJV3ZnVnpYc0FTM0NIN1FDS2diMEwwRTAzN203YVR5VXNFX292VnVDbktqTXFjR1VGaXAxb1NKMFF2eVZVVzR2QnltZEtoNWt5MS1BMDVEUE5xM2pWUF93N2pCdyIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgcHJvdmlkZXIgbGluZSBmb3IgQkNCUyBvZiBUZW5uZXNzZWU%2FIiwibGsiOiJHaDlpWTJKeklHOW1JSFJsYm01bGMzTmxaU0J3Y205MmFXUmxjaUJzYVc1bCIsImJzIjoiYzIyUFAyN0NNQlRHaFpqcWlUSEt3dXRZdW9BdkVDbGhpYnBVQW9rT0xFN3l3SzVTR19tWklJN0JGWHFBSHFHWDZJVXdqdFFvVWJhbnAtXzNfV0hmRV9hZUV6aUprTlpuekt3aEN0ZEdLcXdyTUFmWW90WkloQmhVSkw0UVJFZEFoMERMSk5HUDVHOXhyZ2lLeDdjTWduRFN2NmtiTlIzWHN3LTIzRW5oUUxXeEoyc2FWYUdGV21tRWc3R1FadW1tVnpXSl9xYjhPWjRYWlVIOXVCN01QdGxxYlpCYWcyNW9hUnF2Mk9IUk5OY1FjRUYxbEE1cTN5eUpmcDg0ajVmVmd3di1ic0JkUmptMlo0dE1hTWpoVERnTVZCcUVObjZjQlhMQy1mNjNGWC1OWDBvUHFBQU1rb2JBYkhJSCIsImlkIjoiZmNfX3NFbWFQQ1lHOE9KcHRRUHM0T0xtUUVfMyJ9"
+    },
+    {
+      "question": "Does BCBS Tennessee cover Wegovy for weight loss?",
+      "snippet": null,
+      "title": "AI Overview",
+      "link": "https://www.singlecare.com/blog/wegovy-prior-authorization-criteria-blue-cross-blue-shield/",
+      "list": [
+        "A BMI of 30 or higher. ",
+        "A BMI of 27 or higher with at least one weight-related health condition, such as cardiovascular disease, hypertension, type 2 diabetes, obstructive sleep apnea, or impaired glucose tolerance. ",
+        "Children 12 years and older with a BMI in the 95th percentile or higher may also qualify.\u00a0 ",
+        "Blue Cross Blue Shield often requires prior authorization for Wegovy, meaning a healthcare provider needs to submit documentation demonstrating the member's eligibility. ",
+        "Prior authorization approval may expire, and renewal may require a certain amount of weight loss to show that the medication is effective.\u00a0 ",
+        "Members may need to meet their plan's deductible before coverage for Wegovy begins.\u00a0 ",
+        "If Wegovy is not covered or too expensive, consider using manufacturer coupons or prescription discount cards like SingleCare.\u00a0 ",
+        "Discuss alternative weight loss medications with your healthcare provider.\u00a0 "
+      ],
+      "displayed_link": null,
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobGVtSjFlRXMzUkc1YWVVeGFUMnhDTUU5c2FHdERXazV4YURsMmFGQlBNWFpwYURodWRWTktlVE4yVmpSVk1uVkJjVXBOY1RRM1J6SlNUblJtYkdZNU5FTm9Wa1JUZWtzd1VGWlNiSGR4YldGZmEwSTVlV0V6YnpOT1VSSVhYM05GYldGUVExbEhPRTlLY0hSUlVITTBUMHh0VVVVYUlrRkRSRmhNTkc1cVZsRnFXVFkzV2tGd1h5MXBTVWR1VjA0emJUaDFhSGxtWW5jIiwiZmN2IjoiMyIsImVpIjoiX3NFbWFQQ1lHOE9KcHRRUHM0T0xtUUUiLCJxYyI6ImN4WEdzUTJFUUF3RVFHSWlJdUtOYVlJV3ZnVnpYc0FTM0NIN1FDS2diMEwwRTAzN203YVR5VXNFX292VnVDbktqTXFjR1VGaXAxb1NKMFF2eVZVVzR2QnltZEtoNWt5MS1BMDVEUE5xM2pWUF93N2pCdyIsInF1ZXN0aW9uIjoiRG9lcyBCQ0JTIFRlbm5lc3NlZSBjb3ZlciBXZWdvdnkgZm9yIHdlaWdodCBsb3NzPyIsImxrIjoiYzVNeVNNbFBMVlpJU2s0cVZpaEp6Y3RMTFM1T1RWVkl6aTlMTFZJb1QwM1BMNnRVU01zSE1UUFRNMG9VY3ZLTGl3RSIsImJzIjoiYzIyUFAyN0NNQlRHaFpqcWlUSEt3dXRZdW9BdkVDbGhpYnBVQW9rT0xFN3l3SzVTR19tWklJN0JGWHFBSHFHWDZJVXdqdFFvVWJhbnAtXzNfV0hmRV9hZUV6aUprTlpuekt3aEN0ZEdLcXdyTUFmWW90WkloQmhVSkw0UVJFZEFoMERMSk5HUDVHOXhyZ2lLeDdjTWduRFN2NmtiTlIzWHN3LTIzRW5oUUxXeEoyc2FWYUdGV21tRWc3R1FadW1tVnpXSl9xYjhPWjRYWlVIOXVCN01QdGxxYlpCYWcyNW9hUnF2Mk9IUk5OY1FjRUYxbEE1cTN5eUpmcDg0ajVmVmd3di1ic0JkUmptMlo0dE1hTWpoVERnTVZCcUVObjZjQlhMQy1mNjNGWC1OWDBvUHFBQU1rb2JBYkhJSCIsImlkIjoiZmNfX3NFbWFQQ1lHOE9KcHRRUHM0T0xtUUVfMyJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobGVtSjFlRXMzUkc1YWVVeGFUMnhDTUU5c2FHdERXazV4YURsMmFGQlBNWFpwYURodWRWTktlVE4yVmpSVk1uVkJjVXBOY1RRM1J6SlNUblJtYkdZNU5FTm9Wa1JUZWtzd1VGWlNiSGR4YldGZmEwSTVlV0V6YnpOT1VSSVhYM05GYldGUVExbEhPRTlLY0hSUlVITTBUMHh0VVVVYUlrRkRSRmhNTkc1cVZsRnFXVFkzV2tGd1h5MXBTVWR1VjA0emJUaDFhSGxtWW5jIiwiZmN2IjoiMyIsImVpIjoiX3NFbWFQQ1lHOE9KcHRRUHM0T0xtUUUiLCJxYyI6ImN4WEdzUTJFUUF3RVFHSWlJdUtOYVlJV3ZnVnpYc0FTM0NIN1FDS2diMEwwRTAzN203YVR5VXNFX292VnVDbktqTXFjR1VGaXAxb1NKMFF2eVZVVzR2QnltZEtoNWt5MS1BMDVEUE5xM2pWUF93N2pCdyIsInF1ZXN0aW9uIjoiRG9lcyBCQ0JTIFRlbm5lc3NlZSBjb3ZlciBXZWdvdnkgZm9yIHdlaWdodCBsb3NzPyIsImxrIjoiYzVNeVNNbFBMVlpJU2s0cVZpaEp6Y3RMTFM1T1RWVkl6aTlMTFZJb1QwM1BMNnRVU01zSE1UUFRNMG9VY3ZLTGl3RSIsImJzIjoiYzIyUFAyN0NNQlRHaFpqcWlUSEt3dXRZdW9BdkVDbGhpYnBVQW9rT0xFN3l3SzVTR19tWklJN0JGWHFBSHFHWDZJVXdqdFFvVWJhbnAtXzNfV0hmRV9hZUV6aUprTlpuekt3aEN0ZEdLcXdyTUFmWW90WkloQmhVSkw0UVJFZEFoMERMSk5HUDVHOXhyZ2lLeDdjTWduRFN2NmtiTlIzWHN3LTIzRW5oUUxXeEoyc2FWYUdGV21tRWc3R1FadW1tVnpXSl9xYjhPWjRYWlVIOXVCN01QdGxxYlpCYWcyNW9hUnF2Mk9IUk5OY1FjRUYxbEE1cTN5eUpmcDg0ajVmVmd3di1ic0JkUmptMlo0dE1hTWpoVERnTVZCcUVObjZjQlhMQy1mNjNGWC1OWDBvUHFBQU1rb2JBYkhJSCIsImlkIjoiZmNfX3NFbWFQQ1lHOE9KcHRRUHM0T0xtUUVfMyJ9"
+    },
+    {
+      "question": "Can I use BCBS Tennessee in another state?",
+      "snippet": null,
+      "title": "AI Overview",
+      "link": "https://www.bcbst.com/docs/providers/COMM-713-B_Understanding_Blue_Networks_Pre-Sales_Flier.pdf",
+      "list": [
+        "BlueCard Network: The BlueCard network consists of doctors and hospitals across the country that participate in the program, according to BlueCross BlueShield of Tennessee.\u00a0 ",
+        "Coverage: While you may have coverage for in-network care, the specific coverage for out-of-state or out-of-area situations can vary depending on your specific BCBS TN plan.\u00a0 ",
+        "Emergency Care: Many plans offer coverage for emergency care when you are out of your home state or area.\u00a0 ",
+        "Other Considerations: It's always a good idea to check with your BCBS TN provider or plan administrator for details on your specific coverage and how to use the BlueCard program while traveling or living out of state.\u00a0 "
+      ],
+      "displayed_link": null,
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobGVtSjFlRXMzUkc1YWVVeGFUMnhDTUU5c2FHdERXazV4YURsMmFGQlBNWFpwYURodWRWTktlVE4yVmpSVk1uVkJjVXBOY1RRM1J6SlNUblJtYkdZNU5FTm9Wa1JUZWtzd1VGWlNiSGR4YldGZmEwSTVlV0V6YnpOT1VSSVhYM05GYldGUVExbEhPRTlLY0hSUlVITTBUMHh0VVVVYUlrRkRSRmhNTkc1cVZsRnFXVFkzV2tGd1h5MXBTVWR1VjA0emJUaDFhSGxtWW5jIiwiZmN2IjoiMyIsImVpIjoiX3NFbWFQQ1lHOE9KcHRRUHM0T0xtUUUiLCJxYyI6ImN4WEdzUTJFUUF3RVFHSWlJdUtOYVlJV3ZnVnpYc0FTM0NIN1FDS2diMEwwRTAzN203YVR5VXNFX292VnVDbktqTXFjR1VGaXAxb1NKMFF2eVZVVzR2QnltZEtoNWt5MS1BMDVEUE5xM2pWUF93N2pCdyIsInF1ZXN0aW9uIjoiQ2FuIEkgdXNlIEJDQlMgVGVubmVzc2VlIGluIGFub3RoZXIgc3RhdGU/IiwibGsiOiJHaWxqWVc0Z2FTQjFjMlVnWW1OaWN5QjBaVzV1WlhOelpXVWdhVzRnWVc1dmRHaGxjaUJ6ZEdGMFpRIiwiYnMiOiJjMjJQUDI3Q01CVEdoWmpxaVRIS3d1dFl1b0F2RUNsaGlicFVBb2tPTEU3eXdLNVNHX21aSUk3QkZYcUFIcUdYNklVd2p0UW9VYmFucC1fM19XSGZFX2FlRXppSmtOWm56S3doQ3RkR0txd3JNQWZZb3RaSWhCaFVKTDRRUkVkQWgwRExKTkdQNUc5eHJnaUt4N2NNZ25EU3Y2a2JOUjNYc3ctMjNFbmhRTFd4SjJzYVZhR0ZXbW1FZzdHUVp1bW1WeldKX3FiOE9aNFhaVUg5dUI3TVB0bHFiWkJhZzI1b2FScXYyT0hSTk5jUWNFRjFsQTVxM3l5SmZwODRqNWZWZ3d2LWJzQmRSam0yWjR0TWFNamhURGdNVkJxRU5uNmNCWExDLWY2M0ZYLU5YMG9QcUFBTWtvYkFiSElIIiwiaWQiOiJmY19fc0VtYVBDWUc4T0pwdFFQczRPTG1RRV8zIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobGVtSjFlRXMzUkc1YWVVeGFUMnhDTUU5c2FHdERXazV4YURsMmFGQlBNWFpwYURodWRWTktlVE4yVmpSVk1uVkJjVXBOY1RRM1J6SlNUblJtYkdZNU5FTm9Wa1JUZWtzd1VGWlNiSGR4YldGZmEwSTVlV0V6YnpOT1VSSVhYM05GYldGUVExbEhPRTlLY0hSUlVITTBUMHh0VVVVYUlrRkRSRmhNTkc1cVZsRnFXVFkzV2tGd1h5MXBTVWR1VjA0emJUaDFhSGxtWW5jIiwiZmN2IjoiMyIsImVpIjoiX3NFbWFQQ1lHOE9KcHRRUHM0T0xtUUUiLCJxYyI6ImN4WEdzUTJFUUF3RVFHSWlJdUtOYVlJV3ZnVnpYc0FTM0NIN1FDS2diMEwwRTAzN203YVR5VXNFX292VnVDbktqTXFjR1VGaXAxb1NKMFF2eVZVVzR2QnltZEtoNWt5MS1BMDVEUE5xM2pWUF93N2pCdyIsInF1ZXN0aW9uIjoiQ2FuIEkgdXNlIEJDQlMgVGVubmVzc2VlIGluIGFub3RoZXIgc3RhdGU%2FIiwibGsiOiJHaWxqWVc0Z2FTQjFjMlVnWW1OaWN5QjBaVzV1WlhOelpXVWdhVzRnWVc1dmRHaGxjaUJ6ZEdGMFpRIiwiYnMiOiJjMjJQUDI3Q01CVEdoWmpxaVRIS3d1dFl1b0F2RUNsaGlicFVBb2tPTEU3eXdLNVNHX21aSUk3QkZYcUFIcUdYNklVd2p0UW9VYmFucC1fM19XSGZFX2FlRXppSmtOWm56S3doQ3RkR0txd3JNQWZZb3RaSWhCaFVKTDRRUkVkQWgwRExKTkdQNUc5eHJnaUt4N2NNZ25EU3Y2a2JOUjNYc3ctMjNFbmhRTFd4SjJzYVZhR0ZXbW1FZzdHUVp1bW1WeldKX3FiOE9aNFhaVUg5dUI3TVB0bHFiWkJhZzI1b2FScXYyT0hSTk5jUWNFRjFsQTVxM3l5SmZwODRqNWZWZ3d2LWJzQmRSam0yWjR0TWFNamhURGdNVkJxRU5uNmNCWExDLWY2M0ZYLU5YMG9QcUFBTWtvYkFiSElIIiwiaWQiOiJmY19fc0VtYVBDWUc4T0pwdFFQczRPTG1RRV8zIn0%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Developer Resources",
+      "link": "https://www.bcbst.com/developer-resources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bcbst.com/developer-resources&ved=2ahUKEwjwj_OslqeNAxXDhIkEHbPBIhMQFnoECCQQAQ",
+      "displayed_link": "https://www.bcbst.com \u203a Sync Your App",
+      "favicon": "https://serpapi.com/searches/6826c1fe49579acf8f1fff56/images/2d00159ca9777dcc085386f074117691ac217bd1b9b892bff09bba87962729ae.png",
+      "snippet": "The Provider Directory APIs can be used to create applications to access information about providers and pharmacies. Implementation Guides. HL7 FHIR DaVinci ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=BlueCross+BlueShield+of+Tennessee+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjwj_OslqeNAxXDhIkEHbPBIhMQ5t4CegQILBAB"
+      },
+      "source": "BlueCross BlueShield of Tennessee"
+    },
+    {
+      "position": 2,
+      "title": "State of Provider Directory APIs 2024",
+      "link": "https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/&ved=2ahUKEwjwj_OslqeNAxXDhIkEHbPBIhMQFnoECC4QAQ",
+      "displayed_link": "https://defacto.health \u203a 2024/06/24 \u203a state-of-provider-di...",
+      "favicon": "https://serpapi.com/searches/6826c1fe49579acf8f1fff56/images/2d00159ca9777dcc085386f0741176911f5ca098b71011b1757e583a49058d97.png",
+      "date": "Jun 24, 2024",
+      "snippet": "Across Medicare fee-for-service and Medicare Advantage, available Provider Directory ... Provider Directory data via FHIR APIs: UnitedHealthcare ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "Provider Directory",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Defacto Health"
+    },
+    {
+      "position": 3,
+      "title": "The Official Blog of HL7 | payer data exchange",
+      "link": "https://blog.hl7.org/topic/payer-data-exchange",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://blog.hl7.org/topic/payer-data-exchange&ved=2ahUKEwjwj_OslqeNAxXDhIkEHbPBIhMQFnoECBkQAQ",
+      "displayed_link": "https://blog.hl7.org \u203a topic \u203a payer-data-exchange",
+      "favicon": "https://serpapi.com/searches/6826c1fe49579acf8f1fff56/images/2d00159ca9777dcc085386f074117691b0ac4de5af8466554225999378990a1b.png",
+      "date": "Apr 16, 2025",
+      "snippet": "Organizations that want to fast-track implementing HL7 FHIR APIs to automate workflow, maximize efficiency and meet federal requirements of the ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "HL7 Blog"
+    },
+    {
+      "position": 4,
+      "title": "The State of Payer Patient Access APIs - Flexpa - Substack",
+      "link": "https://flexpa.substack.com/p/the-state-of-payer-patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://flexpa.substack.com/p/the-state-of-payer-patient-access&ved=2ahUKEwjwj_OslqeNAxXDhIkEHbPBIhMQFnoECBsQAQ",
+      "displayed_link": "8 likes \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/searches/6826c1fe49579acf8f1fff56/images/2d00159ca9777dcc085386f0741176919b64f3635ef0c57a39b5e840c5f7918b.png",
+      "snippet": "These include patient access, provider directory, and payer-to-payer exchange APIs. ... FHIR API: The CMS rule said the following data must \u201cat a ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR API"
+      ],
+      "source": "Substack \u00b7 Flexpa"
+    },
+    {
+      "position": 5,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwjwj_OslqeNAxXDhIkEHbPBIhMQFnoECB8QAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/6826c1fe49579acf8f1fff56/images/2d00159ca9777dcc085386f074117691a22b9858f2a448ed51b3d123846df391.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 6,
+      "title": "Da Vinci Video Presentations",
+      "link": "https://confluence.hl7.org/spaces/DVP/pages/78678039/Da+Vinci+Video+Presentations",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/spaces/DVP/pages/78678039/Da%2BVinci%2BVideo%2BPresentations&ved=2ahUKEwjwj_OslqeNAxXDhIkEHbPBIhMQFnoECCgQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a spaces \u203a DVP \u203a pages \u203a Da+...",
+      "favicon": "https://serpapi.com/searches/6826c1fe49579acf8f1fff56/images/2d00159ca9777dcc085386f074117691d2a33f98dc6a2566e774c5eca26c59ba.png",
+      "snippet": "... FHIR API landscape around people, processes and data. Learn about the ... Provider Directory: Building a Solid Foundation for the Provider Directory API ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&q=BlueCross+BlueShield+of+Tennessee+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjwj_OslqeNAxXDhIkEHbPBIhMQ5t4CegQIKxAB"
+      },
+      "source": "HL7 - Confluence"
+    },
+    {
+      "position": 7,
+      "title": "Da Vinci Working Session - NPAG",
+      "link": "https://s3.amazonaws.com/amo_hub_content/Association361/files/Da%20Vinci%20overview%20for%20NPAG.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://s3.amazonaws.com/amo_hub_content/Association361/files/Da%2520Vinci%2520overview%2520for%2520NPAG.pdf&ved=2ahUKEwjwj_OslqeNAxXDhIkEHbPBIhMQFnoECCEQAQ",
+      "displayed_link": "https://s3.amazonaws.com \u203a Association361 \u203a files",
+      "favicon": "https://serpapi.com/searches/6826c1fe49579acf8f1fff56/images/2d00159ca9777dcc085386f07411769125614b842777c09360dc2f83f7fd84f3.png",
+      "date": "Sep 24, 2019",
+      "snippet": "Da Vinci is demonstrating the ability to exchange information between payers and providers using HL7\u00ae FHIR\u00ae and CDS Hooks\u00ae as part of the ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "Amazon.com"
+    },
+    {
+      "position": 8,
+      "title": "2023 UnitedHealthcare Care Provider Administrative Guide",
+      "link": "https://www.mypreferredprovider.com/media/w3ylnrgu/2023-uhc-administrative-guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mypreferredprovider.com/media/w3ylnrgu/2023-uhc-administrative-guide.pdf&ved=2ahUKEwjwj_OslqeNAxXDhIkEHbPBIhMQFnoECDYQAQ",
+      "displayed_link": "https://www.mypreferredprovider.com \u203a media",
+      "favicon": "https://serpapi.com/searches/6826c1fe49579acf8f1fff56/images/2d00159ca9777dcc085386f074117691e562f8a12c31e3f7c55c5e7195081a3d.png",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify information in ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 421
+          },
+          "extensions": [
+            "421 pages"
+          ]
+        }
+      },
+      "source": "My Preferred Provider"
+    },
+    {
+      "position": 9,
+      "title": "Health Care Payments Data Program - HCAI",
+      "link": "https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306.pdf&ved=2ahUKEwjwj_OslqeNAxXDhIkEHbPBIhMQFnoECDgQAQ",
+      "displayed_link": "https://hcai.ca.gov \u203a uploads \u203a 2020/12 \u203a HPD-L...",
+      "favicon": "https://serpapi.com/searches/6826c1fe49579acf8f1fff56/images/2d00159ca9777dcc085386f0741176915b014e30816f6d703627e318a3d940ec.png",
+      "date": "Mar 9, 2020",
+      "snippet": "(FHIR\u00ae), which are open-source Health Level ... licensing data, could be used to supplement the provider-directory type of information from.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "supplement",
+        "provider-directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 207
+          },
+          "extensions": [
+            "207 pages"
+          ]
+        }
+      },
+      "source": "HCAI - Department of Health Care Access and Information (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "NCVHS Subcommittee on Standards",
+      "link": "https://ncvhs.hhs.gov/wp-content/uploads/2021/11/Public-Comments-Standards-Subcommittee-Listening-Session-August-25-2021.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ncvhs.hhs.gov/wp-content/uploads/2021/11/Public-Comments-Standards-Subcommittee-Listening-Session-August-25-2021.pdf&ved=2ahUKEwjwj_OslqeNAxXDhIkEHbPBIhMQFnoECDMQAQ",
+      "displayed_link": "https://ncvhs.hhs.gov \u203a uploads \u203a 2021/11 \u203a Publi...",
+      "favicon": "https://serpapi.com/searches/6826c1fe49579acf8f1fff56/images/2d00159ca9777dcc085386f07411769118a199042ac518df1046105113e323cb.png",
+      "date": "Aug 25, 2021",
+      "snippet": "... (API): We support the implementation of a FHIR-based DRLS API conformant with the HL7 FHIR Da Vinci Coverage. Requirements Discovery (CRD) IG ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "API",
+        "FHIR"
+      ],
+      "source": "National Committee on Vital and Health Statistics (.gov)"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=BlueCross+BlueShield+of+Tennessee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=_sEmaPCYG8OJptQPs4OLmQE&start=10&sa=N&sstk=Af40H4Wls8DSG_dfenBV09eA5MEiysViTU9IdWWse9weGGIqEH4pKF8wvAk8cjV2AHNd6lK1HFT3ariwN7FYzhjRxuSndk4pG9iiDw&ved=2ahUKEwjwj_OslqeNAxXDhIkEHbPBIhMQ8NMDegQICRAI",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=BlueCross+BlueShield+of+Tennessee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=_sEmaPCYG8OJptQPs4OLmQE&start=10&sa=N&sstk=Af40H4Wls8DSG_dfenBV09eA5MEiysViTU9IdWWse9weGGIqEH4pKF8wvAk8cjV2AHNd6lK1HFT3ariwN7FYzhjRxuSndk4pG9iiDw&ved=2ahUKEwjwj_OslqeNAxXDhIkEHbPBIhMQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=BlueCross+BlueShield+of+Tennessee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&gl=us&hl=en&ei=_sEmaPCYG8OJptQPs4OLmQE&start=20&sa=N&sstk=Af40H4Wls8DSG_dfenBV09eA5MEiysViTU9IdWWse9weGGIqEH4pKF8wvAk8cjV2AHNd6lK1HFT3ariwN7FYzhjRxuSndk4pG9iiDw&ved=2ahUKEwjwj_OslqeNAxXDhIkEHbPBIhMQ8tMDegQICRAG"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BlueCross+BlueShield+of+Tennessee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BlueCross+BlueShield+of+Tennessee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BlueCross+BlueShield+of+Tennessee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BlueCross+BlueShield+of+Tennessee+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20"
+    }
+  }
+}

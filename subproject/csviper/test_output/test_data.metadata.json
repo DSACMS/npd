@@ -1,0 +1,41 @@
+{
+  "filename": "test_data.csv",
+  "filename_without_extension": "test_data",
+  "full_path": "/Users/ftrotter/gitgov/ftrotter/csviper/test_data.csv",
+  "file_size_bytes": 305,
+  "delimiter": ",",
+  "quote_character": "\"",
+  "original_column_names": [
+    "Name",
+    "Age",
+    "Email Address",
+    "Phone Number",
+    "Date of Birth",
+    "Salary ($)"
+  ],
+  "normalized_column_names": [
+    "Name",
+    "Age",
+    "Email_Address",
+    "Phone_Number",
+    "Date_of_Birth",
+    "Salary"
+  ],
+  "column_name_mapping": {
+    "Name": "Name",
+    "Age": "Age",
+    "Email Address": "Email_Address",
+    "Phone Number": "Phone_Number",
+    "Date of Birth": "Date_of_Birth",
+    "Salary ($)": "Salary"
+  },
+  "max_column_lengths": {
+    "Name": 11,
+    "Age": 2,
+    "Email_Address": 21,
+    "Phone_Number": 8,
+    "Date_of_Birth": 10,
+    "Salary": 5
+  },
+  "total_columns": 6
+}

@@ -1,0 +1,255 @@
+{
+  "search_metadata": {
+    "id": "6826c29b13f4b639868ee857",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/0177c50d1e4b4281/6826c29b13f4b639868ee857.json",
+    "created_at": "2025-05-16 04:44:11 UTC",
+    "processed_at": "2025-05-16 04:44:11 UTC",
+    "google_url": "https://www.google.com/search?q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/0177c50d1e4b4281/6826c29b13f4b639868ee857.html",
+    "total_time_taken": 12.05
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Hawaii Medical Service Association Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Hawaii Medical Service Association Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 93,
+    "time_taken_displayed": 0.36,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Developing a Mobile Health App?",
+      "link": "https://hmsa.com/help-center/developing-a-mobile-health-app/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hmsa.com/help-center/developing-a-mobile-health-app/&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQFnoECBwQAQ",
+      "displayed_link": "https://hmsa.com \u203a help-center \u203a d...",
+      "favicon": "https://serpapi.com/searches/6826c29b13f4b639868ee857/images/34204cd7d91b82afc70a6aa0d4777f97e5f7323386c47b321c4ca0658c58e394.png",
+      "date": "Dec 18, 2024",
+      "snippet": "... Provider Directory, and Formulary Application Programming Interface (API). ... HL7 FHIR Release 4.0.1 3; HL7 FHIR US Core IG STU 3.1.1 4; HL7 ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "API",
+        "FHIR",
+        "FHIR"
+      ],
+      "source": "Hawaii Medical Service Association"
+    },
+    {
+      "position": 2,
+      "title": "state of hawaii",
+      "link": "https://medquest.hawaii.gov/content/dam/formsanddocuments/resources/QIRFPSC2.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medquest.hawaii.gov/content/dam/formsanddocuments/resources/QIRFPSC2.pdf&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQFnoECBkQAQ",
+      "displayed_link": "https://medquest.hawaii.gov \u203a dam \u203a QIRFPSC2",
+      "favicon": "https://serpapi.com/searches/6826c29b13f4b639868ee857/images/34204cd7d91b82afc70a6aa0d4777f97bec8d08b9bc493a1a03e3dab4e8e2683.png",
+      "date": "Dec 8, 2020",
+      "snippet": "service area: provider directory, Member handbook, appeal and ... rule, and maintain a FHIR-based API that provides a complete and accurate ...",
+      "snippet_highlighted_words": [
+        "service",
+        "provider directory",
+        "FHIR",
+        "API"
+      ],
+      "source": "Hawaii Medicaid (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Healthcare Interoperability",
+      "link": "https://carejourney.com/solutions/interoperability/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://carejourney.com/solutions/interoperability/&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQFnoECBcQAQ",
+      "displayed_link": "https://carejourney.com \u203a Solutions",
+      "favicon": "https://serpapi.com/searches/6826c29b13f4b639868ee857/images/34204cd7d91b82afc70a6aa0d4777f9711f9db2d9344fc2aa6a8e71c24012cf7.png",
+      "snippet": "... health information by promoting best practices of FHIR-based API implementations. ... Provider Directory API, and these will be enforced as early as 2021.",
+      "snippet_highlighted_words": [
+        "health",
+        "FHIR",
+        "API",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "Medical",
+        "Association"
+      ],
+      "source": "CareJourney"
+    },
+    {
+      "position": 4,
+      "title": "Qualified Health Plan Issuer Application Instructions PY2025",
+      "link": "https://www.qhpcertification.cms.gov/s/PY2025QHPIssuerInstructions_v1.3.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.qhpcertification.cms.gov/s/PY2025QHPIssuerInstructions_v1.3.pdf&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQFnoECBgQAQ",
+      "displayed_link": "https://www.qhpcertification.cms.gov \u203a ...",
+      "favicon": "https://serpapi.com/searches/6826c29b13f4b639868ee857/images/34204cd7d91b82afc70a6aa0d4777f97ad8ac8a15b1bb70ef7f26f97db18e2c1.png",
+      "snippet": "[FHIR] Release 4.0.1? \u2022 Issuers are urged to refer to the \u201cBest Practices ... Provider Directory. Network URL. URL Template. Insurance Company + Plan.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 205
+          },
+          "extensions": [
+            "205 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Notice of Request for Proposal",
+      "link": "https://www.azahcccs.gov/Resources/Downloads/Solicitations/Open/RFPs/YH21-0018/YH21-0018_RFP.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.azahcccs.gov/Resources/Downloads/Solicitations/Open/RFPs/YH21-0018/YH21-0018_RFP.pdf&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQFnoECB0QAQ",
+      "displayed_link": "https://www.azahcccs.gov \u203a YH21-0018_RFP",
+      "date": "May 2, 2022",
+      "snippet": "... FHIR Bulk Data Access (Flat FHIR) ... Provide architectural diagrams and detail how the patient access and Provider Directory API CMS Final Rules ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "Association",
+        "Advantage"
+      ],
+      "source": "AHCCCS (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Technical information",
+      "link": "https://healthy.kaiserpermanente.org/colorado/pages/technical-information",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://healthy.kaiserpermanente.org/colorado/pages/technical-information&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQFnoECBoQAQ",
+      "displayed_link": "https://healthy.kaiserpermanente.org \u203a colorado \u203a pages",
+      "favicon": "https://serpapi.com/searches/6826c29b13f4b639868ee857/images/34204cd7d91b82afc70a6aa0d4777f973cde79b28a87954b91216112d3d3eaf6.png",
+      "snippet": "... provider directory, to learn about their benefits, medications, and providers ... FHIR standards-based, Application Programming Interface (API) resources.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR",
+        "API"
+      ],
+      "source": "Kaiser Permanente"
+    },
+    {
+      "position": 7,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQFnoECB4QAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/6826c29b13f4b639868ee857/images/34204cd7d91b82afc70a6aa0d4777f9727e5d7dc3cdd9de733457d4a32c8bb15.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 8,
+      "title": "Pragmatic Approaches to Interoperability in the U.S.",
+      "link": "https://telehealthandmedicinetoday.com/index.php/journal/article/download/421/910/5884",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://telehealthandmedicinetoday.com/index.php/journal/article/download/421/910/5884&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQFnoECDEQAQ",
+      "displayed_link": "https://telehealthandmedicinetoday.com \u203a download",
+      "favicon": "https://serpapi.com/searches/6826c29b13f4b639868ee857/images/34204cd7d91b82afc70a6aa0d4777f97f0fcd5538102a939c121a36dce917433.png",
+      "author": "by B Perugu",
+      "snippet": "with the FHIR standard; the Argonaut Provider Directory will also be considered. Subsequently, FHIR standards may be modified to support any ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Hawaii+Medical+Service+Association+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQ5t4CegQINRAB"
+      },
+      "source": "Telehealth and Medicine Today"
+    },
+    {
+      "position": 9,
+      "title": "HIE Matrix",
+      "link": "https://leadingage.org/wp-content/uploads/2024/05/CAST-HIE_SelectionMatrix_2024_Master.xlsx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://leadingage.org/wp-content/uploads/2024/05/CAST-HIE_SelectionMatrix_2024_Master.xlsx&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQFnoECC8QAQ",
+      "displayed_link": "https://leadingage.org \u203a uploads \u203a 2024/05 \u203a CAS...",
+      "favicon": "https://serpapi.com/searches/6826c29b13f4b639868ee857/images/34204cd7d91b82afc70a6aa0d4777f97a8825dcea5fc249988d5ce582a4e6001.png",
+      "snippet": "Inbound data are persisted as FHIR resources regardless of the inbound data structure. Yes, Yes, Yes, No, No, ADT(A01, A03, A04, A06, A07, A18, A37, A40, A08 ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "LeadingAge"
+    },
+    {
+      "position": 10,
+      "title": "Prior Authorization Final Rule Summary",
+      "link": "http://www.mcdermottplus.com/pdf/prior-authorization-final-rule-summary/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.mcdermottplus.com/pdf/prior-authorization-final-rule-summary/&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQFnoECDYQAQ",
+      "displayed_link": "http://www.mcdermottplus.com \u203a pdf \u203a prior-authorizat...",
+      "favicon": "https://serpapi.com/searches/6826c29b13f4b639868ee857/images/34204cd7d91b82afc70a6aa0d4777f9724b52fb82bb48209667baf5cba665a11.png",
+      "snippet": "In CMS's Interoperability and Patient Access Final Rule, the agency required impacted payers to implement an HL7\u00ae FHIR ... Provider Directory, Payer-to-Payer and ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Association"
+      ],
+      "must_include": {
+        "word": "Association",
+        "link": "https://www.google.com/search?safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&q=Hawaii+Medical+Service+%22Association%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQ5t4CegQIORAB"
+      },
+      "source": "McDermott+"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=p8ImaKnPBsOkkPIPmPzrmQk&start=10&sa=N&sstk=Af40H4V-ZN0A33I_cR1N1HWLulPp2OatRZuWMtWrUYrgH3XnbR5qJ9UkChZwGTN2S-xqfsIGyOb7e8HQDcqDhqkYWqgd_XSNkWno8g&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQ8NMDegQICRAU",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=p8ImaKnPBsOkkPIPmPzrmQk&start=10&sa=N&sstk=Af40H4V-ZN0A33I_cR1N1HWLulPp2OatRZuWMtWrUYrgH3XnbR5qJ9UkChZwGTN2S-xqfsIGyOb7e8HQDcqDhqkYWqgd_XSNkWno8g&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=p8ImaKnPBsOkkPIPmPzrmQk&start=20&sa=N&sstk=Af40H4V-ZN0A33I_cR1N1HWLulPp2OatRZuWMtWrUYrgH3XnbR5qJ9UkChZwGTN2S-xqfsIGyOb7e8HQDcqDhqkYWqgd_XSNkWno8g&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=p8ImaKnPBsOkkPIPmPzrmQk&start=30&sa=N&sstk=Af40H4V-ZN0A33I_cR1N1HWLulPp2OatRZuWMtWrUYrgH3XnbR5qJ9UkChZwGTN2S-xqfsIGyOb7e8HQDcqDhqkYWqgd_XSNkWno8g&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=p8ImaKnPBsOkkPIPmPzrmQk&start=40&sa=N&sstk=Af40H4V-ZN0A33I_cR1N1HWLulPp2OatRZuWMtWrUYrgH3XnbR5qJ9UkChZwGTN2S-xqfsIGyOb7e8HQDcqDhqkYWqgd_XSNkWno8g&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=p8ImaKnPBsOkkPIPmPzrmQk&start=50&sa=N&sstk=Af40H4V-ZN0A33I_cR1N1HWLulPp2OatRZuWMtWrUYrgH3XnbR5qJ9UkChZwGTN2S-xqfsIGyOb7e8HQDcqDhqkYWqgd_XSNkWno8g&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=p8ImaKnPBsOkkPIPmPzrmQk&start=60&sa=N&sstk=Af40H4V-ZN0A33I_cR1N1HWLulPp2OatRZuWMtWrUYrgH3XnbR5qJ9UkChZwGTN2S-xqfsIGyOb7e8HQDcqDhqkYWqgd_XSNkWno8g&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=p8ImaKnPBsOkkPIPmPzrmQk&start=70&sa=N&sstk=Af40H4V-ZN0A33I_cR1N1HWLulPp2OatRZuWMtWrUYrgH3XnbR5qJ9UkChZwGTN2S-xqfsIGyOb7e8HQDcqDhqkYWqgd_XSNkWno8g&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=2958ba21f9e34b9e&hl=en&gl=us&ei=p8ImaKnPBsOkkPIPmPzrmQk&start=80&sa=N&sstk=Af40H4V-ZN0A33I_cR1N1HWLulPp2OatRZuWMtWrUYrgH3XnbR5qJ9UkChZwGTN2S-xqfsIGyOb7e8HQDcqDhqkYWqgd_XSNkWno8g&ved=2ahUKEwjpvqn9lqeNAxVDEkQIHRj-OpMQ8tMDegQICRAS"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Hawaii+Medical+Service+Association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80"
+    }
+  }
+}
