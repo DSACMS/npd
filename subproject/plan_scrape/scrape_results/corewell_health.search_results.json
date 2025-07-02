@@ -1,0 +1,201 @@
+{
+  "search_metadata": {
+    "id": "68646cc7a4817cee74f398d3",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/15da513027041104/68646cc7a4817cee74f398d3.json",
+    "created_at": "2025-07-01 23:18:31 UTC",
+    "processed_at": "2025-07-01 23:18:31 UTC",
+    "google_url": "https://www.google.com/search?q=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/15da513027041104/68646cc7a4817cee74f398d3.html",
+    "total_time_taken": 0.95
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "corewell health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "corewell health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 3,
+    "time_taken_displayed": 0.27,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "What are the six interoperability use cases for APIs in health data exchange?",
+      "snippet": "Based on the interviews, the study outlined six main use case categories for APIs in healthcare: patient-facing, provider-facing, administrative, population health, public health, and social services.",
+      "title": "Six Interoperability Use Cases for APIs in Health Data Exchange",
+      "date": "Dec 26, 2023",
+      "link": "https://www.techtarget.com/searchhealthit/feature/Six-Interoperability-Use-Cases-for-APIs-in-Health-Data-Exchange#:~:text=Based%20on%20the%20interviews%2C%20the,public%20health%2C%20and%20social%20services.",
+      "displayed_link": "https://www.techtarget.com \u203a searchhealthit \u203a feature \u203a Si...",
+      "source_logo": "https://serpapi.com/searches/68646cc7a4817cee74f398d3/images/dcd035c4cd35bf371d18e3201c50406147df7fbcd12f0e88dc3563c53077600e.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWVHSjBiVGd6YmxSUE1XRTFUSGgzYWxObWVVSndWVlF6Y0V4clRXODJaRWczVjBZMFpYbHBlakJXUmtGRVZWbFpXRjlXVFZoNVNWQXlNR2gwVVVZdFZGOHhWRWxDTkdvelNHTTRVbFZUY21SR09VRkNiUzB0VFc1a1p4SVhlVWQ0YTJGTVgzQkNjbkpPZDFCQlVITlBVMnhyVVZFYUlrRkdUVUZIUjNKM2EwNVVZbk5RVG05NGQzTmlaVU54ZEdabk5FcExORTl1T1hjIiwiZmN2IjoiMyIsImVpIjoieUd4a2FMX3BCcnJOd1BBUHNPU2xrUVEiLCJxYyI6IkNqNWpiM0psZDJWc2JDQm9aV0ZzZEdnZ2JXVmthV05oY21VZ1lXUjJZVzUwWVdkbElIQnliM1pwWkdWeUlHUnBjbVZqZEc5eWVTQmhjR2tnWm1ocGNoQUFmWXh6THo4IiwicXVlc3Rpb24iOiJXaGF0IGFyZSB0aGUgc2l4IGludGVyb3BlcmFiaWxpdHkgdXNlIGNhc2VzIGZvciBBUElzIGluIGhlYWx0aCBkYXRhIGV4Y2hhbmdlPyIsImxrIjoiY3czS3dRMkFNQXdEd0QxNGVSTm1NY1hRU0ZWYkpVRXEyOE85Yjl2REZxeW5mRXc1RDJ1V0w1NFFDa09CYXpnNExmNkRLcmFzT0ptRVZxbnN0ejQiLCJicyI6ImM0M09NUXJDUUJCR1lkSXVLSllob3Z6a0NMbEFpSjJGWUdjOVNVWjNNY21HblJIalFieVloZWN4c1JBc0JQdVB4elAzeU93T2xoUVVHR29aNGdhNFRqbjRuZ09Wcm5GNncwVVlGUWtMamo2ZzJHOWxOTEJNalZyVXBBUWVLa3ZkaWZQNE9jdUtKUDhqUTczN21URWJzMzV2MVg3VWFjbWk2V1RQRFFsYXBpNlBIX05zbFN5dkh6U1pMN0tJWGciLCJpZCI6ImZjX3lHeGthTF9wQnJyTndQQVBzT1Nsa1FRXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWVHSjBiVGd6YmxSUE1XRTFUSGgzYWxObWVVSndWVlF6Y0V4clRXODJaRWczVjBZMFpYbHBlakJXUmtGRVZWbFpXRjlXVFZoNVNWQXlNR2gwVVVZdFZGOHhWRWxDTkdvelNHTTRVbFZUY21SR09VRkNiUzB0VFc1a1p4SVhlVWQ0YTJGTVgzQkNjbkpPZDFCQlVITlBVMnhyVVZFYUlrRkdUVUZIUjNKM2EwNVVZbk5RVG05NGQzTmlaVU54ZEdabk5FcExORTl1T1hjIiwiZmN2IjoiMyIsImVpIjoieUd4a2FMX3BCcnJOd1BBUHNPU2xrUVEiLCJxYyI6IkNqNWpiM0psZDJWc2JDQm9aV0ZzZEdnZ2JXVmthV05oY21VZ1lXUjJZVzUwWVdkbElIQnliM1pwWkdWeUlHUnBjbVZqZEc5eWVTQmhjR2tnWm1ocGNoQUFmWXh6THo4IiwicXVlc3Rpb24iOiJXaGF0IGFyZSB0aGUgc2l4IGludGVyb3BlcmFiaWxpdHkgdXNlIGNhc2VzIGZvciBBUElzIGluIGhlYWx0aCBkYXRhIGV4Y2hhbmdlPyIsImxrIjoiY3czS3dRMkFNQXdEd0QxNGVSTm1NY1hRU0ZWYkpVRXEyOE85Yjl2REZxeW5mRXc1RDJ1V0w1NFFDa09CYXpnNExmNkRLcmFzT0ptRVZxbnN0ejQiLCJicyI6ImM0M09NUXJDUUJCR1lkSXVLSllob3Z6a0NMbEFpSjJGWUdjOVNVWjNNY21HblJIalFieVloZWN4c1JBc0JQdVB4elAzeU93T2xoUVVHR29aNGdhNFRqbjRuZ09Wcm5GNncwVVlGUWtMamo2ZzJHOWxOTEJNalZyVXBBUWVLa3ZkaWZQNE9jdUtKUDhqUTczN21URWJzMzV2MVg3VWFjbWk2V1RQRFFsYXBpNlBIX05zbFN5dkh6U1pMN0tJWGciLCJpZCI6ImZjX3lHeGthTF9wQnJyTndQQVBzT1Nsa1FRXzMifQ%3D%3D"
+    },
+    {
+      "question": "What does \"best\" in klas mean?",
+      "snippet": null,
+      "title": "AI Overview",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=KLAS+Research&sa=X&ved=2ahUKEwi_7YHn5ZyOAxW6JhAIHTByKUIQxccNegQIOBAB",
+      "list": [
+        "KLAS Research: KLAS is a research firm that focuses on the performance of healthcare vendors. They gather feedback from healthcare professionals (providers and payers) about their experiences with various software and services.\u00a0 ",
+        "Best in KLAS Award: This award is given annually to companies that receive the highest ratings based on KLAS's research and feedback. It acknowledges companies that demonstrate excellence in helping healthcare organizations improve patient care and achieve the Quadruple Aim (better patient care, lower costs, improved clinician experience, and population health).\u00a0 ",
+        "Significance: The \"Best in KLAS\" designation is a widely recognized mark of quality and is used by healthcare providers when making purchasing decisions. It signals to the healthcare IT industry that a company is committed to providing top-notch solutions and services.\u00a0 "
+      ],
+      "displayed_link": null,
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWVHSjBiVGd6YmxSUE1XRTFUSGgzYWxObWVVSndWVlF6Y0V4clRXODJaRWczVjBZMFpYbHBlakJXUmtGRVZWbFpXRjlXVFZoNVNWQXlNR2gwVVVZdFZGOHhWRWxDTkdvelNHTTRVbFZUY21SR09VRkNiUzB0VFc1a1p4SVhlVWQ0YTJGTVgzQkNjbkpPZDFCQlVITlBVMnhyVVZFYUlrRkdUVUZIUjNKM2EwNVVZbk5RVG05NGQzTmlaVU54ZEdabk5FcExORTl1T1hjIiwiZmN2IjoiMyIsImVpIjoieUd4a2FMX3BCcnJOd1BBUHNPU2xrUVEiLCJxYyI6IkNqNWpiM0psZDJWc2JDQm9aV0ZzZEdnZ2JXVmthV05oY21VZ1lXUjJZVzUwWVdkbElIQnliM1pwWkdWeUlHUnBjbVZqZEc5eWVTQmhjR2tnWm1ocGNoQUFmWXh6THo4IiwicXVlc3Rpb24iOiJXaGF0IGRvZXMgXCJiZXN0XCIgaW4ga2xhcyBtZWFuPyIsImxrIjoiR2h0M2FHRjBJR1J2WlhNZ1ltVnpkQ0JwYmlCcmJHRnpJRzFsWVc0IiwiYnMiOiJjNDNPTVFyQ1FCQkdZZEl1S0pZaG92emtDTGxBaUoyRllHYzlTVVozTWNtR25SSGpRYnlZaGVjeHNSQXNCUHVQeHpQM3lPd09saFFVR0dvWjRnYTRUam40bmdPVnJuRjZ3MFVZRlFrTGpqNmcyRzlsTkxCTWpWclVwQVFlS2t2ZGlmUDRPY3VLSlA4alE3MzdtVEViczM1djFYN1VhY21pNldUUERRbGFwaTZQSF9Oc2xTeXZIelNaTDdLSVhnIiwiaWQiOiJmY195R3hrYUxfcEJyck53UEFQc09TbGtRUV8zIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWVHSjBiVGd6YmxSUE1XRTFUSGgzYWxObWVVSndWVlF6Y0V4clRXODJaRWczVjBZMFpYbHBlakJXUmtGRVZWbFpXRjlXVFZoNVNWQXlNR2gwVVVZdFZGOHhWRWxDTkdvelNHTTRVbFZUY21SR09VRkNiUzB0VFc1a1p4SVhlVWQ0YTJGTVgzQkNjbkpPZDFCQlVITlBVMnhyVVZFYUlrRkdUVUZIUjNKM2EwNVVZbk5RVG05NGQzTmlaVU54ZEdabk5FcExORTl1T1hjIiwiZmN2IjoiMyIsImVpIjoieUd4a2FMX3BCcnJOd1BBUHNPU2xrUVEiLCJxYyI6IkNqNWpiM0psZDJWc2JDQm9aV0ZzZEdnZ2JXVmthV05oY21VZ1lXUjJZVzUwWVdkbElIQnliM1pwWkdWeUlHUnBjbVZqZEc5eWVTQmhjR2tnWm1ocGNoQUFmWXh6THo4IiwicXVlc3Rpb24iOiJXaGF0IGRvZXMgXCJiZXN0XCIgaW4ga2xhcyBtZWFuPyIsImxrIjoiR2h0M2FHRjBJR1J2WlhNZ1ltVnpkQ0JwYmlCcmJHRnpJRzFsWVc0IiwiYnMiOiJjNDNPTVFyQ1FCQkdZZEl1S0pZaG92emtDTGxBaUoyRllHYzlTVVozTWNtR25SSGpRYnlZaGVjeHNSQXNCUHVQeHpQM3lPd09saFFVR0dvWjRnYTRUam40bmdPVnJuRjZ3MFVZRlFrTGpqNmcyRzlsTkxCTWpWclVwQVFlS2t2ZGlmUDRPY3VLSlA4alE3MzdtVEViczM1djFYN1VhY21pNldUUERRbGFwaTZQSF9Oc2xTeXZIelNaTDdLSVhnIiwiaWQiOiJmY195R3hrYUxfcEJyck53UEFQc09TbGtRUV8zIn0%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Best in KLAS Report 2024",
+      "link": "https://www.performancehealthus.com/hubfs/Best%20in%20KLAS%20Report%202024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.performancehealthus.com/hubfs/Best%2520in%2520KLAS%2520Report%25202024.pdf&ved=2ahUKEwi_7YHn5ZyOAxW6JhAIHTByKUIQFnoECBsQAQ",
+      "displayed_link": "https://www.performancehealthus.com \u203a hubfs",
+      "favicon": "https://serpapi.com/searches/68646cc7a4817cee74f398d3/images/61ebed6aec537ecd356c750081fac7fd76aef4aea4585ad6516aee4ce32c91c4.png",
+      "date": "Feb 7, 2024",
+      "snippet": "... FHIR 92.2. Data Analytics Platforms (Payers). Clarify Health Solutions ... provider directory API, and payer-to-payer data exchange ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Health",
+        "provider directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 279
+          },
+          "extensions": [
+            "279 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=corewell+health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi_7YHn5ZyOAxW6JhAIHTByKUIQ5t4CegQIHRAB"
+      },
+      "source": "Performance Health Partners"
+    },
+    {
+      "position": 2,
+      "title": "Community Care Hub IT Playbook",
+      "link": "https://acl.gov/sites/default/files/programs/2024-07/Community%20Care%20Hub%20IT%20Playbook.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://acl.gov/sites/default/files/programs/2024-07/Community%2520Care%2520Hub%2520IT%2520Playbook.pdf&ved=2ahUKEwi_7YHn5ZyOAxW6JhAIHTByKUIQFnoECBkQAQ",
+      "displayed_link": "https://acl.gov \u203a sites \u203a default \u203a files \u203a programs",
+      "favicon": "https://serpapi.com/searches/68646cc7a4817cee74f398d3/images/61ebed6aec537ecd356c750081fac7fd89ece538fc25de64914d9c610b0b546b.png",
+      "snippet": "This FHIR IG provides standardized specification for querying and exchanging social care provider directory data mapped to FHIR format. This guide consists ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 140
+          },
+          "extensions": [
+            "140 pages"
+          ]
+        }
+      },
+      "source": "ACL Administration for Community Living (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Med-tech collaborations in 2024",
+      "link": "https://www.bioworld.com/content/medtech-collaborations-2024",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bioworld.com/content/medtech-collaborations-2024&ved=2ahUKEwi_7YHn5ZyOAxW6JhAIHTByKUIQFnoECB4QAQ",
+      "displayed_link": "https://www.bioworld.com \u203a content \u203a medtech-collabo...",
+      "favicon": "https://serpapi.com/searches/68646cc7a4817cee74f398d3/images/61ebed6aec537ecd356c750081fac7fd0db24d9c05dcf05afd6e19285d1d6fb3.png",
+      "snippet": "Te Toka Tumai Auckland and Intersystems to launch FHIR-based NHI API, Te ... Trilliant Health to offer its Provider Directory and the national version ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Health",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=corewell+health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi_7YHn5ZyOAxW6JhAIHTByKUIQ5t4CegQIHBAB"
+      },
+      "source": "BioWorld MedTech"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Best in KLAS healthcare",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Best+in+KLAS+healthcare&sa=X&ved=2ahUKEwi_7YHn5ZyOAxW6JhAIHTByKUIQ1QJ6BAgsEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+healthcare&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Best in KLAS 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Best+in+KLAS+2025&sa=X&ved=2ahUKEwi_7YHn5ZyOAxW6JhAIHTByKUIQ1QJ6BAgvEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Ensemble Health Partners",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Ensemble+Health+Partners&sa=X&ved=2ahUKEwi_7YHn5ZyOAxW6JhAIHTByKUIQ1QJ6BAguEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Ensemble+Health+Partners&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Best in KLAS 2024",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Best+in+KLAS+2024&sa=X&ved=2ahUKEwi_7YHn5ZyOAxW6JhAIHTByKUIQ1QJ6BAgtEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+2024&safe=active"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 3 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=corewell+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

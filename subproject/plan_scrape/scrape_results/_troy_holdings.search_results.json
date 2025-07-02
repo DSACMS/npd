@@ -1,0 +1,270 @@
+{
+  "search_metadata": {
+    "id": "68646c6a0fa72e639d8235cc",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/e4fc76355a462a63/68646c6a0fa72e639d8235cc.json",
+    "created_at": "2025-07-01 23:16:58 UTC",
+    "processed_at": "2025-07-01 23:16:58 UTC",
+    "google_url": "https://www.google.com/search?q=%22troy+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22troy+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/e4fc76355a462a63/68646c6a0fa72e639d8235cc.html",
+    "total_time_taken": 1.17
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"troy holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"troy holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 645,
+    "time_taken_displayed": 0.44,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "troy holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "troy holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8QFnoECBoQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/68646c6a0fa72e639d8235cc/images/273b617a809e14791f7af78a4249e2f76c69c86930227f329a0e470577bc0617.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. Endpoints are: FHIR- ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=troy+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8Q5t4CegQILBAB"
+      },
+      "source": "Flexpa"
+    },
+    {
+      "position": 2,
+      "title": "Health Care Payment Learning & Action Network",
+      "link": "https://hcp-lan.org/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hcp-lan.org/&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8QFnoECBYQAQ",
+      "displayed_link": "https://hcp-lan.org",
+      "favicon": "https://serpapi.com/searches/68646c6a0fa72e639d8235cc/images/273b617a809e14791f7af78a4249e2f7475340c6c90bce80e498e23c010d9b95.png",
+      "snippet": "Initiative Description: The Centers for Medicare & Medicaid Services (CMS) has updated the agency's Framework for Health Equity, expanding upon its initial ...",
+      "snippet_highlighted_words": [
+        "Medicare",
+        "Medicaid"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "About Us",
+            "link": "https://hcp-lan.org/about-us/"
+          },
+          {
+            "title": "APM Framework",
+            "link": "https://hcp-lan.org/apm-framework/"
+          },
+          {
+            "title": "APM Roadmap",
+            "link": "https://hcp-lan.org/apm-roadmap/"
+          },
+          {
+            "title": "APM Measurement Effort",
+            "link": "https://hcp-lan.org/apm-measurement-effort/"
+          }
+        ]
+      },
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=troy+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8Q5t4CegQIKhAB"
+      },
+      "source": "Health Care Payment Learning & Action Network"
+    },
+    {
+      "position": 3,
+      "title": "A Conversation with Particle Founder Troy Bannister",
+      "link": "https://menlovc.com/perspective/roadblocks-and-opportunities-in-electronic-healthcare-records-a-conversation-with-particle-founder-troy-bannister/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://menlovc.com/perspective/roadblocks-and-opportunities-in-electronic-healthcare-records-a-conversation-with-particle-founder-troy-bannister/&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8QFnoECBcQAQ",
+      "displayed_link": "https://menlovc.com \u203a perspective \u203a roadblocks-and-op...",
+      "favicon": "https://serpapi.com/searches/68646c6a0fa72e639d8235cc/images/273b617a809e14791f7af78a4249e2f7401b3475236500563fe5b6e59af8c92c.png",
+      "date": "Jan 11, 2021",
+      "snippet": "I spoke with CEO Troy Bannister to learn more about how the company is innovating within the EHR space, how healthcare has been impacted by COVID-19 and where ...",
+      "snippet_highlighted_words": [
+        "Troy"
+      ],
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=troy+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8Q5t4CegQIKRAB"
+      },
+      "source": "Menlo Ventures"
+    },
+    {
+      "position": 4,
+      "title": "CMS Innovation Center Outlines Data Sharing Principles",
+      "link": "https://www.crowellhealthsolutionsblog.com/2024/09/cms-innovation-center-outlines-data-sharing-principles/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.crowellhealthsolutionsblog.com/2024/09/cms-innovation-center-outlines-data-sharing-principles/&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8QFnoECBsQAQ",
+      "displayed_link": "https://www.crowellhealthsolutionsblog.com \u203a 2024/09",
+      "favicon": "https://serpapi.com/searches/68646c6a0fa72e639d8235cc/images/273b617a809e14791f7af78a4249e2f75106482e786d54437727cfd5b48bdcd2.png",
+      "date": "Sep 3, 2024",
+      "snippet": "Troy counsels all types of health care entities, including hospitals, group practices, and health plans on the physician self-referral law ( ...",
+      "snippet_highlighted_words": [
+        "Troy",
+        "group",
+        "plans",
+        "physician"
+      ],
+      "missing": [
+        "holdings",
+        "Advantage"
+      ],
+      "source": "crowellhealthsolutionsblog.com"
+    },
+    {
+      "position": 5,
+      "title": "JTF_Final Report v3_2014-10-01.docx",
+      "link": "https://www.healthit.gov/sites/default/files/facas/JTF_Final%20Report%20v3_2014-10-01.docx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/facas/JTF_Final%2520Report%2520v3_2014-10-01.docx&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8QFnoECB4QAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a facas",
+      "favicon": "https://serpapi.com/searches/68646c6a0fa72e639d8235cc/images/273b617a809e14791f7af78a4249e2f7cd44fd68c9593d728a76b7a1448d230c.jpeg",
+      "date": "Oct 1, 2014",
+      "snippet": "The JTF agrees with the JASON assessment that widespread adoption of \u201cpublic APIs\u201d is a key next step in enabling widespread interoperability in ...",
+      "snippet_highlighted_words": [
+        "APIs"
+      ],
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=troy+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8Q5t4CegQILRAB"
+      },
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Conditions of Participation (CoP) for Admissions Discharge ...",
+      "link": "https://mihin.org/wp-content/uploads/2022/02/CoP-Materials-v3-03-24-21.MiHIN-004.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mihin.org/wp-content/uploads/2022/02/CoP-Materials-v3-03-24-21.MiHIN-004.pdf&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8QFnoECC8QAQ",
+      "displayed_link": "https://mihin.org \u203a uploads \u203a 2022/02 \u203a CoP-Mat...",
+      "favicon": "https://serpapi.com/searches/68646c6a0fa72e639d8235cc/images/273b617a809e14791f7af78a4249e2f7aba6404bc1db92342abd59dc2e913d5b.png",
+      "snippet": "CMS provides, as examples, Direct messaging, FHIR-based API, and even C-CDA. But, hospitals may choose the electronic delivery method (or mix of methods) ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 26
+          },
+          "extensions": [
+            "26 pages"
+          ]
+        }
+      },
+      "source": "Michigan Health Information Network Shared Services (MiHIN)"
+    },
+    {
+      "position": 7,
+      "title": "Technical Expert Panel (TEP) Summary Meeting 3",
+      "link": "https://mmshub.cms.gov/sites/default/files/ASN-eCQM-Technical-Expert-Panel-Summary-Report.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mmshub.cms.gov/sites/default/files/ASN-eCQM-Technical-Expert-Panel-Summary-Report.pdf&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8QFnoECBgQAQ",
+      "displayed_link": "https://mmshub.cms.gov \u203a sites \u203a default \u203a files",
+      "snippet": "The CORE Measure Development Team provides a range of expertise in outcome measure development, health services research, clinical medicine, statistics, and ...",
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Submit 837P (Professional Claim) API",
+      "link": "https://www.mahlerhealth.com/api-documentation/837P_advanced",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mahlerhealth.com/api-documentation/837P_advanced&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8QFnoECDoQAQ",
+      "displayed_link": "https://www.mahlerhealth.com \u203a api-documentation",
+      "favicon": "https://serpapi.com/searches/68646c6a0fa72e639d8235cc/images/273b617a809e14791f7af78a4249e2f7ba856066f054eee9a2a6d9e75facf161.png",
+      "snippet": "Mahler Health API will accept claims with 5 digit zip for this field as some payers accept 5 digit zips but many insurance payers will deny the claim without ...",
+      "snippet_highlighted_words": [
+        "API"
+      ],
+      "missing": [
+        "holdings",
+        "Advantage"
+      ],
+      "source": "Mahler Health"
+    },
+    {
+      "position": 9,
+      "title": "Particle Health And Pulling Patient Data",
+      "link": "https://www.outofpocket.health/p/particle-health-and-pulling-patient-data",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.outofpocket.health/p/particle-health-and-pulling-patient-data&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8QFnoECDQQAQ",
+      "displayed_link": "https://www.outofpocket.health \u203a particle-health-and-pu...",
+      "favicon": "https://serpapi.com/searches/68646c6a0fa72e639d8235cc/images/273b617a809e14791f7af78a4249e2f773b63234f8734da633d5c34f512cc0c2.png",
+      "date": "Jun 6, 2021",
+      "snippet": "Particle Health provides an API that allows companies to query patient records using demographics like name, date of birth, address, across a bunch of ...",
+      "snippet_highlighted_words": [
+        "API"
+      ],
+      "source": "Out of Pocket Health"
+    },
+    {
+      "position": 10,
+      "title": "Sessions",
+      "link": "https://www.ahip.org/conferences/ahip-2025/agenda",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ahip.org/conferences/ahip-2025/agenda&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8QFnoECDcQAQ",
+      "displayed_link": "https://www.ahip.org \u203a Conferences \u203a AHIP 2025",
+      "favicon": "https://serpapi.com/searches/68646c6a0fa72e639d8235cc/images/273b617a809e14791f7af78a4249e2f78b4039e1211756350006e07088e9fed9.png",
+      "snippet": "Join this session to discuss lessons learned from implementing provider APIs with various payers across diverse care settings. ... Medicaid and Medicare Advantage ...",
+      "snippet_highlighted_words": [
+        "provider APIs",
+        "Medicare Advantage"
+      ],
+      "source": "AHIP"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=amxkaPu-OOa3wN4Pm-CB-Qw&start=10&sa=N&sstk=Ac65TH7Qy8QyW3EieiOv00MybpSlVez-ZQwi1Gh9PrUrq4ncl49YOYH_YYZ1ZsYUIuY_7t3DRUg-1QOE5R-FWiJOrpJT7FXM4WTUgw&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8Q8NMDegQIChAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=amxkaPu-OOa3wN4Pm-CB-Qw&start=10&sa=N&sstk=Ac65TH7Qy8QyW3EieiOv00MybpSlVez-ZQwi1Gh9PrUrq4ncl49YOYH_YYZ1ZsYUIuY_7t3DRUg-1QOE5R-FWiJOrpJT7FXM4WTUgw&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8Q8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=amxkaPu-OOa3wN4Pm-CB-Qw&start=20&sa=N&sstk=Ac65TH7Qy8QyW3EieiOv00MybpSlVez-ZQwi1Gh9PrUrq4ncl49YOYH_YYZ1ZsYUIuY_7t3DRUg-1QOE5R-FWiJOrpJT7FXM4WTUgw&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8Q8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=amxkaPu-OOa3wN4Pm-CB-Qw&start=30&sa=N&sstk=Ac65TH7Qy8QyW3EieiOv00MybpSlVez-ZQwi1Gh9PrUrq4ncl49YOYH_YYZ1ZsYUIuY_7t3DRUg-1QOE5R-FWiJOrpJT7FXM4WTUgw&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8Q8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=amxkaPu-OOa3wN4Pm-CB-Qw&start=40&sa=N&sstk=Ac65TH7Qy8QyW3EieiOv00MybpSlVez-ZQwi1Gh9PrUrq4ncl49YOYH_YYZ1ZsYUIuY_7t3DRUg-1QOE5R-FWiJOrpJT7FXM4WTUgw&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8Q8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=amxkaPu-OOa3wN4Pm-CB-Qw&start=50&sa=N&sstk=Ac65TH7Qy8QyW3EieiOv00MybpSlVez-ZQwi1Gh9PrUrq4ncl49YOYH_YYZ1ZsYUIuY_7t3DRUg-1QOE5R-FWiJOrpJT7FXM4WTUgw&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8Q8tMDegQIChAM",
+      "7": "https://www.google.com/search?q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=amxkaPu-OOa3wN4Pm-CB-Qw&start=60&sa=N&sstk=Ac65TH7Qy8QyW3EieiOv00MybpSlVez-ZQwi1Gh9PrUrq4ncl49YOYH_YYZ1ZsYUIuY_7t3DRUg-1QOE5R-FWiJOrpJT7FXM4WTUgw&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8Q8tMDegQIChAO",
+      "8": "https://www.google.com/search?q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=amxkaPu-OOa3wN4Pm-CB-Qw&start=70&sa=N&sstk=Ac65TH7Qy8QyW3EieiOv00MybpSlVez-ZQwi1Gh9PrUrq4ncl49YOYH_YYZ1ZsYUIuY_7t3DRUg-1QOE5R-FWiJOrpJT7FXM4WTUgw&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8Q8tMDegQIChAQ",
+      "9": "https://www.google.com/search?q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=amxkaPu-OOa3wN4Pm-CB-Qw&start=80&sa=N&sstk=Ac65TH7Qy8QyW3EieiOv00MybpSlVez-ZQwi1Gh9PrUrq4ncl49YOYH_YYZ1ZsYUIuY_7t3DRUg-1QOE5R-FWiJOrpJT7FXM4WTUgw&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8Q8tMDegQIChAS",
+      "10": "https://www.google.com/search?q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=amxkaPu-OOa3wN4Pm-CB-Qw&start=90&sa=N&sstk=Ac65TH7Qy8QyW3EieiOv00MybpSlVez-ZQwi1Gh9PrUrq4ncl49YOYH_YYZ1ZsYUIuY_7t3DRUg-1QOE5R-FWiJOrpJT7FXM4WTUgw&ved=2ahUKEwj7m8q65ZyOAxXmG9AFHRtwIM8Q8tMDegQIChAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=troy+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

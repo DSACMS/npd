@@ -1,0 +1,304 @@
+{
+  "search_metadata": {
+    "id": "686464bbbb40c8ecab3d9193",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/1f9b642e69d3272b/686464bbbb40c8ecab3d9193.json",
+    "created_at": "2025-07-01 22:44:11 UTC",
+    "processed_at": "2025-07-01 22:44:11 UTC",
+    "google_url": "https://www.google.com/search?q=%22health+first+shared+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22health+first+shared+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/1f9b642e69d3272b/686464bbbb40c8ecab3d9193.html",
+    "total_time_taken": 4.51
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"health first shared services Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"health first shared services Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 8380,
+    "time_taken_displayed": 0.32,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "health first shared services Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "health first shared services Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Best Practices for Payers and App Developers",
+      "link": "https://www.cms.gov/files/document/best-practices-payers-and-app-developersupdated21023.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/best-practices-payers-and-app-developersupdated21023.pdf&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQFnoECCIQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a best-pra...",
+      "favicon": "https://serpapi.com/searches/686464bbbb40c8ecab3d9193/images/fcc92a13eb3fa3fe5a40a670fb4242fb0373dde4a8ddb98aff3217f5ccaeef38.png",
+      "snippet": "publicly available via a FHIR-based Provider Directory API, accessible through a public-facing digital endpoint on the payer's website. In this document you ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 4
+          },
+          "extensions": [
+            "4 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Home - FHIR Human Services Directory v1.0.0",
+      "link": "https://build.fhir.org/ig/HL7/FHIR-IG-Human-Services-Directory/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://build.fhir.org/ig/HL7/FHIR-IG-Human-Services-Directory/&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQFnoECCQQAQ",
+      "displayed_link": "https://build.fhir.org \u203a FHIR-IG-Human-Services-Direct...",
+      "favicon": "https://serpapi.com/searches/686464bbbb40c8ecab3d9193/images/fcc92a13eb3fa3fe5a40a670fb4242fb70cbf8533874b1994c488843e56ff6b9.png",
+      "snippet": "The FHIR Implementation Guide for Human Services Directories (STU 1) defines a FHIR interface to directories of human and social services information provided ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Services Directories",
+        "FHIR",
+        "directories",
+        "services"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=health+first+shared+services+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ5t4CegQIJxAB"
+      },
+      "source": "FHIR specification"
+    },
+    {
+      "position": 3,
+      "title": "FHIR Provider Directory - | CareFirst Developer Portal",
+      "link": "https://developer.carefirst.com/product/fhir-provider-directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.carefirst.com/product/fhir-provider-directory&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQFnoECBUQAQ",
+      "displayed_link": "https://developer.carefirst.com \u203a product \u203a fhir-provider-...",
+      "favicon": "https://serpapi.com/searches/686464bbbb40c8ecab3d9193/images/fcc92a13eb3fa3fe5a40a670fb4242fb471c909f90ec0b833ce1e76e9efe35ac.png",
+      "snippet": "FHIR Provider Directory product enables member to see which providers are in-network for a given insurance plan.",
+      "snippet_highlighted_words": [
+        "FHIR Provider Directory"
+      ],
+      "source": "CareFirst Developer Portal"
+    },
+    {
+      "position": 4,
+      "title": "CMS Interoperability - Healthchain",
+      "link": "https://health-chain.io/cms-interoperability/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://health-chain.io/cms-interoperability/&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQFnoECBgQAQ",
+      "displayed_link": "https://health-chain.io \u203a cms-interoperability",
+      "favicon": "https://serpapi.com/searches/686464bbbb40c8ecab3d9193/images/fcc92a13eb3fa3fe5a40a670fb4242fbdd211e2b787dff4dd4f74274a937689b.png",
+      "date": "May 9, 2025",
+      "snippet": "By leveraging a FHIR-native data fabric, health plans can activate FHIR APIs, while enabling reliable analytics on top of a Common Data Model.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "health plans",
+        "FHIR APIs"
+      ],
+      "source": "Health Chain"
+    },
+    {
+      "position": 5,
+      "title": "Community First Interoperability APIs",
+      "link": "https://communityfirsthealthplans.com/community-first-interoperability-apis/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://communityfirsthealthplans.com/community-first-interoperability-apis/&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQFnoECCEQAQ",
+      "displayed_link": "https://communityfirsthealthplans.com \u203a community-fir...",
+      "favicon": "https://serpapi.com/searches/686464bbbb40c8ecab3d9193/images/fcc92a13eb3fa3fe5a40a670fb4242fbf69c3f6826d261dad0e386d8be378df5.png",
+      "snippet": "These APIs enable current and former Community First Members to consent to have their data shared with third-party applications. It also allows third-party ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "First",
+        "shared"
+      ],
+      "source": "Community First Health Plans"
+    },
+    {
+      "position": 6,
+      "title": "Qualified Health Plan Directory Pilot Frequently Asked ...",
+      "link": "https://www.cms.gov/files/document/qhp-directory-pilotfaqs63025.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/qhp-directory-pilotfaqs63025.pdf&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQFnoECBoQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a qhp-dir...",
+      "favicon": "https://serpapi.com/searches/686464bbbb40c8ecab3d9193/images/fcc92a13eb3fa3fe5a40a670fb4242fb3ca798ba29da2650d426ffa87259ae79.png",
+      "date": "Jun 9, 2025",
+      "snippet": "provider data directly from the portal through the HL7 FHIR API to update their own directory systems that are displayed for consumers; CMS ...",
+      "snippet_highlighted_words": [
+        "provider",
+        "FHIR API",
+        "directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=health+first+shared+services+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ5t4CegQIHxAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "SHO Provider Directory",
+      "link": "https://www.medicaid.gov/federal-policy-guidance/downloads/sho24003.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.medicaid.gov/federal-policy-guidance/downloads/sho24003.pdf&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQFnoECCUQAQ",
+      "displayed_link": "https://www.medicaid.gov \u203a downloads \u203a sho24003",
+      "date": "Jul 16, 2024",
+      "snippet": "Directory Provider also includes providers and provider types for whom the state agency does not require such enrollment but who received.",
+      "snippet_highlighted_words": [
+        "Directory Provider",
+        "providers",
+        "provider"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 9
+          },
+          "extensions": [
+            "9 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=health+first+shared+services+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ5t4CegQIJhAB"
+      },
+      "source": "Medicaid.gov"
+    },
+    {
+      "position": 8,
+      "title": "FHIR-API-Guide-book-1.docx",
+      "link": "https://www.nhpri.org/wp-content/uploads/2021/07/FHIR-API-Guide-book-1.docx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.nhpri.org/wp-content/uploads/2021/07/FHIR-API-Guide-book-1.docx&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQFnoECDkQAQ",
+      "displayed_link": "https://www.nhpri.org \u203a uploads \u203a 2021/07 \u203a FHI...",
+      "favicon": "https://serpapi.com/searches/686464bbbb40c8ecab3d9193/images/fcc92a13eb3fa3fe5a40a670fb4242fba7539b2a073b6887eb69103e72cc18f7.png",
+      "snippet": "This rule is designed to make health information more easily available to patients by implementing new industry standards like HL7 FHIR APIs and by deterring ...",
+      "snippet_highlighted_words": [
+        "health",
+        "FHIR APIs"
+      ],
+      "source": "Neighborhood Health Plan of Rhode Island"
+    },
+    {
+      "position": 9,
+      "title": "UnitedHealthcare Interoperability APIs | Legal",
+      "link": "https://www.uhc.com/legal/interoperability-apis",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhc.com/legal/interoperability-apis&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQFnoECD0QAQ",
+      "displayed_link": "https://www.uhc.com \u203a Legal",
+      "favicon": "https://serpapi.com/searches/686464bbbb40c8ecab3d9193/images/fcc92a13eb3fa3fe5a40a670fb4242fb2d0a8130ee6380057998f322b3276dba.png",
+      "snippet": "The UnitedHealthcare interoperability API enables members to connect their data to applications and services they provide consent.",
+      "snippet_highlighted_words": [
+        "API",
+        "services"
+      ],
+      "source": "UnitedHealthcare"
+    },
+    {
+      "position": 10,
+      "title": "CMS Interoperability and Patient Access final rule",
+      "link": "https://www.hhs.gov/guidance/document/cms-interoperability-and-patient-access-final-rule",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.gov/guidance/document/cms-interoperability-and-patient-access-final-rule&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQFnoECDwQAQ",
+      "displayed_link": "https://www.hhs.gov \u203a guidance \u203a document \u203a cms-inter...",
+      "date": "Nov 30, 2024",
+      "snippet": "The CMS regulations include policies which require or encourage payers to implement Application Programming Interfaces (APIs) to improve the ...",
+      "snippet_highlighted_words": [
+        "APIs"
+      ],
+      "source": "HHS.gov"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Provider Directory API CMS",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Provider+Directory+API+CMS&sa=X&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+Directory+API+CMS&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS API guide",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=CMS+API+guide&sa=X&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+API+guide&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Provider Access API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Provider+Access+API&sa=X&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+Access+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=CMS+Interoperability+API&sa=X&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Patient Access API Implementation Guide",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Patient+Access+API+Implementation+Guide&sa=X&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Patient+Access+API+Implementation+Guide&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS patient portal requirements",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=CMS+patient+portal+requirements&sa=X&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+patient+portal+requirements&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS information blocking Fact Sheet",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=CMS+information+blocking+Fact+Sheet&sa=X&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+information+blocking+Fact+Sheet&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Prior authorization APIs",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Prior+authorization+APIs&sa=X&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Prior+authorization+APIs&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=v2RkaN3_IdKTseMP-9DzqA8&start=10&sa=N&sstk=Ac65TH7lY-3ZdSyHlXnVeWVJayWIOg5qEa8u78AYPqk9w60-O0ZPidpYtVQbv2GAiF26LfjfIBC8WFAnkJcM-HklOkCd360-_SlHXg&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ8NMDegQIBxAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=v2RkaN3_IdKTseMP-9DzqA8&start=10&sa=N&sstk=Ac65TH7lY-3ZdSyHlXnVeWVJayWIOg5qEa8u78AYPqk9w60-O0ZPidpYtVQbv2GAiF26LfjfIBC8WFAnkJcM-HklOkCd360-_SlHXg&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ8tMDegQIBxAE",
+      "3": "https://www.google.com/search?q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=v2RkaN3_IdKTseMP-9DzqA8&start=20&sa=N&sstk=Ac65TH7lY-3ZdSyHlXnVeWVJayWIOg5qEa8u78AYPqk9w60-O0ZPidpYtVQbv2GAiF26LfjfIBC8WFAnkJcM-HklOkCd360-_SlHXg&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ8tMDegQIBxAG",
+      "4": "https://www.google.com/search?q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=v2RkaN3_IdKTseMP-9DzqA8&start=30&sa=N&sstk=Ac65TH7lY-3ZdSyHlXnVeWVJayWIOg5qEa8u78AYPqk9w60-O0ZPidpYtVQbv2GAiF26LfjfIBC8WFAnkJcM-HklOkCd360-_SlHXg&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ8tMDegQIBxAI",
+      "5": "https://www.google.com/search?q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=v2RkaN3_IdKTseMP-9DzqA8&start=40&sa=N&sstk=Ac65TH7lY-3ZdSyHlXnVeWVJayWIOg5qEa8u78AYPqk9w60-O0ZPidpYtVQbv2GAiF26LfjfIBC8WFAnkJcM-HklOkCd360-_SlHXg&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ8tMDegQIBxAK",
+      "6": "https://www.google.com/search?q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=v2RkaN3_IdKTseMP-9DzqA8&start=50&sa=N&sstk=Ac65TH7lY-3ZdSyHlXnVeWVJayWIOg5qEa8u78AYPqk9w60-O0ZPidpYtVQbv2GAiF26LfjfIBC8WFAnkJcM-HklOkCd360-_SlHXg&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ8tMDegQIBxAM",
+      "7": "https://www.google.com/search?q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=v2RkaN3_IdKTseMP-9DzqA8&start=60&sa=N&sstk=Ac65TH7lY-3ZdSyHlXnVeWVJayWIOg5qEa8u78AYPqk9w60-O0ZPidpYtVQbv2GAiF26LfjfIBC8WFAnkJcM-HklOkCd360-_SlHXg&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ8tMDegQIBxAO",
+      "8": "https://www.google.com/search?q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=v2RkaN3_IdKTseMP-9DzqA8&start=70&sa=N&sstk=Ac65TH7lY-3ZdSyHlXnVeWVJayWIOg5qEa8u78AYPqk9w60-O0ZPidpYtVQbv2GAiF26LfjfIBC8WFAnkJcM-HklOkCd360-_SlHXg&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ8tMDegQIBxAQ",
+      "9": "https://www.google.com/search?q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=v2RkaN3_IdKTseMP-9DzqA8&start=80&sa=N&sstk=Ac65TH7lY-3ZdSyHlXnVeWVJayWIOg5qEa8u78AYPqk9w60-O0ZPidpYtVQbv2GAiF26LfjfIBC8WFAnkJcM-HklOkCd360-_SlHXg&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ8tMDegQIBxAS",
+      "10": "https://www.google.com/search?q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=v2RkaN3_IdKTseMP-9DzqA8&start=90&sa=N&sstk=Ac65TH7lY-3ZdSyHlXnVeWVJayWIOg5qEa8u78AYPqk9w60-O0ZPidpYtVQbv2GAiF26LfjfIBC8WFAnkJcM-HklOkCd360-_SlHXg&ved=2ahUKEwid26-S3pyOAxXSSWwGHXvoHPUQ8tMDegQIBxAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=health+first+shared+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "search_metadata": {
+    "id": "68646d60c2bb99c196e87b90",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/2a0cf29bfdeece3a/68646d60c2bb99c196e87b90.json",
+    "created_at": "2025-07-01 23:21:04 UTC",
+    "processed_at": "2025-07-01 23:21:04 UTC",
+    "google_url": "https://www.google.com/search?q=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/2a0cf29bfdeece3a/68646d60c2bb99c196e87b90.html",
+    "total_time_taken": 0.91
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "the carle foundation Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "the carle foundation Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 2,
+    "time_taken_displayed": 0.24,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "What is the best in Klas 2025?",
+      "snippet": "According to the 2025 Best in KLAS report published this week, Epic has been named the top Overall Health System Suite, followed by Meditech and Oracle Health, for the fifteenth consecutive year. Athenahealth won the Overall Independent Physician Practice Suite award for the second time in a row.",
+      "title": "Best in KLAS 2025 sees industry progress and vendor momentum",
+      "date": "Feb 6, 2025",
+      "link": "https://www.healthcareitnews.com/news/best-klas-2025-sees-industry-progress-and-vendor-momentum#:~:text=According%20to%20the%202025%20Best,second%20time%20in%20a%20row.",
+      "displayed_link": "https://www.healthcareitnews.com \u203a news \u203a best-klas-202...",
+      "source_logo": "https://serpapi.com/searches/68646d60c2bb99c196e87b90/images/25c4ed89cfef1b5d0cc58f44ad60cea9d0a8e2c10726c8a216a6b13643b4dbee.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGRrdDVXVzFXYmpCQ1FtdDROemhxY1RkTWJVZzNTRkJ2YVZBelZXZHJZMGRpWHpNelRtVnRRMnQ0V2xwNlVIaHpjVFpxVFV4RVYyODFWSEJXUTNJNGF5MVpaRU5zWlhseWRrODBUVko1WjBkaE5VWmpVMFpEZHpONlFSSVhXVWN4YTJGSkxVVlBZWEpMY0RnMFVISTFVM0YzUVc4YUlrRkdUVUZIUjNGYVZGcEhTRTVOVVZOV2FsaExVeTF5WVRkcWFraHJUR3huUldjIiwiZmN2IjoiMyIsImVpIjoiWUcxa2FJLUVPYXJLcDg0UHI1U3F3QW8iLCJxYyI6IkNrTjBhR1VnWTJGeWJHVWdabTkxYm1SaGRHbHZiaUJ0WldScFkyRnlaU0JoWkhaaGJuUmhaMlVnY0hKdmRtbGtaWElnWkdseVpXTjBiM0o1SUdGd2FTQm1hR2x5RUFCOWpITXZQdyIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgYmVzdCBpbiBLbGFzIDIwMjU/IiwibGsiOiJHaEV5TURJMUlHSmxjM1FnYVc0Z2EyeGhjdyIsImJzIjoiYy1PeTRKSUx6MGdzVWNnc1ZpakpTRlZJU2kwR3N2TVV2SE1TaXhXTURJeE03U1YtNVJvSlN3bUMySERaYktBc2x4V1hKRmhuU241cU1WaEVvYmdrTVM5RklTMl95RjdpQlplUmxKUkVPUTU1TGllb3JXQTVKWkN4U2pCekZYSlRFX1BzSlM3eEdjbEtTU01NUUxZYXJFU0FFUUEiLCJpZCI6ImZjX1lHMWthSS1FT2FyS3A4NFByNVNxd0FvXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGRrdDVXVzFXYmpCQ1FtdDROemhxY1RkTWJVZzNTRkJ2YVZBelZXZHJZMGRpWHpNelRtVnRRMnQ0V2xwNlVIaHpjVFpxVFV4RVYyODFWSEJXUTNJNGF5MVpaRU5zWlhseWRrODBUVko1WjBkaE5VWmpVMFpEZHpONlFSSVhXVWN4YTJGSkxVVlBZWEpMY0RnMFVISTFVM0YzUVc4YUlrRkdUVUZIUjNGYVZGcEhTRTVOVVZOV2FsaExVeTF5WVRkcWFraHJUR3huUldjIiwiZmN2IjoiMyIsImVpIjoiWUcxa2FJLUVPYXJLcDg0UHI1U3F3QW8iLCJxYyI6IkNrTjBhR1VnWTJGeWJHVWdabTkxYm1SaGRHbHZiaUJ0WldScFkyRnlaU0JoWkhaaGJuUmhaMlVnY0hKdmRtbGtaWElnWkdseVpXTjBiM0o1SUdGd2FTQm1hR2x5RUFCOWpITXZQdyIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgYmVzdCBpbiBLbGFzIDIwMjU%2FIiwibGsiOiJHaEV5TURJMUlHSmxjM1FnYVc0Z2EyeGhjdyIsImJzIjoiYy1PeTRKSUx6MGdzVWNnc1ZpakpTRlZJU2kwR3N2TVV2SE1TaXhXTURJeE03U1YtNVJvSlN3bUMySERaYktBc2x4V1hKRmhuU241cU1WaEVvYmdrTVM5RklTMl95RjdpQlplUmxKUkVPUTU1TGllb3JXQTVKWkN4U2pCekZYSlRFX1BzSlM3eEdjbEtTU01NUUxZYXJFU0FFUUEiLCJpZCI6ImZjX1lHMWthSS1FT2FyS3A4NFByNVNxd0FvXzMifQ%3D%3D"
+    },
+    {
+      "question": "What does klas stand for?",
+      "snippet": null,
+      "title": "AI Overview",
+      "link": "https://engage.klasresearch.com/why-klas/",
+      "displayed_link": null,
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGRrdDVXVzFXYmpCQ1FtdDROemhxY1RkTWJVZzNTRkJ2YVZBelZXZHJZMGRpWHpNelRtVnRRMnQ0V2xwNlVIaHpjVFpxVFV4RVYyODFWSEJXUTNJNGF5MVpaRU5zWlhseWRrODBUVko1WjBkaE5VWmpVMFpEZHpONlFSSVhXVWN4YTJGSkxVVlBZWEpMY0RnMFVISTFVM0YzUVc4YUlrRkdUVUZIUjNGYVZGcEhTRTVOVVZOV2FsaExVeTF5WVRkcWFraHJUR3huUldjIiwiZmN2IjoiMyIsImVpIjoiWUcxa2FJLUVPYXJLcDg0UHI1U3F3QW8iLCJxYyI6IkNrTjBhR1VnWTJGeWJHVWdabTkxYm1SaGRHbHZiaUJ0WldScFkyRnlaU0JoWkhaaGJuUmhaMlVnY0hKdmRtbGtaWElnWkdseVpXTjBiM0o1SUdGd2FTQm1hR2x5RUFCOWpITXZQdyIsInF1ZXN0aW9uIjoiV2hhdCBkb2VzIGtsYXMgc3RhbmQgZm9yPyIsImxrIjoiR2hoM2FHRjBJR1J2WlhNZ2EyeGhjeUJ6ZEdGdVpDQm1iM0kiLCJicyI6ImMtT3k0SklMejBnc1VjZ3NWaWpKU0ZWSVNpMEdzdk1VdkhNU2l4V01ESXhNN1NWLTVSb0pTd21DMkhEWmJLQXNseFdYSkZoblNuNXFNVmhFb2Jna01TOUZJUzJfeUY3aUJaZVJsSlJFT1E1NUxpZW9yV0E1SlpDeFNqQnpGWEpURV9Qc0pTN3hHY2xLU1NNTVFMWWFyRVNBRVFBIiwiaWQiOiJmY19ZRzFrYUktRU9hcktwODRQcjVTcXdBb18zIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGRrdDVXVzFXYmpCQ1FtdDROemhxY1RkTWJVZzNTRkJ2YVZBelZXZHJZMGRpWHpNelRtVnRRMnQ0V2xwNlVIaHpjVFpxVFV4RVYyODFWSEJXUTNJNGF5MVpaRU5zWlhseWRrODBUVko1WjBkaE5VWmpVMFpEZHpONlFSSVhXVWN4YTJGSkxVVlBZWEpMY0RnMFVISTFVM0YzUVc4YUlrRkdUVUZIUjNGYVZGcEhTRTVOVVZOV2FsaExVeTF5WVRkcWFraHJUR3huUldjIiwiZmN2IjoiMyIsImVpIjoiWUcxa2FJLUVPYXJLcDg0UHI1U3F3QW8iLCJxYyI6IkNrTjBhR1VnWTJGeWJHVWdabTkxYm1SaGRHbHZiaUJ0WldScFkyRnlaU0JoWkhaaGJuUmhaMlVnY0hKdmRtbGtaWElnWkdseVpXTjBiM0o1SUdGd2FTQm1hR2x5RUFCOWpITXZQdyIsInF1ZXN0aW9uIjoiV2hhdCBkb2VzIGtsYXMgc3RhbmQgZm9yPyIsImxrIjoiR2hoM2FHRjBJR1J2WlhNZ2EyeGhjeUJ6ZEdGdVpDQm1iM0kiLCJicyI6ImMtT3k0SklMejBnc1VjZ3NWaWpKU0ZWSVNpMEdzdk1VdkhNU2l4V01ESXhNN1NWLTVSb0pTd21DMkhEWmJLQXNseFdYSkZoblNuNXFNVmhFb2Jna01TOUZJUzJfeUY3aUJaZVJsSlJFT1E1NUxpZW9yV0E1SlpDeFNqQnpGWEpURV9Qc0pTN3hHY2xLU1NNTVFMWWFyRVNBRVFBIiwiaWQiOiJmY19ZRzFrYUktRU9hcktwODRQcjVTcXdBb18zIn0%3D"
+    },
+    {
+      "question": "What does \"best\" in klas mean?",
+      "snippet": null,
+      "title": "AI Overview",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=KLAS+Research&sa=X&ved=2ahUKEwiPtPGv5pyOAxUq5ckDHS-KCqgQxccNegQIPhAB",
+      "list": [
+        "KLAS Research: KLAS is a research firm that focuses on the performance of healthcare vendors. They gather feedback from healthcare professionals (providers and payers) about their experiences with various software and services.\u00a0 ",
+        "Best in KLAS Award: This award is given annually to companies that receive the highest ratings based on KLAS's research and feedback. It acknowledges companies that demonstrate excellence in helping healthcare organizations improve patient care and achieve the Quadruple Aim (better patient care, lower costs, improved clinician experience, and population health).\u00a0 ",
+        "Significance: The \"Best in KLAS\" designation is a widely recognized mark of quality and is used by healthcare providers when making purchasing decisions. It signals to the healthcare IT industry that a company is committed to providing top-notch solutions and services.\u00a0 "
+      ],
+      "displayed_link": null,
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGRrdDVXVzFXYmpCQ1FtdDROemhxY1RkTWJVZzNTRkJ2YVZBelZXZHJZMGRpWHpNelRtVnRRMnQ0V2xwNlVIaHpjVFpxVFV4RVYyODFWSEJXUTNJNGF5MVpaRU5zWlhseWRrODBUVko1WjBkaE5VWmpVMFpEZHpONlFSSVhXVWN4YTJGSkxVVlBZWEpMY0RnMFVISTFVM0YzUVc4YUlrRkdUVUZIUjNGYVZGcEhTRTVOVVZOV2FsaExVeTF5WVRkcWFraHJUR3huUldjIiwiZmN2IjoiMyIsImVpIjoiWUcxa2FJLUVPYXJLcDg0UHI1U3F3QW8iLCJxYyI6IkNrTjBhR1VnWTJGeWJHVWdabTkxYm1SaGRHbHZiaUJ0WldScFkyRnlaU0JoWkhaaGJuUmhaMlVnY0hKdmRtbGtaWElnWkdseVpXTjBiM0o1SUdGd2FTQm1hR2x5RUFCOWpITXZQdyIsInF1ZXN0aW9uIjoiV2hhdCBkb2VzIFwiYmVzdFwiIGluIGtsYXMgbWVhbj8iLCJsayI6IkdodDNhR0YwSUdSdlpYTWdZbVZ6ZENCcGJpQnJiR0Z6SUcxbFlXNCIsImJzIjoiYy1PeTRKSUx6MGdzVWNnc1ZpakpTRlZJU2kwR3N2TVV2SE1TaXhXTURJeE03U1YtNVJvSlN3bUMySERaYktBc2x4V1hKRmhuU241cU1WaEVvYmdrTVM5RklTMl95RjdpQlplUmxKUkVPUTU1TGllb3JXQTVKWkN4U2pCekZYSlRFX1BzSlM3eEdjbEtTU01NUUxZYXJFU0FFUUEiLCJpZCI6ImZjX1lHMWthSS1FT2FyS3A4NFByNVNxd0FvXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGRrdDVXVzFXYmpCQ1FtdDROemhxY1RkTWJVZzNTRkJ2YVZBelZXZHJZMGRpWHpNelRtVnRRMnQ0V2xwNlVIaHpjVFpxVFV4RVYyODFWSEJXUTNJNGF5MVpaRU5zWlhseWRrODBUVko1WjBkaE5VWmpVMFpEZHpONlFSSVhXVWN4YTJGSkxVVlBZWEpMY0RnMFVISTFVM0YzUVc4YUlrRkdUVUZIUjNGYVZGcEhTRTVOVVZOV2FsaExVeTF5WVRkcWFraHJUR3huUldjIiwiZmN2IjoiMyIsImVpIjoiWUcxa2FJLUVPYXJLcDg0UHI1U3F3QW8iLCJxYyI6IkNrTjBhR1VnWTJGeWJHVWdabTkxYm1SaGRHbHZiaUJ0WldScFkyRnlaU0JoWkhaaGJuUmhaMlVnY0hKdmRtbGtaWElnWkdseVpXTjBiM0o1SUdGd2FTQm1hR2x5RUFCOWpITXZQdyIsInF1ZXN0aW9uIjoiV2hhdCBkb2VzIFwiYmVzdFwiIGluIGtsYXMgbWVhbj8iLCJsayI6IkdodDNhR0YwSUdSdlpYTWdZbVZ6ZENCcGJpQnJiR0Z6SUcxbFlXNCIsImJzIjoiYy1PeTRKSUx6MGdzVWNnc1ZpakpTRlZJU2kwR3N2TVV2SE1TaXhXTURJeE03U1YtNVJvSlN3bUMySERaYktBc2x4V1hKRmhuU241cU1WaEVvYmdrTVM5RklTMl95RjdpQlplUmxKUkVPUTU1TGllb3JXQTVKWkN4U2pCekZYSlRFX1BzSlM3eEdjbEtTU01NUUxZYXJFU0FFUUEiLCJpZCI6ImZjX1lHMWthSS1FT2FyS3A4NFByNVNxd0FvXzMifQ%3D%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Best in KLAS Report 2024",
+      "link": "https://www.performancehealthus.com/hubfs/Best%20in%20KLAS%20Report%202024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.performancehealthus.com/hubfs/Best%2520in%2520KLAS%2520Report%25202024.pdf&ved=2ahUKEwiPtPGv5pyOAxUq5ckDHS-KCqgQFnoECCUQAQ",
+      "displayed_link": "https://www.performancehealthus.com \u203a hubfs",
+      "favicon": "https://serpapi.com/searches/68646d60c2bb99c196e87b90/images/8097bf95139fdeea158c3f6e0b7a142804d2c00b08db1e70a7a2165b3ace9e2b.png",
+      "date": "Feb 7, 2024",
+      "snippet": "... FHIR 92.2. Data Analytics Platforms (Payers). Clarify Health Solutions ... provider directory API, and payer-to-payer data exchange ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 279
+          },
+          "extensions": [
+            "279 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=the+carle+foundation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiPtPGv5pyOAxUq5ckDHS-KCqgQ5t4CegQILRAB"
+      },
+      "source": "Performance Health Partners"
+    },
+    {
+      "position": 2,
+      "title": "Med-tech collaborations in 2024",
+      "link": "https://www.bioworld.com/content/medtech-collaborations-2024",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bioworld.com/content/medtech-collaborations-2024&ved=2ahUKEwiPtPGv5pyOAxUq5ckDHS-KCqgQFnoECCgQAQ",
+      "displayed_link": "https://www.bioworld.com \u203a content \u203a medtech-collabo...",
+      "favicon": "https://serpapi.com/searches/68646d60c2bb99c196e87b90/images/8097bf95139fdeea158c3f6e0b7a1428f01bfc8805c45fbe282ab146202b21f9.png",
+      "snippet": "Te Toka Tumai Auckland and Intersystems to launch FHIR-based NHI API, Te ... Trilliant Health to offer its Provider Directory and the national version ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=the+carle+foundation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiPtPGv5pyOAxUq5ckDHS-KCqgQ5t4CegQILBAB"
+      },
+      "source": "BioWorld MedTech"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "KLAS Research",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=KLAS+Research&sa=X&ved=2ahUKEwiPtPGv5pyOAxUq5ckDHS-KCqgQ1QJ6BAgREAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=KLAS+Research&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Best in KLAS 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Best+in+KLAS+2025&sa=X&ved=2ahUKEwiPtPGv5pyOAxUq5ckDHS-KCqgQ1QJ6BAgSEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+2025&safe=active"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 2 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=the+carle+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "search_metadata": {
+    "id": "686464d5f3a0a7194ecf9047",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/80c0c637df1832c4/686464d5f3a0a7194ecf9047.json",
+    "created_at": "2025-07-01 22:44:37 UTC",
+    "processed_at": "2025-07-01 22:44:37 UTC",
+    "google_url": "https://www.google.com/search?q=%22independent+living+systems+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22independent+living+systems+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/80c0c637df1832c4/686464d5f3a0a7194ecf9047.html",
+    "total_time_taken": 1.22
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"independent living systems Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"independent living systems Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 6870,
+    "time_taken_displayed": 0.41,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "independent living systems Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "independent living systems Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Application Programming Interfaces (APIs) and Relevant ...",
+      "link": "https://www.cms.gov/priorities/burden-reduction/overview/interoperability/implementation-guides-and-standards/application-programming-interfaces-apis-and-relevant-standards-and-implementation-guides-igs",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/priorities/burden-reduction/overview/interoperability/implementation-guides-and-standards/application-programming-interfaces-apis-and-relevant-standards-and-implementation-guides-igs&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4QFnoECBIQAQ",
+      "displayed_link": "https://www.cms.gov \u203a overview \u203a interoperability \u203a app...",
+      "favicon": "https://serpapi.com/searches/686464d5f3a0a7194ecf9047/images/faba807189181db7d009358aa030364b998334ad65ef37f2dd70bace4b6184d3.png",
+      "date": "May 21, 2025",
+      "snippet": "CMS technical standards were designed to ensure accurate health data, administrative exchanges, and secure authorization.",
+      "missing": [
+        "living"
+      ],
+      "must_include": {
+        "word": "living",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=independent+%22living%22+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4Q5t4CegQIHhAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Home - FHIR Human Services Directory v1.0.0",
+      "link": "https://build.fhir.org/ig/HL7/FHIR-IG-Human-Services-Directory/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://build.fhir.org/ig/HL7/FHIR-IG-Human-Services-Directory/&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4QFnoECB0QAQ",
+      "displayed_link": "https://build.fhir.org \u203a FHIR-IG-Human-Services-Direct...",
+      "favicon": "https://serpapi.com/searches/686464d5f3a0a7194ecf9047/images/faba807189181db7d009358aa030364baa4470a2aad281629bc70759f9b2de9e.png",
+      "snippet": "The Human Services Directories FHIR implementation guide is intended to facilitate adoption of new \u201chuman services-specific\u201d profiles by organizations that have ...",
+      "snippet_highlighted_words": [
+        "Directories FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=independent+living+systems+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4Q5t4CegQIHxAB"
+      },
+      "source": "FHIR specification"
+    },
+    {
+      "position": 3,
+      "title": "Policies and Technology for Interoperability and Burden ...",
+      "link": "https://www.cms.gov/policies-and-technology-interoperability-and-burden-reduction",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/policies-and-technology-interoperability-and-burden-reduction&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4QFnoECBgQAQ",
+      "displayed_link": "https://www.cms.gov \u203a policies-and-technology-interope...",
+      "favicon": "https://serpapi.com/searches/686464d5f3a0a7194ecf9047/images/faba807189181db7d009358aa030364b119364dd3720fbcb0f3f156507523955.png",
+      "date": "Sep 10, 2024",
+      "snippet": "The IGs and related resources may be used for the Patient Access, Provider Access, Payer Access, Provider Directory, and Prior Authorization ...",
+      "snippet_highlighted_words": [
+        "Provider",
+        "Provider Directory"
+      ],
+      "missing": [
+        "living"
+      ],
+      "must_include": {
+        "word": "living",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=independent+%22living%22+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4Q5t4CegQIIBAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4QFnoECBUQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2019/03/04 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/686464d5f3a0a7194ecf9047/images/faba807189181db7d009358aa030364bc0a8dd57d57c2219e9740b6700444d1d.png",
+      "date": "Mar 4, 2019",
+      "snippet": "MA plans would be required to update provider directory information available through the API no later than 30 calendar days after changes ...",
+      "snippet_highlighted_words": [
+        "plans",
+        "provider directory",
+        "API"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Interoperability and Your Health Information",
+      "link": "https://www.ccok.com/members/interoperability.asp",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ccok.com/members/interoperability.asp&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4QFnoECBQQAQ",
+      "displayed_link": "https://www.ccok.com \u203a members \u203a interoperability",
+      "snippet": "The developer portal, linked below, provides documentation on how to use and access to our patient access APIs. Our APIs are based on the Health Level 7\u00ae (HL7) ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "APIs"
+      ],
+      "missing": [
+        "living"
+      ],
+      "must_include": {
+        "word": "living",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=independent+%22living%22+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4Q5t4CegQIHBAB"
+      },
+      "source": "CommunityCare Health Insurance Plans"
+    },
+    {
+      "position": 6,
+      "title": "State Efforts to Coordinate Provider Directory Accuracy",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4QFnoECBsQAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/686464d5f3a0a7194ecf9047/images/faba807189181db7d009358aa030364b093267b9d17787b2887c1e010b9a7df1.png",
+      "date": "Dec 27, 2023",
+      "snippet": "This allows any third party application to quickly pull together provider directory information from any number of health plans. These FHIR APIs ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "plans",
+        "FHIR APIs"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 45
+          },
+          "extensions": [
+            "45 pages"
+          ]
+        }
+      },
+      "missing": [
+        "living"
+      ],
+      "must_include": {
+        "word": "living",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=independent+%22living%22+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4Q5t4CegQIIRAB"
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 7,
+      "title": "CMS Seeks Input on the Future of Digital Health",
+      "link": "https://www.healthmanagement.com/blog/cms-seeks-input-on-the-future-of-digital-health-what-the-health-technology-ecosystem-rfi-means-for-stakeholders/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthmanagement.com/blog/cms-seeks-input-on-the-future-of-digital-health-what-the-health-technology-ecosystem-rfi-means-for-stakeholders/&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4QFnoECBEQAQ",
+      "displayed_link": "https://www.healthmanagement.com \u203a blog \u203a cms-seeks-i...",
+      "favicon": "https://serpapi.com/searches/686464d5f3a0a7194ecf9047/images/faba807189181db7d009358aa030364bf6d909bef1211529beb008f52420cb1d.png",
+      "date": "May 22, 2025",
+      "snippet": "The RFI reflects many of the same priorities\u2014such as expanding FHIR\u00ae Application Programming Interfaces (APIs), improving provider directories, ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "APIs",
+        "provider directories"
+      ],
+      "missing": [
+        "independent",
+        "living",
+        "Advantage"
+      ],
+      "source": "Health Management Associates"
+    },
+    {
+      "position": 8,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4QFnoECDYQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/686464d5f3a0a7194ecf9047/images/faba807189181db7d009358aa030364b30e56e17357a326b7ed9e07ead14a96f.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. Endpoints are: FHIR- ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 9,
+      "title": "Developer resources | Independence Blue Cross (IBX) - IBX",
+      "link": "https://www.ibx.com/developer-resources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ibx.com/developer-resources&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4QFnoECDUQAQ",
+      "displayed_link": "https://www.ibx.com \u203a developer-resources",
+      "snippet": "The Provider Directory API will allow developers to retrieve, as applicable, certain Independence provider and pharmacy directory information. The Developer ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Independence"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Machine Readable Files",
+            "link": "https://www.ibx.com/developer-resources#:~:text=Machine%20readable%20files,-Keystone%20Health%20Plan%20East"
+          },
+          {
+            "title": "Our Api Functionality",
+            "link": "https://www.ibx.com/developer-resources#:~:text=Our%20API%20functionality"
+          },
+          {
+            "title": "Keystone Health Plan East...",
+            "link": "https://www.ibx.com/developer-resources#:~:text=Keystone%20Health%20Plan%20East%2C%20Inc."
+          }
+        ]
+      },
+      "source": "Independence Blue Cross (IBX)"
+    },
+    {
+      "position": 10,
+      "title": "CMS Interoperability and Patient Access Final Rule",
+      "link": "https://cookcountyhealth.org/wp-content/uploads/CMS-Interoperability-RFP-11022020_Final_11_02_20_FP_.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://cookcountyhealth.org/wp-content/uploads/CMS-Interoperability-RFP-11022020_Final_11_02_20_FP_.pdf&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4QFnoECDsQAQ",
+      "displayed_link": "https://cookcountyhealth.org \u203a uploads \u203a CMS-I...",
+      "favicon": "https://serpapi.com/searches/686464d5f3a0a7194ecf9047/images/faba807189181db7d009358aa030364b20ad58e73d5e69f4a8bd2cf9d55d1346.png",
+      "date": "Nov 2, 2020",
+      "snippet": "What FHIR implementation guides do you support for claims, encounters, clinical, formulary and provider directory data? 5.4.3.2. Does your ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "Cook County Health"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=1WRkaM_kL8GI7NYPgtiA8Ak&start=10&sa=N&sstk=Ac65TH5nY7Wf1kV7mxE7QAnsBn4e5xzoYkQ9C5utJryr_lFBJ3U8ZoS2kuXnLbZ7-RlWKWqAFoXau9K2QHePyjUWLop4e8uEaMAbhA&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4Q8NMDegQICBAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=1WRkaM_kL8GI7NYPgtiA8Ak&start=10&sa=N&sstk=Ac65TH5nY7Wf1kV7mxE7QAnsBn4e5xzoYkQ9C5utJryr_lFBJ3U8ZoS2kuXnLbZ7-RlWKWqAFoXau9K2QHePyjUWLop4e8uEaMAbhA&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4Q8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=1WRkaM_kL8GI7NYPgtiA8Ak&start=20&sa=N&sstk=Ac65TH5nY7Wf1kV7mxE7QAnsBn4e5xzoYkQ9C5utJryr_lFBJ3U8ZoS2kuXnLbZ7-RlWKWqAFoXau9K2QHePyjUWLop4e8uEaMAbhA&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4Q8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=1WRkaM_kL8GI7NYPgtiA8Ak&start=30&sa=N&sstk=Ac65TH5nY7Wf1kV7mxE7QAnsBn4e5xzoYkQ9C5utJryr_lFBJ3U8ZoS2kuXnLbZ7-RlWKWqAFoXau9K2QHePyjUWLop4e8uEaMAbhA&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4Q8tMDegQICBAI",
+      "5": "https://www.google.com/search?q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=1WRkaM_kL8GI7NYPgtiA8Ak&start=40&sa=N&sstk=Ac65TH5nY7Wf1kV7mxE7QAnsBn4e5xzoYkQ9C5utJryr_lFBJ3U8ZoS2kuXnLbZ7-RlWKWqAFoXau9K2QHePyjUWLop4e8uEaMAbhA&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4Q8tMDegQICBAK",
+      "6": "https://www.google.com/search?q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=1WRkaM_kL8GI7NYPgtiA8Ak&start=50&sa=N&sstk=Ac65TH5nY7Wf1kV7mxE7QAnsBn4e5xzoYkQ9C5utJryr_lFBJ3U8ZoS2kuXnLbZ7-RlWKWqAFoXau9K2QHePyjUWLop4e8uEaMAbhA&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4Q8tMDegQICBAM",
+      "7": "https://www.google.com/search?q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=1WRkaM_kL8GI7NYPgtiA8Ak&start=60&sa=N&sstk=Ac65TH5nY7Wf1kV7mxE7QAnsBn4e5xzoYkQ9C5utJryr_lFBJ3U8ZoS2kuXnLbZ7-RlWKWqAFoXau9K2QHePyjUWLop4e8uEaMAbhA&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4Q8tMDegQICBAO",
+      "8": "https://www.google.com/search?q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=1WRkaM_kL8GI7NYPgtiA8Ak&start=70&sa=N&sstk=Ac65TH5nY7Wf1kV7mxE7QAnsBn4e5xzoYkQ9C5utJryr_lFBJ3U8ZoS2kuXnLbZ7-RlWKWqAFoXau9K2QHePyjUWLop4e8uEaMAbhA&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4Q8tMDegQICBAQ",
+      "9": "https://www.google.com/search?q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=1WRkaM_kL8GI7NYPgtiA8Ak&start=80&sa=N&sstk=Ac65TH5nY7Wf1kV7mxE7QAnsBn4e5xzoYkQ9C5utJryr_lFBJ3U8ZoS2kuXnLbZ7-RlWKWqAFoXau9K2QHePyjUWLop4e8uEaMAbhA&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4Q8tMDegQICBAS",
+      "10": "https://www.google.com/search?q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=1WRkaM_kL8GI7NYPgtiA8Ak&start=90&sa=N&sstk=Ac65TH5nY7Wf1kV7mxE7QAnsBn4e5xzoYkQ9C5utJryr_lFBJ3U8ZoS2kuXnLbZ7-RlWKWqAFoXau9K2QHePyjUWLop4e8uEaMAbhA&ved=2ahUKEwiPo_yc3pyOAxVBBNsEHQIsAJ4Q8tMDegQICBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independent+living+systems+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

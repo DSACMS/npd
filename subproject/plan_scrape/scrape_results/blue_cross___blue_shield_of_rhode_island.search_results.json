@@ -1,0 +1,309 @@
+{
+  "search_metadata": {
+    "id": "68646c91a3ce8443166f66ea",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/29b94b4c07738aef/68646c91a3ce8443166f66ea.json",
+    "created_at": "2025-07-01 23:17:37 UTC",
+    "processed_at": "2025-07-01 23:17:37 UTC",
+    "google_url": "https://www.google.com/search?q=blue+cross+%26+blue+shield+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=blue+cross+%26+blue+shield+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/29b94b4c07738aef/68646c91a3ce8443166f66ea.html",
+    "total_time_taken": 1.29
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "blue cross & blue shield of rhode island Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "blue cross & blue shield of rhode island Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 47,
+    "time_taken_displayed": 0.19,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "State Efforts to Coordinate Provider Directory Accuracy",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQFnoECBkQAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/68646c91a3ce8443166f66ea/images/95a3bf43d71b02e8baab5dfe73d1b1f18e524fabd1b9a9bbc265f55956591d10.png",
+      "date": "Dec 27, 2023",
+      "snippet": "These FHIR APIs improve the accessibility and transparency of provider directory data. Notes: a. Centers for Medicare & Medicaid Services (CMS).",
+      "snippet_highlighted_words": [
+        "FHIR APIs",
+        "provider directory",
+        "Medicare"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 45
+          },
+          "extensions": [
+            "45 pages"
+          ]
+        }
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 2,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQFnoECBsQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646c91a3ce8443166f66ea/images/95a3bf43d71b02e8baab5dfe73d1b1f123649c1354ea881ec20663c85ecf309b.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "missing": [
+        "rhode"
+      ],
+      "must_include": {
+        "word": "rhode",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=blue+cross+%26+blue+shield+of+%22rhode%22+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQ5t4CegQIKhAB"
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 3,
+      "title": "Helpful Hints - Confluence - HL7.org",
+      "link": "https://confluence.hl7.org/download/attachments/81018510/ProjectBallotHealthMetrics_2022JanWGM_20211221.xlsx?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/81018510/ProjectBallotHealthMetrics_2022JanWGM_20211221.xlsx%3Fapi%3Dv2&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQFnoECBYQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a attachments \u203a api=v2",
+      "favicon": "https://serpapi.com/searches/68646c91a3ce8443166f66ea/images/95a3bf43d71b02e8baab5dfe73d1b1f1b6e75fb35c9cec484731af084e4766a9.png",
+      "snippet": "... FHIR Infrastructure Work Group, FHIR Management Group, Clinical, We will ... Provider Directory, Endpoint Directory, Utilizes the work done for the ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "HL7.org"
+    },
+    {
+      "position": 4,
+      "title": "Provider Directory Workshop, April 6, 2016 Page 1 Office of ...",
+      "link": "https://oncprojectracking.healthit.gov/wiki/download/attachments/9700978/Provider%20Directory%20Workshop%20Transcript%20%28draft%29%202016-04-06.pdf?version=1&modificationDate=1463069356000&api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://oncprojectracking.healthit.gov/wiki/download/attachments/9700978/Provider%2520Directory%2520Workshop%2520Transcript%2520%2528draft%2529%25202016-04-06.pdf%3Fversion%3D1%26modificationDate%3D1463069356000%26api%3Dv2&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQFnoECBoQAQ",
+      "displayed_link": "https://oncprojectracking.healthit.gov \u203a attachments",
+      "date": "Apr 6, 2016",
+      "snippet": "provider directory topic, the idea that there is a lot of use cases ... I wish I could say they were all using FHIR APIs but they are not.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR APIs"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Health Care Payments Data Program - HCAI",
+      "link": "https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306.pdf&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQFnoECBcQAQ",
+      "displayed_link": "https://hcai.ca.gov \u203a uploads \u203a 2020/12 \u203a HPD-L...",
+      "favicon": "https://serpapi.com/searches/68646c91a3ce8443166f66ea/images/95a3bf43d71b02e8baab5dfe73d1b1f1f2bd5aff65d9f2fce158f923ee675f70.png",
+      "date": "Mar 9, 2020",
+      "snippet": "(FHIR\u00ae), which are open-source Health Level ... licensing data, could be used to supplement the provider-directory type of information from.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "supplement",
+        "provider-directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 207
+          },
+          "extensions": [
+            "207 pages"
+          ]
+        }
+      },
+      "source": "HCAI - Department of Health Care Access and Information (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Meeting of the Market Oversight and Transparency ...",
+      "link": "https://masshpc.gov/sites/default/files/2023-07/20230510_moat_presentation.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://masshpc.gov/sites/default/files/2023-07/20230510_moat_presentation.pdf&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQFnoECBgQAQ",
+      "displayed_link": "https://masshpc.gov \u203a sites \u203a default \u203a files \u203a 202...",
+      "favicon": "https://serpapi.com/searches/68646c91a3ce8443166f66ea/images/95a3bf43d71b02e8baab5dfe73d1b1f1a417c2b962bfe676bd4c26b96965169a.png",
+      "date": "May 10, 2023",
+      "snippet": "implement and maintain a FHIR Prior. Authorization Requirements,. Documentation, and Decision (PARDD). API. \u2022 ... \u2022 Provider Directory Management.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory"
+      ],
+      "source": "Massachusetts Health Policy Commission (HPC) (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "All Pages",
+      "link": "https://www.communityplans.net/all-pages/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.communityplans.net/all-pages/&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQFnoECBUQAQ",
+      "displayed_link": "https://www.communityplans.net \u203a all-pages",
+      "snippet": "Beyond Patient Access \u2013 the Next Wave of FHIR Use Cases for Payers ... National Provider Directory RFI Roundtable Call \u00b7 Marketplace & Medicare Joint ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "Medicare"
+      ],
+      "source": "Association For Community Affiliated Plans"
+    },
+    {
+      "position": 8,
+      "title": "Health Information Exchange Strategic Plan",
+      "link": "https://healthdata.vermont.gov/sites/healthdata/files/DVHA_HIE%20Plan_10.31.19_FINAL%20%28003%29.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://healthdata.vermont.gov/sites/healthdata/files/DVHA_HIE%2520Plan_10.31.19_FINAL%2520%2528003%2529.pdf&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQFnoECDYQAQ",
+      "displayed_link": "https://healthdata.vermont.gov \u203a healthdata \u203a files",
+      "favicon": "https://serpapi.com/searches/68646c91a3ce8443166f66ea/images/95a3bf43d71b02e8baab5dfe73d1b1f127c940015bae294ee67745f24c7d1f0e.png",
+      "date": "Nov 1, 2019",
+      "snippet": "... FHIR API. 3. Test reconciliation process: Implement the feedback ... Evaluate existing provider directory capabilities: Evaluate existing provider ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "provider directory",
+        "provider"
+      ],
+      "missing": [
+        "rhode"
+      ],
+      "must_include": {
+        "word": "rhode",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=blue+cross+%26+blue+shield+of+%22rhode%22+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQ5t4CegQIPxAB"
+      },
+      "source": "Vermont.gov"
+    },
+    {
+      "position": 9,
+      "title": "HOUSE OF DELEGATES HANDBOOK - INFO (A-22)",
+      "link": "https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQFnoECDcQAQ",
+      "displayed_link": "https://www.ama-assn.org \u203a system \u203a files \u203a a22-...",
+      "favicon": "https://serpapi.com/searches/68646c91a3ce8443166f66ea/images/95a3bf43d71b02e8baab5dfe73d1b1f14d2cb14f68e9ae05d85e36900a7a98b3.png",
+      "date": "Dec 17, 2021",
+      "snippet": "AMA/CAQH Provider Directory. White Paper \u2013 Co-branded white ... FHIR\u00ae implementation guide for the capture and use of SDOH data. 18.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "rhode",
+        "Advantage"
+      ],
+      "source": "American Medical Association"
+    },
+    {
+      "position": 10,
+      "title": "SoonerCare Comprehensive Managed Care Program",
+      "link": "https://oklahoma.gov/content/dam/ok/en/okhca/documents/a0600/25392.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://oklahoma.gov/content/dam/ok/en/okhca/documents/a0600/25392.pdf&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQFnoECDsQAQ",
+      "displayed_link": "https://oklahoma.gov \u203a dam \u203a okhca \u203a documents",
+      "favicon": "https://serpapi.com/searches/68646c91a3ce8443166f66ea/images/95a3bf43d71b02e8baab5dfe73d1b1f1ff0a9a6ff536b353a7be6df5c19501df.png",
+      "date": "Mar 9, 2020",
+      "snippet": "... provider directory, along with the ability to provide a hard copy by ... (FHIR) interoperability specifications. This bidirectional.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 764
+          },
+          "extensions": [
+            "764 pages"
+          ]
+        }
+      },
+      "source": "oklahoma.gov"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "UHC provider manual 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=UHC+provider+manual+2025&sa=X&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+provider+manual+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC Medicare Advantage timely filing limit",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=UHC+Medicare+Advantage+timely+filing+limit&sa=X&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+Medicare+Advantage+timely+filing+limit&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc Medicare advantage Timely filing limit for corrected claims",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&sa=X&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC Provider Portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=UHC+Provider+Portal&sa=X&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQ1QJ6BAgvEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+Provider+Portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc timely filing limit 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Uhc+timely+filing+limit+2025&sa=X&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQ1QJ6BAgwEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+timely+filing+limit+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "BIN 610279 PCN: 7777",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=BIN+610279+PCN:+7777&sa=X&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BIN+610279+PCN%3A+7777&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "P.O. Box 31386 Salt Lake City UT 84131",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=P.O.+Box+31386+Salt+Lake+City+UT+84131&sa=X&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=P.O.+Box+31386+Salt+Lake+City+UT+84131&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "PO Box 31387 SALT Lake City, UT 84131",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=PO+Box+31387+SALT+Lake+City,+UT+84131&sa=X&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQ1QJ6BAguEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=PO+Box+31387+SALT+Lake+City%2C+UT+84131&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=blue+cross+%26+blue+shield+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=kmxkaPTvEYmc4-EP-sTBoAc&start=10&sa=N&sstk=Ac65TH7twn4hDOWHU8uxXNw4iUioHrv-ADeGF735VojjqHa1OrGqvvp0lMog9a8-vzv-T4_LpK0hJZGLSUIiIf8prUBSu289eZMBaQ&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQ8NMDegQICRAI",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=blue+cross+%26+blue+shield+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=kmxkaPTvEYmc4-EP-sTBoAc&start=10&sa=N&sstk=Ac65TH7twn4hDOWHU8uxXNw4iUioHrv-ADeGF735VojjqHa1OrGqvvp0lMog9a8-vzv-T4_LpK0hJZGLSUIiIf8prUBSu289eZMBaQ&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=blue+cross+%26+blue+shield+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=kmxkaPTvEYmc4-EP-sTBoAc&start=20&sa=N&sstk=Ac65TH7twn4hDOWHU8uxXNw4iUioHrv-ADeGF735VojjqHa1OrGqvvp0lMog9a8-vzv-T4_LpK0hJZGLSUIiIf8prUBSu289eZMBaQ&ved=2ahUKEwj0gK3N5ZyOAxUJzjgGHXpiEHQQ8tMDegQICRAG"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+%26+blue+shield+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+%26+blue+shield+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+%26+blue+shield+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+%26+blue+shield+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20"
+    }
+  }
+}

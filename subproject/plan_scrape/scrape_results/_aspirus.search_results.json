@@ -1,0 +1,172 @@
+{
+  "search_metadata": {
+    "id": "6864646cac1765982ec5637e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/6b13cda338d95983/6864646cac1765982ec5637e.json",
+    "created_at": "2025-07-01 22:42:52 UTC",
+    "processed_at": "2025-07-01 22:42:52 UTC",
+    "google_url": "https://www.google.com/search?q=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/6b13cda338d95983/6864646cac1765982ec5637e.html",
+    "total_time_taken": 0.7
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"aspirus Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"aspirus Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 2,
+    "time_taken_displayed": 0.24,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "Which insurance payers use change healthcare?",
+      "snippet": null,
+      "table": [
+        [
+          "CPID",
+          "Payer Name",
+          "Payer ID"
+        ],
+        [
+          "1057",
+          "LACH HEALTHNET BY MEDPOINT",
+          "MPM19"
+        ],
+        [
+          "1058",
+          "FENIX MEDICAL GROUP",
+          "60818"
+        ],
+        [
+          "1059",
+          "ST. FRANCIS - HCLA BY MEDPOINT",
+          "MPM30"
+        ],
+        [
+          "1060",
+          "SOUTHERN CA HEALTHCARE SYSTEM ALTA POD BY MEDPOINT",
+          "MPM20"
+        ]
+      ],
+      "formatted": [
+        {
+          "cpid": "1057",
+          "payer_name": "LACH HEALTHNET BY MEDPOINT",
+          "payer_id": "MPM19"
+        },
+        {
+          "cpid": "1058",
+          "payer_name": "FENIX MEDICAL GROUP",
+          "payer_id": "60818"
+        },
+        {
+          "cpid": "1059",
+          "payer_name": "ST. FRANCIS - HCLA BY MEDPOINT",
+          "payer_id": "MPM30"
+        },
+        {
+          "cpid": "1060",
+          "payer_name": "SOUTHERN CA HEALTHCARE SYSTEM ALTA POD BY MEDPOINT",
+          "payer_id": "MPM20"
+        }
+      ],
+      "title": "Change Healthcare - Payers",
+      "link": "https://qa.mbpractice.com/insurance/ChangeHealthcarePayers",
+      "displayed_link": "https://qa.mbpractice.com \u203a insurance \u203a ChangeHealthcar...",
+      "source_logo": "https://serpapi.com/searches/6864646cac1765982ec5637e/images/786380dd686c6f9800c0a0831321b7f91a8783140e27a13114011c541eecc790.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRlQyVjJTMFpUVldoemNETktRVUpNV0VKM1JYaHNVMHRMWlZWek5GOWpUbGc1ZFVOb1NYRmxPRFJRY2pkbFVFaEZObVZoVFVzM2RrOUNNRE5oVWtFdFJISkJjVXR2V1hKd2RXWXdaV1JqT0ZVeGMwRkhhRGwwY25GQlp4SVhZbGRTYTJGTVRGTkROVXhGY0RnMFVIRlpTMWwzVVc4YUlrRkdUVUZIUjNKVlJYQTBZbWcyZERSQmQzQnFjbFI0YkdSaWRtTjNSa293UTBFIiwiZmN2IjoiMyIsImVpIjoiYldSa2FMTFNDNUxFcDg0UHFZS1l3UW8iLCJxYyI6IkNqWmhjM0JwY25WeklHMWxaR2xqWVhKbElHRmtkbUZ1ZEdGblpTQndjbTkyYVdSbGNpQmthWEpsWTNSdmNua2dZWEJwSUdab2FYSVFBSDBYYlNNXyIsInF1ZXN0aW9uIjoiV2hpY2ggaW5zdXJhbmNlIHBheWVycyB1c2UgY2hhbmdlIGhlYWx0aGNhcmU/IiwibGsiOiJHaXgzYUdsamFDQnBibk4xY21GdVkyVWdjR0Y1WlhKeklIVnpaU0JqYUdGdVoyVWdhR1ZoYkhSb1kyRnlaUSIsImJzIjoiYy1OSzR0SU56OGhNemxESXpDc3VMVXJNUzA1VktFaXNUQzBxVmlndFRsVkl6a2pNUzA5VnlFaE56Q25KU0U0c1NyV1hXT0p0cENlbFUwNkNIcTR3TG5XUF9IS0ZrbnlGdE15OEZJWGMxSlJNa0xoQ1lrcFpZbDVKSWxCeFNuNXlTWDVSc2IzRTltSWpEU20xREtKVUN6QUNBQSIsImlkIjoiZmNfYldSa2FMTFNDNUxFcDg0UHFZS1l3UW9fMyJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRlQyVjJTMFpUVldoemNETktRVUpNV0VKM1JYaHNVMHRMWlZWek5GOWpUbGc1ZFVOb1NYRmxPRFJRY2pkbFVFaEZObVZoVFVzM2RrOUNNRE5oVWtFdFJISkJjVXR2V1hKd2RXWXdaV1JqT0ZVeGMwRkhhRGwwY25GQlp4SVhZbGRTYTJGTVRGTkROVXhGY0RnMFVIRlpTMWwzVVc4YUlrRkdUVUZIUjNKVlJYQTBZbWcyZERSQmQzQnFjbFI0YkdSaWRtTjNSa293UTBFIiwiZmN2IjoiMyIsImVpIjoiYldSa2FMTFNDNUxFcDg0UHFZS1l3UW8iLCJxYyI6IkNqWmhjM0JwY25WeklHMWxaR2xqWVhKbElHRmtkbUZ1ZEdGblpTQndjbTkyYVdSbGNpQmthWEpsWTNSdmNua2dZWEJwSUdab2FYSVFBSDBYYlNNXyIsInF1ZXN0aW9uIjoiV2hpY2ggaW5zdXJhbmNlIHBheWVycyB1c2UgY2hhbmdlIGhlYWx0aGNhcmU%2FIiwibGsiOiJHaXgzYUdsamFDQnBibk4xY21GdVkyVWdjR0Y1WlhKeklIVnpaU0JqYUdGdVoyVWdhR1ZoYkhSb1kyRnlaUSIsImJzIjoiYy1OSzR0SU56OGhNemxESXpDc3VMVXJNUzA1VktFaXNUQzBxVmlndFRsVkl6a2pNUzA5VnlFaE56Q25KU0U0c1NyV1hXT0p0cENlbFUwNkNIcTR3TG5XUF9IS0ZrbnlGdE15OEZJWGMxSlJNa0xoQ1lrcFpZbDVKSWxCeFNuNXlTWDVSc2IzRTltSWpEU20xREtKVUN6QUNBQSIsImlkIjoiZmNfYldSa2FMTFNDNUxFcDg0UHFZS1l3UW9fMyJ9"
+    },
+    {
+      "question": "How to find medicare advantage doctors?",
+      "snippet": "If you have a particular plan or insurer that you're looking into, you can go to the plan's website and look for their searchable directory or find a plan directory on the website, where you can search for your doctor.",
+      "title": "How can I find out if my doctor is in a Medicare Advantage plan network?",
+      "link": "https://www.kff.org/faqs/medicare-open-enrollment-faqs/how-can-i-find-out-if-my-doctor-is-in-a-medicare-advantage-plan-network/#:~:text=If%20you%20have%20a%20particular,can%20search%20for%20your%20doctor.",
+      "displayed_link": "https://www.kff.org \u203a medicare-open-enrollment-faqs",
+      "source_logo": "https://serpapi.com/searches/6864646cac1765982ec5637e/images/786380dd686c6f9800c0a0831321b7f963cfbebaa739f184e4c2e203cd668315.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRlQyVjJTMFpUVldoemNETktRVUpNV0VKM1JYaHNVMHRMWlZWek5GOWpUbGc1ZFVOb1NYRmxPRFJRY2pkbFVFaEZObVZoVFVzM2RrOUNNRE5oVWtFdFJISkJjVXR2V1hKd2RXWXdaV1JqT0ZVeGMwRkhhRGwwY25GQlp4SVhZbGRTYTJGTVRGTkROVXhGY0RnMFVIRlpTMWwzVVc4YUlrRkdUVUZIUjNKVlJYQTBZbWcyZERSQmQzQnFjbFI0YkdSaWRtTjNSa293UTBFIiwiZmN2IjoiMyIsImVpIjoiYldSa2FMTFNDNUxFcDg0UHFZS1l3UW8iLCJxYyI6IkNqWmhjM0JwY25WeklHMWxaR2xqWVhKbElHRmtkbUZ1ZEdGblpTQndjbTkyYVdSbGNpQmthWEpsWTNSdmNua2dZWEJwSUdab2FYSVFBSDBYYlNNXyIsInF1ZXN0aW9uIjoiSG93IHRvIGZpbmQgbWVkaWNhcmUgYWR2YW50YWdlIGRvY3RvcnM/IiwibGsiOiJHaVpvYjNjZ2RHOGdabWx1WkNCdFpXUnBZMkZ5WlNCaFpIWmhiblJoWjJVZ1pHOWpkRzl5Y3ciLCJicyI6ImMtTks0dElOejhoTXpsREl6Q3N1TFVyTVMwNVZLRWlzVEMwcVZpZ3RUbFZJemtqTVMwOVZ5RWhOekNuSlNFNHNTcldYV09KdHBDZWxVMDZDSHE0d0xuV1BfSEtGa255RnRNeThGSVhjMUpSTWtMaENZa3BaWWw1SklsQnhTbjV5U1g1UnNiM0U5bUlqRFNtMURLSlVDekFDQUEiLCJpZCI6ImZjX2JXUmthTExTQzVMRXA4NFBxWUtZd1FvXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRlQyVjJTMFpUVldoemNETktRVUpNV0VKM1JYaHNVMHRMWlZWek5GOWpUbGc1ZFVOb1NYRmxPRFJRY2pkbFVFaEZObVZoVFVzM2RrOUNNRE5oVWtFdFJISkJjVXR2V1hKd2RXWXdaV1JqT0ZVeGMwRkhhRGwwY25GQlp4SVhZbGRTYTJGTVRGTkROVXhGY0RnMFVIRlpTMWwzVVc4YUlrRkdUVUZIUjNKVlJYQTBZbWcyZERSQmQzQnFjbFI0YkdSaWRtTjNSa293UTBFIiwiZmN2IjoiMyIsImVpIjoiYldSa2FMTFNDNUxFcDg0UHFZS1l3UW8iLCJxYyI6IkNqWmhjM0JwY25WeklHMWxaR2xqWVhKbElHRmtkbUZ1ZEdGblpTQndjbTkyYVdSbGNpQmthWEpsWTNSdmNua2dZWEJwSUdab2FYSVFBSDBYYlNNXyIsInF1ZXN0aW9uIjoiSG93IHRvIGZpbmQgbWVkaWNhcmUgYWR2YW50YWdlIGRvY3RvcnM%2FIiwibGsiOiJHaVpvYjNjZ2RHOGdabWx1WkNCdFpXUnBZMkZ5WlNCaFpIWmhiblJoWjJVZ1pHOWpkRzl5Y3ciLCJicyI6ImMtTks0dElOejhoTXpsREl6Q3N1TFVyTVMwNVZLRWlzVEMwcVZpZ3RUbFZJemtqTVMwOVZ5RWhOekNuSlNFNHNTcldYV09KdHBDZWxVMDZDSHE0d0xuV1BfSEtGa255RnRNeThGSVhjMUpSTWtMaENZa3BaWWw1SklsQnhTbjV5U1g1UnNiM0U5bUlqRFNtMURLSlVDekFDQUEiLCJpZCI6ImZjX2JXUmthTExTQzVMRXA4NFBxWUtZd1FvXzMifQ%3D%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "ePS Payer List (A-F) - April 12, 2024",
+      "link": "https://support.drchrono.com/home/24766684793115-eps-payer-list-a-f-april-12-2024",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://support.drchrono.com/home/24766684793115-eps-payer-list-a-f-april-12-2024&ved=2ahUKEwjyvIzr3ZyOAxUS4skDHSkBJqgQFnoECCIQAQ",
+      "displayed_link": "https://support.drchrono.com \u203a home \u203a 2476668479311...",
+      "favicon": "https://serpapi.com/searches/6864646cac1765982ec5637e/images/0a33f8462c5f51e1322d8d0ebfce4614c87203e8063cd8c9cde786429d0c6134.png",
+      "date": "Apr 12, 2024",
+      "snippet": "FHIR. SMART on FHIR Application Enhancements \u00b7 Activating your FHIR APIs \u00b7 What is FHIR API? What to Expect with FHIR APIs \u00b7 FHIR API FAQ \u00b7 Set ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "FHIR APIs",
+        "FHIR API",
+        "FHIR APIs",
+        "FHIR API"
+      ],
+      "source": "DrChrono"
+    },
+    {
+      "position": 2,
+      "title": "ePS Reconnection Payer List (A-E) as of 5.14.2024",
+      "link": "https://support.drchrono.com/home/25767403504539-eps-reconnection-payer-list-a-e-as-of-5-14-2024",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://support.drchrono.com/home/25767403504539-eps-reconnection-payer-list-a-e-as-of-5-14-2024&ved=2ahUKEwjyvIzr3ZyOAxUS4skDHSkBJqgQFnoECCEQAQ",
+      "displayed_link": "https://support.drchrono.com \u203a home \u203a 2576740350453...",
+      "favicon": "https://serpapi.com/searches/6864646cac1765982ec5637e/images/0a33f8462c5f51e1322d8d0ebfce46145407e3116200f5cbc2d08dbd4fb9fa53.png",
+      "date": "Jul 8, 2024",
+      "snippet": "ePS Reconnection Payer List as of 8.13.2024 \u00b7 E & M coding changes- effective January 1, 2021 \u00b7 FHIR API FAQ \u00b7 What does rejection EPSOUT mean ...",
+      "snippet_highlighted_words": [
+        "List",
+        "FHIR API"
+      ],
+      "source": "DrChrono"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 2 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22aspirus+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "search_metadata": {
+    "id": "68646498d0a88f7e25016f49",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/df0f6375a0e3d881/68646498d0a88f7e25016f49.json",
+    "created_at": "2025-07-01 22:43:36 UTC",
+    "processed_at": "2025-07-01 22:43:36 UTC",
+    "google_url": "https://www.google.com/search?q=%22clover+health+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22clover+health+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/df0f6375a0e3d881/68646498d0a88f7e25016f49.html",
+    "total_time_taken": 4.36
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"clover health holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"clover health holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 325,
+    "time_taken_displayed": 0.35,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "clover health holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "clover health holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQFnoECBcQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/68646498d0a88f7e25016f49/images/ca5a9738673265f8096a12c36510e9b3da7571b008e6c329e3fa05bdec9115ab.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. Endpoints are: FHIR- ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=clover+health+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ5t4CegQIJBAB"
+      },
+      "source": "Flexpa"
+    },
+    {
+      "position": 2,
+      "title": "Clever Care Health Plan: Medicare Alternative Medicine Plans",
+      "link": "https://clevercarehealthplan.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://clevercarehealthplan.com/&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQFnoECBUQAQ",
+      "displayed_link": "https://clevercarehealthplan.com",
+      "favicon": "https://serpapi.com/searches/68646498d0a88f7e25016f49/images/ca5a9738673265f8096a12c36510e9b329901e5f71eaf51b0bbc2e1a612ec23d.png",
+      "snippet": "Clever Care delivers culturally sensitive Medicare options in Southern California that honor and represent the cultural values of the communities we serve.",
+      "snippet_highlighted_words": [
+        "Medicare"
+      ],
+      "missing": [
+        "clover",
+        "holdings"
+      ],
+      "source": "Clever Care Health Plan"
+    },
+    {
+      "position": 3,
+      "title": "Digital transformation and interoperability are critical to ...",
+      "link": "https://us.nttdata.com/en/-/media/nttdataamerica/files/gated-asset/NTTDATA_HFS_Interoperability_Research_Paper",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://us.nttdata.com/en/-/media/nttdataamerica/files/gated-asset/NTTDATA_HFS_Interoperability_Research_Paper&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQFnoECBgQAQ",
+      "displayed_link": "https://us.nttdata.com \u203a media \u203a files \u203a gated-asset",
+      "favicon": "https://serpapi.com/searches/68646498d0a88f7e25016f49/images/ca5a9738673265f8096a12c36510e9b3dbd7c238f076c3b04c5d44502f106d77.png",
+      "snippet": "Another reason health plans lag in FHIR API execution is that members don't use them often; with less than 5% of members have used patient access APIs ...",
+      "snippet_highlighted_words": [
+        "health plans",
+        "FHIR API",
+        "APIs"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=clover+health+holdings+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ5t4CegQIJRAB"
+      },
+      "source": "NTT Data"
+    },
+    {
+      "position": 4,
+      "title": "The case for Clover Health and why it's a big deal. : r/CLOV",
+      "link": "https://www.reddit.com/r/CLOV/comments/1ezgwhw/the_case_for_clover_health_and_why_its_a_big_deal/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.reddit.com/r/CLOV/comments/1ezgwhw/the_case_for_clover_health_and_why_its_a_big_deal/&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQFnoECBYQAQ",
+      "displayed_link": "50+ comments \u00b7 10 months ago",
+      "favicon": "https://serpapi.com/searches/68646498d0a88f7e25016f49/images/ca5a9738673265f8096a12c36510e9b39d3158981e8188526e8b22937cd95ff7.png",
+      "snippet": "Clover Health is not just another health insurance company. They're leveraging AI through Clover Assistant (CA) to disrupt the traditional fee-for-service ...",
+      "snippet_highlighted_words": [
+        "Clover Health"
+      ],
+      "source": "Reddit \u00b7 r/CLOV"
+    },
+    {
+      "position": 5,
+      "title": "Digital transformation and interoperability are critical to ...",
+      "link": "https://www.hfsresearch.com/research/digital-transformation-and-interoperability-are-critical-to-health-plan-well-being/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hfsresearch.com/research/digital-transformation-and-interoperability-are-critical-to-health-plan-well-being/&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQFnoECBwQAQ",
+      "displayed_link": "https://www.hfsresearch.com \u203a Research & Insights",
+      "favicon": "https://serpapi.com/searches/68646498d0a88f7e25016f49/images/ca5a9738673265f8096a12c36510e9b3124079dcd6ec10c808545643a1eb2071.png",
+      "date": "Jan 3, 2023",
+      "snippet": "Another reason health plans lag in FHIR API execution is that members don't use them often; with less than 5% of members have used patient ...",
+      "snippet_highlighted_words": [
+        "health plans",
+        "FHIR API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=clover+health+holdings+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ5t4CegQIJxAB"
+      },
+      "source": "HFS Research"
+    },
+    {
+      "position": 6,
+      "title": "Particle Health And Pulling Patient Data",
+      "link": "https://www.outofpocket.health/p/particle-health-and-pulling-patient-data",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.outofpocket.health/p/particle-health-and-pulling-patient-data&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQFnoECBoQAQ",
+      "displayed_link": "https://www.outofpocket.health \u203a particle-health-and-pu...",
+      "favicon": "https://serpapi.com/searches/68646498d0a88f7e25016f49/images/ca5a9738673265f8096a12c36510e9b31c36de1828368b6df861ec9b3c58fab8.png",
+      "date": "Jun 6, 2021",
+      "snippet": "Particle Health provides an API that allows companies to query patient records using demographics like name, date of birth, address, across a bunch of ...",
+      "snippet_highlighted_words": [
+        "Health",
+        "API"
+      ],
+      "missing": [
+        "holdings",
+        "Advantage"
+      ],
+      "source": "Out of Pocket Health"
+    },
+    {
+      "position": 7,
+      "title": "Connecting the Dots Between the Many Facets of ...",
+      "link": "https://thisweekhealth.com/captivate-podcast/connecting-the-dots-between-the-many-facets-of-healthcare-with-aneesh-chopra/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://thisweekhealth.com/captivate-podcast/connecting-the-dots-between-the-many-facets-of-healthcare-with-aneesh-chopra/&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQFnoECBsQAQ",
+      "displayed_link": "https://thisweekhealth.com \u203a captivate-podcast \u203a connec...",
+      "favicon": "https://serpapi.com/searches/68646498d0a88f7e25016f49/images/ca5a9738673265f8096a12c36510e9b3279f5310bbfa62ea03b14dd21267069a.png",
+      "date": "Feb 25, 2022",
+      "snippet": "February 25, 2022: Aneesh Chopra, President of CareJourney joins Bill to connect the dots between APIs, open data and payment reform.",
+      "snippet_highlighted_words": [
+        "APIs"
+      ],
+      "source": "This Week Health"
+    },
+    {
+      "position": 8,
+      "title": "ePS Payer List (A-F) - April 12, 2024",
+      "link": "https://support.drchrono.com/home/24766684793115-eps-payer-list-a-f-april-12-2024",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://support.drchrono.com/home/24766684793115-eps-payer-list-a-f-april-12-2024&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQFnoECDoQAQ",
+      "displayed_link": "https://support.drchrono.com \u203a home \u203a 2476668479311...",
+      "favicon": "https://serpapi.com/searches/68646498d0a88f7e25016f49/images/ca5a9738673265f8096a12c36510e9b3ac461df9b2964ed296267bdb2708cad6.png",
+      "date": "Apr 12, 2024",
+      "snippet": "Avera Health Plan Medicare Supplement, AVR05, ALL, X, X, X, Y. Averde ... Clover Health, 13285, ALL, X, X, X, Y. CMCS Advantage Health Solutions ...",
+      "snippet_highlighted_words": [
+        "Medicare Supplement",
+        "Clover Health"
+      ],
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=clover+health+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ5t4CegQIPRAB"
+      },
+      "source": "DrChrono"
+    },
+    {
+      "position": 9,
+      "title": "Official Clover Health Video Q&A/AMA with Andrew Toy",
+      "link": "https://www.reddit.com/r/CLOV/comments/okccab/official_clover_health_video_qaama_with_andrew_toy/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.reddit.com/r/CLOV/comments/okccab/official_clover_health_video_qaama_with_andrew_toy/&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQFnoECD8QAQ",
+      "displayed_link": "180+ comments \u00b7 3 years ago",
+      "favicon": "https://serpapi.com/searches/68646498d0a88f7e25016f49/images/ca5a9738673265f8096a12c36510e9b3696ad21ca024fe959d256ab4ec856eb9.png",
+      "snippet": "Executives at Clover have wanted to give retail investors a platform and voice for a long time and our subreddit has finally given them that ...",
+      "snippet_highlighted_words": [
+        "Clover"
+      ],
+      "source": "Reddit \u00b7 r/CLOV"
+    },
+    {
+      "position": 10,
+      "title": "Podcast",
+      "link": "https://www.outcomesrocket.com/podcast",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.outcomesrocket.com/podcast&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQFnoECDgQAQ",
+      "displayed_link": "https://www.outcomesrocket.com \u203a podcast",
+      "favicon": "https://serpapi.com/searches/68646498d0a88f7e25016f49/images/ca5a9738673265f8096a12c36510e9b3f4535e2c759b03791c681d2716ff7981.png",
+      "snippet": "This podcast is brought to you by Outcomes Rocket, your exclusive healthcare marketing agency. Learn how to accelerate your growth by going to\u2060 ...",
+      "snippet_highlighted_words": [
+        "healthcare"
+      ],
+      "source": "Outcomes Rocket"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Clever care medicare advantage provider phone number",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Clever+care+medicare+advantage+provider+phone+number&sa=X&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+care+medicare+advantage+provider+phone+number&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care health plan provider Portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Clever+Care+health+plan+provider+Portal&sa=X&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+health+plan+provider+Portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care provider phone number",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Clever+Care+provider+phone+number&sa=X&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+provider+phone+number&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Flexpa docs",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Flexpa+docs&sa=X&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Flexpa+docs&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=m2RkaKe1Mpqt4-EP16TOkQ8&start=10&sa=N&sstk=Ac65TH7gkiAP6CMKkQ2otdYFyMnyt2Ll1WTQJMzd20VL7hLvxtM9l_u9oi6chlBtNiFQKZ5v1okM1hd18AlrrX67G-PLheL9-i6r9w&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ8NMDegQICBAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=m2RkaKe1Mpqt4-EP16TOkQ8&start=10&sa=N&sstk=Ac65TH7gkiAP6CMKkQ2otdYFyMnyt2Ll1WTQJMzd20VL7hLvxtM9l_u9oi6chlBtNiFQKZ5v1okM1hd18AlrrX67G-PLheL9-i6r9w&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=m2RkaKe1Mpqt4-EP16TOkQ8&start=20&sa=N&sstk=Ac65TH7gkiAP6CMKkQ2otdYFyMnyt2Ll1WTQJMzd20VL7hLvxtM9l_u9oi6chlBtNiFQKZ5v1okM1hd18AlrrX67G-PLheL9-i6r9w&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=m2RkaKe1Mpqt4-EP16TOkQ8&start=30&sa=N&sstk=Ac65TH7gkiAP6CMKkQ2otdYFyMnyt2Ll1WTQJMzd20VL7hLvxtM9l_u9oi6chlBtNiFQKZ5v1okM1hd18AlrrX67G-PLheL9-i6r9w&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ8tMDegQICBAI",
+      "5": "https://www.google.com/search?q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=m2RkaKe1Mpqt4-EP16TOkQ8&start=40&sa=N&sstk=Ac65TH7gkiAP6CMKkQ2otdYFyMnyt2Ll1WTQJMzd20VL7hLvxtM9l_u9oi6chlBtNiFQKZ5v1okM1hd18AlrrX67G-PLheL9-i6r9w&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ8tMDegQICBAK",
+      "6": "https://www.google.com/search?q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=m2RkaKe1Mpqt4-EP16TOkQ8&start=50&sa=N&sstk=Ac65TH7gkiAP6CMKkQ2otdYFyMnyt2Ll1WTQJMzd20VL7hLvxtM9l_u9oi6chlBtNiFQKZ5v1okM1hd18AlrrX67G-PLheL9-i6r9w&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ8tMDegQICBAM",
+      "7": "https://www.google.com/search?q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=m2RkaKe1Mpqt4-EP16TOkQ8&start=60&sa=N&sstk=Ac65TH7gkiAP6CMKkQ2otdYFyMnyt2Ll1WTQJMzd20VL7hLvxtM9l_u9oi6chlBtNiFQKZ5v1okM1hd18AlrrX67G-PLheL9-i6r9w&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ8tMDegQICBAO",
+      "8": "https://www.google.com/search?q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=m2RkaKe1Mpqt4-EP16TOkQ8&start=70&sa=N&sstk=Ac65TH7gkiAP6CMKkQ2otdYFyMnyt2Ll1WTQJMzd20VL7hLvxtM9l_u9oi6chlBtNiFQKZ5v1okM1hd18AlrrX67G-PLheL9-i6r9w&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ8tMDegQICBAQ",
+      "9": "https://www.google.com/search?q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=m2RkaKe1Mpqt4-EP16TOkQ8&start=80&sa=N&sstk=Ac65TH7gkiAP6CMKkQ2otdYFyMnyt2Ll1WTQJMzd20VL7hLvxtM9l_u9oi6chlBtNiFQKZ5v1okM1hd18AlrrX67G-PLheL9-i6r9w&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ8tMDegQICBAS",
+      "10": "https://www.google.com/search?q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=m2RkaKe1Mpqt4-EP16TOkQ8&start=90&sa=N&sstk=Ac65TH7gkiAP6CMKkQ2otdYFyMnyt2Ll1WTQJMzd20VL7hLvxtM9l_u9oi6chlBtNiFQKZ5v1okM1hd18AlrrX67G-PLheL9-i6r9w&ved=2ahUKEwjn7qqB3pyOAxWa1jgGHVeSM_IQ8tMDegQICBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=clover+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "search_metadata": {
+    "id": "68646d5ca289714d3ef2a697",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/71755402ffc294c0/68646d5ca289714d3ef2a697.json",
+    "created_at": "2025-07-01 23:21:00 UTC",
+    "processed_at": "2025-07-01 23:21:00 UTC",
+    "google_url": "https://www.google.com/search?q=st+francis+health+system+%26+st+john+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=st+francis+health+system+%26+st+john+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/71755402ffc294c0/68646d5ca289714d3ef2a697.html",
+    "total_time_taken": 1.48
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "st francis health system & st john health system Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "st francis health system & st john health system Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 39,
+    "time_taken_displayed": 0.47,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability and Your Health Information",
+      "link": "https://www.ccok.com/members/interoperability.asp",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ccok.com/members/interoperability.asp&ved=2ahUKEwjPhIGu5pyOAxUNUGwGHTQhEkkQFnoECBoQAQ",
+      "displayed_link": "https://www.ccok.com \u203a members \u203a interoperability",
+      "snippet": "The Health and Human Services Office of Civil Rights (OCR) oversees ... Provider Directory API. https://apis.ssctech.com/interop-ccok/open/fhir/R4 ...",
+      "snippet_highlighted_words": [
+        "Health",
+        "Services",
+        "of",
+        "Provider Directory API",
+        "apis",
+        "fhir"
+      ],
+      "source": "CommunityCare Health Insurance Plans"
+    },
+    {
+      "position": 2,
+      "title": "Michigan Health Information Technology Commission",
+      "link": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder1/Folder58/August_2016_HIT_Commission_Presentation_Final.pdf?rev=431e1814b84a4db6bfc1e7c70ff43b87",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder1/Folder58/August_2016_HIT_Commission_Presentation_Final.pdf%3Frev%3D431e1814b84a4db6bfc1e7c70ff43b87&ved=2ahUKEwjPhIGu5pyOAxUNUGwGHTQhEkkQFnoECBcQAQ",
+      "displayed_link": "https://www.michigan.gov \u203a Folder1 \u203a Folder58",
+      "favicon": "https://serpapi.com/searches/68646d5ca289714d3ef2a697/images/78586a298014cab157e3822874b1156aca3e957621cc3d09a689a79a2f81c737.png",
+      "date": "Aug 18, 2016",
+      "snippet": "\u2022 491,815 unique providers in statewide Health Provider Directory ... \u2022 Runs as web service with rich FHIR API for easy integration.",
+      "snippet_highlighted_words": [
+        "Health Provider Directory",
+        "service",
+        "FHIR API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=st+francis+health+system+%26+st+john+health+system+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjPhIGu5pyOAxUNUGwGHTQhEkkQ5t4CegQIGxAB"
+      },
+      "source": "State of Michigan (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "2024 Quality Improvement & Health Equity Program ...",
+      "link": "https://www.lacare.org/sites/default/files/la6784_qi_annual_evaluation_202505.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/la6784_qi_annual_evaluation_202505.pdf&ved=2ahUKEwjPhIGu5pyOAxUNUGwGHTQhEkkQFnoECBkQAQ",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files \u203a la...",
+      "favicon": "https://serpapi.com/searches/68646d5ca289714d3ef2a697/images/78586a298014cab157e3822874b1156acfea11f543e53e1e3e31483a53619204.png",
+      "snippet": "... (FHIR) Application. Programming Interface. (API) into the Clinical. Data ... provider directory survey, which includes questions regarding their ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 500
+          },
+          "extensions": [
+            "500 pages"
+          ]
+        }
+      },
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 4,
+      "title": "Meeting 9 \u2013 Aboriginal and Torres Strait Islander, rural & ...",
+      "link": "https://www.digitalhealth.gov.au/sites/default/files/documents/12-june-2025---meeting-pack.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.digitalhealth.gov.au/sites/default/files/documents/12-june-2025---meeting-pack.pdf&ved=2ahUKEwjPhIGu5pyOAxUNUGwGHTQhEkkQFnoECCAQAQ",
+      "displayed_link": "https://www.digitalhealth.gov.au \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/68646d5ca289714d3ef2a697/images/78586a298014cab157e3822874b1156a2a1c7103548a3dbd146d0a85919b96e6.png",
+      "date": "Jun 12, 2025",
+      "snippet": "Updating the NHSD FHIR API to bundle Healthcare Service, location and organisation resources with existing Practitioner and SMD data through the ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Healthcare Service"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=st+francis+health+system+%26+st+john+health+system+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjPhIGu5pyOAxUNUGwGHTQhEkkQ5t4CegQIIhAB"
+      },
+      "source": "Australian Digital Health Agency"
+    },
+    {
+      "position": 5,
+      "title": "Helpful Hints - Confluence - HL7.org",
+      "link": "https://confluence.hl7.org/download/attachments/81018510/ProjectBallotHealthMetrics_2022JanWGM_20211221.xlsx?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/81018510/ProjectBallotHealthMetrics_2022JanWGM_20211221.xlsx%3Fapi%3Dv2&ved=2ahUKEwjPhIGu5pyOAxUNUGwGHTQhEkkQFnoECBYQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a attachments \u203a Projec...",
+      "favicon": "https://serpapi.com/searches/68646d5ca289714d3ef2a697/images/78586a298014cab157e3822874b1156ad5acdd284ee147ca494a98e13754fc15.png",
+      "snippet": "The project will use the entire inventory of FHIR resources and propose extensions as needed. ... Provider Directory, Endpoint Directory, Utilizes the work ...",
+      "snippet_highlighted_words": [
+        "of FHIR",
+        "Provider Directory"
+      ],
+      "source": "HL7.org"
+    },
+    {
+      "position": 6,
+      "title": "SoonerCare Comprehensive Managed Care Program",
+      "link": "https://oklahoma.gov/content/dam/ok/en/okhca/documents/a0600/25392.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://oklahoma.gov/content/dam/ok/en/okhca/documents/a0600/25392.pdf&ved=2ahUKEwjPhIGu5pyOAxUNUGwGHTQhEkkQFnoECBwQAQ",
+      "displayed_link": "https://oklahoma.gov \u203a dam \u203a okhca \u203a documents",
+      "favicon": "https://serpapi.com/searches/68646d5ca289714d3ef2a697/images/78586a298014cab157e3822874b1156a40f4a305f12dc0cf70ea242a55a10f07.png",
+      "date": "Mar 9, 2020",
+      "snippet": "... provider directory, along with the ability to provide a hard copy by ... (FHIR) interoperability specifications. This bidirectional.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 764
+          },
+          "extensions": [
+            "764 pages"
+          ]
+        }
+      },
+      "source": "oklahoma.gov"
+    },
+    {
+      "position": 7,
+      "title": "Report on Medication Reconciliation Hackathon - CT.gov",
+      "link": "https://portal.ct.gov/-/media/OHS/Health-IT-Advisory-Council/Presentations/Report-on-Medication-Reconciliation-Hackathon_10_June_19_v1_0-FINAL.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://portal.ct.gov/-/media/OHS/Health-IT-Advisory-Council/Presentations/Report-on-Medication-Reconciliation-Hackathon_10_June_19_v1_0-FINAL.pdf&ved=2ahUKEwjPhIGu5pyOAxUNUGwGHTQhEkkQFnoECBUQAQ",
+      "displayed_link": "https://portal.ct.gov \u203a media \u203a OHS \u203a Presentations",
+      "favicon": "https://serpapi.com/searches/68646d5ca289714d3ef2a697/images/78586a298014cab157e3822874b1156a05b81000f28c5451ce8e628632681a02.png",
+      "date": "Apr 6, 2019",
+      "snippet": "The recently announced. 21st Century Cures Act NPRMs from ONC and CMS specify the use of FHIR as the API for EHR certification and access to ...",
+      "snippet_highlighted_words": [
+        "of FHIR",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 83
+          },
+          "extensions": [
+            "83 pages"
+          ]
+        }
+      },
+      "source": "CT.GOV-Connecticut's Official State Website (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Report Card - Confluence - HL7 International",
+      "link": "https://confluence.hl7.org/download/attachments/144994722/ProjectBallotHealthMetrics_2023JanWGM_Final.xlsx?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/144994722/ProjectBallotHealthMetrics_2023JanWGM_Final.xlsx%3Fapi%3Dv2&ved=2ahUKEwjPhIGu5pyOAxUNUGwGHTQhEkkQFnoECC4QAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a attachments \u203a Projec...",
+      "favicon": "https://serpapi.com/searches/68646d5ca289714d3ef2a697/images/78586a298014cab157e3822874b1156ae927a48840e1a9b9ba648b16eb248d1b.png",
+      "snippet": "... of FHIR based exchanges to support more efficient and better informed delivery of health care services, 1) MITRE 2) CMS, No, Providing electronically access to ...",
+      "snippet_highlighted_words": [
+        "of FHIR",
+        "of health care services"
+      ],
+      "source": "HL7.org"
+    },
+    {
+      "position": 9,
+      "title": "\u2022 How many beneficiaries are enrolled in MCOs who have ...",
+      "link": "https://dccouncil.gov/wp-content/uploads/2025/02/hcfatt.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dccouncil.gov/wp-content/uploads/2025/02/hcfatt.pdf&ved=2ahUKEwjPhIGu5pyOAxUNUGwGHTQhEkkQFnoECDQQAQ",
+      "displayed_link": "https://dccouncil.gov \u203a uploads \u203a 2025/02 \u203a hcfatt",
+      "favicon": "https://serpapi.com/searches/68646d5ca289714d3ef2a697/images/78586a298014cab157e3822874b1156a6ce9f6b5ff2ca9e4163cfa95e5ac82e7.png",
+      "date": "Feb 15, 2025",
+      "snippet": "... provider directory that provides that ability to search for ... (FHIR) standard APIs. This will lead to improved overall health care ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR",
+        "APIs",
+        "health care"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=st+francis+health+system+%26+st+john+health+system+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjPhIGu5pyOAxUNUGwGHTQhEkkQ5t4CegQINhAB"
+      },
+      "source": "Council of the District of Columbia (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "American Health Law Association The Year in Review ...",
+      "link": "https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf&ved=2ahUKEwjPhIGu5pyOAxUNUGwGHTQhEkkQFnoECC8QAQ",
+      "displayed_link": "https://www.bradley.com \u203a publications \u203a 2022/02",
+      "favicon": "https://serpapi.com/searches/68646d5ca289714d3ef2a697/images/78586a298014cab157e3822874b1156a85086745796407c44e3c3ea7fb9675c7.png",
+      "date": "Feb 17, 2022",
+      "snippet": "... FHIR\u00ae Roadmap for \u00b7 TEFCA Exchange (January 2022). The TEF is a set of ... Provider Directory API (applicable January 1, 2021, with ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "of",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 315
+          },
+          "extensions": [
+            "315 pages"
+          ]
+        }
+      },
+      "source": "Bradley Arant"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=st+francis+health+system+%26+st+john+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=XG1kaM_mPI2gseMPtMLIyAQ&start=10&sa=N&sstk=Ac65TH5VZE2L_0K1J4OV4WTx9kgjKFdyD1i3vwuts_RSRShftghQ2JHDSeLGgS2f3ZYlhuSa0TFTsSC_CEimKpnrcdkXItBXPQAJ2w&ved=2ahUKEwjPhIGu5pyOAxUNUGwGHTQhEkkQ8NMDegQIBxAG",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=st+francis+health+system+%26+st+john+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=XG1kaM_mPI2gseMPtMLIyAQ&start=10&sa=N&sstk=Ac65TH5VZE2L_0K1J4OV4WTx9kgjKFdyD1i3vwuts_RSRShftghQ2JHDSeLGgS2f3ZYlhuSa0TFTsSC_CEimKpnrcdkXItBXPQAJ2w&ved=2ahUKEwjPhIGu5pyOAxUNUGwGHTQhEkkQ8tMDegQIBxAE"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=st+francis+health+system+%26+st+john+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=st+francis+health+system+%26+st+john+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=st+francis+health+system+%26+st+john+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10"
+    }
+  }
+}

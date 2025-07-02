@@ -1,0 +1,258 @@
+{
+  "search_metadata": {
+    "id": "686464817223f4851e5c4347",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/83429a359c634f55/686464817223f4851e5c4347.json",
+    "created_at": "2025-07-01 22:43:13 UTC",
+    "processed_at": "2025-07-01 22:43:13 UTC",
+    "google_url": "https://www.google.com/search?q=%22cambia+health+solutions+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22cambia+health+solutions+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/83429a359c634f55/686464817223f4851e5c4347.html",
+    "total_time_taken": 2.84
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"cambia health solutions Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"cambia health solutions Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 125,
+    "time_taken_displayed": 0.53,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "cambia health solutions Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "cambia health solutions Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "TRANSFORMING HEALTH CARE",
+      "link": "https://www.cambiahealth.com/sites/default/files/2020-02/021120%20-%20Public%20Affairs%20&%20Policy%20landing%20page-%20Innovation%20Agenda%20Final%20(web).pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cambiahealth.com/sites/default/files/2020-02/021120%2520-%2520Public%2520Affairs%2520%26%2520Policy%2520landing%2520page-%2520Innovation%2520Agenda%2520Final%2520(web).pdf&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQFnoECBgQAQ",
+      "displayed_link": "https://www.cambiahealth.com \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/686464817223f4851e5c4347/images/61b7eb399d1a282ccb966b13db6fff093268bf95a802d3092d58c2c0abcd2109.png",
+      "date": "Feb 1, 2020",
+      "snippet": "Today, Cambia Health Solutions is a family of more than. 20 companies that work together to make health care better for our consumers and their ...",
+      "snippet_highlighted_words": [
+        "Cambia Health Solutions"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 31
+          },
+          "extensions": [
+            "31 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=cambia+health+solutions+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQ5t4CegQIJRAB"
+      },
+      "source": "Cambia Health Solutions"
+    },
+    {
+      "position": 2,
+      "title": "payer data exchange - The Standard | The Official Blog of HL7",
+      "link": "https://blog.hl7.org/topic/payer-data-exchange",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://blog.hl7.org/topic/payer-data-exchange&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQFnoECBwQAQ",
+      "displayed_link": "https://blog.hl7.org \u203a topic \u203a payer-data-exchange",
+      "favicon": "https://serpapi.com/searches/686464817223f4851e5c4347/images/61b7eb399d1a282ccb966b13db6fff09ceffadb3d2e0faa7041073285b81e506.png",
+      "date": "Apr 16, 2025",
+      "snippet": "The final rules call for payers to provide healthcare data to members through the use of FHIR-based APIs, as well as using a similar methodology ...",
+      "snippet_highlighted_words": [
+        "healthcare",
+        "FHIR",
+        "APIs"
+      ],
+      "source": "HL7 Blog"
+    },
+    {
+      "position": 3,
+      "title": "Catching FHIR: Lessons Learned from Achieving the First ...",
+      "link": "https://www.cms.gov/files/document/hiig-august-2023-isc-speaker-slides.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/hiig-august-2023-isc-speaker-slides.pdf&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQFnoECB4QAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a hiig-au...",
+      "favicon": "https://serpapi.com/searches/686464817223f4851e5c4347/images/61b7eb399d1a282ccb966b13db6fff097c37c4592efad32d60db8a5dc4f96804.png",
+      "date": "Aug 23, 2023",
+      "snippet": "Providers and clinical staff must pivot from their EHR workflow. Clinical staff must track down required clinical data and upload manually.",
+      "snippet_highlighted_words": [
+        "Providers"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=cambia+health+solutions+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQ5t4CegQIKRAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Da Vinci Video Presentations",
+      "link": "https://confluence.hl7.org/spaces/DVP/pages/78678039/Da+Vinci+Video+Presentations",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/spaces/DVP/pages/78678039/Da%2BVinci%2BVideo%2BPresentations&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQFnoECCMQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a spaces \u203a DVP \u203a pages \u203a Da...",
+      "favicon": "https://serpapi.com/searches/686464817223f4851e5c4347/images/61b7eb399d1a282ccb966b13db6fff097be47461bd308e5e6cc29725fb8aacef.png",
+      "date": "Mar 26, 2025",
+      "snippet": "... Solutions & Interoperability, Cambia Health Solutions ... Provider Directory: Building a Solid Foundation for the Provider Directory API ...",
+      "snippet_highlighted_words": [
+        "Cambia Health Solutions",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=cambia+health+solutions+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQ5t4CegQIJhAB"
+      },
+      "source": "HL7 - Confluence"
+    },
+    {
+      "position": 5,
+      "title": "Accelerating FHIR Adoption and Improving Scalability",
+      "link": "https://www.healthit.gov/sites/default/files/2024-01/ONC%20Tech%20Forum%20FHIR%20Panel%2011-30-23%20508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/2024-01/ONC%2520Tech%2520Forum%2520FHIR%2520Panel%252011-30-23%2520508.pdf&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQFnoECB0QAQ",
+      "displayed_link": "https://www.healthit.gov \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/686464817223f4851e5c4347/images/61b7eb399d1a282ccb966b13db6fff09f90a7a3762e0dc404f2e6459271c9c1f.jpeg",
+      "date": "Nov 30, 2023",
+      "snippet": "CMS Interoperability Rules: \u2022 Interoperability and Patient Access Final Rule (2020) \u2013 Patient Access API, Provider Directory.",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 19
+          },
+          "extensions": [
+            "19 pages"
+          ]
+        }
+      },
+      "missing": [
+        "solutions",
+        "Advantage"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Prior Authorization Regulation on Track for Release and ...",
+      "link": "https://www.wedi.org/2023/06/28/prior-authorization-regulation-on-track-for-release-and-on-the-wedi-summer-forum-agenda/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wedi.org/2023/06/28/prior-authorization-regulation-on-track-for-release-and-on-the-wedi-summer-forum-agenda/&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQFnoECBYQAQ",
+      "displayed_link": "https://www.wedi.org \u203a 2023/06/28 \u203a prior-authorization...",
+      "favicon": "https://serpapi.com/searches/686464817223f4851e5c4347/images/61b7eb399d1a282ccb966b13db6fff09151723d3bc904e2fae026f0347b63990.png",
+      "date": "Jun 28, 2023",
+      "snippet": "Sessions will include: Prior Authorization Requirements, Documentation and Decision (PARDD) FHIR API Early Adopters Session featuring Kirk ...",
+      "snippet_highlighted_words": [
+        "FHIR API"
+      ],
+      "source": "Workgroup for Electronic Data Interchange (WEDI)"
+    },
+    {
+      "position": 7,
+      "title": "How docs help develop medical technology that's ...",
+      "link": "https://www.ama-assn.org/practice-management/prior-authorization/how-docs-help-develop-medical-technology-thats-speeding",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ama-assn.org/practice-management/prior-authorization/how-docs-help-develop-medical-technology-thats-speeding&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQFnoECBcQAQ",
+      "displayed_link": "https://www.ama-assn.org \u203a ... \u203a Prior Authorization",
+      "favicon": "https://serpapi.com/searches/686464817223f4851e5c4347/images/61b7eb399d1a282ccb966b13db6fff09c2c74e2ad2dc6773ac4f69b5c8422625.png",
+      "date": "May 30, 2025",
+      "snippet": "Discussing how to speed up prior authorization process using informatics in health care, HL7 and FHIR, computerized physician order entry and ...",
+      "snippet_highlighted_words": [
+        "health",
+        "FHIR",
+        "physician"
+      ],
+      "source": "American Medical Association"
+    },
+    {
+      "position": 8,
+      "title": "Health IT Leadership Roundtable",
+      "link": "https://sironastrategies.com/wp-content/uploads/2020/03/HIT-Leadership-Roundtable-WP-FINAL.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://sironastrategies.com/wp-content/uploads/2020/03/HIT-Leadership-Roundtable-WP-FINAL.pdf&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQFnoECDEQAQ",
+      "displayed_link": "https://sironastrategies.com \u203a uploads \u203a 2020/03",
+      "favicon": "https://serpapi.com/searches/686464817223f4851e5c4347/images/61b7eb399d1a282ccb966b13db6fff09a13b993d871a59cd0c18afc94fb5175e.png",
+      "snippet": "CMS uses the FHIR standard for its Blue Button API, which enables. Medicare beneficiaries to connect their claims data to applications and tools of their choice ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Medicare"
+      ],
+      "source": "Sirona Strategies"
+    },
+    {
+      "position": 9,
+      "title": "K2 Collaborative Summit 2024: Improving Healthcare ...",
+      "link": "https://klasresearch.com/report/k2-collaborative-summit-2024-improving-healthcare-efficiency-by-encouraging-shared-payer-provider-goals/3591",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://klasresearch.com/report/k2-collaborative-summit-2024-improving-healthcare-efficiency-by-encouraging-shared-payer-provider-goals/3591&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQFnoECDIQAQ",
+      "displayed_link": "https://klasresearch.com \u203a report \u203a k2-collaborative-sum...",
+      "favicon": "https://serpapi.com/searches/686464817223f4851e5c4347/images/61b7eb399d1a282ccb966b13db6fff09a68110d5be329cdff1d16cb237bba542.png",
+      "date": "Jul 12, 2024",
+      "snippet": "Director Provider Relations at Cambia Health Solutions. Alan Whittington, Director, Risk Adjustment at Highmark Inc. Amy Mattingly, Director ...",
+      "snippet_highlighted_words": [
+        "Director Provider Relations at Cambia Health Solutions"
+      ],
+      "source": "KLAS Research"
+    },
+    {
+      "position": 10,
+      "title": "Recap of the Blue Button Developer Conference 2019",
+      "link": "https://carejourney.com/recap-of-the-blue-button-developer-conference-2019/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://carejourney.com/recap-of-the-blue-button-developer-conference-2019/&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQFnoECDMQAQ",
+      "displayed_link": "https://carejourney.com \u203a recap-of-the-blue-button-dev...",
+      "favicon": "https://serpapi.com/searches/686464817223f4851e5c4347/images/61b7eb399d1a282ccb966b13db6fff094c8607233a1ff945824c60b65eb351b6.png",
+      "date": "Aug 26, 2019",
+      "snippet": "This pilot will provide fee-for-service providers FHIR-formatted bulk data files of their active patients. Data is shared for treatment purposes ...",
+      "snippet_highlighted_words": [
+        "providers FHIR"
+      ],
+      "source": "CareJourney"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=g2RkaODOFpSJptQP2M_HmAY&start=10&sa=N&sstk=Ac65TH7gyYodhjiqM0ZZ64_7KLSDCrGmrrDwbhHC8Ho01n0xE_nevlsxr0Mf5y-wgefKDrBDKlQXpY1O2DXw9N2D1-NuGYxSGpTMyQ&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQ8NMDegQICBAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=g2RkaODOFpSJptQP2M_HmAY&start=10&sa=N&sstk=Ac65TH7gyYodhjiqM0ZZ64_7KLSDCrGmrrDwbhHC8Ho01n0xE_nevlsxr0Mf5y-wgefKDrBDKlQXpY1O2DXw9N2D1-NuGYxSGpTMyQ&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQ8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=g2RkaODOFpSJptQP2M_HmAY&start=20&sa=N&sstk=Ac65TH7gyYodhjiqM0ZZ64_7KLSDCrGmrrDwbhHC8Ho01n0xE_nevlsxr0Mf5y-wgefKDrBDKlQXpY1O2DXw9N2D1-NuGYxSGpTMyQ&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQ8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=g2RkaODOFpSJptQP2M_HmAY&start=30&sa=N&sstk=Ac65TH7gyYodhjiqM0ZZ64_7KLSDCrGmrrDwbhHC8Ho01n0xE_nevlsxr0Mf5y-wgefKDrBDKlQXpY1O2DXw9N2D1-NuGYxSGpTMyQ&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQ8tMDegQICBAI",
+      "5": "https://www.google.com/search?q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=g2RkaODOFpSJptQP2M_HmAY&start=40&sa=N&sstk=Ac65TH7gyYodhjiqM0ZZ64_7KLSDCrGmrrDwbhHC8Ho01n0xE_nevlsxr0Mf5y-wgefKDrBDKlQXpY1O2DXw9N2D1-NuGYxSGpTMyQ&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQ8tMDegQICBAK",
+      "6": "https://www.google.com/search?q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=g2RkaODOFpSJptQP2M_HmAY&start=50&sa=N&sstk=Ac65TH7gyYodhjiqM0ZZ64_7KLSDCrGmrrDwbhHC8Ho01n0xE_nevlsxr0Mf5y-wgefKDrBDKlQXpY1O2DXw9N2D1-NuGYxSGpTMyQ&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQ8tMDegQICBAM",
+      "7": "https://www.google.com/search?q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=g2RkaODOFpSJptQP2M_HmAY&start=60&sa=N&sstk=Ac65TH7gyYodhjiqM0ZZ64_7KLSDCrGmrrDwbhHC8Ho01n0xE_nevlsxr0Mf5y-wgefKDrBDKlQXpY1O2DXw9N2D1-NuGYxSGpTMyQ&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQ8tMDegQICBAO",
+      "8": "https://www.google.com/search?q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=g2RkaODOFpSJptQP2M_HmAY&start=70&sa=N&sstk=Ac65TH7gyYodhjiqM0ZZ64_7KLSDCrGmrrDwbhHC8Ho01n0xE_nevlsxr0Mf5y-wgefKDrBDKlQXpY1O2DXw9N2D1-NuGYxSGpTMyQ&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQ8tMDegQICBAQ",
+      "9": "https://www.google.com/search?q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=g2RkaODOFpSJptQP2M_HmAY&start=80&sa=N&sstk=Ac65TH7gyYodhjiqM0ZZ64_7KLSDCrGmrrDwbhHC8Ho01n0xE_nevlsxr0Mf5y-wgefKDrBDKlQXpY1O2DXw9N2D1-NuGYxSGpTMyQ&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQ8tMDegQICBAS",
+      "10": "https://www.google.com/search?q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=g2RkaODOFpSJptQP2M_HmAY&start=90&sa=N&sstk=Ac65TH7gyYodhjiqM0ZZ64_7KLSDCrGmrrDwbhHC8Ho01n0xE_nevlsxr0Mf5y-wgefKDrBDKlQXpY1O2DXw9N2D1-NuGYxSGpTMyQ&ved=2ahUKEwignNb13ZyOAxWUhIkEHdjnEWMQ8tMDegQICBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cambia+health+solutions+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

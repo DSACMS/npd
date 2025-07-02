@@ -1,0 +1,85 @@
+{
+  "search_metadata": {
+    "id": "68646d2f77e3d9ceb0b57f57",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/8c866f485ad74f9d/68646d2f77e3d9ceb0b57f57.json",
+    "created_at": "2025-07-01 23:20:15 UTC",
+    "processed_at": "2025-07-01 23:20:15 UTC",
+    "google_url": "https://www.google.com/search?q=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/8c866f485ad74f9d/68646d2f77e3d9ceb0b57f57.html",
+    "total_time_taken": 2.92
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "primewest rural mn health care access initiative Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "primewest rural mn health care access initiative Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 1,
+    "time_taken_displayed": 0.21,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Nov 22, 2024 Advisory Committee Meeting Summary",
+      "link": "https://www.health.state.mn.us/facilities/ehealth/advcommittee/docs/112224summary.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.health.state.mn.us/facilities/ehealth/advcommittee/docs/112224summary.pdf&ved=2ahUKEwjpuaGZ5pyOAxVwLrkGHY9XKrQQFnoECBcQAQ",
+      "displayed_link": "https://www.health.state.mn.us \u203a advcommittee \u203a docs",
+      "favicon": "https://serpapi.com/searches/68646d2f77e3d9ceb0b57f57/images/e675869f5331ce13bdf9476d5a5828ad7af27cfa4e2419a6428cf5d24ff04314.png",
+      "date": "Nov 22, 2024",
+      "snippet": "An HIE would have a user frontend for providers and patients, consent mechanisms, governance structures like rules engines, a provider directory ...",
+      "snippet_highlighted_words": [
+        "and",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 11
+          },
+          "extensions": [
+            "11 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=primewest+rural+mn+health+care+access+initiative+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjpuaGZ5pyOAxVwLrkGHY9XKrQQ5t4CegQIGBAB"
+      },
+      "source": "MN Dept. of Health"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=primewest+rural+mn+health+care+access+initiative+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

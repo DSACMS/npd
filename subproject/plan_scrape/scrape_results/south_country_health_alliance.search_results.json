@@ -1,0 +1,313 @@
+{
+  "search_metadata": {
+    "id": "68646d58e6cb306f02bc8716",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/024e035f9e8ef2d0/68646d58e6cb306f02bc8716.json",
+    "created_at": "2025-07-01 23:20:56 UTC",
+    "processed_at": "2025-07-01 23:20:56 UTC",
+    "google_url": "https://www.google.com/search?q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/024e035f9e8ef2d0/68646d58e6cb306f02bc8716.html",
+    "total_time_taken": 3.82
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "south country health alliance Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "south country health alliance Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 120,
+    "time_taken_displayed": 0.26,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Technical Information",
+      "link": "https://www.mnscha.org/technical-information/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mnscha.org/technical-information/&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0QFnoECBYQAQ",
+      "displayed_link": "https://www.mnscha.org \u203a technical-information",
+      "favicon": "https://serpapi.com/searches/68646d58e6cb306f02bc8716/images/1cdb1d1ebdf4deba565e10ce91c54b20d37ed575477e207c88cf6d6e65ef5684.png",
+      "snippet": "Provider Directory API. The Provider Directory API is publicly accessible and ... Secure FHIR Resources. Member health care records and health plan ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Provider Directory API",
+        "FHIR",
+        "health care",
+        "health"
+      ],
+      "source": "South Country Health Alliance"
+    },
+    {
+      "position": 2,
+      "title": "Enterprise Care Management for Public & Private Payers",
+      "link": "https://www.intersystems.com/industries/public-private-payers/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.intersystems.com/industries/public-private-payers/&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0QFnoECBgQAQ",
+      "displayed_link": "https://www.intersystems.com \u203a industries \u203a public-privat...",
+      "favicon": "https://serpapi.com/searches/68646d58e6cb306f02bc8716/images/1cdb1d1ebdf4deba565e10ce91c54b2051566401c0c240d02e73ecc50a5b109e.png",
+      "snippet": "Unlocking Innovation and Harnessing FHIR for Healthcare ... Improving the Speed and Transparency of Authorizations through FHIR API\u2013Enabled Data Sharing.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Healthcare",
+        "FHIR API"
+      ],
+      "source": "InterSystems"
+    },
+    {
+      "position": 3,
+      "title": "Nov 22, 2024 Advisory Committee Meeting Summary",
+      "link": "https://www.health.state.mn.us/facilities/ehealth/advcommittee/docs/112224summary.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.health.state.mn.us/facilities/ehealth/advcommittee/docs/112224summary.pdf&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0QFnoECB4QAQ",
+      "displayed_link": "https://www.health.state.mn.us \u203a advcommittee \u203a docs",
+      "favicon": "https://serpapi.com/searches/68646d58e6cb306f02bc8716/images/1cdb1d1ebdf4deba565e10ce91c54b20abbc7c420137bd6fd515d82a15b4c47f.png",
+      "date": "Nov 22, 2024",
+      "snippet": "What organizations in the state are FHIR-enabled? Based on this ... governance structures like rules engines, a provider directory, master MPI, a ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 11
+          },
+          "extensions": [
+            "11 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=south+country+health+alliance+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q5t4CegQILBAB"
+      },
+      "source": "MN Dept. of Health"
+    },
+    {
+      "position": 4,
+      "title": "May 21, 2025 HMA Weekly Roundup: Trends in Health Policy",
+      "link": "https://www.healthmanagement.com/insights/weekly-roundup/may-21-2025/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthmanagement.com/insights/weekly-roundup/may-21-2025/&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0QFnoECBcQAQ",
+      "displayed_link": "https://www.healthmanagement.com \u203a insights \u203a may-21...",
+      "favicon": "https://serpapi.com/searches/68646d58e6cb306f02bc8716/images/1cdb1d1ebdf4deba565e10ce91c54b207cd4688c11347b1e784135ec44479e8e.png",
+      "date": "May 21, 2025",
+      "snippet": "The RFI reflects many of the same priorities\u2014such as expanding FHIR\u00ae Application Programming Interfaces (APIs), improving provider directories, ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "APIs"
+      ],
+      "source": "Health Management Associates"
+    },
+    {
+      "position": 5,
+      "title": "CMS Interoperability and Prior Authorization Final Rule ...",
+      "link": "https://www.intersystems.com/resources/cms0057f-qa-interoperability-prior-authorization/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.intersystems.com/resources/cms0057f-qa-interoperability-prior-authorization/&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0QFnoECBoQAQ",
+      "displayed_link": "https://www.intersystems.com \u203a resources",
+      "favicon": "https://serpapi.com/searches/68646d58e6cb306f02bc8716/images/1cdb1d1ebdf4deba565e10ce91c54b2011df7e54e6b30851f6fb7abc4e187941.png",
+      "snippet": "CMS Rule 0057 requires health plans to develop and support FHIR-based APIs to enable electronic prior authorization (ePA). Below are five \u201cfrequently asked ...",
+      "snippet_highlighted_words": [
+        "health plans",
+        "FHIR",
+        "APIs"
+      ],
+      "source": "InterSystems"
+    },
+    {
+      "position": 6,
+      "title": "ISA",
+      "link": "https://www.healthit.gov/isp/sites/isp/files/ISA.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/isp/sites/isp/files/ISA.html&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0QFnoECBwQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a isp \u203a sites \u203a isp \u203a files \u203a ISA",
+      "favicon": "https://serpapi.com/searches/68646d58e6cb306f02bc8716/images/1cdb1d1ebdf4deba565e10ce91c54b20a8ca4b598ba126353a816f7cb4edf7f0.jpeg",
+      "snippet": "Healthcare Directory, Provider Directory \u00b7 Listing of Providers for ... health information using FHIR APIs across countries. This specification aims ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "Provider Directory",
+        "health",
+        "FHIR APIs",
+        "countries"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=south+country+health+alliance+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q5t4CegQIKxAB"
+      },
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "2026 Quality Rating System Measure Technical ...",
+      "link": "https://www.cms.gov/files/document/2026qrsmeasuretechspecs508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/2026qrsmeasuretechspecs508.pdf&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0QFnoECB0QAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document",
+      "favicon": "https://serpapi.com/searches/68646d58e6cb306f02bc8716/images/1cdb1d1ebdf4deba565e10ce91c54b204f7614e3f54c94579a5fe3b2c492a862.png",
+      "date": "Mar 31, 2025",
+      "snippet": "care services; however, it recognizes that a provider directory ... a set of resources that payers can display to consumers via a FHIR API.",
+      "snippet_highlighted_words": [
+        "care",
+        "provider directory",
+        "FHIR API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 277
+          },
+          "extensions": [
+            "277 pages"
+          ]
+        }
+      },
+      "missing": [
+        "country",
+        "Advantage"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "e-Health Advisory Committee Annual Report",
+      "link": "https://www.hhs.texas.gov/sites/default/files/documents/laws-regulations/reports-presentations/2021/hhs-ehac-report-feb-2021.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.texas.gov/sites/default/files/documents/laws-regulations/reports-presentations/2021/hhs-ehac-report-feb-2021.pdf&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0QFnoECDcQAQ",
+      "displayed_link": "https://www.hhs.texas.gov \u203a hhs-ehac-report-feb-2021",
+      "favicon": "https://serpapi.com/searches/68646d58e6cb306f02bc8716/images/1cdb1d1ebdf4deba565e10ce91c54b207b3a117d8897902f87bdffde8dbb0011.png",
+      "snippet": "including patient access APIs, provider directory APIs, payer-to-payer data ... \u25cb CMS adopted FHIR API-based Interop portfolio; allows legacy data connection.",
+      "snippet_highlighted_words": [
+        "APIs",
+        "provider directory APIs",
+        "FHIR API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 67
+          },
+          "extensions": [
+            "67 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=south+country+health+alliance+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q5t4CegQIOBAB"
+      },
+      "source": "Texas Health and Human Services (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "State Medicaid Health Information Technology Plan (SMHP)",
+      "link": "https://medicaid.ms.gov/wp-content/uploads/2019/08/Mississippi-SMHP-July-2019.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medicaid.ms.gov/wp-content/uploads/2019/08/Mississippi-SMHP-July-2019.pdf&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0QFnoECDsQAQ",
+      "displayed_link": "https://medicaid.ms.gov \u203a Mississippi-SMHP-July-2019",
+      "favicon": "https://serpapi.com/searches/68646d58e6cb306f02bc8716/images/1cdb1d1ebdf4deba565e10ce91c54b2007108b312e2805831731043cd1f2d1ef.png",
+      "date": "Jul 22, 2019",
+      "snippet": "o Implementation of the Fast Healthcare Interoperability Resources, HL7 FHIR, to ... o Development of a Provider Directory for publishing ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 254
+          },
+          "extensions": [
+            "254 pages"
+          ]
+        }
+      },
+      "missing": [
+        "country"
+      ],
+      "must_include": {
+        "word": "country",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=south+%22country%22+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q5t4CegQIPBAB"
+      },
+      "source": "Mississippi Division of Medicaid (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "Medicare Program; Contract Year 2024 Policy and ...",
+      "link": "https://www.federalregister.gov/documents/2023/04/12/2023-07115/medicare-program-contract-year-2024-policy-and-technical-changes-to-the-medicare-advantage-program",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2023/04/12/2023-07115/medicare-program-contract-year-2024-policy-and-technical-changes-to-the-medicare-advantage-program&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0QFnoECDMQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a documents \u203a 2023/04/12",
+      "favicon": "https://serpapi.com/searches/68646d58e6cb306f02bc8716/images/1cdb1d1ebdf4deba565e10ce91c54b20752b379bd767c47c112344c66974eeeb.png",
+      "date": "Apr 12, 2023",
+      "snippet": "First, we proposed to mirror the provider directory requirements for Medicaid managed care plans ... (FHIR\u00ae) standard Application ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "care plans",
+        "FHIR"
+      ],
+      "missing": [
+        "south"
+      ],
+      "must_include": {
+        "word": "south",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=%22south%22+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q5t4CegQINRAB"
+      },
+      "source": "Federal Register (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "InterSystems 0057",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=InterSystems+0057&sa=X&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=InterSystems+0057&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "InterSystems payer Services",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=InterSystems+payer+Services&sa=X&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=InterSystems+payer+Services&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=W21kaLm5M7mJ7NYPuenW6QU&start=10&sa=N&sstk=Ac65TH4nUwt5G0rTcfZLhOx-y5ZfebNNw2-Xdprij3OygqPlBIWbg71rGrhZMFag_amz7VZ3XrbE4pWgBsoVdcJYnBifiMAChjvoCg&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q8NMDegQICxAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=W21kaLm5M7mJ7NYPuenW6QU&start=10&sa=N&sstk=Ac65TH4nUwt5G0rTcfZLhOx-y5ZfebNNw2-Xdprij3OygqPlBIWbg71rGrhZMFag_amz7VZ3XrbE4pWgBsoVdcJYnBifiMAChjvoCg&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q8tMDegQICxAE",
+      "3": "https://www.google.com/search?q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=W21kaLm5M7mJ7NYPuenW6QU&start=20&sa=N&sstk=Ac65TH4nUwt5G0rTcfZLhOx-y5ZfebNNw2-Xdprij3OygqPlBIWbg71rGrhZMFag_amz7VZ3XrbE4pWgBsoVdcJYnBifiMAChjvoCg&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q8tMDegQICxAG",
+      "4": "https://www.google.com/search?q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=W21kaLm5M7mJ7NYPuenW6QU&start=30&sa=N&sstk=Ac65TH4nUwt5G0rTcfZLhOx-y5ZfebNNw2-Xdprij3OygqPlBIWbg71rGrhZMFag_amz7VZ3XrbE4pWgBsoVdcJYnBifiMAChjvoCg&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q8tMDegQICxAI",
+      "5": "https://www.google.com/search?q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=W21kaLm5M7mJ7NYPuenW6QU&start=40&sa=N&sstk=Ac65TH4nUwt5G0rTcfZLhOx-y5ZfebNNw2-Xdprij3OygqPlBIWbg71rGrhZMFag_amz7VZ3XrbE4pWgBsoVdcJYnBifiMAChjvoCg&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q8tMDegQICxAK",
+      "6": "https://www.google.com/search?q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=W21kaLm5M7mJ7NYPuenW6QU&start=50&sa=N&sstk=Ac65TH4nUwt5G0rTcfZLhOx-y5ZfebNNw2-Xdprij3OygqPlBIWbg71rGrhZMFag_amz7VZ3XrbE4pWgBsoVdcJYnBifiMAChjvoCg&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q8tMDegQICxAM",
+      "7": "https://www.google.com/search?q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=W21kaLm5M7mJ7NYPuenW6QU&start=60&sa=N&sstk=Ac65TH4nUwt5G0rTcfZLhOx-y5ZfebNNw2-Xdprij3OygqPlBIWbg71rGrhZMFag_amz7VZ3XrbE4pWgBsoVdcJYnBifiMAChjvoCg&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q8tMDegQICxAO",
+      "8": "https://www.google.com/search?q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=W21kaLm5M7mJ7NYPuenW6QU&start=70&sa=N&sstk=Ac65TH4nUwt5G0rTcfZLhOx-y5ZfebNNw2-Xdprij3OygqPlBIWbg71rGrhZMFag_amz7VZ3XrbE4pWgBsoVdcJYnBifiMAChjvoCg&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q8tMDegQICxAQ",
+      "9": "https://www.google.com/search?q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=W21kaLm5M7mJ7NYPuenW6QU&start=80&sa=N&sstk=Ac65TH4nUwt5G0rTcfZLhOx-y5ZfebNNw2-Xdprij3OygqPlBIWbg71rGrhZMFag_amz7VZ3XrbE4pWgBsoVdcJYnBifiMAChjvoCg&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q8tMDegQICxAS",
+      "10": "https://www.google.com/search?q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=W21kaLm5M7mJ7NYPuenW6QU&start=90&sa=N&sstk=Ac65TH4nUwt5G0rTcfZLhOx-y5ZfebNNw2-Xdprij3OygqPlBIWbg71rGrhZMFag_amz7VZ3XrbE4pWgBsoVdcJYnBifiMAChjvoCg&ved=2ahUKEwj50rqt5pyOAxW5BNsEHbm0NV0Q8tMDegQICxAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=south+country+health+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

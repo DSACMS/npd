@@ -1,0 +1,262 @@
+{
+  "search_metadata": {
+    "id": "686464d6e396eb59d068101d",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/5fbbc2960bcf0ca4/686464d6e396eb59d068101d.json",
+    "created_at": "2025-07-01 22:44:38 UTC",
+    "processed_at": "2025-07-01 22:44:38 UTC",
+    "google_url": "https://www.google.com/search?q=%22intermountain+health+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22intermountain+health+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/5fbbc2960bcf0ca4/686464d6e396eb59d068101d.html",
+    "total_time_taken": 3.25
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"intermountain health care Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"intermountain health care Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 2430,
+    "time_taken_displayed": 0.44,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "intermountain health care Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "intermountain health care Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability - Developer Resources",
+      "link": "https://uhealthplan.utah.edu/interoperability/developers",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://uhealthplan.utah.edu/interoperability/developers&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQFnoECBYQAQ",
+      "displayed_link": "https://uhealthplan.utah.edu \u203a interoperability \u203a developers",
+      "favicon": "https://serpapi.com/searches/686464d6e396eb59d068101d/images/63b5fd6db0f8848fb6282c63b09e1db0a7471d7e940b0470be3589b91aec1ea2.png",
+      "snippet": "University of Utah Health Plans has contracted with HealthTrio to manage and support the Provider Directory API. Instructions on how to get started are provided ...",
+      "snippet_highlighted_words": [
+        "Utah Health Plans",
+        "and",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "intermountain",
+        "Advantage"
+      ],
+      "source": "The University of Utah"
+    },
+    {
+      "position": 2,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQFnoECBwQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/686464d6e396eb59d068101d/images/63b5fd6db0f8848fb6282c63b09e1db096d45bea7a882850c55e20c07d2ae2e3.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities.",
+      "snippet_highlighted_words": [
+        "directory",
+        "and FHIR API"
+      ],
+      "missing": [
+        "intermountain"
+      ],
+      "must_include": {
+        "word": "intermountain",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=%22intermountain%22+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQ5t4CegQIHxAB"
+      },
+      "source": "Flexpa"
+    },
+    {
+      "position": 3,
+      "title": "Provider Directory API",
+      "link": "https://developers.humana.com/apis/provider-directory-api/doc",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developers.humana.com/apis/provider-directory-api/doc&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQFnoECBgQAQ",
+      "displayed_link": "https://developers.humana.com \u203a apis \u203a doc",
+      "favicon": "https://serpapi.com/searches/686464d6e396eb59d068101d/images/63b5fd6db0f8848fb6282c63b09e1db0fe496f0d6d2c9ed6e842d41c2c65b276.png",
+      "snippet": "The Provider Directory service includes multiple APIs that enable views of providers and pharmacies are in-network for a given Humana insurance plan.",
+      "snippet_highlighted_words": [
+        "Provider Directory service",
+        "APIs",
+        "providers and",
+        "insurance plan"
+      ],
+      "missing": [
+        "intermountain"
+      ],
+      "must_include": {
+        "word": "intermountain",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=%22intermountain%22+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQ5t4CegQIHhAB"
+      },
+      "source": "Humana Data Exchange"
+    },
+    {
+      "position": 4,
+      "title": "Healthcare Compliance - FHIR\u00ae APIs",
+      "link": "https://www.edifecs.com/products/xengine-server-for-fhir",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.edifecs.com/products/xengine-server-for-fhir&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQFnoECBQQAQ",
+      "displayed_link": "https://www.edifecs.com \u203a xengine-server-for-fhir",
+      "favicon": "https://serpapi.com/searches/686464d6e396eb59d068101d/images/63b5fd6db0f8848fb6282c63b09e1db090c70345cec0827812d41b3a0fb91e50.png",
+      "snippet": "Edifecs FHIR\u00ae APIs are rated Best in KLAS for CMS Payer Interoperability and are designed to streamline and standardize health data exchange.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "APIs",
+        "and",
+        "and",
+        "health"
+      ],
+      "source": "Edifecs"
+    },
+    {
+      "position": 5,
+      "title": "Application Programming Interface (API) Write-Back ...",
+      "link": "https://www.healthit.gov/sites/default/files/page/2021-11/20211117_API%20Write-back%20Workshop%20Summary%20Report.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/page/2021-11/20211117_API%2520Write-back%2520Workshop%2520Summary%2520Report.pdf&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQFnoECB0QAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a page",
+      "favicon": "https://serpapi.com/searches/686464d6e396eb59d068101d/images/63b5fd6db0f8848fb6282c63b09e1db07f204651e5319a542ff3a7b04680cf91.jpeg",
+      "snippet": "APIs enable providers, patients, and researchers to use third-party applications (apps) to gather external data or apply insights and analysis to EHR data in a ...",
+      "snippet_highlighted_words": [
+        "APIs enable providers, patients, and researchers"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 37
+          },
+          "extensions": [
+            "37 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=intermountain+health+care+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQ5t4CegQIIxAB"
+      },
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Why FHIR",
+      "link": "https://devcenter.docs.lifeomic.com/development/fhir-service/fhir-why",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://devcenter.docs.lifeomic.com/development/fhir-service/fhir-why&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQFnoECBsQAQ",
+      "displayed_link": "https://devcenter.docs.lifeomic.com \u203a fhir-service \u203a fhir-...",
+      "favicon": "https://serpapi.com/searches/686464d6e396eb59d068101d/images/63b5fd6db0f8848fb6282c63b09e1db0bac2a8cc9a5b14f8841f869fe6d9f42c.png",
+      "snippet": "Fast Health Interoperability Resources (FHIR) is the future of healthcare information and one of the core standards of the LifeOmic Platform.",
+      "snippet_highlighted_words": [
+        "Fast Health Interoperability Resources (FHIR"
+      ],
+      "source": "LifeOmic"
+    },
+    {
+      "position": 7,
+      "title": "Request for Information; Health Technology Ecosystem",
+      "link": "https://go.cms.gov/4e0mV9b",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://go.cms.gov/4e0mV9b&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQFnoECBkQAQ",
+      "displayed_link": "https://go.cms.gov \u203a ...",
+      "favicon": "https://serpapi.com/searches/686464d6e396eb59d068101d/images/63b5fd6db0f8848fb6282c63b09e1db09ef5e904d0fa551a8f4d9e5d9fedf27a.png",
+      "snippet": "In 2018, CMS led payers by example and released Blue Button 2.0, its own Fast Healthcare Interoperability Resources (FHIR\u00ae)-based Patient Access application ...",
+      "snippet_highlighted_words": [
+        "and",
+        "Healthcare",
+        "FHIR"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Arcadia strengthens healthcare data platform with faster, cost ...",
+      "link": "https://arcadia.io/resources/arcadia-strengthens-healthcare-data-platform",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://arcadia.io/resources/arcadia-strengthens-healthcare-data-platform&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQFnoECDEQAQ",
+      "displayed_link": "https://arcadia.io \u203a resources",
+      "favicon": "https://serpapi.com/searches/686464d6e396eb59d068101d/images/63b5fd6db0f8848fb6282c63b09e1db00f74ca9550feb1b38ddf2cc053f9753a.png",
+      "date": "Oct 16, 2024",
+      "snippet": "Arcadia's innovations deliver faster, more cost-effective insights, helping healthcare organizations improve value-based care performance.",
+      "snippet_highlighted_words": [
+        "healthcare",
+        "care"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=intermountain+health+care+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQ5t4CegQINxAB"
+      },
+      "source": "arcadia.io"
+    },
+    {
+      "position": 9,
+      "title": "Interoperability Information Sheet",
+      "link": "https://id.amhealthplans.com/docs/current/member/3/member-interoperability-information.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://id.amhealthplans.com/docs/current/member/3/member-interoperability-information.pdf&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQFnoECDIQAQ",
+      "displayed_link": "https://id.amhealthplans.com \u203a current \u203a member",
+      "favicon": "https://serpapi.com/searches/686464d6e396eb59d068101d/images/63b5fd6db0f8848fb6282c63b09e1db0c52c42aeefd5e61dfe1c09f2d745c0c5.png",
+      "snippet": "Provider Directory / Plannet API: https://api-ahp-prd.safhir.io/v1/api/provider-directory/metadata. Developer portal registration: https://portal.safhir.io ...",
+      "snippet_highlighted_words": [
+        "Provider Directory / Plannet"
+      ],
+      "missing": [
+        "intermountain"
+      ],
+      "must_include": {
+        "word": "intermountain",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=%22intermountain%22+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQ5t4CegQIOBAB"
+      },
+      "source": "American Health Advantage of Idaho"
+    },
+    {
+      "position": 10,
+      "title": "Standardized APIs Could Finally Make It Easy to Exchange ...",
+      "link": "https://www.physicianleaders.org/articles/standardized-apis-could-make-easy-exchange-health-records",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.physicianleaders.org/articles/standardized-apis-could-make-easy-exchange-health-records&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQFnoECDMQAQ",
+      "displayed_link": "https://www.physicianleaders.org \u203a articles \u203a standardiz...",
+      "favicon": "https://serpapi.com/searches/686464d6e396eb59d068101d/images/63b5fd6db0f8848fb6282c63b09e1db066fce6414c1437e47254926d14efa16f.png",
+      "snippet": "To capitalize on the opportunities provided by FHIR APIs, providers, health plans, and software vendors should take several steps. Learn as much as possible ...",
+      "snippet_highlighted_words": [
+        "FHIR APIs",
+        "providers",
+        "health plans",
+        "and"
+      ],
+      "source": "American Association for Physician Leadership"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=2WRkaJrLB7zR1e8P3IX_wA8&start=10&sa=N&sstk=Ac65TH6F12YjzkWsEZHe6EzAHRN9KTjnAAbucIv2VDIFX2hf-gN_jf3imU3ux6EwNBwgKvB9r_h5jJWk-s1c-zZNqtnh22Mml0eybQ&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQ8NMDegQIChAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=2WRkaJrLB7zR1e8P3IX_wA8&start=10&sa=N&sstk=Ac65TH6F12YjzkWsEZHe6EzAHRN9KTjnAAbucIv2VDIFX2hf-gN_jf3imU3ux6EwNBwgKvB9r_h5jJWk-s1c-zZNqtnh22Mml0eybQ&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=2WRkaJrLB7zR1e8P3IX_wA8&start=20&sa=N&sstk=Ac65TH6F12YjzkWsEZHe6EzAHRN9KTjnAAbucIv2VDIFX2hf-gN_jf3imU3ux6EwNBwgKvB9r_h5jJWk-s1c-zZNqtnh22Mml0eybQ&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQ8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=2WRkaJrLB7zR1e8P3IX_wA8&start=30&sa=N&sstk=Ac65TH6F12YjzkWsEZHe6EzAHRN9KTjnAAbucIv2VDIFX2hf-gN_jf3imU3ux6EwNBwgKvB9r_h5jJWk-s1c-zZNqtnh22Mml0eybQ&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQ8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=2WRkaJrLB7zR1e8P3IX_wA8&start=40&sa=N&sstk=Ac65TH6F12YjzkWsEZHe6EzAHRN9KTjnAAbucIv2VDIFX2hf-gN_jf3imU3ux6EwNBwgKvB9r_h5jJWk-s1c-zZNqtnh22Mml0eybQ&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQ8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=2WRkaJrLB7zR1e8P3IX_wA8&start=50&sa=N&sstk=Ac65TH6F12YjzkWsEZHe6EzAHRN9KTjnAAbucIv2VDIFX2hf-gN_jf3imU3ux6EwNBwgKvB9r_h5jJWk-s1c-zZNqtnh22Mml0eybQ&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQ8tMDegQIChAM",
+      "7": "https://www.google.com/search?q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=2WRkaJrLB7zR1e8P3IX_wA8&start=60&sa=N&sstk=Ac65TH6F12YjzkWsEZHe6EzAHRN9KTjnAAbucIv2VDIFX2hf-gN_jf3imU3ux6EwNBwgKvB9r_h5jJWk-s1c-zZNqtnh22Mml0eybQ&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQ8tMDegQIChAO",
+      "8": "https://www.google.com/search?q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=2WRkaJrLB7zR1e8P3IX_wA8&start=70&sa=N&sstk=Ac65TH6F12YjzkWsEZHe6EzAHRN9KTjnAAbucIv2VDIFX2hf-gN_jf3imU3ux6EwNBwgKvB9r_h5jJWk-s1c-zZNqtnh22Mml0eybQ&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQ8tMDegQIChAQ",
+      "9": "https://www.google.com/search?q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=2WRkaJrLB7zR1e8P3IX_wA8&start=80&sa=N&sstk=Ac65TH6F12YjzkWsEZHe6EzAHRN9KTjnAAbucIv2VDIFX2hf-gN_jf3imU3ux6EwNBwgKvB9r_h5jJWk-s1c-zZNqtnh22Mml0eybQ&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQ8tMDegQIChAS",
+      "10": "https://www.google.com/search?q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=2WRkaJrLB7zR1e8P3IX_wA8&start=90&sa=N&sstk=Ac65TH6F12YjzkWsEZHe6EzAHRN9KTjnAAbucIv2VDIFX2hf-gN_jf3imU3ux6EwNBwgKvB9r_h5jJWk-s1c-zZNqtnh22Mml0eybQ&ved=2ahUKEwjam8ie3pyOAxW8aPUHHdzCH_gQ8tMDegQIChAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=intermountain+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

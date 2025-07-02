@@ -1,0 +1,254 @@
+{
+  "search_metadata": {
+    "id": "686464a1f607a9f155a1bd31",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/a6f8460c9ec32e33/686464a1f607a9f155a1bd31.json",
+    "created_at": "2025-07-01 22:43:45 UTC",
+    "processed_at": "2025-07-01 22:43:45 UTC",
+    "google_url": "https://www.google.com/search?q=%22devoted+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22devoted+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/a6f8460c9ec32e33/686464a1f607a9f155a1bd31.html",
+    "total_time_taken": 1.14
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"devoted health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"devoted health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 1400,
+    "time_taken_displayed": 0.55,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "devoted health Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "devoted health Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQFnoECBYQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/686464a1f607a9f155a1bd31/images/75c1229a6d3ceacbaaea82fb683e4cc2d706cb9490d9aed64e55c16a886bd192.png",
+      "snippet": "Flexpa Endpoint Directory. Flexpa's directory is a comprehensive index of Payer Patient Access APIs and is the largest of its kind.",
+      "snippet_highlighted_words": [
+        "Flexpa's directory is a comprehensive index of Payer Patient Access APIs"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 2,
+      "title": "Why Medicare Is Leading the Way In API Adoption",
+      "link": "https://www.particlehealth.com/blog/medicare-api-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.particlehealth.com/blog/medicare-api-interoperability&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQFnoECBoQAQ",
+      "displayed_link": "https://www.particlehealth.com \u203a blog \u203a medicare-api-i...",
+      "favicon": "https://serpapi.com/searches/686464a1f607a9f155a1bd31/images/75c1229a6d3ceacbaaea82fb683e4cc24b3b8a567b5a5df8fc2751ad3eaf463c.png",
+      "date": "Apr 7, 2022",
+      "snippet": "Create a FHIR-based provider directory API, with its own potential third party uses. ... By getting Medicare payers and providers to adopt FHIR ...",
+      "snippet_highlighted_words": [
+        "Create a FHIR-based provider directory API"
+      ],
+      "source": "Particle Health"
+    },
+    {
+      "position": 3,
+      "title": "CMS-9123-P Reducing Provider and Patient Burden",
+      "link": "https://www.cms.gov/files/document/121020-reducing-provider-and-patient-burden-cms-9123-p.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/121020-reducing-provider-and-patient-burden-cms-9123-p.pdf&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQFnoECBsQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a 121020...",
+      "favicon": "https://serpapi.com/searches/686464a1f607a9f155a1bd31/images/75c1229a6d3ceacbaaea82fb683e4cc275995b39591a9990a7a6e60915e3cd5a.png",
+      "date": "Jan 1, 2021",
+      "snippet": "SUMMARY: This proposed rule would place new requirements on state Medicaid and CHIP fee-for-service (FFS) programs, Medicaid managed care plans, ...",
+      "snippet_highlighted_words": [
+        "plans"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 347
+          },
+          "extensions": [
+            "347 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Medicare and Medicaid Programs; Patient Protection ...",
+      "link": "https://www.federalregister.gov/documents/2024/02/08/2024-00895/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-advancing-interoperability?utm_campaign=Daily%20Briefing&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-_kgvoSVLPUc7tStr0IZa98uK1wzTdbWXr2k2gvg6vcfKfGJVLi9XlTfHyEEuOy8ujiS6Kp",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2024/02/08/2024-00895/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-advancing-interoperability%3Futm_campaign%3DDaily%2520Briefing%26utm_source%3Dhs_email%26utm_medium%3Demail%26_hsenc%3Dp2ANqtz-_kgvoSVLPUc7tStr0IZa98uK1wzTdbWXr2k2gvg6vcfKfGJVLi9XlTfHyEEuOy8ujiS6Kp&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQFnoECB8QAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2024/02/08 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/686464a1f607a9f155a1bd31/images/75c1229a6d3ceacbaaea82fb683e4cc219ce822f0a9375c6b9c79c2f80741ca4.png",
+      "date": "Feb 8, 2024",
+      "snippet": "In this section, we address comments related to Medicare FFS implementation, the National Directory of Healthcare (NDH), final policy compliance ...",
+      "snippet_highlighted_words": [
+        "Medicare",
+        "Directory",
+        "Healthcare"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Medicare and Medicaid Programs; Patient Protection and ...",
+      "link": "https://www.federalregister.gov/documents/2022/12/13/2022-26479/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-advancing-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2022/12/13/2022-26479/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-advancing-interoperability&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQFnoECBkQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2022/12/13 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/686464a1f607a9f155a1bd31/images/75c1229a6d3ceacbaaea82fb683e4cc2d157e8bce98aa9f2b3b27ba17d418fca.png",
+      "date": "Dec 13, 2022",
+      "snippet": "This proposed rule would place new requirements on Medicare Advantage (MA) organizations, state Medicaid fee-for-service (FFS) programs, ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Unifying Value: Industry Opportunities to Streamline Value",
+      "link": "https://www.caqh.org/sites/default/files/2023-06/Unifying_Value_Industry_Opportunities_to_Streamline_Valuebased_Payment_Data_Exchange.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.caqh.org/sites/default/files/2023-06/Unifying_Value_Industry_Opportunities_to_Streamline_Valuebased_Payment_Data_Exchange.pdf&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQFnoECB4QAQ",
+      "displayed_link": "https://www.caqh.org \u203a sites \u203a default \u203a files \u203a Uni...",
+      "favicon": "https://serpapi.com/searches/686464a1f607a9f155a1bd31/images/75c1229a6d3ceacbaaea82fb683e4cc2989cebee8c9e52f075515a3ad0110360.png",
+      "date": "May 12, 2023",
+      "snippet": "Methodologies often include identifying the provider with whom a patient has a plurality of claims, visits, or spend during a defined period.",
+      "snippet_highlighted_words": [
+        "provider"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 13
+          },
+          "extensions": [
+            "13 pages"
+          ]
+        }
+      },
+      "source": "CAQH.org"
+    },
+    {
+      "position": 7,
+      "title": "Specialties, Degrees, Licenses, and Certificates Value Set",
+      "link": "https://build.fhir.org/ig/HL7/fhir-us-ndh//ValueSet-SpecialtyAndDegreeLicenseCertificateVS.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://build.fhir.org/ig/HL7/fhir-us-ndh//ValueSet-SpecialtyAndDegreeLicenseCertificateVS.html&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQFnoECBgQAQ",
+      "displayed_link": "https://build.fhir.org \u203a fhir-us-ndh \u203a ValueSet-Specialty...",
+      "favicon": "https://serpapi.com/searches/686464a1f607a9f155a1bd31/images/75c1229a6d3ceacbaaea82fb683e4cc21a7ed0e50a671b8c338a651a65e50699.png",
+      "snippet": "Visit the FHIR website. Search FHIR. Visit the FHIR At Scale Taskforce website. National Directory of Healthcare Providers & Services (NDH) Implementation Guide",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Search FHIR",
+        "FHIR",
+        "Directory",
+        "Healthcare Providers"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=devoted+health+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQ5t4CegQIHRAB"
+      },
+      "source": "FHIR specification"
+    },
+    {
+      "position": 8,
+      "title": "CMS Interoperability & Prior Authorization Proposed Rule",
+      "link": "https://veradigm.com/veradigm-news/cms-interoperability-prior-authorization-proposed-rule/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://veradigm.com/veradigm-news/cms-interoperability-prior-authorization-proposed-rule/&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQFnoECC8QAQ",
+      "displayed_link": "https://veradigm.com \u203a veradigm-news \u203a cms-interopera...",
+      "favicon": "https://serpapi.com/searches/686464a1f607a9f155a1bd31/images/75c1229a6d3ceacbaaea82fb683e4cc29ec46b8c077f2b7da2a8f03b459b4645.png",
+      "date": "Jan 21, 2022",
+      "snippet": "It required affected payers to create a Patient Access API based on Fast Healthcare Interoperability Resources (FHIR) standards, enabling ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Healthcare",
+        "FHIR"
+      ],
+      "source": "Veradigm"
+    },
+    {
+      "position": 9,
+      "title": "Prepared by Health Policy Alternatives, Inc. January 29, ...",
+      "link": "https://calhospital.org/wp-content/uploads/2024/01/HPA-Summary-CMS-Final-Rule-on-Interoperability-and-Prior-Authorization.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://calhospital.org/wp-content/uploads/2024/01/HPA-Summary-CMS-Final-Rule-on-Interoperability-and-Prior-Authorization.pdf&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQFnoECC4QAQ",
+      "displayed_link": "https://calhospital.org \u203a uploads \u203a 2024/01 \u203a HPA...",
+      "favicon": "https://serpapi.com/searches/686464a1f607a9f155a1bd31/images/75c1229a6d3ceacbaaea82fb683e4cc2ce09ef972ff4f669093c2464cce0ec02.png",
+      "date": "Jan 29, 2024",
+      "snippet": "This final rule requires impacted payers (not including Medicare FFS) to implement by 2027 and maintain a Provider Access API\u2014that is, a FHIR ...",
+      "snippet_highlighted_words": [
+        "Medicare",
+        "Provider",
+        "API",
+        "FHIR"
+      ],
+      "source": "California Hospital Association"
+    },
+    {
+      "position": 10,
+      "title": "2024 MANUAL - Health Center Data Reporting Requirements ...",
+      "link": "https://bphc.hrsa.gov/sites/default/files/bphc/data-reporting/2024-uds-manual.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://bphc.hrsa.gov/sites/default/files/bphc/data-reporting/2024-uds-manual.pdf&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQFnoECDAQAQ",
+      "displayed_link": "https://bphc.hrsa.gov \u203a sites \u203a default \u203a files \u203a bphc",
+      "favicon": "https://serpapi.com/searches/686464a1f607a9f155a1bd31/images/75c1229a6d3ceacbaaea82fb683e4cc2bc52e9bf1a17eee9ff6c3de1554affe2.png",
+      "snippet": "o Medicare managed care plans, including Medicare Advantage plans run by private insurers. ... International (HL7\u00ae) to demystify FHIR\u00ae for health care providers.",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "FHIR",
+        "health",
+        "providers"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 229
+          },
+          "extensions": [
+            "229 pages"
+          ]
+        }
+      },
+      "source": "Bureau of Primary Health Care (.gov)"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=omRkaNyTFJrRwPAP4qb-mAo&start=10&sa=N&sstk=Ac65TH4d31Nur9NgQRhXUIGwqsAeZUiT48oLWAFAQlZ_wtmXhHXTfGDeMHS-hOYxOpmBdHDroelPh6tz8-RJ2QxqQhqqupOW3kXO0Q&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=omRkaNyTFJrRwPAP4qb-mAo&start=10&sa=N&sstk=Ac65TH4d31Nur9NgQRhXUIGwqsAeZUiT48oLWAFAQlZ_wtmXhHXTfGDeMHS-hOYxOpmBdHDroelPh6tz8-RJ2QxqQhqqupOW3kXO0Q&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=omRkaNyTFJrRwPAP4qb-mAo&start=20&sa=N&sstk=Ac65TH4d31Nur9NgQRhXUIGwqsAeZUiT48oLWAFAQlZ_wtmXhHXTfGDeMHS-hOYxOpmBdHDroelPh6tz8-RJ2QxqQhqqupOW3kXO0Q&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=omRkaNyTFJrRwPAP4qb-mAo&start=30&sa=N&sstk=Ac65TH4d31Nur9NgQRhXUIGwqsAeZUiT48oLWAFAQlZ_wtmXhHXTfGDeMHS-hOYxOpmBdHDroelPh6tz8-RJ2QxqQhqqupOW3kXO0Q&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=omRkaNyTFJrRwPAP4qb-mAo&start=40&sa=N&sstk=Ac65TH4d31Nur9NgQRhXUIGwqsAeZUiT48oLWAFAQlZ_wtmXhHXTfGDeMHS-hOYxOpmBdHDroelPh6tz8-RJ2QxqQhqqupOW3kXO0Q&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=omRkaNyTFJrRwPAP4qb-mAo&start=50&sa=N&sstk=Ac65TH4d31Nur9NgQRhXUIGwqsAeZUiT48oLWAFAQlZ_wtmXhHXTfGDeMHS-hOYxOpmBdHDroelPh6tz8-RJ2QxqQhqqupOW3kXO0Q&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=omRkaNyTFJrRwPAP4qb-mAo&start=60&sa=N&sstk=Ac65TH4d31Nur9NgQRhXUIGwqsAeZUiT48oLWAFAQlZ_wtmXhHXTfGDeMHS-hOYxOpmBdHDroelPh6tz8-RJ2QxqQhqqupOW3kXO0Q&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=omRkaNyTFJrRwPAP4qb-mAo&start=70&sa=N&sstk=Ac65TH4d31Nur9NgQRhXUIGwqsAeZUiT48oLWAFAQlZ_wtmXhHXTfGDeMHS-hOYxOpmBdHDroelPh6tz8-RJ2QxqQhqqupOW3kXO0Q&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=omRkaNyTFJrRwPAP4qb-mAo&start=80&sa=N&sstk=Ac65TH4d31Nur9NgQRhXUIGwqsAeZUiT48oLWAFAQlZ_wtmXhHXTfGDeMHS-hOYxOpmBdHDroelPh6tz8-RJ2QxqQhqqupOW3kXO0Q&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=omRkaNyTFJrRwPAP4qb-mAo&start=90&sa=N&sstk=Ac65TH4d31Nur9NgQRhXUIGwqsAeZUiT48oLWAFAQlZ_wtmXhHXTfGDeMHS-hOYxOpmBdHDroelPh6tz8-RJ2QxqQhqqupOW3kXO0Q&ved=2ahUKEwjc7LeE3pyOAxWaKBAIHWKTH6MQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=devoted+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "search_metadata": {
+    "id": "68646c6e3a92064a198fc1aa",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/3680a7063e727348/68646c6e3a92064a198fc1aa.json",
+    "created_at": "2025-07-01 23:17:02 UTC",
+    "processed_at": "2025-07-01 23:17:02 UTC",
+    "google_url": "https://www.google.com/search?q=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/3680a7063e727348/68646c6e3a92064a198fc1aa.html",
+    "total_time_taken": 1.48
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"unico services Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"unico services Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 10,
+    "time_taken_displayed": 0.55,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    },
+    "showing_results_for": "unico services Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "unico services Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Top Healthcare Software Development Companies",
+      "link": "https://www.designrush.com/agency/software-development/healthcare",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.designrush.com/agency/software-development/healthcare&ved=2ahUKEwiir-e85ZyOAxWVD1kFHa2NNXIQFnoECCMQAQ",
+      "displayed_link": "https://www.designrush.com \u203a agency \u203a healthcare",
+      "favicon": "https://serpapi.com/searches/68646c6e3a92064a198fc1aa/images/740193f5320281643a968c386206ddf7dffe10caf6b5706a726cb82d77c9fd17.png",
+      "snippet": "Find the top-ranked healthcare software development companies. View their rates, locations and visit their websites - all in one place!",
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.6,
+            "reviews": 4025
+          },
+          "extensions": [
+            "4.6(4,025)"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=unico+services+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiir-e85ZyOAxWVD1kFHa2NNXIQ5t4CegQIJhAB"
+      },
+      "source": "DesignRush"
+    },
+    {
+      "position": 2,
+      "title": "Buyers Guide 2022_Healthcare+B2B",
+      "link": "https://expo.taiwan-healthcare.org/data/tmp/20230222/20230222wcrebl.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://expo.taiwan-healthcare.org/data/tmp/20230222/20230222wcrebl.pdf&ved=2ahUKEwiir-e85ZyOAxWVD1kFHa2NNXIQFnoECBcQAQ",
+      "displayed_link": "https://expo.taiwan-healthcare.org \u203a data \u203a tmp",
+      "favicon": "https://serpapi.com/searches/68646c6e3a92064a198fc1aa/images/740193f5320281643a968c386206ddf788cdcbecffc09867ce6b1431b14cbb87.png",
+      "snippet": "About 20 years of experience in out-source of lab and health checkup center service, and completed more than 20 medical labs design in Taiwan. \u00b7 Completed ...",
+      "snippet_highlighted_words": [
+        "service"
+      ],
+      "missing": [
+        "unico"
+      ],
+      "must_include": {
+        "word": "unico",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=%22unico%22+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiir-e85ZyOAxWVD1kFHa2NNXIQ5t4CegQIIRAB"
+      },
+      "source": "\u53f0\u7063\u91ab\u7642\u79d1\u6280\u5c55"
+    },
+    {
+      "position": 3,
+      "title": "aisquared/dais-2023 \u00b7 Datasets at Hugging Face",
+      "link": "https://huggingface.co/datasets/aisquared/dais-2023/viewer/default/train",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://huggingface.co/datasets/aisquared/dais-2023/viewer/default/train&ved=2ahUKEwiir-e85ZyOAxWVD1kFHa2NNXIQFnoECBgQAQ",
+      "displayed_link": "https://huggingface.co \u203a train",
+      "favicon": "https://serpapi.com/searches/68646c6e3a92064a198fc1aa/images/740193f5320281643a968c386206ddf7cbac199bc07a8686c46e23533a869680.png",
+      "snippet": "We're on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "source": "Hugging Face"
+    },
+    {
+      "position": 4,
+      "title": "Sheet1 - Omics - Hunter",
+      "link": "https://evvail.com/wp-content/uploads/2020/06/R%E5%8C%85%E5%A4%A7%E5%85%A8.xlsx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://evvail.com/wp-content/uploads/2020/06/R%25E5%258C%2585%25E5%25A4%25A7%25E5%2585%25A8.xlsx&ved=2ahUKEwiir-e85ZyOAxWVD1kFHa2NNXIQFnoECBoQAQ",
+      "displayed_link": "https://evvail.com \u203a uploads \u203a 2020/06 \u203a R\u5305\u5927\u5168",
+      "favicon": "https://serpapi.com/searches/68646c6e3a92064a198fc1aa/images/740193f5320281643a968c386206ddf762f6606cb8e7f3ff19fd5fc1efaf6073.jpeg",
+      "snippet": "... API. 29, 43999, RPESE, Estimates of Standard Errors for Risk and Performance ... Services. 212, 43995, PopED, Population (and Individual) Optimal Experimental ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Services"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=unico+services+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiir-e85ZyOAxWVD1kFHa2NNXIQ5t4CegQIIBAB"
+      },
+      "source": "evvail.com"
+    },
+    {
+      "position": 5,
+      "title": "https://salsa.debian.org/security-tracker-team/sec...",
+      "link": "https://salsa.debian.org/security-tracker-team/security-tracker/raw/master/data/CVE/list",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://salsa.debian.org/security-tracker-team/security-tracker/raw/master/data/CVE/list&ved=2ahUKEwiir-e85ZyOAxWVD1kFHa2NNXIQFnoECCgQAQ",
+      "displayed_link": "https://salsa.debian.org \u203a raw \u203a master \u203a data \u203a CVE \u203a list",
+      "favicon": "https://serpapi.com/searches/68646c6e3a92064a198fc1aa/images/740193f5320281643a968c386206ddf7b18b1c30451622ab7bf87918bf95791c.png",
+      "snippet": "... Directory ('Path Tra ...) TODO: check CVE-2025-49878 (Improper Neutralization of Input During Web Page Generation ('Cross-si ...) NOT-FOR-US: WordPress ...",
+      "snippet_highlighted_words": [
+        "Directory"
+      ],
+      "source": "Debian"
+    },
+    {
+      "position": 6,
+      "title": "R_Overlay - Ycarus Gentoo ebuild",
+      "link": "http://gentoo-overlays.zugaina.org/R_Overlay/index.html.en",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://gentoo-overlays.zugaina.org/R_Overlay/index.html.en&ved=2ahUKEwiir-e85ZyOAxWVD1kFHa2NNXIQFnoECC0QAQ",
+      "displayed_link": "http://gentoo-overlays.zugaina.org \u203a index.html.en",
+      "snippet": "RonFHIR - 0.4.0 (Read and Search Interface to the HL7 FHIR REST API). Rook - 1.2 (HTTP Web Server for R). RootsExtremaInflections - 1.2.1 (Finds Roots ...",
+      "snippet_highlighted_words": [
+        "Search",
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=unico+services+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiir-e85ZyOAxWVD1kFHa2NNXIQ5t4CegQIMBAB"
+      },
+      "source": "zugaina.org"
+    },
+    {
+      "position": 7,
+      "title": "NLP_Preprocessing&Emails_Cla...",
+      "link": "https://www.kaggle.com/code/oumaymabouchaara/nlp-preprocessing-emails-classification",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.kaggle.com/code/oumaymabouchaara/nlp-preprocessing-emails-classification&ved=2ahUKEwiir-e85ZyOAxWVD1kFHa2NNXIQFnoECDQQAQ",
+      "displayed_link": "https://www.kaggle.com \u203a code \u203a oumaymabouchaara",
+      "favicon": "https://serpapi.com/searches/68646c6e3a92064a198fc1aa/images/740193f5320281643a968c386206ddf7c15a1aca54d01b64c75e10619a5339e5.png",
+      "snippet": "We are going to use Email spam data to demonstrate each technique and clean the data. The dataset contains 5727 unique email and a label column indicating mail ...",
+      "source": "Kaggle"
+    },
+    {
+      "position": 8,
+      "title": "Spam Message Detector",
+      "link": "https://www.kaggle.com/code/dev0914sharma/spam-message-detector",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.kaggle.com/code/dev0914sharma/spam-message-detector&ved=2ahUKEwiir-e85ZyOAxWVD1kFHa2NNXIQFnoECC8QAQ",
+      "displayed_link": "https://www.kaggle.com \u203a code \u203a spam-message-detector",
+      "favicon": "https://serpapi.com/searches/68646c6e3a92064a198fc1aa/images/740193f5320281643a968c386206ddf758a44abd3dc05ab1ea8329653baa7e1a.png",
+      "snippet": "Explore and run machine learning code with Kaggle Notebooks | Using data from Spam Message Detector Model.",
+      "source": "Kaggle"
+    },
+    {
+      "position": 9,
+      "title": "vocab.txt",
+      "link": "https://huggingface.co/ChrisBridges/labse-malach-multilabel/resolve/main/vocab.txt?download=true",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://huggingface.co/ChrisBridges/labse-malach-multilabel/resolve/main/vocab.txt%3Fdownload%3Dtrue&ved=2ahUKEwiir-e85ZyOAxWVD1kFHa2NNXIQFnoECDoQAQ",
+      "displayed_link": "https://huggingface.co \u203a ChrisBridges \u203a resolve \u203a main",
+      "favicon": "https://serpapi.com/searches/68646c6e3a92064a198fc1aa/images/740193f5320281643a968c386206ddf78c28e6d143c222bf00289c670161c652.png",
+      "snippet": "... services siis Club jika Maria gali ##ei mara sans ##ele lista ##pi daga line ##len kuna ##ean raibh tentang ambayo daripada ##cia ##rea nella hija sein jsem ...",
+      "snippet_highlighted_words": [
+        "services"
+      ],
+      "source": "Hugging Face"
+    },
+    {
+      "position": 10,
+      "title": "Bayesian statistics for beginners pdf books online free print",
+      "link": "https://vapegenogibosa.weebly.com/uploads/1/4/1/8/141880999/4760109.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://vapegenogibosa.weebly.com/uploads/1/4/1/8/141880999/4760109.pdf&ved=2ahUKEwiir-e85ZyOAxWVD1kFHa2NNXIQFnoECDMQAQ",
+      "displayed_link": "https://vapegenogibosa.weebly.com \u203a uploads",
+      "favicon": "https://serpapi.com/searches/68646c6e3a92064a198fc1aa/images/740193f5320281643a968c386206ddf7b607dbe3b783ee932cc25a1ede27e96f.png",
+      "snippet": "ElliptCopulasInference of Elliptical Distributions and Copulas ellipticWeierstrass and Jacobi Elliptic Functions ellipticalsymmetryElliptical Symmetry Tests ...",
+      "source": "Weebly"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 10 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=unico+services+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22unico+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "search_metadata": {
+    "id": "68646d0da89e0207fb0c3d1e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/0c9369f8dd3ed9b4/68646d0da89e0207fb0c3d1e.json",
+    "created_at": "2025-07-01 23:19:41 UTC",
+    "processed_at": "2025-07-01 23:19:41 UTC",
+    "google_url": "https://www.google.com/search?q=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/0c9369f8dd3ed9b4/68646d0da89e0207fb0c3d1e.html",
+    "total_time_taken": 1.28
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "mclaren health care corporation Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "mclaren health care corporation Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 5,
+    "time_taken_displayed": 0.37,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_images": [
+    {
+      "source": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder3/Folder53/Folder2/Folder153/Folder1/Folder253/November_2018_HITC_Meeting_PowerPoint_DRAFT.pdf?rev=ad2f10ffd9e14e31adee1f177a879db8",
+      "thumbnail": "https://serpapi.com/searches/68646d0da89e0207fb0c3d1e/images/d051178881824ad625f2d4dc3d9b383080cc309d4e92b83bd09defe98ce9c8b1.jpeg",
+      "original": "x-raw-image:///1c610f573105b991889c049b0cfa828f5a2ff574312cdc0dccf0fd8f48d10047",
+      "title": "Altarum PowerPoint Template 102013",
+      "source_name": "State of Michigan"
+    },
+    {
+      "source": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder3/Folder53/Folder2/Folder153/Folder1/Folder253/November_2018_HITC_Meeting_PowerPoint_DRAFT.pdf?rev=ad2f10ffd9e14e31adee1f177a879db8",
+      "thumbnail": "https://serpapi.com/searches/68646d0da89e0207fb0c3d1e/images/d051178881824ad6d00b822c0cec085e70898cc48913098b91a2bab02e093893.png",
+      "original": "x-raw-image:///e6a676df414a2ce085c8a1d2ee9321e9158d7428b48865e7e206027bef76c66d",
+      "title": "Altarum PowerPoint Template 102013",
+      "source_name": "State of Michigan"
+    },
+    {
+      "source": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder1/Folder58/August_2016_HIT_Commission_Presentation_Final.pdf?rev=431e1814b84a4db6bfc1e7c70ff43b87",
+      "thumbnail": "https://serpapi.com/searches/68646d0da89e0207fb0c3d1e/images/d051178881824ad694bca024184e20b6d0304a5e088d969b5e1878b2c936ccc0.jpeg",
+      "original": "x-raw-image:///a80290a5460bbdec53aabf6714241baa397689b63e72177d1709a694ce1a35b7",
+      "title": "Altarum PowerPoint Template 102013",
+      "source_name": "State of Michigan"
+    },
+    {
+      "source": "https://healthdata.vermont.gov/sites/healthdata/files/2019VTSMHP_Final_Submitted12.18.19.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYmc9Au3vJgBiv53IClwTMo9Hyz6XCXZe04fv2h60ajT_KHo--qQwfavo&s",
+      "original": "x-raw-image:///65db38128b4995605795c2751ecf480877f25535e8b8acddce0d018e4e338b63",
+      "title": "State Medicaid Health Information Technology Plan (SMHP ...",
+      "source_name": "Health Data - Vermont.gov"
+    },
+    {
+      "source": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder3/Folder53/Folder2/Folder153/Folder1/Folder253/November_2018_HITC_Meeting_PowerPoint_DRAFT.pdf?rev=ad2f10ffd9e14e31adee1f177a879db8",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB9ydkblJxALhIZHPUSSMe2ajOpKABz0jdQaiR3YQZzGdBNlbv7vxCT48uTg&s",
+      "original": "x-raw-image:///f8afe31f4ab70c64ab85484cf3ee7bfd9947ebdcffd9626aa8baf1c7ec857c6b",
+      "title": "Altarum PowerPoint Template 102013",
+      "source_name": "State of Michigan"
+    },
+    {
+      "source": "https://healthdata.vermont.gov/sites/healthdata/files/DVHA_HIE%20Plan_10.31.19_FINAL%20%28003%29.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVdNP0nSd3xXg-I2go3OUEnZdCfiFLyevPnrn0b0-vUXDKKrl0dZ9qGv4&s",
+      "original": "x-raw-image:///af76712337e3549459842b7bb5a442f7647ac3b02698f32c340216ec761224f9",
+      "title": "Health Information Exchange Strategic Plan",
+      "source_name": "Health Data - Vermont.gov"
+    },
+    {
+      "source": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder1/Folder58/August_2016_HIT_Commission_Presentation_Final.pdf?rev=431e1814b84a4db6bfc1e7c70ff43b87",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_0MufMw9g_3F-HYOsLzghQFspBBDYJEASMhRWRKSlAimNOCbIOKNjL-k&s",
+      "original": "x-raw-image:///5c792685eae810c7415d816c1b5d9bd6c955c4713ef10666be17924bd272314a",
+      "title": "Altarum PowerPoint Template 102013",
+      "source_name": "State of Michigan"
+    },
+    {
+      "source": "https://healthdata.vermont.gov/sites/healthdata/files/DVHA_HIE%20Plan_10.31.19_FINAL%20%28003%29.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Kcx26iJBoMp_6p7616EFzYPGC8JOuIFrb-Cqb9RAhkxGxZhYIQ6POhg&s",
+      "original": "x-raw-image:///1bcd38e11a61853820e153d1b5cb11dfc5f48f16cd7eb5354d199549b600062b",
+      "title": "Health Information Exchange Strategic Plan",
+      "source_name": "Health Data - Vermont.gov"
+    },
+    {
+      "source": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder1/Folder58/August_2016_HIT_Commission_Presentation_Final.pdf?rev=431e1814b84a4db6bfc1e7c70ff43b87",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr2ikWvADALbi9E3IAmDiW9BcFA2K--jhbu7qA6HgczSL29el4fxrK7u0&s",
+      "original": "x-raw-image:///5d6f103500ac0d6703fd98047fd415f0eb0bfe309244144cc3464496882a6056",
+      "title": "Altarum PowerPoint Template 102013",
+      "source_name": "State of Michigan"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "michigan health information technology commission",
+      "link": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder3/Folder53/Folder2/Folder153/Folder1/Folder253/November_2018_HITC_Meeting_PowerPoint_DRAFT.pdf?rev=ad2f10ffd9e14e31adee1f177a879db8",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder3/Folder53/Folder2/Folder153/Folder1/Folder253/November_2018_HITC_Meeting_PowerPoint_DRAFT.pdf%3Frev%3Dad2f10ffd9e14e31adee1f177a879db8&ved=2ahUKEwioi9WI5pyOAxXqLFkFHaz3MsIQFnoECBoQAQ",
+      "displayed_link": "https://www.michigan.gov \u203a Folder1 \u203a Folder253",
+      "favicon": "https://serpapi.com/searches/68646d0da89e0207fb0c3d1e/images/9f55ef6ff7b39b2af9e603181fecef60409f43853d78c33717cee9dd10097921.png",
+      "date": "Nov 27, 2018",
+      "snippet": "\u2022 Health Provider Directory (HPD) API. \u2022 VA direct messaging & query. \u2022 FHIR \u2013 Fast Healthcare Interoperability. Resources. \u2022 Collaboration with ...",
+      "snippet_highlighted_words": [
+        "Health Provider Directory",
+        "API",
+        "FHIR",
+        "Healthcare"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=mclaren+health+care+corporation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwioi9WI5pyOAxXqLFkFHaz3MsIQ5t4CegQIKhAB"
+      },
+      "source": "State of Michigan (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Michigan Health Information Technology Commission",
+      "link": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder1/Folder58/August_2016_HIT_Commission_Presentation_Final.pdf?rev=431e1814b84a4db6bfc1e7c70ff43b87",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder1/Folder58/August_2016_HIT_Commission_Presentation_Final.pdf%3Frev%3D431e1814b84a4db6bfc1e7c70ff43b87&ved=2ahUKEwioi9WI5pyOAxXqLFkFHaz3MsIQFnoECBsQAQ",
+      "displayed_link": "https://www.michigan.gov \u203a Folder1 \u203a Folder58",
+      "favicon": "https://serpapi.com/searches/68646d0da89e0207fb0c3d1e/images/9f55ef6ff7b39b2af9e603181fecef60961396fe6caaa159288c1a54b4874945.png",
+      "date": "Aug 18, 2016",
+      "snippet": "\u2022 491,815 unique providers in statewide Health Provider Directory ... \u2022 Runs as web service with rich FHIR API for easy integration.",
+      "snippet_highlighted_words": [
+        "Health Provider Directory",
+        "FHIR API"
+      ],
+      "missing": [
+        "corporation",
+        "Advantage"
+      ],
+      "source": "State of Michigan (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Health Information Exchange Strategic Plan",
+      "link": "https://healthdata.vermont.gov/sites/healthdata/files/DVHA_HIE%20Plan_10.31.19_FINAL%20%28003%29.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://healthdata.vermont.gov/sites/healthdata/files/DVHA_HIE%2520Plan_10.31.19_FINAL%2520%2528003%2529.pdf&ved=2ahUKEwioi9WI5pyOAxXqLFkFHaz3MsIQFnoECBwQAQ",
+      "displayed_link": "https://healthdata.vermont.gov \u203a healthdata \u203a files",
+      "favicon": "https://serpapi.com/searches/68646d0da89e0207fb0c3d1e/images/9f55ef6ff7b39b2af9e603181fecef60fc7ef382b138495898a408953b8ad4d0.png",
+      "date": "Nov 1, 2019",
+      "snippet": "functions in conjunction with the Provider Directory to support care team attribution. ... FHIR API. 3. Test reconciliation process: Implement the ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "care",
+        "FHIR API"
+      ],
+      "missing": [
+        "corporation"
+      ],
+      "must_include": {
+        "word": "corporation",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=mclaren+health+care+%22corporation%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwioi9WI5pyOAxXqLFkFHaz3MsIQ5t4CegQIKRAB"
+      },
+      "source": "Vermont.gov"
+    },
+    {
+      "position": 4,
+      "title": "American Health Law Association The Year in Review ...",
+      "link": "https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf&ved=2ahUKEwioi9WI5pyOAxXqLFkFHaz3MsIQFnoECBgQAQ",
+      "displayed_link": "https://www.bradley.com \u203a publications \u203a 2022/02",
+      "favicon": "https://serpapi.com/searches/68646d0da89e0207fb0c3d1e/images/9f55ef6ff7b39b2af9e603181fecef60c1a225352cf743ad7b8ed4b8bfc0e486.png",
+      "date": "Feb 17, 2022",
+      "snippet": "... FHIR\u00ae Roadmap for \u00b7 TEFCA Exchange (January 2022). The TEF is a set of ... Provider Directory API (applicable January 1, 2021, with ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 315
+          },
+          "extensions": [
+            "315 pages"
+          ]
+        }
+      },
+      "source": "Bradley Arant"
+    },
+    {
+      "position": 5,
+      "title": "State Medicaid Health Information Technology Plan (SMHP)",
+      "link": "https://healthdata.vermont.gov/sites/healthdata/files/2019VTSMHP_Final_Submitted12.18.19.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://healthdata.vermont.gov/sites/healthdata/files/2019VTSMHP_Final_Submitted12.18.19.pdf&ved=2ahUKEwioi9WI5pyOAxXqLFkFHaz3MsIQFnoECBkQAQ",
+      "displayed_link": "https://healthdata.vermont.gov \u203a healthdata \u203a files",
+      "favicon": "https://serpapi.com/searches/68646d0da89e0207fb0c3d1e/images/9f55ef6ff7b39b2af9e603181fecef607ef65470ad337c550589331f3152eb66.png",
+      "snippet": "functions in conjunction with the Provider Directory to support care team attribution. ... FHIR API. 3. Test reconciliation process: Implement the feedback ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "care",
+        "FHIR API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 289
+          },
+          "extensions": [
+            "289 pages"
+          ]
+        }
+      },
+      "source": "Vermont.gov"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 5 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mclaren+health+care+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

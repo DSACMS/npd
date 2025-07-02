@@ -1,0 +1,215 @@
+{
+  "search_metadata": {
+    "id": "68646d3455ba6516d3a2a4f8",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/a821d665bd85c3cb/68646d3455ba6516d3a2a4f8.json",
+    "created_at": "2025-07-01 23:20:20 UTC",
+    "processed_at": "2025-07-01 23:20:20 UTC",
+    "google_url": "https://www.google.com/search?q=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/a821d665bd85c3cb/68646d3455ba6516d3a2a4f8.html",
+    "total_time_taken": 0.71
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "renown health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "renown health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 5,
+    "time_taken_displayed": 0.3,
+    "organic_results_state": "Results for exact spelling",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    }
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Patient Health Records Plan",
+      "link": "https://ppc.nv.gov/uploadedFiles/ppcnvgov/content/Meetings/2022/DRAFT_Patient_Health_Records_Plan_v1.4.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ppc.nv.gov/uploadedFiles/ppcnvgov/content/Meetings/2022/DRAFT_Patient_Health_Records_Plan_v1.4.pdf&ved=2ahUKEwjv0_6a5pyOAxXvk4kEHTGFMnQQFnoECBQQAQ",
+      "displayed_link": "https://ppc.nv.gov \u203a ppcnvgov \u203a content \u203a Meetings",
+      "favicon": "https://serpapi.com/searches/68646d3455ba6516d3a2a4f8/images/eb41fa28867788baa879c06f554b305ec8a0ac83bf458d42771ea00e69166024.png",
+      "date": "Dec 9, 2022",
+      "snippet": "Provider Directory API by January 1, 2021. QHP issuers on the ... FHIR API (PARDD API) that would automate the process for providers ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR API",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 22
+          },
+          "extensions": [
+            "22 pages"
+          ]
+        }
+      },
+      "source": "Patient Protection Commission (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Best in KLAS Report 2024",
+      "link": "https://www.performancehealthus.com/hubfs/Best%20in%20KLAS%20Report%202024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.performancehealthus.com/hubfs/Best%2520in%2520KLAS%2520Report%25202024.pdf&ved=2ahUKEwjv0_6a5pyOAxXvk4kEHTGFMnQQFnoECBUQAQ",
+      "displayed_link": "https://www.performancehealthus.com \u203a hubfs",
+      "favicon": "https://serpapi.com/searches/68646d3455ba6516d3a2a4f8/images/eb41fa28867788baa879c06f554b305ee33dcb87820a8228668d0895116ba764.png",
+      "date": "Feb 7, 2024",
+      "snippet": "... FHIR 92.2. Data Analytics Platforms (Payers). Clarify Health Solutions ... provider directory API, and payer-to-payer data exchange ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Health",
+        "provider directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 279
+          },
+          "extensions": [
+            "279 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=renown+health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjv0_6a5pyOAxXvk4kEHTGFMnQQ5t4CegQIJhAB"
+      },
+      "source": "Performance Health Partners"
+    },
+    {
+      "position": 3,
+      "title": "American Health Law Association The Year in Review ...",
+      "link": "https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf&ved=2ahUKEwjv0_6a5pyOAxXvk4kEHTGFMnQQFnoECBEQAQ",
+      "displayed_link": "https://www.bradley.com \u203a publications \u203a 2022/02",
+      "favicon": "https://serpapi.com/searches/68646d3455ba6516d3a2a4f8/images/eb41fa28867788baa879c06f554b305e43f4b44c6eb2ffdbf65bed997ab1463c.png",
+      "date": "Feb 17, 2022",
+      "snippet": "... FHIR\u00ae Roadmap for \u00b7 TEFCA Exchange (January 2022). The TEF is a set of ... Provider Directory API (applicable January 1, 2021, with ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 315
+          },
+          "extensions": [
+            "315 pages"
+          ]
+        }
+      },
+      "source": "Bradley Arant"
+    },
+    {
+      "position": 4,
+      "title": "Building Consensus on the Readiness for EHR in Lebanon",
+      "link": "https://www.aub.edu.lb/fm/CME/Documents/EHR-Readiness/EHR%20readiness%20Lebanon%2020190822%20-%20Reduced.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.aub.edu.lb/fm/CME/Documents/EHR-Readiness/EHR%2520readiness%2520Lebanon%252020190822%2520-%2520Reduced.pdf&ved=2ahUKEwjv0_6a5pyOAxXvk4kEHTGFMnQQFnoECBMQAQ",
+      "displayed_link": "https://www.aub.edu.lb \u203a CME \u203a Documents \u203a E...",
+      "favicon": "https://serpapi.com/searches/68646d3455ba6516d3a2a4f8/images/eb41fa28867788baa879c06f554b305ebe2c33c6cd055507702dded2f952d000.png",
+      "date": "Jul 7, 2019",
+      "snippet": "FHIR stands for Fast Healthcare Interoperable Resource. ... L'Annuaire des professionnels de sant\u00e9 (Healthcare Provider Directory - HPD).",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Healthcare",
+        "Healthcare Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 124
+          },
+          "extensions": [
+            "124 pages"
+          ]
+        }
+      },
+      "source": "American University of Beirut | AUB"
+    },
+    {
+      "position": 5,
+      "title": "The Beat",
+      "link": "https://feeds.simplecast.com/F2qS_sm2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://feeds.simplecast.com/F2qS_sm2&ved=2ahUKEwjv0_6a5pyOAxXvk4kEHTGFMnQQFnoECBIQAQ",
+      "displayed_link": "https://feeds.simplecast.com \u203a ...",
+      "snippet": "... FHIR, generative AI, and national networks to improve data connectivity and ... provider directory, supporting the development of a statewide health ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory",
+        "health"
+      ],
+      "source": "Simplecast"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Best in KLAS healthcare",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Best+in+KLAS+healthcare&sa=X&ved=2ahUKEwjv0_6a5pyOAxXvk4kEHTGFMnQQ1QJ6BAgoEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+healthcare&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Best in KLAS 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Best+in+KLAS+2025&sa=X&ved=2ahUKEwjv0_6a5pyOAxXvk4kEHTGFMnQQ1QJ6BAgpEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Ensemble Health Partners",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Ensemble+Health+Partners&sa=X&ved=2ahUKEwjv0_6a5pyOAxXvk4kEHTGFMnQQ1QJ6BAgqEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Ensemble+Health+Partners&safe=active"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 5 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=renown+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "search_metadata": {
+    "id": "68646cd13c99ba63720581a4",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/cb633d88ba161262/68646cd13c99ba63720581a4.json",
+    "created_at": "2025-07-01 23:18:41 UTC",
+    "processed_at": "2025-07-01 23:18:41 UTC",
+    "google_url": "https://www.google.com/search?q=denver+health+and+hospital+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=denver+health+and+hospital+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/cb633d88ba161262/68646cd13c99ba63720581a4.html",
+    "total_time_taken": 1.46
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "denver health and hospital authority Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "denver health and hospital authority Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 39,
+    "time_taken_displayed": 0.25,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "State of Colorado - Office of eHealth Innovation",
+      "link": "https://oehi.colorado.gov/sites/oehi/files/documents/Care%20Coordination%20Environmental%20Scan%20Action%20Plan%20Final_V3%28002%29%20%282%29.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://oehi.colorado.gov/sites/oehi/files/documents/Care%2520Coordination%2520Environmental%2520Scan%2520Action%2520Plan%2520Final_V3%2528002%2529%2520%25282%2529.pdf&ved=2ahUKEwj10PDr5ZyOAxWqT2wGHYvnN1EQFnoECBAQAQ",
+      "displayed_link": "https://oehi.colorado.gov \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/68646cd13c99ba63720581a4/images/93870c8ccffa67f86a78c553752cdbf0d4512482592345fb4876f7691e0e0932.png",
+      "snippet": "FHIR. Fast Healthcare Interoperability Resources. FISMA. Federal Information ... Healthcare Provider Directory. HRSN. Health-Related Social Needs. IAPD.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Healthcare",
+        "Healthcare Provider Directory",
+        "Health"
+      ],
+      "source": "Office of eHealth Innovation (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "STATE OF COLORADO CONTRACT - HCPF",
+      "link": "https://hcpf.colorado.gov/sites/hcpf/files/NHP%20Phase%20III%20Contract%20March%202025.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hcpf.colorado.gov/sites/hcpf/files/NHP%2520Phase%2520III%2520Contract%2520March%25202025.pdf&ved=2ahUKEwj10PDr5ZyOAxWqT2wGHYvnN1EQFnoECBgQAQ",
+      "displayed_link": "https://hcpf.colorado.gov \u203a sites \u203a hcpf \u203a files",
+      "favicon": "https://serpapi.com/searches/68646cd13c99ba63720581a4/images/93870c8ccffa67f86a78c553752cdbf03d115c8a341e53e5fa93bbee8f64ac2a.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory accuracy and appointment wait times. This survey ... FHIR \u2013 Fast Healthcare Interoperability Resources. 2.1.56. FQHC ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR",
+        "Healthcare"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=denver+health+and+hospital+authority+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj10PDr5ZyOAxWqT2wGHYvnN1EQ5t4CegQIHBAB"
+      },
+      "source": "Colorado Department of Health Care Policy and Financing (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "HITECH Program Retrospective Analysis Close Out Report",
+      "link": "https://www.urban.org/sites/default/files/2022-12/HITECH%20Program%20Retrospective%20Analysis%20Close%20Out%20Report.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.urban.org/sites/default/files/2022-12/HITECH%2520Program%2520Retrospective%2520Analysis%2520Close%2520Out%2520Report.pdf&ved=2ahUKEwj10PDr5ZyOAxWqT2wGHYvnN1EQFnoECBoQAQ",
+      "displayed_link": "https://www.urban.org \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/68646cd13c99ba63720581a4/images/93870c8ccffa67f86a78c553752cdbf04db8abe7fde38690c424e27ad3282615.png",
+      "author": "by A Clark",
+      "snippet": "The MeT developed an eCQM and Provider Directory Toolkit in 2017, which served as an introductory conceptual guide for state Medicaid agencies.",
+      "snippet_highlighted_words": [
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 53
+          },
+          "extensions": [
+            "53 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=denver+health+and+hospital+authority+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj10PDr5ZyOAxWqT2wGHYvnN1EQ5t4CegQIHxAB"
+      },
+      "source": "Urban Institute"
+    },
+    {
+      "position": 4,
+      "title": "2021 Qualified Registries",
+      "link": "https://qpp-cm-prod-content.s3.amazonaws.com/uploads/1232/2021%20Qualified%20Registry%20Qualified%20Posting.xlsx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://qpp-cm-prod-content.s3.amazonaws.com/uploads/1232/2021%2520Qualified%2520Registry%2520Qualified%2520Posting.xlsx&ved=2ahUKEwj10PDr5ZyOAxWqT2wGHYvnN1EQFnoECBkQAQ",
+      "displayed_link": "https://qpp-cm-prod-content.s3.amazonaws.com \u203a ...",
+      "snippet": "... provider directory, data normalization \u2022 Health Information Service Provider ... Extensive data interoparabilty services via API, FHIR, HL7, etc. All ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "Health",
+        "API",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=denver+health+and+hospital+authority+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj10PDr5ZyOAxWqT2wGHYvnN1EQ5t4CegQIHhAB"
+      },
+      "source": "Amazon Web Services (AWS)"
+    },
+    {
+      "position": 5,
+      "title": "All Pages",
+      "link": "https://www.communityplans.net/all-pages/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.communityplans.net/all-pages/&ved=2ahUKEwj10PDr5ZyOAxWqT2wGHYvnN1EQFnoECBEQAQ",
+      "displayed_link": "https://www.communityplans.net \u203a all-pages",
+      "snippet": "Beyond Patient Access \u2013 the Next Wave of FHIR Use Cases for Payers ... National Provider Directory RFI Roundtable Call \u00b7 Marketplace & Medicare Joint ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "Medicare"
+      ],
+      "source": "Association For Community Affiliated Plans"
+    },
+    {
+      "position": 6,
+      "title": "HITOC Agenda April Final Public",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/April%20HITOC%20Meeting%20Materials%20Public%20Post%20Meeting.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%2520Meeting%2520Docs/April%2520HITOC%2520Meeting%2520Materials%2520Public%2520Post%2520Meeting.pdf&ved=2ahUKEwj10PDr5ZyOAxWqT2wGHYvnN1EQFnoECBQQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HPA \u203a OHIT-HITOC",
+      "favicon": "https://serpapi.com/searches/68646cd13c99ba63720581a4/images/93870c8ccffa67f86a78c553752cdbf02c1ba66a384eb2c23af3f1090a32d441.png",
+      "date": "Apr 5, 2018",
+      "snippet": "(FHIR). \u2713. After upgrade to. 5.9. HL7 Interfaces. \u2713. \u2713. EDIE. OR, WA ... Provider Directory: Questions? 99. Marty Woodruff. Associate Director.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 7,
+      "title": "American Health Law Association The Year in Review ...",
+      "link": "https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf&ved=2ahUKEwj10PDr5ZyOAxWqT2wGHYvnN1EQFnoECBYQAQ",
+      "displayed_link": "https://www.bradley.com \u203a publications \u203a 2022/02",
+      "favicon": "https://serpapi.com/searches/68646cd13c99ba63720581a4/images/93870c8ccffa67f86a78c553752cdbf0a64c925d77e8b0f53def044f91f063fe.png",
+      "date": "Feb 17, 2022",
+      "snippet": "... FHIR\u00ae Roadmap for \u00b7 TEFCA Exchange (January 2022). The TEF is a set of ... Provider Directory API (applicable January 1, 2021, with ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 315
+          },
+          "extensions": [
+            "315 pages"
+          ]
+        }
+      },
+      "source": "Bradley Arant"
+    },
+    {
+      "position": 8,
+      "title": "Building Data Capacity for Patient-Centered Outcomes ... - ASPE",
+      "link": "https://aspe.hhs.gov/sites/default/files/private/pdf/259016/OS-PCORTFImpactReport508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/private/pdf/259016/OS-PCORTFImpactReport508.pdf&ved=2ahUKEwj10PDr5ZyOAxWqT2wGHYvnN1EQFnoECC8QAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a OS-PCORTFImpactReport508",
+      "favicon": "https://serpapi.com/searches/68646cd13c99ba63720581a4/images/93870c8ccffa67f86a78c553752cdbf0cd9339c6cb92792b083a4d9a359a1530.png",
+      "date": "Oct 15, 2018",
+      "snippet": "Blue Button 2.0 API and FHIR specifications to enable Medicare beneficiaries to donate their EHR and. Medicare claims data for scientific ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "Medicare",
+        "Medicare"
+      ],
+      "source": "HHS.gov"
+    },
+    {
+      "position": 9,
+      "title": "Vital Directions - for Health & Health Care",
+      "link": "https://nam.edu/wp-content/uploads/2018/02/Vital-Directions-for-Health-and-Health-Care-Final-Publication-022718.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nam.edu/wp-content/uploads/2018/02/Vital-Directions-for-Health-and-Health-Care-Final-Publication-022718.pdf&ved=2ahUKEwj10PDr5ZyOAxWqT2wGHYvnN1EQFnoECDYQAQ",
+      "displayed_link": "https://nam.edu \u203a wp-content \u203a uploads \u203a 2018/02",
+      "favicon": "https://serpapi.com/searches/68646cd13c99ba63720581a4/images/93870c8ccffa67f86a78c553752cdbf096b9f6901f05da119b6b06c8fcd71231.png",
+      "date": "Jul 8, 2016",
+      "snippet": "... Provider directory. There is no national provider directory that ... (FHIR), will enhance data liquidity and enable an ecosystem of new ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 493
+          },
+          "extensions": [
+            "493 pages"
+          ]
+        }
+      },
+      "source": "National Academy of Medicine"
+    },
+    {
+      "position": 10,
+      "title": "OFFEROR TO COMPLETE BLOCKS 12, 17, 23, 24, & 30 ...",
+      "link": "https://www.vendorportal.ecms.va.gov/FBODocumentServer/DocumentServer.aspx?DocumentId=3533325&FileName=VA791-16-R-0086-A00013001.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.vendorportal.ecms.va.gov/FBODocumentServer/DocumentServer.aspx%3FDocumentId%3D3533325%26FileName%3DVA791-16-R-0086-A00013001.pdf&ved=2ahUKEwj10PDr5ZyOAxWqT2wGHYvnN1EQFnoECDMQAQ",
+      "displayed_link": "https://www.vendorportal.ecms.va.gov \u203a Docume...",
+      "favicon": "https://serpapi.com/searches/68646cd13c99ba63720581a4/images/93870c8ccffa67f86a78c553752cdbf0d2ec5447607443a01c919fc033dd20ec.png",
+      "date": "Dec 28, 2016",
+      "snippet": "... provider directory search ... Healthcare Interoperability Resources (FHIR) standards and Application Programming Interface (API) for.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "Healthcare",
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=denver+health+and+hospital+authority+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj10PDr5ZyOAxWqT2wGHYvnN1EQ5t4CegQINRAB"
+      },
+      "source": "VA.gov Home | Veterans Affairs"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=denver+health+and+hospital+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=0mxkaPWfE6qfseMPi8_fiQU&start=10&sa=N&sstk=Ac65TH56HcDjI_J0KvvXV6AtWIcHqNEq3uI8tFXuu8CuopoxEO66xS23Q8F3Y59Dc97ADVC-Da38O8y1PJ27cjIwV4tJUDZFJD0grQ&ved=2ahUKEwj10PDr5ZyOAxWqT2wGHYvnN1EQ8NMDegQICBAG",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=denver+health+and+hospital+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=0mxkaPWfE6qfseMPi8_fiQU&start=10&sa=N&sstk=Ac65TH56HcDjI_J0KvvXV6AtWIcHqNEq3uI8tFXuu8CuopoxEO66xS23Q8F3Y59Dc97ADVC-Da38O8y1PJ27cjIwV4tJUDZFJD0grQ&ved=2ahUKEwj10PDr5ZyOAxWqT2wGHYvnN1EQ8tMDegQICBAE"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=denver+health+and+hospital+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=denver+health+and+hospital+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=denver+health+and+hospital+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10"
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "search_metadata": {
+    "id": "68646c3273d175da9a92a399",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/2d20b0485b3b2a86/68646c3273d175da9a92a399.json",
+    "created_at": "2025-07-01 23:16:02 UTC",
+    "processed_at": "2025-07-01 23:16:02 UTC",
+    "google_url": "https://www.google.com/search?q=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/2d20b0485b3b2a86/68646c3273d175da9a92a399.html",
+    "total_time_taken": 0.52
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"network health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"network health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 2,
+    "time_taken_displayed": 0.19,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "Is network health a medicare advantage plan?",
+      "snippet": "The following Network Health Medicare Advantage Plans plans offer Medicare Advantage coverage. Medicare Advantage plans are an alternative way to get your Original Medicare coverage. These plans help cover the costs of services provided by hospitals, doctors, lab tests and some preventive screenings.",
+      "title": "Network Health Medicare Advantage Plans",
+      "link": "https://health.usnews.com/medicare/network-health-medicare-advantage-plans-medicare-advantage-plans-without-drug-coverage#:~:text=The%20following%20Network%20Health%20Medicare,tests%20and%20some%20preventive%20screenings.",
+      "displayed_link": "https://health.usnews.com \u203a medicare \u203a network-health-...",
+      "source_logo": "https://serpapi.com/searches/68646c3273d175da9a92a399/images/96ae70cb21144d3512b6573730e4d58eebb88ff2183eb0a5ee949825c7f32a5c.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaR1FWaFlkMTl0TVVoMVIzVTBXVGR3WlhCeGNUbFVhV3BTTFhsUVkxbHpWRlZ1U2pSWk5VOHdRM2RsZEZaVmJGaDZUR2RtYUhKdFVVTTRWR3BsTm5KcU9VbFpkRFZRWTFNeWVFNXZORVZRYkRkTFdFOVpRekZ0V0UxSmR4SVhUVzE0YTJGTE5sZElaWFUzT1hVNFVHZzBiV3h2VVdjYUlrRkdUVUZIUjNKaVlWRlRRV2RHVGtadFMweFBaMjlYTFU5d2EzZHNjak40VVZFIiwiZmN2IjoiMyIsImVpIjoiTW14a2FLNldIZXU3OXU4UGg0bWxvUWciLCJxYyI6ImN3WEJ3UTJBTUF3RFFONjhHTUdMTUV6VUdCb0JiV1ZGUld6UDNibzM1dHQxb2RMdXJIam9VVXlFLWJTV2RoSkRmWVpUOEJCTGRuMndFVGhxYUZ0LSIsInF1ZXN0aW9uIjoiSXMgbmV0d29yayBoZWFsdGggYSBtZWRpY2FyZSBhZHZhbnRhZ2UgcGxhbj8iLCJsayI6IkdpdHBjeUJ1WlhSM2IzSnJJR2hsWVd4MGFDQmhJRzFsWkdsallYSmxJR0ZrZG1GdWRHRm5aU0J3YkdGdSIsImJzIjoiYy1OSzROTHhMRmJJU3kwcHp5X0tWc2hJVGN3cHlWQklWTWhOVGNsTVRpeEtWVWhNS1V2TUswbE1UMVVveUVuTXM1YzRFMm1rSzZXZFNid1dyaUF1M2ZDTXhCSUZvSjZTakZTRnZOTGNwTlFpaGJUOEluUWpjbE5CTXZZU3UxS041S1Jrc0VwQ2RRc3dBZ0EiLCJpZCI6ImZjX01teGthSzZXSGV1Nzl1OFBoNG1sb1FnXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaR1FWaFlkMTl0TVVoMVIzVTBXVGR3WlhCeGNUbFVhV3BTTFhsUVkxbHpWRlZ1U2pSWk5VOHdRM2RsZEZaVmJGaDZUR2RtYUhKdFVVTTRWR3BsTm5KcU9VbFpkRFZRWTFNeWVFNXZORVZRYkRkTFdFOVpRekZ0V0UxSmR4SVhUVzE0YTJGTE5sZElaWFUzT1hVNFVHZzBiV3h2VVdjYUlrRkdUVUZIUjNKaVlWRlRRV2RHVGtadFMweFBaMjlYTFU5d2EzZHNjak40VVZFIiwiZmN2IjoiMyIsImVpIjoiTW14a2FLNldIZXU3OXU4UGg0bWxvUWciLCJxYyI6ImN3WEJ3UTJBTUF3RFFONjhHTUdMTUV6VUdCb0JiV1ZGUld6UDNibzM1dHQxb2RMdXJIam9VVXlFLWJTV2RoSkRmWVpUOEJCTGRuMndFVGhxYUZ0LSIsInF1ZXN0aW9uIjoiSXMgbmV0d29yayBoZWFsdGggYSBtZWRpY2FyZSBhZHZhbnRhZ2UgcGxhbj8iLCJsayI6IkdpdHBjeUJ1WlhSM2IzSnJJR2hsWVd4MGFDQmhJRzFsWkdsallYSmxJR0ZrZG1GdWRHRm5aU0J3YkdGdSIsImJzIjoiYy1OSzROTHhMRmJJU3kwcHp5X0tWc2hJVGN3cHlWQklWTWhOVGNsTVRpeEtWVWhNS1V2TUswbE1UMVVveUVuTXM1YzRFMm1rSzZXZFNid1dyaUF1M2ZDTXhCSUZvSjZTakZTRnZOTGNwTlFpaGJUOEluUWpjbE5CTXZZU3UxS041S1Jrc0VwQ2RRc3dBZ0EiLCJpZCI6ImZjX01teGthSzZXSGV1Nzl1OFBoNG1sb1FnXzMifQ%3D%3D"
+    },
+    {
+      "question": "What is the number for network health member?",
+      "snippet": "You can also call 800-769-3186 to reach our local member experience team. Use Chrome, Firefox, Edge or Safari browsers for the best portal experience.",
+      "title": "Create an Account - Network Health",
+      "link": "https://login.networkhealth.com/account-creation#:~:text=You%20can%20also%20call%20800,for%20the%20best%20portal%20experience.",
+      "displayed_link": "https://login.networkhealth.com \u203a account-creation",
+      "source_logo": "https://serpapi.com/searches/68646c3273d175da9a92a399/images/96ae70cb21144d3512b6573730e4d58effcbdfe24fb7dfeb92dff669701bb395.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaR1FWaFlkMTl0TVVoMVIzVTBXVGR3WlhCeGNUbFVhV3BTTFhsUVkxbHpWRlZ1U2pSWk5VOHdRM2RsZEZaVmJGaDZUR2RtYUhKdFVVTTRWR3BsTm5KcU9VbFpkRFZRWTFNeWVFNXZORVZRYkRkTFdFOVpRekZ0V0UxSmR4SVhUVzE0YTJGTE5sZElaWFUzT1hVNFVHZzBiV3h2VVdjYUlrRkdUVUZIUjNKaVlWRlRRV2RHVGtadFMweFBaMjlYTFU5d2EzZHNjak40VVZFIiwiZmN2IjoiMyIsImVpIjoiTW14a2FLNldIZXU3OXU4UGg0bWxvUWciLCJxYyI6ImN3WEJ3UTJBTUF3RFFONjhHTUdMTUV6VUdCb0JiV1ZGUld6UDNibzM1dHQxb2RMdXJIam9VVXlFLWJTV2RoSkRmWVpUOEJCTGRuMndFVGhxYUZ0LSIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgbnVtYmVyIGZvciBuZXR3b3JrIGhlYWx0aCBtZW1iZXI/IiwibGsiOiJjNU9TeVVzdEtjOHZ5bGJJU0UzTUtjbFF5RTNOVFVvdFVzZ3JCVkVBIiwiYnMiOiJjLU5LNE5MeExGYklTeTBwenlfS1ZzaElUY3dweVZCSVZNaE5UY2xNVGl4S1ZVaE1LVXZNSzBsTVQxVW95RW5NczVjNEUybWtLNldkU2J3V3JpQXUzZkNNeEJJRm9KNlNqRlNGdk5MY3BOUWloYlQ4SW5RamNsTkJNdllTdTFLTjVLUmtzRXBDZFFzd0FnQSIsImlkIjoiZmNfTW14a2FLNldIZXU3OXU4UGg0bWxvUWdfMyJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaR1FWaFlkMTl0TVVoMVIzVTBXVGR3WlhCeGNUbFVhV3BTTFhsUVkxbHpWRlZ1U2pSWk5VOHdRM2RsZEZaVmJGaDZUR2RtYUhKdFVVTTRWR3BsTm5KcU9VbFpkRFZRWTFNeWVFNXZORVZRYkRkTFdFOVpRekZ0V0UxSmR4SVhUVzE0YTJGTE5sZElaWFUzT1hVNFVHZzBiV3h2VVdjYUlrRkdUVUZIUjNKaVlWRlRRV2RHVGtadFMweFBaMjlYTFU5d2EzZHNjak40VVZFIiwiZmN2IjoiMyIsImVpIjoiTW14a2FLNldIZXU3OXU4UGg0bWxvUWciLCJxYyI6ImN3WEJ3UTJBTUF3RFFONjhHTUdMTUV6VUdCb0JiV1ZGUld6UDNibzM1dHQxb2RMdXJIam9VVXlFLWJTV2RoSkRmWVpUOEJCTGRuMndFVGhxYUZ0LSIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgbnVtYmVyIGZvciBuZXR3b3JrIGhlYWx0aCBtZW1iZXI%2FIiwibGsiOiJjNU9TeVVzdEtjOHZ5bGJJU0UzTUtjbFF5RTNOVFVvdFVzZ3JCVkVBIiwiYnMiOiJjLU5LNE5MeExGYklTeTBwenlfS1ZzaElUY3dweVZCSVZNaE5UY2xNVGl4S1ZVaE1LVXZNSzBsTVQxVW95RW5NczVjNEUybWtLNldkU2J3V3JpQXUzZkNNeEJJRm9KNlNqRlNGdk5MY3BOUWloYlQ4SW5RamNsTkJNdllTdTFLTjVLUmtzRXBDZFFzd0FnQSIsImlkIjoiZmNfTW14a2FLNldIZXU3OXU4UGg0bWxvUWdfMyJ9"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Network Health Member Page",
+      "link": "https://networkhealth.com/legal/member_page",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://networkhealth.com/legal/member_page&ved=2ahUKEwiu99Sf5ZyOAxXrnf0HHYdEKYQQFnoECCQQAQ",
+      "displayed_link": "https://networkhealth.com \u203a legal \u203a member_page",
+      "favicon": "https://serpapi.com/searches/68646c3273d175da9a92a399/images/0be040d5dbe23f8077766b3e09fadf1ba7c303d779eceacf0f9c394c2a21349a.png",
+      "snippet": "Network Health has contracted with 1upHealth, an industry leader in health care data integrations, and a cutting-edge data standard called FHIR, to give you ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "Network Health"
+    },
+    {
+      "position": 2,
+      "title": "Accessing Your Health Information",
+      "link": "https://networkhealth.com/legal/accessing-your-health-information",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://networkhealth.com/legal/accessing-your-health-information&ved=2ahUKEwiu99Sf5ZyOAxXrnf0HHYdEKYQQFnoECCAQAQ",
+      "displayed_link": "https://networkhealth.com \u203a legal \u203a accessing-your-heal...",
+      "favicon": "https://serpapi.com/searches/68646c3273d175da9a92a399/images/0be040d5dbe23f8077766b3e09fadf1b6e1a1330a7127144ac358dcb5c6a897f.png",
+      "snippet": "1up Health is an industry leader in health care data integrations, and a cutting-edge data standard called FHIR. For additional information on the following ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "How Do I Access My Health...",
+            "link": "https://networkhealth.com/legal/accessing-your-health-information#:~:text=.-,How%20do%20I%20access%20my%20health%20information%3F"
+          },
+          {
+            "title": "Why Is Network Health...",
+            "link": "https://networkhealth.com/legal/accessing-your-health-information#:~:text=Why%20is%20Network%20Health%20allowing%20apps%20to%20connect%20to%20my%20health%20information%3F"
+          },
+          {
+            "title": "Where Can I Get More...",
+            "link": "https://networkhealth.com/legal/accessing-your-health-information#:~:text=Where%20can%20I%20get%20more%20information%3F"
+          }
+        ]
+      },
+      "source": "Network Health"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Network Health anywhere provider portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Network+Health+anywhere+provider+portal&sa=X&ved=2ahUKEwiu99Sf5ZyOAxXrnf0HHYdEKYQQ1QJ6BAgvEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health+anywhere+provider+portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "NHP provider portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=NHP+provider+portal&sa=X&ved=2ahUKEwiu99Sf5ZyOAxXrnf0HHYdEKYQQ1QJ6BAgoEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=NHP+provider+portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Network Health broker portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Network+Health+broker+portal&sa=X&ved=2ahUKEwiu99Sf5ZyOAxXrnf0HHYdEKYQQ1QJ6BAguEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health+broker+portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Network Health billing",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Network+Health+billing&sa=X&ved=2ahUKEwiu99Sf5ZyOAxXrnf0HHYdEKYQQ1QJ6BAgtEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health+billing&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Network Health Medicaid provider portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Network+Health+Medicaid+provider+portal&sa=X&ved=2ahUKEwiu99Sf5ZyOAxXrnf0HHYdEKYQQ1QJ6BAgrEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health+Medicaid+provider+portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Network Health find a Doctor",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Network+Health+find+a+Doctor&sa=X&ved=2ahUKEwiu99Sf5ZyOAxXrnf0HHYdEKYQQ1QJ6BAgqEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health+find+a+Doctor&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Network Health Choice",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Network+Health+Choice&sa=X&ved=2ahUKEwiu99Sf5ZyOAxXrnf0HHYdEKYQQ1QJ6BAgpEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health+Choice&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Network Health Pick Your Perks",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Network+Health+Pick+Your+Perks&sa=X&ved=2ahUKEwiu99Sf5ZyOAxXrnf0HHYdEKYQQ1QJ6BAgsEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Network+Health+Pick+Your+Perks&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22network+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

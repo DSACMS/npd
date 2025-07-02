@@ -1,0 +1,252 @@
+{
+  "search_metadata": {
+    "id": "6864647d231ffe1bb06576b4",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/c85c4e627e489005/6864647d231ffe1bb06576b4.json",
+    "created_at": "2025-07-01 22:43:09 UTC",
+    "processed_at": "2025-07-01 22:43:09 UTC",
+    "google_url": "https://www.google.com/search?q=%22blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/c85c4e627e489005/6864647d231ffe1bb06576b4.html",
+    "total_time_taken": 0.95
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"blue cross and blue shield of massachusetts Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"blue cross and blue shield of massachusetts Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 925,
+    "time_taken_displayed": 0.38,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "blue cross and blue shield of massachusetts Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "blue cross and blue shield of massachusetts Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQFnoECBcQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/6864647d231ffe1bb06576b4/images/3860a09ad61175691c589f839aa3aed6ad3267056132a7ffa453bceb793e520b.png",
+      "snippet": "Flexpa Endpoint Directory. Flexpa's directory is a comprehensive index of Payer Patient Access APIs and is the largest of its kind.",
+      "snippet_highlighted_words": [
+        "Flexpa's directory is a comprehensive index of Payer Patient Access APIs"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 2,
+      "title": "State Efforts to Coordinate Provider Directory Accuracy",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQFnoECCEQAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/6864647d231ffe1bb06576b4/images/3860a09ad61175691c589f839aa3aed6f7193ddfce39975b1f42a4afceba225e.png",
+      "date": "Dec 27, 2023",
+      "snippet": "This allows any third party application to quickly pull together provider directory information from any number of health plans. These FHIR APIs ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "plans",
+        "FHIR APIs"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 45
+          },
+          "extensions": [
+            "45 pages"
+          ]
+        }
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 3,
+      "title": "NEHEN Updates | MHDC",
+      "link": "https://www.mahealthdata.org/nehen-updates",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mahealthdata.org/nehen-updates&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQFnoECBoQAQ",
+      "displayed_link": "https://www.mahealthdata.org \u203a nehen-updates",
+      "favicon": "https://serpapi.com/searches/6864647d231ffe1bb06576b4/images/3860a09ad61175691c589f839aa3aed6ca17f099822fe8485415816002a8b526.png",
+      "snippet": "This new agreement will allow for re-tooling of our current arrangement with TPS to accommodate the plans we have underway for new API and FHIR based services ...",
+      "snippet_highlighted_words": [
+        "plans",
+        "API",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=blue+cross+and+blue+shield+of+massachusetts+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQ5t4CegQIGxAB"
+      },
+      "source": "Massachusetts Health Data Consortium"
+    },
+    {
+      "position": 4,
+      "title": "Health Information Technology Council Report to the ...",
+      "link": "https://malegislature.gov/Bills/192/HD4164.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://malegislature.gov/Bills/192/HD4164.pdf&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQFnoECB4QAQ",
+      "displayed_link": "https://malegislature.gov \u203a Bills",
+      "favicon": "https://serpapi.com/searches/6864647d231ffe1bb06576b4/images/3860a09ad61175691c589f839aa3aed65c97e9fcd6d74940bdd2ce4be25acd32.jpeg",
+      "snippet": "This new option will allow providers whose systems offer FHIR API-capable public health reporting to take advantage of the associated benefits as soon as ...",
+      "snippet_highlighted_words": [
+        "providers",
+        "FHIR API",
+        "advantage"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 24
+          },
+          "extensions": [
+            "24 pages"
+          ]
+        }
+      },
+      "source": "General Court of the Commonwealth of Massachusetts (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Data Governance Updates | MHDC",
+      "link": "https://www.mahealthdata.org/dgc-updates",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mahealthdata.org/dgc-updates&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQFnoECBkQAQ",
+      "displayed_link": "https://www.mahealthdata.org \u203a dgc-updates",
+      "favicon": "https://serpapi.com/searches/6864647d231ffe1bb06576b4/images/3860a09ad61175691c589f839aa3aed6af5141bbeda0e438913d11a3afcd25d6.png",
+      "snippet": "Our equity training project for Blue Cross Blue Shield of Massachusetts is moving into its final phase, with the third set of planned training sessions ...",
+      "snippet_highlighted_words": [
+        "Blue Cross Blue Shield",
+        "Massachusetts"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=blue+cross+and+blue+shield+of+massachusetts+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQ5t4CegQIHBAB"
+      },
+      "source": "Massachusetts Health Data Consortium"
+    },
+    {
+      "position": 6,
+      "title": "Streamlining Prior Authorization: Final Report ...",
+      "link": "https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQFnoECB0QAQ",
+      "displayed_link": "https://24315998.fs1.hubspotusercontent-na1.net \u203a ...",
+      "snippet": "The Mass Collaborative, a voluntary, open organization of more than 35 payers, providers, and trade associations, has prioritized various aspects of PA for over ...",
+      "snippet_highlighted_words": [
+        "Mass",
+        "providers"
+      ],
+      "source": "hubspotusercontent-na1.net"
+    },
+    {
+      "position": 7,
+      "title": "Amazon HealthLake Adds 3 New FHIR API Capabilities to ...",
+      "link": "https://hitconsultant.net/2023/06/08/amazon-healthlake-adds-3-new-fhir-api-capabilities/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hitconsultant.net/2023/06/08/amazon-healthlake-adds-3-new-fhir-api-capabilities/&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQFnoECBYQAQ",
+      "displayed_link": "https://hitconsultant.net \u203a Health IT",
+      "favicon": "https://serpapi.com/searches/6864647d231ffe1bb06576b4/images/3860a09ad61175691c589f839aa3aed6456a079aae146706f8578aafbd036deb.png",
+      "date": "Jun 8, 2023",
+      "snippet": "Amazon HealthLake SMART on FHIR, patient access API, and FHIR bulk data API export capabilities are currently available in preview.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "FHIR",
+        "API"
+      ],
+      "source": "HIT Consultant"
+    },
+    {
+      "position": 8,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQFnoECDUQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2019/03/04 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/6864647d231ffe1bb06576b4/images/3860a09ad61175691c589f839aa3aed60af984b57822aa503c292df50d57d82c.png",
+      "date": "Mar 4, 2019",
+      "snippet": "MA plans would be required to update provider directory information available through the API no later than 30 calendar days after changes ...",
+      "snippet_highlighted_words": [
+        "MA plans",
+        "provider directory",
+        "API"
+      ],
+      "missing": [
+        "massachusetts"
+      ],
+      "must_include": {
+        "word": "massachusetts",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=blue+cross+and+blue+shield+of+%22massachusetts%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQ5t4CegQINhAB"
+      },
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "The State of Payer Patient Access APIs - Flexpa - Substack",
+      "link": "https://flexpa.substack.com/p/the-state-of-payer-patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://flexpa.substack.com/p/the-state-of-payer-patient-access&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQFnoECDIQAQ",
+      "displayed_link": "8 likes \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/searches/6864647d231ffe1bb06576b4/images/3860a09ad61175691c589f839aa3aed60a243063b65e617077cc6ffed064ad2c.png",
+      "snippet": "This report will catalogue the landscape of Patient Access APIs and score various implementations. We hope that it will be useful to a variety of stakeholders.",
+      "snippet_highlighted_words": [
+        "APIs"
+      ],
+      "source": "Substack \u00b7 Flexpa"
+    },
+    {
+      "position": 10,
+      "title": "Advancing Prior Authorization Automation Across ...",
+      "link": "https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/prior_authorization_report_5.23.23_vfinal6.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/prior_authorization_report_5.23.23_vfinal6.pdf&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQFnoECC8QAQ",
+      "displayed_link": "https://24315998.fs1.hubspotusercontent-na1.net \u203a ...",
+      "date": "Apr 18, 2023",
+      "snippet": "It requires these payers to build and maintain a Fast Healthcare Interoperability Resource (FHIR) Prior Authorization. Requirements, ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "hubspotusercontent-na1.net"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=fWRkaKOoOJ-L9u8P2NO32Ac&start=10&sa=N&sstk=Ac65TH7JMtSaXTi1OmYk-2eXuTtRlAzgVWJf5vpSF8uubMpXbmkfdTI4CTviPRtW0EYo1ORY7OKavTqYbY1YZaxU8obnCarGyhPh4g&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=fWRkaKOoOJ-L9u8P2NO32Ac&start=10&sa=N&sstk=Ac65TH7JMtSaXTi1OmYk-2eXuTtRlAzgVWJf5vpSF8uubMpXbmkfdTI4CTviPRtW0EYo1ORY7OKavTqYbY1YZaxU8obnCarGyhPh4g&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=fWRkaKOoOJ-L9u8P2NO32Ac&start=20&sa=N&sstk=Ac65TH7JMtSaXTi1OmYk-2eXuTtRlAzgVWJf5vpSF8uubMpXbmkfdTI4CTviPRtW0EYo1ORY7OKavTqYbY1YZaxU8obnCarGyhPh4g&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=fWRkaKOoOJ-L9u8P2NO32Ac&start=30&sa=N&sstk=Ac65TH7JMtSaXTi1OmYk-2eXuTtRlAzgVWJf5vpSF8uubMpXbmkfdTI4CTviPRtW0EYo1ORY7OKavTqYbY1YZaxU8obnCarGyhPh4g&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=fWRkaKOoOJ-L9u8P2NO32Ac&start=40&sa=N&sstk=Ac65TH7JMtSaXTi1OmYk-2eXuTtRlAzgVWJf5vpSF8uubMpXbmkfdTI4CTviPRtW0EYo1ORY7OKavTqYbY1YZaxU8obnCarGyhPh4g&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=fWRkaKOoOJ-L9u8P2NO32Ac&start=50&sa=N&sstk=Ac65TH7JMtSaXTi1OmYk-2eXuTtRlAzgVWJf5vpSF8uubMpXbmkfdTI4CTviPRtW0EYo1ORY7OKavTqYbY1YZaxU8obnCarGyhPh4g&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=fWRkaKOoOJ-L9u8P2NO32Ac&start=60&sa=N&sstk=Ac65TH7JMtSaXTi1OmYk-2eXuTtRlAzgVWJf5vpSF8uubMpXbmkfdTI4CTviPRtW0EYo1ORY7OKavTqYbY1YZaxU8obnCarGyhPh4g&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=fWRkaKOoOJ-L9u8P2NO32Ac&start=70&sa=N&sstk=Ac65TH7JMtSaXTi1OmYk-2eXuTtRlAzgVWJf5vpSF8uubMpXbmkfdTI4CTviPRtW0EYo1ORY7OKavTqYbY1YZaxU8obnCarGyhPh4g&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=fWRkaKOoOJ-L9u8P2NO32Ac&start=80&sa=N&sstk=Ac65TH7JMtSaXTi1OmYk-2eXuTtRlAzgVWJf5vpSF8uubMpXbmkfdTI4CTviPRtW0EYo1ORY7OKavTqYbY1YZaxU8obnCarGyhPh4g&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=fWRkaKOoOJ-L9u8P2NO32Ac&start=90&sa=N&sstk=Ac65TH7JMtSaXTi1OmYk-2eXuTtRlAzgVWJf5vpSF8uubMpXbmkfdTI4CTviPRtW0EYo1ORY7OKavTqYbY1YZaxU8obnCarGyhPh4g&ved=2ahUKEwjj2onz3ZyOAxWfhf0HHdjpDXsQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+and+blue+shield+of+massachusetts+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

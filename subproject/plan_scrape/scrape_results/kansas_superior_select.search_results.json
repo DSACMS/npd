@@ -1,0 +1,317 @@
+{
+  "search_metadata": {
+    "id": "68646cfd0fa72e6866ae5b8d",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/7c22f1a159428d4c/68646cfd0fa72e6866ae5b8d.json",
+    "created_at": "2025-07-01 23:19:25 UTC",
+    "processed_at": "2025-07-01 23:19:25 UTC",
+    "google_url": "https://www.google.com/search?q=kansas+superior+select+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=kansas+superior+select+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/7c22f1a159428d4c/68646cfd0fa72e6866ae5b8d.html",
+    "total_time_taken": 1.01
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "kansas superior select Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "kansas superior select Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 49,
+    "time_taken_displayed": 0.23,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQFnoECBYQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646cfd0fa72e6866ae5b8d/images/159393c5714743bd1bc1c785a85b2854d52cc3a2c0c84ce14282a4db9a1b3e71.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 2,
+      "title": "CS Kansas Draft Protest Letter 6-3-2024 (908617-4).DOCX",
+      "link": "https://admin.ks.gov/media/cms/CareSource_Bid_Protest_5d4febae93561.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://admin.ks.gov/media/cms/CareSource_Bid_Protest_5d4febae93561.pdf&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQFnoECBcQAQ",
+      "displayed_link": "https://admin.ks.gov \u203a media \u203a cms",
+      "favicon": "https://serpapi.com/searches/68646cfd0fa72e6866ae5b8d/images/159393c5714743bd1bc1c785a85b28547541cb855a3a004a8249d028effb1da4.png",
+      "date": "Jun 3, 2024",
+      "snippet": "... provider directory, including information included in the directory ... (FHIR). 2676. 2677. 4. CareInsights: Our modern data platform ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 270
+          },
+          "extensions": [
+            "270 pages"
+          ]
+        }
+      },
+      "source": "Kansas Department of Administration (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Health Information Exchange (HIE) Operations and ...",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Conduent/CONDUENT%20Redacted%20Technical%20Proposal.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Conduent/CONDUENT%2520Redacted%2520Technical%2520Proposal.pdf&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQFnoECCAQAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a pdf \u203a Conduent",
+      "favicon": "https://serpapi.com/searches/68646cfd0fa72e6866ae5b8d/images/159393c5714743bd1bc1c785a85b285485802510898384948fe77e222fc7a76a.png",
+      "date": "Jul 9, 2024",
+      "snippet": "... API, Preferred Drug. List API, and Provider Directory API. Our ... FHIR API. If the beneficiary chooses to use that application, they ...",
+      "snippet_highlighted_words": [
+        "API",
+        "API",
+        "Provider Directory API",
+        "FHIR API"
+      ],
+      "source": "Gobierno de Puerto Rico (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Marketplace",
+      "link": "https://www.ntst.com/marketplace",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ntst.com/marketplace&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQFnoECBoQAQ",
+      "displayed_link": "https://www.ntst.com \u203a marketplace",
+      "favicon": "https://serpapi.com/searches/68646cfd0fa72e6866ae5b8d/images/159393c5714743bd1bc1c785a85b28541364dccca935d0f4feba20be62691c4a.png",
+      "snippet": "Provider Directory. Radiology Solutions. Referral Management. Reporting ... Our ONC Certified FHIR APIs drive simplicity and scalability, empowering ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "select"
+      ],
+      "must_include": {
+        "word": "select",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=kansas+superior+%22select%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQ5t4CegQIJBAB"
+      },
+      "source": "Netsmart Technologies"
+    },
+    {
+      "position": 5,
+      "title": "Helpful Hints - Confluence - HL7.org",
+      "link": "https://confluence.hl7.org/download/attachments/81018510/ProjectBallotHealthMetrics_2022JanWGM_20211221.xlsx?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/81018510/ProjectBallotHealthMetrics_2022JanWGM_20211221.xlsx%3Fapi%3Dv2&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQFnoECBUQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a attachments \u203a api=v2",
+      "favicon": "https://serpapi.com/searches/68646cfd0fa72e6866ae5b8d/images/159393c5714743bd1bc1c785a85b285435da6e2715a939646fe61e61bdf8b628.png",
+      "snippet": "... FHIR Infrastructure Work Group, FHIR Management Group, Clinical, We will ... Provider Directory, Endpoint Directory, Utilizes the work done for the ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "HL7.org"
+    },
+    {
+      "position": 6,
+      "title": "Transparency in Coverage",
+      "link": "https://www.federalregister.gov/documents/2019/11/27/2019-25011/transparency-in-coverage",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2019/11/27/2019-25011/transparency-in-coverage&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQFnoECBsQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2019/11/27 \u203a transpar...",
+      "favicon": "https://serpapi.com/searches/68646cfd0fa72e6866ae5b8d/images/159393c5714743bd1bc1c785a85b2854db41262a72982b8902ed90c873c5e773.png",
+      "date": "Nov 27, 2019",
+      "snippet": "... FHIR-based API. The Departments are soliciting comment on the ... provider directory tools. This may include information from sources ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "provider directory"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "American Health Law Association The Year in Review ...",
+      "link": "https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQFnoECBwQAQ",
+      "displayed_link": "https://www.bradley.com \u203a publications \u203a 2022/02",
+      "favicon": "https://serpapi.com/searches/68646cfd0fa72e6866ae5b8d/images/159393c5714743bd1bc1c785a85b285422a5a41664b63551ba0db31d7ea9418a.png",
+      "date": "Feb 17, 2022",
+      "snippet": "... FHIR\u00ae Roadmap for \u00b7 TEFCA Exchange (January 2022). The TEF is a set of ... Provider Directory API (applicable January 1, 2021, with ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 315
+          },
+          "extensions": [
+            "315 pages"
+          ]
+        }
+      },
+      "source": "Bradley Arant"
+    },
+    {
+      "position": 8,
+      "title": "2023 UnitedHealthcare Care Provider Administrative Guide",
+      "link": "https://www.mypreferredprovider.com/media/w3ylnrgu/2023-uhc-administrative-guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mypreferredprovider.com/media/w3ylnrgu/2023-uhc-administrative-guide.pdf&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQFnoECDYQAQ",
+      "displayed_link": "https://www.mypreferredprovider.com \u203a media",
+      "favicon": "https://serpapi.com/searches/68646cfd0fa72e6866ae5b8d/images/159393c5714743bd1bc1c785a85b285430c4e5825d077fc55b834375eac001b4.png",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify information in ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 421
+          },
+          "extensions": [
+            "421 pages"
+          ]
+        }
+      },
+      "source": "My Preferred Provider"
+    },
+    {
+      "position": 9,
+      "title": "Attachment A: Cost Proposal",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Konza/Puerto%20Rico%20Medicaid%20Program_2024-PRMP-HIE_Final_2024_V2.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Konza/Puerto%2520Rico%2520Medicaid%2520Program_2024-PRMP-HIE_Final_2024_V2.pdf&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQFnoECDsQAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a pdf \u203a Konza",
+      "favicon": "https://serpapi.com/searches/68646cfd0fa72e6866ae5b8d/images/159393c5714743bd1bc1c785a85b28543ce98e8dbb0d56db1e6a6a32d8d921d3.png",
+      "date": "Jul 11, 2024",
+      "snippet": "KONZA is building out its FHIR API capabilities that enables REST-based API traffic through secure authentication, storage, acquisition, and ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 78
+          },
+          "extensions": [
+            "78 pages"
+          ]
+        }
+      },
+      "source": "Gobierno de Puerto Rico (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "SoonerCare Comprehensive Managed Care Program",
+      "link": "https://oklahoma.gov/content/dam/ok/en/okhca/documents/a0600/25392.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://oklahoma.gov/content/dam/ok/en/okhca/documents/a0600/25392.pdf&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQFnoECDwQAQ",
+      "displayed_link": "https://oklahoma.gov \u203a dam \u203a okhca \u203a documents",
+      "favicon": "https://serpapi.com/searches/68646cfd0fa72e6866ae5b8d/images/159393c5714743bd1bc1c785a85b28543f9dda5c45aa2042f5fc240ffcae71e3.png",
+      "date": "Mar 9, 2020",
+      "snippet": "... provider directory, along with the ability to provide a hard copy by ... (FHIR) interoperability specifications. This bidirectional.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 764
+          },
+          "extensions": [
+            "764 pages"
+          ]
+        }
+      },
+      "source": "oklahoma.gov"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "UHC provider manual 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+provider+manual+2025&sa=X&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+provider+manual+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC Medicare Advantage timely filing limit",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+Medicare+Advantage+timely+filing+limit&sa=X&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+Medicare+Advantage+timely+filing+limit&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc Medicare advantage Timely filing limit for corrected claims",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&sa=X&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC care survey 25 1",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+care+survey+25+1&sa=X&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+care+survey+25+1&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC Provider Portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+Provider+Portal&sa=X&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQ1QJ6BAgwEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+Provider+Portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc timely filing limit 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Uhc+timely+filing+limit+2025&sa=X&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+timely+filing+limit+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC Medicare Advantage timely filing limit 2024",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+Medicare+Advantage+timely+filing+limit+2024&sa=X&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQ1QJ6BAguEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+Medicare+Advantage+timely+filing+limit+2024&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "P.O. Box 31386 Salt Lake City UT 84131",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=P.O.+Box+31386+Salt+Lake+City+UT+84131&sa=X&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQ1QJ6BAgvEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=P.O.+Box+31386+Salt+Lake+City+UT+84131&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=kansas+superior+select+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=_mxkaI_gE6aK7NYPxYfPkQg&start=10&sa=N&sstk=Ac65TH7czrT-MJknWGbIaQPBI2Mv7oDm9_akf2_SrS1f3wkUaeo_x2vMgFPsNqRvbbgp-YKg6K4BM13Vvw-JGwxMnENpDT0zuAOUEw&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQ8NMDegQICRAI",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=kansas+superior+select+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=_mxkaI_gE6aK7NYPxYfPkQg&start=10&sa=N&sstk=Ac65TH7czrT-MJknWGbIaQPBI2Mv7oDm9_akf2_SrS1f3wkUaeo_x2vMgFPsNqRvbbgp-YKg6K4BM13Vvw-JGwxMnENpDT0zuAOUEw&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=kansas+superior+select+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=_mxkaI_gE6aK7NYPxYfPkQg&start=20&sa=N&sstk=Ac65TH7czrT-MJknWGbIaQPBI2Mv7oDm9_akf2_SrS1f3wkUaeo_x2vMgFPsNqRvbbgp-YKg6K4BM13Vvw-JGwxMnENpDT0zuAOUEw&ved=2ahUKEwiP1-6A5pyOAxUmBdsEHcXDM4IQ8tMDegQICRAG"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=kansas+superior+select+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=kansas+superior+select+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=kansas+superior+select+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=kansas+superior+select+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "search_metadata": {
+    "id": "686464c65e3494cf471ac41d",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/eaff182523f86bf8/686464c65e3494cf471ac41d.json",
+    "created_at": "2025-07-01 22:44:22 UTC",
+    "processed_at": "2025-07-01 22:44:22 UTC",
+    "google_url": "https://www.google.com/search?q=%22hta+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22hta+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/eaff182523f86bf8/686464c65e3494cf471ac41d.html",
+    "total_time_taken": 6.0
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"hta holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"hta holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 0,
+    "time_taken_displayed": 0.13,
+    "organic_results_state": "Fully empty",
+    "query_feedback": {
+      "title": "Your search did not match any documents"
+    }
+  },
+  "error": "Google hasn't returned any results for this query."
+}

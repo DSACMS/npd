@@ -1,0 +1,222 @@
+{
+  "search_metadata": {
+    "id": "68646d2b421b085d7f54748b",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/bff45dbccf39a83a/68646d2b421b085d7f54748b.json",
+    "created_at": "2025-07-01 23:20:11 UTC",
+    "processed_at": "2025-07-01 23:20:11 UTC",
+    "google_url": "https://www.google.com/search?q=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/bff45dbccf39a83a/68646d2b421b085d7f54748b.html",
+    "total_time_taken": 1.88
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "pacificsource Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "pacificsource Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 4,
+    "time_taken_displayed": 0.17,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_images": [
+    {
+      "source": "https://www.oregon.gov/oha/HPA/OHIT/Documents/PCS_CO_CG_MP_LN2024HealthITRoadmap.pdf",
+      "thumbnail": "https://serpapi.com/searches/68646d2b421b085d7f54748b/images/325f0448d84b2aebb94b7b33143cd8e6849a6758ed382415b133d9b03712cb81.jpeg",
+      "original": "x-raw-image:///6a3fe2878c9a6a98136ca6d4e174add57ec667eef510e923b5335210c6f84dc9",
+      "title": "2024 CCO Health IT Roadmap",
+      "source_name": "Oregon.gov"
+    },
+    {
+      "source": "https://www.oregon.gov/oha/HPA/OHIT/Documents/PCS_CO_CG_MP_LN2024HealthITRoadmap.pdf",
+      "thumbnail": "https://serpapi.com/searches/68646d2b421b085d7f54748b/images/325f0448d84b2aeb18b1fb6019d713d3a636d501dad2b9837a826fa10fac6167.jpeg",
+      "original": "x-raw-image:///25526d640b8e4d245ba75779160cac5ea013c3ef7f513f9996176a82c571c662",
+      "title": "2024 CCO Health IT Roadmap",
+      "source_name": "Oregon.gov"
+    },
+    {
+      "source": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/20240201_HITOCApprovedChanges_DraftOregonsStrategicPlanforHealthIT2024-2028.pdf",
+      "thumbnail": "https://serpapi.com/searches/68646d2b421b085d7f54748b/images/325f0448d84b2aeb6bea4449c920f270522096c7278b8506c8ee32b92b3ad749.jpeg",
+      "original": "x-raw-image:///0d30e06e0c9a3024ba907e0e4f9a86947fd158211c534687a935f49beec25b22",
+      "title": "Oregon's Strategic Plan for Health Information Technology ...",
+      "source_name": "Oregon.gov"
+    },
+    {
+      "source": "https://www.oregon.gov/oha/HPA/OHIT/Documents/PCS_CO_CG_MP_LN2024HealthITRoadmap.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjH9hDbOxCx4IWSQpTl2QseeBeeJFsJQlBTHZg_hyb3H-JotIr1Ryf1oRQHg&s",
+      "original": "x-raw-image:///14d33674d56254ab0ab98591e61f5b4f5d7b8cff9e07d942c9d2c7e08deed0f2",
+      "title": "2024 CCO Health IT Roadmap",
+      "source_name": "Oregon.gov"
+    },
+    {
+      "source": "https://www.oregon.gov/oha/HPA/OHIT/Meeting%20Documents/HITAG_HCOP_Slides_20190905.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YBI1NrI_oSFy87qhNs9_RU5ZhLlTlbAbCzRV63zujj0BC7zeP-TjkbA7NA&s",
+      "original": "x-raw-image:///ed7753dc1f7aa563e3905abed5f8bc635ead5727418ba31df8e83208644825bb",
+      "title": "Health Information Technology Advisory Group",
+      "source_name": "Oregon.gov"
+    },
+    {
+      "source": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/HITOCMeetingMaterials_202008.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNNMdeEOsUuRxOTkxlBXGg7vRj90N-wTvzTRiYKwW5F7_ZZgjDGFES7I4&s",
+      "original": "x-raw-image:///9c44ac35997eadd7764c387cfb594498d6660e4083e86c6633c9f468320d15d7",
+      "title": "Health Information Technology Oversight Council",
+      "source_name": "Oregon.gov"
+    },
+    {
+      "source": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/20240201_HITOCApprovedChanges_DraftOregonsStrategicPlanforHealthIT2024-2028.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCkJ0RhqLjzyhtT8wfuAMSRG2JNNNXL-17L7P-qCyeyNQ4yQ_M0CZc9pg&s",
+      "original": "x-raw-image:///dc885f34bf01813bcceacc0bf2dc22507b53db9746ba96cceb7914840840bcb1",
+      "title": "Oregon's Strategic Plan for Health Information Technology ...",
+      "source_name": "Oregon.gov"
+    },
+    {
+      "source": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/2016-0609%20Materials.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaI1t5bGSzygDdsbY3_fWbX-2Nti8x-J3mrg0PWHR0CYijaHVJ_FXmxXEJKg&s",
+      "original": "x-raw-image:///fca14fab89bbdf2c16e50a8db74da3bf418078ae423a619536084497b961f1b6",
+      "title": "Health Information Technology Oversight Council",
+      "source_name": "Oregon.gov"
+    },
+    {
+      "source": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/HITOC_MeetingMaterials_20190404.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbVcwgUa7z6UXzVRf4-QCI-kDyQ2agwLMOfw34i8Oep7Pa3SGoRqjvWrr9Rg&s",
+      "original": "x-raw-image:///91cf49f867dc7581c0018e2f2cf6db4a51bef2db7264417d10416c00f56f2a8f",
+      "title": "Health Information Technology Oversight Council",
+      "source_name": "Oregon.gov"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Does medicare.gov have an API?",
+      "snippet": "from Centers for Medicare & Medicaid Services. Use our collection of APIs, datasets, frameworks, and style guides to develop applications that help people get the services and benefits they rely on.",
+      "title": "CMS Developer Tools",
+      "link": "https://developer.cms.gov/#:~:text=from%20Centers%20for%20Medicare%20%26%20Medicaid,and%20benefits%20they%20rely%20on.",
+      "displayed_link": null,
+      "source_logo": "https://serpapi.com/searches/68646d2b421b085d7f54748b/images/08fb14f6c7808ff97f40ab83403c657985ebb218dd079c75bfc48c542ecf0987.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRlJIVjVXRE5mWTFGME9HeFphMU5QWjFkcmRVbGtSMjFTWW01amN6VmZNRzQ0TXpBNVEwVkVVWFF4V214RFNtTkZOVWhRUlVobldrVjVTMjF2Y1hKbFVGbDNaa2hrT1MxU1ZWcEVURmxsY1ZVdFYxOTJXbWxGYUhKNlFSSVhURmN4YTJGUWRWTkRTMHhGZG5Jd1VHeGlMWGx0UVRBYUlrRkdUVUZIUjNKdGJHMWljazVKVVcxeWIzRXROa0ZvYjFFeWVqZGZWVzVzYTFFIiwiZmN2IjoiMyIsImVpIjoiTFcxa2FQdVNDS0xFdnIwUGxiLXltQTAiLCJxYyI6IkNqeHdZV05wWm1samMyOTFjbU5sSUcxbFpHbGpZWEpsSUdGa2RtRnVkR0ZuWlNCd2NtOTJhV1JsY2lCa2FYSmxZM1J2Y25rZ1lYQnBJR1pvYVhJUUFIMTRDMThfIiwicXVlc3Rpb24iOiJEb2VzIG1lZGljYXJlLmdvdiBoYXZlIGFuIEFQST8iLCJsayI6IkdoMWtiMlZ6SUcxbFpHbGpZWEpsSUdkdmRpQm9ZWFpsSUdGdUlHRndhUSIsImJzIjoiYy1OeTRaSnp5VTh0VnNoTlRjbE1UaXhLMVV2UEwxUElTQ3hMVlVqTVUzQU04TFNYbUN0aEpDOGxtNEtzU0FGWlVXSkJKbGNZbDBwNFJyNUNmbmxlc1VKQVluSm1XbVp5Y0g1cFVYS3FRa1pxWWs1SmhrSkJUbUplc2IzRUZoNGpiU25OQW9pS1lrd1ZDZ1ZBMF9OS0ZKTHpjd3NTOHlvRkdBRSIsImlkIjoiZmNfTFcxa2FQdVNDS0xFdnIwUGxiLXltQTBfMSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRlJIVjVXRE5mWTFGME9HeFphMU5QWjFkcmRVbGtSMjFTWW01amN6VmZNRzQ0TXpBNVEwVkVVWFF4V214RFNtTkZOVWhRUlVobldrVjVTMjF2Y1hKbFVGbDNaa2hrT1MxU1ZWcEVURmxsY1ZVdFYxOTJXbWxGYUhKNlFSSVhURmN4YTJGUWRWTkRTMHhGZG5Jd1VHeGlMWGx0UVRBYUlrRkdUVUZIUjNKdGJHMWljazVKVVcxeWIzRXROa0ZvYjFFeWVqZGZWVzVzYTFFIiwiZmN2IjoiMyIsImVpIjoiTFcxa2FQdVNDS0xFdnIwUGxiLXltQTAiLCJxYyI6IkNqeHdZV05wWm1samMyOTFjbU5sSUcxbFpHbGpZWEpsSUdGa2RtRnVkR0ZuWlNCd2NtOTJhV1JsY2lCa2FYSmxZM1J2Y25rZ1lYQnBJR1pvYVhJUUFIMTRDMThfIiwicXVlc3Rpb24iOiJEb2VzIG1lZGljYXJlLmdvdiBoYXZlIGFuIEFQST8iLCJsayI6IkdoMWtiMlZ6SUcxbFpHbGpZWEpsSUdkdmRpQm9ZWFpsSUdGdUlHRndhUSIsImJzIjoiYy1OeTRaSnp5VTh0VnNoTlRjbE1UaXhLMVV2UEwxUElTQ3hMVlVqTVUzQU04TFNYbUN0aEpDOGxtNEtzU0FGWlVXSkJKbGNZbDBwNFJyNUNmbmxlc1VKQVluSm1XbVp5Y0g1cFVYS3FRa1pxWWs1SmhrSkJUbUplc2IzRUZoNGpiU25OQW9pS1lrd1ZDZ1ZBMF9OS0ZKTHpjd3NTOHlvRkdBRSIsImlkIjoiZmNfTFcxa2FQdVNDS0xFdnIwUGxiLXltQTBfMSJ9"
+    },
+    {
+      "question": "Who owns PacificSource health plans?",
+      "snippet": "Who acquired PacificSource Health Plans? PacificSource Health Plans was acquired by Legacy Health (Portland).",
+      "title": "PacificSource Health Plans 2025 Company Profile - PitchBook",
+      "link": "https://pitchbook.com/profiles/company/51534-91#:~:text=Who%20acquired%20PacificSource%20Health%20Plans,by%20Legacy%20Health%20(Portland).",
+      "displayed_link": "https://pitchbook.com \u203a profiles \u203a company",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuS5WB-wLZUxWGRYoaxBKgyv6j3MvRMk11THACAXgaw&s",
+      "source_logo": "https://serpapi.com/searches/68646d2b421b085d7f54748b/images/08fb14f6c7808ff97f40ab83403c6579c8d9e44903592ef20093f4b9cffa6a33.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRlJIVjVXRE5mWTFGME9HeFphMU5QWjFkcmRVbGtSMjFTWW01amN6VmZNRzQ0TXpBNVEwVkVVWFF4V214RFNtTkZOVWhRUlVobldrVjVTMjF2Y1hKbFVGbDNaa2hrT1MxU1ZWcEVURmxsY1ZVdFYxOTJXbWxGYUhKNlFSSVhURmN4YTJGUWRWTkRTMHhGZG5Jd1VHeGlMWGx0UVRBYUlrRkdUVUZIUjNKdGJHMWljazVKVVcxeWIzRXROa0ZvYjFFeWVqZGZWVzVzYTFFIiwiZmN2IjoiMyIsImVpIjoiTFcxa2FQdVNDS0xFdnIwUGxiLXltQTAiLCJxYyI6IkNqeHdZV05wWm1samMyOTFjbU5sSUcxbFpHbGpZWEpsSUdGa2RtRnVkR0ZuWlNCd2NtOTJhV1JsY2lCa2FYSmxZM1J2Y25rZ1lYQnBJR1pvYVhJUUFIMTRDMThfIiwicXVlc3Rpb24iOiJXaG8gb3ducyBQYWNpZmljU291cmNlIGhlYWx0aCBwbGFucz8iLCJsayI6IkdpbHdZV05wWm1samMyOTFjbU5sSUdobFlXeDBhQ0J3YkdGdWN5QndZWEpsYm5RZ1kyOXRjR0Z1ZVEiLCJicyI6ImMtTnk0Wkp6eVU4dFZzaE5UY2xNVGl4SzFVdlBMMVBJU0N4TFZVak1VM0FNOExTWG1DdGhKQzhsbTRLc1NBRlpVV0pCSmxjWWwwcDRScjVDZm5sZXNVSkFZbkptV21aeWNINXBVWEtxUWtacVlrNUpoa0pCVG1KZXNiM0VGaDRqYlNuTkFvaUtZa3dWQ2dWQTBfTktGSkx6Y3dzUzh5b0ZHQUUiLCJpZCI6ImZjX0xXMWthUHVTQ0tMRXZyMFBsYi15bUEwXzEifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRlJIVjVXRE5mWTFGME9HeFphMU5QWjFkcmRVbGtSMjFTWW01amN6VmZNRzQ0TXpBNVEwVkVVWFF4V214RFNtTkZOVWhRUlVobldrVjVTMjF2Y1hKbFVGbDNaa2hrT1MxU1ZWcEVURmxsY1ZVdFYxOTJXbWxGYUhKNlFSSVhURmN4YTJGUWRWTkRTMHhGZG5Jd1VHeGlMWGx0UVRBYUlrRkdUVUZIUjNKdGJHMWljazVKVVcxeWIzRXROa0ZvYjFFeWVqZGZWVzVzYTFFIiwiZmN2IjoiMyIsImVpIjoiTFcxa2FQdVNDS0xFdnIwUGxiLXltQTAiLCJxYyI6IkNqeHdZV05wWm1samMyOTFjbU5sSUcxbFpHbGpZWEpsSUdGa2RtRnVkR0ZuWlNCd2NtOTJhV1JsY2lCa2FYSmxZM1J2Y25rZ1lYQnBJR1pvYVhJUUFIMTRDMThfIiwicXVlc3Rpb24iOiJXaG8gb3ducyBQYWNpZmljU291cmNlIGhlYWx0aCBwbGFucz8iLCJsayI6IkdpbHdZV05wWm1samMyOTFjbU5sSUdobFlXeDBhQ0J3YkdGdWN5QndZWEpsYm5RZ1kyOXRjR0Z1ZVEiLCJicyI6ImMtTnk0Wkp6eVU4dFZzaE5UY2xNVGl4SzFVdlBMMVBJU0N4TFZVak1VM0FNOExTWG1DdGhKQzhsbTRLc1NBRlpVV0pCSmxjWWwwcDRScjVDZm5sZXNVSkFZbkptV21aeWNINXBVWEtxUWtacVlrNUpoa0pCVG1KZXNiM0VGaDRqYlNuTkFvaUtZa3dWQ2dWQTBfTktGSkx6Y3dzUzh5b0ZHQUUiLCJpZCI6ImZjX0xXMWthUHVTQ0tMRXZyMFBsYi15bUEwXzEifQ%3D%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability overview",
+      "link": "https://pacificsource.com/resources/interoperability-and-transparency/interoperability-resources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pacificsource.com/resources/interoperability-and-transparency/interoperability-resources&ved=2ahUKEwi73ZeX5pyOAxUioq8BHZWfDNMQFnoECBQQAQ",
+      "displayed_link": "https://pacificsource.com \u203a interoperability-resources",
+      "favicon": "https://serpapi.com/searches/68646d2b421b085d7f54748b/images/e7e15f6395375aacb7c16e2e5d4787863e78138c9447800af4e1b6ea917cb9a9.png",
+      "snippet": "HL7 FHIR ... In accordance with Federal regulations , PacificSource makes provider directory and formulary data available via a collection of publicly accessible ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "PacificSource",
+        "provider directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=pacificsource+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi73ZeX5pyOAxUioq8BHZWfDNMQ5t4CegQIHBAB"
+      },
+      "source": "PacificSource"
+    },
+    {
+      "position": 2,
+      "title": "Oregon's Strategic Plan for Health Information Technology ...",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/20240201_HITOCApprovedChanges_DraftOregonsStrategicPlanforHealthIT2024-2028.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%2520Meeting%2520Docs/20240201_HITOCApprovedChanges_DraftOregonsStrategicPlanforHealthIT2024-2028.pdf&ved=2ahUKEwi73ZeX5pyOAxUioq8BHZWfDNMQFnoECBIQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HPA \u203a OHIT-HITOC",
+      "favicon": "https://serpapi.com/searches/68646d2b421b085d7f54748b/images/e7e15f6395375aacb7c16e2e5d478786651856df808b257e9463540a89f66aa1.png",
+      "date": "Feb 1, 2024",
+      "snippet": "expecting the approach will accelerate FHIR adoption.27 ... and Provider Directory API and to participate in Payer-to-Payer Data Exchange.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 3,
+      "title": "Health Information Exchange (HIE) Workgroup",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HIEWGMeetingDocs/20220516_HIEWG_0.1May2022HIEWGSlides.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/HIEWGMeetingDocs/20220516_HIEWG_0.1May2022HIEWGSlides.pdf&ved=2ahUKEwi73ZeX5pyOAxUioq8BHZWfDNMQFnoECBMQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HIEWGMeetingDocs",
+      "favicon": "https://serpapi.com/searches/68646d2b421b085d7f54748b/images/e7e15f6395375aacb7c16e2e5d4787869cd63be23e4c8c22c52ce1c2322862b1.png",
+      "date": "May 16, 2022",
+      "snippet": "HIT Portfolio included Common Credentialing, Provider Directory and Clinical Quality ... FHIR: Fast Healthcare Interoperability Resources (a ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 4,
+      "title": "Meeting: Oregon CIE Advisory Group",
+      "link": "https://ohlc.org/wp-content/uploads/2020/02/Feb-20-2020-CIE-Advisory-Group-Handouts.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ohlc.org/wp-content/uploads/2020/02/Feb-20-2020-CIE-Advisory-Group-Handouts.pdf&ved=2ahUKEwi73ZeX5pyOAxUioq8BHZWfDNMQFnoECBEQAQ",
+      "displayed_link": "https://ohlc.org \u203a wp-content \u203a uploads \u203a 2020/02",
+      "favicon": "https://serpapi.com/searches/68646d2b421b085d7f54748b/images/e7e15f6395375aacb7c16e2e5d4787863c1991d56d19ef9ad651ca392f77b5f6.png",
+      "date": "Feb 20, 2020",
+      "snippet": "\u2022 The Oregon Provider Directory (OPD) will be a single, trusted data ... HL7, FHIR, X12, ven- dor APIs, others upon request. APIs, SMART ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Oregon Health Leadership Council"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 4 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=pacificsource+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

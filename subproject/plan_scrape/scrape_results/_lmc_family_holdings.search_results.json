@@ -1,0 +1,296 @@
+{
+  "search_metadata": {
+    "id": "686464e3cf8870ef74cd0f27",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/3eefa801c449dd2c/686464e3cf8870ef74cd0f27.json",
+    "created_at": "2025-07-01 22:44:51 UTC",
+    "processed_at": "2025-07-01 22:44:51 UTC",
+    "google_url": "https://www.google.com/search?q=%22lmc+family+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22lmc+family+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/3eefa801c449dd2c/686464e3cf8870ef74cd0f27.html",
+    "total_time_taken": 5.01
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"lmc family holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"lmc family holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 662,
+    "time_taken_displayed": 0.4,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    },
+    "showing_results_for": "lmc family holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "lmc family holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability Product Documentation - Using",
+      "link": "https://developer.interop.molinahealthcare.com/content/Interoperability%20Product%20Documentation.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.interop.molinahealthcare.com/content/Interoperability%2520Product%2520Documentation.pdf&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQFnoECBcQAQ",
+      "displayed_link": "https://developer.interop.molinahealthcare.com \u203a c...",
+      "snippet": "Welcome to the API Developer Portal! Here you can learn the capabilities of the Developer Portal and our FHIR APIs, and get started on building FHIR-based.",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR APIs",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 780
+          },
+          "extensions": [
+            "780 pages"
+          ]
+        }
+      },
+      "missing": [
+        "holdings",
+        "Advantage"
+      ],
+      "source": "Molina Healthcare"
+    },
+    {
+      "position": 2,
+      "title": "open.epic :: Endpoints",
+      "link": "https://open.epic.com/MyApps/Endpoints",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://open.epic.com/MyApps/Endpoints&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQFnoECB4QAQ",
+      "displayed_link": "https://open.epic.com \u203a MyApps \u203a Endpoints",
+      "favicon": "https://serpapi.com/searches/686464e3cf8870ef74cd0f27/images/e8d22fb4b766c64dfc8d1befa6d05f0fb41f6a112a12a6d8f301382733c79fed.png",
+      "snippet": "The JSON file provides a URL for a FHIR endpoint and a patient-friendly name for that endpoint. This format only includes FHIR DSTU2 endpoints. FHIR R4 endpoint ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "FHIR"
+      ],
+      "missing": [
+        "lmc",
+        "holdings"
+      ],
+      "source": "Epic Systems"
+    },
+    {
+      "position": 3,
+      "title": "Independent Review",
+      "link": "https://digitalservices.vermont.gov/sites/digitalservices/files/emp/doc_library/2021-AHS-DVHA-Interoperability-IR-Report-FINAL.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://digitalservices.vermont.gov/sites/digitalservices/files/emp/doc_library/2021-AHS-DVHA-Interoperability-IR-Report-FINAL.pdf&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQFnoECBkQAQ",
+      "displayed_link": "https://digitalservices.vermont.gov \u203a doc_library",
+      "favicon": "https://serpapi.com/searches/686464e3cf8870ef74cd0f27/images/e8d22fb4b766c64dfc8d1befa6d05f0f8b24fe50eec5b7db9d275fac339f0f56.png",
+      "date": "Jan 1, 2022",
+      "snippet": "Improve beneficiaries' ability to find care by providing current Medicaid provider directory information via an API. DocuSign Envelope ID ...",
+      "snippet_highlighted_words": [
+        "Medicaid provider directory",
+        "API"
+      ],
+      "missing": [
+        "lmc",
+        "family",
+        "holdings"
+      ],
+      "source": "Agency of Digital Services (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "data-interoperability-value-based-care. ...",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/700d388ad0c7887c4ed7bb41adc73a2b/data-interoperability-value-based-care.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/700d388ad0c7887c4ed7bb41adc73a2b/data-interoperability-value-based-care.pdf&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQFnoECCsQAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/686464e3cf8870ef74cd0f27/images/e8d22fb4b766c64dfc8d1befa6d05f0f03277efcdae1a7cf5a125a09193dbc7b.png",
+      "author": "by F Blavin",
+      "snippet": "The HIE interviewees exhibited substantial knowledge of the use of application programming interfaces (APIs), such as the SMART on FHIR, and the USCDI as an ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "FHIR"
+      ],
+      "missing": [
+        "lmc",
+        "Advantage"
+      ],
+      "source": "HHS.gov"
+    },
+    {
+      "position": 5,
+      "title": "Record History | ver. 283: 2023-05-30 | NCT03072927",
+      "link": "https://clinicaltrials.gov/study/NCT03072927?tab=history&a=283",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://clinicaltrials.gov/study/NCT03072927%3Ftab%3Dhistory%26a%3D283&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQFnoECBoQAQ",
+      "displayed_link": "https://clinicaltrials.gov \u203a study \u203a NCT03072927",
+      "favicon": "https://serpapi.com/searches/686464e3cf8870ef74cd0f27/images/e8d22fb4b766c64dfc8d1befa6d05f0f5dcd3f6d72f57e94eda070d6e320bea1.png",
+      "snippet": "This prospective longitudinal study will compare incidence rates of Medicare beneficiary surgical and minimally invasive intervention post index procedure, as ...",
+      "snippet_highlighted_words": [
+        "Medicare"
+      ],
+      "missing": [
+        "lmc",
+        "holdings"
+      ],
+      "source": "ClinicalTrials.gov"
+    },
+    {
+      "position": 6,
+      "title": "2021 Qualified Registries",
+      "link": "https://qpp-cm-prod-content.s3.amazonaws.com/uploads/1232/2021%20Qualified%20Registry%20Qualified%20Posting.xlsx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://qpp-cm-prod-content.s3.amazonaws.com/uploads/1232/2021%2520Qualified%2520Registry%2520Qualified%2520Posting.xlsx&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQFnoECBsQAQ",
+      "displayed_link": "https://qpp-cm-prod-content.s3.amazonaws.com \u203a ...",
+      "snippet": "Annual cost, as a Qualified Registry, will be $250 per eligible physician/National Provider Identifier (NPI) and discounts are available based on volume of NPIs ...",
+      "snippet_highlighted_words": [
+        "physician",
+        "Provider"
+      ],
+      "missing": [
+        "lmc",
+        "holdings",
+        "Advantage"
+      ],
+      "source": "Amazon Web Services (AWS)"
+    },
+    {
+      "position": 7,
+      "title": "Interoperability Request",
+      "link": "https://userweb.epic.com/Forms/InteroperabilityRequest",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://userweb.epic.com/Forms/InteroperabilityRequest&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQFnoECEMQAQ",
+      "displayed_link": "https://userweb.epic.com \u203a Forms \u203a InteroperabilityRequest",
+      "snippet": "Select the technologies you want to use to interoperate with an Epic customer. We will direct you to the right documentation based on your selection.",
+      "missing": [
+        "lmc"
+      ],
+      "must_include": {
+        "word": "lmc",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=%22lmc%22+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ5t4CegQIRBAB"
+      },
+      "source": "Epic Systems"
+    },
+    {
+      "position": 8,
+      "title": "Exploring Hospitals' Challenges with Data Exchange",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8241268/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pmc.ncbi.nlm.nih.gov/articles/PMC8241268/&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQFnoECEIQAQ",
+      "displayed_link": "https://pmc.ncbi.nlm.nih.gov \u203a articles \u203a PMC8241268",
+      "author": "by DM WALKER",
+      "snippet": "Open APIs can reduce the transaction costs associated with building exchange interfaces between members of the health care system (i.e., ...",
+      "snippet_highlighted_words": [
+        "APIs"
+      ],
+      "source": "National Institutes of Health (NIH) | (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "DRS",
+      "link": "https://www.sec.gov/Archives/edgar/data/1685428/000095012321004736/filename1.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.sec.gov/Archives/edgar/data/1685428/000095012321004736/filename1.htm&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQFnoECD4QAQ",
+      "displayed_link": "https://www.sec.gov \u203a edgar \u203a data \u203a filename1",
+      "favicon": "https://serpapi.com/searches/686464e3cf8870ef74cd0f27/images/e8d22fb4b766c64dfc8d1befa6d05f0f230825133ec1b913b799f7b955226e54.png",
+      "snippet": "CAH's units, CAH common stock and CAH public warrants are currently listed on the Nasdaq Stock Market (\u201cNasdaq\u201d) under the symbols CAHCU, CAHC and CAHCW, ...",
+      "source": "SEC.gov"
+    },
+    {
+      "position": 10,
+      "title": "Findings From Key Informant Interviews With Stakeholders in ...",
+      "link": "https://medinform.jmir.org/2023/1/e43848/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medinform.jmir.org/2023/1/e43848/&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQFnoECDoQAQ",
+      "displayed_link": "https://medinform.jmir.org \u203a ...",
+      "favicon": "https://serpapi.com/searches/686464e3cf8870ef74cd0f27/images/e8d22fb4b766c64dfc8d1befa6d05f0f1a89230e48c205fd9890f101f13f8430.png",
+      "author": "by DM Walker",
+      "snippet": "This study aimed to identify current challenges and opportunities to advancing interoperability across stakeholders.",
+      "missing": [
+        "lmc",
+        "holdings",
+        "Advantage"
+      ],
+      "source": "JMIR Medical Informatics"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Epic FHIR API documentation",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Epic+FHIR+API+documentation&sa=X&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Epic+FHIR+API+documentation&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Epic fhir bulk data",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Epic+fhir+bulk+data&sa=X&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Epic+fhir+bulk+data&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Open Epic API pricing information",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Open+Epic+API+pricing+information&sa=X&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Open+Epic+API+pricing+information&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Epic Orchard API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Epic+Orchard+API&sa=X&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Epic+Orchard+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Epic API endpoints",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Epic+API+endpoints&sa=X&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Epic+API+endpoints&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "FHIR OAuth",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=FHIR+OAuth&sa=X&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=FHIR+OAuth&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "App Orchard API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=App+Orchard+API&sa=X&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=App+Orchard+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Epic Fire",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Epic+Fire&sa=X&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Epic+Fire&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=52RkaNW3LP3g7_UP-pLmMQ&start=10&sa=N&sstk=Ac65TH6kBRJuF2ooJD5WlYPy61C8KCeEZ2XQW-cArqG8Y8h8xdHH18LzypdwDxbscl8KwVgWrQa6xMHMFkQ6Lf6ljhAJns02PF2jPQ&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ8NMDegQICBAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=52RkaNW3LP3g7_UP-pLmMQ&start=10&sa=N&sstk=Ac65TH6kBRJuF2ooJD5WlYPy61C8KCeEZ2XQW-cArqG8Y8h8xdHH18LzypdwDxbscl8KwVgWrQa6xMHMFkQ6Lf6ljhAJns02PF2jPQ&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=52RkaNW3LP3g7_UP-pLmMQ&start=20&sa=N&sstk=Ac65TH6kBRJuF2ooJD5WlYPy61C8KCeEZ2XQW-cArqG8Y8h8xdHH18LzypdwDxbscl8KwVgWrQa6xMHMFkQ6Lf6ljhAJns02PF2jPQ&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=52RkaNW3LP3g7_UP-pLmMQ&start=30&sa=N&sstk=Ac65TH6kBRJuF2ooJD5WlYPy61C8KCeEZ2XQW-cArqG8Y8h8xdHH18LzypdwDxbscl8KwVgWrQa6xMHMFkQ6Lf6ljhAJns02PF2jPQ&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ8tMDegQICBAI",
+      "5": "https://www.google.com/search?q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=52RkaNW3LP3g7_UP-pLmMQ&start=40&sa=N&sstk=Ac65TH6kBRJuF2ooJD5WlYPy61C8KCeEZ2XQW-cArqG8Y8h8xdHH18LzypdwDxbscl8KwVgWrQa6xMHMFkQ6Lf6ljhAJns02PF2jPQ&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ8tMDegQICBAK",
+      "6": "https://www.google.com/search?q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=52RkaNW3LP3g7_UP-pLmMQ&start=50&sa=N&sstk=Ac65TH6kBRJuF2ooJD5WlYPy61C8KCeEZ2XQW-cArqG8Y8h8xdHH18LzypdwDxbscl8KwVgWrQa6xMHMFkQ6Lf6ljhAJns02PF2jPQ&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ8tMDegQICBAM",
+      "7": "https://www.google.com/search?q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=52RkaNW3LP3g7_UP-pLmMQ&start=60&sa=N&sstk=Ac65TH6kBRJuF2ooJD5WlYPy61C8KCeEZ2XQW-cArqG8Y8h8xdHH18LzypdwDxbscl8KwVgWrQa6xMHMFkQ6Lf6ljhAJns02PF2jPQ&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ8tMDegQICBAO",
+      "8": "https://www.google.com/search?q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=52RkaNW3LP3g7_UP-pLmMQ&start=70&sa=N&sstk=Ac65TH6kBRJuF2ooJD5WlYPy61C8KCeEZ2XQW-cArqG8Y8h8xdHH18LzypdwDxbscl8KwVgWrQa6xMHMFkQ6Lf6ljhAJns02PF2jPQ&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ8tMDegQICBAQ",
+      "9": "https://www.google.com/search?q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=52RkaNW3LP3g7_UP-pLmMQ&start=80&sa=N&sstk=Ac65TH6kBRJuF2ooJD5WlYPy61C8KCeEZ2XQW-cArqG8Y8h8xdHH18LzypdwDxbscl8KwVgWrQa6xMHMFkQ6Lf6ljhAJns02PF2jPQ&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ8tMDegQICBAS",
+      "10": "https://www.google.com/search?q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=52RkaNW3LP3g7_UP-pLmMQ&start=90&sa=N&sstk=Ac65TH6kBRJuF2ooJD5WlYPy61C8KCeEZ2XQW-cArqG8Y8h8xdHH18LzypdwDxbscl8KwVgWrQa6xMHMFkQ6Lf6ljhAJns02PF2jPQ&ved=2ahUKEwiVx8Ol3pyOAxV98LsIHXqJOQYQ8tMDegQICBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=lmc+family+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

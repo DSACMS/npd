@@ -1,0 +1,125 @@
+{
+  "search_metadata": {
+    "id": "68646cddfdfbabc7b2ebe9fd",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/120dba384e700faf/68646cddfdfbabc7b2ebe9fd.json",
+    "created_at": "2025-07-01 23:18:53 UTC",
+    "processed_at": "2025-07-01 23:18:53 UTC",
+    "google_url": "https://www.google.com/search?q=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/120dba384e700faf/68646cddfdfbabc7b2ebe9fd.html",
+    "total_time_taken": 3.43
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "group health cooperative of eau claire Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "group health cooperative of eau claire Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 3,
+    "time_taken_displayed": 0.19,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "How do I find a provider on Group health of Eau Claire?",
+      "snippet": "Need assistance finding a doctor or updating your preferred primary care provider? Please call (888) 203-7770. Our experienced team of professionals will match you to a doctor based on your location, insurance coverage, and preferences.",
+      "title": "Find a Doctor - Group Health Cooperative of Eau Claire",
+      "link": "https://group-health.com/members/find-a-doctor#:~:text=Need%20assistance%20finding%20a%20doctor,%2C%20insurance%20coverage%2C%20and%20preferences.",
+      "displayed_link": "https://group-health.com \u203a members \u203a find-a-doctor",
+      "source_logo": "https://serpapi.com/searches/68646cddfdfbabc7b2ebe9fd/images/0d584ccfcd2c9d143c5ba1a9724d4928f1468014a5e0d28a77aba993de5a5f88.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGVtRkZaazVOZGxKZmNVNXlaekF4WjB4d01GaG5aVEZHU2xSWk0zWkpORkZFYm5ocVVucHdkMU5YUTA1SVRXaG5ZbU4yVGpreVFYWXRNV0V3UlRoQ1kzTlJjV1EwWkMxYWVsTkpibXRWUTJWNFJrVm1VbFZETFdaNVVSSVhORWQ0YTJGTk5qUkZXbDh0TVdVNFVHbE1XRU0wVVZrYUlrRkdUVUZIUjNKWlNtOUVhRmx1UVRjd1UzTlBjM0JRY2pGS1NrTlFPV2RrTlhjIiwiZmN2IjoiMyIsImVpIjoiNEd4a2FNNjRFWl8tMWU4UGlMWEM0UVkiLCJxYyI6ImN3M0tzUTJBTUF3RVFHb3FSdmc1YUppQmdnRmVpU0dXQW82c0pCSUZzN0VhZEZmY3VCMXVyU0FKYzAwSVprV2NWYnZBZGdnYlFxYTY0SlNvZ1Q4WU82X0tRMURjdWtaeHhELUVhbjZEUmJFbjlXbDQ1bmRkUGciLCJxdWVzdGlvbiI6IkhvdyBkbyBJIGZpbmQgYSBwcm92aWRlciBvbiBHcm91cCBoZWFsdGggb2YgRWF1IENsYWlyZT8iLCJsayI6IkdpcG5jbTkxY0NCb1pXRnNkR2dnYjJZZ1pXRjFJR05zWVdseVpTQm1hVzVrSUdFZ2NISnZkbWxrWlhJIiwiYnMiOiJjLVBLNGpMM3lDOVhTTWxYOEZSSXk4eExVVWhVS0NqS0w4dE1TUzFTeU05VGNDX0tMeTFReUVoTnpDbkpVTWhQVTNCTkxGVnd6a25NTEVxMWxfZ2licVFqcFpXT3BpSVZxQ0lackFMZFBLNDhMdVB3ak1RU2hXeVFPRkJwWmw1eGFWRmlYbktxUW1heEFvbzV5Zm41QmFsRmlTV1paVUI3N3JJWW1VZ1psWk9zVTRBUkFBIiwiaWQiOiJmY180R3hrYU02NEVaXy0xZThQaUxYQzRRWV8zIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGVtRkZaazVOZGxKZmNVNXlaekF4WjB4d01GaG5aVEZHU2xSWk0zWkpORkZFYm5ocVVucHdkMU5YUTA1SVRXaG5ZbU4yVGpreVFYWXRNV0V3UlRoQ1kzTlJjV1EwWkMxYWVsTkpibXRWUTJWNFJrVm1VbFZETFdaNVVSSVhORWQ0YTJGTk5qUkZXbDh0TVdVNFVHbE1XRU0wVVZrYUlrRkdUVUZIUjNKWlNtOUVhRmx1UVRjd1UzTlBjM0JRY2pGS1NrTlFPV2RrTlhjIiwiZmN2IjoiMyIsImVpIjoiNEd4a2FNNjRFWl8tMWU4UGlMWEM0UVkiLCJxYyI6ImN3M0tzUTJBTUF3RVFHb3FSdmc1YUppQmdnRmVpU0dXQW82c0pCSUZzN0VhZEZmY3VCMXVyU0FKYzAwSVprV2NWYnZBZGdnYlFxYTY0SlNvZ1Q4WU82X0tRMURjdWtaeHhELUVhbjZEUmJFbjlXbDQ1bmRkUGciLCJxdWVzdGlvbiI6IkhvdyBkbyBJIGZpbmQgYSBwcm92aWRlciBvbiBHcm91cCBoZWFsdGggb2YgRWF1IENsYWlyZT8iLCJsayI6IkdpcG5jbTkxY0NCb1pXRnNkR2dnYjJZZ1pXRjFJR05zWVdseVpTQm1hVzVrSUdFZ2NISnZkbWxrWlhJIiwiYnMiOiJjLVBLNGpMM3lDOVhTTWxYOEZSSXk4eExVVWhVS0NqS0w4dE1TUzFTeU05VGNDX0tMeTFReUVoTnpDbkpVTWhQVTNCTkxGVnd6a25NTEVxMWxfZ2licVFqcFpXT3BpSVZxQ0lackFMZFBLNDhMdVB3ak1RU2hXeVFPRkJwWmw1eGFWRmlYbktxUW1heEFvbzV5Zm41QmFsRmlTV1paVUI3N3JJWW1VZ1psWk9zVTRBUkFBIiwiaWQiOiJmY180R3hrYU02NEVaXy0xZThQaUxYQzRRWV8zIn0%3D"
+    },
+    {
+      "question": "What kind of insurance is group health cooperative?",
+      "snippet": "A group health cooperative, also known as mutual insurance, is a health insurance plan owned by the insured members. Insurance is offered at a reduced cost, and what they collect from members is based on claims paid. The cost of care is spread out across the insured population.",
+      "title": "Group Health Insurance: What It Is, How It Works, Benefits - Investopedia",
+      "link": "https://www.investopedia.com/terms/g/group-health-insurance-plan.asp#:~:text=A%20group%20health%20cooperative%2C%20also,out%20across%20the%20insured%20population.",
+      "displayed_link": "https://www.investopedia.com \u203a terms \u203a group-health-ins...",
+      "source_logo": "https://serpapi.com/searches/68646cddfdfbabc7b2ebe9fd/images/0d584ccfcd2c9d143c5ba1a9724d492858a735307548c9ac617767ec1f02737c.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGVtRkZaazVOZGxKZmNVNXlaekF4WjB4d01GaG5aVEZHU2xSWk0zWkpORkZFYm5ocVVucHdkMU5YUTA1SVRXaG5ZbU4yVGpreVFYWXRNV0V3UlRoQ1kzTlJjV1EwWkMxYWVsTkpibXRWUTJWNFJrVm1VbFZETFdaNVVSSVhORWQ0YTJGTk5qUkZXbDh0TVdVNFVHbE1XRU0wVVZrYUlrRkdUVUZIUjNKWlNtOUVhRmx1UVRjd1UzTlBjM0JRY2pGS1NrTlFPV2RrTlhjIiwiZmN2IjoiMyIsImVpIjoiNEd4a2FNNjRFWl8tMWU4UGlMWEM0UVkiLCJxYyI6ImN3M0tzUTJBTUF3RVFHb3FSdmc1YUppQmdnRmVpU0dXQW82c0pCSUZzN0VhZEZmY3VCMXVyU0FKYzAwSVprV2NWYnZBZGdnYlFxYTY0SlNvZ1Q4WU82X0tRMURjdWtaeHhELUVhbjZEUmJFbjlXbDQ1bmRkUGciLCJxdWVzdGlvbiI6IldoYXQga2luZCBvZiBpbnN1cmFuY2UgaXMgZ3JvdXAgaGVhbHRoIGNvb3BlcmF0aXZlPyIsImxrIjoiR2pKM2FHRjBJR3RwYm1RZ2IyWWdhVzV6ZFhKaGJtTmxJR2x6SUdkeWIzVndJR2hsWVd4MGFDQmpiMjl3WlhKaGRHbDJaUSIsImJzIjoiYy1QSzRqTDN5QzlYU01sWDhGUkl5OHhMVVVoVUtDaktMOHRNU1MxU3lNOVRjQ19LTHkxUXlFaE56Q25KVU1oUFUzQk5MRlZ3emtuTUxFcTFsX2dpYnFRanBaV09waUlWcUNJWnJBTGRQSzQ4THVQd2pNUVNoV3lRT0ZCcFpsNXhhVkZpWG5LcVFtYXhBb281eWZuNUJhbEZpU1daWlVCNzdySVltVWdabFpPc1U0QVJBQSIsImlkIjoiZmNfNEd4a2FNNjRFWl8tMWU4UGlMWEM0UVlfMyJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGVtRkZaazVOZGxKZmNVNXlaekF4WjB4d01GaG5aVEZHU2xSWk0zWkpORkZFYm5ocVVucHdkMU5YUTA1SVRXaG5ZbU4yVGpreVFYWXRNV0V3UlRoQ1kzTlJjV1EwWkMxYWVsTkpibXRWUTJWNFJrVm1VbFZETFdaNVVSSVhORWQ0YTJGTk5qUkZXbDh0TVdVNFVHbE1XRU0wVVZrYUlrRkdUVUZIUjNKWlNtOUVhRmx1UVRjd1UzTlBjM0JRY2pGS1NrTlFPV2RrTlhjIiwiZmN2IjoiMyIsImVpIjoiNEd4a2FNNjRFWl8tMWU4UGlMWEM0UVkiLCJxYyI6ImN3M0tzUTJBTUF3RVFHb3FSdmc1YUppQmdnRmVpU0dXQW82c0pCSUZzN0VhZEZmY3VCMXVyU0FKYzAwSVprV2NWYnZBZGdnYlFxYTY0SlNvZ1Q4WU82X0tRMURjdWtaeHhELUVhbjZEUmJFbjlXbDQ1bmRkUGciLCJxdWVzdGlvbiI6IldoYXQga2luZCBvZiBpbnN1cmFuY2UgaXMgZ3JvdXAgaGVhbHRoIGNvb3BlcmF0aXZlPyIsImxrIjoiR2pKM2FHRjBJR3RwYm1RZ2IyWWdhVzV6ZFhKaGJtTmxJR2x6SUdkeWIzVndJR2hsWVd4MGFDQmpiMjl3WlhKaGRHbDJaUSIsImJzIjoiYy1QSzRqTDN5QzlYU01sWDhGUkl5OHhMVVVoVUtDaktMOHRNU1MxU3lNOVRjQ19LTHkxUXlFaE56Q25KVU1oUFUzQk5MRlZ3emtuTUxFcTFsX2dpYnFRanBaV09waUlWcUNJWnJBTGRQSzQ4THVQd2pNUVNoV3lRT0ZCcFpsNXhhVkZpWG5LcVFtYXhBb281eWZuNUJhbEZpU1daWlVCNzdySVltVWdabFpPc1U0QVJBQSIsImlkIjoiZmNfNEd4a2FNNjRFWl8tMWU4UGlMWEM0UVlfMyJ9"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Developer",
+      "link": "https://group-health.com/interoperability/developer",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://group-health.com/interoperability/developer&ved=2ahUKEwjOqMXy5ZyOAxUff_UHHYiaMGwQFnoECB0QAQ",
+      "displayed_link": "https://group-health.com \u203a interoperability \u203a developer",
+      "favicon": "https://serpapi.com/searches/68646cddfdfbabc7b2ebe9fd/images/6703fc36f1eb6b53af73de07d568c8c28a3bcbb04919182b92d12504a8822d4a.png",
+      "snippet": "The Provider Directory API facilitates searches for providers, allowing ... FHIR Endpoints: https://fhir.group-health.com/api 1) Endpoint https://fhir ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "fhir",
+        "group",
+        "health",
+        "api",
+        "fhir"
+      ],
+      "source": "Group Health Cooperative of Eau Claire"
+    },
+    {
+      "position": 2,
+      "title": "Contract for BadgerCare Plus and/or Medicaid SSI HMO ...",
+      "link": "https://www.forwardhealth.wi.gov/WIPortal/content/Managed%20Care%20Organization/Contracts/pdf/2022_2023_BCP_and_SSI_ContractV2.pdf.spage",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.forwardhealth.wi.gov/WIPortal/content/Managed%2520Care%2520Organization/Contracts/pdf/2022_2023_BCP_and_SSI_ContractV2.pdf.spage&ved=2ahUKEwjOqMXy5ZyOAxUff_UHHYiaMGwQFnoECB4QAQ",
+      "displayed_link": "https://www.forwardhealth.wi.gov \u203a content \u203a pdf",
+      "favicon": "https://serpapi.com/searches/68646cddfdfbabc7b2ebe9fd/images/6703fc36f1eb6b53af73de07d568c8c25ebf81933941f75b80b8762d19dbc7b3.png",
+      "snippet": "Provider Directory API: The HMO shall make their Member-enrolled HMO provider directory information publicly available via an HL7 FHIR complaint standards ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "provider directory",
+        "FHIR"
+      ],
+      "source": "ForwardHealth Portal (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "FOSTER CARE MEDICAL HOME PROGRAM Contract for ...",
+      "link": "https://www.forwardhealth.wi.gov/WIPortal/content/Managed%20Care%20Organization/Contracts/pdf/2022_2023_FCMH_Contract.pdf.spage",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.forwardhealth.wi.gov/WIPortal/content/Managed%2520Care%2520Organization/Contracts/pdf/2022_2023_FCMH_Contract.pdf.spage&ved=2ahUKEwjOqMXy5ZyOAxUff_UHHYiaMGwQFnoECB8QAQ",
+      "displayed_link": "https://www.forwardhealth.wi.gov \u203a content \u203a pdf",
+      "favicon": "https://serpapi.com/searches/68646cddfdfbabc7b2ebe9fd/images/6703fc36f1eb6b53af73de07d568c8c2d66a0406340fba5e16565342d01d09e1.png",
+      "date": "Apr 1, 2022",
+      "snippet": "provided via an HL7 FHIR compliant standards-based API available to third-party applications of the member's choice. 2. Provider Directory API:.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory API"
+      ],
+      "source": "ForwardHealth Portal (.gov)"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=group+health+cooperative+of+eau+claire+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

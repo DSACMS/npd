@@ -1,0 +1,122 @@
+{
+  "search_metadata": {
+    "id": "68646c3eff596e54109e6ee1",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/cd617c11063a1dfc/68646c3eff596e54109e6ee1.json",
+    "created_at": "2025-07-01 23:16:14 UTC",
+    "processed_at": "2025-07-01 23:16:14 UTC",
+    "google_url": "https://www.google.com/search?q=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/cd617c11063a1dfc/68646c3eff596e54109e6ee1.html",
+    "total_time_taken": 1.31
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"risant health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"risant health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 4,
+    "time_taken_displayed": 0.39,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    },
+    "showing_results_for": "risant health Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "risant health Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "April 27, 2023 Digital Health",
+      "link": "https://www.maverickhealthpolicy.com/wp-content/uploads/2023/08/Newsletter_04.27.2023.docx.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.maverickhealthpolicy.com/wp-content/uploads/2023/08/Newsletter_04.27.2023.docx.pdf&ved=2ahUKEwjE87ql5ZyOAxU1lu4BHWQyHTEQFnoECBkQAQ",
+      "displayed_link": "https://www.maverickhealthpolicy.com \u203a 2023/08",
+      "favicon": "https://serpapi.com/searches/68646c3eff596e54109e6ee1/images/7c29055c9cfc791ce1272ca13351dca7569579ad37c3711eb208305cee84d7aa.png",
+      "snippet": "LexisNexis Risk Solutions acquired Human API, a company with over 30,000 health data integrations that aims to make health data accessible and useable for ...",
+      "snippet_highlighted_words": [
+        "API",
+        "health",
+        "health"
+      ],
+      "source": "Maverick Health Policy"
+    },
+    {
+      "position": 2,
+      "title": "IDC Market Glance Healthcare Ecosystem, 4Q23 - 2023 Dec",
+      "link": "https://www.scribd.com/presentation/797742866/IDC-Market-Glance-Healthcare-Ecosystem-4Q23-2023-Dec",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.scribd.com/presentation/797742866/IDC-Market-Glance-Healthcare-Ecosystem-4Q23-2023-Dec&ved=2ahUKEwjE87ql5ZyOAxU1lu4BHWQyHTEQFnoECBsQAQ",
+      "displayed_link": "https://www.scribd.com \u203a presentation",
+      "favicon": "https://serpapi.com/searches/68646c3eff596e54109e6ee1/images/7c29055c9cfc791ce1272ca13351dca76063c330c5421a797bc49a7fe9ec1781.png",
+      "snippet": "... Medicare Advantage plans (Alignment Healthcare and ... Fhir Data Solutions With Azure Fhir Server, Azure Api For Fhir & Azure Health Data Services: 1, #1.",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "Healthcare",
+        "Fhir",
+        "Fhir",
+        "Api",
+        "Fhir",
+        "Health"
+      ],
+      "source": "Scribd"
+    },
+    {
+      "position": 3,
+      "title": "January | 2018",
+      "link": "https://henrykotula.com/2018/01/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://henrykotula.com/2018/01/&ved=2ahUKEwjE87ql5ZyOAxU1lu4BHWQyHTEQFnoECBwQAQ",
+      "displayed_link": "https://henrykotula.com \u203a 2018/01",
+      "favicon": "https://serpapi.com/searches/68646c3eff596e54109e6ee1/images/7c29055c9cfc791ce1272ca13351dca7f78ed1eb25971e04cd4899212c9ed02b.jpeg",
+      "date": "Jan 31, 2018",
+      "snippet": "Medicare Advantage Is Ripe for an Overhaul \u00b7 Hospital purchasing still ... Risant Health (7), Risdiplam (1), Rising Acuity Levels (1), Risk ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "Risant Health"
+      ],
+      "source": "henry kotula"
+    },
+    {
+      "position": 4,
+      "title": "Digital Health Trends | April 2023",
+      "link": "https://img1.wsimg.com/blobby/go/57bd7017-a078-4d28-8b0d-cd55f122bc3e/downloads/Digital%20Health%20Trends%20(April%202023).pdf?ver=1712946191067",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://img1.wsimg.com/blobby/go/57bd7017-a078-4d28-8b0d-cd55f122bc3e/downloads/Digital%2520Health%2520Trends%2520(April%25202023).pdf%3Fver%3D1712946191067&ved=2ahUKEwjE87ql5ZyOAxU1lu4BHWQyHTEQFnoECBoQAQ",
+      "displayed_link": "https://img1.wsimg.com \u203a blobby \u203a downloads",
+      "snippet": "Value-based care is up this month with Kaiser Permanente buying Geisinger and launching Risant Health, which will acquire other non-profit health systems, ...",
+      "snippet_highlighted_words": [
+        "Risant Health",
+        "health"
+      ],
+      "source": "wsimg.com"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22risant+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

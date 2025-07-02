@@ -1,0 +1,331 @@
+{
+  "search_metadata": {
+    "id": "68646d25bf04d52d844516b1",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/8c063efa809138c1/68646d25bf04d52d844516b1.json",
+    "created_at": "2025-07-01 23:20:05 UTC",
+    "processed_at": "2025-07-01 23:20:05 UTC",
+    "google_url": "https://www.google.com/search?q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/8c063efa809138c1/68646d25bf04d52d844516b1.html",
+    "total_time_taken": 3.09
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "new york city health and hospitals corporation Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "new york city health and hospitals corporation Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 796,
+    "time_taken_displayed": 0.45,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "CMS/ONC Patient access API",
+      "link": "https://www.healthadvantage-hmo.com/interoperability/patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthadvantage-hmo.com/interoperability/patient-access&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8QFnoECBsQAQ",
+      "displayed_link": "https://www.healthadvantage-hmo.com \u203a interoperability",
+      "favicon": "https://serpapi.com/searches/68646d25bf04d52d844516b1/images/3c40a78771e93ad6e96688279bf51019117b37a489473f3bacc7990f8c446e79.png",
+      "snippet": "The Arkansas Blue Cross and Blue Shield1 Interoperability API provides third-party app developers access to FHIR ... The Provider Directory API will allow ...",
+      "snippet_highlighted_words": [
+        "API",
+        "to FHIR",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "york",
+        "city",
+        "corporation"
+      ],
+      "source": "Health Advantage HMO"
+    },
+    {
+      "position": 2,
+      "title": "Interoperability and Patient Access Fact Sheet",
+      "link": "https://www.cms.gov/newsroom/fact-sheets/interoperability-and-patient-access-fact-sheet",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/newsroom/fact-sheets/interoperability-and-patient-access-fact-sheet&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8QFnoECBcQAQ",
+      "displayed_link": "https://www.cms.gov \u203a newsroom \u203a interoperability-and-...",
+      "favicon": "https://serpapi.com/searches/68646d25bf04d52d844516b1/images/3c40a78771e93ad6e96688279bf51019a97e73dd2c28bf4453b9e7fb14d19c94.png",
+      "date": "Mar 9, 2020",
+      "snippet": "... to implement the Provider Directory API by January 1, 2021. QHP ... FHIR API endpoint. Making the list of providers who do not provide ...",
+      "snippet_highlighted_words": [
+        "to",
+        "Provider Directory API",
+        "FHIR API"
+      ],
+      "missing": [
+        "york",
+        "corporation"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Medicaid Provider Directory Standards Set to Change - IPRO",
+      "link": "https://ipro.org/medicaid-provider-directory-standards-set-to-change/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ipro.org/medicaid-provider-directory-standards-set-to-change/&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8QFnoECBUQAQ",
+      "displayed_link": "https://ipro.org \u203a medicaid-provider-directory-standards-...",
+      "favicon": "https://serpapi.com/searches/68646d25bf04d52d844516b1/images/3c40a78771e93ad6e96688279bf510190646ef4fc68aa8075f2359b2fd7d2c10.png",
+      "snippet": "Medicaid Provider Directory Standards Set to Change. Medicaid provider ... A FHIR API, which stands for Fast Healthcare Interoperability Resources ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "to",
+        "FHIR API",
+        "for",
+        "Healthcare"
+      ],
+      "missing": [
+        "york",
+        "city",
+        "Advantage"
+      ],
+      "source": "ipro.org"
+    },
+    {
+      "position": 4,
+      "title": "RFP Number: MHP-1009 Date",
+      "link": "https://a856-cityrecord.nyc.gov/Search/GetFile?sectionId=6&requestId=20201016102&requestStatus=Archived&documentId=30914",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://a856-cityrecord.nyc.gov/Search/GetFile%3FsectionId%3D6%26requestId%3D20201016102%26requestStatus%3DArchived%26documentId%3D30914&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8QFnoECB0QAQ",
+      "displayed_link": "https://a856-cityrecord.nyc.gov \u203a Search \u203a GetFile",
+      "favicon": "https://serpapi.com/searches/68646d25bf04d52d844516b1/images/3c40a78771e93ad6e96688279bf510193ec5d396dc8f9bef55b35239b1e41345.png",
+      "snippet": "Fast Healthcare Interoperability Resources (FHIR) is a standard describing data formats and ... Provider Directory API. Pharmacy Directory API. Integration ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "is",
+        "Provider Directory API",
+        "API"
+      ],
+      "source": "The City Record Online (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Qualified Health Plan Directory Pilot Frequently Asked ...",
+      "link": "https://www.cms.gov/files/document/qhp-directory-pilotfaqs63025.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/qhp-directory-pilotfaqs63025.pdf&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8QFnoECBwQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a qhp-dir...",
+      "favicon": "https://serpapi.com/searches/68646d25bf04d52d844516b1/images/3c40a78771e93ad6e96688279bf510194758822b59b7a814a4b31bb0d5f86a71.png",
+      "date": "Jun 9, 2025",
+      "snippet": "... health care organizations can use the HL7 FHIR API to pull data from ... to the content of provider directory information of the provider or ...",
+      "snippet_highlighted_words": [
+        "health",
+        "FHIR API to",
+        "to",
+        "provider directory"
+      ],
+      "missing": [
+        "york",
+        "city",
+        "corporation",
+        "Advantage"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "CMS Finalizes New Requirements on Health Plans to ...",
+      "link": "https://www.crowell.com/en/insights/client-alerts/cms-finalizes-new-requirements-on-health-plans-to-release-health-data-updates-medicare-conditions-of-participation-for-hospitals-to-send-electronic-notifications",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.crowell.com/en/insights/client-alerts/cms-finalizes-new-requirements-on-health-plans-to-release-health-data-updates-medicare-conditions-of-participation-for-hospitals-to-send-electronic-notifications&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8QFnoECB4QAQ",
+      "displayed_link": "https://www.crowell.com \u203a insights \u203a client-alerts \u203a cms...",
+      "favicon": "https://serpapi.com/searches/68646d25bf04d52d844516b1/images/3c40a78771e93ad6e96688279bf51019c2f9899eb66ee5bd14b5b37a31e6a042.png",
+      "snippet": "... for compliance with the standalone Provider Directory API standard (described below). ... API technical standards finalized in the ONC Rule (HL7 FHIR Release 4.0.",
+      "snippet_highlighted_words": [
+        "for",
+        "Provider Directory API",
+        "API",
+        "in",
+        "FHIR"
+      ],
+      "missing": [
+        "york",
+        "city"
+      ],
+      "source": "Crowell & Moring LLP"
+    },
+    {
+      "position": 7,
+      "title": "Final CMS Interoperability Regulation: What You Need to ...",
+      "link": "https://www.himss.org/resources/final-cms-interoperability-regulation-what-you-need-to-know/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.himss.org/resources/final-cms-interoperability-regulation-what-you-need-to-know/&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8QFnoECBgQAQ",
+      "displayed_link": "https://www.himss.org \u203a resources \u203a final-cms-interoper...",
+      "favicon": "https://serpapi.com/searches/68646d25bf04d52d844516b1/images/3c40a78771e93ad6e96688279bf51019e9f0a747edd4387b5f56a0549d03bc07.png",
+      "snippet": "... (FHIR\u00ae) standard, including for patients to ... to make standardized information about their provider networks available through a Provider Directory API.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "for",
+        "to",
+        "to",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "york",
+        "city",
+        "corporation"
+      ],
+      "source": "Healthcare Information and Management Systems Society | HIMSS"
+    },
+    {
+      "position": 8,
+      "title": "Sharp Health Plan Provider Directory API",
+      "link": "https://anypoint.mulesoft.com/exchange/portals/sharp-healthcare-6/71c86d0d-b0f5-48df-8d81-08c3787c3a8a/provider-directory-api/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://anypoint.mulesoft.com/exchange/portals/sharp-healthcare-6/71c86d0d-b0f5-48df-8d81-08c3787c3a8a/provider-directory-api/&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8QFnoECD0QAQ",
+      "displayed_link": "https://anypoint.mulesoft.com \u203a exchange \u203a portals \u203a pr...",
+      "favicon": "https://serpapi.com/searches/68646d25bf04d52d844516b1/images/3c40a78771e93ad6e96688279bf51019beae44f5d6f89e2c3feddd232fe64229.png",
+      "snippet": "The Provider Directory API accesses the Sharp Health Plan's FHIR server portion of the Provider Directory. Utilizing only read-only RESTful GET API calls (PUT ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Health",
+        "FHIR",
+        "Provider Directory",
+        "API"
+      ],
+      "missing": [
+        "york"
+      ],
+      "must_include": {
+        "word": "york",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=new+%22york%22+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q5t4CegQIQhAB"
+      },
+      "source": "Anypoint Platform"
+    },
+    {
+      "position": 9,
+      "title": "2 National Provider Directory Solution",
+      "link": "https://fphnyc.org/wp-content/uploads/sites/76/2022/02/Provider-Directory-Solution-RFP-V2-KAS-Comments-1-14ZOAH-ZO-final-1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://fphnyc.org/wp-content/uploads/sites/76/2022/02/Provider-Directory-Solution-RFP-V2-KAS-Comments-1-14ZOAH-ZO-final-1.pdf&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8QFnoECDwQAQ",
+      "displayed_link": "https://fphnyc.org \u203a uploads \u203a sites \u203a 2022/02",
+      "favicon": "https://serpapi.com/searches/68646d25bf04d52d844516b1/images/3c40a78771e93ad6e96688279bf510197a4b7177d7958066f860be8296b161be.png",
+      "date": "Feb 16, 2022",
+      "snippet": "FHIR R 4.0 API in a. Test Environment. Similar to Production ... Use of an API access to the provider directory and use with third party tools.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API in",
+        "to",
+        "API",
+        "to",
+        "provider directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=new+york+city+health+and+hospitals+corporation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q5t4CegQIQxAB"
+      },
+      "source": "Fund for Public Health in New York, Inc."
+    },
+    {
+      "position": 10,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2020/05/01/2020-05050/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2020/05/01/2020-05050/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8QFnoECEQQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2020/05/01 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/68646d25bf04d52d844516b1/images/3c40a78771e93ad6e96688279bf51019e8d175d97b5a2e5de56be01f4a0aef3c.png",
+      "date": "May 1, 2020",
+      "snippet": "We proposed that the Patient Access API be updated with new provider directory ... is needed to build the provider directory specification in FHIR ...",
+      "snippet_highlighted_words": [
+        "API",
+        "new provider directory",
+        "is",
+        "to",
+        "provider directory",
+        "in FHIR"
+      ],
+      "missing": [
+        "city",
+        "corporation"
+      ],
+      "source": "Federal Register (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "cms-9115-f",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=cms-9115-f&sa=X&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q1QJ6BAg7EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-9115-f&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability and Patient Access final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=CMS+Interoperability+and+Patient+Access+final+rule&sa=X&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q1QJ6BAg6EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+and+Patient+Access+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-0057",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=CMS-0057&sa=X&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-0057&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-9115-f fact sheet",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=cms-9115-f+fact+sheet&sa=X&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-9115-f+fact+sheet&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-9115 final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=CMS-9115+final+rule&sa=X&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-9115+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-0057-f",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=cms-0057-f&sa=X&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-0057-f&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Provider Directory API CMS",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Provider+Directory+API+CMS&sa=X&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+Directory+API+CMS&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Patient Access API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Patient+Access+API&sa=X&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Patient+Access+API&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=KG1kaN3vBryliLMP-dyw-Q4&start=10&sa=N&sstk=Ac65TH7YIoyzmdhTJU7DmD5Ka4UjI_L-ade0EPDHPyZwa4hlKzpp-7xJd8dc26RIo4yvKKxizR5J6BbLm2Qa1Uv8rjGBU0wrnufXUQ&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=KG1kaN3vBryliLMP-dyw-Q4&start=10&sa=N&sstk=Ac65TH7YIoyzmdhTJU7DmD5Ka4UjI_L-ade0EPDHPyZwa4hlKzpp-7xJd8dc26RIo4yvKKxizR5J6BbLm2Qa1Uv8rjGBU0wrnufXUQ&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=KG1kaN3vBryliLMP-dyw-Q4&start=20&sa=N&sstk=Ac65TH7YIoyzmdhTJU7DmD5Ka4UjI_L-ade0EPDHPyZwa4hlKzpp-7xJd8dc26RIo4yvKKxizR5J6BbLm2Qa1Uv8rjGBU0wrnufXUQ&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=KG1kaN3vBryliLMP-dyw-Q4&start=30&sa=N&sstk=Ac65TH7YIoyzmdhTJU7DmD5Ka4UjI_L-ade0EPDHPyZwa4hlKzpp-7xJd8dc26RIo4yvKKxizR5J6BbLm2Qa1Uv8rjGBU0wrnufXUQ&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=KG1kaN3vBryliLMP-dyw-Q4&start=40&sa=N&sstk=Ac65TH7YIoyzmdhTJU7DmD5Ka4UjI_L-ade0EPDHPyZwa4hlKzpp-7xJd8dc26RIo4yvKKxizR5J6BbLm2Qa1Uv8rjGBU0wrnufXUQ&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=KG1kaN3vBryliLMP-dyw-Q4&start=50&sa=N&sstk=Ac65TH7YIoyzmdhTJU7DmD5Ka4UjI_L-ade0EPDHPyZwa4hlKzpp-7xJd8dc26RIo4yvKKxizR5J6BbLm2Qa1Uv8rjGBU0wrnufXUQ&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=KG1kaN3vBryliLMP-dyw-Q4&start=60&sa=N&sstk=Ac65TH7YIoyzmdhTJU7DmD5Ka4UjI_L-ade0EPDHPyZwa4hlKzpp-7xJd8dc26RIo4yvKKxizR5J6BbLm2Qa1Uv8rjGBU0wrnufXUQ&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=KG1kaN3vBryliLMP-dyw-Q4&start=70&sa=N&sstk=Ac65TH7YIoyzmdhTJU7DmD5Ka4UjI_L-ade0EPDHPyZwa4hlKzpp-7xJd8dc26RIo4yvKKxizR5J6BbLm2Qa1Uv8rjGBU0wrnufXUQ&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=KG1kaN3vBryliLMP-dyw-Q4&start=80&sa=N&sstk=Ac65TH7YIoyzmdhTJU7DmD5Ka4UjI_L-ade0EPDHPyZwa4hlKzpp-7xJd8dc26RIo4yvKKxizR5J6BbLm2Qa1Uv8rjGBU0wrnufXUQ&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=KG1kaN3vBryliLMP-dyw-Q4&start=90&sa=N&sstk=Ac65TH7YIoyzmdhTJU7DmD5Ka4UjI_L-ade0EPDHPyZwa4hlKzpp-7xJd8dc26RIo4yvKKxizR5J6BbLm2Qa1Uv8rjGBU0wrnufXUQ&ved=2ahUKEwjdo-WU5pyOAxW8EmIAHXkuLO8Q8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=new+york+city+health+and+hospitals+corporation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

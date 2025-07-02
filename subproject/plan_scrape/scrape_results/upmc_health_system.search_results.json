@@ -1,0 +1,222 @@
+{
+  "search_metadata": {
+    "id": "68646d77d17a809ef59c4240",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/92271ab4ebaf7780/68646d77d17a809ef59c4240.json",
+    "created_at": "2025-07-01 23:21:27 UTC",
+    "processed_at": "2025-07-01 23:21:27 UTC",
+    "google_url": "https://www.google.com/search?q=upmc+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=upmc+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/92271ab4ebaf7780/68646d77d17a809ef59c4240.html",
+    "total_time_taken": 2.74
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "upmc health system Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "upmc health system Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 77,
+    "time_taken_displayed": 0.26,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability: Member Resource Center",
+      "link": "https://www.upmchealthplan.com/interop/member",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.upmchealthplan.com/interop/member&ved=2ahUKEwiehLm75pyOAxW6w_ACHXrYJdQQFnoECBgQAQ",
+      "displayed_link": "https://www.upmchealthplan.com \u203a interop \u203a member",
+      "favicon": "https://serpapi.com/searches/68646d77d17a809ef59c4240/images/defad36c2990e589bd6fdf0a66d4aaebac14c67e944bdf8b034fe79e073c967a.png",
+      "date": "Jul 1, 2021",
+      "snippet": "Another part of the rule, known as the Provider Directory API ... The UPMC APIs are secured using a standards based FHIR SMART Authentication Flow ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "UPMC APIs",
+        "FHIR"
+      ],
+      "missing": [
+        "system"
+      ],
+      "must_include": {
+        "word": "system",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=upmc+health+%22system%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiehLm75pyOAxW6w_ACHXrYJdQQ5t4CegQILBAB"
+      },
+      "source": "UPMC Health Plan"
+    },
+    {
+      "position": 2,
+      "title": "State of Provider Directory APIs 2024",
+      "link": "https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/&ved=2ahUKEwiehLm75pyOAxW6w_ACHXrYJdQQFnoECBkQAQ",
+      "displayed_link": "https://defacto.health \u203a 2024/06/24 \u203a state-of-provider-di...",
+      "favicon": "https://serpapi.com/searches/68646d77d17a809ef59c4240/images/defad36c2990e589bd6fdf0a66d4aaeb24496ae47666c700f701484d64682007.png",
+      "date": "Jun 24, 2024",
+      "snippet": "Across Medicare fee-for-service and Medicare Advantage, available Provider Directory APIs ... Provider Directory data via FHIR APIs:.",
+      "snippet_highlighted_words": [
+        "service",
+        "Medicare Advantage",
+        "Provider Directory APIs",
+        "Provider Directory",
+        "FHIR APIs"
+      ],
+      "source": "Defacto Health"
+    },
+    {
+      "position": 3,
+      "title": "To meet interoperability mandates, providers and payers ...",
+      "link": "https://www.healthcarefinancenews.com/news/meet-interoperability-mandates-providers-and-payers-should-get-good-apis-expert-says",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcarefinancenews.com/news/meet-interoperability-mandates-providers-and-payers-should-get-good-apis-expert-says&ved=2ahUKEwiehLm75pyOAxW6w_ACHXrYJdQQFnoECBoQAQ",
+      "displayed_link": "https://www.healthcarefinancenews.com \u203a news \u203a meet-...",
+      "favicon": "https://serpapi.com/searches/68646d77d17a809ef59c4240/images/defad36c2990e589bd6fdf0a66d4aaeb6334417dfbd1e0160658cc0f6be5a192.png",
+      "date": "Mar 22, 2023",
+      "snippet": "This includes Fast Healthcare Interoperability Resources Application Programming Interfaces (FHIR APIs) ... provider directory accessible ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR APIs",
+        "provider directory"
+      ],
+      "source": "Healthcare Finance News"
+    },
+    {
+      "position": 4,
+      "title": "The State of Payer Patient Access APIs - Flexpa - Substack",
+      "link": "https://flexpa.substack.com/p/the-state-of-payer-patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://flexpa.substack.com/p/the-state-of-payer-patient-access&ved=2ahUKEwiehLm75pyOAxW6w_ACHXrYJdQQFnoECB0QAQ",
+      "displayed_link": "8 likes \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/searches/68646d77d17a809ef59c4240/images/defad36c2990e589bd6fdf0a66d4aaeb13855517ef71cf9ef96206ca5c997af5.png",
+      "snippet": "Many payers choose to build using open-source tools like HAPI FHIR, commercial options like Smile Digital Health or Firely, or cloud FHIR ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Health",
+        "FHIR"
+      ],
+      "source": "Substack \u00b7 Flexpa"
+    },
+    {
+      "position": 5,
+      "title": "Craig Behm - PA General Assembly",
+      "link": "https://www.palegis.us/house/committees/committee-archives/archive-file?file=2024_0534_0006_tstmny.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.palegis.us/house/committees/committee-archives/archive-file%3Ffile%3D2024_0534_0006_tstmny.pdf&ved=2ahUKEwiehLm75pyOAxW6w_ACHXrYJdQQFnoECBcQAQ",
+      "displayed_link": "https://www.palegis.us \u203a committees \u203a archive-file",
+      "favicon": "https://serpapi.com/searches/68646d77d17a809ef59c4240/images/defad36c2990e589bd6fdf0a66d4aaebec8351a1e043dc8df5dde9024350acd3.png",
+      "date": "Feb 28, 2024",
+      "snippet": "FHIR APIs. Push Notifications. Reports. EHNAC. Flat Files. 3. Page 3. Key ... Exchange provider directory go live, the first. Washington D.C. ...",
+      "snippet_highlighted_words": [
+        "FHIR APIs",
+        "provider directory"
+      ],
+      "source": "palegis.us"
+    },
+    {
+      "position": 6,
+      "title": "Provider Directory Workshop, April 6, 2016 Page 1 Office of ...",
+      "link": "https://oncprojectracking.healthit.gov/wiki/download/attachments/9700978/Provider%20Directory%20Workshop%20Transcript%20%28draft%29%202016-04-06.pdf?version=1&modificationDate=1463069356000&api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://oncprojectracking.healthit.gov/wiki/download/attachments/9700978/Provider%2520Directory%2520Workshop%2520Transcript%2520%2528draft%2529%25202016-04-06.pdf%3Fversion%3D1%26modificationDate%3D1463069356000%26api%3Dv2&ved=2ahUKEwiehLm75pyOAxW6w_ACHXrYJdQQFnoECBsQAQ",
+      "displayed_link": "https://oncprojectracking.healthit.gov \u203a attachments",
+      "date": "Apr 6, 2016",
+      "snippet": "I would just add that FHIR has got a person resource which can connect up different particular instances of practitioner and patient because ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "Meet CMS Patient Access API Rule Compliance",
+      "link": "https://onerecord.com/for-payers",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://onerecord.com/for-payers&ved=2ahUKEwiehLm75pyOAxW6w_ACHXrYJdQQFnoECBwQAQ",
+      "displayed_link": "https://onerecord.com \u203a for-payers",
+      "favicon": "https://serpapi.com/searches/68646d77d17a809ef59c4240/images/defad36c2990e589bd6fdf0a66d4aaeb986e7596098530cae2ec5274f969574a.png",
+      "date": "Jul 1, 2021",
+      "snippet": "Authorize OneRecord with your EHR vendor today. Share FHIR endpoint ... Do you have a plan for Patient Access API and Provider Directory API set ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "plan",
+        "API",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "system"
+      ],
+      "must_include": {
+        "word": "system",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=upmc+health+%22system%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiehLm75pyOAxW6w_ACHXrYJdQQ5t4CegQILRAB"
+      },
+      "source": "OneRecord"
+    },
+    {
+      "position": 8,
+      "title": "Value-based care creating a new era of interoperability",
+      "link": "https://www.healthcarefinancenews.com/news/value-based-care-creating-new-era-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcarefinancenews.com/news/value-based-care-creating-new-era-interoperability&ved=2ahUKEwiehLm75pyOAxW6w_ACHXrYJdQQFnoECDMQAQ",
+      "displayed_link": "https://www.healthcarefinancenews.com \u203a news \u203a value...",
+      "favicon": "https://serpapi.com/searches/68646d77d17a809ef59c4240/images/defad36c2990e589bd6fdf0a66d4aaebd9a289d5ddea6ebbfc1502477d397272.png",
+      "date": "May 19, 2022",
+      "snippet": "CMS exercised enforcement discretion for the Patient Access API and Provider Directory API ... APIs using the HL7 FHIR standard. Clinical ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "APIs",
+        "FHIR"
+      ],
+      "source": "Healthcare Finance News"
+    },
+    {
+      "position": 9,
+      "title": "NCVHS Subcommittee on Standards",
+      "link": "https://ncvhs.hhs.gov/wp-content/uploads/2021/11/Public-Comments-Standards-Subcommittee-Listening-Session-August-25-2021.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ncvhs.hhs.gov/wp-content/uploads/2021/11/Public-Comments-Standards-Subcommittee-Listening-Session-August-25-2021.pdf&ved=2ahUKEwiehLm75pyOAxW6w_ACHXrYJdQQFnoECDAQAQ",
+      "displayed_link": "https://ncvhs.hhs.gov \u203a uploads \u203a 2021/11 \u203a Publi...",
+      "favicon": "https://serpapi.com/searches/68646d77d17a809ef59c4240/images/defad36c2990e589bd6fdf0a66d4aaeb5a371da2a79d2ee3b40e1a038ab1c5b3.png",
+      "date": "Aug 25, 2021",
+      "snippet": "Making such data available via EHR FHIR APIs, would allow Public Health programs to develop ... X109 - 274 Health Care Provider Directory.",
+      "snippet_highlighted_words": [
+        "FHIR APIs",
+        "Health",
+        "Health Care Provider Directory"
+      ],
+      "source": "National Committee on Vital and Health Statistics (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "The future of payer regulation - by Brendan Keeler - Flexpa",
+      "link": "https://flexpa.substack.com/p/the-future-of-payer-regulation",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://flexpa.substack.com/p/the-future-of-payer-regulation&ved=2ahUKEwiehLm75pyOAxW6w_ACHXrYJdQQFnoECDUQAQ",
+      "displayed_link": "4 likes \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/searches/68646d77d17a809ef59c4240/images/defad36c2990e589bd6fdf0a66d4aaeb2951488e0b3a738b08e20d118d46c788.png",
+      "snippet": "Given that the proposed APIs are exponentially more complex than the patient access, provider directory, and cost transparency capabilities put ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "provider directory"
+      ],
+      "source": "Substack \u00b7 Flexpa"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=upmc+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=eW1kaN7jCrqHw8cP-rCXoQ0&start=10&sa=N&sstk=Ac65TH51GHdKo920ticBQRsYKSOYoPyTOdvC_CPJ7Olpo6QxGPv-i5c4IvMrrGlJ5Rxzy56TnetgI4SyvfvhLmhO18OMHCH1eMq_0A&ved=2ahUKEwiehLm75pyOAxW6w_ACHXrYJdQQ8NMDegQICRAK",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=upmc+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=eW1kaN7jCrqHw8cP-rCXoQ0&start=10&sa=N&sstk=Ac65TH51GHdKo920ticBQRsYKSOYoPyTOdvC_CPJ7Olpo6QxGPv-i5c4IvMrrGlJ5Rxzy56TnetgI4SyvfvhLmhO18OMHCH1eMq_0A&ved=2ahUKEwiehLm75pyOAxW6w_ACHXrYJdQQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=upmc+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=eW1kaN7jCrqHw8cP-rCXoQ0&start=20&sa=N&sstk=Ac65TH51GHdKo920ticBQRsYKSOYoPyTOdvC_CPJ7Olpo6QxGPv-i5c4IvMrrGlJ5Rxzy56TnetgI4SyvfvhLmhO18OMHCH1eMq_0A&ved=2ahUKEwiehLm75pyOAxW6w_ACHXrYJdQQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=upmc+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=eW1kaN7jCrqHw8cP-rCXoQ0&start=30&sa=N&sstk=Ac65TH51GHdKo920ticBQRsYKSOYoPyTOdvC_CPJ7Olpo6QxGPv-i5c4IvMrrGlJ5Rxzy56TnetgI4SyvfvhLmhO18OMHCH1eMq_0A&ved=2ahUKEwiehLm75pyOAxW6w_ACHXrYJdQQ8tMDegQICRAI"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=upmc+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=upmc+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=upmc+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=upmc+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=upmc+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30"
+    }
+  }
+}

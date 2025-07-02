@@ -1,0 +1,280 @@
+{
+  "search_metadata": {
+    "id": "686464d9f9aa73169f9f9f07",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/60379f08c9eee8ec/686464d9f9aa73169f9f9f07.json",
+    "created_at": "2025-07-01 22:44:41 UTC",
+    "processed_at": "2025-07-01 22:44:41 UTC",
+    "google_url": "https://www.google.com/search?q=%22isnp+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22isnp+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/60379f08c9eee8ec/686464d9f9aa73169f9f9f07.html",
+    "total_time_taken": 1.58
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"isnp holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"isnp holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 38,
+    "time_taken_displayed": 0.35,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "isnp holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "isnp holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "snp-alliance-comments-cms-interoperability-rule-and-onc- ...",
+      "link": "https://www.snpalliance.org/wp-content/uploads/2020/04/snp-alliance-comments-cms-interoperability-rule-and-onc-cures-act-rule-may-24-2019.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.snpalliance.org/wp-content/uploads/2020/04/snp-alliance-comments-cms-interoperability-rule-and-onc-cures-act-rule-may-24-2019.pdf&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQFnoECBYQAQ",
+      "displayed_link": "https://www.snpalliance.org \u203a uploads \u203a 2020/04",
+      "favicon": "https://serpapi.com/searches/686464d9f9aa73169f9f9f07/images/2dc83fab4771f56b99e57f11cc5d11042b219e051366ef03b72e90a198ca0341.png",
+      "date": "May 24, 2019",
+      "snippet": "The SNP Alliance is a national, non-profit leadership association addressing the needs of high-risk and high-cost populations through ...",
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=isnp+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQ5t4CegQIHBAB"
+      },
+      "source": "SNP Alliance"
+    },
+    {
+      "position": 2,
+      "title": "CMS Prior-Authorization Final Rule: Tactics to Fight Back and Win",
+      "link": "https://skillacquire.com/product/cms-prior-authorization-final-rule-tactics-to-fight-back-and-win/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://skillacquire.com/product/cms-prior-authorization-final-rule-tactics-to-fight-back-and-win/&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQFnoECB8QAQ",
+      "displayed_link": "https://skillacquire.com \u203a product \u203a cms-prior-authoriza...",
+      "favicon": "https://serpapi.com/searches/686464d9f9aa73169f9f9f07/images/2dc83fab4771f56b99e57f11cc5d110433900f8c9fe741d2aae7296d5f9a1e74.png",
+      "snippet": "CMS has recently finalized the Interoperability and Prior Authorization Final Rule to smoothen the complete process for prior authorization and payor ...",
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=isnp+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQ5t4CegQIIhAB"
+      },
+      "source": "Skillacquire"
+    },
+    {
+      "position": 3,
+      "title": "FEMA Acronyms, Abbreviations and Terms",
+      "link": "https://www.fema.gov/sites/default/files/documents/fema-acronyms-abbreviations-terms_FAAT_03-2023.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.fema.gov/sites/default/files/documents/fema-acronyms-abbreviations-terms_FAAT_03-2023.pdf&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQFnoECB0QAQ",
+      "displayed_link": "https://www.fema.gov \u203a default \u203a files \u203a documents",
+      "snippet": "... Cargo Working Group. Page 12. FEMA Acronyms, Abbreviations and Terms. 8. Acronym, Abbreviation or Term. Meaning/Description. AD. \u25ab Active Directory. \u25ab Addendum.",
+      "snippet_highlighted_words": [
+        "Group",
+        "Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 476
+          },
+          "extensions": [
+            "476 pages"
+          ]
+        }
+      },
+      "missing": [
+        "isnp",
+        "Advantage"
+      ],
+      "source": "FEMA.gov"
+    },
+    {
+      "position": 4,
+      "title": "acronyms/acronyms.csv at master \u00b7 department-of-veterans ...",
+      "link": "https://github.com/department-of-veterans-affairs/acronyms/blob/master/acronyms.csv",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/department-of-veterans-affairs/acronyms/blob/master/acronyms.csv&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQFnoECBgQAQ",
+      "displayed_link": "https://github.com \u203a acronyms \u203a blob \u203a acronyms",
+      "favicon": "https://serpapi.com/searches/686464d9f9aa73169f9f9f07/images/2dc83fab4771f56b99e57f11cc5d11044a9059ea3711c5d05fe30cf43a6c89fc.png",
+      "snippet": "A list of VA acronyms. Contribute to department-of-veterans-affairs/acronyms development by creating an account on GitHub.",
+      "snippet_highlighted_words": [
+        "list"
+      ],
+      "missing": [
+        "isnp",
+        "holdings",
+        "Advantage"
+      ],
+      "source": "GitHub"
+    },
+    {
+      "position": 5,
+      "title": "Top Application Programming Interface Directories | PDF",
+      "link": "https://www.scribd.com/document/858486220/Top-Application-Programming-Interface-Directories",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.scribd.com/document/858486220/Top-Application-Programming-Interface-Directories&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQFnoECCEQAQ",
+      "displayed_link": "https://www.scribd.com \u203a document \u203a Top-Application-...",
+      "favicon": "https://serpapi.com/searches/686464d9f9aa73169f9f9f07/images/2dc83fab4771f56b99e57f11cc5d110401276d38382ca8063d6e08f210a73be0.png",
+      "snippet": "The document appears to be a comprehensive list of API endpoints and functionalities related to various services, including user management, ...",
+      "snippet_highlighted_words": [
+        "list",
+        "API"
+      ],
+      "missing": [
+        "isnp",
+        "Advantage"
+      ],
+      "source": "Scribd"
+    },
+    {
+      "position": 6,
+      "title": "Arumalla Johnson Research Profile",
+      "link": "https://scholar9.com/profile/arumalla-johnson-S9-092024-2706147",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://scholar9.com/profile/arumalla-johnson-S9-092024-2706147&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQFnoECBcQAQ",
+      "displayed_link": "https://scholar9.com \u203a profile \u203a arumalla-johnson-S9-09...",
+      "favicon": "https://serpapi.com/searches/686464d9f9aa73169f9f9f07/images/2dc83fab4771f56b99e57f11cc5d11047b032037f07025f13ac45bc96eddcadb.png",
+      "snippet": "Medicaid & Medicare Programs, Pharmacy Benefits Management, Business Process Improvement, EDI Transactions, HL7 & FHIR Standards, Care Coordination, OMOP CDM ...",
+      "snippet_highlighted_words": [
+        "Medicaid",
+        "Medicare",
+        "FHIR"
+      ],
+      "missing": [
+        "isnp",
+        "Advantage"
+      ],
+      "source": "Scholar9"
+    },
+    {
+      "position": 7,
+      "title": "Rahee Walambe Research Profile",
+      "link": "https://scholar9.com/profile/rahee-walambe-S9-012025-1308209",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://scholar9.com/profile/rahee-walambe-S9-012025-1308209&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQFnoECBkQAQ",
+      "displayed_link": "https://scholar9.com \u203a profile \u203a rahee-walambe-S9-0120...",
+      "favicon": "https://serpapi.com/searches/686464d9f9aa73169f9f9f07/images/2dc83fab4771f56b99e57f11cc5d11048e97347547df845a1ca140f1a187b2b9.png",
+      "snippet": "RAHEE WALAMBE received MPhil, Ph.D. Degree from Lancaster University, UK, in 2008. From 2008 to 2017, she was a Research Consultant with various ...",
+      "missing": [
+        "isnp",
+        "Advantage"
+      ],
+      "source": "Scholar9"
+    },
+    {
+      "position": 8,
+      "title": "Fema Acronyms Abbreviations Terms - FAAT - 03 2023",
+      "link": "https://www.scribd.com/document/710081655/fema-acronyms-abbreviations-terms-FAAT-03-2023",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.scribd.com/document/710081655/fema-acronyms-abbreviations-terms-FAAT-03-2023&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQFnoECEIQAQ",
+      "displayed_link": "https://www.scribd.com \u203a document \u203a fema-acronyms-a...",
+      "favicon": "https://serpapi.com/searches/686464d9f9aa73169f9f9f07/images/2dc83fab4771f56b99e57f11cc5d1104ad50e9b0a0cadb911415424c9697ca63.png",
+      "snippet": "The document is a reference guide containing over 1,000 acronyms, abbreviations and terms commonly used by the Federal Emergency Management Agency (FEMA).",
+      "missing": [
+        "isnp",
+        "Advantage"
+      ],
+      "source": "Scribd"
+    },
+    {
+      "position": 9,
+      "title": "11/26/2013 Meeting - IIS Windows Server - Apple Valley, MN",
+      "link": "https://documents.applevalleymn.gov/WebLink/DocView.aspx?id=81935&dbid=0&repo=lf-city",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://documents.applevalleymn.gov/WebLink/DocView.aspx%3Fid%3D81935%26dbid%3D0%26repo%3Dlf-city&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQFnoECD4QAQ",
+      "displayed_link": "https://documents.applevalleymn.gov \u203a DocView",
+      "snippet": "The certification shall be signed by a qualified healthcare provider appropriate to make such certification. DETECTIVE In addition to their base pay rate ...",
+      "snippet_highlighted_words": [
+        "provider"
+      ],
+      "missing": [
+        "isnp",
+        "Advantage"
+      ],
+      "source": "Apple Valley, MN"
+    },
+    {
+      "position": 10,
+      "title": "Full text of \"Oak Lawn Independent\"",
+      "link": "https://archive.org/stream/oaklawnindepende00oakl_73/oaklawnindepende00oakl_73_djvu.txt",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://archive.org/stream/oaklawnindepende00oakl_73/oaklawnindepende00oakl_73_djvu.txt&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQFnoECEYQAQ",
+      "displayed_link": "https://archive.org \u203a stream",
+      "favicon": "https://serpapi.com/searches/686464d9f9aa73169f9f9f07/images/2dc83fab4771f56b99e57f11cc5d11048c09fdd3f9f11af80484847f4e821853.png",
+      "snippet": "Full text of \"Oak Lawn Independent\". See other formats. MICROFILMED BY PRHSIDENTIAL UBRARY & MUSEUM ABRAHAM LINCOLN PRESIDENTIAL LIBRARY 112 North Sixth ...",
+      "missing": [
+        "isnp"
+      ],
+      "must_include": {
+        "word": "isnp",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=%22isnp%22+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQ5t4CegQISBAB"
+      },
+      "source": "Internet Archive"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "FEMA acronym List",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=FEMA+acronym+List&sa=X&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQ1QJ6BAg9EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=FEMA+acronym+List&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "FEMA Acronyms",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=FEMA+Acronyms&sa=X&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQ1QJ6BAg8EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=FEMA+Acronyms&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Aware acronym terrorism meaning",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Aware+acronym+terrorism+meaning&sa=X&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQ1QJ6BAg7EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Aware+acronym+terrorism+meaning&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "FEMA acronym funny",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=FEMA+acronym+funny&sa=X&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQ1QJ6BAg6EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=FEMA+acronym+funny&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "DHS acronym list",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=DHS+acronym+list&sa=X&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=DHS+acronym+list&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Emergency abbreviations list",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Emergency+abbreviations+list&sa=X&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Emergency+abbreviations+list&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "FEMA acronym Engineering",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=FEMA+acronym+Engineering&sa=X&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=FEMA+acronym+Engineering&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Rehab mnemonic FEMA",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Rehab+mnemonic+FEMA&sa=X&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Rehab+mnemonic+FEMA&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=isnp+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=2mRkaMaeF6Sl2roPtfWCmQI&start=10&sa=N&sstk=Ac65TH5EwJBd76GvzET2s3w8tZu8k4XPUGry9WmKkUID5CqeBlF1_kz22gjUI8FtPX7kZBD4-IEgvvFxXFmUF3Bs65c8wlxOIsOkNQ&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQ8NMDegQICRAI",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=isnp+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=2mRkaMaeF6Sl2roPtfWCmQI&start=10&sa=N&sstk=Ac65TH5EwJBd76GvzET2s3w8tZu8k4XPUGry9WmKkUID5CqeBlF1_kz22gjUI8FtPX7kZBD4-IEgvvFxXFmUF3Bs65c8wlxOIsOkNQ&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=isnp+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=2mRkaMaeF6Sl2roPtfWCmQI&start=20&sa=N&sstk=Ac65TH5EwJBd76GvzET2s3w8tZu8k4XPUGry9WmKkUID5CqeBlF1_kz22gjUI8FtPX7kZBD4-IEgvvFxXFmUF3Bs65c8wlxOIsOkNQ&ved=2ahUKEwjG85Sf3pyOAxWkklYBHbW6ICMQ8tMDegQICRAG"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=isnp+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=isnp+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=isnp+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=isnp+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20"
+    }
+  }
+}

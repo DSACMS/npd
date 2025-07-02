@@ -1,0 +1,193 @@
+{
+  "search_metadata": {
+    "id": "6864649ee6590e2e9ac4a9e7",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/278174d8f01c3e94/6864649ee6590e2e9ac4a9e7.json",
+    "created_at": "2025-07-01 22:43:42 UTC",
+    "processed_at": "2025-07-01 22:43:42 UTC",
+    "google_url": "https://www.google.com/search?q=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/278174d8f01c3e94/6864649ee6590e2e9ac4a9e7.html",
+    "total_time_taken": 1.64
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"community care Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"community care Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 2,
+    "time_taken_displayed": 0.24,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_images": [
+    {
+      "source": "https://www.chgsd.com/chg-plans/communicare-advantage",
+      "thumbnail": "https://serpapi.com/searches/6864649ee6590e2e9ac4a9e7/images/6c6ddc56db71e15592c456b3f7cfc2d8dd4d5b98caaf2e1ad6b9fc222ceef894.jpeg",
+      "original": "https://www.chgsd.com/images/default-source/nd/members/dsnp.jpg",
+      "title": "Community Health Group | CommuniCare Advantage",
+      "source_name": "Community Health Group"
+    },
+    {
+      "source": "https://www.chgsd.com/chg-plans/communicare-advantage",
+      "thumbnail": "https://serpapi.com/searches/6864649ee6590e2e9ac4a9e7/images/6c6ddc56db71e155272fab07e26814b60a98dc49012bae4ef2fa606ecc4e3f04.jpeg",
+      "original": "https://www.chgsd.com/images/default-source/nd/members/woman-smiling-balboa-park.jpg",
+      "title": "Community Health Group | CommuniCare Advantage",
+      "source_name": "Community Health Group"
+    },
+    {
+      "source": "https://www.chgsd.com/chg-plans/communicare-advantage",
+      "thumbnail": "https://serpapi.com/searches/6864649ee6590e2e9ac4a9e7/images/6c6ddc56db71e15563cd49c6c560c55300df5924eaff191f5b1079fba5295b47.jpeg",
+      "original": "https://www.chgsd.com/images/default-source/members-nd/members-nd/health-plans/plan_csnp.jpg?sfvrsn=61ae1f83_6",
+      "title": "Community Health Group | CommuniCare Advantage",
+      "source_name": "Community Health Group"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "What is the patient access API?",
+      "snippet": "The Patient Access API allows members to retrieve their personal health information using a third-party application of their choice. This API complies with the HL7 FHIR implementation guides listed below.",
+      "title": "Patient Access Application Programming Interface (API)",
+      "link": "https://www.ochealthinfo.com/services-programs/mental-health-crisis-recovery/patient-access-application-programming-interface#:~:text=The%20Patient%20Access%20API%20allows,FHIR%20implementation%20guides%20listed%20below.",
+      "displayed_link": "https://www.ochealthinfo.com \u203a services-programs \u203a pati...",
+      "source_logo": "https://serpapi.com/searches/6864649ee6590e2e9ac4a9e7/images/f700399c524c2cb71dbf328df3c4430f98151c5db1084f6da27b6f01abedebf9.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSFZ6UkRWa1ZFTldwVk1XMU5VRUY1TkhkeU5taG1hVnBpWVdwQlJsOTBZblZLVlRaQlZYVnJYM1I1UlROTGJESk9lRFZFY0RGc1JXWkRia3RCZHpkWWEyNTFNMHRxUmsxblptdFJWa2MyT0hWRGJtVnZTR2Q2TVZSc1VSSVhiakpTYTJGUU1uTkpiek4yYVV4TlVEUmtUMnA1VVRnYUlrRkdUVUZIUjI5bE1WVmlVVFl0WjFOalQzSnJiVFZtZFdSQ2VWRjBNMnM0U2xFIiwiZmN2IjoiMyIsImVpIjoibjJSa2FQMnNJbzN2aUxNUDRkT2p5UTgiLCJxYyI6ImMtT3lUYzdQelMzTnl5eXBWRWhPTEVwVnlFMU55UVF6RWxQS0V2TktFdE5URlFxSzhzc3lVMUtMRkZJeWkxS1RTX0tMS2hVU0N6SVYwakl5aXdRWUFBIiwicXVlc3Rpb24iOiJXaGF0IGlzIHRoZSBwYXRpZW50IGFjY2VzcyBBUEk/IiwibGsiOiJHaDUzYUdGMElHbHpJSFJvWlNCd1lYUnBaVzUwSUdGalkyVnpjeUJoY0drIiwiYnMiOiJjLU55NDVJUHowZ3NVY2dzVmlqSlNGVW9TQ3pKVE0wclVVaE1UazR0TGxad0RQQzBsN2dRWWFRZ0pWZU9XMVZpUVNhWEhaZTBaN0ZDY241dWJtbGVaa21sUW5KaVVhcUNiMnBLSm9oaExfSFV3RWhHU2lvVFEwVXVWSVVBSXdBIiwiaWQiOiJmY19uMlJrYVAyc0lvM3ZpTE1QNGRPanlROF8xIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSFZ6UkRWa1ZFTldwVk1XMU5VRUY1TkhkeU5taG1hVnBpWVdwQlJsOTBZblZLVlRaQlZYVnJYM1I1UlROTGJESk9lRFZFY0RGc1JXWkRia3RCZHpkWWEyNTFNMHRxUmsxblptdFJWa2MyT0hWRGJtVnZTR2Q2TVZSc1VSSVhiakpTYTJGUU1uTkpiek4yYVV4TlVEUmtUMnA1VVRnYUlrRkdUVUZIUjI5bE1WVmlVVFl0WjFOalQzSnJiVFZtZFdSQ2VWRjBNMnM0U2xFIiwiZmN2IjoiMyIsImVpIjoibjJSa2FQMnNJbzN2aUxNUDRkT2p5UTgiLCJxYyI6ImMtT3lUYzdQelMzTnl5eXBWRWhPTEVwVnlFMU55UVF6RWxQS0V2TktFdE5URlFxSzhzc3lVMUtMRkZJeWkxS1RTX0tMS2hVU0N6SVYwakl5aXdRWUFBIiwicXVlc3Rpb24iOiJXaGF0IGlzIHRoZSBwYXRpZW50IGFjY2VzcyBBUEk%2FIiwibGsiOiJHaDUzYUdGMElHbHpJSFJvWlNCd1lYUnBaVzUwSUdGalkyVnpjeUJoY0drIiwiYnMiOiJjLU55NDVJUHowZ3NVY2dzVmlqSlNGVW9TQ3pKVE0wclVVaE1UazR0TGxad0RQQzBsN2dRWWFRZ0pWZU9XMVZpUVNhWEhaZTBaN0ZDY241dWJtbGVaa21sUW5KaVVhcUNiMnBLSm9oaExfSFV3RWhHU2lvVFEwVXVWSVVBSXdBIiwiaWQiOiJmY19uMlJrYVAyc0lvM3ZpTE1QNGRPanlROF8xIn0%3D"
+    },
+    {
+      "question": "Is community care Medicare?",
+      "snippet": "CommunityCare offers a comprehensive Senior Health Plan specifically designed for Medicare beneficiaries. This plan provides coverage for Medicare Part A and B, Part D (outpatient drug coverage), and additional benefits [1].",
+      "title": "Community Care Senior Health Plan - Downers Grove Rehab & Nursing",
+      "date": "Feb 26, 2025",
+      "link": "https://www.downersgrovehc.com/blog/community-care-senior-health-plan#:~:text=CommunityCare%20offers%20a%20comprehensive%20Senior,and%20additional%20benefits%20%5B1%5D.",
+      "displayed_link": "https://www.downersgrovehc.com \u203a blog \u203a community-c...",
+      "source_logo": "https://serpapi.com/searches/6864649ee6590e2e9ac4a9e7/images/f700399c524c2cb71dbf328df3c4430f13a4fbfd563b55dee99bd2f195800c68.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSFZ6UkRWa1ZFTldwVk1XMU5VRUY1TkhkeU5taG1hVnBpWVdwQlJsOTBZblZLVlRaQlZYVnJYM1I1UlROTGJESk9lRFZFY0RGc1JXWkRia3RCZHpkWWEyNTFNMHRxUmsxblptdFJWa2MyT0hWRGJtVnZTR2Q2TVZSc1VSSVhiakpTYTJGUU1uTkpiek4yYVV4TlVEUmtUMnA1VVRnYUlrRkdUVUZIUjI5bE1WVmlVVFl0WjFOalQzSnJiVFZtZFdSQ2VWRjBNMnM0U2xFIiwiZmN2IjoiMyIsImVpIjoibjJSa2FQMnNJbzN2aUxNUDRkT2p5UTgiLCJxYyI6ImMtT3lUYzdQelMzTnl5eXBWRWhPTEVwVnlFMU55UVF6RWxQS0V2TktFdE5URlFxSzhzc3lVMUtMRkZJeWkxS1RTX0tMS2hVU0N6SVYwakl5aXdRWUFBIiwicXVlc3Rpb24iOiJJcyBjb21tdW5pdHkgY2FyZSBNZWRpY2FyZT8iLCJsayI6ImM1T1N5aXhXU003UHpTM055eXlwVkVoT0xFcFZ5RTFOeVFReEFBIiwiYnMiOiJjLU55NDVJUHowZ3NVY2dzVmlqSlNGVW9TQ3pKVE0wclVVaE1UazR0TGxad0RQQzBsN2dRWWFRZ0pWZU9XMVZpUVNhWEhaZTBaN0ZDY241dWJtbGVaa21sUW5KaVVhcUNiMnBLSm9oaExfSFV3RWhHU2lvVFEwVXVWSVVBSXdBIiwiaWQiOiJmY19uMlJrYVAyc0lvM3ZpTE1QNGRPanlROF8xIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSFZ6UkRWa1ZFTldwVk1XMU5VRUY1TkhkeU5taG1hVnBpWVdwQlJsOTBZblZLVlRaQlZYVnJYM1I1UlROTGJESk9lRFZFY0RGc1JXWkRia3RCZHpkWWEyNTFNMHRxUmsxblptdFJWa2MyT0hWRGJtVnZTR2Q2TVZSc1VSSVhiakpTYTJGUU1uTkpiek4yYVV4TlVEUmtUMnA1VVRnYUlrRkdUVUZIUjI5bE1WVmlVVFl0WjFOalQzSnJiVFZtZFdSQ2VWRjBNMnM0U2xFIiwiZmN2IjoiMyIsImVpIjoibjJSa2FQMnNJbzN2aUxNUDRkT2p5UTgiLCJxYyI6ImMtT3lUYzdQelMzTnl5eXBWRWhPTEVwVnlFMU55UVF6RWxQS0V2TktFdE5URlFxSzhzc3lVMUtMRkZJeWkxS1RTX0tMS2hVU0N6SVYwakl5aXdRWUFBIiwicXVlc3Rpb24iOiJJcyBjb21tdW5pdHkgY2FyZSBNZWRpY2FyZT8iLCJsayI6ImM1T1N5aXhXU003UHpTM055eXlwVkVoT0xFcFZ5RTFOeVFReEFBIiwiYnMiOiJjLU55NDVJUHowZ3NVY2dzVmlqSlNGVW9TQ3pKVE0wclVVaE1UazR0TGxad0RQQzBsN2dRWWFRZ0pWZU9XMVZpUVNhWEhaZTBaN0ZDY241dWJtbGVaa21sUW5KaVVhcUNiMnBLSm9oaExfSFV3RWhHU2lvVFEwVXVWSVVBSXdBIiwiaWQiOiJmY19uMlJrYVAyc0lvM3ZpTE1QNGRPanlROF8xIn0%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability and Your Health Information",
+      "link": "https://www.ccok.com/members/interoperability.asp",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ccok.com/members/interoperability.asp&ved=2ahUKEwi9-I6D3pyOAxWNN2IAHeHpKPkQFnoECB8QAQ",
+      "displayed_link": "https://www.ccok.com \u203a members \u203a interoperability",
+      "snippet": "Our APIs are based on the Health Level 7\u00ae (HL7) Fast Healthcare Interoperability Resources (FHIR\u00ae) 4.0.1 standard. https://fdp.edifecsfedcloud.com/#/portal/ss.c ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "CommunityCare Health Insurance Plans"
+    },
+    {
+      "position": 2,
+      "title": "CommuniCare Advantage",
+      "link": "https://www.chgsd.com/chg-plans/communicare-advantage",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chgsd.com/chg-plans/communicare-advantage&ved=2ahUKEwi9-I6D3pyOAxWNN2IAHeHpKPkQFnoECCIQAQ",
+      "displayed_link": "https://www.chgsd.com \u203a chg-plans \u203a communicare-ad...",
+      "favicon": "https://serpapi.com/searches/6864649ee6590e2e9ac4a9e7/images/1ac7ae47ca03e2f8bb63fc77b43ce05722ced946ca4bdef339b3241a53da33b5.png",
+      "snippet": "FHIR Developer API \u00b7 Mission, Vision Statement \u00b7 MOU \u00b7 Population Health \u00b7 Quality ... Search Provider Directory \u00b7 Provider Portal Sign in. Claims. Submitting a ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Search Provider Directory",
+        "Provider"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "How to See a Doctor",
+            "link": "https://www.chgsd.com/chg-plans/communicare-advantage/2025-plan-information/how-to-see-a-doctor"
+          },
+          {
+            "title": "Member Handbook",
+            "link": "https://www.chgsd.com/chg-plans/communicare-advantage/2025-plan-information/member-handbook"
+          },
+          {
+            "title": "Plan Information",
+            "link": "https://www.chgsd.com/chg-plans/communicare-advantage/2025-plan-information/plan-information"
+          }
+        ]
+      },
+      "source": "Community Health Group"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Community health group OTC 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Community+health+group+OTC+2025&sa=X&ved=2ahUKEwi9-I6D3pyOAxWNN2IAHeHpKPkQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+health+group+OTC+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Community health group formulary",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Community+health+group+formulary&sa=X&ved=2ahUKEwi9-I6D3pyOAxWNN2IAHeHpKPkQ1QJ6BAgtEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+health+group+formulary&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Community Health Medicare Advantage",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Community+Health+Medicare+Advantage&sa=X&ved=2ahUKEwi9-I6D3pyOAxWNN2IAHeHpKPkQ1QJ6BAgvEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Health+Medicare+Advantage&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Community Health Group Chula Vista reviews",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Community+Health+Group+Chula+Vista+reviews&sa=X&ved=2ahUKEwi9-I6D3pyOAxWNN2IAHeHpKPkQ1QJ6BAguEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Health+Group+Chula+Vista+reviews&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Community Health Group jobs",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Community+Health+Group+jobs&sa=X&ved=2ahUKEwi9-I6D3pyOAxWNN2IAHeHpKPkQ1QJ6BAgsEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Health+Group+jobs&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Find a provider Community Health Choice",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Find+a+provider+Community+Health+Choice&sa=X&ved=2ahUKEwi9-I6D3pyOAxWNN2IAHeHpKPkQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Find+a+provider+Community+Health+Choice&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Community health Primary Care doctor's",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Community+health+Primary+Care+doctor%27s&sa=X&ved=2ahUKEwi9-I6D3pyOAxWNN2IAHeHpKPkQ1QJ6BAgwEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+health+Primary+Care+doctor%27s&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Community Health urgent care",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Community+Health+urgent+care&sa=X&ved=2ahUKEwi9-I6D3pyOAxWNN2IAHeHpKPkQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Community+Health+urgent+care&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22community+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

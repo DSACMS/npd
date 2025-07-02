@@ -1,0 +1,225 @@
+{
+  "search_metadata": {
+    "id": "68646c93a204abcc33e9e2cf",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/928d9496b6ff8a8d/68646c93a204abcc33e9e2cf.json",
+    "created_at": "2025-07-01 23:17:39 UTC",
+    "processed_at": "2025-07-01 23:17:39 UTC",
+    "google_url": "https://www.google.com/search?q=blue+cross+and+blue+shield+of+north+carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=blue+cross+and+blue+shield+of+north+carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/928d9496b6ff8a8d/68646c93a204abcc33e9e2cf.html",
+    "total_time_taken": 1.4
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "blue cross and blue shield of north carolina Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "blue cross and blue shield of north carolina Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 59,
+    "time_taken_displayed": 0.24,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "API access | Policies & best practices",
+      "link": "https://www.bluecrossnc.com/policies-best-practices/notice-privacy-practices/api-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bluecrossnc.com/policies-best-practices/notice-privacy-practices/api-access&ved=2ahUKEwjO_Y_O5ZyOAxU0ppUCHYgzKR8QFnoECBwQAQ",
+      "displayed_link": "https://www.bluecrossnc.com \u203a notice-privacy-practices",
+      "snippet": "How to connect your app to a Blue Cross NC member's information. Provider Directory API. How to build access to Blue Cross NC provider network information.",
+      "snippet_highlighted_words": [
+        "Blue Cross NC",
+        "Provider Directory API",
+        "Blue Cross NC"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=blue+cross+and+blue+shield+of+north+carolina+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjO_Y_O5ZyOAxU0ppUCHYgzKR8Q5t4CegQIJhAB"
+      },
+      "source": "Blue Cross NC"
+    },
+    {
+      "position": 2,
+      "title": "The State of Payer Patient Access APIs - Flexpa - Substack",
+      "link": "https://flexpa.substack.com/p/the-state-of-payer-patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://flexpa.substack.com/p/the-state-of-payer-patient-access&ved=2ahUKEwjO_Y_O5ZyOAxU0ppUCHYgzKR8QFnoECBoQAQ",
+      "displayed_link": "8 likes \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/searches/68646c93a204abcc33e9e2cf/images/99d30f221182807331d869cf2f9af2dcd853b4638af67d53729819d083548fe5.png",
+      "snippet": "These include patient access, provider directory, and payer-to-payer exchange APIs. ... FHIR API: The CMS rule said the following data must \u201cat a ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR API"
+      ],
+      "source": "Substack \u00b7 Flexpa"
+    },
+    {
+      "position": 3,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwjO_Y_O5ZyOAxU0ppUCHYgzKR8QFnoECBYQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646c93a204abcc33e9e2cf/images/99d30f221182807331d869cf2f9af2dc7317f87dc3bb318f61df3b326244cb67.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 4,
+      "title": "Attachments B, C, D, E, G, H, I.docx",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/Attachments%20B,%20C,%20D,%20E,%20G,%20H,%20I.docx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/Attachments%2520B,%2520C,%2520D,%2520E,%2520G,%2520H,%2520I.docx&ved=2ahUKEwjO_Y_O5ZyOAxU0ppUCHYgzKR8QFnoECB4QAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a pdf \u203a Ellkay",
+      "favicon": "https://serpapi.com/searches/68646c93a204abcc33e9e2cf/images/99d30f221182807331d869cf2f9af2dcfaa9e4d82beff1ada54bd3269a88b801.png",
+      "snippet": "Application Programming Interface (API) Services. \u2022 Current FHIR API capabilities. o ELLKAY has currently enabled the following R4 FHIR APIs: \u2022 Account ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR API",
+        "FHIR"
+      ],
+      "source": "Gobierno de Puerto Rico (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "ELLKAY Redacted Technical Proposal.pdf",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/ELLKAY%20Redacted%20Technical%20Proposal.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/ELLKAY%2520Redacted%2520Technical%2520Proposal.pdf&ved=2ahUKEwjO_Y_O5ZyOAxU0ppUCHYgzKR8QFnoECB8QAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a 2024-PRMP-HIE-001",
+      "favicon": "https://serpapi.com/searches/68646c93a204abcc33e9e2cf/images/99d30f221182807331d869cf2f9af2dc671ba7963d2264a024009cfd3ef5092f.png",
+      "date": "Jul 7, 2024",
+      "snippet": "Provider Directory: The vendor must ... o ELLKAY is continuing to expand our FHIR API capabilities as additional requests are made. \u2022 API design ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR API",
+        "API"
+      ],
+      "source": "Gobierno de Puerto Rico (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Helpful Hints - Confluence - HL7.org",
+      "link": "https://confluence.hl7.org/download/attachments/81018510/ProjectBallotHealthMetrics_2022JanWGM_20211221.xlsx?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/81018510/ProjectBallotHealthMetrics_2022JanWGM_20211221.xlsx%3Fapi%3Dv2&ved=2ahUKEwjO_Y_O5ZyOAxU0ppUCHYgzKR8QFnoECBcQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a attachments \u203a api=v2",
+      "favicon": "https://serpapi.com/searches/68646c93a204abcc33e9e2cf/images/99d30f221182807331d869cf2f9af2dc551847987dfe965046a193b06c6b0d73.png",
+      "snippet": "... FHIR Infrastructure Work Group, FHIR Management Group, Clinical, We will ... Provider Directory, Endpoint Directory, Utilizes the work done for the ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "HL7.org"
+    },
+    {
+      "position": 7,
+      "title": "PARTICIPATING ADDENDUM MMIS-PROVIDER SERVICES ...",
+      "link": "https://s3-us-west-2.amazonaws.com/naspovaluepoint/1634709128_MMIS%20HHS%20Technology%20Group%20LLC%20South%20Dakota.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://s3-us-west-2.amazonaws.com/naspovaluepoint/1634709128_MMIS%2520HHS%2520Technology%2520Group%2520LLC%2520South%2520Dakota.pdf&ved=2ahUKEwjO_Y_O5ZyOAxU0ppUCHYgzKR8QFnoECBsQAQ",
+      "displayed_link": "https://s3-us-west-2.amazonaws.com \u203a naspovalu...",
+      "favicon": "https://serpapi.com/searches/68646c93a204abcc33e9e2cf/images/99d30f221182807331d869cf2f9af2dc1386b3160a87dd3f012b944f73d2b38f.png",
+      "date": "Mar 7, 2023",
+      "snippet": "... Provider Directory Mapping (FHIR). 1 day. Fri 11/26/21. Fri 11/26/21. 6. Provider Directory Demo (FHIR). 1 day. Fri 10/22/21. Fri 10/22/21. 7.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Amazon.com"
+    },
+    {
+      "position": 8,
+      "title": "Transcript",
+      "link": "https://www.healthit.gov/sites/default/files/facas/2021-02-10_HITAC_Transcript.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/facas/2021-02-10_HITAC_Transcript.pdf&ved=2ahUKEwjO_Y_O5ZyOAxU0ppUCHYgzKR8QFnoECC8QAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a facas",
+      "favicon": "https://serpapi.com/searches/68646c93a204abcc33e9e2cf/images/99d30f221182807331d869cf2f9af2dc78a0e0c0b85e46b97575b1750c73f172.jpeg",
+      "date": "Feb 10, 2021",
+      "snippet": "So, CCD versus FHIR is going to be an ongoing problem. Steven Lane. Les, let me just respond to your comment about the patient use case and ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "National Coordinator for Health Information Technology (ONC) (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "2023 UnitedHealthcare Care Provider Administrative Guide",
+      "link": "https://health.maryland.gov/pophealth/Documents/Local%20Health%20Department%20Billing%20Manual/2023-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://health.maryland.gov/pophealth/Documents/Local%2520Health%2520Department%2520Billing%2520Manual/2023-UHC-Administrative-Guide.pdf&ved=2ahUKEwjO_Y_O5ZyOAxU0ppUCHYgzKR8QFnoECDQQAQ",
+      "displayed_link": "https://health.maryland.gov \u203a Documents \u203a 2023-...",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify information in ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 421
+          },
+          "extensions": [
+            "421 pages"
+          ]
+        }
+      },
+      "source": "Maryland.gov"
+    },
+    {
+      "position": 10,
+      "title": "All Pages",
+      "link": "https://www.communityplans.net/all-pages/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.communityplans.net/all-pages/&ved=2ahUKEwjO_Y_O5ZyOAxU0ppUCHYgzKR8QFnoECC4QAQ",
+      "displayed_link": "https://www.communityplans.net \u203a all-pages",
+      "snippet": "Beyond Patient Access \u2013 the Next Wave of FHIR Use Cases for Payers ... National Provider Directory RFI Roundtable Call \u00b7 Marketplace & Medicare Joint ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "Medicare"
+      ],
+      "source": "Association For Community Affiliated Plans"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=blue+cross+and+blue+shield+of+north+carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=k2xkaI7oN7TM1sQPiOek-QE&start=10&sa=N&sstk=Ac65TH71pYAwQN9Jh30aUL9ZGT-FndTzrnx4osoA6VYbRy0AMhyIZE097XKUE4CIiGemKgXmxp3KDhBef1nWRwpUXXfMJdo5PvbRJA&ved=2ahUKEwjO_Y_O5ZyOAxU0ppUCHYgzKR8Q8NMDegQICRAK",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=blue+cross+and+blue+shield+of+north+carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=k2xkaI7oN7TM1sQPiOek-QE&start=10&sa=N&sstk=Ac65TH71pYAwQN9Jh30aUL9ZGT-FndTzrnx4osoA6VYbRy0AMhyIZE097XKUE4CIiGemKgXmxp3KDhBef1nWRwpUXXfMJdo5PvbRJA&ved=2ahUKEwjO_Y_O5ZyOAxU0ppUCHYgzKR8Q8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=blue+cross+and+blue+shield+of+north+carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=k2xkaI7oN7TM1sQPiOek-QE&start=20&sa=N&sstk=Ac65TH71pYAwQN9Jh30aUL9ZGT-FndTzrnx4osoA6VYbRy0AMhyIZE097XKUE4CIiGemKgXmxp3KDhBef1nWRwpUXXfMJdo5PvbRJA&ved=2ahUKEwjO_Y_O5ZyOAxU0ppUCHYgzKR8Q8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=blue+cross+and+blue+shield+of+north+carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=k2xkaI7oN7TM1sQPiOek-QE&start=30&sa=N&sstk=Ac65TH71pYAwQN9Jh30aUL9ZGT-FndTzrnx4osoA6VYbRy0AMhyIZE097XKUE4CIiGemKgXmxp3KDhBef1nWRwpUXXfMJdo5PvbRJA&ved=2ahUKEwjO_Y_O5ZyOAxU0ppUCHYgzKR8Q8tMDegQICRAI"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+and+blue+shield+of+north+carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+and+blue+shield+of+north+carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+and+blue+shield+of+north+carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+and+blue+shield+of+north+carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+and+blue+shield+of+north+carolina+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30"
+    }
+  }
+}

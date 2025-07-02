@@ -1,0 +1,303 @@
+{
+  "search_metadata": {
+    "id": "68646c7afbbebbd81a2bf4dd",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/430e85294d4bf1a6/68646c7afbbebbd81a2bf4dd.json",
+    "created_at": "2025-07-01 23:17:14 UTC",
+    "processed_at": "2025-07-01 23:17:14 UTC",
+    "google_url": "https://www.google.com/search?q=%22west+virginia+united+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22west+virginia+united+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/430e85294d4bf1a6/68646c7afbbebbd81a2bf4dd.html",
+    "total_time_taken": 4.74
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"west virginia united health system Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"west virginia united health system Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 1570,
+    "time_taken_displayed": 0.44,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "west virginia united health system Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "west virginia united health system Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Application Programming Interface (API)",
+      "link": "https://www.uhcprovider.com/en/resource-library/Application-Programming-Interface.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/en/resource-library/Application-Programming-Interface.html&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQFnoECBcQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a Resource Library",
+      "favicon": "https://serpapi.com/searches/68646c7afbbebbd81a2bf4dd/images/dc282bcc6a6a7a62ed37f964da91440e2a392d32dfa1bbcc1bf8e0ba569bcab1.png",
+      "snippet": "Application Programming Interface (API) is a free digital solution that allows health care professionals to automate administrative transactions.",
+      "snippet_highlighted_words": [
+        "Application Programming Interface (API"
+      ],
+      "missing": [
+        "Medicare"
+      ],
+      "must_include": {
+        "word": "Medicare",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=west+virginia+united+health+system+%22Medicare%22+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ5t4CegQIJRAB"
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 2,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQFnoECBkQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/68646c7afbbebbd81a2bf4dd/images/dc282bcc6a6a7a62ed37f964da91440eba62b248d29bcd37253f6035566a710a.png",
+      "snippet": "Flexpa Endpoint Directory. Flexpa's directory is a comprehensive index of Payer Patient Access APIs and is the largest of its kind.",
+      "snippet_highlighted_words": [
+        "Flexpa's directory is a comprehensive index of Payer Patient Access APIs"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 3,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQFnoECBwQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646c7afbbebbd81a2bf4dd/images/dc282bcc6a6a7a62ed37f964da91440e41fb393fd9846fd60bff0f2c0d06b4cf.png",
+      "date": "Jan 1, 2025",
+      "snippet": "Welcome to the UnitedHealthcare Care Provider Administrative Guide for Commercial and Medicare Advantage. (MA) products.",
+      "snippet_highlighted_words": [
+        "Care Provider",
+        "Medicare Advantage"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 4,
+      "title": "HL7's FHIR Foundry Speeds Up Health Data Standards ...",
+      "link": "https://govciomedia.com/hl7s-fhir-foundry-speeds-up-health-data-standards-adoption/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://govciomedia.com/hl7s-fhir-foundry-speeds-up-health-data-standards-adoption/&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQFnoECBsQAQ",
+      "displayed_link": "https://govciomedia.com \u203a hl7s-fhir-foundry-speeds-up...",
+      "favicon": "https://serpapi.com/searches/68646c7afbbebbd81a2bf4dd/images/dc282bcc6a6a7a62ed37f964da91440eb83359fd1e73658dfa4dcaf939f6cefb.png",
+      "date": "Mar 5, 2025",
+      "snippet": "HL7's FHIR Foundry platform is enabling health organizations to test references of the modern health information exchange specifications before implementation.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "health",
+        "health"
+      ],
+      "source": "GovCIO Media & Research"
+    },
+    {
+      "position": 5,
+      "title": "Population Health Solution for Medicare Advantage",
+      "link": "https://www.zeomega.com/who-we-serve/medicare-advatage-solution",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.zeomega.com/who-we-serve/medicare-advatage-solution&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQFnoECBYQAQ",
+      "displayed_link": "https://www.zeomega.com \u203a who-we-serve \u203a medicare-...",
+      "favicon": "https://serpapi.com/searches/68646c7afbbebbd81a2bf4dd/images/dc282bcc6a6a7a62ed37f964da91440e0c61d9ec57dd88ae5474d4e7283caec8.png",
+      "snippet": "A powerful, FHIR-based interoperability gateway that facilitates payer compliance with the Patient Access API, Provider Directory API, Payer-to-Payer Data ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "source": "ZeOmega"
+    },
+    {
+      "position": 6,
+      "title": "Network and Insurance Plan Data File Specification",
+      "link": "https://help.ayin.com/hc/en-us/articles/360021377099-Network-and-Insurance-Plan-Data-File-Specification",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://help.ayin.com/hc/en-us/articles/360021377099-Network-and-Insurance-Plan-Data-File-Specification&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQFnoECBgQAQ",
+      "displayed_link": "https://help.ayin.com \u203a en-us \u203a articles \u203a 360021377099-...",
+      "favicon": "https://serpapi.com/searches/68646c7afbbebbd81a2bf4dd/images/dc282bcc6a6a7a62ed37f964da91440e24e4f5df7c036f6557cdd8943f7fdd76.png",
+      "date": "Jun 10, 2024",
+      "snippet": "This file format provides the information needed for populating a provider directory API compliant with CMS Interoperability requirements.",
+      "snippet_highlighted_words": [
+        "provider directory API"
+      ],
+      "missing": [
+        "system"
+      ],
+      "must_include": {
+        "word": "system",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=west+virginia+united+health+%22system%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ5t4CegQIJBAB"
+      },
+      "source": "Ayin Help Center"
+    },
+    {
+      "position": 7,
+      "title": "Prior Authorization in Medicaid",
+      "link": "https://www.macpac.gov/wp-content/uploads/2024/08/Prior-Authorization-in-Medicaid.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.macpac.gov/wp-content/uploads/2024/08/Prior-Authorization-in-Medicaid.pdf&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQFnoECBoQAQ",
+      "displayed_link": "https://www.macpac.gov \u203a uploads \u203a 2024/08 \u203a Pr...",
+      "favicon": "https://serpapi.com/searches/68646c7afbbebbd81a2bf4dd/images/dc282bcc6a6a7a62ed37f964da91440e8b9e7856bde9ce3c054490fdbc19514b.png",
+      "date": "Aug 1, 2024",
+      "snippet": "6 The prior authorization API will include a list of covered items and services, identify documentation needed for a given prior authorization ...",
+      "snippet_highlighted_words": [
+        "API",
+        "list",
+        "services"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 25
+          },
+          "extensions": [
+            "25 pages"
+          ]
+        }
+      },
+      "source": "Advising Congress on Medicaid and CHIP Policy (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "open.epic :: Endpoints",
+      "link": "https://open.epic.com/MyApps/Endpoints",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://open.epic.com/MyApps/Endpoints&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQFnoECD0QAQ",
+      "displayed_link": "https://open.epic.com \u203a MyApps \u203a Endpoints",
+      "favicon": "https://serpapi.com/searches/68646c7afbbebbd81a2bf4dd/images/dc282bcc6a6a7a62ed37f964da91440e17c438de79fdaee64c03f714d69d6315.png",
+      "snippet": "This format uses FHIR Endpoint and Organization resources to provide details about FHIR endpoints, including branding information and facility identifiers and ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR"
+      ],
+      "source": "Epic Systems"
+    },
+    {
+      "position": 9,
+      "title": "Interoperability and CMS Final Rule Requirements",
+      "link": "https://mhk.com/blog/a-new-interoperability-landscape-the-fhir-standard-and-the-cms-interoperability-and-prior-authorization-final-rule/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mhk.com/blog/a-new-interoperability-landscape-the-fhir-standard-and-the-cms-interoperability-and-prior-authorization-final-rule/&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQFnoECDkQAQ",
+      "displayed_link": "https://mhk.com \u203a blog \u203a a-new-interoperability-landsc...",
+      "favicon": "https://serpapi.com/searches/68646c7afbbebbd81a2bf4dd/images/dc282bcc6a6a7a62ed37f964da91440e8e1fee50ba4c48b04c3d3fae7e994d9c.png",
+      "date": "Apr 30, 2024",
+      "snippet": "By facilitating the shift to APIs, FHIR empowers healthcare organizations to securely access and share patient data in real time. This leads to ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "FHIR",
+        "healthcare"
+      ],
+      "source": "MHK"
+    },
+    {
+      "position": 10,
+      "title": "Craig Behm - PA General Assembly",
+      "link": "https://www.palegis.us/house/committees/committee-archives/archive-file?file=2024_0534_0006_tstmny.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.palegis.us/house/committees/committee-archives/archive-file%3Ffile%3D2024_0534_0006_tstmny.pdf&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQFnoECDwQAQ",
+      "displayed_link": "https://www.palegis.us \u203a committees \u203a archive-file",
+      "favicon": "https://serpapi.com/searches/68646c7afbbebbd81a2bf4dd/images/dc282bcc6a6a7a62ed37f964da91440e21da7430bceae77004fca4c16955b07f.png",
+      "date": "Feb 28, 2024",
+      "snippet": "Brookings (SD) Health System will no longer be in network with any Medicare Advantage the decision was made to protect the financial ...",
+      "snippet_highlighted_words": [
+        "Health System",
+        "Medicare Advantage"
+      ],
+      "missing": [
+        "united"
+      ],
+      "must_include": {
+        "word": "united",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=west+virginia+%22united%22+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ5t4CegQIQBAB"
+      },
+      "source": "palegis.us"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Uhc API Marketplace",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Uhc+API+Marketplace&sa=X&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+API+Marketplace&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC provider manual 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+provider+manual+2025&sa=X&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+provider+manual+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC care survey 25 1",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+care+survey+25+1&sa=X&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+care+survey+25+1&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc developer portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Uhc+developer+portal&sa=X&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+developer+portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc Medicare advantage Timely filing limit for corrected claims",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&sa=X&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC Provider Portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+Provider+Portal&sa=X&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+Provider+Portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc timely filing limit 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Uhc+timely+filing+limit+2025&sa=X&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+timely+filing+limit+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Optum API Marketplace",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Optum+API+Marketplace&sa=X&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Optum+API+Marketplace&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=fWxkaOCYOImX9u8Pt9PpuAE&start=10&sa=N&sstk=Ac65TH7sJlLQg2QwWu00tX5NUGP1LxrpKfE2csLfwy0w6iGrt4BDMG3upnt8_ZZEqWZzSxvfNCK-Wa3Ji3TgPndSkLAUhqMrzGMwkQ&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=fWxkaOCYOImX9u8Pt9PpuAE&start=10&sa=N&sstk=Ac65TH7sJlLQg2QwWu00tX5NUGP1LxrpKfE2csLfwy0w6iGrt4BDMG3upnt8_ZZEqWZzSxvfNCK-Wa3Ji3TgPndSkLAUhqMrzGMwkQ&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=fWxkaOCYOImX9u8Pt9PpuAE&start=20&sa=N&sstk=Ac65TH7sJlLQg2QwWu00tX5NUGP1LxrpKfE2csLfwy0w6iGrt4BDMG3upnt8_ZZEqWZzSxvfNCK-Wa3Ji3TgPndSkLAUhqMrzGMwkQ&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=fWxkaOCYOImX9u8Pt9PpuAE&start=30&sa=N&sstk=Ac65TH7sJlLQg2QwWu00tX5NUGP1LxrpKfE2csLfwy0w6iGrt4BDMG3upnt8_ZZEqWZzSxvfNCK-Wa3Ji3TgPndSkLAUhqMrzGMwkQ&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=fWxkaOCYOImX9u8Pt9PpuAE&start=40&sa=N&sstk=Ac65TH7sJlLQg2QwWu00tX5NUGP1LxrpKfE2csLfwy0w6iGrt4BDMG3upnt8_ZZEqWZzSxvfNCK-Wa3Ji3TgPndSkLAUhqMrzGMwkQ&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=fWxkaOCYOImX9u8Pt9PpuAE&start=50&sa=N&sstk=Ac65TH7sJlLQg2QwWu00tX5NUGP1LxrpKfE2csLfwy0w6iGrt4BDMG3upnt8_ZZEqWZzSxvfNCK-Wa3Ji3TgPndSkLAUhqMrzGMwkQ&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=fWxkaOCYOImX9u8Pt9PpuAE&start=60&sa=N&sstk=Ac65TH7sJlLQg2QwWu00tX5NUGP1LxrpKfE2csLfwy0w6iGrt4BDMG3upnt8_ZZEqWZzSxvfNCK-Wa3Ji3TgPndSkLAUhqMrzGMwkQ&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=fWxkaOCYOImX9u8Pt9PpuAE&start=70&sa=N&sstk=Ac65TH7sJlLQg2QwWu00tX5NUGP1LxrpKfE2csLfwy0w6iGrt4BDMG3upnt8_ZZEqWZzSxvfNCK-Wa3Ji3TgPndSkLAUhqMrzGMwkQ&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=fWxkaOCYOImX9u8Pt9PpuAE&start=80&sa=N&sstk=Ac65TH7sJlLQg2QwWu00tX5NUGP1LxrpKfE2csLfwy0w6iGrt4BDMG3upnt8_ZZEqWZzSxvfNCK-Wa3Ji3TgPndSkLAUhqMrzGMwkQ&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=fWxkaOCYOImX9u8Pt9PpuAE&start=90&sa=N&sstk=Ac65TH7sJlLQg2QwWu00tX5NUGP1LxrpKfE2csLfwy0w6iGrt4BDMG3upnt8_ZZEqWZzSxvfNCK-Wa3Ji3TgPndSkLAUhqMrzGMwkQ&ved=2ahUKEwigy9HD5ZyOAxWJi_0HHbdpGhcQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=west+virginia+united+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

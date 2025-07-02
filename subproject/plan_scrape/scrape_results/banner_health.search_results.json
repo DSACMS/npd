@@ -1,0 +1,265 @@
+{
+  "search_metadata": {
+    "id": "68646c8caf5fdc2235f0bacb",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/85d03b89b7d54eba/68646c8caf5fdc2235f0bacb.json",
+    "created_at": "2025-07-01 23:17:32 UTC",
+    "processed_at": "2025-07-01 23:17:32 UTC",
+    "google_url": "https://www.google.com/search?q=banner+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=banner+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/85d03b89b7d54eba/68646c8caf5fdc2235f0bacb.html",
+    "total_time_taken": 0.81
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "banner health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "banner health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 69,
+    "time_taken_displayed": 0.27,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Developer API Resources",
+      "link": "https://santacruzhealth.org/HSAHome/HSADivisions/BehavioralHealth/DeveloperAPIs.aspx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://santacruzhealth.org/HSAHome/HSADivisions/BehavioralHealth/DeveloperAPIs.aspx&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQFnoECAQQAQ",
+      "displayed_link": "https://santacruzhealth.org \u203a HSAHome \u203a BehavioralHealth",
+      "favicon": "https://serpapi.com/searches/68646c8caf5fdc2235f0bacb/images/1a5e18ab86d93824141fb110f169a499f12b2fd788de13ec3f7ab0b1ef9d2064.png",
+      "snippet": "The Provider Directory guide is built on the Fast Healthcare Interoperability Resources (FHIR) STU3 API and serves as the cornerstone of a comprehensive ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "Healthcare",
+        "FHIR",
+        "API"
+      ],
+      "source": "Santa Cruz County Health Services Agency"
+    },
+    {
+      "position": 2,
+      "title": "centers-for-medicare-tutorial-introduction.md",
+      "link": "https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/healthcare-apis/azure-api-for-fhir/centers-for-medicare-tutorial-introduction.md",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/healthcare-apis/azure-api-for-fhir/centers-for-medicare-tutorial-introduction.md&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQFnoECAUQAQ",
+      "displayed_link": "https://github.com \u203a healthcare-apis \u203a azure-api-for-fhir",
+      "favicon": "https://serpapi.com/searches/68646c8caf5fdc2235f0bacb/images/1a5e18ab86d93824141fb110f169a49988187472581b68209b426a20d305d980.png",
+      "snippet": "The Provider Directory API describes adherence to one implementation guide. HL7 Da Vinci PDex Plan Network IG: This implementation guide defines a FHIR ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "source": "GitHub"
+    },
+    {
+      "position": 3,
+      "title": "Qualified Health Plan Issuer Application Instructions PY2026",
+      "link": "https://www.qhpcertification.cms.gov/QHPvforcesite/apex/FileDownload?file=PY2026-QHP-Issuer-Application-Instructions-00-All-v3-v1",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.qhpcertification.cms.gov/QHPvforcesite/apex/FileDownload%3Ffile%3DPY2026-QHP-Issuer-Application-Instructions-00-All-v3-v1&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQFnoECAoQAQ",
+      "displayed_link": "https://www.qhpcertification.cms.gov \u203a apex \u203a Fi...",
+      "favicon": "https://serpapi.com/searches/68646c8caf5fdc2235f0bacb/images/1a5e18ab86d93824141fb110f169a499fcdcec90d3a7ae6c70b76ef0504334b4.png",
+      "snippet": "API standards (e.g., HL7 FHIR, USCDI, or OpenID connect). If the URL does ... Provider Directory. Network URL. URL Template. Insurance Company + Plan.",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=banner+health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQ5t4CegQIGBAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Documentation | DeveloperPortal",
+      "link": "https://developer.geisinger.org/documentation",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.geisinger.org/documentation&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQFnoECA8QAQ",
+      "displayed_link": "https://developer.geisinger.org \u203a documentation",
+      "snippet": "The Provider Directory API uses OAuth 2.0 Client Credentials authorization for connecting with the FHIR resources. The Patient Access API uses OAuth 2.0 ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "API"
+      ],
+      "source": "Geisinger Developer Portal"
+    },
+    {
+      "position": 5,
+      "title": "CMS' Interoperability & Patient Access Final Rule ...",
+      "link": "https://www.topcoder.com/blog/a-cms-interoperability-patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.topcoder.com/blog/a-cms-interoperability-patient-access&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQFnoECAgQAQ",
+      "displayed_link": "https://www.topcoder.com \u203a blog \u203a a-cms-interoperabili...",
+      "favicon": "https://serpapi.com/searches/68646c8caf5fdc2235f0bacb/images/1a5e18ab86d93824141fb110f169a4999fae568e317c0d31bb3f86681c8e9d85.png",
+      "date": "Nov 5, 2020",
+      "snippet": "This rule also requires Medicare Advantage ... provider directory information publicly available via a FHIR-based Provider Directory API.",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "provider directory",
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "source": "Topcoder"
+    },
+    {
+      "position": 6,
+      "title": "Provider Directory API (FHIR)",
+      "link": "https://www.swmbh.org/provider-directory-api-fhir/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.swmbh.org/provider-directory-api-fhir/&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQFnoECAYQAQ",
+      "displayed_link": "https://www.swmbh.org \u203a provider-directory-api-fhir",
+      "favicon": "https://serpapi.com/searches/68646c8caf5fdc2235f0bacb/images/1a5e18ab86d93824141fb110f169a49990b588bd1a7e1064f17455ec325ea940.png",
+      "snippet": "Provider Directory API (FHIR). The Provider Directory API is a new tool developed to provide up-to-date information on healthcare providers and facilities ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "Provider Directory API",
+        "healthcare"
+      ],
+      "missing": [
+        "banner"
+      ],
+      "must_include": {
+        "word": "banner",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=%22banner%22+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQ5t4CegQIJRAB"
+      },
+      "source": "Southwest Michigan Behavioral Health"
+    },
+    {
+      "position": 7,
+      "title": "Directory Information Verification for Providers",
+      "link": "https://www.availity.com/directory-information-verification-for-providers/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.availity.com/directory-information-verification-for-providers/&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQFnoECAsQAQ",
+      "displayed_link": "https://www.availity.com \u203a directory-information-verifi...",
+      "favicon": "https://serpapi.com/searches/68646c8caf5fdc2235f0bacb/images/1a5e18ab86d93824141fb110f169a49908e2763805d4aad56c6599d3592c41b3.png",
+      "snippet": "Facilitate seamless data exchange via X12, REST, and FHIR APIs. Products ... If you have technical problems, or need to know more about provider directory ...",
+      "snippet_highlighted_words": [
+        "FHIR APIs",
+        "provider directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=banner+health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQ5t4CegQIFxAB"
+      },
+      "source": "Availity"
+    },
+    {
+      "position": 8,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQFnoECDQQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646c8caf5fdc2235f0bacb/images/1a5e18ab86d93824141fb110f169a4996b0b77314090ed15623ce585d796e7f3.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 9,
+      "title": "Setting Healthcare on FHIR",
+      "link": "https://newsletter.smartbrief.com/whitepapers/1AE45CE8-77F6-4FCE-A1A5-76240109A59F/White_Paper_-_Setting_Healthcare_on_FHIR.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://newsletter.smartbrief.com/whitepapers/1AE45CE8-77F6-4FCE-A1A5-76240109A59F/White_Paper_-_Setting_Healthcare_on_FHIR.pdf&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQFnoECDYQAQ",
+      "displayed_link": "https://newsletter.smartbrief.com \u203a whitepapers",
+      "favicon": "https://serpapi.com/searches/68646c8caf5fdc2235f0bacb/images/1a5e18ab86d93824141fb110f169a499830e5367d1ae3bebb6276a56067689da.png",
+      "snippet": "Access API, Provider Directory API, and Payer-to-Payer API. While the future of FHIR is still being determined, it is certain that FHIR will play a pivotal ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "API",
+        "FHIR",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 14
+          },
+          "extensions": [
+            "14 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=banner+health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQ5t4CegQIPRAB"
+      },
+      "source": "SmartBrief"
+    },
+    {
+      "position": 10,
+      "title": "Qualified Health Plan Issuer Application Instructions PY2025",
+      "link": "https://www.qhpcertification.cms.gov/s/PY2025QHPIssuerInstructions_v1.3.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.qhpcertification.cms.gov/s/PY2025QHPIssuerInstructions_v1.3.pdf&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQFnoECDUQAQ",
+      "displayed_link": "https://www.qhpcertification.cms.gov \u203a ...",
+      "favicon": "https://serpapi.com/searches/68646c8caf5fdc2235f0bacb/images/1a5e18ab86d93824141fb110f169a499e74155aeb31c9e28228afcff51e75d6f.png",
+      "snippet": "[FHIR] Release 4.0.1? \u2022 Issuers are urged to refer to the \u201cBest Practices ... Provider Directory. Network URL. URL Template. Insurance Company + Plan.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 205
+          },
+          "extensions": [
+            "205 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=banner+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=jGxkaNiiJsm55OUPnrnOmQg&start=10&sa=N&sstk=Ac65TH4QpCSrfEmpmXy1Gm0Phd-RBsQWd5dDztmhYzhVJhGcytVVSxnVNsWBWeIx3CwX7eDE9aScwMYk2vLfeyi0f99hF0OJ-bxrdg&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQ8NMDegQIJxAO",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=banner+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=jGxkaNiiJsm55OUPnrnOmQg&start=10&sa=N&sstk=Ac65TH4QpCSrfEmpmXy1Gm0Phd-RBsQWd5dDztmhYzhVJhGcytVVSxnVNsWBWeIx3CwX7eDE9aScwMYk2vLfeyi0f99hF0OJ-bxrdg&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQ8tMDegQIJxAE",
+      "3": "https://www.google.com/search?q=banner+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=jGxkaNiiJsm55OUPnrnOmQg&start=20&sa=N&sstk=Ac65TH4QpCSrfEmpmXy1Gm0Phd-RBsQWd5dDztmhYzhVJhGcytVVSxnVNsWBWeIx3CwX7eDE9aScwMYk2vLfeyi0f99hF0OJ-bxrdg&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQ8tMDegQIJxAG",
+      "4": "https://www.google.com/search?q=banner+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=jGxkaNiiJsm55OUPnrnOmQg&start=30&sa=N&sstk=Ac65TH4QpCSrfEmpmXy1Gm0Phd-RBsQWd5dDztmhYzhVJhGcytVVSxnVNsWBWeIx3CwX7eDE9aScwMYk2vLfeyi0f99hF0OJ-bxrdg&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQ8tMDegQIJxAI",
+      "5": "https://www.google.com/search?q=banner+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=jGxkaNiiJsm55OUPnrnOmQg&start=40&sa=N&sstk=Ac65TH4QpCSrfEmpmXy1Gm0Phd-RBsQWd5dDztmhYzhVJhGcytVVSxnVNsWBWeIx3CwX7eDE9aScwMYk2vLfeyi0f99hF0OJ-bxrdg&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQ8tMDegQIJxAK",
+      "6": "https://www.google.com/search?q=banner+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=jGxkaNiiJsm55OUPnrnOmQg&start=50&sa=N&sstk=Ac65TH4QpCSrfEmpmXy1Gm0Phd-RBsQWd5dDztmhYzhVJhGcytVVSxnVNsWBWeIx3CwX7eDE9aScwMYk2vLfeyi0f99hF0OJ-bxrdg&ved=2ahUKEwjYmNPK5ZyOAxXJHLkGHZ6cM4MQ8tMDegQIJxAM"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=banner+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=banner+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=banner+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=banner+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=banner+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=banner+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=banner+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50"
+    }
+  }
+}

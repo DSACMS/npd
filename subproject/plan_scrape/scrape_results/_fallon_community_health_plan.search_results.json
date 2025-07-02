@@ -1,0 +1,245 @@
+{
+  "search_metadata": {
+    "id": "686464b088de9254d2f62240",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/44ba31a71fb084ef/686464b088de9254d2f62240.json",
+    "created_at": "2025-07-01 22:44:00 UTC",
+    "processed_at": "2025-07-01 22:44:00 UTC",
+    "google_url": "https://www.google.com/search?q=%22fallon+community+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22fallon+community+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/44ba31a71fb084ef/686464b088de9254d2f62240.html",
+    "total_time_taken": 4.55
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"fallon community health plan Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"fallon community health plan Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 147,
+    "time_taken_displayed": 0.53,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "fallon community health plan Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "fallon community health plan Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "related_questions": [
+    {
+      "question": "Is Fallon Health the same as Fallon Community Health Plan?",
+      "snippet": "Founded in 1977, Fallon Health (formerly Fallon Community Health Plan) is a Worcester, Massachusetts-based provider of health insurance and health care services.",
+      "title": "Fallon Health - Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Fallon_Health#:~:text=Founded%20in%201977%2C%20Fallon%20Health,insurance%20and%20health%20care%20services.",
+      "displayed_link": "https://en.wikipedia.org \u203a wiki \u203a Fallon_Health",
+      "source_logo": "https://serpapi.com/searches/686464b088de9254d2f62240/images/472b6cc3f94467fcfd10703c3058c8057d7df87f3d5ca0eb57649db08cc954d0.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFBQkNtSkJUR3QwWDNaR01UUnlkRWwyV25NM2VVbGxhSEpKYUhBeExWWmxjRUpSZVdwRFZrTXRWak5MUm5SaFJ6UnFTMVpVVVZsMFVtOXJlRVl3YTE5UVowVjRiMEZuYWtoT1JUSklaSFJqVkZRNVEwZE5Ua0pKYkVJME1GSkJOemhxUlVkVVp4SVdkRWRTYTJGUVVuVnlObkpST0ZFdFZYZHdhalZEWnhvaVFVWk5RVWRIY21oRFIyVkhYek5RZG5Gc2FYUk5iR0ZoYkdOWVRuTkZSVlJKWnciLCJmY3YiOiIzIiwiZWkiOiJ0R1JrYVBSdXI2clE4US1Vd3BqNUNnIiwicWMiOiJjd1hCd1EyQUlBd0ZVTS1lSE9IZkhNTUJuS0toUlpwQUlRMlNjSEE1WGN6MzFqTlN6dFVRYWltM2FaOUlRcmtudEV5R0lxeUJYRUE4eURwZGd1WjFLSXVEMVNYMDZoUFVGREdwYjh2emZ2dnhBdyIsInF1ZXN0aW9uIjoiSXMgRmFsbG9uIEhlYWx0aCB0aGUgc2FtZSBhcyBGYWxsb24gQ29tbXVuaXR5IEhlYWx0aCBQbGFuPyIsImxrIjoiYzVPeXpDeFdTRXZNeWNuUFU4aElUY3dweVZBb3lVaFZLRTdNVFZWSWhNc2s1LWZtbHVabGxsVEMxQlRrSk9ZQkFBIiwiYnMiOiJjLU9xNGJMeUxGWndTOHpKeWM5VDhFaE56Q25KVUNqSlNGVW9Uc3hOVlVpRXl6am41LWFXNW1XV1ZNTFVCT1FrNXRsTGZOVTFzcGF5ekN4V1NJTW95OEEwQUNxVEREY0FxcVlBYUFCWEhKZTJTMzRxM0phTXhES2dIZ1hmMUpUTTVNU2lWQVhIbExMRXZKTEU5RlN3YW51Skg3eEdPbEphS1NBZGFTZzZjbUU2RWxGMENEQUNBQSIsImlkIjoiZmNfdEdSa2FQUnVyNnJROFEtVXdwajVDZ18xIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFBQkNtSkJUR3QwWDNaR01UUnlkRWwyV25NM2VVbGxhSEpKYUhBeExWWmxjRUpSZVdwRFZrTXRWak5MUm5SaFJ6UnFTMVpVVVZsMFVtOXJlRVl3YTE5UVowVjRiMEZuYWtoT1JUSklaSFJqVkZRNVEwZE5Ua0pKYkVJME1GSkJOemhxUlVkVVp4SVdkRWRTYTJGUVVuVnlObkpST0ZFdFZYZHdhalZEWnhvaVFVWk5RVWRIY21oRFIyVkhYek5RZG5Gc2FYUk5iR0ZoYkdOWVRuTkZSVlJKWnciLCJmY3YiOiIzIiwiZWkiOiJ0R1JrYVBSdXI2clE4US1Vd3BqNUNnIiwicWMiOiJjd1hCd1EyQUlBd0ZVTS1lSE9IZkhNTUJuS0toUlpwQUlRMlNjSEE1WGN6MzFqTlN6dFVRYWltM2FaOUlRcmtudEV5R0lxeUJYRUE4eURwZGd1WjFLSXVEMVNYMDZoUFVGREdwYjh2emZ2dnhBdyIsInF1ZXN0aW9uIjoiSXMgRmFsbG9uIEhlYWx0aCB0aGUgc2FtZSBhcyBGYWxsb24gQ29tbXVuaXR5IEhlYWx0aCBQbGFuPyIsImxrIjoiYzVPeXpDeFdTRXZNeWNuUFU4aElUY3dweVZBb3lVaFZLRTdNVFZWSWhNc2s1LWZtbHVabGxsVEMxQlRrSk9ZQkFBIiwiYnMiOiJjLU9xNGJMeUxGWndTOHpKeWM5VDhFaE56Q25KVUNqSlNGVW9Uc3hOVlVpRXl6am41LWFXNW1XV1ZNTFVCT1FrNXRsTGZOVTFzcGF5ekN4V1NJTW95OEEwQUNxVEREY0FxcVlBYUFCWEhKZTJTMzRxM0phTXhES2dIZ1hmMUpUTTVNU2lWQVhIbExMRXZKTEU5RlN3YW51Skg3eEdPbEphS1NBZGFTZzZjbUU2RWxGMENEQUNBQSIsImlkIjoiZmNfdEdSa2FQUnVyNnJROFEtVXdwajVDZ18xIn0%3D"
+    },
+    {
+      "question": "Does Fallon have a Medicare Advantage plan?",
+      "snippet": "Now, let us work for you! Fallon Medicare Plus Premier HMO is Fallon Health's Medicare Advantage plan for retirees. Our plan offers comprehensive coverage, and more benefits than members would get with Original Medicare alone. As a resident of Worcester County, you have two options.",
+      "title": "Welcome to Fallon Medicare PlusTM - Shrewsbury, MA",
+      "link": "https://shrewsburyma.gov/DocumentCenter/View/10509/2022-Fallon-Medicare-Plus-Premier-Worcester-County-Summary-of-Benefits#:~:text=Now%2C%20let%20us%20work%20for,County%2C%20you%20have%20two%20options.",
+      "displayed_link": "https://shrewsburyma.gov \u203a DocumentCenter \u203a View \u203a 2...",
+      "source_logo": "https://serpapi.com/searches/686464b088de9254d2f62240/images/472b6cc3f94467fcfd10703c3058c805a406900d93ff0261973797c541fee90f.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFBQkNtSkJUR3QwWDNaR01UUnlkRWwyV25NM2VVbGxhSEpKYUhBeExWWmxjRUpSZVdwRFZrTXRWak5MUm5SaFJ6UnFTMVpVVVZsMFVtOXJlRVl3YTE5UVowVjRiMEZuYWtoT1JUSklaSFJqVkZRNVEwZE5Ua0pKYkVJME1GSkJOemhxUlVkVVp4SVdkRWRTYTJGUVVuVnlObkpST0ZFdFZYZHdhalZEWnhvaVFVWk5RVWRIY21oRFIyVkhYek5RZG5Gc2FYUk5iR0ZoYkdOWVRuTkZSVlJKWnciLCJmY3YiOiIzIiwiZWkiOiJ0R1JrYVBSdXI2clE4US1Vd3BqNUNnIiwicWMiOiJjd1hCd1EyQUlBd0ZVTS1lSE9IZkhNTUJuS0toUlpwQUlRMlNjSEE1WGN6MzFqTlN6dFVRYWltM2FaOUlRcmtudEV5R0lxeUJYRUE4eURwZGd1WjFLSXVEMVNYMDZoUFVGREdwYjh2emZ2dnhBdyIsInF1ZXN0aW9uIjoiRG9lcyBGYWxsb24gaGF2ZSBhIE1lZGljYXJlIEFkdmFudGFnZSBwbGFuPyIsImxrIjoiR2lwa2IyVnpJR1poYkd4dmJpQm9ZWFpsSUdFZ2JXVmthV05oY21VZ1lXUjJZVzUwWVdkbElIQnNZVzQiLCJicyI6ImMtT3E0Ykx5TEZad1M4ekp5YzlUOEVoTnpDbkpVQ2pKU0ZVb1RzeE5WVWlFeXpqbjUtYVc1bVdXVk1MVUJPUWs1dGxMZk5VMXNwYXl6Q3hXU0lNb3k4QTBBQ3FURERjQXFxWUFhQUJYSEplMlMzNHEzSmFNeERLZ0hnWGYxSlRNNU1TaVZBWEhsTExFdkpMRTlGU3dhbnVKSDd4R09sSmFLU0FkYVNnNmNtRTZFbEYwQ0RBQ0FBIiwiaWQiOiJmY190R1JrYVBSdXI2clE4US1Vd3BqNUNnXzEifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFBQkNtSkJUR3QwWDNaR01UUnlkRWwyV25NM2VVbGxhSEpKYUhBeExWWmxjRUpSZVdwRFZrTXRWak5MUm5SaFJ6UnFTMVpVVVZsMFVtOXJlRVl3YTE5UVowVjRiMEZuYWtoT1JUSklaSFJqVkZRNVEwZE5Ua0pKYkVJME1GSkJOemhxUlVkVVp4SVdkRWRTYTJGUVVuVnlObkpST0ZFdFZYZHdhalZEWnhvaVFVWk5RVWRIY21oRFIyVkhYek5RZG5Gc2FYUk5iR0ZoYkdOWVRuTkZSVlJKWnciLCJmY3YiOiIzIiwiZWkiOiJ0R1JrYVBSdXI2clE4US1Vd3BqNUNnIiwicWMiOiJjd1hCd1EyQUlBd0ZVTS1lSE9IZkhNTUJuS0toUlpwQUlRMlNjSEE1WGN6MzFqTlN6dFVRYWltM2FaOUlRcmtudEV5R0lxeUJYRUE4eURwZGd1WjFLSXVEMVNYMDZoUFVGREdwYjh2emZ2dnhBdyIsInF1ZXN0aW9uIjoiRG9lcyBGYWxsb24gaGF2ZSBhIE1lZGljYXJlIEFkdmFudGFnZSBwbGFuPyIsImxrIjoiR2lwa2IyVnpJR1poYkd4dmJpQm9ZWFpsSUdFZ2JXVmthV05oY21VZ1lXUjJZVzUwWVdkbElIQnNZVzQiLCJicyI6ImMtT3E0Ykx5TEZad1M4ekp5YzlUOEVoTnpDbkpVQ2pKU0ZVb1RzeE5WVWlFeXpqbjUtYVc1bVdXVk1MVUJPUWs1dGxMZk5VMXNwYXl6Q3hXU0lNb3k4QTBBQ3FURERjQXFxWUFhQUJYSEplMlMzNHEzSmFNeERLZ0hnWGYxSlRNNU1TaVZBWEhsTExFdkpMRTlGU3dhbnVKSDd4R09sSmFLU0FkYVNnNmNtRTZFbEYwQ0RBQ0FBIiwiaWQiOiJmY190R1JrYVBSdXI2clE4US1Vd3BqNUNnXzEifQ%3D%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Privacy and confidentiality notice",
+      "link": "https://fallonhealth.org/about/privacy",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://fallonhealth.org/about/privacy&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8QFnoECBcQAQ",
+      "displayed_link": "https://fallonhealth.org \u203a about \u203a privacy",
+      "favicon": "https://serpapi.com/searches/686464b088de9254d2f62240/images/1bdc4988ccbe5f13ac3a757279a9bc3377e1859fc0f883733da5211ac77bb837.png",
+      "snippet": "Provider directory API - Practitioner \u00b7 Provider directory API - Organization \u00b7 Provider directory API - Location \u00b7 Provider directory API - Insurance plan ...",
+      "snippet_highlighted_words": [
+        "Provider directory API"
+      ],
+      "missing": [
+        "FHIR"
+      ],
+      "must_include": {
+        "word": "FHIR",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8Q5t4CegQIIhAB"
+      },
+      "source": "Fallon Health"
+    },
+    {
+      "position": 2,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8QFnoECBYQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/686464b088de9254d2f62240/images/1bdc4988ccbe5f13ac3a757279a9bc3356adf2cbb28a768c8c38a2e617b23119.png",
+      "snippet": "Flexpa Endpoint Directory. Flexpa's directory is a comprehensive index of Payer Patient Access APIs and is the largest of its kind.",
+      "snippet_highlighted_words": [
+        "Flexpa's directory is a comprehensive index of Payer Patient Access APIs"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 3,
+      "title": "Streamlining Prior Authorization: Final Report ...",
+      "link": "https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8QFnoECBIQAQ",
+      "displayed_link": "https://24315998.fs1.hubspotusercontent-na1.net \u203a ...",
+      "snippet": "*Plans include Harvard Pilgrim Health Care and United Behavioral Health d/b/a Optum; Fallon Community Health Plan and Beacon. Health Strategies; AllWays ...",
+      "snippet_highlighted_words": [
+        "Plans",
+        "Fallon Community Health Plan"
+      ],
+      "source": "hubspotusercontent-na1.net"
+    },
+    {
+      "position": 4,
+      "title": "Responses to the CMS RFI on National Healthcare Directory",
+      "link": "https://defacto.health/2022/12/09/responses-to-the-cms-rfi-on-national-healthcare-directory/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://defacto.health/2022/12/09/responses-to-the-cms-rfi-on-national-healthcare-directory/&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8QFnoECBkQAQ",
+      "displayed_link": "https://defacto.health \u203a 2022/12/09 \u203a responses-to-the-c...",
+      "favicon": "https://serpapi.com/searches/686464b088de9254d2f62240/images/1bdc4988ccbe5f13ac3a757279a9bc33b1f650b35ff33134832057e08fd99456.png",
+      "date": "Dec 9, 2022",
+      "snippet": "In response to CMS's RFI on a National Healthcare Directory (responses were due Thurs 12/6/2022), over 600 responses were submitted (around ...",
+      "snippet_highlighted_words": [
+        "Healthcare Directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=fallon+community+health+plan+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8Q5t4CegQIIRAB"
+      },
+      "source": "Defacto Health"
+    },
+    {
+      "position": 5,
+      "title": "CMS 9915-F",
+      "link": "https://www.cms.gov/cciio/resources/regulations-and-guidance/downloads/cms-transparency-in-coverage-9915f.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/cciio/resources/regulations-and-guidance/downloads/cms-transparency-in-coverage-9915f.pdf&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8QFnoECBgQAQ",
+      "displayed_link": "https://www.cms.gov \u203a resources \u203a downloads",
+      "favicon": "https://serpapi.com/searches/686464b088de9254d2f62240/images/1bdc4988ccbe5f13ac3a757279a9bc337b7d7e013e3b43cd5017aa2b891ca1a9.png",
+      "date": "Jun 30, 2021",
+      "snippet": "SUMMARY: The final rules set forth requirements for group health plans and health insurance issuers in the individual and group markets to ...",
+      "snippet_highlighted_words": [
+        "health plans",
+        "health insurance"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 556
+          },
+          "extensions": [
+            "556 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Record History | ver. 334: 2024-10-04 | NCT03072927",
+      "link": "https://clinicaltrials.gov/study/NCT03072927?tab=history&a=334",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://clinicaltrials.gov/study/NCT03072927%3Ftab%3Dhistory%26a%3D334&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8QFnoECBQQAQ",
+      "displayed_link": "https://clinicaltrials.gov \u203a study \u203a NCT03072927",
+      "favicon": "https://serpapi.com/searches/686464b088de9254d2f62240/images/1bdc4988ccbe5f13ac3a757279a9bc339d52599986bf578ee753479d62892cb4.png",
+      "snippet": "In this study the treatment group will include all patients receiving MILD, and the control group will include all patients receiving IPD for the treatment of ...",
+      "source": "ClinicalTrials.gov"
+    },
+    {
+      "position": 7,
+      "title": "ePS Payer List (A-F) - April 12, 2024",
+      "link": "https://support.drchrono.com/home/24766684793115-eps-payer-list-a-f-april-12-2024",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://support.drchrono.com/home/24766684793115-eps-payer-list-a-f-april-12-2024&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8QFnoECDgQAQ",
+      "displayed_link": "https://support.drchrono.com \u203a home \u203a 2476668479311...",
+      "favicon": "https://serpapi.com/searches/686464b088de9254d2f62240/images/1bdc4988ccbe5f13ac3a757279a9bc33305a8be83820308c74cfc03ad8115902.png",
+      "date": "Apr 12, 2024",
+      "snippet": "Fallon Community Health Plan, 22254, ALL, X, X, X, Y. Fallon Health (Transplant Only), FT254, ALL, X, X. FAMILY CARE, 60995, ALL, X, X, X, Y.",
+      "snippet_highlighted_words": [
+        "Fallon Community Health Plan"
+      ],
+      "source": "DrChrono"
+    },
+    {
+      "position": 8,
+      "title": "TRANSFORMING THE HEALTH IT MARKETPLACE",
+      "link": "https://www.ncbi.nlm.nih.gov/books/n/nap27114/ch4/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ncbi.nlm.nih.gov/books/n/nap27114/ch4/&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8QFnoECDUQAQ",
+      "displayed_link": "https://www.ncbi.nlm.nih.gov \u203a books \u203a nap27114",
+      "favicon": "https://serpapi.com/searches/686464b088de9254d2f62240/images/1bdc4988ccbe5f13ac3a757279a9bc33d8c32d248ee9b3afa5245238c4f2273c.png",
+      "snippet": "Patients and consumers can access their own health information, determine which parties are granted access to their data, and actively participate in their own ...",
+      "snippet_highlighted_words": [
+        "health"
+      ],
+      "source": "National Institutes of Health (NIH) | (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "Health Insurance Portability and Accountability Act Privacy ...",
+      "link": "https://www.regulations.gov/document/HHS-OS-2024-0002-0018",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.regulations.gov/document/HHS-OS-2024-0002-0018&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8QFnoECDsQAQ",
+      "displayed_link": "https://www.regulations.gov \u203a HHS-OS-2024-0002-0018",
+      "favicon": "https://serpapi.com/searches/686464b088de9254d2f62240/images/1bdc4988ccbe5f13ac3a757279a9bc33674dea47acbb09667dc2d66bda98352b.png",
+      "date": "Apr 26, 2024",
+      "snippet": "We disagree that this requirement prevents the exchange of data using FHIR APIs under these permissions or for automated health data exchange ...",
+      "snippet_highlighted_words": [
+        "FHIR APIs",
+        "health"
+      ],
+      "source": "Regulations.gov"
+    },
+    {
+      "position": 10,
+      "title": "March 13, 2023 Chiquita Brooks-LaSure, Administrator ...",
+      "link": "https://leadingage.org/wp-content/uploads/2023/03/LeadingAge-Comments-on-Advancing-Interoperability-and-prior-authorization-CMS-0057-P-FINAL.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://leadingage.org/wp-content/uploads/2023/03/LeadingAge-Comments-on-Advancing-Interoperability-and-prior-authorization-CMS-0057-P-FINAL.pdf&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8QFnoECDwQAQ",
+      "displayed_link": "https://leadingage.org \u203a wp-content \u203a uploads \u203a 2023/03",
+      "favicon": "https://serpapi.com/searches/686464b088de9254d2f62240/images/1bdc4988ccbe5f13ac3a757279a9bc33655bcca81b6cf07ebb649d289e21c602.png",
+      "date": "Mar 13, 2023",
+      "snippet": "We support the use of FHIR API to ensure systems can easily speak to each other, gather, and compile available data without requiring providers ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "providers"
+      ],
+      "source": "LeadingAge"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=tGRkaPRur6rQ8Q-Uwpj5Cg&start=10&sa=N&sstk=Ac65TH5UHSx7--gLYcpOMd4CsPbT4A7leklcZlI__0FEt3ZDBqAQpIT5n32c4tnFB3WattabXZaNLGJHYDRQ9IKD-Qiek2Sg_BBg2Q&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8Q8NMDegQICRAU",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=tGRkaPRur6rQ8Q-Uwpj5Cg&start=10&sa=N&sstk=Ac65TH5UHSx7--gLYcpOMd4CsPbT4A7leklcZlI__0FEt3ZDBqAQpIT5n32c4tnFB3WattabXZaNLGJHYDRQ9IKD-Qiek2Sg_BBg2Q&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8Q8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=tGRkaPRur6rQ8Q-Uwpj5Cg&start=20&sa=N&sstk=Ac65TH5UHSx7--gLYcpOMd4CsPbT4A7leklcZlI__0FEt3ZDBqAQpIT5n32c4tnFB3WattabXZaNLGJHYDRQ9IKD-Qiek2Sg_BBg2Q&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8Q8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=tGRkaPRur6rQ8Q-Uwpj5Cg&start=30&sa=N&sstk=Ac65TH5UHSx7--gLYcpOMd4CsPbT4A7leklcZlI__0FEt3ZDBqAQpIT5n32c4tnFB3WattabXZaNLGJHYDRQ9IKD-Qiek2Sg_BBg2Q&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8Q8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=tGRkaPRur6rQ8Q-Uwpj5Cg&start=40&sa=N&sstk=Ac65TH5UHSx7--gLYcpOMd4CsPbT4A7leklcZlI__0FEt3ZDBqAQpIT5n32c4tnFB3WattabXZaNLGJHYDRQ9IKD-Qiek2Sg_BBg2Q&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8Q8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=tGRkaPRur6rQ8Q-Uwpj5Cg&start=50&sa=N&sstk=Ac65TH5UHSx7--gLYcpOMd4CsPbT4A7leklcZlI__0FEt3ZDBqAQpIT5n32c4tnFB3WattabXZaNLGJHYDRQ9IKD-Qiek2Sg_BBg2Q&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8Q8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=tGRkaPRur6rQ8Q-Uwpj5Cg&start=60&sa=N&sstk=Ac65TH5UHSx7--gLYcpOMd4CsPbT4A7leklcZlI__0FEt3ZDBqAQpIT5n32c4tnFB3WattabXZaNLGJHYDRQ9IKD-Qiek2Sg_BBg2Q&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8Q8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=tGRkaPRur6rQ8Q-Uwpj5Cg&start=70&sa=N&sstk=Ac65TH5UHSx7--gLYcpOMd4CsPbT4A7leklcZlI__0FEt3ZDBqAQpIT5n32c4tnFB3WattabXZaNLGJHYDRQ9IKD-Qiek2Sg_BBg2Q&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8Q8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=tGRkaPRur6rQ8Q-Uwpj5Cg&start=80&sa=N&sstk=Ac65TH5UHSx7--gLYcpOMd4CsPbT4A7leklcZlI__0FEt3ZDBqAQpIT5n32c4tnFB3WattabXZaNLGJHYDRQ9IKD-Qiek2Sg_BBg2Q&ved=2ahUKEwj0mO-M3pyOAxUvFTQIHRQhJq8Q8tMDegQICRAS"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=fallon+community+health+plan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80"
+    }
+  }
+}

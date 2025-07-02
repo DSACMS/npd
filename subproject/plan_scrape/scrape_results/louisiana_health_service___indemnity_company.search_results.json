@@ -1,0 +1,325 @@
+{
+  "search_metadata": {
+    "id": "68646d0822abf7855f56ad26",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/8e079b431323bc58/68646d0822abf7855f56ad26.json",
+    "created_at": "2025-07-01 23:19:36 UTC",
+    "processed_at": "2025-07-01 23:19:36 UTC",
+    "google_url": "https://www.google.com/search?q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/8e079b431323bc58/68646d0822abf7855f56ad26.html",
+    "total_time_taken": 1.49
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "louisiana health service & indemnity company Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "louisiana health service & indemnity company Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 335,
+    "time_taken_displayed": 0.31,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability For Developers",
+      "link": "https://www.louisianahealthconnect.com/members/medicaid/resources/interoperability-and-patient-access/interoperability-for-developers.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.louisianahealthconnect.com/members/medicaid/resources/interoperability-and-patient-access/interoperability-for-developers.html&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQFnoECBoQAQ",
+      "displayed_link": "https://www.louisianahealthconnect.com \u203a resources \u203a int...",
+      "favicon": "https://serpapi.com/searches/68646d0822abf7855f56ad26/images/30f5d439de2ae870eb93baf29b8b7c5c5fa4832b6c74a6a1b957ec9cc5feede9.png",
+      "snippet": "Q: As a developer, how do I access and use the Provider Directory API? A: Go to our Partner PortalExternal Link and scroll to the \u201cFHIR \u2013 Provider Directory ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "missing": [
+        "indemnity",
+        "company"
+      ],
+      "source": "Louisiana Healthcare Connections"
+    },
+    {
+      "position": 2,
+      "title": "Provider Directory API",
+      "link": "https://developers.humana.com/apis/provider-directory-api/doc",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developers.humana.com/apis/provider-directory-api/doc&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQFnoECCAQAQ",
+      "displayed_link": "https://developers.humana.com \u203a apis \u203a doc",
+      "favicon": "https://serpapi.com/searches/68646d0822abf7855f56ad26/images/30f5d439de2ae870eb93baf29b8b7c5c5b21580f525d66df41a63d28688b324f.png",
+      "snippet": "The Provider Directory service includes multiple APIs that enable views of ... This service includes multiple FHIR APIs: InsurancePlan, PractitionerRole, ...",
+      "snippet_highlighted_words": [
+        "Provider Directory service",
+        "APIs",
+        "service",
+        "FHIR APIs"
+      ],
+      "missing": [
+        "indemnity"
+      ],
+      "must_include": {
+        "word": "indemnity",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=louisiana+health+service+%26+%22indemnity%22+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ5t4CegQIIhAB"
+      },
+      "source": "Humana Data Exchange"
+    },
+    {
+      "position": 3,
+      "title": "CMS Interoperability and Patient Access Rule",
+      "link": "https://ldh.la.gov/assets/HealthyLa/RFP21/ProcurementLibrary/Reference/CMS_Interoperability_and_Patient_Access_Rule.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ldh.la.gov/assets/HealthyLa/RFP21/ProcurementLibrary/Reference/CMS_Interoperability_and_Patient_Access_Rule.pdf&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQFnoECBUQAQ",
+      "displayed_link": "https://ldh.la.gov \u203a ProcurementLibrary \u203a Reference",
+      "favicon": "https://serpapi.com/searches/68646d0822abf7855f56ad26/images/30f5d439de2ae870eb93baf29b8b7c5c08851a7627d01cded628d41aded52ecd.png",
+      "date": "Oct 1, 2020",
+      "snippet": "Healthcare Interoperability Resources [FHIR] ... The basic requirements for implementation of the Provider Directory API are as follows:.",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 14
+          },
+          "extensions": [
+            "14 pages"
+          ]
+        }
+      },
+      "missing": [
+        "indemnity",
+        "company"
+      ],
+      "source": "Louisiana Department of Health (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Interoperability",
+      "link": "https://ochsnerhealthplan.com/interoperability/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ochsnerhealthplan.com/interoperability/&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQFnoECBsQAQ",
+      "displayed_link": "https://ochsnerhealthplan.com \u203a interoperability",
+      "favicon": "https://serpapi.com/searches/68646d0822abf7855f56ad26/images/30f5d439de2ae870eb93baf29b8b7c5c3650ea72525b23d73450cc56fafdd596.png",
+      "snippet": "Interoperability: Developer access to APIs and Smart on FHIR. CMS ... Provider Directory url: https://provider-directory.fhir.ochsner.abacusinsights.io ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "FHIR",
+        "Provider Directory",
+        "provider-directory",
+        "fhir"
+      ],
+      "missing": [
+        "louisiana",
+        "indemnity",
+        "company"
+      ],
+      "source": "Ochsner Health Plan"
+    },
+    {
+      "position": 5,
+      "title": "CMS Interoperability and Prior Authorization Final Rule ...",
+      "link": "https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQFnoECBkQAQ",
+      "displayed_link": "https://www.cms.gov \u203a newsroom \u203a fact-sheets \u203a cms-int...",
+      "favicon": "https://serpapi.com/searches/68646d0822abf7855f56ad26/images/30f5d439de2ae870eb93baf29b8b7c5c745f9e55fa0328216d6964e9e63bc66b.png",
+      "date": "Jan 17, 2024",
+      "snippet": "... FHIR\u00ae Patient Access API. In this final rule, we ... When implementing the updated Patient Access API, the existing Provider Directory API ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "API",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "louisiana"
+      ],
+      "must_include": {
+        "word": "louisiana",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=%22louisiana%22+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ5t4CegQIHxAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Technical Information",
+      "link": "https://www.lacare.org/technical-information",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/technical-information&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQFnoECBcQAQ",
+      "displayed_link": "https://www.lacare.org \u203a technical-information",
+      "favicon": "https://serpapi.com/searches/68646d0822abf7855f56ad26/images/30f5d439de2ae870eb93baf29b8b7c5c242b2bf32c12bdf2be4a201442942ee0.png",
+      "snippet": "Person. Provider Directory API. UAT Base/Endpoint URL: https://uat107.ir4.edifecscloud.com/lac/fhir/pd/R4 Capability Statement URL: https://uat107.ir4 ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "fhir"
+      ],
+      "missing": [
+        "louisiana",
+        "indemnity",
+        "company",
+        "Advantage"
+      ],
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 7,
+      "title": "State of Provider Directory APIs 2024",
+      "link": "https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQFnoECBYQAQ",
+      "displayed_link": "https://defacto.health \u203a 2024/06/24 \u203a state-of-provider-di...",
+      "favicon": "https://serpapi.com/searches/68646d0822abf7855f56ad26/images/30f5d439de2ae870eb93baf29b8b7c5c9150277ddcb9e9713e90a4b6b77804b5.png",
+      "date": "Jun 24, 2024",
+      "snippet": "... Provider Directory data via FHIR APIs: UnitedHealthcare; Elevance (Anthem); Humana; Aetna; Molina; L.A. Care; Amerihealth Caritas; CareSource ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR APIs",
+        "L.A. Care"
+      ],
+      "missing": [
+        "louisiana",
+        "indemnity"
+      ],
+      "source": "Defacto Health"
+    },
+    {
+      "position": 8,
+      "title": "State Efforts to Coordinate Provider Directory Accuracy",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQFnoECDkQAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/68646d0822abf7855f56ad26/images/30f5d439de2ae870eb93baf29b8b7c5c8debad1bd9142a43b9d1da60d15eca3a.png",
+      "date": "Dec 27, 2023",
+      "snippet": "These FHIR APIs improve the accessibility and transparency of provider directory data. Notes: a. Centers for Medicare & Medicaid Services (CMS).",
+      "snippet_highlighted_words": [
+        "FHIR APIs",
+        "provider directory",
+        "Medicare",
+        "Services"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 45
+          },
+          "extensions": [
+            "45 pages"
+          ]
+        }
+      },
+      "missing": [
+        "indemnity"
+      ],
+      "must_include": {
+        "word": "indemnity",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=louisiana+health+service+%26+%22indemnity%22+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ5t4CegQIOhAB"
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 9,
+      "title": "Sharp Health Plan Provider Directory API",
+      "link": "https://anypoint.mulesoft.com/exchange/portals/sharp-healthcare-6/71c86d0d-b0f5-48df-8d81-08c3787c3a8a/provider-directory-api/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://anypoint.mulesoft.com/exchange/portals/sharp-healthcare-6/71c86d0d-b0f5-48df-8d81-08c3787c3a8a/provider-directory-api/&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQFnoECD0QAQ",
+      "displayed_link": "https://anypoint.mulesoft.com \u203a exchange \u203a portals \u203a pr...",
+      "favicon": "https://serpapi.com/searches/68646d0822abf7855f56ad26/images/30f5d439de2ae870eb93baf29b8b7c5cf87d76b0f0a7165d0ac259e253975e1f.png",
+      "snippet": "The Provider Directory API accesses the Sharp Health Plan's FHIR server portion of the Provider Directory. Utilizing only read-only RESTful GET API calls ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Health",
+        "FHIR",
+        "Provider Directory",
+        "API"
+      ],
+      "missing": [
+        "louisiana"
+      ],
+      "must_include": {
+        "word": "louisiana",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=%22louisiana%22+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ5t4CegQIPhAB"
+      },
+      "source": "Anypoint Platform"
+    },
+    {
+      "position": 10,
+      "title": "Contract Amendment #3 Attachment B3",
+      "link": "https://ldh.la.gov/assets/medicaid/Contracts-PC/Amd3AttachmentB311.05.2020.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ldh.la.gov/assets/medicaid/Contracts-PC/Amd3AttachmentB311.05.2020.pdf&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQFnoECDUQAQ",
+      "displayed_link": "https://ldh.la.gov \u203a assets \u203a medicaid \u203a Contracts-PC",
+      "favicon": "https://serpapi.com/searches/68646d0822abf7855f56ad26/images/30f5d439de2ae870eb93baf29b8b7c5c1d0bda29abbc28e92a7568d3b336fbf2.png",
+      "snippet": "16.15.4 Make standardized information about provider networks available via a Fast Healthcare Interoperability Resources (FHIR) based Provider Directory API.",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 31
+          },
+          "extensions": [
+            "31 pages"
+          ]
+        }
+      },
+      "missing": [
+        "indemnity"
+      ],
+      "must_include": {
+        "word": "indemnity",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=louisiana+health+service+%26+%22indemnity%22+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ5t4CegQIOBAB"
+      },
+      "source": "Louisiana Department of Health (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Humana Research database",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Humana+Research+database&sa=X&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Humana+Research+database&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Humana developer portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Humana+developer+portal&sa=X&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Humana+developer+portal&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CW1kaIXWLIrvseMPzrSLwQc&start=10&sa=N&sstk=Ac65TH45B2M9RBwLdWZO04Byk_J6MI3zXgqpxe4F8SjW2Mo4Xf6697OtALhOnmzWvV7f00HZ670aUmFbAT7Oqu2DhvOplE3jDEHw3w&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ8NMDegQICBAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CW1kaIXWLIrvseMPzrSLwQc&start=10&sa=N&sstk=Ac65TH45B2M9RBwLdWZO04Byk_J6MI3zXgqpxe4F8SjW2Mo4Xf6697OtALhOnmzWvV7f00HZ670aUmFbAT7Oqu2DhvOplE3jDEHw3w&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CW1kaIXWLIrvseMPzrSLwQc&start=20&sa=N&sstk=Ac65TH45B2M9RBwLdWZO04Byk_J6MI3zXgqpxe4F8SjW2Mo4Xf6697OtALhOnmzWvV7f00HZ670aUmFbAT7Oqu2DhvOplE3jDEHw3w&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CW1kaIXWLIrvseMPzrSLwQc&start=30&sa=N&sstk=Ac65TH45B2M9RBwLdWZO04Byk_J6MI3zXgqpxe4F8SjW2Mo4Xf6697OtALhOnmzWvV7f00HZ670aUmFbAT7Oqu2DhvOplE3jDEHw3w&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ8tMDegQICBAI",
+      "5": "https://www.google.com/search?q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CW1kaIXWLIrvseMPzrSLwQc&start=40&sa=N&sstk=Ac65TH45B2M9RBwLdWZO04Byk_J6MI3zXgqpxe4F8SjW2Mo4Xf6697OtALhOnmzWvV7f00HZ670aUmFbAT7Oqu2DhvOplE3jDEHw3w&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ8tMDegQICBAK",
+      "6": "https://www.google.com/search?q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CW1kaIXWLIrvseMPzrSLwQc&start=50&sa=N&sstk=Ac65TH45B2M9RBwLdWZO04Byk_J6MI3zXgqpxe4F8SjW2Mo4Xf6697OtALhOnmzWvV7f00HZ670aUmFbAT7Oqu2DhvOplE3jDEHw3w&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ8tMDegQICBAM",
+      "7": "https://www.google.com/search?q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CW1kaIXWLIrvseMPzrSLwQc&start=60&sa=N&sstk=Ac65TH45B2M9RBwLdWZO04Byk_J6MI3zXgqpxe4F8SjW2Mo4Xf6697OtALhOnmzWvV7f00HZ670aUmFbAT7Oqu2DhvOplE3jDEHw3w&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ8tMDegQICBAO",
+      "8": "https://www.google.com/search?q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CW1kaIXWLIrvseMPzrSLwQc&start=70&sa=N&sstk=Ac65TH45B2M9RBwLdWZO04Byk_J6MI3zXgqpxe4F8SjW2Mo4Xf6697OtALhOnmzWvV7f00HZ670aUmFbAT7Oqu2DhvOplE3jDEHw3w&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ8tMDegQICBAQ",
+      "9": "https://www.google.com/search?q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CW1kaIXWLIrvseMPzrSLwQc&start=80&sa=N&sstk=Ac65TH45B2M9RBwLdWZO04Byk_J6MI3zXgqpxe4F8SjW2Mo4Xf6697OtALhOnmzWvV7f00HZ670aUmFbAT7Oqu2DhvOplE3jDEHw3w&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ8tMDegQICBAS",
+      "10": "https://www.google.com/search?q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CW1kaIXWLIrvseMPzrSLwQc&start=90&sa=N&sstk=Ac65TH45B2M9RBwLdWZO04Byk_J6MI3zXgqpxe4F8SjW2Mo4Xf6697OtALhOnmzWvV7f00HZ670aUmFbAT7Oqu2DhvOplE3jDEHw3w&ved=2ahUKEwjF_qaG5pyOAxWKd2wGHU7aIngQ8tMDegQICBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=louisiana+health+service+%26+indemnity+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

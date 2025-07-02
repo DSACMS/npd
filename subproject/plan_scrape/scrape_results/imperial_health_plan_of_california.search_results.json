@@ -1,0 +1,251 @@
+{
+  "search_metadata": {
+    "id": "68646cf1f357f6c7643b2e6d",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/0664435a38cd2e63/68646cf1f357f6c7643b2e6d.json",
+    "created_at": "2025-07-01 23:19:13 UTC",
+    "processed_at": "2025-07-01 23:19:13 UTC",
+    "google_url": "https://www.google.com/search?q=imperial+health+plan+of+california+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=imperial+health+plan+of+california+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/0664435a38cd2e63/68646cf1f357f6c7643b2e6d.html",
+    "total_time_taken": 2.51
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "imperial health plan of california Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "imperial health plan of california Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 51,
+    "time_taken_displayed": 0.31,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "California State Medi-Cal Health Information Technology Plan ...",
+      "link": "https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf&ved=2ahUKEwjDqc_75ZyOAxU3RvEDHQpwCE0QFnoECBgQAQ",
+      "displayed_link": "https://www.dhcs.ca.gov \u203a Documents \u203a OHIT \u203a C...",
+      "favicon": "https://serpapi.com/searches/68646cf1f357f6c7643b2e6d/images/1c03a7fa1721fa84fd8705d495eb127af5a3354ece4fe02bc22396d49cc2bf41.png",
+      "date": "Mar 1, 2022",
+      "snippet": "requirements to use Fast Healthcare Interoperability Resources (FHIR) for certification, ... and provider directory. The only service area ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 246
+          },
+          "extensions": [
+            "246 pages"
+          ]
+        }
+      },
+      "source": "DHCS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Session 5 CMS Interoperability Planning Collaborative",
+      "link": "https://calmhsa.org/wp-content/uploads/2023/08/Session-5-FINAL-CMS-Interoperability-Planning-Collaborative-July-19-2022.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://calmhsa.org/wp-content/uploads/2023/08/Session-5-FINAL-CMS-Interoperability-Planning-Collaborative-July-19-2022.pdf&ved=2ahUKEwjDqc_75ZyOAxU3RvEDHQpwCE0QFnoECCEQAQ",
+      "displayed_link": "https://calmhsa.org \u203a uploads \u203a 2023/08 \u203a Sessio...",
+      "favicon": "https://serpapi.com/searches/68646cf1f357f6c7643b2e6d/images/1c03a7fa1721fa84fd8705d495eb127a5474a332e6bec55aa6636d2560173934.png",
+      "snippet": "FHIR, APIs and 3rd-party apps. Phased Approach Towards January 2025. Page ... Provider Directory API. Patient Access API: Clinical-USCDI Data and Consent ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "APIs",
+        "Provider Directory API",
+        "API"
+      ],
+      "source": "California Mental Health Services Authority"
+    },
+    {
+      "position": 3,
+      "title": "BH-Connect-STCs.pdf - DHCS",
+      "link": "https://www.dhcs.ca.gov/CalAIM/Documents/BH-CONNECT/BH-Connect-STCs.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.dhcs.ca.gov/CalAIM/Documents/BH-CONNECT/BH-Connect-STCs.pdf&ved=2ahUKEwjDqc_75ZyOAxU3RvEDHQpwCE0QFnoECCcQAQ",
+      "displayed_link": "https://www.dhcs.ca.gov \u203a CalAIM \u203a Documents",
+      "favicon": "https://serpapi.com/searches/68646cf1f357f6c7643b2e6d/images/1c03a7fa1721fa84fd8705d495eb127a2d00d871305249407c6580ce747c3baa.png",
+      "date": "Jan 1, 2025",
+      "snippet": "Programming Interfaces (APIs) and a publicly accessible Provider Directory API. ... \u201d HL7 FHIR includes specifications for an Application ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 188
+          },
+          "extensions": [
+            "188 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=imperial+health+plan+of+california+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjDqc_75ZyOAxU3RvEDHQpwCE0Q5t4CegQIKBAB"
+      },
+      "source": "DHCS (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Session 4 CMS Interoperability Planning Collaborative",
+      "link": "https://calmhsa.org/wp-content/uploads/2023/08/Session-4-v2-CMS-Interoperability-Planning-Collaborative-June-29-2022.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://calmhsa.org/wp-content/uploads/2023/08/Session-4-v2-CMS-Interoperability-Planning-Collaborative-June-29-2022.pdf&ved=2ahUKEwjDqc_75ZyOAxU3RvEDHQpwCE0QFnoECA4QAQ",
+      "displayed_link": "https://calmhsa.org \u203a uploads \u203a 2023/08 \u203a Sessio...",
+      "favicon": "https://serpapi.com/searches/68646cf1f357f6c7643b2e6d/images/1c03a7fa1721fa84fd8705d495eb127aeccbfb882a370b619c82a9934c524d73.png",
+      "snippet": "FHIR API. For 3rd-party Apps. For Clients. Page 11. Same privacy and security ... Provider Directory API. Patient Access API: Clinical/ USCDI Data (new ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory API",
+        "API"
+      ],
+      "source": "California Mental Health Services Authority"
+    },
+    {
+      "position": 5,
+      "title": "Population Health",
+      "link": "https://www.chgsd.com/about-us/population-health",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chgsd.com/about-us/population-health&ved=2ahUKEwjDqc_75ZyOAxU3RvEDHQpwCE0QFnoECBIQAQ",
+      "displayed_link": "https://www.chgsd.com \u203a about-us \u203a population-health",
+      "favicon": "https://serpapi.com/searches/68646cf1f357f6c7643b2e6d/images/1c03a7fa1721fa84fd8705d495eb127aef90a1d38dab76c6cd57f0ad740be13a.png",
+      "snippet": "FHIR Developer API \u00b7 Mission, Vision Statement \u00b7 MOU \u00b7 Population Health \u00b7 Quality ... Search Provider Directory \u00b7 Provider Portal Sign in. Claims. Submitting a ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Health",
+        "Provider Directory"
+      ],
+      "source": "Community Health Group"
+    },
+    {
+      "position": 6,
+      "title": "BOARD OF GOVERNORS MEETING",
+      "link": "https://lacare.org/sites/default/files/bog_meeting_packet_20220203.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://lacare.org/sites/default/files/bog_meeting_packet_20220203.pdf&ved=2ahUKEwjDqc_75ZyOAxU3RvEDHQpwCE0QFnoECBQQAQ",
+      "displayed_link": "https://lacare.org \u203a bog_meeting_packet_20220203",
+      "favicon": "https://serpapi.com/searches/68646cf1f357f6c7643b2e6d/images/1c03a7fa1721fa84fd8705d495eb127ad0e5771fd1e2c1797d4b7c21718a357d.png",
+      "date": "Feb 3, 2022",
+      "snippet": "Symphony Provider Directory Utility; ... Interoperability Resources (FHIR) format, in compliance with federal and state regulatory.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 7,
+      "title": "Reapplying for Medi-Cal (Redetermination)",
+      "link": "https://www.chgsd.com/chg-plans/medi-cal/reapplying-for-medi-cal",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chgsd.com/chg-plans/medi-cal/reapplying-for-medi-cal&ved=2ahUKEwjDqc_75ZyOAxU3RvEDHQpwCE0QFnoECCMQAQ",
+      "displayed_link": "https://www.chgsd.com \u203a chg-plans \u203a reapplying-for-m...",
+      "favicon": "https://serpapi.com/searches/68646cf1f357f6c7643b2e6d/images/1c03a7fa1721fa84fd8705d495eb127a7417806a30bda63696c5093a403ffb42.png",
+      "snippet": "FHIR Developer API \u00b7 Mission, Vision Statement \u00b7 MOU \u00b7 Population Health \u00b7 Quality ... Search Provider Directory \u00b7 Provider Portal Sign in. Claims. Submitting a ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Health",
+        "Provider Directory"
+      ],
+      "source": "Community Health Group"
+    },
+    {
+      "position": 8,
+      "title": "BOARD OF GOVERNORS MEETING",
+      "link": "https://www.lacare.org/sites/default/files/files/bog_meeting_packet_20221006.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/files/bog_meeting_packet_20221006.pdf&ved=2ahUKEwjDqc_75ZyOAxU3RvEDHQpwCE0QFnoECDUQAQ",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files \u203a files",
+      "favicon": "https://serpapi.com/searches/68646cf1f357f6c7643b2e6d/images/1c03a7fa1721fa84fd8705d495eb127a5713a46fe0678daf266e9d815d84ad49.png",
+      "date": "Oct 6, 2022",
+      "snippet": "via new HL7 FHIR ... Provider Directory API (Application Program Interface). L.A. Care Implemented Provider Directory API in March 2022.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API",
+        "Program",
+        "Care",
+        "Provider Directory API"
+      ],
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 9,
+      "title": "Modernizing Consent to Advance Health and Equity",
+      "link": "https://stewardsofchange.org/wp-content/uploads/sites/2/2022/01/Button-1-19-22-SOCI-Consent-Scan-Report-Final-11-22-21.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://stewardsofchange.org/wp-content/uploads/sites/2/2022/01/Button-1-19-22-SOCI-Consent-Scan-Report-Final-11-22-21.pdf&ved=2ahUKEwjDqc_75ZyOAxU3RvEDHQpwCE0QFnoECC4QAQ",
+      "displayed_link": "https://stewardsofchange.org \u203a sites \u203a 2022/01 \u203a B...",
+      "favicon": "https://serpapi.com/searches/68646cf1f357f6c7643b2e6d/images/1c03a7fa1721fa84fd8705d495eb127afe3ab88b9d5d465c63ed9df5fce3752d.png",
+      "snippet": "The SDHC team also plans to build a FHIR Consent. Implementation Guide ... API-enabled social and health information platform using the HL7 FHIR standard.",
+      "snippet_highlighted_words": [
+        "plans",
+        "FHIR",
+        "API",
+        "health",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 73
+          },
+          "extensions": [
+            "73 pages"
+          ]
+        }
+      },
+      "source": "Stewards of Change Institute"
+    },
+    {
+      "position": 10,
+      "title": "HOUSE OF DELEGATES HANDBOOK - INFO (A-22)",
+      "link": "https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf&ved=2ahUKEwjDqc_75ZyOAxU3RvEDHQpwCE0QFnoECDEQAQ",
+      "displayed_link": "https://www.ama-assn.org \u203a system \u203a files \u203a a22-...",
+      "favicon": "https://serpapi.com/searches/68646cf1f357f6c7643b2e6d/images/1c03a7fa1721fa84fd8705d495eb127a6d06fff7b056a90da15b2238cedf0623.png",
+      "date": "Dec 17, 2021",
+      "snippet": "AMA/CAQH Provider Directory. White Paper \u2013 Co-branded white ... FHIR\u00ae implementation guide for the capture and use of SDOH data. 18.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=imperial+health+plan+of+california+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjDqc_75ZyOAxU3RvEDHQpwCE0Q5t4CegQIMhAB"
+      },
+      "source": "American Medical Association"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=imperial+health+plan+of+california+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=82xkaIPkE7eMxc8PiuCh6AQ&start=10&sa=N&sstk=Ac65TH7zY32exe0YMQalz0efQYZ-27G6h-taEpBgE8PdTTtlgpntDJ0_7Q3z2oIk1iBJc4rCS44o63WrdAMgF10_J_DWD72YlJTQ8Q&ved=2ahUKEwjDqc_75ZyOAxU3RvEDHQpwCE0Q8NMDegQICRAG",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=imperial+health+plan+of+california+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=82xkaIPkE7eMxc8PiuCh6AQ&start=10&sa=N&sstk=Ac65TH7zY32exe0YMQalz0efQYZ-27G6h-taEpBgE8PdTTtlgpntDJ0_7Q3z2oIk1iBJc4rCS44o63WrdAMgF10_J_DWD72YlJTQ8Q&ved=2ahUKEwjDqc_75ZyOAxU3RvEDHQpwCE0Q8tMDegQICRAE"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=imperial+health+plan+of+california+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=imperial+health+plan+of+california+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=imperial+health+plan+of+california+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10"
+    }
+  }
+}

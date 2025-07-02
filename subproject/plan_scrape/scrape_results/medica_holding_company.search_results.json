@@ -1,0 +1,301 @@
+{
+  "search_metadata": {
+    "id": "68646d0f13f4b6baf7906590",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/adf5d2ca1e362209/68646d0f13f4b6baf7906590.json",
+    "created_at": "2025-07-01 23:19:43 UTC",
+    "processed_at": "2025-07-01 23:19:43 UTC",
+    "google_url": "https://www.google.com/search?q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/adf5d2ca1e362209/68646d0f13f4b6baf7906590.html",
+    "total_time_taken": 6.13
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "medica holding company Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "medica holding company Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 488,
+    "time_taken_displayed": 0.26,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "CMS 9115-F Interoperability and Patient Access Final Rule ...",
+      "link": "https://www.cms.gov/files/document/cms-9115-f-interoperability-and-patient-access-final-rule-compiled-faqs.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/cms-9115-f-interoperability-and-patient-access-final-rule-compiled-faqs.pdf&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8QFnoECBwQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a cms-91...",
+      "favicon": "https://serpapi.com/searches/68646d0f13f4b6baf7906590/images/bde7002a5d4ab2b6bf57e8414efa02e9965da254a7b0f93bebf34172337f795d.png",
+      "date": "May 1, 2020",
+      "snippet": "... plans to build a Provider Directory API that is conformant to the ... \u2022 FHIR API validation: These tests validate that the FHIR APIs conform to ...",
+      "snippet_highlighted_words": [
+        "plans",
+        "Provider Directory API",
+        "FHIR API",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 26
+          },
+          "extensions": [
+            "26 pages"
+          ]
+        }
+      },
+      "missing": [
+        "holding",
+        "company"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Interoperability and Patient Access Final Rule FAQ ...",
+      "link": "https://www.cms.gov/files/document/faqs-interoperability-patient-access-and-cop-event-notifications-may-2021.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/faqs-interoperability-patient-access-and-cop-event-notifications-may-2021.pdf&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8QFnoECBsQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a faqs-int...",
+      "favicon": "https://serpapi.com/searches/68646d0f13f4b6baf7906590/images/bde7002a5d4ab2b6bf57e8414efa02e92a2a2c1a28988746edbb600951321b8e.png",
+      "date": "May 7, 2021",
+      "snippet": "What are the requirements for the Provider Directory API for Medicare. Advantage ... FHIR APIs conform to the FHIR. IGs that specify the API ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Medicare",
+        "Advantage",
+        "FHIR",
+        "FHIR",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 17
+          },
+          "extensions": [
+            "17 pages"
+          ]
+        }
+      },
+      "missing": [
+        "holding",
+        "company"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2020/05/01/2020-05050/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2020/05/01/2020-05050/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8QFnoECB4QAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2020/05/01 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/68646d0f13f4b6baf7906590/images/bde7002a5d4ab2b6bf57e8414efa02e9af8bed44aeb87283dffa45d796c506ff.png",
+      "date": "May 1, 2020",
+      "snippet": "The basic information (name, phone number, address, and specialty) required for this Provider Directory API can all be represented through FHIR ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "missing": [
+        "holding"
+      ],
+      "must_include": {
+        "word": "holding",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=medica+%22holding%22+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8Q5t4CegQIIxAB"
+      },
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "CMS Proposed Expansion of Interoperability Requirements ...",
+      "link": "https://www.cblawyers.com/wp-content/uploads/2020/12/12.14.2020-FINAL-Coppersmith-Briefs-Proposed-CMS-Interoperability-Expansion.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cblawyers.com/wp-content/uploads/2020/12/12.14.2020-FINAL-Coppersmith-Briefs-Proposed-CMS-Interoperability-Expansion.pdf&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8QFnoECCEQAQ",
+      "displayed_link": "https://www.cblawyers.com \u203a uploads \u203a 2020/12",
+      "favicon": "https://serpapi.com/searches/68646d0f13f4b6baf7906590/images/bde7002a5d4ab2b6bf57e8414efa02e9dc8bc938428115dadce6adc0aae6a15b.png",
+      "date": "Dec 14, 2020",
+      "snippet": "Healthcare Interoperability Resources (FHIR)-based Patient Access API and Provider Directory API, and to participate in a Payer-to-Payer ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "holding"
+      ],
+      "must_include": {
+        "word": "holding",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=medica+%22holding%22+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8Q5t4CegQIJBAB"
+      },
+      "source": "Coppersmith Brockelman PLC"
+    },
+    {
+      "position": 5,
+      "title": "Medicare and Medicaid Programs; Patient Protection and ...",
+      "link": "https://www.federalregister.gov/documents/2024/02/08/2024-00895/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-advancing-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2024/02/08/2024-00895/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-advancing-interoperability&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8QFnoECBcQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2024/02/08 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/68646d0f13f4b6baf7906590/images/bde7002a5d4ab2b6bf57e8414efa02e9641caa875e77b67b06e761b5dfe53a38.png",
+      "date": "Feb 8, 2024",
+      "snippet": "... Provider Directory API. We encourage developers to integrate within ... Making data available via a FHIR API gives patients a wider range of ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR API"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Health Plan \u2013 ESI FHIR Interaction Model - Developer Portal",
+      "link": "https://developer.express-scripts.com/assets/content/solutions/regulatory/fhirPbmGuide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.express-scripts.com/assets/content/solutions/regulatory/fhirPbmGuide.pdf&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8QFnoECB8QAQ",
+      "displayed_link": "https://developer.express-scripts.com \u203a regulatory",
+      "favicon": "https://serpapi.com/searches/68646d0f13f4b6baf7906590/images/bde7002a5d4ab2b6bf57e8414efa02e988fa903e1c6d9d7e097fb5091fc6183e.png",
+      "snippet": "... Provider Directory endpoints on the ESI FHIR server public? A: The Health Plan has the responsibility to provide a public FHIR API for Provider Directory.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "FHIR API",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 116
+          },
+          "extensions": [
+            "116 pages"
+          ]
+        }
+      },
+      "source": "Express Scripts"
+    },
+    {
+      "position": 7,
+      "title": "CMS Reducing Patient and Provider Burden ... - Confluence",
+      "link": "https://confluence.hl7.org/download/attachments/97471697/CMS%2012.10.20%20CMS-9123-Reducing%20Provider%20and%20Patient%20Burden.docx?version=1&modificationDate=1608060091050&api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/97471697/CMS%252012.10.20%2520CMS-9123-Reducing%2520Provider%2520and%2520Patient%2520Burden.docx%3Fversion%3D1%26modificationDate%3D1608060091050%26api%3Dv2&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8QFnoECBkQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a attachments \u203a api=v2",
+      "favicon": "https://serpapi.com/searches/68646d0f13f4b6baf7906590/images/bde7002a5d4ab2b6bf57e8414efa02e9633ecac2d322c71959b4a516aaaf57b8.png",
+      "snippet": "... Provider Directory API conformant with the HL7 FHIR Da. Vinci Payer Data Exchange Plan Net IG. The Provider Directory API was finalized in the CMS ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "source": "HL7.org"
+    },
+    {
+      "position": 8,
+      "title": "Patient access to payer healthcare information and FHIR ...",
+      "link": "https://www.wolterskluwer.com/en/expert-insights/patient-access-to-payer-healthcare-information-and-fhir-api-use",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wolterskluwer.com/en/expert-insights/patient-access-to-payer-healthcare-information-and-fhir-api-use&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8QFnoECDUQAQ",
+      "displayed_link": "https://www.wolterskluwer.com \u203a Home \u203a Expert Insights",
+      "favicon": "https://serpapi.com/searches/68646d0f13f4b6baf7906590/images/bde7002a5d4ab2b6bf57e8414efa02e9cee891526009fd608139b11bb1440c94.png",
+      "date": "Dec 3, 2020",
+      "snippet": "CMS finalized the Patient Access API and Provider Directory API ... FHIR API functionality and conveying information that patients will be ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "FHIR API"
+      ],
+      "missing": [
+        "holding"
+      ],
+      "must_include": {
+        "word": "holding",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=medica+%22holding%22+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8Q5t4CegQIOhAB"
+      },
+      "source": "Wolters Kluwer"
+    },
+    {
+      "position": 9,
+      "title": "Advancing Interoperability and Improving Prior Autho",
+      "link": "https://www.hfma.org/wp-content/uploads/2022/12/Prior_Authorization_and_Interoperability_for_Medicare_Advantage_Medic.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hfma.org/wp-content/uploads/2022/12/Prior_Authorization_and_Interoperability_for_Medicare_Advantage_Medic.pdf&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8QFnoECDcQAQ",
+      "displayed_link": "https://www.hfma.org \u203a uploads \u203a 2022/12 \u203a Pri...",
+      "favicon": "https://serpapi.com/searches/68646d0f13f4b6baf7906590/images/bde7002a5d4ab2b6bf57e8414efa02e9da15bb0b72840ab48a2fca15a40a40f6.png",
+      "date": "Dec 13, 2022",
+      "snippet": "Both the Provider Access API and the Patient. Access API would use FHIR-based exchange of claims and encounter data, as well as all data classes ...",
+      "snippet_highlighted_words": [
+        "API",
+        "API",
+        "FHIR"
+      ],
+      "source": "Healthcare Financial Management Association | HFMA"
+    },
+    {
+      "position": 10,
+      "title": "Session 1 CMS Interoperability Planning Collaborative",
+      "link": "https://calmhsa.org/wp-content/uploads/2023/08/Session-1-CMS-Interoperability-Planning-Collaborative-April-5-2022.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://calmhsa.org/wp-content/uploads/2023/08/Session-1-CMS-Interoperability-Planning-Collaborative-April-5-2022.pdf&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8QFnoECDYQAQ",
+      "displayed_link": "https://calmhsa.org \u203a uploads \u203a 2023/08 \u203a Sessio...",
+      "favicon": "https://serpapi.com/searches/68646d0f13f4b6baf7906590/images/bde7002a5d4ab2b6bf57e8414efa02e9638ba84988cd05b354b3a1438dc7679d.png",
+      "snippet": "Patient Access API. 150. 65%. 8. 35%. Provider Directory API. 17. 74%. 6. 26%. Page 26 ... fhir-developer-api https://1up.health/docs/ https://www.chgsd.com ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "fhir",
+        "api"
+      ],
+      "missing": [
+        "holding",
+        "company"
+      ],
+      "source": "California Mental Health Services Authority"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "cms-9115-f",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=cms-9115-f&sa=X&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8Q1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-9115-f&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-0057-f",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=cms-0057-f&sa=X&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8Q1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-0057-f&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=FG1kaMyaKKqzhbIP_oTn-QE&start=10&sa=N&sstk=Ac65TH75NiBiIxZ9naIz5Ut2Zblbewj8RX_Ru196K50cZF0V8dnnGT2FXDeQz0rNe_mQFlXhHBxWKFZTI7AyE-tFroO3ssARu6ECig&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8Q8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=FG1kaMyaKKqzhbIP_oTn-QE&start=10&sa=N&sstk=Ac65TH75NiBiIxZ9naIz5Ut2Zblbewj8RX_Ru196K50cZF0V8dnnGT2FXDeQz0rNe_mQFlXhHBxWKFZTI7AyE-tFroO3ssARu6ECig&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8Q8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=FG1kaMyaKKqzhbIP_oTn-QE&start=20&sa=N&sstk=Ac65TH75NiBiIxZ9naIz5Ut2Zblbewj8RX_Ru196K50cZF0V8dnnGT2FXDeQz0rNe_mQFlXhHBxWKFZTI7AyE-tFroO3ssARu6ECig&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8Q8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=FG1kaMyaKKqzhbIP_oTn-QE&start=30&sa=N&sstk=Ac65TH75NiBiIxZ9naIz5Ut2Zblbewj8RX_Ru196K50cZF0V8dnnGT2FXDeQz0rNe_mQFlXhHBxWKFZTI7AyE-tFroO3ssARu6ECig&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8Q8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=FG1kaMyaKKqzhbIP_oTn-QE&start=40&sa=N&sstk=Ac65TH75NiBiIxZ9naIz5Ut2Zblbewj8RX_Ru196K50cZF0V8dnnGT2FXDeQz0rNe_mQFlXhHBxWKFZTI7AyE-tFroO3ssARu6ECig&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8Q8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=FG1kaMyaKKqzhbIP_oTn-QE&start=50&sa=N&sstk=Ac65TH75NiBiIxZ9naIz5Ut2Zblbewj8RX_Ru196K50cZF0V8dnnGT2FXDeQz0rNe_mQFlXhHBxWKFZTI7AyE-tFroO3ssARu6ECig&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8Q8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=FG1kaMyaKKqzhbIP_oTn-QE&start=60&sa=N&sstk=Ac65TH75NiBiIxZ9naIz5Ut2Zblbewj8RX_Ru196K50cZF0V8dnnGT2FXDeQz0rNe_mQFlXhHBxWKFZTI7AyE-tFroO3ssARu6ECig&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8Q8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=FG1kaMyaKKqzhbIP_oTn-QE&start=70&sa=N&sstk=Ac65TH75NiBiIxZ9naIz5Ut2Zblbewj8RX_Ru196K50cZF0V8dnnGT2FXDeQz0rNe_mQFlXhHBxWKFZTI7AyE-tFroO3ssARu6ECig&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8Q8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=FG1kaMyaKKqzhbIP_oTn-QE&start=80&sa=N&sstk=Ac65TH75NiBiIxZ9naIz5Ut2Zblbewj8RX_Ru196K50cZF0V8dnnGT2FXDeQz0rNe_mQFlXhHBxWKFZTI7AyE-tFroO3ssARu6ECig&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8Q8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=FG1kaMyaKKqzhbIP_oTn-QE&start=90&sa=N&sstk=Ac65TH75NiBiIxZ9naIz5Ut2Zblbewj8RX_Ru196K50cZF0V8dnnGT2FXDeQz0rNe_mQFlXhHBxWKFZTI7AyE-tFroO3ssARu6ECig&ved=2ahUKEwjM9MGL5pyOAxWqWUEAHX7COR8Q8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medica+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

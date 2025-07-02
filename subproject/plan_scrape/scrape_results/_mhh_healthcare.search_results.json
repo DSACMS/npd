@@ -1,0 +1,184 @@
+{
+  "search_metadata": {
+    "id": "68646c1ef6e926cfdd6c2a7a",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/be08291da2526160/68646c1ef6e926cfdd6c2a7a.json",
+    "created_at": "2025-07-01 23:15:42 UTC",
+    "processed_at": "2025-07-01 23:15:42 UTC",
+    "google_url": "https://www.google.com/search?q=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/be08291da2526160/68646c1ef6e926cfdd6c2a7a.html",
+    "total_time_taken": 4.36
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"mhh healthcare Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"mhh healthcare Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 6,
+    "time_taken_displayed": 0.39,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "mhh healthcare Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "mhh healthcare Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "related_questions": [
+    {
+      "question": "What information and communication technology tools are used in the care of diabetic patients?",
+      "snippet": "Health care professionals can use telehealth technology to provide education and self-management support for individuals with type 1, type 2, or gestational diabetes. Other technologies include smart devices, such as glucose meters, continuous glucose monitoring devices (CGMs), insulin pumps, and smartphones.",
+      "title": "Telehealth technology for diabetes care",
+      "date": "Aug 19, 2024",
+      "link": "https://telehealth.hhs.gov/providers/best-practice-guides/telehealth-diabetes-care/telehealth-technology-diabetes-care#:~:text=Health%20care%20professionals%20can%20use,%2C%20insulin%20pumps%2C%20and%20smartphones.",
+      "displayed_link": "https://telehealth.hhs.gov \u203a providers \u203a best-practice-guides",
+      "source_logo": "https://serpapi.com/searches/68646c1ef6e926cfdd6c2a7a/images/b202d4490f9662134b7b4aac41fef379c90112f484b73f8c9548c99a3e99b92b.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSVRHUmhRM0Z0VUdsb1dXaFpjUzFHU1d4emJrMDVWRll5ZVd0cmFIY3hNMEkzUzJsUGEycGZSMDlNZG5WdFQwWlZYMDFKTWtFeWMxQnNXa05pWmt0WVlYQlllVFZQZFdadFIySTVabkZETjJSaE1qRlNUbmd0ZEZoTVVSSVhTVzE0YTJGUVZIbEdURWRuZDA0MFVETnZhVlozVVRBYUlrRkdUVUZIUjI5QmIwOUZTbVZmVERneU5Ea3pTMDAxZFVwR2FVVktUbHBZZWtFIiwiZmN2IjoiMyIsImVpIjoiSW14a2FQVHlGTEdnd040UDNvaVZ3UTAiLCJxYyI6ImMtT3l6YzNJVU1oSVRjd3B5VWhPTEVwVnlFMU55UVF6RWxQS0V2TktFdE5URlFxSzhzc3lVMUtMRkZJeWkxS1RTX0tMS2hVU0N6SVYwakl5aXdRWWFyLW92N0lEQUEiLCJxdWVzdGlvbiI6IldoYXQgaW5mb3JtYXRpb24gYW5kIGNvbW11bmljYXRpb24gdGVjaG5vbG9neSB0b29scyBhcmUgdXNlZCBpbiB0aGUgY2FyZSBvZiBkaWFiZXRpYyBwYXRpZW50cz8iLCJsayI6ImN5WExRUTZBSUF4RTBYdTRta041QVN4Rm1rREhRRmw0ZTBuY19wZF9uT2FGbzZjd09wSm5DSHRmYnZLWFVLbk94dnRGa0cxaVRjMndEVlVoYVNoWWtDMWRHaVo0OXFRZTh3TSIsImJzIjoiYzhXUXNXb0RNUXlHdWExNDZuamNKRXJ6QWdmdGVpOVIwcTJnLWhSYmNKYURyV3ZJWV9SNXVwUThVcDRnOWdVT01oVGFxWnNRbjc1Zmt2bHF6TnVyUndXV1hVd0JsYU1BeWdnMmhqQUwyMnRIeVhxSlUzUkgwQmluREpnSTVreGptUVAxQkxZMjRnNUd4bmRTdHJBdmd5U2FoX2I3cnQ5MkwzXzBfOHB0em8yWmwtMHJVVkVLbEJ5TEEwMkVHaXEwcEsxLXBseTFWMVdwQXdvNnF1REMtWGlBd001cnRlVVM3VkVjZ2N3cFYtcy1vUzBMME5CLWJ2cVBUZ19fa0czUVBOX2NQTEpqeFFrODRhVC1OcTc4Zk0wYjJ0TlRfOWc5X01RZlZfSy11UUEiLCJpZCI6ImZjX0lteGthUFR5RkxHZ3dONFAzb2lWd1EwXzEifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSVRHUmhRM0Z0VUdsb1dXaFpjUzFHU1d4emJrMDVWRll5ZVd0cmFIY3hNMEkzUzJsUGEycGZSMDlNZG5WdFQwWlZYMDFKTWtFeWMxQnNXa05pWmt0WVlYQlllVFZQZFdadFIySTVabkZETjJSaE1qRlNUbmd0ZEZoTVVSSVhTVzE0YTJGUVZIbEdURWRuZDA0MFVETnZhVlozVVRBYUlrRkdUVUZIUjI5QmIwOUZTbVZmVERneU5Ea3pTMDAxZFVwR2FVVktUbHBZZWtFIiwiZmN2IjoiMyIsImVpIjoiSW14a2FQVHlGTEdnd040UDNvaVZ3UTAiLCJxYyI6ImMtT3l6YzNJVU1oSVRjd3B5VWhPTEVwVnlFMU55UVF6RWxQS0V2TktFdE5URlFxSzhzc3lVMUtMRkZJeWkxS1RTX0tMS2hVU0N6SVYwakl5aXdRWWFyLW92N0lEQUEiLCJxdWVzdGlvbiI6IldoYXQgaW5mb3JtYXRpb24gYW5kIGNvbW11bmljYXRpb24gdGVjaG5vbG9neSB0b29scyBhcmUgdXNlZCBpbiB0aGUgY2FyZSBvZiBkaWFiZXRpYyBwYXRpZW50cz8iLCJsayI6ImN5WExRUTZBSUF4RTBYdTRta041QVN4Rm1rREhRRmw0ZTBuY19wZF9uT2FGbzZjd09wSm5DSHRmYnZLWFVLbk94dnRGa0cxaVRjMndEVlVoYVNoWWtDMWRHaVo0OXFRZTh3TSIsImJzIjoiYzhXUXNXb0RNUXlHdWExNDZuamNKRXJ6QWdmdGVpOVIwcTJnLWhSYmNKYURyV3ZJWV9SNXVwUThVcDRnOWdVT01oVGFxWnNRbjc1Zmt2bHF6TnVyUndXV1hVd0JsYU1BeWdnMmhqQUwyMnRIeVhxSlUzUkgwQmluREpnSTVreGptUVAxQkxZMjRnNUd4bmRTdHJBdmd5U2FoX2I3cnQ5MkwzXzBfOHB0em8yWmwtMHJVVkVLbEJ5TEEwMkVHaXEwcEsxLXBseTFWMVdwQXdvNnF1REMtWGlBd001cnRlVVM3VkVjZ2N3cFYtcy1vUzBMME5CLWJ2cVBUZ19fa0czUVBOX2NQTEpqeFFrODRhVC1OcTc4Zk0wYjJ0TlRfOWc5X01RZlZfSy11UUEiLCJpZCI6ImZjX0lteGthUFR5RkxHZ3dONFAzb2lWd1EwXzEifQ%3D%3D"
+    },
+    {
+      "question": "What are the emerging treatments and technologies in diabetes management and how might these change nursing practice?",
+      "snippet": "The spectrum of new technologies spans from motivational smartphone apps which can benefit non-insulin requiring users, to modification of insulin pens, and simplified insulin pumps that integrate with continuous glucose monitors to function as an 'artificial pancreas' for those on insulin therapy.",
+      "title": "Technology in the management of type 2 diabetes \u2013 present status ...",
+      "date": "Aug 1, 2021",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7611289/#:~:text=The%20spectrum%20of%20new%20technologies,for%20those%20on%20insulin%20therapy.",
+      "displayed_link": "https://pmc.ncbi.nlm.nih.gov \u203a articles \u203a PMC7611289",
+      "source_logo": null,
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSVRHUmhRM0Z0VUdsb1dXaFpjUzFHU1d4emJrMDVWRll5ZVd0cmFIY3hNMEkzUzJsUGEycGZSMDlNZG5WdFQwWlZYMDFKTWtFeWMxQnNXa05pWmt0WVlYQlllVFZQZFdadFIySTVabkZETjJSaE1qRlNUbmd0ZEZoTVVSSVhTVzE0YTJGUVZIbEdURWRuZDA0MFVETnZhVlozVVRBYUlrRkdUVUZIUjI5QmIwOUZTbVZmVERneU5Ea3pTMDAxZFVwR2FVVktUbHBZZWtFIiwiZmN2IjoiMyIsImVpIjoiSW14a2FQVHlGTEdnd040UDNvaVZ3UTAiLCJxYyI6ImMtT3l6YzNJVU1oSVRjd3B5VWhPTEVwVnlFMU55UVF6RWxQS0V2TktFdE5URlFxSzhzc3lVMUtMRkZJeWkxS1RTX0tMS2hVU0N6SVYwakl5aXdRWWFyLW92N0lEQUEiLCJxdWVzdGlvbiI6IldoYXQgYXJlIHRoZSBlbWVyZ2luZyB0cmVhdG1lbnRzIGFuZCB0ZWNobm9sb2dpZXMgaW4gZGlhYmV0ZXMgbWFuYWdlbWVudCBhbmQgaG93IG1pZ2h0IHRoZXNlIGNoYW5nZSBudXJzaW5nIHByYWN0aWNlPyIsImxrIjoiY3gzTVFRNENNUXdFd1g5d21xLVo3TWkyUkJ6a0ROcnZRN2oxb2RRUDNXR0NOYUVnT05tZTVWRFRORm5hc0xvZ2pxajFXcDdjeU1LVjlxUi1QYTNNZWVEZnhib3gwMFBudG9rUlZrN1VwX2U1dnR1R2N2QUwiLCJicyI6ImM4V1FzV29ETVF5R3VhMTQ2bmpjSkVyekFnZnRlaTlSMHEyZy1oUmJjSmFEcld2SVlfUjV1cFE4VXA0ZzlnVU9NaFRhcVpzUW43NWZrdmxxek51clJ3V1dYVXdCbGFNQXlnZzJoakFMMjJ0SHlYcUpVM1JIMEJpbkRKZ0k1a3hqbVFQMUJMWTI0ZzVHeG5kU3RyQXZneVNhaF9iN3J0OTJMM18wXzhwdHpvMlpsLTByVVZFS2xCeUxBMDJFR2lxMHBLMS1wbHkxVjFXcEF3bzZxdURDLVhpQXdNNXJ0ZVVTN1ZFY2djd3BWLXMtb1MwTDBOQi1idnFQVGdfX2tHM1FQTl9jUExKanhRazg0YVQtTnE3OGZNMGIydE5UXzlnOV9NUWZWX0stdVFBIiwiaWQiOiJmY19JbXhrYVBUeUZMR2d3TjRQM29pVndRMF8xIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSVRHUmhRM0Z0VUdsb1dXaFpjUzFHU1d4emJrMDVWRll5ZVd0cmFIY3hNMEkzUzJsUGEycGZSMDlNZG5WdFQwWlZYMDFKTWtFeWMxQnNXa05pWmt0WVlYQlllVFZQZFdadFIySTVabkZETjJSaE1qRlNUbmd0ZEZoTVVSSVhTVzE0YTJGUVZIbEdURWRuZDA0MFVETnZhVlozVVRBYUlrRkdUVUZIUjI5QmIwOUZTbVZmVERneU5Ea3pTMDAxZFVwR2FVVktUbHBZZWtFIiwiZmN2IjoiMyIsImVpIjoiSW14a2FQVHlGTEdnd040UDNvaVZ3UTAiLCJxYyI6ImMtT3l6YzNJVU1oSVRjd3B5VWhPTEVwVnlFMU55UVF6RWxQS0V2TktFdE5URlFxSzhzc3lVMUtMRkZJeWkxS1RTX0tMS2hVU0N6SVYwakl5aXdRWWFyLW92N0lEQUEiLCJxdWVzdGlvbiI6IldoYXQgYXJlIHRoZSBlbWVyZ2luZyB0cmVhdG1lbnRzIGFuZCB0ZWNobm9sb2dpZXMgaW4gZGlhYmV0ZXMgbWFuYWdlbWVudCBhbmQgaG93IG1pZ2h0IHRoZXNlIGNoYW5nZSBudXJzaW5nIHByYWN0aWNlPyIsImxrIjoiY3gzTVFRNENNUXdFd1g5d21xLVo3TWkyUkJ6a0ROcnZRN2oxb2RRUDNXR0NOYUVnT05tZTVWRFRORm5hc0xvZ2pxajFXcDdjeU1LVjlxUi1QYTNNZWVEZnhib3gwMFBudG9rUlZrN1VwX2U1dnR1R2N2QUwiLCJicyI6ImM4V1FzV29ETVF5R3VhMTQ2bmpjSkVyekFnZnRlaTlSMHEyZy1oUmJjSmFEcld2SVlfUjV1cFE4VXA0ZzlnVU9NaFRhcVpzUW43NWZrdmxxek51clJ3V1dYVXdCbGFNQXlnZzJoakFMMjJ0SHlYcUpVM1JIMEJpbkRKZ0k1a3hqbVFQMUJMWTI0ZzVHeG5kU3RyQXZneVNhaF9iN3J0OTJMM18wXzhwdHpvMlpsLTByVVZFS2xCeUxBMDJFR2lxMHBLMS1wbHkxVjFXcEF3bzZxdURDLVhpQXdNNXJ0ZVVTN1ZFY2djd3BWLXMtb1MwTDBOQi1idnFQVGdfX2tHM1FQTl9jUExKanhRazg0YVQtTnE3OGZNMGIydE5UXzlnOV9NUWZWX0stdVFBIiwiaWQiOiJmY19JbXhrYVBUeUZMR2d3TjRQM29pVndRMF8xIn0%3D"
+    },
+    {
+      "question": "What are the digital health technologies for diabetes?",
+      "snippet": "The six technologies which have the potential to transform diabetes care are (i) telehealth, (ii) incorporation of diabetes digital data into the electronic health record, (iii) qualitative hypoglycemia alarms, (iv) artificial intelligence, (v) cybersecurity of diabetes devices, and (vi) diabetes registries.",
+      "title": "Six Digital Health Technologies That Will Transform Diabetes",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9846384/#:~:text=The%20six%20technologies%20which%20have,and%20(vi)%20diabetes%20registries.",
+      "displayed_link": "https://pmc.ncbi.nlm.nih.gov \u203a articles \u203a PMC9846384",
+      "source_logo": null,
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSVRHUmhRM0Z0VUdsb1dXaFpjUzFHU1d4emJrMDVWRll5ZVd0cmFIY3hNMEkzUzJsUGEycGZSMDlNZG5WdFQwWlZYMDFKTWtFeWMxQnNXa05pWmt0WVlYQlllVFZQZFdadFIySTVabkZETjJSaE1qRlNUbmd0ZEZoTVVSSVhTVzE0YTJGUVZIbEdURWRuZDA0MFVETnZhVlozVVRBYUlrRkdUVUZIUjI5QmIwOUZTbVZmVERneU5Ea3pTMDAxZFVwR2FVVktUbHBZZWtFIiwiZmN2IjoiMyIsImVpIjoiSW14a2FQVHlGTEdnd040UDNvaVZ3UTAiLCJxYyI6ImMtT3l6YzNJVU1oSVRjd3B5VWhPTEVwVnlFMU55UVF6RWxQS0V2TktFdE5URlFxSzhzc3lVMUtMRkZJeWkxS1RTX0tMS2hVU0N6SVYwakl5aXdRWWFyLW92N0lEQUEiLCJxdWVzdGlvbiI6IldoYXQgYXJlIHRoZSBkaWdpdGFsIGhlYWx0aCB0ZWNobm9sb2dpZXMgZm9yIGRpYWJldGVzPyIsImxrIjoiR2lKa2FXZHBkR0ZzSUdobFlXeDBhQ0IwWldOb2JtOXNiMmQ1SUdScFlXSmxkR1Z6IiwiYnMiOiJjOFdRc1dvRE1ReUd1YTE0Nm5qY0pFcnpBZ2Z0ZWk5UjBxMmctaFJiY0phRHJXdklZX1I1dXBROFVwNGc5Z1VPTWhUYXFac1FuNzVma3ZscXpOdXJSd1dXWFV3QmxhTUF5Z2cyaGpBTDIydEh5WHFKVTNSSDBCaW5ESmdJNWt4am1RUDFCTFkyNGc1R3huZFN0ckF2Z3lTYWhfYjdydDkyTDNfMF84cHR6bzJabC0wclVWRUtsQnlMQTAyRUdpcTBwSzEtcGx5MVYxV3BBd282cXVEQy1YaUF3TTVydGVVUzdWRWNnY3dwVi1zLW9TMEwwTkItYnZxUFRnX19rRzNRUE5fY1BMSmp4UWs4NGFULU5xNzhmTTBiMnROVF85ZzlfTVFmVl9LLXVRQSIsImlkIjoiZmNfSW14a2FQVHlGTEdnd040UDNvaVZ3UTBfMSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSVRHUmhRM0Z0VUdsb1dXaFpjUzFHU1d4emJrMDVWRll5ZVd0cmFIY3hNMEkzUzJsUGEycGZSMDlNZG5WdFQwWlZYMDFKTWtFeWMxQnNXa05pWmt0WVlYQlllVFZQZFdadFIySTVabkZETjJSaE1qRlNUbmd0ZEZoTVVSSVhTVzE0YTJGUVZIbEdURWRuZDA0MFVETnZhVlozVVRBYUlrRkdUVUZIUjI5QmIwOUZTbVZmVERneU5Ea3pTMDAxZFVwR2FVVktUbHBZZWtFIiwiZmN2IjoiMyIsImVpIjoiSW14a2FQVHlGTEdnd040UDNvaVZ3UTAiLCJxYyI6ImMtT3l6YzNJVU1oSVRjd3B5VWhPTEVwVnlFMU55UVF6RWxQS0V2TktFdE5URlFxSzhzc3lVMUtMRkZJeWkxS1RTX0tMS2hVU0N6SVYwakl5aXdRWWFyLW92N0lEQUEiLCJxdWVzdGlvbiI6IldoYXQgYXJlIHRoZSBkaWdpdGFsIGhlYWx0aCB0ZWNobm9sb2dpZXMgZm9yIGRpYWJldGVzPyIsImxrIjoiR2lKa2FXZHBkR0ZzSUdobFlXeDBhQ0IwWldOb2JtOXNiMmQ1SUdScFlXSmxkR1Z6IiwiYnMiOiJjOFdRc1dvRE1ReUd1YTE0Nm5qY0pFcnpBZ2Z0ZWk5UjBxMmctaFJiY0phRHJXdklZX1I1dXBROFVwNGc5Z1VPTWhUYXFac1FuNzVma3ZscXpOdXJSd1dXWFV3QmxhTUF5Z2cyaGpBTDIydEh5WHFKVTNSSDBCaW5ESmdJNWt4am1RUDFCTFkyNGc1R3huZFN0ckF2Z3lTYWhfYjdydDkyTDNfMF84cHR6bzJabC0wclVWRUtsQnlMQTAyRUdpcTBwSzEtcGx5MVYxV3BBd282cXVEQy1YaUF3TTVydGVVUzdWRWNnY3dwVi1zLW9TMEwwTkItYnZxUFRnX19rRzNRUE5fY1BMSmp4UWs4NGFULU5xNzhmTTBiMnROVF85ZzlfTVFmVl9LLXVRQSIsImlkIjoiZmNfSW14a2FQVHlGTEdnd040UDNvaVZ3UTBfMSJ9"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Six Digital Health Technologies That Will Transform Diabetes",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9846384/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pmc.ncbi.nlm.nih.gov/articles/PMC9846384/&ved=2ahUKEwj0i_yX5ZyOAxUxENAFHV5EJdgQFnoECBIQAQ",
+      "displayed_link": "https://pmc.ncbi.nlm.nih.gov \u203a articles \u203a PMC9846384",
+      "author": "by AN Klonoff",
+      "snippet": "The ONC \u201cFinal Rule\u201d ruling formalized Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR), a modern, web-based API that is developer- ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "API"
+      ],
+      "source": "National Institutes of Health (NIH) | (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "VOLUME 22 \u2022 ISSUE 4",
+      "link": "https://upcommons.upc.edu/bitstream/handle/2117/380472/hm4-vol22-connectedpatients-screenoptimised.pdf;jsessionid=485B7A8F51540E2E9B60E0482DF06019?sequence=3",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://upcommons.upc.edu/bitstream/handle/2117/380472/hm4-vol22-connectedpatients-screenoptimised.pdf%3Bjsessionid%3D485B7A8F51540E2E9B60E0482DF06019%3Fsequence%3D3&ved=2ahUKEwj0i_yX5ZyOAxUxENAFHV5EJdgQFnoECBYQAQ",
+      "displayed_link": "https://upcommons.upc.edu \u203a bitstream \u203a handle",
+      "favicon": "https://serpapi.com/searches/68646c1ef6e926cfdd6c2a7a/images/71321566e4b7844b83a754e075fdf629ec5d2019fb85bb2444854d390fed8dce.png",
+      "snippet": "healthcare provider information and communications ... At Infor, we built an API Gateway where each API is ... Healthcare Interoperability Resources (HL7 FHIR), an.",
+      "snippet_highlighted_words": [
+        "healthcare provider",
+        "API",
+        "API",
+        "Healthcare",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=mhh+healthcare+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj0i_yX5ZyOAxUxENAFHV5EJdgQ5t4CegQIMBAB"
+      },
+      "source": "UPC Universitat Polit\u00e8cnica de Catalunya"
+    },
+    {
+      "position": 3,
+      "title": "Digital Health: From Assumptions to Implementations [2 ed. ...",
+      "link": "https://dokumen.pub/digital-health-from-assumptions-to-implementations-2nbsped-3031176650-9783031176654.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dokumen.pub/digital-health-from-assumptions-to-implementations-2nbsped-3031176650-9783031176654.html&ved=2ahUKEwj0i_yX5ZyOAxUxENAFHV5EJdgQFnoECA0QAQ",
+      "displayed_link": "https://dokumen.pub \u203a ...",
+      "favicon": "https://serpapi.com/searches/68646c1ef6e926cfdd6c2a7a/images/71321566e4b7844b83a754e075fdf629b4608e231d0c535969f22412abfb2c80.png",
+      "snippet": "This extensively updated second edition describes the increasing use of digital health technologies. It reflects and des...",
+      "source": "dokumen.pub"
+    },
+    {
+      "position": 4,
+      "title": "Full text of \"Oak Lawn Independent\"",
+      "link": "https://archive.org/stream/oaklawnindepende00oakl_19/oaklawnindepende00oakl_19_djvu.txt",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://archive.org/stream/oaklawnindepende00oakl_19/oaklawnindepende00oakl_19_djvu.txt&ved=2ahUKEwj0i_yX5ZyOAxUxENAFHV5EJdgQFnoECA8QAQ",
+      "displayed_link": "https://archive.org \u203a stream",
+      "favicon": "https://serpapi.com/searches/68646c1ef6e926cfdd6c2a7a/images/71321566e4b7844b83a754e075fdf629f9aa4bea4bf1f076cc0ef3fb8d2e4919.png",
+      "snippet": "A line drawing of the Internet Archive headquarters building fa\u00e7ade.",
+      "source": "Internet Archive"
+    },
+    {
+      "position": 5,
+      "title": "Full text of \"Union Government, Weekly, 2007-06-16, Part III ...",
+      "link": "https://archive.org/stream/in.gazette.central.w.2007-06-16.055/055_djvu.txt",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://archive.org/stream/in.gazette.central.w.2007-06-16.055/055_djvu.txt&ved=2ahUKEwj0i_yX5ZyOAxUxENAFHV5EJdgQFnoECBAQAQ",
+      "displayed_link": "https://archive.org \u203a stream \u203a 055_djvu",
+      "favicon": "https://serpapi.com/searches/68646c1ef6e926cfdd6c2a7a/images/71321566e4b7844b83a754e075fdf62935dc578dce6606e788541c8d9c923e8f.png",
+      "date": "Jun 16, 2007",
+      "snippet": "Full text of \"Union Government, Weekly, 2007-06-16, Part III-Section 1, Ref. DP/Pers.1/2007/113/3/20/2000\". See other formats.",
+      "source": "Internet Archive"
+    },
+    {
+      "position": 6,
+      "title": "^ reti con me td \u201d",
+      "link": "https://tfpl.sfo2.digitaloceanspaces.com/Newspapers/Times-News_TN620/PDF/2001_07_03.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://tfpl.sfo2.digitaloceanspaces.com/Newspapers/Times-News_TN620/PDF/2001_07_03.pdf&ved=2ahUKEwj0i_yX5ZyOAxUxENAFHV5EJdgQFnoECBUQAQ",
+      "displayed_link": "https://tfpl.sfo2.digitaloceanspaces.com \u203a PDF",
+      "date": "Jul 3, 2001",
+      "snippet": "fire chief for die First Sej. Rural Flre District in. Jerome County, said he every time he sees firewt ping \u201c cspedally the' ille.",
+      "source": "DigitalOcean"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 6 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=mhh+healthcare+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22mhh+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

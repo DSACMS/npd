@@ -1,0 +1,258 @@
+{
+  "search_metadata": {
+    "id": "686464c00e4be06b8cd1864c",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/002d1d24a251c8bc/686464c00e4be06b8cd1864c.json",
+    "created_at": "2025-07-01 22:44:16 UTC",
+    "processed_at": "2025-07-01 22:44:16 UTC",
+    "google_url": "https://www.google.com/search?q=%22healthfirst+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22healthfirst+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/002d1d24a251c8bc/686464c00e4be06b8cd1864c.html",
+    "total_time_taken": 3.08
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"healthfirst Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"healthfirst Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 340,
+    "time_taken_displayed": 0.39,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "healthfirst Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "healthfirst Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "1upHealth's Developer Documentation | Health First",
+      "link": "https://hf.org/health-first-health-plans/1uphealths-developer-documentation",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hf.org/health-first-health-plans/1uphealths-developer-documentation&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQFnoECBoQAQ",
+      "displayed_link": "https://hf.org \u203a health-first-health-plans",
+      "favicon": "https://serpapi.com/searches/686464c00e4be06b8cd1864c/images/d3aa2205c17dd96617b821c4ee0571a090bed9eb216b7684dcdf294b1a8f8219.png",
+      "snippet": "Health First Health Plans has partnered with 1upHealth for our Interoperability solution. Below you will find the links to the API in support of FHIR.",
+      "snippet_highlighted_words": [
+        "Health First Health Plans has partnered with 1upHealth"
+      ],
+      "source": "hf.org"
+    },
+    {
+      "position": 2,
+      "title": "State of Provider Directory APIs 2024",
+      "link": "https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQFnoECBgQAQ",
+      "displayed_link": "https://defacto.health \u203a 2024/06/24 \u203a state-of-provider-di...",
+      "favicon": "https://serpapi.com/searches/686464c00e4be06b8cd1864c/images/d3aa2205c17dd96617b821c4ee0571a025c417ea29752e39bf1363774fe34c49.png",
+      "date": "Jun 24, 2024",
+      "snippet": "Available Provider Directory APIs results in 97% of all Medicare lives being able to access their provider directories via API.",
+      "snippet_highlighted_words": [
+        "Provider Directory APIs",
+        "Medicare"
+      ],
+      "source": "Defacto Health"
+    },
+    {
+      "position": 3,
+      "title": "Provider Directory API",
+      "link": "https://www.cms.gov/priorities/key-initiatives/burden-reduction/interoperability/frequently-asked-questions/provider-directory-api",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/priorities/key-initiatives/burden-reduction/interoperability/frequently-asked-questions/provider-directory-api&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQFnoECBwQAQ",
+      "displayed_link": "https://www.cms.gov \u203a frequently-asked-questions \u203a pro...",
+      "favicon": "https://serpapi.com/searches/686464c00e4be06b8cd1864c/images/d3aa2205c17dd96617b821c4ee0571a0ba09a81241d310076390c31d58de8e94.png",
+      "date": "Sep 10, 2024",
+      "snippet": "What information are they required to include through the Provider Directory API for in-network providers and contracted networks?",
+      "snippet_highlighted_words": [
+        "Provider Directory API"
+      ],
+      "missing": [
+        "healthfirst"
+      ],
+      "must_include": {
+        "word": "healthfirst",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=%22healthfirst%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ5t4CegQIIhAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQFnoECBcQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/686464c00e4be06b8cd1864c/images/d3aa2205c17dd96617b821c4ee0571a0e6f949d3a7dd94b1783702d2fcb95ddf.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. Endpoints are: FHIR- ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 5,
+      "title": "Medicare Connected Apps Directory",
+      "link": "https://www.medicare.gov/providers-services/claims-appeals-complaints/claims/share-your-medicare-claims/connected-apps",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.medicare.gov/providers-services/claims-appeals-complaints/claims/share-your-medicare-claims/connected-apps&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQFnoECBYQAQ",
+      "displayed_link": "https://www.medicare.gov \u203a share-your-medicare-claims",
+      "favicon": "https://serpapi.com/searches/686464c00e4be06b8cd1864c/images/d3aa2205c17dd96617b821c4ee0571a0567ee16558c1c12d3f697b1b97a5296d.png",
+      "snippet": "By connecting directly with healthcare providers through our unified API, it enables patients to easily share their health data with trusted 3rd party apps ...",
+      "snippet_highlighted_words": [
+        "providers",
+        "API"
+      ],
+      "source": "Medicare (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Healthfirst Offers New Shopping and Enrollment ...",
+      "link": "https://www.prnewswire.com/news-releases/healthfirst-offers-new-shopping-and-enrollment-experience-for-2020-301177717.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.prnewswire.com/news-releases/healthfirst-offers-new-shopping-and-enrollment-experience-for-2020-301177717.html&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQFnoECBkQAQ",
+      "displayed_link": "https://www.prnewswire.com \u203a news-releases \u203a healthfirst...",
+      "favicon": "https://serpapi.com/searches/686464c00e4be06b8cd1864c/images/d3aa2205c17dd96617b821c4ee0571a0b59060498580023907bc618c10d13b96.png",
+      "date": "Nov 19, 2020",
+      "snippet": "The Healthfirst product interfaces with Blue Button 2.0 API, which uses the HL7\u00ae FHIR\u00ae (Fast Healthcare Interoperability Resources) standard ...",
+      "source": "PR Newswire"
+    },
+    {
+      "position": 7,
+      "title": "Enterprise Care Management for Public & Private Payers",
+      "link": "https://www.intersystems.com/industries/public-private-payers/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.intersystems.com/industries/public-private-payers/&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQFnoECB0QAQ",
+      "displayed_link": "https://www.intersystems.com \u203a industries \u203a public-priv...",
+      "favicon": "https://serpapi.com/searches/686464c00e4be06b8cd1864c/images/d3aa2205c17dd96617b821c4ee0571a079f5007aed14b55e97101ed81547f545.png",
+      "snippet": "HealthShare Provider Directory allows payers to ingest, curate and manage their provider ... Improving the Speed and Transparency of Authorizations through FHIR ...",
+      "snippet_highlighted_words": [
+        "HealthShare Provider Directory"
+      ],
+      "source": "InterSystems"
+    },
+    {
+      "position": 8,
+      "title": "Interoperability and Patient Access",
+      "link": "https://www.azcompletehealth.com/members/medicaid/helpful-links/interoperability-and-patient-access.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.azcompletehealth.com/members/medicaid/helpful-links/interoperability-and-patient-access.html&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQFnoECDgQAQ",
+      "displayed_link": "https://www.azcompletehealth.com \u203a helpful-links \u203a inter...",
+      "favicon": "https://serpapi.com/searches/686464c00e4be06b8cd1864c/images/d3aa2205c17dd96617b821c4ee0571a0e0e23abb7cec67fff66c4a96b9133234.png",
+      "snippet": "Looking to access and use the Provider Directory API? Go to our Partner PortalExternal Link and scroll to the \u201cFHIR \u2013 Provider Directory\u201d, click it and go to ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "source": "Arizona Complete Health"
+    },
+    {
+      "position": 9,
+      "title": "The State of Payer Patient Access APIs - Flexpa - Substack",
+      "link": "https://flexpa.substack.com/p/the-state-of-payer-patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://flexpa.substack.com/p/the-state-of-payer-patient-access&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQFnoECD0QAQ",
+      "displayed_link": "8 likes \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/searches/686464c00e4be06b8cd1864c/images/d3aa2205c17dd96617b821c4ee0571a02b9ae86b97c8b59c800909afaaa94abd.png",
+      "snippet": "This report will catalogue the landscape of Patient Access APIs and score various implementations. We hope that it will be useful to a variety of stakeholders.",
+      "snippet_highlighted_words": [
+        "APIs"
+      ],
+      "source": "Substack \u00b7 Flexpa"
+    },
+    {
+      "position": 10,
+      "title": "CMS ONC Interoperability",
+      "link": "https://www.highmark.com/cms-onc-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.highmark.com/cms-onc-interoperability&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQFnoECDcQAQ",
+      "displayed_link": "https://www.highmark.com \u203a cms-onc-interoperability",
+      "favicon": "https://serpapi.com/searches/686464c00e4be06b8cd1864c/images/d3aa2205c17dd96617b821c4ee0571a091199d7b0e0b2b2ddc7ef14e1600e500.jpeg",
+      "snippet": "To promote interoperability and patient empowerment. \u00b7 CMS describes the intent of the API, \u201cConsumers routinely perform many daily tasks on their mobile phones ...",
+      "snippet_highlighted_words": [
+        "API"
+      ],
+      "source": "Highmark"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Provider Directory API CMS",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Provider+Directory+API+CMS&sa=X&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+Directory+API+CMS&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "My Medicare gov app download",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=My+Medicare+gov+app+download&sa=X&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=My+Medicare+gov+app+download&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Medicare gov app for Android",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Medicare+gov+app+for+Android&sa=X&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medicare+gov+app+for+Android&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "medicare.gov app for iphone",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=medicare.gov+app+for+iphone&sa=X&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medicare.gov+app+for+iphone&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS provider directory requirements",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=CMS+provider+directory+requirements&sa=X&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+provider+directory+requirements&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "medicare.gov login",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=medicare.gov+login&sa=X&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ1QJ6BAgvEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medicare.gov+login&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CAA provider directory requirements",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=CAA+provider+directory+requirements&sa=X&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ1QJ6BAgwEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CAA+provider+directory+requirements&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Medicare What's Covered app",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Medicare+What%27s+Covered+app&sa=X&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medicare+What%27s+Covered+app&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=wmRkaNOLL5jK1e8PpvCF2A8&start=10&sa=N&sstk=Ac65TH538soZoij4lUU9iwL-iM1j44XG-0UQLeVILpPEC91wtBk3Ijn3rUGN2CIVVVxoHf6vStTrUszTXW7UdwgR1CYe_2r_OWL8gg&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ8NMDegQICBAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=wmRkaNOLL5jK1e8PpvCF2A8&start=10&sa=N&sstk=Ac65TH538soZoij4lUU9iwL-iM1j44XG-0UQLeVILpPEC91wtBk3Ijn3rUGN2CIVVVxoHf6vStTrUszTXW7UdwgR1CYe_2r_OWL8gg&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=wmRkaNOLL5jK1e8PpvCF2A8&start=20&sa=N&sstk=Ac65TH538soZoij4lUU9iwL-iM1j44XG-0UQLeVILpPEC91wtBk3Ijn3rUGN2CIVVVxoHf6vStTrUszTXW7UdwgR1CYe_2r_OWL8gg&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=wmRkaNOLL5jK1e8PpvCF2A8&start=30&sa=N&sstk=Ac65TH538soZoij4lUU9iwL-iM1j44XG-0UQLeVILpPEC91wtBk3Ijn3rUGN2CIVVVxoHf6vStTrUszTXW7UdwgR1CYe_2r_OWL8gg&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ8tMDegQICBAI",
+      "5": "https://www.google.com/search?q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=wmRkaNOLL5jK1e8PpvCF2A8&start=40&sa=N&sstk=Ac65TH538soZoij4lUU9iwL-iM1j44XG-0UQLeVILpPEC91wtBk3Ijn3rUGN2CIVVVxoHf6vStTrUszTXW7UdwgR1CYe_2r_OWL8gg&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ8tMDegQICBAK",
+      "6": "https://www.google.com/search?q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=wmRkaNOLL5jK1e8PpvCF2A8&start=50&sa=N&sstk=Ac65TH538soZoij4lUU9iwL-iM1j44XG-0UQLeVILpPEC91wtBk3Ijn3rUGN2CIVVVxoHf6vStTrUszTXW7UdwgR1CYe_2r_OWL8gg&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ8tMDegQICBAM",
+      "7": "https://www.google.com/search?q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=wmRkaNOLL5jK1e8PpvCF2A8&start=60&sa=N&sstk=Ac65TH538soZoij4lUU9iwL-iM1j44XG-0UQLeVILpPEC91wtBk3Ijn3rUGN2CIVVVxoHf6vStTrUszTXW7UdwgR1CYe_2r_OWL8gg&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ8tMDegQICBAO",
+      "8": "https://www.google.com/search?q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=wmRkaNOLL5jK1e8PpvCF2A8&start=70&sa=N&sstk=Ac65TH538soZoij4lUU9iwL-iM1j44XG-0UQLeVILpPEC91wtBk3Ijn3rUGN2CIVVVxoHf6vStTrUszTXW7UdwgR1CYe_2r_OWL8gg&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ8tMDegQICBAQ",
+      "9": "https://www.google.com/search?q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=wmRkaNOLL5jK1e8PpvCF2A8&start=80&sa=N&sstk=Ac65TH538soZoij4lUU9iwL-iM1j44XG-0UQLeVILpPEC91wtBk3Ijn3rUGN2CIVVVxoHf6vStTrUszTXW7UdwgR1CYe_2r_OWL8gg&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ8tMDegQICBAS",
+      "10": "https://www.google.com/search?q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=wmRkaNOLL5jK1e8PpvCF2A8&start=90&sa=N&sstk=Ac65TH538soZoij4lUU9iwL-iM1j44XG-0UQLeVILpPEC91wtBk3Ijn3rUGN2CIVVVxoHf6vStTrUszTXW7UdwgR1CYe_2r_OWL8gg&ved=2ahUKEwjT9POT3pyOAxUYZfUHHSZ4AfsQ8tMDegQICBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=healthfirst+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

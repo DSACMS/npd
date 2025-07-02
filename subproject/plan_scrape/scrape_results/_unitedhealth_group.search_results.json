@@ -1,0 +1,87 @@
+{
+  "search_metadata": {
+    "id": "68646c7077e3d9e1008a156e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/bc5766ac9d769f67/68646c7077e3d9e1008a156e.json",
+    "created_at": "2025-07-01 23:17:04 UTC",
+    "processed_at": "2025-07-01 23:17:04 UTC",
+    "google_url": "https://www.google.com/search?q=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/bc5766ac9d769f67/68646c7077e3d9e1008a156e.html",
+    "total_time_taken": 2.91
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"unitedhealth group Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"unitedhealth group Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 1,
+    "time_taken_displayed": 0.3,
+    "organic_results_state": "Results for exact spelling",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    }
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "April 9, 2025 HMA Weekly Roundup: Trends in Health Policy",
+      "link": "https://www.healthmanagement.com/insights/weekly-roundup/april-9-2025/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthmanagement.com/insights/weekly-roundup/april-9-2025/&ved=2ahUKEwiogK2-5ZyOAxWDTDABHaoSNNsQFnoECBgQAQ",
+      "displayed_link": "https://www.healthmanagement.com \u203a insights \u203a april-9-...",
+      "favicon": "https://serpapi.com/searches/68646c7077e3d9e1008a156e/images/df32d03e17cac91c5f17832d9d7ae30f7f576352a21737fad4faf88ed71b8dc3.png",
+      "date": "Apr 9, 2025",
+      "snippet": "How can we more effectively advance Fast Healthcare Interoperability Resources Application Programming Interface (FHIR API)-based data exchange ...",
+      "snippet_highlighted_words": [
+        "FHIR API"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "In Focus",
+            "link": "https://www.healthmanagement.com/insights/weekly-roundup/april-9-2025/#:~:text=In%20Focus,-CMS%20Finalizes%202026%20Payment%20and"
+          },
+          {
+            "title": "Medicaid Managed Care...",
+            "link": "https://www.healthmanagement.com/insights/weekly-roundup/april-9-2025/#:~:text=Medicaid%20Managed%20Care%20Enrollment%20Update%3A%20Q4%202024,-Our%20second%20In%20Focus%20section"
+          },
+          {
+            "title": "Hma Roundup",
+            "link": "https://www.healthmanagement.com/insights/weekly-roundup/april-9-2025/#:~:text=HMA%20Roundup,-Alabama"
+          }
+        ]
+      },
+      "source": "Health Management Associates"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22unitedhealth+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

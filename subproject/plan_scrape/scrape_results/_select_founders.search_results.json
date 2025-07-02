@@ -1,0 +1,242 @@
+{
+  "search_metadata": {
+    "id": "68646c471de0640c4d6a4a62",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/3b00f8f5f061cf52/68646c471de0640c4d6a4a62.json",
+    "created_at": "2025-07-01 23:16:23 UTC",
+    "processed_at": "2025-07-01 23:16:23 UTC",
+    "google_url": "https://www.google.com/search?q=%22select+founders+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22select+founders+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/3b00f8f5f061cf52/68646c471de0640c4d6a4a62.html",
+    "total_time_taken": 1.34
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"select founders Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"select founders Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 2440,
+    "time_taken_displayed": 0.5,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "select founders Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "select founders Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Leap Orbit Launches Convergent Provider Directory With ...",
+      "link": "https://www.businesswire.com/news/home/20201215005139/en/Leap-Orbit-Launches-Convergent-Provider-Directory-With-Maryland-HIE",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.businesswire.com/news/home/20201215005139/en/Leap-Orbit-Launches-Convergent-Provider-Directory-With-Maryland-HIE&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQFnoECBcQAQ",
+      "displayed_link": "https://www.businesswire.com \u203a news \u203a home \u203a Leap-Or...",
+      "favicon": "https://serpapi.com/searches/68646c471de0640c4d6a4a62/images/3048f39e7d8e5506af6d02e75e51cc9eb506778a01479fc1cce2bc0cdc50aa01.png",
+      "date": "Dec 15, 2020",
+      "snippet": "\u201cWe are excited to draw on our leadership implementing the FHIR standard for HIEs and PDMPs to empower new partners in Medicaid and Medicare ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Medicare"
+      ],
+      "source": "Business Wire"
+    },
+    {
+      "position": 2,
+      "title": "Dr. Oz Has It Right: America Needs a National Healthcare ...",
+      "link": "https://www.healthcareittoday.com/2025/06/11/dr-oz-has-it-right-america-needs-a-national-healthcare-directory/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcareittoday.com/2025/06/11/dr-oz-has-it-right-america-needs-a-national-healthcare-directory/&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQFnoECBIQAQ",
+      "displayed_link": "https://www.healthcareittoday.com \u203a Topic \u203a Regulations",
+      "favicon": "https://serpapi.com/searches/68646c471de0640c4d6a4a62/images/3048f39e7d8e5506af6d02e75e51cc9ec6f8d1ebb80efba116f695e217792a1c.png",
+      "date": "Jun 11, 2025",
+      "snippet": "And each actor should be responsible for their own FHIR endpoints, including healthcare providers and payers. This seemingly simple approach ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "providers"
+      ],
+      "source": "Healthcare IT Today"
+    },
+    {
+      "position": 3,
+      "title": "The questions we should all be asking about interoperability",
+      "link": "https://medium.com/@duncangreenberg/the-questions-we-should-all-be-asking-about-interoperability-3c33a38392df",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medium.com/%40duncangreenberg/the-questions-we-should-all-be-asking-about-interoperability-3c33a38392df&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQFnoECCAQAQ",
+      "displayed_link": "4 months ago",
+      "favicon": "https://serpapi.com/searches/68646c471de0640c4d6a4a62/images/3048f39e7d8e5506af6d02e75e51cc9e5ad43fb2c4b97dd296aea557259e53f2.png",
+      "snippet": "Between Patient Access and Provider Directory APIs, tech-enabled Medicare Advantage and ACA brokers can help members select plans during ...",
+      "snippet_highlighted_words": [
+        "Provider Directory APIs",
+        "Medicare Advantage",
+        "select"
+      ],
+      "source": "Medium \u00b7 Duncan Greenberg"
+    },
+    {
+      "position": 4,
+      "title": "FHIR is no longer optional for your organization and here's ...",
+      "link": "https://topflightapps.com/ideas/fhir-no-longer-optional/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://topflightapps.com/ideas/fhir-no-longer-optional/&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQFnoECBkQAQ",
+      "displayed_link": "https://topflightapps.com \u203a ideas \u203a fhir-no-longer-optio...",
+      "favicon": "https://serpapi.com/searches/68646c471de0640c4d6a4a62/images/3048f39e7d8e5506af6d02e75e51cc9e3e49c83f79a0e33eafa48a3b99e898da.png",
+      "date": "Aug 20, 2024",
+      "snippet": "In 2024, FHIR is no longer just a buzzword but an indispensable requirement for healthcare organizations.",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "missing": [
+        "select"
+      ],
+      "must_include": {
+        "word": "select",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=%22select%22+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQ5t4CegQILBAB"
+      },
+      "source": "Topflight Apps"
+    },
+    {
+      "position": 5,
+      "title": "Patient Access API, Payer-to-Payer API and Prior ...",
+      "link": "https://belitsoft.com/custom-application-development-services/healthcare-software-development/patient-access-api",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://belitsoft.com/custom-application-development-services/healthcare-software-development/patient-access-api&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQFnoECBoQAQ",
+      "displayed_link": "https://belitsoft.com \u203a healthcare-software-development",
+      "favicon": "https://serpapi.com/searches/68646c471de0640c4d6a4a62/images/3048f39e7d8e5506af6d02e75e51cc9ed1c056bc8f0703c328047f89c765fb2b.png",
+      "date": "Feb 16, 2025",
+      "snippet": "Payers to make claim details and encounters, clinical and laboratory data, and prior-authorization data accessible through a secure FHIR-based API for patients ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.5,
+            "reviews": 16
+          },
+          "extensions": [
+            "4.5(16)"
+          ]
+        }
+      },
+      "source": "Belitsoft"
+    },
+    {
+      "position": 6,
+      "title": "2023 Healthcare Industry Changes: FHIR API ...",
+      "link": "https://itirra.com/blog/2023-healthcare-industry-changes-fhir-api-standardization/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://itirra.com/blog/2023-healthcare-industry-changes-fhir-api-standardization/&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQFnoECCYQAQ",
+      "displayed_link": "https://itirra.com \u203a Blog",
+      "favicon": "https://serpapi.com/searches/68646c471de0640c4d6a4a62/images/3048f39e7d8e5506af6d02e75e51cc9e3d1a7a336ee744856ff09a3771eb3bcb.png",
+      "date": "Mar 1, 2023",
+      "snippet": "The HL7 Fast Healthcare Interoperability Resources (FHIR) standard has emerged as the leading API for health data exchange, and it has matured to become a ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "select",
+        "Advantage"
+      ],
+      "source": "Itirra"
+    },
+    {
+      "position": 7,
+      "title": "HIMSS25 - HL7 International",
+      "link": "https://info.hl7.org/himss25",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://info.hl7.org/himss25&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQFnoECBYQAQ",
+      "displayed_link": "https://info.hl7.org \u203a himss25",
+      "snippet": "This session will provide an overview of the changes coming to the Patient Access API and how it needs to expand to support Provider and Payer Audiences.",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider"
+      ],
+      "source": "HL7"
+    },
+    {
+      "position": 8,
+      "title": "ICAD_TF_FINAL_Report_HITAC...",
+      "link": "https://www.healthit.gov/sites/default/files/facas/ICAD_TF_FINAL_Report_HITAC_2020-11-06_0.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/facas/ICAD_TF_FINAL_Report_HITAC_2020-11-06_0.pdf&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQFnoECDAQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a facas",
+      "favicon": "https://serpapi.com/searches/68646c471de0640c4d6a4a62/images/3048f39e7d8e5506af6d02e75e51cc9e87f0dcb8eda503b70f4d6e7a3defafaa.jpeg",
+      "date": "Nov 6, 2020",
+      "snippet": "\u2022 CMS programs: Medicare FFS, Medicare Advantage, Part D, Medicaid, QHPs, ... FHIR-based API; (DRLS); ePrior Authorization via FHIR-based API iii ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "FHIR",
+        "API",
+        "FHIR",
+        "API"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "Press Release Feed",
+      "link": "https://www.goperspecta.net/press-release.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.goperspecta.net/press-release.html&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQFnoECDIQAQ",
+      "displayed_link": "https://www.goperspecta.net \u203a press-release",
+      "favicon": "https://serpapi.com/searches/68646c471de0640c4d6a4a62/images/3048f39e7d8e5506af6d02e75e51cc9e29e9a62544a59c189310affe445edf6d.png",
+      "snippet": "This Provider Directory API SaaS Solution empowers stakeholders to meet the end-to-end requirements of the Centers for Medicare and Medicaid Services (CMS) ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Medicare"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=select+founders+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQ5t4CegQIMxAB"
+      },
+      "source": "Perspecta Provider Data Management"
+    },
+    {
+      "position": 10,
+      "title": "June 3, 2019",
+      "link": "https://downloads.regulations.gov/CMS-2019-0039-1081/attachment_1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://downloads.regulations.gov/CMS-2019-0039-1081/attachment_1.pdf&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQFnoECDcQAQ",
+      "displayed_link": "https://downloads.regulations.gov \u203a attachment_1",
+      "date": "Jun 3, 2019",
+      "snippet": "CMS proposes to require Medicaid managed care, CHIP and Medicare Advantage plans to implement an open API to permit third-party applications to ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "API"
+      ],
+      "source": "Regulations.gov"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=SGxkaOSNIffn5NoP8I-ioAw&start=10&sa=N&sstk=Ac65TH79am_WTKkwv9tOz3Acqb_pnI8pbU_gGxUCa3IaLoJQ4pRhPC4_2PDyS93uVvspoX7lOtTmfYHR3oSjCyxzxI3AnZOeHMJbYA&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=SGxkaOSNIffn5NoP8I-ioAw&start=10&sa=N&sstk=Ac65TH79am_WTKkwv9tOz3Acqb_pnI8pbU_gGxUCa3IaLoJQ4pRhPC4_2PDyS93uVvspoX7lOtTmfYHR3oSjCyxzxI3AnZOeHMJbYA&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=SGxkaOSNIffn5NoP8I-ioAw&start=20&sa=N&sstk=Ac65TH79am_WTKkwv9tOz3Acqb_pnI8pbU_gGxUCa3IaLoJQ4pRhPC4_2PDyS93uVvspoX7lOtTmfYHR3oSjCyxzxI3AnZOeHMJbYA&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=SGxkaOSNIffn5NoP8I-ioAw&start=30&sa=N&sstk=Ac65TH79am_WTKkwv9tOz3Acqb_pnI8pbU_gGxUCa3IaLoJQ4pRhPC4_2PDyS93uVvspoX7lOtTmfYHR3oSjCyxzxI3AnZOeHMJbYA&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=SGxkaOSNIffn5NoP8I-ioAw&start=40&sa=N&sstk=Ac65TH79am_WTKkwv9tOz3Acqb_pnI8pbU_gGxUCa3IaLoJQ4pRhPC4_2PDyS93uVvspoX7lOtTmfYHR3oSjCyxzxI3AnZOeHMJbYA&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=SGxkaOSNIffn5NoP8I-ioAw&start=50&sa=N&sstk=Ac65TH79am_WTKkwv9tOz3Acqb_pnI8pbU_gGxUCa3IaLoJQ4pRhPC4_2PDyS93uVvspoX7lOtTmfYHR3oSjCyxzxI3AnZOeHMJbYA&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=SGxkaOSNIffn5NoP8I-ioAw&start=60&sa=N&sstk=Ac65TH79am_WTKkwv9tOz3Acqb_pnI8pbU_gGxUCa3IaLoJQ4pRhPC4_2PDyS93uVvspoX7lOtTmfYHR3oSjCyxzxI3AnZOeHMJbYA&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=SGxkaOSNIffn5NoP8I-ioAw&start=70&sa=N&sstk=Ac65TH79am_WTKkwv9tOz3Acqb_pnI8pbU_gGxUCa3IaLoJQ4pRhPC4_2PDyS93uVvspoX7lOtTmfYHR3oSjCyxzxI3AnZOeHMJbYA&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=SGxkaOSNIffn5NoP8I-ioAw&start=80&sa=N&sstk=Ac65TH79am_WTKkwv9tOz3Acqb_pnI8pbU_gGxUCa3IaLoJQ4pRhPC4_2PDyS93uVvspoX7lOtTmfYHR3oSjCyxzxI3AnZOeHMJbYA&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=SGxkaOSNIffn5NoP8I-ioAw&start=90&sa=N&sstk=Ac65TH79am_WTKkwv9tOz3Acqb_pnI8pbU_gGxUCa3IaLoJQ4pRhPC4_2PDyS93uVvspoX7lOtTmfYHR3oSjCyxzxI3AnZOeHMJbYA&ved=2ahUKEwjk0Zeq5ZyOAxX3M1kFHfCHCMQQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=select+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

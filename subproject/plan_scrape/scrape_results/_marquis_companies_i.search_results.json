@@ -1,0 +1,220 @@
+{
+  "search_metadata": {
+    "id": "686465149d26cf044b4e8ebf",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/a0f0c83642a81400/686465149d26cf044b4e8ebf.json",
+    "created_at": "2025-07-01 22:45:40 UTC",
+    "processed_at": "2025-07-01 22:45:40 UTC",
+    "google_url": "https://www.google.com/search?q=%22marquis+companies+i+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22marquis+companies+i+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/a0f0c83642a81400/686465149d26cf044b4e8ebf.html",
+    "total_time_taken": 3.13
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"marquis companies i Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"marquis companies i Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 268,
+    "time_taken_displayed": 0.48,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    },
+    "showing_results_for": "marquis companies i Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "marquis companies i Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "CDII's Participant Directory Listing",
+      "link": "https://www.cdii.ca.gov/wp-content/uploads/2024/02/Participant_Directory_Listing.csv",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cdii.ca.gov/wp-content/uploads/2024/02/Participant_Directory_Listing.csv&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQFnoECCAQAQ",
+      "displayed_link": "https://www.cdii.ca.gov \u203a uploads \u203a 2024/02 \u203a Participa...",
+      "favicon": "https://serpapi.com/searches/686465149d26cf044b4e8ebf/images/5cf2dcd1613e3cbba6950bb2533c584747c17f556b8f6bdca866db99da66248c.png",
+      "snippet": "... fhir/documentation#provider-access-section,interoperabilityworkgroup@anthem ... Marquis Care at Shasta,No,SELF,SELF,SELF,NA,rmhervagault ...",
+      "snippet_highlighted_words": [
+        "fhir",
+        "provider",
+        "Marquis"
+      ],
+      "source": "Center for Data Insights and Innovation (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Transcript",
+      "link": "https://www.healthit.gov/sites/default/files/facas/2024-01-18_HITAC_Transcript_508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/facas/2024-01-18_HITAC_Transcript_508.pdf&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQFnoECCEQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a facas",
+      "favicon": "https://serpapi.com/searches/686465149d26cf044b4e8ebf/images/5cf2dcd1613e3cbba6950bb2533c5847383216013bc350a857c2aa5fd4801d53.jpeg",
+      "date": "Jan 18, 2024",
+      "snippet": "So, the ability for those with FHIR APIs to be able to scale those APIs using the network infrastructure of TEFCA, but to be willing to do that ...",
+      "snippet_highlighted_words": [
+        "FHIR APIs",
+        "APIs"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=marquis+companies+i+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQ5t4CegQIJBAB"
+      },
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "A transparent and standardized performance measurement ...",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11567564/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pmc.ncbi.nlm.nih.gov/articles/PMC11567564/&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQFnoECB0QAQ",
+      "displayed_link": "https://pmc.ncbi.nlm.nih.gov \u203a articles \u203a PMC11567564",
+      "author": "by C Welzel",
+      "snippet": "We propose a platform-based, automated, and standardized approach for ongoing real-world data collection and analysis.",
+      "source": "National Institutes of Health (NIH) | (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "October 1, 2022",
+      "link": "https://leg.colorado.gov/sites/default/files/images/ospb_nonprioritized_it_capital_items_10.1.22.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://leg.colorado.gov/sites/default/files/images/ospb_nonprioritized_it_capital_items_10.1.22.pdf&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQFnoECBkQAQ",
+      "displayed_link": "https://leg.colorado.gov \u203a default \u203a files \u203a images",
+      "favicon": "https://serpapi.com/searches/686465149d26cf044b4e8ebf/images/5cf2dcd1613e3cbba6950bb2533c5847e11b51410e19e92aa1b412f37bf56bc3.png",
+      "date": "Oct 1, 2022",
+      "snippet": "C-WISE provides 24-hour assistance to DOC, contract providers, law enforcement, inmates, and the public. It centralizes. Page 5. data for DOC by ...",
+      "snippet_highlighted_words": [
+        "providers"
+      ],
+      "source": "Colorado General Assembly | (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "DSA signatory list - Center for Data Insights and Innovation",
+      "link": "https://www.cdii.ca.gov/wp-content/uploads/2023/05/DxF_DSA_SignatoryList.xlsx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cdii.ca.gov/wp-content/uploads/2023/05/DxF_DSA_SignatoryList.xlsx&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQFnoECBcQAQ",
+      "displayed_link": "https://www.cdii.ca.gov \u203a uploads \u203a 2023/05 \u203a D...",
+      "favicon": "https://serpapi.com/searches/686465149d26cf044b4e8ebf/images/5cf2dcd1613e3cbba6950bb2533c5847b918763aaed5c9b168b5bb8d555dff73.png",
+      "snippet": "https://totalview.healthos.elevancehealth.com/fhir/documentation#provider-access-section ... Orange County Advantage Medical Group, Inc. none identified ...",
+      "snippet_highlighted_words": [
+        "fhir",
+        "provider",
+        "Advantage"
+      ],
+      "source": "Center for Data Insights and Innovation (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Developing Real-World Data ad Evidence to Support ...",
+      "link": "https://healthpolicy.duke.edu/sites/default/files/2023-02/rwe_annual_master_slide_deck_final.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://healthpolicy.duke.edu/sites/default/files/2023-02/rwe_annual_master_slide_deck_final.pdf&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQFnoECCIQAQ",
+      "displayed_link": "https://healthpolicy.duke.edu \u203a default \u203a files \u203a r...",
+      "favicon": "https://serpapi.com/searches/686465149d26cf044b4e8ebf/images/5cf2dcd1613e3cbba6950bb2533c58473e0559eec486b943a25187a405da764f.png",
+      "date": "Feb 2, 2023",
+      "snippet": "It is possible to coordinate the efforts across numerous real-world oncology data organizations to reach high-level alignment on important data ...",
+      "source": "Duke-Margolis Institute for Health Policy"
+    },
+    {
+      "position": 7,
+      "title": "OBH Information Management Systems and Data ...",
+      "link": "https://leg.colorado.gov/sites/default/files/images/2._fy_2023-24_department_it_capital_budget_requests.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://leg.colorado.gov/sites/default/files/images/2._fy_2023-24_department_it_capital_budget_requests.pdf&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQFnoECC4QAQ",
+      "displayed_link": "https://leg.colorado.gov \u203a default \u203a files \u203a images",
+      "favicon": "https://serpapi.com/searches/686465149d26cf044b4e8ebf/images/5cf2dcd1613e3cbba6950bb2533c584767ffc5504371cb23aa337b96d3ab96c5.png",
+      "date": "Nov 1, 2022",
+      "snippet": "An API/Integration Architect Consultant to help with the integration aspects. \u25cb A Payroll/HCM Consultant to assist with the selection and ...",
+      "snippet_highlighted_words": [
+        "API"
+      ],
+      "source": "Colorado General Assembly | (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Elligint Health - Care Management - Medigy",
+      "link": "https://www.medigy.com/offering/elligint-health-care-management/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.medigy.com/offering/elligint-health-care-management/&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQFnoECDAQAQ",
+      "displayed_link": "https://www.medigy.com \u203a offering \u203a elligint-health-car...",
+      "favicon": "https://serpapi.com/searches/686465149d26cf044b4e8ebf/images/5cf2dcd1613e3cbba6950bb2533c584727f76b8fb176f96098e073220021eef6.png",
+      "snippet": "The first platform purpose built for value-based care, Helios is an integrated care management, disease management and utilization management ecosystem of care.",
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=marquis+companies+i+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQ5t4CegQINBAB"
+      },
+      "source": "medigy.com"
+    },
+    {
+      "position": 9,
+      "title": "PHYSICIAN",
+      "link": "https://www.amcno.org/assets/docs/6313%20May%20June%20Final.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.amcno.org/assets/docs/6313%2520May%2520June%2520Final.pdf&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQFnoECDMQAQ",
+      "displayed_link": "https://www.amcno.org \u203a assets \u203a docs",
+      "favicon": "https://serpapi.com/searches/686465149d26cf044b4e8ebf/images/5cf2dcd1613e3cbba6950bb2533c5847ed3252fd9581928699736727d9bf4ab7.png",
+      "date": "Apr 4, 2019",
+      "snippet": "Kelley also discussed the future of fast healthcare interoperability resources (FHIR) and application programming interfaces (API) for ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=marquis+companies+i+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQ5t4CegQINRAB"
+      },
+      "source": "Academy of Medicine of Cleveland"
+    },
+    {
+      "position": 10,
+      "title": "November 17, 2021",
+      "link": "https://www.biostl.org/files/uploads/GlobalSTL_Health_Innovation_Summit_2021_Program_Book_%2811_12_21%29.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.biostl.org/files/uploads/GlobalSTL_Health_Innovation_Summit_2021_Program_Book_%252811_12_21%2529.pdf&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQFnoECCwQAQ",
+      "displayed_link": "https://www.biostl.org \u203a files \u203a uploads \u203a Global...",
+      "favicon": "https://serpapi.com/searches/686465149d26cf044b4e8ebf/images/5cf2dcd1613e3cbba6950bb2533c584774edb4fd6c16f76641c52e4b522a1a75.png",
+      "date": "Nov 17, 2021",
+      "snippet": "We have also successfully tested the integration with Cerner's EHR and others using our SMART on FHIR API. Page 14. GlobalSTL Health Innovation ...",
+      "snippet_highlighted_words": [
+        "FHIR API"
+      ],
+      "source": "BioSTL"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=FmVkaLiKGMXU1sQP6b-E0Ak&start=10&sa=N&sstk=Ac65TH5EzNmMREoqKeFqKGw77ZLh_S0mxnBeAshgiKAhE22fl5axg9FBz8eUr4kxhLXmwCmlvD3tk1rPDXp5n6BazOa3Fzgctia5Jw&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQ8NMDegQIBxAS",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=FmVkaLiKGMXU1sQP6b-E0Ak&start=10&sa=N&sstk=Ac65TH5EzNmMREoqKeFqKGw77ZLh_S0mxnBeAshgiKAhE22fl5axg9FBz8eUr4kxhLXmwCmlvD3tk1rPDXp5n6BazOa3Fzgctia5Jw&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQ8tMDegQIBxAE",
+      "3": "https://www.google.com/search?q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=FmVkaLiKGMXU1sQP6b-E0Ak&start=20&sa=N&sstk=Ac65TH5EzNmMREoqKeFqKGw77ZLh_S0mxnBeAshgiKAhE22fl5axg9FBz8eUr4kxhLXmwCmlvD3tk1rPDXp5n6BazOa3Fzgctia5Jw&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQ8tMDegQIBxAG",
+      "4": "https://www.google.com/search?q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=FmVkaLiKGMXU1sQP6b-E0Ak&start=30&sa=N&sstk=Ac65TH5EzNmMREoqKeFqKGw77ZLh_S0mxnBeAshgiKAhE22fl5axg9FBz8eUr4kxhLXmwCmlvD3tk1rPDXp5n6BazOa3Fzgctia5Jw&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQ8tMDegQIBxAI",
+      "5": "https://www.google.com/search?q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=FmVkaLiKGMXU1sQP6b-E0Ak&start=40&sa=N&sstk=Ac65TH5EzNmMREoqKeFqKGw77ZLh_S0mxnBeAshgiKAhE22fl5axg9FBz8eUr4kxhLXmwCmlvD3tk1rPDXp5n6BazOa3Fzgctia5Jw&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQ8tMDegQIBxAK",
+      "6": "https://www.google.com/search?q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=FmVkaLiKGMXU1sQP6b-E0Ak&start=50&sa=N&sstk=Ac65TH5EzNmMREoqKeFqKGw77ZLh_S0mxnBeAshgiKAhE22fl5axg9FBz8eUr4kxhLXmwCmlvD3tk1rPDXp5n6BazOa3Fzgctia5Jw&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQ8tMDegQIBxAM",
+      "7": "https://www.google.com/search?q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=FmVkaLiKGMXU1sQP6b-E0Ak&start=60&sa=N&sstk=Ac65TH5EzNmMREoqKeFqKGw77ZLh_S0mxnBeAshgiKAhE22fl5axg9FBz8eUr4kxhLXmwCmlvD3tk1rPDXp5n6BazOa3Fzgctia5Jw&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQ8tMDegQIBxAO",
+      "8": "https://www.google.com/search?q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=FmVkaLiKGMXU1sQP6b-E0Ak&start=70&sa=N&sstk=Ac65TH5EzNmMREoqKeFqKGw77ZLh_S0mxnBeAshgiKAhE22fl5axg9FBz8eUr4kxhLXmwCmlvD3tk1rPDXp5n6BazOa3Fzgctia5Jw&ved=2ahUKEwi47eO73pyOAxVFqpUCHekfAZoQ8tMDegQIBxAQ"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=marquis+companies+i+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70"
+    }
+  }
+}

@@ -1,0 +1,416 @@
+{
+  "search_metadata": {
+    "id": "6864646f03b13657ee5f45aa",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/4fb87497fdc6b660/6864646f03b13657ee5f45aa.json",
+    "created_at": "2025-07-01 22:42:55 UTC",
+    "processed_at": "2025-07-01 22:42:55 UTC",
+    "google_url": "https://www.google.com/search?q=%22athena+healthcare+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22athena+healthcare+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/4fb87497fdc6b660/6864646f03b13657ee5f45aa.html",
+    "total_time_taken": 1.19
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"athena healthcare holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"athena healthcare holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 1200,
+    "time_taken_displayed": 0.38,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "athena healthcare holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "athena healthcare holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "related_questions": [
+    {
+      "question": "Does Athena health have an API?",
+      "snippet": "athenahealth offers various API frameworks to help you build an integrated solution which best meets your business needs.",
+      "title": "Types of APIs We Offer - APIs at athenahealth | API Solutions",
+      "link": "https://docs.athenahealth.com/api/resources/complete_list_athena_apis#:~:text=athenahealth%20offers%20various%20API%20frameworks,best%20meets%20your%20business%20needs.",
+      "displayed_link": "https://docs.athenahealth.com \u203a complete_list_athena_apis",
+      "source_logo": "https://serpapi.com/searches/6864646f03b13657ee5f45aa/images/ad24df07040ff027ef5db5e6441a82d595591cc56e317127f98eae6b86851c27.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSE5UQmtZMk5CWW5WSVYwVTBjblJTZG1rdFZsSmpjVlZKZFhCQ1VEQnJXQzEyY2pKS1gyWndlR1U0Y1U1S1ZrMVZWekZ3Ym5GdlZYVnFaVGx5YXpBeVVFTnJjaTFHZFdOU1lrbGljalZTVkRaNVYzaEdkVkF5ZG0wMFp4SVhZakpTYTJGSk0ydEhaa3QxYzJWTlVDMUxabmxuVVVVYUlrRkdUVUZIUjNGNFdITXlPRlJRYUVzeFowWXhTMXBaTTE4elRFUkxWRzgzY21jIiwiZmN2IjoiMyIsImVpIjoiYjJSa2FJM2tHZkt1c2VNUC1LZnlnUUUiLCJxYyI6ImN4M0lzUTJBTUF3RVFHb3FSdkFBN0VCTnpRU3YyR0JMSVltTUZZbUNRZGtHaVN0dlhCRXFCYVNDSEpyZ1Fsb3pXemt1T29YdEgzQkhDUnhDeldzM0ZpYzJseFRWYjBJejJ0VjhHcDUzbTVjUCIsInF1ZXN0aW9uIjoiRG9lcyBBdGhlbmEgaGVhbHRoIGhhdmUgYW4gQVBJPyIsImxrIjoiR2g1a2IyVnpJR0YwYUdWdVlTQm9aV0ZzZEdnZ2FHRjJaU0JoYmlCaGNHayIsImJzIjoiYy1OeTQ1SjN5VTh0Vm5Bc3lVak5TMVRJU0UzTUtjbFF5RWdzUzFWSXpGTndEUEMwbDFqS1phUWdKWmNDVXBXSVZWVmlRU1lYMEp6d2pNUVNvRmhCUVdwZWFvcENTVDZxbWZZU3IwMUI1cFNqcTBJeGs4dUtTOUt6V01HMUlETlpJYjhJWmtKU2FrbEphcEc5eEtOY0l5a3BpY3hpaFZTb2ZDS3lQSmNsbDV4SGZybENibWx5aGtJS2txZGNmWU1Va3ZPTFMtd2xab1laaVVnSmdkZ0stV2t3M2FtNVJRS01BQSIsImlkIjoiZmNfYjJSa2FJM2tHZkt1c2VNUC1LZnlnUUVfMSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSE5UQmtZMk5CWW5WSVYwVTBjblJTZG1rdFZsSmpjVlZKZFhCQ1VEQnJXQzEyY2pKS1gyWndlR1U0Y1U1S1ZrMVZWekZ3Ym5GdlZYVnFaVGx5YXpBeVVFTnJjaTFHZFdOU1lrbGljalZTVkRaNVYzaEdkVkF5ZG0wMFp4SVhZakpTYTJGSk0ydEhaa3QxYzJWTlVDMUxabmxuVVVVYUlrRkdUVUZIUjNGNFdITXlPRlJRYUVzeFowWXhTMXBaTTE4elRFUkxWRzgzY21jIiwiZmN2IjoiMyIsImVpIjoiYjJSa2FJM2tHZkt1c2VNUC1LZnlnUUUiLCJxYyI6ImN4M0lzUTJBTUF3RVFHb3FSdkFBN0VCTnpRU3YyR0JMSVltTUZZbUNRZGtHaVN0dlhCRXFCYVNDSEpyZ1Fsb3pXemt1T29YdEgzQkhDUnhDeldzM0ZpYzJseFRWYjBJejJ0VjhHcDUzbTVjUCIsInF1ZXN0aW9uIjoiRG9lcyBBdGhlbmEgaGVhbHRoIGhhdmUgYW4gQVBJPyIsImxrIjoiR2g1a2IyVnpJR0YwYUdWdVlTQm9aV0ZzZEdnZ2FHRjJaU0JoYmlCaGNHayIsImJzIjoiYy1OeTQ1SjN5VTh0Vm5Bc3lVak5TMVRJU0UzTUtjbFF5RWdzUzFWSXpGTndEUEMwbDFqS1phUWdKWmNDVXBXSVZWVmlRU1lYMEp6d2pNUVNvRmhCUVdwZWFvcENTVDZxbWZZU3IwMUI1cFNqcTBJeGs4dUtTOUt6V01HMUlETlpJYjhJWmtKU2FrbEphcEc5eEtOY0l5a3BpY3hpaFZTb2ZDS3lQSmNsbDV4SGZybENibWx5aGtJS2txZGNmWU1Va3ZPTFMtd2xab1laaVVnSmdkZ0stV2t3M2FtNVJRS01BQSIsImlkIjoiZmNfYjJSa2FJM2tHZkt1c2VNUC1LZnlnUUVfMSJ9"
+    },
+    {
+      "question": "What happened to Athena health?",
+      "snippet": "On February 15, 2022, the company was acquired by Bain Capital and Hellman & Friedman for $17 billion.",
+      "title": "athenahealth - Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Athenahealth#:~:text=On%20February%2015%2C%202022%2C%20the,Hellman%20%26%20Friedman%20for%20%2417%20billion.",
+      "displayed_link": "https://en.wikipedia.org \u203a wiki \u203a Athenahealth",
+      "source_logo": "https://serpapi.com/searches/6864646f03b13657ee5f45aa/images/ad24df07040ff027ef5db5e6441a82d54380971888c2d503404bbc3b08df0cf4.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSE5UQmtZMk5CWW5WSVYwVTBjblJTZG1rdFZsSmpjVlZKZFhCQ1VEQnJXQzEyY2pKS1gyWndlR1U0Y1U1S1ZrMVZWekZ3Ym5GdlZYVnFaVGx5YXpBeVVFTnJjaTFHZFdOU1lrbGljalZTVkRaNVYzaEdkVkF5ZG0wMFp4SVhZakpTYTJGSk0ydEhaa3QxYzJWTlVDMUxabmxuVVVVYUlrRkdUVUZIUjNGNFdITXlPRlJRYUVzeFowWXhTMXBaTTE4elRFUkxWRzgzY21jIiwiZmN2IjoiMyIsImVpIjoiYjJSa2FJM2tHZkt1c2VNUC1LZnlnUUUiLCJxYyI6ImN4M0lzUTJBTUF3RVFHb3FSdkFBN0VCTnpRU3YyR0JMSVltTUZZbUNRZGtHaVN0dlhCRXFCYVNDSEpyZ1Fsb3pXemt1T29YdEgzQkhDUnhDeldzM0ZpYzJseFRWYjBJejJ0VjhHcDUzbTVjUCIsInF1ZXN0aW9uIjoiV2hhdCBoYXBwZW5lZCB0byBBdGhlbmEgaGVhbHRoPyIsImxrIjoiR2g1M2FHRjBJR2hoY0hCbGJtVmtJSFJ2SUdGMGFHVnVZU0JvWldGc2RHZyIsImJzIjoiYy1OeTQ1SjN5VTh0Vm5Bc3lVak5TMVRJU0UzTUtjbFF5RWdzUzFWSXpGTndEUEMwbDFqS1phUWdKWmNDVXBXSVZWVmlRU1lYMEp6d2pNUVNvRmhCUVdwZWFvcENTVDZxbWZZU3IwMUI1cFNqcTBJeGs4dUtTOUt6V01HMUlETlpJYjhJWmtKU2FrbEphcEc5eEtOY0l5a3BpY3hpaFZTb2ZDS3lQSmNsbDV4SGZybENibWx5aGtJS2txZGNmWU1Va3ZPTFMtd2xab1laaVVnSmdkZ0stV2t3M2FtNVJRS01BQSIsImlkIjoiZmNfYjJSa2FJM2tHZkt1c2VNUC1LZnlnUUVfMSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSE5UQmtZMk5CWW5WSVYwVTBjblJTZG1rdFZsSmpjVlZKZFhCQ1VEQnJXQzEyY2pKS1gyWndlR1U0Y1U1S1ZrMVZWekZ3Ym5GdlZYVnFaVGx5YXpBeVVFTnJjaTFHZFdOU1lrbGljalZTVkRaNVYzaEdkVkF5ZG0wMFp4SVhZakpTYTJGSk0ydEhaa3QxYzJWTlVDMUxabmxuVVVVYUlrRkdUVUZIUjNGNFdITXlPRlJRYUVzeFowWXhTMXBaTTE4elRFUkxWRzgzY21jIiwiZmN2IjoiMyIsImVpIjoiYjJSa2FJM2tHZkt1c2VNUC1LZnlnUUUiLCJxYyI6ImN4M0lzUTJBTUF3RVFHb3FSdkFBN0VCTnpRU3YyR0JMSVltTUZZbUNRZGtHaVN0dlhCRXFCYVNDSEpyZ1Fsb3pXemt1T29YdEgzQkhDUnhDeldzM0ZpYzJseFRWYjBJejJ0VjhHcDUzbTVjUCIsInF1ZXN0aW9uIjoiV2hhdCBoYXBwZW5lZCB0byBBdGhlbmEgaGVhbHRoPyIsImxrIjoiR2g1M2FHRjBJR2hoY0hCbGJtVmtJSFJ2SUdGMGFHVnVZU0JvWldGc2RHZyIsImJzIjoiYy1OeTQ1SjN5VTh0Vm5Bc3lVak5TMVRJU0UzTUtjbFF5RWdzUzFWSXpGTndEUEMwbDFqS1phUWdKWmNDVXBXSVZWVmlRU1lYMEp6d2pNUVNvRmhCUVdwZWFvcENTVDZxbWZZU3IwMUI1cFNqcTBJeGs4dUtTOUt6V01HMUlETlpJYjhJWmtKU2FrbEphcEc5eEtOY0l5a3BpY3hpaFZTb2ZDS3lQSmNsbDV4SGZybENibWx5aGtJS2txZGNmWU1Va3ZPTFMtd2xab1laaVVnSmdkZ0stV2t3M2FtNVJRS01BQSIsImlkIjoiZmNfYjJSa2FJM2tHZkt1c2VNUC1LZnlnUUVfMSJ9"
+    },
+    {
+      "question": "Is Epic or Athena better?",
+      "snippet": "Epic's comprehensive solutions and strong presence in acute care make it suitable for large hospitals and health systems. athenahealth's cloud-based platform and cost-effective model are attractive to smaller practices and those prioritizing scalability and ease of deployment.",
+      "title": "Epic vs athenahealth: an objective comparison - EHR in Practice",
+      "date": "May 15, 2025",
+      "link": "https://www.ehrinpractice.com/epic-vs-athenahealth-comparison.html#:~:text=Epic's%20comprehensive%20solutions%20and%20strong,scalability%20and%20ease%20of%20deployment.",
+      "displayed_link": "https://www.ehrinpractice.com \u203a epic-vs-athenahealth-co...",
+      "source_logo": "https://serpapi.com/searches/6864646f03b13657ee5f45aa/images/ad24df07040ff027ef5db5e6441a82d520e383f3c2d1ea667311522e9db62e49.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSE5UQmtZMk5CWW5WSVYwVTBjblJTZG1rdFZsSmpjVlZKZFhCQ1VEQnJXQzEyY2pKS1gyWndlR1U0Y1U1S1ZrMVZWekZ3Ym5GdlZYVnFaVGx5YXpBeVVFTnJjaTFHZFdOU1lrbGljalZTVkRaNVYzaEdkVkF5ZG0wMFp4SVhZakpTYTJGSk0ydEhaa3QxYzJWTlVDMUxabmxuVVVVYUlrRkdUVUZIUjNGNFdITXlPRlJRYUVzeFowWXhTMXBaTTE4elRFUkxWRzgzY21jIiwiZmN2IjoiMyIsImVpIjoiYjJSa2FJM2tHZkt1c2VNUC1LZnlnUUUiLCJxYyI6ImN4M0lzUTJBTUF3RVFHb3FSdkFBN0VCTnpRU3YyR0JMSVltTUZZbUNRZGtHaVN0dlhCRXFCYVNDSEpyZ1Fsb3pXemt1T29YdEgzQkhDUnhDeldzM0ZpYzJseFRWYjBJejJ0VjhHcDUzbTVjUCIsInF1ZXN0aW9uIjoiSXMgRXBpYyBvciBBdGhlbmEgYmV0dGVyPyIsImxrIjoiR2hocGN5QmxjR2xqSUc5eUlHRjBhR1Z1WVNCaVpYUjBaWEkiLCJicyI6ImMtTnk0NUozeVU4dFZuQXN5VWpOUzFUSVNFM01LY2xReUVnc1MxVkl6Rk53RFBDMGwxaktaYVFnSlpjQ1VwV0lWVlZpUVNZWDBKendqTVFTb0ZoQlFXcGVhb3BDU1Q2cW1mWVNyMDFCNXBTanEwSXhrOHVLUzlLeldNRzFJRE5aSWI4SVprSlNha2xKYXBHOXhLTmNJeWtwaWN4aWhWU29mQ0t5UEpjbGw1eEhmcmxDYm1seWhrSUtrcWRjZllNVWt2T0xTLXdsWm9ZWmlVZ0pnZGdLLVdrdzNhbTVSUUtNQUEiLCJpZCI6ImZjX2IyUmthSTNrR2ZLdXNlTVAtS2Z5Z1FFXzEifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSE5UQmtZMk5CWW5WSVYwVTBjblJTZG1rdFZsSmpjVlZKZFhCQ1VEQnJXQzEyY2pKS1gyWndlR1U0Y1U1S1ZrMVZWekZ3Ym5GdlZYVnFaVGx5YXpBeVVFTnJjaTFHZFdOU1lrbGljalZTVkRaNVYzaEdkVkF5ZG0wMFp4SVhZakpTYTJGSk0ydEhaa3QxYzJWTlVDMUxabmxuVVVVYUlrRkdUVUZIUjNGNFdITXlPRlJRYUVzeFowWXhTMXBaTTE4elRFUkxWRzgzY21jIiwiZmN2IjoiMyIsImVpIjoiYjJSa2FJM2tHZkt1c2VNUC1LZnlnUUUiLCJxYyI6ImN4M0lzUTJBTUF3RVFHb3FSdkFBN0VCTnpRU3YyR0JMSVltTUZZbUNRZGtHaVN0dlhCRXFCYVNDSEpyZ1Fsb3pXemt1T29YdEgzQkhDUnhDeldzM0ZpYzJseFRWYjBJejJ0VjhHcDUzbTVjUCIsInF1ZXN0aW9uIjoiSXMgRXBpYyBvciBBdGhlbmEgYmV0dGVyPyIsImxrIjoiR2hocGN5QmxjR2xqSUc5eUlHRjBhR1Z1WVNCaVpYUjBaWEkiLCJicyI6ImMtTnk0NUozeVU4dFZuQXN5VWpOUzFUSVNFM01LY2xReUVnc1MxVkl6Rk53RFBDMGwxaktaYVFnSlpjQ1VwV0lWVlZpUVNZWDBKendqTVFTb0ZoQlFXcGVhb3BDU1Q2cW1mWVNyMDFCNXBTanEwSXhrOHVLUzlLeldNRzFJRE5aSWI4SVprSlNha2xKYXBHOXhLTmNJeWtwaWN4aWhWU29mQ0t5UEpjbGw1eEhmcmxDYm1seWhrSUtrcWRjZllNVWt2T0xTLXdsWm9ZWmlVZ0pnZGdLLVdrdzNhbTVSUUtNQUEiLCJpZCI6ImZjX2IyUmthSTNrR2ZLdXNlTVAtS2Z5Z1FFXzEifQ%3D%3D"
+    },
+    {
+      "question": "How much does Athena EMR cost?",
+      "snippet": null,
+      "title": "AI Overview",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Data+Migration&sa=X&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQxccNegQIbRAB",
+      "list": [
+        "Base Cost: The starting price is $140 per provider, per month, with an annual billing cycle.\u00a0 ",
+        "Practice Size: Larger practices will likely incur higher overall costs due to the increased number of providers and potentially more complex needs.\u00a0 ",
+        "Additional Services: Costs can vary based on the specific services you require, such as: Data Migration: Moving existing patient records to the Athenahealth platform can range from $500 to $25,000 or more, depending on the volume and complexity.\u00a0 Order Transmission: This can range from $150 per month to $0.45 to $11 per order, depending on the chosen package.\u00a0 Training: Training costs can range from $500 to $5,000, depending on the frequency and scope.\u00a0 Custom Integrations: Integrating Athenahealth with other systems may require additional customization costs.\u00a0 ",
+        "Data Migration: Moving existing patient records to the Athenahealth platform can range from $500 to $25,000 or more, depending on the volume and complexity.\u00a0 ",
+        "Order Transmission: This can range from $150 per month to $0.45 to $11 per order, depending on the chosen package.\u00a0 ",
+        "Training: Training costs can range from $500 to $5,000, depending on the frequency and scope.\u00a0 ",
+        "Custom Integrations: Integrating Athenahealth with other systems may require additional customization costs.\u00a0 ",
+        "Ongoing Costs: In addition to the initial setup costs, you'll also incur ongoing operational costs. Some EMR systems, like Athenahealth, use a subscription model, with fees ranging from $200 to $700 per provider, per month.\u00a0 ",
+        "Hidden Fees: Athenahealth advertises \"0 hidden fees\" when you select their software, according to EHR in Practice.\u00a0 ",
+        "Total Cost: The total cost of implementing Athenahealth EMR can vary significantly, but some estimates suggest that a practice of five physicians could pay at least $9,400 in the first year, including initial costs and migration of up to 1000 patient records.\u00a0 ",
+        "Consultants: Consider the cost of hiring an EHR consultant to help navigate the implementation process and potentially save on costs, says Software Finder.\u00a0 "
+      ],
+      "displayed_link": null,
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSE5UQmtZMk5CWW5WSVYwVTBjblJTZG1rdFZsSmpjVlZKZFhCQ1VEQnJXQzEyY2pKS1gyWndlR1U0Y1U1S1ZrMVZWekZ3Ym5GdlZYVnFaVGx5YXpBeVVFTnJjaTFHZFdOU1lrbGljalZTVkRaNVYzaEdkVkF5ZG0wMFp4SVhZakpTYTJGSk0ydEhaa3QxYzJWTlVDMUxabmxuVVVVYUlrRkdUVUZIUjNGNFdITXlPRlJRYUVzeFowWXhTMXBaTTE4elRFUkxWRzgzY21jIiwiZmN2IjoiMyIsImVpIjoiYjJSa2FJM2tHZkt1c2VNUC1LZnlnUUUiLCJxYyI6ImN4M0lzUTJBTUF3RVFHb3FSdkFBN0VCTnpRU3YyR0JMSVltTUZZbUNRZGtHaVN0dlhCRXFCYVNDSEpyZ1Fsb3pXemt1T29YdEgzQkhDUnhDeldzM0ZpYzJseFRWYjBJejJ0VjhHcDUzbTVjUCIsInF1ZXN0aW9uIjoiSG93IG11Y2ggZG9lcyBBdGhlbmEgRU1SIGNvc3Q/IiwibGsiOiJHaEpqYjNOMElHOW1JR0YwYUdWdVlTQmxiWEkiLCJicyI6ImMtTnk0NUozeVU4dFZuQXN5VWpOUzFUSVNFM01LY2xReUVnc1MxVkl6Rk53RFBDMGwxaktaYVFnSlpjQ1VwV0lWVlZpUVNZWDBKendqTVFTb0ZoQlFXcGVhb3BDU1Q2cW1mWVNyMDFCNXBTanEwSXhrOHVLUzlLeldNRzFJRE5aSWI4SVprSlNha2xKYXBHOXhLTmNJeWtwaWN4aWhWU29mQ0t5UEpjbGw1eEhmcmxDYm1seWhrSUtrcWRjZllNVWt2T0xTLXdsWm9ZWmlVZ0pnZGdLLVdrdzNhbTVSUUtNQUEiLCJpZCI6ImZjX2IyUmthSTNrR2ZLdXNlTVAtS2Z5Z1FFXzEifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSE5UQmtZMk5CWW5WSVYwVTBjblJTZG1rdFZsSmpjVlZKZFhCQ1VEQnJXQzEyY2pKS1gyWndlR1U0Y1U1S1ZrMVZWekZ3Ym5GdlZYVnFaVGx5YXpBeVVFTnJjaTFHZFdOU1lrbGljalZTVkRaNVYzaEdkVkF5ZG0wMFp4SVhZakpTYTJGSk0ydEhaa3QxYzJWTlVDMUxabmxuVVVVYUlrRkdUVUZIUjNGNFdITXlPRlJRYUVzeFowWXhTMXBaTTE4elRFUkxWRzgzY21jIiwiZmN2IjoiMyIsImVpIjoiYjJSa2FJM2tHZkt1c2VNUC1LZnlnUUUiLCJxYyI6ImN4M0lzUTJBTUF3RVFHb3FSdkFBN0VCTnpRU3YyR0JMSVltTUZZbUNRZGtHaVN0dlhCRXFCYVNDSEpyZ1Fsb3pXemt1T29YdEgzQkhDUnhDeldzM0ZpYzJseFRWYjBJejJ0VjhHcDUzbTVjUCIsInF1ZXN0aW9uIjoiSG93IG11Y2ggZG9lcyBBdGhlbmEgRU1SIGNvc3Q%2FIiwibGsiOiJHaEpqYjNOMElHOW1JR0YwYUdWdVlTQmxiWEkiLCJicyI6ImMtTnk0NUozeVU4dFZuQXN5VWpOUzFUSVNFM01LY2xReUVnc1MxVkl6Rk53RFBDMGwxaktaYVFnSlpjQ1VwV0lWVlZpUVNZWDBKendqTVFTb0ZoQlFXcGVhb3BDU1Q2cW1mWVNyMDFCNXBTanEwSXhrOHVLUzlLeldNRzFJRE5aSWI4SVprSlNha2xKYXBHOXhLTmNJeWtwaWN4aWhWU29mQ0t5UEpjbGw1eEhmcmxDYm1seWhrSUtrcWRjZllNVWt2T0xTLXdsWm9ZWmlVZ0pnZGdLLVdrdzNhbTVSUUtNQUEiLCJpZCI6ImZjX2IyUmthSTNrR2ZLdXNlTVAtS2Z5Z1FFXzEifQ%3D%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Release Notes and Change Logs | API Solutions",
+      "link": "https://docs.athenahealth.com/api/resources/release-notes-and-change-logs",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://docs.athenahealth.com/api/resources/release-notes-and-change-logs&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQFnoECBsQAQ",
+      "displayed_link": "https://docs.athenahealth.com \u203a api \u203a resources \u203a release-...",
+      "favicon": "https://serpapi.com/searches/6864646f03b13657ee5f45aa/images/fcdd08814b2e949ab529c7a94936e05313efec44255d5ee3685ce7b7357e6728.png",
+      "snippet": "24.03.07 Release: Site-Specific FHIR base URLs are now available in athenahealth developer portal. The list of athenahealth's site-specific FHIR base URLs ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "athenahealth",
+        "list",
+        "athenahealth's",
+        "FHIR"
+      ],
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=athena+healthcare+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ5t4CegQIHhAB"
+      },
+      "source": "Athenahealth"
+    },
+    {
+      "position": 2,
+      "title": "Default Lab | API Solutions",
+      "link": "https://docs.athenahealth.com/api/api-ref/default-lab",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://docs.athenahealth.com/api/api-ref/default-lab&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQFnoECBgQAQ",
+      "displayed_link": "https://docs.athenahealth.com \u203a api \u203a api-ref \u203a default-lab",
+      "favicon": "https://serpapi.com/searches/6864646f03b13657ee5f45aa/images/fcdd08814b2e949ab529c7a94936e0533806c28ce46d1b4a36ac5663ad66488c.png",
+      "snippet": "The Default Laboratory feature allows the user to view, update, or delete the preferred Lab associated with a patient.",
+      "missing": [
+        "holdings",
+        "Advantage"
+      ],
+      "source": "Athenahealth"
+    },
+    {
+      "position": 3,
+      "title": "Why FHIR",
+      "link": "https://devcenter.docs.lifeomic.com/development/fhir-service/fhir-why",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://devcenter.docs.lifeomic.com/development/fhir-service/fhir-why&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQFnoECBcQAQ",
+      "displayed_link": "https://devcenter.docs.lifeomic.com \u203a fhir-service \u203a fhir-...",
+      "favicon": "https://serpapi.com/searches/6864646f03b13657ee5f45aa/images/fcdd08814b2e949ab529c7a94936e0537c24034423cb720bd5a06d71e6a2c43c.png",
+      "snippet": "Fast Health Interoperability Resources (FHIR) is the future of healthcare information and one of the core standards of the LifeOmic Platform.",
+      "snippet_highlighted_words": [
+        "Fast Health Interoperability Resources (FHIR"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Broad Support\u200b",
+            "link": "https://devcenter.docs.lifeomic.com/development/fhir-service/fhir-why#:~:text=Broad%20Support%E2%80%8B"
+          },
+          {
+            "title": "Support From Big Tech\u200b",
+            "link": "https://devcenter.docs.lifeomic.com/development/fhir-service/fhir-why#:~:text=Support%20from%20Big%20Tech%E2%80%8B"
+          },
+          {
+            "title": "How Does The Lifeomic...",
+            "link": "https://devcenter.docs.lifeomic.com/development/fhir-service/fhir-why#:~:text=How%20Does%20the%20LifeOmic%20Platform%20Use%20FHIR%E2%80%8B"
+          }
+        ]
+      },
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=athena+healthcare+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ5t4CegQIGRAB"
+      },
+      "source": "LifeOmic"
+    },
+    {
+      "position": 4,
+      "title": "Fast Healthcare Interoperability Resources (FHIR) - Standard",
+      "link": "https://www.trisotech.com/fhir/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.trisotech.com/fhir/&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQFnoECB0QAQ",
+      "displayed_link": "https://www.trisotech.com \u203a fhir",
+      "favicon": "https://serpapi.com/searches/6864646f03b13657ee5f45aa/images/fcdd08814b2e949ab529c7a94936e05378618fde2efcdf1fef828640b8fe0e64.png",
+      "snippet": "The FHIR standard provides a standard data model for describing healthcare health and administrative data and a RESTful API (Application Programming Interface)",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "healthcare",
+        "API"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "What Is Fhir?",
+            "link": "https://www.trisotech.com/fhir/#:~:text=What%20is%20FHIR%3F,-The%20HL7%20FHIR%20standard%20is"
+          },
+          {
+            "title": "The Fhir Standard",
+            "link": "https://www.trisotech.com/fhir/#:~:text=The%20FHIR%20Standard,-Because%20worldwide%20healthcare%20is%20very"
+          },
+          {
+            "title": "Trisotech And Fhir",
+            "link": "https://www.trisotech.com/fhir/#:~:text=Trisotech%20and%20FHIR"
+          }
+        ]
+      },
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=athena+healthcare+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ5t4CegQIIBAB"
+      },
+      "source": "Trisotech"
+    },
+    {
+      "position": 5,
+      "title": "FHIR Heats up From Public-Sector Push",
+      "link": "https://www.hcinnovationgroup.com/interoperability-hie/fast-healthcare-interoperability-resources-fhir/article/21089592/fhir-heats-up-from-public-sector-push",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hcinnovationgroup.com/interoperability-hie/fast-healthcare-interoperability-resources-fhir/article/21089592/fhir-heats-up-from-public-sector-push&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQFnoECD8QAQ",
+      "displayed_link": "https://www.hcinnovationgroup.com \u203a article \u203a fhir-hea...",
+      "favicon": "https://serpapi.com/searches/6864646f03b13657ee5f45aa/images/fcdd08814b2e949ab529c7a94936e053527542328b729cbeaa4637b80813f9c2.png",
+      "date": "Jul 26, 2019",
+      "snippet": "The government's proposed commitments to FHIR and APIs affirm its continued belief in making patient data more easily accessible.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "APIs"
+      ],
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=athena+healthcare+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ5t4CegQISRAB"
+      },
+      "source": "Healthcare Innovation"
+    },
+    {
+      "position": 6,
+      "title": "Proposed Rule Public Comment Template",
+      "link": "https://www.pew.org/-/media/assets/2015/06/mdi-letters/athenahealth_letter.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.pew.org/-/media/assets/2015/06/mdi-letters/athenahealth_letter.pdf&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQFnoECEIQAQ",
+      "displayed_link": "https://www.pew.org \u203a assets \u203a athenahealth_letter",
+      "favicon": "https://serpapi.com/searches/6864646f03b13657ee5f45aa/images/fcdd08814b2e949ab529c7a94936e05335f211c8ffdb35303c727f9402d31164.png",
+      "snippet": "As you know athenahealth provides electronic health record (\u201cEHR\u201d), practice management, care coordination, patient communication, data analytics, ...",
+      "snippet_highlighted_words": [
+        "athenahealth"
+      ],
+      "missing": [
+        "holdings",
+        "Advantage"
+      ],
+      "source": "The Pew Charitable Trusts"
+    },
+    {
+      "position": 7,
+      "title": "athenaPractice and athenaFlow Roadmap",
+      "link": "https://cdn-static.bizzabo.com/bizzabo.users.files/144874/237324/4048526/athenaPractice%20and%20athenaFlow%20Roadmap.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://cdn-static.bizzabo.com/bizzabo.users.files/144874/237324/4048526/athenaPractice%2520and%2520athenaFlow%2520Roadmap.pdf&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQFnoECEYQAQ",
+      "displayed_link": "https://cdn-static.bizzabo.com \u203a bizzabo.users.files",
+      "date": "Jan 1, 2021",
+      "snippet": "portal and API requests. Page 31. \u00a9athenahealth. FHIR Write APIs. 31. The opportunity. Extending APIs to include both read and write. Including ...",
+      "snippet_highlighted_words": [
+        "API",
+        "athenahealth",
+        "FHIR",
+        "APIs",
+        "APIs"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 44
+          },
+          "extensions": [
+            "44 pages"
+          ]
+        }
+      },
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=athena+healthcare+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ5t4CegQITRAB"
+      },
+      "source": "Bizzabo"
+    },
+    {
+      "position": 8,
+      "title": "Da Vinci Video Presentations",
+      "link": "https://confluence.hl7.org/spaces/DVP/pages/78678039/Da+Vinci+Video+Presentations",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/spaces/DVP/pages/78678039/Da%2BVinci%2BVideo%2BPresentations&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQFnoECFUQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a spaces \u203a DVP \u203a pages \u203a Da...",
+      "favicon": "https://serpapi.com/searches/6864646f03b13657ee5f45aa/images/fcdd08814b2e949ab529c7a94936e0530826406686de33aa7ab2a3d508f233ed.png",
+      "date": "Mar 26, 2025",
+      "snippet": "The presenters will outline how APIs interact with common payer and provider workflow challenges like risk, quality, prior authorization, so we ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "provider"
+      ],
+      "missing": [
+        "holdings",
+        "Advantage"
+      ],
+      "source": "HL7 - Confluence"
+    },
+    {
+      "position": 9,
+      "title": "Interoperability",
+      "link": "https://www.datavant.com/interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.datavant.com/interoperability&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQFnoECEEQAQ",
+      "displayed_link": "https://www.datavant.com \u203a interoperability",
+      "favicon": "https://serpapi.com/searches/6864646f03b13657ee5f45aa/images/fcdd08814b2e949ab529c7a94936e053954b58c59d93fc785aeb507c1e134290.png",
+      "snippet": "Interoperability refers to the ability of different systems, devices, applications, or products to connect and communicate in a coordinated way, without effort ...",
+      "source": "Datavant"
+    },
+    {
+      "position": 10,
+      "title": "Application Programming Interface (API) Write-Back ...",
+      "link": "https://www.healthit.gov/sites/default/files/page/2021-11/20211117_API%20Write-back%20Workshop%20Summary%20Report.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/page/2021-11/20211117_API%2520Write-back%2520Workshop%2520Summary%2520Report.pdf&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQFnoECD0QAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a page",
+      "favicon": "https://serpapi.com/searches/6864646f03b13657ee5f45aa/images/fcdd08814b2e949ab529c7a94936e0536a93d69cf94108c1ddca4e53ea046dbc.jpeg",
+      "snippet": "APIs enable providers, patients, and researchers to use third-party applications (apps) to gather external data or apply insights and analysis to EHR data in a ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "providers"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 37
+          },
+          "extensions": [
+            "37 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=athena+healthcare+holdings+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ5t4CegQISBAB"
+      },
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Athena API documentation",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Athena+API+documentation&sa=X&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ1QJ6BAhFEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Athena+API+documentation&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Athenahealth API pricing",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Athenahealth+API+pricing&sa=X&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ1QJ6BAhEEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Athenahealth+API+pricing&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Athenahealth FHIR API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Athenahealth+FHIR+API&sa=X&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ1QJ6BAhDEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Athenahealth+FHIR+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Athena health portal not working",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Athena+health+portal+not+working&sa=X&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ1QJ6BAhAEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Athena+health+portal+not+working&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Athena API calls",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Athena+API+calls&sa=X&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ1QJ6BAg-EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Athena+API+calls&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Downdetector Athenahealth",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Downdetector+Athenahealth&sa=X&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ1QJ6BAg8EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Downdetector+Athenahealth&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Athena status",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Athena+status&sa=X&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ1QJ6BAg7EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Athena+status&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Is Athenahealth com down",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Is+Athenahealth+com+down&sa=X&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ1QJ6BAg6EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Is+Athenahealth+com+down&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=b2RkaI3kGfKuseMP-KfygQE&start=10&sa=N&sstk=Ac65TH5bwvbH9qnKQw7s-MPG3Ko0_XLriniKbCwv-tKo08ycNENIYOBF3Wg-nFMvvCReppiYKUWDh7Q2CPwp7qdaXDaSNm_pP-VUUg&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ8NMDegQICxAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=b2RkaI3kGfKuseMP-KfygQE&start=10&sa=N&sstk=Ac65TH5bwvbH9qnKQw7s-MPG3Ko0_XLriniKbCwv-tKo08ycNENIYOBF3Wg-nFMvvCReppiYKUWDh7Q2CPwp7qdaXDaSNm_pP-VUUg&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ8tMDegQICxAE",
+      "3": "https://www.google.com/search?q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=b2RkaI3kGfKuseMP-KfygQE&start=20&sa=N&sstk=Ac65TH5bwvbH9qnKQw7s-MPG3Ko0_XLriniKbCwv-tKo08ycNENIYOBF3Wg-nFMvvCReppiYKUWDh7Q2CPwp7qdaXDaSNm_pP-VUUg&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ8tMDegQICxAG",
+      "4": "https://www.google.com/search?q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=b2RkaI3kGfKuseMP-KfygQE&start=30&sa=N&sstk=Ac65TH5bwvbH9qnKQw7s-MPG3Ko0_XLriniKbCwv-tKo08ycNENIYOBF3Wg-nFMvvCReppiYKUWDh7Q2CPwp7qdaXDaSNm_pP-VUUg&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ8tMDegQICxAI",
+      "5": "https://www.google.com/search?q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=b2RkaI3kGfKuseMP-KfygQE&start=40&sa=N&sstk=Ac65TH5bwvbH9qnKQw7s-MPG3Ko0_XLriniKbCwv-tKo08ycNENIYOBF3Wg-nFMvvCReppiYKUWDh7Q2CPwp7qdaXDaSNm_pP-VUUg&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ8tMDegQICxAK",
+      "6": "https://www.google.com/search?q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=b2RkaI3kGfKuseMP-KfygQE&start=50&sa=N&sstk=Ac65TH5bwvbH9qnKQw7s-MPG3Ko0_XLriniKbCwv-tKo08ycNENIYOBF3Wg-nFMvvCReppiYKUWDh7Q2CPwp7qdaXDaSNm_pP-VUUg&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ8tMDegQICxAM",
+      "7": "https://www.google.com/search?q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=b2RkaI3kGfKuseMP-KfygQE&start=60&sa=N&sstk=Ac65TH5bwvbH9qnKQw7s-MPG3Ko0_XLriniKbCwv-tKo08ycNENIYOBF3Wg-nFMvvCReppiYKUWDh7Q2CPwp7qdaXDaSNm_pP-VUUg&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ8tMDegQICxAO",
+      "8": "https://www.google.com/search?q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=b2RkaI3kGfKuseMP-KfygQE&start=70&sa=N&sstk=Ac65TH5bwvbH9qnKQw7s-MPG3Ko0_XLriniKbCwv-tKo08ycNENIYOBF3Wg-nFMvvCReppiYKUWDh7Q2CPwp7qdaXDaSNm_pP-VUUg&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ8tMDegQICxAQ",
+      "9": "https://www.google.com/search?q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=b2RkaI3kGfKuseMP-KfygQE&start=80&sa=N&sstk=Ac65TH5bwvbH9qnKQw7s-MPG3Ko0_XLriniKbCwv-tKo08ycNENIYOBF3Wg-nFMvvCReppiYKUWDh7Q2CPwp7qdaXDaSNm_pP-VUUg&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ8tMDegQICxAS",
+      "10": "https://www.google.com/search?q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=b2RkaI3kGfKuseMP-KfygQE&start=90&sa=N&sstk=Ac65TH5bwvbH9qnKQw7s-MPG3Ko0_XLriniKbCwv-tKo08ycNENIYOBF3Wg-nFMvvCReppiYKUWDh7Q2CPwp7qdaXDaSNm_pP-VUUg&ved=2ahUKEwjN15Ts3ZyOAxVyV2wGHfiTPBAQ8tMDegQICxAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=athena+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

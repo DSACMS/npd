@@ -1,0 +1,324 @@
+{
+  "search_metadata": {
+    "id": "68646d7c5fda0b5ab9033259",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/2b74a94aae5a2323/68646d7c5fda0b5ab9033259.json",
+    "created_at": "2025-07-01 23:21:32 UTC",
+    "processed_at": "2025-07-01 23:21:32 UTC",
+    "google_url": "https://www.google.com/search?q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/2b74a94aae5a2323/68646d7c5fda0b5ab9033259.html",
+    "total_time_taken": 5.11
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "visiting nurse service of new york Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "visiting nurse service of new york Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 193,
+    "time_taken_displayed": 0.28,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "CMS-9115-F - Interoperability and Patient Access",
+      "link": "https://www.cms.gov/files/document/cms-9115-f.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/cms-9115-f.pdf&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQFnoECBgQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a cms-91...",
+      "favicon": "https://serpapi.com/searches/68646d7c5fda0b5ab9033259/images/467e2003ef89007f483c6f790bcb0891ac65f32cdd2f9c0b59fd942b35e74d9b.png",
+      "date": "Mar 6, 2020",
+      "snippet": "specialty) required for this Provider Directory API can all be represented through FHIR Release. 4.0.1. Additional implementation guidance ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 474
+          },
+          "extensions": [
+            "474 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQFnoECBYQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2019/03/04 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/68646d7c5fda0b5ab9033259/images/467e2003ef89007f483c6f790bcb089158fdc19d6e06ac05e9e305ec561a234c.png",
+      "date": "Mar 4, 2019",
+      "snippet": "MA plans would be required to update provider directory information available through the API ... FHIR-based API discussed in section III.",
+      "snippet_highlighted_words": [
+        "plans",
+        "provider directory",
+        "API",
+        "FHIR",
+        "API"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Health Data, Technology, and Interoperability",
+      "link": "https://www.healthit.gov/sites/default/files/page/2024-07/ONC_HTI-2_Proposed_Rule.pdf?_cldee=dBfM637Je-gknL3-Bizz8OnNiHwon0dpofywVtL_WONBq6pz-VSass7C2mEkP29v&recipientid=contact-e224ab3ac7cfe81180d102bfc0a80172-cd3abdd32bc64d5e886e448ebaa42d0b&esid=8918130e-cf42-ef11-8409-000d3a36cb89",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/page/2024-07/ONC_HTI-2_Proposed_Rule.pdf%3F_cldee%3DdBfM637Je-gknL3-Bizz8OnNiHwon0dpofywVtL_WONBq6pz-VSass7C2mEkP29v%26recipientid%3Dcontact-e224ab3ac7cfe81180d102bfc0a80172-cd3abdd32bc64d5e886e448ebaa42d0b%26esid%3D8918130e-cf42-ef11-8409-000d3a36cb89&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQFnoECBUQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a page",
+      "favicon": "https://serpapi.com/searches/68646d7c5fda0b5ab9033259/images/467e2003ef89007f483c6f790bcb089133079afcad63af1fdc646e2c223523dd.jpeg",
+      "snippet": "... (FHIR\u00ae) solutions and evolving standards related to public health ... Provider Directory. 184 For the purposes of the CMS Interoperability and Patient ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQFnoECBoQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646d7c5fda0b5ab9033259/images/467e2003ef89007f483c6f790bcb089127514f485df0c1c60ee646fdce70823f.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 5,
+      "title": "How Health Information Exchanges Support Integration for ...",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/dbf3c475dff9ef1d5bdbcdef7792889a/hie-support-integration-bh-settings.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/dbf3c475dff9ef1d5bdbcdef7792889a/hie-support-integration-bh-settings.pdf&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQFnoECBkQAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/68646d7c5fda0b5ab9033259/images/467e2003ef89007f483c6f790bcb08916ee41fc4b1db5351b535eacbce0bb06e.png",
+      "date": "Dec 31, 2024",
+      "snippet": "HL7's FHIR provides a relatively straightforward solution for managing data with varied security requirements. ... The portal provides both ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 71
+          },
+          "extensions": [
+            "71 pages"
+          ]
+        }
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 6,
+      "title": "Interoperability and Patient Access - Proposed Rule ( ...",
+      "link": "https://www.cms.gov/Center/Special-Topic/Interoperability/CMS-9115-P.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/Center/Special-Topic/Interoperability/CMS-9115-P.pdf&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQFnoECCYQAQ",
+      "displayed_link": "https://www.cms.gov \u203a Center \u203a CMS-9115-P",
+      "favicon": "https://serpapi.com/searches/68646d7c5fda0b5ab9033259/images/467e2003ef89007f483c6f790bcb0891e1dee763263cf891d84cf93cd67b0d46.png",
+      "snippet": "We note that we have proposed that the API be updated with new provider directory information ... testing, production); build a new FHIR server or leverage ...",
+      "snippet_highlighted_words": [
+        "API",
+        "new provider directory",
+        "new FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 251
+          },
+          "extensions": [
+            "251 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "Pragmatic Approaches to Interoperability",
+      "link": "https://telehealthandmedicinetoday.com/index.php/journal/article/view/421/909",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://telehealthandmedicinetoday.com/index.php/journal/article/view/421/909&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQFnoECBsQAQ",
+      "displayed_link": "https://telehealthandmedicinetoday.com \u203a article \u203a view",
+      "favicon": "https://serpapi.com/searches/68646d7c5fda0b5ab9033259/images/467e2003ef89007f483c6f790bcb08919d5153cc90644b926b7f822ae1211c40.png",
+      "author": "by MBA Bharath Perugu",
+      "snippet": "... FHIR standard; the Argonaut Provider Directory will also be considered. Subsequently, FHIR standards may be modified to support any resulting ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=visiting+nurse+service+of+new+york+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ5t4CegQIIBAB"
+      },
+      "source": "Telehealth and Medicine Today"
+    },
+    {
+      "position": 8,
+      "title": "Federal Register/Vol. 89, No. 150/Monday, August 5, 2024/ ...",
+      "link": "https://www.govinfo.gov/content/pkg/FR-2024-08-05/pdf/2024-14975.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.govinfo.gov/content/pkg/FR-2024-08-05/pdf/2024-14975.pdf&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQFnoECDcQAQ",
+      "displayed_link": "https://www.govinfo.gov \u203a content \u203a pkg \u203a pdf",
+      "favicon": "https://serpapi.com/searches/68646d7c5fda0b5ab9033259/images/467e2003ef89007f483c6f790bcb08919bb06a65c0edc95512c583ea6456a2ff.png",
+      "date": "Aug 5, 2024",
+      "snippet": "... (FHIR\u00ae) solutions and evolving standards related to public health ... Provider Directory API to make available information such as ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 314
+          },
+          "extensions": [
+            "314 pages"
+          ]
+        }
+      },
+      "source": "GovInfo (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "Premium Reports",
+      "link": "https://klasresearch.com/reports",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://klasresearch.com/reports&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQFnoECD0QAQ",
+      "displayed_link": "https://klasresearch.com \u203a reports",
+      "favicon": "https://serpapi.com/searches/68646d7c5fda0b5ab9033259/images/467e2003ef89007f483c6f790bcb089115fd8bfecb32d2145468d1ce8653a763.png",
+      "snippet": "Building on a previously established API, the stakeholders created a FHIR API ... plans to have a patient access API and a provider directory API. Aimed at ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR API",
+        "plans",
+        "API",
+        "provider directory API"
+      ],
+      "source": "KLAS Research"
+    },
+    {
+      "position": 10,
+      "title": "Interoperability and Patient Access | Your Rights & Medical ...",
+      "link": "https://www.ambetterhealth.com/resources/interoperability-and-patient-access.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ambetterhealth.com/resources/interoperability-and-patient-access.html&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQFnoECDYQAQ",
+      "displayed_link": "https://www.ambetterhealth.com \u203a resources \u203a interoper...",
+      "favicon": "https://serpapi.com/searches/68646d7c5fda0b5ab9033259/images/467e2003ef89007f483c6f790bcb08914deaa54fddca26581f958a9710d471f1.png",
+      "snippet": "As a developer, how do I access and use the Provider Directory API? Go to our Partner PortalExternal Link and scroll to the \u201cFHIR \u2013 Provider Directory\u201d, click ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "Ambetter Health"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "CMS-0057",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=CMS-0057&sa=X&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-0057&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-9115-f fact sheet",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=cms-9115-f+fact+sheet&sa=X&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-9115-f+fact+sheet&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability and Patient Access final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=CMS+Interoperability+and+Patient+Access+final+rule&sa=X&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+and+Patient+Access+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-9115 final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=CMS-9115+final+rule&sa=X&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-9115+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-0057-f",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=cms-0057-f&sa=X&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-0057-f&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Provider Access API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Provider+Access+API&sa=X&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ1QJ6BAgwEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+Access+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS patient portal requirements",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=CMS+patient+portal+requirements&sa=X&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ1QJ6BAguEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+patient+portal+requirements&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "What is the purpose of Interoperability and Patient Access final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=What+is+the+purpose+of+Interoperability+and+Patient+Access+final+rule&sa=X&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ1QJ6BAgvEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=What+is+the+purpose+of+Interoperability+and+Patient+Access+final+rule&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=fm1kaPXfO-bJ1sQPxsCuCA&start=10&sa=N&sstk=Ac65TH5OFvo8dfb9a_AvLhsRk-2yBMCmL7mXy0j22yLgdHbcasJtN50MuNlruQ3d_zaDit2-nKr6ou2xYMn6Krpzfi4iNs6_QhIx2A&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ8NMDegQICBAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=fm1kaPXfO-bJ1sQPxsCuCA&start=10&sa=N&sstk=Ac65TH5OFvo8dfb9a_AvLhsRk-2yBMCmL7mXy0j22yLgdHbcasJtN50MuNlruQ3d_zaDit2-nKr6ou2xYMn6Krpzfi4iNs6_QhIx2A&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=fm1kaPXfO-bJ1sQPxsCuCA&start=20&sa=N&sstk=Ac65TH5OFvo8dfb9a_AvLhsRk-2yBMCmL7mXy0j22yLgdHbcasJtN50MuNlruQ3d_zaDit2-nKr6ou2xYMn6Krpzfi4iNs6_QhIx2A&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=fm1kaPXfO-bJ1sQPxsCuCA&start=30&sa=N&sstk=Ac65TH5OFvo8dfb9a_AvLhsRk-2yBMCmL7mXy0j22yLgdHbcasJtN50MuNlruQ3d_zaDit2-nKr6ou2xYMn6Krpzfi4iNs6_QhIx2A&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ8tMDegQICBAI",
+      "5": "https://www.google.com/search?q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=fm1kaPXfO-bJ1sQPxsCuCA&start=40&sa=N&sstk=Ac65TH5OFvo8dfb9a_AvLhsRk-2yBMCmL7mXy0j22yLgdHbcasJtN50MuNlruQ3d_zaDit2-nKr6ou2xYMn6Krpzfi4iNs6_QhIx2A&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ8tMDegQICBAK",
+      "6": "https://www.google.com/search?q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=fm1kaPXfO-bJ1sQPxsCuCA&start=50&sa=N&sstk=Ac65TH5OFvo8dfb9a_AvLhsRk-2yBMCmL7mXy0j22yLgdHbcasJtN50MuNlruQ3d_zaDit2-nKr6ou2xYMn6Krpzfi4iNs6_QhIx2A&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ8tMDegQICBAM",
+      "7": "https://www.google.com/search?q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=fm1kaPXfO-bJ1sQPxsCuCA&start=60&sa=N&sstk=Ac65TH5OFvo8dfb9a_AvLhsRk-2yBMCmL7mXy0j22yLgdHbcasJtN50MuNlruQ3d_zaDit2-nKr6ou2xYMn6Krpzfi4iNs6_QhIx2A&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ8tMDegQICBAO",
+      "8": "https://www.google.com/search?q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=fm1kaPXfO-bJ1sQPxsCuCA&start=70&sa=N&sstk=Ac65TH5OFvo8dfb9a_AvLhsRk-2yBMCmL7mXy0j22yLgdHbcasJtN50MuNlruQ3d_zaDit2-nKr6ou2xYMn6Krpzfi4iNs6_QhIx2A&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ8tMDegQICBAQ",
+      "9": "https://www.google.com/search?q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=fm1kaPXfO-bJ1sQPxsCuCA&start=80&sa=N&sstk=Ac65TH5OFvo8dfb9a_AvLhsRk-2yBMCmL7mXy0j22yLgdHbcasJtN50MuNlruQ3d_zaDit2-nKr6ou2xYMn6Krpzfi4iNs6_QhIx2A&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ8tMDegQICBAS",
+      "10": "https://www.google.com/search?q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=fm1kaPXfO-bJ1sQPxsCuCA&start=90&sa=N&sstk=Ac65TH5OFvo8dfb9a_AvLhsRk-2yBMCmL7mXy0j22yLgdHbcasJtN50MuNlruQ3d_zaDit2-nKr6ou2xYMn6Krpzfi4iNs6_QhIx2A&ved=2ahUKEwj1lpu-5pyOAxXmpJUCHUagCwEQ8tMDegQICBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=visiting+nurse+service+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

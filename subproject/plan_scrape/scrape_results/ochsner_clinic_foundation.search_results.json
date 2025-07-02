@@ -1,0 +1,294 @@
+{
+  "search_metadata": {
+    "id": "68646d291dcfe27aa13ba9e4",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/6465f07cb5c11d64/68646d291dcfe27aa13ba9e4.json",
+    "created_at": "2025-07-01 23:20:09 UTC",
+    "processed_at": "2025-07-01 23:20:09 UTC",
+    "google_url": "https://www.google.com/search?q=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/6465f07cb5c11d64/68646d291dcfe27aa13ba9e4.html",
+    "total_time_taken": 1.45
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "ochsner clinic foundation Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "ochsner clinic foundation Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 10,
+    "time_taken_displayed": 0.4,
+    "organic_results_state": "Results for exact spelling",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    }
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Moving Beyond Compliance to API-First Data Governance",
+      "link": "https://www.hcinnovationgroup.com/interoperability-hie/application-programming-interfaces-apis/article/21156948/moving-beyond-compliance-to-api-first-data-governance",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hcinnovationgroup.com/interoperability-hie/application-programming-interfaces-apis/article/21156948/moving-beyond-compliance-to-api-first-data-governance&ved=2ahUKEwi7vdGV5pyOAxWFFVkFHXKoHLcQFnoECBwQAQ",
+      "displayed_link": "https://www.hcinnovationgroup.com \u203a article \u203a moving...",
+      "favicon": "https://serpapi.com/searches/68646d291dcfe27aa13ba9e4/images/c2cd754009feef5dc29e745d5cb2e933f16b1e970936371ae7d587006da87a88.png",
+      "date": "Oct 4, 2020",
+      "snippet": "... FHIR Release 4 standard, the clinical data standard. Chopra notes ... Provider Directory API Requirement \u00b7 David Raths. Dec. 15, 2020. Most ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "clinical",
+        "Provider Directory API"
+      ],
+      "source": "Healthcare Innovation"
+    },
+    {
+      "position": 2,
+      "title": "Pragmatic Approaches to Interoperability",
+      "link": "https://telehealthandmedicinetoday.com/index.php/journal/article/view/421/909",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://telehealthandmedicinetoday.com/index.php/journal/article/view/421/909&ved=2ahUKEwi7vdGV5pyOAxWFFVkFHXKoHLcQFnoECB4QAQ",
+      "displayed_link": "https://telehealthandmedicinetoday.com \u203a article \u203a view",
+      "favicon": "https://serpapi.com/searches/68646d291dcfe27aa13ba9e4/images/c2cd754009feef5dc29e745d5cb2e933e5e98782d09526711797e3c6cf3a679b.png",
+      "author": "by MBA Bharath Perugu",
+      "snippet": "... FHIR standard; the Argonaut Provider Directory will also be considered. Subsequently, FHIR standards may be modified to support any ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=ochsner+clinic+foundation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi7vdGV5pyOAxWFFVkFHXKoHLcQ5t4CegQILBAB"
+      },
+      "source": "Telehealth and Medicine Today"
+    },
+    {
+      "position": 3,
+      "title": "ONC Direct Exchange Workshop",
+      "link": "https://event.capconcorp.com/documents/4555.005DEW/DEW%20-%20FULLv2-508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://event.capconcorp.com/documents/4555.005DEW/DEW%2520-%2520FULLv2-508.pdf&ved=2ahUKEwi7vdGV5pyOAxWFFVkFHXKoHLcQFnoECCAQAQ",
+      "displayed_link": "https://event.capconcorp.com \u203a documents",
+      "date": "Jun 9, 2017",
+      "snippet": "Direct to FHIR API. Page 27. Exchange of DICOM images. Direct Message ... This service leverages the HSX Provider Directory which includes >9000.",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=ochsner+clinic+foundation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi7vdGV5pyOAxWFFVkFHXKoHLcQ5t4CegQIKRAB"
+      },
+      "source": "Capital Consulting Corporation"
+    },
+    {
+      "position": 4,
+      "title": "Pragmatic Approaches to Interoperability in the U.S.",
+      "link": "https://telehealthandmedicinetoday.com/index.php/journal/article/download/421/910/5884",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://telehealthandmedicinetoday.com/index.php/journal/article/download/421/910/5884&ved=2ahUKEwi7vdGV5pyOAxWFFVkFHXKoHLcQFnoECBgQAQ",
+      "displayed_link": "https://telehealthandmedicinetoday.com \u203a download",
+      "favicon": "https://serpapi.com/searches/68646d291dcfe27aa13ba9e4/images/c2cd754009feef5dc29e745d5cb2e93324478d80f3a6d35060b412db749b5cf9.png",
+      "author": "by B Perugu",
+      "snippet": "with the FHIR standard; the Argonaut Provider Directory will also be considered. Subsequently, FHIR standards may be modified to support any ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=ochsner+clinic+foundation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi7vdGV5pyOAxWFFVkFHXKoHLcQ5t4CegQIKhAB"
+      },
+      "source": "Telehealth and Medicine Today"
+    },
+    {
+      "position": 5,
+      "title": "Best in KLAS Report 2024",
+      "link": "https://www.performancehealthus.com/hubfs/Best%20in%20KLAS%20Report%202024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.performancehealthus.com/hubfs/Best%2520in%2520KLAS%2520Report%25202024.pdf&ved=2ahUKEwi7vdGV5pyOAxWFFVkFHXKoHLcQFnoECBcQAQ",
+      "displayed_link": "https://www.performancehealthus.com \u203a hubfs",
+      "favicon": "https://serpapi.com/searches/68646d291dcfe27aa13ba9e4/images/c2cd754009feef5dc29e745d5cb2e93384cef6db1dbe900129d57b13f114b626.png",
+      "date": "Feb 7, 2024",
+      "snippet": "... FHIR 92.2. Data Analytics Platforms (Payers). Clarify Health Solutions ... provider directory API, and payer-to-payer data exchange ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 279
+          },
+          "extensions": [
+            "279 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=ochsner+clinic+foundation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi7vdGV5pyOAxWFFVkFHXKoHLcQ5t4CegQIKxAB"
+      },
+      "source": "Performance Health Partners"
+    },
+    {
+      "position": 6,
+      "title": "The Future of Virtual Health and Care",
+      "link": "https://www.broadbandcommission.org/wp-content/uploads/dlm_uploads/2022/06/The-Future-of-Virtual-Health-and-Care_2022-Broadband-Commission-Working-Group-Report.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.broadbandcommission.org/wp-content/uploads/dlm_uploads/2022/06/The-Future-of-Virtual-Health-and-Care_2022-Broadband-Commission-Working-Group-Report.pdf&ved=2ahUKEwi7vdGV5pyOAxWFFVkFHXKoHLcQFnoECBkQAQ",
+      "displayed_link": "https://www.broadbandcommission.org \u203a 2022/06",
+      "favicon": "https://serpapi.com/searches/68646d291dcfe27aa13ba9e4/images/c2cd754009feef5dc29e745d5cb2e933b305c45d566aa8b54b1e44e8b693cbea.png",
+      "snippet": "\u2022 Development of the Eitan health information exchange, based on the FHIR standard. ... \u2022 Make provider directory information publicly available and ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 196
+          },
+          "extensions": [
+            "196 pages"
+          ]
+        }
+      },
+      "source": "Broadband Commission"
+    },
+    {
+      "position": 7,
+      "title": "Season 4",
+      "link": "https://thebigunlock.com/category/podcasts/season-4/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://thebigunlock.com/category/podcasts/season-4/&ved=2ahUKEwi7vdGV5pyOAxWFFVkFHXKoHLcQFnoECDoQAQ",
+      "displayed_link": "https://thebigunlock.com \u203a podcasts",
+      "favicon": "https://serpapi.com/searches/68646d291dcfe27aa13ba9e4/images/c2cd754009feef5dc29e745d5cb2e93333199238b5a00c04384fae94261e0afe.png",
+      "snippet": "... provider directory data. When a provider updates a piece of demographic data ... FHIR. It is amazing for exchanging data in a structured way or it's a ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 5.0,
+            "reviews": 5
+          },
+          "extensions": [
+            "5.0(5)"
+          ]
+        }
+      },
+      "source": "The Big Unlock Podcast"
+    },
+    {
+      "position": 8,
+      "title": "Med-tech collaborations in 2024",
+      "link": "https://www.bioworld.com/content/medtech-collaborations-2024",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bioworld.com/content/medtech-collaborations-2024&ved=2ahUKEwi7vdGV5pyOAxWFFVkFHXKoHLcQFnoECDIQAQ",
+      "displayed_link": "https://www.bioworld.com \u203a content \u203a medtech-collabo...",
+      "favicon": "https://serpapi.com/searches/68646d291dcfe27aa13ba9e4/images/c2cd754009feef5dc29e745d5cb2e93355ee510116545985bc98aab23c572aca.png",
+      "snippet": "Te Toka Tumai Auckland and Intersystems to launch FHIR-based NHI API, Te ... Trilliant Health to offer its Provider Directory and the national version ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=ochsner+clinic+foundation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi7vdGV5pyOAxWFFVkFHXKoHLcQ5t4CegQINBAB"
+      },
+      "source": "BioWorld MedTech"
+    },
+    {
+      "position": 9,
+      "title": "The Beat",
+      "link": "https://feeds.simplecast.com/F2qS_sm2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://feeds.simplecast.com/F2qS_sm2&ved=2ahUKEwi7vdGV5pyOAxWFFVkFHXKoHLcQFnoECDAQAQ",
+      "displayed_link": "https://feeds.simplecast.com \u203a ...",
+      "snippet": "... FHIR, generative AI, and national networks to improve data connectivity and ... provider directory, supporting the development of a statewide health ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "Simplecast"
+    },
+    {
+      "position": 10,
+      "title": "Uncategorized",
+      "link": "https://thebigunlock.com/category/uncategorized/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://thebigunlock.com/category/uncategorized/&ved=2ahUKEwi7vdGV5pyOAxWFFVkFHXKoHLcQFnoECDYQAQ",
+      "displayed_link": "https://thebigunlock.com \u203a category \u203a uncategorized",
+      "favicon": "https://serpapi.com/searches/68646d291dcfe27aa13ba9e4/images/c2cd754009feef5dc29e745d5cb2e93330dacd904f135bfb1cb902d0c1b64aa2.png",
+      "snippet": "So, you know, we have the FHIR API standards of the CMS and ONC are working with HL7 organizations. Now it is the 21st Century Cures Act, there's something ...",
+      "snippet_highlighted_words": [
+        "FHIR API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 5.0,
+            "reviews": 5
+          },
+          "extensions": [
+            "5.0(5)"
+          ]
+        }
+      },
+      "source": "The Big Unlock Podcast"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 10 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ochsner+clinic+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

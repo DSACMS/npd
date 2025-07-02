@@ -1,0 +1,260 @@
+{
+  "search_metadata": {
+    "id": "68646518d3982c858da23e35",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/2705b40b33c122fd/68646518d3982c858da23e35.json",
+    "created_at": "2025-07-01 22:45:44 UTC",
+    "processed_at": "2025-07-01 22:45:44 UTC",
+    "google_url": "https://www.google.com/search?q=%22martin%27s+point+health+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22martin%27s+point+health+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/2705b40b33c122fd/68646518d3982c858da23e35.html",
+    "total_time_taken": 9.6
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"martin's point health care Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"martin's point health care Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 1350,
+    "time_taken_displayed": 0.46,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "martin s point health care Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "martin s point health care Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQFnoECBQQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/68646518d3982c858da23e35/images/45484218aa78f7be65b72d8b71bff8c73c25b678043d49e2a331ca44f6661d06.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. ... Martin's Point Health ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "and FHIR API",
+        "Martin's Point Health"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 2,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQFnoECBEQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a documents \u203a 2019/03/04",
+      "favicon": "https://serpapi.com/searches/68646518d3982c858da23e35/images/45484218aa78f7be65b72d8b71bff8c7a688344d4c5e675e91fffae0ed9f212d.png",
+      "date": "Mar 4, 2019",
+      "snippet": "We are committed to solving the issue of interoperability and achieving complete access to health information for patients in the United States ...",
+      "snippet_highlighted_words": [
+        "and",
+        "health"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "CMS Interoperability And Patient Access",
+      "link": "https://www.trilliumhealthresources.org/sites/default/files/docs/Request-Opportunities/RFP-CMS/RFP-CMS-Interoperability-Patient-Access.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.trilliumhealthresources.org/sites/default/files/docs/Request-Opportunities/RFP-CMS/RFP-CMS-Interoperability-Patient-Access.pdf&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQFnoECBcQAQ",
+      "displayed_link": "https://www.trilliumhealthresources.org \u203a files \u203a docs \u203a R...",
+      "favicon": "https://serpapi.com/searches/68646518d3982c858da23e35/images/45484218aa78f7be65b72d8b71bff8c71d569a4e13748ce6cbc676afa2f499e2.png",
+      "date": "Nov 9, 2020",
+      "snippet": "On March 9, 2020, the Center for Medicare and Medicaid Services (CMS) released final regulations \u2013CMS Interoperability and Patient Access ...",
+      "snippet_highlighted_words": [
+        "Center",
+        "Medicare and",
+        "Services",
+        "and"
+      ],
+      "source": "Trillium Health Resources"
+    },
+    {
+      "position": 4,
+      "title": "open.epic :: Endpoints",
+      "link": "https://open.epic.com/MyApps/Endpoints",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://open.epic.com/MyApps/Endpoints&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQFnoECBMQAQ",
+      "displayed_link": "https://open.epic.com \u203a MyApps \u203a Endpoints",
+      "favicon": "https://serpapi.com/searches/68646518d3982c858da23e35/images/45484218aa78f7be65b72d8b71bff8c7e99ca3c452f0a00261614bb2efc46ee7.png",
+      "snippet": "The FHIR Endpoint Bundle provides a URL for a FHIR endpoint and a patient-friendly name for that endpoint in a generic FHIR Endpoint resource format that ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "and",
+        "FHIR"
+      ],
+      "missing": [
+        "point"
+      ],
+      "must_include": {
+        "word": "point",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=martin+s+%22point%22+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQ5t4CegQIHRAB"
+      },
+      "source": "Epic Systems"
+    },
+    {
+      "position": 5,
+      "title": "Interoperability and Patient Access - Proposed Rule ( ...",
+      "link": "https://www.cms.gov/Center/Special-Topic/Interoperability/CMS-9115-P.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/Center/Special-Topic/Interoperability/CMS-9115-P.pdf&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQFnoECBkQAQ",
+      "displayed_link": "https://www.cms.gov \u203a Special-Topic \u203a Interoperability",
+      "favicon": "https://serpapi.com/searches/68646518d3982c858da23e35/images/45484218aa78f7be65b72d8b71bff8c7ae537e4444282d315a27d934df7f89a2.png",
+      "snippet": "SUMMARY: This proposed rule is intended to move the health care ecosystem in the direction of interoperability, and to signal our commitment to the vision set ...",
+      "snippet_highlighted_words": [
+        "health care",
+        "and"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 251
+          },
+          "extensions": [
+            "251 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Application Programming Interface (API) Write-Back ...",
+      "link": "https://www.healthit.gov/sites/default/files/page/2021-11/20211117_API%20Write-back%20Workshop%20Summary%20Report.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/page/2021-11/20211117_API%2520Write-back%2520Workshop%2520Summary%2520Report.pdf&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQFnoECCMQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a sites \u203a default \u203a files \u203a page",
+      "favicon": "https://serpapi.com/searches/68646518d3982c858da23e35/images/45484218aa78f7be65b72d8b71bff8c76efa653beeecae1815600f566a0a2bd3.jpeg",
+      "snippet": "APIs enable providers, patients, and researchers to use third-party applications (apps) to gather external data or apply insights and analysis to EHR data in a ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "providers",
+        "and",
+        "and"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 37
+          },
+          "extensions": [
+            "37 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=martin+s+point+health+care+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQ5t4CegQIJRAB"
+      },
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "Seminar Series: Sparking the Data Revolution in Healthcare",
+      "link": "https://mitsloan.mit.edu/centers-initiatives/hsi/seminar-series-sparking-data-revolution-healthcare",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mitsloan.mit.edu/centers-initiatives/hsi/seminar-series-sparking-data-revolution-healthcare&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQFnoECBYQAQ",
+      "displayed_link": "https://mitsloan.mit.edu \u203a centers-initiatives \u203a hsi \u203a semin...",
+      "favicon": "https://serpapi.com/searches/68646518d3982c858da23e35/images/45484218aa78f7be65b72d8b71bff8c78e2b126e9c62408d0aa86652b2f7fa3b.png",
+      "date": "Dec 19, 2023",
+      "snippet": "In the US, this data sharing is regulated by Fast Healthcare Interoperability Resources (FHIR, pronounced \u201cfire\u201d), which is a set of standards, ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR"
+      ],
+      "missing": [
+        "s",
+        "Advantage"
+      ],
+      "source": "MIT Sloan"
+    },
+    {
+      "position": 8,
+      "title": "Why APIs? Anticipated value, barriers, and opportunities ...",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9030107/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pmc.ncbi.nlm.nih.gov/articles/PMC9030107/&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQFnoECDIQAQ",
+      "displayed_link": "https://pmc.ncbi.nlm.nih.gov \u203a articles \u203a PMC9030107",
+      "author": "by WJ Gordon",
+      "snippet": "Improving health data interoperability through application programming interfaces (APIs) is a focus of US policy initiatives and could have ...",
+      "snippet_highlighted_words": [
+        "health",
+        "APIs",
+        "and"
+      ],
+      "source": "National Institutes of Health (NIH) | (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "Taking Advantage of Next-Gen Regulations at the Point ...",
+      "link": "https://www.healthcareittoday.com/2021/11/08/taking-advantage-of-next-gen-regulations-at-the-point-of-care/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcareittoday.com/2021/11/08/taking-advantage-of-next-gen-regulations-at-the-point-of-care/&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQFnoECDAQAQ",
+      "displayed_link": "https://www.healthcareittoday.com \u203a Topic \u203a Regulations",
+      "favicon": "https://serpapi.com/searches/68646518d3982c858da23e35/images/45484218aa78f7be65b72d8b71bff8c794e23cb30cfe3a77b36b363a1d433b69.png",
+      "date": "Nov 8, 2021",
+      "snippet": "If a provider has a significant Medicare Advantage or Medicaid patient population, it's critical to start evaluating how to leverage this newly ...",
+      "snippet_highlighted_words": [
+        "provider",
+        "Medicare Advantage"
+      ],
+      "source": "Healthcare IT Today"
+    },
+    {
+      "position": 10,
+      "title": "Information Technology Interoperability and Use for Better ...",
+      "link": "https://nam.edu/perspectives/information-technology-interoperability-and-use-for-better-care-and-evidence-a-vital-direction-for-health-and-health-care/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nam.edu/perspectives/information-technology-interoperability-and-use-for-better-care-and-evidence-a-vital-direction-for-health-and-health-care/&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQFnoECDgQAQ",
+      "displayed_link": "https://nam.edu \u203a perspectives \u203a information-technology-...",
+      "favicon": "https://serpapi.com/searches/68646518d3982c858da23e35/images/45484218aa78f7be65b72d8b71bff8c73c233dfd6927bc9e44d388dc1bdc4ac5.png",
+      "author": "by JB Perlin",
+      "snippet": "The Centers for Medicare & Medicaid Services could host such an electronic directory, using the National Provider Identifier database as a starting point.",
+      "snippet_highlighted_words": [
+        "Medicare",
+        "Services",
+        "directory",
+        "Provider",
+        "point"
+      ],
+      "source": "National Academy of Medicine"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=IWVkaM6OC6eK9u8PpayCuQU&start=10&sa=N&sstk=Ac65TH7lXLnqgNwAn5x36AwRw3AIEuDRdWDqEM_IV4UAWYDbeXCku6_LGRLSs2caPyayRupB6y22iMtT2YMY2rmXpiPkgxyky2phww&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQ8NMDegQIBxAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=IWVkaM6OC6eK9u8PpayCuQU&start=10&sa=N&sstk=Ac65TH7lXLnqgNwAn5x36AwRw3AIEuDRdWDqEM_IV4UAWYDbeXCku6_LGRLSs2caPyayRupB6y22iMtT2YMY2rmXpiPkgxyky2phww&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQ8tMDegQIBxAE",
+      "3": "https://www.google.com/search?q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=IWVkaM6OC6eK9u8PpayCuQU&start=20&sa=N&sstk=Ac65TH7lXLnqgNwAn5x36AwRw3AIEuDRdWDqEM_IV4UAWYDbeXCku6_LGRLSs2caPyayRupB6y22iMtT2YMY2rmXpiPkgxyky2phww&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQ8tMDegQIBxAG",
+      "4": "https://www.google.com/search?q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=IWVkaM6OC6eK9u8PpayCuQU&start=30&sa=N&sstk=Ac65TH7lXLnqgNwAn5x36AwRw3AIEuDRdWDqEM_IV4UAWYDbeXCku6_LGRLSs2caPyayRupB6y22iMtT2YMY2rmXpiPkgxyky2phww&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQ8tMDegQIBxAI",
+      "5": "https://www.google.com/search?q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=IWVkaM6OC6eK9u8PpayCuQU&start=40&sa=N&sstk=Ac65TH7lXLnqgNwAn5x36AwRw3AIEuDRdWDqEM_IV4UAWYDbeXCku6_LGRLSs2caPyayRupB6y22iMtT2YMY2rmXpiPkgxyky2phww&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQ8tMDegQIBxAK",
+      "6": "https://www.google.com/search?q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=IWVkaM6OC6eK9u8PpayCuQU&start=50&sa=N&sstk=Ac65TH7lXLnqgNwAn5x36AwRw3AIEuDRdWDqEM_IV4UAWYDbeXCku6_LGRLSs2caPyayRupB6y22iMtT2YMY2rmXpiPkgxyky2phww&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQ8tMDegQIBxAM",
+      "7": "https://www.google.com/search?q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=IWVkaM6OC6eK9u8PpayCuQU&start=60&sa=N&sstk=Ac65TH7lXLnqgNwAn5x36AwRw3AIEuDRdWDqEM_IV4UAWYDbeXCku6_LGRLSs2caPyayRupB6y22iMtT2YMY2rmXpiPkgxyky2phww&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQ8tMDegQIBxAO",
+      "8": "https://www.google.com/search?q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=IWVkaM6OC6eK9u8PpayCuQU&start=70&sa=N&sstk=Ac65TH7lXLnqgNwAn5x36AwRw3AIEuDRdWDqEM_IV4UAWYDbeXCku6_LGRLSs2caPyayRupB6y22iMtT2YMY2rmXpiPkgxyky2phww&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQ8tMDegQIBxAQ",
+      "9": "https://www.google.com/search?q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=IWVkaM6OC6eK9u8PpayCuQU&start=80&sa=N&sstk=Ac65TH7lXLnqgNwAn5x36AwRw3AIEuDRdWDqEM_IV4UAWYDbeXCku6_LGRLSs2caPyayRupB6y22iMtT2YMY2rmXpiPkgxyky2phww&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQ8tMDegQIBxAS",
+      "10": "https://www.google.com/search?q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=IWVkaM6OC6eK9u8PpayCuQU&start=90&sa=N&sstk=Ac65TH7lXLnqgNwAn5x36AwRw3AIEuDRdWDqEM_IV4UAWYDbeXCku6_LGRLSs2caPyayRupB6y22iMtT2YMY2rmXpiPkgxyky2phww&ved=2ahUKEwiOo_bA3pyOAxUnhf0HHSWWIFcQ8tMDegQIBxAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=martin+s+point+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

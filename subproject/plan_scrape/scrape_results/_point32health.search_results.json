@@ -1,0 +1,317 @@
+{
+  "search_metadata": {
+    "id": "68646c351cff197b584b475c",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/de8da24738646bb6/68646c351cff197b584b475c.json",
+    "created_at": "2025-07-01 23:16:05 UTC",
+    "processed_at": "2025-07-01 23:16:05 UTC",
+    "google_url": "https://www.google.com/search?q=%22point32health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22point32health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/de8da24738646bb6/68646c351cff197b584b475c.html",
+    "total_time_taken": 3.13
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"point32health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"point32health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 42,
+    "time_taken_displayed": 0.35,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "point32health Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "point32health Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability website resources",
+      "link": "https://www.harvardpilgrim.org/public/interoperability-website-resources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.harvardpilgrim.org/public/interoperability-website-resources&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8QFnoECBgQAQ",
+      "displayed_link": "https://www.harvardpilgrim.org \u203a public \u203a interoperabil...",
+      "favicon": "https://serpapi.com/searches/68646c351cff197b584b475c/images/9145a0342f3ee68d4dd876a4fda859b7cc8e916d9122c59e47d76fce44027f57.png",
+      "snippet": "Medicare Advantage members may also access formulary and provider directory information. Current Medicare Advantage members, as well as Exchange members in NH ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "provider directory",
+        "Medicare Advantage"
+      ],
+      "source": "Harvard Pilgrim Health Care"
+    },
+    {
+      "position": 2,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8QFnoECBcQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/68646c351cff197b584b475c/images/9145a0342f3ee68d4dd876a4fda859b7b2727b0b50aef2924f1a30ab4c365b98.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. Endpoints are: FHIR- ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 3,
+      "title": "Point32Health: This way to better health",
+      "link": "https://www.point32health.org/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.point32health.org/&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8QFnoECB0QAQ",
+      "displayed_link": "https://www.point32health.org",
+      "favicon": "https://serpapi.com/searches/68646c351cff197b584b475c/images/9145a0342f3ee68d4dd876a4fda859b7858552c4ba442076572cb0dbb874dff5.png",
+      "snippet": "Point32Health is a leading nonprofit health and well-being organization, delivering a better health care experience to the communities we serve.",
+      "snippet_highlighted_words": [
+        "Point32Health"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Careers at Point32Health",
+            "link": "https://www.point32health.org/careers/join-our-team"
+          },
+          {
+            "title": "Point32Health ventures",
+            "link": "https://www.point32health.org/who-we-are/innovation-growth/point32health-ventures"
+          },
+          {
+            "title": "Point32Health Dental",
+            "link": "https://www.point32health.org/who-we-are/our-offerings/point32health-dental"
+          },
+          {
+            "title": "DEIA",
+            "link": "https://www.point32health.org/our-impact/diversity-equity-inclusion-accessibility-deia/deia"
+          }
+        ]
+      },
+      "missing": [
+        "API",
+        "FHIR"
+      ],
+      "source": "Point32Health"
+    },
+    {
+      "position": 4,
+      "title": "NEHEN Updates | MHDC",
+      "link": "https://www.mahealthdata.org/nehen-updates",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mahealthdata.org/nehen-updates&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8QFnoECBYQAQ",
+      "displayed_link": "https://www.mahealthdata.org \u203a nehen-updates",
+      "favicon": "https://serpapi.com/searches/68646c351cff197b584b475c/images/9145a0342f3ee68d4dd876a4fda859b7800f9d4b3b4e26963e4451bf5227a4ef.png",
+      "snippet": "This new agreement will allow for re-tooling of our current arrangement with TPS to accommodate the plans we have underway for new API and FHIR based services ...",
+      "snippet_highlighted_words": [
+        "plans",
+        "API",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=point32health+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8Q5t4CegQIHxAB"
+      },
+      "source": "Massachusetts Health Data Consortium"
+    },
+    {
+      "position": 5,
+      "title": "Advancing Prior Authorization Automation Across ...",
+      "link": "https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/prior_authorization_report_5.23.23_vfinal6.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/prior_authorization_report_5.23.23_vfinal6.pdf&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8QFnoECBEQAQ",
+      "displayed_link": "https://24315998.fs1.hubspotusercontent-na1.net \u203a ...",
+      "date": "Apr 18, 2023",
+      "snippet": "It requires these payers to build and maintain a Fast Healthcare Interoperability Resource (FHIR) Prior Authorization. Requirements, ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "hubspotusercontent-na1.net"
+    },
+    {
+      "position": 6,
+      "title": "CAQH CORE September Town Hall",
+      "link": "https://www.caqh.org/sites/default/files/2023-09/CAQH%20CORE%20September%20Town%20Hall%2009.06.23.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.caqh.org/sites/default/files/2023-09/CAQH%2520CORE%2520September%2520Town%2520Hall%252009.06.23.pdf&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8QFnoECBkQAQ",
+      "displayed_link": "https://www.caqh.org \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/68646c351cff197b584b475c/images/9145a0342f3ee68d4dd876a4fda859b7cafee4e5cab3b7e5664b7c55a92a81d3.png",
+      "date": "Sep 27, 2023",
+      "snippet": "Overview: The CAQH CORE Eligibility & Benefits Data Content Rule Update enhances the exchange of eligibility information between health plans ...",
+      "snippet_highlighted_words": [
+        "plans"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 34
+          },
+          "extensions": [
+            "34 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=point32health+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8Q5t4CegQIIBAB"
+      },
+      "source": "CAQH.org"
+    },
+    {
+      "position": 7,
+      "title": "Meeting of the Market Oversight and Transparency ...",
+      "link": "https://masshpc.gov/sites/default/files/2023-07/20230510_moat_presentation.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://masshpc.gov/sites/default/files/2023-07/20230510_moat_presentation.pdf&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8QFnoECBMQAQ",
+      "displayed_link": "https://masshpc.gov \u203a sites \u203a default \u203a files \u203a 202...",
+      "favicon": "https://serpapi.com/searches/68646c351cff197b584b475c/images/9145a0342f3ee68d4dd876a4fda859b7bb623407ed8ca35fc535390a66313f9a.png",
+      "date": "May 10, 2023",
+      "snippet": "Medicare Advantage Appeal Outcomes and ... \u2022 In context: Provider's Clinical Decision Support (CDS) API connects to the payer's API service.",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "Provider's",
+        "API",
+        "API"
+      ],
+      "source": "Massachusetts Health Policy Commission (HPC) (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Revenue cycle management: How to reduce claim denials",
+      "link": "https://www.medicaleconomics.com/view/revenue-cycle-management-how-to-reduce-claim-denials",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.medicaleconomics.com/view/revenue-cycle-management-how-to-reduce-claim-denials&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8QFnoECDsQAQ",
+      "displayed_link": "https://www.medicaleconomics.com \u203a view \u203a revenue-c...",
+      "favicon": "https://serpapi.com/searches/68646c351cff197b584b475c/images/9145a0342f3ee68d4dd876a4fda859b7f3fa252e9cd284e7a9cd8283b53bbce0.png",
+      "date": "Mar 21, 2025",
+      "snippet": "Errors in coding, delayed claim submissions, or ineffective patient collections can result in significant revenue losses.",
+      "source": "Medical Economics"
+    },
+    {
+      "position": 9,
+      "title": "CAQH CORE Town Hall Slides September 13, 2022",
+      "link": "https://www.caqh.org/sites/default/files/core/events/CAQH-CORE-Fall-2022-Town-Hall-Slides.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.caqh.org/sites/default/files/core/events/CAQH-CORE-Fall-2022-Town-Hall-Slides.pdf&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8QFnoECDwQAQ",
+      "displayed_link": "https://www.caqh.org \u203a sites \u203a files \u203a core \u203a events",
+      "favicon": "https://serpapi.com/searches/68646c351cff197b584b475c/images/9145a0342f3ee68d4dd876a4fda859b7360dd6107cc275b67b0e09eec34e0921.png",
+      "date": "Sep 13, 2022",
+      "snippet": "Members include health plans, providers (some of which are appointed by associations such as the AHA, AMA, MGMA), vendors, and government.",
+      "snippet_highlighted_words": [
+        "plans",
+        "providers"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 42
+          },
+          "extensions": [
+            "42 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=point32health+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8Q5t4CegQIPxAB"
+      },
+      "source": "CAQH.org"
+    },
+    {
+      "position": 10,
+      "title": "Prior Authorization Final Report of Recommendations",
+      "link": "https://ohic.ri.gov/sites/g/files/xkgbur736/files/2024-06/OHIC%20Administrative%20Simplification%20Task%20Force%20Report%20June%2028%202024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ohic.ri.gov/sites/g/files/xkgbur736/files/2024-06/OHIC%2520Administrative%2520Simplification%2520Task%2520Force%2520Report%2520June%252028%25202024.pdf&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8QFnoECEEQAQ",
+      "displayed_link": "https://ohic.ri.gov \u203a files \u203a xkgbur736 \u203a files",
+      "favicon": "https://serpapi.com/searches/68646c351cff197b584b475c/images/9145a0342f3ee68d4dd876a4fda859b77c473f7870815a7a683cd0ca8126e6b5.png",
+      "date": "Jun 28, 2024",
+      "snippet": "UnitedHealthcare and Point32Health have removed prior authorization from a host of services. Blue Cross Blue Shield of Rhode Island, which took ...",
+      "snippet_highlighted_words": [
+        "Point32Health"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 77
+          },
+          "extensions": [
+            "77 pages"
+          ]
+        }
+      },
+      "source": "Office of The Health Insurance Commissioner (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Point32health provider portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Point32health+provider+portal&sa=X&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8Q1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Point32health+provider+portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Who owns Point32Health",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Who+owns+Point32Health&sa=X&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8Q1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Who+owns+Point32Health&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Point32Health layoffs",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Point32Health+layoffs&sa=X&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8Q1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Point32Health+layoffs&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Point 32 Health Provider phone number",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Point+32+Health+Provider+phone+number&sa=X&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8Q1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Point+32+Health+Provider+phone+number&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Point32Health News",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Point32Health+News&sa=X&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8Q1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Point32Health+News&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Point32Health address",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Point32Health+address&sa=X&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8Q1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Point32Health+address&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Point32Health Harvard Pilgrim",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Point32Health+Harvard+Pilgrim&sa=X&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8Q1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Point32Health+Harvard+Pilgrim&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Point32Health wikipedia",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Point32Health+wikipedia&sa=X&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8Q1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Point32Health+wikipedia&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=point32health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=OGxkaMDrGLDBhbIP_Ker-Qc&start=10&sa=N&sstk=Ac65TH4wcwpQUo9hERbnw7w0unZmftO9BYt7rx6rsfkpfD7gtKNpTT1EFz9-mKbKA227zFexmG-J9YQ2X4kcmWzk9FvocvXv4phmpA&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8Q8NMDegQICRAG",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=point32health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=OGxkaMDrGLDBhbIP_Ker-Qc&start=10&sa=N&sstk=Ac65TH4wcwpQUo9hERbnw7w0unZmftO9BYt7rx6rsfkpfD7gtKNpTT1EFz9-mKbKA227zFexmG-J9YQ2X4kcmWzk9FvocvXv4phmpA&ved=2ahUKEwjA576i5ZyOAxWwYEEAHfzTKn8Q8tMDegQICRAE"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=point32health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=point32health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=point32health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10"
+    }
+  }
+}

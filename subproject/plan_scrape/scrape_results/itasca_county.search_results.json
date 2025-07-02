@@ -1,0 +1,142 @@
+{
+  "search_metadata": {
+    "id": "68646cf9dd2e1661e555e2a2",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/a6575ec48dfa0c8d/68646cf9dd2e1661e555e2a2.json",
+    "created_at": "2025-07-01 23:19:21 UTC",
+    "processed_at": "2025-07-01 23:19:21 UTC",
+    "google_url": "https://www.google.com/search?q=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/a6575ec48dfa0c8d/68646cf9dd2e1661e555e2a2.html",
+    "total_time_taken": 3.27
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "itasca county Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "itasca county Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 3,
+    "time_taken_displayed": 0.18,
+    "organic_results_state": "Results for exact spelling",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    }
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "MN HF4571",
+      "link": "https://www.billtrack50.com/billdetail/1718400",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.billtrack50.com/billdetail/1718400&ved=2ahUKEwjrrNb_5ZyOAxVncGwGHXLbBAMQFnoECBgQAQ",
+      "displayed_link": "https://www.billtrack50.com \u203a billdetail",
+      "favicon": "https://serpapi.com/searches/68646cf9dd2e1661e555e2a2/images/fd6cd7691a6706072d309b73fbd11205a60f7df14816ca3557067fd9aba08727.png",
+      "snippet": "... (FHIR) standard in accordance with Code of Federal Regulations, title 45 ... provider directory. The general fund base for this appropriation is ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=itasca+county+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjrrNb_5ZyOAxVncGwGHXLbBAMQ5t4CegQIHBAB"
+      },
+      "source": "BillTrack50"
+    },
+    {
+      "position": 2,
+      "title": "House Journal 106th Day Friday April 26 2024",
+      "link": "https://www.house.mn.gov/cco/journals/2023-24/J0426106.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.house.mn.gov/cco/journals/2023-24/J0426106.pdf&ved=2ahUKEwjrrNb_5ZyOAxVncGwGHXLbBAMQFnoECB4QAQ",
+      "displayed_link": "https://www.house.mn.gov \u203a cco \u203a journals",
+      "favicon": "https://serpapi.com/searches/68646cf9dd2e1661e555e2a2/images/fd6cd7691a6706072d309b73fbd112058db97aaf14b4f32c4ba89ca6e68e641b.png",
+      "date": "Apr 26, 2024",
+      "snippet": "Interoperability Resources (FHIR) standard in accordance with Code of Federal Regulations, title 45, section ... provider directory. The general ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 396
+          },
+          "extensions": [
+            "396 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=itasca+county+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjrrNb_5ZyOAxVncGwGHXLbBAMQ5t4CegQIHxAB"
+      },
+      "source": "MN House of Representatives (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "House Journal 113th Day Tuesday May 7 2024",
+      "link": "https://www.house.mn.gov/cco/journals/2023-24/J0507113.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.house.mn.gov/cco/journals/2023-24/J0507113.pdf&ved=2ahUKEwjrrNb_5ZyOAxVncGwGHXLbBAMQFnoECBkQAQ",
+      "displayed_link": "https://www.house.mn.gov \u203a cco \u203a journals",
+      "favicon": "https://serpapi.com/searches/68646cf9dd2e1661e555e2a2/images/fd6cd7691a6706072d309b73fbd112050a711f8c33b5479aaaad851d493e43c4.png",
+      "date": "May 7, 2024",
+      "snippet": "... (FHIR) standard in accordance with Code of Federal Regulations, title ... provider directory. The general fund base for this.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 396
+          },
+          "extensions": [
+            "396 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=itasca+county+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjrrNb_5ZyOAxVncGwGHXLbBAMQ5t4CegQIHRAB"
+      },
+      "source": "MN House of Representatives (.gov)"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=itasca+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

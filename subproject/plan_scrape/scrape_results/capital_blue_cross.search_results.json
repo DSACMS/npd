@@ -1,0 +1,234 @@
+{
+  "search_metadata": {
+    "id": "68646ca7a973c46bd16f50be",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/3a063115f84caba5/68646ca7a973c46bd16f50be.json",
+    "created_at": "2025-07-01 23:17:59 UTC",
+    "processed_at": "2025-07-01 23:17:59 UTC",
+    "google_url": "https://www.google.com/search?q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/3a063115f84caba5/68646ca7a973c46bd16f50be.html",
+    "total_time_taken": 5.35
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "capital blue cross Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "capital blue cross Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 242,
+    "time_taken_displayed": 0.23,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Provider directory API access guide",
+      "link": "https://www.capbluecross.com/wps/portal/cap/about/developer/provider-directory-api-access-guide",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.capbluecross.com/wps/portal/cap/about/developer/provider-directory-api-access-guide&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQFnoECB4QAQ",
+      "displayed_link": "https://www.capbluecross.com \u203a cap \u203a about \u203a developer",
+      "favicon": "https://serpapi.com/searches/68646ca7a973c46bd16f50be/images/5364228c999dc47c0a379b9a3bd60f5d5ac89a6c3e63415025976ed831e54f28.png",
+      "snippet": "Provider directory API access guide. Overview. The provider ... This implementation guide defines a FHIR interface to a health insurer's insurance plans ...",
+      "snippet_highlighted_words": [
+        "Provider directory API",
+        "provider",
+        "FHIR",
+        "plans"
+      ],
+      "source": "Capital Blue Cross"
+    },
+    {
+      "position": 2,
+      "title": "Developer API Resources \u2013 DBH Internet Website",
+      "link": "https://wp.sbcounty.gov/dbh/developersapis/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://wp.sbcounty.gov/dbh/developersapis/&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQFnoECBUQAQ",
+      "displayed_link": "https://wp.sbcounty.gov \u203a dbh \u203a developersapis",
+      "favicon": "https://serpapi.com/searches/68646ca7a973c46bd16f50be/images/5364228c999dc47c0a379b9a3bd60f5d09f9fcc422fd024412a4520434f59bb0.png",
+      "snippet": "The Provider Directory guide is built on the Fast Healthcare Interoperability Resources (FHIR) STU3 API and serves as the cornerstone of a comprehensive ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "API"
+      ],
+      "source": "San Bernardino County (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "CHP Patient Access API",
+      "link": "https://capitalhealth.com/legal/chp-patient-access-api/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://capitalhealth.com/legal/chp-patient-access-api/&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQFnoECBYQAQ",
+      "displayed_link": "https://capitalhealth.com \u203a Legal",
+      "favicon": "https://serpapi.com/searches/68646ca7a973c46bd16f50be/images/5364228c999dc47c0a379b9a3bd60f5dce2b9d92baec028693b8787b8700927d.png",
+      "snippet": "CHP has contracted with HealthTrio to manage and support the Doctor/Provider Directory API. Instructions on how to get started are provided by clicking the FHIR ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "source": "Capital Health Plan"
+    },
+    {
+      "position": 4,
+      "title": "The State of Payer Patient Access APIs - Flexpa - Substack",
+      "link": "https://flexpa.substack.com/p/the-state-of-payer-patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://flexpa.substack.com/p/the-state-of-payer-patient-access&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQFnoECB8QAQ",
+      "displayed_link": "8 likes \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/searches/68646ca7a973c46bd16f50be/images/5364228c999dc47c0a379b9a3bd60f5d85a5e20ed2162880363356ee039bd2aa.png",
+      "snippet": "These include patient access, provider directory, and payer-to-payer exchange APIs. ... FHIR API: The CMS rule said the following data must \u201cat a ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR API"
+      ],
+      "source": "Substack \u00b7 Flexpa"
+    },
+    {
+      "position": 5,
+      "title": "Gu\u00eda de acceso a la API del directorio de proveedores",
+      "link": "https://es.capbluecross.com/wps/portal/cap/about/developer/provider-directory-api-access-guide",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://es.capbluecross.com/wps/portal/cap/about/developer/provider-directory-api-access-guide&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQFnoECBcQAQ",
+      "displayed_link": "https://es.capbluecross.com \u203a about",
+      "favicon": "https://serpapi.com/searches/68646ca7a973c46bd16f50be/images/5364228c999dc47c0a379b9a3bd60f5da89764f05a19d0ce6c3d7722198605d2.png",
+      "snippet": "... API est\u00e1 familiarizada con la gu\u00eda de implementaci\u00f3n del directorio de proveedores, FHIR US DAVINCI-PDEX v4.0.1. encabezadodelcomponente. Visualizador de ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR"
+      ],
+      "source": "Capital Blue Cross"
+    },
+    {
+      "position": 6,
+      "title": "CMS-9115-F - Interoperability and Patient Access",
+      "link": "https://www.cms.gov/files/document/cms-9115-f.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/cms-9115-f.pdf&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQFnoECBgQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a cms-91...",
+      "favicon": "https://serpapi.com/searches/68646ca7a973c46bd16f50be/images/5364228c999dc47c0a379b9a3bd60f5dac1d79507033c46cbdd79bb78a66c450.png",
+      "date": "Mar 6, 2020",
+      "snippet": "specialty) required for this Provider Directory API can all be represented through FHIR Release. 4.0.1. Additional implementation guidance ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 474
+          },
+          "extensions": [
+            "474 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.hfma.org/wp-content/uploads/2022/10/63467.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hfma.org/wp-content/uploads/2022/10/63467.pdf&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQFnoECBwQAQ",
+      "displayed_link": "https://www.hfma.org \u203a uploads \u203a 2022/10",
+      "favicon": "https://serpapi.com/searches/68646ca7a973c46bd16f50be/images/5364228c999dc47c0a379b9a3bd60f5d280da381c53cd99fc6406d56ee32db52.png",
+      "snippet": "API Access to Published Provider Directory Data. 14. V. Health ... The proposed new API certification criterion would require FHIR servers to support API-.",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory",
+        "API",
+        "FHIR",
+        "API"
+      ],
+      "source": "Healthcare Financial Management Association | HFMA"
+    },
+    {
+      "position": 8,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQFnoECCwQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2019/03/04 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/68646ca7a973c46bd16f50be/images/5364228c999dc47c0a379b9a3bd60f5dcd28ac838d3db5671fef6634700cf8e7.png",
+      "date": "Mar 4, 2019",
+      "snippet": "MA plans would be required to update provider directory information available through the API ... FHIR-based API discussed in section III.",
+      "snippet_highlighted_words": [
+        "plans",
+        "provider directory",
+        "API",
+        "FHIR",
+        "API"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "Payers, providers and vendors team to boost efficiency ...",
+      "link": "https://www.healthcarefinancenews.com/news/payers-providers-and-vendors-team-boost-efficiency-close-care-gaps",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcarefinancenews.com/news/payers-providers-and-vendors-team-boost-efficiency-close-care-gaps&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQFnoECC0QAQ",
+      "displayed_link": "https://www.healthcarefinancenews.com \u203a news \u203a payer...",
+      "favicon": "https://serpapi.com/searches/68646ca7a973c46bd16f50be/images/5364228c999dc47c0a379b9a3bd60f5d764a47033d3b1e5e346ffbd09ddce322.png",
+      "date": "May 27, 2025",
+      "snippet": "Technologies such as FHIR-based APIs and provider directory solutions were commonly used to address CMS-0057-F requirements. Other focus ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "missing": [
+        "cross"
+      ],
+      "must_include": {
+        "word": "cross",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=capital+blue+%22cross%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQ5t4CegQINRAB"
+      },
+      "source": "Healthcare Finance News"
+    },
+    {
+      "position": 10,
+      "title": "Health Information Technology Oversight Council",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/HIEInterviewThemes.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%2520Meeting%2520Docs/HIEInterviewThemes.pdf&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQFnoECC4QAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HIEInterviewThemes",
+      "favicon": "https://serpapi.com/searches/68646ca7a973c46bd16f50be/images/5364228c999dc47c0a379b9a3bd60f5d14b5667505f165c2c3dac34096e4fdaf.png",
+      "snippet": "\u2022 Provider Directory - needed to take advantage of HIE, touches interoperability and Community Health ... o Reliance can take advantage of FHIR/APIs, how can the ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "advantage",
+        "advantage",
+        "FHIR"
+      ],
+      "source": "Oregon.gov"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=q2xkaOl2xYeDxQ-qy4yoAQ&start=10&sa=N&sstk=Ac65TH68bzBjVAqSj9AfEJHgmKuaTz7JeVSksZUaI3vcS4FGYrESra6wWU0VPx67oR3ADwZZ8SkFy0bHezS8qJWqlX3VyDH14nXY7Q&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQ8NMDegQIChAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=q2xkaOl2xYeDxQ-qy4yoAQ&start=10&sa=N&sstk=Ac65TH68bzBjVAqSj9AfEJHgmKuaTz7JeVSksZUaI3vcS4FGYrESra6wWU0VPx67oR3ADwZZ8SkFy0bHezS8qJWqlX3VyDH14nXY7Q&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=q2xkaOl2xYeDxQ-qy4yoAQ&start=20&sa=N&sstk=Ac65TH68bzBjVAqSj9AfEJHgmKuaTz7JeVSksZUaI3vcS4FGYrESra6wWU0VPx67oR3ADwZZ8SkFy0bHezS8qJWqlX3VyDH14nXY7Q&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQ8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=q2xkaOl2xYeDxQ-qy4yoAQ&start=30&sa=N&sstk=Ac65TH68bzBjVAqSj9AfEJHgmKuaTz7JeVSksZUaI3vcS4FGYrESra6wWU0VPx67oR3ADwZZ8SkFy0bHezS8qJWqlX3VyDH14nXY7Q&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQ8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=q2xkaOl2xYeDxQ-qy4yoAQ&start=40&sa=N&sstk=Ac65TH68bzBjVAqSj9AfEJHgmKuaTz7JeVSksZUaI3vcS4FGYrESra6wWU0VPx67oR3ADwZZ8SkFy0bHezS8qJWqlX3VyDH14nXY7Q&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQ8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=q2xkaOl2xYeDxQ-qy4yoAQ&start=50&sa=N&sstk=Ac65TH68bzBjVAqSj9AfEJHgmKuaTz7JeVSksZUaI3vcS4FGYrESra6wWU0VPx67oR3ADwZZ8SkFy0bHezS8qJWqlX3VyDH14nXY7Q&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQ8tMDegQIChAM",
+      "7": "https://www.google.com/search?q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=q2xkaOl2xYeDxQ-qy4yoAQ&start=60&sa=N&sstk=Ac65TH68bzBjVAqSj9AfEJHgmKuaTz7JeVSksZUaI3vcS4FGYrESra6wWU0VPx67oR3ADwZZ8SkFy0bHezS8qJWqlX3VyDH14nXY7Q&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQ8tMDegQIChAO",
+      "8": "https://www.google.com/search?q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=q2xkaOl2xYeDxQ-qy4yoAQ&start=70&sa=N&sstk=Ac65TH68bzBjVAqSj9AfEJHgmKuaTz7JeVSksZUaI3vcS4FGYrESra6wWU0VPx67oR3ADwZZ8SkFy0bHezS8qJWqlX3VyDH14nXY7Q&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQ8tMDegQIChAQ",
+      "9": "https://www.google.com/search?q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=q2xkaOl2xYeDxQ-qy4yoAQ&start=80&sa=N&sstk=Ac65TH68bzBjVAqSj9AfEJHgmKuaTz7JeVSksZUaI3vcS4FGYrESra6wWU0VPx67oR3ADwZZ8SkFy0bHezS8qJWqlX3VyDH14nXY7Q&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQ8tMDegQIChAS",
+      "10": "https://www.google.com/search?q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=q2xkaOl2xYeDxQ-qy4yoAQ&start=90&sa=N&sstk=Ac65TH68bzBjVAqSj9AfEJHgmKuaTz7JeVSksZUaI3vcS4FGYrESra6wWU0VPx67oR3ADwZZ8SkFy0bHezS8qJWqlX3VyDH14nXY7Q&ved=2ahUKEwip-JHZ5ZyOAxXFw6ACHaolAxUQ8tMDegQIChAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=capital+blue+cross+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

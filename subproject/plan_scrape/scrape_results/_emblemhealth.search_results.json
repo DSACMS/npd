@@ -1,0 +1,298 @@
+{
+  "search_metadata": {
+    "id": "686464ac5fda0b81cd127c70",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/d961c70f55c9b689/686464ac5fda0b81cd127c70.json",
+    "created_at": "2025-07-01 22:43:56 UTC",
+    "processed_at": "2025-07-01 22:43:56 UTC",
+    "google_url": "https://www.google.com/search?q=%22emblemhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22emblemhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/d961c70f55c9b689/686464ac5fda0b81cd127c70.html",
+    "total_time_taken": 1.45
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"emblemhealth Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"emblemhealth Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 38,
+    "time_taken_displayed": 0.48,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "emblemhealth Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "emblemhealth Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Directory",
+      "link": "https://www.emblemhealth.com/providers/manual/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.emblemhealth.com/providers/manual/directory&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQFnoECBcQAQ",
+      "displayed_link": "https://www.emblemhealth.com \u203a ... \u203a Provider Manual",
+      "favicon": "https://serpapi.com/searches/686464ac5fda0b81cd127c70/images/4728da738344e49833fa68d3cf2e21882f8a56c065b52edd220ad6b248555347.png",
+      "snippet": "This chapter contains contact information for parties within EmblemHealth, our delegated relationships and other external resources.",
+      "snippet_highlighted_words": [
+        "EmblemHealth"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Provider Manual Search",
+            "link": "https://www.emblemhealth.com/providers/provider-manual-search"
+          },
+          {
+            "title": "Claims Contacts",
+            "link": "https://www.emblemhealth.com/providers/manual/directory/claims-contacts"
+          },
+          {
+            "title": "Dentists Contact Us",
+            "link": "https://www.emblemhealth.com/providers/clinical-corner/dental/emblemhealth-resources-for-dentists---contact-us"
+          }
+        ]
+      },
+      "missing": [
+        "API",
+        "FHIR"
+      ],
+      "source": "EmblemHealth"
+    },
+    {
+      "position": 2,
+      "title": "Interoperability Information",
+      "link": "https://www.emblemhealth.com/legal/interoperability-information",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.emblemhealth.com/legal/interoperability-information&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQFnoECAsQAQ",
+      "displayed_link": "https://www.emblemhealth.com \u203a legal \u203a interoperabilit...",
+      "favicon": "https://serpapi.com/searches/686464ac5fda0b81cd127c70/images/4728da738344e49833fa68d3cf2e218866fd634e711ef8345a6acf63f8a1fbeb.png",
+      "snippet": "Interoperability means that, with your permission, EmblemHealth could share your health records with third-party applications (apps).",
+      "snippet_highlighted_words": [
+        "EmblemHealth"
+      ],
+      "missing": [
+        "FHIR"
+      ],
+      "must_include": {
+        "word": "FHIR",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=emblemhealth+Medicare+Advantage+PROVIDER+DIRECTORY+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQ5t4CegQIDxAB"
+      },
+      "source": "EmblemHealth"
+    },
+    {
+      "position": 3,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQFnoECAwQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/686464ac5fda0b81cd127c70/images/4728da738344e49833fa68d3cf2e21885913b6ebe198100538b58f6a96edeed3.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. Endpoints are: FHIR- ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 4,
+      "title": "NYSPMA | CPR Billing and Coding",
+      "link": "https://www.nyspma.org/aws/NYSPMA/ebulletin/select_eb?actual_time=2024-02-15+00%3A00%3A00&id=241906&select_eb=241906&select_method=3",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.nyspma.org/aws/NYSPMA/ebulletin/select_eb%3Factual_time%3D2024-02-15%2B00%253A00%253A00%26id%3D241906%26select_eb%3D241906%26select_method%3D3&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQFnoECBAQAQ",
+      "displayed_link": "https://www.nyspma.org \u203a aws \u203a ebulletin \u203a select_eb",
+      "favicon": "https://serpapi.com/searches/686464ac5fda0b81cd127c70/images/4728da738344e49833fa68d3cf2e21880b95d7595d169932ea311de482c54ba2.png",
+      "date": "Feb 15, 2024",
+      "snippet": "The rule sets requirements for several government-administered health plans: Medicare Advantage; Medicaid and the Children's Health Insurance ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage"
+      ],
+      "source": "NYSPMA"
+    },
+    {
+      "position": 5,
+      "title": "06.01.23 Town Hall Deck_FINAL.pdf",
+      "link": "https://www.caqh.org/sites/default/files/2023-06/06.01.23%20Town%20Hall%20Deck_FINAL.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.caqh.org/sites/default/files/2023-06/06.01.23%2520Town%2520Hall%2520Deck_FINAL.pdf&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQFnoECB0QAQ",
+      "displayed_link": "https://www.caqh.org \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/686464ac5fda0b81cd127c70/images/4728da738344e49833fa68d3cf2e21884c89884ad30c4620663324d38527051e.png",
+      "date": "Jun 1, 2023",
+      "snippet": "Overview: Adopts standards for \u201chealth care attachments\u201d transactions, such as medical charts, x-rays, and provider notes that document ...",
+      "snippet_highlighted_words": [
+        "provider"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 34
+          },
+          "extensions": [
+            "34 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=emblemhealth+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQ5t4CegQIHhAB"
+      },
+      "source": "CAQH.org"
+    },
+    {
+      "position": 6,
+      "title": "ePS Reconnection Payer List (A-E) as of 5.14.2024",
+      "link": "https://support.drchrono.com/home/25767403504539-eps-reconnection-payer-list-a-e-as-of-5-14-2024",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://support.drchrono.com/home/25767403504539-eps-reconnection-payer-list-a-e-as-of-5-14-2024&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQFnoECAoQAQ",
+      "displayed_link": "https://support.drchrono.com \u203a home \u203a 2576740350453...",
+      "favicon": "https://serpapi.com/searches/686464ac5fda0b81cd127c70/images/4728da738344e49833fa68d3cf2e21882069c37252beb1ecc82626da487ce6fd.png",
+      "date": "Jul 8, 2024",
+      "snippet": "ePS Reconnection Payer List (A-E) as of 5.14.2024 ; HMFNMM01, NMM01, Advantage Medical Group ; HMF77070, 77070, Advantage Preferred Plus ; UMF77070 ...",
+      "snippet_highlighted_words": [
+        "List",
+        "Advantage",
+        "Advantage"
+      ],
+      "source": "DrChrono"
+    },
+    {
+      "position": 7,
+      "title": "Burden - Confluence - HL7 International",
+      "link": "https://confluence.hl7.org/download/attachments/104568480/Reducing%20Clinician%20Burden%20Analysis%20Worksheet-20211206.xlsx?version=1&modificationDate=1639281430516&api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/104568480/Reducing%2520Clinician%2520Burden%2520Analysis%2520Worksheet-20211206.xlsx%3Fversion%3D1%26modificationDate%3D1639281430516%26api%3Dv2&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQFnoECCMQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a attachments \u203a api=v2",
+      "favicon": "https://serpapi.com/searches/686464ac5fda0b81cd127c70/images/4728da738344e49833fa68d3cf2e21884990e9c6a0808f4b0aa9f25b734654ec.png",
+      "snippet": "Emblem Health represents [HPC] / GHI / HIP When we visit the [HPC] web site to research the check to see which patient to apply the check to we have to select ...",
+      "snippet_highlighted_words": [
+        "Emblem Health"
+      ],
+      "source": "HL7.org"
+    },
+    {
+      "position": 8,
+      "title": "Analytics",
+      "link": "https://meetaxle.com/analytics/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://meetaxle.com/analytics/&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQFnoECDoQAQ",
+      "displayed_link": "https://meetaxle.com \u203a analytics",
+      "favicon": "https://serpapi.com/searches/686464ac5fda0b81cd127c70/images/4728da738344e49833fa68d3cf2e2188d1233030eba74d6337cb367bec115c7b.png",
+      "snippet": "Axle provides live analytics so that you can ...",
+      "source": "Meetaxle"
+    },
+    {
+      "position": 9,
+      "title": "ePS Payer List (A-F) - April 12, 2024",
+      "link": "https://support.drchrono.com/home/24766684793115-eps-payer-list-a-f-april-12-2024",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://support.drchrono.com/home/24766684793115-eps-payer-list-a-f-april-12-2024&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQFnoECD4QAQ",
+      "displayed_link": "https://support.drchrono.com \u203a home \u203a 2476668479311...",
+      "favicon": "https://serpapi.com/searches/686464ac5fda0b81cd127c70/images/4728da738344e49833fa68d3cf2e218812a901dc93857b59545839a0399d0e36.png",
+      "date": "Apr 12, 2024",
+      "snippet": "ePS Payer List (A-F) - April 12, 2024 ; Assurant Health Self Funded(Allied Benefit), 75068 ; Assurant Health Self-Funded (Ft. Mill, SC), 37313 ...",
+      "snippet_highlighted_words": [
+        "List"
+      ],
+      "source": "DrChrono"
+    },
+    {
+      "position": 10,
+      "title": "CAQH CORE Town Hall Slides September 13, 2022",
+      "link": "https://www.caqh.org/sites/default/files/core/events/CAQH-CORE-Fall-2022-Town-Hall-Slides.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.caqh.org/sites/default/files/core/events/CAQH-CORE-Fall-2022-Town-Hall-Slides.pdf&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQFnoECEAQAQ",
+      "displayed_link": "https://www.caqh.org \u203a sites \u203a files \u203a core \u203a events",
+      "favicon": "https://serpapi.com/searches/686464ac5fda0b81cd127c70/images/4728da738344e49833fa68d3cf2e218833671bf9174f39f1537b7731c2f8581b.png",
+      "date": "Sep 13, 2022",
+      "snippet": "Members include health plans, providers (some of which are appointed by associations such as the AHA, AMA, MGMA), vendors, and government.",
+      "snippet_highlighted_words": [
+        "plans",
+        "providers"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 42
+          },
+          "extensions": [
+            "42 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=emblemhealth+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQ5t4CegQIQxAB"
+      },
+      "source": "CAQH.org"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "EmblemHealth phone number Customer Service",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=EmblemHealth+phone+number+Customer+Service&sa=X&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=EmblemHealth+phone+number+Customer+Service&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "EmblemHealth Provider Portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=EmblemHealth+Provider+Portal&sa=X&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=EmblemHealth+Provider+Portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "EmblemHealth Provider phone number for claims",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=EmblemHealth+Provider+phone+number+for+claims&sa=X&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=EmblemHealth+Provider+phone+number+for+claims&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "EmblemHealth GHI Provider phone number",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=EmblemHealth+GHI+Provider+phone+number&sa=X&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=EmblemHealth+GHI+Provider+phone+number&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "EmblemHealth Find a Doctor",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=EmblemHealth+Find+a+Doctor&sa=X&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=EmblemHealth+Find+a+Doctor&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "EmblemHealth doctors near me",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=EmblemHealth+doctors+near+me&sa=X&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=EmblemHealth+doctors+near+me&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "EmblemHealth New York Customer Service",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=EmblemHealth+New+York+Customer+Service&sa=X&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=EmblemHealth+New+York+Customer+Service&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "EmblemHealth Customer Service number NYC",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=EmblemHealth+Customer+Service+number+NYC&sa=X&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=EmblemHealth+Customer+Service+number+NYC&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=emblemhealth+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=rWRkaKynC_P-ptQP__TesQQ&start=10&sa=N&sstk=Ac65TH7H59yKK6xXhqKnIlmVuDa7Gon3JprVZSfl0FWwkfSb7NeEBxxKf3WrDoTcXDtET2WBEeeEanJkxnOvzpXPn_xfTDKqqSgbbQ&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQ8NMDegQICBAG",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=emblemhealth+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=rWRkaKynC_P-ptQP__TesQQ&start=10&sa=N&sstk=Ac65TH7H59yKK6xXhqKnIlmVuDa7Gon3JprVZSfl0FWwkfSb7NeEBxxKf3WrDoTcXDtET2WBEeeEanJkxnOvzpXPn_xfTDKqqSgbbQ&ved=2ahUKEwjssc6J3pyOAxVzv4kEHX-6N0YQ8tMDegQICBAE"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=emblemhealth+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=emblemhealth+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=emblemhealth+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10"
+    }
+  }
+}

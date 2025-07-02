@@ -1,0 +1,279 @@
+{
+  "search_metadata": {
+    "id": "686464b93d0e4e31c419f4b6",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/275877c5f745f65b/686464b93d0e4e31c419f4b6.json",
+    "created_at": "2025-07-01 22:44:09 UTC",
+    "processed_at": "2025-07-01 22:44:09 UTC",
+    "google_url": "https://www.google.com/search?q=%22gemstone+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22gemstone+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/275877c5f745f65b/686464b93d0e4e31c419f4b6.html",
+    "total_time_taken": 1.04
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"gemstone holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"gemstone holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 1870,
+    "time_taken_displayed": 0.36,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "gemstone holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "gemstone holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Remarks by CMS Administrator Seema Verma at the ONC ...",
+      "link": "https://www.cms.gov/newsroom/press-releases/speech-remarks-cms-administrator-seema-verma-onc-api-event",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/newsroom/press-releases/speech-remarks-cms-administrator-seema-verma-onc-api-event&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQFnoECBsQAQ",
+      "displayed_link": "https://www.cms.gov \u203a newsroom \u203a press-releases \u203a spee...",
+      "favicon": "https://serpapi.com/searches/686464b93d0e4e31c419f4b6/images/cc1cc9f3e43991f1ee91a19365839e2ddb88b988cd7f42952aacc05d8e499b3e.png",
+      "date": "Dec 1, 2020",
+      "snippet": "CMS launched Blue Button 2.0, Medicare's first developer-friendly, FHIR-based API that links Medicare claims data to apps on beneficiaries' ...",
+      "snippet_highlighted_words": [
+        "Medicare's",
+        "FHIR",
+        "API",
+        "Medicare"
+      ],
+      "missing": [
+        "gemstone",
+        "holdings"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "HHS' final interoperability rules standardize APIs for patient ...",
+      "link": "https://www.mobihealthnews.com/news/hhs-final-interoperability-rules-standardize-apis-patient-health-data-access-through-apps",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mobihealthnews.com/news/hhs-final-interoperability-rules-standardize-apis-patient-health-data-access-through-apps&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQFnoECBYQAQ",
+      "displayed_link": "https://www.mobihealthnews.com \u203a news \u203a hhs-final-inte...",
+      "favicon": "https://serpapi.com/searches/686464b93d0e4e31c419f4b6/images/cc1cc9f3e43991f1ee91a19365839e2d8aa5d5b7e146637e490f29b02c9dc1b4.jpeg",
+      "date": "Mar 9, 2020",
+      "snippet": "CMS-regulated payers will begin supporting HL7 FHIR APIs next year, allowing third-party developers to include claims data and other patient ...",
+      "snippet_highlighted_words": [
+        "FHIR APIs"
+      ],
+      "missing": [
+        "gemstone"
+      ],
+      "must_include": {
+        "word": "gemstone",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=%22gemstone%22+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQ5t4CegQIIxAB"
+      },
+      "source": "MobiHealthNews"
+    },
+    {
+      "position": 3,
+      "title": "CAQH Launches National Directory of FHIR Endpoints ...",
+      "link": "https://www.managedhealthcareexecutive.com/view/caqh-launches-national-directory-of-fhir-endpoints-third-party-apps",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.managedhealthcareexecutive.com/view/caqh-launches-national-directory-of-fhir-endpoints-third-party-apps&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQFnoECBwQAQ",
+      "displayed_link": "https://www.managedhealthcareexecutive.com \u203a view \u203a c...",
+      "favicon": "https://serpapi.com/searches/686464b93d0e4e31c419f4b6/images/cc1cc9f3e43991f1ee91a19365839e2d921921af12e5eeab5ecf34a9e2708ccc.png",
+      "date": "Apr 25, 2021",
+      "snippet": "CAQH announced the recent launch of the CAQH Endpoint Directory, a centralized repository of validated payer FHIR endpoints and third-party ...",
+      "snippet_highlighted_words": [
+        "Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "gemstone",
+        "holdings",
+        "Advantage"
+      ],
+      "source": "Managed Healthcare Executive"
+    },
+    {
+      "position": 4,
+      "title": "Pondering the Health Policy Orb - by Brendan Keeler",
+      "link": "https://healthapiguy.substack.com/p/pondering-the-health-policy-orb",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://healthapiguy.substack.com/p/pondering-the-health-policy-orb&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQFnoECBkQAQ",
+      "displayed_link": "1 like \u00b7 3 years ago",
+      "favicon": "https://serpapi.com/searches/686464b93d0e4e31c419f4b6/images/cc1cc9f3e43991f1ee91a19365839e2d19d383b934b0407cf731e8502b1a798e.png",
+      "snippet": "Provider Directory API - Update the provider directory APIs to use a standardized Implementation Guide, HL7 FHIR Da Vinci PDex Plan Net IG, in ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "provider directory APIs",
+        "FHIR"
+      ],
+      "missing": [
+        "gemstone"
+      ],
+      "must_include": {
+        "word": "gemstone",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=%22gemstone%22+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQ5t4CegQIKRAB"
+      },
+      "source": "Substack \u00b7 Health API Guy"
+    },
+    {
+      "position": 5,
+      "title": "Cost of CMS Interoperability Rules Non-Compliance",
+      "link": "https://www.smiledigitalhealth.com/our-blog/cms-non-compliance-cost",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.smiledigitalhealth.com/our-blog/cms-non-compliance-cost&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQFnoECBoQAQ",
+      "displayed_link": "https://www.smiledigitalhealth.com \u203a our-blog \u203a cms-no...",
+      "favicon": "https://serpapi.com/searches/686464b93d0e4e31c419f4b6/images/cc1cc9f3e43991f1ee91a19365839e2d9e4b7c5027ec565bc662820d443dc194.png",
+      "date": "Oct 14, 2022",
+      "snippet": "... APIs using the FHIR standard. The APIs should give providers faster access to data, leading to faster decisions from the payer. The end ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "FHIR",
+        "APIs",
+        "providers"
+      ],
+      "missing": [
+        "gemstone",
+        "holdings",
+        "Advantage"
+      ],
+      "source": "Smile Digital Health"
+    },
+    {
+      "position": 6,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQFnoECBcQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/686464b93d0e4e31c419f4b6/images/cc1cc9f3e43991f1ee91a19365839e2d2ac84df227272139a733a773ea7b6bcf.png",
+      "date": "Jan 1, 2025",
+      "snippet": "Welcome to the UnitedHealthcare Care Provider Administrative Guide for Commercial and Medicare Advantage. (MA) products.",
+      "snippet_highlighted_words": [
+        "Provider",
+        "Medicare Advantage"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "missing": [
+        "gemstone"
+      ],
+      "must_include": {
+        "word": "gemstone",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=%22gemstone%22+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQ5t4CegQIKBAB"
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 7,
+      "title": "Understanding the Coperor\u2122 Health Data Management ...",
+      "link": "https://ahiporg-production.s3.amazonaws.com/documents/Whitepapers/GNE24_05-01-Coperor-ebook_AHIP-1-1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ahiporg-production.s3.amazonaws.com/documents/Whitepapers/GNE24_05-01-Coperor-ebook_AHIP-1-1.pdf&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQFnoECBgQAQ",
+      "displayed_link": "https://ahiporg-production.s3.amazonaws.com \u203a G...",
+      "snippet": "However, it's essential to recognize that not all three locations should necessarily be listed in the Medicare. Advantage (MA) provider directory. The ...",
+      "snippet_highlighted_words": [
+        "Medicare",
+        "Advantage",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 16
+          },
+          "extensions": [
+            "16 pages"
+          ]
+        }
+      },
+      "missing": [
+        "gemstone",
+        "holdings"
+      ],
+      "source": "amazonaws.com"
+    },
+    {
+      "position": 8,
+      "title": "Developing a FHIR-based EHR phenotyping framework",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990976/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pmc.ncbi.nlm.nih.gov/articles/PMC6990976/&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQFnoECDUQAQ",
+      "displayed_link": "https://pmc.ncbi.nlm.nih.gov \u203a articles \u203a PMC6990976",
+      "author": "by N Hong",
+      "snippet": "Among these data standards and models, the FHIR standard was developed by HL7 as the next generation clinical data standards framework to meet clinical ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "National Institutes of Health (NIH) | (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "CMS rule aims to enhance interoperability, improve prior ...",
+      "link": "https://www.urologytimes.com/view/cms-rule-aims-to-enhance-interoperability-improve-prior-authorization-process",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.urologytimes.com/view/cms-rule-aims-to-enhance-interoperability-improve-prior-authorization-process&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQFnoECDYQAQ",
+      "displayed_link": "https://www.urologytimes.com \u203a view \u203a cms-rule-aims-t...",
+      "favicon": "https://serpapi.com/searches/686464b93d0e4e31c419f4b6/images/cc1cc9f3e43991f1ee91a19365839e2dce70d52e6debef749de0bb854f467d02.png",
+      "date": "Feb 7, 2024",
+      "snippet": "Provider Access APIs must allow providers to access data about patient claims, encounters, and clinical and prior authorizations data. With a ...",
+      "snippet_highlighted_words": [
+        "Provider",
+        "APIs",
+        "providers"
+      ],
+      "missing": [
+        "gemstone",
+        "holdings"
+      ],
+      "source": "Urology Times"
+    },
+    {
+      "position": 10,
+      "title": "SS&C and Edifecs Enable Interoperability Solution for ...",
+      "link": "https://investor.ssctech.com/news-and-events/news-details/2020/SSC-and-Edifecs-Enable-Interoperability-Solution-for-Healthcare-07-22-2020/default.aspx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://investor.ssctech.com/news-and-events/news-details/2020/SSC-and-Edifecs-Enable-Interoperability-Solution-for-Healthcare-07-22-2020/default.aspx&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQFnoECDwQAQ",
+      "displayed_link": "https://investor.ssctech.com \u203a news-details \u203a SSC-and-Edi...",
+      "favicon": "https://serpapi.com/searches/686464b93d0e4e31c419f4b6/images/cc1cc9f3e43991f1ee91a19365839e2daf53d2d53c3da7fe7d0b4c3f7e48dc75.png",
+      "date": "Jul 22, 2020",
+      "snippet": "The combined SS&C and Edifecs' offering is developed specifically for Medicare Advantage, Federal Exchange Marketplace, Medicaid and ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage"
+      ],
+      "source": "SS&C Technologies"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=uWRkaPeuNqfri-gP2POm0QM&start=10&sa=N&sstk=Ac65TH7FNkDc1KNYYyhvfIbVHVkCeZZ30BWy1sDqfGIDfEaugjCjmQ6frdBlEOa96ki5LtqBmbwcVbQ7lsk1QmvL-NQk6gjZ3xHQFw&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=uWRkaPeuNqfri-gP2POm0QM&start=10&sa=N&sstk=Ac65TH7FNkDc1KNYYyhvfIbVHVkCeZZ30BWy1sDqfGIDfEaugjCjmQ6frdBlEOa96ki5LtqBmbwcVbQ7lsk1QmvL-NQk6gjZ3xHQFw&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=uWRkaPeuNqfri-gP2POm0QM&start=20&sa=N&sstk=Ac65TH7FNkDc1KNYYyhvfIbVHVkCeZZ30BWy1sDqfGIDfEaugjCjmQ6frdBlEOa96ki5LtqBmbwcVbQ7lsk1QmvL-NQk6gjZ3xHQFw&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=uWRkaPeuNqfri-gP2POm0QM&start=30&sa=N&sstk=Ac65TH7FNkDc1KNYYyhvfIbVHVkCeZZ30BWy1sDqfGIDfEaugjCjmQ6frdBlEOa96ki5LtqBmbwcVbQ7lsk1QmvL-NQk6gjZ3xHQFw&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=uWRkaPeuNqfri-gP2POm0QM&start=40&sa=N&sstk=Ac65TH7FNkDc1KNYYyhvfIbVHVkCeZZ30BWy1sDqfGIDfEaugjCjmQ6frdBlEOa96ki5LtqBmbwcVbQ7lsk1QmvL-NQk6gjZ3xHQFw&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=uWRkaPeuNqfri-gP2POm0QM&start=50&sa=N&sstk=Ac65TH7FNkDc1KNYYyhvfIbVHVkCeZZ30BWy1sDqfGIDfEaugjCjmQ6frdBlEOa96ki5LtqBmbwcVbQ7lsk1QmvL-NQk6gjZ3xHQFw&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=uWRkaPeuNqfri-gP2POm0QM&start=60&sa=N&sstk=Ac65TH7FNkDc1KNYYyhvfIbVHVkCeZZ30BWy1sDqfGIDfEaugjCjmQ6frdBlEOa96ki5LtqBmbwcVbQ7lsk1QmvL-NQk6gjZ3xHQFw&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=uWRkaPeuNqfri-gP2POm0QM&start=70&sa=N&sstk=Ac65TH7FNkDc1KNYYyhvfIbVHVkCeZZ30BWy1sDqfGIDfEaugjCjmQ6frdBlEOa96ki5LtqBmbwcVbQ7lsk1QmvL-NQk6gjZ3xHQFw&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=uWRkaPeuNqfri-gP2POm0QM&start=80&sa=N&sstk=Ac65TH7FNkDc1KNYYyhvfIbVHVkCeZZ30BWy1sDqfGIDfEaugjCjmQ6frdBlEOa96ki5LtqBmbwcVbQ7lsk1QmvL-NQk6gjZ3xHQFw&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=uWRkaPeuNqfri-gP2POm0QM&start=90&sa=N&sstk=Ac65TH7FNkDc1KNYYyhvfIbVHVkCeZZ30BWy1sDqfGIDfEaugjCjmQ6frdBlEOa96ki5LtqBmbwcVbQ7lsk1QmvL-NQk6gjZ3xHQFw&ved=2ahUKEwi379WP3pyOAxWn9QIHHdi5KToQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=gemstone+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "search_metadata": {
+    "id": "6864649018dc939dbd1c1366",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/82c86e4ab47a3542/6864649018dc939dbd1c1366.json",
+    "created_at": "2025-07-01 22:43:28 UTC",
+    "processed_at": "2025-07-01 22:43:29 UTC",
+    "google_url": "https://www.google.com/search?q=%22cds+monarch+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22cds+monarch+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/82c86e4ab47a3542/6864649018dc939dbd1c1366.html",
+    "total_time_taken": 1.09
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"cds monarch Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"cds monarch Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 454,
+    "time_taken_displayed": 0.51,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    },
+    "showing_results_for": "cds monarch Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "cds monarch Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "ISA",
+      "link": "https://www.healthit.gov/isp/sites/isp/files/ISA.html?page=6",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/isp/sites/isp/files/ISA.html%3Fpage%3D6&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQFnoECBcQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a isp \u203a sites \u203a isp \u203a files \u203a ISA",
+      "favicon": "https://serpapi.com/searches/6864649018dc939dbd1c1366/images/e87baaa5de7ccb172205c16a6b8b5f204bcaaefaadd6d944403451f104ee4de5.jpeg",
+      "snippet": "Healthcare Directory, Provider Directory \u00b7 Listing of ... FHIR API deployment is being combined from both FHIR server and FHIR application perspectives.",
+      "snippet_highlighted_words": [
+        "Directory",
+        "Provider Directory",
+        "Listing",
+        "FHIR API",
+        "FHIR",
+        "FHIR"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Artifacts Summary - HL7 Terminology (THO) v6.4.0",
+      "link": "https://build.fhir.org/ig/HL7/UTG/artifacts.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://build.fhir.org/ig/HL7/UTG/artifacts.html&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQFnoECBsQAQ",
+      "displayed_link": "https://build.fhir.org \u203a UTG \u203a artifacts",
+      "favicon": "https://serpapi.com/searches/6864649018dc939dbd1c1366/images/e87baaa5de7ccb172205c16a6b8b5f2028ee39017b87a7da7c212b02e6f00620.png",
+      "snippet": "This page provides a list of the FHIR artifacts defined as part of this implementation guide. Structures: Extension Definitions. These define constraints on ...",
+      "snippet_highlighted_words": [
+        "list",
+        "FHIR"
+      ],
+      "source": "FHIR specification"
+    },
+    {
+      "position": 3,
+      "title": "2025 ISA Reference Edition",
+      "link": "https://www.healthit.gov/isp/sites/isp/files/2025-01/ISA-Reference-Jan-2025.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/isp/sites/isp/files/2025-01/ISA-Reference-Jan-2025.html&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQFnoECB8QAQ",
+      "displayed_link": "https://www.healthit.gov \u203a isp \u203a sites \u203a isp \u203a files \u203a ISA-...",
+      "favicon": "https://serpapi.com/searches/6864649018dc939dbd1c1366/images/e87baaa5de7ccb172205c16a6b8b5f20968000cb21a4a03d71fc154c78d24433.jpeg",
+      "snippet": "HL7\u00ae FHIR\u00ae Argonaut Provider Directory Implementation Guide Version 1.0.0. Balloted Draft. Production. Rating 2. No. Free. Yes. Implementation Specification.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "hantswilliams/healthcare-data",
+      "link": "https://github.com/hantswilliams/healthcare-data",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/hantswilliams/healthcare-data&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQFnoECB4QAQ",
+      "displayed_link": "https://github.com \u203a hantswilliams \u203a healthcare-data",
+      "favicon": "https://serpapi.com/searches/6864649018dc939dbd1c1366/images/e87baaa5de7ccb172205c16a6b8b5f203dd6d8a3545d8d9530763b4a3e4c80f0.png",
+      "snippet": "Best of healthcare data. Contribute to hantswilliams/healthcare-data development by creating an account on GitHub.",
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=cds+monarch+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQ5t4CegQIIxAB"
+      },
+      "source": "GitHub"
+    },
+    {
+      "position": 5,
+      "title": "California State Medi-Cal Health Information Technology Plan ...",
+      "link": "https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQFnoECBgQAQ",
+      "displayed_link": "https://www.dhcs.ca.gov \u203a Documents \u203a OHIT \u203a C...",
+      "favicon": "https://serpapi.com/searches/6864649018dc939dbd1c1366/images/e87baaa5de7ccb172205c16a6b8b5f20259947e9ec8b8c2f46847c2263dbece9.png",
+      "date": "Mar 1, 2022",
+      "snippet": "and provider directory. The only service area which California HIOs significantly exceed national HIOs is advanced care planning (Table 22) ...",
+      "snippet_highlighted_words": [
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 246
+          },
+          "extensions": [
+            "246 pages"
+          ]
+        }
+      },
+      "source": "DHCS (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Public Comments-CAQH CORE Operating Rules for Federal ...",
+      "link": "https://ncvhs.hhs.gov/wp-content/uploads/2020/10/Public-Comments-CAQH-CORE-Operating-Rules-for-Federal-Adoption-August-2020r.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ncvhs.hhs.gov/wp-content/uploads/2020/10/Public-Comments-CAQH-CORE-Operating-Rules-for-Federal-Adoption-August-2020r.pdf&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQFnoECB0QAQ",
+      "displayed_link": "https://ncvhs.hhs.gov \u203a uploads \u203a 2020/10",
+      "favicon": "https://serpapi.com/searches/6864649018dc939dbd1c1366/images/e87baaa5de7ccb172205c16a6b8b5f20ff0b632b3a094c7841d991e72218da60.png",
+      "date": "Aug 25, 2020",
+      "snippet": "Resources (FHIR) and application programming interfaces (API) to accelerate electronic information exchange and interoperability, including ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=cds+monarch+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQ5t4CegQIIhAB"
+      },
+      "source": "National Committee on Vital and Health Statistics (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "Archer Search Report",
+      "link": "https://dir.texas.gov/sites/default/files/2024-04/TX-RAMP%20Certified%20Cloud%20Products%204.9.24.xlsx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dir.texas.gov/sites/default/files/2024-04/TX-RAMP%2520Certified%2520Cloud%2520Products%25204.9.24.xlsx&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQFnoECDIQAQ",
+      "displayed_link": "https://dir.texas.gov \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/6864649018dc939dbd1c1366/images/e87baaa5de7ccb172205c16a6b8b5f2049c4d8f60e50558592c4739450fda3a8.png",
+      "snippet": "... plans, while measuring provider performance and striving toward value-based success. 3M Performance Data Monitoring (PDM) \u2013 3M PDM is a web application that ...",
+      "snippet_highlighted_words": [
+        "plans",
+        "provider"
+      ],
+      "source": "Texas Department of Information Resources (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Export - Massachusetts eHealth Institute",
+      "link": "https://mehi.masstech.org/api/company/export/96",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mehi.masstech.org/api/company/export/96&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQFnoECDEQAQ",
+      "displayed_link": "https://mehi.masstech.org \u203a api \u203a company \u203a export",
+      "favicon": "https://serpapi.com/searches/6864649018dc939dbd1c1366/images/e87baaa5de7ccb172205c16a6b8b5f207efb7669f0baeab04e4fbb3b18eb6b61.png",
+      "snippet": "... Provider,\"Home or Community, Outpatient Facility\",\"Patient, Provider\",\"Consumer Engagement\",\"Mobile App\",,,,,, 1upHealth,MeHI-118742,\"As a leader in FHIR ... API ...",
+      "snippet_highlighted_words": [
+        "Provider",
+        "Provider",
+        "FHIR",
+        "API"
+      ],
+      "source": "Massachusetts eHealth Institute | MeHI"
+    },
+    {
+      "position": 9,
+      "title": "VA Technical Reference Model v 25.5",
+      "link": "https://www.oit.va.gov/Services/TRM/SearchPage.aspx?searchTerm=quest&orderby=Name&orderDirection=Desc",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oit.va.gov/Services/TRM/SearchPage.aspx%3FsearchTerm%3Dquest%26orderby%3DName%26orderDirection%3DDesc&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQFnoECDAQAQ",
+      "displayed_link": "https://www.oit.va.gov \u203a Services \u203a TRM \u203a SearchPage",
+      "favicon": "https://serpapi.com/searches/6864649018dc939dbd1c1366/images/e87baaa5de7ccb172205c16a6b8b5f202e113e51817c3487daceee3baa9184ad.png",
+      "snippet": "To conduct a search based on the VA Categorization framework you must select a Domain, an Area, and a Category. Domain:.",
+      "snippet_highlighted_words": [
+        "search"
+      ],
+      "source": "VA.gov Home | Veterans Affairs"
+    },
+    {
+      "position": 10,
+      "title": "Athelas - EHR Integration - Medigy",
+      "link": "https://www.medigy.com/offering/athelas-ehr-integration/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.medigy.com/offering/athelas-ehr-integration/&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQFnoECC0QAQ",
+      "displayed_link": "https://www.medigy.com \u203a offering \u203a athelas-ehr-integr...",
+      "favicon": "https://serpapi.com/searches/6864649018dc939dbd1c1366/images/e87baaa5de7ccb172205c16a6b8b5f2060984292eaad6c31a312a0588b0f351a.png",
+      "snippet": "Athelas streamlines healthcare data management by seamlessly integrating remote patient monitoring (RPM) vitals into over 80 EHR systems.",
+      "source": "medigy.com"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=kWRkaIqwD9Dh7_UPyKyNsA8&start=10&sa=N&sstk=Ac65TH4fEDGQm9ysz-a9I1KaCGk3pmm1tr4e-9OfWKFvocCsvGO5ZJ7cpnDqPqahmUQf7deQnWH6ASbgHQpFt88Z4UqXEwhtmxneDw&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQ8NMDegQICBAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=kWRkaIqwD9Dh7_UPyKyNsA8&start=10&sa=N&sstk=Ac65TH4fEDGQm9ysz-a9I1KaCGk3pmm1tr4e-9OfWKFvocCsvGO5ZJ7cpnDqPqahmUQf7deQnWH6ASbgHQpFt88Z4UqXEwhtmxneDw&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQ8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=kWRkaIqwD9Dh7_UPyKyNsA8&start=20&sa=N&sstk=Ac65TH4fEDGQm9ysz-a9I1KaCGk3pmm1tr4e-9OfWKFvocCsvGO5ZJ7cpnDqPqahmUQf7deQnWH6ASbgHQpFt88Z4UqXEwhtmxneDw&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQ8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=kWRkaIqwD9Dh7_UPyKyNsA8&start=30&sa=N&sstk=Ac65TH4fEDGQm9ysz-a9I1KaCGk3pmm1tr4e-9OfWKFvocCsvGO5ZJ7cpnDqPqahmUQf7deQnWH6ASbgHQpFt88Z4UqXEwhtmxneDw&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQ8tMDegQICBAI",
+      "5": "https://www.google.com/search?q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=kWRkaIqwD9Dh7_UPyKyNsA8&start=40&sa=N&sstk=Ac65TH4fEDGQm9ysz-a9I1KaCGk3pmm1tr4e-9OfWKFvocCsvGO5ZJ7cpnDqPqahmUQf7deQnWH6ASbgHQpFt88Z4UqXEwhtmxneDw&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQ8tMDegQICBAK",
+      "6": "https://www.google.com/search?q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=kWRkaIqwD9Dh7_UPyKyNsA8&start=50&sa=N&sstk=Ac65TH4fEDGQm9ysz-a9I1KaCGk3pmm1tr4e-9OfWKFvocCsvGO5ZJ7cpnDqPqahmUQf7deQnWH6ASbgHQpFt88Z4UqXEwhtmxneDw&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQ8tMDegQICBAM",
+      "7": "https://www.google.com/search?q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=kWRkaIqwD9Dh7_UPyKyNsA8&start=60&sa=N&sstk=Ac65TH4fEDGQm9ysz-a9I1KaCGk3pmm1tr4e-9OfWKFvocCsvGO5ZJ7cpnDqPqahmUQf7deQnWH6ASbgHQpFt88Z4UqXEwhtmxneDw&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQ8tMDegQICBAO",
+      "8": "https://www.google.com/search?q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=kWRkaIqwD9Dh7_UPyKyNsA8&start=70&sa=N&sstk=Ac65TH4fEDGQm9ysz-a9I1KaCGk3pmm1tr4e-9OfWKFvocCsvGO5ZJ7cpnDqPqahmUQf7deQnWH6ASbgHQpFt88Z4UqXEwhtmxneDw&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQ8tMDegQICBAQ",
+      "9": "https://www.google.com/search?q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=kWRkaIqwD9Dh7_UPyKyNsA8&start=80&sa=N&sstk=Ac65TH4fEDGQm9ysz-a9I1KaCGk3pmm1tr4e-9OfWKFvocCsvGO5ZJ7cpnDqPqahmUQf7deQnWH6ASbgHQpFt88Z4UqXEwhtmxneDw&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQ8tMDegQICBAS",
+      "10": "https://www.google.com/search?q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=kWRkaIqwD9Dh7_UPyKyNsA8&start=90&sa=N&sstk=Ac65TH4fEDGQm9ysz-a9I1KaCGk3pmm1tr4e-9OfWKFvocCsvGO5ZJ7cpnDqPqahmUQf7deQnWH6ASbgHQpFt88Z4UqXEwhtmxneDw&ved=2ahUKEwjKvKX83ZyOAxXQ8LsIHUhWA_YQ8tMDegQICBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cds+monarch+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

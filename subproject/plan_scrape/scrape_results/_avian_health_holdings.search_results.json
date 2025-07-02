@@ -1,0 +1,337 @@
+{
+  "search_metadata": {
+    "id": "68646470bd17310e2c4fa7de",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/1d538ebc1899f1fc/68646470bd17310e2c4fa7de.json",
+    "created_at": "2025-07-01 22:42:56 UTC",
+    "processed_at": "2025-07-01 22:42:56 UTC",
+    "google_url": "https://www.google.com/search?q=%22avian+health+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22avian+health+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/1d538ebc1899f1fc/68646470bd17310e2c4fa7de.html",
+    "total_time_taken": 1.26
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"avian health holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"avian health holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 1150,
+    "time_taken_displayed": 0.35,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "avian health holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "avian health holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Health Care / Privacy & Data Security Advisory",
+      "link": "https://www.alston.com/en/insights/publications/2020/05/expansive-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.alston.com/en/insights/publications/2020/05/expansive-interoperability&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQFnoECBgQAQ",
+      "displayed_link": "https://www.alston.com \u203a expansive-interoperability",
+      "favicon": "https://serpapi.com/searches/68646470bd17310e2c4fa7de/images/80715dc26e29b942516d5e64b90f54bf314cdfb4dd21c24d97a1a4afb11100c7.png",
+      "date": "May 8, 2020",
+      "snippet": "Provider Directory APIs must be fully implemented by July 1, 2021 due to the enforcement discretion. The Provider Directory API must be ...",
+      "snippet_highlighted_words": [
+        "Provider Directory APIs",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "avian",
+        "holdings"
+      ],
+      "source": "Alston & Bird"
+    },
+    {
+      "position": 2,
+      "title": "Medicare Program; Contract Year 2024 Policy and ...",
+      "link": "https://www.federalregister.gov/documents/2023/04/12/2023-07115/medicare-program-contract-year-2024-policy-and-technical-changes-to-the-medicare-advantage-program",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2023/04/12/2023-07115/medicare-program-contract-year-2024-policy-and-technical-changes-to-the-medicare-advantage-program&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQFnoECB0QAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2023/04/12 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/68646470bd17310e2c4fa7de/images/80715dc26e29b942516d5e64b90f54bfd1171733dd279c5e1533bf335a5214a7.png",
+      "date": "Apr 12, 2023",
+      "snippet": "Medicare Advantage (MA) Provider Directories (\u00a7 422.111) ... provider directories should be a shared responsibility of providers and health plans.",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "Provider Directories",
+        "provider directories",
+        "providers",
+        "health"
+      ],
+      "missing": [
+        "avian"
+      ],
+      "must_include": {
+        "word": "avian",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=%22avian%22+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ5t4CegQIJBAB"
+      },
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "CMS - The Standard | The Official Blog of HL7",
+      "link": "https://blog.hl7.org/topic/cms",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://blog.hl7.org/topic/cms&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQFnoECBkQAQ",
+      "displayed_link": "https://blog.hl7.org \u203a topic \u203a cms",
+      "favicon": "https://serpapi.com/searches/68646470bd17310e2c4fa7de/images/80715dc26e29b942516d5e64b90f54bf5032045a641ddb24f541fe71db1f6ccb.png",
+      "date": "Apr 16, 2025",
+      "snippet": "The Standard is HL7's Fast Healthcare Interoperability Resources (FHIR) application program interfaces (APIs), which the Da Vinci Project ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "APIs"
+      ],
+      "missing": [
+        "avian",
+        "holdings"
+      ],
+      "source": "HL7 Blog"
+    },
+    {
+      "position": 4,
+      "title": "The Standard | The Official Blog of HL7 | PDex",
+      "link": "https://blog.hl7.org/topic/pdex",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://blog.hl7.org/topic/pdex&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQFnoECBwQAQ",
+      "displayed_link": "https://blog.hl7.org \u203a topic \u203a pdex",
+      "favicon": "https://serpapi.com/searches/68646470bd17310e2c4fa7de/images/80715dc26e29b942516d5e64b90f54bf8d0953ad0872c8e11fdb1bc5f3cb5fa2.png",
+      "date": "May 20, 2025",
+      "snippet": "Organizations that want to fast-track implementing HL7 FHIR APIs to automate workflow, maximize efficiency and meet federal requirements of the ...",
+      "snippet_highlighted_words": [
+        "FHIR APIs"
+      ],
+      "missing": [
+        "avian",
+        "holdings"
+      ],
+      "source": "HL7"
+    },
+    {
+      "position": 5,
+      "title": "Untitled",
+      "link": "https://build.fhir.org/ig/HL7/fhir-radiation-dose-summary-ig/qa-tx.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://build.fhir.org/ig/HL7/fhir-radiation-dose-summary-ig/qa-tx.html&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQFnoECBoQAQ",
+      "displayed_link": "https://build.fhir.org \u203a qa-tx",
+      "favicon": "https://serpapi.com/searches/68646470bd17310e2c4fa7de/images/80715dc26e29b942516d5e64b90f54bf9db4571b2f342af4d938567f116b70f7.png",
+      "snippet": "#1. GET http://tx.fhir.org/r4/metadata HTTP/1.0 Accept: application/fhir+json; fhirVersion=4.0 User-Agent: fhir/publisher",
+      "snippet_highlighted_words": [
+        "fhir",
+        "fhir",
+        "fhirVersion",
+        "fhir"
+      ],
+      "source": "FHIR specification"
+    },
+    {
+      "position": 6,
+      "title": "Survey Finds Slow Start on CMS Interoperability Rule ...",
+      "link": "https://www.ajmc.com/view/survey-finds-slow-start-on-cms-interoperability-rule-implementation",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ajmc.com/view/survey-finds-slow-start-on-cms-interoperability-rule-implementation&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQFnoECBYQAQ",
+      "displayed_link": "https://www.ajmc.com \u203a view \u203a survey-finds-slow-start-o...",
+      "favicon": "https://serpapi.com/searches/68646470bd17310e2c4fa7de/images/80715dc26e29b942516d5e64b90f54bf92e272998a6ac5bcb92a3cde7f8efceb.png",
+      "date": "Apr 10, 2025",
+      "snippet": "For the prior authorization API, 81% plan to implement both the Fast Healthcare Interoperability Resources (FHIR) and X12 solutions. FHIR is a ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Healthcare",
+        "FHIR",
+        "FHIR"
+      ],
+      "missing": [
+        "avian",
+        "holdings",
+        "Advantage"
+      ],
+      "source": "AJMC"
+    },
+    {
+      "position": 7,
+      "title": "MY-2025-Align.-Measure.-Perform.-AMP-Technical- ...",
+      "link": "https://www.iha.org/wp-content/uploads/2024/01/MY-2025-Align.-Measure.-Perform.-AMP-Technical-Specifications-_-2024-10-07.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.iha.org/wp-content/uploads/2024/01/MY-2025-Align.-Measure.-Perform.-AMP-Technical-Specifications-_-2024-10-07.pdf&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQFnoECBcQAQ",
+      "displayed_link": "https://www.iha.org \u203a uploads \u203a 2024/01 \u203a MY-...",
+      "favicon": "https://serpapi.com/searches/68646470bd17310e2c4fa7de/images/80715dc26e29b942516d5e64b90f54bf96a95ac457a930feed63bccaa0137e24.png",
+      "date": "Oct 7, 2024",
+      "snippet": "Health plans reporting for Medicare Advantage, identify any member with a hospice indicator from the Monthly Membership Detail File using ...",
+      "snippet_highlighted_words": [
+        "Health",
+        "Medicare Advantage"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 233
+          },
+          "extensions": [
+            "233 pages"
+          ]
+        }
+      },
+      "missing": [
+        "avian",
+        "holdings"
+      ],
+      "source": "Integrated Healthcare Association"
+    },
+    {
+      "position": 8,
+      "title": "Qualified Health Plan Issuer Application Instructions PY2025",
+      "link": "https://www.qhpcertification.cms.gov/s/PY2025QHPIssuerInstructions_v1.2.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.qhpcertification.cms.gov/s/PY2025QHPIssuerInstructions_v1.2.pdf&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQFnoECD0QAQ",
+      "displayed_link": "https://www.qhpcertification.cms.gov \u203a ...",
+      "favicon": "https://serpapi.com/searches/68646470bd17310e2c4fa7de/images/80715dc26e29b942516d5e64b90f54bf4af34b7682e824d0f40d2e342d01b3af.png",
+      "snippet": "These are the Qualified Health Plan (QHP) application instructions for Plan Year 2025, with revisions listed by section.",
+      "snippet_highlighted_words": [
+        "Health"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 204
+          },
+          "extensions": [
+            "204 pages"
+          ]
+        }
+      },
+      "missing": [
+        "avian",
+        "holdings"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "2023-07115.pdf",
+      "link": "https://public-inspection.federalregister.gov/2023-07115.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://public-inspection.federalregister.gov/2023-07115.pdf&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQFnoECD8QAQ",
+      "displayed_link": "https://public-inspection.federalregister.gov \u203a ...",
+      "date": "Apr 12, 2023",
+      "snippet": "This rule revises Medicare Advantage, Part D, cost plan, and PACE regulations, including changes to Star Ratings, marketing, health equity, and ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "health"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 724
+          },
+          "extensions": [
+            "724 pages"
+          ]
+        }
+      },
+      "missing": [
+        "avian"
+      ],
+      "must_include": {
+        "word": "avian",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=%22avian%22+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ5t4CegQIQRAB"
+      },
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "An open-source framework for end-to-end analysis ...",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11564094/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pmc.ncbi.nlm.nih.gov/articles/PMC11564094/&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQFnoECD4QAQ",
+      "displayed_link": "https://pmc.ncbi.nlm.nih.gov \u203a articles \u203a PMC11564094",
+      "author": "by L Heumos",
+      "snippet": "EHRs collected at medical care sites serve as efficient storage and sharing units of health information, enabling the informed treatment of individuals using ...",
+      "snippet_highlighted_words": [
+        "medical",
+        "health"
+      ],
+      "source": "National Institutes of Health (NIH) | (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "88 fed. reg. 22120",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=88+fed.+reg.+22120&sa=X&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ1QJ6BAg7EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=88+fed.+reg.+22120&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Medicare regulation",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Medicare+regulation&sa=X&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ1QJ6BAg6EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medicare+regulation&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS digital health literacy",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=CMS+digital+health+literacy&sa=X&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+digital+health+literacy&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Changes to Medicare",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Changes+to+Medicare&sa=X&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Changes+to+Medicare&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Medicare 2026",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Medicare+2026&sa=X&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medicare+2026&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS FAQ Medicare Advantage",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=CMS+FAQ+Medicare+Advantage&sa=X&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+FAQ+Medicare+Advantage&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "2026 Medicare costs",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=2026+Medicare+costs&sa=X&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=2026+Medicare+costs&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Medicare utilization management",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Medicare+utilization+management&sa=X&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medicare+utilization+management&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=cWRkaO7zBraPvr0P1tUn&start=10&sa=N&sstk=Ac65TH7Dh1ZAju5hEGw11Wiy8o8S3FmP_VUXbZF57bCZMiNDgshdLsTeuNGCVaPX1PQAOBPVT4nm4d7A7fD5r1REsQX3w57WF5QoQw&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ8NMDegQIChAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=cWRkaO7zBraPvr0P1tUn&start=10&sa=N&sstk=Ac65TH7Dh1ZAju5hEGw11Wiy8o8S3FmP_VUXbZF57bCZMiNDgshdLsTeuNGCVaPX1PQAOBPVT4nm4d7A7fD5r1REsQX3w57WF5QoQw&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=cWRkaO7zBraPvr0P1tUn&start=20&sa=N&sstk=Ac65TH7Dh1ZAju5hEGw11Wiy8o8S3FmP_VUXbZF57bCZMiNDgshdLsTeuNGCVaPX1PQAOBPVT4nm4d7A7fD5r1REsQX3w57WF5QoQw&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=cWRkaO7zBraPvr0P1tUn&start=30&sa=N&sstk=Ac65TH7Dh1ZAju5hEGw11Wiy8o8S3FmP_VUXbZF57bCZMiNDgshdLsTeuNGCVaPX1PQAOBPVT4nm4d7A7fD5r1REsQX3w57WF5QoQw&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=cWRkaO7zBraPvr0P1tUn&start=40&sa=N&sstk=Ac65TH7Dh1ZAju5hEGw11Wiy8o8S3FmP_VUXbZF57bCZMiNDgshdLsTeuNGCVaPX1PQAOBPVT4nm4d7A7fD5r1REsQX3w57WF5QoQw&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=cWRkaO7zBraPvr0P1tUn&start=50&sa=N&sstk=Ac65TH7Dh1ZAju5hEGw11Wiy8o8S3FmP_VUXbZF57bCZMiNDgshdLsTeuNGCVaPX1PQAOBPVT4nm4d7A7fD5r1REsQX3w57WF5QoQw&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ8tMDegQIChAM",
+      "7": "https://www.google.com/search?q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=cWRkaO7zBraPvr0P1tUn&start=60&sa=N&sstk=Ac65TH7Dh1ZAju5hEGw11Wiy8o8S3FmP_VUXbZF57bCZMiNDgshdLsTeuNGCVaPX1PQAOBPVT4nm4d7A7fD5r1REsQX3w57WF5QoQw&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ8tMDegQIChAO",
+      "8": "https://www.google.com/search?q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=cWRkaO7zBraPvr0P1tUn&start=70&sa=N&sstk=Ac65TH7Dh1ZAju5hEGw11Wiy8o8S3FmP_VUXbZF57bCZMiNDgshdLsTeuNGCVaPX1PQAOBPVT4nm4d7A7fD5r1REsQX3w57WF5QoQw&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ8tMDegQIChAQ",
+      "9": "https://www.google.com/search?q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=cWRkaO7zBraPvr0P1tUn&start=80&sa=N&sstk=Ac65TH7Dh1ZAju5hEGw11Wiy8o8S3FmP_VUXbZF57bCZMiNDgshdLsTeuNGCVaPX1PQAOBPVT4nm4d7A7fD5r1REsQX3w57WF5QoQw&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ8tMDegQIChAS",
+      "10": "https://www.google.com/search?q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=cWRkaO7zBraPvr0P1tUn&start=90&sa=N&sstk=Ac65TH7Dh1ZAju5hEGw11Wiy8o8S3FmP_VUXbZF57bCZMiNDgshdLsTeuNGCVaPX1PQAOBPVT4nm4d7A7fD5r1REsQX3w57WF5QoQw&ved=2ahUKEwiu8Pvs3ZyOAxW2h68BHdbqCQAQ8tMDegQIChAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=avian+health+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

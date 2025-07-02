@@ -1,0 +1,361 @@
+{
+  "search_metadata": {
+    "id": "68646d24970121cc2607d75c",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/a80bebeb75c5a56d/68646d24970121cc2607d75c.json",
+    "created_at": "2025-07-01 23:20:04 UTC",
+    "processed_at": "2025-07-01 23:20:04 UTC",
+    "google_url": "https://www.google.com/search?q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/a80bebeb75c5a56d/68646d24970121cc2607d75c.html",
+    "total_time_taken": 1.11
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "neighborhood health plan of rhode island Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "neighborhood health plan of rhode island Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 123,
+    "time_taken_displayed": 0.27,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "FHIR-API-Guide-book-1.docx",
+      "link": "https://www.nhpri.org/wp-content/uploads/2021/07/FHIR-API-Guide-book-1.docx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.nhpri.org/wp-content/uploads/2021/07/FHIR-API-Guide-book-1.docx&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQFnoECBoQAQ",
+      "displayed_link": "https://www.nhpri.org \u203a uploads \u203a 2021/07 \u203a FHI...",
+      "favicon": "https://serpapi.com/searches/68646d24970121cc2607d75c/images/b70527872d407b4c490eff3d8939ef7e274cd3a7084445292bc33e91a747ede9.png",
+      "snippet": "4.0 FHIR API Used by Neighborhood 4. 5.0 Authentication & Authorization Overview ... health information and provider directory information. With this ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Neighborhood",
+        "health",
+        "provider directory"
+      ],
+      "source": "Neighborhood Health Plan of Rhode Island"
+    },
+    {
+      "position": 2,
+      "title": "Strategic Implementation Guide Provider Directories",
+      "link": "https://www.healthit.gov/sites/default/files/statestrategicimplementationguide-providerdirectories-v1-final.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/statestrategicimplementationguide-providerdirectories-v1-final.pdf&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQFnoECB4QAQ",
+      "displayed_link": "https://www.healthit.gov \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/68646d24970121cc2607d75c/images/b70527872d407b4c490eff3d8939ef7ee14dea74b30ffe7df8e166786c60c5ad.jpeg",
+      "date": "Feb 17, 2016",
+      "snippet": "Rhode Island Unified Provider Directory Assessment and Recommendations. An ONC-commissioned report created by RTI and Audacious Inquiry ...",
+      "snippet_highlighted_words": [
+        "Rhode Island",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 17
+          },
+          "extensions": [
+            "17 pages"
+          ]
+        }
+      },
+      "missing": [
+        "neighborhood"
+      ],
+      "must_include": {
+        "word": "neighborhood",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=%22neighborhood%22+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ5t4CegQIKRAB"
+      },
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Medicare and Medicaid Programs; Patient Protection and ...",
+      "link": "https://www.federalregister.gov/documents/2022/12/13/2022-26479/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-advancing-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2022/12/13/2022-26479/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-advancing-interoperability&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQFnoECBgQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2022/12/13 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/68646d24970121cc2607d75c/images/b70527872d407b4c490eff3d8939ef7ed4bd236cc0c84aee4c308ddc00cce5fd.png",
+      "date": "Dec 13, 2022",
+      "snippet": "Similar to the other API proposals, certifying only health plans that implement FHIR APIs ... Provider Directory, Provider Access, and ...",
+      "snippet_highlighted_words": [
+        "API",
+        "health plans",
+        "FHIR APIs",
+        "Provider Directory"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQFnoECB8QAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646d24970121cc2607d75c/images/b70527872d407b4c490eff3d8939ef7e716ea973348f4b6e05e7aae036c3dbe0.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR",
+        "care"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "missing": [
+        "rhode"
+      ],
+      "must_include": {
+        "word": "rhode",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=neighborhood+health+plan+of+%22rhode%22+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ5t4CegQIJhAB"
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 5,
+      "title": "Pragmatic Approaches to Interoperability",
+      "link": "https://telehealthandmedicinetoday.com/index.php/journal/article/view/421/909",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://telehealthandmedicinetoday.com/index.php/journal/article/view/421/909&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQFnoECB0QAQ",
+      "displayed_link": "https://telehealthandmedicinetoday.com \u203a article \u203a view",
+      "favicon": "https://serpapi.com/searches/68646d24970121cc2607d75c/images/b70527872d407b4c490eff3d8939ef7ed07e31d35c7a052cd6d53d75e0b9209a.png",
+      "author": "by MBA Bharath Perugu",
+      "snippet": "Guidance for Patient Access APIs, Provider Directory APIs, data ... health-related data sharing APIs, such as FHIR.\u201d104. In addition to ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "Provider Directory APIs",
+        "health",
+        "APIs",
+        "FHIR"
+      ],
+      "missing": [
+        "neighborhood",
+        "Advantage"
+      ],
+      "source": "Telehealth and Medicine Today"
+    },
+    {
+      "position": 6,
+      "title": "Medicare Program; Contract Year 2024 Policy and ...",
+      "link": "https://www.federalregister.gov/documents/2023/04/12/2023-07115/medicare-program-contract-year-2024-policy-and-technical-changes-to-the-medicare-advantage-program",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2023/04/12/2023-07115/medicare-program-contract-year-2024-policy-and-technical-changes-to-the-medicare-advantage-program&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQFnoECBkQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2023/04/12 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/68646d24970121cc2607d75c/images/b70527872d407b4c490eff3d8939ef7eaf6698544b1eb7ce2fccee175d3c22d9.png",
+      "date": "Apr 12, 2023",
+      "snippet": "First, we proposed to mirror the provider directory requirements for Medicaid managed care plans at \u00a7 438.10(h)(1)(vii) by adding the phrase ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "care plans"
+      ],
+      "missing": [
+        "neighborhood"
+      ],
+      "must_include": {
+        "word": "neighborhood",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=%22neighborhood%22+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ5t4CegQIKBAB"
+      },
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "State and Local Public Health Readiness for Interoperability",
+      "link": "https://www.healthit.gov/isp/appendix-iv-state-and-local-public-health-readiness-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/isp/appendix-iv-state-and-local-public-health-readiness-interoperability&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQFnoECBYQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a isp \u203a appendix-iv-state-and-l...",
+      "favicon": "https://serpapi.com/searches/68646d24970121cc2607d75c/images/b70527872d407b4c490eff3d8939ef7e7d7c4d355706bf8fa629a7d9335361fe.jpeg",
+      "date": "Nov 22, 2023",
+      "snippet": "Draft FHIR Action Plan. Back; Draft FHIR Action Plan \u00b7 Introduction \u00b7 FHIR ... Healthcare Directory, Provider Directory \u00b7 Listing of Providers ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Plan",
+        "FHIR",
+        "Plan",
+        "FHIR",
+        "Healthcare",
+        "Provider Directory"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Rhode Island HIT Strategic Roadmap 7.24.2020",
+      "link": "https://eohhs.ri.gov/sites/g/files/xkgbur226/files/Portals/0/Uploads/Documents/Inititatives/HealthInformationTechnology/RI-Strategic-HIT-Roadmap---Final-Version---7.24.2020.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://eohhs.ri.gov/sites/g/files/xkgbur226/files/Portals/0/Uploads/Documents/Inititatives/HealthInformationTechnology/RI-Strategic-HIT-Roadmap---Final-Version---7.24.2020.pdf&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQFnoECD0QAQ",
+      "displayed_link": "https://eohhs.ri.gov \u203a Documents \u203a Inititatives",
+      "favicon": "https://serpapi.com/searches/68646d24970121cc2607d75c/images/b70527872d407b4c490eff3d8939ef7e908ddd8f634f24ecef5e392cacf5419e.png",
+      "date": "Jul 24, 2020",
+      "snippet": "Provider Directory API (applicable January 1, 2021). 5. Payer-to ... o FHIR Standard for Application Programming Interface (API) for patient and ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 30
+          },
+          "extensions": [
+            "30 pages"
+          ]
+        }
+      },
+      "missing": [
+        "neighborhood",
+        "Advantage"
+      ],
+      "source": "Rhode Island Government (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "Qualified Health Plan Issuer Application Instructions PY2025",
+      "link": "https://www.qhpcertification.cms.gov/s/PY2025QHPIssuerInstructions_v1.3.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.qhpcertification.cms.gov/s/PY2025QHPIssuerInstructions_v1.3.pdf&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQFnoECEEQAQ",
+      "displayed_link": "https://www.qhpcertification.cms.gov \u203a ...",
+      "favicon": "https://serpapi.com/searches/68646d24970121cc2607d75c/images/b70527872d407b4c490eff3d8939ef7eb3d3714138e4913796bc3b31901c93d9.png",
+      "snippet": "[FHIR] Release 4.0.1? \u2022 Issuers are urged to refer to the \u201cBest Practices ... Provider Directory. Network URL. URL Template. Insurance Company + Plan.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "Insurance",
+        "Plan"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 205
+          },
+          "extensions": [
+            "205 pages"
+          ]
+        }
+      },
+      "missing": [
+        "neighborhood"
+      ],
+      "must_include": {
+        "word": "neighborhood",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=%22neighborhood%22+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ5t4CegQIQBAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "Pragmatic Approaches to Interoperability in the U.S.",
+      "link": "https://telehealthandmedicinetoday.com/index.php/journal/article/download/421/910/5884",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://telehealthandmedicinetoday.com/index.php/journal/article/download/421/910/5884&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQFnoECDkQAQ",
+      "displayed_link": "https://telehealthandmedicinetoday.com \u203a download",
+      "favicon": "https://serpapi.com/searches/68646d24970121cc2607d75c/images/b70527872d407b4c490eff3d8939ef7eefa528d41161c4acb887115ec14db75b.png",
+      "author": "by B Perugu",
+      "snippet": "Guidance for Patient Access APIs, Provider Directory. APIs, data ... Health informatics on FHIR: how HL7's new API is transforming ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "Provider Directory",
+        "APIs",
+        "Health",
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "neighborhood",
+        "Advantage"
+      ],
+      "source": "Telehealth and Medicine Today"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "cms-4201-f",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=cms-4201-f&sa=X&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-4201-f&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-4201-p",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=cms-4201-p&sa=X&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-4201-p&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "contract year 2025 medicare advantage and part d final rule (cms-4205-f)",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=contract+year+2025+medicare+advantage+and+part+d+final+rule+(cms-4205-f)&sa=X&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=contract+year+2025+medicare+advantage+and+part+d+final+rule+%28cms-4205-f%29&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS final rule 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=CMS+final+rule+2025&sa=X&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+final+rule+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "The cms sends updates to the federal register blank with all the government proposed rules",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=The+cms+sends+updates+to+the+federal+register+blank+with+all+the+government+proposed+rules&sa=X&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=The+cms+sends+updates+to+the+federal+register+blank+with+all+the+government+proposed+rules&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-0057-f federal register",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=cms-0057-f+federal+register&sa=X&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-0057-f+federal+register&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-4201 final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=cms-4201+final+rule&sa=X&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-4201+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "what is the primary goal of fwa programs in healthcare?",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=what+is+the+primary+goal+of+fwa+programs+in+healthcare%3F&sa=X&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=what+is+the+primary+goal+of+fwa+programs+in+healthcare%3F&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=JW1kaNWjAvWOxc8Py-fzkQY&start=10&sa=N&sstk=Ac65TH6pAFQ7jHT5f3LMihFlw_PCKIvYwAG9xtl55Q0ABBT2Mney6_-pftoJU3YPqiEaM9W_ApiPqYZYof244V6LpWyuo1T-JR3B4w&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ8NMDegQIChAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=JW1kaNWjAvWOxc8Py-fzkQY&start=10&sa=N&sstk=Ac65TH6pAFQ7jHT5f3LMihFlw_PCKIvYwAG9xtl55Q0ABBT2Mney6_-pftoJU3YPqiEaM9W_ApiPqYZYof244V6LpWyuo1T-JR3B4w&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=JW1kaNWjAvWOxc8Py-fzkQY&start=20&sa=N&sstk=Ac65TH6pAFQ7jHT5f3LMihFlw_PCKIvYwAG9xtl55Q0ABBT2Mney6_-pftoJU3YPqiEaM9W_ApiPqYZYof244V6LpWyuo1T-JR3B4w&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=JW1kaNWjAvWOxc8Py-fzkQY&start=30&sa=N&sstk=Ac65TH6pAFQ7jHT5f3LMihFlw_PCKIvYwAG9xtl55Q0ABBT2Mney6_-pftoJU3YPqiEaM9W_ApiPqYZYof244V6LpWyuo1T-JR3B4w&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=JW1kaNWjAvWOxc8Py-fzkQY&start=40&sa=N&sstk=Ac65TH6pAFQ7jHT5f3LMihFlw_PCKIvYwAG9xtl55Q0ABBT2Mney6_-pftoJU3YPqiEaM9W_ApiPqYZYof244V6LpWyuo1T-JR3B4w&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=JW1kaNWjAvWOxc8Py-fzkQY&start=50&sa=N&sstk=Ac65TH6pAFQ7jHT5f3LMihFlw_PCKIvYwAG9xtl55Q0ABBT2Mney6_-pftoJU3YPqiEaM9W_ApiPqYZYof244V6LpWyuo1T-JR3B4w&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ8tMDegQIChAM",
+      "7": "https://www.google.com/search?q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=JW1kaNWjAvWOxc8Py-fzkQY&start=60&sa=N&sstk=Ac65TH6pAFQ7jHT5f3LMihFlw_PCKIvYwAG9xtl55Q0ABBT2Mney6_-pftoJU3YPqiEaM9W_ApiPqYZYof244V6LpWyuo1T-JR3B4w&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ8tMDegQIChAO",
+      "8": "https://www.google.com/search?q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=JW1kaNWjAvWOxc8Py-fzkQY&start=70&sa=N&sstk=Ac65TH6pAFQ7jHT5f3LMihFlw_PCKIvYwAG9xtl55Q0ABBT2Mney6_-pftoJU3YPqiEaM9W_ApiPqYZYof244V6LpWyuo1T-JR3B4w&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ8tMDegQIChAQ",
+      "9": "https://www.google.com/search?q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=JW1kaNWjAvWOxc8Py-fzkQY&start=80&sa=N&sstk=Ac65TH6pAFQ7jHT5f3LMihFlw_PCKIvYwAG9xtl55Q0ABBT2Mney6_-pftoJU3YPqiEaM9W_ApiPqYZYof244V6LpWyuo1T-JR3B4w&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ8tMDegQIChAS",
+      "10": "https://www.google.com/search?q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=JW1kaNWjAvWOxc8Py-fzkQY&start=90&sa=N&sstk=Ac65TH6pAFQ7jHT5f3LMihFlw_PCKIvYwAG9xtl55Q0ABBT2Mney6_-pftoJU3YPqiEaM9W_ApiPqYZYof244V6LpWyuo1T-JR3B4w&ved=2ahUKEwiVyqmT5pyOAxV1R_EDHcvzPGIQ8tMDegQIChAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=neighborhood+health+plan+of+rhode+island+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

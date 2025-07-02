@@ -1,0 +1,275 @@
+{
+  "search_metadata": {
+    "id": "68646d0cc2034800cd112931",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/6412451bf00a5d5d/68646d0cc2034800cd112931.json",
+    "created_at": "2025-07-01 23:19:40 UTC",
+    "processed_at": "2025-07-01 23:19:40 UTC",
+    "google_url": "https://www.google.com/search?q=mass+general+brigham+incorporated+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=mass+general+brigham+incorporated+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/6412451bf00a5d5d/68646d0cc2034800cd112931.html",
+    "total_time_taken": 1.31
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "mass general brigham incorporated Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "mass general brigham incorporated Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 31,
+    "time_taken_displayed": 0.28,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "2022 Annual Report (DOCX)",
+      "link": "https://www.mass.gov/doc/2022-annual-report-docx/download",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mass.gov/doc/2022-annual-report-docx/download&ved=2ahUKEwid2IGI5pyOAxX0FFkFHRYuDuEQFnoECBwQAQ",
+      "displayed_link": "https://www.mass.gov \u203a doc \u203a download",
+      "favicon": "https://serpapi.com/searches/68646d0cc2034800cd112931/images/6f48b0a4bee6df2cdf5da48cc417c48ad84ed88e34839b9a3b989f27492eb7ca.png",
+      "snippet": "E.1 Provider Directory, PD API and DirectTrust. Accurate and up to date ... FHIR API initiatives and a range of FHIR-enabled HIE services. The Mass ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "API",
+        "FHIR API",
+        "FHIR",
+        "Mass"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=mass+general+brigham+incorporated+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwid2IGI5pyOAxX0FFkFHRYuDuEQ5t4CegQIKxAB"
+      },
+      "source": "Mass.gov"
+    },
+    {
+      "position": 2,
+      "title": "Health Information Technology Council Report to the ...",
+      "link": "https://malegislature.gov/Bills/192/HD4164.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://malegislature.gov/Bills/192/HD4164.pdf&ved=2ahUKEwid2IGI5pyOAxX0FFkFHRYuDuEQFnoECBkQAQ",
+      "displayed_link": "https://malegislature.gov \u203a Bills",
+      "favicon": "https://serpapi.com/searches/68646d0cc2034800cd112931/images/6f48b0a4bee6df2cdf5da48cc417c48a218f93fb4556a5d1fb03033afc8d3014.jpeg",
+      "snippet": "Service options being considered include a FHIR API to. Provider Directory, FHIR Exchange and Routing Services and FHIR-HL7 Broker and Message. Transformation ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory",
+        "FHIR",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 24
+          },
+          "extensions": [
+            "24 pages"
+          ]
+        }
+      },
+      "source": "General Court of the Commonwealth of Massachusetts (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Streamlining Prior Authorization: Final Report ...",
+      "link": "https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf&ved=2ahUKEwid2IGI5pyOAxX0FFkFHRYuDuEQFnoECBUQAQ",
+      "displayed_link": "https://24315998.fs1.hubspotusercontent-na1.net \u203a ...",
+      "snippet": "A broader FHIR-based interoperability rule was put into effect by CMS in July of 202158 ... APIs and provider directory infor- mation through the Provider ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "APIs",
+        "provider directory",
+        "Provider"
+      ],
+      "source": "hubspotusercontent-na1.net"
+    },
+    {
+      "position": 4,
+      "title": "Meeting of the Market Oversight and Transparency ...",
+      "link": "https://masshpc.gov/sites/default/files/2023-07/20230510_moat_presentation.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://masshpc.gov/sites/default/files/2023-07/20230510_moat_presentation.pdf&ved=2ahUKEwid2IGI5pyOAxX0FFkFHRYuDuEQFnoECBsQAQ",
+      "displayed_link": "https://masshpc.gov \u203a sites \u203a default \u203a files \u203a 202...",
+      "favicon": "https://serpapi.com/searches/68646d0cc2034800cd112931/images/6f48b0a4bee6df2cdf5da48cc417c48af738d48eea1a75a529e9013a2560da08.png",
+      "date": "May 10, 2023",
+      "snippet": "implement and maintain a FHIR Prior. Authorization Requirements,. Documentation, and Decision (PARDD). API. \u2022 ... \u2022 Provider Directory Management.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory"
+      ],
+      "source": "Massachusetts Health Policy Commission (HPC) (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Season 4",
+      "link": "https://thebigunlock.com/category/podcasts/season-4/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://thebigunlock.com/category/podcasts/season-4/&ved=2ahUKEwid2IGI5pyOAxX0FFkFHRYuDuEQFnoECBcQAQ",
+      "displayed_link": "https://thebigunlock.com \u203a podcasts",
+      "favicon": "https://serpapi.com/searches/68646d0cc2034800cd112931/images/6f48b0a4bee6df2cdf5da48cc417c48a53da2e1cf886616b947114be43e389f0.png",
+      "snippet": "... provider directory data. When a provider updates a piece of demographic data ... FHIR. It is amazing for exchanging data in a structured way or it's a ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 5.0,
+            "reviews": 5
+          },
+          "extensions": [
+            "5.0(5)"
+          ]
+        }
+      },
+      "source": "The Big Unlock Podcast"
+    },
+    {
+      "position": 6,
+      "title": "Vital Directions - for Health & Health Care",
+      "link": "https://nam.edu/wp-content/uploads/2018/02/Vital-Directions-for-Health-and-Health-Care-Final-Publication-022718.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nam.edu/wp-content/uploads/2018/02/Vital-Directions-for-Health-and-Health-Care-Final-Publication-022718.pdf&ved=2ahUKEwid2IGI5pyOAxX0FFkFHRYuDuEQFnoECBYQAQ",
+      "displayed_link": "https://nam.edu \u203a wp-content \u203a uploads \u203a 2018/02",
+      "favicon": "https://serpapi.com/searches/68646d0cc2034800cd112931/images/6f48b0a4bee6df2cdf5da48cc417c48ab73a4be74821efed0f596f859dfe18a3.png",
+      "date": "Jul 8, 2016",
+      "snippet": "... Provider directory. There is no national provider directory that ... (FHIR), will enhance data liquidity and enable an ecosystem of new ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 493
+          },
+          "extensions": [
+            "493 pages"
+          ]
+        }
+      },
+      "source": "National Academy of Medicine"
+    },
+    {
+      "position": 7,
+      "title": "Powerful Women",
+      "link": "https://arizent.brightspotcdn.com/cd/11/63c3711f49df8bb138f382fb5350/hdm-0618.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://arizent.brightspotcdn.com/cd/11/63c3711f49df8bb138f382fb5350/hdm-0618.pdf&ved=2ahUKEwid2IGI5pyOAxX0FFkFHRYuDuEQFnoECBgQAQ",
+      "displayed_link": "https://arizent.brightspotcdn.com \u203a hdm-0618",
+      "date": "Jun 1, 2018",
+      "snippet": "With the emergence of RESTful APIs leveraged by FHIR, cloud service providers and machine learning, John. Halamka, MD, chief information officer.",
+      "snippet_highlighted_words": [
+        "APIs",
+        "FHIR"
+      ],
+      "source": "brightspotcdn.com"
+    },
+    {
+      "position": 8,
+      "title": "ncvhs - National Committee on Vital and Health Statistics",
+      "link": "https://ncvhs.hhs.gov/wp-content/uploads/2023/10/NCVHS-Standards-Subcommittee-Hearing-Summary-Jan-18-19-2023-FINAL-508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ncvhs.hhs.gov/wp-content/uploads/2023/10/NCVHS-Standards-Subcommittee-Hearing-Summary-Jan-18-19-2023-FINAL-508.pdf&ved=2ahUKEwid2IGI5pyOAxX0FFkFHRYuDuEQFnoECDEQAQ",
+      "displayed_link": "https://ncvhs.hhs.gov \u203a uploads \u203a 2023/10 \u203a NCV...",
+      "favicon": "https://serpapi.com/searches/68646d0cc2034800cd112931/images/6f48b0a4bee6df2cdf5da48cc417c48abe6ab9c177efaf4f94a4aed8760ec2fb.png",
+      "date": "Oct 6, 2023",
+      "snippet": "... Provider Directory APIs, which enabled ... CMS has proposed the development of an FHIR-based API requirement that automates the process for ...",
+      "snippet_highlighted_words": [
+        "Provider Directory APIs",
+        "FHIR",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 67
+          },
+          "extensions": [
+            "67 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=mass+general+brigham+incorporated+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwid2IGI5pyOAxX0FFkFHRYuDuEQ5t4CegQIMxAB"
+      },
+      "source": "National Committee on Vital and Health Statistics (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "American Health Law Association The Year in Review ...",
+      "link": "https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf&ved=2ahUKEwid2IGI5pyOAxX0FFkFHRYuDuEQFnoECC4QAQ",
+      "displayed_link": "https://www.bradley.com \u203a publications \u203a 2022/02",
+      "favicon": "https://serpapi.com/searches/68646d0cc2034800cd112931/images/6f48b0a4bee6df2cdf5da48cc417c48a5a9a349913532c7e406edd1ce12b4cfc.png",
+      "date": "Feb 17, 2022",
+      "snippet": "... FHIR\u00ae Roadmap for \u00b7 TEFCA Exchange (January 2022). The TEF is a set of ... Provider Directory API (applicable January 1, 2021, with ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 315
+          },
+          "extensions": [
+            "315 pages"
+          ]
+        }
+      },
+      "source": "Bradley Arant"
+    },
+    {
+      "position": 10,
+      "title": "Uncategorized",
+      "link": "https://thebigunlock.com/category/uncategorized/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://thebigunlock.com/category/uncategorized/&ved=2ahUKEwid2IGI5pyOAxX0FFkFHRYuDuEQFnoECDcQAQ",
+      "displayed_link": "https://thebigunlock.com \u203a category \u203a uncategorized",
+      "favicon": "https://serpapi.com/searches/68646d0cc2034800cd112931/images/6f48b0a4bee6df2cdf5da48cc417c48a78123be4eba80f7180580db696eb5a00.png",
+      "snippet": "So, you know, we have the FHIR API standards of the CMS and ONC are working with HL7 organizations. Now it is the 21st Century Cures Act, there's something ...",
+      "snippet_highlighted_words": [
+        "FHIR API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 5.0,
+            "reviews": 5
+          },
+          "extensions": [
+            "5.0(5)"
+          ]
+        }
+      },
+      "source": "The Big Unlock Podcast"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=mass+general+brigham+incorporated+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=DW1kaN2dE_Sp5NoPlty4iA4&start=10&sa=N&sstk=Ac65TH7-ablZHVColXpb7XEjhris3f4zshGVakf5Y5tpZIp09TkpZg_ZYNvCjfszyKbxuLMZ17qzaPt_U4vLp3PuaQE_HpnaJnpsqA&ved=2ahUKEwid2IGI5pyOAxX0FFkFHRYuDuEQ8NMDegQICxAG",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=mass+general+brigham+incorporated+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=DW1kaN2dE_Sp5NoPlty4iA4&start=10&sa=N&sstk=Ac65TH7-ablZHVColXpb7XEjhris3f4zshGVakf5Y5tpZIp09TkpZg_ZYNvCjfszyKbxuLMZ17qzaPt_U4vLp3PuaQE_HpnaJnpsqA&ved=2ahUKEwid2IGI5pyOAxX0FFkFHRYuDuEQ8tMDegQICxAE"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mass+general+brigham+incorporated+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mass+general+brigham+incorporated+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mass+general+brigham+incorporated+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10"
+    }
+  }
+}

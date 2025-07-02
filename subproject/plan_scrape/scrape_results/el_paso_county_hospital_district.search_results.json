@@ -1,0 +1,344 @@
+{
+  "search_metadata": {
+    "id": "68646cd6b9e8691e7894d974",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/3bd7c404af97a988/68646cd6b9e8691e7894d974.json",
+    "created_at": "2025-07-01 23:18:46 UTC",
+    "processed_at": "2025-07-01 23:18:46 UTC",
+    "google_url": "https://www.google.com/search?q=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/3bd7c404af97a988/68646cd6b9e8691e7894d974.html",
+    "total_time_taken": 0.89
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "el paso county hospital district Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "el paso county hospital district Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 7,
+    "time_taken_displayed": 0.25,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "What are non capitated services in Texas Medicaid?",
+      "snippet": "Non-capitated services are the Texas Medicaid programs and services that are not included with the Texas Children's Health Plan covered services. However, members may be eligible to receive the services from Texas Medicaid providers on a Fee-for-Service basis.",
+      "title": "Covered Services | Texas Children's Health Plan",
+      "link": "https://www.texaschildrenshealthplan.org/benefits/star-kids/covered-services#:~:text=Non%2Dcapitated%20services%20are%20the,Fee%2Dfor%2DService%20basis.",
+      "displayed_link": "https://www.texaschildrenshealthplan.org \u203a star-kids \u203a co...",
+      "source_logo": "https://serpapi.com/searches/68646cd6b9e8691e7894d974/images/0e551e8ca7f7f06260d932bd9c4eff882098114c59af61ac14bd9c2c49a30606.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGRtNWFSR3N3Y1UwMFJ6SnVVMFZZU2s0NU1HZERSMWxDV21OTVR6TnhjVWRuYVhWYVgxVjBkWE5SVXpZd1gxVkZlRlJTV1VGb01tWjBjMncyZEZoc2VsRmtjR2xXZUdsVk0xbFdVM1l5TVROWmJURm9lVUZUY0VaT1p4SVhNVzE0YTJGUUxYTktjRXR0TW5KdlVHOVFOMDB3UVZrYUlrRkdUVUZIUjNGS1NrOUNXVTkwVFZwRFgxb3pSRlJMYkVaeVh6SnVVRnA1U2tFIiwiZmN2IjoiMyIsImVpIjoiMW14a2FQLXNKcEttMnJvUG9QN00wQVkiLCJxYyI6ImN3M0t3UTJBSUF3RlVNLWVIT0Z2NGdJbXp0QkExU1pJU2Fra0hGekFWVjFDM19tTkt5Y1Vxb3FnVl9hT1Eyc1JwNFFvMVUyQzQtUW9nWXhCc1ZGMjJobkZ0RWxrLTVOeGNMVU9Lb0x0RUp1Ry0zbVgtUU0iLCJxdWVzdGlvbiI6IldoYXQgYXJlIG5vbiBjYXBpdGF0ZWQgc2VydmljZXMgaW4gVGV4YXMgTWVkaWNhaWQ/IiwibGsiOiJHaVZ1YjI0Z1kyRndhWFJoZEdWa0lITmxjblpwWTJWeklIUmxlR0Z6SUcxbFpHbGpZV2xrIiwiYnMiOiJjLU5LNERJS3owZ3NVVWdzU2xYSXk4OVRTRTRzeUN4SkxFbE5VU2hPTFNyTFRFNHRWc2pNVXdoSnJVZ3NWdkJOVGNsTVRzeE1zWmVZcVdxa0xxV0tRMzBKV0hFdVZERlhFSmVxSjB3djBKTEV2QlM0UVFvRmlVVWxDdmxwQ2g0ZXdmWVNNeUtNMUtSVU1tRmFvV3B6MGRWbVpCUUxNQUlBIiwiaWQiOiJmY18xbXhrYVAtc0pwS20ycm9Qb1A3TTBBWV8zIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGRtNWFSR3N3Y1UwMFJ6SnVVMFZZU2s0NU1HZERSMWxDV21OTVR6TnhjVWRuYVhWYVgxVjBkWE5SVXpZd1gxVkZlRlJTV1VGb01tWjBjMncyZEZoc2VsRmtjR2xXZUdsVk0xbFdVM1l5TVROWmJURm9lVUZUY0VaT1p4SVhNVzE0YTJGUUxYTktjRXR0TW5KdlVHOVFOMDB3UVZrYUlrRkdUVUZIUjNGS1NrOUNXVTkwVFZwRFgxb3pSRlJMYkVaeVh6SnVVRnA1U2tFIiwiZmN2IjoiMyIsImVpIjoiMW14a2FQLXNKcEttMnJvUG9QN00wQVkiLCJxYyI6ImN3M0t3UTJBSUF3RlVNLWVIT0Z2NGdJbXp0QkExU1pJU2Fra0hGekFWVjFDM19tTkt5Y1Vxb3FnVl9hT1Eyc1JwNFFvMVUyQzQtUW9nWXhCc1ZGMjJobkZ0RWxrLTVOeGNMVU9Lb0x0RUp1Ry0zbVgtUU0iLCJxdWVzdGlvbiI6IldoYXQgYXJlIG5vbiBjYXBpdGF0ZWQgc2VydmljZXMgaW4gVGV4YXMgTWVkaWNhaWQ%2FIiwibGsiOiJHaVZ1YjI0Z1kyRndhWFJoZEdWa0lITmxjblpwWTJWeklIUmxlR0Z6SUcxbFpHbGpZV2xrIiwiYnMiOiJjLU5LNERJS3owZ3NVVWdzU2xYSXk4OVRTRTRzeUN4SkxFbE5VU2hPTFNyTFRFNHRWc2pNVXdoSnJVZ3NWdkJOVGNsTVRzeE1zWmVZcVdxa0xxV0tRMzBKV0hFdVZERlhFSmVxSjB3djBKTEV2QlM0UVFvRmlVVWxDdmxwQ2g0ZXdmWVNNeUtNMUtSVU1tRmFvV3B6MGRWbVpCUUxNQUlBIiwiaWQiOiJmY18xbXhrYVAtc0pwS20ycm9Qb1A3TTBBWV8zIn0%3D"
+    },
+    {
+      "question": "Is Medicare and Medicaid part of HHS?",
+      "snippet": "The Centers for Medicare & Medicaid Services' Center for Consumer Information and Insurance Oversight (CCIIO), part of the Department of Health & Human Services (DHHS), provides national leadership in setting and enforcing standards for health insurance that promote fair and reasonable practices to ensure that ...",
+      "title": "About Us - CMS",
+      "date": "Sep 10, 2024",
+      "link": "https://www.cms.gov/marketplace/resources/about-us#:~:text=The%20Centers%20for%20Medicare%20%26%20Medicaid,reasonable%20practices%20to%20ensure%20that",
+      "displayed_link": "https://www.cms.gov \u203a marketplace \u203a resources \u203a about-us",
+      "source_logo": "https://serpapi.com/searches/68646cd6b9e8691e7894d974/images/0e551e8ca7f7f06260d932bd9c4eff88f3e5e808ebc0da57e33e71b68bb46195.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGRtNWFSR3N3Y1UwMFJ6SnVVMFZZU2s0NU1HZERSMWxDV21OTVR6TnhjVWRuYVhWYVgxVjBkWE5SVXpZd1gxVkZlRlJTV1VGb01tWjBjMncyZEZoc2VsRmtjR2xXZUdsVk0xbFdVM1l5TVROWmJURm9lVUZUY0VaT1p4SVhNVzE0YTJGUUxYTktjRXR0TW5KdlVHOVFOMDB3UVZrYUlrRkdUVUZIUjNGS1NrOUNXVTkwVFZwRFgxb3pSRlJMYkVaeVh6SnVVRnA1U2tFIiwiZmN2IjoiMyIsImVpIjoiMW14a2FQLXNKcEttMnJvUG9QN00wQVkiLCJxYyI6ImN3M0t3UTJBSUF3RlVNLWVIT0Z2NGdJbXp0QkExU1pJU2Fra0hGekFWVjFDM19tTkt5Y1Vxb3FnVl9hT1Eyc1JwNFFvMVUyQzQtUW9nWXhCc1ZGMjJobkZ0RWxrLTVOeGNMVU9Lb0x0RUp1Ry0zbVgtUU0iLCJxdWVzdGlvbiI6IklzIE1lZGljYXJlIGFuZCBNZWRpY2FpZCBwYXJ0IG9mIEhIUz8iLCJsayI6ImM1TlN5U3hXeUUxTnlVeE9MRXBWU014TGdYSXlVeFFLRW90S0ZQTFRGREl5aWdFIiwiYnMiOiJjLU5LNERJS3owZ3NVVWdzU2xYSXk4OVRTRTRzeUN4SkxFbE5VU2hPTFNyTFRFNHRWc2pNVXdoSnJVZ3NWdkJOVGNsTVRzeE1zWmVZcVdxa0xxV0tRMzBKV0hFdVZERlhFSmVxSjB3djBKTEV2QlM0UVFvRmlVVWxDdmxwQ2g0ZXdmWVNNeUtNMUtSVU1tRmFvV3B6MGRWbVpCUUxNQUlBIiwiaWQiOiJmY18xbXhrYVAtc0pwS20ycm9Qb1A3TTBBWV8zIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGRtNWFSR3N3Y1UwMFJ6SnVVMFZZU2s0NU1HZERSMWxDV21OTVR6TnhjVWRuYVhWYVgxVjBkWE5SVXpZd1gxVkZlRlJTV1VGb01tWjBjMncyZEZoc2VsRmtjR2xXZUdsVk0xbFdVM1l5TVROWmJURm9lVUZUY0VaT1p4SVhNVzE0YTJGUUxYTktjRXR0TW5KdlVHOVFOMDB3UVZrYUlrRkdUVUZIUjNGS1NrOUNXVTkwVFZwRFgxb3pSRlJMYkVaeVh6SnVVRnA1U2tFIiwiZmN2IjoiMyIsImVpIjoiMW14a2FQLXNKcEttMnJvUG9QN00wQVkiLCJxYyI6ImN3M0t3UTJBSUF3RlVNLWVIT0Z2NGdJbXp0QkExU1pJU2Fra0hGekFWVjFDM19tTkt5Y1Vxb3FnVl9hT1Eyc1JwNFFvMVUyQzQtUW9nWXhCc1ZGMjJobkZ0RWxrLTVOeGNMVU9Lb0x0RUp1Ry0zbVgtUU0iLCJxdWVzdGlvbiI6IklzIE1lZGljYXJlIGFuZCBNZWRpY2FpZCBwYXJ0IG9mIEhIUz8iLCJsayI6ImM1TlN5U3hXeUUxTnlVeE9MRXBWU014TGdYSXlVeFFLRW90S0ZQTFRGREl5aWdFIiwiYnMiOiJjLU5LNERJS3owZ3NVVWdzU2xYSXk4OVRTRTRzeUN4SkxFbE5VU2hPTFNyTFRFNHRWc2pNVXdoSnJVZ3NWdkJOVGNsTVRzeE1zWmVZcVdxa0xxV0tRMzBKV0hFdVZERlhFSmVxSjB3djBKTEV2QlM0UVFvRmlVVWxDdmxwQ2g0ZXdmWVNNeUtNMUtSVU1tRmFvV3B6MGRWbVpCUUxNQUlBIiwiaWQiOiJmY18xbXhrYVAtc0pwS20ycm9Qb1A3TTBBWV8zIn0%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "State Medicaid Health Information Technology Plan (SMHP)",
+      "link": "https://www.hhs.texas.gov/sites/default/files/documents/medicaid-health-it-plan.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.texas.gov/sites/default/files/documents/medicaid-health-it-plan.pdf&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQFnoECBkQAQ",
+      "displayed_link": "https://www.hhs.texas.gov \u203a files \u203a documents \u203a m...",
+      "favicon": "https://serpapi.com/searches/68646cd6b9e8691e7894d974/images/47070366f0315091a97a6d42d85cc1e090392e040262b6f891b3ed6eafee662e.png",
+      "date": "Mar 25, 2022",
+      "snippet": "networks available via a FHIR-based Provider Directory API to facilitate public access to accurate information about in-network providers ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 116
+          },
+          "extensions": [
+            "116 pages"
+          ]
+        }
+      },
+      "missing": [
+        "district"
+      ],
+      "must_include": {
+        "word": "district",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=el+paso+county+hospital+%22district%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQ5t4CegQILxAB"
+      },
+      "source": "Texas Health and Human Services (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQFnoECBYQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646cd6b9e8691e7894d974/images/47070366f0315091a97a6d42d85cc1e05b9e54a879d3223ff2613f2cfec952ec.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "missing": [
+        "district"
+      ],
+      "must_include": {
+        "word": "district",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=el+paso+county+hospital+%22district%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQ5t4CegQILRAB"
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 3,
+      "title": "Three-Way Contract (DOCX)",
+      "link": "https://www.cms.gov/files/document/txcontract04012024.docx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/txcontract04012024.docx&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQFnoECB0QAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a txcontract04012024",
+      "favicon": "https://serpapi.com/searches/68646cd6b9e8691e7894d974/images/47070366f0315091a97a6d42d85cc1e0eb9cd575984d643085ccb7c7320784e7.png",
+      "date": "Apr 1, 2024",
+      "snippet": "... (API) and a Provider Directory API using the required Health Level 7 (HL7\u00ae) Fast Healthcare Interoperability Resources (FHIR)-based standards.",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "Health",
+        "Healthcare",
+        "FHIR"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Texas Value-Based Payment and Quality Improvement ...",
+      "link": "https://www.hhs.texas.gov/sites/default/files/documents/value-based-payment-qual-improvement-recommendations-2024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.texas.gov/sites/default/files/documents/value-based-payment-qual-improvement-recommendations-2024.pdf&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQFnoECBcQAQ",
+      "displayed_link": "https://www.hhs.texas.gov \u203a files \u203a documents \u203a v...",
+      "favicon": "https://serpapi.com/searches/68646cd6b9e8691e7894d974/images/47070366f0315091a97a6d42d85cc1e0d28fff2ebae6f2dd61ad5a90f3f38fea.png",
+      "date": "Dec 1, 2024",
+      "snippet": "... Healthcare. Interoperability Resources (FHIR\u00ae) data. ... Interface (API) standards for Patient Access, Provider Access, Provider Directory,.",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "API",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 78
+          },
+          "extensions": [
+            "78 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=el+paso+county+hospital+district+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQ5t4CegQILhAB"
+      },
+      "source": "Texas Health and Human Services (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQFnoECB4QAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646cd6b9e8691e7894d974/images/47070366f0315091a97a6d42d85cc1e035c4903e2d81957689662ab45b092894.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "missing": [
+        "district"
+      ],
+      "must_include": {
+        "word": "district",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=el+paso+county+hospital+%22district%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQ5t4CegQIKxAB"
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 6,
+      "title": "State of Colorado - Office of eHealth Innovation",
+      "link": "https://oehi.colorado.gov/sites/oehi/files/documents/Care%20Coordination%20Environmental%20Scan%20Action%20Plan%20Final_V3%28002%29%20%282%29.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://oehi.colorado.gov/sites/oehi/files/documents/Care%2520Coordination%2520Environmental%2520Scan%2520Action%2520Plan%2520Final_V3%2528002%2529%2520%25282%2529.pdf&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQFnoECBwQAQ",
+      "displayed_link": "https://oehi.colorado.gov \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/68646cd6b9e8691e7894d974/images/47070366f0315091a97a6d42d85cc1e08f4f7b74da64e618e6b7a3d1bedb3207.png",
+      "snippet": "FHIR. Fast Healthcare Interoperability Resources. FISMA. Federal Information ... Healthcare Provider Directory. HRSN. Health-Related Social Needs. IAPD.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Healthcare",
+        "Healthcare Provider Directory",
+        "Health"
+      ],
+      "missing": [
+        "district"
+      ],
+      "must_include": {
+        "word": "district",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=el+paso+county+hospital+%22district%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQ5t4CegQIMBAB"
+      },
+      "source": "Office of eHealth Innovation (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "Best in KLAS Report 2024",
+      "link": "https://www.performancehealthus.com/hubfs/Best%20in%20KLAS%20Report%202024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.performancehealthus.com/hubfs/Best%2520in%2520KLAS%2520Report%25202024.pdf&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQFnoECBoQAQ",
+      "displayed_link": "https://www.performancehealthus.com \u203a hubfs",
+      "favicon": "https://serpapi.com/searches/68646cd6b9e8691e7894d974/images/47070366f0315091a97a6d42d85cc1e066368668d7a6f0b35143330e24e6b570.png",
+      "date": "Feb 7, 2024",
+      "snippet": "... FHIR 92.2. Data Analytics Platforms (Payers). Clarify Health Solutions ... provider directory API, and payer-to-payer data exchange ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Health",
+        "provider directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 279
+          },
+          "extensions": [
+            "279 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=el+paso+county+hospital+district+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQ5t4CegQILBAB"
+      },
+      "source": "Performance Health Partners"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "UHC Medicare Advantage timely filing limit 2024",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+Medicare+Advantage+timely+filing+limit+2024&sa=X&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQ1QJ6BAg8EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+Medicare+Advantage+timely+filing+limit+2024&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC provider manual 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+provider+manual+2025&sa=X&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQ1QJ6BAg7EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+provider+manual+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC provider manual 2024",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+provider+manual+2024&sa=X&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQ1QJ6BAg6EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+provider+manual+2024&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc Medicare advantage Timely filing limit for corrected claims",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&sa=X&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "P.O. Box 31386 Salt Lake City UT 84131",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=P.O.+Box+31386+Salt+Lake+City+UT+84131&sa=X&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=P.O.+Box+31386+Salt+Lake+City+UT+84131&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "PO Box 31387 SALT Lake City, UT 84131",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=PO+Box+31387+SALT+Lake+City,+UT+84131&sa=X&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=PO+Box+31387+SALT+Lake+City%2C+UT+84131&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "United Healthcare Provider Portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=United+Healthcare+Provider+Portal&sa=X&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=United+Healthcare+Provider+Portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "PO Box 6111 Cypress, CA 90630",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=PO+Box+6111+Cypress,+CA+90630&sa=X&ved=2ahUKEwj_7_ft5ZyOAxUSk1YBHSA_E2oQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=PO+Box+6111+Cypress%2C+CA+90630&safe=active"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 7 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=el+paso+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

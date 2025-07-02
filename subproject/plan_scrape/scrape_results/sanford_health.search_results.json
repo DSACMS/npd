@@ -1,0 +1,355 @@
+{
+  "search_metadata": {
+    "id": "68646d3c529e4b2024892737",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/7da008c092c85c92/68646d3c529e4b2024892737.json",
+    "created_at": "2025-07-01 23:20:28 UTC",
+    "processed_at": "2025-07-01 23:20:28 UTC",
+    "google_url": "https://www.google.com/search?q=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/7da008c092c85c92/68646d3c529e4b2024892737.html",
+    "total_time_taken": 5.63
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "sanford health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "sanford health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 9,
+    "time_taken_displayed": 0.26,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_images": [
+    {
+      "source": "https://thebigunlock.com/category/podcasts/season-4/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgdeA7XJy9v-yYrsQBacoCqWJ6JlHaqge3U6hS9u2UHAWkazCN1JqFEko&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2022/11/season4-ep139-podcast-with-Julia-Hu-CEO-and-Cofounder-Lark-Health-lp-thumbnail.png",
+      "title": "Season 4 - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/podcasts/season-4/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwZiIi3pnB3Ko4lWcRyfAH3JjEkhrrJ1LdE_IgGNPH9UoCbS2ZVpP-hZU&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2022/07/Pranay-Kapadia-profilepic2.png",
+      "title": "Season 4 - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/podcasts/season-4/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1gM3RnBKg9YnrCZJYQS9Lsnm5Av4u_fB_qYEfgJBbZccpu1rRC9kOHew&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2022/11/season4-ep138-podcast-with-Michael-Hasselberg-lp-thumbnail.png",
+      "title": "Season 4 - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/podcasts/season-4/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUEdJTYq7TY7xXPSA4qGRCLViQuBddJV0oihoqbk1BG9O5A3EpFMRoiHg&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2022/09/David-Evendon-Challis-profilepic-tablet.png",
+      "title": "Season 4 - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/podcasts/season-4/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3H9ArICJAvddzKEDfEYje-skaNSL8wwEuwngqdQep4C3IWMFTjhWRMeA&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2022/10/season4-ep135-podcast-with-Zane-Burke-lp-thumbnail.png",
+      "title": "Season 4 - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/podcasts/season-4/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO6bWLqHn6Cejl9ziiTUGqytCqDLAS9C3fAkvH7dMw51_30gavfKqvXog&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2022/08/Terry_Myerson-profilepic2.png",
+      "title": "Season 4 - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/podcasts/season-4/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZsMTih7kpqgwFZZpC0xwLBcUiO03puK-wTxt8CZ9fLFjluS1wj4jot6k&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2022/10/Zane-Burke-profile-desktop1.png",
+      "title": "Season 4 - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/podcasts/season-4/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSzo9iu50_B4Selfli1BYfm_x4OpuSezGtfJaUHO0OZldPeGFShsEOozM&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2022/10/season4-ep137-podcast-with-jacob-effron-lp-thumbnail.png",
+      "title": "Season 4 - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/podcasts/season-4/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMCPDiSPeKqyI9eCD0x67Byka8dmm8548PSM8AgWtpSq64SarP_42_Ams&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2022/11/Michael-Hasselberg.profile-desktop2.png",
+      "title": "Season 4 - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Which website provides comparative data for all Medicare certified home health agencies?",
+      "snippet": "The Centers for Medicare & Medicaid Services (CMS) has built the Care Compare website at Medicare.gov as a key tool to help consumers choose a home health care provider. It's designed to be an easy-to-access, convenient official source of information about provider quality.",
+      "title": "Medicare.gov",
+      "date": "Jun 9, 2025",
+      "link": "https://www.cms.gov/medicare/quality/home-health/home-health-star-ratings#:~:text=The%20Centers%20for%20Medicare%20%26%20Medicaid,of%20information%20about%20provider%20quality.",
+      "displayed_link": "https://www.cms.gov \u203a medicare \u203a quality \u203a home-health...",
+      "source_logo": "https://serpapi.com/searches/68646d3c529e4b2024892737/images/81a28279c6b0db1c2ae180e92dcad027b77876ab7e6205b5fae8dc160df2012f.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRlNEbFdYM0JHUkhOZk9VMVJYMFZEZUV4elZIRkJaa1IxTVdWSWFtY3hXSEkwTkdSaU5XcDRTbmR0VlhVellYSk9MVkJzYUhWRVVqaFphbE5JU1doR1NWOUNhM3BKZW5GcmNFVlZhMHhuYld0RFZFWlZORmhvYTJGR1VSSVhVVzB4YTJGTVgwMUNMVjlQYUdKSlVIVmZNMjV4VVUwYUlrRkdUVUZIUjNCR2NVVlZkMFZ4V1dGeU1FVXRTV1JuVUhKblVubzRZMXBaTVhjIiwiZmN2IjoiMyIsImVpIjoiUW0xa2FMX01CLV9PaGJJUHVfM25xUU0iLCJxYyI6IkNqMXpZVzVtYjNKa0lHaGxZV3gwYUNCdFpXUnBZMkZ5WlNCaFpIWmhiblJoWjJVZ2NISnZkbWxrWlhJZ1pHbHlaV04wYjNKNUlHRndhU0JtYUdseUVBQjlmdzRzUHciLCJxdWVzdGlvbiI6IldoaWNoIHdlYnNpdGUgcHJvdmlkZXMgY29tcGFyYXRpdmUgZGF0YSBmb3IgYWxsIE1lZGljYXJlIGNlcnRpZmllZCBob21lIGhlYWx0aCBhZ2VuY2llcz8iLCJsayI6ImN3WEJRUTdBSUFnRXdIXzB0TF9xbWVKYVNMUWFKUHI5emx6M01WZkQ0Yk04aVJsamUtR0NqajRsSkgwVFJWSlFSMEJhUTJkeGxTQ1VrVjZkQlRZNllaU1dCbm41cVhQOSIsImJzIjoiYzVXT3NRM0NNQlJFbGRZVlpaU0dZNFVza0RZVWtaQVFDcFFmLXdkX3lZa2oyMHFXWUJFMllEeEFCR3FvNzkyN1VfZE1IVnNyMm1MbWM1VEVHSU9meEhDRTl2MUlnWkpNREVPSjBQa0FjZzRORzlFVUdKcERrazdZd1BxZVlabGNzcUFMRDFvNFZ2bjFVSjZLZHY1VDNfLW1WN1hDTm1KUHc3Tm9VTF9UbmFQaGU3REtiMDI1S2RZU0VSZHNrWXd2N0RPMHloNCIsImlkIjoiZmNfUW0xa2FMX01CLV9PaGJJUHVfM25xUU1fMyJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRlNEbFdYM0JHUkhOZk9VMVJYMFZEZUV4elZIRkJaa1IxTVdWSWFtY3hXSEkwTkdSaU5XcDRTbmR0VlhVellYSk9MVkJzYUhWRVVqaFphbE5JU1doR1NWOUNhM3BKZW5GcmNFVlZhMHhuYld0RFZFWlZORmhvYTJGR1VSSVhVVzB4YTJGTVgwMUNMVjlQYUdKSlVIVmZNMjV4VVUwYUlrRkdUVUZIUjNCR2NVVlZkMFZ4V1dGeU1FVXRTV1JuVUhKblVubzRZMXBaTVhjIiwiZmN2IjoiMyIsImVpIjoiUW0xa2FMX01CLV9PaGJJUHVfM25xUU0iLCJxYyI6IkNqMXpZVzVtYjNKa0lHaGxZV3gwYUNCdFpXUnBZMkZ5WlNCaFpIWmhiblJoWjJVZ2NISnZkbWxrWlhJZ1pHbHlaV04wYjNKNUlHRndhU0JtYUdseUVBQjlmdzRzUHciLCJxdWVzdGlvbiI6IldoaWNoIHdlYnNpdGUgcHJvdmlkZXMgY29tcGFyYXRpdmUgZGF0YSBmb3IgYWxsIE1lZGljYXJlIGNlcnRpZmllZCBob21lIGhlYWx0aCBhZ2VuY2llcz8iLCJsayI6ImN3WEJRUTdBSUFnRXdIXzB0TF9xbWVKYVNMUWFKUHI5emx6M01WZkQ0Yk04aVJsamUtR0NqajRsSkgwVFJWSlFSMEJhUTJkeGxTQ1VrVjZkQlRZNllaU1dCbm41cVhQOSIsImJzIjoiYzVXT3NRM0NNQlJFbGRZVlpaU0dZNFVza0RZVWtaQVFDcFFmLXdkX3lZa2oyMHFXWUJFMllEeEFCR3FvNzkyN1VfZE1IVnNyMm1MbWM1VEVHSU9meEhDRTl2MUlnWkpNREVPSjBQa0FjZzRORzlFVUdKcERrazdZd1BxZVlabGNzcUFMRDFvNFZ2bjFVSjZLZHY1VDNfLW1WN1hDTm1KUHc3Tm9VTF9UbmFQaGU3REtiMDI1S2RZU0VSZHNrWXd2N0RPMHloNCIsImlkIjoiZmNfUW0xa2FMX01CLV9PaGJJUHVfM25xUU1fMyJ9"
+    },
+    {
+      "question": "Is Sanford Health Plan Medicare?",
+      "snippet": "Sanford Health Plan and Sanford Health Plan of Minnesota have HMO and PPO plans with a Medicare contract. Sanford Health Plan D-SNPs have contracts with State Medicaid programs. Enrollment in our plans depends on contract renewal.",
+      "title": "Benefits of a Medicare and Medicaid Dual Eligible Special Needs Plan",
+      "link": "https://www.sanfordhealthplan.com/learn/medicare/coordinated-care-and-benefits#:~:text=Sanford%20Health%20Plan%20and%20Sanford,plans%20depends%20on%20contract%20renewal.",
+      "displayed_link": "https://www.sanfordhealthplan.com \u203a learn \u203a medicare",
+      "source_logo": "https://serpapi.com/searches/68646d3c529e4b2024892737/images/81a28279c6b0db1c2ae180e92dcad0273f89c0d8a7b5d3900d0b8c84cf306f8e.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRlNEbFdYM0JHUkhOZk9VMVJYMFZEZUV4elZIRkJaa1IxTVdWSWFtY3hXSEkwTkdSaU5XcDRTbmR0VlhVellYSk9MVkJzYUhWRVVqaFphbE5JU1doR1NWOUNhM3BKZW5GcmNFVlZhMHhuYld0RFZFWlZORmhvYTJGR1VSSVhVVzB4YTJGTVgwMUNMVjlQYUdKSlVIVmZNMjV4VVUwYUlrRkdUVUZIUjNCR2NVVlZkMFZ4V1dGeU1FVXRTV1JuVUhKblVubzRZMXBaTVhjIiwiZmN2IjoiMyIsImVpIjoiUW0xa2FMX01CLV9PaGJJUHVfM25xUU0iLCJxYyI6IkNqMXpZVzVtYjNKa0lHaGxZV3gwYUNCdFpXUnBZMkZ5WlNCaFpIWmhiblJoWjJVZ2NISnZkbWxrWlhJZ1pHbHlaV04wYjNKNUlHRndhU0JtYUdseUVBQjlmdzRzUHciLCJxdWVzdGlvbiI6IklzIFNhbmZvcmQgSGVhbHRoIFBsYW4gTWVkaWNhcmU/IiwibGsiOiJHaDlwY3lCellXNW1iM0prSUdobFlXeDBhQ0J3YkdGdUlHMWxaR2xqWVhKbCIsImJzIjoiYzVXT3NRM0NNQlJFbGRZVlpaU0dZNFVza0RZVWtaQVFDcFFmLXdkX3lZa2oyMHFXWUJFMllEeEFCR3FvNzkyN1VfZE1IVnNyMm1MbWM1VEVHSU9meEhDRTl2MUlnWkpNREVPSjBQa0FjZzRORzlFVUdKcERrazdZd1BxZVlabGNzcUFMRDFvNFZ2bjFVSjZLZHY1VDNfLW1WN1hDTm1KUHc3Tm9VTF9UbmFQaGU3REtiMDI1S2RZU0VSZHNrWXd2N0RPMHloNCIsImlkIjoiZmNfUW0xa2FMX01CLV9PaGJJUHVfM25xUU1fMyJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRlNEbFdYM0JHUkhOZk9VMVJYMFZEZUV4elZIRkJaa1IxTVdWSWFtY3hXSEkwTkdSaU5XcDRTbmR0VlhVellYSk9MVkJzYUhWRVVqaFphbE5JU1doR1NWOUNhM3BKZW5GcmNFVlZhMHhuYld0RFZFWlZORmhvYTJGR1VSSVhVVzB4YTJGTVgwMUNMVjlQYUdKSlVIVmZNMjV4VVUwYUlrRkdUVUZIUjNCR2NVVlZkMFZ4V1dGeU1FVXRTV1JuVUhKblVubzRZMXBaTVhjIiwiZmN2IjoiMyIsImVpIjoiUW0xa2FMX01CLV9PaGJJUHVfM25xUU0iLCJxYyI6IkNqMXpZVzVtYjNKa0lHaGxZV3gwYUNCdFpXUnBZMkZ5WlNCaFpIWmhiblJoWjJVZ2NISnZkbWxrWlhJZ1pHbHlaV04wYjNKNUlHRndhU0JtYUdseUVBQjlmdzRzUHciLCJxdWVzdGlvbiI6IklzIFNhbmZvcmQgSGVhbHRoIFBsYW4gTWVkaWNhcmU%2FIiwibGsiOiJHaDlwY3lCellXNW1iM0prSUdobFlXeDBhQ0J3YkdGdUlHMWxaR2xqWVhKbCIsImJzIjoiYzVXT3NRM0NNQlJFbGRZVlpaU0dZNFVza0RZVWtaQVFDcFFmLXdkX3lZa2oyMHFXWUJFMllEeEFCR3FvNzkyN1VfZE1IVnNyMm1MbWM1VEVHSU9meEhDRTl2MUlnWkpNREVPSjBQa0FjZzRORzlFVUdKcERrazdZd1BxZVlabGNzcUFMRDFvNFZ2bjFVSjZLZHY1VDNfLW1WN1hDTm1KUHc3Tm9VTF9UbmFQaGU3REtiMDI1S2RZU0VSZHNrWXd2N0RPMHloNCIsImlkIjoiZmNfUW0xa2FMX01CLV9PaGJJUHVfM25xUU1fMyJ9"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability and Patient Access Rule",
+      "link": "https://www.sanfordhealthplan.com/interoperability-and-patient-access-rule",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.sanfordhealthplan.com/interoperability-and-patient-access-rule&ved=2ahUKEwi_9Zih5pyOAxVvZ0EAHbv-OTUQFnoECBcQAQ",
+      "displayed_link": "https://www.sanfordhealthplan.com \u203a interoperability-a...",
+      "favicon": "https://serpapi.com/searches/68646d3c529e4b2024892737/images/4a0d789220a8d4c212581f694cc40ee59db6de823f7002bb95283e1c1fb45a32.png",
+      "snippet": "... fhir.epic.com/, which includes detailed information on: API ... Provider directory API \u2013 Contains Sanford Health Plan provider directory information.",
+      "snippet_highlighted_words": [
+        "fhir",
+        "API",
+        "Provider directory API",
+        "Sanford Health",
+        "provider directory"
+      ],
+      "source": "Sanford Health Plan"
+    },
+    {
+      "position": 2,
+      "title": "Announcement of Calendar Year (CY) 2020 Medicare ...",
+      "link": "https://www.cms.gov/medicare/health-plans/medicareadvtgspecratestats/downloads/announcement2020.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/medicare/health-plans/medicareadvtgspecratestats/downloads/announcement2020.pdf&ved=2ahUKEwi_9Zih5pyOAxVvZ0EAHbv-OTUQFnoECB0QAQ",
+      "displayed_link": "https://www.cms.gov \u203a health-plans \u203a downloads",
+      "favicon": "https://serpapi.com/searches/68646d3c529e4b2024892737/images/4a0d789220a8d4c212581f694cc40ee57d6a2fecda00ef5c5c3bc550c66dd49d.png",
+      "date": "Apr 1, 2019",
+      "snippet": "types, make provider directory data available through a standardized API. ... developed a Fast Healthcare Interoperability Resources (FHIR) ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "API",
+        "Healthcare",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 242
+          },
+          "extensions": [
+            "242 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "regular meeting of the governing board",
+      "link": "https://www.iehp.org/content/dam/iehp-org/en/documents/governing-board-meetings/governing-board-reports/feb-2024/IEHP%20and%20IEHP%20Health%20Access%20Board%20Report%20346-February%205%202024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.iehp.org/content/dam/iehp-org/en/documents/governing-board-meetings/governing-board-reports/feb-2024/IEHP%2520and%2520IEHP%2520Health%2520Access%2520Board%2520Report%2520346-February%25205%25202024.pdf&ved=2ahUKEwi_9Zih5pyOAxVvZ0EAHbv-OTUQFnoECBgQAQ",
+      "displayed_link": "https://www.iehp.org \u203a documents \u203a feb-2024 \u203a I...",
+      "favicon": "https://serpapi.com/searches/68646d3c529e4b2024892737/images/4a0d789220a8d4c212581f694cc40ee5d18188b846b540184a3dd10902720d2a.png",
+      "date": "Feb 5, 2024",
+      "snippet": "Healthcare Interoperability Resources (FHIR) standards ... o Provide a Provider Directory API that is updated monthly and available 24/7.",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 256
+          },
+          "extensions": [
+            "256 pages"
+          ]
+        }
+      },
+      "source": "IEHP"
+    },
+    {
+      "position": 4,
+      "title": "HOUSE OF DELEGATES HANDBOOK - INFO (A-22)",
+      "link": "https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf&ved=2ahUKEwi_9Zih5pyOAxVvZ0EAHbv-OTUQFnoECBoQAQ",
+      "displayed_link": "https://www.ama-assn.org \u203a system \u203a files \u203a a22-...",
+      "favicon": "https://serpapi.com/searches/68646d3c529e4b2024892737/images/4a0d789220a8d4c212581f694cc40ee5d58020e50b2095e2f77dc095ad6988be.png",
+      "date": "Dec 17, 2021",
+      "snippet": "AMA/CAQH Provider Directory. White Paper \u2013 Co-branded white ... FHIR\u00ae implementation guide for the capture and use of SDOH data. 18.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=sanford+health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi_9Zih5pyOAxVvZ0EAHbv-OTUQ5t4CegQIIhAB"
+      },
+      "source": "American Medical Association"
+    },
+    {
+      "position": 5,
+      "title": "American Health Law Association The Year in Review ...",
+      "link": "https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf&ved=2ahUKEwi_9Zih5pyOAxVvZ0EAHbv-OTUQFnoECBYQAQ",
+      "displayed_link": "https://www.bradley.com \u203a publications \u203a 2022/02",
+      "favicon": "https://serpapi.com/searches/68646d3c529e4b2024892737/images/4a0d789220a8d4c212581f694cc40ee51d69d968d74eae82cc20119c6d233417.png",
+      "date": "Feb 17, 2022",
+      "snippet": "... FHIR\u00ae Roadmap for \u00b7 TEFCA Exchange (January 2022). The TEF is a set of ... Provider Directory API (applicable January 1, 2021, with ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 315
+          },
+          "extensions": [
+            "315 pages"
+          ]
+        }
+      },
+      "source": "Bradley Arant"
+    },
+    {
+      "position": 6,
+      "title": "Meg Bryant",
+      "link": "https://www.healthcaredive.com/users/mbryant/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcaredive.com/users/mbryant/&ved=2ahUKEwi_9Zih5pyOAxVvZ0EAHbv-OTUQFnoECBsQAQ",
+      "displayed_link": "https://www.healthcaredive.com \u203a users \u203a mbryant",
+      "favicon": "https://serpapi.com/searches/68646d3c529e4b2024892737/images/4a0d789220a8d4c212581f694cc40ee52c8eb82bda35e5bea6698810e4e6ac37.png",
+      "snippet": "Nearly a third of health IT developers producing FHIR products, ONC says. Oct ... Industry group offers roadmap to greater provider directory accuracy.",
+      "snippet_highlighted_words": [
+        "health",
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "Healthcare Dive"
+    },
+    {
+      "position": 7,
+      "title": "Season 4",
+      "link": "https://thebigunlock.com/category/podcasts/season-4/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://thebigunlock.com/category/podcasts/season-4/&ved=2ahUKEwi_9Zih5pyOAxVvZ0EAHbv-OTUQFnoECBwQAQ",
+      "displayed_link": "https://thebigunlock.com \u203a podcasts",
+      "favicon": "https://serpapi.com/searches/68646d3c529e4b2024892737/images/4a0d789220a8d4c212581f694cc40ee52b148d0578901bb4f70cd08a8691eba7.png",
+      "snippet": "... provider directory data. When a provider updates a piece of demographic data ... healthcare, interoperability, resources, or FHIR. It is amazing for ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "healthcare",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 5.0,
+            "reviews": 5
+          },
+          "extensions": [
+            "5.0(5)"
+          ]
+        }
+      },
+      "source": "The Big Unlock Podcast"
+    },
+    {
+      "position": 8,
+      "title": "Advance Notice of Methodological Changes for Calendar ...",
+      "link": "https://www.cms.gov/Medicare/Health-Plans/MedicareAdvtgSpecRateStats/Downloads/Advance2020Part2.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/Medicare/Health-Plans/MedicareAdvtgSpecRateStats/Downloads/Advance2020Part2.pdf&ved=2ahUKEwi_9Zih5pyOAxVvZ0EAHbv-OTUQFnoECDYQAQ",
+      "displayed_link": "https://www.cms.gov \u203a Health-Plans \u203a Downloads",
+      "favicon": "https://serpapi.com/searches/68646d3c529e4b2024892737/images/4a0d789220a8d4c212581f694cc40ee5d4b877f90ef531b98af33911d7f836be.png",
+      "date": "Jan 30, 2019",
+      "snippet": "centralized repository for provider directory ... developed a Fast Healthcare Interoperability Resources (FHIR) standard that was balloted in.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "Healthcare",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 210
+          },
+          "extensions": [
+            "210 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "Profile for Ellkay Inc.",
+      "link": "https://www.linknovate.com/affiliation/ellkay-inc-5241977/all/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.linknovate.com/affiliation/ellkay-inc-5241977/all/&ved=2ahUKEwi_9Zih5pyOAxVvZ0EAHbv-OTUQFnoECDUQAQ",
+      "displayed_link": "https://www.linknovate.com \u203a ellkay-inc-5241977 \u203a all",
+      "favicon": "https://serpapi.com/searches/68646d3c529e4b2024892737/images/4a0d789220a8d4c212581f694cc40ee55febacf00147200e669b17f11fa72313.jpeg",
+      "snippet": "... provider directory utility. Vizient will offer its members digital ... FHIR-Supported Bi-Directional Connectivity Our FHIR-supported health data ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR",
+        "FHIR",
+        "health"
+      ],
+      "source": "Linknovate"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "CMS Announcement today",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=CMS+Announcement+today&sa=X&ved=2ahUKEwi_9Zih5pyOAxVvZ0EAHbv-OTUQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Announcement+today&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS final Notice 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=CMS+final+Notice+2025&sa=X&ved=2ahUKEwi_9Zih5pyOAxVvZ0EAHbv-OTUQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+final+Notice+2025&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=sanford+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "search_metadata": {
+    "id": "68646c89bb48ad45a4b6adc2",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/db2f680f6704ddec/68646c89bb48ad45a4b6adc2.json",
+    "created_at": "2025-07-01 23:17:29 UTC",
+    "processed_at": "2025-07-01 23:17:29 UTC",
+    "google_url": "https://www.google.com/search?q=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/db2f680f6704ddec/68646c89bb48ad45a4b6adc2.html",
+    "total_time_taken": 2.52
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "aultman health foundation Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "aultman health foundation Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 4,
+    "time_taken_displayed": 0.46,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    },
+    "showing_results_for": "aultman health foundation Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "aultman health foundation Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Study Details | Digital Tomosynthesis Mammography and ...",
+      "link": "https://clinicaltrials.gov/study/NCT03233191",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://clinicaltrials.gov/study/NCT03233191&ved=2ahUKEwiZgI3K5ZyOAxWTG7kGHZ2tGi4QFnoECBwQAQ",
+      "displayed_link": "https://clinicaltrials.gov \u203a study \u203a NCT03233191",
+      "favicon": "https://serpapi.com/searches/68646c89bb48ad45a4b6adc2/images/897c638a2b564ab72ed350b5e3a0beefc3f5d59f4c6c0a134d4c7d40ff494c9c.png",
+      "snippet": "This randomized phase III trial studies digital tomosynthesis mammography and digital mammography in screening patients for breast cancer.",
+      "source": "ClinicalTrials.gov"
+    },
+    {
+      "position": 2,
+      "title": "Record History | ver. 334: 2024-10-04 | NCT03072927",
+      "link": "https://clinicaltrials.gov/study/NCT03072927?tab=history&a=334",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://clinicaltrials.gov/study/NCT03072927%3Ftab%3Dhistory%26a%3D334&ved=2ahUKEwiZgI3K5ZyOAxWTG7kGHZ2tGi4QFnoECBsQAQ",
+      "displayed_link": "https://clinicaltrials.gov \u203a study \u203a NCT03072927",
+      "favicon": "https://serpapi.com/searches/68646c89bb48ad45a4b6adc2/images/897c638a2b564ab72ed350b5e3a0beeffc202cb8b471ded57d3dfc144608ba43.png",
+      "snippet": "This table shows all the versions of this study record arranged in order by submitted date. To view one version of the study record, click the submitted ...",
+      "source": "ClinicalTrials.gov"
+    },
+    {
+      "position": 3,
+      "title": "Technical Challenges of Enterprise Imaging: HIMSS-SIIM ...",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5023533/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pmc.ncbi.nlm.nih.gov/articles/PMC5023533/&ved=2ahUKEwiZgI3K5ZyOAxWTG7kGHZ2tGi4QFnoECBkQAQ",
+      "displayed_link": "https://pmc.ncbi.nlm.nih.gov \u203a articles \u203a PMC5023533",
+      "author": "by DA Clunie",
+      "snippet": "This white paper explores the technical challenges and solutions for acquiring (capturing) and managing enterprise images, particularly those involving ...",
+      "source": "National Institutes of Health (NIH) | (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Voices of Innovation: Fulfilling the Promise of Information ...",
+      "link": "https://dokumen.pub/voices-of-innovation-fulfilling-the-promise-of-information-technology-in-healthcare-2nbsped-9781032445274-9781032445250-9781003372608.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dokumen.pub/voices-of-innovation-fulfilling-the-promise-of-information-technology-in-healthcare-2nbsped-9781032445274-9781032445250-9781003372608.html&ved=2ahUKEwiZgI3K5ZyOAxWTG7kGHZ2tGi4QFnoECBoQAQ",
+      "displayed_link": "https://dokumen.pub \u203a voices-of-innovation-fulfilling-t...",
+      "favicon": "https://serpapi.com/searches/68646c89bb48ad45a4b6adc2/images/897c638a2b564ab72ed350b5e3a0beeff378e3b281244a96ee146b022448275e.png",
+      "snippet": "Centauri is a tech-enabled services and data liquidity company serving health plans and providers throughout the United States. For the past 20+ years, Anna ...",
+      "snippet_highlighted_words": [
+        "health plans",
+        "providers"
+      ],
+      "source": "dokumen.pub"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 4 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=aultman+health+foundation+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aultman+health+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

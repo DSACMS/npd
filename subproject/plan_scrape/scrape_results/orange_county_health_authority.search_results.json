@@ -1,0 +1,327 @@
+{
+  "search_metadata": {
+    "id": "68646d2ac4f20f10b0739e06",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/9fc39acd6eb0258f/68646d2ac4f20f10b0739e06.json",
+    "created_at": "2025-07-01 23:20:10 UTC",
+    "processed_at": "2025-07-01 23:20:10 UTC",
+    "google_url": "https://www.google.com/search?q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/9fc39acd6eb0258f/68646d2ac4f20f10b0739e06.html",
+    "total_time_taken": 1.04
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "orange county health authority Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "orange county health authority Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 102,
+    "time_taken_displayed": 0.19,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Application Programming Interfaces (APIs) and Relevant ...",
+      "link": "https://www.cms.gov/priorities/burden-reduction/overview/interoperability/implementation-guides-and-standards/application-programming-interfaces-apis-and-relevant-standards-and-implementation-guides-igs",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/priorities/burden-reduction/overview/interoperability/implementation-guides-and-standards/application-programming-interfaces-apis-and-relevant-standards-and-implementation-guides-igs&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08QFnoECBoQAQ",
+      "displayed_link": "https://www.cms.gov \u203a overview \u203a interoperability \u203a app...",
+      "favicon": "https://serpapi.com/searches/68646d2ac4f20f10b0739e06/images/d785bc81e96272650f34af8d5468bd1de5f8349fdb42c49d0e9c417279f89ea9.png",
+      "date": "May 21, 2025",
+      "snippet": "HL7 FHIR Bulk Data Access (Flat FHIR) Specification (v1.0.0 ... provider directory information available via the Provider Directory API.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "provider directory",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "orange"
+      ],
+      "must_include": {
+        "word": "orange",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=%22orange%22+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08Q5t4CegQIJRAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Session 1 CMS Interoperability Planning Collaborative",
+      "link": "https://calmhsa.org/wp-content/uploads/2023/08/Session-1-CMS-Interoperability-Planning-Collaborative-April-5-2022.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://calmhsa.org/wp-content/uploads/2023/08/Session-1-CMS-Interoperability-Planning-Collaborative-April-5-2022.pdf&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08QFnoECBcQAQ",
+      "displayed_link": "https://calmhsa.org \u203a uploads \u203a 2023/08 \u203a Sessio...",
+      "favicon": "https://serpapi.com/searches/68646d2ac4f20f10b0739e06/images/d785bc81e96272650f34af8d5468bd1d53c81dd5bbef0519ff5a02a388354f59.png",
+      "snippet": "Patient Access API. 150. 65%. 8. 35%. Provider Directory API. 17. 74%. 6. 26%. Page 26 ... fhir-developer-api https://1up.health/docs/ https://www.chgsd.com ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "fhir",
+        "api",
+        "health"
+      ],
+      "source": "California Mental Health Services Authority"
+    },
+    {
+      "position": 3,
+      "title": "State Adoption of CMS FHIR APIs: CA & TN Lead the Way",
+      "link": "https://1up.health/blog/state-adoption-of-cms-fhir-apis-california-tennessee-lead-the-way/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://1up.health/blog/state-adoption-of-cms-fhir-apis-california-tennessee-lead-the-way/&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08QFnoECBgQAQ",
+      "displayed_link": "https://1up.health \u203a Resources",
+      "favicon": "https://serpapi.com/searches/68646d2ac4f20f10b0739e06/images/d785bc81e96272650f34af8d5468bd1d8e4d082157c9bfe62c96df5e8824bf05.png",
+      "date": "May 9, 2024",
+      "snippet": "... Provider Directory API, each as outlined in the CMS ... FHIR API bandwagon. Want to learn more about California Senate Bill ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR API"
+      ],
+      "missing": [
+        "orange"
+      ],
+      "must_include": {
+        "word": "orange",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=%22orange%22+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08Q5t4CegQIHxAB"
+      },
+      "source": "1upHealth"
+    },
+    {
+      "position": 4,
+      "title": "CMS Seeks Healthcare Industry Input on Future of Digital ...",
+      "link": "https://www.lw.com/en/insights/cms-seeks-healthcare-industry-input-on-future-of-digital-health",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lw.com/en/insights/cms-seeks-healthcare-industry-input-on-future-of-digital-health&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08QFnoECBUQAQ",
+      "displayed_link": "https://www.lw.com \u203a insights \u203a cms-seeks-healthcare-i...",
+      "favicon": "https://serpapi.com/searches/68646d2ac4f20f10b0739e06/images/d785bc81e96272650f34af8d5468bd1d508b4b5d5af39369e3f42fb186d04426.png",
+      "date": "Jun 9, 2025",
+      "snippet": "... Healthcare Interoperability Resources (FHIR)-based APIs; Mitigating ... provider directory, modernizing identity verification for ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "provider directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=orange+county+health+authority+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08Q5t4CegQIIRAB"
+      },
+      "source": "Latham & Watkins LLP"
+    },
+    {
+      "position": 5,
+      "title": "BH-Connect-STCs.pdf - DHCS",
+      "link": "https://www.dhcs.ca.gov/CalAIM/Documents/BH-CONNECT/BH-Connect-STCs.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.dhcs.ca.gov/CalAIM/Documents/BH-CONNECT/BH-Connect-STCs.pdf&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08QFnoECBsQAQ",
+      "displayed_link": "https://www.dhcs.ca.gov \u203a CalAIM \u203a Documents",
+      "favicon": "https://serpapi.com/searches/68646d2ac4f20f10b0739e06/images/d785bc81e96272650f34af8d5468bd1d55652c8db83abe40d21de0400ab07164.png",
+      "date": "Jan 1, 2025",
+      "snippet": "Programming Interfaces (APIs) and a publicly accessible Provider Directory API. ... Fast Healthcare Interoperability Resources (FHIR) ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Healthcare",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 188
+          },
+          "extensions": [
+            "188 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=orange+county+health+authority+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08Q5t4CegQIIxAB"
+      },
+      "source": "DHCS (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Community Health Group | San Diego County Health Plans for ...",
+      "link": "https://www.chgsd.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chgsd.com/&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08QFnoECBYQAQ",
+      "displayed_link": "https://www.chgsd.com",
+      "favicon": "https://serpapi.com/searches/68646d2ac4f20f10b0739e06/images/d785bc81e96272650f34af8d5468bd1da40ed5154c3c74a003d8786b8f962d87.png",
+      "snippet": "FHIR Developer API \u00b7 Mission, Vision Statement \u00b7 MOU \u00b7 Population Health \u00b7 Quality ... Search Provider Directory \u00b7 Provider Portal Sign in. Claims. Submitting a ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Health",
+        "Provider Directory"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Medi-Cal",
+            "link": "https://www.chgsd.com/chg-plans/medi-cal"
+          },
+          {
+            "title": "Service Authorization Request",
+            "link": "https://www.chgsd.com/providers/authorizations/service-authorization-request"
+          },
+          {
+            "title": "Provider Disputes",
+            "link": "https://www.chgsd.com/providers/provider-services/provider-disputes"
+          },
+          {
+            "title": "My Health Plan",
+            "link": "https://www.chgsd.com/members/my-health-plan"
+          }
+        ]
+      },
+      "missing": [
+        "orange"
+      ],
+      "must_include": {
+        "word": "orange",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=%22orange%22+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08Q5t4CegQIHRAB"
+      },
+      "source": "Community Health Group"
+    },
+    {
+      "position": 7,
+      "title": "Necessary Investments and Funding Opportunities",
+      "link": "https://www.chcf.org/wp-content/uploads/2022/06/ClosingGapCAsDataExchangeNecessaryInvestments.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chcf.org/wp-content/uploads/2022/06/ClosingGapCAsDataExchangeNecessaryInvestments.pdf&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08QFnoECBwQAQ",
+      "displayed_link": "https://www.chcf.org \u203a uploads \u203a 2022/06 \u203a Closi...",
+      "favicon": "https://serpapi.com/searches/68646d2ac4f20f10b0739e06/images/d785bc81e96272650f34af8d5468bd1dc738b05f883312c25316e97147ebcb09.png",
+      "date": "Jun 17, 2022",
+      "snippet": "Fast Healthcare Interoperability Resources (FHIR), can facilitate ... Provider directory. CMS MES 75-25 FFP \u2014 operations. Page 20. 20.",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "Provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 34
+          },
+          "extensions": [
+            "34 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=orange+county+health+authority+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08Q5t4CegQIHhAB"
+      },
+      "source": "California Health Care Foundation"
+    },
+    {
+      "position": 8,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08QFnoECDMQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646d2ac4f20f10b0739e06/images/d785bc81e96272650f34af8d5468bd1d28b7b4326f0d592b18b6b73b66818b2a.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 9,
+      "title": "Da Vinci Video Presentations",
+      "link": "https://confluence.hl7.org/spaces/DVP/pages/78678039/Da+Vinci+Video+Presentations",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/spaces/DVP/pages/78678039/Da%2BVinci%2BVideo%2BPresentations&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08QFnoECDkQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a spaces \u203a DVP \u203a pages \u203a Da...",
+      "favicon": "https://serpapi.com/searches/68646d2ac4f20f10b0739e06/images/d785bc81e96272650f34af8d5468bd1db972c41a0d1d9dc57de694b9848510a0.png",
+      "date": "Mar 26, 2025",
+      "snippet": "... FHIR API landscape around people, processes and data. ... Provider Directory: Building a Solid Foundation for the Provider Directory API ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "authority",
+        "Advantage"
+      ],
+      "source": "HL7 - Confluence"
+    },
+    {
+      "position": 10,
+      "title": "California State Medi-Cal Health Information Technology Plan ...",
+      "link": "https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08QFnoECDQQAQ",
+      "displayed_link": "https://www.dhcs.ca.gov \u203a Documents \u203a OHIT \u203a C...",
+      "favicon": "https://serpapi.com/searches/68646d2ac4f20f10b0739e06/images/d785bc81e96272650f34af8d5468bd1d260128a85e9881ac89d1b45704202a85.png",
+      "date": "Mar 1, 2022",
+      "snippet": "requirements to use Fast Healthcare Interoperability Resources (FHIR) for certification, ... and provider directory. The only service area ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 246
+          },
+          "extensions": [
+            "246 pages"
+          ]
+        }
+      },
+      "source": "DHCS (.gov)"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=K21kaOa_AcfvseMPqYyN-AQ&start=10&sa=N&sstk=Ac65TH5sSS87pZimfplNxqfqQZZNLkXfM4YghQI67jKFPJgfkfYCTYhEnvVy4TraUF6oT9v4yHGQH96kLiMUWApw3xi9_qClg6zVkQ&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08Q8NMDegQIBxAU",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=K21kaOa_AcfvseMPqYyN-AQ&start=10&sa=N&sstk=Ac65TH5sSS87pZimfplNxqfqQZZNLkXfM4YghQI67jKFPJgfkfYCTYhEnvVy4TraUF6oT9v4yHGQH96kLiMUWApw3xi9_qClg6zVkQ&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08Q8tMDegQIBxAE",
+      "3": "https://www.google.com/search?q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=K21kaOa_AcfvseMPqYyN-AQ&start=20&sa=N&sstk=Ac65TH5sSS87pZimfplNxqfqQZZNLkXfM4YghQI67jKFPJgfkfYCTYhEnvVy4TraUF6oT9v4yHGQH96kLiMUWApw3xi9_qClg6zVkQ&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08Q8tMDegQIBxAG",
+      "4": "https://www.google.com/search?q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=K21kaOa_AcfvseMPqYyN-AQ&start=30&sa=N&sstk=Ac65TH5sSS87pZimfplNxqfqQZZNLkXfM4YghQI67jKFPJgfkfYCTYhEnvVy4TraUF6oT9v4yHGQH96kLiMUWApw3xi9_qClg6zVkQ&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08Q8tMDegQIBxAI",
+      "5": "https://www.google.com/search?q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=K21kaOa_AcfvseMPqYyN-AQ&start=40&sa=N&sstk=Ac65TH5sSS87pZimfplNxqfqQZZNLkXfM4YghQI67jKFPJgfkfYCTYhEnvVy4TraUF6oT9v4yHGQH96kLiMUWApw3xi9_qClg6zVkQ&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08Q8tMDegQIBxAK",
+      "6": "https://www.google.com/search?q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=K21kaOa_AcfvseMPqYyN-AQ&start=50&sa=N&sstk=Ac65TH5sSS87pZimfplNxqfqQZZNLkXfM4YghQI67jKFPJgfkfYCTYhEnvVy4TraUF6oT9v4yHGQH96kLiMUWApw3xi9_qClg6zVkQ&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08Q8tMDegQIBxAM",
+      "7": "https://www.google.com/search?q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=K21kaOa_AcfvseMPqYyN-AQ&start=60&sa=N&sstk=Ac65TH5sSS87pZimfplNxqfqQZZNLkXfM4YghQI67jKFPJgfkfYCTYhEnvVy4TraUF6oT9v4yHGQH96kLiMUWApw3xi9_qClg6zVkQ&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08Q8tMDegQIBxAO",
+      "8": "https://www.google.com/search?q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=K21kaOa_AcfvseMPqYyN-AQ&start=70&sa=N&sstk=Ac65TH5sSS87pZimfplNxqfqQZZNLkXfM4YghQI67jKFPJgfkfYCTYhEnvVy4TraUF6oT9v4yHGQH96kLiMUWApw3xi9_qClg6zVkQ&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08Q8tMDegQIBxAQ",
+      "9": "https://www.google.com/search?q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=K21kaOa_AcfvseMPqYyN-AQ&start=80&sa=N&sstk=Ac65TH5sSS87pZimfplNxqfqQZZNLkXfM4YghQI67jKFPJgfkfYCTYhEnvVy4TraUF6oT9v4yHGQH96kLiMUWApw3xi9_qClg6zVkQ&ved=2ahUKEwimgZeW5pyOAxXHd2wGHSlGA08Q8tMDegQIBxAS"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=orange+county+health+authority+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80"
+    }
+  }
+}

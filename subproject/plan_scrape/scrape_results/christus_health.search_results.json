@@ -1,0 +1,211 @@
+{
+  "search_metadata": {
+    "id": "68646cc21248155977d2b61f",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/d9a3e3964d2f137c/68646cc21248155977d2b61f.json",
+    "created_at": "2025-07-01 23:18:26 UTC",
+    "processed_at": "2025-07-01 23:18:26 UTC",
+    "google_url": "https://www.google.com/search?q=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/d9a3e3964d2f137c/68646cc21248155977d2b61f.html",
+    "total_time_taken": 0.82
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "christus health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "christus health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 4,
+    "time_taken_displayed": 0.19,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_images": [
+    {
+      "source": "https://www.scribd.com/document/143530675/Healthcare-Domain-Course-Material",
+      "thumbnail": "https://serpapi.com/searches/68646cc21248155977d2b61f/images/5981531678a6d3713c95327f1bd9620f83918502ff1b5384e00412fabeb5e8ee.jpeg",
+      "original": "https://imgv2-2-f.scribdassets.com/img/document/143530675/original/32d911a4a3/1?v=1",
+      "title": "Healthcare Domain Course Material | PDF | Managed Care ...",
+      "source_name": "Scribd"
+    },
+    {
+      "source": "https://www.scribd.com/document/143530675/Healthcare-Domain-Course-Material",
+      "thumbnail": "https://serpapi.com/searches/68646cc21248155977d2b61f/images/5981531678a6d371825f81ef90a42389d0d41f5aa64eed83ed05ec29050eacf8.jpeg",
+      "original": "https://imgv2-1-f.scribdassets.com/img/document/235664249/149x198/5e9203795b/1406955837?v=1",
+      "title": "Healthcare Domain Course Material | PDF | Managed Care ...",
+      "source_name": "Scribd"
+    },
+    {
+      "source": "https://www.scribd.com/document/143530675/Healthcare-Domain-Course-Material",
+      "thumbnail": "https://serpapi.com/searches/68646cc21248155977d2b61f/images/5981531678a6d371a5a230e1b1a336237303c3f2a5fa13fde07547166544e08a.jpeg",
+      "original": "https://imgv2-1-f.scribdassets.com/img/document/144448371/149x198/c794133eba/1382407790?v=1",
+      "title": "Healthcare Domain Course Material | PDF | Managed Care ...",
+      "source_name": "Scribd"
+    },
+    {
+      "source": "https://www.scribd.com/document/143530675/Healthcare-Domain-Course-Material",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP4uUzEs6ptysTDMEbFCjCRSZyPEgrhujlFYtqekAkVKIJ2-8Efgznp3Q&s",
+      "original": "https://imgv2-2-f.scribdassets.com/img/document/563569680/149x198/0ff6b48982/1711381611?v=1",
+      "title": "Healthcare Domain Course Material | PDF | Managed Care ...",
+      "source_name": "Scribd"
+    },
+    {
+      "source": "https://www.scribd.com/document/143530675/Healthcare-Domain-Course-Material",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrd-eGP46_7S_8w-1dfrXDhiVhTsFoSkFeUbg13UrJNKcHCDKLb1W6nBE&s",
+      "original": "https://imgv2-1-f.scribdassets.com/img/document/563569692/149x198/c039eb5a89/1725574204?v=1",
+      "title": "Healthcare Domain Course Material | PDF | Managed Care ...",
+      "source_name": "Scribd"
+    },
+    {
+      "source": "https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREAbI1w5b0MlBUfJEVHfFy5vMEylS75RkaB_qNBWdvb2C9VXr7AIXxvWak_Q&s",
+      "original": "x-raw-image:///5dbe0a2246a03fdc0138e2cceadeda913ec6dfad58f14105918c4ff1a2d64df3",
+      "title": "HOUSE OF DELEGATES HANDBOOK - INFO (A-22)",
+      "source_name": "American Medical Association"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "What eMR system does Christus Health use?",
+      "snippet": "The VaxCare solution fully integrates with Epic, CHRISTUS Health's electronic medical record (EMR) system, allowing for seamless documentation and immediate updates across clinics.",
+      "title": "Epic",
+      "date": "Jan 13, 2025",
+      "link": "https://www.vaxcare.com/featured-stories/christus-health-and-the-drive-for-visibility-economic-efficiency-and-standardization/#:~:text=The%20VaxCare%20solution%20fully%20integrates,and%20immediate%20updates%20across%20clinics.",
+      "displayed_link": "https://www.vaxcare.com \u203a featured-stories \u203a christus-he...",
+      "source_logo": "https://serpapi.com/searches/68646cc21248155977d2b61f/images/bf63ce113e709eb8ed39dbf9bf02a90816bd1df4db06a26e62a879f24230c322.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFBQkNtSkJUR3QwWDNaR2NXRm5OSE56ZDJWSVRUbEpiMGgyUVRaaFNuaFRkMWhaUWpSRGRtRkxTRTlmWkZscE5IQm5jblJaTWs5UlJIVjJMVE42T1VOMFJEVllUalp1YjBkMVZFWjViV2hNTkVaMVRtcExkM05YU25sM09WaFRRazlTZW1od2R4SVdkeko0YTJGSk5XczFjSEpYZUVFdFRucEphbmhFWnhvaVFVWk5RVWRIY1ZGZk5VOTJNMncxY25wMmRWZFdORlJwYjFOSE1rcHFlWGxCUVEiLCJmY3YiOiIzIiwiZWkiOiJ3MnhrYUk1azVwcld4QS1OeklqeERnIiwicWMiOiJDajVqYUhKcGMzUjFjeUJvWldGc2RHZ2diV1ZrYVdOaGNtVWdZV1IyWVc1MFlXZGxJSEJ5YjNacFpHVnlJR1JwY21WamRHOXllU0JoY0drZ1ptaHBjaEFBZmQ2OFJEOCIsInF1ZXN0aW9uIjoiV2hhdCBlTVIgc3lzdGVtIGRvZXMgQ2hyaXN0dXMgSGVhbHRoIHVzZT8iLCJsayI6IkdpaDNhR0YwSUdWdGNpQnplWE4wWlcwZ1pHOWxjeUJqYUhKcGMzUjFjeUJvWldGc2RHZ2dkWE5sIiwiYnMiOiJjLU9LNHRJTXowZ3NVVWoxRFZJb3Jpd3VTYzFWU01sUExWWnd6aWpLTEM0cExWYndTRTNNS2NsUUtDMU90WmRvbFRUU2t0SW9CNnZQTFVKUm53eFRud0ZYei1YTHBRUTJ1N2drc1FTb0pCUFQxTXc4ZTRrV1pTTVZLYVZ5SklXSlJha1k1bVhtQ1RBQ0FBIiwiaWQiOiJmY193MnhrYUk1azVwcld4QS1OeklqeERnXzEifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFBQkNtSkJUR3QwWDNaR2NXRm5OSE56ZDJWSVRUbEpiMGgyUVRaaFNuaFRkMWhaUWpSRGRtRkxTRTlmWkZscE5IQm5jblJaTWs5UlJIVjJMVE42T1VOMFJEVllUalp1YjBkMVZFWjViV2hNTkVaMVRtcExkM05YU25sM09WaFRRazlTZW1od2R4SVdkeko0YTJGSk5XczFjSEpYZUVFdFRucEphbmhFWnhvaVFVWk5RVWRIY1ZGZk5VOTJNMncxY25wMmRWZFdORlJwYjFOSE1rcHFlWGxCUVEiLCJmY3YiOiIzIiwiZWkiOiJ3MnhrYUk1azVwcld4QS1OeklqeERnIiwicWMiOiJDajVqYUhKcGMzUjFjeUJvWldGc2RHZ2diV1ZrYVdOaGNtVWdZV1IyWVc1MFlXZGxJSEJ5YjNacFpHVnlJR1JwY21WamRHOXllU0JoY0drZ1ptaHBjaEFBZmQ2OFJEOCIsInF1ZXN0aW9uIjoiV2hhdCBlTVIgc3lzdGVtIGRvZXMgQ2hyaXN0dXMgSGVhbHRoIHVzZT8iLCJsayI6IkdpaDNhR0YwSUdWdGNpQnplWE4wWlcwZ1pHOWxjeUJqYUhKcGMzUjFjeUJvWldGc2RHZ2dkWE5sIiwiYnMiOiJjLU9LNHRJTXowZ3NVVWoxRFZJb3Jpd3VTYzFWU01sUExWWnd6aWpLTEM0cExWYndTRTNNS2NsUUtDMU90WmRvbFRUU2t0SW9CNnZQTFVKUm53eFRud0ZYei1YTHBRUTJ1N2drc1FTb0pCUFQxTXc4ZTRrV1pTTVZLYVZ5SklXSlJha1k1bVhtQ1RBQ0FBIiwiaWQiOiJmY193MnhrYUk1azVwcld4QS1OeklqeERnXzEifQ%3D%3D"
+    },
+    {
+      "question": "What states is Christus Health in?",
+      "snippet": "We are a community of 50,000 Associates, with over 15,000 physicians providing personalized care. Our ministries extend to Texas, Louisiana, New Mexico and Arkansas, and throughout the Americas to Chile, Colombia and Mexico.",
+      "title": "CHRISTUS Health - LinkedIn",
+      "link": "https://www.linkedin.com/company/christus-health#:~:text=We%20are%20a%20community%20of,to%20Chile%2C%20Colombia%20and%20Mexico.",
+      "displayed_link": "https://www.linkedin.com \u203a company \u203a christus-health",
+      "source_logo": "https://serpapi.com/searches/68646cc21248155977d2b61f/images/bf63ce113e709eb8ed39dbf9bf02a908bfedf2620dfcf76e0c415ca80946353b.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFBQkNtSkJUR3QwWDNaR2NXRm5OSE56ZDJWSVRUbEpiMGgyUVRaaFNuaFRkMWhaUWpSRGRtRkxTRTlmWkZscE5IQm5jblJaTWs5UlJIVjJMVE42T1VOMFJEVllUalp1YjBkMVZFWjViV2hNTkVaMVRtcExkM05YU25sM09WaFRRazlTZW1od2R4SVdkeko0YTJGSk5XczFjSEpYZUVFdFRucEphbmhFWnhvaVFVWk5RVWRIY1ZGZk5VOTJNMncxY25wMmRWZFdORlJwYjFOSE1rcHFlWGxCUVEiLCJmY3YiOiIzIiwiZWkiOiJ3MnhrYUk1azVwcld4QS1OeklqeERnIiwicWMiOiJDajVqYUhKcGMzUjFjeUJvWldGc2RHZ2diV1ZrYVdOaGNtVWdZV1IyWVc1MFlXZGxJSEJ5YjNacFpHVnlJR1JwY21WamRHOXllU0JoY0drZ1ptaHBjaEFBZmQ2OFJEOCIsInF1ZXN0aW9uIjoiV2hhdCBzdGF0ZXMgaXMgQ2hyaXN0dXMgSGVhbHRoIGluPyIsImxrIjoiR2lKM2FHRjBJSE4wWVhSbGN5QmhjbVVnWTJoeWFYTjBkWE1nYUdWaGJIUm9JR2x1IiwiYnMiOiJjLU9LNHRJTXowZ3NVVWoxRFZJb3Jpd3VTYzFWU01sUExWWnd6aWpLTEM0cExWYndTRTNNS2NsUUtDMU90WmRvbFRUU2t0SW9CNnZQTFVKUm53eFRud0ZYei1YTHBRUTJ1N2drc1FTb0pCUFQxTXc4ZTRrV1pTTVZLYVZ5SklXSlJha1k1bVhtQ1RBQ0FBIiwiaWQiOiJmY193MnhrYUk1azVwcld4QS1OeklqeERnXzEifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFBQkNtSkJUR3QwWDNaR2NXRm5OSE56ZDJWSVRUbEpiMGgyUVRaaFNuaFRkMWhaUWpSRGRtRkxTRTlmWkZscE5IQm5jblJaTWs5UlJIVjJMVE42T1VOMFJEVllUalp1YjBkMVZFWjViV2hNTkVaMVRtcExkM05YU25sM09WaFRRazlTZW1od2R4SVdkeko0YTJGSk5XczFjSEpYZUVFdFRucEphbmhFWnhvaVFVWk5RVWRIY1ZGZk5VOTJNMncxY25wMmRWZFdORlJwYjFOSE1rcHFlWGxCUVEiLCJmY3YiOiIzIiwiZWkiOiJ3MnhrYUk1azVwcld4QS1OeklqeERnIiwicWMiOiJDajVqYUhKcGMzUjFjeUJvWldGc2RHZ2diV1ZrYVdOaGNtVWdZV1IyWVc1MFlXZGxJSEJ5YjNacFpHVnlJR1JwY21WamRHOXllU0JoY0drZ1ptaHBjaEFBZmQ2OFJEOCIsInF1ZXN0aW9uIjoiV2hhdCBzdGF0ZXMgaXMgQ2hyaXN0dXMgSGVhbHRoIGluPyIsImxrIjoiR2lKM2FHRjBJSE4wWVhSbGN5QmhjbVVnWTJoeWFYTjBkWE1nYUdWaGJIUm9JR2x1IiwiYnMiOiJjLU9LNHRJTXowZ3NVVWoxRFZJb3Jpd3VTYzFWU01sUExWWnd6aWpLTEM0cExWYndTRTNNS2NsUUtDMU90WmRvbFRUU2t0SW9CNnZQTFVKUm53eFRud0ZYei1YTHBRUTJ1N2drc1FTb0pCUFQxTXc4ZTRrV1pTTVZLYVZ5SklXSlJha1k1bVhtQ1RBQ0FBIiwiaWQiOiJmY193MnhrYUk1azVwcld4QS1OeklqeERnXzEifQ%3D%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "HealthSparq FHIR API",
+      "link": "https://www.christushealthplan.org/interoperability/healthsparq-fhir-api",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.christushealthplan.org/interoperability/healthsparq-fhir-api&ved=2ahUKEwjO0crk5ZyOAxVmjZUCHQ0mIu4QFnoECBIQAQ",
+      "displayed_link": "https://www.christushealthplan.org \u203a interoperability \u203a he...",
+      "snippet": "CHRISTUS Health Plan has contracted with HealthSparq to manage and support FHIR Provider Directory API.",
+      "snippet_highlighted_words": [
+        "CHRISTUS Health",
+        "FHIR Provider Directory API"
+      ],
+      "source": "CHRISTUS Health Plan"
+    },
+    {
+      "position": 2,
+      "title": "Interoperability | CHRISTUS HealthPlan",
+      "link": "https://www.christushealthplan.org/privacy-and-patient-rights/interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.christushealthplan.org/privacy-and-patient-rights/interoperability&ved=2ahUKEwjO0crk5ZyOAxVmjZUCHQ0mIu4QFnoECBUQAQ",
+      "displayed_link": "https://www.christushealthplan.org \u203a interoperability",
+      "snippet": "CHRISTUS Health Plan has contracted with HealthSparq to manage and support the Provider Directory API. Instructions on how to get started are provided by ...",
+      "snippet_highlighted_words": [
+        "CHRISTUS Health",
+        "Provider Directory API"
+      ],
+      "source": "CHRISTUS Health Plan"
+    },
+    {
+      "position": 3,
+      "title": "HOUSE OF DELEGATES HANDBOOK - INFO (A-22)",
+      "link": "https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf&ved=2ahUKEwjO0crk5ZyOAxVmjZUCHQ0mIu4QFnoECB4QAQ",
+      "displayed_link": "https://www.ama-assn.org \u203a system \u203a files \u203a a22-...",
+      "favicon": "https://serpapi.com/searches/68646cc21248155977d2b61f/images/2505949618233436e2649b8f9d166615149f73e69a645c32a44600452490451d.png",
+      "date": "Dec 17, 2021",
+      "snippet": "AMA/CAQH Provider Directory. White Paper \u2013 Co-branded white ... FHIR\u00ae implementation guide for the capture and use of SDOH data. 18.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=christus+health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjO0crk5ZyOAxVmjZUCHQ0mIu4Q5t4CegQIKhAB"
+      },
+      "source": "American Medical Association"
+    },
+    {
+      "position": 4,
+      "title": "Healthcare Domain Course Material | PDF | Managed Care",
+      "link": "https://www.scribd.com/document/143530675/Healthcare-Domain-Course-Material",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.scribd.com/document/143530675/Healthcare-Domain-Course-Material&ved=2ahUKEwjO0crk5ZyOAxVmjZUCHQ0mIu4QFnoECBYQAQ",
+      "displayed_link": "https://www.scribd.com \u203a document \u203a Healthcare-Doma...",
+      "favicon": "https://serpapi.com/searches/68646cc21248155977d2b61f/images/2505949618233436e2649b8f9d16661570b9daeabfbca14e2b58f7306d53c0f1.png",
+      "snippet": "... Provider directory is that enlists the providers those are in the network ... FHIR DATA SOLUTIONS WITH AZURE FHIR SERVER, AZURE API FOR FHIR & AZURE HEALTH ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR",
+        "FHIR",
+        "API",
+        "FHIR",
+        "HEALTH"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 5.0,
+            "reviews": 3
+          },
+          "extensions": [
+            "5.0(3)"
+          ]
+        }
+      },
+      "source": "Scribd"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 4 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=christus+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

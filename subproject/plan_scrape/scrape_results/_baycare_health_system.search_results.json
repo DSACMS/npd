@@ -1,0 +1,204 @@
+{
+  "search_metadata": {
+    "id": "686464751248151967cc2044",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/f2f1125d9b201ed9/686464751248151967cc2044.json",
+    "created_at": "2025-07-01 22:43:01 UTC",
+    "processed_at": "2025-07-01 22:43:01 UTC",
+    "google_url": "https://www.google.com/search?q=%22baycare+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22baycare+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/f2f1125d9b201ed9/686464751248151967cc2044.html",
+    "total_time_taken": 2.04
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"baycare health system Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"baycare health system Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 138,
+    "time_taken_displayed": 0.35,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "baycare health system Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "baycare health system Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwjPn8Tv3ZyOAxU19zgGHVKQDc8QFnoECBoQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/686464751248151967cc2044/images/e875af9826d596f21a6bf45ba75d3d1f8fc5d75b52ea299f7c305b5ef433506a.png",
+      "snippet": "Flexpa Endpoint Directory. Flexpa's directory is a comprehensive index of Payer Patient Access APIs and is the largest of its kind.",
+      "snippet_highlighted_words": [
+        "Flexpa's directory is a comprehensive index of Payer Patient Access APIs"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 2,
+      "title": "open.epic :: Endpoints",
+      "link": "https://open.epic.com/MyApps/Endpoints",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://open.epic.com/MyApps/Endpoints&ved=2ahUKEwjPn8Tv3ZyOAxU19zgGHVKQDc8QFnoECBYQAQ",
+      "displayed_link": "https://open.epic.com \u203a MyApps \u203a Endpoints",
+      "favicon": "https://serpapi.com/searches/686464751248151967cc2044/images/e875af9826d596f21a6bf45ba75d3d1f60dc922225aaef5656bd3beb9f14a598.png",
+      "snippet": "This format uses FHIR Endpoint and Organization resources to provide details about FHIR endpoints, including branding information and facility identifiers and ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR"
+      ],
+      "source": "Epic Systems"
+    },
+    {
+      "position": 3,
+      "title": "To meet interoperability mandates, providers and payers ...",
+      "link": "https://www.healthcarefinancenews.com/news/meet-interoperability-mandates-providers-and-payers-should-get-good-apis-expert-says",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcarefinancenews.com/news/meet-interoperability-mandates-providers-and-payers-should-get-good-apis-expert-says&ved=2ahUKEwjPn8Tv3ZyOAxU19zgGHVKQDc8QFnoECBgQAQ",
+      "displayed_link": "https://www.healthcarefinancenews.com \u203a news \u203a meet-...",
+      "favicon": "https://serpapi.com/searches/686464751248151967cc2044/images/e875af9826d596f21a6bf45ba75d3d1fc96d1dcba79c0d1febaeac13b932bdc8.png",
+      "date": "Mar 22, 2023",
+      "snippet": "To meet interoperability demands, Ivan recommends health systems and payers get good at APIs and do more than the minimum required to meet compliance.",
+      "snippet_highlighted_words": [
+        "health systems",
+        "APIs"
+      ],
+      "source": "Healthcare Finance News"
+    },
+    {
+      "position": 4,
+      "title": "Record History | ver. 334: 2024-10-04 | NCT03072927",
+      "link": "https://clinicaltrials.gov/study/NCT03072927?tab=history&a=334",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://clinicaltrials.gov/study/NCT03072927%3Ftab%3Dhistory%26a%3D334&ved=2ahUKEwjPn8Tv3ZyOAxU19zgGHVKQDc8QFnoECBsQAQ",
+      "displayed_link": "https://clinicaltrials.gov \u203a study \u203a NCT03072927",
+      "favicon": "https://serpapi.com/searches/686464751248151967cc2044/images/e875af9826d596f21a6bf45ba75d3d1fed1fdd383003e57049784c6c66b21dc6.png",
+      "snippet": "Study participants will include Medicare beneficiaries for whom claims have been submitted to the Medicare Claims database and who have been enrolled in ...",
+      "snippet_highlighted_words": [
+        "Medicare",
+        "Medicare"
+      ],
+      "source": "ClinicalTrials.gov"
+    },
+    {
+      "position": 5,
+      "title": "Human API, CMS unveil FHIR-based API for 53 million Medicare ...",
+      "link": "https://www.healthcarefinancenews.com/news/human-api-cms-unveil-fhir-based-api-53-million-medicare-patients",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcarefinancenews.com/news/human-api-cms-unveil-fhir-based-api-53-million-medicare-patients&ved=2ahUKEwjPn8Tv3ZyOAxU19zgGHVKQDc8QFnoECBwQAQ",
+      "displayed_link": "https://www.healthcarefinancenews.com \u203a news \u203a huma...",
+      "favicon": "https://serpapi.com/searches/686464751248151967cc2044/images/e875af9826d596f21a6bf45ba75d3d1fb3079548f0dc5ae4e49f4a8375e48daf.png",
+      "snippet": "The new API, debuted at HIMSS18, enables patients to securely share their Medicare claims history using a new HL7 FHIR standard.",
+      "snippet_highlighted_words": [
+        "API",
+        "Medicare",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=baycare+health+system+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjPn8Tv3ZyOAxU19zgGHVKQDc8Q5t4CegQIKxAB"
+      },
+      "source": "Healthcare Finance News"
+    },
+    {
+      "position": 6,
+      "title": "HIPAA, Health Information Privacy & Security Compliance",
+      "link": "https://www.komahonylaw.com/hipaa-health-information-privacy-security-compliance/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.komahonylaw.com/hipaa-health-information-privacy-security-compliance/&ved=2ahUKEwjPn8Tv3ZyOAxU19zgGHVKQDc8QFnoECBkQAQ",
+      "displayed_link": "https://www.komahonylaw.com \u203a hipaa-health-informat...",
+      "favicon": "https://serpapi.com/searches/686464751248151967cc2044/images/e875af9826d596f21a6bf45ba75d3d1f1a96b6c4c2c883e3653e640c2c6d1700.png",
+      "snippet": "Our law firm is experienced in counseling and assisting healthcare clients regarding medical privacy and security matters in a cost-effective manner.",
+      "snippet_highlighted_words": [
+        "medical"
+      ],
+      "source": "komahonylaw.com"
+    },
+    {
+      "position": 7,
+      "title": "November 17, 2021",
+      "link": "https://www.biostl.org/files/uploads/GlobalSTL_Health_Innovation_Summit_2021_Program_Book_%2811_12_21%29.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.biostl.org/files/uploads/GlobalSTL_Health_Innovation_Summit_2021_Program_Book_%252811_12_21%2529.pdf&ved=2ahUKEwjPn8Tv3ZyOAxU19zgGHVKQDc8QFnoECBcQAQ",
+      "displayed_link": "https://www.biostl.org \u203a files \u203a uploads \u203a Global...",
+      "favicon": "https://serpapi.com/searches/686464751248151967cc2044/images/e875af9826d596f21a6bf45ba75d3d1ff22c4eebe77bc027aa6ae07500f951e0.png",
+      "date": "Nov 17, 2021",
+      "snippet": "We have also successfully tested the integration with Cerner's EHR and others using our SMART on FHIR API. Page 14. GlobalSTL Health Innovation ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Health"
+      ],
+      "source": "BioSTL"
+    },
+    {
+      "position": 8,
+      "title": "Exclusive Change Healthcare Payers for Claims as of 3.06. ...",
+      "link": "https://support.drchrono.com/home/23548386475163-exclusive-change-healthcare-payers-for-claims-as-of-3-06-2024",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://support.drchrono.com/home/23548386475163-exclusive-change-healthcare-payers-for-claims-as-of-3-06-2024&ved=2ahUKEwjPn8Tv3ZyOAxU19zgGHVKQDc8QFnoECC4QAQ",
+      "displayed_link": "https://support.drchrono.com \u203a home \u203a 2354838647516...",
+      "favicon": "https://serpapi.com/searches/686464751248151967cc2044/images/e875af9826d596f21a6bf45ba75d3d1fe04ee15671da3eeff657a3b8f330fc2b.png",
+      "date": "Jul 8, 2024",
+      "snippet": "Exclusive Change Healthcare Payers for Claims as of 3/6/24. Payer Name, Payer ID, Line of Business. 1199 National Benefit Fund, 5405 ...",
+      "source": "DrChrono"
+    },
+    {
+      "position": 9,
+      "title": "Buyers Guide: A close look at 8 population health platforms",
+      "link": "https://www.healthcareitnews.com/news/buyers-guide-close-look-8-population-health-platforms",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcareitnews.com/news/buyers-guide-close-look-8-population-health-platforms&ved=2ahUKEwjPn8Tv3ZyOAxU19zgGHVKQDc8QFnoECC8QAQ",
+      "displayed_link": "https://www.healthcareitnews.com \u203a news \u203a buyers-guide...",
+      "favicon": "https://serpapi.com/searches/686464751248151967cc2044/images/e875af9826d596f21a6bf45ba75d3d1f9cf1de7a134990997b5fe7c9972a0e9f.png",
+      "date": "Aug 31, 2016",
+      "snippet": "The technologies identify, assess and stratify patient cohorts so healthcare organizations can supplement care teams, manage patient populations ...",
+      "snippet_highlighted_words": [
+        "supplement care"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=baycare+health+system+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjPn8Tv3ZyOAxU19zgGHVKQDc8Q5t4CegQINxAB"
+      },
+      "source": "Healthcare IT News"
+    },
+    {
+      "position": 10,
+      "title": "Study Details | MILD\u00ae Percutaneous Image-Guided ...",
+      "link": "https://www.clinicaltrials.gov/study/NCT03072927",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.clinicaltrials.gov/study/NCT03072927&ved=2ahUKEwjPn8Tv3ZyOAxU19zgGHVKQDc8QFnoECDAQAQ",
+      "displayed_link": "https://www.clinicaltrials.gov \u203a study \u203a NCT03072927",
+      "favicon": "https://serpapi.com/searches/686464751248151967cc2044/images/e875af9826d596f21a6bf45ba75d3d1f95bb0dc6150e952ac56a1d7641014296.png",
+      "date": "Mar 10, 2017",
+      "snippet": "This prospective longitudinal study will compare incidence rates of Medicare beneficiary surgical and minimally invasive intervention post ...",
+      "snippet_highlighted_words": [
+        "Medicare"
+      ],
+      "source": "ClinicalTrials.gov"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=baycare+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=dmRkaM-MHrXu4-EP0qC2-Aw&start=10&sa=N&sstk=Ac65TH7xPK_lZydKWWdlLFe6SKcCpRwXY915GAfgwIT0T7xJio-7yQrFy09DGokqx6IRwXuwcjWbvt0h5vIt4q8LtvtzwHCCYhKULg&ved=2ahUKEwjPn8Tv3ZyOAxU19zgGHVKQDc8Q8NMDegQICBAI",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=baycare+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=dmRkaM-MHrXu4-EP0qC2-Aw&start=10&sa=N&sstk=Ac65TH7xPK_lZydKWWdlLFe6SKcCpRwXY915GAfgwIT0T7xJio-7yQrFy09DGokqx6IRwXuwcjWbvt0h5vIt4q8LtvtzwHCCYhKULg&ved=2ahUKEwjPn8Tv3ZyOAxU19zgGHVKQDc8Q8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=baycare+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=dmRkaM-MHrXu4-EP0qC2-Aw&start=20&sa=N&sstk=Ac65TH7xPK_lZydKWWdlLFe6SKcCpRwXY915GAfgwIT0T7xJio-7yQrFy09DGokqx6IRwXuwcjWbvt0h5vIt4q8LtvtzwHCCYhKULg&ved=2ahUKEwjPn8Tv3ZyOAxU19zgGHVKQDc8Q8tMDegQICBAG"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=baycare+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=baycare+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=baycare+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=baycare+health+system+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20"
+    }
+  }
+}

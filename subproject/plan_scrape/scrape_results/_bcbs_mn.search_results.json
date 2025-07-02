@@ -1,0 +1,276 @@
+{
+  "search_metadata": {
+    "id": "68646478759dbcb2879f83fa",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/71a5313b305e053b/68646478759dbcb2879f83fa.json",
+    "created_at": "2025-07-01 22:43:04 UTC",
+    "processed_at": "2025-07-01 22:43:04 UTC",
+    "google_url": "https://www.google.com/search?q=%22bcbs+mn+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22bcbs+mn+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/71a5313b305e053b/68646478759dbcb2879f83fa.html",
+    "total_time_taken": 4.75
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"bcbs mn Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"bcbs mn Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 609,
+    "time_taken_displayed": 0.46,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "bcbs mn Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "bcbs mn Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability: Developer access to APIs and Smart on FHIR ...",
+      "link": "https://fhir-developer.bluecrossmn.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://fhir-developer.bluecrossmn.com/&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQFnoECBEQAQ",
+      "displayed_link": "https://fhir-developer.bluecrossmn.com",
+      "snippet": "This document includes links to useful information and best practices to help payers and developers build and maintain a FHIR-based API.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API"
+      ],
+      "source": "Blue Cross MN"
+    },
+    {
+      "position": 2,
+      "title": "Implementation Guide Plan Drug Formulary API",
+      "link": "https://bluecrossmn.com/interop-drugformulary-api-ig",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://bluecrossmn.com/interop-drugformulary-api-ig&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQFnoECBwQAQ",
+      "displayed_link": "https://bluecrossmn.com \u203a interop-drugformular...",
+      "favicon": "https://serpapi.com/searches/68646478759dbcb2879f83fa/images/39e4adfeff000041ab569840a88152c5b469534ef93464e3bac60ce13401ef79.png",
+      "date": "May 25, 2021",
+      "snippet": "Plan Drug Formulary API will support query requests using plan and drug identifiers and will return information on coverage including cost share ...",
+      "snippet_highlighted_words": [
+        "API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=bcbs+mn+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQ5t4CegQIHhAB"
+      },
+      "source": "Blue Cross MN"
+    },
+    {
+      "position": 3,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQFnoECBcQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/68646478759dbcb2879f83fa/images/39e4adfeff000041ab569840a88152c5bbd607b404a24b8e31fbb2d1b7e04d6c.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. Endpoints are: FHIR- ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 4,
+      "title": "Nov 22, 2024 Advisory Committee Meeting Summary",
+      "link": "https://www.health.state.mn.us/facilities/ehealth/advcommittee/docs/112224summary.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.health.state.mn.us/facilities/ehealth/advcommittee/docs/112224summary.pdf&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQFnoECBIQAQ",
+      "displayed_link": "https://www.health.state.mn.us \u203a ehealth \u203a docs",
+      "favicon": "https://serpapi.com/searches/68646478759dbcb2879f83fa/images/39e4adfeff000041ab569840a88152c50fcd3200469c657afa5079d3f8ad1a23.png",
+      "date": "Nov 22, 2024",
+      "snippet": "Aims to represent the health care ecosystem including providers, hospitals, health systems, health insurers and health plans, long-term care, ...",
+      "snippet_highlighted_words": [
+        "providers",
+        "plans"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 11
+          },
+          "extensions": [
+            "11 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=bcbs+mn+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQ5t4CegQIHRAB"
+      },
+      "source": "MN Dept. of Health"
+    },
+    {
+      "position": 5,
+      "title": "Prior Authorization in Medicaid",
+      "link": "https://www.macpac.gov/wp-content/uploads/2024/08/Prior-Authorization-in-Medicaid.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.macpac.gov/wp-content/uploads/2024/08/Prior-Authorization-in-Medicaid.pdf&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQFnoECBkQAQ",
+      "displayed_link": "https://www.macpac.gov \u203a uploads \u203a 2024/08 \u203a Pr...",
+      "favicon": "https://serpapi.com/searches/68646478759dbcb2879f83fa/images/39e4adfeff000041ab569840a88152c5c93e421b535f674bde1382e1afc151cf.png",
+      "date": "Aug 1, 2024",
+      "snippet": "6 The prior authorization API will include a list of covered items and services, identify documentation needed for a given prior authorization ...",
+      "snippet_highlighted_words": [
+        "API",
+        "list"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 25
+          },
+          "extensions": [
+            "25 pages"
+          ]
+        }
+      },
+      "source": "Advising Congress on Medicaid and CHIP Policy (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Eligibility & Coverage",
+      "link": "https://www.availity.com/eligibility-and-coverage/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.availity.com/eligibility-and-coverage/&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQFnoECBoQAQ",
+      "displayed_link": "https://www.availity.com \u203a eligibility-and-coverage",
+      "favicon": "https://serpapi.com/searches/68646478759dbcb2879f83fa/images/39e4adfeff000041ab569840a88152c54293a8606eada17e31c1d8f5a7a2cd3e.png",
+      "snippet": "API Marketplace. Experience healthcare's future with Availity's REST and FHIR-based APIs for fast, secure connectivity. Learn More. Fill out the form below ...",
+      "snippet_highlighted_words": [
+        "API Marketplace"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=bcbs+mn+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQ5t4CegQIIBAB"
+      },
+      "source": "Availity"
+    },
+    {
+      "position": 7,
+      "title": "2024 MANUAL - Health Center Data Reporting Requirements ...",
+      "link": "https://bphc.hrsa.gov/sites/default/files/bphc/data-reporting/2024-uds-manual.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://bphc.hrsa.gov/sites/default/files/bphc/data-reporting/2024-uds-manual.pdf&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQFnoECBMQAQ",
+      "displayed_link": "https://bphc.hrsa.gov \u203a sites \u203a default \u203a files \u203a bphc",
+      "favicon": "https://serpapi.com/searches/68646478759dbcb2879f83fa/images/39e4adfeff000041ab569840a88152c54f6fe1e6bbb281021bfeb8ed3937c6e8.png",
+      "snippet": "o Medicare managed care plans, including Medicare Advantage plans run by private insurers. ... FHIR\u00ae API. Interface that allows a computer program or system ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "FHIR",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 229
+          },
+          "extensions": [
+            "229 pages"
+          ]
+        }
+      },
+      "source": "Bureau of Primary Health Care (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Expanding Access to Medicare and Medicaid Claims Data ...",
+      "link": "https://liberty.norc.org/content/file?id=61",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://liberty.norc.org/content/file%3Fid%3D61&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQFnoECDAQAQ",
+      "displayed_link": "https://liberty.norc.org \u203a content \u203a file",
+      "date": "Jul 6, 2022",
+      "snippet": "FHIR-based APIs allow for data to be accessed more quickly than traditional research data access pathways. These APIs use the Health Level Seven ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "APIs",
+        "APIs"
+      ],
+      "source": "NORC at the University of Chicago"
+    },
+    {
+      "position": 9,
+      "title": "Health Care Payment Learning & Action Network",
+      "link": "https://hcp-lan.org/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hcp-lan.org/&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQFnoECDcQAQ",
+      "displayed_link": "https://hcp-lan.org",
+      "favicon": "https://serpapi.com/searches/68646478759dbcb2879f83fa/images/39e4adfeff000041ab569840a88152c5466752b77ecf50cb6d8b55e5fdedb3cc.png",
+      "snippet": "Initiative Description: The Centers for Medicare & Medicaid Services (CMS) has updated the agency's Framework for Health Equity, expanding upon its initial ...",
+      "snippet_highlighted_words": [
+        "Medicare"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "About Us",
+            "link": "https://hcp-lan.org/about-us/"
+          },
+          {
+            "title": "APM Framework",
+            "link": "https://hcp-lan.org/apm-framework/"
+          },
+          {
+            "title": "APM Roadmap",
+            "link": "https://hcp-lan.org/apm-roadmap/"
+          },
+          {
+            "title": "APM Measurement Effort",
+            "link": "https://hcp-lan.org/apm-measurement-effort/"
+          }
+        ]
+      },
+      "source": "Health Care Payment Learning & Action Network"
+    },
+    {
+      "position": 10,
+      "title": "HMA Weekly Roundup",
+      "link": "https://www.healthmanagement.com/insights/weekly-roundup/february-14-2024/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthmanagement.com/insights/weekly-roundup/february-14-2024/&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQFnoECDQQAQ",
+      "displayed_link": "https://www.healthmanagement.com \u203a february-14-2024",
+      "favicon": "https://serpapi.com/searches/68646478759dbcb2879f83fa/images/39e4adfeff000041ab569840a88152c5c7e9d695b6474971301e11cc1bff2670.png",
+      "date": "Feb 14, 2024",
+      "snippet": "Provider Access FHIR API\u200b\u200b Payers also must build and maintain a Provider Access API to share patient data with in-network providers with whom ...",
+      "source": "Health Management Associates"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fGRkaPy-J4atxc8P8NGG2A0&start=10&sa=N&sstk=Ac65TH7jtMi3DUqSj8jOdCVJQNEMw-16qVdqQ7A0NZG88M88oldbDHcmi5UuY2R3SazTWibSKS02cOHPTFxs26PL_ZWw076v_Keeeg&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fGRkaPy-J4atxc8P8NGG2A0&start=10&sa=N&sstk=Ac65TH7jtMi3DUqSj8jOdCVJQNEMw-16qVdqQ7A0NZG88M88oldbDHcmi5UuY2R3SazTWibSKS02cOHPTFxs26PL_ZWw076v_Keeeg&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fGRkaPy-J4atxc8P8NGG2A0&start=20&sa=N&sstk=Ac65TH7jtMi3DUqSj8jOdCVJQNEMw-16qVdqQ7A0NZG88M88oldbDHcmi5UuY2R3SazTWibSKS02cOHPTFxs26PL_ZWw076v_Keeeg&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fGRkaPy-J4atxc8P8NGG2A0&start=30&sa=N&sstk=Ac65TH7jtMi3DUqSj8jOdCVJQNEMw-16qVdqQ7A0NZG88M88oldbDHcmi5UuY2R3SazTWibSKS02cOHPTFxs26PL_ZWw076v_Keeeg&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fGRkaPy-J4atxc8P8NGG2A0&start=40&sa=N&sstk=Ac65TH7jtMi3DUqSj8jOdCVJQNEMw-16qVdqQ7A0NZG88M88oldbDHcmi5UuY2R3SazTWibSKS02cOHPTFxs26PL_ZWw076v_Keeeg&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fGRkaPy-J4atxc8P8NGG2A0&start=50&sa=N&sstk=Ac65TH7jtMi3DUqSj8jOdCVJQNEMw-16qVdqQ7A0NZG88M88oldbDHcmi5UuY2R3SazTWibSKS02cOHPTFxs26PL_ZWw076v_Keeeg&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fGRkaPy-J4atxc8P8NGG2A0&start=60&sa=N&sstk=Ac65TH7jtMi3DUqSj8jOdCVJQNEMw-16qVdqQ7A0NZG88M88oldbDHcmi5UuY2R3SazTWibSKS02cOHPTFxs26PL_ZWw076v_Keeeg&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fGRkaPy-J4atxc8P8NGG2A0&start=70&sa=N&sstk=Ac65TH7jtMi3DUqSj8jOdCVJQNEMw-16qVdqQ7A0NZG88M88oldbDHcmi5UuY2R3SazTWibSKS02cOHPTFxs26PL_ZWw076v_Keeeg&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fGRkaPy-J4atxc8P8NGG2A0&start=80&sa=N&sstk=Ac65TH7jtMi3DUqSj8jOdCVJQNEMw-16qVdqQ7A0NZG88M88oldbDHcmi5UuY2R3SazTWibSKS02cOHPTFxs26PL_ZWw076v_Keeeg&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fGRkaPy-J4atxc8P8NGG2A0&start=90&sa=N&sstk=Ac65TH7jtMi3DUqSj8jOdCVJQNEMw-16qVdqQ7A0NZG88M88oldbDHcmi5UuY2R3SazTWibSKS02cOHPTFxs26PL_ZWw076v_Keeeg&ved=2ahUKEwj87Lvy3ZyOAxWGVvEDHfCoAdsQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bcbs+mn+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

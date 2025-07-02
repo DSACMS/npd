@@ -1,0 +1,239 @@
+{
+  "search_metadata": {
+    "id": "68646cfc6539a297ba5ac45f",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/c5a48b75d53ca159/68646cfc6539a297ba5ac45f.json",
+    "created_at": "2025-07-01 23:19:24 UTC",
+    "processed_at": "2025-07-01 23:19:24 UTC",
+    "google_url": "https://www.google.com/search?q=johns+hopkins+healthcare+llc+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=johns+hopkins+healthcare+llc+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/c5a48b75d53ca159/68646cfc6539a297ba5ac45f.html",
+    "total_time_taken": 1.01
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "johns hopkins healthcare llc Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "johns hopkins healthcare llc Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 26,
+    "time_taken_displayed": 0.28,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Streamlining Prior Authorization: Final Report ...",
+      "link": "https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf&ved=2ahUKEwiVvqKA5pyOAxXVrlYBHZ2LOqYQFnoECBoQAQ",
+      "displayed_link": "https://24315998.fs1.hubspotusercontent-na1.net \u203a ...",
+      "snippet": "Fast healthcare interoperability resources (FHIR). Electronic Health ... APIs and provider directory infor- mation through the Provider Directory API.",
+      "snippet_highlighted_words": [
+        "healthcare",
+        "FHIR",
+        "APIs",
+        "provider directory",
+        "Provider Directory API"
+      ],
+      "source": "hubspotusercontent-na1.net"
+    },
+    {
+      "position": 2,
+      "title": "Attachments B, C, D, E, G, H, I.docx",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/Attachments%20B,%20C,%20D,%20E,%20G,%20H,%20I.docx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/Attachments%2520B,%2520C,%2520D,%2520E,%2520G,%2520H,%2520I.docx&ved=2ahUKEwiVvqKA5pyOAxXVrlYBHZ2LOqYQFnoECBUQAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a pdf \u203a Ellkay",
+      "favicon": "https://serpapi.com/searches/68646cfc6539a297ba5ac45f/images/553cb3b202c24917e66283d8a7c5ac3856214b536e058a6f17200ac1e01eed08.png",
+      "snippet": "Application Programming Interface (API) Services. \u2022 Current FHIR API capabilities. o ELLKAY has currently enabled the following R4 FHIR APIs: \u2022 Account ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR API",
+        "FHIR APIs"
+      ],
+      "source": "Gobierno de Puerto Rico (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Provider Directory Workshop, April 5, 2016 Page 1",
+      "link": "https://oncprojectracking.healthit.gov/wiki/download/attachments/9700978/Provider%20Directory%20Workshop%20Transcript%20%28draft%29%202016-04-05.pdf?version=1&modificationDate=1463069275000&api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://oncprojectracking.healthit.gov/wiki/download/attachments/9700978/Provider%2520Directory%2520Workshop%2520Transcript%2520%2528draft%2529%25202016-04-05.pdf%3Fversion%3D1%26modificationDate%3D1463069275000%26api%3Dv2&ved=2ahUKEwiVvqKA5pyOAxXVrlYBHZ2LOqYQFnoECCgQAQ",
+      "displayed_link": "https://oncprojectracking.healthit.gov \u203a attachments",
+      "snippet": "Provider Directory Workshop, April 5, 2016. Page 32. We did have to extend FHIR as we mentioned, here is a drawing of the provider directory and consumer.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "ONC Project Tracking (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Health Information Technology Oversight Council",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/2016-0609%20Materials.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%2520Meeting%2520Docs/2016-0609%2520Materials.pdf&ved=2ahUKEwiVvqKA5pyOAxXVrlYBHZ2LOqYQFnoECBkQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HPA \u203a OHIT-HITOC",
+      "favicon": "https://serpapi.com/searches/68646cfc6539a297ba5ac45f/images/553cb3b202c24917e66283d8a7c5ac385ae8fa485426d58904488ffb14d2d344.png",
+      "date": "Jun 9, 2016",
+      "snippet": "(APIs, FHIR). Oregon. Administrative. Rules needed to establish ... \u25bb Oregon will stand-up a set of healthcare provider directory services that ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "FHIR",
+        "healthcare provider directory"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 5,
+      "title": "Report Card - Confluence - HL7 International",
+      "link": "https://confluence.hl7.org/download/attachments/144994722/ProjectBallotHealthMetrics_2023JanWGM_Final.xlsx?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/144994722/ProjectBallotHealthMetrics_2023JanWGM_Final.xlsx%3Fapi%3Dv2&ved=2ahUKEwiVvqKA5pyOAxXVrlYBHZ2LOqYQFnoECBgQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a attachments \u203a api=v2",
+      "favicon": "https://serpapi.com/searches/68646cfc6539a297ba5ac45f/images/553cb3b202c24917e66283d8a7c5ac3824447b1b039cce60470afff3f2f8817f.png",
+      "snippet": "Develop a FHIR R4 based implementation guide for an API similar to the CMS Medicare Blue Button 2.0 API, FHIR R3 based, that will allow consumer-directed ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Medicare",
+        "API",
+        "FHIR"
+      ],
+      "source": "HL7.org"
+    },
+    {
+      "position": 6,
+      "title": "ELLKAY Redacted Technical Proposal.pdf",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/ELLKAY%20Redacted%20Technical%20Proposal.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/ELLKAY%2520Redacted%2520Technical%2520Proposal.pdf&ved=2ahUKEwiVvqKA5pyOAxXVrlYBHZ2LOqYQFnoECBYQAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a 2024-PRMP-HIE-001",
+      "favicon": "https://serpapi.com/searches/68646cfc6539a297ba5ac45f/images/553cb3b202c24917e66283d8a7c5ac386f4a663ddb312d119926039a9a5584e4.png",
+      "date": "Jul 7, 2024",
+      "snippet": "The vendor confirms that. Provider Directory ... Current FHIR API capabilities o ELLKAY has currently enabled the following R4 FHIR APIs:.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR API",
+        "FHIR APIs"
+      ],
+      "source": "Gobierno de Puerto Rico (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "HOUSE OF DELEGATES HANDBOOK - INFO (A-22)",
+      "link": "https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf&ved=2ahUKEwiVvqKA5pyOAxXVrlYBHZ2LOqYQFnoECBsQAQ",
+      "displayed_link": "https://www.ama-assn.org \u203a system \u203a files \u203a a22-...",
+      "favicon": "https://serpapi.com/searches/68646cfc6539a297ba5ac45f/images/553cb3b202c24917e66283d8a7c5ac384b5adcce892e01bb0d8d2bd471aeea80.png",
+      "date": "Dec 17, 2021",
+      "snippet": "AMA/CAQH Provider Directory. White Paper \u2013 Co-branded white ... FHIR\u00ae implementation guide for the capture and use of SDOH data. 18.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=johns+hopkins+healthcare+llc+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiVvqKA5pyOAxXVrlYBHZ2LOqYQ5t4CegQIJxAB"
+      },
+      "source": "American Medical Association"
+    },
+    {
+      "position": 8,
+      "title": "Powerful Women",
+      "link": "https://arizent.brightspotcdn.com/cd/11/63c3711f49df8bb138f382fb5350/hdm-0618.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://arizent.brightspotcdn.com/cd/11/63c3711f49df8bb138f382fb5350/hdm-0618.pdf&ved=2ahUKEwiVvqKA5pyOAxXVrlYBHZ2LOqYQFnoECC0QAQ",
+      "displayed_link": "https://arizent.brightspotcdn.com \u203a hdm-0618",
+      "date": "Jun 1, 2018",
+      "snippet": "\u201cCMS is going to be releasing Medicare claims data, and what's different about Blue Button. 2.0 is its going to be using the open API. FHIR ...",
+      "snippet_highlighted_words": [
+        "Medicare",
+        "API",
+        "FHIR"
+      ],
+      "source": "brightspotcdn.com"
+    },
+    {
+      "position": 9,
+      "title": "Vital Directions - for Health & Health Care",
+      "link": "https://nam.edu/wp-content/uploads/2018/02/Vital-Directions-for-Health-and-Health-Care-Final-Publication-022718.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nam.edu/wp-content/uploads/2018/02/Vital-Directions-for-Health-and-Health-Care-Final-Publication-022718.pdf&ved=2ahUKEwiVvqKA5pyOAxXVrlYBHZ2LOqYQFnoECC4QAQ",
+      "displayed_link": "https://nam.edu \u203a wp-content \u203a uploads \u203a 2018/02",
+      "favicon": "https://serpapi.com/searches/68646cfc6539a297ba5ac45f/images/553cb3b202c24917e66283d8a7c5ac38b1e02c8d67d97996bc1f44c5fcde7b49.png",
+      "date": "Jul 8, 2016",
+      "snippet": "... Provider directory. There is no national provider directory that ... (FHIR), will enhance data liquidity and enable an ecosystem of new ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 493
+          },
+          "extensions": [
+            "493 pages"
+          ]
+        }
+      },
+      "source": "National Academy of Medicine"
+    },
+    {
+      "position": 10,
+      "title": "ncvhs - National Committee on Vital and Health Statistics",
+      "link": "https://ncvhs.hhs.gov/wp-content/uploads/2023/10/NCVHS-Standards-Subcommittee-Hearing-Summary-Jan-18-19-2023-FINAL-508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ncvhs.hhs.gov/wp-content/uploads/2023/10/NCVHS-Standards-Subcommittee-Hearing-Summary-Jan-18-19-2023-FINAL-508.pdf&ved=2ahUKEwiVvqKA5pyOAxXVrlYBHZ2LOqYQFnoECC8QAQ",
+      "displayed_link": "https://ncvhs.hhs.gov \u203a uploads \u203a 2023/10 \u203a NCV...",
+      "favicon": "https://serpapi.com/searches/68646cfc6539a297ba5ac45f/images/553cb3b202c24917e66283d8a7c5ac38f680c0d54568eb8e0ff03a6401c85408.png",
+      "date": "Oct 6, 2023",
+      "snippet": "... Provider Directory APIs, which enabled ... CMS has proposed the development of an FHIR-based API requirement that automates the process for ...",
+      "snippet_highlighted_words": [
+        "Provider Directory APIs",
+        "FHIR",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 67
+          },
+          "extensions": [
+            "67 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=johns+hopkins+healthcare+llc+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiVvqKA5pyOAxXVrlYBHZ2LOqYQ5t4CegQINhAB"
+      },
+      "source": "National Committee on Vital and Health Statistics (.gov)"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=johns+hopkins+healthcare+llc+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=_WxkaNXLBNXd2roPnZfqsQo&start=10&sa=N&sstk=Ac65TH5lIVSoOkDxIrnaJawpRw9wG1Ic7Rs8MpMUY-wP1G7a61YIOpX8G6K2fhYYn-58OKT3HJymGRwxyFFeRZaD1yAvl_aWfQQZ7A&ved=2ahUKEwiVvqKA5pyOAxXVrlYBHZ2LOqYQ8NMDegQICxAI",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=johns+hopkins+healthcare+llc+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=_WxkaNXLBNXd2roPnZfqsQo&start=10&sa=N&sstk=Ac65TH5lIVSoOkDxIrnaJawpRw9wG1Ic7Rs8MpMUY-wP1G7a61YIOpX8G6K2fhYYn-58OKT3HJymGRwxyFFeRZaD1yAvl_aWfQQZ7A&ved=2ahUKEwiVvqKA5pyOAxXVrlYBHZ2LOqYQ8tMDegQICxAE",
+      "3": "https://www.google.com/search?q=johns+hopkins+healthcare+llc+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=_WxkaNXLBNXd2roPnZfqsQo&start=20&sa=N&sstk=Ac65TH5lIVSoOkDxIrnaJawpRw9wG1Ic7Rs8MpMUY-wP1G7a61YIOpX8G6K2fhYYn-58OKT3HJymGRwxyFFeRZaD1yAvl_aWfQQZ7A&ved=2ahUKEwiVvqKA5pyOAxXVrlYBHZ2LOqYQ8tMDegQICxAG"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=johns+hopkins+healthcare+llc+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=johns+hopkins+healthcare+llc+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=johns+hopkins+healthcare+llc+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=johns+hopkins+healthcare+llc+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20"
+    }
+  }
+}

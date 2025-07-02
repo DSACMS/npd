@@ -1,0 +1,355 @@
+{
+  "search_metadata": {
+    "id": "68646d1514537b254d6a1fe5",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/9d2726d0b01081b7/68646d1514537b254d6a1fe5.json",
+    "created_at": "2025-07-01 23:19:49 UTC",
+    "processed_at": "2025-07-01 23:19:49 UTC",
+    "google_url": "https://www.google.com/search?q=medical+mutual+of+ohio+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=medical+mutual+of+ohio+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/9d2726d0b01081b7/68646d1514537b254d6a1fe5.html",
+    "total_time_taken": 0.85
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "medical mutual of ohio Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "medical mutual of ohio Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 56,
+    "time_taken_displayed": 0.33,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "Does Medical Mutual have a Medicare Advantage plan?",
+      "snippet": "Medical Mutual offers both Medicare Advantage with Prescription Drug and Medicare Supplement Insurance plans. If you're new to Medicare or looking to change plans, we can help you understand your options, compare benefits, get an instant online quote and select a plan that best meets your healthcare needs.",
+      "title": "Ohio Medicare Plans - Medical Mutual",
+      "link": "https://www.medmutual.com/For-Medicare#:~:text=Medical%20Mutual%20offers%20both%20Medicare,best%20meets%20your%20healthcare%20needs.",
+      "displayed_link": "https://www.medmutual.com \u203a For-Medicare",
+      "source_logo": "https://serpapi.com/searches/68646d1514537b254d6a1fe5/images/6c460616a07f5f6edd9bba2f6041ea801003e80e9bd823e23e70b82ef3c14d3c.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWMwRnZXR3RpWW5ZMFZrSTJPSEZrYzFZNWVYcDRTWHBLVkY5eVVWbGllVkJtYWxSbk1sVnlZelpMVFZrd2JFRkZUbkZXVG00MFVIcGZhRFJ6VUZnM09FdGtOV1ZFYzNaUFpsRlZPR3hOVW1Wd1REVkdNa1JCYkVZd1VSSVhSbGN4YTJGTlMyVlBkSG96TlU5VlVIcDJkVTAwVVdzYUlrRkdUVUZIUjI5MlowUlRiRzVwVGkwMlgxVmZTMXBSZW5SeFdFdG9kSEJTVG1jIiwiZmN2IjoiMyIsImVpIjoiRlcxa2FNS2VPdHozNU9VUHp2dU00UWsiLCJxYyI6ImMtTnl6VTFOeVV4T3pGSElMUzBwQlZMNWFRcjVHWm41Q2hEaG9sU0Z4SlN5eEx5U3hQUlVoWUtpX0xMTWxOUWloWlRNb3RUa2t2eWlTb1hFZ2t5RnRJek1JZ0dHMnBjbXV2WUEiLCJxdWVzdGlvbiI6IkRvZXMgTWVkaWNhbCBNdXR1YWwgaGF2ZSBhIE1lZGljYXJlIEFkdmFudGFnZSBwbGFuPyIsImxrIjoiYzVNeVNzbFBMVmJJVFUzSlRFN01VY2d0TFNrRlVobUpaYWtLaVZEUklpQXpwU3d4cnlReFBWV2hJQ2N4RHdBIiwiYnMiOiJjNDJRc1U3RE1CQ0cxZFVURTRveTNRc2dJTUFjVldMb0VsaEF6TmY0VWxzNGRqbWZVeUdlaFkxMzRKRlllUVFjbEE2VkdxblRTU2Q5MzNfM0s2OXU3Z05GYUVqYkZoMDBTVkllQmdjQ25MWk1zTlFEZXNFTndkYWhyNHZmai1xMnJQUkk5aFBaSDVEOW5zUURVaGwxdFFvN2tBQ2Q5UnAwYUNWd0JPdm5zbUpkZk1mcXVydzB4N0dab0tpZTFOMkxRUUViUVF4QlRHc09HeFFiUEd5RHMtMDdkSUhoMlZzaERTdENKMmIwMU1VUFYwVjVua3g3aEZGZkNfV3dITk9jbTcwWVBNa3U4T3ZGR21OMll6NzR2eFdtanBoelIweHZ5VEwxNUNXXzl6bFVqMldEazNUdW43MFVUcEdlTGY0QSIsImlkIjoiZmNfRlcxa2FNS2VPdHozNU9VUHp2dU00UWtfMyJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWMwRnZXR3RpWW5ZMFZrSTJPSEZrYzFZNWVYcDRTWHBLVkY5eVVWbGllVkJtYWxSbk1sVnlZelpMVFZrd2JFRkZUbkZXVG00MFVIcGZhRFJ6VUZnM09FdGtOV1ZFYzNaUFpsRlZPR3hOVW1Wd1REVkdNa1JCYkVZd1VSSVhSbGN4YTJGTlMyVlBkSG96TlU5VlVIcDJkVTAwVVdzYUlrRkdUVUZIUjI5MlowUlRiRzVwVGkwMlgxVmZTMXBSZW5SeFdFdG9kSEJTVG1jIiwiZmN2IjoiMyIsImVpIjoiRlcxa2FNS2VPdHozNU9VUHp2dU00UWsiLCJxYyI6ImMtTnl6VTFOeVV4T3pGSElMUzBwQlZMNWFRcjVHWm41Q2hEaG9sU0Z4SlN5eEx5U3hQUlVoWUtpX0xMTWxOUWloWlRNb3RUa2t2eWlTb1hFZ2t5RnRJek1JZ0dHMnBjbXV2WUEiLCJxdWVzdGlvbiI6IkRvZXMgTWVkaWNhbCBNdXR1YWwgaGF2ZSBhIE1lZGljYXJlIEFkdmFudGFnZSBwbGFuPyIsImxrIjoiYzVNeVNzbFBMVmJJVFUzSlRFN01VY2d0TFNrRlVobUpaYWtLaVZEUklpQXpwU3d4cnlReFBWV2hJQ2N4RHdBIiwiYnMiOiJjNDJRc1U3RE1CQ0cxZFVURTRveTNRc2dJTUFjVldMb0VsaEF6TmY0VWxzNGRqbWZVeUdlaFkxMzRKRlllUVFjbEE2VkdxblRTU2Q5MzNfM0s2OXU3Z05GYUVqYkZoMDBTVkllQmdjQ25MWk1zTlFEZXNFTndkYWhyNHZmai1xMnJQUkk5aFBaSDVEOW5zUURVaGwxdFFvN2tBQ2Q5UnAwYUNWd0JPdm5zbUpkZk1mcXVydzB4N0dab0tpZTFOMkxRUUViUVF4QlRHc09HeFFiUEd5RHMtMDdkSUhoMlZzaERTdENKMmIwMU1VUFYwVjVua3g3aEZGZkNfV3dITk9jbTcwWVBNa3U4T3ZGR21OMll6NzR2eFdtanBoelIweHZ5VEwxNUNXXzl6bFVqMldEazNUdW43MFVUcEdlTGY0QSIsImlkIjoiZmNfRlcxa2FNS2VPdHozNU9VUHp2dU00UWtfMyJ9"
+    },
+    {
+      "question": "How to find doctors in Medicare Advantage plans?",
+      "snippet": "There are a couple of ways to find out if your doctor is in a Medicare Advantage plan network. If you have a particular plan or insurer that you're looking into, you can go to the plan's website and look for their searchable directory or find a plan directory on the website, where you can search for your doctor.",
+      "title": "How can I find out if my doctor is in a Medicare Advantage plan network?",
+      "link": "https://www.kff.org/faqs/medicare-open-enrollment-faqs/how-can-i-find-out-if-my-doctor-is-in-a-medicare-advantage-plan-network/#:~:text=There%20are%20a%20couple%20of,can%20search%20for%20your%20doctor.",
+      "displayed_link": "https://www.kff.org \u203a medicare-open-enrollment-faqs",
+      "source_logo": "https://serpapi.com/searches/68646d1514537b254d6a1fe5/images/6c460616a07f5f6edd9bba2f6041ea806e0dbd1cfb84c3b594c8c788d3bab9d5.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWMwRnZXR3RpWW5ZMFZrSTJPSEZrYzFZNWVYcDRTWHBLVkY5eVVWbGllVkJtYWxSbk1sVnlZelpMVFZrd2JFRkZUbkZXVG00MFVIcGZhRFJ6VUZnM09FdGtOV1ZFYzNaUFpsRlZPR3hOVW1Wd1REVkdNa1JCYkVZd1VSSVhSbGN4YTJGTlMyVlBkSG96TlU5VlVIcDJkVTAwVVdzYUlrRkdUVUZIUjI5MlowUlRiRzVwVGkwMlgxVmZTMXBSZW5SeFdFdG9kSEJTVG1jIiwiZmN2IjoiMyIsImVpIjoiRlcxa2FNS2VPdHozNU9VUHp2dU00UWsiLCJxYyI6ImMtTnl6VTFOeVV4T3pGSElMUzBwQlZMNWFRcjVHWm41Q2hEaG9sU0Z4SlN5eEx5U3hQUlVoWUtpX0xMTWxOUWloWlRNb3RUa2t2eWlTb1hFZ2t5RnRJek1JZ0dHMnBjbXV2WUEiLCJxdWVzdGlvbiI6IkhvdyB0byBmaW5kIGRvY3RvcnMgaW4gTWVkaWNhcmUgQWR2YW50YWdlIHBsYW5zPyIsImxrIjoiR2k5b2IzY2dkRzhnWm1sdVpDQmtiMk4wYjNKeklHbHVJRzFsWkdsallYSmxJR0ZrZG1GdWRHRm5aU0J3YkdGdWN3IiwiYnMiOiJjNDJRc1U3RE1CQ0cxZFVURTRveTNRc2dJTUFjVldMb0VsaEF6TmY0VWxzNGRqbWZVeUdlaFkxMzRKRlllUVFjbEE2VkdxblRTU2Q5MzNfM0s2OXU3Z05GYUVqYkZoMDBTVkllQmdjQ25MWk1zTlFEZXNFTndkYWhyNHZmai1xMnJQUkk5aFBaSDVEOW5zUURVaGwxdFFvN2tBQ2Q5UnAwYUNWd0JPdm5zbUpkZk1mcXVydzB4N0dab0tpZTFOMkxRUUViUVF4QlRHc09HeFFiUEd5RHMtMDdkSUhoMlZzaERTdENKMmIwMU1VUFYwVjVua3g3aEZGZkNfV3dITk9jbTcwWVBNa3U4T3ZGR21OMll6NzR2eFdtanBoelIweHZ5VEwxNUNXXzl6bFVqMldEazNUdW43MFVUcEdlTGY0QSIsImlkIjoiZmNfRlcxa2FNS2VPdHozNU9VUHp2dU00UWtfMyJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWMwRnZXR3RpWW5ZMFZrSTJPSEZrYzFZNWVYcDRTWHBLVkY5eVVWbGllVkJtYWxSbk1sVnlZelpMVFZrd2JFRkZUbkZXVG00MFVIcGZhRFJ6VUZnM09FdGtOV1ZFYzNaUFpsRlZPR3hOVW1Wd1REVkdNa1JCYkVZd1VSSVhSbGN4YTJGTlMyVlBkSG96TlU5VlVIcDJkVTAwVVdzYUlrRkdUVUZIUjI5MlowUlRiRzVwVGkwMlgxVmZTMXBSZW5SeFdFdG9kSEJTVG1jIiwiZmN2IjoiMyIsImVpIjoiRlcxa2FNS2VPdHozNU9VUHp2dU00UWsiLCJxYyI6ImMtTnl6VTFOeVV4T3pGSElMUzBwQlZMNWFRcjVHWm41Q2hEaG9sU0Z4SlN5eEx5U3hQUlVoWUtpX0xMTWxOUWloWlRNb3RUa2t2eWlTb1hFZ2t5RnRJek1JZ0dHMnBjbXV2WUEiLCJxdWVzdGlvbiI6IkhvdyB0byBmaW5kIGRvY3RvcnMgaW4gTWVkaWNhcmUgQWR2YW50YWdlIHBsYW5zPyIsImxrIjoiR2k5b2IzY2dkRzhnWm1sdVpDQmtiMk4wYjNKeklHbHVJRzFsWkdsallYSmxJR0ZrZG1GdWRHRm5aU0J3YkdGdWN3IiwiYnMiOiJjNDJRc1U3RE1CQ0cxZFVURTRveTNRc2dJTUFjVldMb0VsaEF6TmY0VWxzNGRqbWZVeUdlaFkxMzRKRlllUVFjbEE2VkdxblRTU2Q5MzNfM0s2OXU3Z05GYUVqYkZoMDBTVkllQmdjQ25MWk1zTlFEZXNFTndkYWhyNHZmai1xMnJQUkk5aFBaSDVEOW5zUURVaGwxdFFvN2tBQ2Q5UnAwYUNWd0JPdm5zbUpkZk1mcXVydzB4N0dab0tpZTFOMkxRUUViUVF4QlRHc09HeFFiUEd5RHMtMDdkSUhoMlZzaERTdENKMmIwMU1VUFYwVjVua3g3aEZGZkNfV3dITk9jbTcwWVBNa3U4T3ZGR21OMll6NzR2eFdtanBoelIweHZ5VEwxNUNXXzl6bFVqMldEazNUdW43MFVUcEdlTGY0QSIsImlkIjoiZmNfRlcxa2FNS2VPdHozNU9VUHp2dU00UWtfMyJ9"
+    },
+    {
+      "question": "What is the subrogation policy for United Healthcare?",
+      "snippet": "The Subrogation Clause This basically permits your health insurance provider (in this case, United Healthcare) to attempt to levy a lien against you for money they have paid for your accident-related injuries.",
+      "title": "Subrogation Letter from Ingenix/Optum on Behalf of United ...",
+      "date": "Jul 11, 2016",
+      "link": "https://maafirm.com/blog/subrogation-letter-from-ingenix-optum-on-behalf-of-united-healthcare/#:~:text=The%20Subrogation%20Clause&text=This%20basically%20permits%20your%20health,for%20your%20accident%2Drelated%20injuries.",
+      "displayed_link": "https://maafirm.com \u203a blog \u203a subrogation-letter-from-ing...",
+      "source_logo": "https://serpapi.com/searches/68646d1514537b254d6a1fe5/images/6c460616a07f5f6edd9bba2f6041ea8082ee7f6d1be48f01af61da2a6b5b6dd4.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWMwRnZXR3RpWW5ZMFZrSTJPSEZrYzFZNWVYcDRTWHBLVkY5eVVWbGllVkJtYWxSbk1sVnlZelpMVFZrd2JFRkZUbkZXVG00MFVIcGZhRFJ6VUZnM09FdGtOV1ZFYzNaUFpsRlZPR3hOVW1Wd1REVkdNa1JCYkVZd1VSSVhSbGN4YTJGTlMyVlBkSG96TlU5VlVIcDJkVTAwVVdzYUlrRkdUVUZIUjI5MlowUlRiRzVwVGkwMlgxVmZTMXBSZW5SeFdFdG9kSEJTVG1jIiwiZmN2IjoiMyIsImVpIjoiRlcxa2FNS2VPdHozNU9VUHp2dU00UWsiLCJxYyI6ImMtTnl6VTFOeVV4T3pGSElMUzBwQlZMNWFRcjVHWm41Q2hEaG9sU0Z4SlN5eEx5U3hQUlVoWUtpX0xMTWxOUWloWlRNb3RUa2t2eWlTb1hFZ2t5RnRJek1JZ0dHMnBjbXV2WUEiLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIHN1YnJvZ2F0aW9uIHBvbGljeSBmb3IgVW5pdGVkIEhlYWx0aGNhcmU/IiwibGsiOiJHaFoxYUdNZ2MzVmljbTluWVhScGIyNGdjRzlzYVdONSIsImJzIjoiYzQyUXNVN0RNQkNHMWRVVEU0b3kzUXNnSU1BY1ZXTG9FbGhBek5mNFVsczRkam1mVXlHZWhZMTM0SkZZZVFRY2xBNlZHcW5UU1NkOTMzXzNLNjl1N2dORmFFamJGaDAwU1ZJZUJnY0NuTFpNc05RRGVzRU53ZGFocjR2ZmotcTJyUFJJOWhQWkg1RDluc1FEVWhsMXRRbzdrQUNkOVJwMGFDVndCT3Zuc21KZGZNZnF1cncweDdHWm9LaWUxTjJMUVFFYlFReEJUR3NPR3hRYlBHeURzLTA3ZElIaDJWc2hEU3RDSjJiMDFNVVBWMFY1bmt4N2hGRmZDX1d3SE5PY203MFlQTWt1OE92RkdtTjJZejc0dnhXbWpwaHpSMHh2eVRMMTVDV185emxVajJXRGszVHVuNzBVVHBHZUxmNEEiLCJpZCI6ImZjX0ZXMWthTUtlT3R6MzVPVVB6dnVNNFFrXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWMwRnZXR3RpWW5ZMFZrSTJPSEZrYzFZNWVYcDRTWHBLVkY5eVVWbGllVkJtYWxSbk1sVnlZelpMVFZrd2JFRkZUbkZXVG00MFVIcGZhRFJ6VUZnM09FdGtOV1ZFYzNaUFpsRlZPR3hOVW1Wd1REVkdNa1JCYkVZd1VSSVhSbGN4YTJGTlMyVlBkSG96TlU5VlVIcDJkVTAwVVdzYUlrRkdUVUZIUjI5MlowUlRiRzVwVGkwMlgxVmZTMXBSZW5SeFdFdG9kSEJTVG1jIiwiZmN2IjoiMyIsImVpIjoiRlcxa2FNS2VPdHozNU9VUHp2dU00UWsiLCJxYyI6ImMtTnl6VTFOeVV4T3pGSElMUzBwQlZMNWFRcjVHWm41Q2hEaG9sU0Z4SlN5eEx5U3hQUlVoWUtpX0xMTWxOUWloWlRNb3RUa2t2eWlTb1hFZ2t5RnRJek1JZ0dHMnBjbXV2WUEiLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIHN1YnJvZ2F0aW9uIHBvbGljeSBmb3IgVW5pdGVkIEhlYWx0aGNhcmU%2FIiwibGsiOiJHaFoxYUdNZ2MzVmljbTluWVhScGIyNGdjRzlzYVdONSIsImJzIjoiYzQyUXNVN0RNQkNHMWRVVEU0b3kzUXNnSU1BY1ZXTG9FbGhBek5mNFVsczRkam1mVXlHZWhZMTM0SkZZZVFRY2xBNlZHcW5UU1NkOTMzXzNLNjl1N2dORmFFamJGaDAwU1ZJZUJnY0NuTFpNc05RRGVzRU53ZGFocjR2ZmotcTJyUFJJOWhQWkg1RDluc1FEVWhsMXRRbzdrQUNkOVJwMGFDVndCT3Zuc21KZGZNZnF1cncweDdHWm9LaWUxTjJMUVFFYlFReEJUR3NPR3hRYlBHeURzLTA3ZElIaDJWc2hEU3RDSjJiMDFNVVBWMFY1bmt4N2hGRmZDX1d3SE5PY203MFlQTWt1OE92RkdtTjJZejc0dnhXbWpwaHpSMHh2eVRMMTVDV185emxVajJXRGszVHVuNzBVVHBHZUxmNEEiLCJpZCI6ImZjX0ZXMWthTUtlT3R6MzVPVVB6dnVNNFFrXzMifQ%3D%3D"
+    },
+    {
+      "question": "Are all Medicare Advantage plans network-based and have referral requirements?",
+      "snippet": "in the plan's network and service area Some plans offer non-emergency coverage out of network, but typically at a higher cost. In most cases, you don't need a referral to use a specialist. You may need to get a referral to use a specialist.",
+      "title": "Understanding Medicare Advantage Plans",
+      "link": "https://www.medicare.gov/publications/12026-understanding-medicare-advantage-plans.pdf",
+      "displayed_link": "https://www.medicare.gov \u203a publications \u203a 12026-unders...",
+      "source_logo": "https://serpapi.com/searches/68646d1514537b254d6a1fe5/images/6c460616a07f5f6edd9bba2f6041ea805d072c49c6ae7bf58f9a3a5188f1a291.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWMwRnZXR3RpWW5ZMFZrSTJPSEZrYzFZNWVYcDRTWHBLVkY5eVVWbGllVkJtYWxSbk1sVnlZelpMVFZrd2JFRkZUbkZXVG00MFVIcGZhRFJ6VUZnM09FdGtOV1ZFYzNaUFpsRlZPR3hOVW1Wd1REVkdNa1JCYkVZd1VSSVhSbGN4YTJGTlMyVlBkSG96TlU5VlVIcDJkVTAwVVdzYUlrRkdUVUZIUjI5MlowUlRiRzVwVGkwMlgxVmZTMXBSZW5SeFdFdG9kSEJTVG1jIiwiZmN2IjoiMyIsImVpIjoiRlcxa2FNS2VPdHozNU9VUHp2dU00UWsiLCJxYyI6ImMtTnl6VTFOeVV4T3pGSElMUzBwQlZMNWFRcjVHWm41Q2hEaG9sU0Z4SlN5eEx5U3hQUlVoWUtpX0xMTWxOUWloWlRNb3RUa2t2eWlTb1hFZ2t5RnRJek1JZ0dHMnBjbXV2WUEiLCJxdWVzdGlvbiI6IkFyZSBhbGwgTWVkaWNhcmUgQWR2YW50YWdlIHBsYW5zIG5ldHdvcmstYmFzZWQgYW5kIGhhdmUgcmVmZXJyYWwgcmVxdWlyZW1lbnRzPyIsImxrIjoiY3gzSFFSSkFNQkFFd0g4NHpZYzhZdGhCU3JMWVJIeWZjdXNlUm9iQW5GRmthZjVqbmQ2NENtZW1WN2phYzhTT2lWVUd1bUZqRjBLTElwZ19YSGNLRlhtckx3IiwiYnMiOiJjNDJRc1U3RE1CQ0cxZFVURTRveTNRc2dJTUFjVldMb0VsaEF6TmY0VWxzNGRqbWZVeUdlaFkxMzRKRlllUVFjbEE2VkdxblRTU2Q5MzNfM0s2OXU3Z05GYUVqYkZoMDBTVkllQmdjQ25MWk1zTlFEZXNFTndkYWhyNHZmai1xMnJQUkk5aFBaSDVEOW5zUURVaGwxdFFvN2tBQ2Q5UnAwYUNWd0JPdm5zbUpkZk1mcXVydzB4N0dab0tpZTFOMkxRUUViUVF4QlRHc09HeFFiUEd5RHMtMDdkSUhoMlZzaERTdENKMmIwMU1VUFYwVjVua3g3aEZGZkNfV3dITk9jbTcwWVBNa3U4T3ZGR21OMll6NzR2eFdtanBoelIweHZ5VEwxNUNXXzl6bFVqMldEazNUdW43MFVUcEdlTGY0QSIsImlkIjoiZmNfRlcxa2FNS2VPdHozNU9VUHp2dU00UWtfMyJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWMwRnZXR3RpWW5ZMFZrSTJPSEZrYzFZNWVYcDRTWHBLVkY5eVVWbGllVkJtYWxSbk1sVnlZelpMVFZrd2JFRkZUbkZXVG00MFVIcGZhRFJ6VUZnM09FdGtOV1ZFYzNaUFpsRlZPR3hOVW1Wd1REVkdNa1JCYkVZd1VSSVhSbGN4YTJGTlMyVlBkSG96TlU5VlVIcDJkVTAwVVdzYUlrRkdUVUZIUjI5MlowUlRiRzVwVGkwMlgxVmZTMXBSZW5SeFdFdG9kSEJTVG1jIiwiZmN2IjoiMyIsImVpIjoiRlcxa2FNS2VPdHozNU9VUHp2dU00UWsiLCJxYyI6ImMtTnl6VTFOeVV4T3pGSElMUzBwQlZMNWFRcjVHWm41Q2hEaG9sU0Z4SlN5eEx5U3hQUlVoWUtpX0xMTWxOUWloWlRNb3RUa2t2eWlTb1hFZ2t5RnRJek1JZ0dHMnBjbXV2WUEiLCJxdWVzdGlvbiI6IkFyZSBhbGwgTWVkaWNhcmUgQWR2YW50YWdlIHBsYW5zIG5ldHdvcmstYmFzZWQgYW5kIGhhdmUgcmVmZXJyYWwgcmVxdWlyZW1lbnRzPyIsImxrIjoiY3gzSFFSSkFNQkFFd0g4NHpZYzhZdGhCU3JMWVJIeWZjdXNlUm9iQW5GRmthZjVqbmQ2NENtZW1WN2phYzhTT2lWVUd1bUZqRjBLTElwZ19YSGNLRlhtckx3IiwiYnMiOiJjNDJRc1U3RE1CQ0cxZFVURTRveTNRc2dJTUFjVldMb0VsaEF6TmY0VWxzNGRqbWZVeUdlaFkxMzRKRlllUVFjbEE2VkdxblRTU2Q5MzNfM0s2OXU3Z05GYUVqYkZoMDBTVkllQmdjQ25MWk1zTlFEZXNFTndkYWhyNHZmai1xMnJQUkk5aFBaSDVEOW5zUURVaGwxdFFvN2tBQ2Q5UnAwYUNWd0JPdm5zbUpkZk1mcXVydzB4N0dab0tpZTFOMkxRUUViUVF4QlRHc09HeFFiUEd5RHMtMDdkSUhoMlZzaERTdENKMmIwMU1VUFYwVjVua3g3aEZGZkNfV3dITk9jbTcwWVBNa3U4T3ZGR21OMll6NzR2eFdtanBoelIweHZ5VEwxNUNXXzl6bFVqMldEazNUdW43MFVUcEdlTGY0QSIsImlkIjoiZmNfRlcxa2FNS2VPdHozNU9VUHp2dU00UWtfMyJ9"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Premium Reports",
+      "link": "https://klasresearch.com/reports",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://klasresearch.com/reports&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQFnoECBgQAQ",
+      "displayed_link": "https://klasresearch.com \u203a reports",
+      "favicon": "https://serpapi.com/searches/68646d1514537b254d6a1fe5/images/bcedd49c40aac43891a6bf7def96a0bc9f8ba66f08e13da39a094709e74e2ef9.png",
+      "snippet": "Building on a previously established API, the stakeholders created a FHIR API ... plans to have a patient access API and a provider directory API. Aimed at ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR API",
+        "plans",
+        "API",
+        "provider directory API"
+      ],
+      "source": "KLAS Research"
+    },
+    {
+      "position": 2,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQFnoECB8QAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646d1514537b254d6a1fe5/images/bcedd49c40aac43891a6bf7def96a0bc21ca2019f84db6ff180901bdd805f016.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 3,
+      "title": "Medicare Program; Contract Year 2024 Policy and ...",
+      "link": "https://www.federalregister.gov/documents/2023/04/12/2023-07115/medicare-program-contract-year-2024-policy-and-technical-changes-to-the-medicare-advantage-program",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2023/04/12/2023-07115/medicare-program-contract-year-2024-policy-and-technical-changes-to-the-medicare-advantage-program&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQFnoECBcQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2023/04/12 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/68646d1514537b254d6a1fe5/images/bcedd49c40aac43891a6bf7def96a0bc0bf5a6515e31de369bcc2f002a728008.png",
+      "date": "Apr 12, 2023",
+      "snippet": "First, we proposed to mirror the provider directory requirements for Medicaid managed care plans ... (FHIR\u00ae) standard Application ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "plans",
+        "FHIR"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Health Information Exchange (HIE) Operations and ...",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Conduent/CONDUENT%20Redacted%20Technical%20Proposal.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Conduent/CONDUENT%2520Redacted%2520Technical%2520Proposal.pdf&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQFnoECBYQAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a pdf \u203a Conduent",
+      "favicon": "https://serpapi.com/searches/68646d1514537b254d6a1fe5/images/bcedd49c40aac43891a6bf7def96a0bceff0a86188d7aafa226c710e1a3ffbd2.png",
+      "date": "Jul 9, 2024",
+      "snippet": "FHIR API. If the beneficiary chooses to use that application, they can pull the medical data up on a cell phone or other device and make it ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "medical"
+      ],
+      "source": "Gobierno de Puerto Rico (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Med-tech collaborations in 2024",
+      "link": "https://www.bioworld.com/content/medtech-collaborations-2024",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bioworld.com/content/medtech-collaborations-2024&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQFnoECB0QAQ",
+      "displayed_link": "https://www.bioworld.com \u203a content \u203a medtech-collabo...",
+      "favicon": "https://serpapi.com/searches/68646d1514537b254d6a1fe5/images/bcedd49c40aac43891a6bf7def96a0bc634a5715ec5d326e89e12ae92e9cd59b.png",
+      "snippet": "Te Toka Tumai Auckland and Intersystems to launch FHIR-based NHI API, Te ... Trilliant Health to offer its Provider Directory and the national version ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=medical+mutual+of+ohio+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQ5t4CegQIKxAB"
+      },
+      "source": "BioWorld MedTech"
+    },
+    {
+      "position": 6,
+      "title": "PROVIDER AND BILLING MANUAL 2025",
+      "link": "https://www.ambetterhealth.com/content/dam/centene/absolute-total-care/ambetter/pdfs/SC-2025-Ambetter-Provider-Manual.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ambetterhealth.com/content/dam/centene/absolute-total-care/ambetter/pdfs/SC-2025-Ambetter-Provider-Manual.pdf&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQFnoECBkQAQ",
+      "displayed_link": "https://www.ambetterhealth.com \u203a ambetter \u203a pdfs",
+      "favicon": "https://serpapi.com/searches/68646d1514537b254d6a1fe5/images/bcedd49c40aac43891a6bf7def96a0bc5d65fa9955cd549d714e16d545589063.png",
+      "date": "Jan 1, 2025",
+      "snippet": "Ambetter via 1) electronic access to APIs (Application Programming Interfaces), 2) use of HL7 and FHIR data ... the provider directory. (11 ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 258
+          },
+          "extensions": [
+            "258 pages"
+          ]
+        }
+      },
+      "source": "Ambetter Health"
+    },
+    {
+      "position": 7,
+      "title": "STATE FISCAL YEAR 2024 MODEL PURCHASE OF ...",
+      "link": "https://dhhr.wv.gov/bms/Members/Managed%20Care/MCOcontracts/Documents/SFY24%20WV%20MHT%20Contract%20-%20Final%20%281%29.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dhhr.wv.gov/bms/Members/Managed%2520Care/MCOcontracts/Documents/SFY24%2520WV%2520MHT%2520Contract%2520-%2520Final%2520%25281%2529.pdf&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQFnoECB4QAQ",
+      "displayed_link": "https://dhhr.wv.gov \u203a MCOcontracts \u203a Documents",
+      "favicon": "https://serpapi.com/searches/68646d1514537b254d6a1fe5/images/bcedd49c40aac43891a6bf7def96a0bc41575ec1680f52a6f0a2f4a1010edf50.png",
+      "snippet": "the technical standards specified by CMS Interoperability rules, including FHIR, SMART/ ... provider directory on the MCO website, along with information on how ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=medical+mutual+of+ohio+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQ5t4CegQILBAB"
+      },
+      "source": "West Virginia Department of Health and Human Resources (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Federal Register/Vol. 88, No. 70/Wednesday, April 12, ...",
+      "link": "https://www.govinfo.gov/content/pkg/FR-2023-04-12/pdf/2023-07115.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.govinfo.gov/content/pkg/FR-2023-04-12/pdf/2023-07115.pdf&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQFnoECDsQAQ",
+      "displayed_link": "https://www.govinfo.gov \u203a content \u203a pkg \u203a pdf",
+      "favicon": "https://serpapi.com/searches/68646d1514537b254d6a1fe5/images/bcedd49c40aac43891a6bf7def96a0bc5bfcc0093897c67419d0ee485c242c30.png",
+      "date": "Apr 12, 2023",
+      "snippet": "... Provider Directory Model is located at: https:// \u00b7 www.cms.gov ... (FHIR\u00ae) standard Application. Programming Interface (API) for electronic ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 226
+          },
+          "extensions": [
+            "226 pages"
+          ]
+        }
+      },
+      "source": "GovInfo (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "2023 UnitedHealthcare Care Provider Administrative Guide",
+      "link": "https://health.maryland.gov/pophealth/Documents/Local%20Health%20Department%20Billing%20Manual/2023-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://health.maryland.gov/pophealth/Documents/Local%2520Health%2520Department%2520Billing%2520Manual/2023-UHC-Administrative-Guide.pdf&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQFnoECDwQAQ",
+      "displayed_link": "https://health.maryland.gov \u203a Documents \u203a 2023-...",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify information in ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 421
+          },
+          "extensions": [
+            "421 pages"
+          ]
+        }
+      },
+      "source": "Maryland.gov"
+    },
+    {
+      "position": 10,
+      "title": "HOUSE OF DELEGATES HANDBOOK - INFO (A-22)",
+      "link": "https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQFnoECDoQAQ",
+      "displayed_link": "https://www.ama-assn.org \u203a system \u203a files \u203a a22-...",
+      "favicon": "https://serpapi.com/searches/68646d1514537b254d6a1fe5/images/bcedd49c40aac43891a6bf7def96a0bcc338eefb9ae5d47c1358a5dac4a33540.png",
+      "date": "Dec 17, 2021",
+      "snippet": "AMA/CAQH Provider Directory. White Paper \u2013 Co-branded white ... FHIR\u00ae implementation guide for the capture and use of SDOH data. 18.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=medical+mutual+of+ohio+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQ5t4CegQIQxAB"
+      },
+      "source": "American Medical Association"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "UHC provider manual 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+provider+manual+2025&sa=X&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+provider+manual+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-4201-f",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=cms-4201-f&sa=X&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-4201-f&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC Medicare Advantage timely filing limit",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+Medicare+Advantage+timely+filing+limit&sa=X&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+Medicare+Advantage+timely+filing+limit&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc Medicare advantage Timely filing limit for corrected claims",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&sa=X&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "BIN 610279 PCN: 7777",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=BIN+610279+PCN:+7777&sa=X&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BIN+610279+PCN%3A+7777&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-4201-p",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=cms-4201-p&sa=X&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-4201-p&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "p.o. box 5290 kingston, ny 12402 payer id",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=p.o.+box+5290+kingston,+ny+12402+payer+id&sa=X&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=p.o.+box+5290+kingston%2C+ny+12402+payer+id&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC Timely Filing limit for Corrected Claims",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+Timely+Filing+limit+for+Corrected+Claims&sa=X&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+Timely+Filing+limit+for+Corrected+Claims&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=medical+mutual+of+ohio+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=FW1kaMKeOtz35OUPzvuM4Qk&start=10&sa=N&sstk=Ac65TH5qosHl9YkGjYGIEuDu_zKqtC3c7AcMcIFsglaaSoHgGBQR00sSTYxJwD0nt5hC241ku788UGKi1X_XP_FEcY_3NNwvPSyA_Q&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQ8NMDegQIChAI",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=medical+mutual+of+ohio+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=FW1kaMKeOtz35OUPzvuM4Qk&start=10&sa=N&sstk=Ac65TH5qosHl9YkGjYGIEuDu_zKqtC3c7AcMcIFsglaaSoHgGBQR00sSTYxJwD0nt5hC241ku788UGKi1X_XP_FEcY_3NNwvPSyA_Q&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=medical+mutual+of+ohio+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=FW1kaMKeOtz35OUPzvuM4Qk&start=20&sa=N&sstk=Ac65TH5qosHl9YkGjYGIEuDu_zKqtC3c7AcMcIFsglaaSoHgGBQR00sSTYxJwD0nt5hC241ku788UGKi1X_XP_FEcY_3NNwvPSyA_Q&ved=2ahUKEwiC_ZCM5pyOAxXcO7kGHc49I5wQ8tMDegQIChAG"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medical+mutual+of+ohio+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medical+mutual+of+ohio+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medical+mutual+of+ohio+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=medical+mutual+of+ohio+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20"
+    }
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "search_metadata": {
+    "id": "68646469fbbebbe199facc22",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/c7aa9b5a805f6258/68646469fbbebbe199facc22.json",
+    "created_at": "2025-07-01 22:42:49 UTC",
+    "processed_at": "2025-07-01 22:42:49 UTC",
+    "google_url": "https://www.google.com/search?q=%22allcare+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22allcare+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/c7aa9b5a805f6258/68646469fbbebbe199facc22.html",
+    "total_time_taken": 2.98
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"allcare health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"allcare health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 918,
+    "time_taken_displayed": 0.45,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "allcare health Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "allcare health Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability",
+      "link": "https://www.allcarehealth.com/interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.allcarehealth.com/interoperability&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQFnoECB4QAQ",
+      "displayed_link": "https://www.allcarehealth.com \u203a interoperability",
+      "favicon": "https://serpapi.com/searches/68646469fbbebbe199facc22/images/d0be09f22702df23cafbe59c8ab7669a864a4147237fdcd2b919d3fbd927de32.png",
+      "snippet": "Provider Directory API. The Provider Directory API is AllCare Health's FHIR Implementation of the HL7 DaVinci PDEX Plan Net Implementation Guide (version 1.0).",
+      "snippet_highlighted_words": [
+        "AllCare Health's FHIR Implementation of the HL7 DaVinci PDEX Plan Net Implementation Guide"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Interoperability",
+            "link": "https://www.allcarehealth.com/interoperability#:~:text=Interoperability,-What%20is%20an%20API%3F"
+          },
+          {
+            "title": "Patient Access Api",
+            "link": "https://www.allcarehealth.com/interoperability#:~:text=Patient%20Access%20API,-The"
+          },
+          {
+            "title": "Provider Directory Api",
+            "link": "https://www.allcarehealth.com/interoperability#:~:text=Provider%20Directory%20API,-The"
+          }
+        ]
+      },
+      "source": "AllCare Health"
+    },
+    {
+      "position": 2,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQFnoECB0QAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/68646469fbbebbe199facc22/images/d0be09f22702df23cafbe59c8ab7669a779d9732658f4d66feb93abbc3b37ef7.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. Endpoints are: FHIR- ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 3,
+      "title": "Healthcare Payer FHIR Solutions",
+      "link": "https://1up.health/solutions/payers/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://1up.health/solutions/payers/&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQFnoECBgQAQ",
+      "displayed_link": "https://1up.health \u203a Solutions",
+      "favicon": "https://serpapi.com/searches/68646469fbbebbe199facc22/images/d0be09f22702df23cafbe59c8ab7669afb30c53d3898f21cb1bb1998c2614342.png",
+      "snippet": "1upHealth is the market leader helping Medicare, Medicaid, and commercial payers acquire, manage, share, and analyze health data.",
+      "snippet_highlighted_words": [
+        "Medicare",
+        "health"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=allcare+health+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQ5t4CegQIGRAB"
+      },
+      "source": "1upHealth"
+    },
+    {
+      "position": 4,
+      "title": "open.epic :: Endpoints",
+      "link": "https://open.epic.com/MyApps/Endpoints",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://open.epic.com/MyApps/Endpoints&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQFnoECB8QAQ",
+      "displayed_link": "https://open.epic.com \u203a MyApps \u203a Endpoints",
+      "favicon": "https://serpapi.com/searches/68646469fbbebbe199facc22/images/d0be09f22702df23cafbe59c8ab7669a2f14d1fa1b3e79808af98320f929d1be.png",
+      "snippet": "This format uses FHIR Endpoint and Organization resources to provide details about FHIR endpoints, including branding information and facility identifiers and ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR"
+      ],
+      "source": "Epic Systems"
+    },
+    {
+      "position": 5,
+      "title": "Care Team Members",
+      "link": "https://www.healthit.gov/isp/uscdi-data-class/care-team-members",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/isp/uscdi-data-class/care-team-members&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQFnoECBcQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a isp \u203a uscdi-data-class \u203a care-t...",
+      "favicon": "https://serpapi.com/searches/68646469fbbebbe199facc22/images/d0be09f22702df23cafbe59c8ab7669a85ce8b6016a1db6f5284b417560f4df7.jpeg",
+      "snippet": "Care team members represent different types of individuals (licensed, unlicensed, family, etc.) and that it is confusing to see provider name and ID.",
+      "snippet_highlighted_words": [
+        "provider"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "FHIR Use Cases - Breaking Down Digital Health Barriers ...",
+      "link": "https://www.intersystems.com/resources/fhir-use-cases-digital-health-barriers-transform-care/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.intersystems.com/resources/fhir-use-cases-digital-health-barriers-transform-care/&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQFnoECCMQAQ",
+      "displayed_link": "https://www.intersystems.com \u203a resources \u203a fhir-use-cas...",
+      "favicon": "https://serpapi.com/searches/68646469fbbebbe199facc22/images/d0be09f22702df23cafbe59c8ab7669aaff25a3232cbebd23285837d333ef167.png",
+      "snippet": "This paper reviews practical applications for FHIR and provides real-world examples of how InterSystems customers use FHIR to connect disparate systems.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR"
+      ],
+      "source": "InterSystems"
+    },
+    {
+      "position": 7,
+      "title": "2024 CCO Health IT Roadmap Summary",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT/Documents/2024-CCO-HIT-Roadmap-Summary.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT/Documents/2024-CCO-HIT-Roadmap-Summary.pdf&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQFnoECBwQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a OHIT \u203a Documents",
+      "favicon": "https://serpapi.com/searches/68646469fbbebbe199facc22/images/d0be09f22702df23cafbe59c8ab7669ac84d04b7392ad0a28e5233bb46b948ff.png",
+      "snippet": "AllCare has partnered with TherapyNotes to offer a discounted rate to its network of behavioral health providers. A provider needs assessment had previously ...",
+      "snippet_highlighted_words": [
+        "AllCare",
+        "health providers",
+        "provider"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 8,
+      "title": "2024 July Changes MCO Contract - NJ.gov",
+      "link": "https://nj.gov/humanservices/dmahs/info/resources/care/hmo-contract.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nj.gov/humanservices/dmahs/info/resources/care/hmo-contract.pdf&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQFnoECDAQAQ",
+      "displayed_link": "https://nj.gov \u203a resources \u203a care \u203a hmo-contract",
+      "favicon": "https://serpapi.com/searches/68646469fbbebbe199facc22/images/d0be09f22702df23cafbe59c8ab7669af7bee0a7e9134b3140907e6262009ee9.png",
+      "date": "Jul 1, 2024",
+      "snippet": "Governing Statutory and Regulatory Provisions: This contract and all renewals and modifications are subject to the following laws and all ...",
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 935
+          },
+          "extensions": [
+            "935 pages"
+          ]
+        }
+      },
+      "source": "nj.gov"
+    },
+    {
+      "position": 9,
+      "title": "Implementation of an Electronic Care Plan for People With ...",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/c127b56520fd5473ca917b99f2b2a09d/HP-19-012-AHRQ-NIDDK-ecare-plan.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/c127b56520fd5473ca917b99f2b2a09d/HP-19-012-AHRQ-NIDDK-ecare-plan.pdf&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQFnoECDIQAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/68646469fbbebbe199facc22/images/d0be09f22702df23cafbe59c8ab7669a3f125bc213f4c13acbe56757db016356.png",
+      "author": "by DC CDC",
+      "snippet": "Specifically, FHIR21 provides a uniform data model for health information of different types (specified as \u201cresources\u201d) and an application programming interface ...",
+      "snippet_highlighted_words": [
+        "health"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 83
+          },
+          "extensions": [
+            "83 pages"
+          ]
+        }
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 10,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQFnoECDMQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646469fbbebbe199facc22/images/d0be09f22702df23cafbe59c8ab7669a0303571d9dff4eaf23280c1c8d62231f.png",
+      "date": "Jan 1, 2025",
+      "snippet": "Welcome to the UnitedHealthcare Care Provider Administrative Guide for Commercial and Medicare Advantage. (MA) products.",
+      "snippet_highlighted_words": [
+        "Provider",
+        "Medicare Advantage"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=a2RkaOKNN6iU9u8PsJLXmAc&start=10&sa=N&sstk=Ac65TH6LOaN4dWE5tGTg4Kqw5z_C0QFeCM2rLWvMfIPd8R-lw5OD272MSZKYodEixp5G-RJBuWZZOaDAhWA9z4tVAAXHa3tkuMn7yw&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQ8NMDegQIChAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=a2RkaOKNN6iU9u8PsJLXmAc&start=10&sa=N&sstk=Ac65TH6LOaN4dWE5tGTg4Kqw5z_C0QFeCM2rLWvMfIPd8R-lw5OD272MSZKYodEixp5G-RJBuWZZOaDAhWA9z4tVAAXHa3tkuMn7yw&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=a2RkaOKNN6iU9u8PsJLXmAc&start=20&sa=N&sstk=Ac65TH6LOaN4dWE5tGTg4Kqw5z_C0QFeCM2rLWvMfIPd8R-lw5OD272MSZKYodEixp5G-RJBuWZZOaDAhWA9z4tVAAXHa3tkuMn7yw&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQ8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=a2RkaOKNN6iU9u8PsJLXmAc&start=30&sa=N&sstk=Ac65TH6LOaN4dWE5tGTg4Kqw5z_C0QFeCM2rLWvMfIPd8R-lw5OD272MSZKYodEixp5G-RJBuWZZOaDAhWA9z4tVAAXHa3tkuMn7yw&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQ8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=a2RkaOKNN6iU9u8PsJLXmAc&start=40&sa=N&sstk=Ac65TH6LOaN4dWE5tGTg4Kqw5z_C0QFeCM2rLWvMfIPd8R-lw5OD272MSZKYodEixp5G-RJBuWZZOaDAhWA9z4tVAAXHa3tkuMn7yw&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQ8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=a2RkaOKNN6iU9u8PsJLXmAc&start=50&sa=N&sstk=Ac65TH6LOaN4dWE5tGTg4Kqw5z_C0QFeCM2rLWvMfIPd8R-lw5OD272MSZKYodEixp5G-RJBuWZZOaDAhWA9z4tVAAXHa3tkuMn7yw&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQ8tMDegQIChAM",
+      "7": "https://www.google.com/search?q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=a2RkaOKNN6iU9u8PsJLXmAc&start=60&sa=N&sstk=Ac65TH6LOaN4dWE5tGTg4Kqw5z_C0QFeCM2rLWvMfIPd8R-lw5OD272MSZKYodEixp5G-RJBuWZZOaDAhWA9z4tVAAXHa3tkuMn7yw&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQ8tMDegQIChAO",
+      "8": "https://www.google.com/search?q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=a2RkaOKNN6iU9u8PsJLXmAc&start=70&sa=N&sstk=Ac65TH6LOaN4dWE5tGTg4Kqw5z_C0QFeCM2rLWvMfIPd8R-lw5OD272MSZKYodEixp5G-RJBuWZZOaDAhWA9z4tVAAXHa3tkuMn7yw&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQ8tMDegQIChAQ",
+      "9": "https://www.google.com/search?q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=a2RkaOKNN6iU9u8PsJLXmAc&start=80&sa=N&sstk=Ac65TH6LOaN4dWE5tGTg4Kqw5z_C0QFeCM2rLWvMfIPd8R-lw5OD272MSZKYodEixp5G-RJBuWZZOaDAhWA9z4tVAAXHa3tkuMn7yw&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQ8tMDegQIChAS",
+      "10": "https://www.google.com/search?q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=a2RkaOKNN6iU9u8PsJLXmAc&start=90&sa=N&sstk=Ac65TH6LOaN4dWE5tGTg4Kqw5z_C0QFeCM2rLWvMfIPd8R-lw5OD272MSZKYodEixp5G-RJBuWZZOaDAhWA9z4tVAAXHa3tkuMn7yw&ved=2ahUKEwii773q3ZyOAxUoiv0HHTDJFXMQ8tMDegQIChAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allcare+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

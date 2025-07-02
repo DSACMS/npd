@@ -1,0 +1,195 @@
+{
+  "search_metadata": {
+    "id": "68646c3c5c018feec1875400",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/c0df06eae4f5d77f/68646c3c5c018feec1875400.json",
+    "created_at": "2025-07-01 23:16:12 UTC",
+    "processed_at": "2025-07-01 23:16:12 UTC",
+    "google_url": "https://www.google.com/search?q=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/c0df06eae4f5d77f/68646c3c5c018feec1875400.html",
+    "total_time_taken": 1.1
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"rifkin managed care holding Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"rifkin managed care holding Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 9,
+    "time_taken_displayed": 0.35,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    },
+    "showing_results_for": "rifkin managed care holding Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "rifkin managed care holding Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Registry of Open Data on AWS",
+      "link": "https://registry.opendata.aws/tag/life-sciences",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://registry.opendata.aws/tag/life-sciences&ved=2ahUKEwin0O2k5ZyOAxUiWkEAHW6SG7kQFnoECB8QAQ",
+      "displayed_link": "https://registry.opendata.aws \u203a tag \u203a life-sciences",
+      "favicon": "https://serpapi.com/searches/68646c3c5c018feec1875400/images/d6d19585594047346c6502e55ba1e3f4a10479f908f18c22b5b1a2630372394e.png",
+      "snippet": "This registry exists to help people discover and share datasets that are available via AWS resources. See recent additions and learn more about sharing data on ...",
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=rifkin+managed+care+holding+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwin0O2k5ZyOAxUiWkEAHW6SG7kQ5t4CegQIIxAB"
+      },
+      "source": "Registry of Open Data on AWS"
+    },
+    {
+      "position": 2,
+      "title": "Registry of Open Data on AWS",
+      "link": "https://registry.opendata.aws/?search=managedBy:uk%20met%20office",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://registry.opendata.aws/%3Fsearch%3DmanagedBy:uk%2520met%2520office&ved=2ahUKEwin0O2k5ZyOAxUiWkEAHW6SG7kQFnoECB0QAQ",
+      "displayed_link": "https://registry.opendata.aws \u203a ...",
+      "favicon": "https://serpapi.com/searches/68646c3c5c018feec1875400/images/d6d19585594047346c6502e55ba1e3f4c250dd184e170134c1923a402517c155.png",
+      "snippet": "The dataset contains open Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification, miRNA-Seq Isoform Expression Quantificati...",
+      "snippet_highlighted_words": [
+        "Supplement",
+        "Supplement"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=rifkin+managed+care+holding+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwin0O2k5ZyOAxUiWkEAHW6SG7kQ5t4CegQIJBAB"
+      },
+      "source": "Registry of Open Data on AWS"
+    },
+    {
+      "position": 3,
+      "title": "Technology Assesment: A.I. On Healthcare",
+      "link": "https://www.scribd.com/document/692601874/Technology-Assesment-A-I-on-Healthcare",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.scribd.com/document/692601874/Technology-Assesment-A-I-on-Healthcare&ved=2ahUKEwin0O2k5ZyOAxUiWkEAHW6SG7kQFnoECBcQAQ",
+      "displayed_link": "https://www.scribd.com \u203a document \u203a Technology-Asse...",
+      "favicon": "https://serpapi.com/searches/68646c3c5c018feec1875400/images/d6d19585594047346c6502e55ba1e3f4e1e8a4649caceff6b904b99b6d0bb411.png",
+      "snippet": "The report discusses currently available machine learning technologies that can help diagnose certain diseases like cancer, diabetic retinopathy, ...",
+      "source": "Scribd"
+    },
+    {
+      "position": 4,
+      "title": "Honors Theses 2006 to August 2024",
+      "link": "https://honors.uconn.edu/wp-content/uploads/sites/277/2013/11/misc_ThesisDB_byLN.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://honors.uconn.edu/wp-content/uploads/sites/277/2013/11/misc_ThesisDB_byLN.pdf&ved=2ahUKEwin0O2k5ZyOAxUiWkEAHW6SG7kQFnoECBkQAQ",
+      "displayed_link": "https://honors.uconn.edu \u203a misc_ThesisDB_byLN",
+      "favicon": "https://serpapi.com/searches/68646c3c5c018feec1875400/images/d6d19585594047346c6502e55ba1e3f4a4c5cee5f217e27c11407004a8da6664.png",
+      "snippet": "Patrick Adams. 2017. Economics. Real-Time Forecasting of the Target Federal Funds Rate. Kanda,Naknoi. Statistics. Maryzyrene Adao.",
+      "source": "UConn Honors Program"
+    },
+    {
+      "position": 5,
+      "title": "Scholar - Universidade de Lisboa",
+      "link": "https://scholar.tecnico.ulisboa.pt/api/records/dpErmR51LNBuSBAX4lHNTg2OycjWIePMnsez/file/4f8403d8f1b768ef9e1addbcb5a41f542bfaf2dceeb69db4710fbf0cbdae1b61.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://scholar.tecnico.ulisboa.pt/api/records/dpErmR51LNBuSBAX4lHNTg2OycjWIePMnsez/file/4f8403d8f1b768ef9e1addbcb5a41f542bfaf2dceeb69db4710fbf0cbdae1b61.pdf&ved=2ahUKEwin0O2k5ZyOAxUiWkEAHW6SG7kQFnoECBoQAQ",
+      "displayed_link": "https://scholar.tecnico.ulisboa.pt \u203a records \u203a file",
+      "favicon": "https://serpapi.com/searches/68646c3c5c018feec1875400/images/d6d19585594047346c6502e55ba1e3f45c7e74fef45f6f3953e7655a92516322.png",
+      "author": "by SGSDEP AZEVEDO",
+      "snippet": "This research aimed to systematically analyse the design and evaluation of participatory digital health interventions in real-life conditions. I argue that a ...",
+      "snippet_highlighted_words": [
+        "health"
+      ],
+      "source": "Universidade de Lisboa"
+    },
+    {
+      "position": 6,
+      "title": "Download - IU Indianapolis DataWorks",
+      "link": "https://dataworks.indianapolis.iu.edu/bitstream/handle/11243/32/IUPUICOVIDimpactArticlesbyMonth20192020MarAug.csv?sequence=3&isAllowed=y",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dataworks.indianapolis.iu.edu/bitstream/handle/11243/32/IUPUICOVIDimpactArticlesbyMonth20192020MarAug.csv%3Fsequence%3D3%26isAllowed%3Dy&ved=2ahUKEwin0O2k5ZyOAxUiWkEAHW6SG7kQFnoECB4QAQ",
+      "displayed_link": "https://dataworks.indianapolis.iu.edu \u203a bitstream \u203a handle",
+      "favicon": "https://serpapi.com/searches/68646c3c5c018feec1875400/images/d6d19585594047346c6502e55ba1e3f42caefa8a5f68d97a716a71fce6a19ae6.png",
+      "snippet": "... Care in. Behavioral :Health. A Review,2019,MAR,,JAMA PSYCHIATRY,76,3 ... Managed conservatively,2019,,,BMJ Case Reports,12,3, e226978,,,,10.1136/bcr ...",
+      "snippet_highlighted_words": [
+        "Care",
+        "Health",
+        "Managed"
+      ],
+      "source": "iu.edu"
+    },
+    {
+      "position": 7,
+      "title": "Honors Year of",
+      "link": "https://honors.uconn.edu/wp-content/uploads/sites/277/2013/11/misc_ThesisDB_byThesisSupervisorDept.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://honors.uconn.edu/wp-content/uploads/sites/277/2013/11/misc_ThesisDB_byThesisSupervisorDept.pdf&ved=2ahUKEwin0O2k5ZyOAxUiWkEAHW6SG7kQFnoECC8QAQ",
+      "displayed_link": "https://honors.uconn.edu \u203a sites \u203a 2013/11 \u203a mis...",
+      "favicon": "https://serpapi.com/searches/68646c3c5c018feec1875400/images/d6d19585594047346c6502e55ba1e3f41eb87dd8d05a83726bb2bc69b3111bb7.png",
+      "snippet": "Jonathan Lukianuk. 2012. Accounting. The Impact of Disallowing the LIFO Inventory Method. Biggs,Stanley. Accounting. James D'Amico. 2021. Accounting.",
+      "source": "UConn Honors Program"
+    },
+    {
+      "position": 8,
+      "title": "https://www.newsday.com/sitemap/article/2018/6",
+      "link": "https://www.newsday.com/sitemap/article/2018/6",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.newsday.com/sitemap/article/2018/6&ved=2ahUKEwin0O2k5ZyOAxUiWkEAHW6SG7kQFnoECC0QAQ",
+      "displayed_link": "https://www.newsday.com \u203a sitemap \u203a article",
+      "favicon": "https://serpapi.com/searches/68646c3c5c018feec1875400/images/d6d19585594047346c6502e55ba1e3f4d087d64e58f5b8cf6633febd1a804eb4.jpeg",
+      "snippet": "... medicare-social-security-w74640</loc> <changefreq>monthly</changefreq> ... care-j47579</loc> <changefreq>monthly</changefreq> <priority>0.9</priority> ...",
+      "snippet_highlighted_words": [
+        "medicare",
+        "care"
+      ],
+      "source": "Newsday"
+    },
+    {
+      "position": 9,
+      "title": "Full text of \"Computerworld\"",
+      "link": "https://archive.org/stream/computerworld2526unse/computerworld2526unse_djvu.txt",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://archive.org/stream/computerworld2526unse/computerworld2526unse_djvu.txt&ved=2ahUKEwin0O2k5ZyOAxUiWkEAHW6SG7kQFnoECC4QAQ",
+      "displayed_link": "https://archive.org \u203a stream",
+      "favicon": "https://serpapi.com/searches/68646c3c5c018feec1875400/images/d6d19585594047346c6502e55ba1e3f46013eed27b7e269f17f415303b769df0.png",
+      "snippet": "A line drawing of the Internet Archive headquarters building fa\u00e7ade.",
+      "source": "Internet Archive"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 9 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=rifkin+managed+care+holding+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22rifkin+managed+care+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

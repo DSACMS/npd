@@ -1,0 +1,201 @@
+{
+  "search_metadata": {
+    "id": "68646c2b217ade9a02556572",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/ed90d7f7fd3ff2de/68646c2b217ade9a02556572.json",
+    "created_at": "2025-07-01 23:15:55 UTC",
+    "processed_at": "2025-07-01 23:15:55 UTC",
+    "google_url": "https://www.google.com/search?q=%22moda+partners+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22moda+partners+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/ed90d7f7fd3ff2de/68646c2b217ade9a02556572.html",
+    "total_time_taken": 1.93
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"moda partners Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"moda partners Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 250,
+    "time_taken_displayed": 0.36,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    },
+    "showing_results_for": "moda partners Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "moda partners Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwiooYSd5ZyOAxVbyzgGHT0GMVcQFnoECBoQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/68646c2b217ade9a02556572/images/001a49e90a1f52915f42d7fc2d362305da36afc2f49fa2847c19b41b5c4002be.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. Endpoints are: FHIR- ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 2,
+      "title": "Health Information Technology Oversight Council",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/HITOC_MeetingMaterials_20190404.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%2520Meeting%2520Docs/HITOC_MeetingMaterials_20190404.pdf&ved=2ahUKEwiooYSd5ZyOAxVbyzgGHT0GMVcQFnoECBwQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HPA \u203a OHIT-HITOC",
+      "favicon": "https://serpapi.com/searches/68646c2b217ade9a02556572/images/001a49e90a1f52915f42d7fc2d3623059cbff0e3105ad78b47ef682af82ca949.png",
+      "date": "Apr 4, 2019",
+      "snippet": "Oregon Provider Directory \u2013 in development. The Oregon Provider Directory will serve as Oregon's directory of accurate, trusted provider data.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "Provider Directory",
+        "directory",
+        "provider"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 3,
+      "title": "All Pages",
+      "link": "https://www.communityplans.net/all-pages/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.communityplans.net/all-pages/&ved=2ahUKEwiooYSd5ZyOAxVbyzgGHT0GMVcQFnoECBgQAQ",
+      "displayed_link": "https://www.communityplans.net \u203a all-pages",
+      "snippet": "Representing and strengthening Safety Net Health Plans, working with low-income, vulnerable populations.",
+      "snippet_highlighted_words": [
+        "Representing and strengthening Safety Net Health Plans"
+      ],
+      "source": "Association For Community Affiliated Plans"
+    },
+    {
+      "position": 4,
+      "title": "Health Information Technology Oversight Council",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/2016-0609%20Materials.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%2520Meeting%2520Docs/2016-0609%2520Materials.pdf&ved=2ahUKEwiooYSd5ZyOAxVbyzgGHT0GMVcQFnoECBsQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HPA \u203a OHIT-HITOC",
+      "favicon": "https://serpapi.com/searches/68646c2b217ade9a02556572/images/001a49e90a1f52915f42d7fc2d3623054cfa38b673d5c6b16adbb17bb44cc65b.png",
+      "date": "Jun 9, 2016",
+      "snippet": "Provider Directory. Oregon's state-level provider directory will be a source of accurate healthcare practitioner and practice setting ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "provider directory"
+      ],
+      "source": "Oregon.gov"
+    },
+    {
+      "position": 5,
+      "title": "Environmental Scan Report to HIT Commons Governance ( ...",
+      "link": "https://ohlc.org/wp-content/uploads/2021/09/Oregon-CIE-Environmental-Scan-August-31-2019.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ohlc.org/wp-content/uploads/2021/09/Oregon-CIE-Environmental-Scan-August-31-2019.pdf&ved=2ahUKEwiooYSd5ZyOAxVbyzgGHT0GMVcQFnoECBkQAQ",
+      "displayed_link": "https://ohlc.org \u203a wp-content \u203a uploads \u203a 2021/09",
+      "favicon": "https://serpapi.com/searches/68646c2b217ade9a02556572/images/001a49e90a1f52915f42d7fc2d362305cee3d11977bf3c3bc7f401b0eb727cc4.png",
+      "snippet": "Care managers keep a list of identified partners and manager referrals via phone. For Medicare Advantage population, Moda is using IVR technology to assess ...",
+      "snippet_highlighted_words": [
+        "list",
+        "partners",
+        "Medicare Advantage",
+        "Moda"
+      ],
+      "source": "Oregon Health Leadership Council"
+    },
+    {
+      "position": 6,
+      "title": "Podcast",
+      "link": "https://www.outcomesrocket.com/podcast",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.outcomesrocket.com/podcast&ved=2ahUKEwiooYSd5ZyOAxVbyzgGHT0GMVcQFnoECBcQAQ",
+      "displayed_link": "https://www.outcomesrocket.com \u203a podcast",
+      "favicon": "https://serpapi.com/searches/68646c2b217ade9a02556572/images/001a49e90a1f52915f42d7fc2d36230522f0078aae986a02b3990dbd5c29a698.png",
+      "snippet": "This podcast is brought to you by Outcomes Rocket, your exclusive healthcare marketing agency. Learn how to accelerate your growth by going to\u2060 ...",
+      "source": "Outcomes Rocket"
+    },
+    {
+      "position": 7,
+      "title": "The Best Healthcare Common Procedure Coding System ...",
+      "link": "https://www.upwork.com/hire/healthcare-common-procedure-coding-system-freelancers/in/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.upwork.com/hire/healthcare-common-procedure-coding-system-freelancers/in/&ved=2ahUKEwiooYSd5ZyOAxVbyzgGHT0GMVcQFnoECDIQAQ",
+      "displayed_link": "https://www.upwork.com \u203a hire \u203a healthcare-common-pr...",
+      "favicon": "https://serpapi.com/searches/68646c2b217ade9a02556572/images/001a49e90a1f52915f42d7fc2d36230546910cfc9866e8cf4fb778e4cd661a01.png",
+      "snippet": "Experience Summary: * Healthcare data analyst with 8+ years of expertise in data visualization, statistical analysis, and health services research.",
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=moda+partners+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiooYSd5ZyOAxVbyzgGHT0GMVcQ5t4CegQIOBAB"
+      },
+      "source": "Upwork"
+    },
+    {
+      "position": 8,
+      "title": "Executive Boards and Commissions 2019 Survey Responses",
+      "link": "https://le.utah.gov/interim/2019/pdf/00003876.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://le.utah.gov/interim/2019/pdf/00003876.pdf&ved=2ahUKEwiooYSd5ZyOAxVbyzgGHT0GMVcQFnoECDEQAQ",
+      "displayed_link": "https://le.utah.gov \u203a interim \u203a pdf",
+      "favicon": "https://serpapi.com/searches/68646c2b217ade9a02556572/images/001a49e90a1f52915f42d7fc2d362305812149297cc75df4d43ffd38a0ffd572.png",
+      "snippet": "Creation of a provider directory \u2013 the Health Informatics Office presented on work to create a provider directory utilizing data from the Division of ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "provider directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=moda+partners+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiooYSd5ZyOAxVbyzgGHT0GMVcQ5t4CegQINxAB"
+      },
+      "source": "Utah Legislature (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "PROCEEDINGS",
+      "link": "https://cdn.ymaws.com/hinz.site-ym.com/resource/resmgr/conference_2017/HiNZ17_proceedings.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://cdn.ymaws.com/hinz.site-ym.com/resource/resmgr/conference_2017/HiNZ17_proceedings.pdf&ved=2ahUKEwiooYSd5ZyOAxVbyzgGHT0GMVcQFnoECCsQAQ",
+      "displayed_link": "https://cdn.ymaws.com \u203a HiNZ17_proceedings",
+      "snippet": "The system is designed to support fine-grained reporting and meta analysis. It has a modern API and is designed to integrate with other systems and ...",
+      "snippet_highlighted_words": [
+        "API"
+      ],
+      "source": "ymaws.com"
+    },
+    {
+      "position": 10,
+      "title": "Med-tech collaborations in 2022",
+      "link": "https://www.bioworld.com/content/medtech-collaborations-2022",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bioworld.com/content/medtech-collaborations-2022&ved=2ahUKEwiooYSd5ZyOAxVbyzgGHT0GMVcQFnoECC4QAQ",
+      "displayed_link": "https://www.bioworld.com \u203a content \u203a medtech-collabo...",
+      "favicon": "https://serpapi.com/searches/68646c2b217ade9a02556572/images/001a49e90a1f52915f42d7fc2d362305191e23422f1f12300e43e1f7cf40303d.png",
+      "snippet": "Breaking news and analysis of the global biotechnology, pharmaceutical, medical device and medical technology sectors. In-depth coverage of innovation, ...",
+      "source": "BioWorld MedTech"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=moda+partners+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=LGxkaKjbOtuW4-EPvYzEuQU&start=10&sa=N&sstk=Ac65TH4Gx1K9aVqH9j2T8LYFOAqy0PWYqs9CgTNVHZ51l0K5Y5h2VXMzlc19guWQXNJJh1sF-3-4GQcpMxxDDgbOoIMIcFl2PGEpXA&ved=2ahUKEwiooYSd5ZyOAxVbyzgGHT0GMVcQ8NMDegQICxAI",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=moda+partners+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=LGxkaKjbOtuW4-EPvYzEuQU&start=10&sa=N&sstk=Ac65TH4Gx1K9aVqH9j2T8LYFOAqy0PWYqs9CgTNVHZ51l0K5Y5h2VXMzlc19guWQXNJJh1sF-3-4GQcpMxxDDgbOoIMIcFl2PGEpXA&ved=2ahUKEwiooYSd5ZyOAxVbyzgGHT0GMVcQ8tMDegQICxAE",
+      "3": "https://www.google.com/search?q=moda+partners+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=LGxkaKjbOtuW4-EPvYzEuQU&start=20&sa=N&sstk=Ac65TH4Gx1K9aVqH9j2T8LYFOAqy0PWYqs9CgTNVHZ51l0K5Y5h2VXMzlc19guWQXNJJh1sF-3-4GQcpMxxDDgbOoIMIcFl2PGEpXA&ved=2ahUKEwiooYSd5ZyOAxVbyzgGHT0GMVcQ8tMDegQICxAG"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=moda+partners+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=moda+partners+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=moda+partners+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=moda+partners+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20"
+    }
+  }
+}

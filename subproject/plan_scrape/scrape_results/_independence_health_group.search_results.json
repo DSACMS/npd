@@ -1,0 +1,278 @@
+{
+  "search_metadata": {
+    "id": "686464cc3d06ea57ce1ee165",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/85af3590a47af2ff/686464cc3d06ea57ce1ee165.json",
+    "created_at": "2025-07-01 22:44:28 UTC",
+    "processed_at": "2025-07-01 22:44:28 UTC",
+    "google_url": "https://www.google.com/search?q=%22independence+health+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22independence+health+group+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/85af3590a47af2ff/686464cc3d06ea57ce1ee165.html",
+    "total_time_taken": 4.94
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"independence health group Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"independence health group Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 6110,
+    "time_taken_displayed": 0.52,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "independence health group Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "independence health group Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Developer resources | Independence Blue Cross (IBX) - IBX",
+      "link": "https://www.ibx.com/developer-resources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ibx.com/developer-resources&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQFnoECBcQAQ",
+      "displayed_link": "https://www.ibx.com \u203a developer-resources",
+      "snippet": "The Provider Directory API will allow developers to retrieve, as applicable, certain Independence provider and pharmacy directory information. The Developer ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Independence"
+      ],
+      "source": "Independence Blue Cross (IBX)"
+    },
+    {
+      "position": 2,
+      "title": "Documentation",
+      "link": "https://devportal.ibx.com/documentation/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://devportal.ibx.com/documentation/&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQFnoECBoQAQ",
+      "displayed_link": "https://devportal.ibx.com \u203a documentation",
+      "favicon": "https://serpapi.com/searches/686464cc3d06ea57ce1ee165/images/f6ed03ddde86dc2e063d0a0720e5249b108e69756375a7ed12488fbaa01b9215.png",
+      "snippet": "IBC provides three APIs: Patient Access, Provider Directory, and Formulary. The following sections detail how to register an application in IBC's Developer ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "Provider Directory"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Quick Start",
+            "link": "https://devportal.ibx.com/documentation/#:~:text=Quick%20Start"
+          },
+          {
+            "title": "Application Registration",
+            "link": "https://devportal.ibx.com/documentation/#:~:text=Application%20Registration"
+          },
+          {
+            "title": "Standard Authorization Code...",
+            "link": "https://devportal.ibx.com/documentation/#:~:text=Standard%20Authorization%20Code%20Flow,-1.%20Connect%20to%20the"
+          }
+        ]
+      },
+      "source": "Independence Blue Cross (IBX)"
+    },
+    {
+      "position": 3,
+      "title": "CMS/ONC Patient access API",
+      "link": "https://www.healthadvantage-hmo.com/interoperability/patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthadvantage-hmo.com/interoperability/patient-access&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQFnoECCEQAQ",
+      "displayed_link": "https://www.healthadvantage-hmo.com \u203a interoperability",
+      "favicon": "https://serpapi.com/searches/686464cc3d06ea57ce1ee165/images/f6ed03ddde86dc2e063d0a0720e5249b990ced4adfdb8e99ffb5bade3b1be018.png",
+      "snippet": "The Provider Directory API will allow developers to retrieve, as applicable, certain ABCBS provider and pharmacy directory information. The Developer ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API"
+      ],
+      "missing": [
+        "group"
+      ],
+      "must_include": {
+        "word": "group",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=independence+health+%22group%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQ5t4CegQIIxAB"
+      },
+      "source": "Health Advantage HMO"
+    },
+    {
+      "position": 4,
+      "title": "Medicaid Provider Directory Standards Set to Change - IPRO",
+      "link": "https://ipro.org/medicaid-provider-directory-standards-set-to-change/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ipro.org/medicaid-provider-directory-standards-set-to-change/&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQFnoECBYQAQ",
+      "displayed_link": "https://ipro.org \u203a medicaid-provider-directory-standards-...",
+      "favicon": "https://serpapi.com/searches/686464cc3d06ea57ce1ee165/images/f6ed03ddde86dc2e063d0a0720e5249b2ea62e307ecb3a8d08c67c61a76ee6b6.png",
+      "snippet": "Medicaid provider directories will soon have to be upgraded to provide members with important information for them to select a provider and access care.",
+      "snippet_highlighted_words": [
+        "Medicaid provider directories will soon have to be upgraded"
+      ],
+      "missing": [
+        "group",
+        "Advantage"
+      ],
+      "source": "ipro.org"
+    },
+    {
+      "position": 5,
+      "title": "Provider directory API access guide",
+      "link": "https://www.capbluecross.com/wps/portal/cap/about/developer/provider-directory-api-access-guide",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.capbluecross.com/wps/portal/cap/about/developer/provider-directory-api-access-guide&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQFnoECB4QAQ",
+      "displayed_link": "https://www.capbluecross.com \u203a cap \u203a about \u203a developer",
+      "favicon": "https://serpapi.com/searches/686464cc3d06ea57ce1ee165/images/f6ed03ddde86dc2e063d0a0720e5249b632044874b06ba325046155704bc30c0.png",
+      "snippet": "The provider directory is an open access and public-facing API to make provider directory information available. This API does not require any authentication ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "API",
+        "provider directory",
+        "API"
+      ],
+      "missing": [
+        "group"
+      ],
+      "must_include": {
+        "word": "group",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=independence+health+%22group%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQ5t4CegQIHxAB"
+      },
+      "source": "Capital Blue Cross"
+    },
+    {
+      "position": 6,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQFnoECBgQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/686464cc3d06ea57ce1ee165/images/f6ed03ddde86dc2e063d0a0720e5249b14cd93962701bf87afd15c65027df260.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. Endpoints are: FHIR- ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 7,
+      "title": "Application Programming Interfaces (APIs) and Relevant ...",
+      "link": "https://www.cms.gov/priorities/burden-reduction/overview/interoperability/implementation-guides-and-standards/application-programming-interfaces-apis-and-relevant-standards-and-implementation-guides-igs",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/priorities/burden-reduction/overview/interoperability/implementation-guides-and-standards/application-programming-interfaces-apis-and-relevant-standards-and-implementation-guides-igs&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQFnoECCwQAQ",
+      "displayed_link": "https://www.cms.gov \u203a overview \u203a interoperability \u203a app...",
+      "favicon": "https://serpapi.com/searches/686464cc3d06ea57ce1ee165/images/f6ed03ddde86dc2e063d0a0720e5249b1b9291b692b05eecd89390fa4c173beb.png",
+      "date": "May 21, 2025",
+      "snippet": "The APIs finalized in CMS-9115-F and CMS-0057-F must meet certain technical standards to drive interoperability and increase provider and ...",
+      "snippet_highlighted_words": [
+        "APIs",
+        "provider"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Patient Access Api",
+            "link": "https://www.cms.gov/priorities/burden-reduction/overview/interoperability/implementation-guides-and-standards/application-programming-interfaces-apis-and-relevant-standards-and-implementation-guides-igs#:~:text=Patient%20Access%20API,-Through%20the%20already%20established"
+          },
+          {
+            "title": "Provider Access Api",
+            "link": "https://www.cms.gov/priorities/burden-reduction/overview/interoperability/implementation-guides-and-standards/application-programming-interfaces-apis-and-relevant-standards-and-implementation-guides-igs#:~:text=Provider%20Access%20API,-Impacted%20payers%20are%20required%20to"
+          },
+          {
+            "title": "Payer-To-Payer Api",
+            "link": "https://www.cms.gov/priorities/burden-reduction/overview/interoperability/implementation-guides-and-standards/application-programming-interfaces-apis-and-relevant-standards-and-implementation-guides-igs#:~:text=Payer%2Dto%2DPayer%20API,-Impacted%20payers%20must%20implement%20and"
+          }
+        ]
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Home - FHIR Human Services Directory v1.0.0",
+      "link": "https://build.fhir.org/ig/HL7/FHIR-IG-Human-Services-Directory/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://build.fhir.org/ig/HL7/FHIR-IG-Human-Services-Directory/&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQFnoECDUQAQ",
+      "displayed_link": "https://build.fhir.org \u203a FHIR-IG-Human-Services-Direct...",
+      "favicon": "https://serpapi.com/searches/686464cc3d06ea57ce1ee165/images/f6ed03ddde86dc2e063d0a0720e5249b875ac6b3bab02475a73885a031f31f03.png",
+      "snippet": "The Fast Healthcare Interoperability Resources (FHIR) Implementation Guide (IG) for Human Services Directories is a United States (US) Realm standard.",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "Directories"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=independence+health+group+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQ5t4CegQIOBAB"
+      },
+      "source": "FHIR specification"
+    },
+    {
+      "position": 9,
+      "title": "State Efforts to Coordinate Provider Directory Accuracy",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQFnoECDkQAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/686464cc3d06ea57ce1ee165/images/f6ed03ddde86dc2e063d0a0720e5249b9979a5fa6ae10d8583e2a215317ef294.png",
+      "date": "Dec 27, 2023",
+      "snippet": "This allows any third party application to quickly pull together provider directory information from any number of health plans. These FHIR APIs ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "health plans",
+        "FHIR APIs"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 45
+          },
+          "extensions": [
+            "45 pages"
+          ]
+        }
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 10,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2020/05/01/2020-05050/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2020/05/01/2020-05050/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQFnoECDIQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2020/05/01 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/686464cc3d06ea57ce1ee165/images/f6ed03ddde86dc2e063d0a0720e5249b6bf787757f49ae0b584e03b341716ae0.png",
+      "date": "May 1, 2020",
+      "snippet": "The basic information (name, phone number, address, and specialty) required for this Provider Directory API can all be represented through FHIR ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "source": "Federal Register (.gov)"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=z2RkaMLxO_bXptQP54ChkQI&start=10&sa=N&sstk=Ac65TH6gZZ2KMuhxeeBnWThxrS5YRUsDW56Of8Y95V1XIIxMXQ9T1oB8g7xpgwva_IV99wt13BgWMwpXYA3rt9oztL417-09nLg9Lg&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=z2RkaMLxO_bXptQP54ChkQI&start=10&sa=N&sstk=Ac65TH6gZZ2KMuhxeeBnWThxrS5YRUsDW56Of8Y95V1XIIxMXQ9T1oB8g7xpgwva_IV99wt13BgWMwpXYA3rt9oztL417-09nLg9Lg&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=z2RkaMLxO_bXptQP54ChkQI&start=20&sa=N&sstk=Ac65TH6gZZ2KMuhxeeBnWThxrS5YRUsDW56Of8Y95V1XIIxMXQ9T1oB8g7xpgwva_IV99wt13BgWMwpXYA3rt9oztL417-09nLg9Lg&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=z2RkaMLxO_bXptQP54ChkQI&start=30&sa=N&sstk=Ac65TH6gZZ2KMuhxeeBnWThxrS5YRUsDW56Of8Y95V1XIIxMXQ9T1oB8g7xpgwva_IV99wt13BgWMwpXYA3rt9oztL417-09nLg9Lg&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=z2RkaMLxO_bXptQP54ChkQI&start=40&sa=N&sstk=Ac65TH6gZZ2KMuhxeeBnWThxrS5YRUsDW56Of8Y95V1XIIxMXQ9T1oB8g7xpgwva_IV99wt13BgWMwpXYA3rt9oztL417-09nLg9Lg&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=z2RkaMLxO_bXptQP54ChkQI&start=50&sa=N&sstk=Ac65TH6gZZ2KMuhxeeBnWThxrS5YRUsDW56Of8Y95V1XIIxMXQ9T1oB8g7xpgwva_IV99wt13BgWMwpXYA3rt9oztL417-09nLg9Lg&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=z2RkaMLxO_bXptQP54ChkQI&start=60&sa=N&sstk=Ac65TH6gZZ2KMuhxeeBnWThxrS5YRUsDW56Of8Y95V1XIIxMXQ9T1oB8g7xpgwva_IV99wt13BgWMwpXYA3rt9oztL417-09nLg9Lg&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=z2RkaMLxO_bXptQP54ChkQI&start=70&sa=N&sstk=Ac65TH6gZZ2KMuhxeeBnWThxrS5YRUsDW56Of8Y95V1XIIxMXQ9T1oB8g7xpgwva_IV99wt13BgWMwpXYA3rt9oztL417-09nLg9Lg&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=z2RkaMLxO_bXptQP54ChkQI&start=80&sa=N&sstk=Ac65TH6gZZ2KMuhxeeBnWThxrS5YRUsDW56Of8Y95V1XIIxMXQ9T1oB8g7xpgwva_IV99wt13BgWMwpXYA3rt9oztL417-09nLg9Lg&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=z2RkaMLxO_bXptQP54ChkQI&start=90&sa=N&sstk=Ac65TH6gZZ2KMuhxeeBnWThxrS5YRUsDW56Of8Y95V1XIIxMXQ9T1oB8g7xpgwva_IV99wt13BgWMwpXYA3rt9oztL417-09nLg9Lg&ved=2ahUKEwiClZqa3pyOAxX2q4kEHWdAKCIQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=independence+health+group+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

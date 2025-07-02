@@ -1,0 +1,319 @@
+{
+  "search_metadata": {
+    "id": "68646cecd2d7403f001281eb",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/37794eb1bdea8f65/68646cecd2d7403f001281eb.json",
+    "created_at": "2025-07-01 23:19:08 UTC",
+    "processed_at": "2025-07-01 23:19:08 UTC",
+    "google_url": "https://www.google.com/search?q=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/37794eb1bdea8f65/68646cecd2d7403f001281eb.html",
+    "total_time_taken": 2.47
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "highmark health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "highmark health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 9,
+    "time_taken_displayed": 0.29,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_images": [
+    {
+      "source": "https://thebigunlock.com/category/podcasts/season-4/",
+      "thumbnail": "https://serpapi.com/searches/68646cecd2d7403f001281eb/images/5fee6facc197fc6adb69a5eec440ff489fbb82c6f570311eac899afc1d59b876.jpeg",
+      "original": "https://thebigunlock.com/wp-content/uploads/2022/11/season4-ep139-podcast-with-Julia-Hu-CEO-and-Cofounder-Lark-Health-lp-thumbnail.png",
+      "title": "Season 4 - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/podcasts/season3/",
+      "thumbnail": "https://serpapi.com/searches/68646cecd2d7403f001281eb/images/5fee6facc197fc6a7bd43c4c0067711c58f438b3b458f1a4c29024fc31b289e0.jpeg",
+      "original": "https://thebigunlock.com/wp-content/uploads/2021/11/Season3-ep101-podcast-with-Jason-Considine-lp-thumbnail.png",
+      "title": "Season 3 - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://arcadia.io/resources/arcadia-strengthens-healthcare-data-platform",
+      "thumbnail": "https://serpapi.com/searches/68646cecd2d7403f001281eb/images/5fee6facc197fc6a9064f134c8e5d7e460d6cecdb3ecf4212fa0c78cbd480658.jpeg",
+      "original": "https://arcadia.io/assets/_webp1200/273385/2024_09_13_Datapalooza_Press_Release_og-image.webp",
+      "title": "Arcadia strengthens healthcare data platform with ...",
+      "source_name": "Arcadia.io"
+    },
+    {
+      "source": "https://www.businesswire.com/news/home/20230425005313/en/Health-Plan-Efforts-to-Meet-CMS-Interoperability-Mandates-and-Leverage-Data-Toward-Health-Improvements-Get-a-Boost-from-a-New-Industry-Partnership",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB-apvqRY0q3X94FId7X7ilfiYfMfkyMYm0H2aeJRRZW1J_02cpN02lCU&s",
+      "original": "https://mms.businesswire.com/media/20230425005313/en/1772860/22/Abacus_Insights_Logo_-_RGB.jpg",
+      "title": "Health Plan Efforts to Meet CMS Interoperability Mandates ...",
+      "source_name": "Business Wire"
+    },
+    {
+      "source": "https://thebigunlock.com/category/podcasts/season3/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjtjCZEPPt_FUOpxlM3J6463tFdA7HWYMlWcXipYt1MXN3BdJEZZXsHo&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2021/10/season3-ep99-podcast-with-Amit-Phadnis-lp-thumbnail-final.png",
+      "title": "Season 3 - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/podcasts/season-4/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3H9ArICJAvddzKEDfEYje-skaNSL8wwEuwngqdQep4C3IWMFTjhWRMeA&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2022/10/season4-ep135-podcast-with-Zane-Burke-lp-thumbnail.png",
+      "title": "Season 4 - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/uncategorized/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvOn2Ait88x71BBWKbMQpyQGJ5kR36RS20bpdTh97KAfQJ5vYh9-vuN5c&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2020/08/episode57-lp-thumbnail.png",
+      "title": "Uncategorized - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/podcasts/season-4/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1gM3RnBKg9YnrCZJYQS9Lsnm5Av4u_fB_qYEfgJBbZccpu1rRC9kOHew&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2022/11/season4-ep138-podcast-with-Michael-Hasselberg-lp-thumbnail.png",
+      "title": "Season 4 - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/podcasts/season3/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4JgZcA-EIhcn325AziLrxywCPauND5guZcEiEJ_bjtq9UFROD8LKnWeI&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2021/11/season3-ep104-podcast-with-Dr.-Mark-Weisman-lp-thumbnail1.png",
+      "title": "Season 3 - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Health Plan Efforts to Meet CMS Interoperability Mandates ...",
+      "link": "https://www.businesswire.com/news/home/20230425005313/en/Health-Plan-Efforts-to-Meet-CMS-Interoperability-Mandates-and-Leverage-Data-Toward-Health-Improvements-Get-a-Boost-from-a-New-Industry-Partnership",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.businesswire.com/news/home/20230425005313/en/Health-Plan-Efforts-to-Meet-CMS-Interoperability-Mandates-and-Leverage-Data-Toward-Health-Improvements-Get-a-Boost-from-a-New-Industry-Partnership&ved=2ahUKEwiWyIT55ZyOAxWWrZUCHaL8O5kQFnoECBcQAQ",
+      "displayed_link": "https://www.businesswire.com \u203a news \u203a home \u203a Health-P...",
+      "favicon": "https://serpapi.com/searches/68646cecd2d7403f001281eb/images/0a474698901a658c30c2652b39ff97d0fa87298c8b9351f687ace9d317c16e2f.png",
+      "date": "Apr 25, 2023",
+      "snippet": "... provider directory and formulary APIs. ... Onyx, a NewWave company, emerged from work with CMS in establishing the nation's first nationwide FHIR- ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=highmark+health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiWyIT55ZyOAxWWrZUCHaL8O5kQ5t4CegQIHBAB"
+      },
+      "source": "Business Wire"
+    },
+    {
+      "position": 2,
+      "title": "Arcadia strengthens healthcare data platform with faster, cost ...",
+      "link": "https://arcadia.io/resources/arcadia-strengthens-healthcare-data-platform",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://arcadia.io/resources/arcadia-strengthens-healthcare-data-platform&ved=2ahUKEwiWyIT55ZyOAxWWrZUCHaL8O5kQFnoECB4QAQ",
+      "displayed_link": "https://arcadia.io \u203a resources",
+      "favicon": "https://serpapi.com/searches/68646cecd2d7403f001281eb/images/0a474698901a658c30c2652b39ff97d015125f1c1fbed0698b6237c7a5ad1529.png",
+      "date": "Oct 16, 2024",
+      "snippet": "Using a FHIR-based API developed with Tufts Medicine, the initiative brings critical oncology data closer to seamless sharing \u2014 enhancing ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=highmark+health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiWyIT55ZyOAxWWrZUCHaL8O5kQ5t4CegQIIhAB"
+      },
+      "source": "arcadia.io"
+    },
+    {
+      "position": 3,
+      "title": "ncvhs - National Committee on Vital and Health Statistics",
+      "link": "https://ncvhs.hhs.gov/wp-content/uploads/2023/10/NCVHS-Standards-Subcommittee-Hearing-Summary-Jan-18-19-2023-FINAL-508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ncvhs.hhs.gov/wp-content/uploads/2023/10/NCVHS-Standards-Subcommittee-Hearing-Summary-Jan-18-19-2023-FINAL-508.pdf&ved=2ahUKEwiWyIT55ZyOAxWWrZUCHaL8O5kQFnoECBgQAQ",
+      "displayed_link": "https://ncvhs.hhs.gov \u203a uploads \u203a 2023/10 \u203a NCV...",
+      "favicon": "https://serpapi.com/searches/68646cecd2d7403f001281eb/images/0a474698901a658c30c2652b39ff97d0f06aa5e621e16da311dec240819fc4e1.png",
+      "date": "Oct 6, 2023",
+      "snippet": "CMS has proposed the development of an FHIR-based API requirement that automates the process for providers to determine whether an ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 67
+          },
+          "extensions": [
+            "67 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=highmark+health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiWyIT55ZyOAxWWrZUCHaL8O5kQ5t4CegQIHRAB"
+      },
+      "source": "National Committee on Vital and Health Statistics (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Season 4",
+      "link": "https://thebigunlock.com/category/podcasts/season-4/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://thebigunlock.com/category/podcasts/season-4/&ved=2ahUKEwiWyIT55ZyOAxWWrZUCHaL8O5kQFnoECBkQAQ",
+      "displayed_link": "https://thebigunlock.com \u203a podcasts",
+      "favicon": "https://serpapi.com/searches/68646cecd2d7403f001281eb/images/0a474698901a658c30c2652b39ff97d036d1220dc0c4d8f2dbbc5066b9b34f03.png",
+      "snippet": "... provider directory data. When a provider updates a piece of demographic data ... healthcare, interoperability, resources, or FHIR. It is amazing for ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "healthcare",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 5.0,
+            "reviews": 5
+          },
+          "extensions": [
+            "5.0(5)"
+          ]
+        }
+      },
+      "source": "The Big Unlock Podcast"
+    },
+    {
+      "position": 5,
+      "title": "Meg Bryant",
+      "link": "https://www.healthcaredive.com/users/mbryant/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcaredive.com/users/mbryant/&ved=2ahUKEwiWyIT55ZyOAxWWrZUCHaL8O5kQFnoECBQQAQ",
+      "displayed_link": "https://www.healthcaredive.com \u203a users \u203a mbryant",
+      "favicon": "https://serpapi.com/searches/68646cecd2d7403f001281eb/images/0a474698901a658c30c2652b39ff97d09cb87f6b7723754e611d73fd278a38a9.png",
+      "snippet": "Nearly a third of health IT developers producing FHIR products, ONC says. Oct ... Industry group offers roadmap to greater provider directory accuracy.",
+      "snippet_highlighted_words": [
+        "health",
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "Healthcare Dive"
+    },
+    {
+      "position": 6,
+      "title": "Videos by Format - iHealthFlix",
+      "link": "https://ihealthflix.com/format",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ihealthflix.com/format&ved=2ahUKEwiWyIT55ZyOAxWWrZUCHaL8O5kQFnoECBUQAQ",
+      "displayed_link": "https://ihealthflix.com \u203a format",
+      "favicon": "https://serpapi.com/searches/68646cecd2d7403f001281eb/images/0a474698901a658c30c2652b39ff97d05a79eb30ea7e336993fd4aa3692f7918.png",
+      "snippet": "The HL7 FHIR standard is well-suited to form the basis of real-time API data exchange between applications, devices, and systems. The HL7 Da Vinci Project was ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API"
+      ],
+      "source": "ihealthflix.com"
+    },
+    {
+      "position": 7,
+      "title": "Season 3",
+      "link": "https://thebigunlock.com/category/podcasts/season3/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://thebigunlock.com/category/podcasts/season3/&ved=2ahUKEwiWyIT55ZyOAxWWrZUCHaL8O5kQFnoECCAQAQ",
+      "displayed_link": "https://thebigunlock.com \u203a podcasts",
+      "favicon": "https://serpapi.com/searches/68646cecd2d7403f001281eb/images/0a474698901a658c30c2652b39ff97d0080de52dd848cb18d89c864f408cff0f.png",
+      "snippet": "There's DICOM and HL7 and now FHIR, the nature of data is different. ... We rolled out a brand-new provider directory to help people search for providers and ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 5.0,
+            "reviews": 5
+          },
+          "extensions": [
+            "5.0(5)"
+          ]
+        }
+      },
+      "source": "The Big Unlock Podcast"
+    },
+    {
+      "position": 8,
+      "title": "Videos by Year - iHealthFlix",
+      "link": "https://ihealthflix.com/year",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ihealthflix.com/year&ved=2ahUKEwiWyIT55ZyOAxWWrZUCHaL8O5kQFnoECDIQAQ",
+      "displayed_link": "https://ihealthflix.com \u203a year",
+      "favicon": "https://serpapi.com/searches/68646cecd2d7403f001281eb/images/0a474698901a658c30c2652b39ff97d0dfb4c075936fa7a4d7efd715f197c655.png",
+      "snippet": "... Healthcare Interoperability Resources (FHIR), to address interoperability challenges as \"a new standard for exchanging healthcare information electronically.",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "healthcare"
+      ],
+      "source": "ihealthflix.com"
+    },
+    {
+      "position": 9,
+      "title": "\u51ef\u63772021\u5065\u5eb7\u9669\u4e5d\u5927\u8d8b\u52bf\uff1a\u865a\u62df\u62a4\u7406\u670d\u52a1\u548c\u5065\u5eb7\u7ba1\u7406\u6210\u51b3\u80dc ...",
+      "link": "http://www.baoxianguancha.com/content-11-6883-1.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.baoxianguancha.com/content-11-6883-1.html&ved=2ahUKEwiWyIT55ZyOAxWWrZUCHaL8O5kQFnoECDUQAQ",
+      "displayed_link": "http://www.baoxianguancha.com \u203a ...",
+      "favicon": "https://serpapi.com/searches/68646cecd2d7403f001281eb/images/0a474698901a658c30c2652b39ff97d0a94b9764f0f2229dd7843b95e5e283c7.png",
+      "date": "Mar 29, 2021",
+      "snippet": "... API\u548cProvider Directory API \u653f\u7b56\uff0c\u4ee5\u8fdb\u4e00\u6b65\u63a8\u8fdb\u4e92\u64cd\u4f5c\u6027\u3002 4. \u9664\u4e86\u653f\u5e9c ... \u5728\u8fd9\u4e00\u70b9\u4e0a\uff0cHumana\u4f7f\u7528\u5feb\u901f\u533b\u7597\u4fdd\u5065\u4e92\u64cd\u4f5c\u6027\u8d44\u6e90\uff08FHIR\uff09\u534f\u8bae\u4e0e ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "source": "\u4fdd\u89c2"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 9 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=highmark+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

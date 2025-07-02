@@ -303,17 +303,19 @@ def extract_telecoms(telecoms):
     
     return phones, contact_urls, emails
 
-def extract_endpoints(endpoints):
+def extract_endpoints(endpoints, endpoint_reference_to_url=None):
     """Extract endpoint references and URLs"""
     endpoint_list = []
     if not endpoints:
         return endpoint_list
     
+    if endpoint_reference_to_url is None:
+        endpoint_reference_to_url = {}
+    
     for endpoint in endpoints:
         reference = endpoint.get('reference', '')
-        # For now, we'll store the reference and resolve URLs in a separate pass
-        # The actual endpoint URLs are in separate Endpoint resource files
-        url = reference  # This will be resolved later when we process Endpoint files
+        # Resolve the reference to actual URL using the mapping
+        url = endpoint_reference_to_url.get(reference, reference)
         
         endpoint_list.append({
             'reference': reference,
@@ -328,7 +330,7 @@ def generate_hash_id(data_dict):
     data_str = json.dumps(data_dict, sort_keys=True)
     return hashlib.md5(data_str.encode()).hexdigest()[:16]
 
-def process_organization_file(file_path, vendor_name):
+def process_organization_file(file_path, vendor_name, endpoint_reference_to_url=None):
     """Process a single organization JSON file"""
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
@@ -358,7 +360,7 @@ def process_organization_file(file_path, vendor_name):
         npis = extract_npi_identifiers(identifiers)
         address_list = extract_addresses(addresses)
         phones, contact_urls, emails = extract_telecoms(telecoms)
-        endpoint_list = extract_endpoints(endpoints)
+        endpoint_list = extract_endpoints(endpoints, endpoint_reference_to_url)
         
         return {
             'org_id': org_id,
@@ -477,10 +479,15 @@ def main():
                 resource = data.get('resource', {})
                 if resource.get('resourceType') == 'Endpoint':
                     full_url = data.get('fullUrl', '')
+                    endpoint_id = resource.get('id', '')
                     endpoint_address = resource.get('address', '')
                     
-                    if full_url and endpoint_address:
-                        endpoint_reference_to_url[full_url] = endpoint_address
+                    if endpoint_address:
+                        # Map both fullUrl and Endpoint/id formats
+                        if full_url:
+                            endpoint_reference_to_url[full_url] = endpoint_address
+                        if endpoint_id:
+                            endpoint_reference_to_url[f'Endpoint/{endpoint_id}'] = endpoint_address
                         
             except Exception as e:
                 # Skip files that can't be processed in pass 1
@@ -505,7 +512,7 @@ def main():
         total_files += len(json_files)
         
         for json_file in json_files:
-            result = process_organization_file(json_file, vendor_name)
+            result = process_organization_file(json_file, vendor_name, endpoint_reference_to_url)
             
             if result is None:
                 continue

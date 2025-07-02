@@ -1,0 +1,324 @@
+{
+  "search_metadata": {
+    "id": "68646d061a29fe6c8429d5ce",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/5b11c04d8d39c402/68646d061a29fe6c8429d5ce.json",
+    "created_at": "2025-07-01 23:19:34 UTC",
+    "processed_at": "2025-07-01 23:19:34 UTC",
+    "google_url": "https://www.google.com/search?q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/5b11c04d8d39c402/68646d061a29fe6c8429d5ce.html",
+    "total_time_taken": 1.91
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "local initiative health authority for la county Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "local initiative health authority for la county Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 294,
+    "time_taken_displayed": 0.37,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "What is the local initiative health authority for Los Angeles?",
+      "snippet": "The Local Initiative Health Authority for Los Angeles County (L.A. Care) is a public agency that provides health insurance to Los Angeles County residents, particularly those who are low-income or uninsured, through four health coverage programs including Medi-Cal.",
+      "title": "L.A. Care Health Plan - Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/L.A._Care_Health_Plan#:~:text=The%20Local%20Initiative%20Health%20Authority,coverage%20programs%20including%20Medi%2DCal.",
+      "displayed_link": "https://en.wikipedia.org \u203a wiki \u203a L.A._Care_Health_Plan",
+      "source_logo": "https://serpapi.com/searches/68646d061a29fe6c8429d5ce/images/f3c0520bfe802cc8e984b3f386d368cfa22cccba7f779cae77443d896e135b99.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaR1dtUlpjRUpVV1hWT0xVUkpNM1JKVWs1UFduUm1TMXAzZFdOWVRHaFpjMWhLTUVORFNFcHNOR0YxTlZOWGVERkVjakF5YjA5RGFHcFhXWEU1ZDAxZlJFUkVVMGMzTkROZmFURmtaVjlDTTBWVWJtbzVWbXBWUkRJMVFSSVhRMGN4YTJGSlNHZEVkVmR4ZDJKclVGOXdhVEJ0UVVrYUlrRkdUVUZIUjI5eGNWTnNlUzFKYlhSaE5qRmpaWEpUUzJwT1pGVmFabnBHYVdjIiwiZmN2IjoiMyIsImVpIjoiQ0cxa2FJSGdEdVdxd2JrUF9waTBtQUkiLCJxYyI6ImN3M0h3UTNDTUJBRVFONTVVY0oya2g5bElLM3NDMTdKOFVXbmk2VTg2SUdTS0EzbU44dXplMkdIaGxKTVRVTXo5bXpnbWMxRGVXSHpRQ2VLbi1PXzNhb0t3OEE2T1pJdnd4RS1WUzFRRlZiUzR3SVBZV3VLLS0zOV9UeldIdyIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgbG9jYWwgaW5pdGlhdGl2ZSBoZWFsdGggYXV0aG9yaXR5IGZvciBMb3MgQW5nZWxlcz8iLCJsayI6IkdpMXNiMk5oYkNCcGJtbDBhV0YwYVhabElHaGxZV3gwYUNCaGRYUm9iM0pwZEhrZ2JHOXpJR0Z1WjJWc1pYTSIsImJzIjoiYzRXUVRXb0NRUkNGeWJiSnd1WFFxeUpJc2xKSkg4QmhjS09na0VVZzJ4UmphWGNvdTRmcFV2RUszczVUWkowYnBHZEd5US1JNl9kOTlicWZFalYtc3lqZ0lvZ2w0RkFpZ19OT0hJcmJFVmhDRmd1NEZSdHFKd2RZaFJybUlVTGgxOFFVOC14cmIwWjZjRnZrSkdFbnFZWHF0NjF5cUFqQ0tubHhXNk12cVhuSGZGZ01ZWUkxNWRtbk5nOGE5bGRSeGpKeDZsVTl6WDU1Z0xDZ3BXc2lLSlk3OUlKcmdvclI1OW5wM1R6cWZxdEMyYkdiQzR0X1dQV2h6S3hiNWVmeXRQdlZTOHJiSk9JbWViSHRHMHlROC14NGI1NzE2RExudWVROFJ2VmZhNm9Ud2IyN2J3IiwiaWQiOiJmY19DRzFrYUlIZ0R1V3F3YmtQX3BpMG1BSV8zIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaR1dtUlpjRUpVV1hWT0xVUkpNM1JKVWs1UFduUm1TMXAzZFdOWVRHaFpjMWhLTUVORFNFcHNOR0YxTlZOWGVERkVjakF5YjA5RGFHcFhXWEU1ZDAxZlJFUkVVMGMzTkROZmFURmtaVjlDTTBWVWJtbzVWbXBWUkRJMVFSSVhRMGN4YTJGSlNHZEVkVmR4ZDJKclVGOXdhVEJ0UVVrYUlrRkdUVUZIUjI5eGNWTnNlUzFKYlhSaE5qRmpaWEpUUzJwT1pGVmFabnBHYVdjIiwiZmN2IjoiMyIsImVpIjoiQ0cxa2FJSGdEdVdxd2JrUF9waTBtQUkiLCJxYyI6ImN3M0h3UTNDTUJBRVFONTVVY0oya2g5bElLM3NDMTdKOFVXbmk2VTg2SUdTS0EzbU44dXplMkdIaGxKTVRVTXo5bXpnbWMxRGVXSHpRQ2VLbi1PXzNhb0t3OEE2T1pJdnd4RS1WUzFRRlZiUzR3SVBZV3VLLS0zOV9UeldIdyIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgbG9jYWwgaW5pdGlhdGl2ZSBoZWFsdGggYXV0aG9yaXR5IGZvciBMb3MgQW5nZWxlcz8iLCJsayI6IkdpMXNiMk5oYkNCcGJtbDBhV0YwYVhabElHaGxZV3gwYUNCaGRYUm9iM0pwZEhrZ2JHOXpJR0Z1WjJWc1pYTSIsImJzIjoiYzRXUVRXb0NRUkNGeWJiSnd1WFFxeUpJc2xKSkg4QmhjS09na0VVZzJ4UmphWGNvdTRmcFV2RUszczVUWkowYnBHZEd5US1JNl9kOTlicWZFalYtc3lqZ0lvZ2w0RkFpZ19OT0hJcmJFVmhDRmd1NEZSdHFKd2RZaFJybUlVTGgxOFFVOC14cmIwWjZjRnZrSkdFbnFZWHF0NjF5cUFqQ0tubHhXNk12cVhuSGZGZ01ZWUkxNWRtbk5nOGE5bGRSeGpKeDZsVTl6WDU1Z0xDZ3BXc2lLSlk3OUlKcmdvclI1OW5wM1R6cWZxdEMyYkdiQzR0X1dQV2h6S3hiNWVmeXRQdlZTOHJiSk9JbWViSHRHMHlROC14NGI1NzE2RExudWVROFJ2VmZhNm9Ud2IyN2J3IiwiaWQiOiJmY19DRzFrYUlIZ0R1V3F3YmtQX3BpMG1BSV8zIn0%3D"
+    },
+    {
+      "question": "What type of insurance is L.A. Care?",
+      "snippet": "L.A. Care offers a Medi-Cal plan built with our community in mind. Medi-Cal is a public health care program for those with limited income.",
+      "title": "Help Me Choose | L.A. Care Health Plan",
+      "link": "https://www.lacare.org/health-plans#:~:text=L.A.%20Care%20offers%20a%20Medi,for%20those%20with%20limited%20income.",
+      "displayed_link": "https://www.lacare.org \u203a health-plans",
+      "source_logo": "https://serpapi.com/searches/68646d061a29fe6c8429d5ce/images/f3c0520bfe802cc8e984b3f386d368cfd6ddb63860544fe8904e623abe19d42e.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaR1dtUlpjRUpVV1hWT0xVUkpNM1JKVWs1UFduUm1TMXAzZFdOWVRHaFpjMWhLTUVORFNFcHNOR0YxTlZOWGVERkVjakF5YjA5RGFHcFhXWEU1ZDAxZlJFUkVVMGMzTkROZmFURmtaVjlDTTBWVWJtbzVWbXBWUkRJMVFSSVhRMGN4YTJGSlNHZEVkVmR4ZDJKclVGOXdhVEJ0UVVrYUlrRkdUVUZIUjI5eGNWTnNlUzFKYlhSaE5qRmpaWEpUUzJwT1pGVmFabnBHYVdjIiwiZmN2IjoiMyIsImVpIjoiQ0cxa2FJSGdEdVdxd2JrUF9waTBtQUkiLCJxYyI6ImN3M0h3UTNDTUJBRVFONTVVY0oya2g5bElLM3NDMTdKOFVXbmk2VTg2SUdTS0EzbU44dXplMkdIaGxKTVRVTXo5bXpnbWMxRGVXSHpRQ2VLbi1PXzNhb0t3OEE2T1pJdnd4RS1WUzFRRlZiUzR3SVBZV3VLLS0zOV9UeldIdyIsInF1ZXN0aW9uIjoiV2hhdCB0eXBlIG9mIGluc3VyYW5jZSBpcyBMLkEuIENhcmU/IiwibGsiOiJHaUIzYUdGMElIUjVjR1VnYjJZZ2FXNXpkWEpoYm1ObElHbHpJR3hoWTJGeVpRIiwiYnMiOiJjNFdRVFdvQ1FSQ0Z5YmJKd3VYUXF5SklzbEpKSDhCaGNLT2drRVVnMnhSamFYY291NGZwVXZFSzNzNVRaSjBicEdkR3lRLUk2X2Q5OWJxZkVqVi1zeWpnSW9nbDRGQWlnX05PSElyYkVWaENGZ3U0RlJ0cUp3ZFloUnJtSVVMaDE4UVU4LXhyYjBaNmNGdmtKR0VucVlYcXQ2MXlxQWpDS25seFc2TXZxWG5IZkZnTVlZSTE1ZG1uTmc4YTlsZFJ4akp4NmxVOXpYNTVnTENncFdzaUtKWTc5SUpyZ29yUjU5bnAzVHpxZnF0QzJiR2JDNHRfV1BXaHpLeGI1ZWZ5dFB2VlM4cmJKT0ltZWJIdEcweVE4LXg0YjU3MTZETG51ZVE4UnZWZmE2b1R3YjI3YnciLCJpZCI6ImZjX0NHMWthSUhnRHVXcXdia1BfcGkwbUFJXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaR1dtUlpjRUpVV1hWT0xVUkpNM1JKVWs1UFduUm1TMXAzZFdOWVRHaFpjMWhLTUVORFNFcHNOR0YxTlZOWGVERkVjakF5YjA5RGFHcFhXWEU1ZDAxZlJFUkVVMGMzTkROZmFURmtaVjlDTTBWVWJtbzVWbXBWUkRJMVFSSVhRMGN4YTJGSlNHZEVkVmR4ZDJKclVGOXdhVEJ0UVVrYUlrRkdUVUZIUjI5eGNWTnNlUzFKYlhSaE5qRmpaWEpUUzJwT1pGVmFabnBHYVdjIiwiZmN2IjoiMyIsImVpIjoiQ0cxa2FJSGdEdVdxd2JrUF9waTBtQUkiLCJxYyI6ImN3M0h3UTNDTUJBRVFONTVVY0oya2g5bElLM3NDMTdKOFVXbmk2VTg2SUdTS0EzbU44dXplMkdIaGxKTVRVTXo5bXpnbWMxRGVXSHpRQ2VLbi1PXzNhb0t3OEE2T1pJdnd4RS1WUzFRRlZiUzR3SVBZV3VLLS0zOV9UeldIdyIsInF1ZXN0aW9uIjoiV2hhdCB0eXBlIG9mIGluc3VyYW5jZSBpcyBMLkEuIENhcmU%2FIiwibGsiOiJHaUIzYUdGMElIUjVjR1VnYjJZZ2FXNXpkWEpoYm1ObElHbHpJR3hoWTJGeVpRIiwiYnMiOiJjNFdRVFdvQ1FSQ0Z5YmJKd3VYUXF5SklzbEpKSDhCaGNLT2drRVVnMnhSamFYY291NGZwVXZFSzNzNVRaSjBicEdkR3lRLUk2X2Q5OWJxZkVqVi1zeWpnSW9nbDRGQWlnX05PSElyYkVWaENGZ3U0RlJ0cUp3ZFloUnJtSVVMaDE4UVU4LXhyYjBaNmNGdmtKR0VucVlYcXQ2MXlxQWpDS25seFc2TXZxWG5IZkZnTVlZSTE1ZG1uTmc4YTlsZFJ4akp4NmxVOXpYNTVnTENncFdzaUtKWTc5SUpyZ29yUjU5bnAzVHpxZnF0QzJiR2JDNHRfV1BXaHpLeGI1ZWZ5dFB2VlM4cmJKT0ltZWJIdEcweVE4LXg0YjU3MTZETG51ZVE4UnZWZmE2b1R3YjI3YnciLCJpZCI6ImZjX0NHMWthSUhnRHVXcXdia1BfcGkwbUFJXzMifQ%3D%3D"
+    },
+    {
+      "question": "Is L.A. Care a Medicare Advantage plan?",
+      "snippet": "It's a Medicare Advantage health plan, which provides specialized care and wrap-around services for dual eligible beneficiaries (eligible for both Medicare and Medi-Cal). L.A. Care Medicare Plus is here to deliver coordinated and seamless healthcare that supports your health and independence.",
+      "title": "L.A. Care Medicare Plus",
+      "link": "https://www.lacare.org/health-plans/medicare-plus#:~:text=It's%20a%20Medicare%20Advantage%20health,supports%20your%20health%20and%20independence.",
+      "displayed_link": "https://www.lacare.org \u203a health-plans \u203a medicare-plus",
+      "source_logo": "https://serpapi.com/searches/68646d061a29fe6c8429d5ce/images/f3c0520bfe802cc8e984b3f386d368cfcfe7e4b33660df64f3470814b78f5c35.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaR1dtUlpjRUpVV1hWT0xVUkpNM1JKVWs1UFduUm1TMXAzZFdOWVRHaFpjMWhLTUVORFNFcHNOR0YxTlZOWGVERkVjakF5YjA5RGFHcFhXWEU1ZDAxZlJFUkVVMGMzTkROZmFURmtaVjlDTTBWVWJtbzVWbXBWUkRJMVFSSVhRMGN4YTJGSlNHZEVkVmR4ZDJKclVGOXdhVEJ0UVVrYUlrRkdUVUZIUjI5eGNWTnNlUzFKYlhSaE5qRmpaWEpUUzJwT1pGVmFabnBHYVdjIiwiZmN2IjoiMyIsImVpIjoiQ0cxa2FJSGdEdVdxd2JrUF9waTBtQUkiLCJxYyI6ImN3M0h3UTNDTUJBRVFONTVVY0oya2g5bElLM3NDMTdKOFVXbmk2VTg2SUdTS0EzbU44dXplMkdIaGxKTVRVTXo5bXpnbWMxRGVXSHpRQ2VLbi1PXzNhb0t3OEE2T1pJdnd4RS1WUzFRRlZiUzR3SVBZV3VLLS0zOV9UeldIdyIsInF1ZXN0aW9uIjoiSXMgTC5BLiBDYXJlIGEgTWVkaWNhcmUgQWR2YW50YWdlIHBsYW4/IiwibGsiOiJjNU5TeVN4V3lFbFVTRTRzU2xWSVZNaE5UY21FTUZQS0V2TktFdE5URlFweUV2TUEiLCJicyI6ImM0V1FUV29DUVJDRnliYkp3dVhRcXlKSXNsSkpIOEJoY0tPZ2tFVWcyeFJqYVhjb3U0ZnBVdkVLM3M1VFpKMGJwR2RHeVEtSTZfZDk5YnFmRWpWLXN5amdJb2dsNEZBaWdfTk9ISXJiRVZoQ0ZndTRGUnRxSndkWWhScm1JVUxoMThRVTgteHJiMFo2Y0Z2a0pHRW5xWVhxdDYxeXFBakNLbmx4VzZNdnFYbkhmRmdNWVlJMTVkbW5OZzhhOWxkUnhqSng2bFU5elg1NWdMQ2dwV3NpS0pZNzlJSnJnb3JSNTlucDNUenFmcXRDMmJHYkM0dF9XUFdoekt4YjVlZnl0UHZWUzhyYkpPSW1lYkh0RzB5UTgteDRiNTcxNkRMbnVlUThSdlZmYTZvVHdiMjdidyIsImlkIjoiZmNfQ0cxa2FJSGdEdVdxd2JrUF9waTBtQUlfMyJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaR1dtUlpjRUpVV1hWT0xVUkpNM1JKVWs1UFduUm1TMXAzZFdOWVRHaFpjMWhLTUVORFNFcHNOR0YxTlZOWGVERkVjakF5YjA5RGFHcFhXWEU1ZDAxZlJFUkVVMGMzTkROZmFURmtaVjlDTTBWVWJtbzVWbXBWUkRJMVFSSVhRMGN4YTJGSlNHZEVkVmR4ZDJKclVGOXdhVEJ0UVVrYUlrRkdUVUZIUjI5eGNWTnNlUzFKYlhSaE5qRmpaWEpUUzJwT1pGVmFabnBHYVdjIiwiZmN2IjoiMyIsImVpIjoiQ0cxa2FJSGdEdVdxd2JrUF9waTBtQUkiLCJxYyI6ImN3M0h3UTNDTUJBRVFONTVVY0oya2g5bElLM3NDMTdKOFVXbmk2VTg2SUdTS0EzbU44dXplMkdIaGxKTVRVTXo5bXpnbWMxRGVXSHpRQ2VLbi1PXzNhb0t3OEE2T1pJdnd4RS1WUzFRRlZiUzR3SVBZV3VLLS0zOV9UeldIdyIsInF1ZXN0aW9uIjoiSXMgTC5BLiBDYXJlIGEgTWVkaWNhcmUgQWR2YW50YWdlIHBsYW4%2FIiwibGsiOiJjNU5TeVN4V3lFbFVTRTRzU2xWSVZNaE5UY21FTUZQS0V2TktFdE5URlFweUV2TUEiLCJicyI6ImM0V1FUV29DUVJDRnliYkp3dVhRcXlKSXNsSkpIOEJoY0tPZ2tFVWcyeFJqYVhjb3U0ZnBVdkVLM3M1VFpKMGJwR2RHeVEtSTZfZDk5YnFmRWpWLXN5amdJb2dsNEZBaWdfTk9ISXJiRVZoQ0ZndTRGUnRxSndkWWhScm1JVUxoMThRVTgteHJiMFo2Y0Z2a0pHRW5xWVhxdDYxeXFBakNLbmx4VzZNdnFYbkhmRmdNWVlJMTVkbW5OZzhhOWxkUnhqSng2bFU5elg1NWdMQ2dwV3NpS0pZNzlJSnJnb3JSNTlucDNUenFmcXRDMmJHYkM0dF9XUFdoekt4YjVlZnl0UHZWUzhyYkpPSW1lYkh0RzB5UTgteDRiNTcxNkRMbnVlUThSdlZmYTZvVHdiMjdidyIsImlkIjoiZmNfQ0cxa2FJSGdEdVdxd2JrUF9waTBtQUlfMyJ9"
+    },
+    {
+      "question": "Is the L.A. Care Health Plan the same as Medi-Cal?",
+      "snippet": "L.A. Care is a health plan for people who have Medi-Cal in Los Angeles County. L.A. Care works with the State of California to help you get the health care you need. Talk with one of the L.A. Care Member Services representatives to learn more about the health plan and how to make it work for you.",
+      "title": "2025 Medi-Cal Member Handbook - L.A. Care Health Plan",
+      "link": "https://www.lacare.org/members/handbook/health-plan-overview#:~:text=L.A.%20Care%20is%20a%20health,make%20it%20work%20for%20you.",
+      "displayed_link": "https://www.lacare.org \u203a members \u203a health-plan-overview",
+      "source_logo": "https://serpapi.com/searches/68646d061a29fe6c8429d5ce/images/f3c0520bfe802cc8e984b3f386d368cfe50d1101f0979d24d5a146e59d14dee7.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaR1dtUlpjRUpVV1hWT0xVUkpNM1JKVWs1UFduUm1TMXAzZFdOWVRHaFpjMWhLTUVORFNFcHNOR0YxTlZOWGVERkVjakF5YjA5RGFHcFhXWEU1ZDAxZlJFUkVVMGMzTkROZmFURmtaVjlDTTBWVWJtbzVWbXBWUkRJMVFSSVhRMGN4YTJGSlNHZEVkVmR4ZDJKclVGOXdhVEJ0UVVrYUlrRkdUVUZIUjI5eGNWTnNlUzFKYlhSaE5qRmpaWEpUUzJwT1pGVmFabnBHYVdjIiwiZmN2IjoiMyIsImVpIjoiQ0cxa2FJSGdEdVdxd2JrUF9waTBtQUkiLCJxYyI6ImN3M0h3UTNDTUJBRVFONTVVY0oya2g5bElLM3NDMTdKOFVXbmk2VTg2SUdTS0EzbU44dXplMkdIaGxKTVRVTXo5bXpnbWMxRGVXSHpRQ2VLbi1PXzNhb0t3OEE2T1pJdnd4RS1WUzFRRlZiUzR3SVBZV3VLLS0zOV9UeldIdyIsInF1ZXN0aW9uIjoiSXMgdGhlIEwuQS4gQ2FyZSBIZWFsdGggUGxhbiB0aGUgc2FtZSBhcyBNZWRpLUNhbD8iLCJsayI6ImM1UFN6eXhXS01sSVZjaEpWRWhPTEVwVnlFaE56Q25KVUNqSVNjd0RpeGNuNXFZcUpCWXI1S2FtWkFKVjVBQUEiLCJicyI6ImM0V1FUV29DUVJDRnliYkp3dVhRcXlKSXNsSkpIOEJoY0tPZ2tFVWcyeFJqYVhjb3U0ZnBVdkVLM3M1VFpKMGJwR2RHeVEtSTZfZDk5YnFmRWpWLXN5amdJb2dsNEZBaWdfTk9ISXJiRVZoQ0ZndTRGUnRxSndkWWhScm1JVUxoMThRVTgteHJiMFo2Y0Z2a0pHRW5xWVhxdDYxeXFBakNLbmx4VzZNdnFYbkhmRmdNWVlJMTVkbW5OZzhhOWxkUnhqSng2bFU5elg1NWdMQ2dwV3NpS0pZNzlJSnJnb3JSNTlucDNUenFmcXRDMmJHYkM0dF9XUFdoekt4YjVlZnl0UHZWUzhyYkpPSW1lYkh0RzB5UTgteDRiNTcxNkRMbnVlUThSdlZmYTZvVHdiMjdidyIsImlkIjoiZmNfQ0cxa2FJSGdEdVdxd2JrUF9waTBtQUlfMyJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaR1dtUlpjRUpVV1hWT0xVUkpNM1JKVWs1UFduUm1TMXAzZFdOWVRHaFpjMWhLTUVORFNFcHNOR0YxTlZOWGVERkVjakF5YjA5RGFHcFhXWEU1ZDAxZlJFUkVVMGMzTkROZmFURmtaVjlDTTBWVWJtbzVWbXBWUkRJMVFSSVhRMGN4YTJGSlNHZEVkVmR4ZDJKclVGOXdhVEJ0UVVrYUlrRkdUVUZIUjI5eGNWTnNlUzFKYlhSaE5qRmpaWEpUUzJwT1pGVmFabnBHYVdjIiwiZmN2IjoiMyIsImVpIjoiQ0cxa2FJSGdEdVdxd2JrUF9waTBtQUkiLCJxYyI6ImN3M0h3UTNDTUJBRVFONTVVY0oya2g5bElLM3NDMTdKOFVXbmk2VTg2SUdTS0EzbU44dXplMkdIaGxKTVRVTXo5bXpnbWMxRGVXSHpRQ2VLbi1PXzNhb0t3OEE2T1pJdnd4RS1WUzFRRlZiUzR3SVBZV3VLLS0zOV9UeldIdyIsInF1ZXN0aW9uIjoiSXMgdGhlIEwuQS4gQ2FyZSBIZWFsdGggUGxhbiB0aGUgc2FtZSBhcyBNZWRpLUNhbD8iLCJsayI6ImM1UFN6eXhXS01sSVZjaEpWRWhPTEVwVnlFaE56Q25KVUNqSVNjd0RpeGNuNXFZcUpCWXI1S2FtWkFKVjVBQUEiLCJicyI6ImM0V1FUV29DUVJDRnliYkp3dVhRcXlKSXNsSkpIOEJoY0tPZ2tFVWcyeFJqYVhjb3U0ZnBVdkVLM3M1VFpKMGJwR2RHeVEtSTZfZDk5YnFmRWpWLXN5amdJb2dsNEZBaWdfTk9ISXJiRVZoQ0ZndTRGUnRxSndkWWhScm1JVUxoMThRVTgteHJiMFo2Y0Z2a0pHRW5xWVhxdDYxeXFBakNLbmx4VzZNdnFYbkhmRmdNWVlJMTVkbW5OZzhhOWxkUnhqSng2bFU5elg1NWdMQ2dwV3NpS0pZNzlJSnJnb3JSNTlucDNUenFmcXRDMmJHYkM0dF9XUFdoekt4YjVlZnl0UHZWUzhyYkpPSW1lYkh0RzB5UTgteDRiNTcxNkRMbnVlUThSdlZmYTZvVHdiMjdidyIsImlkIjoiZmNfQ0cxa2FJSGdEdVdxd2JrUF9waTBtQUlfMyJ9"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Technical Information",
+      "link": "https://www.lacare.org/technical-information",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/technical-information&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQFnoECBsQAQ",
+      "displayed_link": "https://www.lacare.org \u203a technical-information",
+      "favicon": "https://serpapi.com/searches/68646d061a29fe6c8429d5ce/images/4e532afdeae05c65510ce4dedf4d673ad34ac4dc2481937cffde8c7b43faaf5f.png",
+      "snippet": "Person. Provider Directory API. UAT Base/Endpoint URL: https://uat107.ir4.edifecscloud.com/lac/fhir/pd/R4 Capability Statement URL: https://uat107.ir4 ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "fhir"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=local+initiative+health+authority+for+la+county+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQ5t4CegQIKhAB"
+      },
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 2,
+      "title": "Board of Governors Meeting",
+      "link": "https://www.lacare.org/sites/default/files/20221103%20Board%20of%20Governors%20Meeting%20Packet.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/20221103%2520Board%2520of%2520Governors%2520Meeting%2520Packet.pdf&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQFnoECBkQAQ",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/68646d061a29fe6c8429d5ce/images/4e532afdeae05c65510ce4dedf4d673aeb69d59a3c54eca7b8a80e863efd2cb8.png",
+      "date": "Nov 3, 2022",
+      "snippet": "\u2022 L.A. Care implemented a Provider Directory API in March 2022 o ... Interoperability Resources (FHIR) standard, in compliance with ...",
+      "snippet_highlighted_words": [
+        "L.A.",
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 213
+          },
+          "extensions": [
+            "213 pages"
+          ]
+        }
+      },
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 3,
+      "title": "Data Exchange Framework Legislative Update",
+      "link": "https://www.cdii.ca.gov/wp-content/uploads/2022/03/CalHHS_Data-Exchange-Framework-Legislative-Update_April-2022_Draft_To-AG_web.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cdii.ca.gov/wp-content/uploads/2022/03/CalHHS_Data-Exchange-Framework-Legislative-Update_April-2022_Draft_To-AG_web.pdf&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQFnoECBwQAQ",
+      "displayed_link": "https://www.cdii.ca.gov \u203a uploads \u203a 2022/03 \u203a C...",
+      "favicon": "https://serpapi.com/searches/68646d061a29fe6c8429d5ce/images/4e532afdeae05c65510ce4dedf4d673a43e912aff61299b9f3cdbf1345634fb8.png",
+      "date": "Apr 7, 2022",
+      "snippet": "... Provider Directory. API using a FHIR-based API could be expanded to include: 1. All payers licensed in California, including Qualified Health ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "API",
+        "FHIR",
+        "API",
+        "Health"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 69
+          },
+          "extensions": [
+            "69 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=local+initiative+health+authority+for+la+county+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQ5t4CegQIKxAB"
+      },
+      "source": "Center for Data Insights and Innovation (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "State and Local Public Health Readiness for Interoperability",
+      "link": "https://www.healthit.gov/isp/appendix-iv-state-and-local-public-health-readiness-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/isp/appendix-iv-state-and-local-public-health-readiness-interoperability&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQFnoECB0QAQ",
+      "displayed_link": "https://www.healthit.gov \u203a isp \u203a appendix-iv-state-and-l...",
+      "favicon": "https://serpapi.com/searches/68646d061a29fe6c8429d5ce/images/4e532afdeae05c65510ce4dedf4d673aac17e9bb2b1c7fa1da29534b7c90bf4b.jpeg",
+      "date": "Nov 22, 2023",
+      "snippet": "Draft FHIR Action Plan. Back; Draft FHIR Action Plan \u00b7 Introduction ... Healthcare Directory, Provider Directory \u00b7 Listing of Providers for ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "Healthcare",
+        "Provider Directory"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "CalAIM and Health Data Sharing: A Road Map for Effective ...",
+      "link": "https://www.chcf.org/wp-content/uploads/2021/04/CalAIMHealthDataSharingRoadMapECMILOS.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chcf.org/wp-content/uploads/2021/04/CalAIMHealthDataSharingRoadMapECMILOS.pdf&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQFnoECBUQAQ",
+      "displayed_link": "https://www.chcf.org \u203a uploads \u203a 2021/04 \u203a CalAI...",
+      "favicon": "https://serpapi.com/searches/68646d061a29fe6c8429d5ce/images/4e532afdeae05c65510ce4dedf4d673a4f78597ef2b43939fdea7eeda4ca39b6.png",
+      "snippet": "In particular, the ONC rule adopted HL7 FHIR APIs as the foundational standard for application-based exchange of health information. ... \u201cSymphony Provider ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "health",
+        "Provider"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=local+initiative+health+authority+for+la+county+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQ5t4CegQILBAB"
+      },
+      "source": "California Health Care Foundation"
+    },
+    {
+      "position": 6,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2020/05/01/2020-05050/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2020/05/01/2020-05050/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQFnoECBoQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2020/05/01 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/68646d061a29fe6c8429d5ce/images/4e532afdeae05c65510ce4dedf4d673a05284cae343e024513b96fd270833c7d.png",
+      "date": "May 1, 2020",
+      "snippet": "The basic information (name, phone number, address, and specialty) required for this Provider Directory API can all be represented through FHIR ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "missing": [
+        "la"
+      ],
+      "must_include": {
+        "word": "la",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=local+initiative+health+authority+for+%22la%22+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQ5t4CegQILRAB"
+      },
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQFnoECBYQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646d061a29fe6c8429d5ce/images/4e532afdeae05c65510ce4dedf4d673ae66a0650532925a48b9fe61f1c7131ef.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 8,
+      "title": "Necessary Investments and Funding Opportunities",
+      "link": "https://www.chcf.org/wp-content/uploads/2022/06/ClosingGapCAsDataExchangeNecessaryInvestments.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chcf.org/wp-content/uploads/2022/06/ClosingGapCAsDataExchangeNecessaryInvestments.pdf&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQFnoECDUQAQ",
+      "displayed_link": "https://www.chcf.org \u203a uploads \u203a 2022/06 \u203a Closi...",
+      "favicon": "https://serpapi.com/searches/68646d061a29fe6c8429d5ce/images/4e532afdeae05c65510ce4dedf4d673a196cbc0cbd17d94f6f26bc0cf977ce8b.png",
+      "date": "Jun 17, 2022",
+      "snippet": "Fast Healthcare Interoperability Resources (FHIR), can facilitate ... Provider directory. CMS MES 75-25 FFP \u2014 operations. Page 20. 20.",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "Provider directory"
+      ],
+      "source": "California Health Care Foundation"
+    },
+    {
+      "position": 9,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQFnoECDcQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646d061a29fe6c8429d5ce/images/4e532afdeae05c65510ce4dedf4d673a0a934a23d45a5fe7c3281af4deb1ab24.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 10,
+      "title": "regular meeting of the governing board",
+      "link": "https://www.iehp.org/content/dam/iehp-org/en/documents/governing-board-meetings/governing-board-reports/feb-2024/IEHP%20and%20IEHP%20Health%20Access%20Board%20Report%20346-February%205%202024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.iehp.org/content/dam/iehp-org/en/documents/governing-board-meetings/governing-board-reports/feb-2024/IEHP%2520and%2520IEHP%2520Health%2520Access%2520Board%2520Report%2520346-February%25205%25202024.pdf&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQFnoECDYQAQ",
+      "displayed_link": "https://www.iehp.org \u203a documents \u203a feb-2024 \u203a I...",
+      "favicon": "https://serpapi.com/searches/68646d061a29fe6c8429d5ce/images/4e532afdeae05c65510ce4dedf4d673a44ae96c2dd70b0e3f6c03c3b7f5aed19.png",
+      "date": "Feb 5, 2024",
+      "snippet": "Healthcare Interoperability Resources (FHIR) standards ... o Provide a Provider Directory API that is updated monthly and available 24/7.",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "source": "IEHP"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Lacare members",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Lacare+members&sa=X&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Lacare+members&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Health Care La phone number",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Health+Care+La+phone+number&sa=X&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Health+Care+La+phone+number&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CG1kaIHgDuWqwbkP_pi0mAI&start=10&sa=N&sstk=Ac65TH42XvHJOenvOu8xW8SjmrBiKZB4aqEt2suM9XtW0msJ1yVTBTIK0Vp3W4TAvyv5F9OzDSz4MLJJikR4eZybAlaZjKQASQjmmw&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CG1kaIHgDuWqwbkP_pi0mAI&start=10&sa=N&sstk=Ac65TH42XvHJOenvOu8xW8SjmrBiKZB4aqEt2suM9XtW0msJ1yVTBTIK0Vp3W4TAvyv5F9OzDSz4MLJJikR4eZybAlaZjKQASQjmmw&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CG1kaIHgDuWqwbkP_pi0mAI&start=20&sa=N&sstk=Ac65TH42XvHJOenvOu8xW8SjmrBiKZB4aqEt2suM9XtW0msJ1yVTBTIK0Vp3W4TAvyv5F9OzDSz4MLJJikR4eZybAlaZjKQASQjmmw&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CG1kaIHgDuWqwbkP_pi0mAI&start=30&sa=N&sstk=Ac65TH42XvHJOenvOu8xW8SjmrBiKZB4aqEt2suM9XtW0msJ1yVTBTIK0Vp3W4TAvyv5F9OzDSz4MLJJikR4eZybAlaZjKQASQjmmw&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CG1kaIHgDuWqwbkP_pi0mAI&start=40&sa=N&sstk=Ac65TH42XvHJOenvOu8xW8SjmrBiKZB4aqEt2suM9XtW0msJ1yVTBTIK0Vp3W4TAvyv5F9OzDSz4MLJJikR4eZybAlaZjKQASQjmmw&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CG1kaIHgDuWqwbkP_pi0mAI&start=50&sa=N&sstk=Ac65TH42XvHJOenvOu8xW8SjmrBiKZB4aqEt2suM9XtW0msJ1yVTBTIK0Vp3W4TAvyv5F9OzDSz4MLJJikR4eZybAlaZjKQASQjmmw&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CG1kaIHgDuWqwbkP_pi0mAI&start=60&sa=N&sstk=Ac65TH42XvHJOenvOu8xW8SjmrBiKZB4aqEt2suM9XtW0msJ1yVTBTIK0Vp3W4TAvyv5F9OzDSz4MLJJikR4eZybAlaZjKQASQjmmw&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CG1kaIHgDuWqwbkP_pi0mAI&start=70&sa=N&sstk=Ac65TH42XvHJOenvOu8xW8SjmrBiKZB4aqEt2suM9XtW0msJ1yVTBTIK0Vp3W4TAvyv5F9OzDSz4MLJJikR4eZybAlaZjKQASQjmmw&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CG1kaIHgDuWqwbkP_pi0mAI&start=80&sa=N&sstk=Ac65TH42XvHJOenvOu8xW8SjmrBiKZB4aqEt2suM9XtW0msJ1yVTBTIK0Vp3W4TAvyv5F9OzDSz4MLJJikR4eZybAlaZjKQASQjmmw&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=CG1kaIHgDuWqwbkP_pi0mAI&start=90&sa=N&sstk=Ac65TH42XvHJOenvOu8xW8SjmrBiKZB4aqEt2suM9XtW0msJ1yVTBTIK0Vp3W4TAvyv5F9OzDSz4MLJJikR4eZybAlaZjKQASQjmmw&ved=2ahUKEwiBhMyF5pyOAxVlVTABHX4MDSMQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=local+initiative+health+authority+for+la+county+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

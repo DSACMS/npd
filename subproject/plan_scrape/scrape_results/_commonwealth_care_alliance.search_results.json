@@ -1,0 +1,275 @@
+{
+  "search_metadata": {
+    "id": "6864649cac1765753f529bfb",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/ac8d5a0d761bd3e1/6864649cac1765753f529bfb.json",
+    "created_at": "2025-07-01 22:43:40 UTC",
+    "processed_at": "2025-07-01 22:43:40 UTC",
+    "google_url": "https://www.google.com/search?q=%22commonwealth+care+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22commonwealth+care+alliance+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/ac8d5a0d761bd3e1/6864649cac1765753f529bfb.html",
+    "total_time_taken": 1.48
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"commonwealth care alliance Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"commonwealth care alliance Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 719,
+    "time_taken_displayed": 0.39,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "commonwealth care alliance Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "commonwealth care alliance Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4QFnoECBYQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/6864649cac1765753f529bfb/images/7fa4fd4030080894101a30996aef79e0d69be4fc027fc68af375959befdc8be3.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. Endpoints are: FHIR- ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 2,
+      "title": "April 9, 2025 HMA Weekly Roundup: Trends in Health Policy",
+      "link": "https://www.healthmanagement.com/insights/weekly-roundup/april-9-2025/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthmanagement.com/insights/weekly-roundup/april-9-2025/&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4QFnoECBsQAQ",
+      "displayed_link": "https://www.healthmanagement.com \u203a insights \u203a april-9-...",
+      "favicon": "https://serpapi.com/searches/6864649cac1765753f529bfb/images/7fa4fd4030080894101a30996aef79e08edad31cd435ffe4a0b6ddd6d45e93a8.png",
+      "date": "Apr 9, 2025",
+      "snippet": "CMS approves average increase of 5.06 percent for MA plans while deferring major policy changes in MA and Part D programs.",
+      "snippet_highlighted_words": [
+        "plans"
+      ],
+      "source": "Health Management Associates"
+    },
+    {
+      "position": 3,
+      "title": "Value-based care creating a new era of interoperability",
+      "link": "https://www.healthcarefinancenews.com/news/value-based-care-creating-new-era-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcarefinancenews.com/news/value-based-care-creating-new-era-interoperability&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4QFnoECBoQAQ",
+      "displayed_link": "https://www.healthcarefinancenews.com \u203a news \u203a value...",
+      "favicon": "https://serpapi.com/searches/6864649cac1765753f529bfb/images/7fa4fd4030080894101a30996aef79e040881dbe221398e69523067fcf668000.png",
+      "date": "May 19, 2022",
+      "snippet": "CMS exercised enforcement discretion for the Patient Access API and Provider Directory API policies for Medicare Advantage, Medicaid, CHIP ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Medicare Advantage"
+      ],
+      "source": "Healthcare Finance News"
+    },
+    {
+      "position": 4,
+      "title": "Health Information Technology Council Report to the ...",
+      "link": "https://malegislature.gov/Reports/18566/SD3264_HITC%202023%20Annual%20Report.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://malegislature.gov/Reports/18566/SD3264_HITC%25202023%2520Annual%2520Report.pdf&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4QFnoECCAQAQ",
+      "displayed_link": "https://malegislature.gov \u203a Reports",
+      "favicon": "https://serpapi.com/searches/6864649cac1765753f529bfb/images/7fa4fd4030080894101a30996aef79e0a8ba3c98cd288bc4df72cb460704a260.jpeg",
+      "date": "Jan 1, 2023",
+      "snippet": "CG API-FHIR 2023 Provider Engagement Update ... Accurate and up-to-date provider directory listings ensure providers and other care team.",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "Provider",
+        "provider directory listings",
+        "providers",
+        "care"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 38
+          },
+          "extensions": [
+            "38 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=commonwealth+care+alliance+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4Q5t4CegQIJBAB"
+      },
+      "source": "General Court of the Commonwealth of Massachusetts (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "CMS releases Advancing Interoperability and Improving ...",
+      "link": "https://www.healthcarefinancenews.com/news/cms-releases-advancing-interoperability-and-improving-prior-authorization-processes-proposed",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcarefinancenews.com/news/cms-releases-advancing-interoperability-and-improving-prior-authorization-processes-proposed&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4QFnoECB8QAQ",
+      "displayed_link": "https://www.healthcarefinancenews.com \u203a news \u203a cms-r...",
+      "favicon": "https://serpapi.com/searches/6864649cac1765753f529bfb/images/7fa4fd4030080894101a30996aef79e091581fbbbf8e257fd4f18ef793e95f5f.png",
+      "date": "Dec 7, 2022",
+      "snippet": "The Centers for Medicare and Medicaid Services is changing prior authorization standards to speed up the time it takes for payers to approve the requests.",
+      "snippet_highlighted_words": [
+        "Medicare"
+      ],
+      "source": "Healthcare Finance News"
+    },
+    {
+      "position": 6,
+      "title": "Medicare Program; Contract Year 2024 Policy and ...",
+      "link": "https://www.federalregister.gov/documents/2023/04/12/2023-07115/medicare-program-contract-year-2024-policy-and-technical-changes-to-the-medicare-advantage-program",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2023/04/12/2023-07115/medicare-program-contract-year-2024-policy-and-technical-changes-to-the-medicare-advantage-program&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4QFnoECBkQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2023/04/12 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/6864649cac1765753f529bfb/images/7fa4fd4030080894101a30996aef79e0416b4d1d6750e6ce2f32bdeb7c5f432c.png",
+      "date": "Apr 12, 2023",
+      "snippet": "Medicare Advantage (MA) Provider Directories ... First, we proposed to mirror the provider directory requirements for Medicaid managed care plans ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage (MA) Provider Directories"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "Health Care Payment Learning & Action Network",
+      "link": "https://hcp-lan.org/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hcp-lan.org/&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4QFnoECB4QAQ",
+      "displayed_link": "https://hcp-lan.org",
+      "favicon": "https://serpapi.com/searches/6864649cac1765753f529bfb/images/7fa4fd4030080894101a30996aef79e01a0c7ba0276769487a297ef96671bb54.png",
+      "snippet": "Establish forums for organizations across the health care ecosystem, including providers, health plans, community-based organizations (CBOs), state/local ...",
+      "snippet_highlighted_words": [
+        "health care",
+        "providers",
+        "health plans"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "About Us",
+            "link": "https://hcp-lan.org/about-us/"
+          },
+          {
+            "title": "APM Framework",
+            "link": "https://hcp-lan.org/apm-framework/"
+          },
+          {
+            "title": "Accountable Care Curve",
+            "link": "https://hcp-lan.org/accountable-care-curve/"
+          },
+          {
+            "title": "APM Roadmap",
+            "link": "https://hcp-lan.org/apm-roadmap/"
+          }
+        ]
+      },
+      "source": "Health Care Payment Learning & Action Network"
+    },
+    {
+      "position": 8,
+      "title": "Healthcare Digital Services",
+      "link": "https://ca.nttdata.com/en/-/media/assets/reports/isg-provider-lens-quadrant-report-healthcare-digital-services-us-2021.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ca.nttdata.com/en/-/media/assets/reports/isg-provider-lens-quadrant-report-healthcare-digital-services-us-2021.pdf&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4QFnoECDUQAQ",
+      "displayed_link": "https://ca.nttdata.com \u203a media \u203a assets \u203a reports \u203a i...",
+      "favicon": "https://serpapi.com/searches/6864649cac1765753f529bfb/images/7fa4fd4030080894101a30996aef79e0c6e297cac59d59d3f9d36350e2feb204.png",
+      "snippet": "CMS and ONC guidelines require that patients have access to their healthcare data and provider directories via application programming interfaces (APIs). Other ...",
+      "snippet_highlighted_words": [
+        "healthcare",
+        "provider directories",
+        "APIs"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 48
+          },
+          "extensions": [
+            "48 pages"
+          ]
+        }
+      },
+      "source": "NTT Data"
+    },
+    {
+      "position": 9,
+      "title": "Announcement of Calendar Year (CY) 2019 Medicare ...",
+      "link": "https://www.cms.gov/Medicare/Health-Plans/MedicareAdvtgSpecRateStats/Downloads/Announcement2019.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/Medicare/Health-Plans/MedicareAdvtgSpecRateStats/Downloads/Announcement2019.pdf&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4QFnoECDAQAQ",
+      "displayed_link": "https://www.cms.gov \u203a Health-Plans \u203a Downloads",
+      "favicon": "https://serpapi.com/searches/6864649cac1765753f529bfb/images/7fa4fd4030080894101a30996aef79e05d2563a4b5d1a2a39cb1282ef9d20bdc.png",
+      "date": "Apr 2, 2018",
+      "snippet": "... provider directory requirements and best practices. Inaccurate provider directories can impede access to care and bring into question the ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "provider directories",
+        "care"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 270
+          },
+          "extensions": [
+            "270 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "May 31, 2019 The Honorable Seema Verma Administrator ...",
+      "link": "https://searchlf.ama-assn.org/undefined/documentDownload?uri=%2Funstructured%2Fbinary%2Fletter%2FLETTERS%2F2019-5-31-Letter-to-Verma-re-CMS-Comments.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://searchlf.ama-assn.org/undefined/documentDownload%3Furi%3D%252Funstructured%252Fbinary%252Fletter%252FLETTERS%252F2019-5-31-Letter-to-Verma-re-CMS-Comments.pdf&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4QFnoECC8QAQ",
+      "displayed_link": "https://searchlf.ama-assn.org \u203a documentDownload",
+      "favicon": "https://serpapi.com/searches/6864649cac1765753f529bfb/images/7fa4fd4030080894101a30996aef79e0571fd133b1258d9f24f94e1d56fc2425.png",
+      "date": "May 31, 2019",
+      "snippet": "The AMA supports the proposal that certain payers expose provider directory information through an API to current enrollees, prospective ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "API"
+      ],
+      "source": "American Medical Association"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=nWRkaIm1KenY7_UP6Mya8Ao&start=10&sa=N&sstk=Ac65TH719WDaoiZqtJHt61W0E6z_6_LpUbo_uDNEo8efC3Usjfv2aqRsyDxYwt_8-b9NJH6Qxs1G_IsBABzvLcSAgqis-1G83WGGow&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4Q8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=nWRkaIm1KenY7_UP6Mya8Ao&start=10&sa=N&sstk=Ac65TH719WDaoiZqtJHt61W0E6z_6_LpUbo_uDNEo8efC3Usjfv2aqRsyDxYwt_8-b9NJH6Qxs1G_IsBABzvLcSAgqis-1G83WGGow&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4Q8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=nWRkaIm1KenY7_UP6Mya8Ao&start=20&sa=N&sstk=Ac65TH719WDaoiZqtJHt61W0E6z_6_LpUbo_uDNEo8efC3Usjfv2aqRsyDxYwt_8-b9NJH6Qxs1G_IsBABzvLcSAgqis-1G83WGGow&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4Q8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=nWRkaIm1KenY7_UP6Mya8Ao&start=30&sa=N&sstk=Ac65TH719WDaoiZqtJHt61W0E6z_6_LpUbo_uDNEo8efC3Usjfv2aqRsyDxYwt_8-b9NJH6Qxs1G_IsBABzvLcSAgqis-1G83WGGow&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4Q8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=nWRkaIm1KenY7_UP6Mya8Ao&start=40&sa=N&sstk=Ac65TH719WDaoiZqtJHt61W0E6z_6_LpUbo_uDNEo8efC3Usjfv2aqRsyDxYwt_8-b9NJH6Qxs1G_IsBABzvLcSAgqis-1G83WGGow&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4Q8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=nWRkaIm1KenY7_UP6Mya8Ao&start=50&sa=N&sstk=Ac65TH719WDaoiZqtJHt61W0E6z_6_LpUbo_uDNEo8efC3Usjfv2aqRsyDxYwt_8-b9NJH6Qxs1G_IsBABzvLcSAgqis-1G83WGGow&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4Q8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=nWRkaIm1KenY7_UP6Mya8Ao&start=60&sa=N&sstk=Ac65TH719WDaoiZqtJHt61W0E6z_6_LpUbo_uDNEo8efC3Usjfv2aqRsyDxYwt_8-b9NJH6Qxs1G_IsBABzvLcSAgqis-1G83WGGow&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4Q8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=nWRkaIm1KenY7_UP6Mya8Ao&start=70&sa=N&sstk=Ac65TH719WDaoiZqtJHt61W0E6z_6_LpUbo_uDNEo8efC3Usjfv2aqRsyDxYwt_8-b9NJH6Qxs1G_IsBABzvLcSAgqis-1G83WGGow&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4Q8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=nWRkaIm1KenY7_UP6Mya8Ao&start=80&sa=N&sstk=Ac65TH719WDaoiZqtJHt61W0E6z_6_LpUbo_uDNEo8efC3Usjfv2aqRsyDxYwt_8-b9NJH6Qxs1G_IsBABzvLcSAgqis-1G83WGGow&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4Q8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=nWRkaIm1KenY7_UP6Mya8Ao&start=90&sa=N&sstk=Ac65TH719WDaoiZqtJHt61W0E6z_6_LpUbo_uDNEo8efC3Usjfv2aqRsyDxYwt_8-b9NJH6Qxs1G_IsBABzvLcSAgqis-1G83WGGow&ved=2ahUKEwjJ95uC3pyOAxVp7LsIHWimBq4Q8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=commonwealth+care+alliance+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "search_metadata": {
+    "id": "68646c8449579a54aa548b69",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/408f44ee07b8d5ec/68646c8449579a54aa548b69.json",
+    "created_at": "2025-07-01 23:17:24 UTC",
+    "processed_at": "2025-07-01 23:17:24 UTC",
+    "google_url": "https://www.google.com/search?q=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/408f44ee07b8d5ec/68646c8449579a54aa548b69.html",
+    "total_time_taken": 0.82
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "allina health and aetna insurance holding company Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "allina health and aetna insurance holding company Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 4,
+    "time_taken_displayed": 0.28,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_images": [
+    {
+      "source": "https://developerportal.aetna.com/gettingstarted",
+      "thumbnail": "https://serpapi.com/searches/68646c8449579a54aa548b69/images/c886694936768ba995bd66f78bc34b515fe2c03250f9c1ec6512bc3cb9dd21db.jpeg",
+      "original": "https://developerportal.aetna.com/managedcontent/images/new_vet_sandbox_7.png",
+      "title": "Aetna Developer Portal",
+      "source_name": "Aetna Developer Portal"
+    },
+    {
+      "source": "https://developerportal.aetna.com/gettingstarted",
+      "thumbnail": "https://serpapi.com/searches/68646c8449579a54aa548b69/images/c886694936768ba930ee9b83ffbcbd344eadf862686a02f7c0c3f00e4c3e32e1.jpeg",
+      "original": "https://developerportal.aetna.com/managedcontent/images/new_vet_sandbox_9.png",
+      "title": "Aetna Developer Portal",
+      "source_name": "Aetna Developer Portal"
+    },
+    {
+      "source": "https://developerportal.aetna.com/gettingstarted",
+      "thumbnail": "https://serpapi.com/searches/68646c8449579a54aa548b69/images/c886694936768ba99f33bcc8c0b5a26e70ca49d74b746726b0b48b4434406032.jpeg",
+      "original": "https://developerportal.aetna.com/managedcontent/images/new_vet_prod_9.png",
+      "title": "Aetna Developer Portal",
+      "source_name": "Aetna Developer Portal"
+    },
+    {
+      "source": "https://thebigunlock.com/category/uncategorized/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvOn2Ait88x71BBWKbMQpyQGJ5kR36RS20bpdTh97KAfQJ5vYh9-vuN5c&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2020/08/episode57-lp-thumbnail.png",
+      "title": "Uncategorized - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/uncategorized/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzs9C9u3p33ZhC02wh4H9HGPY3lw23RGZ6_I8WMnC_Q33V6cNw36JkL9M&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2020/03/profile-pic-2020Diana-Nole-.png",
+      "title": "Uncategorized - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/uncategorized/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW9yKbldGwZXLMAdLPLem2wNl-KttC6P944C1UzDsTkatL0shn33mZP3I&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2020/01/bigunlock-podcast-homepage-banner-mic.png",
+      "title": "Uncategorized - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/uncategorized/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSD-_JcXJ2EA107_VXCGEAdqxZADBNXjv8OnkRlqt98Du4lENOwmUvC0U&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2020/06/episode49-with-Ashish-Atreja-landing-page-thumbnail-1.png",
+      "title": "Uncategorized - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/uncategorized/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWot2Qy5LT6Bilhmlan08Tc1UoQCdgwD-xb8wmc4EEG2K9CYEauB4fxlI&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2020/03/episode38-podcast-with-diana-nole-lp-thumbnail.png",
+      "title": "Uncategorized - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://thebigunlock.com/category/uncategorized/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBUTGlIHGAgQlgtH5Ouv32Fi8Mu2EiylkP6mm2INPveGKrXHFM2e5WNA8&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2020/01/SethHain-profile-pic.png",
+      "title": "Uncategorized - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Does Aetna Medicare Advantage cover telehealth?",
+      "snippet": "Your Aetna\u00ae Medicare plan includes the convenience of telehealth coverage. Virtually access participating in-network primary care providers (PCPs), physician specialty care, urgent care clinics, mental health support and more.",
+      "title": "Medicare Telehealth Services & Benefits - Aetna",
+      "link": "https://www.aetna.com/medicare/for-members/telehealth.html#:~:text=Your%20Aetna%C2%AE%20Medicare%20plan,mental%20health%20support%20and%20more.",
+      "displayed_link": "https://www.aetna.com \u203a medicare \u203a for-members \u203a teleh...",
+      "source_logo": "https://serpapi.com/searches/68646c8449579a54aa548b69/images/2f48d5962b340762577a0bbfc3cdc542ed6d6f4f57e7caefd22904304da8d9bf.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRmNERXdWMUZ3TkhRemRsTnVTWGs0T1dwbloyWnBWR1Y1VFdaMVExa3dTbXRxTVdaa1ZXZExTRlZ5VkZKYWQwNHhhbFJLYjBwdGFGcDBYMHREZG01SFIxcDBMVm90V1VSV1FuZzBaakU0ZURGUlpETjJUR1ZZTVZCVlVSSVhhRmQ0YTJGTUxUVkJXbUY0TUZCRlVIRmpWM1J4UVc4YUlrRkdUVUZIUjNKWlpUQkVTVTlOZVdGZlIxbHJWa05NTnpSRVNrMW9kazkyYjJjIiwiZmN2IjoiMyIsImVpIjoiaFd4a2FMLTVBWmF4MFBFUHFjV3RxQW8iLCJxYyI6ImN3M0lNUTZFTUF3RVFHb3FuckFTOWIwQm5zSXE5aEZMd1lsTVFLSzR2eDlUenJpeEZITWlLMHZQb0F1b19RM3o4d3A2VXVSYXhIeEhxa2VqUHpoVUxERVVsSnZldVN0YTFOdEVBMktocWRkNHdHYjRab3RwLUszelpfa0QiLCJxdWVzdGlvbiI6IkRvZXMgQWV0bmEgTWVkaWNhcmUgQWR2YW50YWdlIGNvdmVyIHRlbGVoZWFsdGg/IiwibGsiOiJHaTVrYjJWeklHRmxkRzVoSUcxbFpHbGpZWEpsSUdGa2RtRnVkR0ZuWlNCamIzWmxjaUIwWld4bGFHVmhiSFJvIiwiYnMiOiJjLU5LNDlKM3lVOHRWbkJNTGNsTFZQQk5UY2xNVGl4S1ZYQk1LVXZNSzBsTVQxVkl6aTlMTFZJb1NjMUp6VWhOekNuSnNKZVlWMjFrSUtXWEF0S1ZDTmFWQzlPVmlGTVhseU9YYkhoR1lvbENjWDVhU1RsSWJRckMxdExpVkhzSlpTTTVLWmx5VENXSk1DVUNqQUEiLCJpZCI6ImZjX2hXeGthTC01QVpheDBQRVBxY1d0cUFvXzEifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRmNERXdWMUZ3TkhRemRsTnVTWGs0T1dwbloyWnBWR1Y1VFdaMVExa3dTbXRxTVdaa1ZXZExTRlZ5VkZKYWQwNHhhbFJLYjBwdGFGcDBYMHREZG01SFIxcDBMVm90V1VSV1FuZzBaakU0ZURGUlpETjJUR1ZZTVZCVlVSSVhhRmQ0YTJGTUxUVkJXbUY0TUZCRlVIRmpWM1J4UVc4YUlrRkdUVUZIUjNKWlpUQkVTVTlOZVdGZlIxbHJWa05NTnpSRVNrMW9kazkyYjJjIiwiZmN2IjoiMyIsImVpIjoiaFd4a2FMLTVBWmF4MFBFUHFjV3RxQW8iLCJxYyI6ImN3M0lNUTZFTUF3RVFHb3FuckFTOWIwQm5zSXE5aEZMd1lsTVFLSzR2eDlUenJpeEZITWlLMHZQb0F1b19RM3o4d3A2VXVSYXhIeEhxa2VqUHpoVUxERVVsSnZldVN0YTFOdEVBMktocWRkNHdHYjRab3RwLUszelpfa0QiLCJxdWVzdGlvbiI6IkRvZXMgQWV0bmEgTWVkaWNhcmUgQWR2YW50YWdlIGNvdmVyIHRlbGVoZWFsdGg%2FIiwibGsiOiJHaTVrYjJWeklHRmxkRzVoSUcxbFpHbGpZWEpsSUdGa2RtRnVkR0ZuWlNCamIzWmxjaUIwWld4bGFHVmhiSFJvIiwiYnMiOiJjLU5LNDlKM3lVOHRWbkJNTGNsTFZQQk5UY2xNVGl4S1ZYQk1LVXZNSzBsTVQxVkl6aTlMTFZJb1NjMUp6VWhOekNuSnNKZVlWMjFrSUtXWEF0S1ZDTmFWQzlPVmlGTVhseU9YYkhoR1lvbENjWDVhU1RsSWJRckMxdExpVkhzSlpTTTVLWmx5VENXSk1DVUNqQUEiLCJpZCI6ImZjX2hXeGthTC01QVpheDBQRVBxY1d0cUFvXzEifQ%3D%3D"
+    },
+    {
+      "question": "What software does Aetna use?",
+      "snippet": "During our research, we have identified that Aetna, a CVS Health Company has purchased the following applications: xiQ ABM for Account Based Marketing in 2017, Infinite BrassRing ( Formerly IBM Kenexa BrassRing ) for Applicant Tracking System in 2014, Microsoft Azure Cloud Services for Application Hosting and Computing ...",
+      "title": "Aetna, a CVS Health Company Software Purchases and Digital ...",
+      "link": "https://www.appsruntheworld.com/customers-database/customers/view/aetna-a-cvs-health-company-united-states#:~:text=During%20our%20research%2C%20we%20have,for%20Application%20Hosting%20and%20Computing",
+      "displayed_link": "https://www.appsruntheworld.com \u203a customers \u203a view",
+      "source_logo": "https://serpapi.com/searches/68646c8449579a54aa548b69/images/2f48d5962b340762577a0bbfc3cdc5428435b9cdf5e7d9b65c50e744e0132a32.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRmNERXdWMUZ3TkhRemRsTnVTWGs0T1dwbloyWnBWR1Y1VFdaMVExa3dTbXRxTVdaa1ZXZExTRlZ5VkZKYWQwNHhhbFJLYjBwdGFGcDBYMHREZG01SFIxcDBMVm90V1VSV1FuZzBaakU0ZURGUlpETjJUR1ZZTVZCVlVSSVhhRmQ0YTJGTUxUVkJXbUY0TUZCRlVIRmpWM1J4UVc4YUlrRkdUVUZIUjNKWlpUQkVTVTlOZVdGZlIxbHJWa05NTnpSRVNrMW9kazkyYjJjIiwiZmN2IjoiMyIsImVpIjoiaFd4a2FMLTVBWmF4MFBFUHFjV3RxQW8iLCJxYyI6ImN3M0lNUTZFTUF3RVFHb3FuckFTOWIwQm5zSXE5aEZMd1lsTVFLSzR2eDlUenJpeEZITWlLMHZQb0F1b19RM3o4d3A2VXVSYXhIeEhxa2VqUHpoVUxERVVsSnZldVN0YTFOdEVBMktocWRkNHdHYjRab3RwLUszelpfa0QiLCJxdWVzdGlvbiI6IldoYXQgc29mdHdhcmUgZG9lcyBBZXRuYSB1c2U/IiwibGsiOiJHaHgzYUdGMElITnZablIzWVhKbElHUnZaWE1nWVdWMGJtRWdkWE5sIiwiYnMiOiJjLU5LNDlKM3lVOHRWbkJNTGNsTFZQQk5UY2xNVGl4S1ZYQk1LVXZNSzBsTVQxVkl6aTlMTFZJb1NjMUp6VWhOekNuSnNKZVlWMjFrSUtXWEF0S1ZDTmFWQzlPVmlGTVhseU9YYkhoR1lvbENjWDVhU1RsSWJRckMxdExpVkhzSlpTTTVLWmx5VENXSk1DVUNqQUEiLCJpZCI6ImZjX2hXeGthTC01QVpheDBQRVBxY1d0cUFvXzEifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRmNERXdWMUZ3TkhRemRsTnVTWGs0T1dwbloyWnBWR1Y1VFdaMVExa3dTbXRxTVdaa1ZXZExTRlZ5VkZKYWQwNHhhbFJLYjBwdGFGcDBYMHREZG01SFIxcDBMVm90V1VSV1FuZzBaakU0ZURGUlpETjJUR1ZZTVZCVlVSSVhhRmQ0YTJGTUxUVkJXbUY0TUZCRlVIRmpWM1J4UVc4YUlrRkdUVUZIUjNKWlpUQkVTVTlOZVdGZlIxbHJWa05NTnpSRVNrMW9kazkyYjJjIiwiZmN2IjoiMyIsImVpIjoiaFd4a2FMLTVBWmF4MFBFUHFjV3RxQW8iLCJxYyI6ImN3M0lNUTZFTUF3RVFHb3FuckFTOWIwQm5zSXE5aEZMd1lsTVFLSzR2eDlUenJpeEZITWlLMHZQb0F1b19RM3o4d3A2VXVSYXhIeEhxa2VqUHpoVUxERVVsSnZldVN0YTFOdEVBMktocWRkNHdHYjRab3RwLUszelpfa0QiLCJxdWVzdGlvbiI6IldoYXQgc29mdHdhcmUgZG9lcyBBZXRuYSB1c2U%2FIiwibGsiOiJHaHgzYUdGMElITnZablIzWVhKbElHUnZaWE1nWVdWMGJtRWdkWE5sIiwiYnMiOiJjLU5LNDlKM3lVOHRWbkJNTGNsTFZQQk5UY2xNVGl4S1ZYQk1LVXZNSzBsTVQxVkl6aTlMTFZJb1NjMUp6VWhOekNuSnNKZVlWMjFrSUtXWEF0S1ZDTmFWQzlPVmlGTVhseU9YYkhoR1lvbENjWDVhU1RsSWJRckMxdExpVkhzSlpTTTVLWmx5VENXSk1DVUNqQUEiLCJpZCI6ImZjX2hXeGthTC01QVpheDBQRVBxY1d0cUFvXzEifQ%3D%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Overview of Aetna's Interoperability API Developer Portal",
+      "link": "https://developerportal.aetna.com/gettingstarted",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developerportal.aetna.com/gettingstarted&ved=2ahUKEwj_j4PH5ZyOAxWWGDQIHaliC6UQFnoECA8QAQ",
+      "displayed_link": "https://developerportal.aetna.com \u203a gettingstarted",
+      "favicon": "https://serpapi.com/searches/68646c8449579a54aa548b69/images/b583e9dd7aca647debeb049e89d98e82a8fd5fbbd1bf7b45a58b4a897a4be2ba.jpeg",
+      "snippet": "Authenticating to Provider Directory APIs. Note: We recommend subscribing to all the Products available to connect to all our Aetna FHIR resources. Provider ...",
+      "snippet_highlighted_words": [
+        "Provider Directory APIs",
+        "Aetna FHIR",
+        "Provider"
+      ],
+      "missing": [
+        "holding",
+        "Advantage"
+      ],
+      "source": "Aetna Developer Portal"
+    },
+    {
+      "position": 2,
+      "title": "Meg Bryant",
+      "link": "https://www.healthcaredive.com/users/mbryant/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcaredive.com/users/mbryant/&ved=2ahUKEwj_j4PH5ZyOAxWWGDQIHaliC6UQFnoECBAQAQ",
+      "displayed_link": "https://www.healthcaredive.com \u203a users \u203a mbryant",
+      "favicon": "https://serpapi.com/searches/68646c8449579a54aa548b69/images/b583e9dd7aca647debeb049e89d98e823883bfdfce5d9827de76524d3019a430.png",
+      "snippet": "Nearly a third of health IT developers producing FHIR products, ONC says ... Industry group offers roadmap to greater provider directory accuracy. May 31 ...",
+      "snippet_highlighted_words": [
+        "health",
+        "FHIR",
+        "group",
+        "provider directory"
+      ],
+      "missing": [
+        "holding"
+      ],
+      "must_include": {
+        "word": "holding",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=allina+health+and+aetna+insurance+%22holding%22+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj_j4PH5ZyOAxWWGDQIHaliC6UQ5t4CegQIJBAB"
+      },
+      "source": "Healthcare Dive"
+    },
+    {
+      "position": 3,
+      "title": "American Health Law Association The Year in Review ...",
+      "link": "https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf&ved=2ahUKEwj_j4PH5ZyOAxWWGDQIHaliC6UQFnoECBEQAQ",
+      "displayed_link": "https://www.bradley.com \u203a publications \u203a 2022/02",
+      "favicon": "https://serpapi.com/searches/68646c8449579a54aa548b69/images/b583e9dd7aca647debeb049e89d98e8230fa1feab18bb43e750e290ecbbac744.png",
+      "date": "Feb 17, 2022",
+      "snippet": "... FHIR\u00ae Roadmap for \u00b7 TEFCA Exchange (January 2022). The TEF is a set of ... Provider Directory API (applicable January 1, 2021, with ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 315
+          },
+          "extensions": [
+            "315 pages"
+          ]
+        }
+      },
+      "source": "Bradley Arant"
+    },
+    {
+      "position": 4,
+      "title": "Uncategorized",
+      "link": "https://thebigunlock.com/category/uncategorized/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://thebigunlock.com/category/uncategorized/&ved=2ahUKEwj_j4PH5ZyOAxWWGDQIHaliC6UQFnoECBIQAQ",
+      "displayed_link": "https://thebigunlock.com \u203a category \u203a uncategorized",
+      "favicon": "https://serpapi.com/searches/68646c8449579a54aa548b69/images/b583e9dd7aca647debeb049e89d98e827650baad826ad519964357772d0b7b70.png",
+      "snippet": "So, you know, we have the FHIR API standards of the CMS and ONC are working with HL7 organizations. Now it is the 21st Century Cures Act, there's something ...",
+      "snippet_highlighted_words": [
+        "FHIR API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 5.0,
+            "reviews": 5
+          },
+          "extensions": [
+            "5.0(5)"
+          ]
+        }
+      },
+      "source": "The Big Unlock Podcast"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=allina+health+and+aetna+insurance+holding+company+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

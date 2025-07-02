@@ -1,0 +1,208 @@
+{
+  "search_metadata": {
+    "id": "68646cc88681805bba5a1741",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/d3311e8a4c06280c/68646cc88681805bba5a1741.json",
+    "created_at": "2025-07-01 23:18:32 UTC",
+    "processed_at": "2025-07-01 23:18:32 UTC",
+    "google_url": "https://www.google.com/search?q=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/d3311e8a4c06280c/68646cc88681805bba5a1741.html",
+    "total_time_taken": 0.78
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "coxhealth Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "coxhealth Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 4,
+    "time_taken_displayed": 0.25,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_images": [
+    {
+      "source": "https://sectraprodstorage01.blob.core.windows.net/medical-uploads/sites/3/2024/02/klas-report-2024-best-in-klas-awards-software-and-services-full.pdf",
+      "thumbnail": "https://serpapi.com/searches/68646cc88681805bba5a1741/images/e125489e3b0cc8c34dff03e35bdff92688c4c702aa6020740c10ed4c7411cef1.jpeg",
+      "original": "x-raw-image:///a8877b1bfa53ab352c0e55fa23ad0274790528abd86908cb170e4322cada5f84",
+      "title": "BEST IN",
+      "source_name": "NET"
+    },
+    {
+      "source": "https://www.performancehealthus.com/hubfs/Best%20in%20KLAS%20Report%202024.pdf",
+      "thumbnail": "https://serpapi.com/searches/68646cc88681805bba5a1741/images/e125489e3b0cc8c362e427b72832791c4562b80622921a215a49a0ca2e9168b7.jpeg",
+      "original": "x-raw-image:///3a3effd32101be449ac2226f910e44ac304e468dfa7ca7225bf78c02c092ad56",
+      "title": "BEST IN",
+      "source_name": "Performance Health Partners"
+    },
+    {
+      "source": "https://sectraprodstorage01.blob.core.windows.net/medical-uploads/sites/3/2024/02/klas-report-2024-best-in-klas-awards-software-and-services-full.pdf",
+      "thumbnail": "https://serpapi.com/searches/68646cc88681805bba5a1741/images/e125489e3b0cc8c3dbb2d3622c9a17c8541de96b948b91eeccc80817a4b5ceca.jpeg",
+      "original": "x-raw-image:///3daa9094baa6388159e5f058875dfd3f86e9cbb134d623e83352a44d37b971d1",
+      "title": "BEST IN",
+      "source_name": "NET"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "How to find Medicare advantage doctors?",
+      "snippet": "If you have a particular plan or insurer that you're looking into, you can go to the plan's website and look for their searchable directory or find a plan directory on the website, where you can search for your doctor.",
+      "title": "How can I find out if my doctor is in a Medicare Advantage plan network?",
+      "link": "https://www.kff.org/faqs/medicare-open-enrollment-faqs/how-can-i-find-out-if-my-doctor-is-in-a-medicare-advantage-plan-network/#:~:text=If%20you%20have%20a%20particular,can%20search%20for%20your%20doctor.",
+      "displayed_link": "https://www.kff.org \u203a medicare-open-enrollment-faqs",
+      "source_logo": "https://serpapi.com/searches/68646cc88681805bba5a1741/images/1be3e60f5f89bd8b278ff026d50049965d98f1006d587d33b5ffc9586b392162.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSVZuRlRPRm90YVZocE5FVm9TRWRxWDBzMlQzQjJiWGRCVmxWT2IwdHVNM2QwYUd4RVdFY3hORnBoWW5aUWQzaDVWblZGWVhGTVRWaEdWVWhmWkMxMFNGYzNUVFJGWkd4MVMzUlJiMkp6VTFoUlNUQmtiMkl3YjJOc2R4SVhlVmQ0YTJGTWRtcENOazh6YUdKSlVERmZNa1p0VVc4YUlrRkdUVUZIUjI5SlYzTkNlRFE0VlVsVFIxQjBUVkZ3UkU0eWRVTlpSakpQTTFFIiwiZmN2IjoiMyIsImVpIjoieVd4a2FMdmpCNk8zaGJJUDFfMkZtUW8iLCJxYyI6IkNqaGpiM2hvWldGc2RHZ2diV1ZrYVdOaGNtVWdZV1IyWVc1MFlXZGxJSEJ5YjNacFpHVnlJR1JwY21WamRHOXllU0JoY0drZ1ptaHBjaEFBZlpwTEhUOCIsInF1ZXN0aW9uIjoiSG93IHRvIGZpbmQgTWVkaWNhcmUgYWR2YW50YWdlIGRvY3RvcnM/IiwibGsiOiJHaVpvYjNjZ2RHOGdabWx1WkNCdFpXUnBZMkZ5WlNCaFpIWmhiblJoWjJVZ1pHOWpkRzl5Y3ciLCJicyI6ImMtTUs0MUwzeUM5WEtNbFhTTXZNUzFId1RVM0pURTRzU2xWSVRDbEx6Q3RKVEU5VlNNbFBMc2t2S3JhWDJGNXNwQ0dsbG9Ha09oZW5hcTRsakZ4LWppQ1puQnlFb1k1d1pRVTVpWG5GQ25tcEplWDVSZG02U1luRnFTa0tpVUFUTXhMTFVoV0tVdE5TaTRvU2M0Q013dExNb3RUYzFMd1NvUDF6eTR6OHBYd1RvWVppc1J2RlVBVmlEQlZnQkFBIiwiaWQiOiJmY195V3hrYUx2akI2TzNoYklQMV8yRm1Rb18xIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSVZuRlRPRm90YVZocE5FVm9TRWRxWDBzMlQzQjJiWGRCVmxWT2IwdHVNM2QwYUd4RVdFY3hORnBoWW5aUWQzaDVWblZGWVhGTVRWaEdWVWhmWkMxMFNGYzNUVFJGWkd4MVMzUlJiMkp6VTFoUlNUQmtiMkl3YjJOc2R4SVhlVmQ0YTJGTWRtcENOazh6YUdKSlVERmZNa1p0VVc4YUlrRkdUVUZIUjI5SlYzTkNlRFE0VlVsVFIxQjBUVkZ3UkU0eWRVTlpSakpQTTFFIiwiZmN2IjoiMyIsImVpIjoieVd4a2FMdmpCNk8zaGJJUDFfMkZtUW8iLCJxYyI6IkNqaGpiM2hvWldGc2RHZ2diV1ZrYVdOaGNtVWdZV1IyWVc1MFlXZGxJSEJ5YjNacFpHVnlJR1JwY21WamRHOXllU0JoY0drZ1ptaHBjaEFBZlpwTEhUOCIsInF1ZXN0aW9uIjoiSG93IHRvIGZpbmQgTWVkaWNhcmUgYWR2YW50YWdlIGRvY3RvcnM%2FIiwibGsiOiJHaVpvYjNjZ2RHOGdabWx1WkNCdFpXUnBZMkZ5WlNCaFpIWmhiblJoWjJVZ1pHOWpkRzl5Y3ciLCJicyI6ImMtTUs0MUwzeUM5WEtNbFhTTXZNUzFId1RVM0pURTRzU2xWSVRDbEx6Q3RKVEU5VlNNbFBMc2t2S3JhWDJGNXNwQ0dsbG9Ha09oZW5hcTRsakZ4LWppQ1puQnlFb1k1d1pRVTVpWG5GQ25tcEplWDVSZG02U1luRnFTa0tpVUFUTXhMTFVoV0tVdE5TaTRvU2M0Q013dExNb3RUYzFMd1NvUDF6eTR6OHBYd1RvWVppc1J2RlVBVmlEQlZnQkFBIiwiaWQiOiJmY195V3hrYUx2akI2TzNoYklQMV8yRm1Rb18xIn0%3D"
+    },
+    {
+      "question": "Are all Medicare Advantage plans network-based and have referral requirements?",
+      "snippet": "in the plan's network and service area Some plans offer non-emergency coverage out of network, but typically at a higher cost. In most cases, you don't need a referral to use a specialist. You may need to get a referral to use a specialist.",
+      "title": "Understanding Medicare Advantage Plans",
+      "link": "https://www.medicare.gov/publications/12026-understanding-medicare-advantage-plans.pdf",
+      "displayed_link": "https://www.medicare.gov \u203a publications \u203a 12026-unders...",
+      "source_logo": "https://serpapi.com/searches/68646cc88681805bba5a1741/images/1be3e60f5f89bd8b278ff026d5004996ad1ab639e24b79984e802c763850cd0b.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSVZuRlRPRm90YVZocE5FVm9TRWRxWDBzMlQzQjJiWGRCVmxWT2IwdHVNM2QwYUd4RVdFY3hORnBoWW5aUWQzaDVWblZGWVhGTVRWaEdWVWhmWkMxMFNGYzNUVFJGWkd4MVMzUlJiMkp6VTFoUlNUQmtiMkl3YjJOc2R4SVhlVmQ0YTJGTWRtcENOazh6YUdKSlVERmZNa1p0VVc4YUlrRkdUVUZIUjI5SlYzTkNlRFE0VlVsVFIxQjBUVkZ3UkU0eWRVTlpSakpQTTFFIiwiZmN2IjoiMyIsImVpIjoieVd4a2FMdmpCNk8zaGJJUDFfMkZtUW8iLCJxYyI6IkNqaGpiM2hvWldGc2RHZ2diV1ZrYVdOaGNtVWdZV1IyWVc1MFlXZGxJSEJ5YjNacFpHVnlJR1JwY21WamRHOXllU0JoY0drZ1ptaHBjaEFBZlpwTEhUOCIsInF1ZXN0aW9uIjoiQXJlIGFsbCBNZWRpY2FyZSBBZHZhbnRhZ2UgcGxhbnMgbmV0d29yay1iYXNlZCBhbmQgaGF2ZSByZWZlcnJhbCByZXF1aXJlbWVudHM/IiwibGsiOiJjeDNIUVJKQU1CQUV3SDg0elljOFl0aEJTckxZUkh5ZmN1c2VSb2JBbkZGa2FmNWpuZDY0Q21lbVY3amFjOFNPaVZVR3VtRmpGMEtMSXBnX1hIY0tGWG1yTHciLCJicyI6ImMtTUs0MUwzeUM5WEtNbFhTTXZNUzFId1RVM0pURTRzU2xWSVRDbEx6Q3RKVEU5VlNNbFBMc2t2S3JhWDJGNXNwQ0dsbG9Ha09oZW5hcTRsakZ4LWppQ1puQnlFb1k1d1pRVTVpWG5GQ25tcEplWDVSZG02U1luRnFTa0tpVUFUTXhMTFVoV0tVdE5TaTRvU2M0Q013dExNb3RUYzFMd1NvUDF6eTR6OHBYd1RvWVppc1J2RlVBVmlEQlZnQkFBIiwiaWQiOiJmY195V3hrYUx2akI2TzNoYklQMV8yRm1Rb18xIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSVZuRlRPRm90YVZocE5FVm9TRWRxWDBzMlQzQjJiWGRCVmxWT2IwdHVNM2QwYUd4RVdFY3hORnBoWW5aUWQzaDVWblZGWVhGTVRWaEdWVWhmWkMxMFNGYzNUVFJGWkd4MVMzUlJiMkp6VTFoUlNUQmtiMkl3YjJOc2R4SVhlVmQ0YTJGTWRtcENOazh6YUdKSlVERmZNa1p0VVc4YUlrRkdUVUZIUjI5SlYzTkNlRFE0VlVsVFIxQjBUVkZ3UkU0eWRVTlpSakpQTTFFIiwiZmN2IjoiMyIsImVpIjoieVd4a2FMdmpCNk8zaGJJUDFfMkZtUW8iLCJxYyI6IkNqaGpiM2hvWldGc2RHZ2diV1ZrYVdOaGNtVWdZV1IyWVc1MFlXZGxJSEJ5YjNacFpHVnlJR1JwY21WamRHOXllU0JoY0drZ1ptaHBjaEFBZlpwTEhUOCIsInF1ZXN0aW9uIjoiQXJlIGFsbCBNZWRpY2FyZSBBZHZhbnRhZ2UgcGxhbnMgbmV0d29yay1iYXNlZCBhbmQgaGF2ZSByZWZlcnJhbCByZXF1aXJlbWVudHM%2FIiwibGsiOiJjeDNIUVJKQU1CQUV3SDg0elljOFl0aEJTckxZUkh5ZmN1c2VSb2JBbkZGa2FmNWpuZDY0Q21lbVY3amFjOFNPaVZVR3VtRmpGMEtMSXBnX1hIY0tGWG1yTHciLCJicyI6ImMtTUs0MUwzeUM5WEtNbFhTTXZNUzFId1RVM0pURTRzU2xWSVRDbEx6Q3RKVEU5VlNNbFBMc2t2S3JhWDJGNXNwQ0dsbG9Ha09oZW5hcTRsakZ4LWppQ1puQnlFb1k1d1pRVTVpWG5GQ25tcEplWDVSZG02U1luRnFTa0tpVUFUTXhMTFVoV0tVdE5TaTRvU2M0Q013dExNb3RUYzFMd1NvUDF6eTR6OHBYd1RvWVppc1J2RlVBVmlEQlZnQkFBIiwiaWQiOiJmY195V3hrYUx2akI2TzNoYklQMV8yRm1Rb18xIn0%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability | CoxHealth Plans Medicare Advantage",
+      "link": "https://coxhealthmedicareadvantage.com/interoperability/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://coxhealthmedicareadvantage.com/interoperability/&ved=2ahUKEwj767_n5ZyOAxWjW0EAHdd-IaMQFnoECB4QAQ",
+      "displayed_link": "https://coxhealthmedicareadvantage.com \u203a interoperabil...",
+      "favicon": "https://serpapi.com/searches/68646cc88681805bba5a1741/images/bbf197f9ddc49b9b90ea185ab0376107b404b458752a4ce86263452753967699.png",
+      "snippet": "CHP's Patient Access API & Provider Directory API capabilities statement outlines the supported resources and function names. ... FHIR\u00ae was developed by ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "source": "CoxHealth Medicare Advantage"
+    },
+    {
+      "position": 2,
+      "title": "Best in KLAS Report 2024",
+      "link": "https://www.performancehealthus.com/hubfs/Best%20in%20KLAS%20Report%202024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.performancehealthus.com/hubfs/Best%2520in%2520KLAS%2520Report%25202024.pdf&ved=2ahUKEwj767_n5ZyOAxWjW0EAHdd-IaMQFnoECB8QAQ",
+      "displayed_link": "https://www.performancehealthus.com \u203a hubfs",
+      "favicon": "https://serpapi.com/searches/68646cc88681805bba5a1741/images/bbf197f9ddc49b9b90ea185ab03761072c528fd0571a48a925fc7cc4a14079e1.png",
+      "date": "Feb 7, 2024",
+      "snippet": "... FHIR 92.2. Data Analytics Platforms (Payers). Clarify Health Solutions ... provider directory API, and payer-to-payer data exchange ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Health",
+        "provider directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 279
+          },
+          "extensions": [
+            "279 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=coxhealth+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj767_n5ZyOAxWjW0EAHdd-IaMQ5t4CegQIJRAB"
+      },
+      "source": "Performance Health Partners"
+    },
+    {
+      "position": 3,
+      "title": "Videos by Format - iHealthFlix",
+      "link": "https://ihealthflix.com/format",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ihealthflix.com/format&ved=2ahUKEwj767_n5ZyOAxWjW0EAHdd-IaMQFnoECDAQAQ",
+      "displayed_link": "https://ihealthflix.com \u203a format",
+      "favicon": "https://serpapi.com/searches/68646cc88681805bba5a1741/images/bbf197f9ddc49b9b90ea185ab0376107f8afc2d80480ecd3317275c6004e25ff.png",
+      "snippet": "The HL7 FHIR standard is well-suited to form the basis of real-time API data exchange between applications, devices, and systems. The HL7 Da Vinci Project was ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API"
+      ],
+      "source": "ihealthflix.com"
+    },
+    {
+      "position": 4,
+      "title": "Videos by Year - iHealthFlix",
+      "link": "https://ihealthflix.com/year",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ihealthflix.com/year&ved=2ahUKEwj767_n5ZyOAxWjW0EAHdd-IaMQFnoECDEQAQ",
+      "displayed_link": "https://ihealthflix.com \u203a year",
+      "favicon": "https://serpapi.com/searches/68646cc88681805bba5a1741/images/bbf197f9ddc49b9b90ea185ab0376107c4aa22102ffa68d133fb852ef89cef78.png",
+      "snippet": "... provider directory inaccuracies. 30% of provider data changes every year and studies found over 45% of provider directory locations had at least one error.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "provider directory"
+      ],
+      "source": "ihealthflix.com"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Best in KLAS 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Best+in+KLAS+2025&sa=X&ved=2ahUKEwj767_n5ZyOAxWjW0EAHdd-IaMQ1QJ6BAgvEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Best in KLAS healthcare",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Best+in+KLAS+healthcare&sa=X&ved=2ahUKEwj767_n5ZyOAxWjW0EAHdd-IaMQ1QJ6BAgtEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+healthcare&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Best in KLAS 2024",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Best+in+KLAS+2024&sa=X&ved=2ahUKEwj767_n5ZyOAxWjW0EAHdd-IaMQ1QJ6BAguEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Best+in+KLAS+2024&safe=active"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 4 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=coxhealth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

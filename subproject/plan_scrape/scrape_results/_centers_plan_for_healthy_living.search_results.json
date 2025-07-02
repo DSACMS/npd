@@ -1,0 +1,306 @@
+{
+  "search_metadata": {
+    "id": "68646492af5fdc2235f0b924",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/290b0af4efe152a5/68646492af5fdc2235f0b924.json",
+    "created_at": "2025-07-01 22:43:30 UTC",
+    "processed_at": "2025-07-01 22:43:30 UTC",
+    "google_url": "https://www.google.com/search?q=%22centers+plan+for+healthy+living+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22centers+plan+for+healthy+living+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/290b0af4efe152a5/68646492af5fdc2235f0b924.html",
+    "total_time_taken": 1.7
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"centers plan for healthy living Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"centers plan for healthy living Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 6830,
+    "time_taken_displayed": 0.41,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "centers plan for healthy living Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "centers plan for healthy living Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Provider Directory API",
+      "link": "https://www.cms.gov/priorities/key-initiatives/burden-reduction/interoperability/frequently-asked-questions/provider-directory-api",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/priorities/key-initiatives/burden-reduction/interoperability/frequently-asked-questions/provider-directory-api&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQFnoECB4QAQ",
+      "displayed_link": "https://www.cms.gov \u203a frequently-asked-questions \u203a pro...",
+      "favicon": "https://serpapi.com/searches/68646492af5fdc2235f0b924/images/87640016ec70657e516bbffeab29c6119065eb41d96fdc636812458e809b6932.png",
+      "date": "Sep 10, 2024",
+      "snippet": "What information are they required to include through the Provider Directory API for in-network providers and contracted networks?",
+      "snippet_highlighted_words": [
+        "Provider Directory API"
+      ],
+      "missing": [
+        "living"
+      ],
+      "must_include": {
+        "word": "living",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=centers+plan+for+healthy+%22living%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ5t4CegQILRAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "CMS/ONC Patient access API",
+      "link": "https://www.healthadvantage-hmo.com/interoperability/patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthadvantage-hmo.com/interoperability/patient-access&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQFnoECBsQAQ",
+      "displayed_link": "https://www.healthadvantage-hmo.com \u203a interoperability",
+      "favicon": "https://serpapi.com/searches/68646492af5fdc2235f0b924/images/87640016ec70657e516bbffeab29c61181a46643f2f569e99c271dc484f2c6f8.png",
+      "snippet": "The Provider Directory API will allow developers to retrieve, as applicable, certain ABCBS provider and pharmacy directory information. The Developer ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API"
+      ],
+      "missing": [
+        "living"
+      ],
+      "must_include": {
+        "word": "living",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=centers+plan+for+healthy+%22living%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ5t4CegQIKxAB"
+      },
+      "source": "Health Advantage HMO"
+    },
+    {
+      "position": 3,
+      "title": "Provider Directory API",
+      "link": "https://1up.health/resources/provider-directory-api/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://1up.health/resources/provider-directory-api/&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQFnoECBkQAQ",
+      "displayed_link": "https://1up.health \u203a Resources",
+      "favicon": "https://serpapi.com/searches/68646492af5fdc2235f0b924/images/87640016ec70657e516bbffeab29c61181e577a65871c6a7634d234b8abcc643.png",
+      "snippet": "A complete and accurate directory of contracted providers, and, if applicable, pharmacies, updated no later than thirty (30) calendar after such data is ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "providers"
+      ],
+      "missing": [
+        "living"
+      ],
+      "must_include": {
+        "word": "living",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=centers+plan+for+healthy+%22living%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ5t4CegQILxAB"
+      },
+      "source": "1upHealth"
+    },
+    {
+      "position": 4,
+      "title": "Home - FHIR Human Services Directory v1.0.0",
+      "link": "https://build.fhir.org/ig/HL7/FHIR-IG-Human-Services-Directory/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://build.fhir.org/ig/HL7/FHIR-IG-Human-Services-Directory/&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQFnoECBwQAQ",
+      "displayed_link": "https://build.fhir.org \u203a FHIR-IG-Human-Services-Direct...",
+      "favicon": "https://serpapi.com/searches/68646492af5fdc2235f0b924/images/87640016ec70657e516bbffeab29c611ffccea18cc4ae05a6c1de077e0195ce6.png",
+      "snippet": "The Fast Healthcare Interoperability Resources (FHIR) Implementation Guide (IG) for Human Services Directories is a United States (US) Realm standard.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Directories"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=centers+plan+for+healthy+living+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ5t4CegQILhAB"
+      },
+      "source": "FHIR specification"
+    },
+    {
+      "position": 5,
+      "title": "Qualified Health Plan Directory Pilot Frequently Asked ...",
+      "link": "https://www.cms.gov/files/document/qhp-directory-pilotfaqs63025.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/qhp-directory-pilotfaqs63025.pdf&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQFnoECB0QAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a qhp-dir...",
+      "favicon": "https://serpapi.com/searches/68646492af5fdc2235f0b924/images/87640016ec70657e516bbffeab29c61127ab39dcff189c6d7b59bc1c1a8cc2cc.png",
+      "date": "Jun 9, 2025",
+      "snippet": "provider data directly from the portal through the HL7 FHIR API to update their own directory systems that are displayed for consumers; CMS ...",
+      "snippet_highlighted_words": [
+        "provider",
+        "FHIR API",
+        "directory"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Community Interoperability APIs",
+      "link": "https://www.communityhealthchoice.org/interoperability-apis/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.communityhealthchoice.org/interoperability-apis/&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQFnoECBgQAQ",
+      "displayed_link": "https://www.communityhealthchoice.org \u203a interoperabilit...",
+      "favicon": "https://serpapi.com/searches/68646492af5fdc2235f0b924/images/87640016ec70657e516bbffeab29c6114bd9c4b4f242a630561ffd3fe2c4a26e.png",
+      "snippet": "Community Health Choice Interoperability APIs are implemented in compliance with Centers for Medicare & Medicaid Services Interoperability and Patient Access ...",
+      "snippet_highlighted_words": [
+        "Health",
+        "APIs",
+        "Centers",
+        "Medicare"
+      ],
+      "missing": [
+        "living",
+        "Advantage"
+      ],
+      "source": "Community Health Choice"
+    },
+    {
+      "position": 7,
+      "title": "FHIR Developer API",
+      "link": "https://www.chgsd.com/about-us/fhir-developer-api",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chgsd.com/about-us/fhir-developer-api&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQFnoECBYQAQ",
+      "displayed_link": "https://www.chgsd.com \u203a about-us \u203a fhir-developer-api",
+      "favicon": "https://serpapi.com/searches/68646492af5fdc2235f0b924/images/87640016ec70657e516bbffeab29c611585c2d550a93782f6b5f7d621cb08382.png",
+      "snippet": "Access our Community Health Group APIs to become a third party app for our members! This API fully supports FHIR\u00ae and provides rich programmatic access.",
+      "snippet_highlighted_words": [
+        "Health",
+        "APIs",
+        "API"
+      ],
+      "source": "Community Health Group"
+    },
+    {
+      "position": 8,
+      "title": "Developer API Resources",
+      "link": "https://santacruzhealth.org/HSAHome/HSADivisions/BehavioralHealth/DeveloperAPIs.aspx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://santacruzhealth.org/HSAHome/HSADivisions/BehavioralHealth/DeveloperAPIs.aspx&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQFnoECDwQAQ",
+      "displayed_link": "https://santacruzhealth.org \u203a HSAHome \u203a BehavioralHealth",
+      "favicon": "https://serpapi.com/searches/68646492af5fdc2235f0b924/images/87640016ec70657e516bbffeab29c6119c9619a04f76b13c415aa7a9476e33ba.png",
+      "snippet": "The Provider Directory Application Program Interface (API) is a recent development aimed at delivering current details regarding healthcare providers and ...",
+      "source": "Santa Cruz County Health Services Agency"
+    },
+    {
+      "position": 9,
+      "title": "Provider Directory API Final Rule | General Information",
+      "link": "https://www.cmsinteroperability.org/provider-directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cmsinteroperability.org/provider-directory&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQFnoECDsQAQ",
+      "displayed_link": "https://www.cmsinteroperability.org \u203a provider-directory",
+      "snippet": "Part of this rule requires health plans (payers) to implement a Provider Directory API by July 1st, 2021, using FHIR-based APIs.",
+      "snippet_highlighted_words": [
+        "health plans",
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "missing": [
+        "living"
+      ],
+      "must_include": {
+        "word": "living",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=centers+plan+for+healthy+%22living%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ5t4CegQIQxAB"
+      },
+      "source": "cmsinteroperability.org"
+    },
+    {
+      "position": 10,
+      "title": "Interoperability API Endpoint Support Document",
+      "link": "https://www.wellpoint.com/content/dam/digital/developers-portal/Anthem-IOProviderDirectoryAndFormulary-API-Documentation.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wellpoint.com/content/dam/digital/developers-portal/Anthem-IOProviderDirectoryAndFormulary-API-Documentation.pdf&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQFnoECDoQAQ",
+      "displayed_link": "https://www.wellpoint.com \u203a developers-portal",
+      "favicon": "https://serpapi.com/searches/68646492af5fdc2235f0b924/images/87640016ec70657e516bbffeab29c611fa67465b3acdff2fb79f6acb7465f317.png",
+      "date": "Apr 22, 2025",
+      "snippet": "Provider Directory API enables current or prospective members to see which providers are in- network for a given insurance plan. This service ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "plan"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 13
+          },
+          "extensions": [
+            "13 pages"
+          ]
+        }
+      },
+      "source": "Wellpoint"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Provider Directory API CMS",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Provider+Directory+API+CMS&sa=X&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+Directory+API+CMS&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS provider directory requirements",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=CMS+provider+directory+requirements&sa=X&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+provider+directory+requirements&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CAA provider directory requirements",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=CAA+provider+directory+requirements&sa=X&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CAA+provider+directory+requirements&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Provider Access API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Provider+Access+API&sa=X&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+Access+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-9115-f",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=cms-9115-f&sa=X&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-9115-f&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability and Patient Access final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=CMS+Interoperability+and+Patient+Access+final+rule&sa=X&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+and+Patient+Access+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS API requirements",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=CMS+API+requirements&sa=X&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+API+requirements&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Patient Access API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Patient+Access+API&sa=X&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Patient+Access+API&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=k2RkaMiyDZ29i-gP65DGqQc&start=10&sa=N&sstk=Ac65TH4LgD5nKsgixEoela0EKZfNz0JzrsuCfBaI9CkfiB7gKv7eOmJxpTZEIZU8Ar0X4fBGuk1McKyebMnjfPz2Jb10bDKVWu81RA&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=k2RkaMiyDZ29i-gP65DGqQc&start=10&sa=N&sstk=Ac65TH4LgD5nKsgixEoela0EKZfNz0JzrsuCfBaI9CkfiB7gKv7eOmJxpTZEIZU8Ar0X4fBGuk1McKyebMnjfPz2Jb10bDKVWu81RA&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=k2RkaMiyDZ29i-gP65DGqQc&start=20&sa=N&sstk=Ac65TH4LgD5nKsgixEoela0EKZfNz0JzrsuCfBaI9CkfiB7gKv7eOmJxpTZEIZU8Ar0X4fBGuk1McKyebMnjfPz2Jb10bDKVWu81RA&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=k2RkaMiyDZ29i-gP65DGqQc&start=30&sa=N&sstk=Ac65TH4LgD5nKsgixEoela0EKZfNz0JzrsuCfBaI9CkfiB7gKv7eOmJxpTZEIZU8Ar0X4fBGuk1McKyebMnjfPz2Jb10bDKVWu81RA&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=k2RkaMiyDZ29i-gP65DGqQc&start=40&sa=N&sstk=Ac65TH4LgD5nKsgixEoela0EKZfNz0JzrsuCfBaI9CkfiB7gKv7eOmJxpTZEIZU8Ar0X4fBGuk1McKyebMnjfPz2Jb10bDKVWu81RA&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=k2RkaMiyDZ29i-gP65DGqQc&start=50&sa=N&sstk=Ac65TH4LgD5nKsgixEoela0EKZfNz0JzrsuCfBaI9CkfiB7gKv7eOmJxpTZEIZU8Ar0X4fBGuk1McKyebMnjfPz2Jb10bDKVWu81RA&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=k2RkaMiyDZ29i-gP65DGqQc&start=60&sa=N&sstk=Ac65TH4LgD5nKsgixEoela0EKZfNz0JzrsuCfBaI9CkfiB7gKv7eOmJxpTZEIZU8Ar0X4fBGuk1McKyebMnjfPz2Jb10bDKVWu81RA&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=k2RkaMiyDZ29i-gP65DGqQc&start=70&sa=N&sstk=Ac65TH4LgD5nKsgixEoela0EKZfNz0JzrsuCfBaI9CkfiB7gKv7eOmJxpTZEIZU8Ar0X4fBGuk1McKyebMnjfPz2Jb10bDKVWu81RA&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=k2RkaMiyDZ29i-gP65DGqQc&start=80&sa=N&sstk=Ac65TH4LgD5nKsgixEoela0EKZfNz0JzrsuCfBaI9CkfiB7gKv7eOmJxpTZEIZU8Ar0X4fBGuk1McKyebMnjfPz2Jb10bDKVWu81RA&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=k2RkaMiyDZ29i-gP65DGqQc&start=90&sa=N&sstk=Ac65TH4LgD5nKsgixEoela0EKZfNz0JzrsuCfBaI9CkfiB7gKv7eOmJxpTZEIZU8Ar0X4fBGuk1McKyebMnjfPz2Jb10bDKVWu81RA&ved=2ahUKEwiIyJ393ZyOAxWd3gIHHWuIMXUQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=centers+plan+for+healthy+living+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "search_metadata": {
+    "id": "68646511acb3e4b500b5885d",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/26b27c5f6478c03b/68646511acb3e4b500b5885d.json",
+    "created_at": "2025-07-01 22:45:37 UTC",
+    "processed_at": "2025-07-01 22:45:37 UTC",
+    "google_url": "https://www.google.com/search?q=%22longevity+health+founders+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22longevity+health+founders+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/26b27c5f6478c03b/68646511acb3e4b500b5885d.html",
+    "total_time_taken": 2.12
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"longevity health founders Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"longevity health founders Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 3240,
+    "time_taken_displayed": 0.43,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "spelling_fix": "longevity healthcare founders Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "showing_results_for": "longevity health founders Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "CMS-9123-P Reducing Provider and Patient Burden",
+      "link": "https://www.cms.gov/files/document/121020-reducing-provider-and-patient-burden-cms-9123-p.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/121020-reducing-provider-and-patient-burden-cms-9123-p.pdf&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQFnoECBwQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a 121020...",
+      "favicon": "https://serpapi.com/searches/68646511acb3e4b500b5885d/images/2d85e9846b0f8286ac5ec831b96be3a8271217c60e99eb52008a9e5df1175eb0.png",
+      "date": "Jan 1, 2021",
+      "snippet": "SUMMARY: This proposed rule would place new requirements on state Medicaid and CHIP fee-for-service (FFS) programs, Medicaid managed care plans, ...",
+      "snippet_highlighted_words": [
+        "plans"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 347
+          },
+          "extensions": [
+            "347 pages"
+          ]
+        }
+      },
+      "missing": [
+        "longevity"
+      ],
+      "must_include": {
+        "word": "longevity",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=%22longevity%22+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ5t4CegQIJRAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "FHIR: The Standard Fueling Smarter, Connected Care",
+      "link": "https://medium.com/@kajalbhauryal/fhir-the-standard-fueling-smarter-connected-care-710013f7a973",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medium.com/%40kajalbhauryal/fhir-the-standard-fueling-smarter-connected-care-710013f7a973&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQFnoECB8QAQ",
+      "displayed_link": "2 months ago",
+      "favicon": "https://serpapi.com/searches/68646511acb3e4b500b5885d/images/2d85e9846b0f8286ac5ec831b96be3a86df77aec5c8342966d3c166d7ad9df00.png",
+      "snippet": "CMS-regulated payers like Medicaid and Medicare Advantage plans are now required to provide FHIR-based APIs so patients can access their claims, ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "FHIR",
+        "APIs"
+      ],
+      "missing": [
+        "longevity"
+      ],
+      "must_include": {
+        "word": "longevity",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=%22longevity%22+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ5t4CegQIIhAB"
+      },
+      "source": "Medium \u00b7 Kajal Bhauryal"
+    },
+    {
+      "position": 3,
+      "title": "Dr. Oz Has It Right: America Needs a National Healthcare ...",
+      "link": "https://www.healthcareittoday.com/2025/06/11/dr-oz-has-it-right-america-needs-a-national-healthcare-directory/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcareittoday.com/2025/06/11/dr-oz-has-it-right-america-needs-a-national-healthcare-directory/&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQFnoECBkQAQ",
+      "displayed_link": "https://www.healthcareittoday.com \u203a Topic \u203a Regulations",
+      "favicon": "https://serpapi.com/searches/68646511acb3e4b500b5885d/images/2d85e9846b0f8286ac5ec831b96be3a85513e9612b738a40418968a4bc9a8a5b.png",
+      "date": "Jun 11, 2025",
+      "snippet": "Built properly, a national directory of healthcare will reduce patient abrasion, cut waste for all stakeholders, and serve as a cornerstone for ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "healthcare"
+      ],
+      "missing": [
+        "longevity"
+      ],
+      "must_include": {
+        "word": "longevity",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=%22longevity%22+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ5t4CegQIHhAB"
+      },
+      "source": "Healthcare IT Today"
+    },
+    {
+      "position": 4,
+      "title": "Application Programming Interface (API) Write-Back ...",
+      "link": "https://www.healthit.gov/sites/default/files/page/2021-11/20211117_API%20Write-back%20Workshop%20Summary%20Report.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/page/2021-11/20211117_API%2520Write-back%2520Workshop%2520Summary%2520Report.pdf&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQFnoECBgQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a page",
+      "favicon": "https://serpapi.com/searches/68646511acb3e4b500b5885d/images/2d85e9846b0f8286ac5ec831b96be3a8ec4f5b6d29c90616868b9c0941c83bbb.jpeg",
+      "snippet": "APIs enable providers, patients, and researchers to use third-party applications (apps) to gather external data or apply insights and analysis to EHR data in a ...",
+      "snippet_highlighted_words": [
+        "s"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 37
+          },
+          "extensions": [
+            "37 pages"
+          ]
+        }
+      },
+      "missing": [
+        "longevity",
+        "Advantage"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "How 'On Fire' (FHIR) is Healthcare Interoperability? - b.well",
+      "link": "https://resources.icanbwell.com/how-on-fhir-is-healthcare-interoperability/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://resources.icanbwell.com/how-on-fhir-is-healthcare-interoperability/&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQFnoECBoQAQ",
+      "displayed_link": "https://resources.icanbwell.com \u203a how-on-fhir-is-health...",
+      "favicon": "https://serpapi.com/searches/68646511acb3e4b500b5885d/images/2d85e9846b0f8286ac5ec831b96be3a8a87b209c68820ad8874c6a9a814da4ec.png",
+      "date": "Aug 23, 2022",
+      "snippet": "FHIR uses standardized web URLs to represent medical concepts such as diagnoses, medications and allergies. This method allows the exchange of discrete data in ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "missing": [
+        "longevity"
+      ],
+      "must_include": {
+        "word": "longevity",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=%22longevity%22+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ5t4CegQIIBAB"
+      },
+      "source": "b.well"
+    },
+    {
+      "position": 6,
+      "title": "CMS Interoperability And Patient Access",
+      "link": "https://www.trilliumhealthresources.org/sites/default/files/docs/Request-Opportunities/RFP-CMS/RFP-CMS-Interoperability-Patient-Access.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.trilliumhealthresources.org/sites/default/files/docs/Request-Opportunities/RFP-CMS/RFP-CMS-Interoperability-Patient-Access.pdf&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQFnoECBcQAQ",
+      "displayed_link": "https://www.trilliumhealthresources.org \u203a RFP-CMS",
+      "favicon": "https://serpapi.com/searches/68646511acb3e4b500b5885d/images/2d85e9846b0f8286ac5ec831b96be3a8e5c5d36f7d10192f364428d2fc1cffda.png",
+      "date": "Nov 9, 2020",
+      "snippet": "Provider Directory API. Solution is compliant with the Provider Directory API described in the CMS Interoperability and Patient Access Final ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "longevity"
+      ],
+      "must_include": {
+        "word": "longevity",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=%22longevity%22+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ5t4CegQIHRAB"
+      },
+      "source": "Trillium Health Resources"
+    },
+    {
+      "position": 7,
+      "title": "Data Standardization And APIs Can Help Pave The Way ...",
+      "link": "https://www.forbes.com/councils/forbestechcouncil/2022/09/28/data-standardization-and-apis-can-help-pave-the-way-toward-data-driven-healthcare/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.forbes.com/councils/forbestechcouncil/2022/09/28/data-standardization-and-apis-can-help-pave-the-way-toward-data-driven-healthcare/&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQFnoECBsQAQ",
+      "displayed_link": "https://www.forbes.com \u203a Innovation",
+      "favicon": "https://serpapi.com/searches/68646511acb3e4b500b5885d/images/2d85e9846b0f8286ac5ec831b96be3a842f6b635aa0c986274b3b9c24df11025.png",
+      "date": "Sep 28, 2022",
+      "snippet": "HL7, an international standards body, introduced fast healthcare interoperability resources (FHIR), a standard for APIs in healthcare that is ...",
+      "snippet_highlighted_words": [
+        "healthcare",
+        "FHIR",
+        "APIs",
+        "healthcare"
+      ],
+      "missing": [
+        "longevity"
+      ],
+      "must_include": {
+        "word": "longevity",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=%22longevity%22+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ5t4CegQIJBAB"
+      },
+      "source": "Forbes"
+    },
+    {
+      "position": 8,
+      "title": "How RPA Can Help with New Healthcare Interoperability ...",
+      "link": "https://automationtoday.net/featuredarticles/how-rpa-can-help-with-new-healthcare-interoperability-mandate/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://automationtoday.net/featuredarticles/how-rpa-can-help-with-new-healthcare-interoperability-mandate/&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQFnoECDUQAQ",
+      "displayed_link": "https://automationtoday.net \u203a featuredarticles \u203a how-rpa-...",
+      "favicon": "https://serpapi.com/searches/68646511acb3e4b500b5885d/images/2d85e9846b0f8286ac5ec831b96be3a8fa94b1ebff01ed3e35eaeb28af17f895.png",
+      "date": "Feb 1, 2022",
+      "snippet": "Medical services plans and providers should make supplier index data openly accessible in a Provider Directory API. CMS-directed payers ...",
+      "snippet_highlighted_words": [
+        "Medical",
+        "plans",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "longevity"
+      ],
+      "must_include": {
+        "word": "longevity",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=%22longevity%22+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ5t4CegQINxAB"
+      },
+      "source": "Automation Today"
+    },
+    {
+      "position": 9,
+      "title": "1upHealth Announces Free Baseline Testing for Health ...",
+      "link": "https://www.prnewswire.com/news-releases/1uphealth-announces-free-baseline-testing-for-health-plans-to-determine-if-their-patient-access-fhir-api-is-successfully-connecting-as-required-by-cms-301353002.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.prnewswire.com/news-releases/1uphealth-announces-free-baseline-testing-for-health-plans-to-determine-if-their-patient-access-fhir-api-is-successfully-connecting-as-required-by-cms-301353002.html&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQFnoECDYQAQ",
+      "displayed_link": "https://www.prnewswire.com \u203a news-releases \u203a 1uphealth...",
+      "favicon": "https://serpapi.com/searches/68646511acb3e4b500b5885d/images/2d85e9846b0f8286ac5ec831b96be3a84205aecc86fd6b939c868d039b384d1e.png",
+      "date": "Aug 11, 2021",
+      "snippet": "Founded in 2017, the company is connected to more than 10,000 clinical endpoints with best-in-class FHIR\u00ae APIs. Gartner designated 1upHealth a \" ...",
+      "snippet_highlighted_words": [
+        "Founded",
+        "FHIR",
+        "APIs"
+      ],
+      "source": "PR Newswire"
+    },
+    {
+      "position": 10,
+      "title": "FHIR Implementation Guides for CDex & PDex",
+      "link": "https://1up.health/blog/what-you-need-to-know-about-fhir-implementation-guides-for-cdex-and-pdex/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://1up.health/blog/what-you-need-to-know-about-fhir-implementation-guides-for-cdex-and-pdex/&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQFnoECDwQAQ",
+      "displayed_link": "https://1up.health \u203a Resources",
+      "favicon": "https://serpapi.com/searches/68646511acb3e4b500b5885d/images/2d85e9846b0f8286ac5ec831b96be3a8fef8776b3ac27d1fab3770251623166d.png",
+      "date": "Jun 13, 2024",
+      "snippet": "An implementation guide is a set of rules about how FHIR resources are used (or should be used) to solve a particular problem, with associated documentation.",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "missing": [
+        "longevity"
+      ],
+      "must_include": {
+        "word": "longevity",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=%22longevity%22+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ5t4CegQIPhAB"
+      },
+      "source": "1upHealth"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=E2VkaIayB6_LwPAPrcOSyQk&start=10&sa=N&sstk=Ac65TH4R0sSuAJmh1W1Zg6VW1vfF_QYdQV4WHJfNfUbsMaLpo3boICj7NHE7DchGLjHNcDbyISk0Kz5f3S4w2V1BrGi8ZYMOfxMeaQ&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ8NMDegQICBAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=E2VkaIayB6_LwPAPrcOSyQk&start=10&sa=N&sstk=Ac65TH4R0sSuAJmh1W1Zg6VW1vfF_QYdQV4WHJfNfUbsMaLpo3boICj7NHE7DchGLjHNcDbyISk0Kz5f3S4w2V1BrGi8ZYMOfxMeaQ&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=E2VkaIayB6_LwPAPrcOSyQk&start=20&sa=N&sstk=Ac65TH4R0sSuAJmh1W1Zg6VW1vfF_QYdQV4WHJfNfUbsMaLpo3boICj7NHE7DchGLjHNcDbyISk0Kz5f3S4w2V1BrGi8ZYMOfxMeaQ&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=E2VkaIayB6_LwPAPrcOSyQk&start=30&sa=N&sstk=Ac65TH4R0sSuAJmh1W1Zg6VW1vfF_QYdQV4WHJfNfUbsMaLpo3boICj7NHE7DchGLjHNcDbyISk0Kz5f3S4w2V1BrGi8ZYMOfxMeaQ&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ8tMDegQICBAI",
+      "5": "https://www.google.com/search?q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=E2VkaIayB6_LwPAPrcOSyQk&start=40&sa=N&sstk=Ac65TH4R0sSuAJmh1W1Zg6VW1vfF_QYdQV4WHJfNfUbsMaLpo3boICj7NHE7DchGLjHNcDbyISk0Kz5f3S4w2V1BrGi8ZYMOfxMeaQ&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ8tMDegQICBAK",
+      "6": "https://www.google.com/search?q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=E2VkaIayB6_LwPAPrcOSyQk&start=50&sa=N&sstk=Ac65TH4R0sSuAJmh1W1Zg6VW1vfF_QYdQV4WHJfNfUbsMaLpo3boICj7NHE7DchGLjHNcDbyISk0Kz5f3S4w2V1BrGi8ZYMOfxMeaQ&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ8tMDegQICBAM",
+      "7": "https://www.google.com/search?q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=E2VkaIayB6_LwPAPrcOSyQk&start=60&sa=N&sstk=Ac65TH4R0sSuAJmh1W1Zg6VW1vfF_QYdQV4WHJfNfUbsMaLpo3boICj7NHE7DchGLjHNcDbyISk0Kz5f3S4w2V1BrGi8ZYMOfxMeaQ&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ8tMDegQICBAO",
+      "8": "https://www.google.com/search?q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=E2VkaIayB6_LwPAPrcOSyQk&start=70&sa=N&sstk=Ac65TH4R0sSuAJmh1W1Zg6VW1vfF_QYdQV4WHJfNfUbsMaLpo3boICj7NHE7DchGLjHNcDbyISk0Kz5f3S4w2V1BrGi8ZYMOfxMeaQ&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ8tMDegQICBAQ",
+      "9": "https://www.google.com/search?q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=E2VkaIayB6_LwPAPrcOSyQk&start=80&sa=N&sstk=Ac65TH4R0sSuAJmh1W1Zg6VW1vfF_QYdQV4WHJfNfUbsMaLpo3boICj7NHE7DchGLjHNcDbyISk0Kz5f3S4w2V1BrGi8ZYMOfxMeaQ&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ8tMDegQICBAS",
+      "10": "https://www.google.com/search?q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=E2VkaIayB6_LwPAPrcOSyQk&start=90&sa=N&sstk=Ac65TH4R0sSuAJmh1W1Zg6VW1vfF_QYdQV4WHJfNfUbsMaLpo3boICj7NHE7DchGLjHNcDbyISk0Kz5f3S4w2V1BrGi8ZYMOfxMeaQ&ved=2ahUKEwjGh5y63pyOAxWvJRAIHa2hJJkQ8tMDegQICBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=longevity+health+founders+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

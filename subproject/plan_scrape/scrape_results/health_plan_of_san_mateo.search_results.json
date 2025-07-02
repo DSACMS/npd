@@ -1,0 +1,252 @@
+{
+  "search_metadata": {
+    "id": "68646cea6feec4941560fae5",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/b6cb09a615b908a2/68646cea6feec4941560fae5.json",
+    "created_at": "2025-07-01 23:19:06 UTC",
+    "processed_at": "2025-07-01 23:19:06 UTC",
+    "google_url": "https://www.google.com/search?q=health+plan+of+san+mateo+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=health+plan+of+san+mateo+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/b6cb09a615b908a2/68646cea6feec4941560fae5.html",
+    "total_time_taken": 0.83
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "health plan of san mateo Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "health plan of san mateo Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 38,
+    "time_taken_displayed": 0.2,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability & Data API Guidelines",
+      "link": "https://www.smchealth.org/node/6722",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.smchealth.org/node/6722&ved=2ahUKEwisxNr35ZyOAxXMA9sEHdoiNPMQFnoECBoQAQ",
+      "displayed_link": "https://www.smchealth.org \u203a node",
+      "favicon": "https://serpapi.com/searches/68646cea6feec4941560fae5/images/1896a65b4df3629f2aec159d67c07a03451abecc3dcda58cfebe411ed35a44f2.png",
+      "date": "Feb 16, 2024",
+      "snippet": "This document outlines guidelines for the implementation of FHIR standards within the San Mateo County Behavioral Health and Recovery Services (BHRS) system.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "San Mateo",
+        "Health"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=health+plan+of+san+mateo+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwisxNr35ZyOAxXMA9sEHdoiNPMQ5t4CegQIKBAB"
+      },
+      "source": "San Mateo County Health"
+    },
+    {
+      "position": 2,
+      "title": "Session 1 CMS Interoperability Planning Collaborative",
+      "link": "https://calmhsa.org/wp-content/uploads/2023/08/Session-1-CMS-Interoperability-Planning-Collaborative-April-5-2022.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://calmhsa.org/wp-content/uploads/2023/08/Session-1-CMS-Interoperability-Planning-Collaborative-April-5-2022.pdf&ved=2ahUKEwisxNr35ZyOAxXMA9sEHdoiNPMQFnoECBgQAQ",
+      "displayed_link": "https://calmhsa.org \u203a uploads \u203a 2023/08 \u203a Sessio...",
+      "favicon": "https://serpapi.com/searches/68646cea6feec4941560fae5/images/1896a65b4df3629f2aec159d67c07a033e5f654e62f4330eed918428b171a4be.png",
+      "snippet": "Patient Access API. 150. 65%. 8. 35%. Provider Directory API. 17. 74%. 6. 26%. Page 26 ... fhir-developer-api https://1up.health/docs/ https://www.chgsd.com ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "fhir",
+        "api",
+        "health"
+      ],
+      "source": "California Mental Health Services Authority"
+    },
+    {
+      "position": 3,
+      "title": "Interoperability and Patient Access & MRF",
+      "link": "https://cchphealthplan.com/interoperability-patient-access-mrf/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://cchphealthplan.com/interoperability-patient-access-mrf/&ved=2ahUKEwisxNr35ZyOAxXMA9sEHdoiNPMQFnoECBkQAQ",
+      "displayed_link": "https://cchphealthplan.com \u203a interoperability-patient-ac...",
+      "favicon": "https://serpapi.com/searches/68646cea6feec4941560fae5/images/1896a65b4df3629f2aec159d67c07a03777f0af46c1b527fe25d96c30d510325.png",
+      "snippet": "The following data is available through the CCHP/1upHealth FHIR API: Patient Access and Provider Directory API Endpoints. Shop Plans. Medicare \u00b7 Individual ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory API",
+        "Plans",
+        "Medicare"
+      ],
+      "source": "CCHP Health Plan"
+    },
+    {
+      "position": 4,
+      "title": "California State Medi-Cal Health Information Technology Plan ...",
+      "link": "https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.dhcs.ca.gov/provgovpart/Documents/OHIT/CA-State-Medicaid-HIT-Plan-2022.pdf&ved=2ahUKEwisxNr35ZyOAxXMA9sEHdoiNPMQFnoECBwQAQ",
+      "displayed_link": "https://www.dhcs.ca.gov \u203a Documents \u203a OHIT \u203a C...",
+      "favicon": "https://serpapi.com/searches/68646cea6feec4941560fae5/images/1896a65b4df3629f2aec159d67c07a033e074121ba941e8f534a75bbe6125ec9.png",
+      "date": "Mar 1, 2022",
+      "snippet": "requirements to use Fast Healthcare Interoperability Resources (FHIR) for certification, ... and provider directory. The only service area ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 246
+          },
+          "extensions": [
+            "246 pages"
+          ]
+        }
+      },
+      "source": "DHCS (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "CalAIM and Health Data Sharing: A Road Map for Effective ...",
+      "link": "https://www.chcf.org/wp-content/uploads/2021/04/CalAIMHealthDataSharingRoadMapECMILOS.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chcf.org/wp-content/uploads/2021/04/CalAIMHealthDataSharingRoadMapECMILOS.pdf&ved=2ahUKEwisxNr35ZyOAxXMA9sEHdoiNPMQFnoECCIQAQ",
+      "displayed_link": "https://www.chcf.org \u203a uploads \u203a 2021/04 \u203a CalAI...",
+      "favicon": "https://serpapi.com/searches/68646cea6feec4941560fae5/images/1896a65b4df3629f2aec159d67c07a03d7138851544b8abfcbc8b42ccb66ccc6.png",
+      "snippet": "In particular, the ONC rule adopted HL7 FHIR APIs as the foundational standard for application-based exchange of health information. ... \u201cSymphony Provider ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "health",
+        "Provider"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 47
+          },
+          "extensions": [
+            "47 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=health+plan+of+san+mateo+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwisxNr35ZyOAxXMA9sEHdoiNPMQ5t4CegQIJxAB"
+      },
+      "source": "California Health Care Foundation"
+    },
+    {
+      "position": 6,
+      "title": "All Pages",
+      "link": "https://www.communityplans.net/all-pages/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.communityplans.net/all-pages/&ved=2ahUKEwisxNr35ZyOAxXMA9sEHdoiNPMQFnoECB4QAQ",
+      "displayed_link": "https://www.communityplans.net \u203a all-pages",
+      "snippet": "Beyond Patient Access \u2013 the Next Wave of FHIR Use Cases for Payers ... National Provider Directory RFI Roundtable Call \u00b7 Marketplace & Medicare Joint ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "Medicare"
+      ],
+      "source": "Association For Community Affiliated Plans"
+    },
+    {
+      "position": 7,
+      "title": "Mental Health Services",
+      "link": "https://www.optumsandiego.com/content/dam/san-diego/documents/smh-and-dmc-ods/uttm/mh/previous-fy/UTTM%20FY%2023-24%20Combined.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.optumsandiego.com/content/dam/san-diego/documents/smh-and-dmc-ods/uttm/mh/previous-fy/UTTM%2520FY%252023-24%2520Combined.pdf&ved=2ahUKEwisxNr35ZyOAxXMA9sEHdoiNPMQFnoECBsQAQ",
+      "displayed_link": "https://www.optumsandiego.com \u203a previous-fy",
+      "favicon": "https://serpapi.com/searches/68646cea6feec4941560fae5/images/1896a65b4df3629f2aec159d67c07a0324e5a00296f3605e496bfcf70a48f101.png",
+      "author": "by O Tab",
+      "snippet": "easily accessible to clients by having each health plan follow industry standards like HL7 FHIR APIs and by deterring ... The Provider Directory ...",
+      "snippet_highlighted_words": [
+        "health plan",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 75
+          },
+          "extensions": [
+            "75 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=health+plan+of+san+mateo+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwisxNr35ZyOAxXMA9sEHdoiNPMQ5t4CegQIJhAB"
+      },
+      "source": "Optum San Diego"
+    },
+    {
+      "position": 8,
+      "title": "EXECUTIVE COMMITTEE MEETING Board of Governors",
+      "link": "https://www.lacare.org/sites/default/files/executive_committee_packet_20220426.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/executive_committee_packet_20220426.pdf&ved=2ahUKEwisxNr35ZyOAxXMA9sEHdoiNPMQFnoECDUQAQ",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files \u203a ex...",
+      "favicon": "https://serpapi.com/searches/68646cea6feec4941560fae5/images/1896a65b4df3629f2aec159d67c07a0326d5a4ff8f129a6c272e2f0d0f09668c.png",
+      "date": "Apr 26, 2022",
+      "snippet": "The first phase is complete with public facing provider directory API's (Application Program ... Resources (FHIR) format, in compliance ...",
+      "snippet_highlighted_words": [
+        "provider directory API's",
+        "FHIR"
+      ],
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 9,
+      "title": "Marketplace",
+      "link": "https://www.ntst.com/marketplace",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ntst.com/marketplace&ved=2ahUKEwisxNr35ZyOAxXMA9sEHdoiNPMQFnoECDIQAQ",
+      "displayed_link": "https://www.ntst.com \u203a marketplace",
+      "favicon": "https://serpapi.com/searches/68646cea6feec4941560fae5/images/1896a65b4df3629f2aec159d67c07a03a515ef91518bf1cbc50900791f8d2b86.png",
+      "snippet": "Provider Directory. Radiology Solutions. Referral Management. Reporting ... Our ONC Certified FHIR APIs drive simplicity and scalability, empowering ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Netsmart Technologies"
+    },
+    {
+      "position": 10,
+      "title": "Interoperability at Patient Access & MRF",
+      "link": "https://cchphealthplan.com/tl/interoperability-access-ng-pasyente-mrf/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://cchphealthplan.com/tl/interoperability-access-ng-pasyente-mrf/&ved=2ahUKEwisxNr35ZyOAxXMA9sEHdoiNPMQFnoECDoQAQ",
+      "displayed_link": "https://cchphealthplan.com \u203a inter...",
+      "favicon": "https://serpapi.com/searches/68646cea6feec4941560fae5/images/1896a65b4df3629f2aec159d67c07a0304c760e2e6da0c5afac95adef17504df.png",
+      "snippet": "Available ang sumusunod na data sa pamamagitan ng CCHP/1upHealth FHIR API: Patient Access at Provider Directory API Endpoints. Mga Plano sa Tindahan. Medicare ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory API",
+        "Medicare"
+      ],
+      "source": "CCHP Health Plan"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=health+plan+of+san+mateo+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=62xkaOyiB8yH7NYP2sXQmQ8&start=10&sa=N&sstk=Ac65TH6ElVW2rFSZ0-XUOFpKCYXXxXaip0dc9aHyuAJdS2WwReNxfenetbyAwKHj4JLyNjyHtw1AF2PZ6qdyOnWzRH8o32D9RDVmgA&ved=2ahUKEwisxNr35ZyOAxXMA9sEHdoiNPMQ8NMDegQICxAG",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=health+plan+of+san+mateo+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=62xkaOyiB8yH7NYP2sXQmQ8&start=10&sa=N&sstk=Ac65TH6ElVW2rFSZ0-XUOFpKCYXXxXaip0dc9aHyuAJdS2WwReNxfenetbyAwKHj4JLyNjyHtw1AF2PZ6qdyOnWzRH8o32D9RDVmgA&ved=2ahUKEwisxNr35ZyOAxXMA9sEHdoiNPMQ8tMDegQICxAE"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=health+plan+of+san+mateo+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=health+plan+of+san+mateo+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=health+plan+of+san+mateo+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10"
+    }
+  }
+}

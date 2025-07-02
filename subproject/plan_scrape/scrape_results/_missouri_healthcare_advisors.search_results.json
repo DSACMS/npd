@@ -1,0 +1,288 @@
+{
+  "search_metadata": {
+    "id": "68646c237af89933a89effe5",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/5323d2968667e975/68646c237af89933a89effe5.json",
+    "created_at": "2025-07-01 23:15:47 UTC",
+    "processed_at": "2025-07-01 23:15:47 UTC",
+    "google_url": "https://www.google.com/search?q=%22missouri+healthcare+advisors+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22missouri+healthcare+advisors+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/5323d2968667e975/68646c237af89933a89effe5.html",
+    "total_time_taken": 8.48
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"missouri healthcare advisors Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"missouri healthcare advisors Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 1920,
+    "time_taken_displayed": 0.5,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "missouri healthcare advisors Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "missouri healthcare advisors Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Medicare Utilization Management - Missouri Insurance Advisors",
+      "link": "https://moinsuranceadvice.com/medicare-utilization-management/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://moinsuranceadvice.com/medicare-utilization-management/&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQFnoECB8QAQ",
+      "displayed_link": "https://moinsuranceadvice.com \u203a Blog \u203a Health Insurance",
+      "favicon": "https://serpapi.com/searches/68646c237af89933a89effe5/images/e47723c2f80772752abc9e3cf0ecfc82244301f18073a649d4b28214574d9419.png",
+      "snippet": "Additionally, CMS requires the implementation of the FHIR\u00ae Prior Authorization API to automate the prior authorization process. This technology facilitates ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API"
+      ],
+      "source": "moinsuranceadvice.com"
+    },
+    {
+      "position": 2,
+      "title": "Patient API",
+      "link": "https://developers.humana.com/patient-api/doc",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developers.humana.com/patient-api/doc&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQFnoECCAQAQ",
+      "displayed_link": "https://developers.humana.com \u203a patient-api \u203a doc",
+      "favicon": "https://serpapi.com/searches/68646c237af89933a89effe5/images/e47723c2f80772752abc9e3cf0ecfc82903cb159b58c9ebeb8ee0baf42578694.png",
+      "snippet": "The Patient API enables the secure exchange of personal details like name, address, phone number, and date of birth with third party applications.",
+      "snippet_highlighted_words": [
+        "API"
+      ],
+      "missing": [
+        "advisors"
+      ],
+      "must_include": {
+        "word": "advisors",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=missouri+healthcare+%22advisors%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ5t4CegQIJBAB"
+      },
+      "source": "Humana Data Exchange"
+    },
+    {
+      "position": 3,
+      "title": "MO HCBS Spending Plan Narrative",
+      "link": "https://www.medicaid.gov/medicaid/home-community-based-services/downloads/mo-spending-plan-narrative.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.medicaid.gov/medicaid/home-community-based-services/downloads/mo-spending-plan-narrative.pdf&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQFnoECBcQAQ",
+      "displayed_link": "https://www.medicaid.gov \u203a medicaid \u203a downloads",
+      "snippet": "HCBS waiver provider rates for the Division of DD have increased by an estimated 46% on average since SFY 2022. Likewise, since SFY 2022, provider rates for the ...",
+      "snippet_highlighted_words": [
+        "provider",
+        "provider"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 30
+          },
+          "extensions": [
+            "30 pages"
+          ]
+        }
+      },
+      "source": "Medicaid.gov"
+    },
+    {
+      "position": 4,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQFnoECB4QAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646c237af89933a89effe5/images/e47723c2f80772752abc9e3cf0ecfc8252a394d38e267e622f51519e3bb30c2d.png",
+      "date": "Jan 1, 2025",
+      "snippet": "Welcome to the UnitedHealthcare Care Provider Administrative Guide for Commercial and Medicare Advantage. (MA) products.",
+      "snippet_highlighted_words": [
+        "Provider",
+        "Medicare Advantage"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "missing": [
+        "advisors"
+      ],
+      "must_include": {
+        "word": "advisors",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=missouri+healthcare+%22advisors%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ5t4CegQIJxAB"
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 5,
+      "title": "HMA Insights | HMA Weekly Roundup | Vital Viewpoints ...",
+      "link": "https://www.healthmanagement.com/insights/page/2/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthmanagement.com/insights/page/2/&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQFnoECBgQAQ",
+      "displayed_link": "https://www.healthmanagement.com \u203a insights \u203a page",
+      "favicon": "https://serpapi.com/searches/68646c237af89933a89effe5/images/e47723c2f80772752abc9e3cf0ecfc829dabe22fce07b9b234f8be3c95ba79ca.png",
+      "snippet": "... FHIR-based APIs for Patient Access and Provider Directories. Mandated Payer to Payer Data Exchange for patients to take their data with them if ...",
+      "snippet_highlighted_words": [
+        "FHIR-based APIs for Patient Access and Provider Directories"
+      ],
+      "source": "Health Management Associates"
+    },
+    {
+      "position": 6,
+      "title": "CMS Prior Authorization Final Rule Requirements",
+      "link": "https://mhk.com/blog/preparing-for-the-future-of-prior-authorization-changes-in-the-2024-cms-final-rules-and-beyond/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mhk.com/blog/preparing-for-the-future-of-prior-authorization-changes-in-the-2024-cms-final-rules-and-beyond/&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQFnoECBYQAQ",
+      "displayed_link": "https://mhk.com \u203a blog \u203a preparing-for-the-future-of-p...",
+      "favicon": "https://serpapi.com/searches/68646c237af89933a89effe5/images/e47723c2f80772752abc9e3cf0ecfc8282d2a4f1b6e4b8d55befc974c3ecf033.png",
+      "date": "Jun 18, 2024",
+      "snippet": "Prior authorization may only be used by Medicare Advantage (MA) plans ... The requirement can be satisfied using either a FHIR-based API or ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "FHIR",
+        "API"
+      ],
+      "source": "MHK"
+    },
+    {
+      "position": 7,
+      "title": "Electronic Health Record (EHR) Draft Developer-Reported ...",
+      "link": "https://www.urban.org/sites/default/files/2021/10/05/electronic_health_record_ehr_draft_developer-reported_public_comments.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.urban.org/sites/default/files/2021/10/05/electronic_health_record_ehr_draft_developer-reported_public_comments.pdf&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQFnoECBUQAQ",
+      "displayed_link": "https://www.urban.org \u203a sites \u203a files \u203a 2021/10/05",
+      "favicon": "https://serpapi.com/searches/68646c237af89933a89effe5/images/e47723c2f80772752abc9e3cf0ecfc82293ef0dbb221cf20aa29c973b35267bf.png",
+      "date": "Oct 5, 2021",
+      "snippet": "While the Academy supports the use of Fast Healthcare Interoperability Resources (FHIR) and participates in developing and improving FHIR ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "FHIR"
+      ],
+      "source": "Urban Institute"
+    },
+    {
+      "position": 8,
+      "title": "A Shared Nationwide Interoperability Roadmap",
+      "link": "https://www.healthit.gov/sites/default/files/hie-interoperability/nationwide-interoperability-roadmap-final-version-1.0.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/hie-interoperability/nationwide-interoperability-roadmap-final-version-1.0.pdf&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQFnoECDwQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/68646c237af89933a89effe5/images/e47723c2f80772752abc9e3cf0ecfc8226809d49b3bcfe5bc68e574e9f97f6bf.jpeg",
+      "snippet": "We are closer than ever before. The exciting successes of today \u2013 and the bright future of tomorrow \u2013 are the result of more than a decade's worth of work ...",
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 94
+          },
+          "extensions": [
+            "94 pages"
+          ]
+        }
+      },
+      "missing": [
+        "advisors"
+      ],
+      "must_include": {
+        "word": "advisors",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=missouri+healthcare+%22advisors%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ5t4CegQIPRAB"
+      },
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "Coverage API",
+      "link": "https://developers.humana.com/coverage-api/doc",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developers.humana.com/coverage-api/doc&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQFnoECDcQAQ",
+      "displayed_link": "https://developers.humana.com \u203a coverage-api \u203a doc",
+      "favicon": "https://serpapi.com/searches/68646c237af89933a89effe5/images/e47723c2f80772752abc9e3cf0ecfc82bc84cb3e63d05f6fd99a2129c1a94252.png",
+      "snippet": "The Coverage API provides information about the member's Humana insurance plans in accordance with the R4 FHIR specification.",
+      "snippet_highlighted_words": [
+        "API",
+        "plans",
+        "FHIR"
+      ],
+      "missing": [
+        "advisors"
+      ],
+      "must_include": {
+        "word": "advisors",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=missouri+healthcare+%22advisors%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ5t4CegQIORAB"
+      },
+      "source": "Humana Data Exchange"
+    },
+    {
+      "position": 10,
+      "title": "Data Interoperability Solutions for Healthcare",
+      "link": "https://www.wolterskluwer.com/en/solutions/health-language/data-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wolterskluwer.com/en/solutions/health-language/data-interoperability&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQFnoECDQQAQ",
+      "displayed_link": "https://www.wolterskluwer.com \u203a health-language \u203a data...",
+      "favicon": "https://serpapi.com/searches/68646c237af89933a89effe5/images/e47723c2f80772752abc9e3cf0ecfc82c646bcdb5e881f44ae63e6bed9933d46.png",
+      "snippet": "Terminology and clinical experts share strategies to address interoperability, FHIR, health equity, and value-based payment models in this on-demand webinar.",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "Wolters Kluwer"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Medicare Advantage API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Medicare+Advantage+API&sa=X&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Medicare+Advantage+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Humana Research database",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Humana+Research+database&sa=X&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Humana+Research+database&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Humana developer portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Humana+developer+portal&sa=X&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ1QJ6BAgwEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Humana+developer+portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Humana FHIR",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Humana+FHIR&sa=X&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Humana+FHIR&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=KmxkaP_dN9Cx5NoPxuyTyQ4&start=10&sa=N&sstk=Ac65TH5moWol2uBjAfEwFktKM_M12t076nBXrX_02dD9SzW2Ab7-4kilH5NJ3sPy4UrcJ8iqIxwp8soMRgPhtFXQzc6w1Ibx3p0aKw&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ8NMDegQICBAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=KmxkaP_dN9Cx5NoPxuyTyQ4&start=10&sa=N&sstk=Ac65TH5moWol2uBjAfEwFktKM_M12t076nBXrX_02dD9SzW2Ab7-4kilH5NJ3sPy4UrcJ8iqIxwp8soMRgPhtFXQzc6w1Ibx3p0aKw&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=KmxkaP_dN9Cx5NoPxuyTyQ4&start=20&sa=N&sstk=Ac65TH5moWol2uBjAfEwFktKM_M12t076nBXrX_02dD9SzW2Ab7-4kilH5NJ3sPy4UrcJ8iqIxwp8soMRgPhtFXQzc6w1Ibx3p0aKw&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=KmxkaP_dN9Cx5NoPxuyTyQ4&start=30&sa=N&sstk=Ac65TH5moWol2uBjAfEwFktKM_M12t076nBXrX_02dD9SzW2Ab7-4kilH5NJ3sPy4UrcJ8iqIxwp8soMRgPhtFXQzc6w1Ibx3p0aKw&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ8tMDegQICBAI",
+      "5": "https://www.google.com/search?q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=KmxkaP_dN9Cx5NoPxuyTyQ4&start=40&sa=N&sstk=Ac65TH5moWol2uBjAfEwFktKM_M12t076nBXrX_02dD9SzW2Ab7-4kilH5NJ3sPy4UrcJ8iqIxwp8soMRgPhtFXQzc6w1Ibx3p0aKw&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ8tMDegQICBAK",
+      "6": "https://www.google.com/search?q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=KmxkaP_dN9Cx5NoPxuyTyQ4&start=50&sa=N&sstk=Ac65TH5moWol2uBjAfEwFktKM_M12t076nBXrX_02dD9SzW2Ab7-4kilH5NJ3sPy4UrcJ8iqIxwp8soMRgPhtFXQzc6w1Ibx3p0aKw&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ8tMDegQICBAM",
+      "7": "https://www.google.com/search?q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=KmxkaP_dN9Cx5NoPxuyTyQ4&start=60&sa=N&sstk=Ac65TH5moWol2uBjAfEwFktKM_M12t076nBXrX_02dD9SzW2Ab7-4kilH5NJ3sPy4UrcJ8iqIxwp8soMRgPhtFXQzc6w1Ibx3p0aKw&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ8tMDegQICBAO",
+      "8": "https://www.google.com/search?q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=KmxkaP_dN9Cx5NoPxuyTyQ4&start=70&sa=N&sstk=Ac65TH5moWol2uBjAfEwFktKM_M12t076nBXrX_02dD9SzW2Ab7-4kilH5NJ3sPy4UrcJ8iqIxwp8soMRgPhtFXQzc6w1Ibx3p0aKw&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ8tMDegQICBAQ",
+      "9": "https://www.google.com/search?q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=KmxkaP_dN9Cx5NoPxuyTyQ4&start=80&sa=N&sstk=Ac65TH5moWol2uBjAfEwFktKM_M12t076nBXrX_02dD9SzW2Ab7-4kilH5NJ3sPy4UrcJ8iqIxwp8soMRgPhtFXQzc6w1Ibx3p0aKw&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ8tMDegQICBAS",
+      "10": "https://www.google.com/search?q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=KmxkaP_dN9Cx5NoPxuyTyQ4&start=90&sa=N&sstk=Ac65TH5moWol2uBjAfEwFktKM_M12t076nBXrX_02dD9SzW2Ab7-4kilH5NJ3sPy4UrcJ8iqIxwp8soMRgPhtFXQzc6w1Ibx3p0aKw&ved=2ahUKEwj_moec5ZyOAxXQGFkFHUb2JOkQ8tMDegQICBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=missouri+healthcare+advisors+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

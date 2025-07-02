@@ -1,0 +1,256 @@
+{
+  "search_metadata": {
+    "id": "68646c30eeabd3fa4b81b630",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/cc4bcdac9af9cc31/68646c30eeabd3fa4b81b630.json",
+    "created_at": "2025-07-01 23:16:00 UTC",
+    "processed_at": "2025-07-01 23:16:00 UTC",
+    "google_url": "https://www.google.com/search?q=%22mvp+health+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22mvp+health+care+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/cc4bcdac9af9cc31/68646c30eeabd3fa4b81b630.html",
+    "total_time_taken": 1.3
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"mvp health care Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"mvp health care Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 1290,
+    "time_taken_displayed": 0.52,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "mvp health care Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "mvp health care Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability APIs for Third Party App Developers",
+      "link": "https://www.mvphealthcare.com/developers/apis",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mvphealthcare.com/developers/apis&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQFnoECB8QAQ",
+      "displayed_link": "https://www.mvphealthcare.com \u203a developers \u203a apis",
+      "favicon": "https://serpapi.com/searches/68646c30eeabd3fa4b81b630/images/692ee4cb5e9838e0ca343f2e305a49c314be8d1199f04381bc7140f71e805346.png",
+      "snippet": "MVP Health Care interoperability APIs enable MVP Health Care members to consent to have their data shared with Third Party applications. They also allow Third ...",
+      "snippet_highlighted_words": [
+        "MVP Health Care interoperability APIs"
+      ],
+      "source": "MVP Health Care"
+    },
+    {
+      "position": 2,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQFnoECBsQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/68646c30eeabd3fa4b81b630/images/692ee4cb5e9838e0ca343f2e305a49c3124d198a54ffd70e156f5e3f4089c625.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. ... MVP Health Care. MVP ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR API",
+        "MVP Health Care"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 3,
+      "title": "December 6, 2022 Chiquita Brooks-LaSure ... - Confluence - HL7",
+      "link": "https://confluence.hl7.org/download/attachments/76162213/HL7%20CMS%20Request%20for%20Information_NDH%20Letter.pdf?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/76162213/HL7%2520CMS%2520Request%2520for%2520Information_NDH%2520Letter.pdf%3Fapi%3Dv2&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQFnoECBYQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a attachments \u203a api=v2",
+      "favicon": "https://serpapi.com/searches/68646c30eeabd3fa4b81b630/images/692ee4cb5e9838e0ca343f2e305a49c37892730231843d36ae67e7e583ae3a9c.png",
+      "snippet": "required Medicare Advantage, Medicaid, and Children's Health Insurance Program (CHIP) to make provider directory information available via FHIR APIs. In ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "and",
+        "Health Insurance",
+        "provider directory",
+        "FHIR APIs"
+      ],
+      "source": "HL7"
+    },
+    {
+      "position": 4,
+      "title": "CMS-0058-NC P.O. Box 8013 Baltim",
+      "link": "https://downloads.regulations.gov/CMS-2022-0163-0384/attachment_1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://downloads.regulations.gov/CMS-2022-0163-0384/attachment_1.pdf&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQFnoECB4QAQ",
+      "displayed_link": "https://downloads.regulations.gov \u203a attachment_1",
+      "snippet": "Health Insurance Program (CHIP) to make provider directory information available via FHIR APIs. In addition, Qualified Health Plan (QHP) issuers on the ...",
+      "snippet_highlighted_words": [
+        "Health Insurance",
+        "provider directory",
+        "FHIR APIs",
+        "Health Plan"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 5
+          },
+          "extensions": [
+            "5 pages"
+          ]
+        }
+      },
+      "source": "Regulations.gov"
+    },
+    {
+      "position": 5,
+      "title": "Supporting the CMS Interoperability and Patient Access ...",
+      "link": "https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/supporting-the-cms-interoperability-and-patient-access-final-rules-with-the-azur/2417698",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/supporting-the-cms-interoperability-and-patient-access-final-rules-with-the-azur/2417698&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQFnoECBkQAQ",
+      "displayed_link": "https://techcommunity.microsoft.com \u203a blog \u203a supporti...",
+      "favicon": "https://serpapi.com/searches/68646c30eeabd3fa4b81b630/images/692ee4cb5e9838e0ca343f2e305a49c37501d7d67e59fe03f7aab5b93dd5bc4c.png",
+      "date": "Jun 7, 2021",
+      "snippet": "These APIs enable patients to easily access their claims and encounter data and find providers for specific care needs through third-party applications.",
+      "snippet_highlighted_words": [
+        "APIs",
+        "and",
+        "and",
+        "providers",
+        "care"
+      ],
+      "source": "Microsoft Community Hub"
+    },
+    {
+      "position": 6,
+      "title": "Making Regulation Work for You and Your Members",
+      "link": "https://www.intersystems.com/resources/making-regulation-work-for-you-and-your-members/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.intersystems.com/resources/making-regulation-work-for-you-and-your-members/&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQFnoECBgQAQ",
+      "displayed_link": "https://www.intersystems.com \u203a resources \u203a making-reg...",
+      "favicon": "https://serpapi.com/searches/68646c30eeabd3fa4b81b630/images/692ee4cb5e9838e0ca343f2e305a49c3adf4e7f750cfb29d07dfb39105001ed1.png",
+      "snippet": "The CMS Interoperability and Prior Authorization Rule \u00b7 Dominick Bizzarro, Chief Strategy Officer, MVP Health Care \u00b7 Douglas Dietzman, Managing Director, ...",
+      "snippet_highlighted_words": [
+        "MVP Health Care"
+      ],
+      "source": "InterSystems"
+    },
+    {
+      "position": 7,
+      "title": "A Review of the CMS RFI on National Healthcare Directory",
+      "link": "https://defacto.health/2022/10/14/a-review-of-the-cms-rfi-on-national-healthcare-directory/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://defacto.health/2022/10/14/a-review-of-the-cms-rfi-on-national-healthcare-directory/&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQFnoECBwQAQ",
+      "displayed_link": "https://defacto.health \u203a 2022/10/14 \u203a a-review-of-the-cm...",
+      "favicon": "https://serpapi.com/searches/68646c30eeabd3fa4b81b630/images/692ee4cb5e9838e0ca343f2e305a49c393b05a86df5d343218adca9a47ad8db2.png",
+      "date": "Oct 14, 2022",
+      "snippet": "The RFI seeks industry feedback on the ambitious idea of creating a public directory of healthcare providers to streamline the collection of provider data.",
+      "snippet_highlighted_words": [
+        "directory",
+        "healthcare providers"
+      ],
+      "source": "Defacto Health"
+    },
+    {
+      "position": 8,
+      "title": "Product Updates - Ideon",
+      "link": "https://ideonapi.com/product-updates/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ideonapi.com/product-updates/&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQFnoECC4QAQ",
+      "displayed_link": "https://ideonapi.com \u203a product-updates",
+      "favicon": "https://serpapi.com/searches/68646c30eeabd3fa4b81b630/images/692ee4cb5e9838e0ca343f2e305a49c397bbbd5a9b1f9ecd8771576786bd0f45.png",
+      "snippet": "We're excited to announce that we've been able to reduce Provider Search latency by 75%, with similar improvements for Medical and Medicare Advantage Plan ...",
+      "snippet_highlighted_words": [
+        "Provider Search",
+        "Medical and Medicare Advantage Plan"
+      ],
+      "source": "ideonapi.com"
+    },
+    {
+      "position": 9,
+      "title": "Health Care Payment Learning & Action Network",
+      "link": "https://hcp-lan.org/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hcp-lan.org/&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQFnoECC8QAQ",
+      "displayed_link": "https://hcp-lan.org",
+      "favicon": "https://serpapi.com/searches/68646c30eeabd3fa4b81b630/images/692ee4cb5e9838e0ca343f2e305a49c3030c5a5aad3f17b73304376e52a8742c.png",
+      "snippet": "Medicare, Medicaid, BlueCross BlueShield of Vermont (BCBSVT), MVP Health Care, and the State Employees' Health Care Plan \u2014 a self-insured plan administered ...",
+      "snippet_highlighted_words": [
+        "Medicare",
+        "MVP Health Care"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "About Us",
+            "link": "https://hcp-lan.org/about-us/"
+          },
+          {
+            "title": "APM Framework",
+            "link": "https://hcp-lan.org/apm-framework/"
+          },
+          {
+            "title": "Accountable Care Curve",
+            "link": "https://hcp-lan.org/accountable-care-curve/"
+          },
+          {
+            "title": "APM Roadmap",
+            "link": "https://hcp-lan.org/apm-roadmap/"
+          }
+        ]
+      },
+      "source": "Health Care Payment Learning & Action Network"
+    },
+    {
+      "position": 10,
+      "title": "Patient Portal Software Development",
+      "link": "https://belitsoft.com/custom-application-development-services/healthcare-software-development/how-to-develop-a-patient-portal-features-to-include-in-your-mvp",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://belitsoft.com/custom-application-development-services/healthcare-software-development/how-to-develop-a-patient-portal-features-to-include-in-your-mvp&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQFnoECDQQAQ",
+      "displayed_link": "https://belitsoft.com \u203a healthcare-software-development",
+      "favicon": "https://serpapi.com/searches/68646c30eeabd3fa4b81b630/images/692ee4cb5e9838e0ca343f2e305a49c358998c1e0b084d74d35d3d7a1afb7f67.png",
+      "date": "Feb 21, 2025",
+      "snippet": "Medical patient portal is an extension of EHR. Data from it is published by a healthcare organization to the application with 24/7 online access.",
+      "snippet_highlighted_words": [
+        "Medical",
+        "healthcare"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 5.0,
+            "reviews": 5
+          },
+          "extensions": [
+            "5.0(5)"
+          ]
+        }
+      },
+      "source": "Belitsoft"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=MWxkaM_zBc-rwPAP79XFyAo&start=10&sa=N&sstk=Ac65TH5wYFZ1Z85k_pd9Kt0nNwnSOfKg5GtWW8XakjcFj0VdAo5cVUfcSqJsWj-a1elW-0oa8dnOL2SPnaxgmExBagTysti_5Hbe-A&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQ8NMDegQICBAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=MWxkaM_zBc-rwPAP79XFyAo&start=10&sa=N&sstk=Ac65TH5wYFZ1Z85k_pd9Kt0nNwnSOfKg5GtWW8XakjcFj0VdAo5cVUfcSqJsWj-a1elW-0oa8dnOL2SPnaxgmExBagTysti_5Hbe-A&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQ8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=MWxkaM_zBc-rwPAP79XFyAo&start=20&sa=N&sstk=Ac65TH5wYFZ1Z85k_pd9Kt0nNwnSOfKg5GtWW8XakjcFj0VdAo5cVUfcSqJsWj-a1elW-0oa8dnOL2SPnaxgmExBagTysti_5Hbe-A&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQ8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=MWxkaM_zBc-rwPAP79XFyAo&start=30&sa=N&sstk=Ac65TH5wYFZ1Z85k_pd9Kt0nNwnSOfKg5GtWW8XakjcFj0VdAo5cVUfcSqJsWj-a1elW-0oa8dnOL2SPnaxgmExBagTysti_5Hbe-A&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQ8tMDegQICBAI",
+      "5": "https://www.google.com/search?q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=MWxkaM_zBc-rwPAP79XFyAo&start=40&sa=N&sstk=Ac65TH5wYFZ1Z85k_pd9Kt0nNwnSOfKg5GtWW8XakjcFj0VdAo5cVUfcSqJsWj-a1elW-0oa8dnOL2SPnaxgmExBagTysti_5Hbe-A&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQ8tMDegQICBAK",
+      "6": "https://www.google.com/search?q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=MWxkaM_zBc-rwPAP79XFyAo&start=50&sa=N&sstk=Ac65TH5wYFZ1Z85k_pd9Kt0nNwnSOfKg5GtWW8XakjcFj0VdAo5cVUfcSqJsWj-a1elW-0oa8dnOL2SPnaxgmExBagTysti_5Hbe-A&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQ8tMDegQICBAM",
+      "7": "https://www.google.com/search?q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=MWxkaM_zBc-rwPAP79XFyAo&start=60&sa=N&sstk=Ac65TH5wYFZ1Z85k_pd9Kt0nNwnSOfKg5GtWW8XakjcFj0VdAo5cVUfcSqJsWj-a1elW-0oa8dnOL2SPnaxgmExBagTysti_5Hbe-A&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQ8tMDegQICBAO",
+      "8": "https://www.google.com/search?q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=MWxkaM_zBc-rwPAP79XFyAo&start=70&sa=N&sstk=Ac65TH5wYFZ1Z85k_pd9Kt0nNwnSOfKg5GtWW8XakjcFj0VdAo5cVUfcSqJsWj-a1elW-0oa8dnOL2SPnaxgmExBagTysti_5Hbe-A&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQ8tMDegQICBAQ",
+      "9": "https://www.google.com/search?q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=MWxkaM_zBc-rwPAP79XFyAo&start=80&sa=N&sstk=Ac65TH5wYFZ1Z85k_pd9Kt0nNwnSOfKg5GtWW8XakjcFj0VdAo5cVUfcSqJsWj-a1elW-0oa8dnOL2SPnaxgmExBagTysti_5Hbe-A&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQ8tMDegQICBAS",
+      "10": "https://www.google.com/search?q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=MWxkaM_zBc-rwPAP79XFyAo&start=90&sa=N&sstk=Ac65TH5wYFZ1Z85k_pd9Kt0nNwnSOfKg5GtWW8XakjcFj0VdAo5cVUfcSqJsWj-a1elW-0oa8dnOL2SPnaxgmExBagTysti_5Hbe-A&ved=2ahUKEwiP0ICf5ZyOAxXPFRAIHe9qEakQ8tMDegQICBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=mvp+health+care+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

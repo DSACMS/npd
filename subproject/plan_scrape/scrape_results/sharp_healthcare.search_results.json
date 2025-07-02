@@ -1,0 +1,335 @@
+{
+  "search_metadata": {
+    "id": "68646d51c29c3dcd7b448a16",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/38278743d4d4e17e/68646d51c29c3dcd7b448a16.json",
+    "created_at": "2025-07-01 23:20:49 UTC",
+    "processed_at": "2025-07-01 23:20:49 UTC",
+    "google_url": "https://www.google.com/search?q=sharp+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=sharp+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/38278743d4d4e17e/68646d51c29c3dcd7b448a16.html",
+    "total_time_taken": 2.92
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "sharp healthcare Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "sharp healthcare Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 79,
+    "time_taken_displayed": 0.36,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "API access for application developers",
+      "link": "https://www.sharphealthplan.com/api-access-for-developers",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.sharphealthplan.com/api-access-for-developers&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQFnoECBkQAQ",
+      "displayed_link": "https://www.sharphealthplan.com \u203a api-access-for-devel...",
+      "favicon": "https://serpapi.com/searches/68646d51c29c3dcd7b448a16/images/4cf6bc114c3779c20a12cbdd4c6d2302221ac2b85fa7fbd03fba38e64d44af03.png",
+      "date": "May 16, 2025",
+      "snippet": "Sharp Health Plan has adopted and developed FHIR resources to deliver clear, standardized data formats to registered application developers.",
+      "snippet_highlighted_words": [
+        "Sharp",
+        "FHIR"
+      ],
+      "source": "Sharp Health Plan"
+    },
+    {
+      "position": 2,
+      "title": "Sharp Health Plan Provider Directory API",
+      "link": "https://anypoint.mulesoft.com/exchange/portals/sharp-healthcare-6/71c86d0d-b0f5-48df-8d81-08c3787c3a8a/provider-directory-api/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://anypoint.mulesoft.com/exchange/portals/sharp-healthcare-6/71c86d0d-b0f5-48df-8d81-08c3787c3a8a/provider-directory-api/&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQFnoECBgQAQ",
+      "displayed_link": "https://anypoint.mulesoft.com \u203a exchange \u203a portals \u203a pr...",
+      "favicon": "https://serpapi.com/searches/68646d51c29c3dcd7b448a16/images/4cf6bc114c3779c20a12cbdd4c6d2302c2b7dfe065ebeffda2820cbefabcda90.png",
+      "snippet": "The Provider Directory API accesses the Sharp Health Plan's FHIR server portion of the Provider Directory. Utilizing only read-only RESTful GET API calls ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Sharp",
+        "FHIR",
+        "Provider Directory",
+        "API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=sharp+healthcare+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQ5t4CegQIHhAB"
+      },
+      "source": "Anypoint Platform"
+    },
+    {
+      "position": 3,
+      "title": "Community Health Group | San Diego County Health Plans for ...",
+      "link": "https://www.chgsd.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chgsd.com/&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQFnoECBcQAQ",
+      "displayed_link": "https://www.chgsd.com",
+      "favicon": "https://serpapi.com/searches/68646d51c29c3dcd7b448a16/images/4cf6bc114c3779c20a12cbdd4c6d23029c8ace87ff19688d4b4823268270b25a.png",
+      "snippet": "FHIR Developer API \u00b7 Mission, Vision Statement \u00b7 MOU \u00b7 Population Health \u00b7 Quality ... Search Provider Directory \u00b7 Provider Portal Sign in. Claims. Submitting a ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Medi-Cal",
+            "link": "https://www.chgsd.com/chg-plans/medi-cal"
+          },
+          {
+            "title": "Service Authorization Request",
+            "link": "https://www.chgsd.com/providers/authorizations/service-authorization-request"
+          },
+          {
+            "title": "Provider Disputes",
+            "link": "https://www.chgsd.com/providers/provider-services/provider-disputes"
+          },
+          {
+            "title": "Provider Directory",
+            "link": "https://providerdirectory.chgsd.com/"
+          }
+        ]
+      },
+      "source": "Community Health Group"
+    },
+    {
+      "position": 4,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQFnoECB0QAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646d51c29c3dcd7b448a16/images/4cf6bc114c3779c20a12cbdd4c6d230266bb8368bc844fe19430a239030b0a2e.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 5,
+      "title": "Mental Health Services",
+      "link": "https://www.optumsandiego.com/content/dam/san-diego/documents/smh-and-dmc-ods/uttm/mh/previous-fy/UTTM%20FY%2023-24%20Combined.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.optumsandiego.com/content/dam/san-diego/documents/smh-and-dmc-ods/uttm/mh/previous-fy/UTTM%2520FY%252023-24%2520Combined.pdf&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQFnoECB8QAQ",
+      "displayed_link": "https://www.optumsandiego.com \u203a previous-fy",
+      "favicon": "https://serpapi.com/searches/68646d51c29c3dcd7b448a16/images/4cf6bc114c3779c20a12cbdd4c6d2302b9414b51a512fff73c08ef1763d67589.png",
+      "author": "by O Tab",
+      "snippet": "Provider Directory Application Programming Interface (API) has launched! \u2022 The CMS Interoperability Rule requires Behavioral Health Plans to ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "API",
+        "Plans"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 75
+          },
+          "extensions": [
+            "75 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=sharp+healthcare+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQ5t4CegQIIRAB"
+      },
+      "source": "Optum San Diego"
+    },
+    {
+      "position": 6,
+      "title": "Interoperability for Texas: Powering Health 2024",
+      "link": "https://www.hhs.texas.gov/sites/default/files/documents/interoperability-texas-powering-health-dec-2024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.texas.gov/sites/default/files/documents/interoperability-texas-powering-health-dec-2024.pdf&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQFnoECBwQAQ",
+      "displayed_link": "https://www.hhs.texas.gov \u203a files \u203a documents \u203a in...",
+      "favicon": "https://serpapi.com/searches/68646d51c29c3dcd7b448a16/images/4cf6bc114c3779c20a12cbdd4c6d230249106fd7319fe5b220fc7375ff3562f5.png",
+      "date": "Dec 1, 2024",
+      "snippet": "Provider Directory API: Available provider names; provider addresses, phone numbers, and specialties. The project leveraged the FHIR ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 32
+          },
+          "extensions": [
+            "32 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=sharp+healthcare+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQ5t4CegQIIBAB"
+      },
+      "source": "Texas Health and Human Services (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQFnoECBsQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646d51c29c3dcd7b448a16/images/4cf6bc114c3779c20a12cbdd4c6d23029644a70414ed561294fcffefc1321a6f.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 8,
+      "title": "Health Care Payments Data Program - HCAI",
+      "link": "https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306.pdf&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQFnoECDgQAQ",
+      "displayed_link": "https://hcai.ca.gov \u203a uploads \u203a 2020/12 \u203a HPD-L...",
+      "favicon": "https://serpapi.com/searches/68646d51c29c3dcd7b448a16/images/4cf6bc114c3779c20a12cbdd4c6d230278357d48e59d6d62931cc3dcdf876cc4.png",
+      "date": "Mar 9, 2020",
+      "snippet": "Hierarchical X12 274 Health Care Provider Directory. While there is ... (FHIR\u00ae), which are open-source Health Level Seven International ...",
+      "snippet_highlighted_words": [
+        "Health Care Provider Directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 207
+          },
+          "extensions": [
+            "207 pages"
+          ]
+        }
+      },
+      "source": "HCAI - Department of Health Care Access and Information (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "State Medicaid Health Information Technology Plan (SMHP)",
+      "link": "https://www.hhs.texas.gov/sites/default/files/documents/medicaid-health-it-plan.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.texas.gov/sites/default/files/documents/medicaid-health-it-plan.pdf&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQFnoECDcQAQ",
+      "displayed_link": "https://www.hhs.texas.gov \u203a files \u203a documents \u203a m...",
+      "favicon": "https://serpapi.com/searches/68646d51c29c3dcd7b448a16/images/4cf6bc114c3779c20a12cbdd4c6d23022dffb908bfdacaf6d9a3eaa947c5e5bb.png",
+      "date": "Mar 25, 2022",
+      "snippet": "networks available via a FHIR-based Provider Directory API to facilitate public access to accurate information about in-network providers ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 116
+          },
+          "extensions": [
+            "116 pages"
+          ]
+        }
+      },
+      "source": "Texas Health and Human Services (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "Consumer-Mediated Data Exchange for Research",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6682295/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pmc.ncbi.nlm.nih.gov/articles/PMC6682295/&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQFnoECDYQAQ",
+      "displayed_link": "https://pmc.ncbi.nlm.nih.gov \u203a articles \u203a PMC6682295",
+      "author": "by Y Bracha",
+      "snippet": "FHIR means Fast Healthcare Interoperability Resources; this is a relatively new standard for exchanging health care information electronically [53-56]. As noted ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Healthcare",
+        "health care"
+      ],
+      "source": "National Institutes of Health (NIH) | (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Sharp API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Sharp+API&sa=X&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Sharp+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Sharp webscheduler",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Sharp+webscheduler&sa=X&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Sharp+webscheduler&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Sharp Intranet",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Sharp+Intranet&sa=X&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Sharp+Intranet&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Sharp Workday",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Sharp+Workday&sa=X&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Sharp+Workday&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=sharp+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=Um1kaJCyFfLAwPAPhOSR4QY&start=10&sa=N&sstk=Ac65TH7gbSRd31MkAKSMgTQzAf01rRbfHk01fN2n6BHRTE0L6E9Y3UxpvzaYWFD5qvOrKM7gtFgiBm-JKBvm3JItmtvQU9LdudyDzQ&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQ8NMDegQIChAO",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=sharp+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=Um1kaJCyFfLAwPAPhOSR4QY&start=10&sa=N&sstk=Ac65TH7gbSRd31MkAKSMgTQzAf01rRbfHk01fN2n6BHRTE0L6E9Y3UxpvzaYWFD5qvOrKM7gtFgiBm-JKBvm3JItmtvQU9LdudyDzQ&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=sharp+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=Um1kaJCyFfLAwPAPhOSR4QY&start=20&sa=N&sstk=Ac65TH7gbSRd31MkAKSMgTQzAf01rRbfHk01fN2n6BHRTE0L6E9Y3UxpvzaYWFD5qvOrKM7gtFgiBm-JKBvm3JItmtvQU9LdudyDzQ&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQ8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=sharp+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=Um1kaJCyFfLAwPAPhOSR4QY&start=30&sa=N&sstk=Ac65TH7gbSRd31MkAKSMgTQzAf01rRbfHk01fN2n6BHRTE0L6E9Y3UxpvzaYWFD5qvOrKM7gtFgiBm-JKBvm3JItmtvQU9LdudyDzQ&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQ8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=sharp+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=Um1kaJCyFfLAwPAPhOSR4QY&start=40&sa=N&sstk=Ac65TH7gbSRd31MkAKSMgTQzAf01rRbfHk01fN2n6BHRTE0L6E9Y3UxpvzaYWFD5qvOrKM7gtFgiBm-JKBvm3JItmtvQU9LdudyDzQ&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQ8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=sharp+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=Um1kaJCyFfLAwPAPhOSR4QY&start=50&sa=N&sstk=Ac65TH7gbSRd31MkAKSMgTQzAf01rRbfHk01fN2n6BHRTE0L6E9Y3UxpvzaYWFD5qvOrKM7gtFgiBm-JKBvm3JItmtvQU9LdudyDzQ&ved=2ahUKEwiQo_eo5pyOAxVyIBAIHQRyJGwQ8tMDegQIChAM"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=sharp+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=sharp+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=sharp+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=sharp+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=sharp+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=sharp+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=sharp+healthcare+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50"
+    }
+  }
+}

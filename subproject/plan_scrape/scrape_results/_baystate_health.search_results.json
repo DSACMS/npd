@@ -1,0 +1,264 @@
+{
+  "search_metadata": {
+    "id": "686464773f79e838ab9cb580",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/2c973503dec0c955/686464773f79e838ab9cb580.json",
+    "created_at": "2025-07-01 22:43:03 UTC",
+    "processed_at": "2025-07-01 22:43:03 UTC",
+    "google_url": "https://www.google.com/search?q=%22baystate+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22baystate+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/2c973503dec0c955/686464773f79e838ab9cb580.html",
+    "total_time_taken": 1.23
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"baystate health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"baystate health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 50,
+    "time_taken_displayed": 0.51,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "baystate health Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "baystate health Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Health Information Technology Council Report to the ...",
+      "link": "https://malegislature.gov/Bills/192/HD4164.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://malegislature.gov/Bills/192/HD4164.pdf&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8QFnoECBoQAQ",
+      "displayed_link": "https://malegislature.gov \u203a Bills",
+      "favicon": "https://serpapi.com/searches/686464773f79e838ab9cb580/images/4096109a74b819901198d9ae2993acafe26f696ac6546fedb179f3715c994eca.jpeg",
+      "snippet": "Service options being considered include a FHIR API to. Provider Directory, FHIR Exchange and Routing Services and FHIR-HL7 Broker and Message. Transformation ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory",
+        "FHIR",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 24
+          },
+          "extensions": [
+            "24 pages"
+          ]
+        }
+      },
+      "source": "General Court of the Commonwealth of Massachusetts (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Health Information Technology Council Report to the ...",
+      "link": "https://malegislature.gov/Reports/18566/SD3264_HITC%202023%20Annual%20Report.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://malegislature.gov/Reports/18566/SD3264_HITC%25202023%2520Annual%2520Report.pdf&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8QFnoECB0QAQ",
+      "displayed_link": "https://malegislature.gov \u203a Reports",
+      "favicon": "https://serpapi.com/searches/686464773f79e838ab9cb580/images/4096109a74b819901198d9ae2993acaf9df072560817dfe7f23177306a376f2f.jpeg",
+      "date": "Jan 1, 2023",
+      "snippet": "C.4 CG API-FHIR 2023 PROVIDER ENGAGEMENT UPDATE. The Mass HIway successfully connected Advocates, Inc., a large behavioral health organization,.",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "PROVIDER",
+        "health"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 38
+          },
+          "extensions": [
+            "38 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=baystate+health+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8Q5t4CegQIIRAB"
+      },
+      "source": "General Court of the Commonwealth of Massachusetts (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Building the Data Capacity for Patient-Centered Outcomes ...",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/8af89f6a131cdc3572c2d3a78d9abba8/os-pcortf-portfolio-report.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/8af89f6a131cdc3572c2d3a78d9abba8/os-pcortf-portfolio-report.pdf&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8QFnoECBwQAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a os-pcortf-portfolio-report",
+      "favicon": "https://serpapi.com/searches/686464773f79e838ab9cb580/images/4096109a74b819901198d9ae2993acaf278d2b974a8fef39ed56e6debf87cc8c.png",
+      "date": "May 20, 2022",
+      "snippet": "\u25cb Implementing Bulk FHIR\u00ae APIs to facilitate efficient access data from health systems and providers. \u2022 Testing the use of split learning ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "APIs",
+        "health",
+        "providers"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 140
+          },
+          "extensions": [
+            "140 pages"
+          ]
+        }
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 4,
+      "title": "Export - Massachusetts eHealth Institute",
+      "link": "https://mehi.masstech.org/api/company/export/96",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mehi.masstech.org/api/company/export/96&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8QFnoECBcQAQ",
+      "displayed_link": "https://mehi.masstech.org \u203a api \u203a company \u203a export",
+      "favicon": "https://serpapi.com/searches/686464773f79e838ab9cb580/images/4096109a74b819901198d9ae2993acaf6ccfa314b52d0bfe263d8dad7fa475c2.png",
+      "snippet": "... Provider Type\",\"Company Connection Type\",\"Company Specialty\",\"Company Query ... Health, Equip, Heartbeat Health, Nomad Health, Redox and WelbeHealth ...",
+      "snippet_highlighted_words": [
+        "Provider",
+        "Health",
+        "Health",
+        "Health"
+      ],
+      "source": "Massachusetts eHealth Institute | MeHI"
+    },
+    {
+      "position": 5,
+      "title": "Assisted Ambulation to Improve Health Outcomes for Older ...",
+      "link": "https://clinicaltrials.gov/ct2/show/NCT05725928?draw=2&rank=1",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://clinicaltrials.gov/ct2/show/NCT05725928%3Fdraw%3D2%26rank%3D1&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8QFnoECBgQAQ",
+      "displayed_link": "https://clinicaltrials.gov \u203a show \u203a NCT05725928",
+      "favicon": "https://serpapi.com/searches/686464773f79e838ab9cb580/images/4096109a74b819901198d9ae2993acaf0d4c75f8c2c5a519a77132d433b35cc8.png",
+      "snippet": "Baystate Medical Center. Contact : Quinn Pack, MD 413-794-7137 quinn ... Insurance with Traditional Medicare or Medicare Advantage. Exclusion Criteria ...",
+      "snippet_highlighted_words": [
+        "Baystate Medical Center",
+        "Medicare Advantage"
+      ],
+      "source": "ClinicalTrials.gov"
+    },
+    {
+      "position": 6,
+      "title": "Outcome Measure Harmonization and Data Infrastructure for ...",
+      "link": "https://effectivehealthcare.ahrq.gov/sites/default/files/pdf/harmonization-depression-draft-report.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://effectivehealthcare.ahrq.gov/sites/default/files/pdf/harmonization-depression-draft-report.pdf&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8QFnoECBsQAQ",
+      "displayed_link": "https://effectivehealthcare.ahrq.gov \u203a files \u203a pdf",
+      "favicon": "https://serpapi.com/searches/686464773f79e838ab9cb580/images/4096109a74b819901198d9ae2993acaf3271306778572478315ccefe7eeecb59.png",
+      "author": "by B Health",
+      "snippet": "The objectives of this task were to design and develop a SMART on FHIR app to calculate and display the harmonized outcome measures, deploy the ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "AHRQ Effective Health Care Program (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "Record History | ver. 334: 2024-10-04 | NCT03072927",
+      "link": "https://clinicaltrials.gov/study/NCT03072927?tab=history&a=334",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://clinicaltrials.gov/study/NCT03072927%3Ftab%3Dhistory%26a%3D334&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8QFnoECBYQAQ",
+      "displayed_link": "https://clinicaltrials.gov \u203a study \u203a NCT03072927",
+      "favicon": "https://serpapi.com/searches/686464773f79e838ab9cb580/images/4096109a74b819901198d9ae2993acaf38f36d2f0c8946468bc74bfe0d230d3c.png",
+      "snippet": "This table shows all the versions of this study record arranged in order by submitted date. To view one version of the study record, click the submitted ...",
+      "source": "ClinicalTrials.gov"
+    },
+    {
+      "position": 8,
+      "title": "Buyers Guide: A close look at 8 population health platforms",
+      "link": "https://www.healthcareitnews.com/news/buyers-guide-close-look-8-population-health-platforms",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcareitnews.com/news/buyers-guide-close-look-8-population-health-platforms&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8QFnoECDEQAQ",
+      "displayed_link": "https://www.healthcareitnews.com \u203a news \u203a buyers-guide...",
+      "favicon": "https://serpapi.com/searches/686464773f79e838ab9cb580/images/4096109a74b819901198d9ae2993acaf4b876d048de97a75240b66e3bc649588.png",
+      "date": "Aug 31, 2016",
+      "snippet": "... FHIR and the RESTful API. Proactive analytics deliver insights to care teams in real time to support decision making. More about Transcend ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=baystate+health+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8Q5t4CegQINRAB"
+      },
+      "source": "Healthcare IT News"
+    },
+    {
+      "position": 9,
+      "title": "NIH Pragmatic Trials Collaboratory Steering Committee ...",
+      "link": "https://dcricollab.dcri.duke.edu/sites/NIHKR/KR/2025%20SC%20Meeting%20eBinder_Final.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dcricollab.dcri.duke.edu/sites/NIHKR/KR/2025%2520SC%2520Meeting%2520eBinder_Final.pdf&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8QFnoECDQQAQ",
+      "displayed_link": "https://dcricollab.dcri.duke.edu \u203a sites \u203a NIHKR",
+      "date": "May 9, 2025",
+      "snippet": "The large study sample will be recruited from 4 diverse health plans to represent the ethnic and racial composition of Medicare enrollees as ...",
+      "snippet_highlighted_words": [
+        "health plans",
+        "Medicare"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 224
+          },
+          "extensions": [
+            "224 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=baystate+health+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8Q5t4CegQINhAB"
+      },
+      "source": "Duke University"
+    },
+    {
+      "position": 10,
+      "title": "ITdotHealth: SMART Decisions",
+      "link": "http://smarthealthit.org/wp-content/uploads/SMART-Meeting-Binder06.07.17-2.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://smarthealthit.org/wp-content/uploads/SMART-Meeting-Binder06.07.17-2.pdf&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8QFnoECC4QAQ",
+      "displayed_link": "http://smarthealthit.org \u203a wp-content \u203a uploads",
+      "favicon": "https://serpapi.com/searches/686464773f79e838ab9cb580/images/4096109a74b819901198d9ae2993acafad50f6dce091ac919fadda361d1e953a.png",
+      "date": "Jun 26, 2017",
+      "snippet": "A critical difference between SMART apps and the tens of thou- sands of apps in the Google and Apple stores, is that SMART on FHIR apps are ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "SMART Health IT"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=baystate+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=d2RkaKmGLb_KwPAPjLWm-QM&start=10&sa=N&sstk=Ac65TH697PPyIj4iM-1c2N21Hb8vydaShdy_DufBFILDB5ifzxGZw2O-I_J4Yw6f49HH11Wxwd06_mY2uC-RIX7OSxcFx-GvCMbHjQ&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8Q8NMDegQICBAM",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=baystate+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=d2RkaKmGLb_KwPAPjLWm-QM&start=10&sa=N&sstk=Ac65TH697PPyIj4iM-1c2N21Hb8vydaShdy_DufBFILDB5ifzxGZw2O-I_J4Yw6f49HH11Wxwd06_mY2uC-RIX7OSxcFx-GvCMbHjQ&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8Q8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=baystate+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=d2RkaKmGLb_KwPAPjLWm-QM&start=20&sa=N&sstk=Ac65TH697PPyIj4iM-1c2N21Hb8vydaShdy_DufBFILDB5ifzxGZw2O-I_J4Yw6f49HH11Wxwd06_mY2uC-RIX7OSxcFx-GvCMbHjQ&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8Q8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=baystate+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=d2RkaKmGLb_KwPAPjLWm-QM&start=30&sa=N&sstk=Ac65TH697PPyIj4iM-1c2N21Hb8vydaShdy_DufBFILDB5ifzxGZw2O-I_J4Yw6f49HH11Wxwd06_mY2uC-RIX7OSxcFx-GvCMbHjQ&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8Q8tMDegQICBAI",
+      "5": "https://www.google.com/search?q=baystate+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=d2RkaKmGLb_KwPAPjLWm-QM&start=40&sa=N&sstk=Ac65TH697PPyIj4iM-1c2N21Hb8vydaShdy_DufBFILDB5ifzxGZw2O-I_J4Yw6f49HH11Wxwd06_mY2uC-RIX7OSxcFx-GvCMbHjQ&ved=2ahUKEwjpnZDw3ZyOAxU_JRAIHYyaKT8Q8tMDegQICBAK"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=baystate+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=baystate+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=baystate+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=baystate+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=baystate+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=baystate+health+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40"
+    }
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "search_metadata": {
+    "id": "68646ce4d649a9f4991de231",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/56a7e5c854a63b30/68646ce4d649a9f4991de231.json",
+    "created_at": "2025-07-01 23:19:00 UTC",
+    "processed_at": "2025-07-01 23:19:00 UTC",
+    "google_url": "https://www.google.com/search?q=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/56a7e5c854a63b30/68646ce4d649a9f4991de231.html",
+    "total_time_taken": 3.42
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "harris county hospital district Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "harris county hospital district Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 114,
+    "time_taken_displayed": 0.26,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Amended STAR PLUS 1 Revised Operational 9-1-2024",
+      "link": "https://www.hhs.texas.gov/sites/default/files/documents/amended-starplus-1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.texas.gov/sites/default/files/documents/amended-starplus-1.pdf&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQFnoECB0QAQ",
+      "displayed_link": "https://www.hhs.texas.gov \u203a files \u203a documents \u203a a...",
+      "favicon": "https://serpapi.com/searches/68646ce4d649a9f4991de231/images/a9df0741345797b0def9dcfb503dbe032680588a90956ce4c795573eb387b720.png",
+      "date": "Mar 1, 2024",
+      "snippet": "Application Programming Interface (API) and a provider directory API using the required ... http://hl7.org/fhir/. The MCO must comply with ...",
+      "snippet_highlighted_words": [
+        "API",
+        "provider directory API",
+        "fhir"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 285
+          },
+          "extensions": [
+            "285 pages"
+          ]
+        }
+      },
+      "missing": [
+        "district"
+      ],
+      "must_include": {
+        "word": "district",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=harris+county+hospital+%22district%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ5t4CegQIIhAB"
+      },
+      "source": "Texas Health and Human Services (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQFnoECB8QAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646ce4d649a9f4991de231/images/a9df0741345797b0def9dcfb503dbe03a3ab6154fd25a00d98eb6735ed0585e5.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "missing": [
+        "district"
+      ],
+      "must_include": {
+        "word": "district",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=harris+county+hospital+%22district%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ5t4CegQIIxAB"
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 3,
+      "title": "amended and restated - Texas Health and Human Services",
+      "link": "https://www.hhs.texas.gov/sites/default/files/documents/laws-regulations/handbooks/TexasContract.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.texas.gov/sites/default/files/documents/laws-regulations/handbooks/TexasContract.pdf&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQFnoECBwQAQ",
+      "displayed_link": "https://www.hhs.texas.gov \u203a files \u203a TexasContract",
+      "favicon": "https://serpapi.com/searches/68646ce4d649a9f4991de231/images/a9df0741345797b0def9dcfb503dbe032c14bf44776261fac25ed54d72a9716f.png",
+      "date": "Apr 1, 2024",
+      "snippet": "Access Application Programming Interface (API) and a Provider Directory ... Resources (FHIR)-based standards. 2.18.2.2. The STAR+PLUS MMP ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 341
+          },
+          "extensions": [
+            "341 pages"
+          ]
+        }
+      },
+      "source": "Texas Health and Human Services (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Medicare and Medicaid Programs; Patient Protection and ...",
+      "link": "https://www.federalregister.gov/documents/2022/12/13/2022-26479/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-advancing-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2022/12/13/2022-26479/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-advancing-interoperability&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQFnoECBcQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2022/12/13 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/68646ce4d649a9f4991de231/images/a9df0741345797b0def9dcfb503dbe037383bdbe936864d5d8cfa7f80bcbd9f6.png",
+      "date": "Dec 13, 2022",
+      "snippet": "... Provider Directory APIs and did not make the Payer ... Similar to the other API proposals, certifying only health plans that implement FHIR ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "API",
+        "health plans",
+        "FHIR"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Addendum #1 2025130577 Credentialing and ... - Careers",
+      "link": "https://fotos.jpshealthcareers.com/sites/default/files/2025-04/Addendum%20%231%202025130577%20Credentialing%20and%20Privileging%20Software.docx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://fotos.jpshealthcareers.com/sites/default/files/2025-04/Addendum%2520%25231%25202025130577%2520Credentialing%2520and%2520Privileging%2520Software.docx&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQFnoECBoQAQ",
+      "displayed_link": "https://fotos.jpshealthcareers.com \u203a default \u203a files",
+      "date": "Apr 17, 2025",
+      "snippet": "... FHIR, API). (Infor/Lawson and Epic) HL7, API. 6. Data Migration ... o Can JPS provide more specifics on how the provider directory is used ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "API",
+        "provider directory"
+      ],
+      "source": "jpshealthcareers.com"
+    },
+    {
+      "position": 6,
+      "title": "Premium Reports",
+      "link": "https://klasresearch.com/reports",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://klasresearch.com/reports&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQFnoECBYQAQ",
+      "displayed_link": "https://klasresearch.com \u203a reports",
+      "favicon": "https://serpapi.com/searches/68646ce4d649a9f4991de231/images/a9df0741345797b0def9dcfb503dbe03236d2fffea4035c344a5636b54c86d45.png",
+      "snippet": "... API-driven provider directory, which they piloted at Pikeville Medical. ... Building on a previously established API, the stakeholders created a FHIR API ...",
+      "snippet_highlighted_words": [
+        "API",
+        "provider directory",
+        "API",
+        "FHIR API"
+      ],
+      "source": "KLAS Research"
+    },
+    {
+      "position": 7,
+      "title": "2023 UnitedHealthcare Care Provider Administrative Guide",
+      "link": "https://www.mypreferredprovider.com/media/w3ylnrgu/2023-uhc-administrative-guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mypreferredprovider.com/media/w3ylnrgu/2023-uhc-administrative-guide.pdf&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQFnoECB4QAQ",
+      "displayed_link": "https://www.mypreferredprovider.com \u203a media",
+      "favicon": "https://serpapi.com/searches/68646ce4d649a9f4991de231/images/a9df0741345797b0def9dcfb503dbe033ca4c6cf5f796182a5b65b4fdd7ea3a7.png",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify information in ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 421
+          },
+          "extensions": [
+            "421 pages"
+          ]
+        }
+      },
+      "missing": [
+        "district"
+      ],
+      "must_include": {
+        "word": "district",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=harris+county+hospital+%22district%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ5t4CegQIIRAB"
+      },
+      "source": "My Preferred Provider"
+    },
+    {
+      "position": 8,
+      "title": "Announcement of Calendar Year (CY) 2019 Medicare ...",
+      "link": "https://www.cms.gov/Medicare/Health-Plans/MedicareAdvtgSpecRateStats/Downloads/Announcement2019.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/Medicare/Health-Plans/MedicareAdvtgSpecRateStats/Downloads/Announcement2019.pdf&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQFnoECD4QAQ",
+      "displayed_link": "https://www.cms.gov \u203a Health-Plans \u203a Downloads",
+      "favicon": "https://serpapi.com/searches/68646ce4d649a9f4991de231/images/a9df0741345797b0def9dcfb503dbe03f3498fb97f63209ea685c0d6243133b1.png",
+      "date": "Apr 2, 2018",
+      "snippet": "egregious instances of provider directory non-compliance. ... Healthcare Interoperability Resources (FHIR) format that is developer-friendly.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "Healthcare",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 270
+          },
+          "extensions": [
+            "270 pages"
+          ]
+        }
+      },
+      "missing": [
+        "district"
+      ],
+      "must_include": {
+        "word": "district",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=harris+county+hospital+%22district%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ5t4CegQIQBAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "DEPARTMENT OF HEALTH AND HUMAN SERVICES ...",
+      "link": "https://tcpaworld.com/wp-content/uploads/2023/04/CMS-Pre-Publication.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://tcpaworld.com/wp-content/uploads/2023/04/CMS-Pre-Publication.pdf&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQFnoECD0QAQ",
+      "displayed_link": "https://tcpaworld.com \u203a CMS-Pre-Publication",
+      "favicon": "https://serpapi.com/searches/68646ce4d649a9f4991de231/images/a9df0741345797b0def9dcfb503dbe0346dcef6144abd6a576069b0f768c868b.png",
+      "date": "Apr 12, 2023",
+      "snippet": "... provider directory. CMS developed the MA and Section 1876 Cost Plan ... (FHIR\u00ae) standard Application Programming. Interface (API) for ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR",
+        "API"
+      ],
+      "source": "TCPAWorld"
+    },
+    {
+      "position": 10,
+      "title": "Health Information Technology Oversight Council",
+      "link": "https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%20Meeting%20Docs/2016-0609%20Slides.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oregon.gov/oha/HPA/OHIT-HITOC/HITOC%2520Meeting%2520Docs/2016-0609%2520Slides.pdf&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQFnoECDkQAQ",
+      "displayed_link": "https://www.oregon.gov \u203a HPA \u203a OHIT-HITOC",
+      "favicon": "https://serpapi.com/searches/68646ce4d649a9f4991de231/images/a9df0741345797b0def9dcfb503dbe0371e12fd6de7490e0c34231f29e89c47f.png",
+      "date": "Jun 9, 2016",
+      "snippet": "wellness, and new technology standards (FHIR) are emerging to ... provider directory via an Application Program Interface (API) or web.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory",
+        "API"
+      ],
+      "missing": [
+        "district",
+        "Advantage"
+      ],
+      "source": "Oregon.gov"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "UHC provider manual 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+provider+manual+2025&sa=X&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+provider+manual+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc Medicare advantage Timely filing limit for corrected claims",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&sa=X&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC care survey 25 1",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+care+survey+25+1&sa=X&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+care+survey+25+1&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "United Healthcare Provider Portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=United+Healthcare+Provider+Portal&sa=X&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=United+Healthcare+Provider+Portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "P.O. Box 31386 Salt Lake City UT 84131",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=P.O.+Box+31386+Salt+Lake+City+UT+84131&sa=X&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=P.O.+Box+31386+Salt+Lake+City+UT+84131&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "PO Box 31387 SALT Lake City, UT 84131",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=PO+Box+31387+SALT+Lake+City,+UT+84131&sa=X&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=PO+Box+31387+SALT+Lake+City%2C+UT+84131&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc timely filing limit 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Uhc+timely+filing+limit+2025&sa=X&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+timely+filing+limit+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "PO Box 6111 Cypress, CA 90630",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=PO+Box+6111+Cypress,+CA+90630&sa=X&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=PO+Box+6111+Cypress%2C+CA+90630&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=5mxkaOeONeyTseMPo9mZ0QY&start=10&sa=N&sstk=Ac65TH5rPrU-WQH12bQ3hHWrQKurkfZCDAwAgoH13Ofk_YM1kiscDgq7YgkG-PQOYh2IW9y49Akp3YM1Lz_zNs9YfBBAruXkO5Brmw&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ8NMDegQICRAQ",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=5mxkaOeONeyTseMPo9mZ0QY&start=10&sa=N&sstk=Ac65TH5rPrU-WQH12bQ3hHWrQKurkfZCDAwAgoH13Ofk_YM1kiscDgq7YgkG-PQOYh2IW9y49Akp3YM1Lz_zNs9YfBBAruXkO5Brmw&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=5mxkaOeONeyTseMPo9mZ0QY&start=20&sa=N&sstk=Ac65TH5rPrU-WQH12bQ3hHWrQKurkfZCDAwAgoH13Ofk_YM1kiscDgq7YgkG-PQOYh2IW9y49Akp3YM1Lz_zNs9YfBBAruXkO5Brmw&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=5mxkaOeONeyTseMPo9mZ0QY&start=30&sa=N&sstk=Ac65TH5rPrU-WQH12bQ3hHWrQKurkfZCDAwAgoH13Ofk_YM1kiscDgq7YgkG-PQOYh2IW9y49Akp3YM1Lz_zNs9YfBBAruXkO5Brmw&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=5mxkaOeONeyTseMPo9mZ0QY&start=40&sa=N&sstk=Ac65TH5rPrU-WQH12bQ3hHWrQKurkfZCDAwAgoH13Ofk_YM1kiscDgq7YgkG-PQOYh2IW9y49Akp3YM1Lz_zNs9YfBBAruXkO5Brmw&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=5mxkaOeONeyTseMPo9mZ0QY&start=50&sa=N&sstk=Ac65TH5rPrU-WQH12bQ3hHWrQKurkfZCDAwAgoH13Ofk_YM1kiscDgq7YgkG-PQOYh2IW9y49Akp3YM1Lz_zNs9YfBBAruXkO5Brmw&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=5mxkaOeONeyTseMPo9mZ0QY&start=60&sa=N&sstk=Ac65TH5rPrU-WQH12bQ3hHWrQKurkfZCDAwAgoH13Ofk_YM1kiscDgq7YgkG-PQOYh2IW9y49Akp3YM1Lz_zNs9YfBBAruXkO5Brmw&ved=2ahUKEwjnmdf15ZyOAxXsSWwGHaNsJmoQ8tMDegQICRAO"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=harris+county+hospital+district+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60"
+    }
+  }
+}

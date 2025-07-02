@@ -1,0 +1,317 @@
+{
+  "search_metadata": {
+    "id": "68646c9c9a1f2c042101752a",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/5ea01f89e379c5b6/68646c9c9a1f2c042101752a.json",
+    "created_at": "2025-07-01 23:17:48 UTC",
+    "processed_at": "2025-07-01 23:17:48 UTC",
+    "google_url": "https://www.google.com/search?q=blue+cross+blue+shield+of+nebraska+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=blue+cross+blue+shield+of+nebraska+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/5ea01f89e379c5b6/68646c9c9a1f2c042101752a.html",
+    "total_time_taken": 5.62
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "blue cross blue shield of nebraska Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "blue cross blue shield of nebraska Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 40,
+    "time_taken_displayed": 0.21,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQFnoECBsQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646c9c9a1f2c042101752a/images/6824464a838ad4236e8ec7a7b0323f559f5e747e7fe358ca7125d7ac1811b812.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "missing": [
+        "nebraska"
+      ],
+      "must_include": {
+        "word": "nebraska",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=blue+cross+blue+shield+of+%22nebraska%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQ5t4CegQIKhAB"
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 2,
+      "title": "Streamlining Prior Authorization: Final Report ...",
+      "link": "https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQFnoECBoQAQ",
+      "displayed_link": "https://24315998.fs1.hubspotusercontent-na1.net \u203a ...",
+      "snippet": "A broader FHIR-based interoperability rule was put into effect by CMS in July of 202158 ... APIs and provider directory infor- mation through the Provider ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "APIs",
+        "provider directory",
+        "Provider"
+      ],
+      "source": "hubspotusercontent-na1.net"
+    },
+    {
+      "position": 3,
+      "title": "PARTICIPATING ADDENDUM MMIS-PROVIDER SERVICES ...",
+      "link": "https://s3-us-west-2.amazonaws.com/naspovaluepoint/1634709128_MMIS%20HHS%20Technology%20Group%20LLC%20South%20Dakota.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://s3-us-west-2.amazonaws.com/naspovaluepoint/1634709128_MMIS%2520HHS%2520Technology%2520Group%2520LLC%2520South%2520Dakota.pdf&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQFnoECBcQAQ",
+      "displayed_link": "https://s3-us-west-2.amazonaws.com \u203a naspovalu...",
+      "favicon": "https://serpapi.com/searches/68646c9c9a1f2c042101752a/images/6824464a838ad4236e8ec7a7b0323f5529c75f7cbb072cb3033827b2c03dc76e.png",
+      "date": "Mar 7, 2023",
+      "snippet": "... Provider Directory Mapping (FHIR). 1 day. Fri 11/26/21. Fri 11/26/21. 6. Provider Directory Demo (FHIR). 1 day. Fri 10/22/21. Fri 10/22/21. 7.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Amazon.com"
+    },
+    {
+      "position": 4,
+      "title": "HOUSE OF DELEGATES HANDBOOK - INFO (A-22)",
+      "link": "https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQFnoECBwQAQ",
+      "displayed_link": "https://www.ama-assn.org \u203a system \u203a files \u203a a22-...",
+      "favicon": "https://serpapi.com/searches/68646c9c9a1f2c042101752a/images/6824464a838ad4236e8ec7a7b0323f5532260cd9b00e7ba29044c5cee822240e.png",
+      "date": "Dec 17, 2021",
+      "snippet": "AMA/CAQH Provider Directory. White Paper \u2013 Co-branded white ... FHIR\u00ae implementation guide for the capture and use of SDOH data. 18.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=blue+cross+blue+shield+of+nebraska+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQ5t4CegQIKxAB"
+      },
+      "source": "American Medical Association"
+    },
+    {
+      "position": 5,
+      "title": "American Health Law Association The Year in Review ...",
+      "link": "https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQFnoECBgQAQ",
+      "displayed_link": "https://www.bradley.com \u203a publications \u203a 2022/02",
+      "favicon": "https://serpapi.com/searches/68646c9c9a1f2c042101752a/images/6824464a838ad4236e8ec7a7b0323f55372c2d3bf815d6ef9909a2c5dbc5a8a6.png",
+      "date": "Feb 17, 2022",
+      "snippet": "... FHIR\u00ae Roadmap for \u00b7 TEFCA Exchange (January 2022). The TEF is a set of ... Provider Directory API (applicable January 1, 2021, with ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 315
+          },
+          "extensions": [
+            "315 pages"
+          ]
+        }
+      },
+      "source": "Bradley Arant"
+    },
+    {
+      "position": 6,
+      "title": "Modernizing Consent to Advance Health and Equity",
+      "link": "https://stewardsofchange.org/wp-content/uploads/sites/2/2022/01/Button-1-19-22-SOCI-Consent-Scan-Report-Final-11-22-21.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://stewardsofchange.org/wp-content/uploads/sites/2/2022/01/Button-1-19-22-SOCI-Consent-Scan-Report-Final-11-22-21.pdf&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQFnoECBYQAQ",
+      "displayed_link": "https://stewardsofchange.org \u203a sites \u203a 2022/01 \u203a B...",
+      "favicon": "https://serpapi.com/searches/68646c9c9a1f2c042101752a/images/6824464a838ad4236e8ec7a7b0323f55de15a345f3eaa33dfc16161e9b3111ac.png",
+      "snippet": "A broadly accepted National Provider Directory, for example, would support multiple \u201cendpoints\u201d (e.g., FHIR, HL7v2,. Direct Secure Messages, etc.) of standards ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 73
+          },
+          "extensions": [
+            "73 pages"
+          ]
+        }
+      },
+      "source": "Stewards of Change Institute"
+    },
+    {
+      "position": 7,
+      "title": "SoonerCare Comprehensive Managed Care Program",
+      "link": "https://oklahoma.gov/content/dam/ok/en/okhca/documents/a0600/25392.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://oklahoma.gov/content/dam/ok/en/okhca/documents/a0600/25392.pdf&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQFnoECBUQAQ",
+      "displayed_link": "https://oklahoma.gov \u203a dam \u203a okhca \u203a documents",
+      "favicon": "https://serpapi.com/searches/68646c9c9a1f2c042101752a/images/6824464a838ad4236e8ec7a7b0323f556feef8b491854a13d8d2dcad4e8afad6.png",
+      "date": "Mar 9, 2020",
+      "snippet": "... provider directory, along with the ability to provide a hard copy by ... (FHIR) interoperability specifications. This bidirectional.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 764
+          },
+          "extensions": [
+            "764 pages"
+          ]
+        }
+      },
+      "source": "oklahoma.gov"
+    },
+    {
+      "position": 8,
+      "title": "Meg Bryant",
+      "link": "https://www.healthcaredive.com/users/mbryant/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcaredive.com/users/mbryant/&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQFnoECDcQAQ",
+      "displayed_link": "https://www.healthcaredive.com \u203a users \u203a mbryant",
+      "favicon": "https://serpapi.com/searches/68646c9c9a1f2c042101752a/images/6824464a838ad4236e8ec7a7b0323f55bd2e3287b9895d4bb5e702dbdae94d2f.png",
+      "snippet": "HL7 releases latest FHIR version. Jan. 3, 2019. Sanford Health, Good Samaritan ... Industry group offers roadmap to greater provider directory accuracy.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "Healthcare Dive"
+    },
+    {
+      "position": 9,
+      "title": "CS Kansas Draft Protest Letter 6-3-2024 (908617-4).DOCX",
+      "link": "https://admin.ks.gov/media/cms/CareSource_Bid_Protest_5d4febae93561.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://admin.ks.gov/media/cms/CareSource_Bid_Protest_5d4febae93561.pdf&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQFnoECDoQAQ",
+      "displayed_link": "https://admin.ks.gov \u203a media \u203a cms",
+      "favicon": "https://serpapi.com/searches/68646c9c9a1f2c042101752a/images/6824464a838ad4236e8ec7a7b0323f55783dacc06affe2ba397e56273b128640.png",
+      "date": "Jun 3, 2024",
+      "snippet": "... provider directory, including information included in the directory ... (FHIR). 2676. 2677. 4. CareInsights: Our modern data platform ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 270
+          },
+          "extensions": [
+            "270 pages"
+          ]
+        }
+      },
+      "source": "Kansas Department of Administration (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "acronyms/acronyms.csv at master \u00b7 department-of-veterans ...",
+      "link": "https://github.com/department-of-veterans-affairs/acronyms/blob/master/acronyms.csv",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/department-of-veterans-affairs/acronyms/blob/master/acronyms.csv&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQFnoECD0QAQ",
+      "displayed_link": "https://github.com \u203a acronyms \u203a blob \u203a acronyms",
+      "favicon": "https://serpapi.com/searches/68646c9c9a1f2c042101752a/images/6824464a838ad4236e8ec7a7b0323f55ce869d3b6707de733ace12804bad101e.png",
+      "snippet": "FHIR, Fast Healthcare Interoperability Resources. 1981. FI, Fiscal Intermediary ... Health Provider Directory. 2378. HPDM, High Performance Development Model.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=blue+cross+blue+shield+of+nebraska+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQ5t4CegQIQBAB"
+      },
+      "source": "GitHub"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "UHC provider manual 2024",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=UHC+provider+manual+2024&sa=X&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+provider+manual+2024&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC provider manual 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=UHC+provider+manual+2025&sa=X&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+provider+manual+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC Medicare Advantage timely filing limit 2024",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=UHC+Medicare+Advantage+timely+filing+limit+2024&sa=X&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+Medicare+Advantage+timely+filing+limit+2024&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc Medicare advantage Timely filing limit for corrected claims",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&sa=X&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC Provider Portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=UHC+Provider+Portal&sa=X&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQ1QJ6BAgvEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+Provider+Portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "BIN 610279 PCN: 7777",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=BIN+610279+PCN:+7777&sa=X&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=BIN+610279+PCN%3A+7777&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "P.O. Box 31386 Salt Lake City UT 84131",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=P.O.+Box+31386+Salt+Lake+City+UT+84131&sa=X&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQ1QJ6BAgwEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=P.O.+Box+31386+Salt+Lake+City+UT+84131&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "PO Box 31387 SALT Lake City, UT 84131",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=PO+Box+31387+SALT+Lake+City,+UT+84131&sa=X&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=PO+Box+31387+SALT+Lake+City%2C+UT+84131&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=blue+cross+blue+shield+of+nebraska+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=omxkaM6-A_OI9u8P_ra64QQ&start=10&sa=N&sstk=Ac65TH7h3oXoy_ZbDsgjWTgT92EOe_Ekr2AJPJK9U0XAc_iEZ3Q5z-zF0dJr2GwE-7OAZ7rtTKz04ikAZj_Ku4fIuLTVv-wmk6BRxg&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQ8NMDegQIBhAG",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=blue+cross+blue+shield+of+nebraska+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=omxkaM6-A_OI9u8P_ra64QQ&start=10&sa=N&sstk=Ac65TH7h3oXoy_ZbDsgjWTgT92EOe_Ekr2AJPJK9U0XAc_iEZ3Q5z-zF0dJr2GwE-7OAZ7rtTKz04ikAZj_Ku4fIuLTVv-wmk6BRxg&ved=2ahUKEwjOl-_U5ZyOAxVzhP0HHX6bLkwQ8tMDegQIBhAE"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+blue+shield+of+nebraska+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+blue+shield+of+nebraska+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+blue+shield+of+nebraska+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10"
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "search_metadata": {
+    "id": "68646495f2593a44ed74e2a4",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/f77f825b1de521e3/68646495f2593a44ed74e2a4.json",
+    "created_at": "2025-07-01 22:43:33 UTC",
+    "processed_at": "2025-07-01 22:43:33 UTC",
+    "google_url": "https://www.google.com/search?q=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/f77f825b1de521e3/68646495f2593a44ed74e2a4.html",
+    "total_time_taken": 2.13
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"clever care health plan Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"clever care health plan Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 3,
+    "time_taken_displayed": 0.3,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_images": [
+    {
+      "source": "https://clevercarehealthplan.com/",
+      "thumbnail": "https://serpapi.com/searches/68646495f2593a44ed74e2a4/images/0cbf75c2363bf2796febb19f3043b20111ebaec8e38dddcdcbfd5fc985b34cda.jpeg",
+      "original": "https://clevercarehealthplan.com/wp-content/uploads/Portrait-of-enjoy-happy-love-asian-family-senior-mature-mother-and-young-daughter-smiling-big-hug-embracing-and-having-fun-hug-together-in-moments-good-time-at-home-1.png",
+      "title": "Medicare Alternative Medicine Plans | Clever Care Health Plan",
+      "source_name": "clevercarehealthplan.com"
+    },
+    {
+      "source": "https://clevercarehealthplan.com/",
+      "thumbnail": "https://serpapi.com/searches/68646495f2593a44ed74e2a4/images/0cbf75c2363bf2795490bbebf0e2db358c0bae1d2d6132cea0f1026a45fc70e3.jpeg",
+      "original": "https://clevercarehealthplan.com/wp-content/uploads/cc_logoY22_H_COLOR_clear-300x109.png",
+      "title": "Medicare Alternative Medicine Plans | Clever Care Health Plan",
+      "source_name": "clevercarehealthplan.com"
+    },
+    {
+      "source": "https://clevercarehealthplan.com/executive-leadership-additions/",
+      "thumbnail": "https://serpapi.com/searches/68646495f2593a44ed74e2a4/images/0cbf75c2363bf2793d886b2277e5f4717a3a50ff7894f1dcce1c6661d90f324c.jpeg",
+      "original": "https://clevercarehealthplan.com/wp-content/uploads/puzzle-pieces.png",
+      "title": "Clever Care Health Plan Welcomes New CGO and CFO",
+      "source_name": "Clever Care Health Plan"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Who is the owner of Clever Care Health Plan?",
+      "snippet": "Founded by Myong Lee and Hiep Pham, Clever Care has successfully connected and sustained a high-quality health care community, merging Western medicine with Eastern wellness through comprehensive in-language services.",
+      "title": "CLEVER CARE HEALTH PLAN GROWS 112% YOY IN SOUTHERN ...",
+      "date": "Jan 22, 2024",
+      "link": "https://clevercarehealthplan.com/clever-care-health-plan-grows-112-yoy-in-southern-california-through-commitment-to-health-equity/#:~:text=Founded%20by%20Myong%20Lee%20and,through%20comprehensive%20in%2Dlanguage%20services.",
+      "displayed_link": "https://clevercarehealthplan.com \u203a clever-care-health-pla...",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIL4mdtTowJSRUe9yIUtI8y8LII3ybmnZaHF1mVfbeeQ&s",
+      "source_logo": "https://serpapi.com/searches/68646495f2593a44ed74e2a4/images/6b3f44c8a788b111f59e49af72cc2554fbabc3331c219c733e391dac63ed7ca6.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWJYWlVYM0ExTTJrMGVIUmFhRTV3VVhGTk1EQkljRlJsZW5OaGJGZEplSFZGTTJOZk5uQlpPVzlFTUVoa1pHWnBRa3N5ZVVRMWJXUlBUREo0WmtkME1rRlZjVVE1VFVodGIxUjRMVmxHZFVSV00yUTVTMWxoUzFsamR4SVhiREpTYTJGUFdHOUdTMFJLZDFCQlVISjFkbVl0UVdjYUlrRkdUVUZIUjNCRlJ6VnlVSE5LYXpkSlNHeHZSV1JwWDBOS05qSjVaM0ZPVm5jIiwiZmN2IjoiMyIsImVpIjoibDJSa2FPWG9GS0RKd1BBUHJ1dmYtQWciLCJxYyI6ImMtTnlTODVKTFVzdFVraE9MRXBWeUVoTnpDbkpVQ2pJU2N4VHlFMU55UVFMSnFhVUplYVZKS2FuS2hRVTVaZGxwZ0FWcDJRV3BTYVg1QmRWS2lRV1pDcWtaV1FXQ1REVTlrWFoyZ01BIiwicXVlc3Rpb24iOiJXaG8gaXMgdGhlIG93bmVyIG9mIENsZXZlciBDYXJlIEhlYWx0aCBQbGFuPyIsImxrIjoiR2gxamJHVjJaWElnWTJGeVpTQm9aV0ZzZEdnZ2NHeGhiaUJ2ZDI1bGNnIiwiYnMiOiJjMzJQdlFyQ01CU0ZjYzNrV0FyaWZRRHhwN29YcVVNWFFWeWNRM05yZ20ydXBDRjlDaGQzbjhQWE0yMTFFSXpiaFlfdm5IUFprYzFPa2tBMVlDVUN0Um9OVUFsWmhjNWZHVGNJT2ZMS1NqaFVYS2ZSTFUybThhUVljTkZoT2VDcng0UFBORnZuMUlJbE9LTUZwVXN5TmJlS1BOZXdSNkY2YnlzYzE1YWZzVmViTkhxNFpCTW5NbWpXSDVOX20xM2Zqb0xCSUxuenB5R25oTi1zMGJaa0xyN3ZQdV82QkFXREF5YVRiUG4tcjFSYWdLRENrbW44M0RfUFBadGtGU19rYnkwMFlEeDZBUSIsImlkIjoiZmNfbDJSa2FPWG9GS0RKd1BBUHJ1dmYtQWdfMSJ9",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWJYWlVYM0ExTTJrMGVIUmFhRTV3VVhGTk1EQkljRlJsZW5OaGJGZEplSFZGTTJOZk5uQlpPVzlFTUVoa1pHWnBRa3N5ZVVRMWJXUlBUREo0WmtkME1rRlZjVVE1VFVodGIxUjRMVmxHZFVSV00yUTVTMWxoUzFsamR4SVhiREpTYTJGUFdHOUdTMFJLZDFCQlVISjFkbVl0UVdjYUlrRkdUVUZIUjNCRlJ6VnlVSE5LYXpkSlNHeHZSV1JwWDBOS05qSjVaM0ZPVm5jIiwiZmN2IjoiMyIsImVpIjoibDJSa2FPWG9GS0RKd1BBUHJ1dmYtQWciLCJxYyI6ImMtTnlTODVKTFVzdFVraE9MRXBWeUVoTnpDbkpVQ2pJU2N4VHlFMU55UVFMSnFhVUplYVZKS2FuS2hRVTVaZGxwZ0FWcDJRV3BTYVg1QmRWS2lRV1pDcWtaV1FXQ1REVTlrWFoyZ01BIiwicXVlc3Rpb24iOiJXaG8gaXMgdGhlIG93bmVyIG9mIENsZXZlciBDYXJlIEhlYWx0aCBQbGFuPyIsImxrIjoiR2gxamJHVjJaWElnWTJGeVpTQm9aV0ZzZEdnZ2NHeGhiaUJ2ZDI1bGNnIiwiYnMiOiJjMzJQdlFyQ01CU0ZjYzNrV0FyaWZRRHhwN29YcVVNWFFWeWNRM05yZ20ydXBDRjlDaGQzbjhQWE0yMTFFSXpiaFlfdm5IUFprYzFPa2tBMVlDVUN0Um9OVUFsWmhjNWZHVGNJT2ZMS1NqaFVYS2ZSTFUybThhUVljTkZoT2VDcng0UFBORnZuMUlJbE9LTUZwVXN5TmJlS1BOZXdSNkY2YnlzYzE1YWZzVmViTkhxNFpCTW5NbWpXSDVOX20xM2Zqb0xCSUxuenB5R25oTi1zMGJaa0xyN3ZQdV82QkFXREF5YVRiUG4tcjFSYWdLRENrbW44M0RfUFBadGtGU19rYnkwMFlEeDZBUSIsImlkIjoiZmNfbDJSa2FPWG9GS0RKd1BBUHJ1dmYtQWdfMSJ9"
+    },
+    {
+      "question": "How to get information on Medicare Advantage plans?",
+      "snippet": "To find available Medicare Advantage Plans, visit Medicare.gov/plan-compare, read your \u201cMedicare & You\u201d handbook, or call 1-800-MEDICARE (1-800-633-4227). TTY users can call 1-877-486-2048.",
+      "title": "Understanding Medicare Advantage Plans",
+      "link": "https://www.medicare.gov/publications/12026-understanding-medicare-advantage-plans.pdf",
+      "displayed_link": "https://www.medicare.gov \u203a publications \u203a 12026-unders...",
+      "source_logo": "https://serpapi.com/searches/68646495f2593a44ed74e2a4/images/6b3f44c8a788b111f59e49af72cc2554f21a8f73e27c753e03a497805f5a8840.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWJYWlVYM0ExTTJrMGVIUmFhRTV3VVhGTk1EQkljRlJsZW5OaGJGZEplSFZGTTJOZk5uQlpPVzlFTUVoa1pHWnBRa3N5ZVVRMWJXUlBUREo0WmtkME1rRlZjVVE1VFVodGIxUjRMVmxHZFVSV00yUTVTMWxoUzFsamR4SVhiREpTYTJGUFdHOUdTMFJLZDFCQlVISjFkbVl0UVdjYUlrRkdUVUZIUjNCRlJ6VnlVSE5LYXpkSlNHeHZSV1JwWDBOS05qSjVaM0ZPVm5jIiwiZmN2IjoiMyIsImVpIjoibDJSa2FPWG9GS0RKd1BBUHJ1dmYtQWciLCJxYyI6ImMtTnlTODVKTFVzdFVraE9MRXBWeUVoTnpDbkpVQ2pJU2N4VHlFMU55UVFMSnFhVUplYVZKS2FuS2hRVTVaZGxwZ0FWcDJRV3BTYVg1QmRWS2lRV1pDcWtaV1FXQ1REVTlrWFoyZ01BIiwicXVlc3Rpb24iOiJIb3cgdG8gZ2V0IGluZm9ybWF0aW9uIG9uIE1lZGljYXJlIEFkdmFudGFnZSBwbGFucz8iLCJsayI6IkdqSm9iM2NnZEc4Z1oyVjBJR2x1Wm05eWJXRjBhVzl1SUc5dUlHMWxaR2xqWVhKbElHRmtkbUZ1ZEdGblpTQndiR0Z1Y3ciLCJicyI6ImMzMlB2UXJDTUJTRmNjM2tXQXJpZlFEeHA3b1hxVU1YUVZ5Y1EzTnJnbTJ1cENGOUNoZDNuOFBYTTIxMUVJemJoWV92bkhQWmtjMU9ra0ExWUNVQ3RSb05VQWxaaGM1ZkdUY0lPZkxLU2poVVhLZlJMVTJtOGFRWWNORmhPZUNyeDRQUE5Gdm4xSUlsT0tNRnBVc3lOYmVLUE5ld1I2RjZieXNjMTVhZnNWZWJOSHE0WkJNbk1taldINU5fbTEzZmpvTEJJTG56cHlHbmhOLXMwYlprTHI3dlB1XzZCQVdEQXlhVGJQbi1yMVJhZ0tEQ2ttbjgzRF9QUFp0a0ZTX2tieTAwWUR4NkFRIiwiaWQiOiJmY19sMlJrYU9Yb0ZLREp3UEFQcnV2Zi1BZ18xIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWJYWlVYM0ExTTJrMGVIUmFhRTV3VVhGTk1EQkljRlJsZW5OaGJGZEplSFZGTTJOZk5uQlpPVzlFTUVoa1pHWnBRa3N5ZVVRMWJXUlBUREo0WmtkME1rRlZjVVE1VFVodGIxUjRMVmxHZFVSV00yUTVTMWxoUzFsamR4SVhiREpTYTJGUFdHOUdTMFJLZDFCQlVISjFkbVl0UVdjYUlrRkdUVUZIUjNCRlJ6VnlVSE5LYXpkSlNHeHZSV1JwWDBOS05qSjVaM0ZPVm5jIiwiZmN2IjoiMyIsImVpIjoibDJSa2FPWG9GS0RKd1BBUHJ1dmYtQWciLCJxYyI6ImMtTnlTODVKTFVzdFVraE9MRXBWeUVoTnpDbkpVQ2pJU2N4VHlFMU55UVFMSnFhVUplYVZKS2FuS2hRVTVaZGxwZ0FWcDJRV3BTYVg1QmRWS2lRV1pDcWtaV1FXQ1REVTlrWFoyZ01BIiwicXVlc3Rpb24iOiJIb3cgdG8gZ2V0IGluZm9ybWF0aW9uIG9uIE1lZGljYXJlIEFkdmFudGFnZSBwbGFucz8iLCJsayI6IkdqSm9iM2NnZEc4Z1oyVjBJR2x1Wm05eWJXRjBhVzl1SUc5dUlHMWxaR2xqWVhKbElHRmtkbUZ1ZEdGblpTQndiR0Z1Y3ciLCJicyI6ImMzMlB2UXJDTUJTRmNjM2tXQXJpZlFEeHA3b1hxVU1YUVZ5Y1EzTnJnbTJ1cENGOUNoZDNuOFBYTTIxMUVJemJoWV92bkhQWmtjMU9ra0ExWUNVQ3RSb05VQWxaaGM1ZkdUY0lPZkxLU2poVVhLZlJMVTJtOGFRWWNORmhPZUNyeDRQUE5Gdm4xSUlsT0tNRnBVc3lOYmVLUE5ld1I2RjZieXNjMTVhZnNWZWJOSHE0WkJNbk1taldINU5fbTEzZmpvTEJJTG56cHlHbmhOLXMwYlprTHI3dlB1XzZCQVdEQXlhVGJQbi1yMVJhZ0tEQ2ttbjgzRF9QUFp0a0ZTX2tieTAwWUR4NkFRIiwiaWQiOiJmY19sMlJrYU9Yb0ZLREp3UEFQcnV2Zi1BZ18xIn0%3D"
+    },
+    {
+      "question": "Do Medicare Advantage plans have provider networks?",
+      "snippet": "Medicare Advantage offers beneficiaries several plan options with various types of provider networks. Provider networks are strictly regulated to ensure access to all covered benefits.",
+      "title": "PROVIDER NETWORK REQUIREMENTS IN MEDICARE",
+      "link": "https://bettermedicarealliance.org/wp-content/uploads/2020/03/Provider-Networks-in-Medicare-Advantage2021-1.pdf",
+      "displayed_link": "https://bettermedicarealliance.org \u203a uploads \u203a 2020/03",
+      "source_logo": "https://serpapi.com/searches/68646495f2593a44ed74e2a4/images/6b3f44c8a788b111f59e49af72cc2554f117b09c9ec0d2cf7e658f6ad304a4d7.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWJYWlVYM0ExTTJrMGVIUmFhRTV3VVhGTk1EQkljRlJsZW5OaGJGZEplSFZGTTJOZk5uQlpPVzlFTUVoa1pHWnBRa3N5ZVVRMWJXUlBUREo0WmtkME1rRlZjVVE1VFVodGIxUjRMVmxHZFVSV00yUTVTMWxoUzFsamR4SVhiREpTYTJGUFdHOUdTMFJLZDFCQlVISjFkbVl0UVdjYUlrRkdUVUZIUjNCRlJ6VnlVSE5LYXpkSlNHeHZSV1JwWDBOS05qSjVaM0ZPVm5jIiwiZmN2IjoiMyIsImVpIjoibDJSa2FPWG9GS0RKd1BBUHJ1dmYtQWciLCJxYyI6ImMtTnlTODVKTFVzdFVraE9MRXBWeUVoTnpDbkpVQ2pJU2N4VHlFMU55UVFMSnFhVUplYVZKS2FuS2hRVTVaZGxwZ0FWcDJRV3BTYVg1QmRWS2lRV1pDcWtaV1FXQ1REVTlrWFoyZ01BIiwicXVlc3Rpb24iOiJEbyBNZWRpY2FyZSBBZHZhbnRhZ2UgcGxhbnMgaGF2ZSBwcm92aWRlciBuZXR3b3Jrcz8iLCJsayI6IkdqSmtieUJ0WldScFkyRnlaU0JoWkhaaGJuUmhaMlVnY0d4aGJuTWdhR0YyWlNCd2NtOTJhV1JsY2lCdVpYUjNiM0pyY3ciLCJicyI6ImMzMlB2UXJDTUJTRmNjM2tXQXJpZlFEeHA3b1hxVU1YUVZ5Y1EzTnJnbTJ1cENGOUNoZDNuOFBYTTIxMUVJemJoWV92bkhQWmtjMU9ra0ExWUNVQ3RSb05VQWxaaGM1ZkdUY0lPZkxLU2poVVhLZlJMVTJtOGFRWWNORmhPZUNyeDRQUE5Gdm4xSUlsT0tNRnBVc3lOYmVLUE5ld1I2RjZieXNjMTVhZnNWZWJOSHE0WkJNbk1taldINU5fbTEzZmpvTEJJTG56cHlHbmhOLXMwYlprTHI3dlB1XzZCQVdEQXlhVGJQbi1yMVJhZ0tEQ2ttbjgzRF9QUFp0a0ZTX2tieTAwWUR4NkFRIiwiaWQiOiJmY19sMlJrYU9Yb0ZLREp3UEFQcnV2Zi1BZ18xIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWJYWlVYM0ExTTJrMGVIUmFhRTV3VVhGTk1EQkljRlJsZW5OaGJGZEplSFZGTTJOZk5uQlpPVzlFTUVoa1pHWnBRa3N5ZVVRMWJXUlBUREo0WmtkME1rRlZjVVE1VFVodGIxUjRMVmxHZFVSV00yUTVTMWxoUzFsamR4SVhiREpTYTJGUFdHOUdTMFJLZDFCQlVISjFkbVl0UVdjYUlrRkdUVUZIUjNCRlJ6VnlVSE5LYXpkSlNHeHZSV1JwWDBOS05qSjVaM0ZPVm5jIiwiZmN2IjoiMyIsImVpIjoibDJSa2FPWG9GS0RKd1BBUHJ1dmYtQWciLCJxYyI6ImMtTnlTODVKTFVzdFVraE9MRXBWeUVoTnpDbkpVQ2pJU2N4VHlFMU55UVFMSnFhVUplYVZKS2FuS2hRVTVaZGxwZ0FWcDJRV3BTYVg1QmRWS2lRV1pDcWtaV1FXQ1REVTlrWFoyZ01BIiwicXVlc3Rpb24iOiJEbyBNZWRpY2FyZSBBZHZhbnRhZ2UgcGxhbnMgaGF2ZSBwcm92aWRlciBuZXR3b3Jrcz8iLCJsayI6IkdqSmtieUJ0WldScFkyRnlaU0JoWkhaaGJuUmhaMlVnY0d4aGJuTWdhR0YyWlNCd2NtOTJhV1JsY2lCdVpYUjNiM0pyY3ciLCJicyI6ImMzMlB2UXJDTUJTRmNjM2tXQXJpZlFEeHA3b1hxVU1YUVZ5Y1EzTnJnbTJ1cENGOUNoZDNuOFBYTTIxMUVJemJoWV92bkhQWmtjMU9ra0ExWUNVQ3RSb05VQWxaaGM1ZkdUY0lPZkxLU2poVVhLZlJMVTJtOGFRWWNORmhPZUNyeDRQUE5Gdm4xSUlsT0tNRnBVc3lOYmVLUE5ld1I2RjZieXNjMTVhZnNWZWJOSHE0WkJNbk1taldINU5fbTEzZmpvTEJJTG56cHlHbmhOLXMwYlprTHI3dlB1XzZCQVdEQXlhVGJQbi1yMVJhZ0tEQ2ttbjgzRF9QUFp0a0ZTX2tieTAwWUR4NkFRIiwiaWQiOiJmY19sMlJrYU9Yb0ZLREp3UEFQcnV2Zi1BZ18xIn0%3D"
+    },
+    {
+      "question": "How to find doctors in Medicare Advantage plans?",
+      "snippet": "There are a couple of ways to find out if your doctor is in a Medicare Advantage plan network. If you have a particular plan or insurer that you're looking into, you can go to the plan's website and look for their searchable directory or find a plan directory on the website, where you can search for your doctor.",
+      "title": "How can I find out if my doctor is in a Medicare Advantage plan network?",
+      "link": "https://www.kff.org/faqs/medicare-open-enrollment-faqs/how-can-i-find-out-if-my-doctor-is-in-a-medicare-advantage-plan-network/#:~:text=There%20are%20a%20couple%20of,can%20search%20for%20your%20doctor.",
+      "displayed_link": "https://www.kff.org \u203a medicare-open-enrollment-faqs",
+      "source_logo": "https://serpapi.com/searches/68646495f2593a44ed74e2a4/images/6b3f44c8a788b111f59e49af72cc25548fe391ef3f4ff485ad9da09114a9f639.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWJYWlVYM0ExTTJrMGVIUmFhRTV3VVhGTk1EQkljRlJsZW5OaGJGZEplSFZGTTJOZk5uQlpPVzlFTUVoa1pHWnBRa3N5ZVVRMWJXUlBUREo0WmtkME1rRlZjVVE1VFVodGIxUjRMVmxHZFVSV00yUTVTMWxoUzFsamR4SVhiREpTYTJGUFdHOUdTMFJLZDFCQlVISjFkbVl0UVdjYUlrRkdUVUZIUjNCRlJ6VnlVSE5LYXpkSlNHeHZSV1JwWDBOS05qSjVaM0ZPVm5jIiwiZmN2IjoiMyIsImVpIjoibDJSa2FPWG9GS0RKd1BBUHJ1dmYtQWciLCJxYyI6ImMtTnlTODVKTFVzdFVraE9MRXBWeUVoTnpDbkpVQ2pJU2N4VHlFMU55UVFMSnFhVUplYVZKS2FuS2hRVTVaZGxwZ0FWcDJRV3BTYVg1QmRWS2lRV1pDcWtaV1FXQ1REVTlrWFoyZ01BIiwicXVlc3Rpb24iOiJIb3cgdG8gZmluZCBkb2N0b3JzIGluIE1lZGljYXJlIEFkdmFudGFnZSBwbGFucz8iLCJsayI6IkdpOW9iM2NnZEc4Z1ptbHVaQ0JrYjJOMGIzSnpJR2x1SUcxbFpHbGpZWEpsSUdGa2RtRnVkR0ZuWlNCd2JHRnVjdyIsImJzIjoiYzMyUHZRckNNQlNGY2Mza1dBcmlmUUR4cDdvWHFVTVhRVnljUTNOcmdtMnVwQ0Y5Q2hkM244UFhNMjExRUl6YmhZX3ZuSFBaa2MxT2trQTFZQ1VDdFJvTlVBbFpoYzVmR1RjSU9mTEtTamhVWEtmUkxVMm04YVFZY05GaE9lQ3J4NFBQTkZ2bjFJSWxPS01GcFVzeU5iZUtQTmV3UjZGNmJ5c2MxNWFmc1ZlYk5IcTRaQk1uTW1qV0g1Tl9tMTNmam9MQklMbnpweUduaE4tczBiWmtMcjd2UHVfNkJBV0RBeWFUYlBuLXIxUmFnS0RDa21uODNEX1BQWnRrRlNfa2J5MDBZRHg2QVEiLCJpZCI6ImZjX2wyUmthT1hvRktESndQQVBydXZmLUFnXzEifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWJYWlVYM0ExTTJrMGVIUmFhRTV3VVhGTk1EQkljRlJsZW5OaGJGZEplSFZGTTJOZk5uQlpPVzlFTUVoa1pHWnBRa3N5ZVVRMWJXUlBUREo0WmtkME1rRlZjVVE1VFVodGIxUjRMVmxHZFVSV00yUTVTMWxoUzFsamR4SVhiREpTYTJGUFdHOUdTMFJLZDFCQlVISjFkbVl0UVdjYUlrRkdUVUZIUjNCRlJ6VnlVSE5LYXpkSlNHeHZSV1JwWDBOS05qSjVaM0ZPVm5jIiwiZmN2IjoiMyIsImVpIjoibDJSa2FPWG9GS0RKd1BBUHJ1dmYtQWciLCJxYyI6ImMtTnlTODVKTFVzdFVraE9MRXBWeUVoTnpDbkpVQ2pJU2N4VHlFMU55UVFMSnFhVUplYVZKS2FuS2hRVTVaZGxwZ0FWcDJRV3BTYVg1QmRWS2lRV1pDcWtaV1FXQ1REVTlrWFoyZ01BIiwicXVlc3Rpb24iOiJIb3cgdG8gZmluZCBkb2N0b3JzIGluIE1lZGljYXJlIEFkdmFudGFnZSBwbGFucz8iLCJsayI6IkdpOW9iM2NnZEc4Z1ptbHVaQ0JrYjJOMGIzSnpJR2x1SUcxbFpHbGpZWEpsSUdGa2RtRnVkR0ZuWlNCd2JHRnVjdyIsImJzIjoiYzMyUHZRckNNQlNGY2Mza1dBcmlmUUR4cDdvWHFVTVhRVnljUTNOcmdtMnVwQ0Y5Q2hkM244UFhNMjExRUl6YmhZX3ZuSFBaa2MxT2trQTFZQ1VDdFJvTlVBbFpoYzVmR1RjSU9mTEtTamhVWEtmUkxVMm04YVFZY05GaE9lQ3J4NFBQTkZ2bjFJSWxPS01GcFVzeU5iZUtQTmV3UjZGNmJ5c2MxNWFmc1ZlYk5IcTRaQk1uTW1qV0g1Tl9tMTNmam9MQklMbnpweUduaE4tczBiWmtMcjd2UHVfNkJBV0RBeWFUYlBuLXIxUmFnS0RDa21uODNEX1BQWnRrRlNfa2J5MDBZRHg2QVEiLCJpZCI6ImZjX2wyUmthT1hvRktESndQQVBydXZmLUFnXzEifQ%3D%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Clever Care Health Plan: Medicare Alternative Medicine Plans",
+      "link": "https://clevercarehealthplan.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://clevercarehealthplan.com/&ved=2ahUKEwilkJn_3ZyOAxWgJBAIHa71F48QFnoECBgQAQ",
+      "displayed_link": "https://clevercarehealthplan.com",
+      "favicon": "https://serpapi.com/searches/68646495f2593a44ed74e2a4/images/4568d8d995a7ae420f96e323a9c33971b028f8d8c7aec1da7d4c489713c3583d.png",
+      "snippet": "Find a Provider \u00b7 Find a Pharmacy \u00b7 FHIR API Resources. Legal Notices. Nondiscrimination Notice \u00b7 Terms of Use \u00b7 Privacy Practices \u00b7 Medicare Compliance \u00b7 Fraud ...",
+      "snippet_highlighted_words": [
+        "Provider",
+        "FHIR API"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "Medicare Advantage...",
+            "link": "https://clevercarehealthplan.com/plan-materials/"
+          },
+          {
+            "title": "Your Clever Care Member Portal",
+            "link": "https://members.clevercarehealthplan.com/"
+          },
+          {
+            "title": "FHIR API Resources",
+            "link": "https://clevercarehealthplan.com/fhir-api-developer-resources/"
+          }
+        ]
+      },
+      "source": "Clever Care Health Plan"
+    },
+    {
+      "position": 2,
+      "title": "Medicare Advantage Comprehensive Benefits",
+      "link": "https://clevercarehealthplan.com/plan-materials/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://clevercarehealthplan.com/plan-materials/&ved=2ahUKEwilkJn_3ZyOAxWgJBAIHa71F48QFnoECBQQAQ",
+      "displayed_link": "https://clevercarehealthplan.com \u203a plan-materials",
+      "favicon": "https://serpapi.com/searches/68646495f2593a44ed74e2a4/images/4568d8d995a7ae420f96e323a9c339718f2558f6e7dd5d695dbd4e48de74836f.png",
+      "snippet": "Provider Support: (833) 878-1704 (TTY: 711). Plans & Benefits. Find a Clever Care ... Find a Provider \u00b7 Find a Pharmacy \u00b7 FHIR API Resources. Legal Notices.",
+      "snippet_highlighted_words": [
+        "Provider",
+        "Provider",
+        "FHIR API"
+      ],
+      "source": "Clever Care Health Plan"
+    },
+    {
+      "position": 3,
+      "title": "Clever Care Health Plan Welcomes New CGO and CFO",
+      "link": "https://clevercarehealthplan.com/executive-leadership-additions/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://clevercarehealthplan.com/executive-leadership-additions/&ved=2ahUKEwilkJn_3ZyOAxWgJBAIHa71F48QFnoECBMQAQ",
+      "displayed_link": "https://clevercarehealthplan.com \u203a executive-leadership-...",
+      "favicon": "https://serpapi.com/searches/68646495f2593a44ed74e2a4/images/4568d8d995a7ae420f96e323a9c33971caf7fddaa40ecb6406969620ef15bdd2.png",
+      "date": "Jun 5, 2023",
+      "snippet": "Provider Support: (833) 878-1704 (TTY: 711). Plans & Benefits. Find ... Find a Provider \u00b7 Find a Pharmacy \u00b7 FHIR API Resources. Legal Notices.",
+      "snippet_highlighted_words": [
+        "Provider",
+        "Provider",
+        "FHIR API"
+      ],
+      "source": "Clever Care Health Plan"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Clever Care member Portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Clever+Care+member+Portal&sa=X&ved=2ahUKEwilkJn_3ZyOAxWgJBAIHa71F48Q1QJ6BAg_EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+member+Portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care health plan provider search",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Clever+Care+health+plan+provider+search&sa=X&ved=2ahUKEwilkJn_3ZyOAxWgJBAIHa71F48Q1QJ6BAg-EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+health+plan+provider+search&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care NationsBenefits com login",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Clever+Care+NationsBenefits+com+login&sa=X&ved=2ahUKEwilkJn_3ZyOAxWgJBAIHa71F48Q1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+NationsBenefits+com+login&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care Health Plan Claims Address",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Clever+Care+Health+Plan+Claims+Address&sa=X&ved=2ahUKEwilkJn_3ZyOAxWgJBAIHa71F48Q1QJ6BAg8EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+Health+Plan+Claims+Address&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care OTC login",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Clever+Care+OTC+login&sa=X&ved=2ahUKEwilkJn_3ZyOAxWgJBAIHa71F48Q1QJ6BAg9EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+OTC+login&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care eligibility phone Number",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Clever+Care+eligibility+phone+Number&sa=X&ved=2ahUKEwilkJn_3ZyOAxWgJBAIHa71F48Q1QJ6BAg6EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+eligibility+phone+Number&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care Health Plan careers",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Clever+Care+Health+Plan+careers&sa=X&ved=2ahUKEwilkJn_3ZyOAxWgJBAIHa71F48Q1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+Health+Plan+careers&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Clever Care Health Plan reviews",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=Clever+Care+Health+Plan+reviews&sa=X&ved=2ahUKEwilkJn_3ZyOAxWgJBAIHa71F48Q1QJ6BAg7EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Clever+Care+Health+Plan+reviews&safe=active"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 3 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22clever+care+health+plan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

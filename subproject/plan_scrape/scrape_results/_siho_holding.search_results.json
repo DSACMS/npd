@@ -1,0 +1,222 @@
+{
+  "search_metadata": {
+    "id": "68646c49079a2b3c5bd0a556",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/8619131be3b302d4/68646c49079a2b3c5bd0a556.json",
+    "created_at": "2025-07-01 23:16:25 UTC",
+    "processed_at": "2025-07-01 23:16:25 UTC",
+    "google_url": "https://www.google.com/search?q=%22siho+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22siho+holding+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/8619131be3b302d4/68646c49079a2b3c5bd0a556.html",
+    "total_time_taken": 5.97
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"siho holding Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"siho holding Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 281,
+    "time_taken_displayed": 0.43,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "query_feedback": {
+      "title": "It looks like there aren't many great matches for your search",
+      "description": "Try using words that might appear on the page you\u2019re looking for. For example, \"cake recipes\" instead of \"how to make a cake.\""
+    },
+    "showing_results_for": "siho holding Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "siho holding Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "ccs-20241231",
+      "link": "https://www.sec.gov/Archives/edgar/data/1866633/000186663325000004/ccs-20241231.htm",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.sec.gov/Archives/edgar/data/1866633/000186663325000004/ccs-20241231.htm&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQFnoECCEQAQ",
+      "displayed_link": "https://www.sec.gov \u203a Archives \u203a edgar \u203a data \u203a ccs-20...",
+      "favicon": "https://serpapi.com/searches/68646c49079a2b3c5bd0a556/images/5a3bbe80abb1b5b5013feec1631e6ec1991ff9752f98aae972adc6f9f5dc581d.png",
+      "snippet": "Beginning as an online fax company over two decades ago, Consensus has evolved into a leading global provider of enterprise secure communication solutions.",
+      "snippet_highlighted_words": [
+        "provider"
+      ],
+      "missing": [
+        "siho"
+      ],
+      "must_include": {
+        "word": "siho",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=%22siho%22+holding+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQ5t4CegQIKRAB"
+      },
+      "source": "SEC.gov"
+    },
+    {
+      "position": 2,
+      "title": "Consensus Cloud Solutions, Inc.",
+      "link": "https://www.sec.gov/Archives/edgar/data/1866633/000114036123021754/ny20007779x502_ars.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.sec.gov/Archives/edgar/data/1866633/000114036123021754/ny20007779x502_ars.pdf&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQFnoECB0QAQ",
+      "displayed_link": "https://www.sec.gov \u203a Archives \u203a edgar \u203a data",
+      "favicon": "https://serpapi.com/searches/68646c49079a2b3c5bd0a556/images/5a3bbe80abb1b5b5013feec1631e6ec1b0d5260f530d216ad5eb6ebb220bee55.png",
+      "snippet": "... (API/FHIR, Web Service), addressing a wide range of interoperability challenges from the simple to the extremely complex. Clarity: Using Natural Language ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR"
+      ],
+      "missing": [
+        "siho"
+      ],
+      "must_include": {
+        "word": "siho",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=%22siho%22+holding+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQ5t4CegQIJxAB"
+      },
+      "source": "SEC.gov"
+    },
+    {
+      "position": 3,
+      "title": "Registry of Open Data on AWS",
+      "link": "https://registry.opendata.aws/?search=managedBy:stsci",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://registry.opendata.aws/%3Fsearch%3DmanagedBy:stsci&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQFnoECBoQAQ",
+      "displayed_link": "https://registry.opendata.aws \u203a ...",
+      "favicon": "https://serpapi.com/searches/68646c49079a2b3c5bd0a556/images/5a3bbe80abb1b5b5013feec1631e6ec1173356b4f2cdf2935efb82f461192a13.png",
+      "snippet": "If you want to add a dataset or example of how to use a dataset to this registry, please follow the instructions on the Registry of Open Data on AWS GitHub ...",
+      "source": "Registry of Open Data on AWS"
+    },
+    {
+      "position": 4,
+      "title": "Nurse Scientist (RN) - abridge - Himalayas",
+      "link": "https://himalayas.app/companies/abridge/jobs/nurse-scientist-rn",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://himalayas.app/companies/abridge/jobs/nurse-scientist-rn&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQFnoECBgQAQ",
+      "displayed_link": "https://himalayas.app \u203a ... \u203a abridge \u203a Remote jobs",
+      "favicon": "https://serpapi.com/searches/68646c49079a2b3c5bd0a556/images/5a3bbe80abb1b5b5013feec1631e6ec1fc44b81e7454a9c88befd8553a8f03d1.png",
+      "date": "May 28, 2025",
+      "snippet": "Hands-on experience in clinical data validation and quality assessment. Strong knowledge of healthcare data standards (e.g., FHIR, HL7) and ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "missing": [
+        "siho",
+        "Advantage"
+      ],
+      "source": "himalayas.app"
+    },
+    {
+      "position": 5,
+      "title": "The Medical-Grade Network: Helping Transform Healthcare",
+      "link": "https://www.academia.edu/28733942/The_Medical_Grade_Network_Helping_Transform_Healthcare",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.academia.edu/28733942/The_Medical_Grade_Network_Helping_Transform_Healthcare&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQFnoECBkQAQ",
+      "displayed_link": "https://www.academia.edu \u203a The_Medical_Grade_Netw...",
+      "favicon": "https://serpapi.com/searches/68646c49079a2b3c5bd0a556/images/5a3bbe80abb1b5b5013feec1631e6ec12c6547c640941de6e98c4d7002dd27a8.png",
+      "snippet": "The Cisco Medical-Grade Network (MGN) offers a tailored framework that addresses healthcare's specific needs for interoperability, security, and productivity.",
+      "missing": [
+        "siho"
+      ],
+      "must_include": {
+        "word": "siho",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=%22siho%22+holding+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQ5t4CegQIKhAB"
+      },
+      "source": "Academia.edu"
+    },
+    {
+      "position": 6,
+      "title": "Remote Health + Travel Jobs with great benefits and pay",
+      "link": "https://remoteok.com/remote-health+travel-jobs",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://remoteok.com/remote-health%2Btravel-jobs&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQFnoECCIQAQ",
+      "displayed_link": "https://remoteok.com \u203a remote-health+travel-jobs",
+      "favicon": "https://serpapi.com/searches/68646c49079a2b3c5bd0a556/images/5a3bbe80abb1b5b5013feec1631e6ec1329c90620decf52514cddba433f19093.png",
+      "snippet": "Browse 20+ Remote Health Travel Jobs in June 2025 at companies like City IT, Hallow and Procept Biorobotics with salaries from $30000/year to $62500/year ...",
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.5,
+            "reviews": 53296
+          },
+          "extensions": [
+            "4.5(53,296)"
+          ]
+        }
+      },
+      "missing": [
+        "siho"
+      ],
+      "must_include": {
+        "word": "siho",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=%22siho%22+holding+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQ5t4CegQIKBAB"
+      },
+      "source": "Remote OK"
+    },
+    {
+      "position": 7,
+      "title": "based interoperability solution: Topics by ...",
+      "link": "https://www.science.gov/topicpages/b/based+interoperability+solution",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.science.gov/topicpages/b/based%2Binteroperability%2Bsolution&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQFnoECDYQAQ",
+      "displayed_link": "https://www.science.gov \u203a topicpages \u203a based+interopera...",
+      "favicon": "https://serpapi.com/searches/68646c49079a2b3c5bd0a556/images/5a3bbe80abb1b5b5013feec1631e6ec17564aa7c0fe51a3bc35956de6c5436c3.png",
+      "snippet": "This healthcare directory suite implements discovery of healthcare data by HIE and EHR systems via FHIR. Shortcomings of past directory efforts include the ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR",
+        "directory"
+      ],
+      "missing": [
+        "siho"
+      ],
+      "must_include": {
+        "word": "siho",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=%22siho%22+holding+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQ5t4CegQIOhAB"
+      },
+      "source": "Science.gov"
+    },
+    {
+      "position": 8,
+      "title": "Blockchain for 5G Healthcare Applications",
+      "link": "https://www.scribd.com/document/628739292/Blockchain-for-5G-Healthcare-Applications-Security-and-Privacy-Solutions",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.scribd.com/document/628739292/Blockchain-for-5G-Healthcare-Applications-Security-and-Privacy-Solutions&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQFnoECDEQAQ",
+      "displayed_link": "https://www.scribd.com \u203a document",
+      "favicon": "https://serpapi.com/searches/68646c49079a2b3c5bd0a556/images/5a3bbe80abb1b5b5013feec1631e6ec126e3fdb977eb6c6792dd6b3eb4040765.png",
+      "snippet": "A secured system for Healthcare 4.0 is vital to all stakeholders, including patients and. Security and privacy solutions. Blockchain for 5G Healthcare ...",
+      "source": "Scribd"
+    },
+    {
+      "position": 9,
+      "title": "illustrative.html - FTP Directory Listing",
+      "link": "ftp://ftp.sri.com/risks/illustrative.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=ftp://ftp.sri.com/risks/illustrative.html&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQFnoECDMQAQ",
+      "displayed_link": "ftp.sri.com \u203a risks \u203a illustrative",
+      "snippet": "SEN and RISKS also consider approaches for developing better computer systems, e.g., safer, more reliable, more secure, fewer cost and schedule overruns, etc.",
+      "source": "sri.com"
+    },
+    {
+      "position": 10,
+      "title": "Quattro Development Buys Commercial Site in Goodyear, AZ",
+      "link": "https://www.eznewswire.com/newsroom/quattro-development-buys-commercial-site-in-goodyear-az",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.eznewswire.com/newsroom/quattro-development-buys-commercial-site-in-goodyear-az&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQFnoECDcQAQ",
+      "displayed_link": "https://www.eznewswire.com \u203a newsroom \u203a quattro-dev...",
+      "favicon": "https://serpapi.com/searches/68646c49079a2b3c5bd0a556/images/5a3bbe80abb1b5b5013feec1631e6ec1d0bace90d61991a966aa93639a8d297c.png",
+      "date": "Apr 25, 2023",
+      "snippet": "Quattro Development announced today the recent purchase of a commercial development site in Goodyear, AZ. The 1.61 acre property is located at ...",
+      "source": "EZ Newswire"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=siho+holding+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=TmxkaJ-2MOes5NoPmK3JoAs&start=10&sa=N&sstk=Ac65TH639QpuQkj82HpAtKcUPiqB-NpzmSbe2rVlXd0lYwmO40vQXkziAK4L1OUn_AGg7lJfOSyUj9Cw09L6b3E2OpBGgk3UGDSxCA&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQ8NMDegQICRAI",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=siho+holding+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=TmxkaJ-2MOes5NoPmK3JoAs&start=10&sa=N&sstk=Ac65TH639QpuQkj82HpAtKcUPiqB-NpzmSbe2rVlXd0lYwmO40vQXkziAK4L1OUn_AGg7lJfOSyUj9Cw09L6b3E2OpBGgk3UGDSxCA&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=siho+holding+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=TmxkaJ-2MOes5NoPmK3JoAs&start=20&sa=N&sstk=Ac65TH639QpuQkj82HpAtKcUPiqB-NpzmSbe2rVlXd0lYwmO40vQXkziAK4L1OUn_AGg7lJfOSyUj9Cw09L6b3E2OpBGgk3UGDSxCA&ved=2ahUKEwiflZWt5ZyOAxVnFlkFHZhWErQQ8tMDegQICRAG"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=siho+holding+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=siho+holding+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=siho+holding+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=siho+holding+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20"
+    }
+  }
+}

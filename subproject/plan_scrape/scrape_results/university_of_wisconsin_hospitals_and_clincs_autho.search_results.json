@@ -1,0 +1,315 @@
+{
+  "search_metadata": {
+    "id": "68646d7309a51ae9c0d4dc19",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/934b3985bc7ed57c/68646d7309a51ae9c0d4dc19.json",
+    "created_at": "2025-07-01 23:21:23 UTC",
+    "processed_at": "2025-07-01 23:21:23 UTC",
+    "google_url": "https://www.google.com/search?q=university+of+wisconsin+hospitals+and+clincs+autho+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=university+of+wisconsin+hospitals+and+clincs+autho+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/934b3985bc7ed57c/68646d7309a51ae9c0d4dc19.html",
+    "total_time_taken": 3.04
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "university of wisconsin hospitals and clincs autho Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "university of wisconsin hospitals and clincs autho Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 55,
+    "time_taken_displayed": 0.63,
+    "organic_results_state": "Some results for exact spelling but showing fixed spelling",
+    "spelling_fix": "university of wisconsin hospitals and clinics auth Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "showing_results_for": "university of wisconsin hospitals and clinics auth Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQFnoECBMQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646d7309a51ae9c0d4dc19/images/ba43947a09fda020186acc404ac37ffdff6be41cd136b17469f1b9103bc77d10.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 2,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQFnoECBkQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646d7309a51ae9c0d4dc19/images/ba43947a09fda020186acc404ac37ffdabda4386dcdb234f5ccf58406ec2a2c4.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 3,
+      "title": "Helpful Hints - Confluence - HL7.org",
+      "link": "https://confluence.hl7.org/download/attachments/81018510/ProjectBallotHealthMetrics_2022JanWGM_20211221.xlsx?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/81018510/ProjectBallotHealthMetrics_2022JanWGM_20211221.xlsx%3Fapi%3Dv2&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQFnoECBQQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a attachments \u203a api=v2",
+      "favicon": "https://serpapi.com/searches/68646d7309a51ae9c0d4dc19/images/ba43947a09fda020186acc404ac37ffd4fc103a30ecb8fd3c8553bef51a6cf75.png",
+      "snippet": "... FHIR Infrastructure Work Group, FHIR Management Group, Clinical, We will ... Provider Directory, Endpoint Directory, Utilizes the work done for the ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "HL7.org"
+    },
+    {
+      "position": 4,
+      "title": "Supplemental Background Research Document for the ...",
+      "link": "https://www.healthit.gov/sites/default/files/page/2023-03/2023-02-08_HITAC_Annual_Report_for_FY22_supplemental_background_research_508_1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/page/2023-03/2023-02-08_HITAC_Annual_Report_for_FY22_supplemental_background_research_508_1.pdf&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQFnoECBYQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a page",
+      "favicon": "https://serpapi.com/searches/68646d7309a51ae9c0d4dc19/images/ba43947a09fda020186acc404ac37ffd60a56c6f2f984fa3c52c515adc7bfad0.jpeg",
+      "date": "Feb 8, 2023",
+      "snippet": "A provider directory supports the management of healthcare provider information, both individual and organizational, in a directory structure.",
+      "snippet_highlighted_words": [
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 46
+          },
+          "extensions": [
+            "46 pages"
+          ]
+        }
+      },
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "2022 UnitedHealthcare Care Provider Administrative Guide",
+      "link": "https://health.maryland.gov/pophealth/Documents/Local%20Health%20Department%20Billing%20Manual/LHD%20Billing%20Manual%20V34/Section%20VI%20MD%20Payors/Commerical/UHC-Administrative-Guide%202022-.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://health.maryland.gov/pophealth/Documents/Local%2520Health%2520Department%2520Billing%2520Manual/LHD%2520Billing%2520Manual%2520V34/Section%2520VI%2520MD%2520Payors/Commerical/UHC-Administrative-Guide%25202022-.pdf&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQFnoECBAQAQ",
+      "displayed_link": "https://health.maryland.gov \u203a Commerical",
+      "date": "Mar 11, 2021",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 405
+          },
+          "extensions": [
+            "405 pages"
+          ]
+        }
+      },
+      "source": "Maryland.gov"
+    },
+    {
+      "position": 6,
+      "title": "BEST IN - NET",
+      "link": "https://sectraprodstorage01.blob.core.windows.net/medical-uploads/sites/3/2024/02/klas-report-2024-best-in-klas-awards-software-and-services-full.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://sectraprodstorage01.blob.core.windows.net/medical-uploads/sites/3/2024/02/klas-report-2024-best-in-klas-awards-software-and-services-full.pdf&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQFnoECBcQAQ",
+      "displayed_link": "https://sectraprodstorage01.blob.core.windows.net \u203a ...",
+      "date": "Feb 7, 2024",
+      "snippet": "... FHIR 92.2. Data Analytics Platforms (Payers). Clarify Health Solutions ... provider directory API, and payer-to-payer data exchange ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Health",
+        "provider directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 279
+          },
+          "extensions": [
+            "279 pages"
+          ]
+        }
+      },
+      "source": "windows.net"
+    },
+    {
+      "position": 7,
+      "title": "ELLKAY Redacted Technical Proposal.pdf",
+      "link": "http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/ELLKAY%20Redacted%20Technical%20Proposal.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.medicaid.pr.gov/pdf/2024-PRMP-HIE-001/Ellkay/ELLKAY%2520Redacted%2520Technical%2520Proposal.pdf&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQFnoECBUQAQ",
+      "displayed_link": "http://www.medicaid.pr.gov \u203a 2024-PRMP-HIE-001",
+      "favicon": "https://serpapi.com/searches/68646d7309a51ae9c0d4dc19/images/ba43947a09fda020186acc404ac37ffd53d13094de7474774445b8f88d1790ec.png",
+      "date": "Jul 7, 2024",
+      "snippet": "The vendor confirms that. Provider Directory ... Current FHIR API capabilities o ELLKAY has currently enabled the following R4 FHIR APIs:.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "source": "Gobierno de Puerto Rico (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Report Card - Confluence - HL7 International",
+      "link": "https://confluence.hl7.org/download/attachments/144994722/ProjectBallotHealthMetrics_2023JanWGM_Final.xlsx?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/144994722/ProjectBallotHealthMetrics_2023JanWGM_Final.xlsx%3Fapi%3Dv2&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQFnoECDkQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a attachments \u203a api=v2",
+      "favicon": "https://serpapi.com/searches/68646d7309a51ae9c0d4dc19/images/ba43947a09fda020186acc404ac37ffd458ad0b58e758f1b8fc4b1ce03ff7421.png",
+      "snippet": "Develop a FHIR R4 based implementation guide for an API similar to the CMS Medicare Blue Button 2.0 API, FHIR R3 based, that will allow consumer-directed ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Medicare",
+        "API",
+        "FHIR"
+      ],
+      "source": "HL7.org"
+    },
+    {
+      "position": 9,
+      "title": "State of North Carolina Department of Health and Human ...",
+      "link": "https://medicaid.ncdhhs.gov/nchitechiapdu210721pdf/download?attachment",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medicaid.ncdhhs.gov/nchitechiapdu210721pdf/download%3Fattachment&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQFnoECDsQAQ",
+      "displayed_link": "https://medicaid.ncdhhs.gov \u203a download \u203a attach...",
+      "favicon": "https://serpapi.com/searches/68646d7309a51ae9c0d4dc19/images/ba43947a09fda020186acc404ac37ffd410dc9168641b6a16a0b9d71576184cf.png",
+      "date": "Feb 9, 2010",
+      "snippet": "Add delivery methods and formats, including by FHIR Application Programming Interface (API), ... Provider Directory with 20,000+ provider ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Provider Directory"
+      ],
+      "source": "NC Medicaid (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "2024 Quality Improvement & Health Equity Program ...",
+      "link": "https://www.lacare.org/sites/default/files/la6784_qi_annual_evaluation_202505.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/la6784_qi_annual_evaluation_202505.pdf&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQFnoECDoQAQ",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files \u203a la...",
+      "favicon": "https://serpapi.com/searches/68646d7309a51ae9c0d4dc19/images/ba43947a09fda020186acc404ac37ffd3f66540df751f872d000ea02994a795b.png",
+      "snippet": "... (FHIR) Application. Programming Interface. (API) into the Clinical. Data ... provider directory survey, which includes questions regarding their ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 500
+          },
+          "extensions": [
+            "500 pages"
+          ]
+        }
+      },
+      "source": "L.A. Care Health Plan"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "UHC provider manual 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+provider+manual+2025&sa=X&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+provider+manual+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC Medicare Advantage timely filing limit",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+Medicare+Advantage+timely+filing+limit&sa=X&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+Medicare+Advantage+timely+filing+limit&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC Provider Portal",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+Provider+Portal&sa=X&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+Provider+Portal&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc Medicare advantage Timely filing limit for corrected claims",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&sa=X&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQ1QJ6BAguEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC care survey 25 1",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+care+survey+25+1&sa=X&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQ1QJ6BAgwEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+care+survey+25+1&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "P.O. Box 31386 Salt Lake City UT 84131",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=P.O.+Box+31386+Salt+Lake+City+UT+84131&sa=X&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQ1QJ6BAgvEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=P.O.+Box+31386+Salt+Lake+City+UT+84131&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "PO Box 31387 SALT Lake City, UT 84131",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=PO+Box+31387+SALT+Lake+City,+UT+84131&sa=X&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=PO+Box+31387+SALT+Lake+City%2C+UT+84131&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "PO Box 6111 Cypress, CA 90630",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=PO+Box+6111+Cypress,+CA+90630&sa=X&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=PO+Box+6111+Cypress%2C+CA+90630&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=university+of+wisconsin+hospitals+and+clinics+auth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=dW1kaLK5L7CL0PEPrerB4Q4&start=10&sa=N&sstk=Ac65TH6CQ8lyCGGQmGmojCPg9SpkWICwsM6lxYV28p-qzSZBDFpc8fuIqdMSEjlafa4fWcZUjEEXXwv7LF661vtDqyfMAwDqJW3kLg&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQ8NMDegQICBAK",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=university+of+wisconsin+hospitals+and+clinics+auth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=dW1kaLK5L7CL0PEPrerB4Q4&start=10&sa=N&sstk=Ac65TH6CQ8lyCGGQmGmojCPg9SpkWICwsM6lxYV28p-qzSZBDFpc8fuIqdMSEjlafa4fWcZUjEEXXwv7LF661vtDqyfMAwDqJW3kLg&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQ8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=university+of+wisconsin+hospitals+and+clinics+auth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=dW1kaLK5L7CL0PEPrerB4Q4&start=20&sa=N&sstk=Ac65TH6CQ8lyCGGQmGmojCPg9SpkWICwsM6lxYV28p-qzSZBDFpc8fuIqdMSEjlafa4fWcZUjEEXXwv7LF661vtDqyfMAwDqJW3kLg&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQ8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=university+of+wisconsin+hospitals+and+clinics+auth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=dW1kaLK5L7CL0PEPrerB4Q4&start=30&sa=N&sstk=Ac65TH6CQ8lyCGGQmGmojCPg9SpkWICwsM6lxYV28p-qzSZBDFpc8fuIqdMSEjlafa4fWcZUjEEXXwv7LF661vtDqyfMAwDqJW3kLg&ved=2ahUKEwjyx-m55pyOAxWwBTQIHS11MOwQ8tMDegQICBAI"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=university+of+wisconsin+hospitals+and+clinics+auth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=university+of+wisconsin+hospitals+and+clinics+auth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=university+of+wisconsin+hospitals+and+clinics+auth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=university+of+wisconsin+hospitals+and+clinics+auth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=university+of+wisconsin+hospitals+and+clinics+auth+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30"
+    }
+  }
+}

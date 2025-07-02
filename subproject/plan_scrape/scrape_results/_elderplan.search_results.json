@@ -1,0 +1,172 @@
+{
+  "search_metadata": {
+    "id": "686464a92c2bb4ccc081795e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/b413305b9dfbba20/686464a92c2bb4ccc081795e.json",
+    "created_at": "2025-07-01 22:43:53 UTC",
+    "processed_at": "2025-07-01 22:43:53 UTC",
+    "google_url": "https://www.google.com/search?q=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/b413305b9dfbba20/686464a92c2bb4ccc081795e.html",
+    "total_time_taken": 1.71
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"elderplan Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"elderplan Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 4,
+    "time_taken_displayed": 0.38,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "elderplan Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "elderplan Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "inline_images": [
+    {
+      "source": "https://www.flexpa.com/docs/network/directory",
+      "thumbnail": "https://serpapi.com/searches/686464a92c2bb4ccc081795e/images/fc547716d39e5f8bb0901bc36676f16220aa844164d6bdbbc88ab7ab6ef02dc0.jpeg",
+      "original": "https://www.flexpa.com/docs/_next/static/media/logo.8811c4dd.svg",
+      "title": "Flexpa Directory",
+      "source_name": "Flexpa"
+    },
+    {
+      "source": "https://www.flexpa.com/docs/network/directory",
+      "thumbnail": "https://serpapi.com/searches/686464a92c2bb4ccc081795e/images/fc547716d39e5f8b40f59d2811286f170eb495c48b66dbb75c962602cf43e225.jpeg",
+      "original": "https://cdn.flexpa.com/logos/23c469f6-cfb8-4927-9234-04d5310ae9d8",
+      "title": "Flexpa Directory",
+      "source_name": "Flexpa"
+    },
+    {
+      "source": "https://www.communityplans.net/all-pages/",
+      "thumbnail": "https://serpapi.com/searches/686464a92c2bb4ccc081795e/images/fc547716d39e5f8bb4d98f0fa612bc7d1a8251c3908b2ee8051834d7b69d0773.jpeg",
+      "original": "http://www.communityplans.net/Portals/0/Plan%20Documents/Compliance/Org%20Charts/CHP%20Org%20Chart.jpg",
+      "title": "Association For Community Affiliated Plans || All Pages ...",
+      "source_name": "Association For Community Affiliated Plans"
+    },
+    {
+      "source": "https://www.federalregister.gov/documents/2021/07/09/2021-14250/medicare-program-end-stage-renal-disease-prospective-payment-system-payment-for-renal-dialysis",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgO5QLVqXD5aSJSsfxZloeZLIhjuBdJTdYqer8PSIQnpCVnVdSqZRhlec&s",
+      "original": "https://img.federalregister.gov/EP09JY21.000/EP09JY21.000_original_size.png",
+      "title": "Federal Register :: Medicare Program; End-Stage Renal ...",
+      "source_name": "Federal Register"
+    },
+    {
+      "source": "https://www.federalregister.gov/documents/2021/07/09/2021-14250/medicare-program-end-stage-renal-disease-prospective-payment-system-payment-for-renal-dialysis",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQez2fBf4Fb94lTzHN1FWwMLrFBwM35oDcp4P0tH-x_enCWwAnduKV48SI&s",
+      "original": "https://img.federalregister.gov/EP09JY21.001/EP09JY21.001_original_size.png",
+      "title": "Federal Register :: Medicare Program; End-Stage Renal ...",
+      "source_name": "Federal Register"
+    },
+    {
+      "source": "https://www.federalregister.gov/documents/2021/07/09/2021-14250/medicare-program-end-stage-renal-disease-prospective-payment-system-payment-for-renal-dialysis",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSHFz1ctFvgAaCi1ECaGgKGZC1yQc8r1qUywwZIl3K0gZk7ZMDE2iLv3k&s",
+      "original": "https://img.federalregister.gov/EP09JY21.004/EP09JY21.004_original_size.png",
+      "title": "Federal Register :: Medicare Program; End-Stage Renal ...",
+      "source_name": "Federal Register"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwiU2IeI3pyOAxWNN1kFHcTVLwkQFnoECBoQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/686464a92c2bb4ccc081795e/images/3301a4634eef405df3909a0c14d673fb8bae0e72022e254d7c086dc5b5870ea3.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. Endpoints are: FHIR- ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 2,
+      "title": "ePS Payer List (A-F) - April 12, 2024",
+      "link": "https://support.drchrono.com/home/24766684793115-eps-payer-list-a-f-april-12-2024",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://support.drchrono.com/home/24766684793115-eps-payer-list-a-f-april-12-2024&ved=2ahUKEwiU2IeI3pyOAxWNN1kFHcTVLwkQFnoECB0QAQ",
+      "displayed_link": "https://support.drchrono.com \u203a home \u203a 2476668479311...",
+      "favicon": "https://serpapi.com/searches/686464a92c2bb4ccc081795e/images/3301a4634eef405df3909a0c14d673fbfeda420f1fb33a6504ec8d5548d8e1cf.png",
+      "date": "Apr 12, 2024",
+      "snippet": "FHIR API FAQ \u00b7 Set Up ConnectEHR for FHIR \u00b7 Connect Patient Dynamic FHIR ... Blue Cross Medicare Advantage, 66006, ALL, X, X, X, Y. BLUE CROSS NEW ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "FHIR",
+        "FHIR",
+        "Medicare Advantage"
+      ],
+      "source": "DrChrono"
+    },
+    {
+      "position": 3,
+      "title": "All Pages",
+      "link": "https://www.communityplans.net/all-pages/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.communityplans.net/all-pages/&ved=2ahUKEwiU2IeI3pyOAxWNN1kFHcTVLwkQFnoECBgQAQ",
+      "displayed_link": "https://www.communityplans.net \u203a all-pages",
+      "snippet": "Representing and strengthening Safety Net Health Plans, working with low-income, vulnerable populations.",
+      "snippet_highlighted_words": [
+        "Plans"
+      ],
+      "source": "Association For Community Affiliated Plans"
+    },
+    {
+      "position": 4,
+      "title": "ePS Reconnection Payer List (A-E) as of 6.17.2024",
+      "link": "https://support.drchrono.com/home/26682369176219-eps-reconnection-payer-list-a-e-as-of-6-17-2024",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://support.drchrono.com/home/26682369176219-eps-reconnection-payer-list-a-e-as-of-6-17-2024&ved=2ahUKEwiU2IeI3pyOAxWNN1kFHcTVLwkQFnoECBYQAQ",
+      "displayed_link": "https://support.drchrono.com \u203a home \u203a 2668236917621...",
+      "favicon": "https://serpapi.com/searches/686464a92c2bb4ccc081795e/images/3301a4634eef405df3909a0c14d673fb46b30b36db934bad94cdfdb02d3b9ccb.png",
+      "date": "Jun 17, 2024",
+      "snippet": "Providers already set up with Echo via ePS should already be receiving new ERAs. If you are not please open a support ticket, requesting new ...",
+      "snippet_highlighted_words": [
+        "Providers"
+      ],
+      "source": "DrChrono"
+    }
+  ],
+  "dmca_messages": {
+    "title": "Notices about Filtered Results",
+    "messages": [
+      {
+        "content": "In order to show you the most relevant results, we have omitted some entries very similar to the 4 already displayed.If you like, you can repeat the search with the omitted results included.",
+        "highlighted_words": [
+          {
+            "link": "https://www.google.com/search?q=elderplan+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&filter=0",
+            "text": "repeat the search with the omitted results included"
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=%22elderplan+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

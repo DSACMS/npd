@@ -1,0 +1,313 @@
+{
+  "search_metadata": {
+    "id": "686464c5b7942f1e4add8faa",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/95ee7fb256c39641/686464c5b7942f1e4add8faa.json",
+    "created_at": "2025-07-01 22:44:21 UTC",
+    "processed_at": "2025-07-01 22:44:21 UTC",
+    "google_url": "https://www.google.com/search?q=%22horizon+mutual+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22horizon+mutual+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/95ee7fb256c39641/686464c5b7942f1e4add8faa.html",
+    "total_time_taken": 1.58
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"horizon mutual holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"horizon mutual holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 340,
+    "time_taken_displayed": 0.4,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "horizon mutual holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "horizon mutual holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQFnoECBYQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/686464c5b7942f1e4add8faa/images/0490c9bda5a76da41dc6384affb59927a1617bc6e84412aa7b78115e2654cd1e.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. Endpoints are: FHIR- ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=horizon+mutual+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ5t4CegQIGBAB"
+      },
+      "source": "Flexpa"
+    },
+    {
+      "position": 2,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQFnoECBcQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/686464c5b7942f1e4add8faa/images/0490c9bda5a76da41dc6384affb59927e7c9b6f56f21cd908f86f583460037b6.png",
+      "date": "Jan 1, 2024",
+      "snippet": "Welcome to the UnitedHealthcare Care Provider Administrative Guide for Commercial and Medicare Advantage (MA) products.",
+      "snippet_highlighted_words": [
+        "Provider",
+        "Medicare Advantage"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 3,
+      "title": "Payer-to-Payer Data Exchange in Healthcare",
+      "link": "https://www.citiustech.com/citius-vision/article/exploring-payer-to-payer-data-exchange",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.citiustech.com/citius-vision/article/exploring-payer-to-payer-data-exchange&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQFnoECB0QAQ",
+      "displayed_link": "https://www.citiustech.com \u203a Citius Vision \u203a Article",
+      "favicon": "https://serpapi.com/searches/686464c5b7942f1e4add8faa/images/0490c9bda5a76da41dc6384affb59927b3ab322c149034241727d819f6170542.png",
+      "date": "Jun 19, 2024",
+      "snippet": "Payers can leverage the same FHIR-based solution that was built for Patient Access API, as per CMS Interoperability & Patient Access Final Rule ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=horizon+mutual+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ5t4CegQIHhAB"
+      },
+      "source": "CitiusTech"
+    },
+    {
+      "position": 4,
+      "title": "2024 July Changes MCO Contract - NJ.gov",
+      "link": "https://www.nj.gov/humanservices/dmahs/info/resources/care/hmo-contract.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.nj.gov/humanservices/dmahs/info/resources/care/hmo-contract.pdf&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQFnoECBwQAQ",
+      "displayed_link": "https://www.nj.gov \u203a info \u203a care \u203a hmo-contract",
+      "favicon": "https://serpapi.com/searches/686464c5b7942f1e4add8faa/images/0490c9bda5a76da41dc6384affb59927e175ed518493f5f93912fa48ce3becd5.png",
+      "date": "Jul 15, 2024",
+      "snippet": "... PROVIDER ... Alternative Benefit Plan (ABP)--Benefit package for individuals in the new adult group (Medicaid. Expansion) under the Affordable ...",
+      "snippet_highlighted_words": [
+        "PROVIDER",
+        "group",
+        "Medicaid"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 935
+          },
+          "extensions": [
+            "935 pages"
+          ]
+        }
+      },
+      "missing": [
+        "horizon"
+      ],
+      "must_include": {
+        "word": "horizon",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=%22horizon%22+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ5t4CegQIIBAB"
+      },
+      "source": "nj.gov"
+    },
+    {
+      "position": 5,
+      "title": "Listening Session Part 1 on Assessing Best Practices in ...",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/94690744c0935927ac1db51399f5bfda/PTAC-Jun-7-SME-LS-Slides.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/94690744c0935927ac1db51399f5bfda/PTAC-Jun-7-SME-LS-Slides.pdf&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQFnoECBsQAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a PTAC-Jun-7-SME-LS-Slides",
+      "favicon": "https://serpapi.com/searches/686464c5b7942f1e4add8faa/images/0490c9bda5a76da41dc6384affb5992732bb15ef6c0f5bdf9da1e7e05b174e62.png",
+      "date": "Jun 7, 2022",
+      "snippet": "MyHealth Provider Portal + FHIR API. 15. Page 30. Lessons Learned. 1. Model design: a. Multi-payer models produce scale and reduce provider ...",
+      "snippet_highlighted_words": [
+        "Provider",
+        "FHIR API",
+        "provider"
+      ],
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=horizon+mutual+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ5t4CegQIIxAB"
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 6,
+      "title": "How the Healthcare IT Services Industry Works",
+      "link": "https://umbrex.com/resources/how-industries-work/healthcare-and-life-sciences/how-the-healthcare-services-it-industry-works/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://umbrex.com/resources/how-industries-work/healthcare-and-life-sciences/how-the-healthcare-services-it-industry-works/&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQFnoECBkQAQ",
+      "displayed_link": "https://umbrex.com \u203a healthcare-and-life-sciences \u203a ho...",
+      "favicon": "https://serpapi.com/searches/686464c5b7942f1e4add8faa/images/0490c9bda5a76da41dc6384affb59927ff79c5d3ab43c8c043549a85761f07d8.png",
+      "snippet": "Insights into How the Healthcare IT Services Industry Works, with detailed analysis on value chains, key drivers, and industry dynamics.",
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=horizon+mutual+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ5t4CegQIGhAB"
+      },
+      "source": "Umbrex Consulting"
+    },
+    {
+      "position": 7,
+      "title": "TRANSFORMING THE HEALTH IT MARKETPLACE",
+      "link": "https://www.ncbi.nlm.nih.gov/books/n/nap27114/ch4/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ncbi.nlm.nih.gov/books/n/nap27114/ch4/&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQFnoECB8QAQ",
+      "displayed_link": "https://www.ncbi.nlm.nih.gov \u203a books \u203a nap27114",
+      "favicon": "https://serpapi.com/searches/686464c5b7942f1e4add8faa/images/0490c9bda5a76da41dc6384affb59927c8d83023575753d211356dc15e4d23cd.png",
+      "snippet": "One example is the Blue Button 2.0 API, which leverages the FHIR standard to enable Medicare beneficiaries to share their claims data with third-party ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "Medicare"
+      ],
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=horizon+mutual+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ5t4CegQIJBAB"
+      },
+      "source": "National Institutes of Health (NIH) | (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Transparency in Coverage",
+      "link": "https://www.federalregister.gov/documents/2020/11/12/2020-24591/transparency-in-coverage",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2020/11/12/2020-24591/transparency-in-coverage&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQFnoECDsQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2020/11/12 \u203a transpar...",
+      "favicon": "https://serpapi.com/searches/686464c5b7942f1e4add8faa/images/0490c9bda5a76da41dc6384affb59927896f89ffd57abe52f0d37cb9da53bc39.png",
+      "date": "Nov 12, 2020",
+      "snippet": "The final rules require group health plans and health insurance issuers in the individual and group markets to disclose cost-sharing information upon request.",
+      "snippet_highlighted_words": [
+        "group",
+        "plans",
+        "group"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "Revenue cycle management: How to reduce claim denials",
+      "link": "https://www.medicaleconomics.com/view/revenue-cycle-management-how-to-reduce-claim-denials",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.medicaleconomics.com/view/revenue-cycle-management-how-to-reduce-claim-denials&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQFnoECDgQAQ",
+      "displayed_link": "https://www.medicaleconomics.com \u203a view \u203a revenue-c...",
+      "favicon": "https://serpapi.com/searches/686464c5b7942f1e4add8faa/images/0490c9bda5a76da41dc6384affb59927e21d190a8463194c69dafc0ae476bbc0.png",
+      "date": "Mar 21, 2025",
+      "snippet": "This commitment includes the development of standardized data and submission requirements (using FHIR APIs) ... GuideWell Mutual Holding ...",
+      "snippet_highlighted_words": [
+        "FHIR APIs",
+        "Mutual Holding"
+      ],
+      "source": "Medical Economics"
+    },
+    {
+      "position": 10,
+      "title": "Procuring Interoperability",
+      "link": "https://nam.edu/wp-content/uploads/2018/10/Procuring-Interoperability_web.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://nam.edu/wp-content/uploads/2018/10/Procuring-Interoperability_web.pdf&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQFnoECDoQAQ",
+      "displayed_link": "https://nam.edu \u203a wp-content \u203a uploads \u203a 2018/10",
+      "favicon": "https://serpapi.com/searches/686464c5b7942f1e4add8faa/images/0490c9bda5a76da41dc6384affb599273d384472ba70b96964f7a31c6de59eb0.png",
+      "date": "Jan 1, 2019",
+      "snippet": "One example is the Blue Button 2.0 API, which leverages the FHIR standard to enable Medicare beneficiaries to share their claims data with ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "Medicare"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 193
+          },
+          "extensions": [
+            "193 pages"
+          ]
+        }
+      },
+      "source": "National Academy of Medicine"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "UHC provider manual 2024",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+provider+manual+2024&sa=X&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+provider+manual+2024&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC provider manual 2025",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+provider+manual+2025&sa=X&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+provider+manual+2025&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "UHC Medicare Advantage timely filing limit 2024",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=UHC+Medicare+Advantage+timely+filing+limit+2024&sa=X&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=UHC+Medicare+Advantage+timely+filing+limit+2024&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Uhc Medicare advantage Timely filing limit for corrected claims",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&sa=X&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Uhc+Medicare+advantage+Timely+filing+limit+for+corrected+claims&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmRkaPm5Af6lhbIP_IfLwQM&start=10&sa=N&sstk=Ac65TH7RrdhNnjDV1Vppr57yLyQPUG2Z7ai07qNAFJhx4PwvyeSUfVnpFarSkgSjPN6nZ6o9_r6WiXdKts0uPR3_Is9XjPKbUHzzrA&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmRkaPm5Af6lhbIP_IfLwQM&start=10&sa=N&sstk=Ac65TH7RrdhNnjDV1Vppr57yLyQPUG2Z7ai07qNAFJhx4PwvyeSUfVnpFarSkgSjPN6nZ6o9_r6WiXdKts0uPR3_Is9XjPKbUHzzrA&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmRkaPm5Af6lhbIP_IfLwQM&start=20&sa=N&sstk=Ac65TH7RrdhNnjDV1Vppr57yLyQPUG2Z7ai07qNAFJhx4PwvyeSUfVnpFarSkgSjPN6nZ6o9_r6WiXdKts0uPR3_Is9XjPKbUHzzrA&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmRkaPm5Af6lhbIP_IfLwQM&start=30&sa=N&sstk=Ac65TH7RrdhNnjDV1Vppr57yLyQPUG2Z7ai07qNAFJhx4PwvyeSUfVnpFarSkgSjPN6nZ6o9_r6WiXdKts0uPR3_Is9XjPKbUHzzrA&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmRkaPm5Af6lhbIP_IfLwQM&start=40&sa=N&sstk=Ac65TH7RrdhNnjDV1Vppr57yLyQPUG2Z7ai07qNAFJhx4PwvyeSUfVnpFarSkgSjPN6nZ6o9_r6WiXdKts0uPR3_Is9XjPKbUHzzrA&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmRkaPm5Af6lhbIP_IfLwQM&start=50&sa=N&sstk=Ac65TH7RrdhNnjDV1Vppr57yLyQPUG2Z7ai07qNAFJhx4PwvyeSUfVnpFarSkgSjPN6nZ6o9_r6WiXdKts0uPR3_Is9XjPKbUHzzrA&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmRkaPm5Af6lhbIP_IfLwQM&start=60&sa=N&sstk=Ac65TH7RrdhNnjDV1Vppr57yLyQPUG2Z7ai07qNAFJhx4PwvyeSUfVnpFarSkgSjPN6nZ6o9_r6WiXdKts0uPR3_Is9XjPKbUHzzrA&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmRkaPm5Af6lhbIP_IfLwQM&start=70&sa=N&sstk=Ac65TH7RrdhNnjDV1Vppr57yLyQPUG2Z7ai07qNAFJhx4PwvyeSUfVnpFarSkgSjPN6nZ6o9_r6WiXdKts0uPR3_Is9XjPKbUHzzrA&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmRkaPm5Af6lhbIP_IfLwQM&start=80&sa=N&sstk=Ac65TH7RrdhNnjDV1Vppr57yLyQPUG2Z7ai07qNAFJhx4PwvyeSUfVnpFarSkgSjPN6nZ6o9_r6WiXdKts0uPR3_Is9XjPKbUHzzrA&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmRkaPm5Af6lhbIP_IfLwQM&start=90&sa=N&sstk=Ac65TH7RrdhNnjDV1Vppr57yLyQPUG2Z7ai07qNAFJhx4PwvyeSUfVnpFarSkgSjPN6nZ6o9_r6WiXdKts0uPR3_Is9XjPKbUHzzrA&ved=2ahUKEwj5tLqV3pyOAxX-UkEAHfzDMjgQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=horizon+mutual+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "search_metadata": {
+    "id": "68646c94b8b4a5d9fc3caf31",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/3ded2bf1d60e8ae9/68646c94b8b4a5d9fc3caf31.json",
+    "created_at": "2025-07-01 23:17:40 UTC",
+    "processed_at": "2025-07-01 23:17:40 UTC",
+    "google_url": "https://www.google.com/search?q=blue+cross+blue+shield+of+arizona+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=blue+cross+blue+shield+of+arizona+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/3ded2bf1d60e8ae9/68646c94b8b4a5d9fc3caf31.html",
+    "total_time_taken": 3.29
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "blue cross blue shield of arizona Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "blue cross blue shield of arizona Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 117,
+    "time_taken_displayed": 0.32,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "inline_images": [
+    {
+      "source": "https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf",
+      "thumbnail": "https://serpapi.com/searches/68646c94b8b4a5d9fc3caf31/images/ace9592e99c8e50a06917c741d934221878b7c2efd7a8ce9ecad5f07adfe3c30.jpeg",
+      "original": "x-raw-image:///5b80af5b69c6df639086cf119ab9e2fdb9e33a15870c3f1b04e88e98e40b4697",
+      "title": "State Efforts to Coordinate Provider Directory Accuracy ...",
+      "source_name": "HHS ASPE - HHS.gov"
+    },
+    {
+      "source": "https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf",
+      "thumbnail": "https://serpapi.com/searches/68646c94b8b4a5d9fc3caf31/images/ace9592e99c8e50a692de5884302a6b51922a8d3f0e43c4e517483c61354f393.jpeg",
+      "original": "x-raw-image:///8be63a84d75d3da47e2489185432f6a864ecd132e4e90c9b285f87092d35e959",
+      "title": "State Efforts to Coordinate Provider Directory Accuracy ...",
+      "source_name": "HHS ASPE - HHS.gov"
+    },
+    {
+      "source": "https://aspe.hhs.gov/sites/default/files/documents/72a2324e3deb078b275c66eb53052c86/state-coordinate-provider-directory-accuracy.pdf",
+      "thumbnail": "https://serpapi.com/searches/68646c94b8b4a5d9fc3caf31/images/ace9592e99c8e50a7aa699ca39dbd48d3ebf358fd972d6b2264185289c7f66d4.jpeg",
+      "original": "x-raw-image:///4572e8373ac98507993ad5e5ac8e461d548cdac4a847224a01c6a42176e493bb",
+      "title": "State Efforts to Coordinate Provider Directory Accuracy ...",
+      "source_name": "HHS ASPE - HHS.gov"
+    },
+    {
+      "source": "https://www.mypreferredprovider.com/media/oveatwyr/2024-unitedhealthcare-care-provider-administrative-guide-for-commercial-exchange-and-medicare.pdf",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMJpT9ESHojKxXx0YJDOzn1iPoarcFpPwTcvN9g8_bm0USRdxYCF2-1QY&s",
+      "original": "x-raw-image:///7c961b0346afd62b8d0fa66890f9ab970ec0361ede8e079416161de9273adca0",
+      "title": "2024 UnitedHealthcare Care Provider Administrative Guide for ...",
+      "source_name": "Preferred Care Partners"
+    },
+    {
+      "source": "https://flexpa.substack.com/p/the-state-of-payer-patient-access",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6wOC0ogCCooNW2monysFsAycLMXFPftbfmgicJQg6OD_2rRjRi_C7m7s&s",
+      "original": "https://substackcdn.com/image/fetch/$s_!kVBl!,w_520,h_272,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F140393165%2F88be1e2b-df2a-4e38-a5cf-5d46096977c4%2Ftranscoded-43806.png",
+      "title": "The State of Payer Patient Access APIs - by Brendan Keeler",
+      "source_name": "Flexpa - Substack"
+    },
+    {
+      "source": "https://thebigunlock.com/category/podcasts/season3/",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjfpFeTXT-4m3p5eKUck0l9SOPYWVmLVDucam-dY47DULAIbvfzzGWicE&s",
+      "original": "https://thebigunlock.com/wp-content/uploads/2021/11/Season3-ep101-podcast-with-Jason-Considine-lp-thumbnail.png",
+      "title": "Season 3 - The Big Unlock Podcast",
+      "source_name": "The Big Unlock Podcast"
+    },
+    {
+      "source": "https://flexpa.substack.com/p/the-state-of-payer-patient-access",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_WpeibNS8femxgC1RTpkkqaHB8UTi5xltDVa80GXZnpffeQ5jMvltUc&s",
+      "original": "https://substackcdn.com/image/fetch/w_520,h_272,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0b8ac93-a97c-4762-8a52-01109b9ebf3e_1792x1024.webp",
+      "title": "The State of Payer Patient Access APIs - by Brendan Keeler",
+      "source_name": "Flexpa - Substack"
+    },
+    {
+      "source": "https://telehealthandmedicinetoday.com/index.php/journal/article/view/421/907",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU0H9KsrylNALeQPLf0K1my2eOSGlV0xTweszfj2vEjm4TOkwE26tln4&s",
+      "original": "https://telehealthandmedicinetoday.com/index.php/journal/article/download/421/907/5866",
+      "title": "View of Pragmatic Approaches to Interoperability ...",
+      "source_name": "Telehealth and Medicine Today"
+    },
+    {
+      "source": "https://telehealthandmedicinetoday.com/index.php/journal/article/view/421/907",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkyZAhfBAGfysrAqUC1CwX1rcQ-8jILdcdJbgVuoYwr8h3WpAX4w-uy_M&s",
+      "original": "https://telehealthandmedicinetoday.com/index.php/journal/article/download/421/907/5870",
+      "title": "View of Pragmatic Approaches to Interoperability ...",
+      "source_name": "Telehealth and Medicine Today"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "Does Blue Cross Blue Shield have a Medicare Advantage program?",
+      "snippet": "Medicare Advantage (Part C) Blue Cross and Blue Shield offers great plan options that can maintain your coverage after you turn 65. Find a Medicare plan option that works for you.",
+      "title": "Medicare Advantage (Part C) - BCBS",
+      "link": "https://www.bcbs.com/explore-affordable-health-plans/medicare/medicare-advantage#:~:text=Medicare%20Advantage%20(Part%20C),option%20that%20works%20for%20you.",
+      "displayed_link": "https://www.bcbs.com \u203a explore-affordable-health-plans",
+      "source_logo": "https://serpapi.com/searches/68646c94b8b4a5d9fc3caf31/images/813900ad727d49d475d028a9a62c95e5ff1c92255a3bec7fb39da12f49c0984f.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSVZtOXhaMUZoWjBaaUxWaFRkbXR4UTI5MmN6WllNQzB6TFVac1RtUkRXR1pIWDI5NGJYVnZSMHB0VlVWbFFpMDVUVnBNVEMxQlNXcEdSMUJCWlRsTGVqVlFXWFJsTnpSYVNIVTNWVWxTY2tKek4yUXhUM2hCTW5OWVp4SVhiRmQ0YTJGT1pXVkxaWEpuTW5KdlVEQk9YMWR2UVVrYUlrRkdUVUZIUjI5alMzWXRUWHBsTFhab1gxZFpia2hxTUROaU0wWkRRalpOV1djIiwiZmN2IjoiMyIsImVpIjoibFd4a2FOZWVLZXJnMnJvUDBOX1dvQUkiLCJxYyI6ImN4M0d3UW1BTUF3RlVNLWVuRUMtazdpQ0s4UW0xWUNha3RhQ2dwTzRyT0E3dlhhYXQxTVEzSExHMzd5cWJBeUxJTmZiRHNJdXJJRmNRRnpwS0xRSWtsdFZGZ2VyU3lqbUZ5Z3A0cXJlTlVfX0R1TUgiLCJxdWVzdGlvbiI6IkRvZXMgQmx1ZSBDcm9zcyBCbHVlIFNoaWVsZCBoYXZlIGEgTWVkaWNhcmUgQWR2YW50YWdlIHByb2dyYW0/IiwibGsiOiJjNU95VGNsUExWWkl5aWxOVlVndXlpLUdNb3N6TWxOelVoUXlFc3RTRlJJVmNsTlRNcE1UaTRETWxMTEV2SkxFOUZTRmdxTDg5S0xFWEFBIiwiYnMiOiJjLU5xWWVTeWM4bFBMVlp3eWlsTlZYQXV5aS1HTW9Nek1sTnpVaFF5RXN0U0ZSSVZmRk5UTXBNVGkxSVZIRlBLRXZOS0V0TlRGUXFLOHRPTEVuUHRKUllyR2RsTDJhYUFERWtDNlV3R0d3Sm1GcU1Za2dzekpCSGRFQzQ3THVud2pNUVNoY3hpaFlMRWtzelV2QktGeE9Ua1ZLQTVqZ0dlOWhJWElveGtwS1RLc2F0SUxNZ1VZQVFBIiwiaWQiOiJmY19sV3hrYU5lZUtlcmcycm9QME5fV29BSV8xIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSVZtOXhaMUZoWjBaaUxWaFRkbXR4UTI5MmN6WllNQzB6TFVac1RtUkRXR1pIWDI5NGJYVnZSMHB0VlVWbFFpMDVUVnBNVEMxQlNXcEdSMUJCWlRsTGVqVlFXWFJsTnpSYVNIVTNWVWxTY2tKek4yUXhUM2hCTW5OWVp4SVhiRmQ0YTJGT1pXVkxaWEpuTW5KdlVEQk9YMWR2UVVrYUlrRkdUVUZIUjI5alMzWXRUWHBsTFhab1gxZFpia2hxTUROaU0wWkRRalpOV1djIiwiZmN2IjoiMyIsImVpIjoibFd4a2FOZWVLZXJnMnJvUDBOX1dvQUkiLCJxYyI6ImN4M0d3UW1BTUF3RlVNLWVuRUMtazdpQ0s4UW0xWUNha3RhQ2dwTzRyT0E3dlhhYXQxTVEzSExHMzd5cWJBeUxJTmZiRHNJdXJJRmNRRnpwS0xRSWtsdFZGZ2VyU3lqbUZ5Z3A0cXJlTlVfX0R1TUgiLCJxdWVzdGlvbiI6IkRvZXMgQmx1ZSBDcm9zcyBCbHVlIFNoaWVsZCBoYXZlIGEgTWVkaWNhcmUgQWR2YW50YWdlIHByb2dyYW0%2FIiwibGsiOiJjNU95VGNsUExWWkl5aWxOVlVndXlpLUdNb3N6TWxOelVoUXlFc3RTRlJJVmNsTlRNcE1UaTRETWxMTEV2SkxFOUZTRmdxTDg5S0xFWEFBIiwiYnMiOiJjLU5xWWVTeWM4bFBMVlp3eWlsTlZYQXV5aS1HTW9Nek1sTnpVaFF5RXN0U0ZSSVZmRk5UTXBNVGkxSVZIRlBLRXZOS0V0TlRGUXFLOHRPTEVuUHRKUllyR2RsTDJhYUFERWtDNlV3R0d3Sm1GcU1Za2dzekpCSGRFQzQ3THVud2pNUVNoY3hpaFlMRWtzelV2QktGeE9Ua1ZLQTVqZ0dlOWhJWElveGtwS1RLc2F0SUxNZ1VZQVFBIiwiaWQiOiJmY19sV3hrYU5lZUtlcmcycm9QME5fV29BSV8xIn0%3D"
+    },
+    {
+      "question": "What is patient access API?",
+      "snippet": "The Patient Access API allows members to retrieve their personal health information using a third-party application of their choice. This API complies with the HL7 FHIR implementation guides listed below. https://hl7.org/fhir/R4/ https://hl7.org/fhir/DSTU2/",
+      "title": "Patient Access Application Programming Interface (API)",
+      "link": "https://www.ochealthinfo.com/services-programs/mental-health-crisis-recovery/patient-access-application-programming-interface#:~:text=The%20Patient%20Access%20API%20allows,.org%2Ffhir%2FDSTU2%2F",
+      "displayed_link": "https://www.ochealthinfo.com \u203a services-programs \u203a pati...",
+      "source_logo": "https://serpapi.com/searches/68646c94b8b4a5d9fc3caf31/images/813900ad727d49d475d028a9a62c95e52394d926c2db7612759620501d666646.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSVZtOXhaMUZoWjBaaUxWaFRkbXR4UTI5MmN6WllNQzB6TFVac1RtUkRXR1pIWDI5NGJYVnZSMHB0VlVWbFFpMDVUVnBNVEMxQlNXcEdSMUJCWlRsTGVqVlFXWFJsTnpSYVNIVTNWVWxTY2tKek4yUXhUM2hCTW5OWVp4SVhiRmQ0YTJGT1pXVkxaWEpuTW5KdlVEQk9YMWR2UVVrYUlrRkdUVUZIUjI5alMzWXRUWHBsTFhab1gxZFpia2hxTUROaU0wWkRRalpOV1djIiwiZmN2IjoiMyIsImVpIjoibFd4a2FOZWVLZXJnMnJvUDBOX1dvQUkiLCJxYyI6ImN4M0d3UW1BTUF3RlVNLWVuRUMtazdpQ0s4UW0xWUNha3RhQ2dwTzRyT0E3dlhhYXQxTVEzSExHMzd5cWJBeUxJTmZiRHNJdXJJRmNRRnpwS0xRSWtsdFZGZ2VyU3lqbUZ5Z3A0cXJlTlVfX0R1TUgiLCJxdWVzdGlvbiI6IldoYXQgaXMgcGF0aWVudCBhY2Nlc3MgQVBJPyIsImxrIjoiR2hwM2FHRjBJR2x6SUhCaGRHbGxiblFnWVdOalpYTnpJR0Z3YVEiLCJicyI6ImMtTnFZZVN5YzhsUExWWnd5aWxOVlhBdXlpLUdNb016TWxOelVoUXlFc3RTRlJJVmZGTlRNcE1UaTFJVkhGUEtFdk5LRXROVEZRcUs4dE9MRW5QdEpSWXJHZGxMMmFhQURFa0M2VXdHR3dKbUZxTVlrZ3N6SkJIZEVDNDdMdW53ak1RU2hjeGloWUxFa3N6VXZCS0Z4T1RrVktBNWpnR2U5aElYSW94a3BLVEtzYXRJTE1nVVlBUUEiLCJpZCI6ImZjX2xXeGthTmVlS2VyZzJyb1AwTl9Xb0FJXzEifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSVZtOXhaMUZoWjBaaUxWaFRkbXR4UTI5MmN6WllNQzB6TFVac1RtUkRXR1pIWDI5NGJYVnZSMHB0VlVWbFFpMDVUVnBNVEMxQlNXcEdSMUJCWlRsTGVqVlFXWFJsTnpSYVNIVTNWVWxTY2tKek4yUXhUM2hCTW5OWVp4SVhiRmQ0YTJGT1pXVkxaWEpuTW5KdlVEQk9YMWR2UVVrYUlrRkdUVUZIUjI5alMzWXRUWHBsTFhab1gxZFpia2hxTUROaU0wWkRRalpOV1djIiwiZmN2IjoiMyIsImVpIjoibFd4a2FOZWVLZXJnMnJvUDBOX1dvQUkiLCJxYyI6ImN4M0d3UW1BTUF3RlVNLWVuRUMtazdpQ0s4UW0xWUNha3RhQ2dwTzRyT0E3dlhhYXQxTVEzSExHMzd5cWJBeUxJTmZiRHNJdXJJRmNRRnpwS0xRSWtsdFZGZ2VyU3lqbUZ5Z3A0cXJlTlVfX0R1TUgiLCJxdWVzdGlvbiI6IldoYXQgaXMgcGF0aWVudCBhY2Nlc3MgQVBJPyIsImxrIjoiR2hwM2FHRjBJR2x6SUhCaGRHbGxiblFnWVdOalpYTnpJR0Z3YVEiLCJicyI6ImMtTnFZZVN5YzhsUExWWnd5aWxOVlhBdXlpLUdNb016TWxOelVoUXlFc3RTRlJJVmZGTlRNcE1UaTFJVkhGUEtFdk5LRXROVEZRcUs4dE9MRW5QdEpSWXJHZGxMMmFhQURFa0M2VXdHR3dKbUZxTVlrZ3N6SkJIZEVDNDdMdW53ak1RU2hjeGloWUxFa3N6VXZCS0Z4T1RrVktBNWpnR2U5aElYSW94a3BLVEtzYXRJTE1nVVlBUUEiLCJpZCI6ImZjX2xXeGthTmVlS2VyZzJyb1AwTl9Xb0FJXzEifQ%3D%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "The State of Payer Patient Access APIs - Flexpa - Substack",
+      "link": "https://flexpa.substack.com/p/the-state-of-payer-patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://flexpa.substack.com/p/the-state-of-payer-patient-access&ved=2ahUKEwiXvfvO5ZyOAxVqsFYBHdCvFSQQFnoECBAQAQ",
+      "displayed_link": "8 likes \u00b7 1 year ago",
+      "favicon": "https://serpapi.com/searches/68646c94b8b4a5d9fc3caf31/images/36af2613e09f48a793962c21a26b1cc1d4707a38d3b2a34fe906f74f07ae1569.png",
+      "snippet": "These include patient access, provider directory, and payer-to-payer exchange APIs. ... FHIR API: The CMS rule said the following data must \u201cat a ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR API"
+      ],
+      "source": "Substack \u00b7 Flexpa"
+    },
+    {
+      "position": 2,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwiXvfvO5ZyOAxVqsFYBHdCvFSQQFnoECB8QAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2019/03/04 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/68646c94b8b4a5d9fc3caf31/images/36af2613e09f48a793962c21a26b1cc1c20f453a39f5b4735110d728374195ad.png",
+      "date": "Mar 4, 2019",
+      "snippet": "MA plans would be required to update provider directory information available through the API ... FHIR-based API discussed in section III.",
+      "snippet_highlighted_words": [
+        "plans",
+        "provider directory",
+        "API",
+        "FHIR",
+        "API"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "May 21, 2025 HMA Weekly Roundup: Trends in Health Policy",
+      "link": "https://www.healthmanagement.com/insights/weekly-roundup/may-21-2025/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthmanagement.com/insights/weekly-roundup/may-21-2025/&ved=2ahUKEwiXvfvO5ZyOAxVqsFYBHdCvFSQQFnoECBMQAQ",
+      "displayed_link": "https://www.healthmanagement.com \u203a insights \u203a may-21...",
+      "favicon": "https://serpapi.com/searches/68646c94b8b4a5d9fc3caf31/images/36af2613e09f48a793962c21a26b1cc10792e43bfa0f8b8571a897c76eaf567e.png",
+      "date": "May 21, 2025",
+      "snippet": "The RFI reflects many of the same priorities\u2014such as expanding FHIR\u00ae Application Programming Interfaces (APIs), improving provider directories, ...",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "Health Management Associates"
+    },
+    {
+      "position": 4,
+      "title": "Interoperability and Patient Access - Proposed Rule ( ...",
+      "link": "https://www.cms.gov/Center/Special-Topic/Interoperability/CMS-9115-P.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/Center/Special-Topic/Interoperability/CMS-9115-P.pdf&ved=2ahUKEwiXvfvO5ZyOAxVqsFYBHdCvFSQQFnoECDkQAQ",
+      "displayed_link": "https://www.cms.gov \u203a Center \u203a CMS-9115-P",
+      "favicon": "https://serpapi.com/searches/68646c94b8b4a5d9fc3caf31/images/36af2613e09f48a793962c21a26b1cc1dc42cc342667cd75bde3132fea73130f.png",
+      "snippet": "lookup use case, API access to a provider directory could allow for a referring provider's health ... of the FHIR-based API discussed in section III. of this ...",
+      "snippet_highlighted_words": [
+        "API",
+        "provider directory",
+        "FHIR",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 251
+          },
+          "extensions": [
+            "251 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwiXvfvO5ZyOAxVqsFYBHdCvFSQQFnoECD8QAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646c94b8b4a5d9fc3caf31/images/36af2613e09f48a793962c21a26b1cc14c60c58eb8e8789bca51346339aa5428.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 6,
+      "title": "PARTICIPATING ADDENDUM MMIS-PROVIDER SERVICES ...",
+      "link": "https://s3-us-west-2.amazonaws.com/naspovaluepoint/1634709128_MMIS%20HHS%20Technology%20Group%20LLC%20South%20Dakota.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://s3-us-west-2.amazonaws.com/naspovaluepoint/1634709128_MMIS%2520HHS%2520Technology%2520Group%2520LLC%2520South%2520Dakota.pdf&ved=2ahUKEwiXvfvO5ZyOAxVqsFYBHdCvFSQQFnoECDIQAQ",
+      "displayed_link": "https://s3-us-west-2.amazonaws.com \u203a naspovalu...",
+      "favicon": "https://serpapi.com/searches/68646c94b8b4a5d9fc3caf31/images/36af2613e09f48a793962c21a26b1cc1d730fc4c638bf31424e5de51e61a0070.png",
+      "date": "Mar 7, 2023",
+      "snippet": "... Provider Directory Mapping (FHIR). 1 day. Fri 11/26/21. Fri 11/26/21. 6. Provider Directory Demo (FHIR). 1 day. Fri 10/22/21. Fri 10/22/21. 7.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "source": "Amazon.com"
+    },
+    {
+      "position": 7,
+      "title": "All Pages",
+      "link": "https://www.communityplans.net/all-pages/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.communityplans.net/all-pages/&ved=2ahUKEwiXvfvO5ZyOAxVqsFYBHdCvFSQQFnoECDoQAQ",
+      "displayed_link": "https://www.communityplans.net \u203a all-pages",
+      "snippet": "Beyond Patient Access \u2013 the Next Wave of FHIR Use Cases for Payers ... National Provider Directory RFI Roundtable Call \u00b7 Marketplace & Medicare Joint ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "Medicare"
+      ],
+      "source": "Association For Community Affiliated Plans"
+    },
+    {
+      "position": 8,
+      "title": "HOUSE OF DELEGATES HANDBOOK - INFO (A-22)",
+      "link": "https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf&ved=2ahUKEwiXvfvO5ZyOAxVqsFYBHdCvFSQQFnoECDsQAQ",
+      "displayed_link": "https://www.ama-assn.org \u203a system \u203a files \u203a a22-...",
+      "favicon": "https://serpapi.com/searches/68646c94b8b4a5d9fc3caf31/images/36af2613e09f48a793962c21a26b1cc16e16a84545bd239763e8bdaa8515c0fc.png",
+      "date": "Dec 17, 2021",
+      "snippet": "AMA/CAQH Provider Directory. White Paper \u2013 Co-branded white ... FHIR\u00ae implementation guide for the capture and use of SDOH data. 18.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=blue+cross+blue+shield+of+arizona+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiXvfvO5ZyOAxVqsFYBHdCvFSQQ5t4CegQIPBAB"
+      },
+      "source": "American Medical Association"
+    },
+    {
+      "position": 9,
+      "title": "Utah State Medicaid Health Information Technology Plan",
+      "link": "https://medicaid-documents.dhhs.utah.gov/Documents/pdfs/hit_SMHP8.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medicaid-documents.dhhs.utah.gov/Documents/pdfs/hit_SMHP8.pdf&ved=2ahUKEwiXvfvO5ZyOAxVqsFYBHdCvFSQQFnoECDEQAQ",
+      "displayed_link": "https://medicaid-documents.dhhs.utah.gov \u203a pdfs",
+      "date": "Nov 30, 2017",
+      "snippet": "FHIR standards. In addition, the project will redesign, develop, and ... Develop master provider directory for multiple uses c ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "Utah.gov"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=blue+cross+blue+shield+of+arizona+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=lWxkaNeeKerg2roP0N_WoAI&start=10&sa=N&sstk=Ac65TH5bzhODFR7jQTGFfd_8q-ughSaaFiDHWWuB9aPMMi9fHDyh1wJPClCivp4osdTVEllTfM-EP01BEYW3tV7QH3Qy9n2wkLxk3g&ved=2ahUKEwiXvfvO5ZyOAxVqsFYBHdCvFSQQ8NMDegQIDRAM",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=blue+cross+blue+shield+of+arizona+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=lWxkaNeeKerg2roP0N_WoAI&start=10&sa=N&sstk=Ac65TH5bzhODFR7jQTGFfd_8q-ughSaaFiDHWWuB9aPMMi9fHDyh1wJPClCivp4osdTVEllTfM-EP01BEYW3tV7QH3Qy9n2wkLxk3g&ved=2ahUKEwiXvfvO5ZyOAxVqsFYBHdCvFSQQ8tMDegQIDRAE",
+      "3": "https://www.google.com/search?q=blue+cross+blue+shield+of+arizona+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=lWxkaNeeKerg2roP0N_WoAI&start=20&sa=N&sstk=Ac65TH5bzhODFR7jQTGFfd_8q-ughSaaFiDHWWuB9aPMMi9fHDyh1wJPClCivp4osdTVEllTfM-EP01BEYW3tV7QH3Qy9n2wkLxk3g&ved=2ahUKEwiXvfvO5ZyOAxVqsFYBHdCvFSQQ8tMDegQIDRAG",
+      "4": "https://www.google.com/search?q=blue+cross+blue+shield+of+arizona+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=lWxkaNeeKerg2roP0N_WoAI&start=30&sa=N&sstk=Ac65TH5bzhODFR7jQTGFfd_8q-ughSaaFiDHWWuB9aPMMi9fHDyh1wJPClCivp4osdTVEllTfM-EP01BEYW3tV7QH3Qy9n2wkLxk3g&ved=2ahUKEwiXvfvO5ZyOAxVqsFYBHdCvFSQQ8tMDegQIDRAI",
+      "5": "https://www.google.com/search?q=blue+cross+blue+shield+of+arizona+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=lWxkaNeeKerg2roP0N_WoAI&start=40&sa=N&sstk=Ac65TH5bzhODFR7jQTGFfd_8q-ughSaaFiDHWWuB9aPMMi9fHDyh1wJPClCivp4osdTVEllTfM-EP01BEYW3tV7QH3Qy9n2wkLxk3g&ved=2ahUKEwiXvfvO5ZyOAxVqsFYBHdCvFSQQ8tMDegQIDRAK"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+blue+shield+of+arizona+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+blue+shield+of+arizona+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+blue+shield+of+arizona+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+blue+shield+of+arizona+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+blue+shield+of+arizona+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+blue+shield+of+arizona+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40"
+    }
+  }
+}

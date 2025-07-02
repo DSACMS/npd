@@ -1,0 +1,105 @@
+{
+  "search_metadata": {
+    "id": "68646ca3d02d2a9e2f30a0d7",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/4b920696e21b35fa/68646ca3d02d2a9e2f30a0d7.json",
+    "created_at": "2025-07-01 23:17:55 UTC",
+    "processed_at": "2025-07-01 23:17:55 UTC",
+    "google_url": "https://www.google.com/search?q=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/4b920696e21b35fa/68646ca3d02d2a9e2f30a0d7.html",
+    "total_time_taken": 0.92
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "bluecross blueshield of south carolina (bcbssc) Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "bluecross blueshield of south carolina (bcbssc) Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 1,
+    "time_taken_displayed": 0.28,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "How to get in network with BCBS Medicare Advantage?",
+      "snippet": "Joining the network is easy! We'll do the same for you. For information, contact your local Blue Medicare Advantage plan or visit the Blue Cross Blue Shield Companies and Licensees page to find your local plan.",
+      "title": "Join The Network - Blue Medicare Advantage",
+      "link": "https://provider.bluemedadvgrhs.com/grs-provider/join-the-network#:~:text=Joining%20the%20network%20is%20easy!&text=We'll%20do%20the%20same,to%20find%20your%20local%20plan.",
+      "displayed_link": "https://provider.bluemedadvgrhs.com \u203a grs-provider \u203a jo...",
+      "source_logo": "https://serpapi.com/searches/68646ca3d02d2a9e2f30a0d7/images/4f17fa6a5a99a31570064c70fa495492ef690ef94ef9d4c9c7ae834e49590432.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRlNIbDRUSFZaUTNoNFNqVm5abEZxUkVOQ1R6Uk1UamhHYlZKNU56VnNUSGd6T0ZSVlp6Z3lOVWx3ZFU5NFgzWjZNelpHUW5KUk55MUpiVTFYV1cxWVdtUlhaaTB0ZDJoZlF6bGxORTlPTW10aFNWSkRRa3RpY25jMFFSSVhjRWQ0YTJGUFNGSkdUemROTUZCRlVHZzNOM1p0UVVVYUlrRkdUVUZIUjNKbWRtSlZSMHB4WlZObVMxVlFUSE5sVlZGeVh5MVRSMGx0YVVFIiwiZmN2IjoiMyIsImVpIjoicEd4a2FPSFJGTzdNMFBFUGg3N3ZtQUUiLCJxYyI6ImN4WElNUTZBTUFnRlVHY25qX0FQNWtJQkxVa3RCcXFKdDFlM2x6ZXZwVjNLNFpuNGxkVzBDWHhELWpVcW1NS2JkVUxoa3NrNFZPdzdCY2xOZmRDdU9NTnZFdzJJaGZMd2VFQ25ZYXNXeV9RQyIsInF1ZXN0aW9uIjoiSG93IHRvIGdldCBpbiBuZXR3b3JrIHdpdGggQkNCUyBNZWRpY2FyZSBBZHZhbnRhZ2U/IiwibGsiOiJHakpvYjNjZ2RHOGdaMlYwSUdsdUlHNWxkSGR2Y21zZ2QybDBhQ0JpWTJKeklHMWxaR2xqWVhKbElHRmtkbUZ1ZEdGblpRIiwiYnMiOiJjLVBLNHpMMnlDOVhLTWxYU0U4dFVjak1VOGhMTFNuUEw4cFdLTThzeVZCd2NuWUtWdkJOVGNsTVRpeEtWWEJNS1V2TUswbE1UN1dYMk1wbFpDSmxsSUZiWjFKeVVyRkNMa3huSWt3blZ4aVhPdFMtdE15OEZDd3FGRkx5azB2eWk0cnRKYllYRzJsSXFXVVFwVnFBRVFBIiwiaWQiOiJmY19wR3hrYU9IUkZPN00wUEVQaDc3dm1BRV8zIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRlNIbDRUSFZaUTNoNFNqVm5abEZxUkVOQ1R6Uk1UamhHYlZKNU56VnNUSGd6T0ZSVlp6Z3lOVWx3ZFU5NFgzWjZNelpHUW5KUk55MUpiVTFYV1cxWVdtUlhaaTB0ZDJoZlF6bGxORTlPTW10aFNWSkRRa3RpY25jMFFSSVhjRWQ0YTJGUFNGSkdUemROTUZCRlVHZzNOM1p0UVVVYUlrRkdUVUZIUjNKbWRtSlZSMHB4WlZObVMxVlFUSE5sVlZGeVh5MVRSMGx0YVVFIiwiZmN2IjoiMyIsImVpIjoicEd4a2FPSFJGTzdNMFBFUGg3N3ZtQUUiLCJxYyI6ImN4WElNUTZBTUFnRlVHY25qX0FQNWtJQkxVa3RCcXFKdDFlM2x6ZXZwVjNLNFpuNGxkVzBDWHhELWpVcW1NS2JkVUxoa3NrNFZPdzdCY2xOZmRDdU9NTnZFdzJJaGZMd2VFQ25ZYXNXeV9RQyIsInF1ZXN0aW9uIjoiSG93IHRvIGdldCBpbiBuZXR3b3JrIHdpdGggQkNCUyBNZWRpY2FyZSBBZHZhbnRhZ2U%2FIiwibGsiOiJHakpvYjNjZ2RHOGdaMlYwSUdsdUlHNWxkSGR2Y21zZ2QybDBhQ0JpWTJKeklHMWxaR2xqWVhKbElHRmtkbUZ1ZEdGblpRIiwiYnMiOiJjLVBLNHpMMnlDOVhLTWxYU0U4dFVjak1VOGhMTFNuUEw4cFdLTThzeVZCd2NuWUtWdkJOVGNsTVRpeEtWWEJNS1V2TUswbE1UN1dYMk1wbFpDSmxsSUZiWjFKeVVyRkNMa3huSWt3blZ4aVhPdFMtdE15OEZDd3FGRkx5azB2eWk0cnRKYllYRzJsSXFXVVFwVnFBRVFBIiwiaWQiOiJmY19wR3hrYU9IUkZPN00wUEVQaDc3dm1BRV8zIn0%3D"
+    },
+    {
+      "question": "How to find medicare advantage doctors?",
+      "snippet": "If you have a particular plan or insurer that you're looking into, you can go to the plan's website and look for their searchable directory or find a plan directory on the website, where you can search for your doctor.",
+      "title": "How can I find out if my doctor is in a Medicare Advantage plan network?",
+      "link": "https://www.kff.org/faqs/medicare-open-enrollment-faqs/how-can-i-find-out-if-my-doctor-is-in-a-medicare-advantage-plan-network/#:~:text=If%20you%20have%20a%20particular,can%20search%20for%20your%20doctor.",
+      "displayed_link": "https://www.kff.org \u203a medicare-open-enrollment-faqs",
+      "source_logo": "https://serpapi.com/searches/68646ca3d02d2a9e2f30a0d7/images/4f17fa6a5a99a31570064c70fa495492425e69580ed5e2267b1f677d598df3d4.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRlNIbDRUSFZaUTNoNFNqVm5abEZxUkVOQ1R6Uk1UamhHYlZKNU56VnNUSGd6T0ZSVlp6Z3lOVWx3ZFU5NFgzWjZNelpHUW5KUk55MUpiVTFYV1cxWVdtUlhaaTB0ZDJoZlF6bGxORTlPTW10aFNWSkRRa3RpY25jMFFSSVhjRWQ0YTJGUFNGSkdUemROTUZCRlVHZzNOM1p0UVVVYUlrRkdUVUZIUjNKbWRtSlZSMHB4WlZObVMxVlFUSE5sVlZGeVh5MVRSMGx0YVVFIiwiZmN2IjoiMyIsImVpIjoicEd4a2FPSFJGTzdNMFBFUGg3N3ZtQUUiLCJxYyI6ImN4WElNUTZBTUFnRlVHY25qX0FQNWtJQkxVa3RCcXFKdDFlM2x6ZXZwVjNLNFpuNGxkVzBDWHhELWpVcW1NS2JkVUxoa3NrNFZPdzdCY2xOZmRDdU9NTnZFdzJJaGZMd2VFQ25ZYXNXeV9RQyIsInF1ZXN0aW9uIjoiSG93IHRvIGZpbmQgbWVkaWNhcmUgYWR2YW50YWdlIGRvY3RvcnM/IiwibGsiOiJHaVpvYjNjZ2RHOGdabWx1WkNCdFpXUnBZMkZ5WlNCaFpIWmhiblJoWjJVZ1pHOWpkRzl5Y3ciLCJicyI6ImMtUEs0ekwyeUM5WEtNbFhTRTh0VWNqTVU4aExMU25QTDhwV0tNOHN5VkJ3Y25ZS1Z2Qk5UY2xNVGl4S1ZYQk1LVXZNSzBsTVQ3V1gyTXBsWkNKbGxJRmJaMUp5VXJGQ0xreG5Ja3duVnhpWE90Uy10TXk4RkN3cUZGTHlrMHZ5aTRydEpiWVhHMmxJcVdVUXBWcUFFUUEiLCJpZCI6ImZjX3BHeGthT0hSRk83TTBQRVBoNzd2bUFFXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaRlNIbDRUSFZaUTNoNFNqVm5abEZxUkVOQ1R6Uk1UamhHYlZKNU56VnNUSGd6T0ZSVlp6Z3lOVWx3ZFU5NFgzWjZNelpHUW5KUk55MUpiVTFYV1cxWVdtUlhaaTB0ZDJoZlF6bGxORTlPTW10aFNWSkRRa3RpY25jMFFSSVhjRWQ0YTJGUFNGSkdUemROTUZCRlVHZzNOM1p0UVVVYUlrRkdUVUZIUjNKbWRtSlZSMHB4WlZObVMxVlFUSE5sVlZGeVh5MVRSMGx0YVVFIiwiZmN2IjoiMyIsImVpIjoicEd4a2FPSFJGTzdNMFBFUGg3N3ZtQUUiLCJxYyI6ImN4WElNUTZBTUFnRlVHY25qX0FQNWtJQkxVa3RCcXFKdDFlM2x6ZXZwVjNLNFpuNGxkVzBDWHhELWpVcW1NS2JkVUxoa3NrNFZPdzdCY2xOZmRDdU9NTnZFdzJJaGZMd2VFQ25ZYXNXeV9RQyIsInF1ZXN0aW9uIjoiSG93IHRvIGZpbmQgbWVkaWNhcmUgYWR2YW50YWdlIGRvY3RvcnM%2FIiwibGsiOiJHaVpvYjNjZ2RHOGdabWx1WkNCdFpXUnBZMkZ5WlNCaFpIWmhiblJoWjJVZ1pHOWpkRzl5Y3ciLCJicyI6ImMtUEs0ekwyeUM5WEtNbFhTRTh0VWNqTVU4aExMU25QTDhwV0tNOHN5VkJ3Y25ZS1Z2Qk5UY2xNVGl4S1ZYQk1LVXZNSzBsTVQ3V1gyTXBsWkNKbGxJRmJaMUp5VXJGQ0xreG5Ja3duVnhpWE90Uy10TXk4RkN3cUZGTHlrMHZ5aTRydEpiWVhHMmxJcVdVUXBWcUFFUUEiLCJpZCI6ImZjX3BHeGthT0hSRk83TTBQRVBoNzd2bUFFXzMifQ%3D%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "2023 UnitedHealthcare Care Provider Administrative Guide",
+      "link": "https://health.maryland.gov/pophealth/Documents/Local%20Health%20Department%20Billing%20Manual/2023-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://health.maryland.gov/pophealth/Documents/Local%2520Health%2520Department%2520Billing%2520Manual/2023-UHC-Administrative-Guide.pdf&ved=2ahUKEwjhs_rV5ZyOAxVuJjQIHQffGxMQFnoECCAQAQ",
+      "displayed_link": "https://health.maryland.gov \u203a Documents \u203a 2023-...",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify information in ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 421
+          },
+          "extensions": [
+            "421 pages"
+          ]
+        }
+      },
+      "missing": [
+        "(bcbssc)"
+      ],
+      "must_include": {
+        "word": "(bcbssc)",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=bluecross+blueshield+of+south+carolina+%22(bcbssc)%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjhs_rV5ZyOAxVuJjQIHQffGxMQ5t4CegQIIRAB"
+      },
+      "source": "Maryland.gov"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=10&sourceid=chrome&ie=UTF-8",
+      "3": "https://www.google.com/search?q=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=20&sourceid=chrome&ie=UTF-8",
+      "4": "https://www.google.com/search?q=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=30&sourceid=chrome&ie=UTF-8",
+      "5": "https://www.google.com/search?q=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&start=40&sourceid=chrome&ie=UTF-8"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=10&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=20&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=30&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+of+south+carolina+%28bcbssc%29+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&safe=active&start=40&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw"
+    }
+  }
+}

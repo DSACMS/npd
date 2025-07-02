@@ -1,0 +1,283 @@
+{
+  "search_metadata": {
+    "id": "68646d6f02ab8ce8417505e2",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/b2c51e9c2a69fdae/68646d6f02ab8ce8417505e2.json",
+    "created_at": "2025-07-01 23:21:19 UTC",
+    "processed_at": "2025-07-01 23:21:19 UTC",
+    "google_url": "https://www.google.com/search?q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/b2c51e9c2a69fdae/68646d6f02ab8ce8417505e2.html",
+    "total_time_taken": 4.57
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "university of michigan health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "university of michigan health Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 287,
+    "time_taken_displayed": 0.26,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Price Transparency and Interoperability | Members",
+      "link": "https://www.uofmhealthplan.org/members/price-transparency-and-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uofmhealthplan.org/members/price-transparency-and-interoperability&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQFnoECBYQAQ",
+      "displayed_link": "https://www.uofmhealthplan.org \u203a members \u203a price-tra...",
+      "favicon": "https://serpapi.com/searches/68646d6f02ab8ce8417505e2/images/6a097e9627dd31a29abd15966261d94dc03c5d2bafbedb2a592eeeecf6114512.png",
+      "snippet": "FHIR ... University of Michigan Health Plan's Patient Access API & Provider Directory API capabilities statement outlines the supported resources and function ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "University of Michigan Health",
+        "API",
+        "Provider Directory API"
+      ],
+      "source": "University of Michigan Health Plan"
+    },
+    {
+      "position": 2,
+      "title": "Meeting the Data Needs of the Learning Health System",
+      "link": "https://medicine.umich.edu/sites/default/files/content/downloads/LHS%20Collaboratory%20Data%20Panel%20Combined.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medicine.umich.edu/sites/default/files/content/downloads/LHS%2520Collaboratory%2520Data%2520Panel%2520Combined.pdf&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQFnoECBkQAQ",
+      "displayed_link": "https://medicine.umich.edu \u203a content \u203a downloads",
+      "favicon": "https://serpapi.com/searches/68646d6f02ab8ce8417505e2/images/6a097e9627dd31a29abd15966261d94d3dd57166821f82aee002e5814e3b67e9.png",
+      "snippet": "testbed (FHIR-PIT) simulation tools. A four-phase stage gate process to ... Provider Directory. MPI. Data. Warehouse. Hospital & SNF. HL7v2 / CCDA. IHE XCA ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 53
+          },
+          "extensions": [
+            "53 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=university+of+michigan+health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQ5t4CegQIJxAB"
+      },
+      "source": "University of Michigan"
+    },
+    {
+      "position": 3,
+      "title": "Common Key Service",
+      "link": "https://mihin.org/wp-content/uploads/2024/08/MiHIN-IG-Common-Key-Service-v26-6-19-2024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mihin.org/wp-content/uploads/2024/08/MiHIN-IG-Common-Key-Service-v26-6-19-2024.pdf&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQFnoECBsQAQ",
+      "displayed_link": "https://mihin.org \u203a uploads \u203a 2024/08 \u203a MiHIN-I...",
+      "favicon": "https://serpapi.com/searches/68646d6f02ab8ce8417505e2/images/6a097e9627dd31a29abd15966261d94d43a877c039769c32cd2ed57bbb4aedfe.png",
+      "snippet": "in the future, such as the Fast Healthcare Interoperability Resources (FHIR). ... Health Provider Directory. MDHHS. Michigan Department of Health and Human ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "Health Provider Directory",
+        "Michigan",
+        "Health"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=university+of+michigan+health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQ5t4CegQIKRAB"
+      },
+      "source": "Michigan Health Information Network Shared Services (MiHIN)"
+    },
+    {
+      "position": 4,
+      "title": "michigan health information technology commission",
+      "link": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder3/Folder53/Folder2/Folder153/Folder1/Folder253/November_2018_HITC_Meeting_PowerPoint_DRAFT.pdf?rev=ad2f10ffd9e14e31adee1f177a879db8",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder3/Folder53/Folder2/Folder153/Folder1/Folder253/November_2018_HITC_Meeting_PowerPoint_DRAFT.pdf%3Frev%3Dad2f10ffd9e14e31adee1f177a879db8&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQFnoECB8QAQ",
+      "displayed_link": "https://www.michigan.gov \u203a Folder1 \u203a Folder253",
+      "favicon": "https://serpapi.com/searches/68646d6f02ab8ce8417505e2/images/6a097e9627dd31a29abd15966261d94d5b7a0ca8540ed938f1bea22f2e249721.png",
+      "date": "Nov 27, 2018",
+      "snippet": "\u2022 Health Provider Directory (HPD) API. \u2022 VA direct messaging & query. \u2022 FHIR \u2013 Fast Healthcare Interoperability. Resources. \u2022 Collaboration with ...",
+      "snippet_highlighted_words": [
+        "Health Provider Directory",
+        "API",
+        "FHIR",
+        "Healthcare"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=university+of+michigan+health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQ5t4CegQIJhAB"
+      },
+      "source": "State of Michigan (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Social Determinants of Health",
+      "link": "https://mihin.org/wp-content/uploads/2023/09/MiHIN-Social-Determinants-of-Health-Healthcare-UCIG-v7-9-7-2023.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mihin.org/wp-content/uploads/2023/09/MiHIN-Social-Determinants-of-Health-Healthcare-UCIG-v7-9-7-2023.pdf&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQFnoECBoQAQ",
+      "displayed_link": "https://mihin.org \u203a uploads \u203a 2023/09 \u203a MiHIN-...",
+      "favicon": "https://serpapi.com/searches/68646d6f02ab8ce8417505e2/images/6a097e9627dd31a29abd15966261d94d91cb3fe661bfe31183f927c0fb388908.png",
+      "date": "Sep 7, 2023",
+      "snippet": "FHIR), security information supported or required ... Service, Health Provider Directory, Common Key Service, and the SDOH for Community.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Health Provider Directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=university+of+michigan+health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQ5t4CegQIKBAB"
+      },
+      "source": "Michigan Health Information Network Shared Services (MiHIN)"
+    },
+    {
+      "position": 6,
+      "title": "STATE OF MICHIGAN CENTRAL PROCUREMENT ...",
+      "link": "https://www.michigan.gov/-/media/Project/Websites/dtmb/Procurement/Contracts/Folder18/071B6200168_Table_of_Contents.pdf?rev=0b32a66de4f5409c997063b77a3dbc5c",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.michigan.gov/-/media/Project/Websites/dtmb/Procurement/Contracts/Folder18/071B6200168_Table_of_Contents.pdf%3Frev%3D0b32a66de4f5409c997063b77a3dbc5c&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQFnoECBwQAQ",
+      "displayed_link": "https://www.michigan.gov \u203a Contracts \u203a Folder18",
+      "favicon": "https://serpapi.com/searches/68646d6f02ab8ce8417505e2/images/6a097e9627dd31a29abd15966261d94d9d9f3be1a2fd752f324edc01036dcf7f.png",
+      "date": "May 1, 2015",
+      "snippet": "3) HL7 FHIR API (Adapter and Server). 4) Secured ... information about the Patient Access API and Provider Directory API and Third-party App.",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "API",
+        "Provider Directory API"
+      ],
+      "source": "State of Michigan (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQFnoECBgQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646d6f02ab8ce8417505e2/images/6a097e9627dd31a29abd15966261d94da8313a07a0791197b778e2319bb87a89.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 8,
+      "title": "Pragmatic Approaches to Interoperability",
+      "link": "https://telehealthandmedicinetoday.com/index.php/journal/article/view/421/909",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://telehealthandmedicinetoday.com/index.php/journal/article/view/421/909&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQFnoECDIQAQ",
+      "displayed_link": "https://telehealthandmedicinetoday.com \u203a article \u203a view",
+      "favicon": "https://serpapi.com/searches/68646d6f02ab8ce8417505e2/images/6a097e9627dd31a29abd15966261d94d055c1e1d81596723ca51bfcec0a24e0b.png",
+      "author": "by MBA Bharath Perugu",
+      "snippet": "... FHIR standard; the Argonaut Provider Directory will also be considered. Subsequently, FHIR standards may be modified to support any ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=university+of+michigan+health+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQ5t4CegQIOBAB"
+      },
+      "source": "Telehealth and Medicine Today"
+    },
+    {
+      "position": 9,
+      "title": "Report Card - Confluence - HL7 International",
+      "link": "https://confluence.hl7.org/download/attachments/144994722/ProjectBallotHealthMetrics_2023JanWGM_Final.xlsx?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/144994722/ProjectBallotHealthMetrics_2023JanWGM_Final.xlsx%3Fapi%3Dv2&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQFnoECDEQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a attachments \u203a Projec...",
+      "favicon": "https://serpapi.com/searches/68646d6f02ab8ce8417505e2/images/6a097e9627dd31a29abd15966261d94d1f275bfd39ca89e9898f23766d72376c.png",
+      "snippet": "Develop a FHIR R4 based implementation guide for an API similar to the CMS Medicare Blue Button 2.0 API, FHIR R3 based, that will allow consumer-directed ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Medicare",
+        "API",
+        "FHIR"
+      ],
+      "source": "HL7.org"
+    },
+    {
+      "position": 10,
+      "title": "Community Interoperability APIs",
+      "link": "https://www.communityhealthchoice.org/interoperability-apis/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.communityhealthchoice.org/interoperability-apis/&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQFnoECDMQAQ",
+      "displayed_link": "https://www.communityhealthchoice.org \u203a interoperabilit...",
+      "favicon": "https://serpapi.com/searches/68646d6f02ab8ce8417505e2/images/6a097e9627dd31a29abd15966261d94dad72c5a81bafb2f288cac7b07729692b.png",
+      "snippet": "Use the HL7 Fast Healthcare Interoperability Resources (FHIR); Use the ... The Provider Directory API will allow third party applications and payers to ...",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "michigan"
+      ],
+      "must_include": {
+        "word": "michigan",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=university+of+%22michigan%22+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQ5t4CegQINxAB"
+      },
+      "source": "Community Health Choice"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=c21kaP3XB8q-hbIPo4X5oA4&start=10&sa=N&sstk=Ac65TH5kef0pWnErVMZmH_TelzO2qo5f4mCLO9P_X6U6pxzEkHkPTogVwYz5T1XzbPh2gpwzYUBlfyyrXg6MJ4cKrhhS0GH0eh0M1Q&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=c21kaP3XB8q-hbIPo4X5oA4&start=10&sa=N&sstk=Ac65TH5kef0pWnErVMZmH_TelzO2qo5f4mCLO9P_X6U6pxzEkHkPTogVwYz5T1XzbPh2gpwzYUBlfyyrXg6MJ4cKrhhS0GH0eh0M1Q&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=c21kaP3XB8q-hbIPo4X5oA4&start=20&sa=N&sstk=Ac65TH5kef0pWnErVMZmH_TelzO2qo5f4mCLO9P_X6U6pxzEkHkPTogVwYz5T1XzbPh2gpwzYUBlfyyrXg6MJ4cKrhhS0GH0eh0M1Q&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=c21kaP3XB8q-hbIPo4X5oA4&start=30&sa=N&sstk=Ac65TH5kef0pWnErVMZmH_TelzO2qo5f4mCLO9P_X6U6pxzEkHkPTogVwYz5T1XzbPh2gpwzYUBlfyyrXg6MJ4cKrhhS0GH0eh0M1Q&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=c21kaP3XB8q-hbIPo4X5oA4&start=40&sa=N&sstk=Ac65TH5kef0pWnErVMZmH_TelzO2qo5f4mCLO9P_X6U6pxzEkHkPTogVwYz5T1XzbPh2gpwzYUBlfyyrXg6MJ4cKrhhS0GH0eh0M1Q&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=c21kaP3XB8q-hbIPo4X5oA4&start=50&sa=N&sstk=Ac65TH5kef0pWnErVMZmH_TelzO2qo5f4mCLO9P_X6U6pxzEkHkPTogVwYz5T1XzbPh2gpwzYUBlfyyrXg6MJ4cKrhhS0GH0eh0M1Q&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=c21kaP3XB8q-hbIPo4X5oA4&start=60&sa=N&sstk=Ac65TH5kef0pWnErVMZmH_TelzO2qo5f4mCLO9P_X6U6pxzEkHkPTogVwYz5T1XzbPh2gpwzYUBlfyyrXg6MJ4cKrhhS0GH0eh0M1Q&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=c21kaP3XB8q-hbIPo4X5oA4&start=70&sa=N&sstk=Ac65TH5kef0pWnErVMZmH_TelzO2qo5f4mCLO9P_X6U6pxzEkHkPTogVwYz5T1XzbPh2gpwzYUBlfyyrXg6MJ4cKrhhS0GH0eh0M1Q&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=c21kaP3XB8q-hbIPo4X5oA4&start=80&sa=N&sstk=Ac65TH5kef0pWnErVMZmH_TelzO2qo5f4mCLO9P_X6U6pxzEkHkPTogVwYz5T1XzbPh2gpwzYUBlfyyrXg6MJ4cKrhhS0GH0eh0M1Q&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=c21kaP3XB8q-hbIPo4X5oA4&start=90&sa=N&sstk=Ac65TH5kef0pWnErVMZmH_TelzO2qo5f4mCLO9P_X6U6pxzEkHkPTogVwYz5T1XzbPh2gpwzYUBlfyyrXg6MJ4cKrhhS0GH0eh0M1Q&ved=2ahUKEwi93ce45pyOAxVKX0EAHaNCHuQQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=university+of+michigan+health+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

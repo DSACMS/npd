@@ -1,0 +1,267 @@
+{
+  "search_metadata": {
+    "id": "68646ceb3b93e303bf548dca",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/274b975b966b9bda/68646ceb3b93e303bf548dca.json",
+    "created_at": "2025-07-01 23:19:07 UTC",
+    "processed_at": "2025-07-01 23:19:07 UTC",
+    "google_url": "https://www.google.com/search?q=henry+ford+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=henry+ford+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/274b975b966b9bda/68646ceb3b93e303bf548dca.html",
+    "total_time_taken": 0.97
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "henry ford health system Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "henry ford health system Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 69,
+    "time_taken_displayed": 0.39,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Michigan Health Information Technology Commission",
+      "link": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder4/Folder5/Folder3/Folder105/Folder2/Folder205/Folder1/Folder305/Health_Information_Technology_Commission_November_2020_Presentation_v2.pdf?rev=85f5c0803e874d1393125952f4adda20",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder4/Folder5/Folder3/Folder105/Folder2/Folder205/Folder1/Folder305/Health_Information_Technology_Commission_November_2020_Presentation_v2.pdf%3Frev%3D85f5c0803e874d1393125952f4adda20&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQFnoECCIQAQ",
+      "displayed_link": "https://www.michigan.gov \u203a Folder1 \u203a Folder305",
+      "favicon": "https://serpapi.com/searches/68646ceb3b93e303bf548dca/images/ff5d8954891ecbe0c584f0313811c6897ae81f967856c680d0164f869e1a713f.png",
+      "date": "Jan 1, 2021",
+      "snippet": "and/or FHIR API end point. COMPLIANCE TIMELINE: August 1, 2020. Page ... \u2022 Provider Directory API. (applicable January 1,. 2021)+ 6 months.",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory API"
+      ],
+      "source": "State of Michigan (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Michigan Health Information Technology Commission",
+      "link": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder1/Folder58/August_2016_HIT_Commission_Presentation_Final.pdf?rev=431e1814b84a4db6bfc1e7c70ff43b87",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder1/Folder58/August_2016_HIT_Commission_Presentation_Final.pdf%3Frev%3D431e1814b84a4db6bfc1e7c70ff43b87&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQFnoECBgQAQ",
+      "displayed_link": "https://www.michigan.gov \u203a Folder1 \u203a Folder58",
+      "favicon": "https://serpapi.com/searches/68646ceb3b93e303bf548dca/images/ff5d8954891ecbe0c584f0313811c689c3a9f5ec2b41456782ac0a680440f523.png",
+      "date": "Aug 18, 2016",
+      "snippet": "\u2022 491,815 unique providers in statewide Health Provider Directory ... \u2022 Runs as web service with rich FHIR API for easy integration.",
+      "snippet_highlighted_words": [
+        "Health Provider Directory",
+        "service",
+        "FHIR API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=henry+ford+health+system+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQ5t4CegQILRAB"
+      },
+      "source": "State of Michigan (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Provider Directory Workshop, April 5, 2016 Page 1",
+      "link": "https://oncprojectracking.healthit.gov/wiki/download/attachments/9700978/Provider%20Directory%20Workshop%20Transcript%20%28draft%29%202016-04-05.pdf?version=1&modificationDate=1463069275000&api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://oncprojectracking.healthit.gov/wiki/download/attachments/9700978/Provider%2520Directory%2520Workshop%2520Transcript%2520%2528draft%2529%25202016-04-05.pdf%3Fversion%3D1%26modificationDate%3D1463069275000%26api%3Dv2&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQFnoECBYQAQ",
+      "displayed_link": "https://oncprojectracking.healthit.gov \u203a attachments",
+      "snippet": "Provider Directory Workshop, April 5, 2016. Page 32. We did have to extend FHIR as we mentioned, here is a drawing of the provider directory and consumer.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "ONC Project Tracking (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Pragmatic Approaches to Interoperability",
+      "link": "https://telehealthandmedicinetoday.com/index.php/journal/article/view/421/909",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://telehealthandmedicinetoday.com/index.php/journal/article/view/421/909&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQFnoECBwQAQ",
+      "displayed_link": "https://telehealthandmedicinetoday.com \u203a article \u203a view",
+      "favicon": "https://serpapi.com/searches/68646ceb3b93e303bf548dca/images/ff5d8954891ecbe0c584f0313811c689c2b37fd8f2ee82420ab6f3ad5458ddd3.png",
+      "author": "by MBA Bharath Perugu",
+      "snippet": "... FHIR standard; the Argonaut Provider Directory will also be considered. Subsequently, FHIR standards may be modified to support any ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=henry+ford+health+system+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQ5t4CegQILBAB"
+      },
+      "source": "Telehealth and Medicine Today"
+    },
+    {
+      "position": 5,
+      "title": "ANNUAL REPORT",
+      "link": "https://mihin.org/wp-content/uploads/2019/12/MiHIN_AnnualReportFINAL_2019.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mihin.org/wp-content/uploads/2019/12/MiHIN_AnnualReportFINAL_2019.pdf&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQFnoECBcQAQ",
+      "displayed_link": "https://mihin.org \u203a uploads \u203a 2019/12 \u203a MiHIN_...",
+      "favicon": "https://serpapi.com/searches/68646ceb3b93e303bf548dca/images/ff5d8954891ecbe0c584f0313811c689dadb46bba3150f850fcf20ca3ac16936.png",
+      "snippet": "Velatura provides both the system and supporting services for the OHA PD and integrates the. Provider Directory component with other Health Information ...",
+      "snippet_highlighted_words": [
+        "system",
+        "services",
+        "Provider Directory",
+        "Health"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 22
+          },
+          "extensions": [
+            "22 pages"
+          ]
+        }
+      },
+      "source": "Michigan Health Information Network Shared Services (MiHIN)"
+    },
+    {
+      "position": 6,
+      "title": "Best in KLAS Report 2024",
+      "link": "https://www.performancehealthus.com/hubfs/Best%20in%20KLAS%20Report%202024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.performancehealthus.com/hubfs/Best%2520in%2520KLAS%2520Report%25202024.pdf&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQFnoECB8QAQ",
+      "displayed_link": "https://www.performancehealthus.com \u203a hubfs",
+      "favicon": "https://serpapi.com/searches/68646ceb3b93e303bf548dca/images/ff5d8954891ecbe0c584f0313811c68924b7976169566cfbf4abe5ca090187c5.png",
+      "date": "Feb 7, 2024",
+      "snippet": "... FHIR 92.2. Data Analytics Platforms (Payers). Clarify Health Solutions ... provider directory API, and payer-to-payer data exchange ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Health",
+        "provider directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 279
+          },
+          "extensions": [
+            "279 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=henry+ford+health+system+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQ5t4CegQIKxAB"
+      },
+      "source": "Performance Health Partners"
+    },
+    {
+      "position": 7,
+      "title": "Pragmatic Approaches to Interoperability in the U.S.",
+      "link": "https://telehealthandmedicinetoday.com/index.php/journal/article/download/421/910/5884",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://telehealthandmedicinetoday.com/index.php/journal/article/download/421/910/5884&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQFnoECBoQAQ",
+      "displayed_link": "https://telehealthandmedicinetoday.com \u203a download",
+      "favicon": "https://serpapi.com/searches/68646ceb3b93e303bf548dca/images/ff5d8954891ecbe0c584f0313811c6897c669dc165371920b7980f24dd4a95cf.png",
+      "author": "by B Perugu",
+      "snippet": "with the FHIR standard; the Argonaut Provider Directory will also be considered. Subsequently, FHIR standards may be modified to support any ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=henry+ford+health+system+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQ5t4CegQILhAB"
+      },
+      "source": "Telehealth and Medicine Today"
+    },
+    {
+      "position": 8,
+      "title": "Meg Bryant",
+      "link": "https://www.healthcaredive.com/users/mbryant/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcaredive.com/users/mbryant/&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQFnoECDEQAQ",
+      "displayed_link": "https://www.healthcaredive.com \u203a users \u203a mbryant",
+      "favicon": "https://serpapi.com/searches/68646ceb3b93e303bf548dca/images/ff5d8954891ecbe0c584f0313811c689d78317403b33f73c6623c92e82be6efd.png",
+      "snippet": "Nearly a third of health IT developers producing FHIR products, ONC says. Oct ... Industry group offers roadmap to greater provider directory accuracy.",
+      "snippet_highlighted_words": [
+        "health",
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "Healthcare Dive"
+    },
+    {
+      "position": 9,
+      "title": "HOUSE OF DELEGATES HANDBOOK - INFO (A-22)",
+      "link": "https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQFnoECDQQAQ",
+      "displayed_link": "https://www.ama-assn.org \u203a system \u203a files \u203a a22-...",
+      "favicon": "https://serpapi.com/searches/68646ceb3b93e303bf548dca/images/ff5d8954891ecbe0c584f0313811c689f3d819ec8a03c7d041e0acc2630df89a.png",
+      "date": "Dec 17, 2021",
+      "snippet": "AMA/CAQH Provider Directory. White Paper \u2013 Co-branded white ... FHIR\u00ae implementation guide for the capture and use of SDOH data. 18.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=henry+ford+health+system+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQ5t4CegQINRAB"
+      },
+      "source": "American Medical Association"
+    },
+    {
+      "position": 10,
+      "title": "A Roadmap to Measure and Advance Health Equity",
+      "link": "https://wpcdn.ncqa.org/www-prod/wp-content/uploads/2022/01/GIH-Commonwealth-Fund-federal-data-report-part-2-1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://wpcdn.ncqa.org/www-prod/wp-content/uploads/2022/01/GIH-Commonwealth-Fund-federal-data-report-part-2-1.pdf&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQFnoECDoQAQ",
+      "displayed_link": "https://wpcdn.ncqa.org \u203a uploads \u203a 2022/01 \u203a GI...",
+      "snippet": "their products support data exchange using FHIR standards, but do not mandate that health IT products ... designing and developing a provider directory, privacy ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "health",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 38
+          },
+          "extensions": [
+            "38 pages"
+          ]
+        }
+      },
+      "source": "NCQA"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=henry+ford+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=62xkaN78O_Pjxc8Poca6gQQ&start=10&sa=N&sstk=Ac65TH4glATs_5Ffv5FEIPY2RDAIFWlVAKFkeVCF0J3ZumGy-PIR7Fi9XpP-l4mCyV04uVl-HnHEcNmIC4Fr44iatEwCDcBrYW85CA&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQ8NMDegQICRAI",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=henry+ford+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=62xkaN78O_Pjxc8Poca6gQQ&start=10&sa=N&sstk=Ac65TH4glATs_5Ffv5FEIPY2RDAIFWlVAKFkeVCF0J3ZumGy-PIR7Fi9XpP-l4mCyV04uVl-HnHEcNmIC4Fr44iatEwCDcBrYW85CA&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=henry+ford+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=62xkaN78O_Pjxc8Poca6gQQ&start=20&sa=N&sstk=Ac65TH4glATs_5Ffv5FEIPY2RDAIFWlVAKFkeVCF0J3ZumGy-PIR7Fi9XpP-l4mCyV04uVl-HnHEcNmIC4Fr44iatEwCDcBrYW85CA&ved=2ahUKEwieno_45ZyOAxXzcfEDHSGjLkAQ8tMDegQICRAG"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=henry+ford+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=henry+ford+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=henry+ford+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=henry+ford+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20"
+    }
+  }
+}

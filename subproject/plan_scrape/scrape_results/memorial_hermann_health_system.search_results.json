@@ -1,0 +1,330 @@
+{
+  "search_metadata": {
+    "id": "68646d1603610a3823f87e3e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/09e55f854513cb04/68646d1603610a3823f87e3e.json",
+    "created_at": "2025-07-01 23:19:50 UTC",
+    "processed_at": "2025-07-01 23:19:50 UTC",
+    "google_url": "https://www.google.com/search?q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/09e55f854513cb04/68646d1603610a3823f87e3e.html",
+    "total_time_taken": 4.56
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "memorial hermann health system Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "memorial hermann health system Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 116,
+    "time_taken_displayed": 0.81,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "CMS Third-Party Application Developers Documentation",
+      "link": "https://healthplan.memorialhermann.org/about-us/cmstpadev-documentation",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://healthplan.memorialhermann.org/about-us/cmstpadev-documentation&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQFnoECBgQAQ",
+      "displayed_link": "https://healthplan.memorialhermann.org \u203a about-us \u203a c...",
+      "favicon": "https://serpapi.com/searches/68646d1603610a3823f87e3e/images/ff82c4e2877ca55c915723ac065bde01a41d836972954ae8f515c01d6229b14e.png",
+      "snippet": "The Provider Directory API accesses the Memorial Hermann Provider and Pharmacy Directories. This section describes the FHIR resources and RESTful capabilities ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Memorial Hermann",
+        "FHIR"
+      ],
+      "missing": [
+        "system"
+      ],
+      "must_include": {
+        "word": "system",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=memorial+hermann+health+%22system%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQ5t4CegQIHBAB"
+      },
+      "source": "Memorial Hermann Health Plan"
+    },
+    {
+      "position": 2,
+      "title": "Interoperability and Patient Access Final Rule Call",
+      "link": "https://www.cms.gov/files/document/2020-12-09-transcript.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/2020-12-09-transcript.pdf&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQFnoECBkQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a 2020-12-09-transcript",
+      "favicon": "https://serpapi.com/searches/68646d1603610a3823f87e3e/images/ff82c4e2877ca55c915723ac065bde01ba2de790f9d3ff87d734d893b41a09e6.png",
+      "date": "Dec 9, 2020",
+      "snippet": "... FHIR API endpoint. ... And all of that technical detail around the APIs applies as well to the second API policy, which is the Provider Directory ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "APIs",
+        "API",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 24
+          },
+          "extensions": [
+            "24 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "Texas Value-Based Payment and Quality Improvement ...",
+      "link": "https://www.hhs.texas.gov/sites/default/files/documents/value-based-payment-qual-improvement-recommendations-2024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.texas.gov/sites/default/files/documents/value-based-payment-qual-improvement-recommendations-2024.pdf&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQFnoECBYQAQ",
+      "displayed_link": "https://www.hhs.texas.gov \u203a files \u203a documents \u203a v...",
+      "favicon": "https://serpapi.com/searches/68646d1603610a3823f87e3e/images/ff82c4e2877ca55c915723ac065bde0138a6c3e81d4aed63e1e8f06729e10757.png",
+      "date": "Dec 1, 2024",
+      "snippet": "... Healthcare. Interoperability Resources (FHIR\u00ae) data. ... Interface (API) standards for Patient Access, Provider Access, Provider Directory,.",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "API",
+        "Provider Directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 78
+          },
+          "extensions": [
+            "78 pages"
+          ]
+        }
+      },
+      "missing": [
+        "hermann",
+        "Advantage"
+      ],
+      "source": "Texas Health and Human Services (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Nov 22, 2024 Advisory Committee Meeting Summary",
+      "link": "https://www.health.state.mn.us/facilities/ehealth/advcommittee/docs/112224summary.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.health.state.mn.us/facilities/ehealth/advcommittee/docs/112224summary.pdf&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQFnoECBUQAQ",
+      "displayed_link": "https://www.health.state.mn.us \u203a ehealth \u203a docs",
+      "favicon": "https://serpapi.com/searches/68646d1603610a3823f87e3e/images/ff82c4e2877ca55c915723ac065bde01581e9786a73104c0ed5840beed771d38.png",
+      "date": "Nov 22, 2024",
+      "snippet": "What organizations in the state are FHIR-enabled? Based on this ... governance structures like rules engines, a provider directory, master MPI, a ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 11
+          },
+          "extensions": [
+            "11 pages"
+          ]
+        }
+      },
+      "missing": [
+        "hermann",
+        "Advantage"
+      ],
+      "source": "MN Dept. of Health"
+    },
+    {
+      "position": 5,
+      "title": "How Health Information Exchanges Support Integration for ...",
+      "link": "https://aspe.hhs.gov/sites/default/files/documents/dbf3c475dff9ef1d5bdbcdef7792889a/hie-support-integration-bh-settings.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aspe.hhs.gov/sites/default/files/documents/dbf3c475dff9ef1d5bdbcdef7792889a/hie-support-integration-bh-settings.pdf&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQFnoECBcQAQ",
+      "displayed_link": "https://aspe.hhs.gov \u203a default \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/68646d1603610a3823f87e3e/images/ff82c4e2877ca55c915723ac065bde019480cff0a8d2ea41bfa428e6f012662b.png",
+      "date": "Dec 31, 2024",
+      "snippet": "and a provider directory linking health care ... Cerner, and other systems to facilitate exchange, as well as to incentivize FHIR integration and ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "health care",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 71
+          },
+          "extensions": [
+            "71 pages"
+          ]
+        }
+      },
+      "missing": [
+        "hermann"
+      ],
+      "must_include": {
+        "word": "hermann",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=memorial+%22hermann%22+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQ5t4CegQIIRAB"
+      },
+      "source": "HHS.gov"
+    },
+    {
+      "position": 6,
+      "title": "Streamlining Prior Authorization: Final Report ...",
+      "link": "https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQFnoECB4QAQ",
+      "displayed_link": "https://24315998.fs1.hubspotusercontent-na1.net \u203a ...",
+      "snippet": "Interoperability Resources (FHIR)-enabled and integrable within Electronic Health ... APIs and provider directory infor- mation through the Provider Directory API ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Health",
+        "APIs",
+        "provider directory",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "hermann"
+      ],
+      "must_include": {
+        "word": "hermann",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=memorial+%22hermann%22+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQ5t4CegQIIBAB"
+      },
+      "source": "hubspotusercontent-na1.net"
+    },
+    {
+      "position": 7,
+      "title": "EXECUTIVE COMMITTEE MEETING Board of Governors",
+      "link": "https://www.lacare.org/sites/default/files/executive_committee_packet_20220426.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/executive_committee_packet_20220426.pdf&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQFnoECBoQAQ",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files \u203a ex...",
+      "favicon": "https://serpapi.com/searches/68646d1603610a3823f87e3e/images/ff82c4e2877ca55c915723ac065bde01e267f27a4f4ed104660c327bf34f795e.png",
+      "date": "Apr 26, 2022",
+      "snippet": "The first phase is complete with public facing provider directory API's (Application Program ... Resources (FHIR) format, in compliance ...",
+      "snippet_highlighted_words": [
+        "provider directory API's",
+        "FHIR"
+      ],
+      "missing": [
+        "hermann"
+      ],
+      "must_include": {
+        "word": "hermann",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=memorial+%22hermann%22+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQ5t4CegQIIhAB"
+      },
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 8,
+      "title": "Necessary Investments and Funding Opportunities",
+      "link": "https://www.chcf.org/wp-content/uploads/2022/06/ClosingGapCAsDataExchangeNecessaryInvestments.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chcf.org/wp-content/uploads/2022/06/ClosingGapCAsDataExchangeNecessaryInvestments.pdf&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQFnoECDIQAQ",
+      "displayed_link": "https://www.chcf.org \u203a uploads \u203a 2022/06 \u203a Closi...",
+      "favicon": "https://serpapi.com/searches/68646d1603610a3823f87e3e/images/ff82c4e2877ca55c915723ac065bde01db99e2e295daeab7c640112f7e1f033f.png",
+      "date": "Jun 17, 2022",
+      "snippet": "Fast Healthcare Interoperability Resources (FHIR), can facilitate ... Provider directory. CMS MES 75-25 FFP \u2014 operations. Page 20. 20.",
+      "snippet_highlighted_words": [
+        "Healthcare",
+        "FHIR",
+        "Provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 34
+          },
+          "extensions": [
+            "34 pages"
+          ]
+        }
+      },
+      "missing": [
+        "hermann",
+        "Advantage"
+      ],
+      "source": "California Health Care Foundation"
+    },
+    {
+      "position": 9,
+      "title": "Community Care Plan Expands Relationship with ...",
+      "link": "https://www.prnewswire.com/news-releases/community-care-plan-expands-relationship-with-zeomega-through-robust-end-to-end-interoperability-solution-301232048.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.prnewswire.com/news-releases/community-care-plan-expands-relationship-with-zeomega-through-robust-end-to-end-interoperability-solution-301232048.html&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQFnoECDoQAQ",
+      "displayed_link": "https://www.prnewswire.com \u203a news-releases \u203a communi...",
+      "favicon": "https://serpapi.com/searches/68646d1603610a3823f87e3e/images/ff82c4e2877ca55c915723ac065bde0112d54d76bd0762989e60deb0f3cfbe56.png",
+      "date": "Feb 23, 2021",
+      "snippet": "... Provider Directory API, and Payer-to-Payer Data Exchange while securely integrating with SMART on FHIR\u00ae apps. ... Memorial Healthcare System ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR",
+        "Memorial Healthcare System"
+      ],
+      "missing": [
+        "hermann",
+        "Advantage"
+      ],
+      "source": "PR Newswire"
+    },
+    {
+      "position": 10,
+      "title": "Health Care Payments Data Program - HCAI",
+      "link": "https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306.pdf&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQFnoECDMQAQ",
+      "displayed_link": "https://hcai.ca.gov \u203a uploads \u203a 2020/12 \u203a HPD-L...",
+      "favicon": "https://serpapi.com/searches/68646d1603610a3823f87e3e/images/ff82c4e2877ca55c915723ac065bde01da561c52a2205bb069cef2c44c1ef2dd.png",
+      "date": "Mar 9, 2020",
+      "snippet": "Hierarchical X12 274 Health Care Provider Directory. While there is ... (FHIR\u00ae), which are open-source Health Level Seven International ...",
+      "snippet_highlighted_words": [
+        "Health Care Provider Directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 207
+          },
+          "extensions": [
+            "207 pages"
+          ]
+        }
+      },
+      "missing": [
+        "hermann"
+      ],
+      "must_include": {
+        "word": "hermann",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=memorial+%22hermann%22+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQ5t4CegQINhAB"
+      },
+      "source": "HCAI - Department of Health Care Access and Information (.gov)"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=Gm1kaJnHC4yfhbIPr-jPsQg&start=10&sa=N&sstk=Ac65TH7aAVw8eyDd5UCnF74t5KfLkQzOfE8UtJq_ml0LsyuBKkMgqBdN6mmvRJ8orRmIuyDvMu0JKsVnb1s3CzX-sC31wnzZMRmTig&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQ8NMDegQIChAU",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=Gm1kaJnHC4yfhbIPr-jPsQg&start=10&sa=N&sstk=Ac65TH7aAVw8eyDd5UCnF74t5KfLkQzOfE8UtJq_ml0LsyuBKkMgqBdN6mmvRJ8orRmIuyDvMu0JKsVnb1s3CzX-sC31wnzZMRmTig&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=Gm1kaJnHC4yfhbIPr-jPsQg&start=20&sa=N&sstk=Ac65TH7aAVw8eyDd5UCnF74t5KfLkQzOfE8UtJq_ml0LsyuBKkMgqBdN6mmvRJ8orRmIuyDvMu0JKsVnb1s3CzX-sC31wnzZMRmTig&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQ8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=Gm1kaJnHC4yfhbIPr-jPsQg&start=30&sa=N&sstk=Ac65TH7aAVw8eyDd5UCnF74t5KfLkQzOfE8UtJq_ml0LsyuBKkMgqBdN6mmvRJ8orRmIuyDvMu0JKsVnb1s3CzX-sC31wnzZMRmTig&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQ8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=Gm1kaJnHC4yfhbIPr-jPsQg&start=40&sa=N&sstk=Ac65TH7aAVw8eyDd5UCnF74t5KfLkQzOfE8UtJq_ml0LsyuBKkMgqBdN6mmvRJ8orRmIuyDvMu0JKsVnb1s3CzX-sC31wnzZMRmTig&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQ8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=Gm1kaJnHC4yfhbIPr-jPsQg&start=50&sa=N&sstk=Ac65TH7aAVw8eyDd5UCnF74t5KfLkQzOfE8UtJq_ml0LsyuBKkMgqBdN6mmvRJ8orRmIuyDvMu0JKsVnb1s3CzX-sC31wnzZMRmTig&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQ8tMDegQIChAM",
+      "7": "https://www.google.com/search?q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=Gm1kaJnHC4yfhbIPr-jPsQg&start=60&sa=N&sstk=Ac65TH7aAVw8eyDd5UCnF74t5KfLkQzOfE8UtJq_ml0LsyuBKkMgqBdN6mmvRJ8orRmIuyDvMu0JKsVnb1s3CzX-sC31wnzZMRmTig&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQ8tMDegQIChAO",
+      "8": "https://www.google.com/search?q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=Gm1kaJnHC4yfhbIPr-jPsQg&start=70&sa=N&sstk=Ac65TH7aAVw8eyDd5UCnF74t5KfLkQzOfE8UtJq_ml0LsyuBKkMgqBdN6mmvRJ8orRmIuyDvMu0JKsVnb1s3CzX-sC31wnzZMRmTig&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQ8tMDegQIChAQ",
+      "9": "https://www.google.com/search?q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=Gm1kaJnHC4yfhbIPr-jPsQg&start=80&sa=N&sstk=Ac65TH7aAVw8eyDd5UCnF74t5KfLkQzOfE8UtJq_ml0LsyuBKkMgqBdN6mmvRJ8orRmIuyDvMu0JKsVnb1s3CzX-sC31wnzZMRmTig&ved=2ahUKEwiZvJOO5pyOAxWMT0EAHS_0M4YQ8tMDegQIChAS"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=memorial+hermann+health+system+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80"
+    }
+  }
+}

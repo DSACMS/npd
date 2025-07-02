@@ -1,0 +1,219 @@
+{
+  "search_metadata": {
+    "id": "68646d2d56043324e2375ee8",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/7d76a40d1c05e48f/68646d2d56043324e2375ee8.json",
+    "created_at": "2025-07-01 23:20:13 UTC",
+    "processed_at": "2025-07-01 23:20:13 UTC",
+    "google_url": "https://www.google.com/search?q=presbyterian+healthcare+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=presbyterian+healthcare+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/7d76a40d1c05e48f/68646d2d56043324e2375ee8.html",
+    "total_time_taken": 0.84
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "presbyterian healthcare services Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "presbyterian healthcare services Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 39,
+    "time_taken_displayed": 0.23,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Value-based care creating a new era of interoperability",
+      "link": "https://www.healthcarefinancenews.com/news/value-based-care-creating-new-era-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcarefinancenews.com/news/value-based-care-creating-new-era-interoperability&ved=2ahUKEwjV4uOX5pyOAxUt1QIHHZM7JtIQFnoECBgQAQ",
+      "displayed_link": "https://www.healthcarefinancenews.com \u203a news \u203a value...",
+      "favicon": "https://serpapi.com/searches/68646d2d56043324e2375ee8/images/3b76620565826dc9b80818227c9ba1b21bfa400c0329c4ece2fd22222d07f4a5.png",
+      "date": "May 19, 2022",
+      "snippet": "CMS exercised enforcement discretion for the Patient Access API and Provider Directory API ... FHIR standard. Clinical interoperability is ...",
+      "snippet_highlighted_words": [
+        "API",
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "source": "Healthcare Finance News"
+    },
+    {
+      "position": 2,
+      "title": "Department of Health and Human Services",
+      "link": "https://www.in.gov/health/files/Part-III-Federal-Register-80.200.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.in.gov/health/files/Part-III-Federal-Register-80.200.pdf&ved=2ahUKEwjV4uOX5pyOAxUt1QIHHZM7JtIQFnoECBcQAQ",
+      "displayed_link": "https://www.in.gov \u203a health \u203a files \u203a Part-III-Feder...",
+      "favicon": "https://serpapi.com/searches/68646d2d56043324e2375ee8/images/3b76620565826dc9b80818227c9ba1b2f7bfb0419c3b0ac58b6085abfb1cc5a0.png",
+      "date": "Oct 16, 2015",
+      "snippet": "... provider directory. After consideration of public comments received ... fhir/ \u00b7 2015Jan/argonauts.html. 164.524(c) of the HIPAA Privacy ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "fhir"
+      ],
+      "source": "IN.gov"
+    },
+    {
+      "position": 3,
+      "title": "Helpful Hints - Confluence - HL7 International",
+      "link": "https://confluence.hl7.org/download/attachments/101358024/ProjectBallotHealthMetrics_2022MayWGM_Final.xlsx?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/101358024/ProjectBallotHealthMetrics_2022MayWGM_Final.xlsx%3Fapi%3Dv2&ved=2ahUKEwjV4uOX5pyOAxUt1QIHHZM7JtIQFnoECBUQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a attachments \u203a api=v2",
+      "favicon": "https://serpapi.com/searches/68646d2d56043324e2375ee8/images/3b76620565826dc9b80818227c9ba1b2c3ac0ea840d441e9a7cfe8e90083652e.png",
+      "snippet": "... FHIR Infrastructure Work Group, N/A, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 0, 0. 17, FHIR ... provider directory) and drug benefits (formulary). Mark Scrimshire, Tony ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "HL7.org"
+    },
+    {
+      "position": 4,
+      "title": "2024 Quality Improvement & Health Equity Program ...",
+      "link": "https://www.lacare.org/sites/default/files/la6784_qi_annual_evaluation_202505.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lacare.org/sites/default/files/la6784_qi_annual_evaluation_202505.pdf&ved=2ahUKEwjV4uOX5pyOAxUt1QIHHZM7JtIQFnoECCcQAQ",
+      "displayed_link": "https://www.lacare.org \u203a sites \u203a default \u203a files \u203a la...",
+      "favicon": "https://serpapi.com/searches/68646d2d56043324e2375ee8/images/3b76620565826dc9b80818227c9ba1b2baf63ffcab5bec8247bb68e63d0deb8b.png",
+      "snippet": "... (FHIR) Application. Programming Interface. (API) into the Clinical. Data ... provider directory survey, which includes questions regarding their ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 500
+          },
+          "extensions": [
+            "500 pages"
+          ]
+        }
+      },
+      "source": "L.A. Care Health Plan"
+    },
+    {
+      "position": 5,
+      "title": "Report Card - Confluence - HL7 International",
+      "link": "https://confluence.hl7.org/download/attachments/144994722/ProjectBallotHealthMetrics_2023JanWGM_Final.xlsx?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/144994722/ProjectBallotHealthMetrics_2023JanWGM_Final.xlsx%3Fapi%3Dv2&ved=2ahUKEwjV4uOX5pyOAxUt1QIHHZM7JtIQFnoECBYQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a attachments \u203a api=v2",
+      "favicon": "https://serpapi.com/searches/68646d2d56043324e2375ee8/images/3b76620565826dc9b80818227c9ba1b28be09e86fbe3f4355164018a9b6f140f.png",
+      "snippet": "Develop a FHIR R4 based implementation guide for an API similar to the CMS Medicare Blue Button 2.0 API, FHIR R3 based, that will allow consumer-directed ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Medicare",
+        "API",
+        "FHIR"
+      ],
+      "source": "HL7.org"
+    },
+    {
+      "position": 6,
+      "title": "Coversheet",
+      "link": "https://leadingage.org/wp-content/uploads/2024/05/CAST-HIE_SelectionMatrix_2024_Master.xlsx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://leadingage.org/wp-content/uploads/2024/05/CAST-HIE_SelectionMatrix_2024_Master.xlsx&ved=2ahUKEwjV4uOX5pyOAxUt1QIHHZM7JtIQFnoECB0QAQ",
+      "displayed_link": "https://leadingage.org \u203a uploads \u203a 2024/05 \u203a CAS...",
+      "favicon": "https://serpapi.com/searches/68646d2d56043324e2375ee8/images/3b76620565826dc9b80818227c9ba1b2c9bff287447917bd2eb58dd9cb3321e6.png",
+      "snippet": "\u2022 Medication data & reconciliation \u2022 FHIR/API \u2022 Closed-loop referral \u2022 SDoH data \u2022 Advanced Analytics \u2022 Advanced Directives directory, \u2022 References are ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API"
+      ],
+      "source": "LeadingAge"
+    },
+    {
+      "position": 7,
+      "title": "Puerto Rico Department of Health",
+      "link": "https://www.salud.pr.gov/CMS/DOWNLOAD/8576",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.salud.pr.gov/CMS/DOWNLOAD/8576&ved=2ahUKEwjV4uOX5pyOAxUt1QIHHZM7JtIQFnoECB8QAQ",
+      "displayed_link": "https://www.salud.pr.gov \u203a CMS \u203a DOWNLOAD",
+      "favicon": "https://serpapi.com/searches/68646d2d56043324e2375ee8/images/3b76620565826dc9b80818227c9ba1b2687014f7412c6dd5e489af19e31fa8a8.png",
+      "date": "Jul 9, 2020",
+      "snippet": "\u2022 Publicly available provider directory via API. In ... Address, FHIR API endpoint) in the National Plan and Provider Enumeration System.",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "API",
+        "FHIR API"
+      ],
+      "source": "Departamento de Salud de Puerto Rico (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "American Health Law Association The Year in Review ...",
+      "link": "https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf&ved=2ahUKEwjV4uOX5pyOAxUt1QIHHZM7JtIQFnoECC8QAQ",
+      "displayed_link": "https://www.bradley.com \u203a publications \u203a 2022/02",
+      "favicon": "https://serpapi.com/searches/68646d2d56043324e2375ee8/images/3b76620565826dc9b80818227c9ba1b22af8a5283bf7e59ad331ff2b75741426.png",
+      "date": "Feb 17, 2022",
+      "snippet": "... FHIR\u00ae Roadmap for \u00b7 TEFCA Exchange (January 2022). The TEF is a set of ... Provider Directory API (applicable January 1, 2021, with ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 315
+          },
+          "extensions": [
+            "315 pages"
+          ]
+        }
+      },
+      "source": "Bradley Arant"
+    },
+    {
+      "position": 9,
+      "title": "Meg Bryant",
+      "link": "https://www.healthcaredive.com/users/mbryant/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthcaredive.com/users/mbryant/&ved=2ahUKEwjV4uOX5pyOAxUt1QIHHZM7JtIQFnoECCwQAQ",
+      "displayed_link": "https://www.healthcaredive.com \u203a users \u203a mbryant",
+      "favicon": "https://serpapi.com/searches/68646d2d56043324e2375ee8/images/3b76620565826dc9b80818227c9ba1b2399e74c430cdc3466c10b571d238df4a.png",
+      "snippet": "HL7 releases latest FHIR version. Jan. 3, 2019. Sanford Health, Good Samaritan ... Industry group offers roadmap to greater provider directory accuracy.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory"
+      ],
+      "source": "Healthcare Dive"
+    },
+    {
+      "position": 10,
+      "title": "Powerful Women",
+      "link": "https://arizent.brightspotcdn.com/cd/11/63c3711f49df8bb138f382fb5350/hdm-0618.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://arizent.brightspotcdn.com/cd/11/63c3711f49df8bb138f382fb5350/hdm-0618.pdf&ved=2ahUKEwjV4uOX5pyOAxUt1QIHHZM7JtIQFnoECDAQAQ",
+      "displayed_link": "https://arizent.brightspotcdn.com \u203a hdm-0618",
+      "date": "Jun 1, 2018",
+      "snippet": "\u201cCMS is going to be releasing Medicare claims data, and what's different about Blue Button. 2.0 is its going to be using the open API. FHIR ...",
+      "snippet_highlighted_words": [
+        "Medicare",
+        "API",
+        "FHIR"
+      ],
+      "source": "brightspotcdn.com"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=presbyterian+healthcare+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=Lm1kaNWTF62qi-gPk_eYkQ0&start=10&sa=N&sstk=Ac65TH4wuqEnqW9DRxkRAynPoZEqC4fZDveK2CKDsnlnWEYy-r7BVSLq5ZzQszMbIAc91YUjMx9dW9lvepXpkybFF2GHM7BilztdWw&ved=2ahUKEwjV4uOX5pyOAxUt1QIHHZM7JtIQ8NMDegQICBAG",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=presbyterian+healthcare+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=Lm1kaNWTF62qi-gPk_eYkQ0&start=10&sa=N&sstk=Ac65TH4wuqEnqW9DRxkRAynPoZEqC4fZDveK2CKDsnlnWEYy-r7BVSLq5ZzQszMbIAc91YUjMx9dW9lvepXpkybFF2GHM7BilztdWw&ved=2ahUKEwjV4uOX5pyOAxUt1QIHHZM7JtIQ8tMDegQICBAE"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=presbyterian+healthcare+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=presbyterian+healthcare+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=presbyterian+healthcare+services+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10"
+    }
+  }
+}

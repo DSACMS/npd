@@ -1,0 +1,275 @@
+{
+  "search_metadata": {
+    "id": "68646c98ef15ceb97b48cdfc",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/1577a271850a7cea/68646c98ef15ceb97b48cdfc.json",
+    "created_at": "2025-07-01 23:17:44 UTC",
+    "processed_at": "2025-07-01 23:17:44 UTC",
+    "google_url": "https://www.google.com/search?q=blue+cross+blue+shield+of+kansas+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=blue+cross+blue+shield+of+kansas+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/1577a271850a7cea/68646c98ef15ceb97b48cdfc.html",
+    "total_time_taken": 2.19
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "blue cross blue shield of kansas Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "blue cross blue shield of kansas Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 39,
+    "time_taken_displayed": 0.24,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "How to Access Our APIs & Data",
+      "link": "https://www.anthem.com/developers",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.anthem.com/developers&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0QFnoECBgQAQ",
+      "displayed_link": "https://www.anthem.com \u203a developers",
+      "favicon": "https://serpapi.com/searches/68646c98ef15ceb97b48cdfc/images/e899c6cbf7c8916d5e9f696cbd27935687e35e7459324c4fb193074ef7eeae50.png",
+      "snippet": "This RESTful API conforms to the R4 FHIR standard, SMART on FHIR, and CARIN Blue Button version STU1(1.0). ... Anthem offers a Provider Directory service ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "FHIR",
+        "Blue",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=blue+cross+blue+shield+of+kansas+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0Q5t4CegQIHBAB"
+      },
+      "source": "Anthem"
+    },
+    {
+      "position": 2,
+      "title": "May 21, 2025 HMA Weekly Roundup: Trends in Health Policy",
+      "link": "https://www.healthmanagement.com/insights/weekly-roundup/may-21-2025/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthmanagement.com/insights/weekly-roundup/may-21-2025/&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0QFnoECBcQAQ",
+      "displayed_link": "https://www.healthmanagement.com \u203a insights \u203a may-21...",
+      "favicon": "https://serpapi.com/searches/68646c98ef15ceb97b48cdfc/images/e899c6cbf7c8916d5e9f696cbd2793568200fd9f2de9076e33c2e2ee742c3dd8.png",
+      "date": "May 21, 2025",
+      "snippet": "In addition, CMS is seeking to understand which FHIR APIs and capabilities are already being supported or utilized in provider systems.",
+      "snippet_highlighted_words": [
+        "FHIR"
+      ],
+      "source": "Health Management Associates"
+    },
+    {
+      "position": 3,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0QFnoECCQQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646c98ef15ceb97b48cdfc/images/e899c6cbf7c8916d5e9f696cbd279356faf25ac741f72edfe88a10d7e16d6070.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 4,
+      "title": "CS Kansas Draft Protest Letter 6-3-2024 (908617-4).DOCX",
+      "link": "https://admin.ks.gov/media/cms/CareSource_Bid_Protest_5d4febae93561.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://admin.ks.gov/media/cms/CareSource_Bid_Protest_5d4febae93561.pdf&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0QFnoECBsQAQ",
+      "displayed_link": "https://admin.ks.gov \u203a media \u203a cms",
+      "favicon": "https://serpapi.com/searches/68646c98ef15ceb97b48cdfc/images/e899c6cbf7c8916d5e9f696cbd2793569070fe8cc276f0947dc4e3ca07dac537.png",
+      "date": "Jun 3, 2024",
+      "snippet": "... provider directory, including information included in the directory ... (FHIR). 2676. 2677. 4. CareInsights: Our modern data platform ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 270
+          },
+          "extensions": [
+            "270 pages"
+          ]
+        }
+      },
+      "source": "Kansas Department of Administration (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Helpful Hints - Confluence - HL7.org",
+      "link": "https://confluence.hl7.org/download/attachments/81018510/ProjectBallotHealthMetrics_2022JanWGM_20211221.xlsx?api=v2",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/download/attachments/81018510/ProjectBallotHealthMetrics_2022JanWGM_20211221.xlsx%3Fapi%3Dv2&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0QFnoECB4QAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a attachments \u203a api=v2",
+      "favicon": "https://serpapi.com/searches/68646c98ef15ceb97b48cdfc/images/e899c6cbf7c8916d5e9f696cbd279356052804207d7782af0a884cd713635e4f.png",
+      "snippet": "... FHIR Infrastructure Work Group, FHIR Management Group, Clinical, We will ... Provider Directory, Endpoint Directory, Utilizes the work done for the ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "HL7.org"
+    },
+    {
+      "position": 6,
+      "title": "Health Care Payments Data Program - HCAI",
+      "link": "https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hcai.ca.gov/wp-content/uploads/2020/12/HPD-Legislative-Report-20200306.pdf&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0QFnoECBoQAQ",
+      "displayed_link": "https://hcai.ca.gov \u203a uploads \u203a 2020/12 \u203a HPD-L...",
+      "favicon": "https://serpapi.com/searches/68646c98ef15ceb97b48cdfc/images/e899c6cbf7c8916d5e9f696cbd2793565c1a437ac21cab09681840189d1631bc.png",
+      "date": "Mar 9, 2020",
+      "snippet": "(FHIR\u00ae), which are open-source Health Level ... licensing data, could be used to supplement the provider-directory type of information from.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "supplement",
+        "provider-directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 207
+          },
+          "extensions": [
+            "207 pages"
+          ]
+        }
+      },
+      "source": "HCAI - Department of Health Care Access and Information (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "HOUSE OF DELEGATES HANDBOOK - INFO (A-22)",
+      "link": "https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ama-assn.org/system/files/a22-handbook-info-reports.pdf&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0QFnoECBkQAQ",
+      "displayed_link": "https://www.ama-assn.org \u203a system \u203a files \u203a a22-...",
+      "favicon": "https://serpapi.com/searches/68646c98ef15ceb97b48cdfc/images/e899c6cbf7c8916d5e9f696cbd279356699074a9406f6cade67db40b3006a007.png",
+      "date": "Dec 17, 2021",
+      "snippet": "AMA/CAQH Provider Directory. White Paper \u2013 Co-branded white ... FHIR\u00ae implementation guide for the capture and use of SDOH data. 18.",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=blue+cross+blue+shield+of+kansas+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0Q5t4CegQIHRAB"
+      },
+      "source": "American Medical Association"
+    },
+    {
+      "position": 8,
+      "title": "Health Information Technology Advisory Committee",
+      "link": "https://www.healthit.gov/sites/default/files/facas/2019-04-10_HITAC_InPerson_Transcript_508_0.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/facas/2019-04-10_HITAC_InPerson_Transcript_508_0.pdf&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0QFnoECDQQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a facas",
+      "favicon": "https://serpapi.com/searches/68646c98ef15ceb97b48cdfc/images/e899c6cbf7c8916d5e9f696cbd279356558f8b0408cd15a0ec5568ab4b472fca.jpeg",
+      "date": "Apr 10, 2019",
+      "snippet": "provider directories available also through a FHIR-based API. The ... It also has \u2013 with the provider directory proposal, it has.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "provider directory"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 9,
+      "title": "State of Colorado - Office of eHealth Innovation",
+      "link": "https://oehi.colorado.gov/sites/oehi/files/documents/Care%20Coordination%20Environmental%20Scan%20Action%20Plan%20Final_V3%28002%29%20%282%29.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://oehi.colorado.gov/sites/oehi/files/documents/Care%2520Coordination%2520Environmental%2520Scan%2520Action%2520Plan%2520Final_V3%2528002%2529%2520%25282%2529.pdf&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0QFnoECDYQAQ",
+      "displayed_link": "https://oehi.colorado.gov \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/68646c98ef15ceb97b48cdfc/images/e899c6cbf7c8916d5e9f696cbd27935639639b4603359a4969d2bf65791160df.png",
+      "snippet": "FHIR. Fast Healthcare Interoperability Resources. FISMA. Federal Information ... Healthcare Provider Directory. HRSN. Health-Related Social Needs. IAPD.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "Office of eHealth Innovation (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "American Health Law Association The Year in Review ...",
+      "link": "https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bradley.com/-/media/files/insights/publications/2022/02/ahlayearinreview.pdf&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0QFnoECDUQAQ",
+      "displayed_link": "https://www.bradley.com \u203a publications \u203a 2022/02",
+      "favicon": "https://serpapi.com/searches/68646c98ef15ceb97b48cdfc/images/e899c6cbf7c8916d5e9f696cbd279356e7cc0f59a57a6e8063d88225fbc63bcf.png",
+      "date": "Feb 17, 2022",
+      "snippet": "... FHIR\u00ae Roadmap for \u00b7 TEFCA Exchange (January 2022). The TEF is a set of ... Provider Directory API (applicable January 1, 2021, with ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 315
+          },
+          "extensions": [
+            "315 pages"
+          ]
+        }
+      },
+      "source": "Bradley Arant"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Cigna API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Cigna+API&sa=X&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0Q1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Cigna+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Availity",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Availity&sa=X&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0Q1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Availity&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Anthem machine readable files",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Anthem+machine+readable+files&sa=X&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0Q1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Anthem+machine+readable+files&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=blue+cross+blue+shield+of+kansas+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=mWxkaLKmNKbIp84Ppp326As&start=10&sa=N&sstk=Ac65TH7Oyu5VKtRWcl8YqbY6_cFGA9yT1B3A-foOVi0tcJ2ORdDraYMHPOVSsgGo7lKKrvPdLNiwt5-hhzmDnRnNzS6rE-Uiml1E_g&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0Q8NMDegQIBxAI",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=blue+cross+blue+shield+of+kansas+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=mWxkaLKmNKbIp84Ppp326As&start=10&sa=N&sstk=Ac65TH7Oyu5VKtRWcl8YqbY6_cFGA9yT1B3A-foOVi0tcJ2ORdDraYMHPOVSsgGo7lKKrvPdLNiwt5-hhzmDnRnNzS6rE-Uiml1E_g&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0Q8tMDegQIBxAE",
+      "3": "https://www.google.com/search?q=blue+cross+blue+shield+of+kansas+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=mWxkaLKmNKbIp84Ppp326As&start=20&sa=N&sstk=Ac65TH7Oyu5VKtRWcl8YqbY6_cFGA9yT1B3A-foOVi0tcJ2ORdDraYMHPOVSsgGo7lKKrvPdLNiwt5-hhzmDnRnNzS6rE-Uiml1E_g&ved=2ahUKEwjy1vrQ5ZyOAxUm5MkDHaaOHb0Q8tMDegQIBxAG"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+blue+shield+of+kansas+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+blue+shield+of+kansas+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+blue+shield+of+kansas+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=blue+cross+blue+shield+of+kansas+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20"
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "search_metadata": {
+    "id": "6864647ee6cb302c68b3cf41",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/088d2b5caae27b0e/6864647ee6cb302c68b3cf41.json",
+    "created_at": "2025-07-01 22:43:10 UTC",
+    "processed_at": "2025-07-01 22:43:10 UTC",
+    "google_url": "https://www.google.com/search?q=%22bluecross+blueshield+association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22bluecross+blueshield+association+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/088d2b5caae27b0e/6864647ee6cb302c68b3cf41.html",
+    "total_time_taken": 1.02
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"bluecross blueshield association Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"bluecross blueshield association Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 947,
+    "time_taken_displayed": 0.44,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "bluecross blueshield association Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "bluecross blueshield association Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Provider directory API access guide",
+      "link": "https://www.capbluecross.com/wps/portal/cap/about/developer/provider-directory-api-access-guide",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.capbluecross.com/wps/portal/cap/about/developer/provider-directory-api-access-guide&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQFnoECBUQAQ",
+      "displayed_link": "https://www.capbluecross.com \u203a cap \u203a about \u203a developer",
+      "favicon": "https://serpapi.com/searches/6864647ee6cb302c68b3cf41/images/b6cc4c0f2580f82b73d5ad7fa5625fd0b106d76f3fee3abd674d45d175e7ac8d.png",
+      "snippet": "The provider directory is an open access and public-facing API to make provider directory information available. This API does not require any authentication ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "API",
+        "provider directory",
+        "API"
+      ],
+      "source": "Capital Blue Cross"
+    },
+    {
+      "position": 2,
+      "title": "Interoperability: Developer access to APIs and Smart on FHIR ...",
+      "link": "https://fhir-developer.bluecrossmn.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://fhir-developer.bluecrossmn.com/&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQFnoECBQQAQ",
+      "displayed_link": "https://fhir-developer.bluecrossmn.com",
+      "snippet": "This document includes links to useful information and best practices to help payers and developers build and maintain a FHIR-based API.",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API"
+      ],
+      "source": "Blue Cross MN"
+    },
+    {
+      "position": 3,
+      "title": "FHIR Provider Directory - | CareFirst Developer Portal",
+      "link": "https://developer.carefirst.com/product/fhir-provider-directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.carefirst.com/product/fhir-provider-directory&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQFnoECBcQAQ",
+      "displayed_link": "https://developer.carefirst.com \u203a product \u203a fhir-provider-...",
+      "favicon": "https://serpapi.com/searches/6864647ee6cb302c68b3cf41/images/b6cc4c0f2580f82b73d5ad7fa5625fd0bcd8057b14fac69b0a4f9f41681b59aa.png",
+      "snippet": "CareFirst BlueCross BlueShield Medicare Advantage is the shared business name of CareFirst Advantage, Inc., CareFirst Advantage PPO, Inc. and CareFirst ...",
+      "snippet_highlighted_words": [
+        "CareFirst BlueCross BlueShield Medicare Advantage"
+      ],
+      "source": "CareFirst Developer Portal"
+    },
+    {
+      "position": 4,
+      "title": "FHIR APIs for Interoperability | News",
+      "link": "https://news.excellusbcbs.com/developer-info/interoperability-apis",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://news.excellusbcbs.com/developer-info/interoperability-apis&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQFnoECBIQAQ",
+      "displayed_link": "https://news.excellusbcbs.com \u203a developer-info \u203a interop...",
+      "favicon": "https://serpapi.com/searches/6864647ee6cb302c68b3cf41/images/b6cc4c0f2580f82b73d5ad7fa5625fd00fb059db81793560308b01fde651f115.png",
+      "snippet": "The Excellus BlueCross BlueShield FHIR APIs for Interoperability are designed for rapid retrieval of the requested information from the health plan's backend ...",
+      "snippet_highlighted_words": [
+        "BlueCross BlueShield FHIR APIs"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=bluecross+blueshield+association+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQ5t4CegQIHxAB"
+      },
+      "source": "Excellus News"
+    },
+    {
+      "position": 5,
+      "title": "API access | Policies & best practices",
+      "link": "https://www.bluecrossnc.com/policies-best-practices/notice-privacy-practices/api-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bluecrossnc.com/policies-best-practices/notice-privacy-practices/api-access&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQFnoECBMQAQ",
+      "displayed_link": "https://www.bluecrossnc.com \u203a notice-privacy-practices",
+      "snippet": "Developers can register for access here and find the resources they need to build an application programming interface (API) to a member's health data.",
+      "snippet_highlighted_words": [
+        "API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=bluecross+blueshield+association+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQ5t4CegQIHRAB"
+      },
+      "source": "Blue Cross NC"
+    },
+    {
+      "position": 6,
+      "title": "Developer Resources",
+      "link": "https://www.bcbst.com/developer-resources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bcbst.com/developer-resources&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQFnoECBoQAQ",
+      "displayed_link": "https://www.bcbst.com \u203a Sync Your App",
+      "favicon": "https://serpapi.com/searches/6864647ee6cb302c68b3cf41/images/b6cc4c0f2580f82b73d5ad7fa5625fd082d5118b177bc73a01ab96b0cdc7c534.png",
+      "snippet": "This rule also requires payers of CMS-regulated plans to make provider directory information publicly available via a FHIR-based Provider Directory API.",
+      "snippet_highlighted_words": [
+        "plans",
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=bluecross+blueshield+association+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQ5t4CegQIIBAB"
+      },
+      "source": "BlueCross BlueShield of Tennessee"
+    },
+    {
+      "position": 7,
+      "title": "Provider Directory - API Developer Portal - Florida Blue",
+      "link": "https://developer.bcbsfl.com/interop/interop-developer-portal/product/provider-directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.bcbsfl.com/interop/interop-developer-portal/product/provider-directory&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQFnoECBYQAQ",
+      "displayed_link": "https://developer.bcbsfl.com \u203a interop \u203a product \u203a prov...",
+      "favicon": "https://serpapi.com/searches/6864647ee6cb302c68b3cf41/images/b6cc4c0f2580f82b73d5ad7fa5625fd014d11ee21c3f77cf093cc582b887e1f7.png",
+      "snippet": "The Florida Blue Provider Directory API is conformant to the Centers for Medicare & Medicaid Services (CMS) Interoperability and Patient Access Final Rule ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Medicare"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&q=bluecross+blueshield+association+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQ5t4CegQIHhAB"
+      },
+      "source": "Florida Blue"
+    },
+    {
+      "position": 8,
+      "title": "National Directory API Examples - FHIR specification",
+      "link": "https://build.fhir.org/ig/HL7/fhir-us-ndh//ndapi-examples.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://build.fhir.org/ig/HL7/fhir-us-ndh//ndapi-examples.html&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQFnoECDMQAQ",
+      "displayed_link": "https://build.fhir.org \u203a fhir-us-ndh \u203a ndapi-examples",
+      "favicon": "https://serpapi.com/searches/6864647ee6cb302c68b3cf41/images/b6cc4c0f2580f82b73d5ad7fa5625fd0672888df9ea808eef7054957abeeb682.png",
+      "snippet": "National Directory of Healthcare Providers & Services (NDH) Implementation Guide, published by HL7 International / Patient Administration.",
+      "snippet_highlighted_words": [
+        "Directory",
+        "Providers"
+      ],
+      "source": "FHIR specification"
+    },
+    {
+      "position": 9,
+      "title": "CMS/ONC Patient access API",
+      "link": "https://www.blueadvantagearkansas.com/interoperability/patient-access",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.blueadvantagearkansas.com/interoperability/patient-access&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQFnoECDEQAQ",
+      "displayed_link": "https://www.blueadvantagearkansas.com \u203a interoperability",
+      "favicon": "https://serpapi.com/searches/6864647ee6cb302c68b3cf41/images/b6cc4c0f2580f82b73d5ad7fa5625fd0dffd573b207863f43ccb5d4d5a056091.png",
+      "snippet": "The Provider Directory API will allow developers to retrieve, as applicable, certain ABCBS provider and pharmacy directory information. The Developer Sandbox ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API"
+      ],
+      "source": "BlueAdvantage Administrators of Arkansas"
+    },
+    {
+      "position": 10,
+      "title": "May 17, 2024 Centers for Medicare & Medicaid Services ...",
+      "link": "https://downloads.regulations.gov/CMS-2024-0008-0160/attachment_1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://downloads.regulations.gov/CMS-2024-0008-0160/attachment_1.pdf&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQFnoECDQQAQ",
+      "displayed_link": "https://downloads.regulations.gov \u203a attachment_1",
+      "date": "May 17, 2024",
+      "snippet": "Using the FHIR API already under development as the path for MA plans to access Medicare FFS data would also further accelerate the health care ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "plans",
+        "Medicare"
+      ],
+      "source": "Regulations.gov"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fmRkaMq1Mq2Q1fIP9O-syAQ&start=10&sa=N&sstk=Ac65TH6q41UiDsXjabRtLMpI6gXIR3Q32W7skc4XgUHTcqFXyoJE6Z6MWffR97TfNRtLmJGHRuun7zpe0Ra0ysT-32_71PWfAFb9Bw&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQ8NMDegQICRAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fmRkaMq1Mq2Q1fIP9O-syAQ&start=10&sa=N&sstk=Ac65TH6q41UiDsXjabRtLMpI6gXIR3Q32W7skc4XgUHTcqFXyoJE6Z6MWffR97TfNRtLmJGHRuun7zpe0Ra0ysT-32_71PWfAFb9Bw&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fmRkaMq1Mq2Q1fIP9O-syAQ&start=20&sa=N&sstk=Ac65TH6q41UiDsXjabRtLMpI6gXIR3Q32W7skc4XgUHTcqFXyoJE6Z6MWffR97TfNRtLmJGHRuun7zpe0Ra0ysT-32_71PWfAFb9Bw&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fmRkaMq1Mq2Q1fIP9O-syAQ&start=30&sa=N&sstk=Ac65TH6q41UiDsXjabRtLMpI6gXIR3Q32W7skc4XgUHTcqFXyoJE6Z6MWffR97TfNRtLmJGHRuun7zpe0Ra0ysT-32_71PWfAFb9Bw&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fmRkaMq1Mq2Q1fIP9O-syAQ&start=40&sa=N&sstk=Ac65TH6q41UiDsXjabRtLMpI6gXIR3Q32W7skc4XgUHTcqFXyoJE6Z6MWffR97TfNRtLmJGHRuun7zpe0Ra0ysT-32_71PWfAFb9Bw&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fmRkaMq1Mq2Q1fIP9O-syAQ&start=50&sa=N&sstk=Ac65TH6q41UiDsXjabRtLMpI6gXIR3Q32W7skc4XgUHTcqFXyoJE6Z6MWffR97TfNRtLmJGHRuun7zpe0Ra0ysT-32_71PWfAFb9Bw&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fmRkaMq1Mq2Q1fIP9O-syAQ&start=60&sa=N&sstk=Ac65TH6q41UiDsXjabRtLMpI6gXIR3Q32W7skc4XgUHTcqFXyoJE6Z6MWffR97TfNRtLmJGHRuun7zpe0Ra0ysT-32_71PWfAFb9Bw&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fmRkaMq1Mq2Q1fIP9O-syAQ&start=70&sa=N&sstk=Ac65TH6q41UiDsXjabRtLMpI6gXIR3Q32W7skc4XgUHTcqFXyoJE6Z6MWffR97TfNRtLmJGHRuun7zpe0Ra0ysT-32_71PWfAFb9Bw&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fmRkaMq1Mq2Q1fIP9O-syAQ&start=80&sa=N&sstk=Ac65TH6q41UiDsXjabRtLMpI6gXIR3Q32W7skc4XgUHTcqFXyoJE6Z6MWffR97TfNRtLmJGHRuun7zpe0Ra0ysT-32_71PWfAFb9Bw&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQ8tMDegQICRAS",
+      "10": "https://www.google.com/search?q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&gl=us&hl=en&ei=fmRkaMq1Mq2Q1fIP9O-syAQ&start=90&sa=N&sstk=Ac65TH6q41UiDsXjabRtLMpI6gXIR3Q32W7skc4XgUHTcqFXyoJE6Z6MWffR97TfNRtLmJGHRuun7zpe0Ra0ysT-32_71PWfAFb9Bw&ved=2ahUKEwjK7MDz3ZyOAxUtSFUIHfQ3C0kQ8tMDegQICRAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+association+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

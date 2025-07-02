@@ -1,0 +1,375 @@
+{
+  "search_metadata": {
+    "id": "68646ca2ccb1e97874bf3440",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/af4bea214dd8b3a6/68646ca2ccb1e97874bf3440.json",
+    "created_at": "2025-07-01 23:17:54 UTC",
+    "processed_at": "2025-07-01 23:17:54 UTC",
+    "google_url": "https://www.google.com/search?q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/af4bea214dd8b3a6/68646ca2ccb1e97874bf3440.html",
+    "total_time_taken": 1.03
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "bluecross blueshield of alabama Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "bluecross blueshield of alabama Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 111,
+    "time_taken_displayed": 0.21,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "related_questions": [
+    {
+      "question": "Does medicare.gov have an API?",
+      "snippet": "from Centers for Medicare & Medicaid Services. Use our collection of APIs, datasets, frameworks, and style guides to develop applications that help people get the services and benefits they rely on.",
+      "title": "CMS Developer Tools",
+      "link": "https://developer.cms.gov/#:~:text=from%20Centers%20for%20Medicare%20%26%20Medicaid,and%20benefits%20they%20rely%20on.",
+      "displayed_link": null,
+      "source_logo": "https://serpapi.com/searches/68646ca2ccb1e97874bf3440/images/f2ab480ee90ad84d3fecc0fc319b29d83671975d6e7a9bda367542f97d76073d.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWVGRlBOa1IzVm5aaWNuZG5VelozT0V0M1pWcEZNV0ZNZVZsSGFIWTRlbFJRWmt0S0xUUmtUV2hCVlRKUE1FMTBURTF4TFhocFZXSklhR3RsVVU0d1NXUk1VMDlrWmxSWVRIbFdUVUpVYWpOeGFFMHhPRWxuWVZGVVFSSVhieko0YTJGTGJubERiMmxZZUdNNFVIaGZjakJyUVhNYUlrRkdUVUZIUjNBeGFrczJkVFUyVFZSQ1ZXaGxYMng0ZDNoUVVXMU5PRWN3WlVFIiwiZmN2IjoiMyIsImVpIjoibzJ4a2FLbnlDb2lYeGM4UHhfcjBrQXMiLCJxYyI6ImN4WEdzUTJBTUF3RVFHb3FSdmdscU5tQUhaN1lnS1dFSUNkRW9tQjJFRmRkUHlfeDB1QzVGUHdydTJrVTVCV01YSmlJcEdLQnJxQTBIcFdiNHZUY1ROUWg1aHBxOWhzOERldHVQblRQbThicEF3IiwicXVlc3Rpb24iOiJEb2VzIG1lZGljYXJlLmdvdiBoYXZlIGFuIEFQST8iLCJsayI6IkdoMWtiMlZ6SUcxbFpHbGpZWEpsSUdkdmRpQm9ZWFpsSUdGdUlHRndhUSIsImJzIjoiYy1OeTRaSnp5VTh0VnNoTlRjbE1UaXhLMVV2UEwxUElTQ3hMVlVqTVUzQU04TFNYbUN0aEpDOGxtNEtzU0FGWlVXSkJKcGNGbHdUWUZNZThrb3pVWEZUOWV3dU5KS1hFd2ZvVFVhV0JPZ1VZQVEiLCJpZCI6ImZjX28yeGthS255Q29pWHhjOFB4X3Iwa0FzXzMifQ==",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWVGRlBOa1IzVm5aaWNuZG5VelozT0V0M1pWcEZNV0ZNZVZsSGFIWTRlbFJRWmt0S0xUUmtUV2hCVlRKUE1FMTBURTF4TFhocFZXSklhR3RsVVU0d1NXUk1VMDlrWmxSWVRIbFdUVUpVYWpOeGFFMHhPRWxuWVZGVVFSSVhieko0YTJGTGJubERiMmxZZUdNNFVIaGZjakJyUVhNYUlrRkdUVUZIUjNBeGFrczJkVFUyVFZSQ1ZXaGxYMng0ZDNoUVVXMU5PRWN3WlVFIiwiZmN2IjoiMyIsImVpIjoibzJ4a2FLbnlDb2lYeGM4UHhfcjBrQXMiLCJxYyI6ImN4WEdzUTJBTUF3RVFHb3FSdmdscU5tQUhaN1lnS1dFSUNkRW9tQjJFRmRkUHlfeDB1QzVGUHdydTJrVTVCV01YSmlJcEdLQnJxQTBIcFdiNHZUY1ROUWg1aHBxOWhzOERldHVQblRQbThicEF3IiwicXVlc3Rpb24iOiJEb2VzIG1lZGljYXJlLmdvdiBoYXZlIGFuIEFQST8iLCJsayI6IkdoMWtiMlZ6SUcxbFpHbGpZWEpsSUdkdmRpQm9ZWFpsSUdGdUlHRndhUSIsImJzIjoiYy1OeTRaSnp5VTh0VnNoTlRjbE1UaXhLMVV2UEwxUElTQ3hMVlVqTVUzQU04TFNYbUN0aEpDOGxtNEtzU0FGWlVXSkJKcGNGbHdUWUZNZThrb3pVWEZUOWV3dU5KS1hFd2ZvVFVhV0JPZ1VZQVEiLCJpZCI6ImZjX28yeGthS255Q29pWHhjOFB4X3Iwa0FzXzMifQ%3D%3D"
+    },
+    {
+      "question": "Does Anthem have an API?",
+      "snippet": "The Patient Access API enables Anthem members to securely access and exchange their medical, pharmacy, dental, and vision claims and clinical data. This API will allow an individual to export up to 5 years of historical information.",
+      "title": "How to Access Our APIs & Data | Anthem",
+      "link": "https://www.anthem.com/developers#:~:text=The%20Patient%20Access%20API%20enables,5%20years%20of%20historical%20information.",
+      "displayed_link": "https://www.anthem.com \u203a developers",
+      "source_logo": "https://serpapi.com/searches/68646ca2ccb1e97874bf3440/images/f2ab480ee90ad84d3fecc0fc319b29d83dcb4c8b7d355247aa64ca969847fbbb.png",
+      "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWVGRlBOa1IzVm5aaWNuZG5VelozT0V0M1pWcEZNV0ZNZVZsSGFIWTRlbFJRWmt0S0xUUmtUV2hCVlRKUE1FMTBURTF4TFhocFZXSklhR3RsVVU0d1NXUk1VMDlrWmxSWVRIbFdUVUpVYWpOeGFFMHhPRWxuWVZGVVFSSVhieko0YTJGTGJubERiMmxZZUdNNFVIaGZjakJyUVhNYUlrRkdUVUZIUjNBeGFrczJkVFUyVFZSQ1ZXaGxYMng0ZDNoUVVXMU5PRWN3WlVFIiwiZmN2IjoiMyIsImVpIjoibzJ4a2FLbnlDb2lYeGM4UHhfcjBrQXMiLCJxYyI6ImN4WEdzUTJBTUF3RVFHb3FSdmdscU5tQUhaN1lnS1dFSUNkRW9tQjJFRmRkUHlfeDB1QzVGUHdydTJrVTVCV01YSmlJcEdLQnJxQTBIcFdiNHZUY1ROUWg1aHBxOWhzOERldHVQblRQbThicEF3IiwicXVlc3Rpb24iOiJEb2VzIEFudGhlbSBoYXZlIGFuIEFQST8iLCJsayI6IkdoZGtiMlZ6SUdGdWRHaGxiU0JvWVhabElHRnVJR0Z3YVEiLCJicyI6ImMtTnk0Wkp6eVU4dFZzaE5UY2xNVGl4SzFVdlBMMVBJU0N4TFZVak1VM0FNOExTWG1DdGhKQzhsbTRLc1NBRlpVV0pCSnBjRmx3VFlGTWU4a296VVhGVDlld3VOSktYRXdmb1RVYVdCT2dVWUFRIiwiaWQiOiJmY19vMnhrYUtueUNvaVh4YzhQeF9yMGtBc18zIn0=",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWVGRlBOa1IzVm5aaWNuZG5VelozT0V0M1pWcEZNV0ZNZVZsSGFIWTRlbFJRWmt0S0xUUmtUV2hCVlRKUE1FMTBURTF4TFhocFZXSklhR3RsVVU0d1NXUk1VMDlrWmxSWVRIbFdUVUpVYWpOeGFFMHhPRWxuWVZGVVFSSVhieko0YTJGTGJubERiMmxZZUdNNFVIaGZjakJyUVhNYUlrRkdUVUZIUjNBeGFrczJkVFUyVFZSQ1ZXaGxYMng0ZDNoUVVXMU5PRWN3WlVFIiwiZmN2IjoiMyIsImVpIjoibzJ4a2FLbnlDb2lYeGM4UHhfcjBrQXMiLCJxYyI6ImN4WEdzUTJBTUF3RVFHb3FSdmdscU5tQUhaN1lnS1dFSUNkRW9tQjJFRmRkUHlfeDB1QzVGUHdydTJrVTVCV01YSmlJcEdLQnJxQTBIcFdiNHZUY1ROUWg1aHBxOWhzOERldHVQblRQbThicEF3IiwicXVlc3Rpb24iOiJEb2VzIEFudGhlbSBoYXZlIGFuIEFQST8iLCJsayI6IkdoZGtiMlZ6SUdGdWRHaGxiU0JvWVhabElHRnVJR0Z3YVEiLCJicyI6ImMtTnk0Wkp6eVU4dFZzaE5UY2xNVGl4SzFVdlBMMVBJU0N4TFZVak1VM0FNOExTWG1DdGhKQzhsbTRLc1NBRlpVV0pCSnBjRmx3VFlGTWU4a296VVhGVDlld3VOSktYRXdmb1RVYVdCT2dVWUFRIiwiaWQiOiJmY19vMnhrYUtueUNvaVh4YzhQeF9yMGtBc18zIn0%3D"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "How to Access Our APIs & Data",
+      "link": "https://www.anthem.com/developers",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.anthem.com/developers&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQFnoECB0QAQ",
+      "displayed_link": "https://www.anthem.com \u203a developers",
+      "favicon": "https://serpapi.com/searches/68646ca2ccb1e97874bf3440/images/181932de8ab2ce9360f44d3ff3fa5003cfd8952dc2572da138c67c1e748539f4.png",
+      "snippet": "This RESTful API conforms to the R4 FHIR standard, SMART on FHIR, and CARIN ... Provider Directory API. Anthem offers a Provider Directory service that ...",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "FHIR",
+        "Provider Directory API",
+        "Provider Directory"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=bluecross+blueshield+of+alabama+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ5t4CegQIIRAB"
+      },
+      "source": "Anthem"
+    },
+    {
+      "position": 2,
+      "title": "CMS-9115-F - Interoperability and Patient Access",
+      "link": "https://www.cms.gov/files/document/cms-9115-f.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/cms-9115-f.pdf&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQFnoECBwQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a cms-91...",
+      "favicon": "https://serpapi.com/searches/68646ca2ccb1e97874bf3440/images/181932de8ab2ce9360f44d3ff3fa50039b8c9166815eda7cacd8122756138ddf.png",
+      "date": "Mar 6, 2020",
+      "snippet": "specialty) required for this Provider Directory API can all be represented through FHIR Release. 4.0.1. Additional implementation guidance ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 474
+          },
+          "extensions": [
+            "474 pages"
+          ]
+        }
+      },
+      "missing": [
+        "alabama"
+      ],
+      "must_include": {
+        "word": "alabama",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=bluecross+blueshield+of+%22alabama%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ5t4CegQIIBAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "May 17, 2024 Centers for Medicare & Medicaid Services ...",
+      "link": "https://downloads.regulations.gov/CMS-2024-0008-0160/attachment_1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://downloads.regulations.gov/CMS-2024-0008-0160/attachment_1.pdf&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQFnoECBgQAQ",
+      "displayed_link": "https://downloads.regulations.gov \u203a attachment_1",
+      "date": "May 17, 2024",
+      "snippet": "national provider directory and require providers to maintain data in such a system. ... Using the FHIR API already under development as the path ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 15
+          },
+          "extensions": [
+            "15 pages"
+          ]
+        }
+      },
+      "missing": [
+        "alabama"
+      ],
+      "must_include": {
+        "word": "alabama",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=bluecross+blueshield+of+%22alabama%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ5t4CegQIGhAB"
+      },
+      "source": "Regulations.gov"
+    },
+    {
+      "position": 4,
+      "title": "Interoperability and Patient Access for Medicare Advantage ...",
+      "link": "https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2019/03/04/2019-02200/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-interoperability-and&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQFnoECBkQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2019/03/04 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/68646ca2ccb1e97874bf3440/images/181932de8ab2ce9360f44d3ff3fa50031dcc7b8f937286dd20c72cfb49dd60c5.png",
+      "date": "Mar 4, 2019",
+      "snippet": "MA plans would be required to update provider directory information available through the API ... FHIR-based API discussed in section III.",
+      "snippet_highlighted_words": [
+        "plans",
+        "provider directory",
+        "API",
+        "FHIR",
+        "API"
+      ],
+      "missing": [
+        "alabama"
+      ],
+      "must_include": {
+        "word": "alabama",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=bluecross+blueshield+of+%22alabama%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ5t4CegQIHxAB"
+      },
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "state of alabama 2023 official state holidays",
+      "link": "https://medicaid.alabama.gov/documents/2.0_Newsroom/2.4_Procurement/2.4.1_Consolidated/2.4.1.7_2024/2.4.1.7_PMO-01_RFP_Library.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://medicaid.alabama.gov/documents/2.0_Newsroom/2.4_Procurement/2.4.1_Consolidated/2.4.1.7_2024/2.4.1.7_PMO-01_RFP_Library.pdf&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQFnoECBYQAQ",
+      "displayed_link": "https://medicaid.alabama.gov \u203a 2.4.1_Consolidated",
+      "favicon": "https://serpapi.com/searches/68646ca2ccb1e97874bf3440/images/181932de8ab2ce9360f44d3ff3fa50031755fa568cee017daab0c656621ae2e6.png",
+      "date": "Feb 1, 2024",
+      "snippet": "... (FHIR). \u2022 United States Core Data for Interoperability (USCDI) ... Provider Directory. US Core Implementation Guide (v3.2.0: STU3) based on ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory"
+      ],
+      "source": "Alabama Medicaid (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Da Vinci Video Presentations",
+      "link": "https://confluence.hl7.org/spaces/DVP/pages/78678039/Da+Vinci+Video+Presentations",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://confluence.hl7.org/spaces/DVP/pages/78678039/Da%2BVinci%2BVideo%2BPresentations&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQFnoECCQQAQ",
+      "displayed_link": "https://confluence.hl7.org \u203a spaces \u203a DVP \u203a pages \u203a Da...",
+      "favicon": "https://serpapi.com/searches/68646ca2ccb1e97874bf3440/images/181932de8ab2ce9360f44d3ff3fa50037511cf63b548e68b4897c70833df20ec.png",
+      "date": "Mar 26, 2025",
+      "snippet": "... FHIR API landscape around people, processes and data. ... Provider Directory: Building a Solid Foundation for the Provider Directory API ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "Provider Directory",
+        "Provider Directory API"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=bluecross+blueshield+of+alabama+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ5t4CegQIJRAB"
+      },
+      "source": "HL7 - Confluence"
+    },
+    {
+      "position": 7,
+      "title": "Interoperability Vendors with a",
+      "link": "https://quantori.com/Interoperability_Vendors_with_a_unique_set_of_features_newly_termed_Datasynthex_Vendors.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://quantori.com/Interoperability_Vendors_with_a_unique_set_of_features_newly_termed_Datasynthex_Vendors.pdf&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQFnoECBcQAQ",
+      "displayed_link": "https://quantori.com \u203a Interoperability_Vendors_...",
+      "favicon": "https://serpapi.com/searches/68646ca2ccb1e97874bf3440/images/181932de8ab2ce9360f44d3ff3fa5003a20896708a0f4f0bfe21ea638f99ea4d.png",
+      "date": "Jun 15, 2023",
+      "snippet": "\u25cb FHIR API. \u25cb Patient-facing app. \u25cb Representation State. Transfer (REST) based. FHIR API with patient-facing app for patient access APIs. 1Up.",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "FHIR API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 13
+          },
+          "extensions": [
+            "13 pages"
+          ]
+        }
+      },
+      "missing": [
+        "alabama"
+      ],
+      "must_include": {
+        "word": "alabama",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=bluecross+blueshield+of+%22alabama%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ5t4CegQIGxAB"
+      },
+      "source": "Quantori"
+    },
+    {
+      "position": 8,
+      "title": "2024 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2024-UHC-Administrative-Guide.pdf&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQFnoECEEQAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646ca2ccb1e97874bf3440/images/181932de8ab2ce9360f44d3ff3fa5003985a4e7152dee0ced64264d633636734.png",
+      "date": "Jan 1, 2024",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 463
+          },
+          "extensions": [
+            "463 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 9,
+      "title": "Interoperability and Patient Access - Proposed Rule ( ...",
+      "link": "https://www.cms.gov/Center/Special-Topic/Interoperability/CMS-9115-P.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/Center/Special-Topic/Interoperability/CMS-9115-P.pdf&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQFnoECEAQAQ",
+      "displayed_link": "https://www.cms.gov \u203a Center \u203a CMS-9115-P",
+      "favicon": "https://serpapi.com/searches/68646ca2ccb1e97874bf3440/images/181932de8ab2ce9360f44d3ff3fa5003cd9ae19889ab63de96bc6797a5f95e1c.png",
+      "snippet": "lookup use case, API access to a provider directory could allow for a referring provider's health ... of the FHIR-based API discussed in section III. of this ...",
+      "snippet_highlighted_words": [
+        "API",
+        "provider directory",
+        "FHIR",
+        "API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 251
+          },
+          "extensions": [
+            "251 pages"
+          ]
+        }
+      },
+      "missing": [
+        "alabama"
+      ],
+      "must_include": {
+        "word": "alabama",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=bluecross+blueshield+of+%22alabama%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ5t4CegQIPRAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "Streamlining Prior Authorization: Final Report ...",
+      "link": "https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQFnoECDoQAQ",
+      "displayed_link": "https://24315998.fs1.hubspotusercontent-na1.net \u203a ...",
+      "snippet": "A broader FHIR-based interoperability rule was put into effect by CMS in July of 202158 ... provider directory infor- mation through the Provider Directory API. \u2020 ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "provider directory",
+        "Provider Directory API"
+      ],
+      "source": "hubspotusercontent-na1.net"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Cigna API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Cigna+API&sa=X&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Cigna+API&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-9115-f fact sheet",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=cms-9115-f+fact+sheet&sa=X&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-9115-f+fact+sheet&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Anthem machine readable files",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Anthem+machine+readable+files&sa=X&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Anthem+machine+readable+files&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Availity",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=Availity&sa=X&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Availity&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-9115 final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=CMS-9115+final+rule&sa=X&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-9115+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability and Patient Access final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=CMS+Interoperability+and+Patient+Access+final+rule&sa=X&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+and+Patient+Access+final+rule&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=o2xkaKnyCoiXxc8Px_r0kAs&start=10&sa=N&sstk=Ac65TH6S-HhKPFko2nCyLuOkHz40jZ44MgsKtA4hbaxAyqktNt2XDLGpuku_eVTKfVfin9RXH8xoF-Px1v-_N1FF9kUHmiVeduzAWA&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ8NMDegQICRAU",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=o2xkaKnyCoiXxc8Px_r0kAs&start=10&sa=N&sstk=Ac65TH6S-HhKPFko2nCyLuOkHz40jZ44MgsKtA4hbaxAyqktNt2XDLGpuku_eVTKfVfin9RXH8xoF-Px1v-_N1FF9kUHmiVeduzAWA&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ8tMDegQICRAE",
+      "3": "https://www.google.com/search?q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=o2xkaKnyCoiXxc8Px_r0kAs&start=20&sa=N&sstk=Ac65TH6S-HhKPFko2nCyLuOkHz40jZ44MgsKtA4hbaxAyqktNt2XDLGpuku_eVTKfVfin9RXH8xoF-Px1v-_N1FF9kUHmiVeduzAWA&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ8tMDegQICRAG",
+      "4": "https://www.google.com/search?q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=o2xkaKnyCoiXxc8Px_r0kAs&start=30&sa=N&sstk=Ac65TH6S-HhKPFko2nCyLuOkHz40jZ44MgsKtA4hbaxAyqktNt2XDLGpuku_eVTKfVfin9RXH8xoF-Px1v-_N1FF9kUHmiVeduzAWA&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ8tMDegQICRAI",
+      "5": "https://www.google.com/search?q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=o2xkaKnyCoiXxc8Px_r0kAs&start=40&sa=N&sstk=Ac65TH6S-HhKPFko2nCyLuOkHz40jZ44MgsKtA4hbaxAyqktNt2XDLGpuku_eVTKfVfin9RXH8xoF-Px1v-_N1FF9kUHmiVeduzAWA&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ8tMDegQICRAK",
+      "6": "https://www.google.com/search?q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=o2xkaKnyCoiXxc8Px_r0kAs&start=50&sa=N&sstk=Ac65TH6S-HhKPFko2nCyLuOkHz40jZ44MgsKtA4hbaxAyqktNt2XDLGpuku_eVTKfVfin9RXH8xoF-Px1v-_N1FF9kUHmiVeduzAWA&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ8tMDegQICRAM",
+      "7": "https://www.google.com/search?q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=o2xkaKnyCoiXxc8Px_r0kAs&start=60&sa=N&sstk=Ac65TH6S-HhKPFko2nCyLuOkHz40jZ44MgsKtA4hbaxAyqktNt2XDLGpuku_eVTKfVfin9RXH8xoF-Px1v-_N1FF9kUHmiVeduzAWA&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ8tMDegQICRAO",
+      "8": "https://www.google.com/search?q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=o2xkaKnyCoiXxc8Px_r0kAs&start=70&sa=N&sstk=Ac65TH6S-HhKPFko2nCyLuOkHz40jZ44MgsKtA4hbaxAyqktNt2XDLGpuku_eVTKfVfin9RXH8xoF-Px1v-_N1FF9kUHmiVeduzAWA&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ8tMDegQICRAQ",
+      "9": "https://www.google.com/search?q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=o2xkaKnyCoiXxc8Px_r0kAs&start=80&sa=N&sstk=Ac65TH6S-HhKPFko2nCyLuOkHz40jZ44MgsKtA4hbaxAyqktNt2XDLGpuku_eVTKfVfin9RXH8xoF-Px1v-_N1FF9kUHmiVeduzAWA&ved=2ahUKEwjpz7PV5ZyOAxWIS_EDHUc9HbIQ8tMDegQICRAS"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=bluecross+blueshield+of+alabama+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80"
+    }
+  }
+}

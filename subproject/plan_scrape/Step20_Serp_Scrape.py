@@ -4,7 +4,11 @@ Phase I SERP Scrape Script
 
 This script reads Medicare Part C plan data from a CSV file, extracts unique parent
 organizations, and uses SERPapi to search for FHIR provider API information for each
-organization. The search results are saved as JSON files in the scrape_results directory.
+organization. The search results are saved as JSON files in the configured output directory.
+
+Configuration:
+- All file and directory paths are configurable variables in the main() function
+- Change INPUT_CSV_FILE and OUTPUT_DIRECTORY variables to modify paths
 """
 
 import csv
@@ -86,6 +90,10 @@ def search_serp_api(parent_org, api_key):
     return search.get_dict()
 
 def main():
+    # Configuration - All directory and file paths in one place
+    INPUT_CSV_FILE = "search_these.csv"
+    OUTPUT_DIRECTORY = "scrape_results"
+    
     # Load environment variables from .env file
     load_dotenv()
     
@@ -95,15 +103,12 @@ def main():
         print("Error: SERP_API_KEY not found in .env file")
         return
     
-    # Path to the CSV file
-    csv_file_path = "search_these.csv"
-    
-    # Create scrape_results directory if it doesn't exist
-    os.makedirs("scrape_results", exist_ok=True)
+    # Create output directory if it doesn't exist
+    os.makedirs(OUTPUT_DIRECTORY, exist_ok=True)
     
     # Read the CSV data
-    print(f"Reading CSV data from {csv_file_path}...")
-    data = read_csv_data(csv_file_path)
+    print(f"Reading CSV data from {INPUT_CSV_FILE}...")
+    data = read_csv_data(INPUT_CSV_FILE)
     print(f"CSV data: {data}")
     
     # Get unique parent organizations
@@ -118,7 +123,7 @@ def main():
         
         # Create safe filename
         safe_parent_org = sanitize_filename(parent_org)
-        output_file = f"./scrape_results/{safe_parent_org}.search_results.json"
+        output_file = f"./{OUTPUT_DIRECTORY}/{safe_parent_org}.search_results.json"
         
         # Check if we already have results for this parent organization
         if os.path.exists(output_file):

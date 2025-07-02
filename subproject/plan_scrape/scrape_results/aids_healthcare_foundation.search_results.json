@@ -1,0 +1,322 @@
+{
+  "search_metadata": {
+    "id": "68646c81dd2e167ba39d1c1e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/47dc9ad214eaa447/68646c81dd2e167ba39d1c1e.json",
+    "created_at": "2025-07-01 23:17:21 UTC",
+    "processed_at": "2025-07-01 23:17:21 UTC",
+    "google_url": "https://www.google.com/search?q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/47dc9ad214eaa447/68646c81dd2e167ba39d1c1e.html",
+    "total_time_taken": 2.99
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "aids healthcare foundation Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "aids healthcare foundation Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 202,
+    "time_taken_displayed": 0.26,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Request for Information; National Directory of Healthcare ...",
+      "link": "https://www.federalregister.gov/documents/2022/10/07/2022-21904/request-for-information-national-directory-of-healthcare-providers-and-services",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2022/10/07/2022-21904/request-for-information-national-directory-of-healthcare-providers-and-services&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQFnoECBgQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2022/10/07 \u203a request-...",
+      "favicon": "https://serpapi.com/searches/68646c81dd2e167ba39d1c1e/images/c2bc0c8629d6f1ad5e3f8d3d3d3bcc9ef71e6952a60a80e2719781c2537d3a69.png",
+      "date": "Oct 7, 2022",
+      "snippet": "... FHIR API, to update its own provider directory with the latest information. This would allow the payer to present a provider directory ...",
+      "snippet_highlighted_words": [
+        "FHIR API",
+        "provider directory",
+        "provider directory"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Medicare and Medicaid Programs; Patient Protection and ...",
+      "link": "https://www.federalregister.gov/documents/2024/02/08/2024-00895/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-advancing-interoperability",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2024/02/08/2024-00895/medicare-and-medicaid-programs-patient-protection-and-affordable-care-act-advancing-interoperability&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQFnoECBkQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2024/02/08 \u203a medicar...",
+      "favicon": "https://serpapi.com/searches/68646c81dd2e167ba39d1c1e/images/c2bc0c8629d6f1ad5e3f8d3d3d3bcc9e5171c6636f275e718296b832195b6964.png",
+      "date": "Feb 8, 2024",
+      "snippet": "... Provider Directory API. We encourage developers to integrate within ... Making data available via a FHIR API gives patients a wider range of ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR API"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 3,
+      "title": "State of Provider Directory APIs 2024",
+      "link": "https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://defacto.health/2024/06/24/state-of-provider-directory-apis-2024/&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQFnoECB8QAQ",
+      "displayed_link": "https://defacto.health \u203a 2024/06/24 \u203a state-of-provider-di...",
+      "favicon": "https://serpapi.com/searches/68646c81dd2e167ba39d1c1e/images/c2bc0c8629d6f1ad5e3f8d3d3d3bcc9ee7551dee2a466d8578d2ee648c595840.png",
+      "date": "Jun 24, 2024",
+      "snippet": "... Provider Directory data via FHIR APIs: UnitedHealthcare; Elevance (Anthem); Humana; Aetna; Molina; L.A. Care; Amerihealth Caritas; CareSource ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "FHIR"
+      ],
+      "missing": [
+        "healthcare"
+      ],
+      "must_include": {
+        "word": "healthcare",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=aids+%22healthcare%22+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ5t4CegQIKxAB"
+      },
+      "source": "Defacto Health"
+    },
+    {
+      "position": 4,
+      "title": "Advancing Interoperability in Home and Community Based ...",
+      "link": "https://www.healthit.gov/sites/default/files/2018-12/AdvancingInteropinHCBS.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/2018-12/AdvancingInteropinHCBS.pdf&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQFnoECBcQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/68646c81dd2e167ba39d1c1e/images/c2bc0c8629d6f1ad5e3f8d3d3d3bcc9e0c8b5bffc1cda70d316143f2e8374950.jpeg",
+      "date": "Nov 30, 2018",
+      "snippet": "\u25ab Provider Directory strategy. \u25ab Identity Management. 5. Role of ... plans to FHIR, CBCP, and Other Interested WGs. (O&O, FM, PC). HL7 ...",
+      "snippet_highlighted_words": [
+        "Provider Directory",
+        "plans",
+        "FHIR"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=aids+healthcare+foundation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ5t4CegQILRAB"
+      },
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 5,
+      "title": "Interoperability for Texas: Powering Health 2024",
+      "link": "https://www.hhs.texas.gov/sites/default/files/documents/interoperability-texas-powering-health-dec-2024.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.texas.gov/sites/default/files/documents/interoperability-texas-powering-health-dec-2024.pdf&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQFnoECB4QAQ",
+      "displayed_link": "https://www.hhs.texas.gov \u203a files \u203a documents \u203a in...",
+      "favicon": "https://serpapi.com/searches/68646c81dd2e167ba39d1c1e/images/c2bc0c8629d6f1ad5e3f8d3d3d3bcc9ed076b14fef46e606ded867fc6f84cbb0.png",
+      "date": "Dec 1, 2024",
+      "snippet": "Provider Directory API: Available provider names; provider addresses, phone numbers, and specialties. The project leveraged the FHIR ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 32
+          },
+          "extensions": [
+            "32 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=aids+healthcare+foundation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ5t4CegQILhAB"
+      },
+      "source": "Texas Health and Human Services (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Streamlining Prior Authorization: Final Report ...",
+      "link": "https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://24315998.fs1.hubspotusercontent-na1.net/hubfs/24315998/11.18_pa_white_paper-1.pdf&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQFnoECBYQAQ",
+      "displayed_link": "https://24315998.fs1.hubspotusercontent-na1.net \u203a ...",
+      "snippet": "Fast healthcare interoperability resources (FHIR). Electronic Health Record ... provider directory infor- mation through the Provider Directory API. \u20201 ...",
+      "snippet_highlighted_words": [
+        "healthcare",
+        "FHIR",
+        "provider directory",
+        "Provider Directory API"
+      ],
+      "source": "hubspotusercontent-na1.net"
+    },
+    {
+      "position": 7,
+      "title": "Draft Business and Functional Requirements February 8, ...",
+      "link": "https://oehi.colorado.gov/sites/oehi/files/documents/MPI-MPD_Business_and_Functional_Requirements.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://oehi.colorado.gov/sites/oehi/files/documents/MPI-MPD_Business_and_Functional_Requirements.pdf&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQFnoECCAQAQ",
+      "displayed_link": "https://oehi.colorado.gov \u203a files \u203a documents",
+      "favicon": "https://serpapi.com/searches/68646c81dd2e167ba39d1c1e/images/c2bc0c8629d6f1ad5e3f8d3d3d3bcc9e1e495a7c1e34cc2d9261626e8d1b60cd.png",
+      "date": "Feb 8, 2017",
+      "snippet": "... fhir/sid/oid. MPD. Education (CDPHE CDC):. MPD ... *Key provider directory requirements for health plans from the 2013 NCQA standards.",
+      "snippet_highlighted_words": [
+        "fhir",
+        "provider directory",
+        "plans"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=aids+healthcare+foundation+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ5t4CegQILBAB"
+      },
+      "source": "Office of eHealth Innovation (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Developer resources | Independence Blue Cross (IBX) - IBX",
+      "link": "https://www.ibx.com/developer-resources",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ibx.com/developer-resources&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQFnoECDoQAQ",
+      "displayed_link": "https://www.ibx.com \u203a developer-resources",
+      "snippet": "The Provider Directory API will allow developers to retrieve, as applicable ... Uses the HL7 Fast Healthcare Interoperability Resources (FHIR) standard for member ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "Healthcare",
+        "FHIR"
+      ],
+      "source": "Independence Blue Cross (IBX)"
+    },
+    {
+      "position": 9,
+      "title": "2025 UnitedHealthcare Care Provider Administrative ...",
+      "link": "https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.uhcprovider.com/content/dam/provider/docs/public/admin-guides/2025-UHC-Administrative-Guide.pdf&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQFnoECD0QAQ",
+      "displayed_link": "https://www.uhcprovider.com \u203a admin-guides \u203a 2...",
+      "favicon": "https://serpapi.com/searches/68646c81dd2e167ba39d1c1e/images/c2bc0c8629d6f1ad5e3f8d3d3d3bcc9e44900f1c8cc58c8fba24213c5d124acd.png",
+      "date": "Jan 1, 2025",
+      "snippet": "... Provider directory. Consistent with the CAA, we will verify ... (FHIR). \u2022 Patient care opportunities. \u2022 Admission, discharge and transfer ...",
+      "snippet_highlighted_words": [
+        "Provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 489
+          },
+          "extensions": [
+            "489 pages"
+          ]
+        }
+      },
+      "source": "UHC Provider Portal"
+    },
+    {
+      "position": 10,
+      "title": "A Shared Nationwide Interoperability Roadmap",
+      "link": "https://www.healthit.gov/sites/default/files/hie-interoperability/nationwide-interoperability-roadmap-final-version-1.0.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/hie-interoperability/nationwide-interoperability-roadmap-final-version-1.0.pdf&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQFnoECDsQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a sites \u203a default \u203a files",
+      "favicon": "https://serpapi.com/searches/68646c81dd2e167ba39d1c1e/images/c2bc0c8629d6f1ad5e3f8d3d3d3bcc9edded5f3f41d97684d5959d026e27f461.jpeg",
+      "snippet": "Interoperability Resources (FHIR).66 Over time, the priority data domains ... Provider directory operators should align existing directories to the ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider directory"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 94
+          },
+          "extensions": [
+            "94 pages"
+          ]
+        }
+      },
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "National directory of Healthcare Providers & Services",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=National+directory+of+Healthcare+Providers+%26+Services&sa=X&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=National+directory+of+Healthcare+Providers+%26+Services&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability and prior authorization final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=CMS+Interoperability+and+prior+authorization+final+rule&sa=X&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+and+prior+authorization+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "FHIR Provider Directory",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=FHIR+Provider+Directory&sa=X&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=FHIR+Provider+Directory&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability Fact Sheet",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=CMS+Interoperability+Fact+Sheet&sa=X&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+Fact+Sheet&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms interoperability and prior authorization final rule (cms-0057-f)",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=cms+interoperability+and+prior+authorization+final+rule+(cms-0057-f)&sa=X&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms+interoperability+and+prior+authorization+final+rule+%28cms-0057-f%29&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-0057-f fact sheet",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=cms-0057-f+fact+sheet&sa=X&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-0057-f+fact+sheet&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "National provider directory",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=National+provider+directory&sa=X&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=National+provider+directory&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-0057-f federal register",
+      "link": "https://www.google.com/search?safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&q=cms-0057-f+federal+register&sa=X&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-0057-f+federal+register&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=hGxkaJ7cBc7Kp84P95vFwQs&start=10&sa=N&sstk=Ac65TH5nJweyGZPI6QXvwtswZ5vE_t46MwTf0MU5V21BrTSiwRv6TweBoOkbsAebXgFYivX5OewxDPY4yDKF-wYECik9gxUehCQ_9g&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ8NMDegQIChAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=hGxkaJ7cBc7Kp84P95vFwQs&start=10&sa=N&sstk=Ac65TH5nJweyGZPI6QXvwtswZ5vE_t46MwTf0MU5V21BrTSiwRv6TweBoOkbsAebXgFYivX5OewxDPY4yDKF-wYECik9gxUehCQ_9g&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=hGxkaJ7cBc7Kp84P95vFwQs&start=20&sa=N&sstk=Ac65TH5nJweyGZPI6QXvwtswZ5vE_t46MwTf0MU5V21BrTSiwRv6TweBoOkbsAebXgFYivX5OewxDPY4yDKF-wYECik9gxUehCQ_9g&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=hGxkaJ7cBc7Kp84P95vFwQs&start=30&sa=N&sstk=Ac65TH5nJweyGZPI6QXvwtswZ5vE_t46MwTf0MU5V21BrTSiwRv6TweBoOkbsAebXgFYivX5OewxDPY4yDKF-wYECik9gxUehCQ_9g&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=hGxkaJ7cBc7Kp84P95vFwQs&start=40&sa=N&sstk=Ac65TH5nJweyGZPI6QXvwtswZ5vE_t46MwTf0MU5V21BrTSiwRv6TweBoOkbsAebXgFYivX5OewxDPY4yDKF-wYECik9gxUehCQ_9g&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=hGxkaJ7cBc7Kp84P95vFwQs&start=50&sa=N&sstk=Ac65TH5nJweyGZPI6QXvwtswZ5vE_t46MwTf0MU5V21BrTSiwRv6TweBoOkbsAebXgFYivX5OewxDPY4yDKF-wYECik9gxUehCQ_9g&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ8tMDegQIChAM",
+      "7": "https://www.google.com/search?q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=hGxkaJ7cBc7Kp84P95vFwQs&start=60&sa=N&sstk=Ac65TH5nJweyGZPI6QXvwtswZ5vE_t46MwTf0MU5V21BrTSiwRv6TweBoOkbsAebXgFYivX5OewxDPY4yDKF-wYECik9gxUehCQ_9g&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ8tMDegQIChAO",
+      "8": "https://www.google.com/search?q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=hGxkaJ7cBc7Kp84P95vFwQs&start=70&sa=N&sstk=Ac65TH5nJweyGZPI6QXvwtswZ5vE_t46MwTf0MU5V21BrTSiwRv6TweBoOkbsAebXgFYivX5OewxDPY4yDKF-wYECik9gxUehCQ_9g&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ8tMDegQIChAQ",
+      "9": "https://www.google.com/search?q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=hGxkaJ7cBc7Kp84P95vFwQs&start=80&sa=N&sstk=Ac65TH5nJweyGZPI6QXvwtswZ5vE_t46MwTf0MU5V21BrTSiwRv6TweBoOkbsAebXgFYivX5OewxDPY4yDKF-wYECik9gxUehCQ_9g&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ8tMDegQIChAS",
+      "10": "https://www.google.com/search?q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=af2334d4398b9d42&hl=en&gl=us&ei=hGxkaJ7cBc7Kp84P95vFwQs&start=90&sa=N&sstk=Ac65TH5nJweyGZPI6QXvwtswZ5vE_t46MwTf0MU5V21BrTSiwRv6TweBoOkbsAebXgFYivX5OewxDPY4yDKF-wYECik9gxUehCQ_9g&ved=2ahUKEwiersrG5ZyOAxVO5ckDHfdNMbgQ8tMDegQIChAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=aids+healthcare+foundation+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

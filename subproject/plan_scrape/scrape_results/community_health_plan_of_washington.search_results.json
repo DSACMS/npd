@@ -1,0 +1,293 @@
+{
+  "search_metadata": {
+    "id": "68646cc657c44b64979b0916",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/1f233d185de257f4/68646cc657c44b64979b0916.json",
+    "created_at": "2025-07-01 23:18:30 UTC",
+    "processed_at": "2025-07-01 23:18:30 UTC",
+    "google_url": "https://www.google.com/search?q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/1f233d185de257f4/68646cc657c44b64979b0916.html",
+    "total_time_taken": 1.09
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "community health plan of washington Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "community health plan of washington Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 553,
+    "time_taken_displayed": 0.35,
+    "organic_results_state": "Results for exact spelling"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Interoperability and Patient Access Fact Sheet",
+      "link": "https://www.cms.gov/newsroom/fact-sheets/interoperability-and-patient-access-fact-sheet",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/newsroom/fact-sheets/interoperability-and-patient-access-fact-sheet&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQFnoECB0QAQ",
+      "displayed_link": "https://www.cms.gov \u203a newsroom \u203a interoperability-and-...",
+      "favicon": "https://serpapi.com/searches/68646cc657c44b64979b0916/images/b2d345a270ede5dc7502092e42ee918689e81c3b10e4063baafaa7be63b85ed9.png",
+      "date": "Mar 9, 2020",
+      "snippet": "Provider Directory API: CMS-regulated payers noted above (except QHP ... FHIR API endpoint. Making the list of providers who do not ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API",
+        "FHIR API"
+      ],
+      "missing": [
+        "washington"
+      ],
+      "must_include": {
+        "word": "washington",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=community+health+plan+of+%22washington%22+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ5t4CegQIKxAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Interoperability and Your Health Information",
+      "link": "https://www.ccok.com/members/interoperability.asp",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ccok.com/members/interoperability.asp&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQFnoECBoQAQ",
+      "displayed_link": "https://www.ccok.com \u203a members \u203a interoperability",
+      "snippet": "Covered Entities include health care providers, health insurance plans, and healthcare ... Provider Directory API. https://apis.ssctech.com/interop-ccok/open/fhir ...",
+      "snippet_highlighted_words": [
+        "health care",
+        "health insurance plans",
+        "healthcare",
+        "Provider Directory API",
+        "apis",
+        "fhir"
+      ],
+      "source": "CommunityCare Health Insurance Plans"
+    },
+    {
+      "position": 3,
+      "title": "VA and CMS: Fixing Provider Directories Together",
+      "link": "https://defacto.health/2025/05/22/va-and-cms-fixing-provider-directories-together/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://defacto.health/2025/05/22/va-and-cms-fixing-provider-directories-together/&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQFnoECBYQAQ",
+      "displayed_link": "https://defacto.health \u203a 2025/05/22 \u203a va-and-cms-fixing-...",
+      "favicon": "https://serpapi.com/searches/68646cc657c44b64979b0916/images/b2d345a270ede5dc7502092e42ee9186bb1db3fc68962fefaea3d78cb7971eb1.png",
+      "date": "May 22, 2025",
+      "snippet": "Here are some examples of how VA can immediately benefit from CMS's directory efforts: 1. Leverage Payer Provider Directory APIs to Improve Data ...",
+      "snippet_highlighted_words": [
+        "Provider Directory APIs"
+      ],
+      "source": "Defacto Health"
+    },
+    {
+      "position": 4,
+      "title": "CMS Finalizes New Requirements on Health Plans to ...",
+      "link": "https://www.crowell.com/en/insights/client-alerts/cms-finalizes-new-requirements-on-health-plans-to-release-health-data-updates-medicare-conditions-of-participation-for-hospitals-to-send-electronic-notifications",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.crowell.com/en/insights/client-alerts/cms-finalizes-new-requirements-on-health-plans-to-release-health-data-updates-medicare-conditions-of-participation-for-hospitals-to-send-electronic-notifications&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQFnoECBkQAQ",
+      "displayed_link": "https://www.crowell.com \u203a insights \u203a client-alerts \u203a cms...",
+      "favicon": "https://serpapi.com/searches/68646cc657c44b64979b0916/images/b2d345a270ede5dc7502092e42ee9186af127ee351b09cb84cffcd320cc85093.png",
+      "snippet": "The API must be compliant with the HL7 FHIR Release 4.0.1 ... 1) to make provider directory information publicly available (the \u201cProvider Directory API\u201d).",
+      "snippet_highlighted_words": [
+        "API",
+        "FHIR",
+        "provider directory",
+        "Provider Directory API"
+      ],
+      "source": "Crowell & Moring LLP"
+    },
+    {
+      "position": 5,
+      "title": "NCQA Responds to CMS RFI on Establishing a National ...",
+      "link": "https://www.ncqa.org/comment-letter/ncqa-responds-to-cms-rfi-on-establishing-a-national-directory-of-healthcare-providers-services/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ncqa.org/comment-letter/ncqa-responds-to-cms-rfi-on-establishing-a-national-directory-of-healthcare-providers-services/&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQFnoECBwQAQ",
+      "displayed_link": "https://www.ncqa.org \u203a comment-letter \u203a ncqa-responds-...",
+      "favicon": "https://serpapi.com/searches/68646cc657c44b64979b0916/images/b2d345a270ede5dc7502092e42ee9186fa38112e293a5d4757f77958ef5ebc72.png",
+      "date": "Dec 12, 2022",
+      "snippet": "We are encouraged by this proposal, and by CMS's other proposals to adopt FHIR APIs; however, we recommend that CMS outline how developing an ...",
+      "snippet_highlighted_words": [
+        "FHIR APIs"
+      ],
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=community+health+plan+of+washington+Medicare+%22Advantage%22+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ5t4CegQILBAB"
+      },
+      "source": "NCQA"
+    },
+    {
+      "position": 6,
+      "title": "cms-astp-health-technology-ecosystem-rfi-final. ...",
+      "link": "https://www.ahima.org/media/cpwlhyhc/cms-astp-health-technology-ecosystem-rfi-final.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ahima.org/media/cpwlhyhc/cms-astp-health-technology-ecosystem-rfi-final.pdf&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQFnoECBcQAQ",
+      "displayed_link": "https://www.ahima.org \u203a media \u203a cpwlhyhc \u203a cm...",
+      "favicon": "https://serpapi.com/searches/68646cc657c44b64979b0916/images/b2d345a270ede5dc7502092e42ee91863bd45566f39ddc4eea2fe0073fc05589.jpeg",
+      "date": "Jun 13, 2025",
+      "snippet": "How could a nationwide provider directory of FHIR endpoints improve access to health information for patients, providers, and payers? Who should ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "FHIR",
+        "health"
+      ],
+      "source": "AHIMA Home"
+    },
+    {
+      "position": 7,
+      "title": "CMS-9115-F - Interoperability and Patient Access",
+      "link": "https://www.cms.gov/files/document/cms-9115-f.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/cms-9115-f.pdf&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQFnoECBgQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a cms-91...",
+      "favicon": "https://serpapi.com/searches/68646cc657c44b64979b0916/images/b2d345a270ede5dc7502092e42ee918697d23f0ae2fef081409b6d867457867d.png",
+      "date": "Mar 6, 2020",
+      "snippet": "CHIP agencies, and managed care plans, make available through the API provider directory ... provider directory specification in FHIR Release 4.",
+      "snippet_highlighted_words": [
+        "care plans",
+        "API provider directory",
+        "provider directory",
+        "FHIR"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 474
+          },
+          "extensions": [
+            "474 pages"
+          ]
+        }
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "payer data exchange - The Standard | The Official Blog of HL7",
+      "link": "https://blog.hl7.org/topic/payer-data-exchange",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://blog.hl7.org/topic/payer-data-exchange&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQFnoECDkQAQ",
+      "displayed_link": "https://blog.hl7.org \u203a topic \u203a payer-data-exchange",
+      "favicon": "https://serpapi.com/searches/68646cc657c44b64979b0916/images/b2d345a270ede5dc7502092e42ee91861628cc4d91033869db9dbc335d5580db.png",
+      "date": "Apr 16, 2025",
+      "snippet": "The final rules call for payers to provide healthcare data to members through the use of FHIR-based APIs, as well as using a similar methodology ...",
+      "snippet_highlighted_words": [
+        "healthcare",
+        "FHIR",
+        "APIs"
+      ],
+      "source": "HL7 Blog"
+    },
+    {
+      "position": 9,
+      "title": "NCQA Responds to CMS RFI on Medicare Advantage Data",
+      "link": "https://www.ncqa.org/comment-letter/ncqa-responds-to-cms-rfi-on-medicare-advantage-data/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ncqa.org/comment-letter/ncqa-responds-to-cms-rfi-on-medicare-advantage-data/&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQFnoECDoQAQ",
+      "displayed_link": "https://www.ncqa.org \u203a comment-letter \u203a ncqa-responds-...",
+      "favicon": "https://serpapi.com/searches/68646cc657c44b64979b0916/images/b2d345a270ede5dc7502092e42ee9186a23f788b80c6145802ffec695ccc7a71.png",
+      "date": "May 29, 2024",
+      "snippet": "We welcome the opportunity to support CMS in developing FHIR ... Provider directory accuracy and ghost networks remain a problem. We ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider directory"
+      ],
+      "source": "NCQA"
+    },
+    {
+      "position": 10,
+      "title": "Privacy Practice",
+      "link": "https://www.chgsd.com/privacy-toc/privacy-practice",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.chgsd.com/privacy-toc/privacy-practice&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQFnoECDgQAQ",
+      "displayed_link": "https://www.chgsd.com \u203a privacy-toc \u203a privacy-practice",
+      "favicon": "https://serpapi.com/searches/68646cc657c44b64979b0916/images/b2d345a270ede5dc7502092e42ee9186fe16c4ca0619cb7da0e8fdeba40f9f2c.png",
+      "snippet": "FHIR Developer API \u00b7 Mission, Vision Statement \u00b7 MOU \u00b7 Population Health \u00b7 Quality ... Search Provider Directory \u00b7 Provider Portal Sign in. Claims. Submitting a ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "API",
+        "Health",
+        "Provider Directory"
+      ],
+      "source": "Community Health Group"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "cms-9115-f fact sheet",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=cms-9115-f+fact+sheet&sa=X&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-9115-f+fact+sheet&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability and Patient Access final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=CMS+Interoperability+and+Patient+Access+final+rule&sa=X&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+and+Patient+Access+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-0057",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=CMS-0057&sa=X&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ1QJ6BAg1EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-0057&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-9115 final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=CMS-9115+final+rule&sa=X&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ1QJ6BAgwEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-9115+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-0057-f",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=cms-0057-f&sa=X&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ1QJ6BAgxEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-0057-f&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Provider Directory API CMS",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Provider+Directory+API+CMS&sa=X&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ1QJ6BAgyEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+Directory+API+CMS&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "which of the following states had one of the first health care organizations to utilize an ehr?",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=which+of+the+following+states+had+one+of+the+first+health+care+organizations+to+utilize+an+ehr%3F&sa=X&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ1QJ6BAg0EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=which+of+the+following+states+had+one+of+the+first+health+care+organizations+to+utilize+an+ehr%3F&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Patient Access API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Patient+Access+API&sa=X&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ1QJ6BAgzEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Patient+Access+API&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmxkaIqhNtqK4-EPlf-YyQ8&start=10&sa=N&sstk=Ac65TH7iumL7yXyUfZE79YDsvMJFe5e9B-5klS-4Sj1k9Auj6TSt8hJSvySIgFI2Ju5iZ1KuH-6M_tSj6PQb5ErK97gBZDMk0Uj-ww&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ8NMDegQICBAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmxkaIqhNtqK4-EPlf-YyQ8&start=10&sa=N&sstk=Ac65TH7iumL7yXyUfZE79YDsvMJFe5e9B-5klS-4Sj1k9Auj6TSt8hJSvySIgFI2Ju5iZ1KuH-6M_tSj6PQb5ErK97gBZDMk0Uj-ww&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ8tMDegQICBAE",
+      "3": "https://www.google.com/search?q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmxkaIqhNtqK4-EPlf-YyQ8&start=20&sa=N&sstk=Ac65TH7iumL7yXyUfZE79YDsvMJFe5e9B-5klS-4Sj1k9Auj6TSt8hJSvySIgFI2Ju5iZ1KuH-6M_tSj6PQb5ErK97gBZDMk0Uj-ww&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ8tMDegQICBAG",
+      "4": "https://www.google.com/search?q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmxkaIqhNtqK4-EPlf-YyQ8&start=30&sa=N&sstk=Ac65TH7iumL7yXyUfZE79YDsvMJFe5e9B-5klS-4Sj1k9Auj6TSt8hJSvySIgFI2Ju5iZ1KuH-6M_tSj6PQb5ErK97gBZDMk0Uj-ww&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ8tMDegQICBAI",
+      "5": "https://www.google.com/search?q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmxkaIqhNtqK4-EPlf-YyQ8&start=40&sa=N&sstk=Ac65TH7iumL7yXyUfZE79YDsvMJFe5e9B-5klS-4Sj1k9Auj6TSt8hJSvySIgFI2Ju5iZ1KuH-6M_tSj6PQb5ErK97gBZDMk0Uj-ww&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ8tMDegQICBAK",
+      "6": "https://www.google.com/search?q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmxkaIqhNtqK4-EPlf-YyQ8&start=50&sa=N&sstk=Ac65TH7iumL7yXyUfZE79YDsvMJFe5e9B-5klS-4Sj1k9Auj6TSt8hJSvySIgFI2Ju5iZ1KuH-6M_tSj6PQb5ErK97gBZDMk0Uj-ww&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ8tMDegQICBAM",
+      "7": "https://www.google.com/search?q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmxkaIqhNtqK4-EPlf-YyQ8&start=60&sa=N&sstk=Ac65TH7iumL7yXyUfZE79YDsvMJFe5e9B-5klS-4Sj1k9Auj6TSt8hJSvySIgFI2Ju5iZ1KuH-6M_tSj6PQb5ErK97gBZDMk0Uj-ww&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ8tMDegQICBAO",
+      "8": "https://www.google.com/search?q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmxkaIqhNtqK4-EPlf-YyQ8&start=70&sa=N&sstk=Ac65TH7iumL7yXyUfZE79YDsvMJFe5e9B-5klS-4Sj1k9Auj6TSt8hJSvySIgFI2Ju5iZ1KuH-6M_tSj6PQb5ErK97gBZDMk0Uj-ww&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ8tMDegQICBAQ",
+      "9": "https://www.google.com/search?q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmxkaIqhNtqK4-EPlf-YyQ8&start=80&sa=N&sstk=Ac65TH7iumL7yXyUfZE79YDsvMJFe5e9B-5klS-4Sj1k9Auj6TSt8hJSvySIgFI2Ju5iZ1KuH-6M_tSj6PQb5ErK97gBZDMk0Uj-ww&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ8tMDegQICBAS",
+      "10": "https://www.google.com/search?q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=xmxkaIqhNtqK4-EPlf-YyQ8&start=90&sa=N&sstk=Ac65TH7iumL7yXyUfZE79YDsvMJFe5e9B-5klS-4Sj1k9Auj6TSt8hJSvySIgFI2Ju5iZ1KuH-6M_tSj6PQb5ErK97gBZDMk0Uj-ww&ved=2ahUKEwiKnLfm5ZyOAxVaxTgGHZU_JvkQ8tMDegQICBAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=community+health+plan+of+washington+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

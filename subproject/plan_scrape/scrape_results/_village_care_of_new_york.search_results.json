@@ -1,0 +1,248 @@
+{
+  "search_metadata": {
+    "id": "68646c784707f1b9a9143871",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/651b641dae4dd81a/68646c784707f1b9a9143871.json",
+    "created_at": "2025-07-01 23:17:12 UTC",
+    "processed_at": "2025-07-01 23:17:12 UTC",
+    "google_url": "https://www.google.com/search?q=%22village+care+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22village+care+of+new+york+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/651b641dae4dd81a/68646c784707f1b9a9143871.html",
+    "total_time_taken": 1.55
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"village care of new york Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"village care of new york Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 727,
+    "time_taken_displayed": 0.82,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "showing_results_for": "village care of new york Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix": "village care of new york Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQFnoECBgQAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/68646c784707f1b9a9143871/images/87f3a1d004070ee523ca20477d7db43c251302c7764c27c5d47a8e6bd7dcf12e.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. Endpoints are: FHIR- ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "source": "Flexpa"
+    },
+    {
+      "position": 2,
+      "title": "Health Care Payment Learning & Action Network",
+      "link": "https://hcp-lan.org/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hcp-lan.org/&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQFnoECBYQAQ",
+      "displayed_link": "https://hcp-lan.org",
+      "favicon": "https://serpapi.com/searches/68646c784707f1b9a9143871/images/87f3a1d004070ee523ca20477d7db43c8a633401a86ce3c421765c7d24d8e5c6.png",
+      "snippet": "Strategic and Tactical Uses: The new rule will improve how managed care plans serve their members. Plans will need to collaborate closely with providers to ...",
+      "snippet_highlighted_words": [
+        "new",
+        "care plans",
+        "Plans",
+        "providers"
+      ],
+      "sitelinks": {
+        "inline": [
+          {
+            "title": "About Us",
+            "link": "https://hcp-lan.org/about-us/"
+          },
+          {
+            "title": "APM Framework",
+            "link": "https://hcp-lan.org/apm-framework/"
+          },
+          {
+            "title": "Accountable Care Curve",
+            "link": "https://hcp-lan.org/accountable-care-curve/"
+          },
+          {
+            "title": "APM Roadmap",
+            "link": "https://hcp-lan.org/apm-roadmap/"
+          }
+        ]
+      },
+      "source": "Health Care Payment Learning & Action Network"
+    },
+    {
+      "position": 3,
+      "title": "Transcript",
+      "link": "https://www.healthit.gov/sites/default/files/facas/2020-03-18_HITAC_Transcript.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.healthit.gov/sites/default/files/facas/2020-03-18_HITAC_Transcript.pdf&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQFnoECBkQAQ",
+      "displayed_link": "https://www.healthit.gov \u203a default \u203a files \u203a facas",
+      "favicon": "https://serpapi.com/searches/68646c784707f1b9a9143871/images/87f3a1d004070ee523ca20477d7db43ccbcc1741fc344d6f9fcf46d6f7c30f79.jpeg",
+      "date": "Mar 18, 2020",
+      "snippet": "they'll need to make that provider directory information available via the API. And at a minimum, this would include provider name, address, ...",
+      "snippet_highlighted_words": [
+        "provider directory",
+        "API",
+        "provider"
+      ],
+      "source": "Office of the National Coordinator for Health IT (.gov)"
+    },
+    {
+      "position": 4,
+      "title": "Exclusive Change Healthcare Payers for Claims as of 3.06. ...",
+      "link": "https://support.drchrono.com/home/23548386475163-exclusive-change-healthcare-payers-for-claims-as-of-3-06-2024",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://support.drchrono.com/home/23548386475163-exclusive-change-healthcare-payers-for-claims-as-of-3-06-2024&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQFnoECCUQAQ",
+      "displayed_link": "https://support.drchrono.com \u203a home \u203a 2354838647516...",
+      "favicon": "https://serpapi.com/searches/68646c784707f1b9a9143871/images/87f3a1d004070ee523ca20477d7db43c5a9dad817391469d03fa5932c613c489.png",
+      "date": "Jul 8, 2024",
+      "snippet": "Exclusive Change Healthcare Payers for Claims as of 3/6/24. Payer Name, Payer ID, Line of Business. 1199 National Benefit Fund, 5405 ...",
+      "source": "DrChrono"
+    },
+    {
+      "position": 5,
+      "title": "Record History | ver. 283: 2023-05-30 | NCT03072927",
+      "link": "https://clinicaltrials.gov/study/NCT03072927?tab=history&a=283",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://clinicaltrials.gov/study/NCT03072927%3Ftab%3Dhistory%26a%3D283&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQFnoECCIQAQ",
+      "displayed_link": "https://clinicaltrials.gov \u203a study \u203a NCT03072927",
+      "favicon": "https://serpapi.com/searches/68646c784707f1b9a9143871/images/87f3a1d004070ee523ca20477d7db43cfb4090aa518dc3e54f2585c5ebc7546e.png",
+      "snippet": "This prospective longitudinal study will compare incidence rates of Medicare beneficiary surgical and minimally invasive intervention post index procedure, as ...",
+      "snippet_highlighted_words": [
+        "Medicare"
+      ],
+      "source": "ClinicalTrials.gov"
+    },
+    {
+      "position": 6,
+      "title": "2026 Quality Rating System Measure Technical ...",
+      "link": "https://www.cms.gov/files/document/2026qrsmeasuretechspecs508.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/2026qrsmeasuretechspecs508.pdf&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQFnoECCMQAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document",
+      "favicon": "https://serpapi.com/searches/68646c784707f1b9a9143871/images/87f3a1d004070ee523ca20477d7db43cb920de66311199f86b59e71d0c639b42.png",
+      "date": "Mar 31, 2025",
+      "snippet": "This document includes the measure specifications and guidelines for data collection for the 2026 Quality. Rating System (QRS) measure set. QHP ...",
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 277
+          },
+          "extensions": [
+            "277 pages"
+          ]
+        }
+      },
+      "missing": [
+        "Advantage"
+      ],
+      "must_include": {
+        "word": "Advantage",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&q=village+care+of+new+york+Medicare+%22Advantage%22+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQ5t4CegQIKxAB"
+      },
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 7,
+      "title": "DSA signatory list - Center for Data Insights and Innovation",
+      "link": "https://www.cdii.ca.gov/wp-content/uploads/2023/05/DxF_DSA_SignatoryList.xlsx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cdii.ca.gov/wp-content/uploads/2023/05/DxF_DSA_SignatoryList.xlsx&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQFnoECCgQAQ",
+      "displayed_link": "https://www.cdii.ca.gov \u203a uploads \u203a 2023/05 \u203a D...",
+      "favicon": "https://serpapi.com/searches/68646c784707f1b9a9143871/images/87f3a1d004070ee523ca20477d7db43ce7c6af8195c266a3034811560e38d2fb.png",
+      "snippet": "Casa Pacifica DBA Freedom Village Health Care Center, none ... Gerinet Physician Services, Inc. DXF004918, Sub, Ancillary Care, Other ancillary care provider ...",
+      "snippet_highlighted_words": [
+        "Village",
+        "Care",
+        "Physician",
+        "Care",
+        "care provider"
+      ],
+      "source": "Center for Data Insights and Innovation (.gov)"
+    },
+    {
+      "position": 8,
+      "title": "Health Law Journal",
+      "link": "https://www.hodgsonruss.com/assets/htmldocuments/HealthLawJournal2025.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hodgsonruss.com/assets/htmldocuments/HealthLawJournal2025.pdf&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQFnoECDEQAQ",
+      "displayed_link": "https://www.hodgsonruss.com \u203a htmldocuments",
+      "favicon": "https://serpapi.com/searches/68646c784707f1b9a9143871/images/87f3a1d004070ee523ca20477d7db43c40f12a3e901ed0904a7e95557af74ce3.png",
+      "snippet": "Plaintiff is a New York-based health care provider that does not participate in the provider network maintained by Cigna. Health Life Insurance Company (\u201cCigna\u201d) ...",
+      "snippet_highlighted_words": [
+        "New York",
+        "care provider",
+        "provider"
+      ],
+      "source": "Hodgson Russ LLP"
+    },
+    {
+      "position": 9,
+      "title": "2 0 1 9",
+      "link": "https://mesconference.org/wp-content/uploads/2019/08/MESC_2019_Program-FINAL.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mesconference.org/wp-content/uploads/2019/08/MESC_2019_Program-FINAL.pdf&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQFnoECC8QAQ",
+      "displayed_link": "https://mesconference.org \u203a uploads \u203a 2019/08",
+      "date": "Aug 21, 2019",
+      "snippet": "The Center for Medicare and Medicaid Services (CMS) introduced new rules for payer provider directory accuracy due to a transforming healthcare ...",
+      "snippet_highlighted_words": [
+        "Medicare",
+        "new",
+        "provider directory"
+      ],
+      "source": "Medicaid Enterprise Systems Conference (MESC)"
+    },
+    {
+      "position": 10,
+      "title": "Export - Massachusetts eHealth Institute",
+      "link": "https://mehi.masstech.org/api/company/export/96",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mehi.masstech.org/api/company/export/96&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQFnoECDAQAQ",
+      "displayed_link": "https://mehi.masstech.org \u203a api \u203a company \u203a export",
+      "favicon": "https://serpapi.com/searches/68646c784707f1b9a9143871/images/87f3a1d004070ee523ca20477d7db43ce4889d2826053b89df5c1f742498cf53.png",
+      "snippet": "... Provider Type\",\"Company Connection Type\",\"Company Specialty\",\"Company Query ... Care Coordination\",\"Medical Device\",\"Health plans\",\"Care Coordination ...",
+      "snippet_highlighted_words": [
+        "Provider",
+        "Care",
+        "plans",
+        "Care"
+      ],
+      "source": "Massachusetts eHealth Institute | MeHI"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=eGxkaKvcMuv-7_UP0vC5gQ8&start=10&sa=N&sstk=Ac65TH7ypc1DEG4IReXBRXSvKC46awO_oCrDoopj6d91GNCYypIq1SbyjlTm1i6yNK5s4rdBPXT9w9JvkZBuAg_INsUYckJfyHt41w&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQ8NMDegQIChAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=eGxkaKvcMuv-7_UP0vC5gQ8&start=10&sa=N&sstk=Ac65TH7ypc1DEG4IReXBRXSvKC46awO_oCrDoopj6d91GNCYypIq1SbyjlTm1i6yNK5s4rdBPXT9w9JvkZBuAg_INsUYckJfyHt41w&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=eGxkaKvcMuv-7_UP0vC5gQ8&start=20&sa=N&sstk=Ac65TH7ypc1DEG4IReXBRXSvKC46awO_oCrDoopj6d91GNCYypIq1SbyjlTm1i6yNK5s4rdBPXT9w9JvkZBuAg_INsUYckJfyHt41w&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQ8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=eGxkaKvcMuv-7_UP0vC5gQ8&start=30&sa=N&sstk=Ac65TH7ypc1DEG4IReXBRXSvKC46awO_oCrDoopj6d91GNCYypIq1SbyjlTm1i6yNK5s4rdBPXT9w9JvkZBuAg_INsUYckJfyHt41w&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQ8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=eGxkaKvcMuv-7_UP0vC5gQ8&start=40&sa=N&sstk=Ac65TH7ypc1DEG4IReXBRXSvKC46awO_oCrDoopj6d91GNCYypIq1SbyjlTm1i6yNK5s4rdBPXT9w9JvkZBuAg_INsUYckJfyHt41w&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQ8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=eGxkaKvcMuv-7_UP0vC5gQ8&start=50&sa=N&sstk=Ac65TH7ypc1DEG4IReXBRXSvKC46awO_oCrDoopj6d91GNCYypIq1SbyjlTm1i6yNK5s4rdBPXT9w9JvkZBuAg_INsUYckJfyHt41w&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQ8tMDegQIChAM",
+      "7": "https://www.google.com/search?q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=eGxkaKvcMuv-7_UP0vC5gQ8&start=60&sa=N&sstk=Ac65TH7ypc1DEG4IReXBRXSvKC46awO_oCrDoopj6d91GNCYypIq1SbyjlTm1i6yNK5s4rdBPXT9w9JvkZBuAg_INsUYckJfyHt41w&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQ8tMDegQIChAO",
+      "8": "https://www.google.com/search?q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=eGxkaKvcMuv-7_UP0vC5gQ8&start=70&sa=N&sstk=Ac65TH7ypc1DEG4IReXBRXSvKC46awO_oCrDoopj6d91GNCYypIq1SbyjlTm1i6yNK5s4rdBPXT9w9JvkZBuAg_INsUYckJfyHt41w&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQ8tMDegQIChAQ",
+      "9": "https://www.google.com/search?q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=eGxkaKvcMuv-7_UP0vC5gQ8&start=80&sa=N&sstk=Ac65TH7ypc1DEG4IReXBRXSvKC46awO_oCrDoopj6d91GNCYypIq1SbyjlTm1i6yNK5s4rdBPXT9w9JvkZBuAg_INsUYckJfyHt41w&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQ8tMDegQIChAS",
+      "10": "https://www.google.com/search?q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&gl=us&hl=en&ei=eGxkaKvcMuv-7_UP0vC5gQ8&start=90&sa=N&sstk=Ac65TH7ypc1DEG4IReXBRXSvKC46awO_oCrDoopj6d91GNCYypIq1SbyjlTm1i6yNK5s4rdBPXT9w9JvkZBuAg_INsUYckJfyHt41w&ved=2ahUKEwir-JrB5ZyOAxVr_7sIHVJ4LvAQ8tMDegQIChAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=village+care+of+new+york+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}

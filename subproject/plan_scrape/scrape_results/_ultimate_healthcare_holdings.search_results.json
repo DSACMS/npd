@@ -1,0 +1,317 @@
+{
+  "search_metadata": {
+    "id": "68646c6ba0cb103252d5df4a",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/b752fa6862a9d99d/68646c6ba0cb103252d5df4a.json",
+    "created_at": "2025-07-01 23:16:59 UTC",
+    "processed_at": "2025-07-01 23:16:59 UTC",
+    "google_url": "https://www.google.com/search?q=%22ultimate+healthcare+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&oq=%22ultimate+healthcare+holdings+Medicare+Advantage+%22PROVIDER+DIRECTORY%22+API+%22FHIR%22+-fire.ly+-linkedin.com+-google.com+&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&hl=en&gl=us&num=10&safe=active&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/b752fa6862a9d99d/68646c6ba0cb103252d5df4a.html",
+    "total_time_taken": 2.95
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "\"ultimate healthcare holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com ",
+    "location_requested": "United States",
+    "location_used": "United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "us",
+    "safe": "active",
+    "num": "10",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "\"ultimate healthcare holdings Medicare Advantage \"PROVIDER DIRECTORY\" API \"FHIR\" -fire.ly -linkedin.com -google.com",
+    "total_results": 9250,
+    "time_taken_displayed": 0.42,
+    "organic_results_state": "Empty showing fixed spelling results",
+    "spelling_fix": "ultimate healthcare holdings Medicaid Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "showing_results_for": "ultimate healthcare holdings Medicare Advantage PROVIDER DIRECTORY API FHIR -fire.ly -linkedin.com -google.com",
+    "spelling_fix_type": "without quotes"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Best Practices for Payers and App Developers",
+      "link": "https://www.cms.gov/files/document/best-practices-payers-and-app-developersupdated21023.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/files/document/best-practices-payers-and-app-developersupdated21023.pdf&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQFnoECC8QAQ",
+      "displayed_link": "https://www.cms.gov \u203a files \u203a document \u203a best-pra...",
+      "favicon": "https://serpapi.com/searches/68646c6ba0cb103252d5df4a/images/ace910019f996f38877bcd6891a6c53e0d728a18722575fdfc0a5f98daf8761b.png",
+      "snippet": "publicly available via a FHIR-based Provider Directory API, accessible through a public-facing digital endpoint on the payer's website. In this document you ...",
+      "snippet_highlighted_words": [
+        "FHIR",
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 4
+          },
+          "extensions": [
+            "4 pages"
+          ]
+        }
+      },
+      "missing": [
+        "ultimate",
+        "holdings"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 2,
+      "title": "Medicaid Provider Directory Standards Set to Change - IPRO",
+      "link": "https://ipro.org/medicaid-provider-directory-standards-set-to-change/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ipro.org/medicaid-provider-directory-standards-set-to-change/&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQFnoECBoQAQ",
+      "displayed_link": "https://ipro.org \u203a medicaid-provider-directory-standards-...",
+      "favicon": "https://serpapi.com/searches/68646c6ba0cb103252d5df4a/images/ace910019f996f38877bcd6891a6c53eefdb6762ec50b658e7ee0e0825957eb4.png",
+      "snippet": "Medicaid provider directories will soon have to be upgraded to provide members with important information for them to select a provider and access care.",
+      "snippet_highlighted_words": [
+        "Medicaid provider directories",
+        "provider"
+      ],
+      "missing": [
+        "ultimate",
+        "Advantage"
+      ],
+      "source": "ipro.org"
+    },
+    {
+      "position": 3,
+      "title": "Flexpa's Endpoint Directory",
+      "link": "https://www.flexpa.com/docs/network/directory",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.flexpa.com/docs/network/directory&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQFnoECB0QAQ",
+      "displayed_link": "https://www.flexpa.com \u203a docs \u203a network \u203a directory",
+      "favicon": "https://serpapi.com/searches/68646c6ba0cb103252d5df4a/images/ace910019f996f38877bcd6891a6c53efca4db5fbc7c5ca0971422c08852f32f.png",
+      "snippet": "The directory provides detailed information about each payer's connection status, authorization information, and FHIR API capabilities. Endpoints are: FHIR- ...",
+      "snippet_highlighted_words": [
+        "directory",
+        "FHIR API",
+        "FHIR"
+      ],
+      "missing": [
+        "holdings"
+      ],
+      "must_include": {
+        "word": "holdings",
+        "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=ultimate+healthcare+%22holdings%22+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&sa=X&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ5t4CegQIJRAB"
+      },
+      "source": "Flexpa"
+    },
+    {
+      "position": 4,
+      "title": "FHIR-API-Guide-book-1.docx",
+      "link": "https://www.nhpri.org/wp-content/uploads/2021/07/FHIR-API-Guide-book-1.docx",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.nhpri.org/wp-content/uploads/2021/07/FHIR-API-Guide-book-1.docx&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQFnoECBcQAQ",
+      "displayed_link": "https://www.nhpri.org \u203a uploads \u203a 2021/07 \u203a FHI...",
+      "favicon": "https://serpapi.com/searches/68646c6ba0cb103252d5df4a/images/ace910019f996f38877bcd6891a6c53e224cdc9ed463603c13c78c734238a6ee.png",
+      "snippet": "Part D Medicare Advantage plans must also make formulary information available via the Patient Access API. And Medicaid and CHIP FFS and managed care must ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage",
+        "API"
+      ],
+      "missing": [
+        "ultimate",
+        "holdings"
+      ],
+      "source": "Neighborhood Health Plan of Rhode Island"
+    },
+    {
+      "position": 5,
+      "title": "Interoperability and Patient Access Fact Sheet",
+      "link": "https://www.cms.gov/newsroom/fact-sheets/interoperability-and-patient-access-fact-sheet",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cms.gov/newsroom/fact-sheets/interoperability-and-patient-access-fact-sheet&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQFnoECBkQAQ",
+      "displayed_link": "https://www.cms.gov \u203a newsroom \u203a interoperability-and-...",
+      "favicon": "https://serpapi.com/searches/68646c6ba0cb103252d5df4a/images/ace910019f996f38877bcd6891a6c53ebe1d2b0e7f573477de7c91ded4b5a625.png",
+      "date": "Mar 9, 2020",
+      "snippet": "This final rule is focused on driving interoperability and patient access to health information by liberating patient data using CMS authority.",
+      "missing": [
+        "ultimate",
+        "holdings"
+      ],
+      "source": "Centers for Medicare & Medicaid Services | CMS (.gov)"
+    },
+    {
+      "position": 6,
+      "title": "Azure API for FHIR | Patient Access and Provider Directory ...",
+      "link": "https://vnbhealth.com/2021/07/enabling-patient-access-and-provider-directory-apis-using-azure-api-for-fhir-to-meet-cms-guidelines/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://vnbhealth.com/2021/07/enabling-patient-access-and-provider-directory-apis-using-azure-api-for-fhir-to-meet-cms-guidelines/&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQFnoECBwQAQ",
+      "displayed_link": "https://vnbhealth.com \u203a 2021/07 \u203a enabling-patient-acc...",
+      "favicon": "https://serpapi.com/searches/68646c6ba0cb103252d5df4a/images/ace910019f996f38877bcd6891a6c53ed17902648511060da61419436d02715a.png",
+      "date": "Jul 1, 2021",
+      "snippet": "Discover how to enable patient access and provider directory APIs using Azure API for FHIR. Read more on how VNB Health can help you meet ...",
+      "snippet_highlighted_words": [
+        "provider directory APIs",
+        "FHIR"
+      ],
+      "missing": [
+        "ultimate",
+        "holdings"
+      ],
+      "source": "VNB Health Solutions"
+    },
+    {
+      "position": 7,
+      "title": "CMS Interoperability and Patient Access final rule",
+      "link": "https://www.hhs.gov/guidance/document/cms-interoperability-and-patient-access-final-rule",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hhs.gov/guidance/document/cms-interoperability-and-patient-access-final-rule&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQFnoECBsQAQ",
+      "displayed_link": "https://www.hhs.gov \u203a guidance \u203a document \u203a cms-inter...",
+      "date": "Nov 30, 2024",
+      "snippet": "The newly proposed rule considers stakeholder feedback and includes Medicare Advantage plans. This proposed rule emphasizes the need to improve ...",
+      "snippet_highlighted_words": [
+        "Medicare Advantage"
+      ],
+      "missing": [
+        "ultimate",
+        "holdings"
+      ],
+      "source": "HHS.gov"
+    },
+    {
+      "position": 8,
+      "title": "How Health Plans Connect: Payer-to-Payer Data Sharing",
+      "link": "https://www.caqh.org/sites/default/files/2023-03/FINAL%20Insights%20-%20FHIR%20PLAN%20Focus%20Group%20Brief_v5.pdf",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.caqh.org/sites/default/files/2023-03/FINAL%2520Insights%2520-%2520FHIR%2520PLAN%2520Focus%2520Group%2520Brief_v5.pdf&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQFnoECD8QAQ",
+      "displayed_link": "https://www.caqh.org \u203a sites \u203a default \u203a files \u203a FIN...",
+      "favicon": "https://serpapi.com/searches/68646c6ba0cb103252d5df4a/images/ace910019f996f38877bcd6891a6c53e9b71728d1c9c512a77838c5dc6d459c0.png",
+      "snippet": "Provider Directory API (required July 1, 2021): Requires CMS-regulated payers to make provider directory information publicly available. Payer-to-Payer Data ...",
+      "snippet_highlighted_words": [
+        "Provider Directory API"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "pages": 4
+          },
+          "extensions": [
+            "4 pages"
+          ]
+        }
+      },
+      "missing": [
+        "ultimate",
+        "holdings"
+      ],
+      "source": "CAQH.org"
+    },
+    {
+      "position": 9,
+      "title": "Request for Information; National Directory of Healthcare ...",
+      "link": "https://www.federalregister.gov/documents/2022/10/07/2022-21904/request-for-information-national-directory-of-healthcare-providers-and-services",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.federalregister.gov/documents/2022/10/07/2022-21904/request-for-information-national-directory-of-healthcare-providers-and-services&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQFnoECEAQAQ",
+      "displayed_link": "https://www.federalregister.gov \u203a 2022/10/07 \u203a request-...",
+      "favicon": "https://serpapi.com/searches/68646c6ba0cb103252d5df4a/images/ace910019f996f38877bcd6891a6c53ee5824d8ef6ce78c306e88cc9084301a3.png",
+      "date": "Oct 7, 2022",
+      "snippet": "A payer (such as an MA organization, a private insurer, or state Medicaid agency) could use an NDH, via a FHIR API, to update its own provider ...",
+      "snippet_highlighted_words": [
+        "Medicaid",
+        "FHIR API",
+        "provider"
+      ],
+      "missing": [
+        "ultimate",
+        "holdings"
+      ],
+      "source": "Federal Register (.gov)"
+    },
+    {
+      "position": 10,
+      "title": "Interoperability | CoxHealth Plans Medicare Advantage",
+      "link": "https://coxhealthmedicareadvantage.com/interoperability/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://coxhealthmedicareadvantage.com/interoperability/&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQFnoECEYQAQ",
+      "displayed_link": "https://coxhealthmedicareadvantage.com \u203a interoperabil...",
+      "favicon": "https://serpapi.com/searches/68646c6ba0cb103252d5df4a/images/ace910019f996f38877bcd6891a6c53e739106e759ad04ab41be0d2b423082e6.png",
+      "snippet": "Interoperability allows you to share your health information with third-party applications so that you can use your healthcare data in a way that works for you!",
+      "snippet_highlighted_words": [
+        "healthcare"
+      ],
+      "missing": [
+        "ultimate",
+        "holdings"
+      ],
+      "source": "CoxHealth Medicare Advantage"
+    }
+  ],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "CMS-9115-F",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=CMS-9115-F&sa=X&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ1QJ6BAg9EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-9115-F&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS Interoperability and Patient Access final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=CMS+Interoperability+and+Patient+Access+final+rule&sa=X&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ1QJ6BAg8EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS+Interoperability+and+Patient+Access+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Provider Directory API CMS",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Provider+Directory+API+CMS&sa=X&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ1QJ6BAg7EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+Directory+API+CMS&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "cms-9115-f fact sheet",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=cms-9115-f+fact+sheet&sa=X&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ1QJ6BAg6EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=cms-9115-f+fact+sheet&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "What is the way health care providers are rated by cms for completing performance measures",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=What+is+the+way+health+care+providers+are+rated+by+cms+for+completing+performance+measures&sa=X&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ1QJ6BAg5EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=What+is+the+way+health+care+providers+are+rated+by+cms+for+completing+performance+measures&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-9115 final rule",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=CMS-9115+final+rule&sa=X&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ1QJ6BAg3EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-9115+final+rule&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "CMS-0057",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=CMS-0057&sa=X&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ1QJ6BAg2EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=CMS-0057&safe=active"
+    },
+    {
+      "block_position": 1,
+      "query": "Provider Access API",
+      "link": "https://www.google.com/search?safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&q=Provider+Access+API&sa=X&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ1QJ6BAg4EAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=Provider+Access+API&safe=active"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=bmxkaKzOBfz_7_UP_4bMiQg&start=10&sa=N&sstk=Ac65TH76ZBUeBnxXTgi-NcLjBJr68dfi-10MHJ-rp9Vt7O9hNnMOLL2nL5rE5e1DKA_hyZt7pY8x0qTrqm7ggOEYocRnWsYKFjBpQA&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ8NMDegQIChAW",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=bmxkaKzOBfz_7_UP_4bMiQg&start=10&sa=N&sstk=Ac65TH76ZBUeBnxXTgi-NcLjBJr68dfi-10MHJ-rp9Vt7O9hNnMOLL2nL5rE5e1DKA_hyZt7pY8x0qTrqm7ggOEYocRnWsYKFjBpQA&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ8tMDegQIChAE",
+      "3": "https://www.google.com/search?q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=bmxkaKzOBfz_7_UP_4bMiQg&start=20&sa=N&sstk=Ac65TH76ZBUeBnxXTgi-NcLjBJr68dfi-10MHJ-rp9Vt7O9hNnMOLL2nL5rE5e1DKA_hyZt7pY8x0qTrqm7ggOEYocRnWsYKFjBpQA&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ8tMDegQIChAG",
+      "4": "https://www.google.com/search?q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=bmxkaKzOBfz_7_UP_4bMiQg&start=30&sa=N&sstk=Ac65TH76ZBUeBnxXTgi-NcLjBJr68dfi-10MHJ-rp9Vt7O9hNnMOLL2nL5rE5e1DKA_hyZt7pY8x0qTrqm7ggOEYocRnWsYKFjBpQA&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ8tMDegQIChAI",
+      "5": "https://www.google.com/search?q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=bmxkaKzOBfz_7_UP_4bMiQg&start=40&sa=N&sstk=Ac65TH76ZBUeBnxXTgi-NcLjBJr68dfi-10MHJ-rp9Vt7O9hNnMOLL2nL5rE5e1DKA_hyZt7pY8x0qTrqm7ggOEYocRnWsYKFjBpQA&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ8tMDegQIChAK",
+      "6": "https://www.google.com/search?q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=bmxkaKzOBfz_7_UP_4bMiQg&start=50&sa=N&sstk=Ac65TH76ZBUeBnxXTgi-NcLjBJr68dfi-10MHJ-rp9Vt7O9hNnMOLL2nL5rE5e1DKA_hyZt7pY8x0qTrqm7ggOEYocRnWsYKFjBpQA&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ8tMDegQIChAM",
+      "7": "https://www.google.com/search?q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=bmxkaKzOBfz_7_UP_4bMiQg&start=60&sa=N&sstk=Ac65TH76ZBUeBnxXTgi-NcLjBJr68dfi-10MHJ-rp9Vt7O9hNnMOLL2nL5rE5e1DKA_hyZt7pY8x0qTrqm7ggOEYocRnWsYKFjBpQA&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ8tMDegQIChAO",
+      "8": "https://www.google.com/search?q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=bmxkaKzOBfz_7_UP_4bMiQg&start=70&sa=N&sstk=Ac65TH76ZBUeBnxXTgi-NcLjBJr68dfi-10MHJ-rp9Vt7O9hNnMOLL2nL5rE5e1DKA_hyZt7pY8x0qTrqm7ggOEYocRnWsYKFjBpQA&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ8tMDegQIChAQ",
+      "9": "https://www.google.com/search?q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=bmxkaKzOBfz_7_UP_4bMiQg&start=80&sa=N&sstk=Ac65TH76ZBUeBnxXTgi-NcLjBJr68dfi-10MHJ-rp9Vt7O9hNnMOLL2nL5rE5e1DKA_hyZt7pY8x0qTrqm7ggOEYocRnWsYKFjBpQA&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ8tMDegQIChAS",
+      "10": "https://www.google.com/search?q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&sca_esv=c5a1f40b3c8677e8&hl=en&gl=us&ei=bmxkaKzOBfz_7_UP_4bMiQg&start=90&sa=N&sstk=Ac65TH76ZBUeBnxXTgi-NcLjBJr68dfi-10MHJ-rp9Vt7O9hNnMOLL2nL5rE5e1DKA_hyZt7pY8x0qTrqm7ggOEYocRnWsYKFjBpQA&ved=2ahUKEwisvYu85ZyOAxX8_7sIHX8DM4EQ8tMDegQIChAU"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&location=United+States&num=10&q=ultimate+healthcare+holdings+Medicare+Advantage+PROVIDER+DIRECTORY+API+FHIR+-fire.ly+-linkedin.com+-google.com&safe=active&start=90"
+    }
+  }
+}
