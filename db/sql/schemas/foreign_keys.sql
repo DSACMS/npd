@@ -1,5 +1,13 @@
 
 --
+-- Name: address address_address_us_id_fkey; Type: FK CONSTRAINT; Schema: ndh; Owner: ndh
+--
+
+ALTER TABLE ONLY ndh.address
+    ADD CONSTRAINT address_address_us_id_fkey FOREIGN KEY (address_us_id) REFERENCES ndh.address_us(id);
+
+
+--
 -- Name: address address_address_international_id_fkey; Type: FK CONSTRAINT; Schema: ndh; Owner: ndh
 --
 
