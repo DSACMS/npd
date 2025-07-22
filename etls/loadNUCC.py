@@ -3,10 +3,10 @@
 
 import pandas as pd
 import datetime
-from .dbHelpers import makeEngine
+from .dbHelpers import createEngine
 
 # Create database engine
-engine = makeEngine()
+engine = createEngine()
 
 # Find the current NUCC CSV version based on the current date
 current_date = datetime.date.today()

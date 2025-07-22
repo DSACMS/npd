@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from sqlalchemy import create_engine
 
-def makeEngine():
+def createEngine():
     # Get database details and create engine
     load_dotenv()
     username = os.getenv('NDH_DB_USER')
