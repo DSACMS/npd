@@ -9,6 +9,12 @@ import os
 import uuid
 from dbHelpers import createEngine
 import time
+from sqlalchemy import text
+import warnings
+
+warnings.simplefilter(action='ignore', category=pd.errors.DtypeWarning)
+warnings.simplefilter(action='ignore', category=pd.errors.SettingWithCopyWarning)
+
 
 # Load environment variables
 load_dotenv()
@@ -46,83 +52,94 @@ def convertBool(val):
 c=0
 unzipped_files = os.listdir(working_dir)
 main_file = [f for f in unzipped_files if 'npidata_pfile' in f and '_fileheader' not in f][0]
-for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 100000):
-    start = time.time()
-    chunk = chunk.loc[chunk['Entity Type Code']==1]
-    chunk['id'] = [uuid.uuid4() for i in chunk.index]
-    chunk['ssn']=None
-    chunk['gender_code']=None
-    chunk['birth_date']=None
-    chunk[['ssn','gender_code','birth_date','id']].to_sql('individual', con=engine, index=False, if_exists='append')
-    npi_columns = ['NPI', 'Entity Type Code', 'Replacement NPI', 'Provider Enumeration Date', 'Last Update Date', 'NPI Deactivation Reason Code', 'NPI Deactivation Date', 'NPI Reactivation Date', 'Certification Date']
-    npi_df = chunk[npi_columns].dropna(how='all')
-    npi_df.rename( columns={
-        'NPI': 'npi',
-        'Entity Type Code': 'entity_type_code',
-        'Replacement NPI': 'replacement_npi',
-        'Provider Enumeration Date': 'enumeration_date',
-        'Last Update Date': 'last_update_date',
-        'NPI Deactivation Reason Code': 'deactivation_reason_code',
-        'NPI Deactivation Date': 'deactivation_date',
-        'NPI Reactivation Date': 'reactivation_date',
-        'Certification Date': 'certification_date'
-    }, inplace=True)
-    npi_df.to_sql('npi', con=engine, index=False, if_exists='append')
-    chunk.rename(columns = {'id':'individual_id', 'NPI': 'npi'}, inplace = True)
-    chunk[['npi', 'individual_id']].to_sql('provider', con=engine, index=False, if_exists='append')
-    chunk.set_index('individual_id', inplace=True)
-    name_fields = ['Provider Last Name (Legal Name)', 'Provider First Name', 'Provider Middle Name', 'Provider Name Prefix Text', 'Provider Name Suffix Text']
-    name = chunk[name_fields]
-    name['fhir_name_use_id'] = 1
-    name.rename(columns={'Provider Last Name (Legal Name)': 'last_name',
-                          'Provider First Name':'first_name',
-                          'Provider Middle Name': 'middle_name',
-                          'Provider Name Prefix Text': 'prefix',
-                          'Provider Name Suffix Text': 'suffix'}, inplace=True)
-    name_2 = chunk[[f.replace('Provider','Provider Other') if 'Legal Name' not in f else 'Provider Other Last Name' for f in name_fields ] + ['Provider Other Last Name Type Code']].dropna(how='all')
-    fhir_name_type_mapping = {
-        1: 6,
-        2: 2,
-        5: 4
-    }
-    name_2['Provider Other Last Name Type Code'] = name_2['Provider Other Last Name Type Code'].apply(lambda x: int(fhir_name_type_mapping[x]))
-    name_2.rename(columns={'Provider Other Last Name': 'last_name',
-                          'Provider Other First Name':'first_name',
-                          'Provider Other Middle Name': 'middle_name',
-                          'Provider Other Name Prefix Text': 'prefix',
-                          'Provider Other Name Suffix Text': 'suffix',
-                          'Provider Other Last Name Type Code': 'fhir_name_use_id'}, inplace=True)
-    names=pd.concat([name, name_2])
-    names['effective_date']='1900-01-01'
-    names.to_sql('individual_to_name', con=engine, if_exists='append')
-    for i in range(1, 16):
-        tax_columns = [f'Healthcare Provider Taxonomy Code_{i}', f'Provider License Number State Code_{i}', f'Provider License Number_{i}', f'Healthcare Provider Primary Taxonomy Switch_{i}']
-        tax_df=chunk[tax_columns].dropna(how='all')
-        
-        tax_df[f'Provider License Number State Code_{i}'] = tax_df[f'Provider License Number State Code_{i}'].apply(lambda x: getFIPSCode(str(x)))
-        primary_to_bool = {'Y': True, 'N': False}
-        tax_df[f'Healthcare Provider Primary Taxonomy Switch_{i}'] = tax_df[f'Healthcare Provider Primary Taxonomy Switch_{i}'].apply(lambda x: convertBool[x])
-        tax_df.rename(
-            columns = {
-                f'Healthcare Provider Taxonomy Code_{i}': 'nucc_taxonomy_code_id',
-                f'Provider License Number_{i}': 'license_number',
-                f'Provider License Number State Code_{i}': 'state_id',
-                f'Healthcare Provider Primary Taxonomy Switch_{i}': 'is_primary'
-            }, inplace=True)
-        tax_df.to_sql('individual_to_nucc_taxonomy_code', con=engine, if_exists='append')
-    for i in range(1, 51):
-        identifier_columns = [f'Other Provider Identifier_{i}', f'Other Provider Identifier Type Code_{i}', f'Other Provider Identifier State_{i}', f'Other Provider Identifier Issuer_{i}']
-        identifier_df = chunk[identifier_columns].dropna(how='all')
-        identifier_df[f'Other Provider Identifier State_{i}'] = identifier_df[f'Other Provider Identifier State_{i}'].apply(lambda x: getFIPSCode(str(x)))
-        identifier_df[f'Other Provider Identifier Type Code_{i}'] = identifier_df[f'Other Provider Identifier Type Code_{i}'].apply(lambda x: int(x))
-        identifier_df.rename(
-            columns={
-                f'Other Provider Identifier_{i}': 'value',
-                f'Other Provider Identifier Type Code_{i}': 'other_identifier_type_id',
-                f'Other Provider Identifier State_{i}': 'state_id',
-                f'Other Provider Identifier Issuer_{i}': 'issuer_name'
-            }, inplace=True)
-        identifier_df.to_sql('individual_to_other_identifier', con=engine, if_exists='append')
+for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000):
+    try:
+        start = time.time()
+        chunk = chunk.loc[chunk['Entity Type Code']==1]
+        chunk['id'] = [uuid.uuid4() for i in chunk.index]
+        chunk['ssn']=None
+        chunk['gender_code']=None
+        chunk['birth_date']=None
+        chunk[['ssn','gender_code','birth_date','id']].to_sql('individual', con=engine, index=False, if_exists='append')
+        npi_columns = ['NPI', 'Entity Type Code', 'Replacement NPI', 'Provider Enumeration Date', 'Last Update Date', 'NPI Deactivation Reason Code', 'NPI Deactivation Date', 'NPI Reactivation Date', 'Certification Date']
+        npi_df = chunk[npi_columns].dropna(how='all')
+        npi_df.rename( columns={
+            'NPI': 'npi',
+            'Entity Type Code': 'entity_type_code',
+            'Replacement NPI': 'replacement_npi',
+            'Provider Enumeration Date': 'enumeration_date',
+            'Last Update Date': 'last_update_date',
+            'NPI Deactivation Reason Code': 'deactivation_reason_code',
+            'NPI Deactivation Date': 'deactivation_date',
+            'NPI Reactivation Date': 'reactivation_date',
+            'Certification Date': 'certification_date'
+        }, inplace=True)
+        npi_df.to_sql('npi', con=engine, index=False, if_exists='append')
+        chunk.rename(columns = {'id':'individual_id', 'NPI': 'npi'}, inplace = True)
+        chunk[['npi', 'individual_id']].to_sql('provider', con=engine, index=False, if_exists='append')
+        chunk.set_index('individual_id', inplace=True)
+        name_fields = ['Provider Last Name (Legal Name)', 'Provider First Name', 'Provider Middle Name', 'Provider Name Prefix Text', 'Provider Name Suffix Text']
+        name = chunk[name_fields]
+        name['fhir_name_use_id'] = 1
+        name.rename(columns={'Provider Last Name (Legal Name)': 'last_name',
+                            'Provider First Name':'first_name',
+                            'Provider Middle Name': 'middle_name',
+                            'Provider Name Prefix Text': 'prefix',
+                            'Provider Name Suffix Text': 'suffix'}, inplace=True)
+        name_2 = chunk[[f.replace('Provider','Provider Other') if 'Legal Name' not in f else 'Provider Other Last Name' for f in name_fields ] + ['Provider Other Last Name Type Code']].dropna(how='all')
+        fhir_name_type_mapping = {
+            1: 6,
+            2: 2,
+            5: 4
+        }
+        name_2['Provider Other Last Name Type Code'] = name_2['Provider Other Last Name Type Code'].apply(lambda x: int(fhir_name_type_mapping[x]))
+        name_2.rename(columns={'Provider Other Last Name': 'last_name',
+                            'Provider Other First Name':'first_name',
+                            'Provider Other Middle Name': 'middle_name',
+                            'Provider Other Name Prefix Text': 'prefix',
+                            'Provider Other Name Suffix Text': 'suffix',
+                            'Provider Other Last Name Type Code': 'fhir_name_use_id'}, inplace=True)
+        names=pd.concat([name, name_2])
+        names['effective_date']='1900-01-01'
+        names.to_sql('individual_to_name', con=engine, if_exists='append')
+        for i in range(1, 16):
+            tax_columns = [f'Healthcare Provider Taxonomy Code_{i}', f'Provider License Number State Code_{i}', f'Provider License Number_{i}', f'Healthcare Provider Primary Taxonomy Switch_{i}']
+            tax_df=chunk[tax_columns].dropna(how='all')
+            
+            tax_df[f'Provider License Number State Code_{i}'] = tax_df[f'Provider License Number State Code_{i}'].apply(lambda x: getFIPSCode(str(x)))
+            primary_to_bool = {'Y': True, 'N': False}
+            tax_df[f'Healthcare Provider Primary Taxonomy Switch_{i}'] = tax_df[f'Healthcare Provider Primary Taxonomy Switch_{i}'].apply(lambda x: convertBool(x))
+            tax_df.rename(
+                columns = {
+                    f'Healthcare Provider Taxonomy Code_{i}': 'nucc_taxonomy_code_id',
+                    f'Provider License Number_{i}': 'license_number',
+                    f'Provider License Number State Code_{i}': 'state_id',
+                    f'Healthcare Provider Primary Taxonomy Switch_{i}': 'is_primary'
+                }, inplace=True)
+            tax_df['license_number']=[str(l) for l in tax_df['license_number']]
+            tax_df.to_sql('individual_to_nucc_taxonomy_code', con=engine, if_exists='append')
+        for i in range(1, 51):
+            identifier_columns = [f'Other Provider Identifier_{i}', f'Other Provider Identifier Type Code_{i}', f'Other Provider Identifier State_{i}', f'Other Provider Identifier Issuer_{i}']
+            identifier_df = chunk[identifier_columns].dropna(how='all')
+            identifier_df[f'Other Provider Identifier State_{i}'] = identifier_df[f'Other Provider Identifier State_{i}'].apply(lambda x: getFIPSCode(str(x)))
+            identifier_df[f'Other Provider Identifier Type Code_{i}'] = identifier_df[f'Other Provider Identifier Type Code_{i}'].apply(lambda x: int(x))
+            identifier_df.rename(
+                columns={
+                    f'Other Provider Identifier_{i}': 'value',
+                    f'Other Provider Identifier Type Code_{i}': 'other_identifier_type_id',
+                    f'Other Provider Identifier State_{i}': 'state_id',
+                    f'Other Provider Identifier Issuer_{i}': 'issuer_name'
+                }, inplace=True)
+            identifier_df['issuer_name']=[str(l) for l in identifier_df['issuer_name']]
+            identifier_df['value']=[str(l) for l in identifier_df['value']]
+            identifier_df.to_sql('individual_to_other_identifier', con=engine, if_exists='append')
+    except:
+        ids = tuple([str(i) for i in chunk.index])
+        npis = tuple(chunk['NPI'])
+        with engine.connect() as con:
+            con.execute(text(f'delete from individual where id in {ids}'))
+            con.execute(text(f'delete from npi where npi in {npis}'))
+        raise
     c+=1
     end = time.time()
-    print(f'Chunk {i} ran in {end-start} seconds')
+    print(f'Chunk {c} ran in {end-start} seconds')
