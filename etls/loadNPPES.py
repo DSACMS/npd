@@ -46,7 +46,7 @@ def convertBool(val):
     if val in primary_to_bool.keys():
         return primary_to_bool[val]
     else:
-        return None
+        return False
 
 # Read in data
 c=0
@@ -135,7 +135,7 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000
             identifier_df.to_sql('individual_to_other_identifier', con=engine, if_exists='append')
     except:
         ids = tuple([str(i) for i in chunk.index])
-        npis = tuple(chunk['NPI'])
+        npis = tuple(npi_df['npi'].values)
         with engine.connect() as con:
             con.execute(text(f'delete from individual where id in {ids}'))
             con.execute(text(f'delete from npi where npi in {npis}'))
@@ -143,3 +143,5 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000
     c+=1
     end = time.time()
     print(f'Chunk {c} ran in {end-start} seconds')
+
+    # We got through chunk 21
