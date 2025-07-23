@@ -53,6 +53,8 @@ c=0
 unzipped_files = os.listdir(working_dir)
 main_file = [f for f in unzipped_files if 'npidata_pfile' in f and '_fileheader' not in f][0]
 for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000):
+    if c>0:
+        b+k
     try:
         start = time.time()
         chunk = chunk.loc[chunk['Entity Type Code']==1]
@@ -137,14 +139,16 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000
             identifier_df['issuer_name']=[str(l) for l in identifier_df['issuer_name']]
             identifier_df['value']=[str(l) for l in identifier_df['value']]
             identifier_list.append(identifier_df)
-        identifier_concat = pd.concat(identifier_list).drop_duplicates
+        identifier_concat = pd.concat(identifier_list).drop_duplicates()
         identifier_concat.to_sql('individual_to_other_identifier', con=engine, if_exists='append')
     except:
         ids = tuple([str(i) for i in chunk.index])
         npis = tuple(npi_df['npi'].values)
         with engine.connect() as con:
-            con.execute(text(f'delete from individual where id in {ids}'))
-            con.execute(text(f'delete from npi where npi in {npis}'))
+            res=con.execute(text(f'delete from individual where id in {ids}'))
+            print(res)
+            res2=con.execute(text(f'delete from npi where npi in {npis}'))
+            print(res2)
         raise
     c+=1
     end = time.time()
