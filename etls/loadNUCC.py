@@ -21,6 +21,37 @@ csv_version = f'{current_year-2000}{dot_version}'
 # Read the latest NUCC CSV
 df = pd.read_csv(f'http://www.nucc.org/images/stories/CSV/nucc_taxonomy_{csv_version}.csv')
 
+def unpackNUCC(df, hierarchy):
+    level=1
+    output=[]
+    while level<len(hierarchy)+1:
+        index = hierarchy[:level]
+        field = hierarchy[level-1]
+        subset = df[index].drop_duplicates().dropna(subset=field).reset_index(drop=True)
+        subset = df[index].drop_duplicates().reset_index(drop=True)
+        subset.index.name = 'id'
+        swapped = subset.reset_index().set_index(index)
+        if level<len(hierarchy):
+            code=df[index+['Code']].loc[df[hierarchy[level]].isna()]
+        else:
+            code=df[index+['Code']]
+        subset = pd.concat([code, subset]).drop_duplicates(index)
+        subset['id'] = subset[index].apply(lambda x: swapped.loc[*x], axis = 1)
+        df[field] = df[index].apply(lambda x: swapped.loc[*x], axis = 1)
+        subset = subset.dropna(how='all', axis=1).rename(columns = {field: 'display_name', 'Code': 'nucc_taxonomy_code_id'}).rename(columns = {field: f'nucc_{field.lower()}_id' for field in hierarchy})
+        subset = subset.dropna(subset = 'display_name')
+        output.append(subset)
+        level+=1
+    return tuple(output)
+
+groups, classifications, specializations = unpackNUCC(nuccDF, ['Grouping', 'Classification', 'Specialization'])
+
+groups.to_sql('nucc_grouping', if_exists = 'append', con = engine, index=False)
+classifications.to_sql('nucc_classification', if_exists = 'append', con = engine, index=False)
+specializations.drop('nucc_grouping_id', axis=1).to_sql('nucc_specialization', if_exists = 'append', con = engine, index=False)
+
+df['Grouping'].drop_duplicates()
+
 # Find the parent elements (where there is a Classification and no Specialization)
 parents = df.loc[df['Specialization'].isna()][['Code', 'Grouping', 'Classification']]
 parents.set_index(['Grouping', 'Classification'], inplace=True)

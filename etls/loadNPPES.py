@@ -102,6 +102,7 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000
         names=pd.concat([name, name_2])
         names['effective_date']='1900-01-01'
         names.to_sql('individual_to_name', con=engine, if_exists='append')
+        tax_list=[]
         for i in range(1, 16):
             tax_columns = [f'Healthcare Provider Taxonomy Code_{i}', f'Provider License Number State Code_{i}', f'Provider License Number_{i}', f'Healthcare Provider Primary Taxonomy Switch_{i}']
             tax_df=chunk[tax_columns].dropna(how='all')
@@ -117,7 +118,10 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000
                     f'Healthcare Provider Primary Taxonomy Switch_{i}': 'is_primary'
                 }, inplace=True)
             tax_df['license_number']=[str(l) for l in tax_df['license_number']]
-            tax_df.to_sql('individual_to_nucc_taxonomy_code', con=engine, if_exists='append')
+            tax_list.append(tax_df)
+        tax_concat = pd.concat(tax_list).drop_duplicates()
+        tax_concat.to_sql('individual_to_nucc_taxonomy_code', con=engine, if_exists='append')
+        identifier_list=[]
         for i in range(1, 51):
             identifier_columns = [f'Other Provider Identifier_{i}', f'Other Provider Identifier Type Code_{i}', f'Other Provider Identifier State_{i}', f'Other Provider Identifier Issuer_{i}']
             identifier_df = chunk[identifier_columns].dropna(how='all')
@@ -132,7 +136,9 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000
                 }, inplace=True)
             identifier_df['issuer_name']=[str(l) for l in identifier_df['issuer_name']]
             identifier_df['value']=[str(l) for l in identifier_df['value']]
-            identifier_df.to_sql('individual_to_other_identifier', con=engine, if_exists='append')
+            identifier_list.append(identifier_df)
+        identifier_concat = pd.concat(identifier_list).drop_duplicates
+        identifier_concat.to_sql('individual_to_other_identifier', con=engine, if_exists='append')
     except:
         ids = tuple([str(i) for i in chunk.index])
         npis = tuple(npi_df['npi'].values)
