@@ -280,32 +280,15 @@ class IndividualToName(models.Model):
         db_table = 'individual_to_name'
 
 
-class IndividualToNuccTaxonomyCode(models.Model):
-    pk = models.CompositePrimaryKey('nucc_taxonomy_code_id', 'state_id', 'license_number', 'is_primary','individual_id')
-    nucc_taxonomy_code = models.ForeignKey('NuccTaxonomyCode', models.DO_NOTHING)
-    state_id = models.CharField(max_length=2)
-    license_number = models.CharField(max_length=20)
-    is_primary = models.BooleanField(blank=True)
-    individual = models.ForeignKey(Individual, models.DO_NOTHING)
+"""class IndividualToNuccTaxonomyToLicense(models.Model):
+    individual = models.ForeignKey('ProviderToNuccTaxonomyCode', models.DO_NOTHING, blank=True, null=True)
+    nucc_taxonomy_code_id = models.CharField(max_length=10, blank=True, null=True)
+    state_id = models.CharField(max_length=2, blank=True, null=True)
+    license_number = models.CharField(max_length=20, blank=True, null=True)
 
     class Meta:
         managed = False
-        db_table = 'individual_to_nucc_taxonomy_code'
-
-
-class IndividualToOtherIdentifier(models.Model):
-    pk = models.CompositePrimaryKey('individual_id', 'value', 'other_identifier_type_id', 'state_id', 'issuer_name')
-    value = models.CharField(max_length=21)
-    other_identifier_type = models.ForeignKey('OtherIdentifierType', models.DO_NOTHING)
-    state = models.ForeignKey(FipsState, models.DO_NOTHING)
-    issuer_name = models.CharField(max_length=81)
-    issue_date = models.DateField(blank=True, null=True)
-    expiry_date = models.DateField(blank=True, null=True)
-    individual = models.ForeignKey(Individual, models.DO_NOTHING)
-
-    class Meta:
-        managed = False
-        db_table = 'individual_to_other_identifier'
+        db_table = 'individual_to_nucc_taxonomy_to_license'"""
 
 
 class IndividualToPhoneNumber(models.Model):
@@ -385,7 +368,6 @@ class NuccSpecialization(models.Model):
 class NuccTaxonomyCode(models.Model):
     id = models.CharField(primary_key=True, max_length=10)
     display_name = models.TextField()
-    parent = models.ForeignKey('self', models.DO_NOTHING, blank=True, null=True)
     definition = models.TextField(blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
     certifying_board_name = models.TextField(blank=True, null=True)
@@ -423,8 +405,34 @@ class PhoneNumber(models.Model):
 
 class Provider(models.Model):
     npi = models.OneToOneField(Npi, models.DO_NOTHING, db_column='npi', primary_key=True)
-    individual = models.ForeignKey(Individual, models.DO_NOTHING, blank=True, null=True)
+    individual = models.OneToOneField(Individual, models.DO_NOTHING, blank=True, null=True)
 
     class Meta:
         managed = False
         db_table = 'provider'
+
+
+class ProviderToNuccTaxonomyCode(models.Model):
+    pk = models.CompositePrimaryKey('individual_id', 'nucc_taxonomy_code_id')
+    nucc_taxonomy_code = models.ForeignKey(NuccTaxonomyCode, models.DO_NOTHING)
+    is_primary = models.BooleanField()
+    individual = models.ForeignKey(Provider, models.DO_NOTHING, to_field='individual_id')
+
+    class Meta:
+        managed = False
+        db_table = 'provider_to_nucc_taxonomy_code'
+
+
+class ProviderToOtherIdentifier(models.Model):
+    pk = models.CompositePrimaryKey('individual_id', 'state_id', 'value', 'other_identifier_type_id', 'issuer_name')
+    value = models.CharField(max_length=21)
+    other_identifier_type = models.ForeignKey(OtherIdentifierType, models.DO_NOTHING)
+    state = models.ForeignKey(FipsState, models.DO_NOTHING)
+    issuer_name = models.CharField(max_length=81)
+    issue_date = models.DateField(blank=True, null=True)
+    expiry_date = models.DateField(blank=True, null=True)
+    individual = models.ForeignKey(Provider, models.DO_NOTHING, to_field='individual_id')
+
+    class Meta:
+        managed = False
+        db_table = 'provider_to_other_identifier'

@@ -32,7 +32,7 @@ if DEBUG:
 else:
     ALLOWED_HOSTS = config("DJANGO_ALLOWED_HOSTS").split(',')
 
-INTERNAL_APIS = ['localhost', '127.0.0.1']
+INTERNAL_APIS = config("DJANGO_ALLOWED_HOSTS").split(',')
 
 # Application definition
 
@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware', # This must come at the end
 ]
 
 ROOT_URLCONF = 'app.urls'
@@ -142,4 +142,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+}
+
+DEBUG_TOOLBAR_CONFIG = {
+      'SHOW_TOOLBAR_CALLBACK': lambda request: DEBUG
+}
+
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.filebased.FileBasedCache",
+        "LOCATION": config('CACHE_LOCATION'),
+    }
 }
