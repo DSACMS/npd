@@ -5,26 +5,40 @@
 ### Foundational Technology Strategy
 
  • No Proprietary Lock-in: Avoid proprietary technologies, platforms, or services.
- • Long-Term Sustainability: Plan for a 50-year timeline using mature, widely adopted technologies.
+ • Long-Term Sustainability: Plan for a 50-year timeline using mature, widely adopted technologies. Plan in accordance with the [Lindy Effect](https://en.m.wikipedia.org/wiki/Lindy_effect)
  • Preference for Old and Stable Tools: Prioritize tools with 10+ years of proven utility.
+- Use the honeycomb approach. Create small software modules that have consistent frameworks to leverage AI (worker bees) to implement complexity only ‘within’ each honeycomb.
+ 
+
+
+### Honeycomb approach to Health IT complexity
+
+- Health IT complexity tends to be in combinatorics of small weird problems and requirements creating a tangled and unmanaged whole.
+- This is exactly the type of complexity that AI coding tools currently struggle with.
+- This makes “Detail denial” an especially dangerous mistake.
+- To solve Health IT problems each type of problem needs to be well framed and boxed in, so that an AI can successfully ignore the complexity of the larger system while it works on a single part of the whole. 
+- Keep the abstraction layers as thin as possible. All abstractions are leaky. But thin ones keep the underlying complexity close to the surface. To put this another way: automations should tend to make coding easier but never to actually ‘avoid’ coding.
+
 
 ### Data Processing and Integration
 
- • Universal Execution Contexts: Ensure support in Python, Jupyter Notebooks, Unix CLI, and SAS.
- • SQL-Centric Processing: Use plain SQL for transformations, interleaved with Python.
+ • Universal Execution Contexts: Ensure support in Python, Jupyter Notebooks, Unix CLI, and SAS. Data pipeline options that do not support all of these and all potential future data contexts are non-starters.
+ • SQL-Centric Processing: Use plain SQL for transformations, interleaved with Python. 
+ - When it is not possible to simply hand code the SQL steps a ‘compile to sql’ approach should be taken
+ - There are numerous cases where a data transformation must be in R, Pandas or SAS data steps. But this should never be based on mere programmer preference, and the reasons for the exceptions should be clearly documented.
 
 ### Scalability and Accessibility
 
- • Dual Schema Design: Separate public and private schemas.
- • Downloadable Data: Support bulk access with moderate API load.
+- Dual Schema Design: Separate public and private schemas.
+- Downloadable Data: Support bulk access with moderate API load.
 
 ### Compatibility Requirements
 
- • Full NPES Backward Compatibility:
- • Reproduce NPES flat files
- • Maintain entity types, Medicare codes, and NUCC taxonomy
+ • NPPES Backward Compatibility:
+	 • Reproduce NPPES flat files
+	 • Maintain entity types, Medicare codes, and NUCC taxonomy
  • Claims & Regulatory Continuity:
- • Support Medicaid, ACOs, QHPs, FQHCs, and legacy systems
+	 • Medicaid ACOs, QHPs, FQHCs, and legacy systems
 
 ### FHIR Compliance
 
@@ -41,7 +55,7 @@
 ### Decision-Making Heuristics
 
  • Reliable > Experimental: Use proven tools.
- • Preserve the Past, Enable the Future: Ensure backward/future compatibility.
+ • Ensure backward/future compatibility.
 
 ## Engineering Process Philosophy
 
@@ -49,6 +63,7 @@
 
  • Use Git/GitHub workflows.
  • Clean, small PRs preferred, but large PRs accepted when necessary.
+ - Convert the biggest pull requests into separate modules. Honeycomb approach.
  • Emphasize clarity and forward momentum.
 
 ### Test-Driven Expectations
@@ -61,8 +76,11 @@
 
 ### Anti-Fragile Infrastructure
 
- • Fail Loudly, Recover Quickly: Small, fragile components improve system robustness.
+ • Fail Loudly, Recover Quickly: Small, fragile components improve overall system robustness.
  • Continuous Feedback Loops: Tests and checks detect degradations early.
+ - Leverage lots of different kinds of tests, generally preferring higher level tests that will detect between system failures
+ - Specifically leverage data expectation tests to avoid pipeline technical debt
+ - Data expectations should make us aware of healthcare ecosystem changes as much as data etc errors. I.e. if all of the pediatricians are suddenly men. This could mean a dramatic change in the healthcare system or a broken import script.
 
 ### Legacy Respect: The Joel on Software Principle
 
@@ -72,81 +90,3 @@
  • Avoid Reinventing Mistakes: Rewrites risk losing key insights.
  • Evolve, Don’t Replace: Improve incrementally.
 
-## FHIR and NDH Implementation Summary
-
-### FHIR Standards and Schema Validation
-
- • Validate against:
- • FHIR Core
- • US Core (minimum required)
- • FAST NDH Profiles
- • Understand profile hierarchy: FHIR Core → US Core → NDH
- • Key HL7 profile tabs:
- • Differential: What’s changed
- • Snapshot: Full schema view
- • Key Elements: Essential fields
-
-### Terminologies & Functional Coding
-
- • Use SNOMED codes in PractitionerRole for services
- • Continue using NUCC taxonomy for classifications
-
-### Account Access
-
- • Ensure team members have:
- • VSAC (Value Set Authority Center) access
- • Active UMLS credentials
-
-### Direct Address Representation
-
- • List direct addresses in:
- • telecom field
- • endpoint resource
-
-### Available Time & Scheduling
-
- • Use availableTime in PractitionerRole
- • Link availableTime to specific Location
- • Investigate dynamic scheduling endpoint integration
-
-### Location vs Organization Modeling
-
- • Use Location for places of care
- • Strategy:
- • Deduplicate locations across organizations
- • Link PractitionerRoles via Locations to simplify API
-
-### Practitioner Names & Status
-
- • PractitionerRole requires full-text name
- • NDH requires all records active
- • Consider inactive NPIs for completeness
-
-### Telecom Enhancements
-
- • telecom fields can have time-bound validity
-
-### Location Geocoding
-
- • Not currently supported
- • Use extension for geocoding in this version
-
-### Verification Object
-
- • verificationResult = whole-resource confidence
- • No sub-element confidence standard exists
- • Plan custom extension for sub-element confidence
-
-### PractitionerRole & Licensing Strategy
-
- • Licensing is state-specific
- • Modeling strategy:
- • Create Location per state
- • Link PractitionerRole to correct state Location
- • Assign appropriate taxonomies
-
-### Required Extensions
-
- • Geolocation support (extension)
- • Sub-element confidence (extension)
- • Aligned program participation tracking
