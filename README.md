@@ -27,15 +27,17 @@ A list of core team members responsible for the code and documentation in this r
 
 ## Repository Structure
 
-This is a mega-repository that will contain multiple different sub-projects. Look in the [src](src) for a list of projects. You will find more information about each project in a ReadMe.md file within the respective directories. 
-We may eventually setup seperate repos for our project, but until we do a central merged github repo is a simpler way to coordinate our work. 
+This is a mega-repository that contains sub-directories for the various components of NPD. You will find more information about each component in a README.md file within its directory. 
 
+### [/db](./db/README.md)
+The db sub-directory contains source code related to the underlying database, including database [schemas](./db/schemas/), [functions](./db/functions/), [data inserts](./db/inserts/), and our [database naming conventions](./db/tinman_SQL_schema_standard/).
 
-**{list directories and descriptions}**
+### [/etls](./etls/README.md)
+The etls sub-directory contains source code for the Extract, Transform, Load (ETL) pipelines that perform regular ETL tasks. Each source dataset has its own sub-directory within the etls subdirectory.
 
-<!-- TODO: Add a 'table of contents" for your documentation. Tier 0/1 projects with simple README.md files without many sections may or may not need this, but it is still extremely helpful to provide "bookmark" or "anchor" links to specific sections of your file to be referenced in tickets, docs, or other communication channels. -->
+### [/src](./src/README.md)
+The src sub-directory contains source code for the django app that provides the framework for the [NPD FHIR API](./src/ndhfhir/).
 
-**{list of .md at top directory and descriptions}**
 
 # Development and Software Delivery Lifecycle
 
@@ -43,9 +45,13 @@ The following guide is for members of the project team who have access to the re
 
 ## Local Development
 
-<!--- TODO - with example below:
-This project is monorepo with several apps. Please see the [api](./api/README.md) and [frontend](./frontend/README.md) READMEs for information on spinning up those projects locally. Also see the project [documentation](./documentation) for more info.
--->
+To run the project locally:
+1. Create a local postgres instance with a database called `ndh`
+2. Create a .env file from the `./src/.env_template` file and populate the `NDH_DB_` vars with the connection information for your local db.
+3. From the `./src/` directory, run `python manage.py migrate` to create the database schema
+4. From the `./src/` directory, run `python manage.py loaddata` to load in an initial test dataset
+
+
 
 ## Coding Style and Linters
 
@@ -55,14 +61,13 @@ Each application has its own linting and testing guidelines. Lint and code tests
 
 ## Branching Model
 
-<!--- TODO - with example below:
 This project follows [trunk-based development](https://trunkbaseddevelopment.com/), which means:
 
 * Make small changes in [short-lived feature branches](https://trunkbaseddevelopment.com/short-lived-feature-branches/) and merge to `main` frequently.
 * Be open to submitting multiple small pull requests for a single ticket (i.e. reference the same ticket across multiple pull requests).
 * Treat each change you merge to `main` as immediately deployable to production. Do not merge changes that depend on subsequent changes you plan to make, even if you plan to make those changes shortly.
 * Ticket any unfinished or partially finished work.
-* Tests should be written for changes introduced, and adhere to the text percentage threshold determined by the project.
+* Tests should be written for changes introduced, and adhere to the test percentage threshold determined by the project.
 
 This project uses **continuous deployment** using [Github Actions](https://github.com/features/actions) which is configured in the [./github/workflows](.github/workflows) directory.
 
