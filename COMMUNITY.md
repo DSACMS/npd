@@ -76,6 +76,13 @@ Total number of contributors: <!--CONTRIBUTOR COUNT START--> <!--CONTRIBUTOR COU
                     <sub><b>Sachin Panayil</b></sub>
                 </a>
             </td>
+            <td align="center">
+                <a href="https://github.com/ftrotter">
+                    <img src="https://avatars.githubusercontent.com/u/83133?v=4" width="100;" alt="ftrotter"/>
+                    <br />
+                    <sub><b>Fred Trotter</b></sub>
+                </a>
+            </td>
 		</tr>
 	<tbody>
 </table>
