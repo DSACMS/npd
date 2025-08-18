@@ -3,23 +3,7 @@
 
 import pandas as pd
 import datetime
-from .dbHelpers import createEngine
-
-# Create database engine
-engine = createEngine()
-
-# Find the current NUCC CSV version based on the current date
-current_date = datetime.date.today()
-current_month = current_date.month
-current_year = current_date.year
-if current_month > 6:
-    dot_version = 1
-else:
-    dot_version = 0
-csv_version = f'{current_year-2000}{dot_version}'
-
-# Read the latest NUCC CSV
-df = pd.read_csv(f'http://www.nucc.org/images/stories/CSV/nucc_taxonomy_{csv_version}.csv')
+from dbHelpers import createEngine
 
 def unpackNUCC(df, hierarchy):
     level=1
@@ -44,11 +28,24 @@ def unpackNUCC(df, hierarchy):
         level+=1
     return tuple(output)
 
-groups, classifications, specializations = unpackNUCC(nuccDF, ['Grouping', 'Classification', 'Specialization'])
+# Create database engine
+engine = createEngine()
 
-groups.to_sql('nucc_grouping', if_exists = 'append', con = engine, index=False)
-classifications.to_sql('nucc_classification', if_exists = 'append', con = engine, index=False)
-specializations.drop('nucc_grouping_id', axis=1).to_sql('nucc_specialization', if_exists = 'append', con = engine, index=False)
+# Find the current NUCC CSV version based on the current date
+current_date = datetime.date.today()
+current_month = current_date.month
+current_year = current_date.year
+if current_month > 6:
+    dot_version = 1
+else:
+    dot_version = 0
+csv_version = f'{current_year-2000}{dot_version}'
+
+# Read the latest NUCC CSV
+df = pd.read_csv(f'http://www.nucc.org/images/stories/CSV/nucc_taxonomy_{csv_version}.csv')
+
+# Make a copy of the nuccDF for later use
+nuccDF=df.copy()
 
 df['Grouping'].drop_duplicates()
 
@@ -74,6 +71,15 @@ for i, row in df.iterrows():
 df = df.rename(columns={'Code':'id', 'Definition':'definition', 'Notes': 'notes'})
 
 # Load the renamed columns to the nucc_taxonomy_code table in SQL
-df[['id', 'display_name', 'parent_id', 'definition', 'notes']].to_sql('nucc_taxonomy_code', schema = 'ndh', con = engine, if_exists='append', index=False)
+df[['id', 'display_name', 'definition', 'notes']].to_sql('nucc_taxonomy_code', schema = 'ndh', con = engine, if_exists='append', index=False)
+
+# recursively unpack the groups, classifications, and specializations
+groups, classifications, specializations = unpackNUCC(nuccDF, ['Grouping', 'Classification', 'Specialization'])
+
+# load the groups, classifications, and specializations to sql
+groups.to_sql('nucc_grouping', if_exists = 'append', con = engine, index=False, schema='ndh')
+classifications.to_sql('nucc_classification', if_exists = 'append', con = engine, index=False, schema='ndh')
+specializations.drop('nucc_grouping_id', axis=1).to_sql('nucc_specialization', if_exists = 'append', con = engine, index=False, schema='ndh')
+
 
 # TODO: Make the load an upsert instead of an append

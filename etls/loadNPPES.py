@@ -30,9 +30,9 @@ current_year = current_date.year
 csv_version = f'{current_month}_{current_year}_V2'
 
 # Download and unzip the NPPES CSV files
-#zipData = requests.get(f'https://download.cms.gov/nppes/NPPES_Data_Dissemination_{csv_version}.zip').content
-#with zipfile.ZipFile(io.BytesIO(zipData), 'r') as zip_file:
-#    zip_file.extractall(working_dir)
+zipData = requests.get(f'https://download.cms.gov/nppes/NPPES_Data_Dissemination_{csv_version}.zip').content
+with zipfile.ZipFile(io.BytesIO(zipData), 'r') as zip_file:
+    zip_file.extractall(working_dir)
 
 state_abbreviation_to_fips = {'nan':'00','AL': '01', 'AK': '02', 'AZ': '04', 'AR': '05', 'CA': '06', 'CO': '08','CT': '09', 'DE': '10', 'DC': '11', 'FL': '12', 'GA': '13', 'HI': '15','ID': '16', 'IL': '17', 'IN': '18', 'IA': '19', 'KS': '20', 'KY': '21','LA': '22', 'ME': '23', 'MD': '24', 'MA': '25', 'MI': '26', 'MN': '27','MS': '28', 'MO': '29', 'MT': '30', 'NE': '31', 'NV': '32', 'NH': '33','NJ': '34', 'NM': '35', 'NY': '36', 'NC': '37', 'ND': '38', 'OH': '39','OK': '40', 'OR': '41', 'PA': '42', 'RI': '44', 'SC': '45', 'SD': '46','TN': '47', 'TX': '48', 'UT': '49', 'VT': '50', 'VA': '51', 'WA': '53','WV': '54', 'WI': '55', 'WY': '56', 'AS': '60', 'FM': '64', 'GU': '66', 'MH': '68', 'MP': '69','PW': '70','PR': '72', 'UM': '74', 'VI': '78'}
 def getFIPSCode(val):
@@ -54,7 +54,7 @@ unzipped_files = os.listdir(working_dir)
 main_file = [f for f in unzipped_files if 'npidata_pfile' in f and '_fileheader' not in f][0]
 for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000):
     start = time.time()
-    if c>0:
+    if c==0:
         try:
             start = time.time()
             chunk = chunk.loc[chunk['Entity Type Code']==1]
@@ -150,6 +150,8 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000
                 res2=con.execute(text(f'delete from npi where npi in {npis}'))
                 print(res2)
             raise
+    else:
+        b+1
     c+=1
     end = time.time()
     print(f'Chunk {c} ran in {end-start} seconds')
