@@ -123,7 +123,7 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000
                 tax_df['license_number']=[str(l) for l in tax_df['license_number']]
                 tax_list.append(tax_df)
             tax_concat = pd.concat(tax_list).drop_duplicates()
-            tax_concat.to_sql('individual_to_nucc_taxonomy_code', con=engine, if_exists='append', schema='ndh')
+            tax_concat.to_sql('provider_to_nucc_taxonomy_code', con=engine, if_exists='append', schema='ndh')
             identifier_list=[]
             for i in range(1, 51):
                 identifier_columns = [f'Other Provider Identifier_{i}', f'Other Provider Identifier Type Code_{i}', f'Other Provider Identifier State_{i}', f'Other Provider Identifier Issuer_{i}']
@@ -141,7 +141,7 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000
                 identifier_df['value']=[str(l) for l in identifier_df['value']]
                 identifier_list.append(identifier_df)
             identifier_concat = pd.concat(identifier_list).drop_duplicates()
-            identifier_concat.to_sql('individual_to_other_identifier', con=engine, if_exists='append', schema='ndh')
+            identifier_concat.to_sql('provider_to_other_identifier', con=engine, if_exists='append', schema='ndh')
         except:
             print('Houston we have a problem')
             ids = tuple([str(i) for i in chunk.index])
