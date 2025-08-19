@@ -30,9 +30,9 @@ current_year = current_date.year
 csv_version = f'{current_month}_{current_year}_V2'
 
 # Download and unzip the NPPES CSV files
-zipData = requests.get(f'https://download.cms.gov/nppes/NPPES_Data_Dissemination_{csv_version}.zip').content
-with zipfile.ZipFile(io.BytesIO(zipData), 'r') as zip_file:
-    zip_file.extractall(working_dir)
+#zipData = requests.get(f'https://download.cms.gov/nppes/NPPES_Data_Dissemination_{csv_version}.zip').content
+#with zipfile.ZipFile(io.BytesIO(zipData), 'r') as zip_file:
+#    zip_file.extractall(working_dir)
 
 state_abbreviation_to_fips = {'nan':'00','AL': '01', 'AK': '02', 'AZ': '04', 'AR': '05', 'CA': '06', 'CO': '08','CT': '09', 'DE': '10', 'DC': '11', 'FL': '12', 'GA': '13', 'HI': '15','ID': '16', 'IL': '17', 'IN': '18', 'IA': '19', 'KS': '20', 'KY': '21','LA': '22', 'ME': '23', 'MD': '24', 'MA': '25', 'MI': '26', 'MN': '27','MS': '28', 'MO': '29', 'MT': '30', 'NE': '31', 'NV': '32', 'NH': '33','NJ': '34', 'NM': '35', 'NY': '36', 'NC': '37', 'ND': '38', 'OH': '39','OK': '40', 'OR': '41', 'PA': '42', 'RI': '44', 'SC': '45', 'SD': '46','TN': '47', 'TX': '48', 'UT': '49', 'VT': '50', 'VA': '51', 'WA': '53','WV': '54', 'WI': '55', 'WY': '56', 'AS': '60', 'FM': '64', 'GU': '66', 'MH': '68', 'MP': '69','PW': '70','PR': '72', 'UM': '74', 'VI': '78'}
 def getFIPSCode(val):
@@ -55,6 +55,7 @@ main_file = [f for f in unzipped_files if 'npidata_pfile' in f and '_fileheader'
 for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000):
     start = time.time()
     if c==0:
+        print("We're doing it")
         try:
             start = time.time()
             chunk = chunk.loc[chunk['Entity Type Code']==1]
@@ -62,7 +63,7 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000
             chunk['ssn']=None
             chunk['gender_code']=None
             chunk['birth_date']=None
-            chunk[['ssn','gender_code','birth_date','id']].to_sql('individual', con=engine, index=False, if_exists='append')
+            chunk[['ssn','gender_code','birth_date','id']].to_sql('individual', con=engine, index=False, if_exists='append', schema='ndh')
             npi_columns = ['NPI', 'Entity Type Code', 'Replacement NPI', 'Provider Enumeration Date', 'Last Update Date', 'NPI Deactivation Reason Code', 'NPI Deactivation Date', 'NPI Reactivation Date', 'Certification Date']
             npi_df = chunk[npi_columns].dropna(how='all')
             npi_df.rename( columns={
@@ -76,9 +77,9 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000
                 'NPI Reactivation Date': 'reactivation_date',
                 'Certification Date': 'certification_date'
             }, inplace=True)
-            npi_df.to_sql('npi', con=engine, index=False, if_exists='append')
+            npi_df.to_sql('npi', con=engine, index=False, if_exists='append', schema='ndh')
             chunk.rename(columns = {'id':'individual_id', 'NPI': 'npi'}, inplace = True)
-            chunk[['npi', 'individual_id']].to_sql('provider', con=engine, index=False, if_exists='append')
+            chunk[['npi', 'individual_id']].to_sql('provider', con=engine, index=False, if_exists='append', schema='ndh')
             chunk.set_index('individual_id', inplace=True)
             name_fields = ['Provider Last Name (Legal Name)', 'Provider First Name', 'Provider Middle Name', 'Provider Name Prefix Text', 'Provider Name Suffix Text']
             name = chunk[name_fields]
@@ -103,7 +104,7 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000
                                 'Provider Other Last Name Type Code': 'fhir_name_use_id'}, inplace=True)
             names=pd.concat([name, name_2])
             names['effective_date']='1900-01-01'
-            names.to_sql('individual_to_name', con=engine, if_exists='append')
+            names.to_sql('individual_to_name', con=engine, if_exists='append', schema='ndh')
             tax_list=[]
             for i in range(1, 16):
                 tax_columns = [f'Healthcare Provider Taxonomy Code_{i}', f'Provider License Number State Code_{i}', f'Provider License Number_{i}', f'Healthcare Provider Primary Taxonomy Switch_{i}']
@@ -122,7 +123,7 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000
                 tax_df['license_number']=[str(l) for l in tax_df['license_number']]
                 tax_list.append(tax_df)
             tax_concat = pd.concat(tax_list).drop_duplicates()
-            tax_concat.to_sql('individual_to_nucc_taxonomy_code', con=engine, if_exists='append')
+            tax_concat.to_sql('individual_to_nucc_taxonomy_code', con=engine, if_exists='append', schema='ndh')
             identifier_list=[]
             for i in range(1, 51):
                 identifier_columns = [f'Other Provider Identifier_{i}', f'Other Provider Identifier Type Code_{i}', f'Other Provider Identifier State_{i}', f'Other Provider Identifier Issuer_{i}']
@@ -140,11 +141,12 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000
                 identifier_df['value']=[str(l) for l in identifier_df['value']]
                 identifier_list.append(identifier_df)
             identifier_concat = pd.concat(identifier_list).drop_duplicates()
-            identifier_concat.to_sql('individual_to_other_identifier', con=engine, if_exists='append')
+            identifier_concat.to_sql('individual_to_other_identifier', con=engine, if_exists='append', schema='ndh')
         except:
+            print('Houston we have a problem')
             ids = tuple([str(i) for i in chunk.index])
             npis = tuple(npi_df['npi'].values)
-            with engine.connect() as con:
+            with engine.connect(options="-c search_path=ndh,public") as con:
                 res=con.execute(text(f'delete from individual where id in {ids}'))
                 print(res)
                 res2=con.execute(text(f'delete from npi where npi in {npis}'))
