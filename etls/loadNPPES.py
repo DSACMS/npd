@@ -122,7 +122,7 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000
                     }, inplace=True)
                 tax_df['license_number']=[str(l) for l in tax_df['license_number']]
                 tax_list.append(tax_df)
-            tax_concat = pd.concat(tax_list).drop_duplicates()
+            tax_concat = pd.concat(tax_list)['nucc_taxonomy_code_id', 'is_primary', 'individual_id'].drop_duplicates()
             tax_concat.to_sql('provider_to_nucc_taxonomy_code', con=engine, if_exists='append', schema='ndh')
             identifier_list=[]
             for i in range(1, 51):
@@ -146,10 +146,10 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize = 10000
             print('Houston we have a problem')
             ids = tuple([str(i) for i in chunk.index])
             npis = tuple(npi_df['npi'].values)
-            with engine.connect(options="-c search_path=ndh,public") as con:
-                res=con.execute(text(f'delete from individual where id in {ids}'))
+            with engine.connect() as con:
+                res=con.execute(text(f'delete from ndh.individual where id in {ids}'))
                 print(res)
-                res2=con.execute(text(f'delete from npi where npi in {npis}'))
+                res2=con.execute(text(f'delete from ndh.npi where npi in {npis}'))
                 print(res2)
             raise
     else:
