@@ -360,3 +360,40 @@ resource "aws_iam_role" "glue_job_role" {
     ]
   })
 }
+
+resource "aws_iam_policy" "glue_job_policy" {
+  policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Effect = "Allow",
+        Action = [
+          "s3:GetObject",
+          "s3:ListBucket",
+          "s3:ListObjects"
+        ],
+        Resource = [
+          aws_s3_bucket.glue_scripts.arn,
+          "${aws_s3_bucket.glue_scripts.arn}/*"
+        ]
+      },
+      {
+        Effect = "Allow",
+        Action = [
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents",
+          "logs:DescribeLogGroups",
+          "logs:DescribeLogStreams"
+        ],
+        Resource: [ "*" ]
+      }
+    ]
+  })
+}
+
+resource "aws_iam_policy_attachment" "glue_job_policy_attachment" {
+  name       = "glue_job_policy_attachment"
+  policy_arn = aws_iam_policy.glue_job_policy.arn
+  roles = [aws_iam_role.glue_job_role.name]
+}
