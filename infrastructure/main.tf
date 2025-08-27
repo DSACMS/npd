@@ -246,6 +246,14 @@ resource "aws_security_group" "rds_sg" {
   }
 }
 
+resource "aws_vpc_security_group_ingress_rule" "allow_connections_from_self" {
+  security_group_id = aws_security_group.rds_sg.id
+  from_port = 0
+  to_port = 0
+  ip_protocol = "-1"
+  referenced_security_group_id = aws_security_group.rds_sg.id
+}
+
 resource "aws_lb" "alb" {
   name               = "${var.name}-alb"
   internal           = false
@@ -351,7 +359,6 @@ resource "aws_glue_job" "python_shell_job" {
     "--job-language"                     = "python" # Default is python
     "--continuous-log-logGroup"          = "/aws-glue/jobs"
     "--enable-continuous-cloudwatch-log" = "true"
-    "library-set"                        = "analytics" # loads common analytics libraries
     "--additional-python-modules"        = "requests==2.32.3, pandas==2.3.1, sqlalchemy==2.0.41, python-dotenv==1.1.1"
   }
 
@@ -382,46 +389,8 @@ resource "aws_iam_role" "glue_job_role" {
   })
 }
 
-resource "aws_iam_policy" "glue_job_policy" {
-  policy = jsonencode({
-    Version = "2012-10-17",
-    Statement = [
-      {
-        Effect = "Allow",
-        Action = [
-          "s3:GetObject",
-          "s3:ListBucket",
-          "s3:ListObjects"
-        ],
-        Resource = [
-          aws_s3_bucket.glue_scripts.arn,
-          "${aws_s3_bucket.glue_scripts.arn}/*"
-        ]
-      },
-      {
-        Effect = "Allow",
-        Action = [
-          "logs:CreateLogGroup",
-          "logs:CreateLogStream",
-          "logs:PutLogEvents",
-          "logs:DescribeLogGroups",
-          "logs:DescribeLogStreams"
-        ],
-        Resource: [ "*" ]
-      },
-      {
-        Effect = "Allow",
-        Action = [
-          "glue:GetConnection"
-        ],
-        Resource: [ "*" ]
-      }
-    ]
-  })
-}
-
 resource "aws_iam_policy_attachment" "glue_job_policy_attachment" {
-  name       = "glue_job_policy_attachment"
-  policy_arn = aws_iam_policy.glue_job_policy.arn
+  name = "glue_job_policy_attachment"
+  policy_arn = "arn:aws-us-gov:iam::aws:policy/service-role/AWSGlueServiceRole"
   roles = [aws_iam_role.glue_job_role.name]
 }
