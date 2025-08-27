@@ -292,12 +292,16 @@ module "rds" {
   engine_version         = "17"
   family                 = "postgres17"
   instance_class         = var.db_instance_class
-  allocated_storage      = 20
+  allocated_storage      = 100
   db_name                = var.db_name
   username               = var.db_name
   publicly_accessible    = true
   vpc_security_group_ids = [aws_security_group.rds_sg.id]
   db_subnet_group_name   = aws_db_subnet_group.db.name
+}
+
+data "aws_secretsmanager_secret_version" "rds_secret_version" {
+  secret_id = module.rds.db_instance_master_user_secret_arn
 }
 
 resource "aws_s3_bucket" "glue_scripts" {
@@ -311,6 +315,23 @@ resource "aws_s3_object" "glue_job_script" {
   etag   = filemd5(abspath("${path.module}/../etls/loadFIPS/loadFIPS.py"))
 }
 
+# Glue Connection for Redshift
+resource "aws_glue_connection" "glue_job_connection" {
+  name = "glue_job_script_db_connection"
+
+  connection_properties = {
+    JDBC_CONNECTION_URL = "jdbc:postgres://${module.rds.db_instance_address}:${module.rds.db_instance_port}/${module.rds.db_instance_name}"
+    PASSWORD = jsondecode(data.aws_secretsmanager_secret_version.rds_secret_version.secret_string)["password"]
+    USERNAME = jsondecode(data.aws_secretsmanager_secret_version.rds_secret_version.secret_string)["username"]
+  }
+
+  physical_connection_requirements {
+    availability_zone = module.rds.db_instance_availability_zone
+    subnet_id = tolist(aws_db_subnet_group.db.subnet_ids)[0]
+    security_group_id_list = [ aws_security_group.rds_sg.id ]
+  }
+}
+
 resource "aws_glue_job" "python_shell_job" {
   name         = "load-fips-python-shell-job"
   description  = "A python job that loads FIPS data"
@@ -318,7 +339,7 @@ resource "aws_glue_job" "python_shell_job" {
   max_capacity = "0.0625"
   max_retries  = 0
   timeout      = 2880
-  connections  = []
+  connections  = [aws_glue_connection.glue_job_connection.name]
 
   command {
     script_location = "s3://${aws_s3_object.glue_job_script.bucket}/${aws_s3_object.glue_job_script.key}"
@@ -385,6 +406,13 @@ resource "aws_iam_policy" "glue_job_policy" {
           "logs:PutLogEvents",
           "logs:DescribeLogGroups",
           "logs:DescribeLogStreams"
+        ],
+        Resource: [ "*" ]
+      },
+      {
+        Effect = "Allow",
+        Action = [
+          "glue:GetConnection"
         ],
         Resource: [ "*" ]
       }
