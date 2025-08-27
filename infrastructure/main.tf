@@ -316,6 +316,12 @@ resource "aws_vpc_security_group_ingress_rule" "glue_sg_allow_connections_from_s
   referenced_security_group_id = aws_security_group.glue_sg.id
 }
 
+resource "aws_vpc_security_group_egress_rule" "glue_gs_allow_outbound_connections" {
+  security_group_id = aws_security_group.glue_sg.id
+  ip_protocol = "-1"
+  cidr_ipv4 = "0.0.0.0/0"
+}
+
 resource "aws_s3_bucket" "glue_scripts" {
   bucket = "${var.name}-glue-scripts-bucket"
 }
