@@ -3,6 +3,7 @@ import os
 import time
 import pandas as pd
 import logging
+import sys
 
 from typing import Optional
 from io import StringIO
@@ -12,12 +13,44 @@ from dotenv import load_dotenv
 load_dotenv()
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("loadFIPS")
 
 class FIPSCountyETL:
     def __init__(self, table_name: str = "fips_county"):
         self.table_name = table_name
-        self.max_retries = int(os.getenv("MAX_RETRIES", "3"))
+
+        # Get environment variables from os or from aws glue context
+        MAX_RETRIES_KEY = "MAX_RETRIES"
+        DB_USER_KEY = "DB_USER"
+        DB_PASSWORD_KEY = "DB_PASSWORD"
+        DB_NAME_KEY = "DB_NAME"
+        DB_HOST_KEY = "DB_HOST"
+        DB_PORT_KEY = "DB_PORT"
+
+        try:
+            from awsglue.utils import getResolvedOptions
+            args = getResolvedOptions(sys.argv, [
+                MAX_RETRIES_KEY,
+                DB_USER_KEY,
+                DB_PASSWORD_KEY,
+                DB_NAME_KEY,
+                DB_HOST_KEY,
+                DB_PORT_KEY
+            ])
+            self.max_retries = int(os.getenv(args[MAX_RETRIES_KEY], "3"))
+            self.db_user = args[DB_USER_KEY]
+            self.db_password = args[DB_PASSWORD_KEY]
+            self.db_name = args[DB_NAME_KEY]
+            self.db_host = args[DB_HOST_KEY]
+            self.db_port = args[DB_PORT_KEY]
+
+        except ImportError:
+            self.max_retries = int(os.getenv(MAX_RETRIES_KEY, "3"))
+            self.db_user = os.getenv(DB_USER_KEY)
+            self.db_password = os.getenv(DB_PASSWORD_KEY)
+            self.db_name = os.getenv(DB_NAME_KEY)
+            self.db_host = os.getenv(DB_HOST_KEY)
+            self.db_port = os.getenv(DB_PORT_KEY)
 
     def handle_request(self, url: str) -> Optional[requests.Response]:
         for attempt in range(self.max_retries):
@@ -100,8 +133,8 @@ class FIPSCountyETL:
         transformed_data = self.transform()
         
         connection_string = (
-            f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@"
-            f"{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}"
+            f"postgresql://{self.db_user}:{self.db_password}@"
+            f"{self.db_host}:{self.db_port}/{self.db_name}"
         )
 
         engine = create_engine(connection_string)

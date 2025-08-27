@@ -30,6 +30,7 @@ locals {
 
   iam_path             = "/delegatedadmin/developer/"
   permissions_boundary = "arn:${data.aws_partition.current.partition}:iam::${data.aws_caller_identity.current.account_id}:policy/cms-cloud-admin/developer-boundary-policy"
+  database_creds       = jsondecode(data.aws_secretsmanager_secret_version.rds_secret_version.secret_string)
 }
 
 data "aws_vpc" "default" {
@@ -245,6 +246,13 @@ resource "aws_security_group" "rds_sg" {
     security_groups = [aws_security_group.ecs.id]
   }
 
+  ingress {
+    from_port = 5432
+    to_port = 5432
+    protocol = "tcp"
+    security_groups = [aws_security_group.glue_sg.id]
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
@@ -305,4 +313,129 @@ module "rds" {
   publicly_accessible    = true
   vpc_security_group_ids = [aws_security_group.rds_sg.id]
   db_subnet_group_name   = aws_db_subnet_group.db.name
+}
+
+data "aws_secretsmanager_secret_version" "rds_secret_version" {
+  secret_id = module.rds.db_instance_master_user_secret_arn
+}
+
+resource "aws_security_group" "glue_sg" {
+  name = "glue-sg"
+  description = "Common security group for Glue jobs"
+  vpc_id = data.aws_vpc.default.id
+}
+
+resource "aws_vpc_security_group_ingress_rule" "glue_sg_allow_connections_from_self" {
+  security_group_id = aws_security_group.glue_sg.id
+  ip_protocol = "-1"
+  referenced_security_group_id = aws_security_group.glue_sg.id
+}
+
+resource "aws_vpc_security_group_egress_rule" "glue_gs_allow_outbound_connections" {
+  security_group_id = aws_security_group.glue_sg.id
+  ip_protocol = "-1"
+  cidr_ipv4 = "0.0.0.0/0"
+}
+
+resource "aws_s3_bucket" "glue_scripts" {
+  bucket = "${var.name}-glue-scripts-bucket"
+}
+
+resource "aws_s3_object" "glue_job_script" {
+  bucket = aws_s3_bucket.glue_scripts.bucket
+  key    = "scripts/loadFIPS.py"
+  source = abspath("${path.module}/../etls/loadFIPS/loadFIPS.py") # local path
+  etag   = filemd5(abspath("${path.module}/../etls/loadFIPS/loadFIPS.py"))
+}
+
+resource "aws_s3_object" "glue_job_script_requirements" {
+  bucket = aws_s3_bucket.glue_scripts.bucket
+  key    = "scripts/requirements.txt"
+  source = abspath("${path.module}/../etls/loadFIPS/requirements.txt") # local path
+  etag   = filemd5(abspath("${path.module}/../etls/loadFIPS/requirements.txt"))
+}
+
+resource "aws_glue_job" "python_shell_job" {
+  name         = "load-fips-python-shell-job"
+  description  = "A python job that loads FIPS data"
+  glue_version = "5.0"
+  role_arn     = aws_iam_role.glue_job_role.arn
+  max_capacity = "0.0625"
+  max_retries  = 0
+  timeout      = 2880
+  connections  = []
+
+  command {
+    script_location = "s3://${aws_s3_object.glue_job_script.bucket}/${aws_s3_object.glue_job_script.key}"
+    name            = "pythonshell"
+    python_version  = "3.9"
+  }
+
+  default_arguments = {
+    "--job-language"                     = "python" # Default is python
+    # TODO: Glue 5.0 supports passing a requirements.txt instead of specific dependencies in the infrastructure definition
+    # could not get it to work so I'm just passing these manually
+    "--additional-python-modules"        = "requests==2.32.3, pandas==2.3.1, sqlalchemy==2.0.41, python-dotenv==1.1.1, psycopg2-binary==2.9.10"
+    "--MAX_RETRIES"                      = "3"
+    "--DB_USER"                          = local.database_creds["username"]
+    "--DB_PASSWORD"                      = local.database_creds["password"]
+    "--DB_HOST"                          = module.rds.db_instance_address
+    "--DB_PORT"                          = module.rds.db_instance_port
+    "--DB_NAME"                          = var.db_name
+  }
+
+  execution_property {
+    max_concurrent_runs = 1
+  }
+
+  tags = {
+    "ManagedBy" = "AWS"
+  }
+}
+
+# IAM role for Glue jobs
+resource "aws_iam_role" "glue_job_role" {
+  name = "glue-job-role"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = "sts:AssumeRole"
+        Effect = "Allow"
+        Principal = {
+          Service = "glue.amazonaws.com"
+        }
+      }
+    ]
+  })
+}
+
+resource "aws_iam_policy" "glue_job_policy" {
+  name = "glue-job-custom-policy"
+  policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Action = "s3:GetObject"
+        Effect = "Allow"
+        Resource = [
+          aws_s3_bucket.glue_scripts.arn,
+          "${aws_s3_bucket.glue_scripts.arn}/*"
+        ]
+      }
+    ]
+  })
+}
+
+resource "aws_iam_policy_attachment" "glue_job_policy_attachment" {
+  name = "glue_job_policy_attachment"
+  policy_arn = aws_iam_policy.glue_job_policy.arn
+  roles = [aws_iam_role.glue_job_role.name]
+}
+
+resource "aws_iam_policy_attachment" "glue_job_managed_policy_attachment" {
+  name = "glue_job_managed_policy_attachment"
+  policy_arn = "arn:aws-us-gov:iam::aws:policy/service-role/AWSGlueServiceRole"
+  roles = [aws_iam_role.glue_job_role.name]
 }
