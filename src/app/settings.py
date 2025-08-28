@@ -13,8 +13,10 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from pathlib import Path
 from decouple import config
 import os
-from decouple import config
-import os
+import sys
+
+# Detect if tests are being run
+TESTING = 'test' in sys.argv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -39,7 +41,7 @@ INTERNAL_APIS = config("DJANGO_ALLOWED_HOSTS").split(',')
 # Application definition
 
 INSTALLED_APPS = [
-    'ndhfhir.apps.NDHFHIRConfig',
+    'ndhfhir',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -47,9 +49,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'django_filters',
-    'debug_toolbar'
+    'django_filters'
 ]
+
+if not TESTING:
+    INSTALLED_APPS += 'debug_toolbar'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -59,8 +63,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',  # This must come at the end
 ]
+
+if not TESTING:
+    MIDDLEWARE += 'debug_toolbar.middleware.DebugToolbarMiddleware'
+    #This must come at the end.
 
 ROOT_URLCONF = 'app.urls'
 ROOT_URLCONF = 'app.urls'
@@ -100,6 +107,7 @@ DATABASES = {
     }
 }
 
+TEST_RUNNER = "ndhfhir.tests.SchemaTestRunner"
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators

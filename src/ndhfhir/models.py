@@ -268,19 +268,6 @@ class IndividualToName(models.Model):
         db_table = 'individual_to_name'
 
 
-
-class IndividualToOtherIdentifier(models.Model):
-    individual_id = models.TextField(blank=True, null=True)
-    value = models.TextField(blank=True, null=True)
-    other_identifier_type_id = models.FloatField(blank=True, null=True)
-    state_id = models.TextField(blank=True, null=True)
-    issuer_name = models.TextField(blank=True, null=True)
-
-    class Meta:
-        managed = False
-        db_table = 'individual_to_other_identifier'
-
-
 class IndividualToPhoneNumber(models.Model):
     pk = models.CompositePrimaryKey('individual_id', 'phone_number_id', 'fhir_phone_use_id')
     fhir_phone_use = models.ForeignKey(FhirPhoneUse, models.DO_NOTHING)
