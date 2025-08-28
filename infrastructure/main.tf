@@ -23,6 +23,7 @@ locals {
 
   iam_path             = "/delegatedadmin/developer/"
   permissions_boundary = "arn:${data.aws_partition.current.partition}:iam::${data.aws_caller_identity.current.account_id}:policy/cms-cloud-admin/developer-boundary-policy"
+  database_creds       = jsondecode(data.aws_secretsmanager_secret_version.rds_secret_version.secret_string)
 }
 
 data "aws_vpc" "default" {
@@ -353,8 +354,8 @@ resource "aws_glue_connection" "glue_job_connection" {
 
   connection_properties = {
     JDBC_CONNECTION_URL = "jdbc:postgresql://${module.rds.db_instance_address}:${module.rds.db_instance_port}/${module.rds.db_instance_name}"
-    PASSWORD = jsondecode(data.aws_secretsmanager_secret_version.rds_secret_version.secret_string)["password"]
-    USERNAME = jsondecode(data.aws_secretsmanager_secret_version.rds_secret_version.secret_string)["username"]
+    PASSWORD = local.database_creds["password"]
+    USERNAME = local.database_creds["username"]
   }
 
   physical_connection_requirements {
@@ -372,7 +373,7 @@ resource "aws_glue_job" "python_shell_job" {
   max_capacity = "0.0625"
   max_retries  = 0
   timeout      = 2880
-  #connections  = [aws_glue_connection.glue_job_connection.name]
+  #connections  = [aws_glue_connection.glue_job_connection.name
   connections  = []
 
   command {
@@ -385,8 +386,14 @@ resource "aws_glue_job" "python_shell_job" {
     "--job-language"                     = "python" # Default is python
     "--continuous-log-logGroup"          = "/aws-glue/jobs"
     "--enable-continuous-cloudwatch-log" = "true"
-    "--python-modules-installer-option"  = "-r"
-    "--additional-python-modules"        = "s3://${aws_s3_object.glue_job_script.bucket}/${aws_s3_object.glue_job_script_requirements.key}"
+    # TODO: Glue 5.0 supports passing a requirements.txt instead of specific dependencies in the infrastructure definition
+    "--additional-python-modules"        = "requests==2.32.3, pandas==2.3.1, sqlalchemy==2.0.41, python-dotenv==1.1.1"
+    "--MAX_RETRIES"                      = "3"
+    "--DB_USER"                          = local.database_creds["username"]
+    "--DB_PASSWORD"                      = local.database_creds["password"]
+    "--DB_HOST"                          = module.rds.db_instance_address
+    "--DB_PORT"                          = module.rds.db_instance_port
+    "--DB_NAME"                          = var.db_name
   }
 
   execution_property {
@@ -416,8 +423,31 @@ resource "aws_iam_role" "glue_job_role" {
   })
 }
 
+resource "aws_iam_policy" "glue_job_policy" {
+  name = "glue-job-custom-policy"
+  policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Action = "s3:GetObject"
+        Effect = "Allow"
+        Resource = [
+          aws_s3_bucket.glue_scripts.arn,
+          "${aws_s3_bucket.glue_scripts.arn}/*"
+        ]
+      }
+    ]
+  })
+}
+
 resource "aws_iam_policy_attachment" "glue_job_policy_attachment" {
   name = "glue_job_policy_attachment"
+  policy_arn = aws_iam_policy.glue_job_policy.arn
+  roles = [aws_iam_role.glue_job_role.name]
+}
+
+resource "aws_iam_policy_attachment" "glue_job_managed_policy_attachment" {
+  name = "glue_job_managed_policy_attachment"
   policy_arn = "arn:aws-us-gov:iam::aws:policy/service-role/AWSGlueServiceRole"
   roles = [aws_iam_role.glue_job_role.name]
 }
