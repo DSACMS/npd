@@ -387,7 +387,7 @@ resource "aws_glue_job" "python_shell_job" {
     "--continuous-log-logGroup"          = "/aws-glue/jobs"
     "--enable-continuous-cloudwatch-log" = "true"
     # TODO: Glue 5.0 supports passing a requirements.txt instead of specific dependencies in the infrastructure definition
-    "--additional-python-modules"        = "requests==2.32.3, pandas==2.3.1, sqlalchemy==2.0.41, python-dotenv==1.1.1"
+    "--additional-python-modules"        = "requests==2.32.3, pandas==2.3.1, sqlalchemy==2.0.41, python-dotenv==1.1.1, psycopg2-binary==2.9.10"
     "--MAX_RETRIES"                      = "3"
     "--DB_USER"                          = local.database_creds["username"]
     "--DB_PASSWORD"                      = local.database_creds["password"]
