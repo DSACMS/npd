@@ -238,6 +238,13 @@ resource "aws_security_group" "rds_sg" {
     security_groups = [aws_security_group.ecs.id]
   }
 
+  ingress {
+    from_port = 5432
+    to_port = 5432
+    protocol = "tcp"
+    security_groups = [aws_security_group.glue_sg.id]
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
@@ -333,12 +340,19 @@ resource "aws_s3_object" "glue_job_script" {
   etag   = filemd5(abspath("${path.module}/../etls/loadFIPS/loadFIPS.py"))
 }
 
+resource "aws_s3_object" "glue_job_script_requirements" {
+  bucket = aws_s3_bucket.glue_scripts.bucket
+  key    = "scripts/requirements.txt"
+  source = abspath("${path.module}/../etls/loadFIPS/requirements.txt") # local path
+  etag   = filemd5(abspath("${path.module}/../etls/loadFIPS/requirements.txt"))
+}
+
 # Glue Connection for RDS
 resource "aws_glue_connection" "glue_job_connection" {
   name = "glue_job_script_db_connection"
 
   connection_properties = {
-    JDBC_CONNECTION_URL = "jdbc:postgres://${module.rds.db_instance_address}:${module.rds.db_instance_port}/${module.rds.db_instance_name}"
+    JDBC_CONNECTION_URL = "jdbc:postgresql://${module.rds.db_instance_address}:${module.rds.db_instance_port}/${module.rds.db_instance_name}"
     PASSWORD = jsondecode(data.aws_secretsmanager_secret_version.rds_secret_version.secret_string)["password"]
     USERNAME = jsondecode(data.aws_secretsmanager_secret_version.rds_secret_version.secret_string)["username"]
   }
@@ -353,11 +367,13 @@ resource "aws_glue_connection" "glue_job_connection" {
 resource "aws_glue_job" "python_shell_job" {
   name         = "load-fips-python-shell-job"
   description  = "A python job that loads FIPS data"
+  glue_version = "5.0"
   role_arn     = aws_iam_role.glue_job_role.arn
   max_capacity = "0.0625"
   max_retries  = 0
   timeout      = 2880
-  connections  = [aws_glue_connection.glue_job_connection.name]
+  #connections  = [aws_glue_connection.glue_job_connection.name]
+  connections  = []
 
   command {
     script_location = "s3://${aws_s3_object.glue_job_script.bucket}/${aws_s3_object.glue_job_script.key}"
@@ -369,7 +385,8 @@ resource "aws_glue_job" "python_shell_job" {
     "--job-language"                     = "python" # Default is python
     "--continuous-log-logGroup"          = "/aws-glue/jobs"
     "--enable-continuous-cloudwatch-log" = "true"
-    "--additional-python-modules"        = "requests==2.32.3, pandas==2.3.1, sqlalchemy==2.0.41, python-dotenv==1.1.1"
+    "--python-modules-installer-option"  = "-r"
+    "--additional-python-modules"        = "s3://${aws_s3_object.glue_job_script.bucket}/${aws_s3_object.glue_job_script_requirements.key}"
   }
 
   execution_property {
