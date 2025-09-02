@@ -8,9 +8,6 @@ import sys
 from typing import Optional
 from io import StringIO
 from sqlalchemy import create_engine
-from dotenv import load_dotenv
-
-load_dotenv()
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger("loadFIPS")
@@ -54,7 +51,9 @@ class FIPSCountyETL:
             self.db_port = args[DB_PORT_KEY]
 
         except ImportError:
-            # Fallback to fetching information from a local .env
+            from dotenv import load_dotenv
+            load_dotenv()
+            # Fallback to fetching information from a local .env using dotenv
             self.max_retries = int(os.getenv(MAX_RETRIES_KEY, "3"))
             self.db_user = os.getenv(DB_USER_KEY)
             self.db_password = os.getenv(DB_PASSWORD_KEY)
