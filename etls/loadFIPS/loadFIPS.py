@@ -2,6 +2,7 @@ import requests
 import os
 import time
 import pandas as pd
+from pangres import upsert
 import logging
 import sys
 
@@ -126,8 +127,9 @@ class FIPSCountyETL:
             df["id"] = df["STATEFP"] + df["COUNTYFP"] 
             df["name"] = df["COUNTYNAME"]
             df["fips_state_id"] = df["STATEFP"]
-            
+
             df = df[["id", "name", "fips_state_id"]].drop_duplicates()
+            df = df.set_index("id")
         
         except Exception as e:
             logger.error(f"Something went wrong transforming the raw data: {e}")
@@ -150,13 +152,12 @@ class FIPSCountyETL:
         
         try:
             with engine.begin() as con:
-                transformed_data.to_sql(
-                    name = self.table_name,
-                    con = con,
-                    if_exists = "append",
-                    index = False,
-                    method = "multi",
-                    schema = 'ndh'
+                upsert(
+                    con=con,
+                    df=transformed_data,
+                    table_name=self.table_name,
+                    if_row_exists="update",
+                    schema = "ndh"
                 )
 
             logger.info("Phase 3 - Loading has finished")

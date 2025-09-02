@@ -369,7 +369,7 @@ resource "aws_glue_job" "python_shell_job" {
     "--job-language"                     = "python" # Default is python
     # TODO: Glue 5.0 supports passing a requirements.txt instead of specific dependencies in the infrastructure definition
     # could not get it to work so I'm just passing these manually
-    "--additional-python-modules"        = "requests==2.32.3, pandas==2.3.1, sqlalchemy==2.0.41, python-dotenv==1.1.1, psycopg2-binary==2.9.10"
+    "--additional-python-modules"        = "requests==2.32.3, pandas==2.3.1, sqlalchemy==2.0.41, python-dotenv==1.1.1, psycopg2-binary==2.9.10, pangres==4.2.1"
     "--MAX_RETRIES"                      = "3"
     "--DB_SECRET_ARN"                    = module.rds.db_instance_master_user_secret_arn
     "--DB_HOST"                          = module.rds.db_instance_address
