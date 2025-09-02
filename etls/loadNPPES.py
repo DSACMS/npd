@@ -65,7 +65,7 @@ def loadTaxonomy(df, npitype):
     tax_list = []
     for i in range(1, 16):
         tax_columns = [f'Healthcare Provider Taxonomy Code_{i}', f'Provider License Number State Code_{i}',
-                       f'Provider License Number_{i}', f'Healthcare Provider Primary Taxonomy Switch_{i}']
+                       f'Provider License Number_{i}', f'Healthcare Provider Primary Taxonomy Switch_{i}', 'npi']
         tax_df = df[tax_columns].dropna(how='all')
 
         tax_df[f'Provider License Number State Code_{i}'] = tax_df[f'Provider License Number State Code_{i}'].apply(
@@ -84,36 +84,36 @@ def loadTaxonomy(df, npitype):
                                     for l in tax_df['license_number']]
         tax_list.append(tax_df)
     tax_concat = pd.concat(tax_list).sort_values(by='is_primary', ascending=False)[
-        ['nucc_code', 'is_primary']].drop_duplicates(subset='nucc_code')
+        ['npi', 'nucc_code', 'is_primary']].drop_duplicates(subset='nucc_code').dropna(subset='nucc_code')
     tax_concat.to_sql(f'{npitype}_to_taxonomy',
-                      con=engine, if_exists='append', schema='ndh')
+                      con=engine, if_exists='append', schema='npd', index=False)
 
 
 def loadIdentifier(df, npitype):
     identifier_list = []
     for i in range(1, 51):
         identifier_columns = [f'Other Provider Identifier_{i}', f'Other Provider Identifier Type Code_{i}',
-                              f'Other Provider Identifier State_{i}', f'Other Provider Identifier Issuer_{i}']
-        identifier_df = df[identifier_columns].dropna(how='all')
+                              f'Other Provider Identifier State_{i}', f'Other Provider Identifier Issuer_{i}', 'npi']
+        identifier_df = df[identifier_columns].dropna(how='any')
         identifier_df[f'Other Provider Identifier State_{i}'] = identifier_df[f'Other Provider Identifier State_{i}'].apply(
             lambda x: getFIPSCode(str(x)))
         identifier_df[f'Other Provider Identifier Type Code_{i}'] = identifier_df[f'Other Provider Identifier Type Code_{i}'].apply(
             lambda x: int(x))
         identifier_df.rename(
             columns={
-                f'Other Provider Identifier_{i}': 'value',
+                f'Other Provider Identifier_{i}': 'other_id',
                 f'Other Provider Identifier Type Code_{i}': 'other_id_type_id',
                 f'Other Provider Identifier State_{i}': 'state_code',
-                f'Other Provider Identifier Issuer_{i}': 'issuer_name'
+                f'Other Provider Identifier Issuer_{i}': 'issuer'
             }, inplace=True)
-        identifier_df['issuer_name'] = [
-            str(l) for l in identifier_df['issuer_name']]
-        identifier_df['value'] = [str(l)
-                                  for l in identifier_df['value']]
+        identifier_df['issuer'] = [
+            str(l) for l in identifier_df['issuer']]
+        identifier_df['other_id'] = [str(l)
+                                     for l in identifier_df['other_id']]
         identifier_list.append(identifier_df)
     identifier_concat = pd.concat(identifier_list).drop_duplicates()
     identifier_concat.to_sql(
-        f'{npitype}_to_other_id', con=engine, if_exists='append', schema='ndh')
+        f'{npitype}_to_other_id', con=engine, if_exists='append', schema='npd', index=False)
 
 
 def loadNPI(df):
@@ -131,8 +131,8 @@ def loadNPI(df):
         'NPI Reactivation Date': 'reactivation_date',
         'Certification Date': 'certification_date'
     }, inplace=True)
-    npi_df.to_sql('npi', con=engine, index=False,
-                  if_exists='append', schema='npd')
+    npi_df.drop_duplicates().to_sql('npi', con=engine, index=False,
+                                    if_exists='append', schema='npd')
     return npi_df
 
 
@@ -169,14 +169,16 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize=10000):
             ao_df['name_use_id'] = 2
             ao_df[['individual_id', 'prefix', 'first_name', 'middle_name', 'last_name', 'suffix', 'name_use_id']].to_sql('individual_to_name', con=engine,
                                                                                                                          index=False, if_exists='append', schema='npd')
-            ao_df[['individual_id', 'phone']].to_sql('individual_to_phone', con=engine,
-                                                     index=False, if_exists='append', schema='npd')
+            ao_df['phone_use_id'] = 2
+            ao_df[['individual_id', 'phone_number', 'phone_use_id']].to_sql('individual_to_phone', con=engine,
+                                                                            index=False, if_exists='append', schema='npd')
             merged_chunk = chunk.merge(ao_df[['last_name', 'first_name', 'middle_name', 'phone_number', 'prefix', 'suffix', 'individual_id']], left_on=['Authorized Official Last Name',
                                                                                                                                                         'Authorized Official First Name',
                                                                                                                                                         'Authorized Official Middle Name',
                                                                                                                                                         'Authorized Official Telephone Number',
                                                                                                                                                         'Authorized Official Name Prefix Text',
-                                                                                                                                                        'Authorized Official Name Suffix Text'], right_on=['last_name', 'first_name', 'middle_name', 'phone', 'prefix', 'suffix'], how='left')
+                                                                                                                                                        'Authorized Official Name Suffix Text'], right_on=['last_name', 'first_name', 'middle_name', 'phone_number', 'prefix', 'suffix'], how='left')
+            merged_chunk = merged_chunk.drop_duplicates(subset='NPI')
             merged_chunk['id'] = [uuid.uuid4() for i in merged_chunk.index]
             merged_chunk['authorized_official_id'] = merged_chunk['individual_id']
             merged_chunk[['id', 'authorized_official_id']].to_sql('organization', con=engine,
@@ -184,8 +186,9 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize=10000):
             npi_df = loadNPI(merged_chunk)
             merged_chunk.rename(columns={'id': 'organization_id',
                                          'NPI': 'npi'}, inplace=True)
-            merged_chunk[['npi', 'organization_id']].to_sql(
-                'provider', con=engine, index=False, if_exists='append', schema='npd')
+            merged_chunk[['npi', 'organization_id']].drop_duplicates().to_sql(
+                'clinical_organization', con=engine, index=False, if_exists='append', schema='npd')
+            merged_chunk.set_index('organization_id', inplace=True)
             loadTaxonomy(merged_chunk, 'organization')
             loadIdentifier(merged_chunk, 'organization')
         except:
@@ -209,12 +212,12 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize=10000):
             chunk['gender_code'] = None
             chunk['birth_date'] = None
             chunk[['ssn', 'gender_code', 'birth_date', 'id']].to_sql(
-                'individual', con=engine, index=False, if_exists='append', schema='ndh')
+                'individual', con=engine, index=False, if_exists='append', schema='npd')
             npi_df = loadNPI(chunk)
             chunk.rename(columns={'id': 'individual_id',
                          'NPI': 'npi'}, inplace=True)
             chunk[['npi', 'individual_id']].to_sql(
-                'provider', con=engine, index=False, if_exists='append', schema='ndh')
+                'provider', con=engine, index=False, if_exists='append', schema='npd')
             chunk.set_index('individual_id', inplace=True)
             name_fields = ['Provider Last Name (Legal Name)', 'Provider First Name',
                            'Provider Middle Name', 'Provider Name Prefix Text', 'Provider Name Suffix Text']
@@ -243,7 +246,7 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize=10000):
             names = pd.concat([name, name_2])
             names['effective_date'] = '1900-01-01'
             names.to_sql('individual_to_name', con=engine,
-                         if_exists='append', schema='ndh')
+                         if_exists='append', schema='npd')
             loadTaxonomy(chunk, 'provider')
             loadIdentifier(chunk, 'provider')
         except:
