@@ -1,0 +1,43 @@
+body { /* (Example class, inspect DRF HTML for actual classes) */
+    background-color: #ffffff; /* White */
+    background: none
+}
+
+.navbar {
+    background-color: white;
+    border-top:#0071bc;
+    box-shadow: 0 4px 2px -2px lightgray;
+}
+
+.btn-primary {
+    background-color: white;
+    border-color: #0071bc;
+    color: #0071bc;
+}
+
+button {
+    font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
+
+.navbar-brand .navbar-inverse {
+    color: black !important;
+}
+
+.navbar {
+    color: black !important;
+}
+
+.navbar-brand:hover .navbar-inverse:hover {
+    color: gray !important;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-weight: bold;
+}
+
+p, body {
+    font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: medium;
+}
