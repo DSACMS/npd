@@ -20,7 +20,10 @@ class FIPSCountyETL:
         self.table_name = table_name
 
         # Get environment variables from os or from aws glue context
+        # TODO: We could abstract this into a python module that works either locally or in AWS
+        # e.g. configuration.get("MAX_RETRIES") or configuration.get("DB_PASSWORD")
         MAX_RETRIES_KEY = "MAX_RETRIES"
+        DB_SECRET_ARN = "DB_SECRET_ARN"
         DB_USER_KEY = "DB_USER"
         DB_PASSWORD_KEY = "DB_PASSWORD"
         DB_NAME_KEY = "DB_NAME"
@@ -28,23 +31,30 @@ class FIPSCountyETL:
         DB_PORT_KEY = "DB_PORT"
 
         try:
+            # AWS-specific flow for fetching configuration information
             from awsglue.utils import getResolvedOptions
+            import boto3
+            import json
             args = getResolvedOptions(sys.argv, [
                 MAX_RETRIES_KEY,
-                DB_USER_KEY,
-                DB_PASSWORD_KEY,
+                DB_SECRET_ARN,
                 DB_NAME_KEY,
                 DB_HOST_KEY,
                 DB_PORT_KEY
             ])
+            # Fetch sensitive values from secretsmanager directly
+            secrets_client = boto3.client("secretsmanager", region_name="us-gov-west-1")
+            db_secret = json.loads(secrets_client.get_secret_value(SecretId=args[DB_SECRET_ARN])["SecretString"])
+            self.db_user = db_secret["username"] # because the key is "username" on the secret payload
+            self.db_password = db_secret["password"] # because the key is "password" on the secret payload
+            # Retrieve non-sensitive data from getResolvedOptions
             self.max_retries = int(os.getenv(args[MAX_RETRIES_KEY], "3"))
-            self.db_user = args[DB_USER_KEY]
-            self.db_password = args[DB_PASSWORD_KEY]
             self.db_name = args[DB_NAME_KEY]
             self.db_host = args[DB_HOST_KEY]
             self.db_port = args[DB_PORT_KEY]
 
         except ImportError:
+            # Fallback to fetching information from a local .env
             self.max_retries = int(os.getenv(MAX_RETRIES_KEY, "3"))
             self.db_user = os.getenv(DB_USER_KEY)
             self.db_password = os.getenv(DB_PASSWORD_KEY)

@@ -18,7 +18,6 @@ terraform {
 
 provider "aws" {
   region = "us-gov-west-1"
-  
 }
 
 data "aws_region" "current" {}
@@ -30,7 +29,6 @@ locals {
 
   iam_path             = "/delegatedadmin/developer/"
   permissions_boundary = "arn:${data.aws_partition.current.partition}:iam::${data.aws_caller_identity.current.account_id}:policy/cms-cloud-admin/developer-boundary-policy"
-  database_creds       = jsondecode(data.aws_secretsmanager_secret_version.rds_secret_version.secret_string)
 }
 
 data "aws_vpc" "default" {
@@ -315,10 +313,6 @@ module "rds" {
   db_subnet_group_name   = aws_db_subnet_group.db.name
 }
 
-data "aws_secretsmanager_secret_version" "rds_secret_version" {
-  secret_id = module.rds.db_instance_master_user_secret_arn
-}
-
 resource "aws_security_group" "glue_sg" {
   name = "glue-sg"
   description = "Common security group for Glue jobs"
@@ -377,8 +371,7 @@ resource "aws_glue_job" "python_shell_job" {
     # could not get it to work so I'm just passing these manually
     "--additional-python-modules"        = "requests==2.32.3, pandas==2.3.1, sqlalchemy==2.0.41, python-dotenv==1.1.1, psycopg2-binary==2.9.10"
     "--MAX_RETRIES"                      = "3"
-    "--DB_USER"                          = local.database_creds["username"]
-    "--DB_PASSWORD"                      = local.database_creds["password"]
+    "--DB_SECRET_ARN"                    = module.rds.db_instance_master_user_secret_arn
     "--DB_HOST"                          = module.rds.db_instance_address
     "--DB_PORT"                          = module.rds.db_instance_port
     "--DB_NAME"                          = var.db_name
@@ -422,6 +415,13 @@ resource "aws_iam_policy" "glue_job_policy" {
         Resource = [
           aws_s3_bucket.glue_scripts.arn,
           "${aws_s3_bucket.glue_scripts.arn}/*"
+        ]
+      },
+      {
+        Action = "secretsmanager:GetSecretValue",
+        Effect = "Allow"
+        Resource = [
+          module.rds.db_instance_master_user_secret_arn
         ]
       }
     ]
