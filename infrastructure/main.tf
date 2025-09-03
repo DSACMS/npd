@@ -342,13 +342,6 @@ resource "aws_s3_object" "glue_job_script" {
   etag   = filemd5(abspath("${path.module}/../etls/loadFIPS/loadFIPS.py"))
 }
 
-resource "aws_s3_object" "glue_job_script_requirements" {
-  bucket = aws_s3_bucket.glue_scripts.bucket
-  key    = "scripts/requirements.txt"
-  source = abspath("${path.module}/../etls/loadFIPS/requirements.txt") # local path
-  etag   = filemd5(abspath("${path.module}/../etls/loadFIPS/requirements.txt"))
-}
-
 resource "aws_glue_job" "python_shell_job" {
   name         = "load-fips-python-shell-job"
   description  = "A python job that loads FIPS data"
@@ -367,9 +360,8 @@ resource "aws_glue_job" "python_shell_job" {
 
   default_arguments = {
     "--job-language"                     = "python" # Default is python
-    # TODO: Glue 5.0 supports passing a requirements.txt instead of specific dependencies in the infrastructure definition
-    # could not get it to work so I'm just passing these manually
-    "--additional-python-modules"        = "requests==2.32.3, pandas==2.3.1, sqlalchemy==2.0.41, python-dotenv==1.1.1, psycopg2-binary==2.9.10, pangres==4.2.1"
+    # If we have a bunch of python modules that need to read requirements.txt, this could become an HCL lambda
+    "--additional-python-modules"        = replace(file(abspath("${path.module}/../etls/loadFIPS/requirements.txt")), "\n", ", ")
     "--MAX_RETRIES"                      = "3"
     "--DB_SECRET_ARN"                    = module.rds.db_instance_master_user_secret_arn
     "--DB_HOST"                          = module.rds.db_instance_address
