@@ -185,7 +185,10 @@ for chunk in pd.read_csv(os.path.join(working_dir, main_file), chunksize=10000):
                                                                   index=False, if_exists='append', schema='npd')
             npi_df = loadNPI(merged_chunk)
             merged_chunk.rename(columns={'id': 'organization_id',
-                                         'NPI': 'npi'}, inplace=True)
+                                         'NPI': 'npi',
+                                         'Provider Organization Name (Legal Business Name)': 'name'}, inplace=True)
+            merged_chunk[['organization_id', 'name']].to_sql('organization_to_name', con=engine,
+                                                             index=False, if_exists='append', schema='npd')
             merged_chunk[['npi', 'organization_id']].drop_duplicates().to_sql(
                 'clinical_organization', con=engine, index=False, if_exists='append', schema='npd')
             merged_chunk.set_index('organization_id', inplace=True)
