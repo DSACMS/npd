@@ -335,6 +335,29 @@ resource "aws_s3_bucket" "glue_scripts" {
   bucket = "${var.name}-glue-scripts-bucket"
 }
 
+resource "aws_s3_bucket" "aws_glue_input_bucket" {
+  bucket = "${var.name}-glue-s3-input"
+}
+
+resource "aws_s3_bucket" "aws_glue_output_bucket" {
+  bucket = "${var.name}-glue-s3-output"
+}
+
+resource "aws_glue_catalog_database" "aws_glue_catalog" {
+  name = "${var.name}-glue-data-catalog"
+}
+
+resource "aws_glue_crawler" "aws_glue_crawler" {
+  database_name =  aws_glue_catalog_database.aws_glue_catalog.name
+  name          = "${var.name}-glue-data-catalog-crawler"
+  role          = aws_iam_role.glue_job_role.arn
+  schedule      = "cron(0 12 * * ? *)"
+
+  s3_target {
+    path = "s3://${aws_s3_bucket.aws_glue_input_bucket.bucket}"
+  }
+}
+
 resource "aws_s3_object" "glue_job_script" {
   bucket = aws_s3_bucket.glue_scripts.bucket
   key    = "scripts/loadFIPS.py"
@@ -405,7 +428,17 @@ resource "aws_iam_policy" "glue_job_policy" {
         Effect = "Allow"
         Resource = [
           aws_s3_bucket.glue_scripts.arn,
-          "${aws_s3_bucket.glue_scripts.arn}/*"
+          "${aws_s3_bucket.glue_scripts.arn}/*",
+          aws_s3_bucket.aws_glue_input_bucket.arn,
+          "${aws_s3_bucket.aws_glue_input_bucket.arn}/*",
+        ]
+      },
+      {
+        Action = "s3:PutObject"
+        Effect = "Allow"
+        Resource = [
+          aws_s3_bucket.aws_glue_output_bucket.arn,
+          "${aws_s3_bucket.aws_glue_output_bucket.arn}/*",
         ]
       },
       {
