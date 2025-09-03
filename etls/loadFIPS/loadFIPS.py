@@ -12,6 +12,7 @@ from sqlalchemy import create_engine
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger("loadFIPS")
+logger.setLevel(logging.INFO)
 
 class FIPSCountyETL:
     def __init__(self, table_name: str = "fips_county"):
