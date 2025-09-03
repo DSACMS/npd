@@ -102,15 +102,6 @@ Total number of contributors: <!--CONTRIBUTOR COUNT START--> 5 <!--CONTRIBUTOR C
 		</tr>
 		<tr>
             <td align="center">
-                <a href="https://github.com/wbprice">
-                    <img src="https://avatars.githubusercontent.com/u/2590422?v=4" width="100;" alt="wbprice"/>
-                    <br />
-                    <sub><b>Blaine Price</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
-            <td align="center">
                 <a href="https://github.com/ftrotter">
                     <img src="https://avatars.githubusercontent.com/u/83133?v=4" width="100;" alt="ftrotter"/>
                     <br />
