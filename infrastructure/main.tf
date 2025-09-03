@@ -360,7 +360,6 @@ resource "aws_glue_job" "python_shell_job" {
 
   default_arguments = {
     "--job-language"                     = "python" # Default is python
-    # If we have a bunch of python modules that need to read requirements.txt, this could become an HCL lambda
     "--additional-python-modules"        = replace(file(abspath("${path.module}/../etls/loadFIPS/requirements.txt")), "\n", ", ")
     "--MAX_RETRIES"                      = "3"
     "--DB_SECRET_ARN"                    = module.rds.db_instance_master_user_secret_arn
