@@ -70,6 +70,13 @@ Total number of contributors: <!--CONTRIBUTOR COUNT START--> 5 <!--CONTRIBUTOR C
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/IsaacMilarky">
+                    <img src="https://avatars.githubusercontent.com/u/24639268?v=4" width="100;" alt="IsaacMilarky"/>
+                    <br />
+                    <sub><b>Isaac Milarsky</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/sachin-panayil">
                     <img src="https://avatars.githubusercontent.com/u/79382140?v=4" width="100;" alt="sachin-panayil"/>
                     <br />
@@ -77,12 +84,21 @@ Total number of contributors: <!--CONTRIBUTOR COUNT START--> 5 <!--CONTRIBUTOR C
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/IsaacMilarky">
-                    <img src="https://avatars.githubusercontent.com/u/24639268?v=4" width="100;" alt="IsaacMilarky"/>
+                <a href="https://github.com/acme-cms-challenge">
+                    <img src="https://avatars.githubusercontent.com/u/70127703?v=4" width="100;" alt="acme-cms-challenge"/>
                     <br />
-                    <sub><b>Isaac Milarsky</b></sub>
+                    <sub><b>acme-cms-challenge</b></sub>
                 </a>
             </td>
+            <td align="center">
+                <a href="https://github.com/wbprice">
+                    <img src="https://avatars.githubusercontent.com/u/2590422?v=4" width="100;" alt="wbprice"/>
+                    <br />
+                    <sub><b>Blaine Price</b></sub>
+                </a>
+            </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/ftrotter">
                     <img src="https://avatars.githubusercontent.com/u/83133?v=4" width="100;" alt="ftrotter"/>
