@@ -365,6 +365,13 @@ resource "aws_s3_object" "glue_job_script" {
   etag   = filemd5(abspath("${path.module}/../etls/loadFIPS/loadFIPS.py"))
 }
 
+resource "aws_s3_object" "glue_job_script_pyspark" {
+  bucket = aws_s3_bucket.glue_scripts.bucket
+  key    = "scripts/loadNPPES.py"
+  source = abspath("${path.module}/../etls/loadNPPES/loadNPPES.py") # local path
+  etag   = filemd5(abspath("${path.module}/../etls/loadNPPES/loadNPPES.py"))
+}
+
 resource "aws_glue_job" "python_shell_job" {
   name         = "load-fips-python-shell-job"
   description  = "A python job that loads FIPS data"
@@ -389,6 +396,31 @@ resource "aws_glue_job" "python_shell_job" {
     "--DB_HOST"                          = module.rds.db_instance_address
     "--DB_PORT"                          = module.rds.db_instance_port
     "--DB_NAME"                          = var.db_name
+  }
+
+  execution_property {
+    max_concurrent_runs = 1
+  }
+
+  tags = {
+    "ManagedBy" = "AWS"
+  }
+}
+
+resource "aws_glue_job" "pyspark_job" {
+  name = "load-nppes-pyspark-job"
+  description = "A simple pyspark job that moves a single table from one location to another"
+  glue_version = "5.0"
+  role_arn     = aws_iam_role.glue_job_role.arn
+  max_capacity = 2
+  max_retries  = 0
+  timeout      = 2880
+  connections  = []
+
+  command {
+    script_location = "s3://${aws_s3_object.glue_job_script.bucket}/${aws_s3_object.glue_job_script_pyspark.key}"
+    name            = "glueetl"
+    python_version  = "3.9"
   }
 
   execution_property {
