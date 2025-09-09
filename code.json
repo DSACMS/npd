@@ -1,0 +1,78 @@
+{
+  "name": "NPD",
+  "description": "The National Provider and Payer Directory at CMS",
+  "longDescription": "A new Provider and Payer Directory service that will eventually grow to encompass (and probably replace) the functionality of NPPES.",
+  "status": "development",
+  "permissions": {
+    "licenses": [
+      {
+        "URL": "LICENSE",
+        "name": "CC0-1.0"
+      }
+    ],
+    "usageType": "openSource"
+  },
+  "organization": "Centers for Medicare & Medicaid Services",
+  "repositoryURL": "https://github.com/DSACMS/npd",
+  "repositoryHost": "github.com/DSACMS",
+  "repositoryVisibility": "public",
+  "vcs": "git",
+  "laborHours": 7140.95,
+  "reuseFrequency": {
+    "forks": 0
+  },
+  "platforms": [
+    "windows",
+    "mac",
+    "linux"
+  ],
+  "categories": [
+    "healthcare",
+    "collaboration",
+    "knowledge-management"
+  ],
+  "softwareType": "standalone/desktop",
+  "languages": [
+    "HTML",
+    "Python",
+    "CSS",
+    "JavaScript",
+    "Shell"
+  ],
+  "maintenance": "internal",
+  "contractNumber": "0",
+  "date": {
+    "created": "2025-07-01T08:03:32-04:00",
+    "lastModified": "2025-07-28T15:29:39+0000",
+    "metadataLastUpdated": "2025-07-28T15:29:39+0000"
+  },
+  "tags": [
+    "Providers",
+    "NPPES",
+    "Directory"
+  ],
+  "contact": {
+    "email": "opensource@cms.hhs.gov",
+    "name": "CMS Open Source Program Office"
+  },
+  "feedbackMechanisms": [
+    "https://github.com/DSACMS/npd/issues"
+  ],
+  "localisation": "false",
+  "repositoryType": "Tools",
+  "userInput": "Yes",
+  "fismaLevel": "Moderate",
+  "group": "CMS/OA/DSAC",
+  "projects": [
+    "NPPES"
+  ],
+  "systems": [],
+  "upstream": [],
+  "subsetInHealthcare": [
+    "Operational"
+  ],
+  "userType": [
+    "Providers"
+  ],
+  "maturityModelTier": 3
+}

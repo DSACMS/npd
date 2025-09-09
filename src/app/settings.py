@@ -12,6 +12,11 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 from decouple import config
+import os
+import sys
+
+# Detect if tests are being run
+TESTING = 'test' in sys.argv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,21 +26,22 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('NDH_DJANGO_SECRET')
+SECRET_KEY = config('NPD_DJANGO_SECRET')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(config('DEBUG'))
 
 if DEBUG:
-        ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 else:
     ALLOWED_HOSTS = config("DJANGO_ALLOWED_HOSTS").split(',')
 
+INTERNAL_APIS = config("DJANGO_ALLOWED_HOSTS").split(',')
 
 # Application definition
 
 INSTALLED_APPS = [
-      'ndhfhir.apps.NDHFHIRConfig',
+    'npdfhir.apps.NPDFHIRConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,7 +49,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_filters'
 ]
+
+if not TESTING:
+    INSTALLED_APPS.append('debug_toolbar')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -80,15 +90,19 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': config('NDH_DB_ENGINE'),
-        'USER': config('NDH_DB_USER'),
-        'PASSWORD': config('NDH_DB_PASSWORD'),
-        'HOST': config('NDH_DB_HOST'),
-        'NAME': config('NDH_DB_NAME'),
-        'PORT': config('NDH_DB_PORT')
+        'ENGINE': config('NPD_DB_ENGINE'),
+        'USER': config('NPD_DB_USER'),
+        'PASSWORD': config('NPD_DB_PASSWORD'),
+        'HOST': config('NPD_DB_HOST'),
+        'NAME': config('NPD_DB_NAME'),
+        'PORT': config('NPD_DB_PORT'),
+        'OPTIONS': {
+            'options': '-c search_path=npd,public'
+        }
     }
 }
 
+TEST_RUNNER = "npdfhir.tests.SchemaTestRunner"
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -126,7 +140,30 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# STATICFILES_DIRS = [
+#        os.path.join(BASE_DIR, "static"),
+#    ]
+
+# STATICFILES_DIRS = [
+#        os.path.join(BASE_DIR, "static"),
+#    ]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+}
+
+DEBUG_TOOLBAR_CONFIG = {
+    'SHOW_TOOLBAR_CALLBACK': lambda request: DEBUG
+}
+
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.filebased.FileBasedCache",
+        "LOCATION": config('CACHE_LOCATION'),
+    }
+}
