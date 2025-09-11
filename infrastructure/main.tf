@@ -225,6 +225,13 @@ resource "aws_db_subnet_group" "db" {
   subnet_ids = data.aws_subnets.public.ids
 }
 
+data "aws_ec2_managed_prefix_list" "cmsvpn" {
+  filter {
+    name   = "prefix-list-name"
+    values = ["cmscloud-v4-shared-services-prod-1"]
+  }
+}
+
 resource "aws_security_group" "rds_sg" {
   name        = "${var.name}-rds-sg"
   description = "Allow ECS tasks to access RDS"
@@ -242,6 +249,13 @@ resource "aws_security_group" "rds_sg" {
     to_port         = 5432
     protocol        = "tcp"
     security_groups = [aws_security_group.ecs.id]
+  }
+
+  ingress {
+    from_port       = 5432
+    to_port         = 5432
+    protocol        = "tcp"
+    prefix_list_ids = [data.aws_ec2_managed_prefix_list.cmsvpn.id]
   }
 
   egress {
@@ -301,7 +315,7 @@ module "rds" {
   allocated_storage      = 100
   db_name                = var.db_name
   username               = var.db_name
-  publicly_accessible    = true
+  publicly_accessible    = false
   vpc_security_group_ids = [aws_security_group.rds_sg.id]
   db_subnet_group_name   = aws_db_subnet_group.db.name
 }

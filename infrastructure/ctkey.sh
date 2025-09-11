@@ -5,8 +5,12 @@ PROFILE_NAME=ecs-pg-app
 AWS_REGION=us-gov-west-1
 IAM_ROLE=ct-ado-dsac-application-admin
 
-if [ -z "$CTKEY_PASSWORD" ]; then
-    read -s -p "Enter password for $CTKEY_USERNAME :" CTKEY_PASSWORD
+if [ -z "$CTKEY_USERNAME"]; then
+    read -p "Enter ctkey username: " CTKEY_USERNAME
+fi
+
+if [ -z "$CTKEY_PASSWORD"]; then
+    read -s -p "Enter password for $CTKEY_USERNAME: " CTKEY_PASSWORD
 fi
 
 # IAM_ROLE can be overridden optionally
