@@ -102,6 +102,28 @@ resource "aws_iam_role_policy_attachment" "ecs_task_execution" {
   policy_arn = "arn:aws-us-gov:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
 }
 
+resource "aws_iam_policy" "ecs_task_can_access_database_secret" {
+  name = "ecs-task-can-access-database-secret"
+  description = "Allows ECS tasks to access the RDS secret from Secrets Manager"
+  policy = jsondecode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = "secretsmanager:GetSecretValue",
+        Effect = "Allow"
+        Resource = [
+          module.rds.db_instance_master_user_secret_arn
+        ]
+      }
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "ecs_task_can_access_database_secret_attachement" {
+  role = aws_iam_role.ecs_task_execution.name
+  policy_arn = aws_iam_policy.ecs_task_can_access_database_secret
+}
+
 resource "aws_iam_policy" "ecs_task_logs_policy" {
   name        = "ecs-task-logs-policy"
   description = "Allow ECS tasks to write logs to CloudWatch"
@@ -145,7 +167,29 @@ resource "aws_ecs_task_definition" "app" {
       image     = var.container_image
       essential = true
       #   command = ["start"]
-      environment  = []
+      environment  = [
+        {
+          "NPD_DJANGO_SECRET": "TODO",
+          "NPD_DB_NAME": "ndh",
+          "NPD_DB_HOST": module.rds.db_instance_domain,
+          "NPD_DB_PORT": module.rds.db_instance_port,
+          "NPD_DB_ENGINE": "django.db.backends.postgresql",
+          "DJANGO_ALLOWED_HOSTS": "['localhost', '127.0.0.1']",
+          "DJANGO_LOGLEVEL": "WARNING",
+          "NPD_PROJECT_NAME": "ndh",
+          "CACHE_LOCATION": ""
+        }
+      ]
+      secrets = [
+        {
+          name      = "NPD_DB_USER"
+          valueFrom = "${module.rds.db_instance_master_user_secret_arn}:username::"
+        },
+        {
+          name      = "NPD_DB_PASSWORD"
+          valueFrom = "${module.rds.db_instance_master_user_secret_arn}:password::"
+        },
+      ]
       portMappings = [{ containerPort = var.container_port, hostPort = var.container_port }]
       logConfiguration = {
         logDriver = "awslogs"
