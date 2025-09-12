@@ -2,7 +2,8 @@ name: Deploy to Sandbox
 on:
   push:
     branches:
-      - main
+#      - main
+       - wbprice/push-api-image-to-ecr-repo
 
 permissions:
   id-token: write
@@ -25,3 +26,14 @@ jobs:
         run: |
           terraform init
           terraform apply -auto-approve
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+      - name: Build, tag, and push docker image to Amazon ECR
+        env:
+          REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          REPOSITORY: ndh
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
+          docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
