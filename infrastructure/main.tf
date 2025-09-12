@@ -121,7 +121,7 @@ resource "aws_iam_policy" "ecs_task_can_access_database_secret" {
 
 resource "aws_iam_role_policy_attachment" "ecs_task_can_access_database_secret_attachement" {
   role = aws_iam_role.ecs_task_execution.name
-  policy_arn = aws_iam_policy.ecs_task_can_access_database_secret
+  policy_arn = aws_iam_policy.ecs_task_can_access_database_secret.arn
 }
 
 resource "aws_iam_policy" "ecs_task_logs_policy" {
