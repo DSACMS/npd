@@ -57,17 +57,15 @@ class BaseVerifier:
             entry_list (list): list of fhir entities to validate
         """
 
-        violations = 0
         errors = []
         for entry in entry_list:
             try:
                 self.verification_steps(entry)
             except ValidationError as e:
-                violations += 1
                 errors.append(e)
         
-        if violations > 0:
-            print(f"Found {violations} validation errors!")
+        if len(errors) > 0:
+            print(f"Found {len(errors)} validation errors!")
             #Requires python 3.11+
             raise ExceptionGroup("Validation Errors Summary", errors)
 
