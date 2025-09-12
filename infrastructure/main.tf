@@ -307,15 +307,17 @@ module "rds" {
   source  = "terraform-aws-modules/rds/aws"
   version = "6.12.0"
 
-  identifier             = "${var.name}-db"
-  engine                 = "postgres"
-  engine_version         = "17"
-  family                 = "postgres17"
-  instance_class         = var.db_instance_class
-  allocated_storage      = 100
-  db_name                = var.db_name
-  username               = var.db_name
-  publicly_accessible    = false
-  vpc_security_group_ids = [aws_security_group.rds_sg.id]
-  db_subnet_group_name   = aws_db_subnet_group.db.name
+  identifier              = "${var.name}-db"
+  engine                  = "postgres"
+  engine_version          = "17"
+  family                  = "postgres17"
+  instance_class          = var.db_instance_class
+  allocated_storage       = 100
+  db_name                 = var.db_name
+  username                = var.db_name
+  publicly_accessible     = false
+  vpc_security_group_ids  = [aws_security_group.rds_sg.id]
+  db_subnet_group_name    = aws_db_subnet_group.db.name
+  backup_retention_period = 7 # Remove automated snapshots after 7 days
+  backup_window           = "03:00-04:00" # 11PM EST
 }

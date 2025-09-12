@@ -79,17 +79,17 @@ Total number of contributors: <!--CONTRIBUTOR COUNT START--> 7 <!--CONTRIBUTOR C
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/sachin-panayil">
-                    <img src="https://avatars.githubusercontent.com/u/79382140?v=4" width="100;" alt="sachin-panayil"/>
-                    <br />
-                    <sub><b>Sachin Panayil</b></sub>
-                </a>
-            </td>
-            <td align="center">
                 <a href="https://github.com/acme-cms-challenge">
                     <img src="https://avatars.githubusercontent.com/u/70127703?v=4" width="100;" alt="acme-cms-challenge"/>
                     <br />
                     <sub><b>acme-cms-challenge</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/sachin-panayil">
+                    <img src="https://avatars.githubusercontent.com/u/79382140?v=4" width="100;" alt="sachin-panayil"/>
+                    <br />
+                    <sub><b>Sachin Panayil</b></sub>
                 </a>
             </td>
             <td align="center">

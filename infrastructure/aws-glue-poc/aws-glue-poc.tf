@@ -23,14 +23,17 @@ resource "aws_vpc_security_group_egress_rule" "glue_gs_allow_outbound_connection
 
 resource "aws_s3_bucket" "glue_scripts" {
   bucket = "${var.name}-glue-scripts-bucket"
+  force_destroy = true
 }
 
 resource "aws_s3_bucket" "aws_glue_input_bucket" {
   bucket = "${var.name}-glue-s3-input"
+  force_destroy = true
 }
 
 resource "aws_s3_bucket" "aws_glue_output_bucket" {
   bucket = "${var.name}-glue-s3-output"
+  force_destroy = true
 }
 
 resource "aws_glue_catalog_database" "aws_glue_catalog" {
@@ -103,6 +106,7 @@ resource "aws_glue_job" "pyspark_job" {
   glue_version = "5.0"
   role_arn     = aws_iam_role.glue_job_role.arn
   number_of_workers = 2
+  worker_type = "G.1X"
   max_retries  = 0
   timeout      = 2880
   connections  = []
@@ -111,6 +115,10 @@ resource "aws_glue_job" "pyspark_job" {
     script_location = "s3://${aws_s3_object.glue_job_script.bucket}/${aws_s3_object.glue_job_script_pyspark.key}"
     name            = "glueetl"
     python_version  = "3"
+  }
+
+  default_arguments = {
+    "--job-bookmark-option" = "job-bookmark-enable"
   }
 
   execution_property {

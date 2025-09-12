@@ -27,12 +27,13 @@ jobs:
         uses: akhilmhdh/contributors-readme-action@v2.3.10
         env:
           
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN_PAT }}
           
         with:
           readme_path: COMMUNITY.md
           use_username: false
           commit_message: "update contributors information"
+          auto_detect_branch_protection: false
 
       - name: Get contributors count
         id: get_contributors

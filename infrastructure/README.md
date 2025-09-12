@@ -51,6 +51,10 @@ terraform apply
   - You can also specify these in a `.tfvars` file ignored by git
 - Update any task definition parameters that are different for your container
 
+## DSAC Sandbox
+
+This infrastructure lives in the DSAC sandbox. A GitHub Actions workflow [deploy-to-sandbox.yml](../.github/workflows/deploy-to-sandbox.yml) updates the sandbox infrastructure when a PR to `main` is merged.
+
 ## Notes
 
 - This is **not a production configuration**, in particular when it comes to security. It mostly focuses on handling a lot of the annoying footguns when getting started with a deployed dev environment

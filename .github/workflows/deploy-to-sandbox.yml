@@ -1,0 +1,27 @@
+name: Deploy to Sandbox
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@main
+        with:
+          role-to-assume: arn:aws-us-gov:iam::250902968334:role/GithubActionsDeployRole
+          aws-region: us-gov-west-1
+      - name: Configure Terraform
+        uses: hashicorp/setup-terraform@v3
+      - name: Update Infrastructure
+        working-directory: infrastructure
+        run: |
+          terraform init
+          terraform apply -auto-approve

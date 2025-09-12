@@ -13,7 +13,7 @@ class SchemaTestRunner(DiscoverRunner):
 
         # Apply unmanaged tables
         with connection.cursor() as cursor:
-            cursor.execute(open("../db/sql/schemas/npd.sql").read())
+            cursor.execute(open("../db/sql/schemas/V1__initial_npd_schema.sql").read())
             cursor.execute(open("../db/sql/inserts/sample_data.sql").read())
 
         return old_config

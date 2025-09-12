@@ -16,7 +16,7 @@ Django backend that provides a FHIR API for accessing data from the npd database
 ### Local dev
 1. Ensure that either colima (if using macOS) or the docker service is running
 2. Create a `.env` file in this directory, following the template of the `.env_template` file
-    * n.b. ensure that NPD_DB_HOST is set to `host.docker.internal` if using a local postgres instance.
+    * n.b. ensure that NPD_DB_HOST is set to `db` if using a local postgres instance.
 3. Run `docker-compose up --build` initially and following any changes
 4. Happy coding!
 
