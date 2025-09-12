@@ -3,6 +3,7 @@ from fhir.resources.practitioner import Practitioner
 from fhir.resources.bundle import Bundle
 from .models import Npi, OrganizationToName, IndividualToPhone
 from fhir.resources.practitioner import Practitioner, PractitionerQualification
+from fhir.resources.endpoint import Endpoint
 from fhir.resources.humanname import HumanName
 from fhir.resources.identifier import Identifier
 from fhir.resources.contactpoint import ContactPoint
@@ -331,6 +332,68 @@ class PractitionerSerializer(serializers.Serializer):
         if 'taxonomy' in representation.keys():
             practitioner.qualification = representation['taxonomy']
         return practitioner.model_dump()
+
+
+class EndpointSerializer(serializers.Serializer):
+    """
+    Serializer for FHIR Endpoint resources
+    """
+
+    class Meta:
+        fields = ['id', 'address', 'endpoint_type', 'endpoint_instance']
+
+    def to_representation(self, instance):
+        endpoint = Endpoint()
+
+        endpoint.id = str(instance.id)
+        endpoint.identifier = Identifier(
+            system="http://terminology.hl7.org/NamingSystem/npi",
+            value=str(instance.id),
+            type=CodeableConcept(
+                coding=[Coding(
+                    system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                    code="ER",
+                    display="Endpoint Resource"
+                )]
+            ),
+            use='official',
+            period=Period(
+                start="random date",
+                end="random date"
+            )
+        )
+        endpoint.connectionType=CodeableConcept(
+            coding=[Coding(
+                system="",
+                code="",
+                display=""
+            )]
+        )
+        endpoint.name = ""
+        endpoint.description = ""
+        endpoint.environmentType=CodeableConcept(
+            coding=[Coding(
+                system="",
+                code="",
+                display=""
+            )]
+        )
+        endpoint.status = "active"
+        endpoint.managingOrganization = None
+        endpoint.contact = ContactPoint(
+            system="",
+            value="",
+            # use="work" TODO: add email use
+        )
+        endpoint.period = Period(
+            start="",
+            end=""
+        )
+        endpoint.payload = ""
+        endpoint.address = ""
+        endpoint.header = ""
+
+        return endpoint.model_dump()
 
 
 class BundleSerializer(serializers.Serializer):

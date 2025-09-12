@@ -11,6 +11,9 @@ router.register(r'Practitioner', views.FHIRPractitionerViewSet,
 router.register(r'Organization', views.FHIROrganizationViewSet,
                 basename='fhir-organization')
 
+router.register(r'Endpoint', views.EndpointViewSet,
+                basename='fhir-endpoint')
+
 urlpatterns = [
     path("healthCheck", views.health, name="healthCheck"),
     # path('metadata', views.fhir_metadata, name='fhir-metadata'),
