@@ -36,5 +36,6 @@ jobs:
           REPOSITORY: ndh
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG -t $REGISTRY/$REPOSITORY:latest .
+          docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG -t $REGISTRY/$REPOSITORY .
+          docker push $REGISTRY/$REPOSITORY
           docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
