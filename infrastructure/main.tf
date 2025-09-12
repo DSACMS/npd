@@ -105,7 +105,7 @@ resource "aws_iam_role_policy_attachment" "ecs_task_execution" {
 resource "aws_iam_policy" "ecs_task_can_access_database_secret" {
   name = "ecs-task-can-access-database-secret"
   description = "Allows ECS tasks to access the RDS secret from Secrets Manager"
-  policy = jsondecode({
+  policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
       {
