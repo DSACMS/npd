@@ -6,7 +6,6 @@ from fhir.resources.valueset import ValueSet
 from fhir.resources.practitioner import Practitioner 
 from pydantic import ValidationError
 from django.db import connection
-from 
 
 
 def parse_nucc_codes_into_dicts(db_result):
