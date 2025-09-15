@@ -1,7 +1,12 @@
 import traceback
+import re
+import requests
+import time
 from fhir.resources.valueset import ValueSet
+from fhir.resources.practitioner import Practitioner 
 from pydantic import ValidationError
 from django.db import connection
+from 
 
 
 def parse_nucc_codes_into_dicts(db_result):
@@ -22,6 +27,40 @@ def get_nucc_codes_from_db():
         results = cursor.fetchall()
 
     return parse_nucc_codes_into_dicts(results)
+
+
+def is_valid_npi_format(npi_value):
+
+    digits_only = re.sub(r'\D', '', str(npi_value))
+    return len(digits_only) == 10
+
+def verify_npi_against_api(npi_value, max_retries = 3, delay = 0.1):
+    clean_npi = re.sub(r'\D', '', str(npi_value))
+
+    url = f"https://npiregistry.cms.hhs.gov/api/?version=2.1&number={clean_npi}"
+
+    for attempt in range(max_retries):
+        try:
+            # Add a small delay to be respectful to the API
+            if attempt > 0:
+                time.sleep(delay * (2 ** attempt))
+            
+            response = requests.get(url,timeout=10)
+            response.raise_for_status()
+
+            data = response.json()
+            result_count = data.get('result_count',0)
+
+            return result_count > 0
+        except requests.exceptions.RequestException as e:
+            if attempt == max_retries - 1:
+                raise requests.exceptions.RequestException("Not able to verify npi against the api!") from e
+            
+            continue
+    
+    print("Max retries exceeded!")
+    raise Exception("Too many retries")
+
 
 class BaseVerifier:
     """
@@ -96,3 +135,17 @@ class FHIRValueSetVerifier(BaseVerifier):
     def verification_steps(self,data):
         self.fhir_resource_validate_schema(data)
         self.verify_nucc_codes(data)
+
+
+class PractitionerVerifier(BaseVerifier):
+    def __init__(self):
+        self.fhir_resource_type = Practitioner
+
+    def verify_npi(self,npi):
+        if not is_valid_npi_format(npi):
+            raise ValidationError
+        
+        
+        if not verify_npi_against_api(npi):
+            raise ValidationError
+
