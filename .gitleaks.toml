@@ -6,7 +6,7 @@ description = "Global allowlist"
 paths = [
   '''\.gitignore''',
   '''\.gitleaks\.toml''',
-  '''\src/.env'''
+  '''\backend/.env'''
 ]
 commits = [
   "841f5fc02cc5f3e5bc086b645e1fa8ac49fa1a8e", #Old violation of terraform secret upload

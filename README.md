@@ -50,8 +50,8 @@ The `db/` directory contains sql code for the National Provider Directory databa
 ### etls/
 The `etls/` directory contains pipelines that extract, transform, and load (ETL) ancillary data into the database for the FHIR API. Each sub-directory in the `etls/` directory represents a different input data source. Note: these are helper ETLs, specific to the FHIR API. The main ETLs are found in the [Puffin Repo](https://github.com/DSACMS/npd_Puffin). Eventually this folder will store code to map the data from the Core Data Product data model to the provider directory data model.
 
-### src/
-The `src/` directory contains the backend python code for the National Provider Directory APIs (built on Django). The `src/npdfhir/` subdirectory contains the code for the FHIR API. 
+### backend/
+The `backend/` directory contains the backend python code for the National Provider Directory APIs (built on Django). The `backend/npdfhir/` subdirectory contains the code for the FHIR API. 
 
 
 # Development and Software Delivery Lifecycle
@@ -80,7 +80,7 @@ Please note: We are taking an iterative approach to the development of this proj
 1. Ensure that you have a running local postgres instance 
 2. Make sure that you have a working `.env` file as described above
 3. Make sure all python dependencies are installed in a venv or otherwise
-4. Navigate to the `src/` directory and run `./manage.py test`
+4. Navigate to the `backend/` directory and run `./manage.py test`
 
 ## Coding Style and Linters
 

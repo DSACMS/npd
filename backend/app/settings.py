@@ -41,21 +41,23 @@ INTERNAL_APIS = config("DJANGO_ALLOWED_HOSTS").split(',')
 # Application definition
 
 INSTALLED_APPS = [
-    'npdfhir.apps.NPDFHIRConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
-    'django_filters'
+    'django_filters',
+    'npdfhir.apps.NPDFHIRConfig'
 ]
 
 if not TESTING:
     INSTALLED_APPS.append('debug_toolbar')
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -68,6 +70,11 @@ MIDDLEWARE = [
 if not TESTING:
     MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
     # This must come at the end.
+
+# We want the fhir urls to be entirely open
+CORS_URLS_REGEX = r'^/fhir/.*$'
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_METHODS = ['GET']
 
 ROOT_URLCONF = 'app.urls'
 

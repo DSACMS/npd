@@ -24,7 +24,7 @@ Django backend that provides a FHIR API for accessing data from the npd database
 1. Ensure that you have a running local postgres instance 
 2. Make sure that you have a working `.env` file as described above
 3. Make sure all python dependencies are installed in a venv or otherwise
-4. Navigate to the `src/` directory and run `./manage.py test`
+4. Navigate to the `backend/` directory and run `./manage.py test`
 
 
 ## Understanding the Flow of Data through the FHIR API

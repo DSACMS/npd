@@ -15,7 +15,7 @@ services:
       - .env
   db-migrations:
     image: 'flyway/flyway:10'
-    command: migrate
+    command: -connectRetries=10 migrate
     volumes:
       - '../db/sql:/flyway/sql'
     environment:

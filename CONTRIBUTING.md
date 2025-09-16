@@ -60,7 +60,7 @@ We follow the [GitHub Flow Workflow](https://guides.github.com/introduction/flow
 It is an expectation of this team that each feature will have associated unit tests written for it prior to opening a pull request, and that the tests should be passing.
 
 #### Django App Tests
-Django app tests can be found in the `tests.py` folder for the app (e.g. `src/npdfhir/tests.py`) Django tests can be run by navigating to the `src` directory and running `python manage.py test`. You can run specific tests by specifying the class and/or method that you want to test. Please refer to the [Django documentation](https://docs.djangoproject.com/en/5.2/topics/testing/overview/) on testing for additional details.
+Django app tests can be found in the `tests.py` folder for the app (e.g. `backend/npdfhir/tests.py`) Django tests can be run by navigating to the `src` directory and running `python manage.py test`. You can run specific tests by specifying the class and/or method that you want to test. Please refer to the [Django documentation](https://docs.djangoproject.com/en/5.2/topics/testing/overview/) on testing for additional details.
 
 ### Coding Style and Linters
 

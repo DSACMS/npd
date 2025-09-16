@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  web:
+    build: 
+      context: .
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+      - /app/node_modules # Ensure node_modules are not overwritten by the volume mount
+    environment:
+      CHOKIDAR_USEPOLLING: "true" # For file watching in Docker
