@@ -5,10 +5,10 @@ from pydantic import ValidationError
 from django.db import connection
 
 
-def parse_nucc_codes_into_dicts(db_result):
+def parse_codes_into_dicts(db_result):
     codes = {}
-    for nucc_code_record in db_result:
-        codes[nucc_code_record[0]] = nucc_code_record[1]
+    for code_record in db_result:
+        codes[code_record[0]] = code_record[1]
     
     return codes
 
@@ -22,7 +22,20 @@ def get_nucc_codes_from_db():
         cursor.execute(query)
         results = cursor.fetchall()
 
-    return parse_nucc_codes_into_dicts(results)
+    return parse_codes_into_dicts(results)
+
+
+def get_c80_codes_from_db():
+    query = """
+        SELECT code, display_name
+        FROM npd.c80;
+    """
+
+    with connection.cursor() as cursor:
+        cursor.execute(query)
+        results = cursor.fetchall()
+    
+    return parse_codes_into_dicts(results)
 
 def is_valid_npi_format(npi_value):
 
@@ -107,27 +120,29 @@ class FHIRValueSetVerifier(BaseVerifier):
     
     def verify_codes(self,data):
         nucc_codes = get_nucc_codes_from_db()
+        c80_codes = get_c80_codes_from_db()
 
         for include_index, codeItem in enumerate(data['compose']['include']):
             #Check if code in ValueSet is part of nucc
-            if "nucc.org/provider-taxonomy" in codeItem['system']:
-                for concept_index, codeValue in enumerate(codeItem['concept']):
-                    try:
+            
+            for concept_index, codeValue in enumerate(codeItem['concept']):
+                try:
+                    if "nucc.org/provider-taxonomy" in codeItem['system']:
                         assert codeValue['code'] in nucc_codes.keys()
-                    except AssertionError as e:
-                        print(f"Code {codeValue['code']} is not a valid nucc code!")
-                        raise ValidationError(
-                            [
-                                {
-                                    "type": "assertion_error",
-                                    "loc": ('compose','include',include_index,'concept', concept_index,'code',),
-                                    "msg": str(e)
-                                }
-                            ],
-                            model=self.fhir_resource_type,
-                        )
-            elif "snomed.info/sct" in codeItem['system']:
-                raise NotImplementedError
+                    elif "snomed.info/sct" in codeItem['system']:
+                        assert codeValue['code'] in c80_codes.keys()
+                except AssertionError as e:
+                    print(f"Code {codeValue['code']} is not a valid {codeValue['system']} code!")
+                    raise ValidationError(
+                        [
+                            {
+                                "type": "assertion_error",
+                                "loc": ('compose','include',include_index,'concept', concept_index,'code',),
+                                "msg": str(e)
+                            }
+                        ],
+                        model=self.fhir_resource_type,
+                    )
             
     
     def verification_steps(self,data):
