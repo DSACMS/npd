@@ -27,39 +27,11 @@ def get_nucc_codes_from_db():
 
     return parse_nucc_codes_into_dicts(results)
 
-
 def is_valid_npi_format(npi_value):
 
     digits_only = re.sub(r'\D', '', str(npi_value))
-    return len(digits_only) == 10
-
-def verify_npi_against_api(npi_value, max_retries = 3, delay = 0.1):
-    clean_npi = re.sub(r'\D', '', str(npi_value))
-
-    url = f"https://npiregistry.cms.hhs.gov/api/?version=2.1&number={clean_npi}"
-
-    for attempt in range(max_retries):
-        try:
-            # Add a small delay to be respectful to the API
-            if attempt > 0:
-                time.sleep(delay * (2 ** attempt))
-            
-            response = requests.get(url,timeout=10)
-            response.raise_for_status()
-
-            data = response.json()
-            result_count = data.get('result_count',0)
-
-            return result_count > 0
-        except requests.exceptions.RequestException as e:
-            if attempt == max_retries - 1:
-                raise requests.exceptions.RequestException("Not able to verify npi against the api!") from e
-            
-            continue
-    
-    print("Max retries exceeded!")
-    raise Exception("Too many retries")
-
+    npi_num = int(digits_only)
+    return 999999999 <= npi_num <= 10000000000
 
 class BaseVerifier:
     """
@@ -118,7 +90,7 @@ class FHIRValueSetVerifier(BaseVerifier):
     def __init__(self):
         self.fhir_resource_type = ValueSet
     
-    def verify_nucc_codes(self,data):
+    def verify_codes(self,data):
         nucc_codes = get_nucc_codes_from_db()
 
         for codeItem in data['compose']['include']:
@@ -130,10 +102,13 @@ class FHIRValueSetVerifier(BaseVerifier):
                     except AssertionError as e:
                         print(f"Code {codeValue['code']} is not a valid nucc code!")
                         raise ValidationError from e
+            elif "snomed.info/sct" in codeItem['system']:
+                raise NotImplementedError
+            
     
     def verification_steps(self,data):
         self.fhir_resource_validate_schema(data)
-        self.verify_nucc_codes(data)
+        self.verify_codes(data)
 
 
 class PractitionerVerifier(BaseVerifier):
@@ -142,9 +117,5 @@ class PractitionerVerifier(BaseVerifier):
 
     def verify_npi(self,npi):
         if not is_valid_npi_format(npi):
-            raise ValidationError
-        
-        
-        if not verify_npi_against_api(npi):
-            raise ValidationError
+            raise ValueError(f"Invalid npi format for npi!: \n{npi}")
 
