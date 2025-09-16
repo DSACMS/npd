@@ -131,7 +131,7 @@ class FHIRValueSetVerifier(BaseVerifier):
             
     
     def verification_steps(self,data):
-        self.fhir_resource_validate_schema(data)
+        super().verification_steps(data)
         self.verify_codes(data)
 
 
@@ -162,3 +162,12 @@ class PractitionerVerifier(BaseVerifier):
                 ],
                 model=self.fhir_resource_type
             )
+
+    def verify_identifier_code_from_data(self,data):
+        for identifier_index, identifier in enumerate(data['identifier']):
+            if "hl7.org/fhir/sid/us-npi" in identifier['system']:
+                    self.verify_npi(identifier['value'],identifier_index)
+    
+    def verification_steps(self, data):
+        super().verification_steps(data)
+        self.verify_identifier_code_from_data(data)
