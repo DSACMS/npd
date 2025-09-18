@@ -60,6 +60,10 @@ resource "aws_ecr_repository" "app" {
   name = var.name
 }
 
+resource "aws_ecr_repository" "migrations" {
+  name = "${var.name}-migrations"
+}
+
 module "ecs" {
   source  = "terraform-aws-modules/ecs/aws"
   version = "5.12.1"
@@ -102,6 +106,29 @@ resource "aws_iam_role_policy_attachment" "ecs_task_execution" {
   policy_arn = "arn:aws-us-gov:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
 }
 
+resource "aws_iam_policy" "ecs_task_can_access_database_secret" {
+  name = "ecs-task-can-access-database-secret"
+  description = "Allows ECS tasks to access the RDS secret from Secrets Manager"
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = "secretsmanager:GetSecretValue",
+        Effect = "Allow"
+        Resource = [
+          module.rds.db_instance_master_user_secret_arn,
+          aws_secretsmanager_secret.django_secret.arn
+        ]
+      }
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "ecs_task_can_access_database_secret_attachement" {
+  role = aws_iam_role.ecs_task_execution.name
+  policy_arn = aws_iam_policy.ecs_task_can_access_database_secret.arn
+}
+
 resource "aws_iam_policy" "ecs_task_logs_policy" {
   name        = "ecs-task-logs-policy"
   description = "Allow ECS tasks to write logs to CloudWatch"
@@ -131,6 +158,21 @@ resource "aws_cloudwatch_log_group" "logs" {
   name = "/ecs/${var.name}"
 }
 
+data "aws_secretsmanager_random_password" "django_secret_value" {
+  password_length = 20
+}
+
+resource "aws_secretsmanager_secret" "django_secret" {
+  name_prefix = "${var.name}-django-secret"
+  description = "Secret value to use with the Django application"
+}
+
+resource "aws_secretsmanager_secret_version" "django_secret_version" {
+  secret_id = aws_secretsmanager_secret.django_secret.id
+  secret_string_wo = data.aws_secretsmanager_random_password.django_secret_value.random_password
+  secret_string_wo_version = 1
+}
+
 resource "aws_ecs_task_definition" "app" {
   family                   = "${var.name}-task"
   requires_compatibilities = ["FARGATE"]
@@ -140,13 +182,99 @@ resource "aws_ecs_task_definition" "app" {
   execution_role_arn       = aws_iam_role.ecs_task_execution.arn
 
   container_definitions = jsonencode([
+    # In the past, I've put the migration container in a separate task and invoked it manually to avoid the case
+    # where we have (for example) 4 API containers and 4 flyway containers and the 4 flyway containers all try to update
+    # the database at once. Flyway looks like it uses a Postgres advisory lock to solve this
+    # (https://documentation.red-gate.com/fd/flyway-postgresql-transactional-lock-setting-277579114.html).
+    # If we have problems, we can pull this container definition into it's own task and schedule it to run before new
+    # API containers are deployed
+    {
+      name      = "${var.name}-migrations"
+      image     = var.migration_image
+      essential = false
+      command = [ "migrate" ]
+      environment = [
+        {
+          name = "FLYWAY_URL"
+          value = "jdbc:postgresql://${module.rds.db_instance_address}:${module.rds.db_instance_port}/${var.app_db_name}"
+        }
+      ],
+      secrets = [
+        {
+          name      = "FLYWAY_USER"
+          valueFrom = "${module.rds.db_instance_master_user_secret_arn}:username::"
+        },
+        {
+          name      = "FLYWAY_PASSWORD"
+          valueFrom = "${module.rds.db_instance_master_user_secret_arn}:password::"
+        },
+      ]
+      logConfiguration = {
+        logDriver = "awslogs"
+        options = {
+          "awslogs-group"         = "/ecs/${var.name}"
+          "awslogs-region"        = data.aws_region.current.name
+          "awslogs-stream-prefix" = var.name
+        }
+      }
+    },
     {
       name      = var.name
       image     = var.container_image
       essential = true
-      #   command = ["start"]
-      environment  = []
-      portMappings = [{ containerPort = var.container_port, hostPort = var.container_port }]
+      environment  = [
+        {
+          name  = "NPD_DB_NAME"
+          value = var.app_db_name
+        },
+        {
+          name  = "NPD_DB_HOST"
+          value = module.rds.db_instance_address
+        },
+        {
+          name  = "NPD_DB_PORT"
+          value = tostring(module.rds.db_instance_port)
+        },
+        {
+          name  = "NPD_DB_ENGINE"
+          value = "django.db.backends.postgresql"
+        },
+        {
+          name = "DEBUG"
+          value = ""
+        },
+        {
+          name  = "DJANGO_ALLOWED_HOSTS"
+          value = aws_lb.alb.dns_name
+        },
+        {
+          name  = "DJANGO_LOGLEVEL"
+          value = "WARNING"
+        },
+        {
+          name  = "NPD_PROJECT_NAME"
+          value = "ndh"
+        },
+        {
+          name = "CACHE_LOCATION",
+          value = ""
+        }
+      ]
+      secrets = [
+        {
+          name      = "NPD_DJANGO_SECRET"
+          valuefrom = aws_secretsmanager_secret_version.django_secret_version.arn
+        },
+        {
+          name      = "NPD_DB_USER"
+          valueFrom = "${module.rds.db_instance_master_user_secret_arn}:username::"
+        },
+        {
+          name      = "NPD_DB_PASSWORD"
+          valueFrom = "${module.rds.db_instance_master_user_secret_arn}:password::"
+        },
+      ]
+      portMappings = [{ containerPort = var.container_port }]
       logConfiguration = {
         logDriver = "awslogs"
         options = {
@@ -181,7 +309,7 @@ resource "aws_ecs_service" "app" {
   }
 
   load_balancer {
-    target_group_arn = aws_lb_target_group.app.arn
+    target_group_arn = aws_lb_target_group.api.arn
     container_name   = var.name
     container_port   = var.container_port
   }
@@ -274,21 +402,23 @@ resource "aws_lb" "alb" {
   subnets            = data.aws_subnets.public.ids
 }
 
-resource "aws_lb_target_group" "app" {
-  name        = "${var.name}-tg"
+resource "aws_lb_target_group" "api" {
+  name        = "${var.name}-api-tg"
   port        = var.container_port
   protocol    = "HTTP"
   vpc_id      = data.aws_vpc.default.id
   target_type = "ip"
 
   health_check {
-    path                = "/health"
+    path                = "/fhir/healthCheck"
     port                = var.container_port
     interval            = 30
     timeout             = 5
     healthy_threshold   = 2
     unhealthy_threshold = 10
-    matcher             = "200"
+    # TODO: Django is always returning a 400 because Django wants to know what domain/IPs requests are coming from
+    # Setting this to HTTP 400 (Bad Request) until the Django application can be update to handle health check requests.
+    matcher             = "400"
   }
 }
 
@@ -299,7 +429,7 @@ resource "aws_lb_listener" "http" {
 
   default_action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.app.arn
+    target_group_arn = aws_lb_target_group.api.arn
   }
 }
 

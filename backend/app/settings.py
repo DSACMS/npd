@@ -41,6 +41,7 @@ INTERNAL_APIS = config("DJANGO_ALLOWED_HOSTS").split(',')
 # Application definition
 
 INSTALLED_APPS = [
+    'npdfhir.apps.NPDFHIRConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -50,7 +51,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'django_filters',
-    'npdfhir.apps.NPDFHIRConfig'
+    'drf_yasg',
 ]
 
 if not TESTING:
@@ -165,7 +166,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
-    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
 }
 
 DEBUG_TOOLBAR_CONFIG = {

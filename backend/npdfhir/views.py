@@ -1,7 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.contrib.postgres.search import SearchVector
-# from djangp.db.models import FilteredRelation, Q
 from rest_framework import viewsets, generics
 from rest_framework.response import Response
 from rest_framework.pagination import PageNumberPagination
@@ -9,6 +8,34 @@ from django.core.cache import cache
 from .models import Provider, ClinicalOrganization
 from .serializers import PractitionerSerializer, ClinicalOrganizationSerializer, BundleSerializer
 from .mappings import genderMapping
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
+
+default_page_size = 10
+max_page_size = 1000
+page_size_param = openapi.Parameter(
+    'page_size',
+    openapi.IN_QUERY,
+    description="Limit the number of results returned per page",
+    type=openapi.TYPE_STRING,
+    minimum=1,
+    maximum=max_page_size,
+    default=default_page_size
+)
+
+
+def createFilterParam(field: str, display: str = None, enum: list = None):
+    if display is None:
+        display = field.replace('_', ' ')
+    param = openapi.Parameter(
+        field,
+        openapi.IN_QUERY,
+        description=f"Filter by {display}",
+        type=openapi.TYPE_STRING,
+    )
+    if enum is not None:
+        param.enum = enum
+    return param
 
 
 def index(request):
@@ -24,23 +51,21 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
     ViewSet for FHIR Practitioner resources
     """
     # permission_classes = [permissions.IsAuthenticated]
-
+    @swagger_auto_schema(
+        manual_parameters=[
+            page_size_param,
+            createFilterParam('name'),
+            createFilterParam('gender', enum=['Female', 'Male', 'Other']),
+            createFilterParam('practitioner_type')
+        ],
+        responses={200: "Successful response",
+                   404: "Error: The requested Practitioner resource cannot be found."}
+    )
     def list(self, request):
         """
         Return a list of all providers as FHIR Practitioner resources
-        parameters:
-            - name: name
-              description: Practitioner name
-              required: false
-              type: string
-              paramType: query
-            - name: gender
-              description: Practitioner gender; Options: (Female, Male, Other)
-              required: false
-              type: string
-              paramType: query
         """
-        page_size = 10
+        page_size = default_page_size
 
         all_params = request.query_params
 
@@ -52,7 +77,7 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
             if param == 'page_size':
                 try:
                     value = int(value)
-                    if value <= 1000:
+                    if value <= max_page_size:
                         page_size = value
                 except:
                     page_size = page_size
@@ -106,18 +131,20 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
     ViewSet for FHIR Practitioner resources
     """
     # permission_classes = [permissions.IsAuthenticated]
-
+    @swagger_auto_schema(
+        manual_parameters=[
+            page_size_param,
+            createFilterParam('name'),
+            createFilterParam('organization_type')
+        ],
+        responses={200: "Successful response",
+                   404: "Error: The requested Organization resource cannot be found."}
+    )
     def list(self, request):
         """
         Return a list of all providers as FHIR Practitioner resources
-        parameters:
-            - name: name
-              description: Practitioner name
-              required: false
-              type: string
-              paramType: query
         """
-        page_size = 10
+        page_size = default_page_size
 
         all_params = request.query_params
 
@@ -128,7 +155,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
             if param == 'page_size':
                 try:
                     value = int(value)
-                    if value <= 1000:
+                    if value <= max_page_size:
                         page_size = value
                 except:
                     page_size = page_size

@@ -1,4 +1,6 @@
-# Migrations
+# Flyway
+
+## Migrations
 
 This directory contains migrations for the National Provider Directory FHIR API to be managed by Flyway.
 When schema changes are needed, they are to be defined using SQL scripts and placed here following this naming scheme:
@@ -17,7 +19,7 @@ V2_1__correct_new_address_type.sql # note that version number `2_1` is OK!
 V3__add_new_provider.sql
 ```
 
-The contents of each script are a valid SQL command, e.g.
+The contents of each script are a valid SQL statement e.g.
 
 ```sql
 ---
@@ -36,6 +38,15 @@ CREATE TABLE npd.address (
 Flyway keeps track of what migrations have been performed by updating a migration metadata table in the database. 
 For local development, Flyway will check to see if any migrations need to be performed (updating the database accordingly) 
 on `docker compose up`.
+
+## Inserts
+
+This directory contains repeatable migrations that add fixture data. These are also implemented valid SQL statements.
+Repeatable migrations have a different naming scheme:
+
+```bash
+R__<describe-the-sample-data>.sql
+```
 
 ## Reference
 

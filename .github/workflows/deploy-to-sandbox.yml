@@ -18,10 +18,40 @@ jobs:
         with:
           role-to-assume: arn:aws-us-gov:iam::250902968334:role/GithubActionsDeployRole
           aws-region: us-gov-west-1
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+      - name: Build, tag, push migration image to Amazon ECR
+        working-directory: flyway
+        env:
+          REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          REPOSITORY: ndh-migrations
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
+          docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
+          docker tag $REGISTRY/$REPOSITORY:$IMAGE_TAG $REGISTRY/$REPOSITORY
+          docker push $REGISTRY/$REPOSITORY:latest
+      - name: Build, tag, and push docker image to Amazon ECR
+        working-directory: backend
+        env:
+          REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          REPOSITORY: ndh
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
+          docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
+          docker tag $REGISTRY/$REPOSITORY:$IMAGE_TAG $REGISTRY/$REPOSITORY
+          docker push $REGISTRY/$REPOSITORY:latest
       - name: Configure Terraform
         uses: hashicorp/setup-terraform@v3
-      - name: Update Infrastructure
+      - name: Update Infrastructure, Deploy API
         working-directory: infrastructure
+        env:
+          REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          REPOSITORY: ndh
+          IMAGE_TAG: ${{ github.sha }}
         run: |
+          export TF_VAR_container_image=$REGISTRY/$REPOSITORY:$IMAGE_TAG
           terraform init
           terraform apply -auto-approve
