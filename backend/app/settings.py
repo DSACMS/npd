@@ -31,10 +31,7 @@ SECRET_KEY = config('NPD_DJANGO_SECRET')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(config('DEBUG'))
 
-if DEBUG:
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1']
-else:
-    ALLOWED_HOSTS = config("DJANGO_ALLOWED_HOSTS").split(',')
+ALLOWED_HOSTS = config("DJANGO_ALLOWED_HOSTS").split(',')
 
 INTERNAL_APIS = config("DJANGO_ALLOWED_HOSTS").split(',')
 
