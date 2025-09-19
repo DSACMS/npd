@@ -3,6 +3,7 @@ from fhir.resources.practitioner import Practitioner
 from fhir.resources.bundle import Bundle
 from .models import Npi, OrganizationToName, IndividualToPhone
 from fhir.resources.practitioner import Practitioner, PractitionerQualification
+from fhir.resources.endpoint import Endpoint
 from fhir.resources.humanname import HumanName
 from fhir.resources.identifier import Identifier
 from fhir.resources.contactpoint import ContactPoint
@@ -12,6 +13,7 @@ from fhir.resources.period import Period
 from fhir.resources.meta import Meta
 from fhir.resources.address import Address
 from fhir.resources.organization import Organization
+from fhir.resources.reference import Reference
 import sys
 if 'runserver' or 'test' in sys.argv:
     from .cache import other_identifier_type, fhir_name_use, nucc_taxonomy_codes, fhir_phone_use
@@ -223,6 +225,49 @@ class OrganizationNameSerializer(serializers.Serializer):
         fields = ['name', 'is_primary']
 
 
+class EndpointPayloadSeriazlier(serializers.Serializer):
+    class Meta:
+        fields = ['type', 'mime_type']
+
+    def to_representation(self, instance):
+        payload_type = [CodeableConcept(
+            coding=[Coding(
+                system="http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
+                code=instance.payload_type.id,
+                display=instance.payload_type.value
+            )]
+        )]
+
+        payload = {
+            "type": payload_type,
+            "mimeType": ["default"] # instance.mime_type.value
+        }
+
+        return payload
+
+
+class EndpointIdentifierSerialzier(serializers.Serializer):
+    class Meta:
+        fields = ['identifier', 'system', 'value', 'assigner']
+
+    def to_representation(self, instance):
+        endpoint_identifier = Identifier(
+            use="official",
+            type=CodeableConcept(
+                coding=[Coding(
+                    system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                    code="EPD",
+                    display="Endpoint Dispay"
+                )]
+            ),
+            system=instance.system,
+            value=instance.other_id,
+            assigner=Reference(display=str(instance.issuer_id))
+        )
+
+        return endpoint_identifier.model_dump()
+
+
 class OrganizationSerializer(serializers.Serializer):
     name = OrganizationNameSerializer(
         source='organizationtoname_set', many=True, read_only=True)
@@ -331,6 +376,54 @@ class PractitionerSerializer(serializers.Serializer):
         if 'taxonomy' in representation.keys():
             practitioner.qualification = representation['taxonomy']
         return practitioner.model_dump()
+
+
+class EndpointSerializer(serializers.Serializer):
+    payload = EndpointPayloadSeriazlier(
+        source='endpointinstancetopayload_set', many=True, read_only=True)
+    identifier = EndpointIdentifierSerialzier(
+        source='endpointinstancetootherid_set', many=True, read_only=True
+    )
+
+    class Meta:
+        fields = ['id', 'ehr_vendor', 'address', 'endpoint_connection_type', 'name', 'description' 'endpoint_instance']
+
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+
+        connection_type = [CodeableConcept(
+            coding=[Coding(
+                system="http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+                code=instance.endpoint_connection_type.id,
+                display=instance.endpoint_connection_type.display
+            )]
+        )]
+
+        environment_type = [CodeableConcept(
+            coding=[Coding(
+                system="https://hl7.org/fhir/valueset-endpoint-environment.html",
+                code=instance.environment_type.id,
+                display=instance.environment_type.display
+            )]
+        )]
+        
+        endpoint = Endpoint(
+            id=str(instance.id),
+            identifier=representation['identifier'],
+            status="active", # hardcoded for now
+            connectionType=connection_type,
+            name=instance.name,
+            description=instance.description,
+            environmentType=environment_type,
+            # managingOrganization=Reference(managing_organization), ~ organization/npi or whatever we use as the organization identifier
+            # contact=ContactPoint(contact), ~ still gotta figure this out
+            # period=Period(period), ~ still gotta figure this out
+            payload=representation['payload'],  
+            address=instance.address,
+            header=["application/fhir"] # hardcoded for now 
+        )
+
+        return endpoint.model_dump()
 
 
 class BundleSerializer(serializers.Serializer):

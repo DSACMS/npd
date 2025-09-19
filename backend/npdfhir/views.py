@@ -5,8 +5,8 @@ from rest_framework import viewsets, generics
 from rest_framework.response import Response
 from rest_framework.pagination import PageNumberPagination
 from django.core.cache import cache
-from .models import Provider, ClinicalOrganization
-from .serializers import PractitionerSerializer, ClinicalOrganizationSerializer, BundleSerializer
+from .models import Provider, EndpointInstance, ClinicalOrganization
+from .serializers import PractitionerSerializer, ClinicalOrganizationSerializer, BundleSerializer, EndpointSerializer
 from .mappings import genderMapping
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
@@ -44,6 +44,93 @@ def index(request):
 
 def health(request):
     return HttpResponse("healthy")
+
+
+class FHIREndpointViewSet(viewsets.ViewSet):
+    """
+    ViewSet for FHIR Endpoint Resources
+    """
+    
+    @swagger_auto_schema(
+        manual_parameters=[
+            page_size_param,
+            createFilterParam('name'),
+            createFilterParam('connection_type'),
+            createFilterParam('payload_type'),
+            createFilterParam('status'),
+            createFilterParam('organization')
+        ],
+        responses={200: "Successful response",
+                   404: "Error: The requested Endpoint resource cannot be found."}
+    )
+    
+    def list(self, request):
+        """
+        Returns a list of all endpoints as FHIR Endpoint resources
+        """
+
+        page_size = default_page_size
+        all_params = request.query_params
+
+        endpoints = EndpointInstance.objects.all().select_related(
+            'endpoint_connection_type',
+            'environment_type'
+        ).prefetch_related(
+            'endpointinstancetopayload_set',
+            'endpointinstancetopayload_set__payload_type',
+            'endpointinstancetopayload_set__mime_type',
+            'endpointinstancetootherid_set'
+        )
+
+        for param, value in all_params.items():
+            if param == 'page_size':
+                try:
+                    value = int(value)
+                    if value <= max_page_size:
+                        page_size = value
+                except:
+                    page_size = page_size
+            elif param == 'name':
+                endpoints = endpoints.filter(name__icontains=value)
+            elif param == 'connection_type':
+                endpoints = endpoints.filter(endpoint_connection_type__id__icontains=value)
+            elif param == 'payload_type':
+                endpoints = endpoints.filter(
+                    endpointinstancetopayload__payload_type__id__icontains=value
+                ).distinct()
+            elif param == 'status':
+                pass
+            elif param == 'organization':
+                pass
+
+        paginator = PageNumberPagination()
+        paginator.page_size = page_size
+        queryset = paginator.paginate_queryset(endpoints, request)
+
+        # Serialize the bundle
+        serializer = EndpointSerializer(queryset, many=True)
+        bundle = BundleSerializer(serializer)
+
+        # Set appropriate content type for FHIR responses
+        response = paginator.get_paginated_response(bundle.data)
+        response["Content-Type"] = "application/fhir+json"
+
+        return response
+    
+    def retrieve(self, request, pk=None):
+        """
+        Return a single endpoint as a FHIR Endpoint resource 
+        """
+
+        endpoint = get_object_or_404(EndpointInstance, pk=pk)
+
+        serializer = EndpointSerializer(endpoint)
+
+        # Set appropriate content type for FHIR responses
+        response = Response(serializer.data)
+        response["Content-Type"] = "application/fhir+json"
+
+        return response
 
 
 class FHIRPractitionerViewSet(viewsets.ViewSet):
