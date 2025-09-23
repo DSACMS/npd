@@ -1,7 +1,8 @@
+import sys
 from rest_framework import serializers
 from fhir.resources.practitioner import Practitioner
 from fhir.resources.bundle import Bundle
-from .models import Npi, OrganizationToName, IndividualToPhone
+from .models import Npi, OrganizationToName, IndividualToPhone, ProviderToOrganization
 from fhir.resources.practitioner import Practitioner, PractitionerQualification
 from fhir.resources.humanname import HumanName
 from fhir.resources.identifier import Identifier
@@ -12,7 +13,8 @@ from fhir.resources.period import Period
 from fhir.resources.meta import Meta
 from fhir.resources.address import Address
 from fhir.resources.organization import Organization
-import sys
+from fhir.resources.practitionerrole import PractitionerRole
+from fhir.resources.reference import Reference
 if 'runserver' or 'test' in sys.argv:
     from .cache import other_identifier_type, fhir_name_use, nucc_taxonomy_codes, fhir_phone_use
 
@@ -331,6 +333,24 @@ class PractitionerSerializer(serializers.Serializer):
         if 'taxonomy' in representation.keys():
             practitioner.qualification = representation['taxonomy']
         return practitioner.model_dump()
+
+
+class PractitionerRoleSerializer(serializers.Serializer):
+
+    class Meta:
+        model = ProviderToOrganization
+
+    def to_representation(self, instance):
+        request = self.context.get('request')
+        representation = super().to_representation(instance)
+        practitioner_role = PractitionerRole()
+        practitioner_role.id = f'{instance.organization_id}--{instance.individual_id}'
+        practitioner_role.practitioner = Reference(
+            reference=request.build_absolute_uri(f'Practitioner/{instance.individual_id}').replace('PractitionerRole/', ''))
+        practitioner_role.organization = Reference(
+            reference=request.build_absolute_uri(f'Organization/{instance.organization_id}').replace('PractitionerRole/', ''))
+        # practitioner_role.display = f'{instance.individual.individualtoname_set.first_name}'
+        return practitioner_role.model_dump()
 
 
 class BundleSerializer(serializers.Serializer):

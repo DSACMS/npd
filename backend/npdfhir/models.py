@@ -726,17 +726,15 @@ class ProviderToCredential(models.Model):
 class ProviderToLocation(models.Model):
     pk = models.CompositePrimaryKey('individual_id', 'location_id')
     individual = models.ForeignKey('ProviderToOrganization', models.DO_NOTHING)
-    organization_id = models.UUIDField()
-    location = models.ForeignKey(Location, models.DO_NOTHING)
-    other_address = models.ForeignKey(Address, models.DO_NOTHING, blank=True, null=True)
+    other_address = models.ForeignKey(
+        Address, models.DO_NOTHING, blank=True, null=True)
     nucc_code = models.IntegerField(blank=True, null=True)
     specialty_id = models.IntegerField(blank=True, null=True)
-"""
-
 
 class Meta:
     managed = False
     db_table = 'provider_to_location'
+"""
 
 
 class ProviderToOrganization(models.Model):

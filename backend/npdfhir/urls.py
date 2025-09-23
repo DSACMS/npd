@@ -24,6 +24,8 @@ router.register(r'Practitioner', views.FHIRPractitionerViewSet,
                 basename='fhir-practitioner')
 router.register(r'Organization', views.FHIROrganizationViewSet,
                 basename='fhir-organization')
+router.register(r'PractitionerRole', views.FHIRPractitionerRoleViewSet,
+                basename='fhir-practitioner-role')
 
 urlpatterns = [
     path('docs.<format>/',
