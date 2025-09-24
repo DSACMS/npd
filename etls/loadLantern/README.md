@@ -1,0 +1,1 @@
+Note: This is sratch code that was used for a quick and dirty load to get some sample endpoint data into the db. It can be improved upon to be a standalone ETL process, or it can be used as inspiration for simplifying the current Lantern ETL.
