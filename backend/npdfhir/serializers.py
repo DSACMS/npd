@@ -246,13 +246,6 @@ class EndpointIdentifierSerialzier(serializers.Serializer):
     def to_representation(self, instance):
         endpoint_identifier = Identifier(
             use="official",
-            type=CodeableConcept(
-                coding=[Coding(
-                    system="http://terminology.hl7.org/CodeSystem/v2-0203",
-                    code="",  # value omitted for now
-                    display=""  # value omitted for now
-                )]
-            ),
             system=instance.system,
             value=instance.other_id,
             # TODO: Replace with Organization reference
@@ -323,10 +316,9 @@ class ClinicalOrganizationSerializer(serializers.Serializer):
             organization.alias = [name['name'] for name in alias]
         authorized_official = representation['organization']['authorized_official']
         if representation['organization']['address'] != []:
-            authorized_official['address'] = representation['organization']['address'][0]
-        else:
-            if 'address' in authorized_official.keys():
-                del authorized_official['address']
+            organization.address = representation['organization']['address']
+        if 'address' in authorized_official.keys():
+            del authorized_official['address']
         organization.contact = [authorized_official]
         if 'taxonomy' in representation.keys():
             organization.qualification = representation['taxonomy']
