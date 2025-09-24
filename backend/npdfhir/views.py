@@ -26,7 +26,7 @@ page_size_param = openapi.Parameter(
 
 def createFilterParam(field: str, display: str = None, enum: list = None):
     if display is None:
-        display = field.replace('_', ' ')
+        display = field.replace('_', ' ').replace('.', ' ')
     param = openapi.Parameter(
         field,
         openapi.IN_QUERY,
@@ -134,9 +134,13 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
     @swagger_auto_schema(
         manual_parameters=[
             page_size_param,
-            createFilterParam('name'),
-            createFilterParam('gender', enum=['Female', 'Male', 'Other']),
-            createFilterParam('practitioner_type')
+            createFilterParam('active'),
+            createFilterParam('role'),
+            createFilterParam('practitioner.name'),
+            createFilterParam('practitioner.gender', enum=[
+                              'Female', 'Male', 'Other']),
+            createFilterParam('practitioner.practitioner_type'),
+            createFilterParam('organization.name')
         ],
         responses={200: "Successful response",
                    404: "Error: The requested Practitioner resource cannot be found."}
