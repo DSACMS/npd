@@ -14,6 +14,7 @@ from pathlib import Path
 from decouple import config
 import os
 import sys
+import logging
 
 # Detect if tests are being run
 TESTING = 'test' in sys.argv
@@ -176,6 +177,31 @@ DEBUG_TOOLBAR_CONFIG = {
 CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.filebased.FileBasedCache",
-        "LOCATION": config('CACHE_LOCATION'),
+        "LOCATION": "/var/tmp/django_cache",
     }
+}
+
+SWAGGER_SETTINGS = {
+    'USE_SESSION_AUTH': False
+}
+
+LOG_LEVEL = os.environ.get("LOG_LEVEL", logging.INFO)
+LOGGING = {
+    "version": 1,
+    # This will leave the default Django logging behavior in place
+    "disable_existing_loggers": False,
+    # Custom handler config that gets log messages and outputs them to console
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "level": LOG_LEVEL,
+        },
+    },
+    "loggers": {
+        # Send everything to console
+        "": {
+            "handlers": ["console"],
+            "level": LOG_LEVEL,
+        },
+    },
 }

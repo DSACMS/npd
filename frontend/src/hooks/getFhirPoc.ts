@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-const url = 'http://localhost:8000/fhir/?format=json';
-
+const baseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000"
+const url =  baseUrl + "/fhir/?format=json";
 
 interface UrlList {
     [key: string]: string;

@@ -386,7 +386,9 @@ INSERT INTO npd.fips_state VALUES ('72', 'Puerto Rico', 'PR') ON CONFLICT DO NOT
 INSERT INTO npd.fips_state VALUES ('74', 'U.S. Minor Outlying Islands', 'UM') ON CONFLICT DO NOTHING;
 INSERT INTO npd.fips_state VALUES ('78', 'United States Virgin Islands', 'VI') ON CONFLICT DO NOTHING;
 INSERT INTO npd.fips_state VALUES ('00', 'Unknown', 'NA') ON CONFLICT DO NOTHING;
-
+INSERT INTO npd.fips_state VALUES ('95', 'Armed Forces Americas', 'AA') ON CONFLICT DO NOTHING;
+INSERT INTO npd.fips_state VALUES ('94', 'Armed Forces Europe', 'AE') ON CONFLICT DO NOTHING;
+INSERT INTO npd.fips_state VALUES ('96', 'Armed Forces Pacific', 'AP') ON CONFLICT DO NOTHING;
 
 --
 -- Data for Name: fips_county; Type: TABLE DATA; Schema: npd; Owner: -
@@ -3627,7 +3629,9 @@ INSERT INTO npd.fips_county VALUES ('74300', 'Midway Islands', '74') ON CONFLICT
 INSERT INTO npd.fips_county VALUES ('78010', 'St. Croix Island', '78') ON CONFLICT DO NOTHING;
 INSERT INTO npd.fips_county VALUES ('78020', 'St. John Island', '78') ON CONFLICT DO NOTHING;
 INSERT INTO npd.fips_county VALUES ('78030', 'St. Thomas Island', '78') ON CONFLICT DO NOTHING;
-
+INSERT INTO npd.fips_county VALUES ('95001', 'Armed Forces Americas', '95') ON CONFLICT DO NOTHING;
+INSERT INTO npd.fips_county VALUES ('94001', 'Armed Forces Europe', '94') ON CONFLICT DO NOTHING;
+INSERT INTO npd.fips_county VALUES ('96001', 'Armed Forces Pacific', '96') ON CONFLICT DO NOTHING;
 
 --
 -- Data for Name: iso_country; Type: TABLE DATA; Schema: npd; Owner: -

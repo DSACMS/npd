@@ -50,7 +50,7 @@ USER appuser
 EXPOSE 8000 
 
 # Run Django’s development server
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver", "--insecure", "0.0.0.0:8000"]
 
 # Start the application using Gunicorn
 #CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "3", "app.wsgi:application"]

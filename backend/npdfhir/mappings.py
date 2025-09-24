@@ -17,11 +17,27 @@ class Mapping():
         else:
             return self.mapping.inverse[fhirValue]
 
+    def keys(self, which='fhir'):
+        if which == 'npd':
+            return list(self.mapping.keys())
+        else:
+            return list(self.mapping.inverse.keys())
+
 
 genderMapping = Mapping(
     {
         "F": "Female",
         "M": "Male",
         "O": "Other"
+    }
+)
+
+addressUseMapping = Mapping(
+    {
+        1: "home",
+        2: "work",
+        3: "temp",
+        4: "old",
+        5: "billing"
     }
 )
