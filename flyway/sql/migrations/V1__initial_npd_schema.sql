@@ -674,16 +674,6 @@ CREATE TABLE npd.nucc (
     certifying_board_url text
 );
 
---
--- Name: c80; Type: TABLE; Schema: npd; Owner: -
-
-CREATE TABLE npd.c80 (
-    code character varying(10) NOT NULL,
-    display_name text NOT NULL,
-    definition text,
-    notes text
-);
-
 
 
 --

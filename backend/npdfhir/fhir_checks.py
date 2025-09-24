@@ -64,7 +64,7 @@ def verify_codes(cls,data):
 
             query = """
                 SELECT code, display_name
-                FROM npd.c80;
+                FROM npd.c80_practice_codes;
             """
 
             with connection.cursor() as cursor:
