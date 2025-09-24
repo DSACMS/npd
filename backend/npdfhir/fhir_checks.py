@@ -145,7 +145,7 @@ def verify_identifier_code_from_data(cls,data):
             return 999999999 <= npi_num <= 10000000000
 
         #NPI luhn algo defined here:
-        #https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-practitioner.profile.json.html
+        #https://www.cms.gov/Regulations-and-Guidance/Administrative-Simplification/NationalProvIdentStand/Downloads/NPIcheckdigit.pdf
         def npi_check_luhn_algorithm(npi_value):
             """
             Checks npi value string based on given luhn algorithm
