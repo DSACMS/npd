@@ -10,6 +10,7 @@ from fhir.resources.valueset import ValueSet
 from fhir.resources.practitioner import Practitioner
 from pydantic import ValidationError
 from django.db import connection
+from .models import Nucc, C80PracticeCodes
 
 
 
@@ -25,53 +26,28 @@ def verify_codes(cls,data):
             known valid code
         """
 
-        def parse_codes_into_dicts(db_result):
-            """
-            Parses a db cursor result into a dict with proper keys
-
-            Args:
-                db_result: A list of tuples representing the result of a select
-
-            Returns:
-                dict: Returns a mapping of the codes to what they correspond to in the db
-            """
-            codes = {}
-            for code_record in db_result:
-                codes[code_record[0]] = code_record[1]
-
-            return codes
-
         def get_nucc_codes_from_db():
             """
             Function that fetches nucc codes from the db
             """
 
-            query = """
-                SELECT nucc_code, display_name, nucc_grouping_id
-                FROM npd.nucc_classification;
-            """
+            data = dict(
+                Nucc.objects.values_list("code", "display_name")
+            )
 
-            with connection.cursor() as cursor:
-                cursor.execute(query)
-                results = cursor.fetchall()
+            return data
 
-            return parse_codes_into_dicts(results)
 
         def get_c80_codes_from_db():
             """
             Function that fetches c80 codes from db
             """
 
-            query = """
-                SELECT code, display_name
-                FROM npd.c80_practice_codes;
-            """
+            data = dict(
+                C80PracticeCodes.objects.values_list("code", "display_name")
+            )
 
-            with connection.cursor() as cursor:
-                cursor.execute(query)
-                results = cursor.fetchall()
-
-            return parse_codes_into_dicts(results)
+            return data
 
         nucc_codes = get_nucc_codes_from_db()
         c80_codes = get_c80_codes_from_db()
