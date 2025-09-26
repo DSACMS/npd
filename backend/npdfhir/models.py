@@ -731,10 +731,6 @@ class Meta:
     managed = False
     db_table = 'provider_to_location'
 """
-    class Meta:
-        managed = False
-        db_table = 'provider_to_location'
-"""
 
 
 class ProviderToOrganization(models.Model):
