@@ -26,8 +26,7 @@ class Address(models.Model):
 
 
 class AddressInternational(models.Model):
-    id = models.UUIDField(primary_key=True)
-    input_id = models.CharField(max_length=36, blank=True, null=True)
+    id = models.CharField(primary_key=True, max_length=10)
     country_code = models.ForeignKey(
         'IsoCountry', models.DO_NOTHING, db_column='country_code')
     geocode = models.CharField(max_length=4, blank=True, null=True)
@@ -70,10 +69,7 @@ class AddressInternational(models.Model):
 
 
 class AddressNonstandard(models.Model):
-    id = models.UUIDField(primary_key=True)
-    input_id = models.CharField(max_length=36, blank=True, null=True)
-    input_index = models.IntegerField(blank=True, null=True)
-    candidate_index = models.IntegerField(blank=True, null=True)
+    id = models.CharField(primary_key=True, max_length=10)
     addressee = models.CharField(max_length=64, blank=True, null=True)
     delivery_line_1 = models.CharField(max_length=64)
     delivery_line_2 = models.CharField(max_length=64, blank=True, null=True)
@@ -93,19 +89,16 @@ class AddressNonstandard(models.Model):
 
 
 class AddressUs(models.Model):
-    id = models.UUIDField(primary_key=True)
-    input_id = models.CharField(max_length=36, blank=True, null=True)
-    input_index = models.IntegerField(blank=True, null=True)
-    candidate_index = models.IntegerField(blank=True, null=True)
+    id = models.CharField(primary_key=True, max_length=10)
     addressee = models.CharField(max_length=64, blank=True, null=True)
-    delivery_line_1 = models.CharField(max_length=64, blank=True, null=True)
+    delivery_line_1 = models.CharField(max_length=64)
     delivery_line_2 = models.CharField(max_length=64, blank=True, null=True)
     last_line = models.CharField(max_length=64, blank=True, null=True)
     delivery_point_barcode = models.CharField(
         max_length=12, blank=True, null=True)
     urbanization = models.CharField(max_length=64, blank=True, null=True)
-    primary_number = models.CharField(max_length=30)
-    street_name = models.CharField(max_length=64)
+    primary_number = models.CharField(max_length=30, blank=True, null=True)
+    street_name = models.CharField(max_length=64, blank=True, null=True)
     street_predirection = models.CharField(
         max_length=16, blank=True, null=True)
     street_postdirection = models.CharField(
@@ -132,7 +125,7 @@ class AddressUs(models.Model):
     record_type = models.CharField(max_length=1, blank=True, null=True)
     zip_type = models.CharField(max_length=32, blank=True, null=True)
     county_code = models.ForeignKey(
-        'FipsCounty', models.DO_NOTHING, db_column='county_code')
+        'FipsCounty', models.DO_NOTHING, db_column='county_code', blank=True, null=True)
     ews_match = models.CharField(max_length=5, blank=True, null=True)
     carrier_route = models.CharField(max_length=4, blank=True, null=True)
     congressional_district = models.CharField(
@@ -711,11 +704,14 @@ class ProviderEducation(models.Model):
 
 """
 class ProviderToCredential(models.Model):
-    pk = models.CompositePrimaryKey('npi', 'license_number', 'state_code', 'nucc_code')
-    npi = models.ForeignKey('ProviderToTaxonomy', models.DO_NOTHING, db_column='npi')
+    pk = models.CompositePrimaryKey(
+        'npi', 'license_number', 'state_code', 'nucc_code')
+    npi = models.ForeignKey('ProviderToTaxonomy',
+                            models.DO_NOTHING, db_column='npi')
     credential_type = models.ForeignKey(CredentialType, models.DO_NOTHING)
     license_number = models.CharField(max_length=20)
-    state_code = models.ForeignKey(FipsState, models.DO_NOTHING, db_column='state_code')
+    state_code = models.ForeignKey(
+        FipsState, models.DO_NOTHING, db_column='state_code')
     nucc_code = models.CharField(max_length=10)
 
     class Meta:
@@ -734,6 +730,10 @@ class ProviderToLocation(models.Model):
 class Meta:
     managed = False
     db_table = 'provider_to_location'
+"""
+    class Meta:
+        managed = False
+        db_table = 'provider_to_location'
 """
 
 
