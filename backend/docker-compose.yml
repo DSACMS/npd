@@ -6,7 +6,7 @@ services:
       POSTGRES_USER: ${NPD_DB_USER}
       POSTGRES_PASSWORD: ${NPD_DB_PASSWORD}
     ports:
-      - '5432:5432'
+      - '${NPD_DB_PORT}:5432'
     volumes:
       - 'postgres_data:/var/lib/postgresql/data'
     networks:
@@ -19,7 +19,7 @@ services:
     volumes:
       - '../flyway/sql:/flyway/sql'
     environment:
-      FLYWAY_URL: jdbc:postgresql://${NPD_DB_HOST}:${NPD_DB_PORT}/${NPD_DB_NAME}
+      FLYWAY_URL: jdbc:postgresql://${NPD_DB_HOST}:5432/${NPD_DB_NAME}
       FLYWAY_USER: ${NPD_DB_USER}
       FLYWAY_PASSWORD: ${NPD_DB_PASSWORD}
     networks:
@@ -48,11 +48,12 @@ services:
       NPD_DB_USER: ${NPD_DB_USER}
       NPD_DB_PASSWORD: ${NPD_DB_PASSWORD}
       NPD_DB_HOST: ${NPD_DB_HOST}
-      NPD_DB_PORT: ${NPD_DB_PORT}
+      NPD_DB_PORT: 5432
     env_file:
       - .env
     volumes:
       - '.:/app'
+      - ./artifacts:/artifacts
 volumes:
   postgres_data:
 networks:

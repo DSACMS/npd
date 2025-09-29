@@ -123,7 +123,7 @@ DATABASES = {
 
 TEST_RUNNER = 'xmlrunner.extra.djangotestrunner.XMLTestRunner'
 # Directory where XML reports will be written
-TEST_OUTPUT_DIR = '/tmp/test-reports'
+TEST_OUTPUT_DIR = './artifacts/test-reports'
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators

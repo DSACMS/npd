@@ -1,12 +1,20 @@
 # Makefile
 
 # Default target
-.PHONY: test clean
+.PHONY: dev-up dev-down test clean
+
+dev-up:
+	@echo "Running containers in dev mode..."
+	@docker-compose up -d --build
+
+dev-down:
+	@echo "Shutting down dev containers..."
+	@docker-compose down 
+
 
 test:
 	@echo "Running tests..."
-	@sudo docker-compose -f docker-compose-test.yml up -d db-test db-migrations
-	@sudo docker-compose -f docker-compose-test.yml up --build django-test
+	@docker-compose exec django-web python manage.py test
 	@echo "Tests completed!"
 
 clean:
