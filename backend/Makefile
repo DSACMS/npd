@@ -5,16 +5,16 @@
 
 dev-up:
 	@echo "Running containers in dev mode..."
-	@docker-compose up -d --build
+	@docker compose up -d --build
 
 dev-down:
 	@echo "Shutting down dev containers..."
-	@docker-compose down 
+	@docker compose down 
 
 
 test:
 	@echo "Running tests..."
-	@docker-compose exec django-web python manage.py test
+	@docker compose exec django-web python manage.py test
 	@echo "Tests completed!"
 
 clean:
