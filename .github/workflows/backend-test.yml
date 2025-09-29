@@ -24,7 +24,9 @@ jobs:
 
       - name: Build and run tests
         run: |
+          make dev-up
           make test
+          make dev-down
 
       - name: Upload test results as artifact
         uses: actions/upload-artifact@v4
