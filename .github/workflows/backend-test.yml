@@ -23,6 +23,18 @@ jobs:
         uses: docker/setup-compose-action@v1
 
       - name: Build and run tests
+        env:
+          NPD_DJANGO_SECRET: ${{ secrets.NPD_DJANGO_SECRET }}
+          NPD_DB_USER: ${{ secrets.NPD_DB_TEST_USER }}
+          NPD_DB_PASSWORD: ${{ secrets.NPD_TEST_DB_PASSWORD }}
+          NPD_DB_HOST: ${{ vars.NPD_DB_TEST_HOST }}
+          NPD_DB_NAME: ${{ vars.NPD_DB_TEST_NAME }}
+          NPD_DB_PORT: ${{ vars.NPD_DB_TEST_PORT }}
+          NPD_DB_ENGINE: ${{ vars.NPD_DB_TEST_ENGINE }}
+          DEBUG: ${{ vars.TEST_DEBUG }}
+          DJANGO_ALLOWED_HOSTS: ${{ vars.DJANGO_ALLOWED_HOSTS }}
+          DJANGO_LOGLEVEL: ${{ vars.DJANGO_TEST_LOGLEVEL }}
+          NPD_PROJECT_NAME: ${{ vars.DJANGO_TEST_PROJECT_NAME }}
         run: |
           make dev-up
           make test
