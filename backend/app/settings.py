@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
     'drf_yasg',
+    'xmlrunner',
 ]
 
 if not TESTING:
@@ -109,13 +110,20 @@ DATABASES = {
         'HOST': config('NPD_DB_HOST'),
         'NAME': config('NPD_DB_NAME'),
         'PORT': config('NPD_DB_PORT'),
+        "TEST": {
+            # Django will create a new test DB with this name prefix
+            "NAME": f"{os.getenv('NPD_DB_NAME', 'npd')}",
+            "MIRROR": "default",                 # optional: avoids creating a test DB
+        },
         'OPTIONS': {
             'options': '-c search_path=npd,public'
         }
     }
 }
 
-TEST_RUNNER = "npdfhir.tests.SchemaTestRunner"
+TEST_RUNNER = 'xmlrunner.extra.djangotestrunner.XMLTestRunner'
+# Directory where XML reports will be written
+TEST_OUTPUT_DIR = './artifacts/test-reports'
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators

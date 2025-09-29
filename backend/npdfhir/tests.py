@@ -6,21 +6,6 @@ from django.db import connection
 from .cache import cacheData
 # I can't explain why, but we need to import cacheData here. I think we can remove this once we move to the docker db setup
 
-
-class SchemaTestRunner(DiscoverRunner):
-    def setup_databases(self, **kwargs):
-        old_config = super().setup_databases(**kwargs)
-
-        # Apply unmanaged tables
-        with connection.cursor() as cursor:
-            cursor.execute(
-                open("../flyway/sql/schemas/V1__initial_npd_schema.sql").read())
-            cursor.execute(
-                open("../flyway/sql/inserts/sample_data.sql").read())
-
-        return old_config
-
-
 def get_female_npis(npi_list):
     """
     Given a list of NPI numbers, return the subset that are female.

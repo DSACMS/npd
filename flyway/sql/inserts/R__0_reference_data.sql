@@ -5731,6 +5731,11 @@ INSERT INTO npd.payload_type VALUES ('urn:hl7-org:sdwg:ccda-nonXMLBody:2.2', 'cc
 -- Data for Name: relationship_type; Type: TABLE DATA; Schema: npd; Owner: -
 --
 
+INSERT INTO npd.relationship_type VALUES (1, 'address-based') ON CONFLICT DO NOTHING;
+INSERT INTO npd.relationship_type VALUES (2, 'assigning') ON CONFLICT DO NOTHING;
+INSERT INTO npd.relationship_type VALUES (3, 'billed together') ON CONFLICT DO NOTHING;
+INSERT INTO npd.relationship_type VALUES (4, 'ehr vendor') ON CONFLICT DO NOTHING;
+
 
 
 --

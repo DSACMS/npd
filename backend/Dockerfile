@@ -3,7 +3,11 @@ FROM python:3.13-slim AS builder
  
 # Create the app directory
 RUN mkdir /app
- 
+
+#Create directory to store testing artifacts
+RUN mkdir /artifacts
+
+
 # Set the working directory inside the container
 WORKDIR /app
  
