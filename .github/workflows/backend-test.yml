@@ -22,21 +22,6 @@ jobs:
       - name: Set up Docker Compose
         uses: docker/setup-compose-action@v1
 
-      - name: Create .env file
-        run: |
-          cat <<EOF > .env
-          NPD_DJANGO_SECRET=asdf
-          NPD_DB_USER='nph_test'
-          NPD_DB_PASSWORD='postgres_password'
-          NPD_DB_HOST='db'
-          NPD_DB_NAME='npd_test'
-          NPD_DB_PORT='5432'
-          NPD_DB_ENGINE='django.db.backends.postgresql'
-          DEBUG='True'
-          DJANGO_ALLOWED_HOSTS='127.0.0.1'
-          DJANGO_LOGLEVEL='WARNING'
-          EOF
-      
       - name: Create artifacts directory with proper permissions
         run: |
           mkdir -p ./artifacts/test-reports
@@ -44,10 +29,10 @@ jobs:
 
       - name: Build and run tests
         run: |
-          make dev-up
           make test
+
       - name: Upload test results as artifact
         uses: actions/upload-artifact@v4
         with:
-            name: test-results
-            path: backend/artifacts/test-reports/*.xml
+          name: test-results
+          path: backend/artifacts/test-reports/*.xml

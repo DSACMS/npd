@@ -1,0 +1,41 @@
+volumes:
+  postgres_data:
+
+networks:
+  npd:
+
+services:
+  db:
+    extends:
+      file: docker-compose.yml
+      service: db
+    environment:
+      POSTGRES_DB: npd_test
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+  db-migrations:
+    extends:
+      file: docker-compose.yml
+      service: db-migrations
+    environment:
+      # db-migrations service
+      FLYWAY_URL: jdbc:postgresql://db:5432/npd_test
+      FLYWAY_USER: postgres
+      FLYWAY_PASSWORD: postgres
+
+  django-web:
+    extends:
+      file: docker-compose.yml
+      service: django-web
+    environment:
+      NPD_DJANGO_SECRET: REPLACE_ME
+      DJANGO_LOGLEVEL: INFO
+      DJANGO_ALLOWED_HOSTS: "['localhost', '127.0.0.1']"
+      DATABASE_ENGINE: 'django.db.backends.postgresql'
+      DEBUG: False
+      NPD_DB_USER: postgres
+      NPD_DB_PASSWORD: postgres
+      NPD_DB_HOST: db
+      NPD_DB_NAME: npd_test
+      NPD_DB_PORT: 5432
