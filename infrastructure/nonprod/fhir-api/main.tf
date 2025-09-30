@@ -21,7 +21,6 @@ resource "aws_ecr_repository" "fhir_api_migrations" {
 }
 
 ## ECS Roles and Policies
-
 resource "aws_iam_role" "fhir_api_role" {
   name = "${var.account_name}-fhir-api-role"
   description = "Defines what AWS actions the FHIR API task is allowed to make"
@@ -129,7 +128,7 @@ resource "aws_ecs_task_definition" "app" {
       secrets = [
         {
           name      = "FLYWAY_USER"
-          valueFrom = "${var.account_name}:username::"
+          valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
         },
         {
           name      = "FLYWAY_PASSWORD"
@@ -172,7 +171,7 @@ resource "aws_ecs_task_definition" "app" {
         },
         {
           name  = "DJANGO_ALLOWED_HOSTS"
-          value = var.allowed_hosts
+          value = join(",", aws_lb.alb.dns_name)
         },
         {
           name  = "DJANGO_LOGLEVEL"
@@ -221,3 +220,31 @@ resource "aws_ecs_task_definition" "app" {
     }
   ])
 }
+
+# ECS Service
+
+resource "aws_ecs_service" "app" {
+  name            = "${var.account_name}-fhir-api-service"
+  cluster         = var.ecs.cluster_id
+  task_definition = aws_ecs_task_definition.app.arn
+  launch_type     = "FARGATE"
+  desired_count   = 1
+
+  network_configuration {
+    subnets          = var.subnets
+    security_groups  = var.security_groups
+    assign_public_ip = false
+  }
+
+  load_balancer {
+    target_group_arn = aws_lb_target_group.api.arn
+    container_name   = var.name
+    container_port   = var.container_port
+  }
+}
+
+# Load Balancer Configuration
+
+
+
+resource

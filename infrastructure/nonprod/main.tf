@@ -104,8 +104,10 @@ module "fhir-api" {
   account_name             = local.account_name
   app_db_name              = "npd"
   db                       = module.api-db
+  ecs                      = module.ecs
   fhir_api_migration_image = var.migration_image
   fhir_api_image           = var.fhir_api_image
-  allowed_hosts            = []
+  subnets                  = module.networking.db_subnets
+  security_groups           = [module.networking.api_security_group_id]
 }
 

@@ -50,19 +50,10 @@ resource "aws_security_group" "fhir_api_alb" {
 
 resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_fhir_api_alb_http" {
   description = "Allows connections to the FHIR API from the VPN over HTTP"
-  security_group_id = aws_security_group.fhir_api_db_sg.id
+  security_group_id = aws_security_group.fhir_api_alb.id
   ip_protocol = "tcp"
   from_port = 80
   to_port = 80
-  prefix_list_id = data.aws_ec2_managed_prefix_list.cmsvpn.id
-}
-
-resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_fhir_api_alb_https" {
-  description = "Allows connections to the FHIR API from the VPN over HTTPS"
-  security_group_id = aws_security_group.fhir_api_db_sg.id
-  ip_protocol = "tcp"
-  from_port = 443
-  to_port = 443
   prefix_list_id = data.aws_ec2_managed_prefix_list.cmsvpn.id
 }
 
@@ -107,3 +98,14 @@ resource "aws_security_group" "fhir_etl_sg" {
   name        = "${var.account_name}-fhir-etl-sg"
   vpc_id      = var.vpc_id
 }
+
+# Application Load Balancer
+
+resource "aws_lb" "alb" {
+  name               = "${var.account_name}-fhir-api-alb"
+  internal           = false
+  load_balancer_type = "application"
+  security_groups    = [aws_security_group.fhir_api_alb.id]
+  subnets            = data.aws_subnets.public_subnets
+}
+
