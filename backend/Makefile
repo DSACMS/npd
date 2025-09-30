@@ -1,7 +1,28 @@
 # Makefile
 
 # Default target
-.PHONY: build setup up down test test-setup clean
+.PHONY: build setup up down test test-setup clean help
+
+# Default target
+.DEFAULT_GOAL := help
+
+help:
+	@echo "Available targets:"
+	@echo ""
+	@echo "  build        Build Docker containers for the application"
+	@echo "  setup        Set up development environment (build + create dev database + run migrations)"
+	@echo "  up           Start the backend services (available at http://localhost:8000)"
+	@echo "  down         Stop all running backend services"
+	@echo "  test-setup   Set up test database (drop/create test DB + run test migrations)"
+	@echo "  test         Run the full test suite (includes test-setup)"
+	@echo "  clean        Remove cache files and artifacts directory"
+	@echo "  help         Show this help message"
+	@echo ""
+	@echo "Common workflows:"
+	@echo "  First time setup:    make setup && make up"
+	@echo "  Daily development:   make up"
+	@echo "  Run tests:          make test"
+	@echo "  Clean shutdown:     make down && make clean"
 
 build: 
 	@docker compose build
