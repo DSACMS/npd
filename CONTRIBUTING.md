@@ -1,4 +1,8 @@
-<!--- # NOTE: Modify sections marked with `TODO` -->
+| Status | Date | Author | Context | 
+| --- | --- | --- | --- |
+| Drafted | 2029-07-01 | @spopelka-dsac | project scaffolding | 
+| Updated | 2029-08-19 | @spopelka-dsac | adding data and docker notes |
+| Updated | 2029-09-30 | @abachman-dsac | clarification of coding styles and PR details |
 
 # How to Contribute
 
@@ -15,31 +19,42 @@ We encourage you to read this project's CONTRIBUTING policy (you are here), its
 
 ## Getting Started
 
-<!--- TODO: If you have 'good-first-issue' or 'easy' labels for newcomers, mention them here.-->
+Fork the project on github and clone using `git` or the `gh` CLI tool, following the appropriate instructions on the repo in GitHub.
 
 ### Team Specific Guidelines
 
-To be filled in after 8/20 meeting with Alberto.<!-- TODO: This section helps contributors understand any team structure in the project (formal or informal.) Encouraged to point towards the COMMUNITY.md file for further details.-->
+While being fully developed in the open, this project is a hybrid project largely staffed by members of the [DSAC]() team. The team uses an internal Jira instance for planning and tracking work but seeks to hold any discussions relevant to specific Pull Requests in the open.
 
 ### Building dependencies
 
-1. Ensure that either colima (if using macOS) or the docker service is running
-2. Python dependencies are handled via docker, so they will be built when running the `docker-compose up --build` command.
+Python and Javascript dependencies are handled via docker containers, so they will be built when running `docker compose build` or when running `docker compose up` for the first time.
+
+If you prefer to run on host (aka, not inside docker containers), 
 
 ### Building the Project
 
-#### Database Setup
-1. Create a local postgres server
-2. Create a database called npd
-3. Execute the sql in `db/sql/schemas/npd.sql` to create the npd schema and associated tables
-4. Execute the sql in `db/sql/inserts/sample_data.sql` to load sample data into the database.
+The project is currently limited to the Django app located in the `backend/` sub-directory.
 
-#### Django App Setup
-1. Ensure that either colima (if using macOS) or the docker service is running
-2. Create a `.env` file in this directory, following the template of the `.env_template` file
-    * n.b. ensure that NPD_DB_HOST is set to `host.docker.internal` if using a local postgres instance.
-3. Run `docker-compose up --build` initially and following any changes
-4. Navigate to `http://localhost:8000` to ensure that the setup worked (you should see a Docker landing page if DEBUG is set to true).
+The following guidance assumes that you have navigated in your console to the folder. To run a `docker compose` command, for example:
+
+```console
+cd backend/
+docker compose up
+```
+
+#### Database Setup
+
+Run `docker compose up` or `make dev-up` to start the database service, which will create the default development database, and run the `db-migrations` service which will bring it up to date.
+
+#### Running the Application
+
+ANavigate to the `backend/` directory.
+
+1. Ensure that a docker service is running
+2. Create a `.env` file in the `backend/` directory with `cp backend/.env_template backend/.env` 
+    * _note:_ ensure that `NPD_DB_HOST` is set to `host.docker.internal` if using a local postgres instance.
+3. Run `docker compose up` initially to and `docker compose up --build` following any changes to run the backend application
+4. Navigate to `http://localhost:8000/fhir/` or run `curl localhost:8000/fhir` to visit the application. You should see an API documentation landing page. 
 5. Happy coding!
 
 ### Workflow and Branching
@@ -57,21 +72,21 @@ We follow the [GitHub Flow Workflow](https://guides.github.com/introduction/flow
 
 
 ### Testing Conventions
-It is an expectation of this team that each feature will have associated unit tests written for it prior to opening a pull request, and that the tests should be passing.
 
-#### Django App Tests
-Django app tests can be found in the `tests.py` folder for the app (e.g. `backend/npdfhir/tests.py`) Django tests can be run by navigating to the `src` directory and running `python manage.py test`. You can run specific tests by specifying the class and/or method that you want to test. Please refer to the [Django documentation](https://docs.djangoproject.com/en/5.2/topics/testing/overview/) on testing for additional details.
+It is an expectation of this project that each feature will have new automated tests prior to opening a pull request and that all the tests in the repo are passing.
+
+We do not expect 100% test coverage but we will be unlikely to accept PRs which reduce test coverage or new features which do not include automated testing.
+
+#### Backend Tests
+
+The backend test suite can be found in the `tests.py` file currently in `backend/npdfhir/tests.py`. The test suite can be run by navigating to the `backend` folder and running `make test` or `python manage.py test`.
+
+Please refer to the [Django documentation](https://docs.djangoproject.com/en/5.2/topics/testing/overview/) on testing for additional details.
 
 ### Coding Style and Linters
 
-<!--- TODO: HIGHLY ENCOURAGED. Specific tools will vary between different languages/frameworks (e.g. Black for python, eslint for JavaScript, etc...)
-
-1. Mention any style guides you adhere to (e.g. pep8, etc...)
-2. Mention any linters your project uses (e.g. flake8, jslint, etc...)
-3. Mention any naming conventions your project uses (e.g. Semantic Versioning, CamelCasing, etc...)
-4. Mention any other content guidelines the project adheres to (e.g. plainlanguage.gov, etc...)
-
--->
+> [!NOTE]
+> **Proposed**: `ruff` for python, `eslint` for typescript / javascript. Linter + formatter wins all debates. Defaults whenever possible.
 
 ### Writing Issues
 
@@ -93,35 +108,19 @@ When creating an issue please try to adhere to the following format:
 
     see our .github/ISSUE_TEMPLATE.md for more examples.
 
+In this project, issues should be limited to code, development tooling, automation, or site bugs, _NOT_ data quality.
 
-### Writing Pull Requests
+### Creating Commits
 
-Comments should be formatted to a width no greater than 80 columns.
+Files should be exempt of trailing spaces. Tests should pass. Linting should be clean. Code should be well formatted.
 
-Files should be exempt of trailing spaces.
+#### Commit Messages
 
-We adhere to a specific format for commit messages. Please write your commit
+We prefer a specific format for commit messages. Please write your commit
 messages along these guidelines. Please keep the line width no greater than 80
 columns (You can use `fmt -n -p -w 80` to accomplish this).
 
-    module-name: One line description of your change (less than 72 characters)
-
-    Problem
-
-    Explain the context and why you're making that change.  What is the problem
-    you're trying to solve? In some cases there is not a problem and this can be
-    thought of being the motivation for your change.
-
-    Solution
-
-    Describe the modifications you've done.
-
-    Result
-
-    What will change as a result of your pull request? Note that sometimes this
-    section is unnecessary because it is self-explanatory based on the solution.
-
-Some important notes regarding the summary line:
+Some important notes regarding the first line of your commit message:
 
 * Describe what was done; not the result
 * Use the active voice
@@ -130,9 +129,34 @@ Some important notes regarding the summary line:
 * Do not end in a period — this is a title/subject
 * Prefix the subject with its scope
 
-    see our .github/PULL_REQUEST_TEMPLATE.md for more examples.
+#### Pull Request Descriptions 
 
+We prefer 
 
+    module-name: One line description of your change (less than 72 characters)
+
+    ## Problem
+
+    <!-- Explain the context and why you're making that change.  What is the problem
+    you're trying to solve? In some cases there is not a problem and this can be
+    thought of being the motivation for your change. -->
+
+    ## Solution
+
+    <!-- Describe the modifications you've done. -->
+
+    ## Result
+
+    <!-- What will change as a result of your pull request? Note that sometimes this
+    section is unnecessary because it is self-explanatory based on the solution. If this
+    is a visual change, please include screenshots. -->
+
+    ## Testing / Review
+
+    <!-- What guidance do you have for reviewers with respect to testing and reviewing 
+    your changes? -->
+
+See our [.github/PULL_REQUEST_TEMPLATE.md](./.github/PULL_REQUEST_TEMPLATE.md) for the current default template.
 
 ## Reviewing Pull Requests
 
