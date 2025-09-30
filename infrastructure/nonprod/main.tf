@@ -38,7 +38,6 @@ module "networking" {
   account_name = local.account_name
 }
 
-
 ## Application Database
 module "api-db" {
   source  = "terraform-aws-modules/rds/aws"
@@ -52,7 +51,7 @@ module "api-db" {
   allocated_storage       = 20
   publicly_accessible     = false
   username                = "npd"
-  vpc_security_group_ids  = [ module.networking.db_security_group_id ]
+  vpc_security_group_ids  = [module.networking.db_security_group_id]
   db_subnet_group_name    = module.networking.db_subnet_group_name
   backup_retention_period = 7             # Remove automated snapshots after 7 days
   backup_window           = "03:00-04:00" # 11PM EST
@@ -71,13 +70,42 @@ module "etl-db" {
   allocated_storage       = 100
   publicly_accessible     = false
   username                = "npd_etl"
-  vpc_security_group_ids  = [ module.networking.db_security_group_id ]
+  vpc_security_group_ids  = [module.networking.db_security_group_id]
   db_subnet_group_name    = module.networking.db_subnet_group_name
   backup_retention_period = 7             # Remove automated snapshots after 7 days
   backup_window           = "03:00-04:00" # 11PM EST
 }
 
-## FHIR API
-module "fhir-api" {
-  source = "./fhir-api"
+## ECS Cluster
+module "ecs" {
+  source  = "terraform-aws-modules/ecs/aws"
+  version = "5.12.1"
+
+  cluster_name = "${local.account_name}-ecs-cluster"
+
+  fargate_capacity_providers = {
+    FARGATE = {
+      default_capacity_provider_strategy = {
+        weight = 50
+        base   = 20
+      }
+    }
+    FARGATE_SPOT = {
+      default_capacity_provider_strategy = {
+        weight = 50
+      }
+    }
+  }
 }
+
+## FHIR API ECS Task Definitions
+module "fhir-api" {
+  source                   = "./fhir-api"
+  account_name             = local.account_name
+  app_db_name              = "npd"
+  db                       = module.api-db
+  fhir_api_migration_image = var.migration_image
+  fhir_api_image           = var.fhir_api_image
+  allowed_hosts            = []
+}
+
