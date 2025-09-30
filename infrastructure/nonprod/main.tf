@@ -38,14 +38,6 @@ module "networking" {
   account_name = local.account_name
 }
 
-## ECR Repositories
-resource "aws_ecr_repository" "fhir_api" {
-  name = "${local.account_name}-fhir-api"
-}
-
-resource "aws_ecr_repository" "fhir_api_migrations" {
-  name = "${local.account_name}-fhir-api-migrations"
-}
 
 ## Application Database
 module "api-db" {
@@ -85,3 +77,7 @@ module "etl-db" {
   backup_window           = "03:00-04:00" # 11PM EST
 }
 
+## FHIR API
+module "fhir-api" {
+  source = "./fhir-api"
+}
