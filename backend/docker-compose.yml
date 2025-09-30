@@ -8,10 +8,10 @@ services:
     ports:
       - '${NPD_DB_PORT}:5432'
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER"]
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
       interval: 5s
       timeout: 5s
-      retries: 20
+      retries: 30
     volumes:
       - 'postgres_data:/var/lib/postgresql/data'
     networks:
@@ -20,7 +20,7 @@ services:
       - .env
   db-migrations:
     image: 'flyway/flyway:10'
-    command: -connectRetries=10 migrate
+    command: -connectRetries=60 migrate
     volumes:
       - '../flyway/sql:/flyway/sql'
     environment:
