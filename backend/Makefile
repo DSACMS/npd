@@ -13,6 +13,7 @@ help:
 	@echo "  setup        Set up development environment (build + create dev database + run migrations)"
 	@echo "  up           Start the backend web application (available at http://localhost:8000)"
 	@echo "  down         Stop all running backend services"
+	@echo "  migrate      Apply migrations to the development database"
 	@echo "  test-setup   Set up test database (drop/create test DB + run test migrations)"
 	@echo "  test         Run the full test suite (includes test-setup)"
 	@echo "  clean        Remove cache files and artifacts directory"
@@ -20,7 +21,7 @@ help:
 	@echo ""
 	@echo "Common workflows:"
 	@echo "  First time setup:   make setup && make up"
-	@echo "  Daily development:  make up"
+	@echo "  Daily development:  git pull && make migrate && make up"
 	@echo "  Run tests:          make test"
 	@echo "  Clean shutdown:     make down && make clean"
 
@@ -32,6 +33,12 @@ setup: build
 	@docker compose up -d db
 # create development database only if it doesn't already exist
 	@docker compose run --rm -e PGPASSWORD=postgres db sh -c 'psql -h db -U $$NPD_DB_USER -tc "SELECT 1 FROM pg_database WHERE datname = '"'"'$$NPD_DB_NAME'"'"';" | grep -q 1 || psql -h db -U $$NPD_DB_USER -c "CREATE DATABASE $$NPD_DB_NAME"'
+# run all flyway migrations for the development environment
+	@docker compose run --rm db-migrations migrate
+
+migrate:
+	@echo "Migrating the development database..."
+	@docker compose up -d db
 # run all flyway migrations for the development environment
 	@docker compose run --rm db-migrations migrate
 
