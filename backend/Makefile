@@ -11,7 +11,7 @@ help:
 	@echo ""
 	@echo "  build        Build Docker containers for the application"
 	@echo "  setup        Set up development environment (build + create dev database + run migrations)"
-	@echo "  up           Start the backend services (available at http://localhost:8000)"
+	@echo "  up           Start the backend web application (available at http://localhost:8000)"
 	@echo "  down         Stop all running backend services"
 	@echo "  test-setup   Set up test database (drop/create test DB + run test migrations)"
 	@echo "  test         Run the full test suite (includes test-setup)"
@@ -19,8 +19,8 @@ help:
 	@echo "  help         Show this help message"
 	@echo ""
 	@echo "Common workflows:"
-	@echo "  First time setup:    make setup && make up"
-	@echo "  Daily development:   make up"
+	@echo "  First time setup:   make setup && make up"
+	@echo "  Daily development:  make up"
 	@echo "  Run tests:          make test"
 	@echo "  Clean shutdown:     make down && make clean"
 
@@ -33,11 +33,11 @@ setup: build
 # create development database only if it doesn't already exist
 	@docker compose run --rm -e PGPASSWORD=postgres db sh -c 'psql -h db -U $$NPD_DB_USER -tc "SELECT 1 FROM pg_database WHERE datname = '"'"'$$NPD_DB_NAME'"'"';" | grep -q 1 || psql -h db -U $$NPD_DB_USER -c "CREATE DATABASE $$NPD_DB_NAME"'
 # run all flyway migrations for the development environment
-	@docker compose run --rm db-migrations migrate -environment=development
+	@docker compose run --rm db-migrations migrate
 
 up:
 	@echo "Running backend..."
-	@docker compose up -d
+	@docker compose up -d django-web
 	@echo "Backend is running at http://localhost:8000"
 
 down:
@@ -48,14 +48,14 @@ test-setup:
 	@echo "Setting up test database..."
 	@docker compose up -d db
 # drop and create test database
-	@docker compose run --rm --env-from-file ./test.env -e PGPASSWORD=postgres db sh -c 'echo "DROP   $$NPD_DB_NAME"; psql -q -h db -U "$$NPD_DB_USER" -c "DROP DATABASE IF EXISTS $$NPD_DB_NAME"' 
-	@docker compose run --rm --env-from-file ./test.env -e PGPASSWORD=postgres db sh -c 'echo "CREATE $$NPD_DB_NAME"; psql -q -h db -U "$$NPD_DB_USER" -c "CREATE DATABASE $$NPD_DB_NAME"' 
+	@docker compose run --env-from-file ./test.env --rm -e PGPASSWORD=postgres db sh -c 'echo "DROP   $$NPD_DB_NAME"; psql -q -h db -U "$$NPD_DB_USER" -c "DROP DATABASE IF EXISTS $$NPD_DB_NAME"' 
+	@docker compose run --env-from-file ./test.env --rm -e PGPASSWORD=postgres db sh -c 'echo "CREATE $$NPD_DB_NAME"; psql -q -h db -U "$$NPD_DB_USER" -c "CREATE DATABASE $$NPD_DB_NAME"' 
 # run only migrations for the test environment, not bulk data inserts
-	@docker compose run --rm db-migrations migrate -environment=test -locations="filesystem:/flyway/sql/migrations"
+	@docker compose run --env-from-file ./test.env --rm db-migrations migrate -locations="filesystem:/flyway/sql/migrations"
 
 test: test-setup
 	@echo "Running backend tests..."
-	@docker compose run --rm --env-from-file test.env django-web python manage.py test
+	@docker compose run --env-from-file ./test.env --rm django-web python manage.py test
 
 clean:
 	@echo "Cleaning up cache files..."
