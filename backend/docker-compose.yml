@@ -13,24 +13,26 @@ services:
       - npd
     env_file:
       - .env
+
   db-migrations:
     image: 'flyway/flyway:10'
-    command: -connectRetries=10 migrate
     volumes:
       - '../flyway/sql:/flyway/sql'
-    environment:
-      FLYWAY_URL: jdbc:postgresql://${NPD_DB_HOST}:5432/${NPD_DB_NAME}
-      FLYWAY_USER: ${NPD_DB_USER}
-      FLYWAY_PASSWORD: ${NPD_DB_PASSWORD}
+      - '../flyway/conf:/flyway/conf'
     networks:
       - npd
-    depends_on:
+    depends_on: 
       - db
     env_file:
       - .env
+    command: migrate -environment=development 
+
   django-web:
     build: .
     container_name: npd
+    volumes:
+      - '.:/app'
+      - ./artifacts:/artifacts
     ports:
       - '8000:8000'
     depends_on:
@@ -51,10 +53,9 @@ services:
       NPD_DB_PORT: 5432
     env_file:
       - .env
-    volumes:
-      - '.:/app'
-      - ./artifacts:/artifacts
+
 volumes:
   postgres_data:
+
 networks:
   npd:

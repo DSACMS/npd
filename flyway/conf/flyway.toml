@@ -1,0 +1,11 @@
+[environments.development]
+url = "jdbc:postgresql://db:5432/npd"
+connectRetries = 10
+user = "postgres"
+password = "postgres"
+
+[environments.test]
+url = "jdbc:postgresql://db:5432/test_npd"
+connectRetries = 10
+user = "postgres"
+password = "postgres"
