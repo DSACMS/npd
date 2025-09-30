@@ -123,7 +123,7 @@ resource "aws_ecs_task_definition" "app" {
       environment = [
         {
           name = "FLYWAY_URL"
-          value = "jdbc:postgresql://${var.db.db_instance_address}:${var.db.db_instance_port}/${var.db.app_db_name}"
+          value = "jdbc:postgresql://${var.db.db_instance_address}:${var.db.db_instance_port}/${var.app_db_name}"
         }
       ],
       secrets = [
@@ -194,7 +194,7 @@ resource "aws_ecs_task_definition" "app" {
         },
         {
           name      = "NPD_DB_USER"
-          valueFrom = "${var.db.rds.db_instance_master_user_secret_arn}:username::"
+          valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
         },
         {
           name      = "NPD_DB_PASSWORD"
