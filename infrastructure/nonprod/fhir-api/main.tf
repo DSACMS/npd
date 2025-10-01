@@ -1,17 +1,9 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "5.99.1"
-    }
-  }
-}
-
 data "aws_region" "current" {}
 data "aws_partition" "current" {}
 data "aws_caller_identity" "current" {}
 
-## ECR Repositories
+### ECR Repositories
+
 resource "aws_ecr_repository" "fhir_api" {
   name = "${var.account_name}-fhir-api"
 }
@@ -20,7 +12,8 @@ resource "aws_ecr_repository" "fhir_api_migrations" {
   name = "${var.account_name}-fhir-api-migrations"
 }
 
-## ECS Roles and Policies
+### ECS Roles and Policies
+
 resource "aws_iam_role" "fhir_api_role" {
   name = "${var.account_name}-fhir-api-role"
   description = "Defines what AWS actions the FHIR API task is allowed to make"
@@ -82,7 +75,7 @@ resource "aws_iam_role_policy_attachment" "fhir_api_can_create_cloudwatch_logs" 
   role       = aws_iam_role.fhir_api_role.id
 }
 
-## FHIR API Configuration
+### FHIR API Secrets
 
 data "aws_secretsmanager_random_password" "django_secret_value" {
   password_length = 20
@@ -98,6 +91,8 @@ resource "aws_secretsmanager_secret_version" "django_secret_version" {
   secret_string_wo = data.aws_secretsmanager_random_password.django_secret_value.random_password
   secret_string_wo_version = 1
 }
+
+### FHIR API Task Configuration
 
 resource "aws_ecs_task_definition" "app" {
   family                   = "${var.account_name}-fhir-api-task"
@@ -171,7 +166,7 @@ resource "aws_ecs_task_definition" "app" {
         },
         {
           name  = "DJANGO_ALLOWED_HOSTS"
-          value = join(",", aws_lb.alb.dns_name)
+          value = aws_lb.fhir_api_alb.dns_name
         },
         {
           name  = "DJANGO_LOGLEVEL"
@@ -221,30 +216,65 @@ resource "aws_ecs_task_definition" "app" {
   ])
 }
 
-# ECS Service
+### API ECS Service
 
 resource "aws_ecs_service" "app" {
   name            = "${var.account_name}-fhir-api-service"
-  cluster         = var.ecs.cluster_id
+  cluster         = var.ecs_cluster_id
   task_definition = aws_ecs_task_definition.app.arn
   launch_type     = "FARGATE"
   desired_count   = 1
 
   network_configuration {
-    subnets          = var.subnets
-    security_groups  = var.security_groups
+    subnets          = var.networking.db_subnet_ids
+    security_groups  = [ var.networking.api_security_group_id ]
     assign_public_ip = false
   }
 
   load_balancer {
-    target_group_arn = aws_lb_target_group.api.arn
-    container_name   = var.name
-    container_port   = var.container_port
+    target_group_arn = aws_lb_target_group.fhir_api.arn
+    container_name   = "fhir-api"
+    container_port   = 8000
   }
 }
 
-# Load Balancer Configuration
+### API Load Balancer Configuration
 
+resource "aws_lb" "fhir_api_alb" {
+  name               = "${var.account_name}-fhir-api-alb"
+  internal           = false
+  load_balancer_type = "application"
+  security_groups    = [ var.networking.alb_security_group_id ]
+  subnets            = var.networking.public_subnet_ids
+}
 
+resource "aws_lb_target_group" "fhir_api" {
+  name        = "${var.account_name}-fhir-api-tg"
+  port        = 8000
+  protocol    = "HTTP"
+  vpc_id      = var.networking.vpc_id
+  target_type = "ip"
 
-resource
+  health_check {
+    path                = "/fhir/healthCheck"
+    port                = 8000
+    interval            = 30
+    timeout             = 5
+    healthy_threshold   = 2
+    unhealthy_threshold = 10
+    # TODO: Django is always returning a 400 because Django wants to know what domain/IPs requests are coming from
+    # Setting this to HTTP 400 (Bad Request) until the Django application can be update to handle health check requests.
+    matcher             = "200"
+  }
+}
+
+resource "aws_lb_listener" "http" {
+  load_balancer_arn = aws_lb.fhir_api_alb.arn
+  port              = 80
+  protocol          = "HTTP"
+
+  default_action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.fhir_api.arn
+  }
+}

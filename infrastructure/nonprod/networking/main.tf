@@ -99,13 +99,4 @@ resource "aws_security_group" "fhir_etl_sg" {
   vpc_id      = var.vpc_id
 }
 
-# Application Load Balancer
-
-resource "aws_lb" "alb" {
-  name               = "${var.account_name}-fhir-api-alb"
-  internal           = false
-  load_balancer_type = "application"
-  security_groups    = [aws_security_group.fhir_api_alb.id]
-  subnets            = data.aws_subnets.public_subnets
-}
 

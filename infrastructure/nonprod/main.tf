@@ -101,13 +101,23 @@ module "ecs" {
 ## FHIR API ECS Task Definitions
 module "fhir-api" {
   source                   = "./fhir-api"
+
   account_name             = local.account_name
   app_db_name              = "npd"
-  db                       = module.api-db
-  ecs                      = module.ecs
   fhir_api_migration_image = var.migration_image
   fhir_api_image           = var.fhir_api_image
-  subnets                  = module.networking.db_subnets
-  security_groups           = [module.networking.api_security_group_id]
+  ecs_cluster_id           = module.ecs.cluster_id
+  db                       = {
+    db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
+    db_instance_address = module.api-db.db_instance_address
+    db_instance_port = module.api-db.db_instance_port
+  }
+  networking               = {
+    db_subnet_ids = module.networking.db_subnet_ids
+    public_subnet_ids = module.networking.public_subnet_ids
+    alb_security_group_id = module.networking.alb_security_group_id
+    api_security_group_id = module.networking.api_security_group_id
+    vpc_id = module.networking.vpc_id
+  }
 }
 
