@@ -228,7 +228,7 @@ resource "aws_ecs_service" "app" {
 
   load_balancer {
     target_group_arn = aws_lb_target_group.fhir_api.arn
-    container_name   = "fhir-api"
+    container_name   = "${var.account_name}-fhir-api"
     container_port   = 8000
   }
 }
