@@ -9,9 +9,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "npd-terraform"
-    key = "terraform.tfstate"
-    region = "us-gov-west-1"
+    bucket       = "npd-terraform"
+    key          = "terraform.tfstate"
+    region       = "us-gov-west-1"
     use_lockfile = true
   }
 }
@@ -107,7 +107,7 @@ resource "aws_iam_role_policy_attachment" "ecs_task_execution" {
 }
 
 resource "aws_iam_policy" "ecs_task_can_access_database_secret" {
-  name = "ecs-task-can-access-database-secret"
+  name        = "ecs-task-can-access-database-secret"
   description = "Allows ECS tasks to access the RDS secret from Secrets Manager"
   policy = jsonencode({
     Version = "2012-10-17"
@@ -125,7 +125,7 @@ resource "aws_iam_policy" "ecs_task_can_access_database_secret" {
 }
 
 resource "aws_iam_role_policy_attachment" "ecs_task_can_access_database_secret_attachement" {
-  role = aws_iam_role.ecs_task_execution.name
+  role       = aws_iam_role.ecs_task_execution.name
   policy_arn = aws_iam_policy.ecs_task_can_access_database_secret.arn
 }
 
@@ -168,8 +168,8 @@ resource "aws_secretsmanager_secret" "django_secret" {
 }
 
 resource "aws_secretsmanager_secret_version" "django_secret_version" {
-  secret_id = aws_secretsmanager_secret.django_secret.id
-  secret_string_wo = data.aws_secretsmanager_random_password.django_secret_value.random_password
+  secret_id                = aws_secretsmanager_secret.django_secret.id
+  secret_string_wo         = data.aws_secretsmanager_random_password.django_secret_value.random_password
   secret_string_wo_version = 1
 }
 
@@ -192,10 +192,10 @@ resource "aws_ecs_task_definition" "app" {
       name      = "${var.name}-migrations"
       image     = var.migration_image
       essential = false
-      command = [ "migrate" ]
+      command   = ["migrate"]
       environment = [
         {
-          name = "FLYWAY_URL"
+          name  = "FLYWAY_URL"
           value = "jdbc:postgresql://${module.rds.db_instance_address}:${module.rds.db_instance_port}/${var.app_db_name}"
         }
       ],
@@ -222,7 +222,7 @@ resource "aws_ecs_task_definition" "app" {
       name      = var.name
       image     = var.container_image
       essential = true
-      environment  = [
+      environment = [
         {
           name  = "NPD_DB_NAME"
           value = var.app_db_name
@@ -240,7 +240,7 @@ resource "aws_ecs_task_definition" "app" {
           value = "django.db.backends.postgresql"
         },
         {
-          name = "DEBUG"
+          name  = "DEBUG"
           value = ""
         },
         {
@@ -256,7 +256,7 @@ resource "aws_ecs_task_definition" "app" {
           value = "ndh"
         },
         {
-          name = "CACHE_LOCATION",
+          name  = "CACHE_LOCATION",
           value = ""
         }
       ]
@@ -418,7 +418,7 @@ resource "aws_lb_target_group" "api" {
     unhealthy_threshold = 10
     # TODO: Django is always returning a 400 because Django wants to know what domain/IPs requests are coming from
     # Setting this to HTTP 400 (Bad Request) until the Django application can be update to handle health check requests.
-    matcher             = "400"
+    matcher = "400"
   }
 }
 
@@ -448,7 +448,7 @@ module "rds" {
   publicly_accessible     = false
   vpc_security_group_ids  = [aws_security_group.rds_sg.id]
   db_subnet_group_name    = aws_db_subnet_group.db.name
-  backup_retention_period = 7 # Remove automated snapshots after 7 days
+  backup_retention_period = 7             # Remove automated snapshots after 7 days
   backup_window           = "03:00-04:00" # 11PM EST
 }
 

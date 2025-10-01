@@ -13,7 +13,7 @@ resource "aws_ecr_repository" "fhir_api_migrations" {
 
 # ECS Roles and Policies
 resource "aws_iam_role" "fhir_api_role" {
-  name = "${var.account_name}-fhir-api-role"
+  name        = "${var.account_name}-fhir-api-role"
   description = "Defines what AWS actions the FHIR API task is allowed to make"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -26,7 +26,7 @@ resource "aws_iam_role" "fhir_api_role" {
 }
 
 resource "aws_iam_policy" "fhir_api_can_access_fhir_api_db_secret" {
-  name = "${var.account_name}-fhir-api-can-access-fhir-database-secret"
+  name        = "${var.account_name}-fhir-api-can-access-fhir-database-secret"
   description = "Allows ECS to access the RDS secret"
   policy = jsonencode({
     Version = "2012-10-17"
@@ -44,7 +44,7 @@ resource "aws_iam_policy" "fhir_api_can_access_fhir_api_db_secret" {
 }
 
 resource "aws_iam_role_policy_attachment" "fhir_api_can_access_database_secret_attachment" {
-  role = aws_iam_role.fhir_api_role.name
+  role       = aws_iam_role.fhir_api_role.name
   policy_arn = aws_iam_policy.fhir_api_can_access_fhir_api_db_secret.arn
 }
 
@@ -84,8 +84,8 @@ resource "aws_secretsmanager_secret" "django_secret" {
 }
 
 resource "aws_secretsmanager_secret_version" "django_secret_version" {
-  secret_id = aws_secretsmanager_secret.django_secret.id
-  secret_string_wo = data.aws_secretsmanager_random_password.django_secret_value.random_password
+  secret_id                = aws_secretsmanager_secret.django_secret.id
+  secret_string_wo         = data.aws_secretsmanager_random_password.django_secret_value.random_password
   secret_string_wo_version = 1
 }
 
@@ -109,10 +109,10 @@ resource "aws_ecs_task_definition" "app" {
       name      = "${var.account_name}-fhir-api-migration"
       image     = var.fhir_api_migration_image
       essential = false
-      command = [ "migrate" ]
+      command   = ["migrate"]
       environment = [
         {
-          name = "FLYWAY_URL"
+          name  = "FLYWAY_URL"
           value = "jdbc:postgresql://${var.db.db_instance_address}:${var.db.db_instance_port}/${var.app_db_name}"
         }
       ],
@@ -139,7 +139,7 @@ resource "aws_ecs_task_definition" "app" {
       name      = "${var.account_name}-fhir-api",
       image     = var.fhir_api_image
       essential = true
-      environment  = [
+      environment = [
         {
           name  = "NPD_DB_NAME"
           value = var.app_db_name
@@ -157,7 +157,7 @@ resource "aws_ecs_task_definition" "app" {
           value = "django.db.backends.postgresql"
         },
         {
-          name = "DEBUG"
+          name  = "DEBUG"
           value = ""
         },
         {
@@ -173,7 +173,7 @@ resource "aws_ecs_task_definition" "app" {
           value = "ndh"
         },
         {
-          name = "CACHE_LOCATION",
+          name  = "CACHE_LOCATION",
           value = ""
         }
       ]
@@ -222,7 +222,7 @@ resource "aws_ecs_service" "app" {
 
   network_configuration {
     subnets          = var.networking.db_subnet_ids
-    security_groups  = [ var.networking.api_security_group_id ]
+    security_groups  = [var.networking.api_security_group_id]
     assign_public_ip = false
   }
 
@@ -238,7 +238,7 @@ resource "aws_lb" "fhir_api_alb" {
   name               = "${var.account_name}-fhir-api-alb"
   internal           = false
   load_balancer_type = "application"
-  security_groups    = [ var.networking.alb_security_group_id ]
+  security_groups    = [var.networking.alb_security_group_id]
   subnets            = var.networking.public_subnet_ids
 }
 
@@ -258,7 +258,7 @@ resource "aws_lb_target_group" "fhir_api" {
     unhealthy_threshold = 10
     # TODO: Django is always returning a 400 because Django wants to know what domain/IPs requests are coming from
     # Setting this to HTTP 400 (Bad Request) until the Django application can be update to handle health check requests.
-    matcher             = "200"
+    matcher = "200"
   }
 }
 

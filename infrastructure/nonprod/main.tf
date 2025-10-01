@@ -57,7 +57,7 @@ module "api-db" {
   backup_window           = "03:00-04:00" # 11PM EST
 }
 
-### ETL Database
+# ETL Database
 module "etl-db" {
   source  = "terraform-aws-modules/rds/aws"
   version = "6.12.0"
@@ -76,7 +76,7 @@ module "etl-db" {
   backup_window           = "03:00-04:00" # 11PM EST
 }
 
-### ECS Cluster
+# ECS Cluster
 module "ecs" {
   source  = "terraform-aws-modules/ecs/aws"
   version = "5.12.1"
@@ -98,26 +98,36 @@ module "ecs" {
   }
 }
 
-### FHIR API Module
+# FHIR API Module
 module "fhir-api" {
-  source                   = "./fhir-api"
+  source = "./fhir-api"
 
   account_name             = local.account_name
   app_db_name              = "npd"
   fhir_api_migration_image = var.migration_image
   fhir_api_image           = var.fhir_api_image
   ecs_cluster_id           = module.ecs.cluster_id
-  db                       = {
+  db = {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
-    db_instance_address = module.api-db.db_instance_address
-    db_instance_port = module.api-db.db_instance_port
+    db_instance_address                = module.api-db.db_instance_address
+    db_instance_port                   = module.api-db.db_instance_port
   }
-  networking               = {
-    db_subnet_ids = module.networking.db_subnet_ids
-    public_subnet_ids = module.networking.public_subnet_ids
+  networking = {
+    db_subnet_ids         = module.networking.db_subnet_ids
+    public_subnet_ids     = module.networking.public_subnet_ids
     alb_security_group_id = module.networking.alb_security_group_id
     api_security_group_id = module.networking.api_security_group_id
-    vpc_id = module.networking.vpc_id
+    vpc_id                = module.networking.vpc_id
   }
+}
+
+# ETL Modul
+
+# TODO
+
+# Frontend Module
+module "frontend" {
+  source       = "./frontend"
+  account_name = local.account_name
 }
 

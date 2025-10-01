@@ -49,12 +49,12 @@ resource "aws_security_group" "fhir_api_alb" {
 }
 
 resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_fhir_api_alb_http" {
-  description = "Allows connections to the FHIR API from the VPN over HTTP"
+  description       = "Allows connections to the FHIR API from the VPN over HTTP"
   security_group_id = aws_security_group.fhir_api_alb.id
-  ip_protocol = "tcp"
-  from_port = 80
-  to_port = 80
-  prefix_list_id = data.aws_ec2_managed_prefix_list.cmsvpn.id
+  ip_protocol       = "tcp"
+  from_port         = 80
+  to_port           = 80
+  prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
 }
 
 resource "aws_security_group" "fhir_api_sg" {
@@ -70,12 +70,12 @@ resource "aws_security_group" "fhir_api_db_sg" {
 }
 
 resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_fhir_api_db" {
-  description = "Allows connections to the FHIR API database from the VPN"
+  description       = "Allows connections to the FHIR API database from the VPN"
   security_group_id = aws_security_group.fhir_api_db_sg.id
-  ip_protocol = "tcp"
-  from_port = 5432
-  to_port = 5432
-  prefix_list_id = data.aws_ec2_managed_prefix_list.cmsvpn.id
+  ip_protocol       = "tcp"
+  from_port         = 5432
+  to_port           = 5432
+  prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
 }
 
 resource "aws_security_group" "fhir_etl_db_sg" {
@@ -85,12 +85,12 @@ resource "aws_security_group" "fhir_etl_db_sg" {
 }
 
 resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_etl_db" {
-  description = "Allows connections to the ETL database from the VPN"
+  description       = "Allows connections to the ETL database from the VPN"
   security_group_id = aws_security_group.fhir_etl_db_sg.id
-  ip_protocol = "tcp"
-  from_port = 5432
-  to_port = 5432
-  prefix_list_id = data.aws_ec2_managed_prefix_list.cmsvpn.id
+  ip_protocol       = "tcp"
+  from_port         = 5432
+  to_port           = 5432
+  prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
 }
 
 resource "aws_security_group" "fhir_etl_sg" {
