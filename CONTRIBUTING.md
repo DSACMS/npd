@@ -4,6 +4,30 @@
 | Updated | 2029-08-19 | @spopelka-dsac | adding data and docker notes |
 | Updated | 2029-09-30 | @abachman-dsac | clarification of coding styles and PR details |
 
+- [How to Contribute](#how-to-contribute)
+  - [Getting Started](#getting-started)
+    - [Team Specific Guidelines](#team-specific-guidelines)
+    - [Building dependencies](#building-dependencies)
+    - [Building the Project](#building-the-project)
+      - [Database Setup](#database-setup)
+      - [Running the Application](#running-the-application)
+    - [Workflow and Branching](#workflow-and-branching)
+    - [Testing Conventions](#testing-conventions)
+      - [Backend Tests](#backend-tests)
+    - [Coding Style and Linters](#coding-style-and-linters)
+    - [Writing Issues](#writing-issues)
+    - [Creating Commits](#creating-commits)
+      - [Commit Messages](#commit-messages)
+      - [Pull Request Descriptions](#pull-request-descriptions)
+  - [Reviewing Pull Requests](#reviewing-pull-requests)
+  - [Shipping Releases](#shipping-releases)
+  - [Documentation](#documentation)
+  - [Policies](#policies)
+    - [Open Source Policy](#open-source-policy)
+    - [Security and Responsible Disclosure Policy](#security-and-responsible-disclosure-policy)
+  - [Public domain](#public-domain)
+
+
 # How to Contribute
 
 <!-- Basic instructions about where to send patches, check out source code, and get development support.-->
@@ -19,41 +43,55 @@ We encourage you to read this project's CONTRIBUTING policy (you are here), its
 
 ## Getting Started
 
-Fork the project on github and clone using `git` or the `gh` CLI tool, following the appropriate instructions on the repo in GitHub.
-
 ### Team Specific Guidelines
 
-While being fully developed in the open, this project is a hybrid project largely staffed by members of the [DSAC]() team. The team uses an internal Jira instance for planning and tracking work but seeks to hold any discussions relevant to specific Pull Requests in the open.
+While being fully developed in the open, this project is a hybrid project
+largely staffed by members of the [DSAC](https://www.cms.gov/digital-service)
+team. The team uses an internal Jira instance for planning and tracking work but
+seeks to hold any discussions relevant to specific Pull Requests in the open.
 
 ### Building dependencies
 
-Python and Javascript dependencies are handled via docker containers, so they will be built when running `docker compose build` or when running `docker compose up` for the first time.
+Python and Javascript dependencies are handled via docker containers, so they
+will be built when running `docker compose build` or when running `docker
+compose up` for the first time in the `backend/` or `frontend/` directories,
+respectively.
 
-If you prefer to run on host (aka, not inside docker containers), 
+If you prefer to run on host (aka, not inside docker containers), you will have
+to follow the instructions provided by your language tooling for installing
+dependencies locally with `pip` for Python or `npm` for Javascript.
 
 ### Building the Project
 
-The project is currently limited to the Django app located in the `backend/` sub-directory.
+The project is currently limited to a Django (Python) application located in the
+`backend/` sub-directory.
 
-The following guidance assumes that you have navigated in your console to the folder. To run a `docker compose` command, for example:
+The following guidance assumes that you have navigated in your console to the
+respective folder. To run a `docker compose` command, for example:
 
 ```console
-cd backend/
-docker compose up
+$ cd backend/
+$ docker compose up
 ```
 
 #### Database Setup
 
-Run `docker compose up` or `make dev-up` to start the database service, which will create the default development database, and run the `db-migrations` service which will bring it up to date.
+Run `make setup` start `db`, the Postgres database service, which will create
+the default development database, and run `db-migrations`, the Flyway migration
+service which will bring it up to date.
 
 #### Running the Application
 
-ANavigate to the `backend/` directory.
+These instructions are general and do not cover every scenario. [Create an
+issue](https://github.com/DSACMS/npd/issues) on this project or double check
+current documentation if you run into a situation you are unable to solve by
+rebuilding the application from scratch.
 
-1. Ensure that a docker service is running
+0. Navigate to the `backend/` directory.
+1. Ensure that the `db` service is running. Use `docker compose up -d db` if it is not.
 2. Create a `.env` file in the `backend/` directory with `cp backend/.env_template backend/.env` 
-    * _note:_ ensure that `NPD_DB_HOST` is set to `host.docker.internal` if using a local postgres instance.
-3. Run `docker compose up` initially to and `docker compose up --build` following any changes to run the backend application
+    * _note:_ set `NPD_DB_HOST` to `host.docker.internal` if using a host postgres instance from inside a container.
+3. Run `docker compose up` initially to start the web application service and `docker compose up --build` following any substantial updates to the backend application
 4. Navigate to `http://localhost:8000/fhir/` or run `curl localhost:8000/fhir` to visit the application. You should see an API documentation landing page. 
 5. Happy coding!
 
@@ -73,20 +111,26 @@ We follow the [GitHub Flow Workflow](https://guides.github.com/introduction/flow
 
 ### Testing Conventions
 
-It is an expectation of this project that each feature will have new automated tests prior to opening a pull request and that all the tests in the repo are passing.
+It is an expectation of this project that each feature will have new automated
+tests prior to opening a pull request and that all the tests in the repo are
+passing.
 
-We do not expect 100% test coverage but we will be unlikely to accept PRs which reduce test coverage or new features which do not include automated testing.
+We do not expect 100% test coverage but we will be unlikely to accept Pull
+Requests which reduce test coverage or new features which do not include
+updates to the test suite.
 
 #### Backend Tests
 
-The backend test suite can be found in the `tests.py` file currently in `backend/npdfhir/tests.py`. The test suite can be run by navigating to the `backend` folder and running `make test` or `python manage.py test`.
+The backend test suite can be found in the `tests.py` file currently in
+`backend/npdfhir/tests.py`. The test suite can be run by navigating to the
+`backend` folder and running `make test` or `python manage.py test`.
 
 Please refer to the [Django documentation](https://docs.djangoproject.com/en/5.2/topics/testing/overview/) on testing for additional details.
 
 ### Coding Style and Linters
 
 > [!NOTE]
-> **Proposed**: `ruff` for python, `eslint` for typescript / javascript. Linter + formatter wins all debates. Defaults whenever possible.
+> **Proposed**: Use `ruff` for python, `eslint` for typescript / javascript. Linter + formatter wins all debates. Use defaults whenever possible.
 
 ### Writing Issues
 
@@ -108,11 +152,26 @@ When creating an issue please try to adhere to the following format:
 
     see our .github/ISSUE_TEMPLATE.md for more examples.
 
-In this project, issues should be limited to code, development tooling, automation, or site bugs, _NOT_ data quality.
+In this project, issues should be limited to code, development tooling,
+automation, or site bugs, _NOT_ data quality.
 
 ### Creating Commits
 
-Files should be exempt of trailing spaces. Tests should pass. Linting should be clean. Code should be well formatted.
+Files should be exempt of trailing spaces. Tests should pass. Linting should be
+clean. Code should be well formatted by tools whenever possible.
+
+We rely on a fairly large set of automated checks in GitHub to maintain code
+quality, but you will have a better time if you ensure the checks will pass
+before you push. 
+
+Assume that "Squash and
+Merge"](https://github.blog/open-source/git/squash-your-commits/) will be used
+to merge your changes, so don't hesitate to commit early and often in your
+branch.
+
+
+
+
 
 #### Commit Messages
 
@@ -160,7 +219,32 @@ See our [.github/PULL_REQUEST_TEMPLATE.md](./.github/PULL_REQUEST_TEMPLATE.md) f
 
 ## Reviewing Pull Requests
 
-In this high velocity development time, we strive for a 24 hour turnaround on pull requests.
+In this high velocity development time, we strive for a 24 hour turnaround on
+Pull Requests (PRs), but cannot guarantee it.
+
+All PRs will be peer reviewed by one or more CMS team members for code quality,
+adherence to existing project standards, and clarity of thought. Code formatting
+we would prefer to leave to tools better fit for the job and so we will not
+block PRs for formatting issues unless they significantly impact clarity or
+functionality.
+
+A PR is required to have 1 approval from a CMS team member on the project before
+it can be merged into `main`. Authors may not approve their own work.
+
+After an approval is received, the approver or an author of the PR can use the
+"Squash and Merge" feature in GitHub to compress all commits from the branch
+into a single commit before merging.
+
+We value communication over authoritative direction. When changes are requested,
+it is appropriate to engage in discussion using the communication tools provided
+by GitHub to get clarity, explain decisions, etc.
+
+If requested changes are deemed appropriate by both parties, it is expected that
+the author themselves make the changes, not the requestor. That is, the author
+is responsible for completing the PR while the reviewer--a member of the CMS
+team delivering the product who is not the author--is accountable for the
+changes being proposed.
+
 <!--- TODO: Make a brief statement about how pull-requests are reviewed, and who is doing the reviewing. Linking to COMMUNITY.md can help.
 
 Code Review Example
