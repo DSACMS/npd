@@ -1,6 +1,9 @@
 variable "account_name" {}
 variable "app_db_name" {}
 variable "fhir_api_image" {}
+variable "fhir_api_port" {
+  default = 8000
+}
 variable "fhir_api_migration_image" {}
 variable "ecs_cluster_id" {}
 variable "db" {

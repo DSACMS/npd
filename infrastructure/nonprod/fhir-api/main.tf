@@ -191,7 +191,7 @@ resource "aws_ecs_task_definition" "app" {
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:password::"
         },
       ]
-      portMappings = [{ containerPort = 8000 }]
+      portMappings = [{ containerPort = var.fhir_api_port }]
       logConfiguration = {
         logDriver = "awslogs"
         options = {
@@ -229,7 +229,7 @@ resource "aws_ecs_service" "app" {
   load_balancer {
     target_group_arn = aws_lb_target_group.fhir_api.arn
     container_name   = "${var.account_name}-fhir-api"
-    container_port   = 8000
+    container_port   = var.fhir_api_port
   }
 }
 
@@ -244,14 +244,14 @@ resource "aws_lb" "fhir_api_alb" {
 
 resource "aws_lb_target_group" "fhir_api" {
   name        = "${var.account_name}-fhir-api-tg"
-  port        = 8000
+  port        = var.fhir_api_port
   protocol    = "HTTP"
   vpc_id      = var.networking.vpc_id
   target_type = "ip"
 
   health_check {
     path                = "/fhir/healthCheck"
-    port                = 8000
+    port                = var.fhir_api_port
     interval            = 30
     timeout             = 5
     healthy_threshold   = 2
