@@ -8,8 +8,8 @@ Production is `prod`.
 
 ## Update Cadence
 
-- The `dev` environment is updated whenever updates to `main` are merged
-- `test` is updated whenever a release is cut
+- The `dev` environment is to be updated whenever updates to `main` are merged
+- `test` / `uat` is updated whenever a release is cut
 - Releasing to `prod` is manual, requires sign-off from the PM and eng team
 
 ## Naming Conventions

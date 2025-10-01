@@ -98,5 +98,3 @@ resource "aws_security_group" "fhir_etl_sg" {
   name        = "${var.account_name}-fhir-etl-sg"
   vpc_id      = var.vpc_id
 }
-
-
