@@ -34,8 +34,8 @@ npd-east-dev-load-fips-bronze-job
 
 ## Usage
 
-### Pre-deploy (manual)
+### Deploy (manual) (dev by default)
 
 1. Create Terraform backend S3 bucket if it doesn't already exist
 2. Create `.env` file using `.env.template` as starting point
-3. 
+3. `terraform apply`, evaluate the plan, then apply if it all looks good!
