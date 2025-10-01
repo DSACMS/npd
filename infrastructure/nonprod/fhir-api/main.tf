@@ -2,8 +2,7 @@ data "aws_region" "current" {}
 data "aws_partition" "current" {}
 data "aws_caller_identity" "current" {}
 
-### ECR Repositories
-
+# ECR Repositories
 resource "aws_ecr_repository" "fhir_api" {
   name = "${var.account_name}-fhir-api"
 }
@@ -12,8 +11,7 @@ resource "aws_ecr_repository" "fhir_api_migrations" {
   name = "${var.account_name}-fhir-api-migrations"
 }
 
-### ECS Roles and Policies
-
+# ECS Roles and Policies
 resource "aws_iam_role" "fhir_api_role" {
   name = "${var.account_name}-fhir-api-role"
   description = "Defines what AWS actions the FHIR API task is allowed to make"
@@ -75,8 +73,7 @@ resource "aws_iam_role_policy_attachment" "fhir_api_can_create_cloudwatch_logs" 
   role       = aws_iam_role.fhir_api_role.id
 }
 
-### FHIR API Secrets
-
+# FHIR API Secrets
 data "aws_secretsmanager_random_password" "django_secret_value" {
   password_length = 20
 }
@@ -92,8 +89,7 @@ resource "aws_secretsmanager_secret_version" "django_secret_version" {
   secret_string_wo_version = 1
 }
 
-### FHIR API Task Configuration
-
+# FHIR API Task Configuration
 resource "aws_ecs_task_definition" "app" {
   family                   = "${var.account_name}-fhir-api-task"
   requires_compatibilities = ["FARGATE"]
@@ -216,8 +212,7 @@ resource "aws_ecs_task_definition" "app" {
   ])
 }
 
-### API ECS Service
-
+# API ECS Service
 resource "aws_ecs_service" "app" {
   name            = "${var.account_name}-fhir-api-service"
   cluster         = var.ecs_cluster_id
@@ -238,8 +233,7 @@ resource "aws_ecs_service" "app" {
   }
 }
 
-### API Load Balancer Configuration
-
+# API Load Balancer Configuration
 resource "aws_lb" "fhir_api_alb" {
   name               = "${var.account_name}-fhir-api-alb"
   internal           = false

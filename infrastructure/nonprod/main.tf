@@ -38,7 +38,7 @@ module "networking" {
   account_name = local.account_name
 }
 
-## Application Database
+# Application Database
 module "api-db" {
   source  = "terraform-aws-modules/rds/aws"
   version = "6.12.0"
@@ -57,7 +57,7 @@ module "api-db" {
   backup_window           = "03:00-04:00" # 11PM EST
 }
 
-## ETL Database
+### ETL Database
 module "etl-db" {
   source  = "terraform-aws-modules/rds/aws"
   version = "6.12.0"
@@ -76,7 +76,7 @@ module "etl-db" {
   backup_window           = "03:00-04:00" # 11PM EST
 }
 
-## ECS Cluster
+### ECS Cluster
 module "ecs" {
   source  = "terraform-aws-modules/ecs/aws"
   version = "5.12.1"
@@ -98,7 +98,7 @@ module "ecs" {
   }
 }
 
-## FHIR API ECS Task Definitions
+### FHIR API Module
 module "fhir-api" {
   source                   = "./fhir-api"
 
