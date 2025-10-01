@@ -38,4 +38,5 @@ npd-east-dev-load-fips-bronze-job
 
 1. Create Terraform backend S3 bucket if it doesn't already exist
 2. Create `.env` file using `.env.template` as starting point
-3. `terraform apply`, evaluate the plan, then apply if it all looks good!
+3. Assume an AWS Role using `./ctkey.sh`
+4. `terraform apply`, evaluate the plan, then apply if it all looks good!
