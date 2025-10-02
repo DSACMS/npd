@@ -582,6 +582,17 @@ class NuccToMedicareProviderType(models.Model):
         managed = False
         db_table = 'nucc_to_medicare_provider_type'
 
+class C80PracticeCodes(models.Model):
+    code = models.CharField(primary_key=True, max_length=9)
+    display_name = models.CharField(max_length=100, blank=True, null=True)
+    definition = models.TextField(blank=True, null=True)
+    notes = models.TextField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'c80_practice_codes'
+
+
 
 class Organization(models.Model):
     id = models.UUIDField(primary_key=True)
