@@ -1,0 +1,61 @@
+name: Django Tests
+permissions:
+  contents: read
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend/
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Compose
+        uses: docker/setup-compose-action@v1
+
+      - name: Create .env file
+        run: |
+          cat <<EOF > .env
+          NPD_DJANGO_SECRET=${{ secrets.NPD_DJANGO_SECRET }}
+          NPD_DB_USER=${{ secrets.NPD_DB_TEST_USER }}
+          NPD_DB_PASSWORD=${{ secrets.NPD_TEST_DB_PASSWORD }}
+          NPD_DB_HOST=${{ vars.NPD_DB_TEST_HOST }}
+          NPD_DB_NAME=${{ vars.NPD_DB_TEST_NAME }}
+          NPD_DB_PORT=${{ vars.NPD_DB_TEST_PORT }}
+          NPD_DB_ENGINE=${{ vars.NPD_DB_TEST_ENGINE }}
+          DEBUG=${{ vars.TEST_DEBUG }}
+          DJANGO_ALLOWED_HOSTS=${{ vars.DJANGO_ALLOWED_HOSTS }}
+          DJANGO_LOGLEVEL=${{ vars.DJANGO_TEST_LOGLEVEL }}
+          NPD_PROJECT_NAME=${{ vars.DJANGO_TEST_PROJECT_NAME }}
+          EOF
+      
+      - name: Build and run tests
+        run: |
+          make dev-up
+          make test
+          make dev-down
+      - name: Show DB logs
+        if: failure()
+        run: docker logs backend-db-1
+
+      - name: Upload test results as artifact
+        uses: actions/upload-artifact@v4
+        with:
+            name: test-results
+            path: artifacts/*.xml
+      - name: Upload test results to GitHub Checks
+        uses: dorny/test-reporter@v1
+        with:
+            name: backend-tests
+            path: artifacts/*.xml 
+            reporter: github-pr-check
+            fail-on-error: true
