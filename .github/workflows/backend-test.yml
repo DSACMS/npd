@@ -45,7 +45,7 @@ jobs:
           make dev-down
       - name: Show DB logs
         if: failure()
-        run: docker logs backend-db-1
+        run: docker logs backend-db-migrations-1
 
       - name: Upload test results as artifact
         uses: actions/upload-artifact@v4
