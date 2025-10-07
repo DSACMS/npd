@@ -6,8 +6,8 @@ from rest_framework.response import Response
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.renderers import BrowsableAPIRenderer
 from django.core.cache import cache
-from .models import Provider, EndpointInstance, ClinicalOrganization
-from .serializers import PractitionerSerializer, ClinicalOrganizationSerializer, BundleSerializer, EndpointSerializer
+from .models import Provider, EndpointInstance, ClinicalOrganization, Organization
+from .serializers import PractitionerSerializer, OrganizationSerializer, BundleSerializer, EndpointSerializer
 from .mappings import genderMapping, addressUseMapping
 from .renderers import FHIRRenderer
 from drf_yasg.utils import swagger_auto_schema
@@ -283,8 +283,31 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
 
         all_params = request.query_params
 
-        organizations = ClinicalOrganization.objects.all().prefetch_related(
-            'npi', 'organization', 'organization__organizationtoname_set', 'organization__organizationtoaddress_set', 'organization__organizationtoaddress_set__address', 'organization__organizationtoaddress_set__address__address_us', 'organization__organizationtoaddress_set__address__address_us__state_code', 'organization__organizationtoaddress_set__address_use', 'organizationtootherid_set', 'organizationtotaxonomy_set', 'organization__authorized_official__individualtophone_set', 'organization__authorized_official__individualtoname_set', 'organization__authorized_official__individualtoemail_set', 'organization__authorized_official__individualtoaddress_set')
+        organizations = Organization.objects.all().select_related(
+            'authorized_official',
+            'ein'
+        ).prefetch_related(
+            'organizationtoname_set',
+            'organizationtoaddress_set',
+            'organizationtoaddress_set__address',
+            'organizationtoaddress_set__address__address_us',
+            'organizationtoaddress_set__address__address_us__state_code',
+            'organizationtoaddress_set__address_use',
+
+            'authorized_official__individualtophone_set',
+            'authorized_official__individualtoname_set',
+            'authorized_official__individualtoemail_set',
+            'authorized_official__individualtoaddress_set',
+            'authorized_official__individualtoaddress_set__address__address_us',
+            'authorized_official__individualtoaddress_set__address__address_us__state_code',
+
+            'clinicalorganization',
+            'clinicalorganization__npi',
+            'clinicalorganization__organizationtootherid_set',
+            'clinicalorganization__organizationtootherid_set__other_id_type',
+            'clinicalorganization__organizationtotaxonomy_set',
+            'clinicalorganization__organizationtotaxonomy_set__nucc_code'
+        )
 
         for param, value in all_params.items():
             match param:
@@ -342,7 +365,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
         queryset = paginator.paginate_queryset(organizations, request)
 
         # Serialize the bundle
-        serializer = ClinicalOrganizationSerializer(queryset, many=True)
+        serializer = OrganizationSerializer(queryset, many=True)
         bundle = BundleSerializer(serializer)
 
         # Set appropriate content type for FHIR responses
@@ -356,7 +379,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
         """
         clinicalorg = get_object_or_404(ClinicalOrganization, pk=int(pk))
 
-        organization = ClinicalOrganizationSerializer(clinicalorg)
+        organization = OrganizationSerializer(clinicalorg)
 
         # Set appropriate content type for FHIR responses
         response = Response(organization.data)

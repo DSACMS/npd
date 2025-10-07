@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from fhir.resources.practitioner import Practitioner
 from fhir.resources.bundle import Bundle
-from .models import Npi, OrganizationToName, IndividualToPhone
+from .models import Npi, OrganizationToName, IndividualToPhone, Organization
 from fhir.resources.practitioner import Practitioner, PractitionerQualification
 from fhir.resources.endpoint import Endpoint
 from fhir.resources.humanname import HumanName
@@ -259,70 +259,92 @@ class OrganizationSerializer(serializers.Serializer):
     name = OrganizationNameSerializer(
         source='organizationtoname_set', many=True, read_only=True)
     authorized_official = IndividualSerializer(read_only=True)
-    address = address = AddressSerializer(
+    address = AddressSerializer(
         source='organizationtoaddress_set', many=True, read_only=True)
 
     class Meta:
         model = Organization
         fields = '__all__'
 
-
-class ClinicalOrganizationSerializer(serializers.Serializer):
-    npi = NPISerializer()
-    organization = OrganizationSerializer()
-    identifier = OtherIdentifierSerializer(
-        source='organizationtootheridentifier_set', many=True, read_only=True
-    )
-    taxonomy = TaxonomySerializer(
-        source='organizationtotaxonomy_set', many=True, read_only=True
-    )
-
-    class Meta:
-        fields = ['npi', 'name', 'identifier', 'taxonomy']
-
     def to_representation(self, instance):
         representation = super().to_representation(instance)
         organization = Organization()
-        organization.id = str(instance.npi.npi)
+        organization.id = str(instance.id)
         organization.meta = Meta(
             profile=[
                 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"]
         )
-        npi_identifier = Identifier(
-            system="http://terminology.hl7.org/NamingSystem/npi",
-            value=str(instance.npi.npi),
-            type=CodeableConcept(
-                coding=[Coding(
-                    system="http://terminology.hl7.org/CodeSystem/v2-0203",
-                    code="PRN",
-                    display="Provider number"
-                )]
-            ),
-            use='official',
-            period=Period(
-                start=instance.npi.enumeration_date,
-                end=instance.npi.deactivation_date
-            )
-        )
-        organization.identifier = [npi_identifier]
-        if 'identifier' in representation.keys():
-            organization.identifier += representation['identifier']
-        name = [name['name'] for name in representation['organization']
-                ['name'] if name['is_primary']]
-        alias = [name['name'] for name in representation['organization']
-                 ['name'] if not name['is_primary']]
-        organization.name = name[0]
-        if alias != []:
-            organization.alias = [name['name'] for name in alias]
-        authorized_official = representation['organization']['authorized_official']
-        if representation['organization']['address'] != []:
-            authorized_official['address'] = representation['organization']['address'][0]
+        identifiers = []
+        taxonomies = []
+
+        try:
+            clinical_org = instance.clinicalorganization
+            if clinical_org and clinical_org.npi:
+                npi_identifier = Identifier(
+                    system="http://terminology.hl7.org/NamingSystem/npi",
+                    value=str(clinical_org.npi.npi),
+                    type=CodeableConcept(
+                        coding=[Coding(
+                            system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                            code="PRN",
+                            display="Provider number"
+                        )]
+                    ),
+                    use='official',
+                    period=Period(
+                        start=clinical_org.npi.enumeration_date,
+                        end=clinical_org.npi.deactivation_date
+                    )
+                )
+                identifiers.append(npi_identifier)
+
+                for taxonomy in clinical_org.organizationtotaxonomy_set.all():
+                    code = CodeableConcept(
+                        coding=[Coding(
+                            system="http://nucc.org/provider-taxonomy",
+                            code=taxonomy.nucc_code_id,
+                            display=nucc_taxonomy_codes.get(
+                                str(taxonomy.nucc_code_id), "Unknown"
+                            )
+                        )]
+                    )
+                    qualification = PractitionerQualification(
+                        code=code
+                    )
+                    taxonomies.append(qualification.model_dump())
+                
+                if taxonomies:
+                    organization.qualification = taxonomies
+
+        except Organization.clinicalorganization.RelatedObjectDoesNotExist:
+            pass
+
+        organization.identifier = identifiers
+
+        names = representation.get('name', [])
+        primary_names = [n['name'] for n in names if n['is_primary']]
+        alias_names = [n['name'] for n in names if not n['is_primary']]
+        
+        if primary_names:
+            organization.name = primary_names[0]
+        elif names:
+            organization.name = names[0]['name']
+
+        if alias_names:
+            organization.alias = alias_names 
+
+        authorized_official = representation['authorized_official']
+
+        if representation['address'] != []:
+            authorized_official['address'] = representation['address'][0]
         else:
             if 'address' in authorized_official.keys():
                 del authorized_official['address']
         organization.contact = [authorized_official]
+
         if 'taxonomy' in representation.keys():
             organization.qualification = representation['taxonomy']
+
         return organization.model_dump()
 
 
