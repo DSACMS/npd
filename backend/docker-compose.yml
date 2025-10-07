@@ -7,11 +7,6 @@ services:
       POSTGRES_PASSWORD: ${NPD_DB_PASSWORD}
     ports:
       - '${NPD_DB_PORT}:5432'
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -h 127.0.0.1 || exit 1"]
-      interval: 5s
-      timeout: 5s
-      retries: 10
     volumes:
       - 'postgres_data:/var/lib/postgresql/data'
     networks:
@@ -20,7 +15,7 @@ services:
       - .env
   db-migrations:
     image: 'flyway/flyway:10'
-    command: -connectRetries=60 migrate
+    command: -connectRetries=10 migrate
     volumes:
       - '../flyway/sql:/flyway/sql'
     environment:
@@ -30,8 +25,7 @@ services:
     networks:
       - npd
     depends_on:
-      db:
-        condition: service_healthy
+      - db
     env_file:
       - .env
   django-web:
