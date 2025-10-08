@@ -54,6 +54,8 @@ INSTALLED_APPS = [
     'django_filters',
     'drf_yasg',
     'xmlrunner',
+    'django_vite',
+    'provider_search.apps.ProviderSearch',
 ]
 
 if not TESTING:
@@ -158,16 +160,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
-
-STATIC_URL = 'static/'
-
-# STATICFILES_DIRS = [
-#        os.path.join(BASE_DIR, "static"),
-#    ]
-
-# STATICFILES_DIRS = [
-#        os.path.join(BASE_DIR, "static"),
-#    ]
+STATIC_URL = "static/"
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    BASE_DIR / "provider_search" / "static",
+]
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -191,6 +189,16 @@ CACHES = {
 
 SWAGGER_SETTINGS = {
     'USE_SESSION_AUTH': False
+}
+
+# django-vite for the dynamically compiled assets coming from in frontend/
+DJANGO_VITE = {
+  "default": {
+    "dev_mode": True,
+    "dev_server_host": "localhost",
+    "dev_server_port": 3000,
+    "manifest_path": BASE_DIR / "provider_search" / "static" / "manifest.json"
+  }
 }
 
 LOG_LEVEL = os.environ.get("LOG_LEVEL", logging.INFO)
