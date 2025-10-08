@@ -175,6 +175,7 @@ cython_debug/
 .git-credentials-alt
 
 scratch/
-.git-credentials-alt
 
-scratch/
+mise.toml
+*compose.override.yml
+**/.vscode/

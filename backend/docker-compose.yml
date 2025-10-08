@@ -9,8 +9,6 @@ services:
       - '${NPD_DB_PORT}:5432'
     volumes:
       - 'postgres_data:/var/lib/postgresql/data'
-    networks:
-      - npd
     env_file:
       - .env
   db-migrations:
@@ -22,22 +20,17 @@ services:
       FLYWAY_URL: jdbc:postgresql://${NPD_DB_HOST}:5432/${NPD_DB_NAME}
       FLYWAY_USER: ${NPD_DB_USER}
       FLYWAY_PASSWORD: ${NPD_DB_PASSWORD}
-    networks:
-      - npd
     depends_on:
       - db
     env_file:
       - .env
   django-web:
     build: .
-    container_name: npd
     ports:
       - '8000:8000'
     depends_on:
       db-migrations:
         condition: service_completed_successfully
-    networks:
-      - npd
     environment:
       NPD_DJANGO_SECRET: ${NPD_DJANGO_SECRET}
       DEBUG: ${DEBUG}
@@ -54,7 +47,6 @@ services:
     volumes:
       - '.:/app'
       - ./artifacts:/artifacts
+
 volumes:
   postgres_data:
-networks:
-  npd:
