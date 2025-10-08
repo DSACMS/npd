@@ -3,8 +3,9 @@ from rest_framework import status
 from rest_framework.test import APITestCase, APIClient
 from django.test.runner import DiscoverRunner
 from django.db import connection
-from .cache import cacheData
-# I can't explain why, but we need to import cacheData here. I think we can remove this once we move to the docker db setup
+from .cache import cacheData # I can't explain why, but we need to import cacheData here. I think we can remove this once we move to the docker db setup
+from fhir.resources.bundle import Bundle
+from pydantic import ValidationError
 
 def get_female_npis(npi_list):
     """
@@ -38,14 +39,12 @@ class EndpointViewSetTestCase(APITestCase):
     
     def test_list_returns_fhir_bundle(self):
         response = self.client.get(self.list_url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
 
-        self.assertIn("results", response.data)
+        data = response.json()
+        bundle = Bundle.model_validate(data['results'])
 
-        bundle = response.data["results"]
-        self.assertEqual(bundle["resourceType"], "Bundle")
-
-        self.assertIn("entry", bundle)
-        self.assertIsInstance(bundle["entry"], list)
+        self.assertEqual(bundle.__resource_type__, "Bundle")
     
     def test_list_entries_are_fhir_endpoints(self):
         response = self.client.get(self.list_url)
