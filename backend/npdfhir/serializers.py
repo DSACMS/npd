@@ -14,6 +14,7 @@ from fhir.resources.meta import Meta
 from fhir.resources.address import Address
 from fhir.resources.organization import Organization
 from fhir.resources.reference import Reference
+from django.core.exceptions import ObjectDoesNotExist
 import sys
 if 'runserver' or 'test' in sys.argv:
     from .cache import other_identifier_type, fhir_name_use, nucc_taxonomy_codes, fhir_phone_use
@@ -277,6 +278,20 @@ class OrganizationSerializer(serializers.Serializer):
         identifiers = []
         taxonomies = []
 
+        if instance.ein:
+            ein_identifier = Identifier(
+                system="https://terminology.hl7.org/NamingSystem-USEIN.html",  
+                value=str(instance.ein.ein_id),
+                type=CodeableConcept(
+                    coding=[Coding(
+                        system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                        code="TAX",
+                        display="Tax ID number"
+                    )]
+                )
+            )
+            identifiers.append(ein_identifier)
+
         try:
             clinical_org = instance.clinicalorganization
             if clinical_org and clinical_org.npi:
@@ -298,17 +313,34 @@ class OrganizationSerializer(serializers.Serializer):
                 )
                 identifiers.append(npi_identifier)
 
+                for other_id in clinical_org.organizationtootherid_set.all():
+                    other_identifier = Identifier(
+                        system=str(other_id.other_id_type_id),
+                        value=other_id.other_id,
+                        type=CodeableConcept(
+                            coding=[Coding(
+                                system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                                code="test", # do we define this based on the type of id it is?
+                                display="test" # same as above ^
+                            )]
+                        )
+                    )
+                    identifiers.append(other_identifier)
+
                 for taxonomy in clinical_org.organizationtotaxonomy_set.all():
                     code = CodeableConcept(
                         coding=[Coding(
-                            system="http://nucc.org/provider-taxonomy",
+                        system="http://nucc.org/provider-taxonomy",
                             code=taxonomy.nucc_code_id,
-                            display=nucc_taxonomy_codes.get(
-                                str(taxonomy.nucc_code_id), "Unknown"
-                            )
+                            display=nucc_taxonomy_codes[str(instance.nucc_code_id)]
                         )]
                     )
                     qualification = PractitionerQualification(
+                        identifier=[Identifier(
+                                value="test",
+                                type=code,  # TODO: Replace
+                                period=Period()
+                            )],
                         code=code
                     )
                     taxonomies.append(qualification.model_dump())
@@ -316,7 +348,7 @@ class OrganizationSerializer(serializers.Serializer):
                 if taxonomies:
                     organization.qualification = taxonomies
 
-        except Organization.clinicalorganization.RelatedObjectDoesNotExist:
+        except ObjectDoesNotExist:
             pass
 
         organization.identifier = identifiers

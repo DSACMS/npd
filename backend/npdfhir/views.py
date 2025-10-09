@@ -377,7 +377,32 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
         """
         Return a single provider as a FHIR Practitioner resource
         """
-        clinicalorg = get_object_or_404(ClinicalOrganization, pk=int(pk))
+        clinicalorg = get_object_or_404(Organization.objects.select_related(
+            'authorized_official',
+            'ein'
+        ).prefetch_related(
+            'organizationtoname_set',
+            'organizationtoaddress_set',
+            'organizationtoaddress_set__address',
+            'organizationtoaddress_set__address__address_us',
+            'organizationtoaddress_set__address__address_us__state_code',
+            'organizationtoaddress_set__address_use',
+
+            'authorized_official__individualtophone_set',
+            'authorized_official__individualtoname_set',
+            'authorized_official__individualtoemail_set',
+            'authorized_official__individualtoaddress_set',
+            'authorized_official__individualtoaddress_set__address__address_us',
+            'authorized_official__individualtoaddress_set__address__address_us__state_code',
+
+            'clinicalorganization',
+            'clinicalorganization__npi',
+            'clinicalorganization__organizationtootherid_set',
+            'clinicalorganization__organizationtootherid_set__other_id_type',
+            'clinicalorganization__organizationtotaxonomy_set',
+            'clinicalorganization__organizationtotaxonomy_set__nucc_code'
+        ), 
+        pk=pk)
 
         organization = OrganizationSerializer(clinicalorg)
 
