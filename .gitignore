@@ -175,6 +175,21 @@ cython_debug/
 .git-credentials-alt
 
 scratch/
+<<<<<<< Updated upstream
 .git-credentials-alt
 
 scratch/
+
+# local docker compose overrides
+*compose.override.yml
+
+# VSCode editor settings
+.vscode/
+
+# tool version management
+mise.toml
+=======
+**/.vscode/
+mise.toml
+*compose.override.yml
+>>>>>>> Stashed changes
