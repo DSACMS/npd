@@ -1,20 +1,12 @@
 {% load django_vite %}
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     {% vite_hmr_client %}
-    <script type="module">
-      import RefreshRuntime from "http://localhost:3000/static/@react-refresh";
-      RefreshRuntime.injectIntoGlobalHook(window);
-      window.$RefreshReg$ = () => {};
-      window.$RefreshSig$ = () => (type) => type;
-      window.__vite_plugin_react_preamble_installed__ = true;
-    </script>
+    {% vite_react_refresh %}
     {% vite_asset 'src/main.tsx' %}
     <title>National Provider Directory</title>
   </head>
-
   <body>
     {% block body %}{% endblock %}
   </body>
