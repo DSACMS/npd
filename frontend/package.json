@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@cmsgov/design-system": "^12.4.3",
+    "@cmsgov/design-system": "^13.0.0",
     "@uswds/uswds": "3.13.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"

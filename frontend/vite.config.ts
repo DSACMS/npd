@@ -9,7 +9,9 @@ export default defineConfig({
     outDir: "./static",
     rollupOptions: {
       input: {
+        init: "src/init.ts",
         main: "src/main.tsx",
+        uswds: "src/uswds.ts",
       },
     },
   },

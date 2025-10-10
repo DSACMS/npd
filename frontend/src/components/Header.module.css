@@ -1,0 +1,18 @@
+.title {
+    white-space: nowrap;
+}
+
+.logo {
+    width: 8.875rem;
+    margin-right: 0.5rem;
+}
+
+.logoText {
+    font-weight: 500 !important;
+}
+
+.betaBadge {
+    margin-left: 0.5rem;
+    border-radius: var(--component-badge-border-radius, 624.9375rem);
+    background: #0071BC;
+}

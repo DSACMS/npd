@@ -162,10 +162,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 STATIC_URL = "static/"
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    # BASE_DIR / "static",
     BASE_DIR / "provider_search" / "static",
 ]
 STATIC_ROOT = BASE_DIR / "staticfiles"
+FRONTEND_S3_BUCKET = os.getenv('FRONTEND_S3_BUCKET', 'npd-assets-development')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -197,7 +198,9 @@ DJANGO_VITE = {
     "dev_mode": DEBUG,
     "dev_server_host": "localhost",
     "dev_server_port": 3000,
-    "manifest_path": BASE_DIR / "provider_search" / "static" / "manifest.json"
+    "manifest_path": BASE_DIR / "provider_search" / "static" / "manifest.json",
+    # in deployed environments, pull manifest.json from the frontend S3 bucket
+    "app_client_class": "provider_search.django_vite_s3.S3DjangoViteAppClient"
   }
 }
 

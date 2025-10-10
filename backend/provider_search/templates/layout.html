@@ -5,9 +5,12 @@
     {% vite_hmr_client %}
     {% vite_react_refresh %}
     {% vite_asset 'src/main.tsx' %}
+    {% vite_asset 'src/init.ts' %}
+    {% vite_asset 'src/assets/cms-gov-logo.png' %}
     <title>National Provider Directory</title>
   </head>
-  <body>
+  <body class="ds-base">
     {% block body %}{% endblock %}
+    {% vite_asset 'src/uswds.ts' %}
   </body>
 </html>
