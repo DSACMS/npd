@@ -14,6 +14,7 @@ django-debug-toolbar==5.2.0
 django-filter==25.1
 django-vite==3.1.0
 djangorestframework==3.16.0
+djlint==1.36.4
 unittest-xml-reporting==3.2.0
 drf-yasg==1.21.10
 fhir.resources==8.1.0
