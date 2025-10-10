@@ -194,7 +194,7 @@ SWAGGER_SETTINGS = {
 # django-vite for the dynamically compiled assets coming from in frontend/
 DJANGO_VITE = {
   "default": {
-    "dev_mode": True,
+    "dev_mode": DEBUG,
     "dev_server_host": "localhost",
     "dev_server_port": 3000,
     "manifest_path": BASE_DIR / "provider_search" / "static" / "manifest.json"
