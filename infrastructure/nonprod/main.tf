@@ -121,9 +121,12 @@ module "fhir-api" {
   }
 }
 
-# ETL Modul
+# ETL Module
+module "etl" {
+  source = "./etl"
 
-# TODO
+  account_name = local.account_name
+}
 
 # Frontend Module
 module "frontend" {
