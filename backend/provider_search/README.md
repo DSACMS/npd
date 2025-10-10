@@ -1,2 +1,1 @@
-This is a demo of a simple Django app supporting MVP "Provider Search" functionality including landing page, search, and basic documentation.
-
+This application supports the React single page application for the National Provider Directory which is primarily concerned with the Provider Search functionality, a site landing page, and basic documentation.

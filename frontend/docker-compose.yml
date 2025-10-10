@@ -6,10 +6,11 @@ services:
       - 3000:3000
     volumes:
       - .:/app
-      - ../backend/provider_search/static:/app/static
-      - node_modules:/app/node_modules # Ensure node_modules are not overwritten by the volume mount
+      # Container-based build output should be written to the appropriate backend static directory
+      - ../backend/provider_search/static:/app/static 
+      # Ensure node_modules are not overwritten by the volume mount
+      - node_modules:/app/node_modules 
     environment:
-      # if in Windows WSL
       CHOKIDAR_USEPOLLING: "true" # For file watching in Docker
 
 volumes:
