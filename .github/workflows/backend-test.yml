@@ -37,6 +37,11 @@ jobs:
           DJANGO_LOGLEVEL='WARNING'
           EOF
       
+      - name: Create artifacts directory with proper permissions
+        run: |
+          mkdir -p ./artifacts/test-reports
+          chmod 777 ./artifacts/test-reports
+
       - name: Build and run tests
         run: |
           make dev-up
