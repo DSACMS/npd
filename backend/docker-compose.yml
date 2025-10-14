@@ -53,7 +53,7 @@ services:
       - .env
     volumes:
       - '.:/app'
-      - ./artifacts:/artifacts
+      - ./artifacts:/app/artifacts
 volumes:
   postgres_data:
 networks:
