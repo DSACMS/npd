@@ -25,9 +25,9 @@ jobs:
       - name: Create .env file
         run: |
           cat <<EOF > .env
-          NPD_DJANGO_SECRET=${{ secrets.NPD_DJANGO_SECRET }}
-          NPD_DB_USER=${{ secrets.NPD_DB_TEST_USER }}
-          NPD_DB_PASSWORD=${{ secrets.NPD_TEST_DB_PASSWORD }}
+          NPD_DJANGO_SECRET=asdf
+          NPD_DB_USER='nph_test'
+          NPD_DB_PASSWORD='postgres_password'
           NPD_DB_HOST='db'
           NPD_DB_NAME='npd_test'
           NPD_DB_PORT='5432'
@@ -35,7 +35,6 @@ jobs:
           DEBUG='True'
           DJANGO_ALLOWED_HOSTS='127.0.0.1'
           DJANGO_LOGLEVEL='WARNING'
-          NPD_PROJECT_NAME=${{ vars.DJANGO_TEST_PROJECT_NAME }}
           EOF
       
       - name: Build and run tests
