@@ -22,8 +22,6 @@ services:
       - '${NPD_DB_PORT:-5432}:5432'
     volumes:
       - 'postgres_data:/var/lib/postgresql/data'
-    networks:
-      - npd
     healthcheck:
       test: ["CMD-SHELL", "pg_isready"]
       interval: 10s
@@ -41,8 +39,6 @@ services:
       FLYWAY_PASSWORD: ${NPD_DB_PASSWORD:-postgres}
     volumes:
       - '../flyway/sql:/flyway/sql'
-    networks:
-      - npd
     depends_on:
       - db
     command: migrate -environment=development
@@ -69,13 +65,8 @@ services:
     volumes:
       - '.:/app'
       - ./artifacts:/app/artifacts
-    networks:
-      - npd
     depends_on:
       - db
 
 volumes:
   postgres_data:
-
-networks:
-  npd:

@@ -1,9 +1,6 @@
 volumes:
   postgres_data:
 
-networks:
-  npd:
-
 services:
   db:
     extends:

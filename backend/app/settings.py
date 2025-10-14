@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'django_filters',
     'drf_yasg',
     'xmlrunner',
+    'provider_search.apps.ProviderSearch',
 ]
 
 if not TESTING:
