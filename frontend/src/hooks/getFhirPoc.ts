@@ -19,10 +19,8 @@ const useGetFhirPoc = () => {
       .then((res) => res.json())
       .then((urlList: UrlList) => setUrlList(urlList))
   }, [])
-  console.log(urlList)
-  {
-    return urlList
-  }
+
+  return urlList
 }
 
 export default useGetFhirPoc
