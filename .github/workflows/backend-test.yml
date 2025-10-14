@@ -46,20 +46,8 @@ jobs:
         run: |
           make dev-up
           make test
-          make dev-down
-      - name: Show DB logs
-        if: failure()
-        run: docker logs backend-db-migrations-1
-
       - name: Upload test results as artifact
         uses: actions/upload-artifact@v4
         with:
             name: test-results
             path: backend/artifacts/test-reports/*.xml
-      - name: Upload test results to GitHub Checks
-        uses: dorny/test-reporter@v2
-        with:
-            name: backend-tests
-            path: backend/artifacts/test-reports/*.xml
-            reporter: dotnet-trx
-            fail-on-error: true
