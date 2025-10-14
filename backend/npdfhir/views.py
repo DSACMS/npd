@@ -6,6 +6,8 @@ from rest_framework.response import Response
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.renderers import BrowsableAPIRenderer
 from django.core.cache import cache
+from django.db.models import Q
+from uuid import UUID
 from .models import Provider, EndpointInstance, ClinicalOrganization, Organization
 from .serializers import PractitionerSerializer, OrganizationSerializer, BundleSerializer, EndpointSerializer
 from .mappings import genderMapping, addressUseMapping
@@ -263,6 +265,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
         manual_parameters=[
             page_size_param,
             createFilterParam('name'),
+            createFilterParam('identifer'),
             createFilterParam('organization_type'),
             createFilterParam('address'),
             createFilterParam('address-city', 'city'),
@@ -323,6 +326,14 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
                         search=SearchVector(
                             'organization__organizationtoname__name')
                     ).filter(search=value)
+                case 'identifier':
+                    queries =  Q(clinicalorganization__npi__npi=value) | Q(clinicalorganization__organizationtootherid__other_id=value)
+                    try:
+                        UUID(value)
+                        queries |= Q(ein__ein_id=value) 
+                    except (ValueError):
+                        pass
+                    organizations = organizations.filter(queries).distinct()
                 case 'organization_type':
                     organizations = organizations.annotate(
                         search=SearchVector(

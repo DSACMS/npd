@@ -332,7 +332,7 @@ class OrganizationSerializer(serializers.Serializer):
                         coding=[Coding(
                         system="http://nucc.org/provider-taxonomy",
                             code=taxonomy.nucc_code_id,
-                            display=nucc_taxonomy_codes[str(instance.nucc_code_id)]
+                            display=nucc_taxonomy_codes[str(taxonomy.nucc_code_id)]
                         )]
                     )
                     qualification = PractitionerQualification(
