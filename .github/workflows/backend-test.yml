@@ -60,6 +60,6 @@ jobs:
         uses: dorny/test-reporter@v2
         with:
             name: backend-tests
-            path: artifacts/*.xml 
+            path: artifacts/test-reports/*.xml 
             reporter: dotnet-trx
             fail-on-error: true
