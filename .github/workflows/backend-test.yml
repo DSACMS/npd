@@ -57,9 +57,9 @@ jobs:
             name: test-results
             path: artifacts/*.xml
       - name: Upload test results to GitHub Checks
-        uses: dorny/test-reporter@v1
+        uses: dorny/test-reporter@v2
         with:
             name: backend-tests
             path: artifacts/*.xml 
-            reporter: github-pr-check
+            reporter: dotnet-trx
             fail-on-error: true
