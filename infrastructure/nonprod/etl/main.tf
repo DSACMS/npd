@@ -57,11 +57,18 @@ resource "aws_iam_policy" "dagster_can_emit_logs" {
   })
 }
 
-# resource "aws_iam_role" "dagster_task_role" {
-#   name = "${var.account_name}-etl-service-task-role"
-#   description = "Describes actions the ETL tasks can make"
-#   poli
-# }
+resource "aws_iam_role" "dagster_task_role" {
+  name = "${var.account_name}-etl-service-task-role"
+  description = "Describes actions the ETL tasks can make"
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [{
+      Effect    = "Allow"
+      Principal = { Service = "ecs-tasks.amazon.com" }
+      Action    = "sts:AssumeRole"
+    }]
+  })
+}
 
 resource "aws_ecs_task_definition" "dagster_daemon" {
   family                   = "dagster-daemon"
@@ -69,8 +76,8 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
   requires_compatibilities = ["FARGATE"]
   cpu                      = "256"
   memory                   = "512"
-  task_role_arn            = local.task_role_arn
-  execution_role_arn       = local.execution_role_arn
+  task_role_arn            = aws_iam_role.dagster_task_role.arn
+  execution_role_arn       = aws_iam_role.dagster_execution_role.arn
 
   container_definitions = jsonencode([
     {
@@ -80,9 +87,9 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
       logConfiguration = {
         logDriver = "awslogs"
         options = {
-          "awslogs-group"         = local.log_group
-          "awslogs-region"        = var.region
-          "awslogs-stream-prefix" = "dagster-daemon"
+          "awslogs-group"         = "/ecs/${var.account_name}-fhir-api-migration-logs"
+          "awslogs-region"        = data.aws_region.current.name
+          "awslogs-stream-prefix" = "${var.account_name}-fhir-api-migration-logs"
         }
       }
       command = ["dagster-daemon", "run", "-w", "${var.dagster_home}/workspace.yaml"]
