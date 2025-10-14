@@ -126,6 +126,16 @@ module "etl" {
   source = "./etl"
 
   account_name = local.account_name
+  db = {
+    db_instance_master_user_secret_arn = module.etl-db.db_instance_master_user_secret_arn
+    db_instance_address                = module.etl-db.db_instance_address
+    db_instance_port                   = module.etl-db.db_instance_port
+  }
+  networking = {
+
+    db_subnet_ids = module.networking.db_subnet_ids
+    vpc_id        = module.networking.vpc_id
+  }
 }
 
 # Frontend Module

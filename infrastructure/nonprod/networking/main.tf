@@ -1,3 +1,11 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "5.99.1"
+    }
+  }
+}
 ## Subnet configuration
 data "aws_subnets" "database_subnets" {
   filter {
@@ -93,8 +101,47 @@ resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_etl_db" {
   prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
 }
 
+resource "aws_vpc_security_group_ingress_rule" "etl_services_to_etl_db" {
+  description                  = "Allows connections to the ETL database from the ETL processes"
+  security_group_id            = aws_security_group.fhir_etl_sg.id
+  ip_protocol                  = "tcp"
+  from_port                    = 5432
+  to_port                      = 5432
+  referenced_security_group_id = aws_security_group.fhir_etl_sg
+}
+
+# TODO: There's an argument to make that this should be two security groups
+# one for the UI, another for the daemon / code locations
+# after this is working see about splitting it into two
 resource "aws_security_group" "fhir_etl_sg" {
   description = "Defines traffic flows to and from the ETL processes"
   name        = "${var.account_name}-fhir-etl-sg"
   vpc_id      = var.vpc_id
+}
+
+resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_etl_sg" {
+  description       = "Allows connections to the ETL orchestration dashboard from the VPN"
+  security_group_id = aws_security_group.fhir_etl_sg
+  ip_protocol       = "tcp"
+  from_port         = 80
+  to_port           = 80
+  prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
+}
+
+resource "aws_vpc_security_group_ingress_rule" "etl_sg_allow_grpc" {
+  description                  = "Allows containers to within the security group to talk to each other by gRPC"
+  security_group_id            = aws_security_group.fhir_etl_sg
+  ip_protocol                  = "tcp"
+  from_port                    = 4000
+  to_port                      = 4000
+  referenced_security_group_id = aws_security_group.fhir_etl_sg
+}
+
+resource "aws_vpc_security_group_egress_rule" "etl_sg_allow_outbound_requests" {
+  description       = "Allows containers within the security group to make outbound (HTTP, PG, etc) requests"
+  security_group_id = aws_security_group.fhir_etl_sg
+  ip_protocol       = "tcp"
+  from_port         = 0
+  to_port           = 0
+  cidr_ipv4         = ["0.0.0.0/0"] # any external IP
 }

@@ -1,35 +1,67 @@
+data "aws_region" "current" {}
+data "aws_partition" "current" {}
+data "aws_caller_identity" "current" {}
+
 resource "aws_s3_bucket" "etl_bronze" {
   bucket = "${var.account_name}-etl-bronze"
 }
 
-resource "aws_security_group" "dagster" {
-  name_prefix = "dagster-sg-"
-  vpc_id      = var.networking.vpc_id
-
-  # Allow traffic for webserver (HTTP)
-  ingress {
-    from_port   = 80
-    to_port     = 80
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  # Allow traffic for gRPC services (from other containers)
-  # ingress {
-  #   from_port   = 4000
-  #   to_port     = 4000
-  #   protocol    = "tcp"
-  #   cidr_blocks = [data.aws_vpc.dagster_vpc.cidr_block]
-  # }
-
-  # Egress allows all outbound traffic (common default)
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
+resource "aws_iam_role" "dagster_execution_role" {
+  name        = "${var.account_name}-dagster-task-execution-role"
+  description = "Defines what AWS Actions the ECS task environment is allowed to make when setting up the ETL orchestrator"
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [{
+      Effect    = "Allow"
+      Principal = { Service = "ecs-tasks.amazon.com" }
+      Action    = "sts:AssumeRole"
+    }]
+  })
 }
+
+resource "aws_iam_policy" "dagster_can_access_etl_database_secret" {
+  name        = "${var.account_name}-etl-service-can-access-etl-database-secret"
+  description = "Allows Dagster to access the ETL database RDS secret"
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = "secretsmanager:GetSecretValue",
+        Effect = "Allow"
+        Action = "sts:AssumeRole"
+      }
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "dagster_can_access_etl_database_secret_attachment" {
+  role       = aws_iam_role.dagster_execution_role.name
+  policy_arn = aws_iam_policy.dagster_can_access_etl_database_secret.arn
+}
+
+resource "aws_iam_policy" "dagster_can_emit_logs" {
+  name        = "${var.account_name}-etl-service-can-log-to-cloudwatch"
+  description = "Allow Dagster to write logs to Cloudwatch"
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = [
+          "logs:CreateLogStream",
+          "logs:PutLogsEvents"
+        ]
+        Effect   = "Allow"
+        Resource = "arn:${data.aws_partition.current.partition}:logs:*:${data.aws_caller_identity.current.account_id}:log-group:/ecs/${var.account_name}*:*"
+      }
+    ]
+  })
+}
+
+# resource "aws_iam_role" "dagster_task_role" {
+#   name = "${var.account_name}-etl-service-task-role"
+#   description = "Describes actions the ETL tasks can make"
+#   poli
+# }
 
 resource "aws_ecs_task_definition" "dagster_daemon" {
   family                   = "dagster-daemon"
@@ -75,8 +107,8 @@ resource "aws_ecs_service" "dagster_daemon" {
   task_definition = aws_ecs_task_definition.dagster_daemon.arn
 
   network_configuration {
-    subnets          = var.daemon_subnet_ids
-    security_groups  = [aws_security_group.dagster.id]
+    subnets         = var.daemon_subnet_ids
+    security_groups = [aws_security_group.dagster.id]
     # when running in public subnet, consider setting assign_public_ip = true
     # however, this is not recommended for production as it exposes the container to the internet
     assign_public_ip = var.create_lb ? true : var.assign_public_ip
@@ -139,8 +171,8 @@ resource "aws_ecs_service" "dagster-webserver" {
   task_definition = aws_ecs_task_definition.dagster_webserver.arn
 
   network_configuration {
-    subnets          = var.webserver_subnet_ids
-    security_groups  = [aws_security_group.dagster.id]
+    subnets         = var.webserver_subnet_ids
+    security_groups = [aws_security_group.dagster.id]
     # when running in public subnet, consider setting assign_public_ip = true
     # however, this is not recommended for production as it exposes the container to the internet
     assign_public_ip = var.create_lb ? true : var.assign_public_ip
