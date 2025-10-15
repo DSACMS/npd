@@ -135,15 +135,6 @@ resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_etl_webserver_alb_sg" 
   prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
 }
 
-resource "aws_vpc_security_group_ingress_rule" "dagster_alb_security_group_to_dagster_website" {
-  description = "Allows the application load balancer to access the dagster web ui"
-  security_group_id = aws_security_group.fhir_etl_sg.id
-  ip_protocol = "tcp"
-  from_port = 80
-  to_port = 80
-  referenced_security_group_id = aws_security_group.etl_webserver_alb_sg.id
-}
-
 # TODO: There's an argument to make that this should be two security groups
 # one for the UI, another for the daemon / code locations
 # after this is working see about splitting it into two
@@ -151,6 +142,15 @@ resource "aws_security_group" "fhir_etl_sg" {
   description = "Defines traffic flows to and from the ETL processes"
   name        = "${var.account_name}-fhir-etl-sg"
   vpc_id      = var.vpc_id
+}
+
+resource "aws_vpc_security_group_ingress_rule" "dagster_alb_security_group_to_dagster_website" {
+  description = "Allows the application load balancer to access the dagster web ui"
+  security_group_id = aws_security_group.fhir_etl_sg.id
+  ip_protocol = "tcp"
+  from_port = 80
+  to_port = 80
+  referenced_security_group_id = aws_security_group.etl_webserver_alb_sg.id
 }
 
 resource "aws_vpc_security_group_ingress_rule" "etl_sg_allow_grpc" {
