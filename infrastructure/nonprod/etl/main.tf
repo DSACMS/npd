@@ -6,6 +6,10 @@ locals {
   dagster_home = "dagster_home"
 }
 
+resource "aws_ecr_repository" "dagster" {
+  name = "${var.account_name}-dagster"
+}
+
 resource "aws_s3_bucket" "etl_bronze" {
   bucket = "${var.account_name}-etl-bronze"
 }
