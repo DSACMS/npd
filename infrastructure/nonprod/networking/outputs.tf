@@ -14,7 +14,7 @@ output "api_security_group_id" {
 }
 
 output "alb_security_group_id" {
-  description = "The security group for the load balancer"
+  description = "The security group for the FHIR API load balancer"
   value       = aws_security_group.fhir_api_alb.id
 }
 
@@ -26,6 +26,16 @@ output "db_subnet_ids" {
 output "etl_subnet_ids" {
   description = "The private subnets used for the ETL processes"
   value       = data.aws_subnets.etl_subnets.ids
+}
+
+output "etl_security_group_id" {
+  description = "The security group for the ETL processes"
+  value = aws_security_group.fhir_etl_sg.id
+}
+
+output "etl_webserver_alb_security_group_id" {
+  description = "The security group for the Dagster UI load balancer"
+  value = aws_security_group.etl_webserver_alb_sg.id
 }
 
 output "public_subnet_ids" {

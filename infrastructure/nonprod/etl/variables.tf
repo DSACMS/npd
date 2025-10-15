@@ -1,10 +1,7 @@
 variable "account_name" {}
-variable "app_db_name" {}
-variable "fhir_api_image" {}
-variable "fhir_api_port" {
-  default = 8000
-}
-variable "fhir_api_migration_image" {}
+variable "dagster_home" {}
+variable "dagster_db_name" {}
+variable "dagster_image" {}
 variable "ecs_cluster_id" {}
 variable "db" {
   type = object({
@@ -15,7 +12,9 @@ variable "db" {
 }
 variable "networking" {
   type = object({
-    db_subnet_ids         = list(string)
+    etl_subnet_ids = list(string)
+    etl_security_group_id = string
+    etl_webserver_alb_security_group_id = string
     public_subnet_ids     = list(string)
     alb_security_group_id = string
     api_security_group_id = string

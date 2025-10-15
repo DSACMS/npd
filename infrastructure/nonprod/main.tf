@@ -126,15 +126,20 @@ module "etl" {
   source = "./etl"
 
   account_name = local.account_name
+  dagster_db_name = "dagster"
+  dagster_home = "dagster_home"
+  dagster_image = var.dagster_image
+  ecs_cluster_id = module.ecs.cluster_id
   db = {
     db_instance_master_user_secret_arn = module.etl-db.db_instance_master_user_secret_arn
     db_instance_address                = module.etl-db.db_instance_address
     db_instance_port                   = module.etl-db.db_instance_port
   }
   networking = {
-
-    db_subnet_ids = module.networking.db_subnet_ids
+    etl_subnet_ids = module.networking.etl_subnet_ids
     vpc_id        = module.networking.vpc_id
+    etl_security_group_id = module.networking.etl_security_group_id
+    etl_webserver_alb_security_group_id = module.networking.etl_webserver_alb_security_group_id
   }
 }
 

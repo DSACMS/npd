@@ -64,6 +64,10 @@ resource "aws_ecr_repository" "migrations" {
   name = "${var.name}-migrations"
 }
 
+resource "aws_ecr_repository" "dagster" {
+  name = "${var.name}-dagster"
+}
+
 module "ecs" {
   source  = "terraform-aws-modules/ecs/aws"
   version = "5.12.1"
