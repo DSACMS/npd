@@ -1,8 +1,9 @@
-| Status | Date | Author | Context | 
+| Status | Date | Author | Context |
 | --- | --- | --- | --- |
-| Drafted | 2029-07-01 | @spopelka-dsac | project scaffolding | 
+| Drafted | 2029-07-01 | @spopelka-dsac | project scaffolding |
 | Updated | 2029-08-19 | @spopelka-dsac | adding data and docker notes |
 | Updated | 2029-09-30 | @abachman-dsac | clarification of coding styles and PR details |
+| Updated | 2029-10-15 | @abachman-dsac | addressing feedback from #108 |
 
 - [How to Contribute](#how-to-contribute)
   - [Getting Started](#getting-started)
@@ -47,7 +48,12 @@ We encourage you to read this project's CONTRIBUTING policy (you are here), its
 
 While being fully developed in the open, this project is a hybrid project
 largely staffed by members of the [DSAC](https://www.cms.gov/digital-service)
-team. The team uses an internal Jira instance for planning and tracking work but
+team, but not restricted to CMS team members. We welcome
+[issues](https://github.com/DSACMS/npd/issues) and
+[contributions](https://github.com/DSACMS/npd/pulls) from the open source and
+health-tech community at large.
+
+The team uses an internal Jira instance for planning and tracking work but
 seeks to hold any discussions relevant to specific Pull Requests in the open.
 
 ### Building dependencies
@@ -56,6 +62,10 @@ Python and Javascript dependencies are handled via docker containers, so they
 will be built when running `docker compose build` or when running `docker
 compose up` for the first time in the `backend/` or `frontend/` directories,
 respectively.
+
+The `backend/` directory additionally includes support for `make` commands to
+help with development. You can run `make help` from inside that folder to get
+more information.
 
 If you prefer to run on host (aka, not inside docker containers), you will have
 to follow the instructions provided by your language tooling for installing
@@ -71,14 +81,16 @@ respective folder. To run a `docker compose` command, for example:
 
 ```console
 $ cd backend/
-$ docker compose up
+$ make setup && make up
 ```
 
 #### Database Setup
 
-Run `make setup` start `db`, the Postgres database service, which will create
-the default development database, and run `db-migrations`, the Flyway migration
-service which will bring it up to date.
+Running `make setup` will:
+
+- start the development database service
+- create the default development database
+- migrate the development data base to the current version
 
 #### Running the Application
 
@@ -88,11 +100,17 @@ current documentation if you run into a situation you are unable to solve by
 rebuilding the application from scratch.
 
 0. Navigate to the `backend/` directory.
-1. Ensure that the `db` service is running. Use `docker compose up -d db` if it is not.
-2. Create a `.env` file in the `backend/` directory with `cp backend/.env_template backend/.env` 
-    * _note:_ set `NPD_DB_HOST` to `host.docker.internal` if using a host postgres instance from inside a container.
-3. Run `docker compose up` initially to start the web application service and `docker compose up --build` following any substantial updates to the backend application
-4. Navigate to `http://localhost:8000/fhir/` or run `curl localhost:8000/fhir` to visit the application. You should see an API documentation landing page. 
+1. Ensure that the `db` service is running. Use `docker compose up -d db` if it
+  is not.
+2. Create a `.env` file in the `backend/` directory with `cp
+  backend/.env_template backend/.env`
+  * _note:_ set `NPD_DB_HOST` to `host.docker.internal` if using a host
+    Postgres instance from inside a container.
+3. Run `docker compose up` initially to start the web application service and
+  `docker compose up --build` following any substantial updates to the backend
+  application
+4. Navigate to `http://localhost:8000/fhir/` or run `curl localhost:8000/fhir`
+  to visit the application. You should see an API documentation landing page.
 5. Happy coding!
 
 ### Workflow and Branching
@@ -125,12 +143,15 @@ The backend test suite can be found in the `tests.py` file currently in
 `backend/npdfhir/tests.py`. The test suite can be run by navigating to the
 `backend` folder and running `make test` or `python manage.py test`.
 
-Please refer to the [Django documentation](https://docs.djangoproject.com/en/5.2/topics/testing/overview/) on testing for additional details.
+Please refer to the [Django
+documentation](https://docs.djangoproject.com/en/5.2/topics/testing/overview/)
+on testing for additional details.
 
 ### Coding Style and Linters
 
 > [!NOTE]
-> **Proposed**: Use `ruff` for python, `eslint` for typescript / javascript. Linter + formatter wins all debates. Use defaults whenever possible.
+> **Proposed**: Use `ruff` for python, `prettier` for typescript / javascript.
+> Linter + formatter wins all debates. Use defaults whenever possible.
 
 ### Writing Issues
 
@@ -153,7 +174,7 @@ When creating an issue please try to adhere to the following format:
     see our .github/ISSUE_TEMPLATE.md for more examples.
 
 In this project, issues should be limited to code, development tooling,
-automation, or site bugs, _NOT_ data quality.
+automation, or site bugs, ___NOT___ data quality.
 
 ### Creating Commits
 
@@ -162,15 +183,12 @@ clean. Code should be well formatted by tools whenever possible.
 
 We rely on a fairly large set of automated checks in GitHub to maintain code
 quality, but you will have a better time if you ensure the checks will pass
-before you push. 
+before you push.
 
 Assume that "Squash and
 Merge"](https://github.blog/open-source/git/squash-your-commits/) will be used
 to merge your changes, so don't hesitate to commit early and often in your
 branch.
-
-
-
 
 
 #### Commit Messages
@@ -188,9 +206,9 @@ Some important notes regarding the first line of your commit message:
 * Do not end in a period — this is a title/subject
 * Prefix the subject with its scope
 
-#### Pull Request Descriptions 
+#### Pull Request Descriptions
 
-We prefer 
+We prefer
 
     module-name: One line description of your change (less than 72 characters)
 
@@ -212,7 +230,7 @@ We prefer
 
     ## Testing / Review
 
-    <!-- What guidance do you have for reviewers with respect to testing and reviewing 
+    <!-- What guidance do you have for reviewers with respect to testing and reviewing
     your changes? -->
 
 See our [.github/PULL_REQUEST_TEMPLATE.md](./.github/PULL_REQUEST_TEMPLATE.md) for the current default template.
