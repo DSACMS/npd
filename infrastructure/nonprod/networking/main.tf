@@ -6,6 +6,7 @@ terraform {
     }
   }
 }
+
 ## Subnet configuration
 data "aws_subnets" "database_subnets" {
   filter {

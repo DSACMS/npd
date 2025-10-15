@@ -137,7 +137,6 @@ resource "aws_ecs_service" "dagster_daemon" {
   force_new_deployment = true
 }
 
-
 resource "aws_ecs_task_definition" "dagster_ui" {
   family                   = "${var.account_name}-dagster-ui"
   network_mode             = "awsvpc"
