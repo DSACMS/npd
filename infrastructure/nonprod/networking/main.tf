@@ -116,7 +116,7 @@ resource "aws_vpc_security_group_ingress_rule" "etl_services_to_etl_db" {
   ip_protocol                  = "tcp"
   from_port                    = 5432
   to_port                      = 5432
-  referenced_security_group_id = aws_security_group.fhir_etl_sg
+  referenced_security_group_id = aws_security_group.fhir_etl_sg.id
 }
 
 resource "aws_security_group" "etl_webserver_alb_sg" {
@@ -136,11 +136,11 @@ resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_etl_webserver_alb_sg" 
 
 resource "aws_vpc_security_group_ingress_rule" "dagster_alb_security_group_to_dagster_website" {
   description = "Allows the application load balancer to access the dagster web ui"
-  security_group_id = aws_security_group.fhir_etl_sg
+  security_group_id = aws_security_group.fhir_etl_sg.id
   ip_protocol = "tcp"
   from_port = 80
   to_port = 80
-  referenced_security_group_id = aws_security_group.etl_webserver_alb_sg
+  referenced_security_group_id = aws_security_group.etl_webserver_alb_sg.id
 }
 
 # TODO: There's an argument to make that this should be two security groups
@@ -154,18 +154,18 @@ resource "aws_security_group" "fhir_etl_sg" {
 
 resource "aws_vpc_security_group_ingress_rule" "etl_sg_allow_grpc" {
   description                  = "Allows containers to within the security group to talk to each other by gRPC"
-  security_group_id            = aws_security_group.fhir_etl_sg
+  security_group_id            = aws_security_group.fhir_etl_sg.id
   ip_protocol                  = "tcp"
   from_port                    = 4000
   to_port                      = 4000
-  referenced_security_group_id = aws_security_group.fhir_etl_sg
+  referenced_security_group_id = aws_security_group.fhir_etl_sg.id
 }
 
 resource "aws_vpc_security_group_egress_rule" "etl_sg_allow_outbound_requests" {
   description       = "Allows containers within the security group to make outbound (HTTP, PG, etc) requests"
-  security_group_id = aws_security_group.fhir_etl_sg
+  security_group_id = aws_security_group.fhir_etl_sg.id
   ip_protocol       = "tcp"
   from_port         = 0
   to_port           = 0
-  cidr_ipv4         = ["0.0.0.0/0"] # any external IP
+  cidr_ipv4         = "0.0.0.0/0" # any external IP
 }

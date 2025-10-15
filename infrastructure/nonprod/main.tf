@@ -137,9 +137,10 @@ module "etl" {
   }
   networking = {
     etl_subnet_ids = module.networking.etl_subnet_ids
-    vpc_id        = module.networking.vpc_id
     etl_security_group_id = module.networking.etl_security_group_id
     etl_webserver_alb_security_group_id = module.networking.etl_webserver_alb_security_group_id
+    public_subnet_ids = module.networking.public_subnet_ids
+    vpc_id        = module.networking.vpc_id
   }
 }
 

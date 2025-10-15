@@ -16,8 +16,6 @@ variable "networking" {
     etl_security_group_id = string
     etl_webserver_alb_security_group_id = string
     public_subnet_ids     = list(string)
-    alb_security_group_id = string
-    api_security_group_id = string
     vpc_id                = string
   })
 }

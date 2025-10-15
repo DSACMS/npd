@@ -132,26 +132,26 @@ resource "aws_ecs_service" "dagster_daemon" {
 }
 
 
-resource "aws_ecs_task_definition" "dagster_webserver" {
-  family                   = "${var.account_name}-dagster-webserver"
+resource "aws_ecs_task_definition" "dagster_ui" {
+  family                   = "${var.account_name}-dagster-ui"
   network_mode             = "awsvpc"
   requires_compatibilities = ["FARGATE"]
   cpu                      = "512"
   memory                   = "1024"
-  task_role_arn            = aws_iam_role.dagster_task_role
-  execution_role_arn       = aws_iam_role.dagster_execution_role
+  task_role_arn            = aws_iam_role.dagster_task_role.arn
+  execution_role_arn       = aws_iam_role.dagster_execution_role.arn
 
   container_definitions = jsonencode([
     {
-      name      = "${var.account_name}-dagster-webserver"
+      name      = "${var.account_name}-dagster-ui"
       image     = var.dagster_image
       essential = true
       logConfiguration = {
         logDriver = "awslogs"
         options = {
-          "awslogs-group"         = "/ecs/${var.account_name}-dagster-webserver-logs"
+          "awslogs-group"         = "/ecs/${var.account_name}-dagster-ui-logs"
           "awslogs-region"        = data.aws_region.current.name
-          "awslogs-stream-prefix" = "${var.account_name}-dagster-webserver-logs"
+          "awslogs-stream-prefix" = "${var.account_name}-dagster-ui-logs"
         }
       }
       portMappings = [
@@ -162,7 +162,7 @@ resource "aws_ecs_task_definition" "dagster_webserver" {
           name          = "http"
         }
       ]
-      command = ["dagster-webserver", "--host", "0.0.0.0", "--port", "80", "-w", "${local.dagster_home}/workspace.yaml"]
+      command = ["dagster-ui", "--host", "0.0.0.0", "--port", "80", "-w", "${local.dagster_home}/workspace.yaml"]
       environment = [
         { name = "DAGSTER_HOME", value = local.dagster_home },
         { name = "DAGSTER_POSTGRES_HOST", value = var.db.db_instance_address },
@@ -182,12 +182,12 @@ resource "aws_ecs_task_definition" "dagster_webserver" {
   ])
 }
 
-resource "aws_ecs_service" "dagster-webserver" {
-  name            = "${var.account_name}-dagster-webserver"
+resource "aws_ecs_service" "dagster-ui" {
+  name            = "${var.account_name}-dagster-ui"
   cluster         = var.ecs_cluster_id
   desired_count   = 1
   launch_type     = "FARGATE"
-  task_definition = aws_ecs_task_definition.dagster_webserver.arn
+  task_definition = aws_ecs_task_definition.dagster_ui.arn
 
   network_configuration {
     subnets         = var.networking.etl_subnet_ids
@@ -195,24 +195,24 @@ resource "aws_ecs_service" "dagster-webserver" {
   }
 
   load_balancer {
-    target_group_arn = aws_lb_target_group.dagster_webserver
-    container_name   = "${var.account_name}-dagster-webserver"
+    target_group_arn = aws_lb_target_group.dagster_ui.arn
+    container_name   = "${var.account_name}-dagster-ui"
     container_port   = 80
   }
 
   force_new_deployment = true
 }
 
-resource "aws_lb" "dagster_webserver_alb" {
-  name = "${var.account_name}-dagster-webserver-alb"
+resource "aws_lb" "dagster_ui_alb" {
+  name = "${var.account_name}-dagster-ui-alb"
   internal = false # TODO I don't know what this means
   load_balancer_type = "application"
   security_groups = [var.networking.etl_webserver_alb_security_group_id]
   subnets = var.networking.public_subnet_ids
 }
 
-resource "aws_lb_target_group" "dagster_webserver" {
-  name = "${var.account_name}-dagster-webserver-target-group"
+resource "aws_lb_target_group" "dagster_ui" {
+  name = "${var.account_name}-dagster-ui-tg"
   port = 3001
   protocol = "HTTP"
   vpc_id = var.networking.vpc_id
@@ -222,13 +222,13 @@ resource "aws_lb_target_group" "dagster_webserver" {
 }
 
 resource "aws_alb_listener" "http" {
-  load_balancer_arn = aws_lb.dagster_webserver_alb.arn
+  load_balancer_arn = aws_lb.dagster_ui_alb.arn
   port = 80
   protocol = "HTTP"
 
   default_action {
     type = "forward"
-    target_group_arn = aws_lb_target_group.dagster_webserver.arn
+    target_group_arn = aws_lb_target_group.dagster_ui.arn
   }
 }
 
