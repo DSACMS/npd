@@ -17,7 +17,7 @@ resource "aws_iam_role" "dagster_execution_role" {
     Version = "2012-10-17"
     Statement = [{
       Effect    = "Allow"
-      Principal = { Service = "ecs-tasks.amazon.com" }
+      Principal = { Service = "ecs-tasks.amazonaws.com" }
       Action    = "sts:AssumeRole"
     }]
   })
@@ -32,7 +32,9 @@ resource "aws_iam_policy" "dagster_can_access_etl_database_secret" {
       {
         Action = "secretsmanager:GetSecretValue",
         Effect = "Allow"
-        Action = "sts:AssumeRole"
+        Resource = [
+          var.db.db_instance_master_user_secret_arn
+        ]
       }
     ]
   })
@@ -68,7 +70,7 @@ resource "aws_iam_role" "dagster_task_role" {
     Version = "2012-10-17"
     Statement = [{
       Effect    = "Allow"
-      Principal = { Service = "ecs-tasks.amazon.com" }
+      Principal = { Service = "ecs-tasks.amazonaws.com" }
       Action    = "sts:AssumeRole"
     }]
   })
