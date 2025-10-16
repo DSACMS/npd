@@ -1,6 +1,8 @@
 #!/bin/bash
-# Load .env
-[ ! -f .env ] || export $(grep -v '^#' .env | xargs)
+# Load environment specific .env
+envname="${1:-sandbox}"
+
+[ ! -f .env.$envname ] || export $(grep -v '^#' .env.$envname | xargs)
 
 if [ -z "$CTKEY_USERNAME" ]; then
     read -p "Enter ctkey username: " CTKEY_USERNAME

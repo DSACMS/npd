@@ -57,11 +57,11 @@ jobs:
       - name: Configure Terraform
         uses: hashicorp/setup-terraform@v3
       - name: Update Infrastructure, Deploy API
-        working-directory: infrastructure/envs/sandbox
+        working-directory: infrastructure
         env:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           REPOSITORY: ndh
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          terraform init
-          terraform apply -auto-approve
+          terraform -chdir=envs/sandbox init
+          terraform -chdir=envs/sandbox apply -auto-approve
