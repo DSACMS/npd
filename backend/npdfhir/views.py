@@ -429,7 +429,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
                 case 'organization_type':
                     organizations = organizations.annotate(
                         search=SearchVector(
-                            'organizationtotaxonomy__nucc_code__display_name')
+                            'clinicalorganization__organizationtotaxonomy__nucc_code__display_name')
                     ).filter(search=value)
                 case 'address':
                     organizations = organizations.annotate(
