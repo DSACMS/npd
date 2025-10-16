@@ -29,7 +29,8 @@ urlpatterns = [
     re_path("docs/?", schema_view.with_ui("swagger",
             cache_timeout=0), name="schema-swagger-ui"),
     path("healthCheck", views.health, name="healthCheck"),
-    path('metadata', views.FHIRCapabilityStatementView.as_view(), name='fhir-metadata'),
+    path('metadata', views.FHIRCapabilityStatementView.as_view(),
+         name='fhir-metadata'),
 
     # Router URLs
     # everything else is passed to the rest_framework router to manage

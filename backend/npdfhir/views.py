@@ -753,6 +753,7 @@ class FHIRLocationViewSet(viewsets.ViewSet):
 
         return response
 
+
 class FHIRCapabilityStatementView(APIView):
     """
     ViewSet for FHIR Practitioner resources
@@ -767,7 +768,8 @@ class FHIRCapabilityStatementView(APIView):
         """
         Return a list of all CapabilityStatement as FHIR CapabilityStatement resources
         """
-        serializer = CapabilityStatementSerializer(context={"request": request})
+        serializer = CapabilityStatementSerializer(
+            context={"request": request})
         response = serializer.to_representation(None)
 
         return Response(response)
