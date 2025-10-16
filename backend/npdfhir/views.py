@@ -42,6 +42,20 @@ def createFilterParam(field: str, display: str = None, enum: list = None):
     return param
 
 
+def parse_identifier(identifier_value):
+    """
+    Parse an identifier search parameter that should be in the format of "value" OR "system|value"
+    
+    Not sure the best way to document this but currently the only system are NPI, EIN or OtherID which could be anything... 
+    I assume there will be more with further iterations so documenting this is a good idea.
+    """
+    if '|' in identifier_value:
+        parts = identifier_value.split('|', 1)
+        return (parts[0], parts[1])
+    
+    return (None, identifier_value)
+
+
 def index(request):
     return HttpResponse("Connection to npd database: successful")
 
@@ -147,6 +161,7 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
     @swagger_auto_schema(
         manual_parameters=[
             page_size_param,
+            createFilterParam('identifier', 'format: value OR system|value -> 12345567 OR NPI|12345567'),
             createFilterParam('name'),
             createFilterParam('gender', enum=genderMapping.keys()),
             createFilterParam('practitioner_type'),
@@ -170,7 +185,17 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
         all_params = request.query_params
 
         providers = Provider.objects.all().prefetch_related(
-            'npi', 'individual', 'individual__individualtoname_set', 'individual__individualtoaddress_set', 'individual__individualtoaddress_set__address__address_us', 'individual__individualtoaddress_set__address__address_us__state_code', 'individual__individualtoaddress_set__address_use', 'individual__individualtophone_set', 'individual__individualtoemail_set', 'providertootherid_set', 'providertotaxonomy_set')
+            'npi', 
+            'individual', 
+            'individual__individualtoname_set', 
+            'individual__individualtoaddress_set', 
+            'individual__individualtoaddress_set__address__address_us', 
+            'individual__individualtoaddress_set__address__address_us__state_code', 
+            'individual__individualtoaddress_set__address_use', 
+            'individual__individualtophone_set', '' \
+            'individual__individualtoemail_set', 
+            'providertootherid_set', 
+            'providertotaxonomy_set')
 
         for param, value in all_params.items():
             match param:
@@ -181,6 +206,27 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
                             page_size = value
                     except:
                         page_size = page_size
+                case 'identifier':
+                    system, identifier_id = parse_identifier(value)
+                    queries = None
+
+                    if system: # specific identifier search requested
+                        if system == 'NPI':
+                            try:
+                                queries = Q(npi__npi=identifier_id)
+                            except (ValueError, TypeError):
+                                pass
+                        else:
+                            queries = Q(providertootherid__other_id=identifier_id)
+
+                        if queries is None: # force return no results 
+                            queries = Q(pk__isnull=True)
+
+                    else: # general identifier search requested
+                        queries = Q(pk__isnull=True) # start with empty match
+                        queries = Q(providertootherid__other_id=identifier_id) | Q(npi__npi=identifier_id)
+                    
+                    providers = providers.filter(queries).distinct()
                 case 'name':
                     providers = providers.annotate(
                         search=SearchVector('individual__individualtoname__last_name',
@@ -244,7 +290,22 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
         """
         Return a single provider as a FHIR Practitioner resource
         """
-        provider = get_object_or_404(Provider, pk=int(pk))
+        provider = get_object_or_404(
+            Provider.objects.prefetch_related(
+                'npi', 
+                'individual', 
+                'individual__individualtoname_set', 
+                'individual__individualtoaddress_set', 
+                'individual__individualtoaddress_set__address__address_us', 
+                'individual__individualtoaddress_set__address__address_us__state_code', 
+                'individual__individualtoaddress_set__address_use', 
+                'individual__individualtophone_set', 
+                'individual__individualtoemail_set', 
+                'providertootherid_set', 
+                'providertotaxonomy_set'
+            ),
+            individual_id=pk
+        )
 
         practitioner = PractitionerSerializer(provider)
 
@@ -265,7 +326,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
         manual_parameters=[
             page_size_param,
             createFilterParam('name'),
-            createFilterParam('identifer'),
+            createFilterParam('identifier', 'format: value OR system|value -> 12345567 OR NPI|12345567'),
             createFilterParam('organization_type'),
             createFilterParam('address'),
             createFilterParam('address-city', 'city'),
@@ -327,12 +388,43 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
                             'organization__organizationtoname__name')
                     ).filter(search=value)
                 case 'identifier':
-                    queries =  Q(clinicalorganization__npi__npi=value) | Q(clinicalorganization__organizationtootherid__other_id=value)
-                    try:
-                        UUID(value)
-                        queries |= Q(ein__ein_id=value) 
-                    except (ValueError):
-                        pass
+                    system, identifier_id = parse_identifier(value)
+                    queries = None
+
+                    if system: # specific identifier search requested
+                        if system == 'NPI':
+                            try:
+                                queries = Q(clinicalorganization__npi__npi=int(identifier_id))
+                            except (ValueError, TypeError):
+                                pass
+                        elif system == 'EIN':
+                            try: # need this block in order to pass pydantic validation
+                                UUID(identifier_id)
+                                queries = Q(ein__ein_id=identifier_id)
+                            except (ValueError, TypeError):
+                                pass
+                        else:
+                            queries = Q(clinicalorganization__organizationtootherid__other_id=identifier_id)
+
+                        if queries is None: # force return no results 
+                            queries = Q(pk__isnull=True)
+
+                    else: # general identifier search requested
+                        queries = Q(pk__isnull=True) # start with empty queryset
+
+                        try:
+                            queries |= Q(clinicalorganization__npi__npi=int(identifier_id))
+                        except (ValueError, TypeError):
+                            pass
+
+                        try: # need this block in order to pass pydantic validation
+                            UUID(identifier_id)
+                            queries |= Q(ein__ein_id=identifier_id)
+                        except (ValueError, TypeError):
+                            pass
+
+                        queries |= Q(clinicalorganization__organizationtootherid__other_id=identifier_id)
+                    
                     organizations = organizations.filter(queries).distinct()
                 case 'organization_type':
                     organizations = organizations.annotate(

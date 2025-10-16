@@ -394,7 +394,7 @@ class PractitionerSerializer(serializers.Serializer):
     def to_representation(self, instance):
         representation = super().to_representation(instance)
         practitioner = Practitioner()
-        practitioner.id = str(instance.npi.npi)
+        practitioner.id = str(instance.individual.id)
         practitioner.meta = Meta(
             profile=[
                 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"]
