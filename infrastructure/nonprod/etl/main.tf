@@ -27,6 +27,11 @@ resource "aws_iam_role" "dagster_execution_role" {
   })
 }
 
+resource "aws_iam_role_policy_attachment" "ecs_task_execution" {
+  role       = aws_iam_role.dagster_execution_role.name
+  policy_arn = "arn:${data.aws_partition.current.partition}:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
+}
+
 resource "aws_iam_policy" "dagster_can_access_etl_database_secret" {
   name        = "${var.account_name}-etl-service-can-access-etl-database-secret"
   description = "Allows Dagster to access the ETL database RDS secret"
@@ -130,7 +135,7 @@ resource "aws_ecs_service" "dagster_daemon" {
   task_definition = aws_ecs_task_definition.dagster_daemon.arn
 
   network_configuration {
-    subnets         = var.networking.etl_subnet_ids
+    subnets         = var.networking.public_subnet_ids
     security_groups = [var.networking.etl_security_group_id]
   }
 
@@ -195,7 +200,7 @@ resource "aws_ecs_service" "dagster-ui" {
   task_definition = aws_ecs_task_definition.dagster_ui.arn
 
   network_configuration {
-    subnets         = var.networking.etl_subnet_ids
+    subnets         = var.networking.public_subnet_ids
     security_groups = [var.networking.etl_security_group_id]
   }
 

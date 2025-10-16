@@ -25,6 +25,11 @@ resource "aws_iam_role" "fhir_api_role" {
   })
 }
 
+resource "aws_iam_role_policy_attachment" "ecs_task_execution" {
+  role       = aws_iam_role.fhir_api_role.name
+  policy_arn = "arn:${data.aws_partition.current.partition}:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
+}
+
 resource "aws_iam_policy" "fhir_api_can_access_fhir_api_db_secret" {
   name        = "${var.account_name}-fhir-api-can-access-fhir-database-secret"
   description = "Allows ECS to access the RDS secret"

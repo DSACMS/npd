@@ -8,6 +8,11 @@ output "db_subnet_group_name" {
   value       = aws_db_subnet_group.database_subnets.name
 }
 
+output "db_subnet_ids" {
+  description = "The private subnets used for the API"
+  value       = data.aws_subnets.database_subnets.ids
+}
+
 output "api_security_group_id" {
   description = "The security group for the FHIR API"
   value       = aws_security_group.fhir_api_sg.id
@@ -18,11 +23,6 @@ output "alb_security_group_id" {
   value       = aws_security_group.fhir_api_alb.id
 }
 
-output "db_subnet_ids" {
-  description = "The private subnets used for the API"
-  value       = data.aws_subnets.database_subnets.ids
-}
-
 output "etl_subnet_ids" {
   description = "The private subnets used for the ETL processes"
   value       = data.aws_subnets.etl_subnets.ids
@@ -31,6 +31,11 @@ output "etl_subnet_ids" {
 output "etl_security_group_id" {
   description = "The security group for the ETL processes"
   value = aws_security_group.fhir_etl_sg.id
+}
+
+output "etl_db_security_group_id" {
+  description = "A list of security group IDs for use with the ETL databases"
+  value       = aws_security_group.fhir_etl_db_sg.id
 }
 
 output "etl_webserver_alb_security_group_id" {
