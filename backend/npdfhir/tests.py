@@ -3,23 +3,9 @@ from rest_framework import status
 from rest_framework.test import APITestCase, APIClient
 from django.test.runner import DiscoverRunner
 from django.db import connection
-from .cache import cacheData
-# I can't explain why, but we need to import cacheData here. I think we can remove this once we move to the docker db setup
-
-
-class SchemaTestRunner(DiscoverRunner):
-    def setup_databases(self, **kwargs):
-        old_config = super().setup_databases(**kwargs)
-
-        # Apply unmanaged tables
-        with connection.cursor() as cursor:
-            cursor.execute(
-                open("../flyway/sql/schemas/V1__initial_npd_schema.sql").read())
-            cursor.execute(
-                open("../flyway/sql/inserts/sample_data.sql").read())
-
-        return old_config
-
+from .cache import cacheData # I can't explain why, but we need to import cacheData here. I think we can remove this once we move to the docker db setup
+from fhir.resources.bundle import Bundle
+from pydantic import ValidationError
 
 def get_female_npis(npi_list):
     """
@@ -37,6 +23,121 @@ def get_female_npis(npi_list):
         results = cursor.fetchall()
 
     return results
+
+
+class EndpointViewSetTestCase(APITestCase):
+    def setUp(self):
+        self.client = APIClient()
+        self.list_url = reverse("fhir-endpoint-list")
+
+    def test_list_default(self):
+        response = self.client.get(self.list_url)
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response["Content-Type"], "application/fhir+json")
+        self.assertIn("results", response.data)
+    
+    def test_list_returns_fhir_bundle(self):
+        response = self.client.get(self.list_url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        data = response.json()
+        bundle = Bundle.model_validate(data['results'])
+
+        self.assertEqual(bundle.__resource_type__, "Bundle")
+    
+    def test_list_entries_are_fhir_endpoints(self):
+        response = self.client.get(self.list_url)
+        
+        bundle = response.data["results"]
+        self.assertGreater(len(bundle["entry"]), 0)
+        
+        first_entry = bundle["entry"][0]
+        self.assertIn("resource", first_entry)
+        
+        endpoint_resource = first_entry["resource"]
+        self.assertEqual(endpoint_resource["resourceType"], "Endpoint")
+        self.assertIn("id", endpoint_resource)
+        self.assertIn("status", endpoint_resource)
+        self.assertIn("connectionType", endpoint_resource)
+        self.assertIn("address", endpoint_resource)
+
+    def test_pagination_custom_page_size(self):
+        response = self.client.get(self.list_url, {"page_size": 2})
+        
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        bundle = response.data["results"]
+        self.assertLessEqual(len(bundle["entry"]), 2)
+    
+    def test_pagination_enforces_maximum(self):
+        response = self.client.get(self.list_url, {"page_size": 5000})
+        
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        bundle = response.data["results"]
+        self.assertLessEqual(len(bundle["entry"]), 1000)
+
+    def test_filter_by_name(self):
+        response = self.client.get(self.list_url, {"name": "Kansas City Psychiatric Group"})
+        
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        bundle = response.data["results"]
+        
+        self.assertGreater(len(bundle["entry"]), 0)
+
+        first_endpoint = bundle["entry"][0]["resource"]
+
+        self.assertIn("name", first_endpoint)
+        self.assertIn("Kansas City", first_endpoint["name"])
+    
+    def test_filter_by_connection_type(self):
+        connection_type = "hl7-fhir-rest"
+        response = self.client.get(self.list_url, {"endpoint_connection_type": connection_type})
+        
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        bundle = response.data["results"]
+        
+        entries = bundle.get("entry", [])
+        self.assertGreater(len(entries), 0)
+
+        first_endpoint = entries[0]["resource"]
+        self.assertIn("connectionType", first_endpoint)
+
+        code = first_endpoint["connectionType"][0]["coding"][0]["code"]
+        self.assertEqual(connection_type, code)
+    
+    def test_filter_returns_empty_for_nonexistent_name(self):
+        response = self.client.get(self.list_url, {"name": "NonexistentEndpointName12345"})
+        
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        bundle = response.data["results"]
+        self.assertEqual(len(bundle["entry"]), 0)
+
+    def test_retrieve_specific_endpoint(self):
+        list_response = self.client.get(self.list_url, {"page_size": 1})
+        first_endpoint = list_response.data["results"]["entry"][0]["resource"]
+
+        endpoint_id = first_endpoint["id"]
+        detail_url = reverse("fhir-endpoint-detail", args=[endpoint_id])
+        
+        response = self.client.get(detail_url)
+        
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        endpoint = response.data
+        self.assertEqual(endpoint["resourceType"], "Endpoint")
+        self.assertEqual(endpoint["id"], endpoint_id)
+        self.assertIn("status", endpoint)
+        self.assertIn("connectionType", endpoint)
+        self.assertIn("address", endpoint)
+    
+    def test_retrieve_nonexistent_endpoint(self):
+        detail_url = reverse("fhir-endpoint-detail", args=["12300000-0000-0000-0000-000000000123"])
+        response = self.client.get(detail_url)
+        
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
 
 class BasicViewsTestCase(APITestCase):

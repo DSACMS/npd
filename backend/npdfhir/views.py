@@ -4,10 +4,12 @@ from django.contrib.postgres.search import SearchVector
 from rest_framework import viewsets, generics
 from rest_framework.response import Response
 from rest_framework.pagination import PageNumberPagination
+from rest_framework.renderers import BrowsableAPIRenderer
 from django.core.cache import cache
 from .models import Provider, EndpointInstance, ClinicalOrganization, ProviderToOrganization
 from .serializers import PractitionerSerializer, ClinicalOrganizationSerializer, BundleSerializer, EndpointSerializer, PractitionerRoleSerializer
 from .mappings import genderMapping, addressUseMapping
+from .renderers import FHIRRenderer
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 
@@ -50,6 +52,7 @@ class FHIREndpointViewSet(viewsets.ViewSet):
     """
     ViewSet for FHIR Endpoint Resources
     """
+    renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
 
     @swagger_auto_schema(
         manual_parameters=[
@@ -114,7 +117,6 @@ class FHIREndpointViewSet(viewsets.ViewSet):
 
         # Set appropriate content type for FHIR responses
         response = paginator.get_paginated_response(bundle.data)
-        response["Content-Type"] = "application/fhir+json"
 
         return response
 
@@ -129,7 +131,6 @@ class FHIREndpointViewSet(viewsets.ViewSet):
 
         # Set appropriate content type for FHIR responses
         response = Response(serializer.data)
-        response["Content-Type"] = "application/fhir+json"
 
         return response
 
@@ -138,6 +139,8 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
     """
     ViewSet for FHIR Practitioner resources
     """
+    renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+
     # permission_classes = [permissions.IsAuthenticated]
     @swagger_auto_schema(
         manual_parameters=[
@@ -232,7 +235,6 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
 
         # Set appropriate content type for FHIR responses
         response = paginator.get_paginated_response(bundle.data)
-        response["Content-Type"] = "application/fhir+json"
 
         return response
 
@@ -246,7 +248,6 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
 
         # Set appropriate content type for FHIR responses
         response = Response(practitioner.data)
-        response["Content-Type"] = "application/fhir+json"
 
         return response
 
@@ -341,6 +342,8 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
     """
     ViewSet for FHIR Practitioner resources
     """
+    renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+
     # permission_classes = [permissions.IsAuthenticated]
     @swagger_auto_schema(
         manual_parameters=[
@@ -430,7 +433,6 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
 
         # Set appropriate content type for FHIR responses
         response = paginator.get_paginated_response(bundle.data)
-        response["Content-Type"] = "application/fhir+json"
 
         return response
 
@@ -444,6 +446,5 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
 
         # Set appropriate content type for FHIR responses
         response = Response(organization.data)
-        response["Content-Type"] = "application/fhir+json"
 
         return response

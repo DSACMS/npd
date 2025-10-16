@@ -31,6 +31,8 @@ SECRET_KEY = config('NPD_DJANGO_SECRET')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(config('DEBUG'))
+TESTING = sys.argv[1:2] == ['test']
+
 
 if DEBUG:
     ALLOWED_HOSTS = ['localhost', '127.0.0.1']
@@ -53,6 +55,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
     'drf_yasg',
+    'xmlrunner',
+    'provider_directory.apps.ProviderDirectory',
 ]
 
 if not TESTING:
@@ -83,7 +87,12 @@ ROOT_URLCONF = 'app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            # NOTE: (@abachman-dsac) this setup allows frontend/ to build directly
+            # into provider_directory/static/ and provider_directory.views.landing to
+            # reference the resulting index.html
+            os.path.join(BASE_DIR, 'provider_directory', 'static'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -109,13 +118,20 @@ DATABASES = {
         'HOST': config('NPD_DB_HOST'),
         'NAME': config('NPD_DB_NAME'),
         'PORT': config('NPD_DB_PORT'),
+        "TEST": {
+            # Django will create a new test DB with this name prefix
+            "NAME": f"{os.getenv('NPD_DB_NAME', 'npd')}",
+            "MIRROR": "default",                 # optional: avoids creating a test DB
+        },
         'OPTIONS': {
             'options': '-c search_path=npd,public'
         }
     }
 }
 
-TEST_RUNNER = "npdfhir.tests.SchemaTestRunner"
+TEST_RUNNER = 'xmlrunner.extra.djangotestrunner.XMLTestRunner'
+# Directory where XML reports will be written
+TEST_OUTPUT_DIR = './artifacts/test-reports'
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -153,9 +169,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# STATICFILES_DIRS = [
-#        os.path.join(BASE_DIR, "static"),
-#    ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'provider_directory', 'static'),
+]
 
 # STATICFILES_DIRS = [
 #        os.path.join(BASE_DIR, "static"),
