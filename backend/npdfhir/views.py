@@ -385,7 +385,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
                 case 'name':
                     organizations = organizations.annotate(
                         search=SearchVector(
-                            'organization__organizationtoname__name')
+                            'organizationtoname__name')
                     ).filter(search=value)
                 case 'identifier':
                     system, identifier_id = parse_identifier(value)
