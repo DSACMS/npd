@@ -196,6 +196,18 @@ class OrganizationViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("results", response.data)
 
+    def test_list_filter_by_otherID_general(self):
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url, {"identifier":"001586989"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_otherID_specific(self):
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url, {"identifier":"	1|001586989"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
     # this test data is not in the database yet so no point of including them but this is what the test should look like when we eventually do get them in
 
     # def test_list_filter_by_ein_general(self):
@@ -207,17 +219,6 @@ class OrganizationViewSetTestCase(APITestCase):
     # def test_list_filter_by_ein_specific(self):
     #     url = reverse("fhir-organization-list")
     #     response = self.client.get(url, {"identifier":"USEIN|12-3456789"})
-    #     self.assertEqual(response.status_code, status.HTTP_200_OK)
-    #     self.assertIn("results", response.data)
-    # def test_list_filter_by_otherID_general(self):
-    #     url = reverse("fhir-organization-list")
-    #     response = self.client.get(url, {"identifier":"1EG4-TE5-MK73"})
-    #     self.assertEqual(response.status_code, status.HTTP_200_OK)
-    #     self.assertIn("results", response.data)
-
-    # def test_list_filter_by_otherID_specific(self):
-    #     url = reverse("fhir-organization-list")
-    #     response = self.client.get(url, {"identifier":"	CmsMBI|1EG4-TE5-MK73"})
     #     self.assertEqual(response.status_code, status.HTTP_200_OK)
     #     self.assertIn("results", response.data)
 
