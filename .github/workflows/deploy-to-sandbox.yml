@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - NDH-285-setup-frontend
 
 permissions:
   id-token: write
