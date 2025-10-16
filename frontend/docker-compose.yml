@@ -1,3 +1,5 @@
+name: npd
+
 services:
   web:
     build:

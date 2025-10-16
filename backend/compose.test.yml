@@ -1,3 +1,5 @@
+name: npd
+
 volumes:
   postgres_data:
 
