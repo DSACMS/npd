@@ -144,6 +144,15 @@ resource "aws_security_group" "fhir_etl_sg" {
   vpc_id      = var.vpc_id
 }
 
+resource "aws_vpc_security_group_ingress_rule" "fhir_etl_sg_internal_traffic" {
+  description = "Allow traffic between entities in the same group"
+  security_group_id = aws_security_group.fhir_etl_sg.id
+  from_port = 0
+  to_port = 0
+  ip_protocol = "tcp"
+  referenced_security_group_id = aws_security_group.fhir_etl_sg.id
+}
+
 resource "aws_vpc_security_group_ingress_rule" "dagster_alb_security_group_to_dagster_website" {
   description = "Allows the application load balancer to access the dagster web ui"
   security_group_id = aws_security_group.fhir_etl_sg.id
