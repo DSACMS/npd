@@ -36,7 +36,7 @@ create-db:
 	@echo "Creating development database..."
 	@docker compose up -d db
 # create development database only if it doesn't already exist
-	@docker compose run --rm db sh -c 'echo "creating $$POSTGRES_DB"; PGPASSWORD=$$POSTGRES_PASSWORD psql -h db -U $$POSTGRES_USER -c "CREATE DATABASE $$POSTGRES_DB" || echo "$$POSTGRES_DB already exists"'
+	@docker compose run --rm db sh -c 'echo "creating $$POSTGRES_DB"; PGPASSWORD=$$POSTGRES_PASSWORD psql -h db -U $$POSTGRES_USER -d postgres -c "CREATE DATABASE $$POSTGRES_DB" || echo "$$POSTGRES_DB already exists"'
 
 migrate:
 	@echo "Migrating the development database..."
@@ -61,8 +61,8 @@ test-setup:
 	@echo "Setting up test database..."
 	@docker compose -f compose.test.yml up -d --wait db
 # drop, create, and migrate test database
-	@docker compose -f compose.test.yml exec db sh -c 'echo "DROP   $$POSTGRES_DB"; PGPASSWORD=$$POSTGRES_PASSWORD psql -q -h localhost -U "$$POSTGRES_USER" -c "DROP DATABASE IF EXISTS $$POSTGRES_DB"'
-	@docker compose -f compose.test.yml exec db sh -c 'echo "CREATE $$POSTGRES_DB"; PGPASSWORD=$$POSTGRES_PASSWORD psql -q -h localhost -U "$$POSTGRES_USER" -c "CREATE DATABASE $$POSTGRES_DB"'
+	@docker compose -f compose.test.yml exec db sh -c 'echo "DROP   $$POSTGRES_DB"; PGPASSWORD=$$POSTGRES_PASSWORD psql -q -h localhost -U "$$POSTGRES_USER" -d postgres -c "DROP DATABASE IF EXISTS $$POSTGRES_DB"'
+	@docker compose -f compose.test.yml exec db sh -c 'echo "CREATE $$POSTGRES_DB"; PGPASSWORD=$$POSTGRES_PASSWORD psql -q -h localhost -U "$$POSTGRES_USER" -d postgres -c "CREATE DATABASE $$POSTGRES_DB"'
 	@docker compose -f compose.test.yml run --rm db-migrations migrate
 
 test: test-setup
