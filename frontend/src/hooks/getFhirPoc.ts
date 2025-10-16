@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react"
+import { useEffect, useState } from "react"
 
-const baseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000"
+const baseUrl = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000"
 const url = baseUrl + "/fhir/?format=json"
 
 interface UrlList {
@@ -18,7 +18,7 @@ const useGetFhirPoc = () => {
     fetch(url)
       .then((res) => res.json())
       .then((urlList: UrlList) => setUrlList(urlList))
-  }, [url])
+  }, [])
   console.log(urlList)
   {
     return urlList

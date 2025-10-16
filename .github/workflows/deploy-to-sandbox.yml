@@ -38,7 +38,7 @@ jobs:
       - name: Build Frontend Assets
         working-directory: frontend
         env:
-          VITE_API_BASE_URL: FIXME
+          VITE_API_BASE_URL: ""
         run: |
           npm install
           npm run build
@@ -65,4 +65,3 @@ jobs:
         run: |
           terraform init
           terraform apply -auto-approve
-          echo "VITE_API_BASE_URL=http://$(terraform output --raw alb_dns_name)" >> "$GITHUB_ENV"
