@@ -177,36 +177,42 @@ class OrganizationViewSetTestCase(APITestCase):
         response = self.client.get(url, {"name": "Cumberland"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("results", response.data)
+        self.assertGreaterEqual(response.data["results"]["total"], 1)
 
     def test_list_filter_by_organization_type(self):
         url = reverse("fhir-organization-list")
         response = self.client.get(url, {"organization_type": "Hospital"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("results", response.data)
+        self.assertGreaterEqual(response.data["results"]["total"], 1)
 
     def test_list_filter_by_npi_general(self):
         url = reverse("fhir-organization-list")
         response = self.client.get(url, {"identifier":"1427051473"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("results", response.data)
+        self.assertGreaterEqual(response.data["results"]["total"], 1)
 
     def test_list_filter_by_npi_specific(self):
         url = reverse("fhir-organization-list")
         response = self.client.get(url, {"identifier":"NPI|1427051473"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("results", response.data)
+        self.assertGreaterEqual(response.data["results"]["total"], 1)
 
     def test_list_filter_by_otherID_general(self):
         url = reverse("fhir-organization-list")
         response = self.client.get(url, {"identifier":"001586989"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("results", response.data)
+        self.assertGreaterEqual(response.data["results"]["total"], 1)
 
     def test_list_filter_by_otherID_specific(self):
         url = reverse("fhir-organization-list")
         response = self.client.get(url, {"identifier":"	1|001586989"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("results", response.data)
+        self.assertGreaterEqual(response.data["results"]["total"], 1)
 
     # this test data is not in the database yet so no point of including them but this is what the test should look like when we eventually do get them in
 
