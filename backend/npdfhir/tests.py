@@ -261,7 +261,7 @@ class PractitionerViewSetTestCase(APITestCase):
 class NPDValueSetValidatorTests(TestCase):
 
     def test_verify_codes_valid(self):
-        """✅ Should pass when all codes exist in the DB."""
+        """ Should pass when all codes exist in the DB."""
 
         data = {
             "resourceType" : "ValueSet",
@@ -336,7 +336,7 @@ class NPDValueSetValidatorTests(TestCase):
         self.assertIsInstance(model, ValueSet)
 
     def test_verify_codes_invalid(self):
-        """🚫 Should raise ValueError when a code is not found."""
+        """ Should raise ValueError when a code is not found."""
         data = {
             "resourceType": "ValueSet",
             "compose": {
@@ -351,3 +351,88 @@ class NPDValueSetValidatorTests(TestCase):
 
         with self.assertRaises(ValidationError) as ctx:
             NPDValueSet(**data)
+
+class NPDPractitionerValidatorTests(TestCase):
+    def test_valid_npi(self):
+        """Practitioner passes validation with a valid NPI."""
+
+        data = {
+            "resourceType": "Practitioner",
+            "id": "f203",
+            "identifier": [
+                {
+                    "system": "http://hl7.org/fhir/sid/us-npi",
+                    "value": "1234567893",  # Valid per CMS Luhn check
+                },
+                {
+                "use": "official",
+                "type": {
+                    "text": "BIG-nummer"
+                },
+                "system": "https://www.bigregister.nl/",
+                "value": "12345678903"
+                }
+            ],
+            "active": True,
+            "name": [
+                {
+                "use": "official",
+                "text": "Juri van Gelder"
+                }
+            ],
+            "telecom": [
+                {
+                "system": "phone",
+                "value": "+31715269111",
+                "use": "work"
+                }
+            ],
+            "gender": "male",
+            "birthDate": "1983-04-20",
+            "address": [
+                {
+                "use": "work",
+                "line": [
+                    "Walvisbaai 3"
+                ],
+                "city": "Den helder",
+                "postalCode": "2333ZA",
+                "country": "NLD"
+                }
+            ]
+            }
+
+        model = NPDPractitioner(**data)
+        self.assertIsInstance(model, Practitioner)
+
+    def test_invalid_npi_format(self):
+        """ Practitioner fails with invalid NPI format (non-numeric)."""
+        data = {
+            "resourceType": "Practitioner",
+            "identifier": [
+                {
+                    "system": "http://hl7.org/fhir/sid/us-npi",
+                    "value": "ABC123",
+                }
+            ],
+        }
+
+        with self.assertRaises(ValueError) as ctx:
+            NPDPractitioner(**data)
+        self.assertIn("invalid format", str(ctx.exception))
+
+    def test_invalid_npi_luhn(self):
+        """ Practitioner fails with invalid NPI checksum."""
+        data = {
+            "resourceType": "Practitioner",
+            "identifier": [
+                {
+                    "system": "http://hl7.org/fhir/sid/us-npi",
+                    "value": "1234567890",  # wrong check digit
+                }
+            ],
+        }
+
+        with self.assertRaises(ValueError) as ctx:
+            NPDPractitioner(**data)
+        self.assertIn("failed Luhn check", str(ctx.exception))

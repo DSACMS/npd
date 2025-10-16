@@ -146,8 +146,8 @@ class NPDPractitioner(Practitioner):
                 raise ValueError(f"NPI '{npi}' (identifier[{position}]) failed Luhn check")
 
         for identifier_index, identifier in enumerate(self.identifier):
-            if "hl7.org/fhir/sid/us-npi" in identifier['system']:
-                verify_npi(identifier['value'],identifier_index)
+            if "hl7.org/fhir/sid/us-npi" in identifier.system:
+                verify_npi(identifier.value,identifier_index)
         
         return self
 
