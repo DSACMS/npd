@@ -21,5 +21,5 @@ from debug_toolbar.toolbar import debug_toolbar_urls
 urlpatterns = [
     path('fhir/', include("npdfhir.urls")),
     path('admin/', admin.site.urls),
-    path('', include('provider_search.urls')),
+    path('', include('provider_directory.urls')),
 ] + debug_toolbar_urls()

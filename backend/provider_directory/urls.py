@@ -3,6 +3,6 @@ from . import views
 from debug_toolbar.toolbar import debug_toolbar_urls
 
 urlpatterns = [
-    path(r'', views.landing, name='index'),
-    path(r'<path:path>', views.landing),
+    path(r'', views.index, name='index'),
+    path(r'<path:path>', views.index),
 ]

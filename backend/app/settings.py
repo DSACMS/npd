@@ -31,6 +31,8 @@ SECRET_KEY = config('NPD_DJANGO_SECRET')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(config('DEBUG'))
+TESTING = sys.argv[1:2] == ['test']
+
 
 if DEBUG:
     ALLOWED_HOSTS = ['localhost', '127.0.0.1']
@@ -54,7 +56,7 @@ INSTALLED_APPS = [
     'django_filters',
     'drf_yasg',
     'xmlrunner',
-    'provider_search.apps.ProviderSearch',
+    'provider_directory.apps.ProviderDirectory',
 ]
 
 if not TESTING:
@@ -87,9 +89,9 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             # NOTE: (@abachman-dsac) this setup allows frontend/ to build directly
-            # into provider_search/static/ and provider_search.views.landing to
+            # into provider_directory/static/ and provider_directory.views.landing to
             # reference the resulting index.html
-            os.path.join(BASE_DIR, 'provider_search', 'static'),
+            os.path.join(BASE_DIR, 'provider_directory', 'static'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -169,7 +171,7 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
-    os.path.join(BASE_DIR, 'provider_search', 'static'),
+    os.path.join(BASE_DIR, 'provider_directory', 'static'),
 ]
 
 # STATICFILES_DIRS = [
