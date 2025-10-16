@@ -33,6 +33,15 @@ jobs:
           docker tag $REGISTRY/$REPOSITORY:$IMAGE_TAG $REGISTRY/$REPOSITORY
           docker push $REGISTRY/$REPOSITORY:latest
           echo "TF_VAR_migration_image=$REGISTRY/$REPOSITORY:$IMAGE_TAG" >> "$GITHUB_ENV"
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+      - name: Build Frontend Assets
+        working-directory: frontend
+        env:
+          VITE_API_BASE_URL: FIXME
+        run: |
+          npm install
+          npm run build
       - name: Build, tag, and push docker image to Amazon ECR
         working-directory: backend
         env:
@@ -56,13 +65,4 @@ jobs:
         run: |
           terraform init
           terraform apply -auto-approve
-          echo "FRONTEND_S3_BUCKET=$(terraform output --raw frontend_s3_bucket)" >> "$GITHUB_ENV"
           echo "VITE_API_BASE_URL=http://$(terraform output --raw alb_dns_name)" >> "$GITHUB_ENV"
-      - name: Setup NodeJS
-        uses: actions/setup-node@v4
-      - name: Deploy Frontend
-        working-directory: frontend
-        run: |
-          npm install
-          npm run build
-          aws s3 cp ./dist s3://$FRONTEND_S3_BUCKET/ --recursive

@@ -85,7 +85,12 @@ ROOT_URLCONF = 'app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            # NOTE: (@abachman-dsac) this setup allows frontend/ to build directly
+            # into provider_search/static/ and provider_search.views.landing to
+            # reference the resulting index.html
+            os.path.join(BASE_DIR, 'provider_search', 'static'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -162,9 +167,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# STATICFILES_DIRS = [
-#        os.path.join(BASE_DIR, "static"),
-#    ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'provider_search', 'static'),
+]
 
 # STATICFILES_DIRS = [
 #        os.path.join(BASE_DIR, "static"),
