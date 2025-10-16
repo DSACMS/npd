@@ -135,7 +135,7 @@ resource "aws_ecs_service" "dagster_daemon" {
   task_definition = aws_ecs_task_definition.dagster_daemon.arn
 
   network_configuration {
-    subnets         = var.networking.public_subnet_ids
+    subnets         = var.networking.etl_subnet_ids
     security_groups = [var.networking.etl_security_group_id]
   }
 
@@ -200,7 +200,7 @@ resource "aws_ecs_service" "dagster-ui" {
   task_definition = aws_ecs_task_definition.dagster_ui.arn
 
   network_configuration {
-    subnets         = var.networking.public_subnet_ids
+    subnets         = var.networking.etl_subnet_ids
     security_groups = [var.networking.etl_security_group_id]
   }
 
