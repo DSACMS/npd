@@ -362,3 +362,29 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
         response = Response(organization.data)
 
         return response
+
+class FHIRCapabilityStatementViewSet(viewsets.ViewSet):
+    """
+    ViewSet for FHIR Practitioner resources
+    """
+    renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+
+    @swagger_auto_schema(
+        manual_parameters=[
+            page_size_param,
+            createFilterParam('name')
+        ],
+        responses={200: "Successful response",
+                   404: "Error: The requested CapabilityStatement resource cannot be found."}
+    )
+    def list(self, request):
+        """
+        Return a list of all CapabilityStatement as FHIR CapabilityStatement resources
+        """
+        page_size = default_page_size
+        all_params = request.query_params
+
+    def retrieve(self, request, pk=None):
+        """
+        Return a single CapabilityStatement as a FHIR CapabilityStatement resource
+        """

@@ -26,6 +26,8 @@ router.register(r'Organization', views.FHIROrganizationViewSet,
                 basename='fhir-organization')
 router.register(r'Endpoint', views.FHIREndpointViewSet,
                 basename='fhir-endpoint')
+router.register(r'CapabilityStatement', views.FHIRCapabilityStatementViewSet,
+                basename='fhir-capabilitystatement')
 
 urlpatterns = [
     path('docs.<format>/',
