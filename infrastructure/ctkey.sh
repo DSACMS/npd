@@ -1,9 +1,6 @@
 #!/bin/bash
-
-ACCOUNT_ID=250902968334
-PROFILE_NAME=ecs-pg-app
-AWS_REGION=us-gov-west-1
-IAM_ROLE=ct-ado-dsac-application-admin
+# Load .env
+[ ! -f .env ] || export $(grep -v '^#' .env | xargs)
 
 if [ -z "$CTKEY_USERNAME" ]; then
     read -p "Enter ctkey username: " CTKEY_USERNAME
@@ -13,18 +10,13 @@ if [ -z "$CTKEY_PASSWORD" ]; then
     read -s -p "Enter password for $CTKEY_USERNAME: " CTKEY_PASSWORD
 fi
 
-# IAM_ROLE can be overridden optionally
-if [ -n "${IAM_ROLE_OVERRIDE}" ]; then
-    IAM_ROLE=$IAM_ROLE_OVERRIDE
-fi
-
 function parse_and_write_ctkey_credentials() {
     local JSON=$1
 
     local aws_access_key_id=$(echo "$JSON" | jq -r .data.access_key)
     local aws_secret_access_key=$(echo "$JSON" | jq -r .data.secret_access_key)
     local aws_session_token=$(echo "$JSON" | jq -r .data.session_token)
-    
+
     aws configure set aws_access_key_id "$aws_access_key_id" --profile $PROFILE_NAME
     aws configure set aws_secret_access_key "$aws_secret_access_key" --profile $PROFILE_NAME
     aws configure set aws_session_token "$aws_session_token" --profile $PROFILE_NAME

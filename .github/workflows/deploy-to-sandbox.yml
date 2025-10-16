@@ -57,7 +57,7 @@ jobs:
       - name: Configure Terraform
         uses: hashicorp/setup-terraform@v3
       - name: Update Infrastructure, Deploy API
-        working-directory: infrastructure
+        working-directory: infrastructure/envs/sandbox
         env:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           REPOSITORY: ndh
