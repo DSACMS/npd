@@ -60,6 +60,13 @@ resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_fhir_api_alb_http" {
   prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
 }
 
+resource "aws_vpc_security_group_egress_rule" "test" {
+  description = "TESTME"
+  security_group_id = aws_security_group.fhir_api_alb.id
+  ip_protocol = "-1"
+  cidr_ipv4 = "0.0.0.0/0"
+}
+
 ### FHIR API
 
 resource "aws_security_group" "fhir_api_sg" {
@@ -82,6 +89,15 @@ resource "aws_vpc_security_group_ingress_rule" "fhir_api_alb_can_access_fhir_api
   referenced_security_group_id = aws_security_group.fhir_api_alb.id
   from_port = 80
   to_port = 80
+}
+
+resource "aws_vpc_security_group_ingress_rule" "fhir_api_alb_can_access_fhir_api_sg_test" {
+  description = "Allows the FHIR API ALB to access the FHIR API over 8000"
+  security_group_id = aws_security_group.fhir_api_sg.id
+  ip_protocol = "TCP"
+  referenced_security_group_id = aws_security_group.fhir_api_alb.id
+  from_port = 8000
+  to_port = 8000
 }
 
 ### FHIR API Database
