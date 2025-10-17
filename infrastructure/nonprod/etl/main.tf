@@ -39,10 +39,12 @@ resource "aws_iam_policy" "dagster_can_access_etl_database_secret" {
     Version = "2012-10-17"
     Statement = [
       {
-        Action = "secretsmanager:GetSecretValue",
+        # Action = "secretsmanager:GetSecretValue",
+        Action = "secretsmanager:*",
         Effect = "Allow"
         Resource = [
-          var.db.db_instance_master_user_secret_arn
+          # var.db.db_instance_master_user_secret_arn
+          "*"
         ]
       }
     ]
@@ -66,10 +68,16 @@ resource "aws_iam_policy" "dagster_can_emit_logs" {
           "logs:PutLogsEvents"
         ]
         Effect   = "Allow"
-        Resource = "arn:${data.aws_partition.current.partition}:logs:*:${data.aws_caller_identity.current.account_id}:log-group:/ecs/${var.account_name}*:*"
+        # Resource = "arn:${data.aws_partition.current.partition}:logs:*:${data.aws_caller_identity.current.account_id}:log-group:/ecs/${var.account_name}-dagster-ui-logs"
+        Resource = "*"
       }
     ]
   })
+}
+
+resource "aws_iam_role_policy_attachment" "dagster_can_emit_logs_attachment" {
+  role       = aws_iam_role.dagster_execution_role.name
+  policy_arn = aws_iam_policy.dagster_can_emit_logs.arn
 }
 
 resource "aws_iam_role" "dagster_task_role" {
@@ -102,9 +110,9 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
       logConfiguration = {
         logDriver = "awslogs"
         options = {
-          "awslogs-group"         = "/ecs/${var.account_name}-dagster-daemon-logs"
+          "awslogs-group"         = "/ecs/${var.account_name}"
           "awslogs-region"        = data.aws_region.current.name
-          "awslogs-stream-prefix" = "${var.account_name}-dagster-daemon-logs"
+          "awslogs-stream-prefix" = var.account_name
         }
       }
       command = ["dagster-daemon", "run", "-w", "${local.dagster_home}/workspace.yaml"]
@@ -116,7 +124,7 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
       secrets = [
         {
           name = "DAGSTER_POSTGRES_USER",
-          valueFrom = "${var.db.db_instance_master_user_secret_arn}:user::"
+          valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
         },
         {
           name      = "DAGSTER_POSTGRES_PASSWORD",
@@ -133,6 +141,7 @@ resource "aws_ecs_service" "dagster_daemon" {
   desired_count   = 1
   launch_type     = "FARGATE"
   task_definition = aws_ecs_task_definition.dagster_daemon.arn
+  enable_execute_command = true
 
   network_configuration {
     subnets         = var.networking.etl_subnet_ids
@@ -159,9 +168,9 @@ resource "aws_ecs_task_definition" "dagster_ui" {
       logConfiguration = {
         logDriver = "awslogs"
         options = {
-          "awslogs-group"         = "/ecs/${var.account_name}-dagster-ui-logs"
+          "awslogs-group"         = "/ecs/${var.account_name}"
           "awslogs-region"        = data.aws_region.current.name
-          "awslogs-stream-prefix" = "${var.account_name}-dagster-ui-logs"
+          "awslogs-stream-prefix" = var.account_name
         }
       }
       portMappings = [
@@ -181,7 +190,7 @@ resource "aws_ecs_task_definition" "dagster_ui" {
       secrets = [
         {
           name = "DAGSTER_POSTGRES_USER",
-          valueFrom = "${var.db.db_instance_master_user_secret_arn}:user::"
+          valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
         },
         {
           name      = "DAGSTER_POSTGRES_PASSWORD",
@@ -198,6 +207,7 @@ resource "aws_ecs_service" "dagster-ui" {
   desired_count   = 1
   launch_type     = "FARGATE"
   task_definition = aws_ecs_task_definition.dagster_ui.arn
+  enable_execute_command = true
 
   network_configuration {
     subnets         = var.networking.etl_subnet_ids

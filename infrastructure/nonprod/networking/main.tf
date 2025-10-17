@@ -174,9 +174,9 @@ resource "aws_vpc_security_group_ingress_rule" "etl_sg_allow_grpc" {
 resource "aws_vpc_security_group_egress_rule" "etl_sg_allow_outbound_requests" {
   description       = "Allows containers within the security group to make outbound (HTTP, PG, etc) requests"
   security_group_id = aws_security_group.fhir_etl_sg.id
-  ip_protocol       = "tcp"
-  from_port         = 0
-  to_port           = 0
+  ip_protocol       = -1
+  from_port         = -1
+  to_port           = -1
   cidr_ipv4         = "0.0.0.0/0" # any external IP
 }
 
@@ -205,7 +205,7 @@ resource "aws_instance" "jumpbox" {
   instance_type = "t2.micro"
   key_name      = aws_key_pair.jumpbox_key.key_name
   subnet_id     = "subnet-0f0b5004f3280c894" # npd-east-dev-private-subnet-c
-  vpc_security_group_ids = [aws_security_group.jumpbox.id]
+  vpc_security_group_ids = ["sg-08ba74ed28ed4353c"]
 
   tags = {
     Name = "Jumpbox"
