@@ -6,7 +6,8 @@ from rest_framework.response import Response
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.renderers import BrowsableAPIRenderer
 from django.core.cache import cache
-from .models import Provider, EndpointInstance, ClinicalOrganization
+from django.db.models import OuterRef, Subquery
+from .models import Provider, EndpointInstance, ClinicalOrganization, OrganizationToName
 from .serializers import PractitionerSerializer, ClinicalOrganizationSerializer, BundleSerializer, EndpointSerializer
 from .mappings import genderMapping, addressUseMapping
 from .renderers import FHIRRenderer
@@ -283,8 +284,29 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
 
         all_params = request.query_params
 
+        primary_name_subquery = (
+            OrganizationToName.objects
+            .filter(organization=OuterRef('organization'), is_primary=True)
+            .values('name')[:1]
+        )
+
+
         organizations = ClinicalOrganization.objects.all().prefetch_related(
-            'npi', 'organization', 'organization__organizationtoname_set', 'organization__organizationtoaddress_set', 'organization__organizationtoaddress_set__address', 'organization__organizationtoaddress_set__address__address_us', 'organization__organizationtoaddress_set__address__address_us__state_code', 'organization__organizationtoaddress_set__address_use', 'organizationtootherid_set', 'organizationtotaxonomy_set', 'organization__authorized_official__individualtophone_set', 'organization__authorized_official__individualtoname_set', 'organization__authorized_official__individualtoemail_set', 'organization__authorized_official__individualtoaddress_set')
+            'npi',
+            'organization',
+            'organization__organizationtoname_set',
+            'organization__organizationtoaddress_set',
+            'organization__organizationtoaddress_set__address',
+            'organization__organizationtoaddress_set__address__address_us',
+            'organization__organizationtoaddress_set__address__address_us__state_code',
+            'organization__organizationtoaddress_set__address_use',
+            'organizationtootherid_set',
+            'organizationtotaxonomy_set',
+            'organization__authorized_official__individualtophone_set',
+            'organization__authorized_official__individualtoname_set',
+            'organization__authorized_official__individualtoemail_set',
+            'organization__authorized_official__individualtoaddress_set'
+        ).annotate(primary_name=Subquery(primary_name_subquery)).order_by('primary_name')
 
         for param, value in all_params.items():
             match param:
