@@ -238,6 +238,7 @@ class EndpointInstance(models.Model):
     class Meta:
         managed = False
         db_table = 'endpoint_instance'
+        ordering = ['name'] #default order by name
 
 
 class EndpointInstanceToOtherId(models.Model):
