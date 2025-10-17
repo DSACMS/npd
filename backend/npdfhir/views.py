@@ -7,7 +7,7 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.renderers import BrowsableAPIRenderer
 from django.core.cache import cache
 from django.db.models import OuterRef, Subquery
-from .models import Provider, EndpointInstance, ClinicalOrganization, OrganizationToName
+from .models import Provider, EndpointInstance, ClinicalOrganization, OrganizationToName, Individual, IndividualToName
 from .serializers import PractitionerSerializer, ClinicalOrganizationSerializer, BundleSerializer, EndpointSerializer
 from .mappings import genderMapping, addressUseMapping
 from .renderers import FHIRRenderer
@@ -168,8 +168,38 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
 
         all_params = request.query_params
 
+        # Subqueries for last_name and first_name of the individual
+        primary_last_name_subquery = (
+            IndividualToName.objects
+            .filter(individual=OuterRef('individual'))
+            .order_by('last_name')
+            .values('last_name')[:1]
+        )
+
+        primary_first_name_subquery = (
+            IndividualToName.objects
+            .filter(individual=OuterRef('individual'))
+            .order_by('first_name')
+            .values('first_name')[:1]
+        )
+
+
         providers = Provider.objects.all().prefetch_related(
-            'npi', 'individual', 'individual__individualtoname_set', 'individual__individualtoaddress_set', 'individual__individualtoaddress_set__address__address_us', 'individual__individualtoaddress_set__address__address_us__state_code', 'individual__individualtoaddress_set__address_use', 'individual__individualtophone_set', 'individual__individualtoemail_set', 'providertootherid_set', 'providertotaxonomy_set')
+            'npi',
+            'individual',
+            'individual__individualtoname_set',
+            'individual__individualtoaddress_set',
+            'individual__individualtoaddress_set__address__address_us',
+            'individual__individualtoaddress_set__address__address_us__state_code',
+            'individual__individualtoaddress_set__address_use',
+            'individual__individualtophone_set',
+            'individual__individualtoemail_set',
+            'providertootherid_set',
+            'providertotaxonomy_set'
+        ).annotate(
+            primary_last_name=Subquery(primary_last_name_subquery),
+            primary_first_name=Subquery(primary_first_name_subquery)
+        ).order_by('primary_last_name','primary_first_name')
 
         for param, value in all_params.items():
             match param:
