@@ -3,6 +3,7 @@ data "aws_partition" "current" {}
 data "aws_caller_identity" "current" {}
 
 # ECR Repositories
+
 resource "aws_ecr_repository" "fhir_api" {
   name = "${var.account_name}-fhir-api"
 }
@@ -11,10 +12,22 @@ resource "aws_ecr_repository" "fhir_api_migrations" {
   name = "${var.account_name}-fhir-api-migrations"
 }
 
+# Log Groups
+
+resource "aws_cloudwatch_log_group" "fhir_api_log_group" {
+  name = "/ecs/${var.account_name}-fhir-api-logs"
+  retention_in_days = 30
+}
+
+resource "aws_cloudwatch_log_group" "fhir_api_migrations_log_group" {
+  name = "/ecs/${var.account_name}-fhir-api-migrations-logs"
+  retention_in_days = 30
+}
+
 # ECS Roles and Policies
-resource "aws_iam_role" "fhir_api_role" {
-  name        = "${var.account_name}-fhir-api-role"
-  description = "Defines what AWS actions the FHIR API task is allowed to make"
+resource "aws_iam_role" "fhir_api_execution_role" {
+  name        = "${var.account_name}-fhir-api-execution-role"
+  description = "Defines what AWS actions the FHIR API task execution environment is allowed to make"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
@@ -25,6 +38,11 @@ resource "aws_iam_role" "fhir_api_role" {
   })
 }
 
+resource "aws_iam_role_policy_attachment" "ecs_task_execution" {
+  role       = aws_iam_role.fhir_api_execution_role.name
+  policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
+}
+
 resource "aws_iam_policy" "fhir_api_can_access_fhir_api_db_secret" {
   name        = "${var.account_name}-fhir-api-can-access-fhir-database-secret"
   description = "Allows ECS to access the RDS secret"
@@ -32,11 +50,11 @@ resource "aws_iam_policy" "fhir_api_can_access_fhir_api_db_secret" {
     Version = "2012-10-17"
     Statement = [
       {
-        Action = "secretsmanager:GetSecretValue",
+        Action = "secretsmanager:*",
         Effect = "Allow"
         Resource = [
           var.db.db_instance_master_user_secret_arn,
-          aws_secretsmanager_secret.django_secret.arn
+          aws_secretsmanager_secret_version.django_secret_version.arn
         ]
       }
     ]
@@ -44,14 +62,13 @@ resource "aws_iam_policy" "fhir_api_can_access_fhir_api_db_secret" {
 }
 
 resource "aws_iam_role_policy_attachment" "fhir_api_can_access_database_secret_attachment" {
-  role       = aws_iam_role.fhir_api_role.name
+  role       = aws_iam_role.fhir_api_execution_role.name
   policy_arn = aws_iam_policy.fhir_api_can_access_fhir_api_db_secret.arn
 }
 
 resource "aws_iam_policy" "fhir_api_logs_policy" {
   name        = "${var.account_name}-fhir-api-can-log-to-cloudwatch"
   description = "Allow ECS tasks to write logs to CloudWatch"
-  path        = "/delegatedadmin/developer/"
 
   policy = jsonencode({
     Version = "2012-10-17"
@@ -62,7 +79,9 @@ resource "aws_iam_policy" "fhir_api_logs_policy" {
           "logs:PutLogEvents"
         ]
         Effect   = "Allow"
-        Resource = "arn:${data.aws_partition.current.partition}:logs:*:${data.aws_caller_identity.current.account_id}:log-group:/ecs/${var.account_name}*:*"
+        Resource = [
+          "arn:${data.aws_partition.current.partition}:logs:*:${data.aws_caller_identity.current.account_id}:log-group:/ecs/${var.account_name}*:*"
+        ]
       },
     ]
   })
@@ -70,7 +89,7 @@ resource "aws_iam_policy" "fhir_api_logs_policy" {
 
 resource "aws_iam_role_policy_attachment" "fhir_api_can_create_cloudwatch_logs" {
   policy_arn = aws_iam_policy.fhir_api_logs_policy.id
-  role       = aws_iam_role.fhir_api_role.id
+  role       = aws_iam_role.fhir_api_execution_role.id
 }
 
 # FHIR API Secrets
@@ -96,7 +115,7 @@ resource "aws_ecs_task_definition" "app" {
   network_mode             = "awsvpc"
   cpu                      = "512"
   memory                   = "1024"
-  execution_role_arn       = aws_iam_role.fhir_api_role.arn
+  execution_role_arn       = aws_iam_role.fhir_api_execution_role.arn
 
   container_definitions = jsonencode([
     # In the past, I've put the migration container in a separate task and invoked it manually to avoid the case
@@ -113,7 +132,7 @@ resource "aws_ecs_task_definition" "app" {
       environment = [
         {
           name  = "FLYWAY_URL"
-          value = "jdbc:postgresql://${var.db.db_instance_address}:${var.db.db_instance_port}/${var.app_db_name}"
+          value = "jdbc:postgresql://${var.db.db_instance_address}:${var.db.db_instance_port}/${var.db.db_instance_name}"
         }
       ],
       secrets = [
@@ -129,9 +148,9 @@ resource "aws_ecs_task_definition" "app" {
       logConfiguration = {
         logDriver = "awslogs"
         options = {
-          "awslogs-group"         = "/ecs/${var.account_name}-fhir-api-migration-logs"
-          "awslogs-region"        = data.aws_region.current.name
-          "awslogs-stream-prefix" = "${var.account_name}-fhir-api-migration-logs"
+          "awslogs-group" = aws_cloudwatch_log_group.fhir_api_migrations_log_group.name
+          "awslogs-region"        = "us-east-1"
+          "awslogs-stream-prefix" = "idk"
         }
       }
     },
@@ -142,7 +161,7 @@ resource "aws_ecs_task_definition" "app" {
       environment = [
         {
           name  = "NPD_DB_NAME"
-          value = var.app_db_name
+          value = var.db.db_instance_name
         },
         {
           name  = "NPD_DB_HOST"
@@ -195,9 +214,9 @@ resource "aws_ecs_task_definition" "app" {
       logConfiguration = {
         logDriver = "awslogs"
         options = {
-          "awslogs-group"         = "/ecs/${var.account_name}-fhir-api-logs"
-          "awslogs-region"        = data.aws_region.current.name
-          "awslogs-stream-prefix" = "${var.account_name}-fhir-api-logs"
+          "awslogs-group" = aws_cloudwatch_log_group.fhir_api_log_group.name
+          "awslogs-region"        = "us-east-1"
+          "awslogs-stream-prefix" = "idk"
         }
       }
       #   TODO: Implement for your app

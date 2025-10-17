@@ -1,5 +1,4 @@
 variable "account_name" {}
-variable "app_db_name" {}
 variable "fhir_api_image" {}
 variable "fhir_api_port" {
   default = 8000
@@ -10,6 +9,7 @@ variable "db" {
   type = object({
     db_instance_master_user_secret_arn = string
     db_instance_address                = string
+    db_instance_name                   = string
     db_instance_port                   = string
   })
 }

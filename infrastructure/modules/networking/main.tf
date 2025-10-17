@@ -35,12 +35,15 @@ data "aws_subnets" "public_subnets" {
 }
 
 ## Security groups
+
 data "aws_ec2_managed_prefix_list" "cmsvpn" {
   filter {
     name   = "prefix-list-name"
     values = ["cmscloud-v4-shared-services-prod-1"]
   }
 }
+
+### FHIR API Load Balancer
 
 resource "aws_security_group" "fhir_api_alb" {
   description = "Defines traffic flows to the FHIR API application load balancer"
@@ -57,11 +60,22 @@ resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_fhir_api_alb_http" {
   prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
 }
 
+### FHIR API
+
 resource "aws_security_group" "fhir_api_sg" {
   description = "Defines traffic flows to the FHIR REST API"
   name        = "${var.account_name}-fhir-api-sg"
   vpc_id      = var.vpc_id
 }
+
+resource "aws_vpc_security_group_egress_rule" "fhir_api_can_make_outgoing_requests" {
+  description = "Allows the FHIR API to make outgoing requests"
+  security_group_id = aws_security_group.fhir_api_sg.id
+  ip_protocol = "-1"
+  cidr_ipv4 = "0.0.0.0/0"
+}
+
+### FHIR API Database
 
 resource "aws_security_group" "fhir_api_db_sg" {
   description = "Defines traffic flows to the FHIR DB"
@@ -78,6 +92,17 @@ resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_fhir_api_db" {
   prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
 }
 
+resource "aws_vpc_security_group_ingress_rule" "fhir_api_can_access_fhir_api_db" {
+  description = "Allows the FHIR API to access the FHIR API database"
+  security_group_id = aws_security_group.fhir_api_db_sg.id
+  ip_protocol = "tcp"
+  from_port = 5432
+  to_port = 5432
+  referenced_security_group_id = aws_security_group.fhir_api_sg.id
+}
+
+### ETL Database
+
 resource "aws_security_group" "fhir_etl_db_sg" {
   description = "Defines traffic flows to the FHIR ETL DB"
   name        = "${var.account_name}-fhir-etl-db-sg"
@@ -92,6 +117,8 @@ resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_etl_db" {
   to_port           = 5432
   prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
 }
+
+### ETL Security Group
 
 resource "aws_security_group" "fhir_etl_sg" {
   description = "Defines traffic flows to and from the ETL processes"
