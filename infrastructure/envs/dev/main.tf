@@ -32,7 +32,7 @@ data "aws_vpc" "default" {
 }
 
 module "networking" {
-  source = "./networking"
+  source = "../../modules/networking"
 
   vpc_id       = data.aws_vpc.default.id
   account_name = local.account_name
@@ -100,7 +100,7 @@ module "ecs" {
 
 # FHIR API Module
 module "fhir-api" {
-  source = "./fhir-api"
+  source = "../../modules/fhir-api"
 
   account_name             = local.account_name
   app_db_name              = "npd"
@@ -123,14 +123,14 @@ module "fhir-api" {
 
 # ETL Module
 module "etl" {
-  source = "./etl"
+  source = "../../modules/etl"
 
   account_name = local.account_name
 }
 
 # Frontend Module
 module "frontend" {
-  source       = "./frontend"
+  source       = "../../modules/frontend"
   account_name = local.account_name
 }
 
