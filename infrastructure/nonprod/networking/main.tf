@@ -179,3 +179,35 @@ resource "aws_vpc_security_group_egress_rule" "etl_sg_allow_outbound_requests" {
   to_port           = 0
   cidr_ipv4         = "0.0.0.0/0" # any external IP
 }
+
+resource "aws_security_group" "jumpbox" {
+  description = "Defines traffic flows to and from the jumpbox"
+  name        = "${var.account_name}-jumpbox"
+  vpc_id      = var.vpc_id
+}
+
+resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_jumpbox" {
+  description       = "Allows connections to the jumpbox from cmsvpn"
+  security_group_id = aws_security_group.jumpbox.id
+  ip_protocol       = "tcp"
+  from_port         = 0
+  to_port           = 0
+  prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
+}
+
+resource "aws_key_pair" "jumpbox_key" {
+  key_name   = "jumpbox-key"
+  public_key = file("~/.ssh/id_ed25519.pub") # Path to your public SSH key
+}
+
+resource "aws_instance" "jumpbox" {
+  ami           = "ami-0341d95f75f311023" # Replace with a valid AMI ID for your region (e.g., Amazon Linux 2 AMI)
+  instance_type = "t2.micro"
+  key_name      = aws_key_pair.jumpbox_key.key_name
+  subnet_id     = "subnet-0f0b5004f3280c894" # npd-east-dev-private-subnet-c
+  vpc_security_group_ids = [aws_security_group.jumpbox.id]
+
+  tags = {
+    Name = "Jumpbox"
+  }
+}
