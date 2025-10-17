@@ -53,7 +53,8 @@ resource "aws_iam_policy" "fhir_api_can_access_fhir_api_db_secret" {
         Action = "secretsmanager:*",
         Effect = "Allow"
         Resource = [
-          "*"
+          var.db.db_instance_master_user_secret_arn,
+          aws_secretsmanager_secret_version.django_secret_version.arn
         ]
       }
     ]
@@ -149,7 +150,7 @@ resource "aws_ecs_task_definition" "app" {
         options = {
           "awslogs-group" = aws_cloudwatch_log_group.fhir_api_migrations_log_group.name
           "awslogs-region"        = "us-east-1"
-          "awslogs-stream-prefix" = "idk"
+          "awslogs-stream-prefix" = var.account_name
         }
       }
     },
@@ -209,13 +210,15 @@ resource "aws_ecs_task_definition" "app" {
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:password::"
         },
       ]
-      portMappings = [{ containerPort = var.fhir_api_port }]
+      portMappings = [{
+        containerPort = var.fhir_api_port
+      }]
       logConfiguration = {
         logDriver = "awslogs"
         options = {
           "awslogs-group" = aws_cloudwatch_log_group.fhir_api_log_group.name
           "awslogs-region"        = "us-east-1"
-          "awslogs-stream-prefix" = "idk"
+          "awslogs-stream-prefix" = var.account_name
         }
       }
       #   TODO: Implement for your app
@@ -245,7 +248,7 @@ resource "aws_ecs_service" "app" {
   }
 
   load_balancer {
-    target_group_arn = aws_lb_target_group.fhir_api.arn
+    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
     container_name   = "${var.account_name}-fhir-api"
     container_port   = var.fhir_api_port
   }
@@ -260,7 +263,7 @@ resource "aws_lb" "fhir_api_alb" {
   subnets            = var.networking.public_subnet_ids
 }
 
-resource "aws_lb_target_group" "fhir_api" {
+resource "aws_lb_target_group" "fhir_api_tg" {
   name        = "${var.account_name}-fhir-api-tg"
   port        = var.fhir_api_port
   protocol    = "HTTP"
@@ -276,7 +279,7 @@ resource "aws_lb_target_group" "fhir_api" {
     unhealthy_threshold = 10
     # TODO: Django is always returning a 400 because Django wants to know what domain/IPs requests are coming from
     # Setting this to HTTP 400 (Bad Request) until the Django application can be update to handle health check requests.
-    matcher = "200"
+    matcher = "400"
   }
 }
 
@@ -287,6 +290,6 @@ resource "aws_lb_listener" "http" {
 
   default_action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.fhir_api.arn
+    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
   }
 }

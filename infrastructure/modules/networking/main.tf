@@ -75,6 +75,15 @@ resource "aws_vpc_security_group_egress_rule" "fhir_api_can_make_outgoing_reques
   cidr_ipv4 = "0.0.0.0/0"
 }
 
+resource "aws_vpc_security_group_ingress_rule" "fhir_api_alb_can_access_fhir_api_sg" {
+  description = "Allows the FHIR API ALB to access the FHIR API"
+  security_group_id = aws_security_group.fhir_api_sg.id
+  ip_protocol = "TCP"
+  referenced_security_group_id = aws_security_group.fhir_api_alb.id
+  from_port = 80
+  to_port = 80
+}
+
 ### FHIR API Database
 
 resource "aws_security_group" "fhir_api_db_sg" {
