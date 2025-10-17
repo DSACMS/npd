@@ -53,8 +53,7 @@ resource "aws_iam_policy" "fhir_api_can_access_fhir_api_db_secret" {
         Action = "secretsmanager:*",
         Effect = "Allow"
         Resource = [
-          var.db.db_instance_master_user_secret_arn,
-          aws_secretsmanager_secret_version.django_secret_version.arn
+          "*"
         ]
       }
     ]
