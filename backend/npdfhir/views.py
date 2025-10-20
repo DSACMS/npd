@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
+from django.utils.html import escape
 from django.contrib.postgres.search import SearchVector
 from rest_framework import viewsets, generics
 from rest_framework.response import Response
@@ -290,7 +291,7 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
             UUID(pk)
         except (ValueError, TypeError) as e:
             print(f"{pk} is not a valid UUID: {type(e)} - {e}")
-            return HttpResponse(f"{pk} is not a valid UUID.", status=404)
+            return HttpResponse(f"{escape(pk)} is not a valid UUID.", status=404)
 
         provider = get_object_or_404(
             Provider.objects.prefetch_related(
@@ -471,7 +472,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
             UUID(pk)
         except (ValueError, TypeError) as e:
             print(f"{pk} is not a valid UUID: {type(e)} - {e}")
-            return HttpResponse(f"{pk} is not a valid UUID.", status=404)
+            return HttpResponse(f"{escape(pk)} is not a valid UUID.", status=404)
 
         clinicalorg = get_object_or_404(Organization.objects.select_related(
             'authorized_official',
