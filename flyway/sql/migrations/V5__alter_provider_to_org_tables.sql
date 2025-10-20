@@ -44,6 +44,12 @@ alter table npd.organization_to_phone add constraint uc_organization_to_phone_or
 
 alter table npd.location add phone_id uuid;
 
+create table npd.location_to_endpoint_instance (location_id uuid not null, endpoint_instance_id uuid not null);
+alter table npd.location_to_endpoint_instance add constraint pk_location_to_endpoint_instance primary key (location_id, endpoint_instance_id);
+alter table npd.location_to_endpoint_instance add constraint fk_location_to_endpoint_instance_location_id foreign key (location_id) references npd.location(id);
+alter table npd.location_to_endpoint_instance add constraint fk_location_to_endpoint_instance_endpoint_id foreign key (endpoint_instance_id) references npd.endpoint_instance(id);
+
+
 alter table npd.location add constraint fk_location_phone_id foreign key (phone_id)
 references npd.organization_to_phone(id);
 

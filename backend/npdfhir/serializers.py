@@ -428,8 +428,10 @@ class PractitionerRoleSerializer(serializers.Serializer):
             reference=request.build_absolute_uri(f'Organization/{instance.provider_to_organization.organization_id}').replace('PractitionerRole/', ''))
         practitioner_role.location = [Reference(
             reference=request.build_absolute_uri(f'Location/{instance.location.id}').replace('PractitionerRole/', ''))]
+        # These lines rely on the fhir.resources representation of PractitionerRole to be expanded to match the ndh FHIR definition. This is a TODO with an open ticket.
         # if 'other_phone' in representation.keys():
         #    practitioner_role.telecom = representation['other_phone']
+
         return practitioner_role.model_dump()
 
 
