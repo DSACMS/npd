@@ -494,6 +494,16 @@ class Location(models.Model):
         db_table = 'location'
 
 
+class LocationToEndpointInstance(models.Model):
+    pk = models.CompositePrimaryKey('location_id', 'endpoint_instance_id')
+    location = models.ForeignKey(Location, models.DO_NOTHING)
+    endpoint_instance = models.ForeignKey(EndpointInstance, models.DO_NOTHING)
+
+    class Meta:
+        managed = False
+        db_table = 'location_to_endpoint_instance'
+
+
 class MedicareProviderType(models.Model):
     value = models.CharField(unique=True, max_length=20, blank=True, null=True)
 
