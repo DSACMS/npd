@@ -14,6 +14,14 @@ from fhir.resources.meta import Meta
 from fhir.resources.address import Address
 from fhir.resources.organization import Organization
 from fhir.resources.reference import Reference
+from fhir.resources.capabilitystatement import (
+    CapabilityStatement,
+    CapabilityStatementRest,
+    CapabilityStatementRestResource,
+    CapabilityStatementRestResourceSearchParam,
+    CapabilityStatementImplementation
+)
+import datetime
 import sys
 if 'runserver' or 'test' in sys.argv:
     from .cache import other_identifier_type, fhir_name_use, nucc_taxonomy_codes, fhir_phone_use
@@ -427,6 +435,7 @@ class CapablityStatementSerializer(serializers.Serializer):
     """
     Serializer for FHIR CapablityStatement resource
     """
+
 
 class BundleSerializer(serializers.Serializer):
     """
