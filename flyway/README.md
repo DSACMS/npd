@@ -51,3 +51,6 @@ R__<describe-the-sample-data>.sql
 ## Reference
 
 - [Migrations](https://documentation.red-gate.com/fd/migrations-271585107.html)
+
+## Current ERD
+![erd](./sql/NPD ERD.svg)
