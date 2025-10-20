@@ -1,0 +1,27 @@
+{
+  "logo": {
+    "disclaimer": "A federal government website managed and paid for by the U.S. Centers for Medicare & Medicaid Services.",
+    "address": "7500 Security Boulevard, Baltimore, MD 21244"
+  },
+
+  "section": {
+    "npd": {
+      "title": "National Provider Directory",
+      "link": {
+        "demo": "Footer link"
+      }
+    },
+    "cms": {
+      "title": "CMS & HHS Websites",
+      "link": {
+        "demo": "Footer link"
+      }
+    },
+    "info": {
+      "title": "Additional Information",
+      "link": {
+        "demo": "Footer link"
+      }
+    }
+  }
+}

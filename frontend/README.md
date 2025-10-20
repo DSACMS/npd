@@ -20,6 +20,26 @@ If we find this approach to be insufficient, we will assess additional API endpo
   - `assets/` contains static assets
   - `components/` contains custom components
   - `hooks/` contains custom hook implementations
+  - `i18n/en/` contains translation / static content definition files
+
+### Static Content
+
+Any static content which appears on a page as part of a React HTML or other component tag should be stored in the appropriate `src/i18/**/*.json` source file and accessed via the [react-i18next](https://react.i18next.com/) `t()` function. This allows us to isolate content from behavior and will allow for easier translation in the future, should the need arise.
+
+We recommend using the `useTranslation` hook to access the `t()` function. For example:
+
+```tsx
+const MyComponent = () => {
+  const { t } = useTranslation()
+
+  return (
+    <div className="ds-u-display--flex">
+      <p>{t("component.disclaimer")}</p>
+      <p><a href="#">{t("component.link")}</a></p>
+    </div>
+  )
+}
+```
 
 ## Local Development
 
