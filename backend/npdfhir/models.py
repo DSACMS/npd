@@ -461,6 +461,7 @@ class Location(models.Model):
     name = models.CharField(max_length=200, blank=True, null=True)
     organization = models.ForeignKey('Organization', models.DO_NOTHING)
     address = models.ForeignKey(Address, models.DO_NOTHING)
+    active = models.BooleanField(blank=True, null=True)
     phone = models.ForeignKey('OrganizationToPhone', models.DO_NOTHING, blank=True, null=True)
 
     class Meta:
@@ -690,9 +691,11 @@ class ProviderToLocation(models.Model):
     other_address = models.ForeignKey(Address, models.DO_NOTHING, blank=True, null=True)
     nucc_code = models.IntegerField(blank=True, null=True)
     specialty_id = models.IntegerField(blank=True, null=True)
+    id = models.UUIDField(primary_key=True)
     provider_role_code = models.CharField(max_length=10, blank=True, null=True)
     other_phone = models.ForeignKey(IndividualToPhone, models.DO_NOTHING, blank=True, null=True)
     other_endpoint = models.ForeignKey(Endpoint, models.DO_NOTHING, blank=True, null=True)
+    active = models.BooleanField(blank=True, null=True)
     provider_to_organization = models.ForeignKey('ProviderToOrganization', models.DO_NOTHING, blank=True, null=True)
 
     class Meta:
@@ -705,6 +708,7 @@ class ProviderToOrganization(models.Model):
     organization = models.ForeignKey(Organization, models.DO_NOTHING)
     relationship_type = models.ForeignKey('RelationshipType', models.DO_NOTHING)
     id = models.UUIDField(primary_key=True)
+    active = models.BooleanField(blank=True, null=True)
 
     class Meta:
         managed = False

@@ -32,13 +32,19 @@ class AddressSerializer(serializers.Serializer):
         source='addressus__fipsstate__abbrev', read_only=True)
     zipcode = serializers.CharField(
         source='addressus__zipcode', read_only=True)
+    use = serializers.CharField(
+        source='address_use__value', read_only=True)
 
     class Meta:
         fields = ['delivery_line_1', 'delivery_line_2',
-                  'city_name', 'state_abbreviation', 'zipcode']
+                  'city_name', 'state_abbreviation', 'zipcode', 'use']
 
     def to_representation(self, instance):
-        address = instance.address.address_us
+        representation = super().to_representation(instance)
+        if hasattr(instance, 'address'):
+            address = instance.address.address_us
+        else:
+            address = instance.address_us
         address_list = [address.delivery_line_1]
         if address.delivery_line_2 is not None:
             address_list.append(address.delivery_line_2)
@@ -47,9 +53,10 @@ class AddressSerializer(serializers.Serializer):
             city=address.city_name,
             state=address.state_code.abbreviation,
             postalCode=address.zipcode,
-            use=instance.address_use.value,
             country='US'
         )
+        if 'use' in representation.keys():
+            address.use = representation['use'],
         return address.model_dump()
 
 
@@ -387,15 +394,18 @@ class LocationSerializer(serializers.Serializer):
         request = self.context.get('request')
         representation = super().to_representation(instance)
         location = FHIRLocation()
-        location.id = instance.id
-        location.status = instance.active
+        location.id = str(instance.id)
+        if instance.active:
+            location.status = 'active'
+        else:
+            location.status = 'inactive'
         location.name = instance.name
-        if 'phone' in representation.keys():
-            location.telecom = representation['phone']
+        # if 'phone' in representation.keys():
+        #    location.telecom = representation['phone']
         if 'address' in representation.keys():
             location.address = representation['address']
         location.managingOrganization = Reference(
-            reference=request.build_absolute_uri(f'Organization/{instance.organization_id}').replace('PractitionerRole/', ''))
+            reference=request.build_absolute_uri(f'Organization/{instance.organization_id}').replace('Location/', ''))
         return location.model_dump()
 
 
@@ -406,19 +416,20 @@ class PractitionerRoleSerializer(serializers.Serializer):
         model = ProviderToOrganization
 
     def to_representation(self, instance):
+        print(instance.location_id)
         request = self.context.get('request')
         representation = super().to_representation(instance)
         practitioner_role = PractitionerRole()
-        practitioner_role.id = instance.id
+        practitioner_role.id = str(instance.id)
         practitioner_role.active = instance.active
         practitioner_role.practitioner = Reference(
-            reference=request.build_absolute_uri(f'Practitioner/{instance.individual_id}').replace('PractitionerRole/', ''))
+            reference=request.build_absolute_uri(f'Practitioner/{instance.provider_to_organization.individual_id}').replace('PractitionerRole/', ''))
         practitioner_role.organization = Reference(
-            reference=request.build_absolute_uri(f'Organization/{instance.organization_id}').replace('PractitionerRole/', ''))
-        practitioner_role.location = Reference(
-            reference=request.build_absolute_uri(f'Location/{instance.location_id}').replace('PractitionerRole/', ''))
-        if 'other_phone' in representation.keys():
-            practitioner_role.telecom = representation['other_phone']
+            reference=request.build_absolute_uri(f'Organization/{instance.provider_to_organization.organization_id}').replace('PractitionerRole/', ''))
+        practitioner_role.location = [Reference(
+            reference=request.build_absolute_uri(f'Location/{instance.location.id}').replace('PractitionerRole/', ''))]
+        # if 'other_phone' in representation.keys():
+        #    practitioner_role.telecom = representation['other_phone']
         return practitioner_role.model_dump()
 
 
