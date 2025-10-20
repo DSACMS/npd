@@ -65,7 +65,8 @@ services:
       - '8000:8000'
     volumes:
       - '.:/app'
-      - ./artifacts:/app/artifacts
+      - ./artifacts:/app/artifacts:rw
+      - ./provider_directory/static:/app/provider_directory/static:rw
     depends_on:
       - db
 
