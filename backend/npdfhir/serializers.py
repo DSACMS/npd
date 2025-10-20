@@ -1,8 +1,7 @@
 import sys
 from rest_framework import serializers
-from fhir.resources.practitioner import Practitioner
 from fhir.resources.bundle import Bundle
-from .models import Npi, OrganizationToName, IndividualToPhone, ProviderToOrganization
+from .models import Npi, OrganizationToName, IndividualToPhone, ProviderToOrganization, Location
 from fhir.resources.practitioner import Practitioner, PractitionerQualification
 from fhir.resources.endpoint import Endpoint
 from fhir.resources.humanname import HumanName
@@ -16,6 +15,7 @@ from fhir.resources.address import Address
 from fhir.resources.organization import Organization
 from fhir.resources.practitionerrole import PractitionerRole
 from fhir.resources.reference import Reference
+from fhir.resources.location import Location as FHIRLocation
 import sys
 if 'runserver' or 'test' in sys.argv:
     from .cache import other_identifier_type, fhir_name_use, nucc_taxonomy_codes, fhir_phone_use
@@ -376,7 +376,31 @@ class PractitionerSerializer(serializers.Serializer):
         return practitioner.model_dump()
 
 
+class LocationSerializer(serializers.Serializer):
+    phone = PhoneSerializer(read_only=True)
+    address = AddressSerializer(read_only=True)
+
+    class Meta:
+        model = Location
+
+    def to_representation(self, instance):
+        request = self.context.get('request')
+        representation = super().to_representation(instance)
+        location = FHIRLocation()
+        location.id = instance.id
+        location.status = instance.active
+        location.name = instance.name
+        if 'phone' in representation.keys():
+            location.telecom = representation['phone']
+        if 'address' in representation.keys():
+            location.address = representation['address']
+        location.managingOrganization = Reference(
+            reference=request.build_absolute_uri(f'Organization/{instance.organization_id}').replace('PractitionerRole/', ''))
+        return location.model_dump()
+
+
 class PractitionerRoleSerializer(serializers.Serializer):
+    other_phone = PhoneSerializer(read_only=True)
 
     class Meta:
         model = ProviderToOrganization
@@ -385,12 +409,16 @@ class PractitionerRoleSerializer(serializers.Serializer):
         request = self.context.get('request')
         representation = super().to_representation(instance)
         practitioner_role = PractitionerRole()
-        practitioner_role.id = f'{instance.organization_id}--{instance.individual_id}'
+        practitioner_role.id = instance.id
+        practitioner_role.active = instance.active
         practitioner_role.practitioner = Reference(
             reference=request.build_absolute_uri(f'Practitioner/{instance.individual_id}').replace('PractitionerRole/', ''))
         practitioner_role.organization = Reference(
             reference=request.build_absolute_uri(f'Organization/{instance.organization_id}').replace('PractitionerRole/', ''))
-        # practitioner_role.display = f'{instance.individual.individualtoname_set.first_name}'
+        practitioner_role.location = Reference(
+            reference=request.build_absolute_uri(f'Location/{instance.location_id}').replace('PractitionerRole/', ''))
+        if 'other_phone' in representation.keys():
+            practitioner_role.telecom = representation['other_phone']
         return practitioner_role.model_dump()
 
 
