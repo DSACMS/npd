@@ -44,10 +44,8 @@ def createFilterParam(field: str, display: str = None, enum: list = None):
 
 def parse_identifier(identifier_value):
     """
-    Parse an identifier search parameter that should be in the format of "value" OR "system|value"
-    
-    Not sure the best way to document this but currently the only system are NPI, EIN or OtherID which could be anything... 
-    I assume there will be more with further iterations so documenting this is a good idea.
+    Parse an identifier search parameter that should be in the format of "value" OR "system|value".
+    Currently only supporting NPI search "NPI|123455".
     """
     if '|' in identifier_value:
         parts = identifier_value.split('|', 1)
@@ -216,15 +214,13 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
                                 queries = Q(npi__npi=identifier_id)
                             except (ValueError, TypeError):
                                 pass
-                        else:
-                            queries = Q(providertootherid__other_id=identifier_id)
 
                         if queries is None: # force return no results 
                             queries = Q(pk__isnull=True)
 
                     else: # general identifier search requested
                         queries = Q(pk__isnull=True) # start with empty match
-                        queries = Q(providertootherid__other_id=identifier_id) | Q(npi__npi=identifier_id)
+                        queries = Q(npi__npi=identifier_id)
                     
                     providers = providers.filter(queries).distinct()
                 case 'name':
@@ -290,6 +286,12 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
         """
         Return a single provider as a FHIR Practitioner resource
         """
+        try:
+            UUID(pk)
+        except (ValueError, TypeError) as e:
+            print(f"{pk} is not a valid UUID: {type(e)} - {e}")
+            return HttpResponse(f"{pk} is not a valid UUID.", status=404)
+
         provider = get_object_or_404(
             Provider.objects.prefetch_related(
                 'npi', 
@@ -397,33 +399,18 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
                                 queries = Q(clinicalorganization__npi__npi=int(identifier_id))
                             except (ValueError, TypeError):
                                 pass
-                        elif system == 'EIN':
-                            try: # need this block in order to pass pydantic validation
-                                UUID(identifier_id)
-                                queries = Q(ein__ein_id=identifier_id)
-                            except (ValueError, TypeError):
-                                pass
-                        else:
-                            queries = Q(clinicalorganization__organizationtootherid__other_id=identifier_id)
 
                         if queries is None: # force return no results 
                             queries = Q(pk__isnull=True)
 
                     else: # general identifier search requested
-                        queries = Q(pk__isnull=True) # start with empty queryset
-
                         try:
-                            queries |= Q(clinicalorganization__npi__npi=int(identifier_id))
+                            queries = Q(clinicalorganization__npi__npi=int(identifier_id))
                         except (ValueError, TypeError):
                             pass
 
-                        try: # need this block in order to pass pydantic validation
-                            UUID(identifier_id)
-                            queries |= Q(ein__ein_id=identifier_id)
-                        except (ValueError, TypeError):
-                            pass
-
-                        queries |= Q(clinicalorganization__organizationtootherid__other_id=identifier_id)
+                        if queries is None: # force return no results 
+                            queries = Q(pk__isnull=True)
                     
                     organizations = organizations.filter(queries).distinct()
                 case 'organization_type':
@@ -480,6 +467,12 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
         """
         Return a single provider as a FHIR Practitioner resource
         """
+        try:
+            UUID(pk)
+        except (ValueError, TypeError) as e:
+            print(f"{pk} is not a valid UUID: {type(e)} - {e}")
+            return HttpResponse(f"{pk} is not a valid UUID.", status=404)
+
         clinicalorg = get_object_or_404(Organization.objects.select_related(
             'authorized_official',
             'ein'

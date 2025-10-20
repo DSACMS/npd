@@ -292,7 +292,7 @@ class OrganizationSerializer(serializers.Serializer):
             )
             identifiers.append(ein_identifier)
 
-        try:
+        if hasattr(instance, "clinicalorganization"):
             clinical_org = instance.clinicalorganization
             if clinical_org and clinical_org.npi:
                 npi_identifier = Identifier(
@@ -347,9 +347,6 @@ class OrganizationSerializer(serializers.Serializer):
                 
                 if taxonomies:
                     organization.qualification = taxonomies
-
-        except ObjectDoesNotExist:
-            pass
 
         organization.identifier = identifiers
 
