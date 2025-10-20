@@ -53,4 +53,4 @@ R__<describe-the-sample-data>.sql
 - [Migrations](https://documentation.red-gate.com/fd/migrations-271585107.html)
 
 ## Current ERD
-![erd](./sql/NPD ERD.svg)
+![erd](sql/NPD_ERD.svg)
