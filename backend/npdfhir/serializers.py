@@ -549,18 +549,188 @@ class EndpointSerializer(serializers.Serializer):
         return endpoint.model_dump()
 
 
-class CapablityStatementSerializer(serializers.Serializer):
+class CapabilityStatementSerializer(serializers.Serializer):
     """
     Serializer for FHIR CapablityStatement resource
     """
 
     def to_representation(self, instance):
         capability_statement = CapabilityStatement(
+            url="https://directory.cms.gov",
+            version="0.1.0",
+            name="FHIRCapablityStatement",
+            title="National Provider Directory FHIR Capablity Statement",
             status="active",
-            date=datetime.now().isoformat(),
-            kind="instance"
+            date=datetime.now(timezone.utc),
+            publisher="CMS",
+            contact=[
+                ContactDetail(
+                    telecom=[
+                        ContactPoint(
+                            system="email",
+                            value="npd@cms.hhs.gov"
+                        )
+                    ]
+                )
+            ],
+            description="This CapabilityStatement describes the capabilities of the National Provider Directory FHIR API, including supported resources, search parameters, and operations.",
+            kind="instance",
+            implementation=CapabilityStatementImplementation(
+                description="need a good description here. describe what we're doing within the API?",
+                url="not sure what url should go here, maybe our base API url? /fhir?"
+            ),
             fhirVersion="4.0.1",
-            format=["fhir+json"]
+            format=["fhir+json"],
+            rest=[self.build_rest_components()]
+        )
+
+        return capability_statement.model_dump()
+
+    def build_rest_components(self):
+        """
+        Building out each REST component describing our endpoint capabilities
+        """
+        return CapabilityStatementRest(
+            mode="server",
+            documentation="All FHIR endpoints for the National Provider Directory",
+            resource=[
+                self.build_practitioner_resource(),
+                self.build_organization_resource(),
+                self.build_endpoint_resource()
+            ]
+        )
+
+    def build_practitioner_resource(self):
+        return CapabilityStatementRestResource(
+            type="Practitioner",
+            interaction=[
+                {"code": "read"},
+                {"code": "search-type"}
+            ],
+            searchParam=[
+                CapabilityStatementRestResourceSearchParam(
+                    name="name",
+                    type="string",
+                    documentation="Search by practitioner name (first, middle, or last)"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="gender",
+                    type="token",
+                    documentation="Search by gender"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="practitioner_type",
+                    type="string",
+                    documentation="Search by practitioner type/taxonomy"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="address",
+                    type="string",
+                    documentation="Search by any part of the address"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="address-city",
+                    type="string",
+                    documentation="Search by city"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="address-state",
+                    type="string",
+                    documentation="Search by state (2-letter abbreviation)"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="address-postalcode",
+                    type="string",
+                    documentation="Search by postal/zip code"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="address-use",
+                    type="token",
+                    documentation="Search by address use (home, work, temp, old, billing)"
+                )
+            ]
+        )
+
+    def build_organization_resource(self):
+        return CapabilityStatementRestResource(
+            type="Organization",
+            interaction=[
+                {"code": "read"},
+                {"code": "search-type"}
+            ],
+            searchParam=[
+                CapabilityStatementRestResourceSearchParam(
+                    name="name",
+                    type="string",
+                    documentation="Search by organization name"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="organization_type",
+                    type="string",
+                    documentation="Search by organization type/taxonomy"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="address",
+                    type="string",
+                    documentation="Search by any part of the address"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="address-city",
+                    type="string",
+                    documentation="Search by city"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="address-state",
+                    type="string",
+                    documentation="Search by state (2-letter abbreviation)"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="address-postalcode",
+                    type="string",
+                    documentation="Search by postal/zip code"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="address-use",
+                    type="token",
+                    documentation="Search by address use (home, work, temp, old, billing)"
+                )
+            ]
+        )
+
+    def build_endpoint_resource(self):
+        return CapabilityStatementRestResource(
+            type="Endpoint",
+            interaction=[
+                {"code": "read"},
+                {"code": "search-type"}
+            ],
+            searchParam=[
+                CapabilityStatementRestResourceSearchParam(
+                    name="name",
+                    type="string",
+                    documentation="Search by endpoint name"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="connection_type",
+                    type="token",
+                    documentation="Search by connection type"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="payload_type",
+                    type="token",
+                    documentation="Search by payload type"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="status",
+                    type="token",
+                    documentation="Search by endpoint status"
+                ),
+                CapabilityStatementRestResourceSearchParam(
+                    name="organization",
+                    type="reference",
+                    documentation="Search by managing organization"
+                )
+            ]
         )
 
 
