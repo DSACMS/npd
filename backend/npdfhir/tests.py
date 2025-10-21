@@ -145,6 +145,14 @@ class EndpointViewSetTestCase(APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
+    def test_retrieve_single_endpoint(self):
+        id = "82cc98bb-afd0-4835-ada9-1437dfca8255"
+        url = reverse("fhir-endpoint-detail",
+                      args=[id])
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data['id'], id)
+
 
 class BasicViewsTestCase(APITestCase):
 
@@ -257,6 +265,14 @@ class OrganizationViewSetTestCase(APITestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
+    def test_retrieve_single_organization(self):
+        id = "501a620e-8521-4610-9717-b35a0597292e"
+        url = reverse("fhir-organization-detail",
+                      args=[id])
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data['id'], id)
+
 
 class LocationViewSetTestCase(APITestCase):
     def setUp(self):
@@ -292,6 +308,14 @@ class LocationViewSetTestCase(APITestCase):
                       args=['00000000-0000-0000-0000-000000000000'])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+
+    def test_retrieve_single_location(self):
+        id = "527c8a79-1294-47ab-afce-b571c89a4f2b"
+        url = reverse("fhir-location-detail",
+                      args=[id])
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data['id'], id)
 
 
 class PractitionerViewSetTestCase(APITestCase):
@@ -360,6 +384,14 @@ class PractitionerViewSetTestCase(APITestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
+    def test_retrieve_single_pracitioner(self):
+        id = "b7a4ab09-3207-49c1-9f59-c1c07c75dfb5"
+        url = reverse("fhir-practitioner-detail",
+                      args=[id])
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data['id'], id)
+
 
 class PractitionerRoleViewSetTestCase(APITestCase):
     def setUp(self):
@@ -400,3 +432,11 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         url = reverse("fhir-practitionerrole-detail", args=["999999"])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+
+    def test_retrieve_single_pracitionerrole(self):
+        id = "3ac7bd1e-a698-4905-9731-ca650de2dcb0"
+        url = reverse("fhir-practitionerrole-detail",
+                      args=[id])
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data['id'], id)

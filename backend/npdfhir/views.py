@@ -124,11 +124,13 @@ class FHIREndpointViewSet(viewsets.ViewSet):
 
         paginator = PageNumberPagination()
         paginator.page_size = page_size
-        queryset = paginator.paginate_queryset(endpoints, request)
+        paginated_endpoints = paginator.paginate_queryset(endpoints, request)
 
         # Serialize the bundle
-        serializer = EndpointSerializer(queryset, many=True)
-        bundle = BundleSerializer(serializer, context={"request": request})
+        serialized_endpoints = EndpointSerializer(
+            paginated_endpoints, many=True)
+        bundle = BundleSerializer(
+            serialized_endpoints, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = paginator.get_paginated_response(bundle.data)
@@ -147,10 +149,10 @@ class FHIREndpointViewSet(viewsets.ViewSet):
 
         endpoint = get_object_or_404(EndpointInstance, pk=pk)
 
-        serializer = EndpointSerializer(endpoint)
+        serialized_endpoint = EndpointSerializer(endpoint)
 
         # Set appropriate content type for FHIR responses
-        response = Response(serializer.data)
+        response = Response(serialized_endpoint.data)
 
         return response
 
@@ -273,11 +275,13 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
 
         paginator = PageNumberPagination()
         paginator.page_size = page_size
-        queryset = paginator.paginate_queryset(providers, request)
+        paginated_providers = paginator.paginate_queryset(providers, request)
 
         # Serialize the bundle
-        serializer = PractitionerSerializer(queryset, many=True)
-        bundle = BundleSerializer(serializer, context={"request": request})
+        serialized_providers = PractitionerSerializer(
+            paginated_providers, many=True)
+        bundle = BundleSerializer(
+            serialized_providers, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = paginator.get_paginated_response(bundle.data)
@@ -310,10 +314,10 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
             individual_id=pk
         )
 
-        practitioner = PractitionerSerializer(provider)
+        serialized_practitioner = PractitionerSerializer(provider)
 
         # Set appropriate content type for FHIR responses
-        response = Response(practitioner.data)
+        response = Response(serialized_practitioner.data)
 
         return response
 
@@ -382,12 +386,14 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
 
         paginator = PageNumberPagination()
         paginator.page_size = page_size
-        queryset = paginator.paginate_queryset(practitionerroles, request)
+        paginated_practitionerroles = paginator.paginate_queryset(
+            practitionerroles, request)
 
         # Serialize the bundle
-        serializer = PractitionerRoleSerializer(
-            queryset, many=True, context={"request": request})
-        bundle = BundleSerializer(serializer, context={"request": request})
+        serialized_practitionerroles = PractitionerRoleSerializer(
+            paginated_practitionerroles, many=True, context={"request": request})
+        bundle = BundleSerializer(
+            serialized_practitionerroles, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = paginator.get_paginated_response(bundle.data)
@@ -406,11 +412,11 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
 
         practitionerrole = get_object_or_404(ProviderToLocation, pk=pk)
 
-        practitionerrole = PractitionerRoleSerializer(
+        serialized_practitionerrole = PractitionerRoleSerializer(
             practitionerrole, context={"request": request})
 
         # Set appropriate content type for FHIR responses
-        response = Response(practitionerrole.data)
+        response = Response(serialized_practitionerrole.data)
         response["Content-Type"] = "application/fhir+json"
 
         return response
@@ -556,11 +562,14 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
 
         paginator = PageNumberPagination()
         paginator.page_size = page_size
-        queryset = paginator.paginate_queryset(organizations, request)
+        paginated_organizations = paginator.paginate_queryset(
+            organizations, request)
 
         # Serialize the bundle
-        serializer = OrganizationSerializer(queryset, many=True)
-        bundle = BundleSerializer(serializer, context={"request": request})
+        serialized_organizations = OrganizationSerializer(
+            paginated_organizations, many=True)
+        bundle = BundleSerializer(
+            serialized_organizations, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = paginator.get_paginated_response(bundle.data)
@@ -603,10 +612,10 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
         ),
             pk=pk)
 
-        organization = OrganizationSerializer(organization)
+        serialized_organization = OrganizationSerializer(organization)
 
         # Set appropriate content type for FHIR responses
-        response = Response(organization.data)
+        response = Response(serialized_organization.data)
 
         return response
 
@@ -695,12 +704,13 @@ class FHIRLocationViewSet(viewsets.ViewSet):
 
         paginator = PageNumberPagination()
         paginator.page_size = page_size
-        queryset = paginator.paginate_queryset(locations, request)
+        paginated_locations = paginator.paginate_queryset(locations, request)
 
         # Serialize the bundle
-        serializer = LocationSerializer(
-            queryset, many=True, context={"request": request})
-        bundle = BundleSerializer(serializer, context={"request": request})
+        serialized_locations = LocationSerializer(
+            paginated_locations, many=True, context={"request": request})
+        bundle = BundleSerializer(
+            serialized_locations, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = paginator.get_paginated_response(bundle.data)
@@ -718,10 +728,10 @@ class FHIRLocationViewSet(viewsets.ViewSet):
 
         location = get_object_or_404(Location, pk=pk)
 
-        location = LocationSerializer(
+        serialized_location = LocationSerializer(
             location, context={"request": request})
 
         # Set appropriate content type for FHIR responses
-        response = Response(location.data)
+        response = Response(serialized_location.data)
 
         return response
