@@ -281,4 +281,4 @@ class CapabilityStatementViewSetTestCase(APITestCase):
         response = self.client.get(self.url)
 
         capability_statement = CapabilityStatement.model_validate(response.data)
-        self.assertEqual(capability_statement.resourceType, "CapabilityStatement")
+        self.assertEqual(capability_statement.__resource_type__, "CapabilityStatement")
