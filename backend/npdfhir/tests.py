@@ -542,7 +542,7 @@ class CapabilityStatementViewSetTestCase(APITestCase):
     def test_capability_statement_has_required_fields(self):
         response = self.client.get(self.url)
         data = response.data
-        
+
         self.assertIn("status", data)
         self.assertIn("fhirVersion", data)
         self.assertIn("format", data)
@@ -551,5 +551,7 @@ class CapabilityStatementViewSetTestCase(APITestCase):
     def test_capability_statement_is_valid_fhir(self):
         response = self.client.get(self.url)
 
-        capability_statement = CapabilityStatement.model_validate(response.data)
-        self.assertEqual(capability_statement.__resource_type__, "CapabilityStatement")
+        capability_statement = CapabilityStatement.model_validate(
+            response.data)
+        self.assertEqual(capability_statement.__resource_type__,
+                         "CapabilityStatement")
