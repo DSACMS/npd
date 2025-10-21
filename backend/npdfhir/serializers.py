@@ -16,16 +16,17 @@ from fhir.resources.organization import Organization
 from fhir.resources.practitionerrole import PractitionerRole
 from fhir.resources.reference import Reference
 from fhir.resources.location import Location as FHIRLocation
+from django.urls import reverse
 import sys
 if 'runserver' or 'test' in sys.argv:
     from .cache import other_identifier_type, fhir_name_use, nucc_taxonomy_codes, fhir_phone_use
 
 
-def genReference(resource, identifier, request):
-    split_str = '/fhir'
-    url = request.build_absolute_uri().split(split_str)[0]
+def genReference(url_name, identifier, request):
+    reference = request.build_absolute_uri(
+        reverse(url_name, kwargs={'pk': identifier}))
     reference = Reference(
-        reference=f'{url}{split_str}/{resource}/{identifier}/')
+        reference=reference)
     return reference
 
 
@@ -413,7 +414,7 @@ class LocationSerializer(serializers.Serializer):
         if 'address' in representation.keys():
             location.address = representation['address']
         location.managingOrganization = genReference(
-            'Organization', instance.organization.clinicalorganization.npi.npi, request)  # instance.organization_id
+            'fhir-organization-detail', instance.organization.clinicalorganization.npi.npi, request)  # instance.organization_id
         return location.model_dump()
 
 
@@ -431,12 +432,12 @@ class PractitionerRoleSerializer(serializers.Serializer):
         practitioner_role.active = instance.active
         # instance.provider_to_organization.individual_id
         practitioner_role.practitioner = genReference(
-            'Practitioner', instance.provider_to_organization.individual.npi.npi, request)
+            'fhir-practitioner-detail', instance.provider_to_organization.individual.npi.npi, request)
         # instance.provider_to_organization.organization_id
         practitioner_role.organization = genReference(
-            'Organization', instance.provider_to_organization.organization.clinicalorganization.npi.npi, request)
+            'fhir-organization-detail', instance.provider_to_organization.organization.clinicalorganization.npi.npi, request)
         practitioner_role.location = [genReference(
-            'Location', instance.location.id, request)]
+            'fhir-location-detail', instance.location.id, request)]
         # These lines rely on the fhir.resources representation of PractitionerRole to be expanded to match the ndh FHIR definition. This is a TODO with an open ticket.
         # if 'other_phone' in representation.keys():
         #    practitioner_role.telecom = representation['other_phone']
@@ -504,13 +505,16 @@ class BundleSerializer(serializers.Serializer):
         entries = []
 
         for resource in instance.data:
+            request = self.context.get('request')
             # Get the resource type (Patient, Practitioner, etc.)
             resource_type = resource['resourceType']
             id = resource['id']
-
+            url_name = f'fhir-{resource_type.lower()}-detail'
+            full_url = request.build_absolute_uri(
+                reverse(url_name, kwargs={'pk': id}))
             # Create an entry for this resource
             entry = {
-                "fullUrl": f"{resource_type}/{id}",
+                "fullUrl": full_url,
                 "resource": resource,
             }
 

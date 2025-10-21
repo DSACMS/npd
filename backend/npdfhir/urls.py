@@ -25,7 +25,7 @@ router.register(r'Practitioner', views.FHIRPractitionerViewSet,
 router.register(r'Organization', views.FHIROrganizationViewSet,
                 basename='fhir-organization')
 router.register(r'PractitionerRole', views.FHIRPractitionerRoleViewSet,
-                basename='fhir-practitioner-role')
+                basename='fhir-practitionerrole')
 router.register(r'Location', views.FHIRLocationViewSet,
                 basename='fhir-location')
 router.register(r'Endpoint', views.FHIREndpointViewSet,

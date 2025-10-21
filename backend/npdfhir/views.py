@@ -113,7 +113,7 @@ class FHIREndpointViewSet(viewsets.ViewSet):
 
         # Serialize the bundle
         serializer = EndpointSerializer(queryset, many=True)
-        bundle = BundleSerializer(serializer)
+        bundle = BundleSerializer(serializer, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = paginator.get_paginated_response(bundle.data)
@@ -231,7 +231,7 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
 
         # Serialize the bundle
         serializer = PractitionerSerializer(queryset, many=True)
-        bundle = BundleSerializer(serializer)
+        bundle = BundleSerializer(serializer, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = paginator.get_paginated_response(bundle.data)
@@ -321,7 +321,7 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
         # Serialize the bundle
         serializer = PractitionerRoleSerializer(
             queryset, many=True, context={"request": request})
-        bundle = BundleSerializer(serializer)
+        bundle = BundleSerializer(serializer, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = paginator.get_paginated_response(bundle.data)
@@ -436,7 +436,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
 
         # Serialize the bundle
         serializer = ClinicalOrganizationSerializer(queryset, many=True)
-        bundle = BundleSerializer(serializer)
+        bundle = BundleSerializer(serializer, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = paginator.get_paginated_response(bundle.data)
@@ -546,7 +546,7 @@ class FHIRLocationViewSet(viewsets.ViewSet):
         # Serialize the bundle
         serializer = LocationSerializer(
             queryset, many=True, context={"request": request})
-        bundle = BundleSerializer(serializer)
+        bundle = BundleSerializer(serializer, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = paginator.get_paginated_response(bundle.data)

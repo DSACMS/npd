@@ -226,7 +226,8 @@ class LocationViewSetTestCase(APITestCase):
         self.assertIn("results", response.data)
 
     def test_retrieve_nonexistent(self):
-        url = reverse("fhir-location-detail", args=[999999])
+        url = reverse("fhir-location-detail",
+                      args=['00000000-0000-0000-0000-000000000000'])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
@@ -287,7 +288,7 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertIn("results", response.data)
 
     def test_retrieve_nonexistent(self):
-        url = reverse("fhir-practitioner-detail", args=[999999])
+        url = reverse("fhir-practitioner-detail", args=['999999'])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
@@ -297,31 +298,31 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         self.client = APIClient()
 
     def test_list_default(self):
-        url = reverse("fhir-practitioner-role-list")
+        url = reverse("fhir-practitionerrole-list")
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
         self.assertIn("results", response.data)
 
     def test_list_with_custom_page_size(self):
-        url = reverse("fhir-practitioner-role-list")
+        url = reverse("fhir-practitionerrole-list")
         response = self.client.get(url, {"page_size": 2})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertLessEqual(len(response.data["results"]["entry"]), 2)
 
     def test_list_with_greater_than_max_page_size(self):
-        url = reverse("fhir-practitioner-role-list")
+        url = reverse("fhir-practitionerrole-list")
         response = self.client.get(url, {"page_size": 1001})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertLessEqual(len(response.data["results"]["entry"]), 1000)
 
     def test_list_filter_by_name(self):
-        url = reverse("fhir-practitioner-role-list")
+        url = reverse("fhir-practitionerrole-list")
         response = self.client.get(url, {"name": "Cumberland"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("results", response.data)
 
     def test_retrieve_nonexistent(self):
-        url = reverse("fhir-practitioner-role-detail", args=[999999])
+        url = reverse("fhir-practitionerrole-detail", args=[999999])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
