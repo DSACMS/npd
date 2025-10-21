@@ -1,3 +1,7 @@
+import re
+import locale
+import unicodedata
+from functools import cmp_to_key
 from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase, APIClient
@@ -6,6 +10,15 @@ from django.db import connection
 from .cache import cacheData # I can't explain why, but we need to import cacheData here. I think we can remove this once we move to the docker db setup
 from fhir.resources.bundle import Bundle
 from pydantic import ValidationError
+
+def normalize_name(name: str) -> str:
+    """Approximate SQL collation by stripping punctuation and normalizing case."""
+    # Collapse multiple spaces
+    name = name.replace(" ","")
+    name = re.sub(r'[^A-Za-z0-9 ]+', '', name).upper().strip()
+    
+    return name
+
 
 def get_female_npis(npi_list):
     """
@@ -25,6 +38,21 @@ def get_female_npis(npi_list):
     return results
 
 
+def get_locale():
+    """
+    Given a list of NPI numbers, return the subset that are female.
+    """
+    query = """
+        SHOW LC_COLLATE;
+    """
+    with connection.cursor() as cursor:
+        cursor.execute(query)
+        results = cursor.fetchall()
+
+    return results
+
+
+
 class EndpointViewSetTestCase(APITestCase):
     def setUp(self):
         self.client = APIClient()
@@ -36,6 +64,27 @@ class EndpointViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
         self.assertIn("results", response.data)
+    
+    def test_list_in_proper_order(self):
+        url = self.list_url
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response["Content-Type"], "application/fhir+json")
+
+        #print(response.data["results"]["entry"][0]['resource']['name'])
+
+        # Extract names
+        #Note: have to normalize the names to have python sorting match sql
+        names = [
+            normalize_name(d['resource'].get('name', {}))
+            for d in response.data["results"]["entry"]
+        ]
+
+        locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
+        
+        sorted_names = sorted(names, key=cmp_to_key(locale.strcoll))
+        self.assertEqual(names, sorted_names, f"Expected endpoints list sorted by name but got {names}\n Sorted: {sorted_names}")
+
     
     def test_list_returns_fhir_bundle(self):
         response = self.client.get(self.list_url)
@@ -160,6 +209,27 @@ class OrganizationViewSetTestCase(APITestCase):
         self.assertEqual(response["Content-Type"], "application/fhir+json")
         self.assertIn("results", response.data)
 
+    def test_list_in_proper_order(self):
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response["Content-Type"], "application/fhir+json")
+
+        #print(response.data["results"]["entry"][0]['resource']['name'])
+
+        # Extract names
+        #Note: have to normalize the names to have python sorting match sql
+        names = [
+            normalize_name(d['resource'].get('name', {}))
+            for d in response.data["results"]["entry"]
+        ]
+
+        locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
+        
+        sorted_names = sorted(names, key=cmp_to_key(locale.strcoll))
+        self.assertEqual(names, sorted_names, f"Expected fhir orgs sorted by org name but got {names}\n Sorted: {sorted_names}")
+
+
     def test_list_with_custom_page_size(self):
         url = reverse("fhir-organization-list")
         response = self.client.get(url, {"page_size": 2})
@@ -200,6 +270,42 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
         self.assertIn("results", response.data)
+    
+    def test_list_in_proper_order(self):
+        url = reverse("fhir-practitioner-list") 
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response["Content-Type"], "application/fhir+json")
+
+        #print(response.data["results"]["entry"][0]['resource']['name'][0])
+
+        # Extract names
+        #Note: have to normalize the names to have python sorting match sql
+        names = [
+            (d['resource']['name'][0].get('family', {}),
+            d['resource']['name'][0]['given'][0])
+            for d in response.data["results"]["entry"]
+        ]
+
+        # Set the locale to match PostgreSQL's en_US.UTF-8
+        locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
+
+        def locale_tuple_cmp(a, b):
+            """
+            Compare two tuples (last_name, first_name) using locale.strcoll,
+            similar to PostgreSQL ORDER BY last_name, first_name COLLATE "en_US.UTF-8".
+            """
+            # Compare last names first
+            cmp_last = locale.strcoll(a[0], b[0])
+            if cmp_last != 0:
+                return cmp_last
+            # If last names are equal, compare first names
+            return locale.strcoll(a[1], b[1])
+
+
+        sorted_names = sorted(names,key=cmp_to_key(locale_tuple_cmp))
+
+        self.assertEqual(names, sorted_names, f"Expected fhir orgs sorted by org name but got {names}\n Sorted: {sorted_names}")
 
     def test_list_with_custom_page_size(self):
         url = reverse("fhir-practitioner-list")

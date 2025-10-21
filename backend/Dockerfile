@@ -30,6 +30,19 @@ FROM python:3.13-slim
 RUN useradd -m -r appuser && \
    mkdir /app && \
    chown -R appuser /app
+
+# Install locales package and generate en_US.UTF-8
+RUN apt-get update && apt-get install -y --no-install-recommends locales && \
+    echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
+    locale-gen en_US.UTF-8 && \
+    update-locale LANG=en_US.UTF-8 && \
+    rm -rf /var/lib/apt/lists/*
+
+# Set locale environment variables explicitly
+ENV LANG=en_US.UTF-8 \
+    LANGUAGE=en_US:en \
+    LC_ALL=en_US.UTF-8
+
  
 # Copy the Python dependencies from the builder stage
 COPY --from=builder /usr/local/lib/python3.13/site-packages/ /usr/local/lib/python3.13/site-packages/
