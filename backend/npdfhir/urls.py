@@ -1,12 +1,12 @@
-from django.urls import path, include
+from debug_toolbar.toolbar import debug_toolbar_urls
+from django.urls import include, path
+from drf_yasg import openapi
+from drf_yasg.views import get_schema_view
+from rest_framework.renderers import JSONOpenAPIRenderer
 from rest_framework.routers import DefaultRouter
 from rest_framework.schemas import get_schema_view
-from rest_framework.renderers import JSONOpenAPIRenderer
+
 from . import views
-from debug_toolbar.toolbar import debug_toolbar_urls
-from drf_yasg.views import get_schema_view
-from drf_yasg import openapi
-from django.urls import path
 
 schema_view = get_schema_view(
     openapi.Info(

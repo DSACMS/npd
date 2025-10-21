@@ -1,25 +1,39 @@
-from rest_framework import serializers
+import sys
+
+from django.urls import reverse
+from fhir.resources.address import Address
 from fhir.resources.bundle import Bundle
-from .models import Npi, OrganizationToName, IndividualToPhone, Organization, ProviderToOrganization, Location
-from fhir.resources.practitioner import Practitioner, PractitionerQualification
+from fhir.resources.codeableconcept import CodeableConcept
+from fhir.resources.coding import Coding
+from fhir.resources.contactpoint import ContactPoint
 from fhir.resources.endpoint import Endpoint
 from fhir.resources.humanname import HumanName
 from fhir.resources.identifier import Identifier
-from fhir.resources.contactpoint import ContactPoint
-from fhir.resources.codeableconcept import CodeableConcept
-from fhir.resources.coding import Coding
-from fhir.resources.period import Period
+from fhir.resources.location import Location as FHIRLocation
 from fhir.resources.meta import Meta
-from fhir.resources.address import Address
 from fhir.resources.organization import Organization
+from fhir.resources.period import Period
+from fhir.resources.practitioner import Practitioner, PractitionerQualification
 from fhir.resources.practitionerrole import PractitionerRole
 from fhir.resources.reference import Reference
-from fhir.resources.location import Location as FHIRLocation
-from django.urls import reverse
-from django.core.exceptions import ObjectDoesNotExist
-import sys
+from rest_framework import serializers
+
+from .models import (
+    IndividualToPhone,
+    Location,
+    Npi,
+    Organization,
+    OrganizationToName,
+    ProviderToOrganization,
+)
+
 if 'runserver' or 'test' in sys.argv:
-    from .cache import other_identifier_type, fhir_name_use, nucc_taxonomy_codes, fhir_phone_use
+    from .cache import (
+        fhir_name_use,
+        fhir_phone_use,
+        nucc_taxonomy_codes,
+        other_identifier_type,
+    )
 
 
 def genReference(url_name, identifier, request):

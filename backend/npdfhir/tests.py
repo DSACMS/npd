@@ -1,12 +1,13 @@
-from django.urls import reverse
-from rest_framework import status
-from rest_framework.test import APITestCase, APIClient
-from django.test.runner import DiscoverRunner
 from django.db import connection
-# I can't explain why, but we need to import cacheData here. I think we can remove this once we move to the docker db setup
-from .cache import cacheData
+from django.test.runner import DiscoverRunner
+from django.urls import reverse
 from fhir.resources.bundle import Bundle
 from pydantic import ValidationError
+from rest_framework import status
+from rest_framework.test import APIClient, APITestCase
+
+# I can't explain why, but we need to import cacheData here. I think we can remove this once we move to the docker db setup
+from .cache import cacheData
 
 
 def get_female_npis(npi_list):
