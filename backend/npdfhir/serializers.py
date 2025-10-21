@@ -558,7 +558,7 @@ class EndpointSerializer(serializers.Serializer):
         return endpoint.model_dump()
 
 
-class CapablityStatementSerializer(serializers.Serializer):
+class CapabilityStatementSerializer(serializers.Serializer):
     """
     Serializer for FHIR CapablityStatement resource
     """
