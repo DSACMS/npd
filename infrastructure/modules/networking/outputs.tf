@@ -15,7 +15,7 @@ output "api_security_group_id" {
 
 output "alb_security_group_id" {
   description = "The security group for the load balancer"
-  value       = aws_security_group.fhir_api_alb.id
+  value       = aws_security_group.fhir_api_alb_sg.id
 }
 
 output "db_subnet_ids" {
