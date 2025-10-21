@@ -5,7 +5,6 @@ from rest_framework import viewsets, generics
 from rest_framework.response import Response
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.renderers import BrowsableAPIRenderer
-from django.core.cache import cache
 from .models import Provider, EndpointInstance, ClinicalOrganization
 from .serializers import PractitionerSerializer, ClinicalOrganizationSerializer, BundleSerializer, EndpointSerializer
 from .mappings import genderMapping, addressUseMapping
@@ -168,7 +167,11 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
         all_params = request.query_params
 
         providers = Provider.objects.all().prefetch_related(
-            'npi', 'individual', 'individual__individualtoname_set', 'individual__individualtoaddress_set', 'individual__individualtoaddress_set__address__address_us', 'individual__individualtoaddress_set__address__address_us__state_code', 'individual__individualtoaddress_set__address_use', 'individual__individualtophone_set', 'individual__individualtoemail_set', 'providertootherid_set', 'providertotaxonomy_set')
+            'npi', 'individual', 'individual__individualtoname_set', 'individual__individualtoaddress_set',
+            'individual__individualtoaddress_set__address__address_us',
+            'individual__individualtoaddress_set__address__address_us__state_code',
+            'individual__individualtoaddress_set__address_use', 'individual__individualtophone_set',
+            'individual__individualtoemail_set', 'providertootherid_set', 'providertotaxonomy_set')
 
         for param, value in all_params.items():
             match param:
@@ -182,7 +185,8 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
                 case 'name':
                     providers = providers.annotate(
                         search=SearchVector('individual__individualtoname__last_name',
-                                            'individual__individualtoname__first_name', 'individual__individualtoname__middle_name')
+                                            'individual__individualtoname__first_name',
+                                            'individual__individualtoname__middle_name')
                     ).filter(search=value)
                 case 'gender':
                     if value in genderMapping.keys():
@@ -200,7 +204,7 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
                             'individual__individualtoaddress__address__address_us__delivery_line_2',
                             'individual__individualtoaddress__address__address_us__city_name',
                             'individual__individualtoaddress__address__address_us__state_code__abbreviation',
-                            'individual__individualtoaddress__address__address_us__zipcode',)
+                            'individual__individualtoaddress__address__address_us__zipcode', )
                     ).filter(search=value)
                 case 'address-city':
                     providers = providers.annotate(
@@ -284,7 +288,15 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
         all_params = request.query_params
 
         organizations = ClinicalOrganization.objects.all().prefetch_related(
-            'npi', 'organization', 'organization__organizationtoname_set', 'organization__organizationtoaddress_set', 'organization__organizationtoaddress_set__address', 'organization__organizationtoaddress_set__address__address_us', 'organization__organizationtoaddress_set__address__address_us__state_code', 'organization__organizationtoaddress_set__address_use', 'organizationtootherid_set', 'organizationtotaxonomy_set', 'organization__authorized_official__individualtophone_set', 'organization__authorized_official__individualtoname_set', 'organization__authorized_official__individualtoemail_set', 'organization__authorized_official__individualtoaddress_set')
+            'npi', 'organization', 'organization__organizationtoname_set', 'organization__organizationtoaddress_set',
+            'organization__organizationtoaddress_set__address',
+            'organization__organizationtoaddress_set__address__address_us',
+            'organization__organizationtoaddress_set__address__address_us__state_code',
+            'organization__organizationtoaddress_set__address_use', 'organizationtootherid_set',
+            'organizationtotaxonomy_set', 'organization__authorized_official__individualtophone_set',
+            'organization__authorized_official__individualtoname_set',
+            'organization__authorized_official__individualtoemail_set',
+            'organization__authorized_official__individualtoaddress_set')
 
         for param, value in all_params.items():
             match param:
@@ -312,7 +324,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
                             'organization__organizationtoaddress__address__address_us__delivery_line_2',
                             'organization__organizationtoaddress__address__address_us__city_name',
                             'organization__organizationtoaddress__address__address_us__state_code__abbreviation',
-                            'organization__organizationtoaddress__address__address_us__zipcode',)
+                            'organization__organizationtoaddress__address__address_us__zipcode', )
                     ).filter(search=value)
                 case 'address-city':
                     organizations = organizations.annotate(

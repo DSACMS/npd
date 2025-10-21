@@ -416,9 +416,7 @@ resource "aws_lb_target_group" "api" {
     timeout             = 5
     healthy_threshold   = 2
     unhealthy_threshold = 10
-    # TODO: Django is always returning a 400 because Django wants to know what domain/IPs requests are coming from
-    # Setting this to HTTP 400 (Bad Request) until the Django application can be update to handle health check requests.
-    matcher             = "400"
+    matcher             = "200"
   }
 }
 

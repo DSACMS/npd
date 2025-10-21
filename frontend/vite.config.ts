@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import react from "@vitejs/plugin-react"
 import process from "node:process"
 import { defineConfig } from "vite"
@@ -18,6 +20,16 @@ export default defineConfig(({ mode }) => {
       host: true,
       watch: {
         usePolling: true,
+      },
+    },
+    // https://vitest.dev/guide/
+    test: {
+      environment: "jsdom",
+      globals: true,
+      setupFiles: "./tests/setup.ts",
+      coverage: {
+        provider: "v8",
+        reporter: ["text", "cobertura"],
       },
     },
   }

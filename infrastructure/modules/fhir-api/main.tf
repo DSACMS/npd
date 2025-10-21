@@ -277,7 +277,7 @@ resource "aws_lb_target_group" "fhir_api_tg" {
     timeout             = 5
     healthy_threshold   = 2
     unhealthy_threshold = 10
-    matcher             = "400"
+    matcher             = "200"
   }
 }
 

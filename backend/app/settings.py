@@ -15,6 +15,7 @@ from decouple import config
 import os
 import sys
 import logging
+from npdfhir.middleware import HealthCheckMiddleware
 
 # Detect if tests are being run
 TESTING = 'test' in sys.argv
@@ -35,7 +36,7 @@ TESTING = sys.argv[1:2] == ['test']
 
 
 if DEBUG:
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+    ALLOWED_HOSTS = ['localhost','127.0.0.1','0.0.0.0']
 else:
     ALLOWED_HOSTS = config("DJANGO_ALLOWED_HOSTS").split(',')
 
@@ -56,13 +57,13 @@ INSTALLED_APPS = [
     'django_filters',
     'drf_yasg',
     'xmlrunner',
-    'provider_directory.apps.ProviderDirectory',
 ]
 
 if not TESTING:
     INSTALLED_APPS.append('debug_toolbar')
 
 MIDDLEWARE = [
+    'npdfhir.middleware.HealthCheckMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
