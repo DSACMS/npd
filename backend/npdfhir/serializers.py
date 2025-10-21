@@ -554,6 +554,15 @@ class CapablityStatementSerializer(serializers.Serializer):
     Serializer for FHIR CapablityStatement resource
     """
 
+    def to_representation(self, instance):
+        capability_statement = CapabilityStatement(
+            status="active",
+            date=datetime.now().isoformat(),
+            kind="instance"
+            fhirVersion="4.0.1",
+            format=["fhir+json"]
+        )
+
 
 class BundleSerializer(serializers.Serializer):
     """
