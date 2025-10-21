@@ -557,9 +557,9 @@ class FHIRLocationViewSet(viewsets.ViewSet):
         """
         Return a single provider as a FHIR Practitioner resource
         """
-        location = get_object_or_404(Location, pk=int(pk))
+        location = get_object_or_404(Location, pk=pk)
 
-        organization = ClinicalOrganizationSerializer(
+        location = LocationSerializer(
             location, context={"request": request})
 
         # Set appropriate content type for FHIR responses

@@ -21,6 +21,14 @@ if 'runserver' or 'test' in sys.argv:
     from .cache import other_identifier_type, fhir_name_use, nucc_taxonomy_codes, fhir_phone_use
 
 
+def genReference(resource, identifier, request):
+    split_str = '/fhir'
+    url = request.build_absolute_uri().split(split_str)[0]
+    reference = Reference(
+        reference=f'{url}{split_str}/{resource}/{identifier}/')
+    return reference
+
+
 class AddressSerializer(serializers.Serializer):
     delivery_line_1 = serializers.CharField(
         source='addressus__delivery_line_1', read_only=True)
@@ -404,8 +412,8 @@ class LocationSerializer(serializers.Serializer):
         #    location.telecom = representation['phone']
         if 'address' in representation.keys():
             location.address = representation['address']
-        location.managingOrganization = Reference(
-            reference=request.build_absolute_uri(f'Organization/{instance.organization_id}').replace('Location/', ''))
+        location.managingOrganization = genReference(
+            'Organization', instance.organization.clinicalorganization.npi.npi, request)  # instance.organization_id
         return location.model_dump()
 
 
@@ -421,12 +429,14 @@ class PractitionerRoleSerializer(serializers.Serializer):
         practitioner_role = PractitionerRole()
         practitioner_role.id = str(instance.id)
         practitioner_role.active = instance.active
-        practitioner_role.practitioner = Reference(
-            reference=request.build_absolute_uri(f'Practitioner/{instance.provider_to_organization.individual_id}').replace('PractitionerRole/', ''))
-        practitioner_role.organization = Reference(
-            reference=request.build_absolute_uri(f'Organization/{instance.provider_to_organization.organization_id}').replace('PractitionerRole/', ''))
-        practitioner_role.location = [Reference(
-            reference=request.build_absolute_uri(f'Location/{instance.location.id}').replace('PractitionerRole/', ''))]
+        # instance.provider_to_organization.individual_id
+        practitioner_role.practitioner = genReference(
+            'Practitioner', instance.provider_to_organization.individual.npi.npi, request)
+        # instance.provider_to_organization.organization_id
+        practitioner_role.organization = genReference(
+            'Organization', instance.provider_to_organization.organization.clinicalorganization.npi.npi, request)
+        practitioner_role.location = [genReference(
+            'Location', instance.location.id, request)]
         # These lines rely on the fhir.resources representation of PractitionerRole to be expanded to match the ndh FHIR definition. This is a TODO with an open ticket.
         # if 'other_phone' in representation.keys():
         #    practitioner_role.telecom = representation['other_phone']
