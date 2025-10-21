@@ -408,7 +408,7 @@ class PractitionerViewSetTestCase(APITestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
-    def test_retrieve_nonexistent_uuid(self):
+   def test_retrieve_nonexistent_uuid(self):
         url = reverse("fhir-practitioner-detail",
                       args=["12300000-0000-0000-0000-000000000123"])
         response = self.client.get(url)
@@ -462,6 +462,60 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         url = reverse("fhir-practitionerrole-detail", args=["999999"])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+
+    def test_retrieve_single_pracitionerrole(self):
+        id = "3ac7bd1e-a698-4905-9731-ca650de2dcb0"
+        url = reverse("fhir-practitionerrole-detail",
+                      args=[id])
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data['id'], id)
+
+
+class CapabilityStatementViewSetTestCase(APITestCase):
+    def setUp(self):
+        self.client = APIClient()
+        self.url = reverse("fhir-metadata")
+== =====
+
+
+class CapabilityStatementViewSetTestCase(APITestCase):
+    def setUp(self):
+        self.client = APIClient()
+        self.url = reverse("fhir-capabilitystatement-list")
+>>>>>> > 5fa2c5d4 (added tests)
+
+   def test_capability_statement_returns_200(self):
+        response = self.client.get(self.url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_capability_statement_returns_correct_content_type(self):
+        response = self.client.get(self.url)
+        self.assertEqual(response["Content-Type"], "application/fhir+json")
+
+    def test_capability_statement_has_resource_type(self):
+        response = self.client.get(self.url)
+        self.assertEqual(response.data["resourceType"], "CapabilityStatement")
+
+    def test_capability_statement_has_required_fields(self):
+        response = self.client.get(self.url)
+        data = response.data
+
+        self.assertIn("status", data)
+        self.assertIn("fhirVersion", data)
+        self.assertIn("format", data)
+        self.assertIn("rest", data)
+
+    def test_capability_statement_is_valid_fhir(self):
+        response = self.client.get(self.url)
+
+        capability_statement = CapabilityStatement.model_validate(
+            response.data)
+<<<<<< < HEAD
+   self.assertEqual(capability_statement.__resource_type__, "CapabilityStatement")
+== =====
+   self.assertEqual(capability_statement.resourceType, "CapabilityStatement")
+>>>>>> > 5fa2c5d4 (added tests)
 
     def test_retrieve_single_pracitionerrole(self):
         id = "3ac7bd1e-a698-4905-9731-ca650de2dcb0"
