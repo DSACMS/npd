@@ -21,7 +21,7 @@ from fhir.resources.capabilitystatement import (
     CapabilityStatementRestResourceSearchParam,
     CapabilityStatementImplementation
 )
-import datetime
+from datetime import datetime
 import sys
 if 'runserver' or 'test' in sys.argv:
     from .cache import other_identifier_type, fhir_name_use, nucc_taxonomy_codes, fhir_phone_use
@@ -435,7 +435,14 @@ class CapablityStatementSerializer(serializers.Serializer):
     """
     Serializer for FHIR CapablityStatement resource
     """
-
+    def to_representation(self, instance):
+        capability_statement = CapabilityStatement(
+            status="active",
+            date=datetime.now().isoformat(),
+            kind="instance"
+            fhirVersion="4.0.1",
+            format=["fhir+json"]
+        )
 
 class BundleSerializer(serializers.Serializer):
     """
