@@ -12,7 +12,7 @@ from uuid import UUID
 from .models import Provider, EndpointInstance, ClinicalOrganization, Organization
 from .serializers import PractitionerSerializer, OrganizationSerializer, BundleSerializer, EndpointSerializer
 from .models import Provider, EndpointInstance, ClinicalOrganization
-from .serializers import PractitionerSerializer, ClinicalOrganizationSerializer, BundleSerializer, EndpointSerializer
+from .serializers import PractitionerSerializer, OrganizationSerializer, BundleSerializer, EndpointSerializer
 from .mappings import genderMapping, addressUseMapping
 from .renderers import FHIRRenderer
 from drf_yasg.utils import swagger_auto_schema
