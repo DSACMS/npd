@@ -52,7 +52,7 @@ function Header() {
                 </button>
                 <ul
                   id="basic-nav-section"
-                  className="usa-nav__submenu"
+                  className={`usa-nav__submenu ${styles.submenuList}`}
                   role="menu"
                   hidden
                 >
