@@ -4,6 +4,7 @@ variable "fhir_api_migration_image" {}
 variable "fhir_api_port" {
   default = 8000
 }
+variable "redirect_to_strategy_page" {}
 variable "ecs_cluster_id" {}
 variable "db" {
   type = object({
