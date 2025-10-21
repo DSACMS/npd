@@ -160,7 +160,7 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
     @swagger_auto_schema(
         manual_parameters=[
             page_size_param,
-            createFilterParam('identifier', 'format: value OR system|value -> 12345567 OR NPI|12345567'),
+            createFilterParam('value (for any type of identifier) OR NPI|value (if searching for an NPI) -> 12345567 OR NPI|12345567'),
             createFilterParam('name'),
             createFilterParam('gender', enum=genderMapping.keys()),
             createFilterParam('practitioner_type'),
@@ -207,7 +207,7 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
                         page_size = page_size
                 case 'identifier':
                     system, identifier_id = parse_identifier(value)
-                    queries = None
+                    queries = Q(pk__isnull=True)
 
                     if system: # specific identifier search requested
                         if system == 'NPI':
@@ -215,13 +215,13 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
                                 queries = Q(npi__npi=identifier_id)
                             except (ValueError, TypeError):
                                 pass
-
-                        if queries is None: # force return no results 
-                            queries = Q(pk__isnull=True)
-
                     else: # general identifier search requested
-                        queries = Q(pk__isnull=True) # start with empty match
-                        queries = Q(npi__npi=identifier_id)
+                        try:
+                            queries |= Q(npi__npi=int(identifier_id))
+                        except (ValueError, TypeError):
+                            pass
+
+                        queries |= Q(providertootherid__other_id=identifier_id)
                     
                     providers = providers.filter(queries).distinct()
                 case 'name':
@@ -329,7 +329,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
         manual_parameters=[
             page_size_param,
             createFilterParam('name'),
-            createFilterParam('identifier', 'format: value OR system|value -> 12345567 OR NPI|12345567'),
+            createFilterParam('identifier', 'format: value (for any type of identifier) OR NPI|value (if searching for an NPI) -> 12345567 OR NPI|12345567'),
             createFilterParam('organization_type'),
             createFilterParam('address'),
             createFilterParam('address-city', 'city'),
@@ -392,26 +392,27 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
                     ).filter(search=value)
                 case 'identifier':
                     system, identifier_id = parse_identifier(value)
-                    queries = None
+                    queries = Q(pk__isnull=True)
 
                     if system: # specific identifier search requested
                         if system == 'NPI':
                             try:
                                 queries = Q(clinicalorganization__npi__npi=int(identifier_id))
                             except (ValueError, TypeError):
-                                pass
-
-                        if queries is None: # force return no results 
-                            queries = Q(pk__isnull=True)
-
+                                pass # TODO: implement validationerror to show users that NPI must be an int
                     else: # general identifier search requested
                         try:
-                            queries = Q(clinicalorganization__npi__npi=int(identifier_id))
+                            queries |= Q(clinicalorganization__npi__npi=int(identifier_id))
                         except (ValueError, TypeError):
                             pass
 
-                        if queries is None: # force return no results 
-                            queries = Q(pk__isnull=True)
+                        try: # need this block in order to pass pydantic validation
+                            UUID(identifier_id)
+                            queries |= Q(ein__ein_id=identifier_id)
+                        except (ValueError, TypeError):
+                            pass
+
+                        queries |= Q(clinicalorganization__organizationtootherid__other_id=identifier_id)
                     
                     organizations = organizations.filter(queries).distinct()
                 case 'organization_type':

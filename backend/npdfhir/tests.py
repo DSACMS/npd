@@ -200,12 +200,12 @@ class OrganizationViewSetTestCase(APITestCase):
         self.assertIn("results", response.data)
         self.assertGreaterEqual(response.data["results"]["total"], 1)
 
-    # def test_list_filter_by_otherID_general(self):
-    #     url = reverse("fhir-organization-list")
-    #     response = self.client.get(url, {"identifier":"001586989"})
-    #     self.assertEqual(response.status_code, status.HTTP_200_OK)
-    #     self.assertIn("results", response.data)
-    #     self.assertGreaterEqual(response.data["results"]["total"], 1)
+    def test_list_filter_by_otherID_general(self):
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url, {"identifier":"testMBI"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+        self.assertGreaterEqual(response.data["results"]["total"], 1)
 
     # def test_list_filter_by_otherID_specific(self):
     #     url = reverse("fhir-organization-list")
@@ -214,11 +214,12 @@ class OrganizationViewSetTestCase(APITestCase):
     #     self.assertIn("results", response.data)
     #     self.assertGreaterEqual(response.data["results"]["total"], 1)
 
-    # def test_list_filter_by_ein_general(self):
-    #     url = reverse("fhir-organization-list")
-    #     response = self.client.get(url, {"identifier":"12-3456789"})
-    #     self.assertEqual(response.status_code, status.HTTP_200_OK)
-    #     self.assertIn("results", response.data)
+    def test_list_filter_by_ein_general(self):
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url, {"identifier":"22222222-2222-2222-2222-222222222222"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+        self.assertGreaterEqual(response.data["results"]["total"], 1)
 
     # def test_list_filter_by_ein_specific(self):
     #     url = reverse("fhir-organization-list")
