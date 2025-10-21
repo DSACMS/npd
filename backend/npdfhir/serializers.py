@@ -465,7 +465,7 @@ class LocationSerializer(serializers.Serializer):
         if 'address' in representation.keys():
             location.address = representation['address']
         location.managingOrganization = genReference(
-            'fhir-organization-detail', instance.organization.clinicalorganization.npi.npi, request)  # instance.organization_id
+            'fhir-organization-detail', instance.organization_id, request)
         return location.model_dump()
 
 
@@ -481,12 +481,10 @@ class PractitionerRoleSerializer(serializers.Serializer):
         practitioner_role = PractitionerRole()
         practitioner_role.id = str(instance.id)
         practitioner_role.active = instance.active
-        # instance.provider_to_organization.individual_id
         practitioner_role.practitioner = genReference(
-            'fhir-practitioner-detail', instance.provider_to_organization.individual.npi.npi, request)
-        # instance.provider_to_organization.organization_id
+            'fhir-practitioner-detail', instance.provider_to_organization.individual_id, request)
         practitioner_role.organization = genReference(
-            'fhir-organization-detail', instance.provider_to_organization.organization.clinicalorganization.npi.npi, request)
+            'fhir-organization-detail', instance.provider_to_organization.organization_id, request)
         practitioner_role.location = [genReference(
             'fhir-location-detail', instance.location.id, request)]
         # These lines rely on the fhir.resources representation of PractitionerRole to be expanded to match the ndh FHIR definition. This is a TODO with an open ticket.

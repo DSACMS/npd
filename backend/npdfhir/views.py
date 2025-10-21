@@ -9,9 +9,7 @@ from rest_framework.renderers import BrowsableAPIRenderer
 from django.core.cache import cache
 from django.db.models import Q
 from uuid import UUID
-from .models import Provider, EndpointInstance, ClinicalOrganization, Organization
-from .serializers import PractitionerSerializer, OrganizationSerializer, BundleSerializer, EndpointSerializer
-from .models import Provider, EndpointInstance, ClinicalOrganization, Location, ProviderToLocation
+from .models import Provider, EndpointInstance, Location, ProviderToLocation, Organization
 from .serializers import PractitionerSerializer, OrganizationSerializer, BundleSerializer, EndpointSerializer, LocationSerializer, PractitionerRoleSerializer
 from .mappings import genderMapping, addressUseMapping
 from .renderers import FHIRRenderer
@@ -141,6 +139,11 @@ class FHIREndpointViewSet(viewsets.ViewSet):
         """
         Return a single endpoint as a FHIR Endpoint resource
         """
+
+        try:
+            UUID(pk)
+        except (ValueError, TypeError) as e:
+            return HttpResponse(f"Endpoint {escape(pk)} not found", status=404)
 
         endpoint = get_object_or_404(EndpointInstance, pk=pk)
 
@@ -288,8 +291,7 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
         try:
             UUID(pk)
         except (ValueError, TypeError) as e:
-            print(f"{pk} is not a valid UUID: {type(e)} - {e}")
-            return HttpResponse(f"{escape(pk)} is not a valid UUID.", status=404)
+            return HttpResponse(f"Practitioner {escape(pk)} not found", status=404)
 
         provider = get_object_or_404(
             Provider.objects.prefetch_related(
@@ -397,7 +399,12 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
         """
         Return a single provider as a FHIR Practitioner resource
         """
-        provider = get_object_or_404(Provider, pk=int(pk))
+        try:
+            UUID(pk)
+        except (ValueError, TypeError) as e:
+            return HttpResponse(f"PractitionerRole {escape(pk)} not found", status=404)
+
+        practitionerrole = get_object_or_404(ProviderToLocation, pk=pk)
 
         practitionerrole = PractitionerRoleSerializer(
             practitionerrole, context={"request": request})
@@ -567,10 +574,9 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
         try:
             UUID(pk)
         except (ValueError, TypeError) as e:
-            print(f"{pk} is not a valid UUID: {type(e)} - {e}")
-            return HttpResponse(f"{escape(pk)} is not a valid UUID.", status=404)
+            return HttpResponse(f"Organization {escape(pk)} not found", status=404)
 
-        clinicalorg = get_object_or_404(Organization.objects.select_related(
+        organization = get_object_or_404(Organization.objects.select_related(
             'authorized_official',
             'ein'
         ).prefetch_related(
@@ -597,7 +603,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
         ),
             pk=pk)
 
-        organization = OrganizationSerializer(clinicalorg)
+        organization = OrganizationSerializer(organization)
 
         # Set appropriate content type for FHIR responses
         response = Response(organization.data)
@@ -705,6 +711,11 @@ class FHIRLocationViewSet(viewsets.ViewSet):
         """
         Return a single provider as a FHIR Practitioner resource
         """
+        try:
+            UUID(pk)
+        except (ValueError, TypeError) as e:
+            return HttpResponse(f"Location {escape(pk)} not found", status=404)
+
         location = get_object_or_404(Location, pk=pk)
 
         location = LocationSerializer(

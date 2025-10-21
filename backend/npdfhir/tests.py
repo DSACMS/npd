@@ -354,6 +354,12 @@ class PractitionerViewSetTestCase(APITestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
+    def test_retrieve_nonexistent_uuid(self):
+        url = reverse("fhir-practitioner-detail",
+                      args=["12300000-0000-0000-0000-000000000123"])
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+
 
 class PractitionerRoleViewSetTestCase(APITestCase):
     def setUp(self):
@@ -384,16 +390,13 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("results", response.data)
 
-    def test_retrieve_nonexistent(self):
-        url = reverse("fhir-practitionerrole-detail", args=[999999])
-
     def test_retrieve_nonexistent_uuid(self):
-        url = reverse("fhir-practitioner-detail",
-                      args=["12300000-0000-0000-0000-000000000123"])
+        url = reverse("fhir-practitionerrole-detail",
+                      args=["12300000-0000-0000-0000-000000000124"])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
     def test_retrieve_nonexistent_npi(self):
-        url = reverse("fhir-practitioner-detail", args=["999999"])
+        url = reverse("fhir-practitionerrole-detail", args=["999999"])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
