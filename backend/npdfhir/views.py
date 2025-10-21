@@ -7,7 +7,7 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.renderers import BrowsableAPIRenderer
 from django.core.cache import cache
 from .models import Provider, EndpointInstance, ClinicalOrganization
-from .serializers import PractitionerSerializer, ClinicalOrganizationSerializer, BundleSerializer, EndpointSerializer, CapablityStatementSerializer
+from .serializers import PractitionerSerializer, ClinicalOrganizationSerializer, BundleSerializer, EndpointSerializer, CapabilityStatementSerializer
 from .mappings import genderMapping, addressUseMapping
 from .renderers import FHIRRenderer
 from drf_yasg.utils import swagger_auto_schema
@@ -377,7 +377,7 @@ class FHIRCapabilityStatementViewSet(viewsets.ViewSet):
         """
         Return a list of all CapabilityStatement as FHIR CapabilityStatement resources
         """
-        serializer = CapablityStatementSerializer(None)
-        response = serializer.data
+        serializer = CapabilityStatementSerializer()
+        response = serializer.to_representation(None)
 
-        return response
+        return Response(response)
