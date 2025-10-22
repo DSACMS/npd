@@ -26,8 +26,6 @@ router.register(r'Organization', views.FHIROrganizationViewSet,
                 basename='fhir-organization')
 router.register(r'Endpoint', views.FHIREndpointViewSet,
                 basename='fhir-endpoint')
-router.register(r'CapabilityStatement', views.FHIRCapabilityStatementViewSet,
-                basename='fhir-capabilitystatement')
 
 urlpatterns = [
     path('docs.<format>/',
@@ -35,7 +33,7 @@ urlpatterns = [
     path('docs/', schema_view.with_ui('swagger',
          cache_timeout=0), name='schema-swagger-ui'),
     path("healthCheck", views.health, name="healthCheck"),
-    # path('metadata', views.fhir_metadata, name='fhir-metadata'),
+    path('metadata', views.FHIRCapabilityStatementView.as_view(), name='fhir-metadata'),
 
     # Router URLs
     path('', include(router.urls), name='index')

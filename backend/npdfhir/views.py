@@ -5,6 +5,7 @@ from rest_framework import viewsets, generics
 from rest_framework.response import Response
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.renderers import BrowsableAPIRenderer
+from rest_framework.views import APIView
 from django.core.cache import cache
 from .models import Provider, EndpointInstance, ClinicalOrganization
 from .serializers import PractitionerSerializer, ClinicalOrganizationSerializer, BundleSerializer, EndpointSerializer, CapabilityStatementSerializer
@@ -363,7 +364,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
 
         return response
 
-class FHIRCapabilityStatementViewSet(viewsets.ViewSet):
+class FHIRCapabilityStatementView(APIView):
     """
     ViewSet for FHIR Practitioner resources
     """
@@ -373,7 +374,7 @@ class FHIRCapabilityStatementViewSet(viewsets.ViewSet):
         responses={200: "Successful response",
                    404: "Error: The requested CapabilityStatement resource cannot be found."}
     )
-    def list(self, request):
+    def get(self, request):
         """
         Return a list of all CapabilityStatement as FHIR CapabilityStatement resources
         """
