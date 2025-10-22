@@ -1,3 +1,4 @@
+import inspect
 import sys
 
 from django.urls import reverse
@@ -42,6 +43,44 @@ def genReference(url_name, identifier, request):
     reference = Reference(
         reference=reference)
     return reference
+
+
+def createFilterParam(field: str, display: str = None, enum: list = None):
+    if display is None:
+        display = field.replace('_', ' ').replace('.', ' ')
+    param = openapi.Parameter(
+        field,
+        openapi.IN_QUERY,
+        description=f"Filter by {display}",
+        type=openapi.TYPE_STRING,
+    )
+    if enum is not None:
+        param.enum = enum
+    return param
+
+
+class QueryParameterSerializer(serializers.Serializer):
+    field = serializers.CharField()
+    display = serializers.CharField()
+    enum = serializers.ListField()
+    min = serializers.IntegerField()
+    max = serializers.IntegerField()
+    default = serializers.Field()
+    type = serializers.CharField()
+
+    def to_representation(self, instance):
+        display = instance.display
+        if display is None:
+            display = instance.field.replace('_', ' ').replace('.', ' ')
+        param = openapi.Parameter(
+            instance.field,
+            openapi.IN_QUERY,
+            description=f"Filter by {display}",
+            type=openapi.TYPE_STRING,
+        )
+        if instance.enum is not None:
+            param.enum = instance.enum
+        return param
 
 
 class AddressSerializer(serializers.Serializer):
