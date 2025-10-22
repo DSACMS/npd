@@ -28,6 +28,16 @@ output "etl_subnet_ids" {
   value       = data.aws_subnets.etl_subnets.ids
 }
 
+output "etl_alb_security_group_id" {
+  description = "The security group for the Dagster UI load balancer"
+  value = aws_security_group.etl_webserver_alb_sg.id
+}
+
+output "etl_security_group_id" {
+  description = "The security group for the Dagster processes"
+  value = aws_security_group.etl_sg.id
+}
+
 output "public_subnet_ids" {
   description = "IDs of public subnets"
   value       = data.aws_subnets.public_subnets.ids
