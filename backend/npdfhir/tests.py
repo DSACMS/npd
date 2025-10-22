@@ -317,7 +317,7 @@ class PractitionerViewSetTestCase(APITestCase):
 class CapabilityStatementViewSetTestCase(APITestCase):
     def setUp(self):
         self.client = APIClient()
-        self.url = reverse("ffhir-metadata")
+        self.url = reverse("fhir-metadata")
 
     def test_capability_statement_returns_200(self):
         response = self.client.get(self.url)
