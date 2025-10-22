@@ -2,16 +2,6 @@ data "aws_region" "current" {}
 data "aws_partition" "current" {}
 data "aws_caller_identity" "current" {}
 
-# ECR Repositories
-
-resource "aws_ecr_repository" "fhir_api" {
-  name = "${var.account_name}-fhir-api"
-}
-
-resource "aws_ecr_repository" "fhir_api_migrations" {
-  name = "${var.account_name}-fhir-api-migrations"
-}
-
 # Log Groups
 
 resource "aws_cloudwatch_log_group" "fhir_api_log_group" {

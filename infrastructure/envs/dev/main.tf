@@ -31,6 +31,12 @@ data "aws_vpc" "default" {
   }
 }
 
+module "repositories" {
+  source = "../../modules/repositories"
+
+  account_name = local.account_name
+}
+
 module "networking" {
   source = "../../modules/networking"
 
@@ -124,6 +130,7 @@ module "etl" {
 
   account_name = local.account_name
   dagster_image = var.dagster_image
+  ecs_cluster_id            = module.ecs.cluster_id
   db = {
     db_instance_master_user_secret_arn = module.etl-db.db_instance_master_user_secret_arn
     db_instance_address                = module.etl-db.db_instance_address

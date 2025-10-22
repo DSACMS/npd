@@ -189,4 +189,5 @@ resource "aws_vpc_security_group_egress_rule" "dagster_can_make_outgoing_request
   description = "Allows Dagster processes to make outgoing requests"
   security_group_id = aws_security_group.etl_sg.id
   ip_protocol = "-1"
+  cidr_ipv4 = "0.0.0.0/0"
 }

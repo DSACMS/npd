@@ -6,12 +6,6 @@ data "aws_region" "current" {}
 data "aws_partition" "current" {}
 data "aws_caller_identity" "current" {}
 
-# ECR Repositories
-
-resource "aws_ecr_repository" "dagster" {
-  name = "${var.account_name}-dagster"
-}
-
 # Log Groups
 
 resource "aws_cloudwatch_log_group" "dagster_ui_log_group" {
@@ -123,7 +117,7 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
         logDriver = "awslogs"
         options = {
           "awslogs-group"         = "/ecs/${var.account_name}"
-          "awslogs-region"        = data.aws_region.current.name
+          "awslogs-region"        = "us-east-1"
           "awslogs-stream-prefix" = var.account_name
         }
       }
@@ -131,7 +125,7 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
       environment = [
         { name = "DAGSTER_HOME", value = var.dagster_home },
         { name = "DAGSTER_POSTGRES_HOST", value = var.db.db_instance_address },
-        { name = "DAGSTER_POSTGRES_DB", value = var.dagster_db_name }
+        { name = "DAGSTER_POSTGRES_DB", value = var.db.db_instance_name }
       ],
       secrets = [
         {
@@ -181,7 +175,7 @@ resource "aws_ecs_task_definition" "dagster_ui" {
         logDriver = "awslogs"
         options = {
           "awslogs-group"         = "/ecs/${var.account_name}"
-          "awslogs-region"        = data.aws_region.current.name
+          "awslogs-region"        = "us-east-1"
           "awslogs-stream-prefix" = var.account_name
         }
       }
@@ -197,7 +191,7 @@ resource "aws_ecs_task_definition" "dagster_ui" {
       environment = [
         { name = "DAGSTER_HOME", value = var.dagster_home },
         { name = "DAGSTER_POSTGRES_HOST", value = var.db.db_instance_address },
-        { name = "DAGSTER_POSTGRES_DB", value = var.dagster_db_name }
+        { name = "DAGSTER_POSTGRES_DB", value = var.db.db_instance_name }
       ],
       secrets = [
         {
@@ -239,7 +233,7 @@ resource "aws_lb" "dagster_ui_alb" {
   name = "${var.account_name}-dagster-ui-alb"
   internal = false # TODO I don't know what this means
   load_balancer_type = "application"
-  security_groups = [var.networking.etl_webserver_alb_security_group_id]
+  security_groups = [var.networking.etl_alb_security_group_id]
   subnets = var.networking.public_subnet_ids
 }
 

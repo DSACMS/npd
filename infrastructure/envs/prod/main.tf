@@ -31,6 +31,12 @@ data "aws_vpc" "default" {
   }
 }
 
+module "repositories" {
+  source = "../../modules/repositories"
+
+  account_name = local.account_name
+}
+
 module "networking" {
   source = "../../modules/networking"
 

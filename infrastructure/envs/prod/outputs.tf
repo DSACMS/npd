@@ -10,10 +10,14 @@ output "etl_db_instance_endpoint" {
   value = module.etl-db.db_instance_endpoint
 }
 
-output "api_ecr_repository_name" {
-  value = module.fhir-api.api_ecr_repository_name
+output "fhir_api_repository_name" {
+  value = module.repositories.fhir_api_repository_name
 }
 
-output "api_migrations_ecr_repository_name" {
-  value = module.fhir-api.api_migrations_ecr_repository_name
+output "fhir_api_migrations_repository_name" {
+  value = module.repositories.fhir_api_migrations_repository_name
+}
+
+output "dagster_repository_name" {
+  value = module.repositories.dagster_repository_name
 }
