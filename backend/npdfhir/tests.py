@@ -476,16 +476,14 @@ class CapabilityStatementViewSetTestCase(APITestCase):
     def setUp(self):
         self.client = APIClient()
         self.url = reverse("fhir-metadata")
-== =====
 
 
 class CapabilityStatementViewSetTestCase(APITestCase):
     def setUp(self):
         self.client = APIClient()
         self.url = reverse("fhir-capabilitystatement-list")
->>>>>> > 5fa2c5d4 (added tests)
 
-   def test_capability_statement_returns_200(self):
+    def test_capability_statement_returns_200(self):
         response = self.client.get(self.url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
@@ -511,11 +509,9 @@ class CapabilityStatementViewSetTestCase(APITestCase):
 
         capability_statement = CapabilityStatement.model_validate(
             response.data)
-<<<<<< < HEAD
-   self.assertEqual(capability_statement.__resource_type__, "CapabilityStatement")
-== =====
-   self.assertEqual(capability_statement.resourceType, "CapabilityStatement")
->>>>>> > 5fa2c5d4 (added tests)
+
+        self.assertEqual(capability_statement.__resource_type__, "CapabilityStatement")
+
 
     def test_retrieve_single_pracitionerrole(self):
         id = "3ac7bd1e-a698-4905-9731-ca650de2dcb0"
