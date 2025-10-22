@@ -24,6 +24,13 @@ class OptionalSlashRouter(DefaultRouter):
 
 
 router = OptionalSlashRouter()
-router.register(r"Practitioner", views.FHIRPractitionerViewSet, basename="fhir-practitioner")
-router.register(r"Organization", views.FHIROrganizationViewSet, basename="fhir-organization")
-router.register(r"Endpoint", views.FHIREndpointViewSet, basename="fhir-endpoint")
+router.register(r"Practitioner", views.FHIRPractitionerViewSet,
+                basename="fhir-practitioner")
+router.register(r"Organization", views.FHIROrganizationViewSet,
+                basename="fhir-organization")
+router.register(r"Endpoint", views.FHIREndpointViewSet,
+                basename="fhir-endpoint")
+router.register(r"PractitionerRole", views.FHIRPractitionerRoleViewSet,
+                basename="fhir-practitionerrole")
+router.register(r"Location", views.FHIRLocationViewSet,
+                basename="fhir-location")

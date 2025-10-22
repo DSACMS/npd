@@ -42,8 +42,7 @@ migrate:
 	@echo "Migrating the development database..."
 	@docker compose up -d db
 # run all flyway migrations for the development environment
-	@docker compose run --rm db-migrations migrate
-
+	@docker compose run --rm db-migrations migrate 
 
 setup: build create-db migrate
 # pass
@@ -74,3 +73,4 @@ clean:
 	@find . -type d -name "__pycache__" -exec rm -rf {} +
 	@rm -rf artifacts/
 	@echo "Cleanup done."
+
