@@ -4,7 +4,6 @@ from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
 from rest_framework.renderers import JSONOpenAPIRenderer
 from rest_framework.routers import DefaultRouter
-from rest_framework.schemas import get_schema_view
 
 from . import views
 

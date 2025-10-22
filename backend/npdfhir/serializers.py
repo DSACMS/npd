@@ -11,7 +11,7 @@ from fhir.resources.humanname import HumanName
 from fhir.resources.identifier import Identifier
 from fhir.resources.location import Location as FHIRLocation
 from fhir.resources.meta import Meta
-from fhir.resources.organization import Organization
+from fhir.resources.organization import Organization as FHIROrganization
 from fhir.resources.period import Period
 from fhir.resources.practitioner import Practitioner, PractitionerQualification
 from fhir.resources.practitionerrole import PractitionerRole
@@ -300,7 +300,7 @@ class OrganizationSerializer(serializers.Serializer):
 
     def to_representation(self, instance):
         representation = super().to_representation(instance)
-        organization = Organization()
+        organization = FHIROrganization()
         organization.id = str(instance.id)
         organization.meta = Meta(
             profile=[
