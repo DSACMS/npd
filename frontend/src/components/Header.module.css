@@ -39,3 +39,8 @@
   margin-left: 0.5rem;
   padding: var(--spacer-half, 0.25rem) var(--spacer-1, 0.5rem);
 }
+
+.submenuList a:focus {
+  background-color: transparent !important;
+  outline: 0.25rem solid #2591ff !important;
+}
