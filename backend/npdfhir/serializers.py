@@ -1,6 +1,8 @@
+import inspect
 import sys
 
 from django.urls import reverse
+from drf_yasg import openapi
 from fhir.resources.address import Address
 from fhir.resources.bundle import Bundle
 from fhir.resources.codeableconcept import CodeableConcept
@@ -25,7 +27,7 @@ from fhir.resources.capabilitystatement import (
     CapabilityStatementImplementation
 )
 from datetime import datetime, timezone
-from rest_framework import serializers
+from rest_framework import serializers, viewsets
 
 from .models import (
     IndividualToPhone,
@@ -51,6 +53,44 @@ def genReference(url_name, identifier, request):
     reference = Reference(
         reference=reference)
     return reference
+
+
+def createFilterParam(field: str, display: str = None, enum: list = None):
+    if display is None:
+        display = field.replace('_', ' ').replace('.', ' ')
+    param = openapi.Parameter(
+        field,
+        openapi.IN_QUERY,
+        description=f"Filter by {display}",
+        type=openapi.TYPE_STRING,
+    )
+    if enum is not None:
+        param.enum = enum
+    return param
+
+
+class QueryParameterSerializer(serializers.Serializer):
+    field = serializers.CharField()
+    display = serializers.CharField()
+    enum = serializers.ListField()
+    min = serializers.IntegerField()
+    max = serializers.IntegerField()
+    default = serializers.Field()
+    type = serializers.CharField()
+
+    def to_representation(self, instance):
+        display = instance.display
+        if display is None:
+            display = instance.field.replace('_', ' ').replace('.', ' ')
+        param = openapi.Parameter(
+            instance.field,
+            openapi.IN_QUERY,
+            description=f"Filter by {display}",
+            type=openapi.TYPE_STRING,
+        )
+        if instance.enum is not None:
+            param.enum = instance.enum
+        return param
 
 
 class AddressSerializer(serializers.Serializer):
@@ -570,6 +610,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
     """
     Serializer for FHIR CapablityStatement resource
     """
+
     def to_representation(self, instance):
         capability_statement = CapabilityStatement(
             url="https://directory.cms.gov/fhir/metadata",
@@ -601,7 +642,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
         )
 
         return capability_statement.model_dump()
-    
+
     def build_rest_components(self):
         """
         Building out each REST component describing our endpoint capabilities
@@ -615,7 +656,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
                 self.build_endpoint_resource()
             ]
         )
-    
+
     def build_practitioner_resource(self):
         return CapabilityStatementRestResource(
             type="Practitioner",
@@ -666,7 +707,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
                 )
             ]
         )
-    
+
     def build_organization_resource(self):
         return CapabilityStatementRestResource(
             type="Organization",
@@ -712,7 +753,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
                 )
             ]
         )
-    
+
     def build_endpoint_resource(self):
         return CapabilityStatementRestResource(
             type="Endpoint",
