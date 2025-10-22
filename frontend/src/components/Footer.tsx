@@ -1,8 +1,11 @@
 import classNames from "classnames"
+import { useTranslation } from "react-i18next"
 import logoImgSrc from "../assets/hss-logo.png"
 import styles from "./Footer.module.css"
 
 const FooterLogo = () => {
+  const { t } = useTranslation()
+
   const classes = classNames(
     "ds-u-display--flex",
     "ds-u-flex-direction--row",
@@ -13,17 +16,16 @@ const FooterLogo = () => {
     <div className={classes}>
       <img src={logoImgSrc} className={styles.logoImg} alt="HHS Logo" />
       <div className={styles.logoText}>
-        <p>
-          A federal government website managed and paid for by the U.S. Centers
-          for Medicare & Medicaid Services.
-        </p>
-        <p>7500 Security Boulevard, Baltimore, MD 21244</p>
+        <p>{t("footer.logo.disclaimer")}</p>
+        <p>{t("footer.logo.address")}</p>
       </div>
     </div>
   )
 }
 
 export const Footer = () => {
+  const { t } = useTranslation()
+
   const linkHeaderClasses = classNames(
     "usa-footer__primary-link",
     "ds-u-padding-top--0",
@@ -37,21 +39,27 @@ export const Footer = () => {
             <FooterLogo />
           </div>
           <div className="ds-l-col--2">
-            <h4 className={linkHeaderClasses}>National Provider Directory</h4>
+            <h4 className={linkHeaderClasses}>
+              {t("footer.section.npd.title")}
+            </h4>
             <ul className="usa-list usa-list--unstyled">
-              <a href="#">Footer link</a>
+              <a href="#">{t("footer.section.npd.link.demo")}</a>
             </ul>
           </div>
           <div className="ds-l-col--2">
-            <h4 className={linkHeaderClasses}>CMS & HHS Websites</h4>
+            <h4 className={linkHeaderClasses}>
+              {t("footer.section.cms.title")}
+            </h4>
             <ul className="usa-list usa-list--unstyled">
-              <a href="#">Footer link</a>
+              <a href="#">{t("footer.section.cms.link.demo")}</a>
             </ul>
           </div>
           <div className="ds-l-col--2">
-            <h4 className={linkHeaderClasses}>Additional Information</h4>
+            <h4 className={linkHeaderClasses}>
+              {t("footer.section.info.title")}
+            </h4>
             <ul className="usa-list usa-list--unstyled">
-              <a href="#">Footer link</a>
+              <a href="#">{t("footer.section.info.link.demo")}</a>
             </ul>
           </div>
         </div>
