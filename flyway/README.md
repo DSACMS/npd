@@ -2,7 +2,7 @@
 
 ## Migrations
 
-This directory contains migrations for the National Provider Directory FHIR API to be managed by Flyway.
+This directory contains migrations for the National Provider Directory FHIR API to be managed by Flyway. An ERD of the current state of the database can be found [here](https://lucid.app/lucidchart/5dee1836-3504-4a2a-b451-a5a70a124ef0/edit?beaconFlowId=F150B15AB3ECFD81&invitationId=inv_f541bf50-8a81-4c11-8532-39bd634fd2bb&page=0_0#).
 When schema changes are needed, they are to be defined using SQL scripts and placed here following this naming scheme:
 
 ```bash
@@ -51,3 +51,6 @@ R__<describe-the-sample-data>.sql
 ## Reference
 
 - [Migrations](https://documentation.red-gate.com/fd/migrations-271585107.html)
+
+## Current ERD
+![erd](sql/NPD_ERD.svg)

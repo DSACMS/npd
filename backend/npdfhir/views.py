@@ -1,18 +1,39 @@
-from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse
+from uuid import UUID
+
 from django.contrib.postgres.search import SearchVector
-from rest_framework import viewsets, generics
-from rest_framework.response import Response
+from django.core.cache import cache
+from django.db.models import Q, OuterRef, Subquery
+from django.http import HttpResponse
+from django.shortcuts import get_object_or_404, render
+from django.utils.html import escape
+from drf_yasg import openapi
+from drf_yasg.utils import swagger_auto_schema
+from rest_framework import generics, viewsets
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.renderers import BrowsableAPIRenderer
-from django.core.cache import cache
-from django.db.models import OuterRef, Subquery
-from .models import Provider, EndpointInstance, ClinicalOrganization, OrganizationToName, Individual, IndividualToName
-from .serializers import PractitionerSerializer, ClinicalOrganizationSerializer, BundleSerializer, EndpointSerializer
-from .mappings import genderMapping, addressUseMapping
+from rest_framework.response import Response
+
+from .mappings import addressUseMapping, genderMapping
+from .models import (
+    EndpointInstance,
+    ClinicalOrganization,
+    Location,
+    Organization,
+    OrganizationToName,
+    Provider,
+    ProviderToLocation,
+    Individual, 
+    IndividualToName,
+)
 from .renderers import FHIRRenderer
-from drf_yasg.utils import swagger_auto_schema
-from drf_yasg import openapi
+from .serializers import (
+    BundleSerializer,
+    EndpointSerializer,
+    LocationSerializer,
+    OrganizationSerializer,
+    PractitionerRoleSerializer,
+    PractitionerSerializer,
+)
 
 default_page_size = 10
 max_page_size = 1000
@@ -29,7 +50,7 @@ page_size_param = openapi.Parameter(
 
 def createFilterParam(field: str, display: str = None, enum: list = None):
     if display is None:
-        display = field.replace('_', ' ')
+        display = field.replace('_', ' ').replace('.', ' ')
     param = openapi.Parameter(
         field,
         openapi.IN_QUERY,
@@ -39,6 +60,18 @@ def createFilterParam(field: str, display: str = None, enum: list = None):
     if enum is not None:
         param.enum = enum
     return param
+
+
+def parse_identifier(identifier_value):
+    """
+    Parse an identifier search parameter that should be in the format of "value" OR "system|value".
+    Currently only supporting NPI search "NPI|123455".
+    """
+    if '|' in identifier_value:
+        parts = identifier_value.split('|', 1)
+        return (parts[0], parts[1])
+
+    return (None, identifier_value)
 
 
 def index(request):
@@ -110,11 +143,13 @@ class FHIREndpointViewSet(viewsets.ViewSet):
 
         paginator = PageNumberPagination()
         paginator.page_size = page_size
-        queryset = paginator.paginate_queryset(endpoints, request)
+        paginated_endpoints = paginator.paginate_queryset(endpoints, request)
 
         # Serialize the bundle
-        serializer = EndpointSerializer(queryset, many=True)
-        bundle = BundleSerializer(serializer)
+        serialized_endpoints = EndpointSerializer(
+            paginated_endpoints, many=True)
+        bundle = BundleSerializer(
+            serialized_endpoints, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = paginator.get_paginated_response(bundle.data)
@@ -123,15 +158,20 @@ class FHIREndpointViewSet(viewsets.ViewSet):
 
     def retrieve(self, request, pk=None):
         """
-        Return a single endpoint as a FHIR Endpoint resource 
+        Return a single endpoint as a FHIR Endpoint resource
         """
+
+        try:
+            UUID(pk)
+        except (ValueError, TypeError) as e:
+            return HttpResponse(f"Endpoint {escape(pk)} not found", status=404)
 
         endpoint = get_object_or_404(EndpointInstance, pk=pk)
 
-        serializer = EndpointSerializer(endpoint)
+        serialized_endpoint = EndpointSerializer(endpoint)
 
         # Set appropriate content type for FHIR responses
-        response = Response(serializer.data)
+        response = Response(serialized_endpoint.data)
 
         return response
 
@@ -146,6 +186,8 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
     @swagger_auto_schema(
         manual_parameters=[
             page_size_param,
+            createFilterParam(
+                'value (for any type of identifier) OR NPI|value (if searching for an NPI) -> 12345567 OR NPI|12345567'),
             createFilterParam('name'),
             createFilterParam('gender', enum=genderMapping.keys()),
             createFilterParam('practitioner_type'),
@@ -185,18 +227,12 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
 
 
         providers = Provider.objects.all().prefetch_related(
-            'npi',
-            'individual',
-            'individual__individualtoname_set',
-            'individual__individualtoaddress_set',
+            'npi', 'individual', 'individual__individualtoname_set', 'individual__individualtoaddress_set',
             'individual__individualtoaddress_set__address__address_us',
             'individual__individualtoaddress_set__address__address_us__state_code',
-            'individual__individualtoaddress_set__address_use',
-            'individual__individualtophone_set',
-            'individual__individualtoemail_set',
-            'providertootherid_set',
-            'providertotaxonomy_set'
-        ).annotate(
+            'individual__individualtoaddress_set__address_use', 'individual__individualtophone_set',
+            'individual__individualtoemail_set', 'providertootherid_set', 'providertotaxonomy_set'
+            ).annotate(
             primary_last_name=Subquery(primary_last_name_subquery),
             primary_first_name=Subquery(primary_first_name_subquery)
         ).order_by('primary_last_name','primary_first_name')
@@ -210,10 +246,30 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
                             page_size = value
                     except:
                         page_size = page_size
+                case 'identifier':
+                    system, identifier_id = parse_identifier(value)
+                    queries = Q(pk__isnull=True)
+
+                    if system:  # specific identifier search requested
+                        if system == 'NPI':
+                            try:
+                                queries = Q(npi__npi=identifier_id)
+                            except (ValueError, TypeError):
+                                pass
+                    else:  # general identifier search requested
+                        try:
+                            queries |= Q(npi__npi=int(identifier_id))
+                        except (ValueError, TypeError):
+                            pass
+
+                        queries |= Q(providertootherid__other_id=identifier_id)
+
+                    providers = providers.filter(queries).distinct()
                 case 'name':
                     providers = providers.annotate(
                         search=SearchVector('individual__individualtoname__last_name',
-                                            'individual__individualtoname__first_name', 'individual__individualtoname__middle_name')
+                                            'individual__individualtoname__first_name',
+                                            'individual__individualtoname__middle_name')
                     ).filter(search=value)
                 case 'gender':
                     if value in genderMapping.keys():
@@ -231,7 +287,7 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
                             'individual__individualtoaddress__address__address_us__delivery_line_2',
                             'individual__individualtoaddress__address__address_us__city_name',
                             'individual__individualtoaddress__address__address_us__state_code__abbreviation',
-                            'individual__individualtoaddress__address__address_us__zipcode',)
+                            'individual__individualtoaddress__address__address_us__zipcode', )
                     ).filter(search=value)
                 case 'address-city':
                     providers = providers.annotate(
@@ -258,11 +314,13 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
 
         paginator = PageNumberPagination()
         paginator.page_size = page_size
-        queryset = paginator.paginate_queryset(providers, request)
+        paginated_providers = paginator.paginate_queryset(providers, request)
 
         # Serialize the bundle
-        serializer = PractitionerSerializer(queryset, many=True)
-        bundle = BundleSerializer(serializer)
+        serialized_providers = PractitionerSerializer(
+            paginated_providers, many=True)
+        bundle = BundleSerializer(
+            serialized_providers, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = paginator.get_paginated_response(bundle.data)
@@ -273,19 +331,139 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
         """
         Return a single provider as a FHIR Practitioner resource
         """
-        provider = get_object_or_404(Provider, pk=int(pk))
+        try:
+            UUID(pk)
+        except (ValueError, TypeError) as e:
+            return HttpResponse(f"Practitioner {escape(pk)} not found", status=404)
 
-        practitioner = PractitionerSerializer(provider)
+        provider = get_object_or_404(
+            Provider.objects.prefetch_related(
+                'npi',
+                'individual',
+                'individual__individualtoname_set',
+                'individual__individualtoaddress_set',
+                'individual__individualtoaddress_set__address__address_us',
+                'individual__individualtoaddress_set__address__address_us__state_code',
+                'individual__individualtoaddress_set__address_use',
+                'individual__individualtophone_set',
+                'individual__individualtoemail_set',
+                'providertootherid_set',
+                'providertotaxonomy_set'
+            ),
+            individual_id=pk
+        )
+
+        serialized_practitioner = PractitionerSerializer(provider)
 
         # Set appropriate content type for FHIR responses
-        response = Response(practitioner.data)
+        response = Response(serialized_practitioner.data)
+
+        return response
+
+
+class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
+    """
+    ViewSet for FHIR PractitionerRole resources
+    """
+    renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+
+    # permission_classes = [permissions.IsAuthenticated]
+    @swagger_auto_schema(
+        manual_parameters=[
+            page_size_param,
+            createFilterParam('active'),
+            createFilterParam('role'),
+            createFilterParam('practitioner.name'),
+            createFilterParam('practitioner.gender', enum=[
+                              'Female', 'Male', 'Other']),
+            createFilterParam('practitioner.practitioner_type'),
+            createFilterParam('organization.name')
+        ],
+        responses={200: "Successful response",
+                   404: "Error: The requested Practitioner resource cannot be found."}
+    )
+    def list(self, request):
+        """
+        Return a list of all providers as FHIR Practitioner resources
+        """
+        page_size = default_page_size
+
+        all_params = request.query_params
+
+        practitionerroles = ProviderToLocation.objects.all().prefetch_related('provider_to_organization',
+                                                                              'location').all()
+
+        for param, value in all_params.items():
+            match param:
+                case 'page_size':
+                    try:
+                        value = int(value)
+                        if value <= max_page_size:
+                            page_size = value
+                    except:
+                        page_size = page_size
+                case 'practitioner.name':
+                    practitionerroles = practitionerroles.annotate(
+                        search=SearchVector(
+                            'provider_to_organization__individual__individual__individualtoname__first_name',
+                            'provider_to_organization__individual__individual__individualtoname__last_name',
+                            'provider_to_organization__individual__individual__individualtoname__middle_name')).filter(search=value)
+                case 'practitioner.gender':
+                    gender = genderMapping.toNPD(value)
+                    practitionerroles = practitionerroles.filter(
+                        provider__individual__gender=gender)
+                case 'practitioner.practitioner_type':
+                    practitionerroles = practitionerroles.annotate(
+                        search=SearchVector(
+                            'provider_to_organization__providertotaxonomy__nucc_code__display_name')
+                    ).filter(search=value)
+                case 'organization.name':
+                    practitionerroles = practitionerroles.annotate(
+                        search=SearchVector(
+                            'provider_to_organization__organization__organizationtoname__name')
+                    ).filter(search=value)
+
+        paginator = PageNumberPagination()
+        paginator.page_size = page_size
+        paginated_practitionerroles = paginator.paginate_queryset(
+            practitionerroles, request)
+
+        # Serialize the bundle
+        serialized_practitionerroles = PractitionerRoleSerializer(
+            paginated_practitionerroles, many=True, context={"request": request})
+        bundle = BundleSerializer(
+            serialized_practitionerroles, context={"request": request})
+
+        # Set appropriate content type for FHIR responses
+        response = paginator.get_paginated_response(bundle.data)
+        response["Content-Type"] = "application/fhir+json"
+
+        return response
+
+    def retrieve(self, request, pk=None):
+        """
+        Return a single provider as a FHIR Practitioner resource
+        """
+        try:
+            UUID(pk)
+        except (ValueError, TypeError) as e:
+            return HttpResponse(f"PractitionerRole {escape(pk)} not found", status=404)
+
+        practitionerrole = get_object_or_404(ProviderToLocation, pk=pk)
+
+        serialized_practitionerrole = PractitionerRoleSerializer(
+            practitionerrole, context={"request": request})
+
+        # Set appropriate content type for FHIR responses
+        response = Response(serialized_practitionerrole.data)
+        response["Content-Type"] = "application/fhir+json"
 
         return response
 
 
 class FHIROrganizationViewSet(viewsets.ViewSet):
     """
-    ViewSet for FHIR Practitioner resources
+    ViewSet for FHIR Organization resources
     """
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
 
@@ -294,6 +472,8 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
         manual_parameters=[
             page_size_param,
             createFilterParam('name'),
+            createFilterParam(
+                'identifier', 'format: value (for any type of identifier) OR NPI|value (if searching for an NPI) -> 12345567 OR NPI|12345567'),
             createFilterParam('organization_type'),
             createFilterParam('address'),
             createFilterParam('address-city', 'city'),
@@ -320,22 +500,30 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
             .values('name')[:1]
         )
 
+        organizations = Organization.objects.all().select_related(
+            'authorized_official',
+            'ein'
+        ).prefetch_related(
+            'organizationtoname_set',
+            'organizationtoaddress_set',
+            'organizationtoaddress_set__address',
+            'organizationtoaddress_set__address__address_us',
+            'organizationtoaddress_set__address__address_us__state_code',
+            'organizationtoaddress_set__address_use',
 
-        organizations = ClinicalOrganization.objects.all().prefetch_related(
-            'npi',
-            'organization',
-            'organization__organizationtoname_set',
-            'organization__organizationtoaddress_set',
-            'organization__organizationtoaddress_set__address',
-            'organization__organizationtoaddress_set__address__address_us',
-            'organization__organizationtoaddress_set__address__address_us__state_code',
-            'organization__organizationtoaddress_set__address_use',
-            'organizationtootherid_set',
-            'organizationtotaxonomy_set',
-            'organization__authorized_official__individualtophone_set',
-            'organization__authorized_official__individualtoname_set',
-            'organization__authorized_official__individualtoemail_set',
-            'organization__authorized_official__individualtoaddress_set'
+            'authorized_official__individualtophone_set',
+            'authorized_official__individualtoname_set',
+            'authorized_official__individualtoemail_set',
+            'authorized_official__individualtoaddress_set',
+            'authorized_official__individualtoaddress_set__address__address_us',
+            'authorized_official__individualtoaddress_set__address__address_us__state_code',
+
+            'clinicalorganization',
+            'clinicalorganization__npi',
+            'clinicalorganization__organizationtootherid_set',
+            'clinicalorganization__organizationtootherid_set__other_id_type',
+            'clinicalorganization__organizationtotaxonomy_set',
+            'clinicalorganization__organizationtotaxonomy_set__nucc_code'
         ).annotate(primary_name=Subquery(primary_name_subquery)).order_by('primary_name')
 
         for param, value in all_params.items():
@@ -350,12 +538,40 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
                 case 'name':
                     organizations = organizations.annotate(
                         search=SearchVector(
-                            'organization__organizationtoname__name')
+                            'organizationtoname__name')
                     ).filter(search=value)
+                case 'identifier':
+                    system, identifier_id = parse_identifier(value)
+                    queries = Q(pk__isnull=True)
+
+                    if system:  # specific identifier search requested
+                        if system == 'NPI':
+                            try:
+                                queries = Q(
+                                    clinicalorganization__npi__npi=int(identifier_id))
+                            except (ValueError, TypeError):
+                                pass  # TODO: implement validationerror to show users that NPI must be an int
+                    else:  # general identifier search requested
+                        try:
+                            queries |= Q(
+                                clinicalorganization__npi__npi=int(identifier_id))
+                        except (ValueError, TypeError):
+                            pass
+
+                        try:  # need this block in order to pass pydantic validation
+                            UUID(identifier_id)
+                            queries |= Q(ein__ein_id=identifier_id)
+                        except (ValueError, TypeError):
+                            pass
+
+                        queries |= Q(
+                            clinicalorganization__organizationtootherid__other_id=identifier_id)
+
+                    organizations = organizations.filter(queries).distinct()
                 case 'organization_type':
                     organizations = organizations.annotate(
                         search=SearchVector(
-                            'organizationtotaxonomy__nucc_code__display_name')
+                            'clinicalorganization__organizationtotaxonomy__nucc_code__display_name')
                     ).filter(search=value)
                 case 'address':
                     organizations = organizations.annotate(
@@ -364,7 +580,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
                             'organization__organizationtoaddress__address__address_us__delivery_line_2',
                             'organization__organizationtoaddress__address__address_us__city_name',
                             'organization__organizationtoaddress__address__address_us__state_code__abbreviation',
-                            'organization__organizationtoaddress__address__address_us__zipcode',)
+                            'organization__organizationtoaddress__address__address_us__zipcode', )
                     ).filter(search=value)
                 case 'address-city':
                     organizations = organizations.annotate(
@@ -391,11 +607,14 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
 
         paginator = PageNumberPagination()
         paginator.page_size = page_size
-        queryset = paginator.paginate_queryset(organizations, request)
+        paginated_organizations = paginator.paginate_queryset(
+            organizations, request)
 
         # Serialize the bundle
-        serializer = ClinicalOrganizationSerializer(queryset, many=True)
-        bundle = BundleSerializer(serializer)
+        serialized_organizations = OrganizationSerializer(
+            paginated_organizations, many=True)
+        bundle = BundleSerializer(
+            serialized_organizations, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = paginator.get_paginated_response(bundle.data)
@@ -406,11 +625,158 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
         """
         Return a single provider as a FHIR Practitioner resource
         """
-        clinicalorg = get_object_or_404(ClinicalOrganization, pk=int(pk))
+        try:
+            UUID(pk)
+        except (ValueError, TypeError) as e:
+            return HttpResponse(f"Organization {escape(pk)} not found", status=404)
 
-        organization = ClinicalOrganizationSerializer(clinicalorg)
+        organization = get_object_or_404(Organization.objects.select_related(
+            'authorized_official',
+            'ein'
+        ).prefetch_related(
+            'organizationtoname_set',
+            'organizationtoaddress_set',
+            'organizationtoaddress_set__address',
+            'organizationtoaddress_set__address__address_us',
+            'organizationtoaddress_set__address__address_us__state_code',
+            'organizationtoaddress_set__address_use',
+
+            'authorized_official__individualtophone_set',
+            'authorized_official__individualtoname_set',
+            'authorized_official__individualtoemail_set',
+            'authorized_official__individualtoaddress_set',
+            'authorized_official__individualtoaddress_set__address__address_us',
+            'authorized_official__individualtoaddress_set__address__address_us__state_code',
+
+            'clinicalorganization',
+            'clinicalorganization__npi',
+            'clinicalorganization__organizationtootherid_set',
+            'clinicalorganization__organizationtootherid_set__other_id_type',
+            'clinicalorganization__organizationtotaxonomy_set',
+            'clinicalorganization__organizationtotaxonomy_set__nucc_code'
+        ),
+            pk=pk)
+
+        serialized_organization = OrganizationSerializer(organization)
 
         # Set appropriate content type for FHIR responses
-        response = Response(organization.data)
+        response = Response(serialized_organization.data)
+
+        return response
+
+
+class FHIRLocationViewSet(viewsets.ViewSet):
+    """
+    ViewSet for FHIR Location resources
+    """
+    renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+
+    # permission_classes = [permissions.IsAuthenticated]
+    @swagger_auto_schema(
+        manual_parameters=[
+            page_size_param,
+            createFilterParam('name'),
+            createFilterParam('address'),
+            createFilterParam('address-city', 'city'),
+            createFilterParam('address-postalcode', "zip code"),
+            createFilterParam(
+                'address-state', '2 letter US State abbreviation'),
+            createFilterParam('address-use', 'address use',
+                              enum=addressUseMapping.keys())
+        ],
+        responses={200: "Successful response",
+                   404: "Error: The requested Organization resource cannot be found."}
+    )
+    def list(self, request):
+        """
+        Return a list of all providers as FHIR Practitioner resources
+        """
+        page_size = default_page_size
+
+        all_params = request.query_params
+
+        locations = Location.objects.all().prefetch_related(
+            'address__address_us', 'address__address_us__state_code')
+
+        for param, value in all_params.items():
+            match param:
+                case 'page_size':
+                    try:
+                        value = int(value)
+                        if value <= max_page_size:
+                            page_size = value
+                    except:
+                        page_size = page_size
+                case 'name':
+                    locations = locations.filter(
+                        name=value)
+                case 'organization_type':
+                    locations = locations.annotate(
+                        search=SearchVector(
+                            'organizationtotaxonomy__nucc_code__display_name')
+                    ).filter(search=value)
+                case 'address':
+                    locations = locations.annotate(
+                        search=SearchVector(
+                            'address__address_us__delivery_line_1',
+                            'address__address_us__delivery_line_2',
+                            'address__address_us__city_name',
+                            'address__address_us__state_code__abbreviation',
+                            'address__address_us__zipcode',)
+                    ).filter(search=value)
+                case 'address-city':
+                    locations = locations.annotate(
+                        search=SearchVector(
+                            'address__address_us__city_name')
+                    ).filter(search=value)
+                case 'address-state':
+                    locations = locations.annotate(
+                        search=SearchVector(
+                            'address__address_us__state_code__abbreviation')
+                    ).filter(search=value)
+                case 'address-postalcode':
+                    locations = locations.annotate(
+                        search=SearchVector(
+                            'address__address_us__zipcode')
+                    ).filter(search=value)
+                case 'address-use':
+                    if value in addressUseMapping.keys():
+                        value = addressUseMapping.toNPD(value)
+                    else:
+                        value = -1
+                    locations = locations.filter(
+                        address_use_id=value)
+
+        paginator = PageNumberPagination()
+        paginator.page_size = page_size
+        paginated_locations = paginator.paginate_queryset(locations, request)
+
+        # Serialize the bundle
+        serialized_locations = LocationSerializer(
+            paginated_locations, many=True, context={"request": request})
+        bundle = BundleSerializer(
+            serialized_locations, context={"request": request})
+
+        # Set appropriate content type for FHIR responses
+        response = paginator.get_paginated_response(bundle.data)
+
+        return response
+
+    def retrieve(self, request, pk=None):
+        """
+        Return a single provider as a FHIR Practitioner resource
+        """
+        try:
+            UUID(pk)
+        except (ValueError, TypeError) as e:
+            return HttpResponse(f"Location {escape(pk)} not found", status=404)
+
+        location = get_object_or_404(Location, pk=pk)
+
+        serialized_location = LocationSerializer(
+            location, context={"request": request})
+
+        # Set appropriate content type for FHIR responses
+        response = Response(serialized_location.data)
 
         return response

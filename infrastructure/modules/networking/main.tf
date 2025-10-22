@@ -35,6 +35,7 @@ data "aws_subnets" "public_subnets" {
 }
 
 ## Security groups
+
 data "aws_ec2_managed_prefix_list" "cmsvpn" {
   filter {
     name   = "prefix-list-name"
@@ -42,35 +43,71 @@ data "aws_ec2_managed_prefix_list" "cmsvpn" {
   }
 }
 
-resource "aws_security_group" "fhir_api_alb" {
-  description = "Defines traffic flows to the FHIR API application load balancer"
-  name        = "${var.account_name}-fhir-api-load-balancer-sq"
+### FHIR API Load Balancer
+
+resource "aws_security_group" "fhir_api_alb_sg" {
+  description = "Defines traffic flows to/from the FHIR API application load balancer"
+  name        = "${var.account_name}-fhir-api-load-balancer-sg"
   vpc_id      = var.vpc_id
 }
 
-resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_fhir_api_alb_http" {
-  description       = "Allows connections to the FHIR API from the VPN over HTTP"
-  security_group_id = aws_security_group.fhir_api_alb.id
-  ip_protocol       = "tcp"
-  from_port         = 80
-  to_port           = 80
+resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_fhir_api_alb" {
+  description       = "Accepts connections from the CMS VPN"
+  security_group_id = aws_security_group.fhir_api_alb_sg.id
+  ip_protocol       = "-1"
   prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
 }
 
+resource "aws_vpc_security_group_egress_rule" "fhir_api_alb_can_make_outbound_requests" {
+  description       = "Allow the FHIR API ALB to make outbound requests"
+  security_group_id = aws_security_group.fhir_api_alb_sg.id
+  ip_protocol       = "-1"
+  cidr_ipv4         = "0.0.0.0/0"
+}
+
+### FHIR API
+
 resource "aws_security_group" "fhir_api_sg" {
-  description = "Defines traffic flows to the FHIR REST API"
+  description = "Defines traffic flows to/from the FHIR REST API"
   name        = "${var.account_name}-fhir-api-sg"
   vpc_id      = var.vpc_id
 }
 
+resource "aws_vpc_security_group_ingress_rule" "fhir_api_alb_can_access_fhir_api_sg" {
+  description                  = "Accepts traffic from the FHIR API ALB"
+  security_group_id            = aws_security_group.fhir_api_sg.id
+  ip_protocol                  = "TCP"
+  referenced_security_group_id = aws_security_group.fhir_api_alb_sg.id
+  from_port                    = 80
+  to_port                      = 80
+}
+
+resource "aws_vpc_security_group_ingress_rule" "fhir_api_alb_can_access_fhir_api_sg_healthcheck" {
+  description                  = "Accepts traffic from the FHIR API ALB healthcheck"
+  security_group_id            = aws_security_group.fhir_api_sg.id
+  ip_protocol                  = "TCP"
+  referenced_security_group_id = aws_security_group.fhir_api_alb_sg.id
+  from_port                    = 8000
+  to_port                      = 8000
+}
+
+resource "aws_vpc_security_group_egress_rule" "fhir_api_can_make_outbound_requests" {
+  description       = "Allows the FHIR API to make outbound requests"
+  security_group_id = aws_security_group.fhir_api_sg.id
+  ip_protocol       = "-1"
+  cidr_ipv4         = "0.0.0.0/0"
+}
+
+### FHIR API Database
+
 resource "aws_security_group" "fhir_api_db_sg" {
-  description = "Defines traffic flows to the FHIR DB"
+  description = "Defines traffic flows to/from the FHIR DB"
   name        = "${var.account_name}-fhir-api-db-sg"
   vpc_id      = var.vpc_id
 }
 
 resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_fhir_api_db" {
-  description       = "Allows connections to the FHIR API database from the VPN"
+  description       = "Accepts Postgres connections from the CMS VPN"
   security_group_id = aws_security_group.fhir_api_db_sg.id
   ip_protocol       = "tcp"
   from_port         = 5432
@@ -78,14 +115,25 @@ resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_fhir_api_db" {
   prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
 }
 
+resource "aws_vpc_security_group_ingress_rule" "fhir_api_can_access_fhir_api_db" {
+  description                  = "Accepts Postgres connections from the FHIR API"
+  security_group_id            = aws_security_group.fhir_api_db_sg.id
+  ip_protocol                  = "tcp"
+  from_port                    = 5432
+  to_port                      = 5432
+  referenced_security_group_id = aws_security_group.fhir_api_sg.id
+}
+
+### ETL Database
+
 resource "aws_security_group" "fhir_etl_db_sg" {
-  description = "Defines traffic flows to the FHIR ETL DB"
+  description = "Defines traffic flows to/from the FHIR ETL DB"
   name        = "${var.account_name}-fhir-etl-db-sg"
   vpc_id      = var.vpc_id
 }
 
 resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_etl_db" {
-  description       = "Allows connections to the ETL database from the VPN"
+  description       = "Accepts Postgres connections from the CMS VPN"
   security_group_id = aws_security_group.fhir_etl_db_sg.id
   ip_protocol       = "tcp"
   from_port         = 5432
@@ -93,8 +141,10 @@ resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_etl_db" {
   prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
 }
 
+### ETL Security Group
+
 resource "aws_security_group" "fhir_etl_sg" {
-  description = "Defines traffic flows to and from the ETL processes"
+  description = "Defines traffic flows to/from the ETL processes"
   name        = "${var.account_name}-fhir-etl-sg"
   vpc_id      = var.vpc_id
 }

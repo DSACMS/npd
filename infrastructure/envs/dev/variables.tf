@@ -6,5 +6,5 @@ variable "tier" {
   default = "dev"
 }
 
-variable "migration_image" { default = "public.ecr.aws/docker/library/hello-world:nanoserver-ltsc2022" }
-variable "fhir_api_image" { default = "public.ecr.aws/docker/library/hello-world:nanoserver-ltsc2022" }
+variable "migration_image" { default = "575012135727.dkr.ecr.us-east-1.amazonaws.com/npd-east-dev-fhir-api-migrations:latest" }
+variable "fhir_api_image" { default = "575012135727.dkr.ecr.us-east-1.amazonaws.com/npd-east-dev-fhir-api:latest" }
