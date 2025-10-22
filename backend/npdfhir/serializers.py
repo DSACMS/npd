@@ -10,14 +10,14 @@ from fhir.resources.R4B.endpoint import Endpoint
 from fhir.resources.R4B.humanname import HumanName
 from fhir.resources.R4B.identifier import Identifier
 from fhir.resources.R4B.location import Location as FHIRLocation
-from fhir.resources.contactdetail import ContactDetail
+from fhir.resources.R4B.contactdetail import ContactDetail
 from fhir.resources.R4B.meta import Meta
 from fhir.resources.R4B.organization import Organization as FHIROrganization
 from fhir.resources.R4B.period import Period
 from fhir.resources.R4B.practitioner import Practitioner, PractitionerQualification
 from fhir.resources.R4B.practitionerrole import PractitionerRole
 from fhir.resources.R4B.reference import Reference
-from fhir.resources.capabilitystatement import (
+from fhir.resources.R4B.capabilitystatement import (
     CapabilityStatement,
     CapabilityStatementRest,
     CapabilityStatementRestResource,
