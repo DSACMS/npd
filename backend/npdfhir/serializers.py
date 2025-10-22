@@ -571,8 +571,12 @@ class CapabilityStatementSerializer(serializers.Serializer):
     Serializer for FHIR CapablityStatement resource
     """
     def to_representation(self, instance):
+        request = self.context.get('request')
+        baseURL = request.build_absolute_uri('/fhir')
+        metadataURL = request.build_absolute_uri(reverse('fhir-metadata'))
+
         capability_statement = CapabilityStatement(
-            url="https://directory.cms.gov/fhir/metadata",
+            url=metadataURL,
             version="0.1.0",
             name="FHIRCapablityStatement",
             title="National Provider Directory FHIR Capablity Statement",
@@ -593,7 +597,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
             kind="instance",
             implementation=CapabilityStatementImplementation(
                 description="This implementation serves as a read-only Beta version for the National Provider Directory, exposing information about healthcare providers and organizations that provide healthcare services within the United States via a FHIR API that follows the NDH Implementation Guide.",
-                url="https://directory.cms.gov/fhir"
+                url=baseURL
             ),
             fhirVersion="4.0.1",
             format=["fhir+json"],

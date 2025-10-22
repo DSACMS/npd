@@ -767,7 +767,7 @@ class FHIRCapabilityStatementView(APIView):
         """
         Return a list of all CapabilityStatement as FHIR CapabilityStatement resources
         """
-        serializer = CapabilityStatementSerializer()
+        serializer = CapabilityStatementSerializer(context={"request": request})
         response = serializer.to_representation(None)
 
         return Response(response)
