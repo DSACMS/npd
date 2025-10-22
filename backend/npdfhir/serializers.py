@@ -1,21 +1,21 @@
 import sys
 
 from django.urls import reverse
-from fhir.resources.address import Address
-from fhir.resources.bundle import Bundle
-from fhir.resources.codeableconcept import CodeableConcept
-from fhir.resources.coding import Coding
-from fhir.resources.contactpoint import ContactPoint
-from fhir.resources.endpoint import Endpoint
-from fhir.resources.humanname import HumanName
-from fhir.resources.identifier import Identifier
-from fhir.resources.location import Location as FHIRLocation
-from fhir.resources.meta import Meta
-from fhir.resources.organization import Organization as FHIROrganization
-from fhir.resources.period import Period
-from fhir.resources.practitioner import Practitioner, PractitionerQualification
-from fhir.resources.practitionerrole import PractitionerRole
-from fhir.resources.reference import Reference
+from fhir.resources.R4B.address import Address
+from fhir.resources.R4B.bundle import Bundle
+from fhir.resources.R4B.codeableconcept import CodeableConcept
+from fhir.resources.R4B.coding import Coding
+from fhir.resources.R4B.contactpoint import ContactPoint
+from fhir.resources.R4B.endpoint import Endpoint
+from fhir.resources.R4B.humanname import HumanName
+from fhir.resources.R4B.identifier import Identifier
+from fhir.resources.R4B.location import Location as FHIRLocation
+from fhir.resources.R4B.meta import Meta
+from fhir.resources.R4B.organization import Organization as FHIROrganization
+from fhir.resources.R4B.period import Period
+from fhir.resources.R4B.practitioner import Practitioner, PractitionerQualification
+from fhir.resources.R4B.practitionerrole import PractitionerRole
+from fhir.resources.R4B.reference import Reference
 from rest_framework import serializers
 
 from .models import (
@@ -255,20 +255,15 @@ class EndpointPayloadSeriazlier(serializers.Serializer):
         fields = ['type', 'mime_type']
 
     def to_representation(self, instance):
-        payload_type = [CodeableConcept(
+        payload_type = CodeableConcept(
             coding=[Coding(
                 system="http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
                 code=instance.payload_type.id,
                 display=instance.payload_type.value
             )]
-        )]
+        )
 
-        payload = {
-            "type": payload_type,
-            "mimeType": ["default"]  # instance.mime_type.value
-        }
-
-        return payload
+        return payload_type
 
 
 class EndpointIdentifierSerialzier(serializers.Serializer):
@@ -376,9 +371,9 @@ class OrganizationSerializer(serializers.Serializer):
                         code=code
                     )
                     taxonomies.append(qualification.model_dump())
-
-                if taxonomies:
-                    organization.qualification = taxonomies
+                # TODO extend based on US core
+                # if taxonomies:
+                #    organization.qualification = taxonomies
 
         organization.identifier = identifiers
 
@@ -395,6 +390,8 @@ class OrganizationSerializer(serializers.Serializer):
             organization.alias = alias_names
 
         authorized_official = representation['authorized_official']
+        # r4 only allows one name for contact. TODO update to ndh
+        authorized_official['name'] = authorized_official['name'][0]
 
         if representation['address'] != []:
             authorized_official['address'] = representation['address'][0]
@@ -402,9 +399,6 @@ class OrganizationSerializer(serializers.Serializer):
             if 'address' in authorized_official.keys():
                 del authorized_official['address']
         organization.contact = [authorized_official]
-
-        if 'taxonomy' in representation.keys():
-            organization.qualification = representation['taxonomy']
 
         return organization.model_dump()
 
@@ -501,7 +495,7 @@ class PractitionerRoleSerializer(serializers.Serializer):
             'fhir-organization-detail', instance.provider_to_organization.organization_id, request)
         practitioner_role.location = [genReference(
             'fhir-location-detail', instance.location.id, request)]
-        # These lines rely on the fhir.resources representation of PractitionerRole to be expanded to match the ndh FHIR definition. This is a TODO with an open ticket.
+        # These lines rely on the fhir.resources.R4B representation of PractitionerRole to be expanded to match the ndh FHIR definition. This is a TODO with an open ticket.
         # if 'other_phone' in representation.keys():
         #    practitioner_role.telecom = representation['other_phone']
 
@@ -522,13 +516,11 @@ class EndpointSerializer(serializers.Serializer):
     def to_representation(self, instance):
         representation = super().to_representation(instance)
 
-        connection_type = [CodeableConcept(
-            coding=[Coding(
-                system="http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
-                code=instance.endpoint_connection_type.id,
-                display=instance.endpoint_connection_type.display
-            )]
-        )]
+        connection_type = Coding(
+            system="http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+            code=instance.endpoint_connection_type.id,
+            display=instance.endpoint_connection_type.display
+        )
 
         environment_type = [CodeableConcept(
             coding=[Coding(
@@ -544,12 +536,12 @@ class EndpointSerializer(serializers.Serializer):
             status="active",  # hardcoded for now
             connectionType=connection_type,
             name=instance.name,
-            description=instance.description,
-            environmentType=environment_type,
+            # TODO extend base fhir spec to ndh spec description=instance.description,
+            # TODO extend base fhir spec to ndh spec environmentType=environment_type,
             # managingOrganization=Reference(managing_organization), ~ organization/npi or whatever we use as the organization identifier
             # contact=ContactPoint(contact), ~ still gotta figure this out
             # period=Period(period), ~ still gotta figure this out
-            payload=representation['payload'],
+            payloadType=representation['payload'],
             address=instance.address,
             header=["application/fhir"]  # hardcoded for now
         )

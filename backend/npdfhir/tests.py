@@ -1,7 +1,7 @@
 from django.db import connection
 from django.test.runner import DiscoverRunner
 from django.urls import reverse
-from fhir.resources.bundle import Bundle
+from fhir.resources.R4B.bundle import Bundle
 from pydantic import ValidationError
 from rest_framework import status
 from rest_framework.test import APIClient, APITestCase
@@ -109,7 +109,7 @@ class EndpointViewSetTestCase(APITestCase):
         first_endpoint = entries[0]["resource"]
         self.assertIn("connectionType", first_endpoint)
 
-        code = first_endpoint["connectionType"][0]["coding"][0]["code"]
+        code = first_endpoint["connectionType"]["code"]
         self.assertEqual(connection_type, code)
 
     def test_filter_returns_empty_for_nonexistent_name(self):
