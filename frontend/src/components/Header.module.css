@@ -1,0 +1,46 @@
+.header {
+  --shadow: 10px;
+
+  background-color: var(--color-background);
+
+  box-shadow: 0 var(--shadow) var(--shadow) var(--color-gray-light);
+  position: relative;
+
+  /* NOTE: (@abachman-dsac) we have to override the uswds default max-width because
+     it conflicts with the CMS Design System's grid system max-width  */
+  & :global(.usa-nav-container) {
+    margin-inline: auto;
+    max-width: var(--site-max-width);
+  }
+}
+
+.title {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.logo {
+  margin-right: 0.5rem;
+  width: 8.875rem;
+}
+
+.logoText {
+  font-weight: 500 !important;
+}
+
+.betaBadge {
+  align-items: center;
+  background: #0071bc;
+  display: inline-flex !important;
+  gap: 0.625rem;
+  justify-content: center;
+  margin-left: 0.5rem;
+  padding: var(--spacer-half, 0.25rem) var(--spacer-1, 0.5rem);
+}
+
+.submenuList a:focus {
+  background-color: transparent !important;
+  outline: 0.25rem solid #2591ff !important;
+}

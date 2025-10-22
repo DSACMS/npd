@@ -6,7 +6,8 @@ from django.test import TestCase
 from django.urls import reverse
 
 TEST_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
-STATIC_INDEX = TEST_DIR / '..' / 'static' / 'index.html'
+STATIC_INDEX = TEST_DIR / ".." / "static" / "index.html"
+
 
 class WithoutStaticIndex(TestCase):
     """
@@ -22,8 +23,9 @@ class WithoutStaticIndex(TestCase):
         """
         When static/index.html doesn't exist, route redirects
         """
-        response = self.client.get(reverse('index'))
-        self.assertRedirects(response, 'http://localhost:3000/', fetch_redirect_response=False)
+        response = self.client.get(reverse("provider_directory:index"))
+        self.assertRedirects(response, "http://localhost:3000/", fetch_redirect_response=False)
+
 
 class WithStaticIndex(TestCase):
     """
@@ -33,12 +35,12 @@ class WithStaticIndex(TestCase):
     @classmethod
     def setUpTestData(cls):
         if not os.path.exists(STATIC_INDEX):
-            with open(STATIC_INDEX, 'a') as index:
-                index.write(f'\n<!-- test content {datetime.now()} -->')
+            with open(STATIC_INDEX, "a") as index:
+                index.write(f"\n<!-- test content {datetime.now()} -->")
 
     def test_index_serves_static_file(self):
         """
         When static/index.html exists, route serves it
         """
-        response = self.client.get(reverse('index'))
-        self.assertContains(response, 'test content', status_code=HTTPStatus.OK)
+        response = self.client.get(reverse("provider_directory:index"))
+        self.assertContains(response, "test content", status_code=HTTPStatus.OK)

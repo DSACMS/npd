@@ -63,5 +63,5 @@ jobs:
           REPOSITORY: ndh
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          terraform init
-          terraform apply -auto-approve
+          terraform -chdir=envs/sandbox init
+          terraform -chdir=envs/sandbox apply -auto-approve

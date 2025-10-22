@@ -178,15 +178,73 @@ class OrganizationViewSetTestCase(APITestCase):
         response = self.client.get(url, {"name": "Cumberland"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("results", response.data)
+        self.assertGreaterEqual(response.data["results"]["total"], 1)
 
     def test_list_filter_by_organization_type(self):
         url = reverse("fhir-organization-list")
         response = self.client.get(url, {"organization_type": "Hospital"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("results", response.data)
+        self.assertGreaterEqual(response.data["results"]["total"], 1)
 
-    def test_retrieve_nonexistent(self):
-        url = reverse("fhir-organization-detail", args=[999999])
+    def test_list_filter_by_npi_general(self):
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url, {"identifier":"1427051473"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+        self.assertGreaterEqual(response.data["results"]["total"], 1)
+
+    def test_list_filter_by_npi_specific(self):
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url, {"identifier":"NPI|1427051473"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+        self.assertGreaterEqual(response.data["results"]["total"], 1)
+
+    def test_list_filter_by_otherID_general(self):
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url, {"identifier":"testMBI"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+        self.assertGreaterEqual(response.data["results"]["total"], 1)
+
+    # def test_list_filter_by_otherID_specific(self):
+    #     url = reverse("fhir-organization-list")
+    #     response = self.client.get(url, {"identifier":"	1|001586989"})
+    #     self.assertEqual(response.status_code, status.HTTP_200_OK)
+    #     self.assertIn("results", response.data)
+    #     self.assertGreaterEqual(response.data["results"]["total"], 1)
+
+    def test_list_filter_by_ein_general(self):
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url, {"identifier":"22222222-2222-2222-2222-222222222222"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+        self.assertGreaterEqual(response.data["results"]["total"], 1)
+
+    # def test_list_filter_by_ein_specific(self):
+    #     url = reverse("fhir-organization-list")
+    #     response = self.client.get(url, {"identifier":"USEIN|12-3456789"})
+    #     self.assertEqual(response.status_code, status.HTTP_200_OK)
+    #     self.assertIn("results", response.data)
+
+    def test_retrieve_non_clinical_organization(self):
+        url = reverse("fhir-organization-detail", args=["33333333-3333-3333-3333-333333333333"])
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        org = response.data
+        self.assertEqual(org["resourceType"], "Organization")
+        self.assertEqual(org["name"], "Joe Health Incorporated")
+        self.assertEqual(org["identifier"][0]["type"]["coding"][0]["code"], "TAX")
+
+    def test_retrieve_nonexistent_uuid(self):
+        url = reverse("fhir-organization-detail", args=["12300000-0000-0000-0000-000000000123"])
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+
+    def test_retrieve_nonexistent_npi(self):
+        url = reverse("fhir-organization-detail", args=["999999"])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
@@ -246,8 +304,13 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("results", response.data)
 
-    def test_retrieve_nonexistent(self):
-        url = reverse("fhir-practitioner-detail", args=[999999])
+    def test_retrieve_nonexistent_uuid(self):
+        url = reverse("fhir-practitioner-detail", args=["12300000-0000-0000-0000-000000000123"])
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+
+    def test_retrieve_nonexistent_npi(self):
+        url = reverse("fhir-practitioner-detail", args=["999999"])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 

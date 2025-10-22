@@ -34,11 +34,35 @@ From the `npd` project root:
 
 1. Ensure that a suitable docker service is running
 1. Run `docker compose up --build` to launch the backend and frontend applications
-
-- If you want to run the application backend and frontend separately, you can do that with:
-  ```console
-  ~/npd $ docker compose up -d django-web
-  ~/npd $ docker compose up -d web
-  ```
-
+   - If you want to run the application backend and frontend separately, you can do that with:
+     ```console
+     ~/npd $ docker compose up -d django-web
+     ~/npd $ docker compose up -d web
+     ```
 1. Happy coding!
+
+### Adding Dependencies
+
+Because of our current frontend docker compose setup, new dependencies **MUST** be installed with `docker compose run web npm install`. They will not be picked up by `docker compose build web` or `docker compose up --build web`.
+
+The reason is that we are mounting a virtual docker compose volume in place of the container's `/app/node_modules` directory, but `docker compose build` doesn't know about _runtime_ volume mounts, only _host_ and _base image_ mounts, so it cannot update the docker compose virtual volume, only the directory which is present inside the image during the build process.
+
+For us, this means that if you are running in docker containers with `docker compose` and want to add a frontend dependency, you'll need to make sure they are added inside the running container with `docker compose run npm install`, as well as outside (on your host machine) if you need that for editor support or to run `npm` commands on host.
+
+```sh
+# install and save a new dependency on host, to make the editor tooling happy
+cd frontend
+npm install --save i18next
+
+# in docker, to make the image happy
+docker compose run --rm web npm install
+```
+
+Likewise, if `package.json` has been updated since you last fetched project updates, you'll need to run:
+
+```sh
+# after `git pull` when frontend/package.json has been updated
+docker compse run --rm web npm install
+```
+
+to refresh your local frontend docker compose `web` service.

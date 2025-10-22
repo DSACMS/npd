@@ -4,7 +4,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.0"
+      version = "~> 6.0"
     }
   }
 
@@ -32,7 +32,7 @@ data "aws_vpc" "default" {
 }
 
 module "networking" {
-  source = "./networking"
+  source = "../../modules/networking"
 
   vpc_id       = data.aws_vpc.default.id
   account_name = local.account_name
@@ -51,6 +51,7 @@ module "api-db" {
   allocated_storage       = 20
   publicly_accessible     = false
   username                = "npd"
+  db_name                 = "npd"
   vpc_security_group_ids  = [module.networking.db_security_group_id]
   db_subnet_group_name    = module.networking.db_subnet_group_name
   backup_retention_period = 7             # Remove automated snapshots after 7 days
@@ -79,31 +80,25 @@ module "etl-db" {
 # ECS Cluster
 module "ecs" {
   source  = "terraform-aws-modules/ecs/aws"
-  version = "5.12.1"
+  version = "6.6.2"
 
   cluster_name = "${local.account_name}-ecs-cluster"
-
-  fargate_capacity_providers = {
+  default_capacity_provider_strategy = {
     FARGATE = {
-      default_capacity_provider_strategy = {
-        weight = 50
-        base   = 20
-      }
+      weight = 50
+      base   = 20
     }
     FARGATE_SPOT = {
-      default_capacity_provider_strategy = {
-        weight = 50
-      }
+      weight = 50
     }
   }
 }
 
 # FHIR API Module
 module "fhir-api" {
-  source = "./fhir-api"
+  source = "../../modules/fhir-api"
 
   account_name             = local.account_name
-  app_db_name              = "npd"
   fhir_api_migration_image = var.migration_image
   fhir_api_image           = var.fhir_api_image
   ecs_cluster_id           = module.ecs.cluster_id
@@ -111,6 +106,7 @@ module "fhir-api" {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address
     db_instance_port                   = module.api-db.db_instance_port
+    db_instance_name                   = module.api-db.db_instance_name
   }
   networking = {
     db_subnet_ids         = module.networking.db_subnet_ids
@@ -123,14 +119,14 @@ module "fhir-api" {
 
 # ETL Module
 module "etl" {
-  source = "./etl"
+  source = "../../modules/etl"
 
   account_name = local.account_name
 }
 
 # Frontend Module
 module "frontend" {
-  source       = "./frontend"
+  source       = "../../modules/frontend"
   account_name = local.account_name
 }
 
