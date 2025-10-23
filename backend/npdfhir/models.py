@@ -441,16 +441,16 @@ class IndividualToName(models.Model):
 
 
 class IndividualToPhone(models.Model):
-    pk = models.CompositePrimaryKey(
-        'individual_id', 'phone_number', 'phone_use_id')
     individual = models.ForeignKey(Individual, models.DO_NOTHING)
     phone_number = models.CharField(max_length=20)
     extension = models.CharField(max_length=10, blank=True, null=True)
     phone_use = models.ForeignKey(FhirPhoneUse, models.DO_NOTHING)
+    id = models.UUIDField(primary_key=True)
 
     class Meta:
         managed = False
         db_table = 'individual_to_phone'
+        unique_together = (('individual', 'phone_number', 'phone_use'),)
 
 
 class IsoCountry(models.Model):
@@ -485,10 +485,23 @@ class Location(models.Model):
     name = models.CharField(max_length=200, blank=True, null=True)
     organization = models.ForeignKey('Organization', models.DO_NOTHING)
     address = models.ForeignKey(Address, models.DO_NOTHING)
+    active = models.BooleanField(blank=True, null=True)
+    phone = models.ForeignKey('OrganizationToPhone',
+                              models.DO_NOTHING, blank=True, null=True)
 
     class Meta:
         managed = False
         db_table = 'location'
+
+
+class LocationToEndpointInstance(models.Model):
+    pk = models.CompositePrimaryKey('location_id', 'endpoint_instance_id')
+    location = models.ForeignKey(Location, models.DO_NOTHING)
+    endpoint_instance = models.ForeignKey(EndpointInstance, models.DO_NOTHING)
+
+    class Meta:
+        managed = False
+        db_table = 'location_to_endpoint_instance'
 
 
 class MedicareProviderType(models.Model):
@@ -646,16 +659,17 @@ class OrganizationToOtherId(models.Model):
 
 
 class OrganizationToPhone(models.Model):
-    pk = models.CompositePrimaryKey(
-        'organization_id', 'phone_number', 'phone_use_id')
     organization = models.ForeignKey(Organization, models.DO_NOTHING)
     phone_number = models.CharField(max_length=20)
     extension = models.CharField(max_length=10, blank=True, null=True)
     phone_use = models.ForeignKey(FhirPhoneUse, models.DO_NOTHING)
+    id = models.UUIDField(primary_key=True)
 
     class Meta:
         managed = False
         db_table = 'organization_to_phone'
+        unique_together = (
+            ('organization', 'phone_number', 'extension', 'phone_use'),)
 
 
 class OrganizationToTaxonomy(models.Model):
@@ -713,14 +727,24 @@ class ProviderEducation(models.Model):
         db_table = 'provider_education'
 
 
-"""
+class ProviderRole(models.Model):
+    code = models.CharField(primary_key=True, max_length=10)
+    system = models.CharField(max_length=100)
+    display = models.CharField(max_length=100)
+    description = models.CharField(max_length=200, blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'provider_role'
+
+
 class ProviderToCredential(models.Model):
-    pk = models.CompositePrimaryKey('npi', 'license_number', 'state_code', 'nucc_code')
-    npi = models.ForeignKey('ProviderToTaxonomy', models.DO_NOTHING, db_column='npi')
     credential_type = models.ForeignKey(CredentialType, models.DO_NOTHING)
     license_number = models.CharField(max_length=20)
-    state_code = models.ForeignKey(FipsState, models.DO_NOTHING, db_column='state_code')
-    nucc_code = models.CharField(max_length=10)
+    state_code = models.ForeignKey(
+        FipsState, models.DO_NOTHING, db_column='state_code')
+    provider_to_taxonomy = models.ForeignKey(
+        'ProviderToTaxonomy', models.DO_NOTHING)
 
     class Meta:
         managed = False
@@ -728,33 +752,40 @@ class ProviderToCredential(models.Model):
 
 
 class ProviderToLocation(models.Model):
-    pk = models.CompositePrimaryKey('individual_id', 'location_id')
-    individual = models.ForeignKey('ProviderToOrganization', models.DO_NOTHING)
-    organization_id = models.UUIDField()
     location = models.ForeignKey(Location, models.DO_NOTHING)
-    other_address = models.ForeignKey(Address, models.DO_NOTHING, blank=True, null=True)
+    other_address = models.ForeignKey(
+        Address, models.DO_NOTHING, blank=True, null=True)
     nucc_code = models.IntegerField(blank=True, null=True)
     specialty_id = models.IntegerField(blank=True, null=True)
+    id = models.UUIDField(primary_key=True)
+    provider_role_code = models.CharField(max_length=10, blank=True, null=True)
+    other_phone = models.ForeignKey(
+        IndividualToPhone, models.DO_NOTHING, blank=True, null=True)
+    other_endpoint = models.ForeignKey(
+        Endpoint, models.DO_NOTHING, blank=True, null=True)
+    active = models.BooleanField(blank=True, null=True)
+    provider_to_organization = models.ForeignKey(
+        'ProviderToOrganization', models.DO_NOTHING, blank=True, null=True)
 
     class Meta:
         managed = False
         db_table = 'provider_to_location'
-"""
 
 
 class ProviderToOrganization(models.Model):
-    pk = models.CompositePrimaryKey('individual_id', 'organization_id')
     individual = models.ForeignKey(
         Provider, models.DO_NOTHING, to_field='individual_id')
     organization = models.ForeignKey(Organization, models.DO_NOTHING)
     relationship_type = models.ForeignKey(
         'RelationshipType', models.DO_NOTHING)
-    endpoint = models.ForeignKey(
-        Endpoint, models.DO_NOTHING, blank=True, null=True)
+    id = models.UUIDField(primary_key=True)
+    active = models.BooleanField(blank=True, null=True)
 
     class Meta:
         managed = False
         db_table = 'provider_to_organization'
+        unique_together = (
+            ('individual', 'organization', 'relationship_type'),)
 
 
 class ProviderToOtherId(models.Model):
@@ -773,15 +804,16 @@ class ProviderToOtherId(models.Model):
 
 
 class ProviderToTaxonomy(models.Model):
-    pk = models.CompositePrimaryKey('npi', 'nucc_code')
     npi = models.ForeignKey(Provider, models.DO_NOTHING, db_column='npi')
     nucc_code = models.ForeignKey(
         Nucc, models.DO_NOTHING, db_column='nucc_code')
     is_primary = models.BooleanField(blank=True, null=True)
+    id = models.UUIDField(primary_key=True)
 
     class Meta:
         managed = False
         db_table = 'provider_to_taxonomy'
+        unique_together = (('npi', 'nucc_code'),)
 
 
 class RelationshipType(models.Model):

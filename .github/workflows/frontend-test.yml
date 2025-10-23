@@ -1,0 +1,30 @@
+name: Frontend Tests
+permissions:
+  contents: read
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+
+      - name: Setup frontend
+        working-directory: frontend
+        run: |
+          npm ci
+
+      - name: Run tests
+        working-directory: frontend
+        run: |
+          npm run coverage

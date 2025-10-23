@@ -1,7 +1,9 @@
-from django.core.cache import cache
 import json
-from .models import OtherIdType, FhirNameUse, Nucc, FhirPhoneUse
 import sys
+
+from django.core.cache import cache
+
+from .models import FhirNameUse, FhirPhoneUse, Nucc, OtherIdType
 
 
 def cacheData(model):

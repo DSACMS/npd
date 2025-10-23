@@ -22,10 +22,11 @@ jobs:
       - name: Set up Docker Compose
         uses: docker/setup-compose-action@v1
 
-      - name: Create artifacts directory with proper permissions
+      - name: Ensure test directories have appropriate permissions for writing
         run: |
           mkdir -p ./artifacts/test-reports
           chmod 777 ./artifacts/test-reports
+          chmod 777 ./provider_directory/static
 
       - name: Build and run tests
         run: |

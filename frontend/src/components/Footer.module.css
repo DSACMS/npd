@@ -1,0 +1,30 @@
+.footer {
+  background-color: var(--color-gray-lightest);
+  color: var(--color-base);
+  font-size: var(--font-size-sm);
+  padding-block: var(--spacer-2);
+}
+
+.logoContainer {
+  column-gap: 1rem;
+
+  color: var(--theme-color-base, #262626);
+
+  /* Body/Small */
+  font-family: var(--theme-font-family-body, "Open Sans");
+  font-size: var(--theme-font-size-sm, 0.875rem);
+  font-style: normal;
+  font-weight: var(--theme-font-weight-body-sm, 400);
+  line-height: 150%; /* 1.3125rem */
+}
+
+.logoText {
+  & p:first-child {
+    margin-top: 0;
+  }
+}
+
+.logoImg {
+  max-width: 5.25rem;
+  max-height: 5.25rem;
+}

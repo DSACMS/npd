@@ -7,6 +7,7 @@
 #   networks:
 #   depends_on:
 #   command:
+name: npd
 
 services:
   db:
@@ -22,10 +23,8 @@ services:
       - '${NPD_DB_PORT:-5432}:5432'
     volumes:
       - 'postgres_data:/var/lib/postgresql/data'
-    networks:
-      - npd
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready"]
+      test: ["CMD-SHELL", "pg_isready", "-U ${NPD_DB_USER:-postgres}", "-d ${NPD_DB_NAME:-npd_development}"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -41,8 +40,6 @@ services:
       FLYWAY_PASSWORD: ${NPD_DB_PASSWORD:-postgres}
     volumes:
       - '../flyway/sql:/flyway/sql'
-    networks:
-      - npd
     depends_on:
       - db
     command: migrate -environment=development
@@ -57,7 +54,7 @@ services:
       NPD_DJANGO_SECRET: ${NPD_DJANGO_SECRET:-_pth2#=k8-wf-_^t%2))it+3..8la^@@97^#ock7.v=@792w7}
       DEBUG: ${DEBUG:-True}
       DJANGO_LOGLEVEL: ${DJANGO_LOGLEVEL:-INFO}
-      DJANGO_ALLOWED_HOSTS: "${DJANGO_ALLOWED_HOSTS:-['localhost','127.0.0.1']}"
+      DJANGO_ALLOWED_HOSTS: "${DJANGO_ALLOWED_HOSTS:-['localhost','127.0.0.1','0.0.0.0']}"
       NPD_DB_ENGINE: ${NPD_DB_ENGINE:-django.db.backends.postgresql}
       NPD_DB_NAME: ${NPD_DB_NAME:-npd_development}
       NPD_DB_USER: ${NPD_DB_USER:-postgres}
@@ -68,14 +65,10 @@ services:
       - '8000:8000'
     volumes:
       - '.:/app'
-      - ./artifacts:/app/artifacts
-    networks:
-      - npd
+      - ./artifacts:/app/artifacts:rw
+      - ./provider_directory/static:/app/provider_directory/static:rw
     depends_on:
       - db
 
 volumes:
   postgres_data:
-
-networks:
-  npd:
