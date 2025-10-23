@@ -108,9 +108,7 @@ resource "aws_iam_policy" "dagster_can_read_bronze_bucket" {
     Statement = [
       {
         Action = [
-          "s3:GetObject",
-          "s3:ListObjects",
-          "s3:PutObject"
+          "s3:*"
         ]
         Effect = "Allow"
         Resource = [
@@ -131,8 +129,8 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
   family                   = "${var.account_name}-dagster-daemon"
   network_mode             = "awsvpc"
   requires_compatibilities = ["FARGATE"]
-  cpu                      = "256"
-  memory                   = "512"
+  cpu                      = "2048"
+  memory                   = "8192"
   task_role_arn            = aws_iam_role.dagster_task_role.arn
   execution_role_arn       = aws_iam_role.dagster_execution_role.arn
 
@@ -152,7 +150,8 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
       command = ["dagster-daemon", "run"]
       environment = [
         { name = "DAGSTER_POSTGRES_HOST", value = var.db.db_instance_address },
-        { name = "DAGSTER_POSTGRES_DB", value = var.db.db_instance_name }
+        { name = "DAGSTER_POSTGRES_DB", value = var.db.db_instance_name },
+        { name = "S3_REGION", value = "us-east-1" }
       ],
       secrets = [
         {
@@ -188,8 +187,8 @@ resource "aws_ecs_task_definition" "dagster_ui" {
   family                   = "${var.account_name}-dagster-ui"
   network_mode             = "awsvpc"
   requires_compatibilities = ["FARGATE"]
-  cpu                      = "512"
-  memory                   = "1024"
+  cpu                      = "2048"
+  memory                   = "8192"
   task_role_arn            = aws_iam_role.dagster_task_role.arn
   execution_role_arn       = aws_iam_role.dagster_execution_role.arn
 
@@ -218,7 +217,8 @@ resource "aws_ecs_task_definition" "dagster_ui" {
       environment = [
         { name = "DAGSTER_POSTGRES_HOST", value = var.db.db_instance_address },
         { name = "DAGSTER_POSTGRES_DB", value = var.db.db_instance_name },
-        { name = "S3_DATA_BUCKET", value = aws_s3_bucket.etl_bronze.bucket }
+        { name = "S3_DATA_BUCKET", value = aws_s3_bucket.etl_bronze.bucket },
+        { name = "S3_REGION", value = "us-east-1" }
       ],
       secrets = [
         {
@@ -271,7 +271,15 @@ resource "aws_lb_target_group" "dagster_ui" {
   vpc_id      = var.networking.vpc_id
   target_type = "ip"
 
-  # TODO health check
+  health_check {
+    path                = "/"
+    port                = 80
+    interval            = 30
+    timeout             = 5
+    healthy_threshold   = 2
+    unhealthy_threshold = 10
+    matcher             = "200"
+  }
 }
 
 resource "aws_alb_listener" "http" {
