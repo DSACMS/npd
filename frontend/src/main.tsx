@@ -1,7 +1,6 @@
 import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
 import { BrowserRouter, Route, Routes } from "react-router"
-import { Landing } from "./pages/Landing.tsx"
 
 import "@cmsgov/design-system/css/core-theme.css"
 import "@cmsgov/design-system/css/index.css"
@@ -16,13 +15,18 @@ import "@uswds/uswds"
 
 import "./i18n.ts"
 
+import { Developers } from "./pages/Developers"
+import { Landing } from "./pages/Landing"
+import { Layout } from "./pages/Layout"
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/developers" element={<Landing />} />
-        <Route path="/providers" element={<Landing />} />
+        <Route element={<Layout />}>
+          <Route index element={<Landing />} />
+          <Route path="/developers" element={<Developers />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>,
