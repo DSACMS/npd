@@ -103,6 +103,8 @@ class FHIREndpointViewSet(viewsets.ViewSet):
     def list(self, request):
         """
         Returns a list of all endpoints as FHIR Endpoint resources
+
+        Sorts by the name of the EndpointInstance
         """
 
         page_size = default_page_size
@@ -205,6 +207,8 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
     def list(self, request):
         """
         Return a list of all providers as FHIR Practitioner resources
+
+        Sorts by lastname, firstname
         """
         page_size = default_page_size
 
@@ -385,6 +389,8 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
     def list(self, request):
         """
         Return a list of all providers as FHIR Practitioner resources
+
+        Sorts the list by the name of the location
         """
         page_size = default_page_size
 
@@ -493,6 +499,8 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
     def list(self, request):
         """
         Return a list of all providers as FHIR Practitioner resources
+
+        Sorts by the name of the organization
         """
         page_size = default_page_size
 
@@ -694,6 +702,8 @@ class FHIRLocationViewSet(viewsets.ViewSet):
     def list(self, request):
         """
         Return a list of all providers as FHIR Practitioner resources
+
+        Sorts by the name of the location
         """
         page_size = default_page_size
 
