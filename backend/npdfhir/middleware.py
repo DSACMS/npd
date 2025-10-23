@@ -33,7 +33,6 @@ class HealthCheckMiddleware:
                 health_status.update({
                     'status': 'unhealthy',
                     'database': 'disconnected',
-                    'error': str(e)
                 })
                 return JsonResponse(health_status, status=502)
 
