@@ -233,7 +233,7 @@ resource "aws_ecs_service" "app" {
   desired_count   = 1
 
   network_configuration {
-    subnets          = var.networking.db_subnet_ids
+    subnets          = var.networking.private_subnet_ids
     security_groups  = [var.networking.api_security_group_id]
     assign_public_ip = false
   }
