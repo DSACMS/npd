@@ -1,33 +1,22 @@
-import inspect
 import sys
 
 from django.urls import reverse
-from drf_yasg import openapi
-from fhir.resources.address import Address
-from fhir.resources.bundle import Bundle
-from fhir.resources.codeableconcept import CodeableConcept
-from fhir.resources.coding import Coding
-from fhir.resources.contactpoint import ContactPoint
-from fhir.resources.endpoint import Endpoint
-from fhir.resources.humanname import HumanName
-from fhir.resources.identifier import Identifier
-from fhir.resources.location import Location as FHIRLocation
-from fhir.resources.contactdetail import ContactDetail
-from fhir.resources.meta import Meta
-from fhir.resources.organization import Organization as FHIROrganization
-from fhir.resources.period import Period
-from fhir.resources.practitioner import Practitioner, PractitionerQualification
-from fhir.resources.practitionerrole import PractitionerRole
-from fhir.resources.reference import Reference
-from fhir.resources.capabilitystatement import (
-    CapabilityStatement,
-    CapabilityStatementRest,
-    CapabilityStatementRestResource,
-    CapabilityStatementRestResourceSearchParam,
-    CapabilityStatementImplementation
-)
-from datetime import datetime, timezone
-from rest_framework import serializers, viewsets
+from fhir.resources.R4B.address import Address
+from fhir.resources.R4B.bundle import Bundle
+from fhir.resources.R4B.codeableconcept import CodeableConcept
+from fhir.resources.R4B.coding import Coding
+from fhir.resources.R4B.contactpoint import ContactPoint
+from fhir.resources.R4B.endpoint import Endpoint
+from fhir.resources.R4B.humanname import HumanName
+from fhir.resources.R4B.identifier import Identifier
+from fhir.resources.R4B.location import Location as FHIRLocation
+from fhir.resources.R4B.meta import Meta
+from fhir.resources.R4B.organization import Organization as FHIROrganization
+from fhir.resources.R4B.period import Period
+from fhir.resources.R4B.practitioner import Practitioner, PractitionerQualification
+from fhir.resources.R4B.practitionerrole import PractitionerRole
+from fhir.resources.R4B.reference import Reference
+from rest_framework import serializers
 
 from .models import (
     IndividualToPhone,
@@ -53,44 +42,6 @@ def genReference(url_name, identifier, request):
     reference = Reference(
         reference=reference)
     return reference
-
-
-def createFilterParam(field: str, display: str = None, enum: list = None):
-    if display is None:
-        display = field.replace('_', ' ').replace('.', ' ')
-    param = openapi.Parameter(
-        field,
-        openapi.IN_QUERY,
-        description=f"Filter by {display}",
-        type=openapi.TYPE_STRING,
-    )
-    if enum is not None:
-        param.enum = enum
-    return param
-
-
-class QueryParameterSerializer(serializers.Serializer):
-    field = serializers.CharField()
-    display = serializers.CharField()
-    enum = serializers.ListField()
-    min = serializers.IntegerField()
-    max = serializers.IntegerField()
-    default = serializers.Field()
-    type = serializers.CharField()
-
-    def to_representation(self, instance):
-        display = instance.display
-        if display is None:
-            display = instance.field.replace('_', ' ').replace('.', ' ')
-        param = openapi.Parameter(
-            instance.field,
-            openapi.IN_QUERY,
-            description=f"Filter by {display}",
-            type=openapi.TYPE_STRING,
-        )
-        if instance.enum is not None:
-            param.enum = instance.enum
-        return param
 
 
 class AddressSerializer(serializers.Serializer):
@@ -304,20 +255,15 @@ class EndpointPayloadSeriazlier(serializers.Serializer):
         fields = ['type', 'mime_type']
 
     def to_representation(self, instance):
-        payload_type = [CodeableConcept(
+        payload_type = CodeableConcept(
             coding=[Coding(
                 system="http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
                 code=instance.payload_type.id,
                 display=instance.payload_type.value
             )]
-        )]
+        )
 
-        payload = {
-            "type": payload_type,
-            "mimeType": ["default"]  # instance.mime_type.value
-        }
-
-        return payload
+        return payload_type
 
 
 class EndpointIdentifierSerialzier(serializers.Serializer):
@@ -425,9 +371,9 @@ class OrganizationSerializer(serializers.Serializer):
                         code=code
                     )
                     taxonomies.append(qualification.model_dump())
-
-                if taxonomies:
-                    organization.qualification = taxonomies
+                # TODO extend based on US core
+                # if taxonomies:
+                #    organization.qualification = taxonomies
 
         organization.identifier = identifiers
 
@@ -444,6 +390,8 @@ class OrganizationSerializer(serializers.Serializer):
             organization.alias = alias_names
 
         authorized_official = representation['authorized_official']
+        # r4 only allows one name for contact. TODO update to ndh
+        authorized_official['name'] = authorized_official['name'][0]
 
         if representation['address'] != []:
             authorized_official['address'] = representation['address'][0]
@@ -451,9 +399,6 @@ class OrganizationSerializer(serializers.Serializer):
             if 'address' in authorized_official.keys():
                 del authorized_official['address']
         organization.contact = [authorized_official]
-
-        if 'taxonomy' in representation.keys():
-            organization.qualification = representation['taxonomy']
 
         return organization.model_dump()
 
@@ -550,7 +495,7 @@ class PractitionerRoleSerializer(serializers.Serializer):
             'fhir-organization-detail', instance.provider_to_organization.organization_id, request)
         practitioner_role.location = [genReference(
             'fhir-location-detail', instance.location.id, request)]
-        # These lines rely on the fhir.resources representation of PractitionerRole to be expanded to match the ndh FHIR definition. This is a TODO with an open ticket.
+        # These lines rely on the fhir.resources.R4B representation of PractitionerRole to be expanded to match the ndh FHIR definition. This is a TODO with an open ticket.
         # if 'other_phone' in representation.keys():
         #    practitioner_role.telecom = representation['other_phone']
 
@@ -571,13 +516,11 @@ class EndpointSerializer(serializers.Serializer):
     def to_representation(self, instance):
         representation = super().to_representation(instance)
 
-        connection_type = [CodeableConcept(
-            coding=[Coding(
-                system="http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
-                code=instance.endpoint_connection_type.id,
-                display=instance.endpoint_connection_type.display
-            )]
-        )]
+        connection_type = Coding(
+            system="http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+            code=instance.endpoint_connection_type.id,
+            display=instance.endpoint_connection_type.display
+        )
 
         environment_type = [CodeableConcept(
             coding=[Coding(
@@ -593,202 +536,17 @@ class EndpointSerializer(serializers.Serializer):
             status="active",  # hardcoded for now
             connectionType=connection_type,
             name=instance.name,
-            description=instance.description,
-            environmentType=environment_type,
+            # TODO extend base fhir spec to ndh spec description=instance.description,
+            # TODO extend base fhir spec to ndh spec environmentType=environment_type,
             # managingOrganization=Reference(managing_organization), ~ organization/npi or whatever we use as the organization identifier
             # contact=ContactPoint(contact), ~ still gotta figure this out
             # period=Period(period), ~ still gotta figure this out
-            payload=representation['payload'],
+            payloadType=representation['payload'],
             address=instance.address,
             header=["application/fhir"]  # hardcoded for now
         )
 
         return endpoint.model_dump()
-
-
-class CapabilityStatementSerializer(serializers.Serializer):
-    """
-    Serializer for FHIR CapablityStatement resource
-    """
-
-    def to_representation(self, instance):
-        capability_statement = CapabilityStatement(
-            url="https://directory.cms.gov/fhir/metadata",
-            version="0.1.0",
-            name="FHIRCapablityStatement",
-            title="National Provider Directory FHIR Capablity Statement",
-            status="active",
-            date=datetime.now(timezone.utc),
-            publisher="CMS",
-            contact=[
-                ContactDetail(
-                    telecom=[
-                        ContactPoint(
-                            system="email",
-                            value="npd@cms.hhs.gov"
-                        )
-                    ]
-                )
-            ],
-            description="This CapabilityStatement describes the capabilities of the National Provider Directory FHIR API, including supported resources, search parameters, and operations.",
-            kind="instance",
-            implementation=CapabilityStatementImplementation(
-                description="This implementation serves as a read-only Beta version for the National Provider Directory, exposing information about healthcare providers and organizations that provide healthcare services within the United States via a FHIR API that follows the NDH Implementation Guide.",
-                url="https://directory.cms.gov/fhir"
-            ),
-            fhirVersion="4.0.1",
-            format=["fhir+json"],
-            rest=[self.build_rest_components()]
-        )
-
-        return capability_statement.model_dump()
-
-    def build_rest_components(self):
-        """
-        Building out each REST component describing our endpoint capabilities
-        """
-        return CapabilityStatementRest(
-            mode="server",
-            documentation="All FHIR endpoints for the National Provider Directory",
-            resource=[
-                self.build_practitioner_resource(),
-                self.build_organization_resource(),
-                self.build_endpoint_resource()
-            ]
-        )
-
-    def build_practitioner_resource(self):
-        return CapabilityStatementRestResource(
-            type="Practitioner",
-            interaction=[
-                {"code": "read"},
-                {"code": "search-type"}
-            ],
-            searchParam=[
-                CapabilityStatementRestResourceSearchParam(
-                    name="name",
-                    type="string",
-                    documentation="Search by practitioner name (first, middle, or last)"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="gender",
-                    type="token",
-                    documentation="Search by gender"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="practitioner_type",
-                    type="string",
-                    documentation="Search by practitioner type/taxonomy"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address",
-                    type="string",
-                    documentation="Search by any part of the address"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address-city",
-                    type="string",
-                    documentation="Search by city"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address-state",
-                    type="string",
-                    documentation="Search by state (2-letter abbreviation)"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address-postalcode",
-                    type="string",
-                    documentation="Search by postal/zip code"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address-use",
-                    type="token",
-                    documentation="Search by address use (home, work, temp, old, billing)"
-                )
-            ]
-        )
-
-    def build_organization_resource(self):
-        return CapabilityStatementRestResource(
-            type="Organization",
-            interaction=[
-                {"code": "read"},
-                {"code": "search-type"}
-            ],
-            searchParam=[
-                CapabilityStatementRestResourceSearchParam(
-                    name="name",
-                    type="string",
-                    documentation="Search by organization name"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="organization_type",
-                    type="string",
-                    documentation="Search by organization type/taxonomy"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address",
-                    type="string",
-                    documentation="Search by any part of the address"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address-city",
-                    type="string",
-                    documentation="Search by city"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address-state",
-                    type="string",
-                    documentation="Search by state (2-letter abbreviation)"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address-postalcode",
-                    type="string",
-                    documentation="Search by postal/zip code"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address-use",
-                    type="token",
-                    documentation="Search by address use (home, work, temp, old, billing)"
-                )
-            ]
-        )
-
-    def build_endpoint_resource(self):
-        return CapabilityStatementRestResource(
-            type="Endpoint",
-            interaction=[
-                {"code": "read"},
-                {"code": "search-type"}
-            ],
-            searchParam=[
-                CapabilityStatementRestResourceSearchParam(
-                    name="name",
-                    type="string",
-                    documentation="Search by endpoint name"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="connection_type",
-                    type="token",
-                    documentation="Search by connection type"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="payload_type",
-                    type="token",
-                    documentation="Search by payload type"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="status",
-                    type="token",
-                    documentation="Search by endpoint status"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="organization",
-                    type="reference",
-                    documentation="Search by managing organization"
-                )
-            ]
-        )
 
 
 class BundleSerializer(serializers.Serializer):
