@@ -128,7 +128,22 @@ module "fhir-api" {
 module "etl" {
   source = "../../modules/etl"
 
-  account_name = local.account_name
+  account_name   = local.account_name
+  dagster_image  = var.dagster_image
+  ecs_cluster_id = module.ecs.cluster_id
+  db = {
+    db_instance_master_user_secret_arn = module.etl-db.db_instance_master_user_secret_arn
+    db_instance_address                = module.etl-db.db_instance_address
+    db_instance_port                   = module.etl-db.db_instance_port
+    db_instance_name                   = module.etl-db.db_instance_name
+  }
+  networking = {
+    etl_subnet_ids            = module.networking.etl_subnet_ids
+    etl_security_group_id     = module.networking.etl_security_group_id
+    etl_alb_security_group_id = module.networking.etl_alb_security_group_id
+    public_subnet_ids         = module.networking.public_subnet_ids
+    vpc_id                    = module.networking.vpc_id
+  }
 }
 
 # Frontend Module
