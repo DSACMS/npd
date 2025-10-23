@@ -225,7 +225,7 @@ resource "aws_ecs_task_definition" "app" {
 
 # API ECS Service
 resource "aws_ecs_service" "app" {
-  count = var.redirect_to_strategy_page == true ? 0 : 1
+  count           = var.redirect_to_strategy_page == true ? 0 : 1
   name            = "${var.account_name}-fhir-api-service"
   cluster         = var.ecs_cluster_id
   task_definition = aws_ecs_task_definition.app.arn
@@ -255,7 +255,7 @@ resource "aws_lb" "fhir_api_alb" {
 }
 
 resource "aws_lb_target_group" "fhir_api_tg" {
-  count = var.redirect_to_strategy_page ? 0 : 1
+  count       = var.redirect_to_strategy_page ? 0 : 1
   name        = "${var.account_name}-fhir-api-tg"
   port        = var.fhir_api_port
   protocol    = "HTTP"
@@ -274,7 +274,7 @@ resource "aws_lb_target_group" "fhir_api_tg" {
 }
 
 resource "aws_lb_listener" "forward_to_task_group" {
-  count = var.redirect_to_strategy_page ? 0 : 1
+  count             = var.redirect_to_strategy_page ? 0 : 1
   load_balancer_arn = aws_lb.fhir_api_alb.arn
   port              = 80
   protocol          = "HTTP"
@@ -286,17 +286,17 @@ resource "aws_lb_listener" "forward_to_task_group" {
 }
 
 resource "aws_lb_listener" "forward_to_strategy_page" {
-  count = var.redirect_to_strategy_page ? 1 : 0
+  count             = var.redirect_to_strategy_page ? 1 : 0
   load_balancer_arn = aws_lb.fhir_api_alb.arn
   port              = 80
   protocol          = "HTTP"
 
   default_action {
-    type             = "redirect"
+    type = "redirect"
     redirect {
       status_code = "HTTP_302"
-      host = "www.cms.gov"
-      path = "/priorities/health-technology-ecosystem/overview"
+      host        = "www.cms.gov"
+      path        = "/priorities/health-technology-ecosystem/overview"
     }
   }
 }

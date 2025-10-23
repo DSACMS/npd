@@ -4,35 +4,35 @@ main.tf for the time being.
  */
 
 resource "aws_security_group" "glue_sg" {
-  name = "glue-sg"
+  name        = "glue-sg"
   description = "Common security group for Glue jobs"
-  vpc_id = data.aws_vpc.default.id
+  vpc_id      = data.aws_vpc.default.id
 }
 
 resource "aws_vpc_security_group_ingress_rule" "glue_sg_allow_connections_from_self" {
-  security_group_id = aws_security_group.glue_sg.id
-  ip_protocol = "-1"
+  security_group_id            = aws_security_group.glue_sg.id
+  ip_protocol                  = "-1"
   referenced_security_group_id = aws_security_group.glue_sg.id
 }
 
 resource "aws_vpc_security_group_egress_rule" "glue_gs_allow_outbound_connections" {
   security_group_id = aws_security_group.glue_sg.id
-  ip_protocol = "-1"
-  cidr_ipv4 = "0.0.0.0/0"
+  ip_protocol       = "-1"
+  cidr_ipv4         = "0.0.0.0/0"
 }
 
 resource "aws_s3_bucket" "glue_scripts" {
-  bucket = "${var.name}-glue-scripts-bucket"
+  bucket        = "${var.name}-glue-scripts-bucket"
   force_destroy = true
 }
 
 resource "aws_s3_bucket" "aws_glue_input_bucket" {
-  bucket = "${var.name}-glue-s3-input"
+  bucket        = "${var.name}-glue-s3-input"
   force_destroy = true
 }
 
 resource "aws_s3_bucket" "aws_glue_output_bucket" {
-  bucket = "${var.name}-glue-s3-output"
+  bucket        = "${var.name}-glue-s3-output"
   force_destroy = true
 }
 
@@ -41,7 +41,7 @@ resource "aws_glue_catalog_database" "aws_glue_catalog" {
 }
 
 resource "aws_glue_crawler" "aws_glue_crawler" {
-  database_name =  aws_glue_catalog_database.aws_glue_catalog.name
+  database_name = aws_glue_catalog_database.aws_glue_catalog.name
   name          = "${var.name}-glue-data-catalog-crawler"
   role          = aws_iam_role.glue_job_role.arn
   schedule      = "cron(0 12 * * ? *)"
@@ -82,13 +82,13 @@ resource "aws_glue_job" "python_shell_job" {
   }
 
   default_arguments = {
-    "--job-language"                     = "python" # Default is python
-    "--additional-python-modules"        = replace(file(abspath("${path.module}/../etls/loadFIPS/requirements.txt")), "\n", ", ")
-    "--MAX_RETRIES"                      = "3"
-    "--DB_SECRET_ARN"                    = module.rds.db_instance_master_user_secret_arn
-    "--DB_HOST"                          = module.rds.db_instance_address
-    "--DB_PORT"                          = module.rds.db_instance_port
-    "--DB_NAME"                          = var.db_name
+    "--job-language"              = "python" # Default is python
+    "--additional-python-modules" = replace(file(abspath("${path.module}/../etls/loadFIPS/requirements.txt")), "\n", ", ")
+    "--MAX_RETRIES"               = "3"
+    "--DB_SECRET_ARN"             = module.rds.db_instance_master_user_secret_arn
+    "--DB_HOST"                   = module.rds.db_instance_address
+    "--DB_PORT"                   = module.rds.db_instance_port
+    "--DB_NAME"                   = var.db_name
   }
 
   execution_property {
@@ -101,15 +101,15 @@ resource "aws_glue_job" "python_shell_job" {
 }
 
 resource "aws_glue_job" "pyspark_job" {
-  name = "nppes-to-s3-pyspark-job"
-  description = "A simple pyspark job that moves a single table from one location to another"
-  glue_version = "5.0"
-  role_arn     = aws_iam_role.glue_job_role.arn
+  name              = "nppes-to-s3-pyspark-job"
+  description       = "A simple pyspark job that moves a single table from one location to another"
+  glue_version      = "5.0"
+  role_arn          = aws_iam_role.glue_job_role.arn
   number_of_workers = 2
-  worker_type = "G.1X"
-  max_retries  = 0
-  timeout      = 2880
-  connections  = []
+  worker_type       = "G.1X"
+  max_retries       = 0
+  timeout           = 2880
+  connections       = []
 
   command {
     script_location = "s3://${aws_s3_object.glue_job_script.bucket}/${aws_s3_object.glue_job_script_pyspark.key}"
@@ -183,13 +183,13 @@ resource "aws_iam_policy" "glue_job_policy" {
 }
 
 resource "aws_iam_policy_attachment" "glue_job_policy_attachment" {
-  name = "glue_job_policy_attachment"
+  name       = "glue_job_policy_attachment"
   policy_arn = aws_iam_policy.glue_job_policy.arn
-  roles = [aws_iam_role.glue_job_role.name]
+  roles      = [aws_iam_role.glue_job_role.name]
 }
 
 resource "aws_iam_policy_attachment" "glue_job_managed_policy_attachment" {
-  name = "glue_job_managed_policy_attachment"
+  name       = "glue_job_managed_policy_attachment"
   policy_arn = "arn:aws-us-gov:iam::aws:policy/service-role/AWSGlueServiceRole"
-  roles = [aws_iam_role.glue_job_role.name]
+  roles      = [aws_iam_role.glue_job_role.name]
 }
