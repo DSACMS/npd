@@ -108,12 +108,13 @@ resource "aws_iam_policy" "dagster_can_read_bronze_bucket" {
     Statement = [
       {
         Action = [
-          "s3:*"
+          "s3:GetObject",
+          "s3:PutObject"
         ]
         Effect = "Allow"
         Resource = [
-          aws_s3_bucket.etl_bronze.bucket,
-          "${aws_s3_bucket.etl_bronze.bucket}/*"
+          aws_s3_bucket.etl_bronze.arn,
+          "${aws_s3_bucket.etl_bronze.arn}/*"
         ]
       },
     ]
