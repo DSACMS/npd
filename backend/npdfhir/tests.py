@@ -5,6 +5,7 @@ from fhir.resources.bundle import Bundle
 from pydantic import ValidationError
 from rest_framework import status
 from rest_framework.test import APIClient, APITestCase
+import json
 
 # I can't explain why, but we need to import cacheData here. I think we can remove this once we move to the docker db setup
 from .cache import cacheData
@@ -160,8 +161,9 @@ class BasicViewsTestCase(APITestCase):
     def test_health_view(self):
         url = reverse("healthCheck")  # maps to "/healthCheck"
         response = self.client.get(url)
+        res_obj = json.loads(response.content.decode())
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.content.decode(), "healthy")
+        self.assertEqual(res_obj['status'], "healthy")
 
 
 class OrganizationViewSetTestCase(APITestCase):
