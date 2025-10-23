@@ -6,12 +6,14 @@ from rest_framework import status
 from rest_framework.test import APITestCase, APIClient
 from django.test.runner import DiscoverRunner
 from django.db import connection
+from django.db.models import F
 from django.test.runner import DiscoverRunner
 from django.urls import reverse
 from fhir.resources.R4B.bundle import Bundle
 from pydantic import ValidationError
 from rest_framework import status
 from rest_framework.test import APIClient, APITestCase
+from .models import ProviderToLocation
 
 # I can't explain why, but we need to import cacheData here. I think we can remove this once we move to the docker db setup
 from .cache import cacheData
@@ -222,14 +224,24 @@ class OrganizationViewSetTestCase(APITestCase):
         #print(response.data["results"]["entry"][0]['resource']['name'])
 
         # Extract names
-        #Note: have to normalize the names to have python sorting match sql
-        #names = [
-        #    normalize_name(d['resource'].get('name', {}))
-        #    for d in response.data["results"]["entry"]
-        #]
+        names = [
+            d['resource'].get('name', {})
+            for d in response.data["results"]["entry"]
+        ]
 
-        #sorted_names = []
-        #self.assertEqual(names, sorted_names, f"Expected fhir orgs sorted by org name but got {names}\n Sorted: {sorted_names}")
+        sorted_names = [
+            '1ST CHOICE HOME HEALTH CARE INC',
+            '1ST CHOICE MEDICAL DISTRIBUTORS, LLC',
+            '986 INFUSION PHARMACY #1 INC.',
+            'A & A MEDICAL SUPPLY COMPANY',
+            'ABACUS BUSINESS CORPORATION GROUP INC.',
+            'ABBY D CENTER, INC.',
+            'ABC DURABLE MEDICAL EQUIPMENT INC',
+            'ABC HOME MEDICAL SUPPLY, INC.',
+            'A BEAUTIFUL SMILE DENTISTRY, L.L.C.',
+            'A & B HEALTH CARE, INC.'
+        ]
+        self.assertEqual(names, sorted_names, f"Expected fhir orgs sorted by org name but got {names}\n Sorted: {sorted_names}")
 
 
     def test_list_with_custom_page_size(self):
@@ -342,6 +354,36 @@ class LocationViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
         self.assertIn("results", response.data)
+    
+    def test_list_in_proper_order(self):
+        url = reverse("fhir-location-list")
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response["Content-Type"], "application/fhir+json")
+
+        #print(response.data["results"]["entry"][0]['resource']['name'])
+
+        # Extract names
+        names = [
+            d['resource'].get('name', {})
+            for d in response.data["results"]["entry"]
+        ]
+
+        sorted_names = [
+            '1ST CHOICE MEDICAL DISTRIBUTORS, LLC',
+            '986 INFUSION PHARMACY #1 INC.',
+            'A & A MEDICAL SUPPLY COMPANY',
+            'ABACUS BUSINESS CORPORATION GROUP INC.',
+            'ABBY D CENTER, INC.',
+            'ABC DURABLE MEDICAL EQUIPMENT INC',
+            'ABC HOME MEDICAL SUPPLY, INC.',
+            'A BEAUTIFUL SMILE DENTISTRY, L.L.C.',
+            'A & B HEALTH CARE, INC.',
+            'ABILENE HELPING HANDS INC'
+        ]
+
+        self.assertEqual(names, sorted_names, f"Expected fhir orgs sorted by org name but got {names}\n Sorted: {sorted_names}")
+
 
     def test_list_with_custom_page_size(self):
         url = reverse("fhir-location-list")

@@ -116,7 +116,7 @@ class FHIREndpointViewSet(viewsets.ViewSet):
             'endpointinstancetopayload_set__payload_type',
             'endpointinstancetopayload_set__mime_type',
             'endpointinstancetootherid_set'
-        )
+        ).order_by('name')
 
         for param, value in all_params.items():
             match param:
@@ -390,8 +390,12 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
 
         all_params = request.query_params
 
-        practitionerroles = ProviderToLocation.objects.all().prefetch_related('provider_to_organization',
-                                                                              'location').all()
+        practitionerroles = (
+            ProviderToLocation.objects
+            .select_related('location')
+            .prefetch_related('provider_to_organization')
+            .order_by('location__name')
+        ).all()
 
         for param, value in all_params.items():
             match param:
@@ -496,7 +500,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
 
         primary_name_subquery = (
             OrganizationToName.objects
-            .filter(organization=OuterRef('organization'), is_primary=True)
+            .filter(organization=OuterRef('pk'), is_primary=True)
             .values('name')[:1]
         )
 
@@ -696,7 +700,8 @@ class FHIRLocationViewSet(viewsets.ViewSet):
         all_params = request.query_params
 
         locations = Location.objects.all().prefetch_related(
-            'address__address_us', 'address__address_us__state_code')
+            'address__address_us', 'address__address_us__state_code'
+        ).order_by('name')
 
         for param, value in all_params.items():
             match param:
