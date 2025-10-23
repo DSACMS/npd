@@ -42,7 +42,7 @@ services:
       - '../flyway/sql:/flyway/sql'
     depends_on:
       - db
-    command: migrate -environment=development
+    command: migrate -environment=development placeholders.apiSchema=${NPD_DB_SCHEMA}
 
   django-web:
     build: .
