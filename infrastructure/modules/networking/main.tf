@@ -124,6 +124,15 @@ resource "aws_vpc_security_group_ingress_rule" "fhir_api_can_access_fhir_api_db"
   referenced_security_group_id = aws_security_group.fhir_api_sg.id
 }
 
+resource "aws_vpc_security_group_ingress_rule" "etl_sg_can_connect_to_fhir_api_db" {
+  description                  = "Accepts Postgres connections from ETL security group"
+  security_group_id            = aws_security_group.fhir_api_db_sg.id
+  ip_protocol                  = "tcp"
+  from_port                    = 5432
+  to_port                      = 5432
+  referenced_security_group_id = aws_security_group.fhir_etl_db_sg.id
+}
+
 ### ETL Database
 
 resource "aws_security_group" "fhir_etl_db_sg" {
@@ -141,10 +150,62 @@ resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_etl_db" {
   prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
 }
 
-### ETL Security Group
+resource "aws_vpc_security_group_ingress_rule" "etl_sg_can_connect_to_etl_db" {
+  description                  = "Accepts Postgres connections from Dagster"
+  security_group_id            = aws_security_group.fhir_etl_db_sg.id
+  ip_protocol                  = "tcp"
+  from_port                    = 5432
+  to_port                      = 5432
+  referenced_security_group_id = aws_security_group.etl_sg.id
+}
 
-resource "aws_security_group" "fhir_etl_sg" {
-  description = "Defines traffic flows to/from the ETL processes"
-  name        = "${var.account_name}-fhir-etl-sg"
+### ETL ALB Security Group
+
+resource "aws_security_group" "etl_webserver_alb_sg" {
+  description = "Defines traffic flows to and from the dagster application load balancer"
+  name        = "${var.account_name}-dagster-etl-alb-sg"
   vpc_id      = var.vpc_id
+}
+
+resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_etl_webserver_alb_sg" {
+  description       = "Allows connections to the dagster ui application load balancer dashboard from the VPN"
+  security_group_id = aws_security_group.etl_webserver_alb_sg.id
+  ip_protocol       = "-1"
+  prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
+}
+
+resource "aws_vpc_security_group_egress_rule" "etl_webserver_alb_can_make_outbound_connections" {
+  description       = "Allows the Dagster UI application load balancer to make outbound connections"
+  security_group_id = aws_security_group.etl_webserver_alb_sg.id
+  ip_protocol       = "-1"
+  cidr_ipv4         = "0.0.0.0/0"
+}
+
+### ETL security group
+
+resource "aws_security_group" "etl_sg" {
+  description = "Defines traffic flows to/from the ETL processes"
+  name        = "${var.account_name}-etl-sg"
+  vpc_id      = var.vpc_id
+}
+
+resource "aws_vpc_security_group_ingress_rule" "etl_processes_can_reach_themselves" {
+  description                  = "Allows workers within the ETL security group to talk to each other"
+  security_group_id            = aws_security_group.etl_sg.id
+  ip_protocol                  = "-1"
+  referenced_security_group_id = aws_security_group.etl_sg.id
+}
+
+resource "aws_vpc_security_group_ingress_rule" "dagster_ui_alb_can_access_dagster_ui" {
+  description                  = "Accepts traffic from the Dagster ALB"
+  security_group_id            = aws_security_group.etl_sg.id
+  ip_protocol                  = "-1"
+  referenced_security_group_id = aws_security_group.etl_webserver_alb_sg.id
+}
+
+resource "aws_vpc_security_group_egress_rule" "dagster_can_make_outgoing_requests" {
+  description       = "Allows Dagster processes to make outgoing requests"
+  security_group_id = aws_security_group.etl_sg.id
+  ip_protocol       = "-1"
+  cidr_ipv4         = "0.0.0.0/0"
 }
