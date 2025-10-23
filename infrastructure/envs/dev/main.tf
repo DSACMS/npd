@@ -77,6 +77,7 @@ module "etl-db" {
   allocated_storage       = 100
   publicly_accessible     = false
   username                = "npd_etl"
+  db_name                 = "npd_etl"
   vpc_security_group_ids  = [module.networking.db_security_group_id]
   db_subnet_group_name    = module.networking.db_subnet_group_name
   backup_retention_period = 7             # Remove automated snapshots after 7 days

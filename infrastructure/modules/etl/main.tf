@@ -100,7 +100,7 @@ resource "aws_iam_role" "dagster_task_role" {
 }
 
 resource "aws_ecs_task_definition" "dagster_daemon" {
-  family                   = "dagster-daemon"
+  family                   = "${var.account_name}-dagster-daemon"
   network_mode             = "awsvpc"
   requires_compatibilities = ["FARGATE"]
   cpu                      = "256"
@@ -187,7 +187,7 @@ resource "aws_ecs_task_definition" "dagster_ui" {
           name          = "http"
         }
       ]
-      command = ["dagster-ui", "--host", "0.0.0.0", "--port", "80", "-w", "${var.dagster_home}/workspace.yaml"]
+      command = ["dagster-webserver", "--host", "0.0.0.0", "--port", "80", "-w", "${var.dagster_home}/workspace.yaml"]
       environment = [
         { name = "DAGSTER_HOME", value = var.dagster_home },
         { name = "DAGSTER_POSTGRES_HOST", value = var.db.db_instance_address },

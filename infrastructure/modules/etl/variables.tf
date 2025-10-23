@@ -1,5 +1,5 @@
 variable "account_name" {}
-variable "dagster_home" { default = "dagster_home" }
+variable "dagster_home" { default = "/opt/dagster/dagster_home" }
 variable "dagster_image" {}
 variable "ecs_cluster_id" {}
 variable "db" {
