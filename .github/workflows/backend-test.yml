@@ -45,6 +45,6 @@ jobs:
         if: (!cancelled())
         with:
           check_name: "Backend Django Test Results"
-          comment_mode: changes
+          comment_mode: changes in failures
           files: |
             backend/artifacts/test-reports/*.xml
