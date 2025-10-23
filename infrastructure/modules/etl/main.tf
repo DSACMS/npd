@@ -109,6 +109,7 @@ resource "aws_iam_policy" "dagster_can_read_bronze_bucket" {
       {
         Action = [
           "s3:GetObject",
+          "s3:ListObjects",
           "s3:PutObject"
         ]
         Effect = "Allow"
