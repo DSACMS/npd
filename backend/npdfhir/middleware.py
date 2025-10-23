@@ -35,6 +35,6 @@ class HealthCheckMiddleware:
                     'database': 'disconnected',
                     'error': str(e)
                 })
-                return JsonResponse(health_status, status=503)
+                return JsonResponse(health_status, status=502)
 
         return self.get_response(request)
