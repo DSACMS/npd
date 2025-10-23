@@ -14,6 +14,8 @@ import "@uswds/uswds/css/uswds.css"
 // USWDS javascript behaviors
 import "@uswds/uswds"
 
+import "./i18n.ts"
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>

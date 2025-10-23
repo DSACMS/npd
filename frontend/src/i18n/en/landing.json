@@ -1,0 +1,14 @@
+{
+  "badge": "LIMITED-RELEASE BETA",
+  "title": "National Provider Directory",
+  "tagline": "Building the new infrastructure for health data interoperability",
+  "about": {
+    "title": "About the directory",
+    "description": "The National Provider Directory uses data from multiple publicly-available data sources and combines them to create a trusted source of truth for information about healthcare providers."
+  },
+  "links": {
+    "developers": "Developer resources",
+    "providers": "Provider resources",
+    "learn": "Learn how it works"
+  }
+}
