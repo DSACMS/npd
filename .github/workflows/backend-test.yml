@@ -44,5 +44,7 @@ jobs:
         uses: EnricoMi/publish-unit-test-result-action@v2
         if: (!cancelled())
         with:
+          check_name: "Backend Django Test Results"
+          comment_mode: changes
           files: |
             backend/artifacts/test-reports/*.xml
