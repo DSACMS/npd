@@ -9,7 +9,6 @@ from django.utils.html import escape
 from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework import generics, viewsets
-from rest_framework.views import APIView
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.renderers import BrowsableAPIRenderer
 from rest_framework.response import Response
@@ -30,7 +29,6 @@ from .serializers import (
     OrganizationSerializer,
     PractitionerRoleSerializer,
     PractitionerSerializer,
-    CapabilityStatementSerializer
 )
 
 default_page_size = 10
