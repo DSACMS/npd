@@ -87,7 +87,7 @@ resource "aws_iam_role_policy_attachment" "dagster_can_create_cloudwatch_logs" {
 }
 
 resource "aws_iam_role" "dagster_task_role" {
-  name = "${var.account_name}-etl-service-task-role"
+  name        = "${var.account_name}-etl-service-task-role"
   description = "Describes actions the ETL tasks can make"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -97,6 +97,32 @@ resource "aws_iam_role" "dagster_task_role" {
       Action    = "sts:AssumeRole"
     }]
   })
+}
+
+resource "aws_iam_policy" "dagster_can_read_bronze_bucket" {
+  name        = "${var.account_name}-dagster-can-read-bronze-bucket"
+  description = "Allow ECS tasks to read and write to bronze bucket"
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = [
+          "s3:*"
+        ]
+        Effect = "Allow"
+        Resource = [
+          aws_s3_bucket.etl_bronze.bucket,
+          "${aws_s3_bucket.etl_bronze.bucket}/*"
+        ]
+      },
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "dagster_can_read_bronze_bucket_attachment" {
+  policy_arn = aws_iam_policy.dagster_can_read_bronze_bucket.arn
+  role       = aws_iam_role.dagster_task_role.id
 }
 
 resource "aws_ecs_task_definition" "dagster_daemon" {
@@ -123,13 +149,12 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
       }
       command = ["dagster-daemon", "run"]
       environment = [
-        { name = "DAGSTER_HOME", value = var.dagster_home },
         { name = "DAGSTER_POSTGRES_HOST", value = var.db.db_instance_address },
         { name = "DAGSTER_POSTGRES_DB", value = var.db.db_instance_name }
       ],
       secrets = [
         {
-          name = "DAGSTER_POSTGRES_USER",
+          name      = "DAGSTER_POSTGRES_USER",
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
         },
         {
@@ -142,11 +167,11 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
 }
 
 resource "aws_ecs_service" "dagster_daemon" {
-  name            = "${var.account_name}-dagster-daemon"
-  cluster         = var.ecs_cluster_id
-  desired_count   = 1
-  launch_type     = "FARGATE"
-  task_definition = aws_ecs_task_definition.dagster_daemon.arn
+  name                   = "${var.account_name}-dagster-daemon"
+  cluster                = var.ecs_cluster_id
+  desired_count          = 1
+  launch_type            = "FARGATE"
+  task_definition        = aws_ecs_task_definition.dagster_daemon.arn
   enable_execute_command = true
 
   network_configuration {
@@ -189,13 +214,13 @@ resource "aws_ecs_task_definition" "dagster_ui" {
       ]
       command = ["dagster-webserver", "--host", "0.0.0.0", "--port", "80"]
       environment = [
-        { name = "DAGSTER_HOME", value = var.dagster_home },
         { name = "DAGSTER_POSTGRES_HOST", value = var.db.db_instance_address },
-        { name = "DAGSTER_POSTGRES_DB", value = var.db.db_instance_name }
+        { name = "DAGSTER_POSTGRES_DB", value = var.db.db_instance_name },
+        { name = "S3_DATA_BUCKET", value = aws_s3_bucket.etl_bronze.bucket }
       ],
       secrets = [
         {
-          name = "DAGSTER_POSTGRES_USER",
+          name      = "DAGSTER_POSTGRES_USER",
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
         },
         {
@@ -208,11 +233,11 @@ resource "aws_ecs_task_definition" "dagster_ui" {
 }
 
 resource "aws_ecs_service" "dagster-ui" {
-  name            = "${var.account_name}-dagster-ui"
-  cluster         = var.ecs_cluster_id
-  desired_count   = 1
-  launch_type     = "FARGATE"
-  task_definition = aws_ecs_task_definition.dagster_ui.arn
+  name                   = "${var.account_name}-dagster-ui"
+  cluster                = var.ecs_cluster_id
+  desired_count          = 1
+  launch_type            = "FARGATE"
+  task_definition        = aws_ecs_task_definition.dagster_ui.arn
   enable_execute_command = true
 
   network_configuration {
@@ -230,18 +255,18 @@ resource "aws_ecs_service" "dagster-ui" {
 }
 
 resource "aws_lb" "dagster_ui_alb" {
-  name = "${var.account_name}-dagster-ui-alb"
-  internal = false # TODO I don't know what this means
+  name               = "${var.account_name}-dagster-ui-alb"
+  internal           = false # TODO I don't know what this means
   load_balancer_type = "application"
-  security_groups = [var.networking.etl_alb_security_group_id]
-  subnets = var.networking.public_subnet_ids
+  security_groups    = [var.networking.etl_alb_security_group_id]
+  subnets            = var.networking.public_subnet_ids
 }
 
 resource "aws_lb_target_group" "dagster_ui" {
-  name = "${var.account_name}-dagster-ui-tg"
-  port = 3001
-  protocol = "HTTP"
-  vpc_id = var.networking.vpc_id
+  name        = "${var.account_name}-dagster-ui-tg"
+  port        = 3001
+  protocol    = "HTTP"
+  vpc_id      = var.networking.vpc_id
   target_type = "ip"
 
   # TODO health check
@@ -249,11 +274,11 @@ resource "aws_lb_target_group" "dagster_ui" {
 
 resource "aws_alb_listener" "http" {
   load_balancer_arn = aws_lb.dagster_ui_alb.arn
-  port = 80
-  protocol = "HTTP"
+  port              = 80
+  protocol          = "HTTP"
 
   default_action {
-    type = "forward"
+    type             = "forward"
     target_group_arn = aws_lb_target_group.dagster_ui.arn
   }
 }
