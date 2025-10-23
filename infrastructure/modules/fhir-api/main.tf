@@ -291,7 +291,7 @@ resource "aws_lb_listener" "forward_to_task_group" {
 
   default_action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.fhir_api_tg[1].arn
+    target_group_arn = aws_lb_target_group.fhir_api_tg[0].arn
   }
 }
 

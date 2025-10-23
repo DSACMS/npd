@@ -2,9 +2,13 @@ import Header from "../components/Header"
 
 import { Badge, Button, SkipNav } from "@cmsgov/design-system"
 import { Footer } from "../components/Footer"
+
+import { useTranslation } from "react-i18next"
 import styles from "./Landing.module.css"
 
 export const Landing = () => {
+  const { t } = useTranslation()
+
   return (
     <>
       <SkipNav href="#main-content" />
@@ -16,21 +20,18 @@ export const Landing = () => {
             <div className="ds-l-row">
               <div className="ds-l-col--12">
                 <Badge variation="info" className={styles.heroBadge}>
-                  LIMITED-RELEASE BETA
+                  {t("landing.badge")}
                 </Badge>
 
-                <h1>National Provider Directory</h1>
-                <p className={styles.tagline}>
-                  Building the new infrastructure for health data
-                  interoperability
-                </p>
+                <h1>{t("landing.title")}</h1>
+                <p className={styles.tagline}>{t("landing.tagline")}</p>
 
                 <div className={styles.primaryActions}>
                   <Button variation="solid" href="/developers">
-                    Developer resources
+                    {t("landing.links.developers")}
                   </Button>
                   <Button variation="solid" href="/providers">
-                    Provider information
+                    {t("landing.links.providers")}
                   </Button>
                 </div>
               </div>
@@ -44,16 +45,13 @@ export const Landing = () => {
         <div className="ds-l-row">
           <div className="ds-l-col--12">
             <div className={styles.secondary}>
-              <h2>About the directory</h2>
+              <h2>{t("landing.about.title")}</h2>
 
               <p className={styles.secondaryDescription}>
-                The National Provider Directory uses data from multiple
-                publicly-available data sources and combines them to create a
-                trusted source of truth for information about healthcare
-                providers.
+                {t("landing.about.description")}
               </p>
 
-              <Button href="#">Learn how it works</Button>
+              <Button href="#">{t("landing.links.learn")}</Button>
             </div>
           </div>
         </div>
