@@ -141,6 +141,15 @@ resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_etl_db" {
   prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
 }
 
+resource "aws_vpc_security_group_ingress_rule" "etl_sg_can_connect_to_etl_db" {
+  description = "Accepts Postgres connections from Dagster"
+  security_group_id = aws_security_group.fhir_etl_db_sg.id
+  ip_protocol = "tcp"
+  from_port = 5432
+  to_port = 5432
+  referenced_security_group_id = aws_security_group.etl_sg.id
+}
+
 ### ETL ALB Security Group
 
 resource "aws_security_group" "etl_webserver_alb_sg" {

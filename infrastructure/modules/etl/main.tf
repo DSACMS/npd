@@ -121,7 +121,7 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
           "awslogs-stream-prefix" = var.account_name
         }
       }
-      command = ["dagster-daemon", "run", "-w", "${var.dagster_home}/workspace.yaml"]
+      command = ["dagster-daemon", "run"]
       environment = [
         { name = "DAGSTER_HOME", value = var.dagster_home },
         { name = "DAGSTER_POSTGRES_HOST", value = var.db.db_instance_address },
@@ -187,7 +187,7 @@ resource "aws_ecs_task_definition" "dagster_ui" {
           name          = "http"
         }
       ]
-      command = ["dagster-webserver", "--host", "0.0.0.0", "--port", "80", "-w", "${var.dagster_home}/workspace.yaml"]
+      command = ["dagster-webserver", "--host", "0.0.0.0", "--port", "80"]
       environment = [
         { name = "DAGSTER_HOME", value = var.dagster_home },
         { name = "DAGSTER_POSTGRES_HOST", value = var.db.db_instance_address },
