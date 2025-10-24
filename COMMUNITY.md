@@ -51,7 +51,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for more details on the release process.
 
 ## Contributors
 
-Total number of contributors: <!--CONTRIBUTOR COUNT START--> 7 <!--CONTRIBUTOR COUNT END-->
+![](https://img.shields.io/github/contributors/DSACMS/npd?style=flat-square&label=Contributors)
 
 <!-- readme: contributors -start -->
 <table>
