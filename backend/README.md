@@ -33,6 +33,15 @@ With docker:
 
 1. Run `make test`
 
+### Automated Testing
+
+Automated tests run in a GitHub workflow whenever a PR is created or a push is made to the main branch. These tests run in docker and build the backend image each time before running the tests. The tests generate JUnit XML files that are used as artifacts. The artifacts are then uploaded in the same GitHub workflow. 
+
+Additionally, the artifacts are taken and used to populate an automated comment and check summary. The check summary can be viewed by navigating to the "checks" section of the PR. The automated comment is made first initially when the PR is created and subsequent comments are only made if the status of the tests change as new commits are added to the PR branch. 
+
+The test checks are supported by an upstream GitHub action: [EnricoMi/publish-unit-test-result-action](github.com/EnricoMi/publish-unit-test-result-action). Further options for the action can be found on the README.md for that project. 
+
+
 ## Documentation
 API documentation can be viewed at `/fhir/docs`. If you make any changes to the Views, please update the swagger schema accordingly.
 

@@ -1,6 +1,8 @@
 name: Django Tests
 permissions:
   contents: read
+  checks: write
+  pull-requests: write
 
 on:
   pull_request:
@@ -37,3 +39,12 @@ jobs:
         with:
           name: test-results
           path: backend/artifacts/test-reports/*.xml
+
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: (!cancelled())
+        with:
+          check_name: "Backend Django Test Results"
+          comment_mode: changes in failures
+          files: |
+            backend/artifacts/test-reports/*.xml
