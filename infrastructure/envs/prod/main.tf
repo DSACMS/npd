@@ -108,6 +108,7 @@ module "fhir-api" {
   fhir_api_migration_image  = var.migration_image
   fhir_api_image            = var.fhir_api_image
   redirect_to_strategy_page = var.redirect_to_strategy_page
+  private_load_balancer      = var.fhir_api_private_load_balancer
   ecs_cluster_id            = module.ecs.cluster_id
   db = {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
