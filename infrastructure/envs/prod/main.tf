@@ -59,7 +59,7 @@ module "api-db" {
   username                = "npd"
   db_name                 = "npd"
   vpc_security_group_ids  = [module.networking.db_security_group_id]
-  db_subnet_group_name    = module.networking.db_subnet_group_name
+  db_subnet_group_name    = module.networking.private_subnet_group_name
   backup_retention_period = 7             # Remove automated snapshots after 7 days
   backup_window           = "03:00-04:00" # 11PM EST
 }
@@ -78,7 +78,7 @@ module "etl-db" {
   publicly_accessible     = false
   username                = "npd_etl"
   vpc_security_group_ids  = [module.networking.db_security_group_id]
-  db_subnet_group_name    = module.networking.db_subnet_group_name
+  db_subnet_group_name    = module.networking.private_subnet_group_name
   backup_retention_period = 7             # Remove automated snapshots after 7 days
   backup_window           = "03:00-04:00" # 11PM EST
 }
@@ -116,7 +116,7 @@ module "fhir-api" {
     db_instance_name                   = module.api-db.db_instance_name
   }
   networking = {
-    db_subnet_ids         = module.networking.db_subnet_ids
+    private_subnet_ids    = module.networking.private_subnet_ids
     public_subnet_ids     = module.networking.public_subnet_ids
     alb_security_group_id = module.networking.alb_security_group_id
     api_security_group_id = module.networking.api_security_group_id
@@ -130,6 +130,7 @@ module "etl" {
 
   account_name   = local.account_name
   dagster_image  = var.dagster_image
+  fhir_api_migration_image = var.migration_image
   ecs_cluster_id = module.ecs.cluster_id
   db = {
     db_instance_master_user_secret_arn = module.etl-db.db_instance_master_user_secret_arn
@@ -138,10 +139,10 @@ module "etl" {
     db_instance_name                   = module.etl-db.db_instance_name
   }
   networking = {
-    etl_subnet_ids            = module.networking.etl_subnet_ids
+    private_subnet_ids        = module.networking.private_subnet_ids
+    public_subnet_ids         = module.networking.public_subnet_ids
     etl_security_group_id     = module.networking.etl_security_group_id
     etl_alb_security_group_id = module.networking.etl_alb_security_group_id
-    public_subnet_ids         = module.networking.public_subnet_ids
     vpc_id                    = module.networking.vpc_id
   }
 }

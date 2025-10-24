@@ -131,6 +131,7 @@ module "etl" {
 
   account_name   = local.account_name
   dagster_image  = var.dagster_image
+  fhir_api_migration_image = var.migration_image
   ecs_cluster_id = module.ecs.cluster_id
   db = {
     db_instance_master_user_secret_arn = module.etl-db.db_instance_master_user_secret_arn
