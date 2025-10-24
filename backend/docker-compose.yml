@@ -38,12 +38,12 @@ services:
       FLYWAY_URL: jdbc:postgresql://${NPD_DB_HOST:-db}:5432/${NPD_DB_NAME:-npd_development}
       FLYWAY_USER: ${NPD_DB_USER:-postgres}
       FLYWAY_PASSWORD: ${NPD_DB_PASSWORD:-postgres}
-      FLYWAY_SCHEMA: ${NPD_DB_SCHEMA:-npd}
+      FLYWAY_PLACEHOLDERS_apiSchema: ${NPD_DB_SCHEMA:-npd}
     volumes:
       - '../flyway/sql:/flyway/sql'
     depends_on:
       - db
-    command: migrate -environment=development -placeholders.apiSchema=${NPD_DB_SCHEMA:-npd}
+    command: migrate -environment=development
 
   django-web:
     build: .

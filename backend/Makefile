@@ -42,7 +42,7 @@ migrate:
 	@echo "Migrating the development database..."
 	@docker compose up -d db
 # run all flyway migrations for the development environment
-	@docker compose run --rm db-migrations migrate -placeholders.apiSchema=$$FLYWAY_SCHEMA
+	@docker compose run --rm db-migrations migrate
 
 setup: build create-db migrate
 # pass
@@ -62,7 +62,7 @@ test-setup:
 # drop, create, and migrate test database
 	@docker compose -f compose.test.yml exec db sh -c 'echo "DROP   $$POSTGRES_DB"; PGPASSWORD=$$POSTGRES_PASSWORD psql -q -h localhost -U "$$POSTGRES_USER" -d postgres -c "DROP DATABASE IF EXISTS $$POSTGRES_DB"'
 	@docker compose -f compose.test.yml exec db sh -c 'echo "CREATE $$POSTGRES_DB"; PGPASSWORD=$$POSTGRES_PASSWORD psql -q -h localhost -U "$$POSTGRES_USER" -d postgres -c "CREATE DATABASE $$POSTGRES_DB"'
-	@docker compose -f compose.test.yml run --rm db-migrations migrate -placeholders.apiSchema=$$FLYWAY_SCHEMA
+	@docker compose -f compose.test.yml run --rm db-migrations migrate
 
 test: test-setup
 	@echo "Running backend tests..."
@@ -73,4 +73,3 @@ clean:
 	@find . -type d -name "__pycache__" -exec rm -rf {} +
 	@rm -rf artifacts/
 	@echo "Cleanup done."
-
