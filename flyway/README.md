@@ -39,14 +39,17 @@ Flyway keeps track of what migrations have been performed by updating a migratio
 For local development, Flyway will check to see if any migrations need to be performed (updating the database accordingly) 
 on `docker compose up`.
 
-## Inserts
+## Reference_Data
 
-This directory contains repeatable migrations that add fixture data. These are also implemented valid SQL statements.
+This directory contains repeatable migrations that add reference fixture data. These are also implemented valid SQL statements.
 Repeatable migrations have a different naming scheme:
 
 ```bash
 R__<describe-the-sample-data>.sql
 ```
+
+## Local_Dev
+Repeatable migrations are provided to load sample data and test data for local development. These hould not be run against production systems.
 
 ## Reference
 
