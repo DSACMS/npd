@@ -159,6 +159,10 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
       ],
       secrets = [
         {
+          name      = "FLYWAY_PLACEHOLDERS_apiSchema"
+          value     = "npd_gold"
+        },
+        {
           name      = "FLYWAY_USER"
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
         },

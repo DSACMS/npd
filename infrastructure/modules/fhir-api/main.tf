@@ -127,6 +127,10 @@ resource "aws_ecs_task_definition" "app" {
       ],
       secrets = [
         {
+          name      = "FLYWAY_PLACEHOLDERS_apiSchema"
+          value     = var.db.db_instance_name
+        },
+        {
           name      = "FLYWAY_USER"
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
         },
