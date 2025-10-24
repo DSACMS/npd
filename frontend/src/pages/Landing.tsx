@@ -1,7 +1,4 @@
-import Header from "../components/Header"
-
-import { Badge, Button, SkipNav } from "@cmsgov/design-system"
-import { Footer } from "../components/Footer"
+import { Badge, Button } from "@cmsgov/design-system"
 
 import { useTranslation } from "react-i18next"
 import styles from "./Landing.module.css"
@@ -11,9 +8,7 @@ export const Landing = () => {
 
   return (
     <>
-      <SkipNav href="#main-content" />
-      <Header />
-      <section id="main-content" className={styles.hero}>
+      <section className={styles.hero}>
         <div className="ds-l-container">
           <div className={styles.heroSpacing}></div>
           <div className={styles.heroBody}>
@@ -29,9 +24,6 @@ export const Landing = () => {
                 <div className={styles.primaryActions}>
                   <Button variation="solid" href="/developers">
                     {t("landing.links.developers")}
-                  </Button>
-                  <Button variation="solid" href="/providers">
-                    {t("landing.links.providers")}
                   </Button>
                 </div>
               </div>
@@ -56,7 +48,6 @@ export const Landing = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   )
 }
