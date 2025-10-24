@@ -160,8 +160,9 @@ class BasicViewsTestCase(APITestCase):
     def test_health_view(self):
         url = reverse("healthCheck")  # maps to "/healthCheck"
         response = self.client.get(url)
+        res_obj = response.json()
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.content.decode(), "healthy")
+        self.assertEqual(res_obj['status'], "healthy")
 
 
 class OrganizationViewSetTestCase(APITestCase):
