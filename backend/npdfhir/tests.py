@@ -1,8 +1,14 @@
 from django.db import connection
+from django.test import TestCase
 from django.test.runner import DiscoverRunner
 from django.urls import reverse
 from fhir.resources.R4B.bundle import Bundle
 from pydantic import ValidationError
+from .models import Nucc, C80PracticeCodes
+from .validators import NPDValueSet, NPDPractitioner
+from fhir.resources.valueset import ValueSet
+from fhir.resources.practitioner import Practitioner
+
 from rest_framework import status
 from rest_framework.test import APIClient, APITestCase
 
@@ -394,6 +400,184 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['id'], id)
 
+class NPDValueSetValidatorTests(TestCase):
+
+    def test_verify_codes_valid(self):
+        """ Should pass when all codes exist in the DB."""
+
+        data = {
+            "resourceType" : "ValueSet",
+            "id" : "FHIR-version",
+            "meta" : {
+                "lastUpdated" : "2025-10-16T16:45:52.699+00:00",
+                "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+            },
+            "text" : {
+                "status" : "generated",
+                "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet FHIR-version</b></p><a name=\"FHIR-version\"> </a><a name=\"hcFHIR-version\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"codesystem-FHIR-version.html\"><code>http://hl7.org/fhir/FHIR-version</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\">&#x1F4E6;6.0.0-ballot3</span></li></ul></div>"
+            },
+            "extension" : [{
+                "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+                "valueCode" : "fhir"
+            },
+            {
+                "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+                "valueCode" : "normative"
+            },
+            {
+                "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+                "valueCode" : "4.0.0"
+            },
+            {
+                "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+                "valueInteger" : 5
+            }],
+            "url" : "http://hl7.org/fhir/ValueSet/FHIR-version",
+            "identifier" : [{
+                "system" : "urn:ietf:rfc:3986",
+                "value" : "urn:oid:2.16.840.1.113883.4.642.3.1309"
+            }],
+            "version" : "6.0.0-ballot3",
+            "name" : "FHIRVersion",
+            "title" : "FHIRVersion",
+            "status" : "active",
+            "experimental" : False,
+            "date" : "2025-10-16T16:45:52+00:00",
+            "publisher" : "HL7 International / FHIR Infrastructure",
+            "contact" : [{
+                "telecom" : [{
+                "system" : "url",
+                "value" : "http://www.hl7.org/Special/committees/fiwg"
+                }]
+            }],
+            "description" : "All published FHIR Versions.",
+            "jurisdiction" : [{
+                "coding" : [{
+                "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+                "code" : "001",
+                "display" : "World"
+                }]
+            }],
+            "immutable" : True,
+            "compose": {
+                "include": [
+                    {
+                        "system": "http://nucc.org/provider-taxonomy",
+                        "concept": [{"code": "101Y00000X"}],
+                    },
+                    {
+                        "system": "http://snomed.info/sct",
+                        "concept": [{"code": "419772000"}],
+                    },
+                ]
+            },
+        }
+
+        model = NPDValueSet(**data)
+
+        self.assertIsInstance(model, ValueSet)
+
+    def test_verify_codes_invalid(self):
+        """ Should raise ValueError when a code is not found."""
+        data = {
+            "resourceType": "ValueSet",
+            "compose": {
+                "include": [
+                    {
+                        "system": "http://nucc.org/provider-taxonomy",
+                        "concept": [{"code": "BAD_CODE"}],
+                    }
+                ]
+            },
+        }
+
+        with self.assertRaises(ValidationError) as ctx:
+            NPDValueSet(**data)
+
+class NPDPractitionerValidatorTests(TestCase):
+    def test_valid_npi(self):
+        """Practitioner passes validation with a valid NPI."""
+
+        data = {
+            "resourceType": "Practitioner",
+            "id": "f203",
+            "identifier": [
+                {
+                    "system": "http://hl7.org/fhir/sid/us-npi",
+                    "value": "1234567893",  # Valid per CMS Luhn check
+                },
+                {
+                "use": "official",
+                "type": {
+                    "text": "BIG-nummer"
+                },
+                "system": "https://www.bigregister.nl/",
+                "value": "12345678903"
+                }
+            ],
+            "active": True,
+            "name": [
+                {
+                "use": "official",
+                "text": "Juri van Gelder"
+                }
+            ],
+            "telecom": [
+                {
+                "system": "phone",
+                "value": "+31715269111",
+                "use": "work"
+                }
+            ],
+            "gender": "male",
+            "birthDate": "1983-04-20",
+            "address": [
+                {
+                "use": "work",
+                "line": [
+                    "Walvisbaai 3"
+                ],
+                "city": "Den helder",
+                "postalCode": "2333ZA",
+                "country": "NLD"
+                }
+            ]
+            }
+
+        model = NPDPractitioner(**data)
+        self.assertIsInstance(model, Practitioner)
+
+    def test_invalid_npi_format(self):
+        """ Practitioner fails with invalid NPI format (non-numeric)."""
+        data = {
+            "resourceType": "Practitioner",
+            "identifier": [
+                {
+                    "system": "http://hl7.org/fhir/sid/us-npi",
+                    "value": "ABC123",
+                }
+            ],
+        }
+
+        with self.assertRaises(ValueError) as ctx:
+            NPDPractitioner(**data)
+        self.assertIn("invalid format", str(ctx.exception))
+
+    def test_invalid_npi_luhn(self):
+        """ Practitioner fails with invalid NPI checksum."""
+        data = {
+            "resourceType": "Practitioner",
+            "identifier": [
+                {
+                    "system": "http://hl7.org/fhir/sid/us-npi",
+                    "value": "1234567890",  # wrong check digit
+                }
+            ],
+        }
+
+        with self.assertRaises(ValueError) as ctx:
+            NPDPractitioner(**data)
+        self.assertIn("failed Luhn check", str(ctx.exception))
 
 class PractitionerRoleViewSetTestCase(APITestCase):
     def setUp(self):
