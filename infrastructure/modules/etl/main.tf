@@ -150,7 +150,7 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
       name      = "${var.account_name}-fhir-api-migration"
       image     = var.fhir_api_migration_image
       essential = false
-      command   = [ "migrate", "-locations=filesystem:/sql/migrations" ]
+      command   = [ "migrate", "-locations=filesystem:/sql/migrations,filesystem:/sql/reference_data" ]
       environment = [
         {
           name  = "FLYWAY_URL"
