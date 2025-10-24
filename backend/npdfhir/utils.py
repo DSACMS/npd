@@ -1,5 +1,7 @@
 from fhir.resources.R4B.address import Address
-
+from fhir.resources.R4B.reference import Reference
+from rest_framework.test import APIClient
+from django.urls import reverse
 
 def SmartyStreetstoFHIR(address):
     addressLine1 = f"{address.address_us.primary_number} {address.address_us.street_predirection} {address.address_us.street_name} {address.address_us.postdirection} {address.address_us.street_suffix}"
@@ -10,3 +12,16 @@ def SmartyStreetstoFHIR(address):
         line=[addressLine1, addressLine2, addressLine3, cityStateZip],
         use=address.address_type.value
     )
+
+def get_schema_data(url_name, additional_args=None):
+    client = APIClient()
+    schema_url = reverse(url_name, kwargs=additional_args)
+    response = client.get(schema_url)
+    return response.data
+
+def genReference(url_name, identifier, request):
+    reference = request.build_absolute_uri(
+        reverse(url_name, kwargs={'pk': identifier}))
+    reference = Reference(
+        reference=reference)
+    return reference
