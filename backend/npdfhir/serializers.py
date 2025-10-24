@@ -26,6 +26,7 @@ from fhir.resources.R4B.capabilitystatement import (
 )
 from datetime import datetime, timezone
 from rest_framework import serializers
+from rest_framework.test import APIClient
 
 from .models import (
     IndividualToPhone,
@@ -51,6 +52,13 @@ def genReference(url_name, identifier, request):
     reference = Reference(
         reference=reference)
     return reference
+
+
+def getInternalEndpoint(url_name, additonal_args=None):
+    client = APIClient()
+    swagger_url = reverse(url_name, kwargs=additonal_args)
+    response = client.get(swagger_url)
+    return response.data
 
 
 class AddressSerializer(serializers.Serializer):
@@ -562,6 +570,8 @@ class CapabilityStatementSerializer(serializers.Serializer):
     """
     Serializer for FHIR CapablityStatement resource
     """
+    schemaData = getInternalEndpoint('schema-json', {'format': '.json'})
+
     def to_representation(self, instance):
         request = self.context.get('request')
         baseURL = request.build_absolute_uri('/fhir')
@@ -588,7 +598,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
             description="This CapabilityStatement describes the capabilities of the National Provider Directory FHIR API, including supported resources, search parameters, and operations.",
             kind="instance",
             implementation=CapabilityStatementImplementation(
-                description="This implementation serves as a read-only Beta version for the National Provider Directory, exposing information about healthcare providers and organizations that provide healthcare services within the United States via a FHIR API that follows the NDH Implementation Guide.",
+                description=self.schemaData.info.description,
                 url=baseURL
             ),
             fhirVersion="4.0.1",
