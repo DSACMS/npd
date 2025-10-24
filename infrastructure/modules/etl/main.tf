@@ -18,6 +18,11 @@ resource "aws_cloudwatch_log_group" "dagster_daemon_log_group" {
   retention_in_days = 30
 }
 
+resource "aws_cloudwatch_log_group" "etl_db_migration_log_group" {
+  name              = "/ecs/${var.account_name}-etl-db-migration-logs"
+  retention_in_days = 30
+}
+
 # ECS Roles and Policies
 
 resource "aws_iam_role" "dagster_execution_role" {
@@ -135,6 +140,42 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
   execution_role_arn       = aws_iam_role.dagster_execution_role.arn
 
   container_definitions = jsonencode([
+        # In the past, I've put the migration container in a separate task and invoked it manually to avoid the case
+    # where we have (for example) 4 API containers and 4 flyway containers and the 4 flyway containers all try to update
+    # the database at once. Flyway looks like it uses a Postgres advisory lock to solve this
+    # (https://documentation.red-gate.com/fd/flyway-postgresql-transactional-lock-setting-277579114.html).
+    # If we have problems, we can pull this container definition into it's own task and schedule it to run before new
+    # API containers are deployed
+    {
+      name      = "${var.account_name}-fhir-api-migration"
+      image     = var.fhir_api_migration_image
+      essential = false
+      command   = [ "migrate", "-locations=filesystem:/sql/migrations" ]
+      environment = [
+        {
+          name  = "FLYWAY_URL"
+          value = "jdbc:postgresql://${var.db.db_instance_address}:${var.db.db_instance_port}/${var.db.db_instance_name}"
+        }
+      ],
+      secrets = [
+        {
+          name      = "FLYWAY_USER"
+          valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
+        },
+        {
+          name      = "FLYWAY_PASSWORD"
+          valueFrom = "${var.db.db_instance_master_user_secret_arn}:password::"
+        },
+      ]
+      logConfiguration = {
+        logDriver = "awslogs"
+        options = {
+          "awslogs-group"         = aws_cloudwatch_log_group.etl_db_migration_log_group
+          "awslogs-region"        = "us-east-1"
+          "awslogs-stream-prefix" = var.account_name
+        }
+      }
+    },
     {
       name      = "${var.account_name}-dagster-daemon"
       image     = var.dagster_image
