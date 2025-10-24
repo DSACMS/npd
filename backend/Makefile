@@ -32,6 +32,11 @@ help:
 build:
 	@docker compose build
 
+drop-db:
+	@echo "Dropping development database..."
+	@docker compose up -d db
+	@docker compose run --rm db sh -c 'echo "dropping $$POSTGRES_DB"; PGPASSWORD=$$POSTGRES_PASSWORD psql -h db -U $$POSTGRES_USER -d postgres -c "DROP DATABASE IF EXISTS $$POSTGRES_DB" || echo "failed to drop $$POSTGRES_DB"'
+
 create-db:
 	@echo "Creating development database..."
 	@docker compose up -d db
@@ -42,7 +47,7 @@ migrate:
 	@echo "Migrating the development database..."
 	@docker compose up -d db
 # run all flyway migrations for the development environment
-	@docker compose run --rm db-migrations migrate 
+	@docker compose run --rm db-migrations migrate
 
 setup: build create-db migrate
 # pass
