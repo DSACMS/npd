@@ -26,7 +26,7 @@ from fhir.resources.R4B.capabilitystatement import (
 )
 from datetime import datetime, timezone
 from rest_framework import serializers
-from rest_framework.test import APIClient
+from .utils import getInternalEndpoint, genReference
 
 from .models import (
     IndividualToPhone,
@@ -44,21 +44,6 @@ if 'runserver' or 'test' in sys.argv:
         nucc_taxonomy_codes,
         other_identifier_type,
     )
-
-
-def genReference(url_name, identifier, request):
-    reference = request.build_absolute_uri(
-        reverse(url_name, kwargs={'pk': identifier}))
-    reference = Reference(
-        reference=reference)
-    return reference
-
-
-def getInternalEndpoint(url_name, additonal_args=None):
-    client = APIClient()
-    swagger_url = reverse(url_name, kwargs=additonal_args)
-    response = client.get(swagger_url)
-    return response.data
 
 
 class AddressSerializer(serializers.Serializer):
@@ -570,12 +555,11 @@ class CapabilityStatementSerializer(serializers.Serializer):
     """
     Serializer for FHIR CapablityStatement resource
     """
-    schemaData = getInternalEndpoint('schema-json', {'format': '.json'})
-
     def to_representation(self, instance):
         request = self.context.get('request')
         baseURL = request.build_absolute_uri('/fhir')
         metadataURL = request.build_absolute_uri(reverse('fhir-metadata'))
+        schemaData = getInternalEndpoint('schema-json', {'format': '.json'})
 
         capability_statement = CapabilityStatement(
             url=metadataURL,
@@ -598,7 +582,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
             description="This CapabilityStatement describes the capabilities of the National Provider Directory FHIR API, including supported resources, search parameters, and operations.",
             kind="instance",
             implementation=CapabilityStatementImplementation(
-                description=self.schemaData.info.description,
+                description=schemaData.info.description,
                 url=baseURL
             ),
             fhirVersion="4.0.1",
@@ -612,147 +596,79 @@ class CapabilityStatementSerializer(serializers.Serializer):
         """
         Building out each REST component describing our endpoint capabilities
         """
+        schemaData = getInternalEndpoint('schema-json', {'format': '.json'})
+
         return CapabilityStatementRest(
             mode="server",
             documentation="All FHIR endpoints for the National Provider Directory",
             resource=[
-                self.build_practitioner_resource(),
-                self.build_organization_resource(),
-                self.build_endpoint_resource()
+                self.build_practitioner_resource(schemaData.paths["/Practitioner/"]),
+                self.build_organization_resource(schemaData.paths["/Organization/"]),
+                self.build_endpoint_resource(schemaData.paths["/Endpoint/"])
             ]
         )
     
-    def build_practitioner_resource(self):
+    def build_practitioner_resource(self, schemaData):
+        searchParams = []
+
+        for param in schemaData["get"]["parameters"]:
+            searchParams.append(
+                CapabilityStatementRestResourceSearchParam(
+                    name=param["name"],
+                    type=param["type"],
+                    documentation=param["description"]
+                )
+            )
+            
         return CapabilityStatementRestResource(
             type="Practitioner",
             interaction=[
                 {"code": "read"},
                 {"code": "search-type"}
             ],
-            searchParam=[
-                CapabilityStatementRestResourceSearchParam(
-                    name="name",
-                    type="string",
-                    documentation="Search by practitioner name (first, middle, or last)"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="gender",
-                    type="token",
-                    documentation="Search by gender"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="practitioner_type",
-                    type="string",
-                    documentation="Search by practitioner type/taxonomy"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address",
-                    type="string",
-                    documentation="Search by any part of the address"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address-city",
-                    type="string",
-                    documentation="Search by city"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address-state",
-                    type="string",
-                    documentation="Search by state (2-letter abbreviation)"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address-postalcode",
-                    type="string",
-                    documentation="Search by postal/zip code"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address-use",
-                    type="token",
-                    documentation="Search by address use (home, work, temp, old, billing)"
-                )
-            ]
+            searchParam=searchParams
         )
-    
-    def build_organization_resource(self):
+
+    def build_organization_resource(self, schemaData):
+        searchParams = []
+
+        for param in schemaData["get"]["parameters"]:
+            searchParams.append(
+                CapabilityStatementRestResourceSearchParam(
+                    name=param["name"],
+                    type=param["type"],
+                    documentation=param["description"]
+                )
+            )
+
         return CapabilityStatementRestResource(
             type="Organization",
             interaction=[
                 {"code": "read"},
                 {"code": "search-type"}
             ],
-            searchParam=[
-                CapabilityStatementRestResourceSearchParam(
-                    name="name",
-                    type="string",
-                    documentation="Search by organization name"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="organization_type",
-                    type="string",
-                    documentation="Search by organization type/taxonomy"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address",
-                    type="string",
-                    documentation="Search by any part of the address"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address-city",
-                    type="string",
-                    documentation="Search by city"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address-state",
-                    type="string",
-                    documentation="Search by state (2-letter abbreviation)"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address-postalcode",
-                    type="string",
-                    documentation="Search by postal/zip code"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="address-use",
-                    type="token",
-                    documentation="Search by address use (home, work, temp, old, billing)"
-                )
-            ]
+            searchParam=searchParams
         )
     
-    def build_endpoint_resource(self):
+    def build_endpoint_resource(self, schemaData):
+        searchParams = []
+
+        for param in schemaData["get"]["parameters"]:
+            searchParams.append(
+                CapabilityStatementRestResourceSearchParam(
+                    name=param["name"],
+                    type=param["type"],
+                    documentation=param["description"]
+                )
+            )
+
         return CapabilityStatementRestResource(
             type="Endpoint",
             interaction=[
                 {"code": "read"},
                 {"code": "search-type"}
             ],
-            searchParam=[
-                CapabilityStatementRestResourceSearchParam(
-                    name="name",
-                    type="string",
-                    documentation="Search by endpoint name"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="connection_type",
-                    type="token",
-                    documentation="Search by connection type"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="payload_type",
-                    type="token",
-                    documentation="Search by payload type"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="status",
-                    type="token",
-                    documentation="Search by endpoint status"
-                ),
-                CapabilityStatementRestResourceSearchParam(
-                    name="organization",
-                    type="reference",
-                    documentation="Search by managing organization"
-                )
-            ]
+            searchParam=searchParams
         )
 
 
