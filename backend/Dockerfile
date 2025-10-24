@@ -30,6 +30,7 @@ FROM python:3.13-slim
 RUN useradd -m -r appuser && \
    mkdir /app && \
    chown -R appuser /app
+
  
 # Copy the Python dependencies from the builder stage
 COPY --from=builder /usr/local/lib/python3.13/site-packages/ /usr/local/lib/python3.13/site-packages/
