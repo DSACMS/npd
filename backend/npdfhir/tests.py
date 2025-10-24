@@ -2,6 +2,7 @@ from django.db import connection
 from django.test.runner import DiscoverRunner
 from django.urls import reverse
 from fhir.resources.R4B.bundle import Bundle
+from fhir.resources.R4B.capabilitystatement import CapabilityStatement
 from pydantic import ValidationError
 from rest_framework import status
 from rest_framework.test import APIClient, APITestCase
@@ -469,3 +470,36 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['id'], id)
+
+
+class CapabilityStatementViewSetTestCase(APITestCase):
+    def setUp(self):
+        self.client = APIClient()
+        self.url = reverse("fhir-metadata")
+
+    def test_capability_statement_returns_200(self):
+        response = self.client.get(self.url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_capability_statement_returns_correct_content_type(self):
+        response = self.client.get(self.url)
+        self.assertEqual(response["Content-Type"], "application/fhir+json")
+
+    def test_capability_statement_has_resource_type(self):
+        response = self.client.get(self.url)
+        self.assertEqual(response.data["resourceType"], "CapabilityStatement")
+
+    def test_capability_statement_has_required_fields(self):
+        response = self.client.get(self.url)
+        data = response.data
+        
+        self.assertIn("status", data)
+        self.assertIn("fhirVersion", data)
+        self.assertIn("format", data)
+        self.assertIn("rest", data)
+
+    def test_capability_statement_is_valid_fhir(self):
+        response = self.client.get(self.url)
+
+        capability_statement = CapabilityStatement.model_validate(response.data)
+        self.assertEqual(capability_statement.__resource_type__, "CapabilityStatement")

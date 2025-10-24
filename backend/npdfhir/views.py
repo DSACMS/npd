@@ -9,6 +9,7 @@ from django.utils.html import escape
 from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework import generics, viewsets
+from rest_framework.views import APIView
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.renderers import BrowsableAPIRenderer
 from rest_framework.response import Response
@@ -29,6 +30,7 @@ from .serializers import (
     OrganizationSerializer,
     PractitionerRoleSerializer,
     PractitionerSerializer,
+    CapabilityStatementSerializer
 )
 
 default_page_size = 10
@@ -750,3 +752,22 @@ class FHIRLocationViewSet(viewsets.ViewSet):
         response = Response(serialized_location.data)
 
         return response
+
+class FHIRCapabilityStatementView(APIView):
+    """
+    ViewSet for FHIR Practitioner resources
+    """
+    renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+
+    @swagger_auto_schema(
+        responses={200: "Successful response",
+                   404: "Error: The requested CapabilityStatement resource cannot be found."}
+    )
+    def get(self, request):
+        """
+        Return a list of all CapabilityStatement as FHIR CapabilityStatement resources
+        """
+        serializer = CapabilityStatementSerializer(context={"request": request})
+        response = serializer.to_representation(None)
+
+        return Response(response)
