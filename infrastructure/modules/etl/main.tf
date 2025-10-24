@@ -173,8 +173,8 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
         {
           name      = "FLYWAY_PASSWORD"
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:password::"
-        },
-      ]
+        }
+      ],
       logConfiguration = {
         logDriver = "awslogs"
         options = {
@@ -307,7 +307,7 @@ resource "aws_ecs_service" "dagster-ui" {
 
 resource "aws_lb" "dagster_ui_alb" {
   name               = "${var.account_name}-dagster-ui-alb"
-  internal           = false # TODO I don't know what this means
+  internal           = true
   load_balancer_type = "application"
   security_groups    = [var.networking.etl_alb_security_group_id]
   subnets            = var.networking.public_subnet_ids
