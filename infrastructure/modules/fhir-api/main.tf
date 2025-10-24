@@ -123,13 +123,13 @@ resource "aws_ecs_task_definition" "app" {
         {
           name  = "FLYWAY_URL"
           value = "jdbc:postgresql://${var.db.db_instance_address}:${var.db.db_instance_port}/${var.db.db_instance_name}"
-        }
-      ],
-      secrets = [
+        },
         {
           name      = "FLYWAY_PLACEHOLDERS_apiSchema"
           value     = var.db.db_instance_name
         },
+      ],
+      secrets = [
         {
           name      = "FLYWAY_USER"
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
