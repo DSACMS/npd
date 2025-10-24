@@ -1,6 +1,7 @@
 import sys
 
 from django.urls import reverse
+from drf_yasg import openapi
 from fhir.resources.R4B.address import Address
 from fhir.resources.R4B.bundle import Bundle
 from fhir.resources.R4B.codeableconcept import CodeableConcept
@@ -25,6 +26,7 @@ from .models import (
     Organization,
     OrganizationToName,
     ProviderToOrganization,
+    PayloadType,
 )
 
 if 'runserver' or 'test' in sys.argv:
@@ -250,9 +252,40 @@ class OrganizationNameSerializer(serializers.Serializer):
         fields = ['name', 'is_primary']
 
 
+def genCodingSchema(coded_obj):
+    schema = openapi.Schema(
+        title=f'{coded_obj} coding',
+        type=openapi.TYPE_OBJECT,
+        properties={
+            'system': openapi.Schema(
+                title=f'Value set used for {coded_obj} values',
+                type=openapi.TYPE_STRING
+            ),
+            'code': openapi.Schema(
+                title=f'{coded_obj} code'.capitalize(),
+                type=openapi.TYPE_STRING,
+                enum=PayloadType.objects.values_list('id')
+            ),
+            'display': openapi.Schema(
+                title=f'{coded_obj} display value'.capitalize(),
+                type=openapi.TYPE_STRING
+            )
+        }
+    )
+    return schema
+
+
 class EndpointPayloadSeriazlier(serializers.Serializer):
     class Meta:
         fields = ['type', 'mime_type']
+        swagger_schema_fields = {
+            "type": openapi.TYPE_OBJECT,
+            "title": "Endpoint payload",
+            "description": "The type of content that may be used at this endpoint (e.g. XDS Discharge summaries)",
+            # "properties": {
+            #    "coding": genCodingSchema('payload type')
+            # }
+        }
 
     def to_representation(self, instance):
         payload_type = CodeableConcept(
@@ -269,6 +302,20 @@ class EndpointPayloadSeriazlier(serializers.Serializer):
 class EndpointIdentifierSerialzier(serializers.Serializer):
     class Meta:
         fields = ['identifier', 'system', 'value', 'assigner']
+        swagger_schema_fields = {
+            "type": openapi.TYPE_OBJECT,
+            "title": "Endpoint identifier",
+            "properties": {
+                "type": openapi.Schema(
+                    title="Endpoint payload type",
+                    type=openapi.TYPE_STRING,
+                    enum=list(PayloadType.objects.values_list('value'))),
+                "mime_type": openapi.Schema(
+                    title="Endpoint payload mime type",
+                    type=openapi.TYPE_STRING,
+                ),
+            }
+        }
 
     def to_representation(self, instance):
         endpoint_identifier = Identifier(

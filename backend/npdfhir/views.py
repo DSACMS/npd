@@ -44,6 +44,16 @@ page_size_param = openapi.Parameter(
 )
 
 
+class SelfDocumentingViewSet(viewsets.ViewSet):
+    def generateSchema(self, method):
+        schema = openapi.Schema(
+            title=self.__name__,
+            description=self.method.__doc__,
+            type=openapi.TYPE_OBJECT
+        )
+        return schema
+
+
 def createFilterParam(field: str, display: str = None, enum: list = None):
     if display is None:
         display = field.replace('_', ' ').replace('.', ' ')
@@ -78,7 +88,7 @@ def health(request):
     return HttpResponse("healthy")
 
 
-class FHIREndpointViewSet(viewsets.ViewSet):
+class FHIREndpointViewSet(SelfDocumentingViewSet):
     """
     ViewSet for FHIR Endpoint Resources
     """
@@ -93,7 +103,7 @@ class FHIREndpointViewSet(viewsets.ViewSet):
             createFilterParam('status'),
             createFilterParam('organization')
         ],
-        responses={200: "Successful response",
+        responses={200: openapi.Response('Endpoint Response', EndpointSerializer),
                    404: "Error: The requested Endpoint resource cannot be found."}
     )
     def list(self, request):
