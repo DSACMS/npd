@@ -22,7 +22,10 @@ schema_view = get_schema_view(
 
 
 urlpatterns = [
-    path("docs.<format>/", schema_view.without_ui(cache_timeout=0), name="schema-json"),
+    path("docs<format>", schema_view.without_ui(cache_timeout=0),
+         name="schema-json"),
+    re_path("docs/redoc/?", schema_view.with_ui("redoc",
+            cache_timeout=0), name="schema-redoc-ui"),
     re_path("docs/?", schema_view.with_ui("swagger",
             cache_timeout=0), name="schema-swagger-ui"),
     path("healthCheck", views.health, name="healthCheck"),

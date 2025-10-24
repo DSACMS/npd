@@ -28,6 +28,33 @@ def get_female_npis(npi_list):
     return results
 
 
+class DocumentationViewSetTestCase(APITestCase):
+    def setUp(self):
+        self.client = APIClient()
+
+    def test_get_swagger_docs(self):
+        swagger_url = reverse("schema-swagger-ui")
+        response = self.client.get(swagger_url)
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn('id="swagger-ui"', response.text)
+
+    def test_get_redoc_docs(self):
+        redoc_url = reverse("schema-redoc-ui")
+        response = self.client.get(redoc_url)
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn('id="redoc-placeholder"', response.text)
+
+    def test_get_json_docs(self):
+        json_docs_url = reverse("schema-json", kwargs={'format': 'json'})
+        response = self.client.get(json_docs_url)
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("application/json", response["Content-Type"])
+        self.assertIn("swagger", response.data.keys())
+
+
 class EndpointViewSetTestCase(APITestCase):
     def setUp(self):
         self.client = APIClient()
