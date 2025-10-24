@@ -176,7 +176,7 @@ resource "aws_ecs_service" "dagster_daemon" {
   enable_execute_command = true
 
   network_configuration {
-    subnets         = var.networking.etl_subnet_ids
+    subnets         = var.networking.private_subnet_ids
     security_groups = [var.networking.etl_security_group_id]
   }
 
@@ -243,7 +243,7 @@ resource "aws_ecs_service" "dagster-ui" {
   enable_execute_command = true
 
   network_configuration {
-    subnets         = var.networking.etl_subnet_ids
+    subnets         = var.networking.private_subnet_ids
     security_groups = [var.networking.etl_security_group_id]
   }
 

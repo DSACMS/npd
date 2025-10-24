@@ -139,7 +139,7 @@ module "etl" {
     db_instance_name                   = module.etl-db.db_instance_name
   }
   networking = {
-    etl_subnet_ids            = module.networking.private_subnet_ids
+    private_subnet_ids        = module.networking.private_subnet_ids
     public_subnet_ids         = module.networking.public_subnet_ids
     etl_alb_security_group_id = module.networking.etl_alb_security_group_id
     etl_security_group_id     = module.networking.etl_security_group_id
