@@ -12,10 +12,10 @@ def SmartyStreetstoFHIR(address):
         use=address.address_type.value
     )
 
-def getInternalEndpoint(url_name, additonal_args=None):
+def get_schema_data(url_name, additional_args=None):
     client = APIClient()
-    swagger_url = reverse(url_name, kwargs=additonal_args)
-    response = client.get(swagger_url)
+    schema_url = reverse(url_name, kwargs=additional_args)
+    response = client.get(schema_url)
     return response.data
 
 def genReference(url_name, identifier, request):

@@ -26,7 +26,7 @@ from fhir.resources.R4B.capabilitystatement import (
 )
 from datetime import datetime, timezone
 from rest_framework import serializers
-from .utils import getInternalEndpoint, genReference
+from .utils import get_schema_data, genReference
 
 from .models import (
     IndividualToPhone,
@@ -559,13 +559,13 @@ class CapabilityStatementSerializer(serializers.Serializer):
         request = self.context.get('request')
         baseURL = request.build_absolute_uri('/fhir')
         metadataURL = request.build_absolute_uri(reverse('fhir-metadata'))
-        schemaData = getInternalEndpoint('schema-json', {'format': '.json'})
+        schemaData = get_schema_data('schema-json', {'format': '.json'})
 
         capability_statement = CapabilityStatement(
             url=metadataURL,
-            version="0.1.0",
+            version=schemaData.info.version,
             name="FHIRCapablityStatement",
-            title="National Provider Directory FHIR Capablity Statement",
+            title=f"{schemaData.info.title} -  FHIR Capablity Statement",
             status="active",
             date=datetime.now(timezone.utc),
             publisher="CMS",
@@ -587,28 +587,37 @@ class CapabilityStatementSerializer(serializers.Serializer):
             ),
             fhirVersion="4.0.1",
             format=["fhir+json"],
-            rest=[self.build_rest_components()]
+            rest=[self.build_rest_components(schemaData)]
         )
 
         return capability_statement.model_dump()
     
-    def build_rest_components(self):
+    def build_rest_components(self, schemaData):
         """
         Building out each REST component describing our endpoint capabilities
         """
-        schemaData = getInternalEndpoint('schema-json', {'format': '.json'})
+        resources = {
+            "Practitioner": "/Practitioner/",
+            "Organization": "/Organization/",
+            "Endpoint": "/Endpoint/",
+            "Location": "/Location/",
+            "PractitionerRole": "/PractitionerRole/"
+        }
+
+        resource_capabilities = []
+        for resource_type, path in resources.items():
+            if path in schemaData.paths:
+                resource_capabilities.append(
+                    self.build_resource_capabilities(resource_type, schemaData.paths[path])
+                )
 
         return CapabilityStatementRest(
             mode="server",
             documentation="All FHIR endpoints for the National Provider Directory",
-            resource=[
-                self.build_practitioner_resource(schemaData.paths["/Practitioner/"]),
-                self.build_organization_resource(schemaData.paths["/Organization/"]),
-                self.build_endpoint_resource(schemaData.paths["/Endpoint/"])
-            ]
+            resource=resource_capabilities
         )
     
-    def build_practitioner_resource(self, schemaData):
+    def build_resource_capabilities(self, resource_type, schemaData):
         searchParams = []
 
         for param in schemaData["get"]["parameters"]:
@@ -621,49 +630,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
             )
             
         return CapabilityStatementRestResource(
-            type="Practitioner",
-            interaction=[
-                {"code": "read"},
-                {"code": "search-type"}
-            ],
-            searchParam=searchParams
-        )
-
-    def build_organization_resource(self, schemaData):
-        searchParams = []
-
-        for param in schemaData["get"]["parameters"]:
-            searchParams.append(
-                CapabilityStatementRestResourceSearchParam(
-                    name=param["name"],
-                    type=param["type"],
-                    documentation=param["description"]
-                )
-            )
-
-        return CapabilityStatementRestResource(
-            type="Organization",
-            interaction=[
-                {"code": "read"},
-                {"code": "search-type"}
-            ],
-            searchParam=searchParams
-        )
-    
-    def build_endpoint_resource(self, schemaData):
-        searchParams = []
-
-        for param in schemaData["get"]["parameters"]:
-            searchParams.append(
-                CapabilityStatementRestResourceSearchParam(
-                    name=param["name"],
-                    type=param["type"],
-                    documentation=param["description"]
-                )
-            )
-
-        return CapabilityStatementRestResource(
-            type="Endpoint",
+            type=resource_type,
             interaction=[
                 {"code": "read"},
                 {"code": "search-type"}
