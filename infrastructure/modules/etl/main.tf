@@ -140,7 +140,7 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
   execution_role_arn       = aws_iam_role.dagster_execution_role.arn
 
   container_definitions = jsonencode([
-        # In the past, I've put the migration container in a separate task and invoked it manually to avoid the case
+    # In the past, I've put the migration container in a separate task and invoked it manually to avoid the case
     # where we have (for example) 4 API containers and 4 flyway containers and the 4 flyway containers all try to update
     # the database at once. Flyway looks like it uses a Postgres advisory lock to solve this
     # (https://documentation.red-gate.com/fd/flyway-postgresql-transactional-lock-setting-277579114.html).
