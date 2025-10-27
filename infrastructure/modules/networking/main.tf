@@ -1,26 +1,18 @@
 ## Subnet configuration
-data "aws_subnets" "database_subnets" {
+data "aws_subnets" "private_subnets" {
   filter {
     name = "tag:Name"
     values = [
       "${var.account_name}-private-a",
       "${var.account_name}-private-b",
-    ]
-  }
-}
-
-resource "aws_db_subnet_group" "database_subnets" {
-  name       = "${var.account_name}-database-subnets"
-  subnet_ids = data.aws_subnets.database_subnets.ids
-}
-
-data "aws_subnets" "etl_subnets" {
-  filter {
-    name = "tag:Name"
-    values = [
       "${var.account_name}-private-c"
     ]
   }
+}
+
+resource "aws_db_subnet_group" "private_subnets" {
+  name       = "${var.account_name}-private-subnets"
+  subnet_ids = data.aws_subnets.private_subnets.ids
 }
 
 data "aws_subnets" "public_subnets" {

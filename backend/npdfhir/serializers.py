@@ -10,13 +10,23 @@ from fhir.resources.R4B.endpoint import Endpoint
 from fhir.resources.R4B.humanname import HumanName
 from fhir.resources.R4B.identifier import Identifier
 from fhir.resources.R4B.location import Location as FHIRLocation
+from fhir.resources.R4B.contactdetail import ContactDetail
 from fhir.resources.R4B.meta import Meta
 from fhir.resources.R4B.organization import Organization as FHIROrganization
 from fhir.resources.R4B.period import Period
 from fhir.resources.R4B.practitioner import Practitioner, PractitionerQualification
 from fhir.resources.R4B.practitionerrole import PractitionerRole
 from fhir.resources.R4B.reference import Reference
+from fhir.resources.R4B.capabilitystatement import (
+    CapabilityStatement,
+    CapabilityStatementRest,
+    CapabilityStatementRestResource,
+    CapabilityStatementRestResourceSearchParam,
+    CapabilityStatementImplementation
+)
+from datetime import datetime, timezone
 from rest_framework import serializers
+from .utils import get_schema_data, genReference
 
 from .models import (
     IndividualToPhone,
@@ -34,14 +44,6 @@ if 'runserver' or 'test' in sys.argv:
         nucc_taxonomy_codes,
         other_identifier_type,
     )
-
-
-def genReference(url_name, identifier, request):
-    reference = request.build_absolute_uri(
-        reverse(url_name, kwargs={'pk': identifier}))
-    reference = Reference(
-        reference=reference)
-    return reference
 
 
 class AddressSerializer(serializers.Serializer):
@@ -547,6 +549,94 @@ class EndpointSerializer(serializers.Serializer):
         )
 
         return endpoint.model_dump()
+
+
+class CapabilityStatementSerializer(serializers.Serializer):
+    """
+    Serializer for FHIR CapablityStatement resource
+    """
+    def to_representation(self, instance):
+        request = self.context.get('request')
+        baseURL = request.build_absolute_uri('/fhir')
+        metadataURL = request.build_absolute_uri(reverse('fhir-metadata'))
+        schemaData = get_schema_data('schema-json', {'format': '.json'})
+
+        capability_statement = CapabilityStatement(
+            url=metadataURL,
+            version=schemaData.info.version,
+            name="FHIRCapablityStatement",
+            title=f"{schemaData.info.title} -  FHIR Capablity Statement",
+            status="active",
+            date=datetime.now(timezone.utc),
+            publisher="CMS",
+            contact=[
+                ContactDetail(
+                    telecom=[
+                        ContactPoint(
+                            system="email",
+                            value="npd@cms.hhs.gov"
+                        )
+                    ]
+                )
+            ],
+            description="This CapabilityStatement describes the capabilities of the National Provider Directory FHIR API, including supported resources, search parameters, and operations.",
+            kind="instance",
+            implementation=CapabilityStatementImplementation(
+                description=schemaData.info.description,
+                url=baseURL
+            ),
+            fhirVersion="4.0.1",
+            format=["fhir+json"],
+            rest=[self.build_rest_components(schemaData)]
+        )
+
+        return capability_statement.model_dump()
+    
+    def build_rest_components(self, schemaData):
+        """
+        Building out each REST component describing our endpoint capabilities
+        """
+        resources = {
+            "Practitioner": "/Practitioner/",
+            "Organization": "/Organization/",
+            "Endpoint": "/Endpoint/",
+            "Location": "/Location/",
+            "PractitionerRole": "/PractitionerRole/"
+        }
+
+        resource_capabilities = []
+        for resource_type, path in resources.items():
+            if path in schemaData.paths:
+                resource_capabilities.append(
+                    self.build_resource_capabilities(resource_type, schemaData.paths[path])
+                )
+
+        return CapabilityStatementRest(
+            mode="server",
+            documentation="All FHIR endpoints for the National Provider Directory",
+            resource=resource_capabilities
+        )
+    
+    def build_resource_capabilities(self, resource_type, schemaData):
+        searchParams = []
+
+        for param in schemaData["get"]["parameters"]:
+            searchParams.append(
+                CapabilityStatementRestResourceSearchParam(
+                    name=param["name"],
+                    type=param["type"],
+                    documentation=param["description"]
+                )
+            )
+            
+        return CapabilityStatementRestResource(
+            type=resource_type,
+            interaction=[
+                {"code": "read"},
+                {"code": "search-type"}
+            ],
+            searchParam=searchParams
+        )
 
 
 class BundleSerializer(serializers.Serializer):

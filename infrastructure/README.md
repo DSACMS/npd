@@ -2,7 +2,7 @@
 
 ## Infrastructure Diagram
 
-![NPD Infrastructure.drawio.png](NPD%20Infrastructure.drawio.png)
+![npd-infrastructure-diagram-prod.drawio.png](npd-infrastructure-diagram-prod.drawio.png)
 
 ## Update Cadence
 

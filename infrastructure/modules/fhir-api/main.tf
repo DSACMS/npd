@@ -123,8 +123,12 @@ resource "aws_ecs_task_definition" "app" {
         {
           name  = "FLYWAY_URL"
           value = "jdbc:postgresql://${var.db.db_instance_address}:${var.db.db_instance_port}/${var.db.db_instance_name}"
-        }
-      ],
+        },
+        {
+          name  = "FLYWAY_PLACEHOLDERS_apiSchema"
+          value = var.db.db_instance_name
+        },
+      ]
       secrets = [
         {
           name      = "FLYWAY_USER"
@@ -233,7 +237,7 @@ resource "aws_ecs_service" "app" {
   desired_count   = 1
 
   network_configuration {
-    subnets          = var.networking.db_subnet_ids
+    subnets          = var.networking.private_subnet_ids
     security_groups  = [var.networking.api_security_group_id]
     assign_public_ip = false
   }
@@ -248,7 +252,7 @@ resource "aws_ecs_service" "app" {
 # API Load Balancer Configuration
 resource "aws_lb" "fhir_api_alb" {
   name               = "${var.account_name}-fhir-api-alb"
-  internal           = false
+  internal           = var.private_load_balancer
   load_balancer_type = "application"
   security_groups    = [var.networking.alb_security_group_id]
   subnets            = var.networking.public_subnet_ids

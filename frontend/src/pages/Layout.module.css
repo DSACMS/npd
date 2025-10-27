@@ -1,0 +1,46 @@
+/* CSS classes for common page elements */
+
+.leader {
+  display: flex;
+  padding: var(--spacer-7, 3.5rem) 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacer-1, 0.5rem);
+  align-self: stretch;
+}
+
+.title {
+  color: var(--theme-color-primary-darkest, #00395e);
+
+  /* Headings/3xl/3xl - LG breakpoint */
+  font-family: var(--theme-font-family-heading, "Open Sans");
+  font-size: var(--theme-font-size-3xl, 2.25rem);
+  font-style: normal;
+  font-weight: var(--theme-font-weight-heading-3xl, 700);
+  line-height: 130%; /* 2.925rem */
+
+  /* rely on .leader gap instead */
+  margin-top: 0;
+}
+
+.subtitle {
+  color: var(--theme-color-primary-darkest, #00395e);
+
+  /* Headings/Medium - all breakpoints */
+  font-family: var(--theme-font-family-body, "Open Sans");
+  font-size: var(--theme-font-size-md, 1rem);
+  font-style: normal;
+  font-weight: var(--theme-font-weight-heading-md, 700);
+  line-height: 130%; /* 1.3rem */
+}
+
+@media (min-width: 768px) {
+  .sidebarNavContainer nav {
+    height: 100%;
+  }
+
+  .sidebarNav {
+    position: sticky;
+    top: 20px;
+  }
+}

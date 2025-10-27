@@ -5,6 +5,7 @@ variable "fhir_api_port" {
   default = 8000
 }
 variable "redirect_to_strategy_page" {}
+variable "private_load_balancer" { default = true }
 variable "ecs_cluster_id" {}
 variable "db" {
   type = object({
@@ -16,7 +17,7 @@ variable "db" {
 }
 variable "networking" {
   type = object({
-    db_subnet_ids         = list(string)
+    private_subnet_ids    = list(string)
     public_subnet_ids     = list(string)
     alb_security_group_id = string
     api_security_group_id = string
