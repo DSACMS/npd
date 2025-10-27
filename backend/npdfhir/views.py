@@ -106,10 +106,9 @@ class FHIREndpointViewSet(viewsets.ViewSet):
         page_size = default_page_size
         all_params = request.query_params
 
-        endpoints = EndpointInstance.objects.all().select_related(
+        endpoints = EndpointInstance.objects.all().prefetch_related(
             'endpoint_connection_type',
-            'environment_type'
-        ).prefetch_related(
+            'environment_type',
             'endpointinstancetopayload_set',
             'endpointinstancetopayload_set__payload_type',
             'endpointinstancetopayload_set__mime_type',
@@ -164,7 +163,14 @@ class FHIREndpointViewSet(viewsets.ViewSet):
         except (ValueError, TypeError) as e:
             return HttpResponse(f"Endpoint {escape(pk)} not found", status=404)
 
-        endpoint = get_object_or_404(EndpointInstance, pk=pk)
+        endpoint = get_object_or_404(EndpointInstance.objects.prefetch_related(
+            'endpoint_connection_type',
+            'environment_type',
+            'endpointinstancetopayload_set',
+            'endpointinstancetopayload_set__payload_type',
+            'endpointinstancetopayload_set__mime_type',
+            'endpointinstancetootherid_set'
+        ), pk=pk)
 
         serialized_endpoint = EndpointSerializer(endpoint)
 
