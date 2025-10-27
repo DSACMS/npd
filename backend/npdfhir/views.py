@@ -472,10 +472,9 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
 
         all_params = request.query_params
 
-        organizations = Organization.objects.all().select_related(
+        organizations = Organization.objects.all().prefetch_related(
             'authorized_official',
-            'ein'
-        ).prefetch_related(
+            'ein',
             'organizationtoname_set',
             'organizationtoaddress_set',
             'organizationtoaddress_set__address',
@@ -602,10 +601,9 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
         except (ValueError, TypeError) as e:
             return HttpResponse(f"Organization {escape(pk)} not found", status=404)
 
-        organization = get_object_or_404(Organization.objects.select_related(
+        organization = get_object_or_404(Organization.objects.prefetch_related(
             'authorized_official',
-            'ein'
-        ).prefetch_related(
+            'ein',
             'organizationtoname_set',
             'organizationtoaddress_set',
             'organizationtoaddress_set__address',
@@ -753,6 +751,7 @@ class FHIRLocationViewSet(viewsets.ViewSet):
 
         return response
 
+
 class FHIRCapabilityStatementView(APIView):
     """
     ViewSet for FHIR Practitioner resources
@@ -767,7 +766,8 @@ class FHIRCapabilityStatementView(APIView):
         """
         Return a list of all CapabilityStatement as FHIR CapabilityStatement resources
         """
-        serializer = CapabilityStatementSerializer(context={"request": request})
+        serializer = CapabilityStatementSerializer(
+            context={"request": request})
         response = serializer.to_representation(None)
 
         return Response(response)

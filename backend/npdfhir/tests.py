@@ -200,6 +200,8 @@ class BasicViewsTestCase(APITestCase):
 class OrganizationViewSetTestCase(APITestCase):
     def setUp(self):
         self.client = APIClient()
+        self.org_without_authorized_official = Organization.objects.create(
+            id='26708690-19d6-499e-b481-cebe05b98f08', authorized_official_id=None)
 
     def test_list_default(self):
         url = reverse("fhir-organization-list")
@@ -308,15 +310,10 @@ class OrganizationViewSetTestCase(APITestCase):
         self.assertEqual(response.data['id'], id)
 
     def test_organization_without_authorized_official(self):
-        id = uuid.uuid4()
-        Organization(id=id, authorized_official_id=None).save()
-        organization = Organization.objects.get(id=id)
-        self.assertEqual(id, organization.id)
+        id = self.org_without_authorized_official.pk
         url = reverse("fhir-organization-detail",
-                      args=[str(id)])
-        self.assertEqual('test', url)
+                      args=[id])
         response = self.client.get(url)
-        print(response)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['id'], id)
 
