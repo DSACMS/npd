@@ -57,13 +57,15 @@
 
 /* About */
 .secondary {
-  display: flex;
   padding: var(--spacer-7, 3.5rem) 0;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--spacer-3, 1.5rem);
   align-self: stretch;
+}
 
+.secondaryContent {
   & h2 {
     color: var(--theme-color-primary-darkest, #00395e);
 

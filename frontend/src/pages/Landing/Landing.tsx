@@ -1,10 +1,21 @@
-import { Badge, Button } from "@cmsgov/design-system"
-
+import { Alert, Badge, Button } from "@cmsgov/design-system"
+import classNames from "classnames"
 import { useTranslation } from "react-i18next"
+
+import { NpdMarkdown } from "../../components/markdown/NpdMarkdown"
+
+import content from "./Landing.content.md?raw"
+import alertContent from "./LandingAlert.content.md?raw"
+
 import styles from "./Landing.module.css"
 
 export const Landing = () => {
   const { t } = useTranslation()
+
+  const secondaryClasses = classNames(
+    styles.secondaryContent,
+    "d-u-measure--base",
+  )
 
   return (
     <>
@@ -35,15 +46,15 @@ export const Landing = () => {
 
       <section className="ds-l-container">
         <div className="ds-l-row">
-          <div className="ds-l-col--12">
+          <div className="ds-l-col--8 ds-s-col--12">
             <div className={styles.secondary}>
-              <h2>{t("landing.about.title")}</h2>
+              <Alert heading={t("landing.beta.heading")}>
+                <NpdMarkdown content={alertContent} />
+              </Alert>
 
-              <p className={styles.secondaryDescription}>
-                {t("landing.about.description")}
-              </p>
-
-              <Button href="#">{t("landing.links.learn")}</Button>
+              <div className={secondaryClasses}>
+                <NpdMarkdown content={content} />
+              </div>
             </div>
           </div>
         </div>

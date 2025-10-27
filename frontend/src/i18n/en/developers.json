@@ -1,6 +1,7 @@
 {
   "title": "Documentation",
   "subtitle": "For developers",
+  "backtotop": "Back to top",
   "nav": {
     "overview": "Overview",
     "test": "Test release",
