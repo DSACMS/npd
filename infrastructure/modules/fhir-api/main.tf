@@ -2,16 +2,6 @@ data "aws_region" "current" {}
 data "aws_partition" "current" {}
 data "aws_caller_identity" "current" {}
 
-# ECR Repositories
-
-resource "aws_ecr_repository" "fhir_api" {
-  name = "${var.account_name}-fhir-api"
-}
-
-resource "aws_ecr_repository" "fhir_api_migrations" {
-  name = "${var.account_name}-fhir-api-migrations"
-}
-
 # Log Groups
 
 resource "aws_cloudwatch_log_group" "fhir_api_log_group" {
@@ -137,6 +127,10 @@ resource "aws_ecs_task_definition" "app" {
       ],
       secrets = [
         {
+          name      = "FLYWAY_PLACEHOLDERS_apiSchema"
+          value     = var.db.db_instance_name
+        },
+        {
           name      = "FLYWAY_USER"
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
         },
@@ -235,7 +229,7 @@ resource "aws_ecs_task_definition" "app" {
 
 # API ECS Service
 resource "aws_ecs_service" "app" {
-  count = var.redirect_to_strategy_page == true ? 0 : 1
+  count           = var.redirect_to_strategy_page == true ? 0 : 1
   name            = "${var.account_name}-fhir-api-service"
   cluster         = var.ecs_cluster_id
   task_definition = aws_ecs_task_definition.app.arn
@@ -243,7 +237,7 @@ resource "aws_ecs_service" "app" {
   desired_count   = 1
 
   network_configuration {
-    subnets          = var.networking.db_subnet_ids
+    subnets          = var.networking.private_subnet_ids
     security_groups  = [var.networking.api_security_group_id]
     assign_public_ip = false
   }
@@ -265,7 +259,7 @@ resource "aws_lb" "fhir_api_alb" {
 }
 
 resource "aws_lb_target_group" "fhir_api_tg" {
-  count = var.redirect_to_strategy_page ? 0 : 1
+  count       = var.redirect_to_strategy_page ? 0 : 1
   name        = "${var.account_name}-fhir-api-tg"
   port        = var.fhir_api_port
   protocol    = "HTTP"
@@ -284,7 +278,7 @@ resource "aws_lb_target_group" "fhir_api_tg" {
 }
 
 resource "aws_lb_listener" "forward_to_task_group" {
-  count = var.redirect_to_strategy_page ? 0 : 1
+  count             = var.redirect_to_strategy_page ? 0 : 1
   load_balancer_arn = aws_lb.fhir_api_alb.arn
   port              = 80
   protocol          = "HTTP"
@@ -296,17 +290,17 @@ resource "aws_lb_listener" "forward_to_task_group" {
 }
 
 resource "aws_lb_listener" "forward_to_strategy_page" {
-  count = var.redirect_to_strategy_page ? 1 : 0
+  count             = var.redirect_to_strategy_page ? 1 : 0
   load_balancer_arn = aws_lb.fhir_api_alb.arn
   port              = 80
   protocol          = "HTTP"
 
   default_action {
-    type             = "redirect"
+    type = "redirect"
     redirect {
       status_code = "HTTP_302"
-      host = "www.cms.gov"
-      path = "/priorities/health-technology-ecosystem/overview"
+      host        = "www.cms.gov"
+      path        = "/priorities/health-technology-ecosystem/overview"
     }
   }
 }

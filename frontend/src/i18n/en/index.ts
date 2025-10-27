@@ -3,6 +3,7 @@ import footer from "./footer.json"
 import header from "./header.json"
 
 // pages
+import developers from "./developers.json"
 import landing from "./landing.json"
 
 /*
@@ -30,4 +31,5 @@ export const translations = {
   header,
   footer,
   landing,
+  developers,
 }
