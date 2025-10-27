@@ -155,6 +155,10 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
         {
           name  = "FLYWAY_URL"
           value = "jdbc:postgresql://${var.db.db_instance_address}:${var.db.db_instance_port}/${var.db.db_instance_name}"
+        },
+        {
+          name  = "FLYWAY_LOCATIONS"
+          value = "filesystem:./sql/migrations,filesystem:./sql/reference_data"
         }
       ],
       secrets = [
