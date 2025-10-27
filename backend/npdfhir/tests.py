@@ -1,3 +1,5 @@
+import uuid
+
 from django.db import connection
 from django.test.runner import DiscoverRunner
 from django.urls import reverse
@@ -6,6 +8,8 @@ from fhir.resources.R4B.capabilitystatement import CapabilityStatement
 from pydantic import ValidationError
 from rest_framework import status
 from rest_framework.test import APIClient, APITestCase
+
+from .models import Organization
 
 # I can't explain why, but we need to import cacheData here. I think we can remove this once we move to the docker db setup
 from .cache import cacheData
@@ -303,6 +307,19 @@ class OrganizationViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['id'], id)
 
+    def test_organization_without_authorized_official(self):
+        id = uuid.uuid4()
+        Organization(id=id, authorized_official_id=None).save()
+        organization = Organization.objects.get(id=id)
+        self.assertEqual(id, organization.id)
+        url = reverse("fhir-organization-detail",
+                      args=[str(id)])
+        self.assertEqual('test', url)
+        response = self.client.get(url)
+        print(response)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data['id'], id)
+
 
 class LocationViewSetTestCase(APITestCase):
     def setUp(self):
@@ -492,7 +509,7 @@ class CapabilityStatementViewSetTestCase(APITestCase):
     def test_capability_statement_has_required_fields(self):
         response = self.client.get(self.url)
         data = response.data
-        
+
         self.assertIn("status", data)
         self.assertIn("fhirVersion", data)
         self.assertIn("format", data)
@@ -501,5 +518,7 @@ class CapabilityStatementViewSetTestCase(APITestCase):
     def test_capability_statement_is_valid_fhir(self):
         response = self.client.get(self.url)
 
-        capability_statement = CapabilityStatement.model_validate(response.data)
-        self.assertEqual(capability_statement.__resource_type__, "CapabilityStatement")
+        capability_statement = CapabilityStatement.model_validate(
+            response.data)
+        self.assertEqual(capability_statement.__resource_type__,
+                         "CapabilityStatement")

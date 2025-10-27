@@ -398,16 +398,17 @@ class OrganizationSerializer(serializers.Serializer):
         if alias_names:
             organization.alias = alias_names
 
-        authorized_official = representation['authorized_official']
-        # r4 only allows one name for contact. TODO update to ndh
-        authorized_official['name'] = authorized_official['name'][0]
+        if hasattr(instance, "authorized_official"):
+            authorized_official = representation['authorized_official']
+            # r4 only allows one name for contact. TODO update to ndh
+            authorized_official['name'] = authorized_official['name'][0]
 
-        if representation['address'] != []:
-            authorized_official['address'] = representation['address'][0]
-        else:
-            if 'address' in authorized_official.keys():
-                del authorized_official['address']
-        organization.contact = [authorized_official]
+            if representation['address'] != []:
+                authorized_official['address'] = representation['address'][0]
+            else:
+                if 'address' in authorized_official.keys():
+                    del authorized_official['address']
+            organization.contact = [authorized_official]
 
         return organization.model_dump()
 
@@ -562,6 +563,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
     """
     Serializer for FHIR CapablityStatement resource
     """
+
     def to_representation(self, instance):
         request = self.context.get('request')
         baseURL = request.build_absolute_uri('/fhir')
@@ -597,7 +599,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
         )
 
         return capability_statement.model_dump()
-    
+
     def build_rest_components(self):
         """
         Building out each REST component describing our endpoint capabilities
@@ -611,7 +613,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
                 self.build_endpoint_resource()
             ]
         )
-    
+
     def build_practitioner_resource(self):
         return CapabilityStatementRestResource(
             type="Practitioner",
@@ -662,7 +664,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
                 )
             ]
         )
-    
+
     def build_organization_resource(self):
         return CapabilityStatementRestResource(
             type="Organization",
@@ -708,7 +710,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
                 )
             ]
         )
-    
+
     def build_endpoint_resource(self):
         return CapabilityStatementRestResource(
             type="Endpoint",
