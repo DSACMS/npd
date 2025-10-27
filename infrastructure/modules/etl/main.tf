@@ -166,7 +166,7 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
         },
         {
           name = "FLYWAY_TABLE"
-          value = "npd-etl-flyway"
+          value = "npd-api-flyway"
         },
         {
           name = "FLYWAY_BASELINE_VERSION"
