@@ -162,9 +162,9 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
         },
         {
           name      = "FLYWAY_PLACEHOLDERS_apiSchema"
-          value     = "npd_gold"
+          value     = "npd"
         }
-      ],
+      ]
       secrets = [
         {
           name      = "FLYWAY_USER"
@@ -174,7 +174,7 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
           name      = "FLYWAY_PASSWORD"
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:password::"
         }
-      ],
+      ]
       logConfiguration = {
         logDriver = "awslogs"
         options = {
