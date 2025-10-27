@@ -125,8 +125,8 @@ resource "aws_ecs_task_definition" "app" {
           value = "jdbc:postgresql://${var.db.db_instance_address}:${var.db.db_instance_port}/${var.db.db_instance_name}"
         },
         {
-          name      = "FLYWAY_PLACEHOLDERS_apiSchema"
-          value     = var.db.db_instance_name
+          name  = "FLYWAY_PLACEHOLDERS_apiSchema"
+          value = var.db.db_instance_name
         },
       ]
       secrets = [
