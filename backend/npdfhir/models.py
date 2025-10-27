@@ -10,9 +10,6 @@ from django.db import models
 
 class Address(models.Model):
     id = models.UUIDField(primary_key=True)
-    barcode_delivery_code = models.CharField(
-        max_length=12, blank=True, null=True)
-    smarty_key = models.CharField(max_length=10, blank=True, null=True)
     address_us = models.ForeignKey(
         'AddressUs', models.DO_NOTHING, blank=True, null=True)
     address_international = models.ForeignKey(
@@ -70,7 +67,6 @@ class AddressInternational(models.Model):
 
 class AddressNonstandard(models.Model):
     id = models.CharField(primary_key=True, max_length=10)
-    addressee = models.CharField(max_length=64, blank=True, null=True)
     delivery_line_1 = models.CharField(max_length=64)
     delivery_line_2 = models.CharField(max_length=64, blank=True, null=True)
     last_line = models.CharField(max_length=64, blank=True, null=True)
@@ -90,7 +86,6 @@ class AddressNonstandard(models.Model):
 
 class AddressUs(models.Model):
     id = models.CharField(primary_key=True, max_length=10)
-    addressee = models.CharField(max_length=64, blank=True, null=True)
     delivery_line_1 = models.CharField(max_length=64)
     delivery_line_2 = models.CharField(max_length=64, blank=True, null=True)
     last_line = models.CharField(max_length=64, blank=True, null=True)
@@ -167,8 +162,6 @@ class ClinicalOrganization(models.Model):
         'Organization', models.DO_NOTHING, blank=True, null=True)
     npi = models.OneToOneField(
         'Npi', models.DO_NOTHING, db_column='npi', primary_key=True)
-    endpoint_instance = models.ForeignKey(
-        'EndpointInstance', models.DO_NOTHING, blank=True, null=True)
 
     class Meta:
         managed = False

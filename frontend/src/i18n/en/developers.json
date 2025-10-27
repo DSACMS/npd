@@ -1,0 +1,13 @@
+{
+  "title": "Documentation",
+  "subtitle": "For developers",
+  "nav": {
+    "overview": "Overview",
+    "test": "Test release",
+    "participating": "Participating in the test",
+
+    "about": "About the data",
+    "accessing": "Accessing the API",
+    "opensource": "Open source code"
+  }
+}

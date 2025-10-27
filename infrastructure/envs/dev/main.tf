@@ -31,6 +31,12 @@ data "aws_vpc" "default" {
   }
 }
 
+module "repositories" {
+  source = "../../modules/repositories"
+
+  account_name = local.account_name
+}
+
 module "networking" {
   source = "../../modules/networking"
 
@@ -52,8 +58,8 @@ module "api-db" {
   publicly_accessible     = false
   username                = "npd"
   db_name                 = "npd"
+  db_subnet_group_name    = module.networking.private_subnet_group_name
   vpc_security_group_ids  = [module.networking.db_security_group_id]
-  db_subnet_group_name    = module.networking.db_subnet_group_name
   backup_retention_period = 7             # Remove automated snapshots after 7 days
   backup_window           = "03:00-04:00" # 11PM EST
 }
@@ -71,8 +77,9 @@ module "etl-db" {
   allocated_storage       = 100
   publicly_accessible     = false
   username                = "npd_etl"
-  vpc_security_group_ids  = [module.networking.db_security_group_id]
-  db_subnet_group_name    = module.networking.db_subnet_group_name
+  db_name                 = "npd_etl"
+  db_subnet_group_name    = module.networking.private_subnet_group_name
+  vpc_security_group_ids  = [module.networking.etl_db_security_group_id]
   backup_retention_period = 7             # Remove automated snapshots after 7 days
   backup_window           = "03:00-04:00" # 11PM EST
 }
@@ -110,7 +117,7 @@ module "fhir-api" {
     db_instance_name                   = module.api-db.db_instance_name
   }
   networking = {
-    db_subnet_ids         = module.networking.db_subnet_ids
+    private_subnet_ids    = module.networking.private_subnet_ids
     public_subnet_ids     = module.networking.public_subnet_ids
     alb_security_group_id = module.networking.alb_security_group_id
     api_security_group_id = module.networking.api_security_group_id
@@ -122,7 +129,23 @@ module "fhir-api" {
 module "etl" {
   source = "../../modules/etl"
 
-  account_name = local.account_name
+  account_name   = local.account_name
+  dagster_image  = var.dagster_image
+  fhir_api_migration_image = var.migration_image
+  ecs_cluster_id = module.ecs.cluster_id
+  db = {
+    db_instance_master_user_secret_arn = module.etl-db.db_instance_master_user_secret_arn
+    db_instance_address                = module.etl-db.db_instance_address
+    db_instance_port                   = module.etl-db.db_instance_port
+    db_instance_name                   = module.etl-db.db_instance_name
+  }
+  networking = {
+    private_subnet_ids        = module.networking.private_subnet_ids
+    public_subnet_ids         = module.networking.public_subnet_ids
+    etl_alb_security_group_id = module.networking.etl_alb_security_group_id
+    etl_security_group_id     = module.networking.etl_security_group_id
+    vpc_id                    = module.networking.vpc_id
+  }
 }
 
 # Frontend Module
@@ -137,6 +160,6 @@ module "github-actions" {
 
   account_name = local.account_name
   vpc_id       = module.networking.vpc_id
-  subnet_id    = module.networking.etl_subnet_ids[0]
+  subnet_id    = module.networking.private_subnet_ids[0]
 }
 
