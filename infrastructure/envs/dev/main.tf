@@ -163,3 +163,12 @@ module "github-actions" {
   subnet_id    = module.networking.private_subnet_ids[0]
 }
 
+# DNS
+
+module "dns" {
+  source = "../../modules/dns"
+
+  account_name = local.account_name
+  vpc_id = module.networking.vpc_id
+  dagster_ui_alb_dns_name = module.etl.dagster_ui_alb_dns_name
+}

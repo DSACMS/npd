@@ -174,7 +174,7 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
       logConfiguration = {
         logDriver = "awslogs"
         options = {
-          "awslogs-group"         = aws_cloudwatch_log_group.etl_db_migration_log_group
+          "awslogs-group"         = aws_cloudwatch_log_group.etl_db_migration_log_group.name
           "awslogs-region"        = "us-east-1"
           "awslogs-stream-prefix" = var.account_name
         }
