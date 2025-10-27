@@ -13,3 +13,12 @@ resource "aws_route53_record" "dagster_record" {
   ttl = "300"
   records = [var.dagster_ui_alb_dns_name]
 }
+
+resource "aws_route53_record" "fhir_api" {
+  count = var.enable_internal_fhir_api ? 1 : 0
+  zone_id = aws_route53_zone.internal_npd_zone.zone_id
+  name = "app"
+  type = "CNAME"
+  ttl = "300"
+  records = [var.fhir_api_alb_dns_name]
+}

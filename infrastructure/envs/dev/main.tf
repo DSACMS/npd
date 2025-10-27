@@ -171,4 +171,6 @@ module "dns" {
   account_name = local.account_name
   vpc_id = module.networking.vpc_id
   dagster_ui_alb_dns_name = module.etl.dagster_ui_alb_dns_name
+  fhir_api_alb_dns_name = module.fhir-api.api_alb_dns_name
+  enable_internal_fhir_api = true
 }
