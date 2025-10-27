@@ -11,10 +11,9 @@ from .router import router
 schema_view = get_schema_view(
     openapi.Info(
         title="NPD FHIR API",
-        default_version="v1",
-        description="The National Provider Directory FHIR API exposes public information on all Providers and Organizations that have registered through the National Provider and Payer Enumeration System NPPES. This is a limited beta release; coverage and data quality will increase iteratively.",
-        terms_of_service="TBD",
-        contact=openapi.Contact(email="opensource@cms.hhs.gov"),
+        default_version="beta",
+        description="Developers can query and retrieve National Provider Directory data via a REST API. The API structure conforms to the HL7 Fast Healthcare Interoperability Resources (FHIR) standard and it returns JSON responses following the FHIR specification.",
+        contact=openapi.Contact(email="npd@cms.hhs.gov"),
         license=openapi.License(name="CC0-1.0 License"),
     ),
     public=True,
@@ -29,7 +28,8 @@ urlpatterns = [
     re_path("docs/?", schema_view.with_ui("swagger",
             cache_timeout=0), name="schema-swagger-ui"),
     path("healthCheck", views.health, name="healthCheck"),
-    path('metadata', views.FHIRCapabilityStatementView.as_view(), name='fhir-metadata'),
+    path('metadata', views.FHIRCapabilityStatementView.as_view(),
+         name='fhir-metadata'),
 
     # Router URLs
     # everything else is passed to the rest_framework router to manage
