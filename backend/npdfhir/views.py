@@ -23,7 +23,7 @@ from .models import (
     OrganizationToName,
     Provider,
     ProviderToLocation,
-    Individual, 
+    Individual,
     IndividualToName,
 )
 from .renderers import FHIRRenderer
@@ -104,9 +104,9 @@ class FHIREndpointViewSet(viewsets.ViewSet):
     )
     def list(self, request):
         """
-        Returns a list of all endpoints as FHIR Endpoint resources
+        Query a list of interoperability endpoints, represented as a bundle of FHIR Endpoint resources
 
-        Sorts by the name of the EndpointInstance
+        Default sort order: ascending endpoint instance name
         """
 
         page_size = default_page_size
@@ -162,7 +162,7 @@ class FHIREndpointViewSet(viewsets.ViewSet):
 
     def retrieve(self, request, pk=None):
         """
-        Return a single endpoint as a FHIR Endpoint resource
+        Query a specific endpoint as a FHIR Endpoint resource
         """
 
         try:
@@ -208,9 +208,9 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
     )
     def list(self, request):
         """
-        Return a list of all providers as FHIR Practitioner resources
+        Query a list of healthcare providers, represented as a bundle of FHIR Practitioner resources
 
-        Sorts by lastname, firstname
+        Default sort order: ascending last name, first name
         """
         page_size = default_page_size
 
@@ -231,17 +231,16 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
             .values('first_name')[:1]
         )
 
-
         providers = Provider.objects.all().prefetch_related(
             'npi', 'individual', 'individual__individualtoname_set', 'individual__individualtoaddress_set',
             'individual__individualtoaddress_set__address__address_us',
             'individual__individualtoaddress_set__address__address_us__state_code',
             'individual__individualtoaddress_set__address_use', 'individual__individualtophone_set',
             'individual__individualtoemail_set', 'providertootherid_set', 'providertotaxonomy_set'
-            ).annotate(
+        ).annotate(
             primary_last_name=Subquery(primary_last_name_subquery),
             primary_first_name=Subquery(primary_first_name_subquery)
-        ).order_by('primary_last_name','primary_first_name')
+        ).order_by('primary_last_name', 'primary_first_name')
 
         for param, value in all_params.items():
             match param:
@@ -335,7 +334,7 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
 
     def retrieve(self, request, pk=None):
         """
-        Return a single provider as a FHIR Practitioner resource
+        Query a specific provider as a FHIR Practitioner resource
         """
         try:
             UUID(pk)
@@ -386,13 +385,13 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
             createFilterParam('organization.name')
         ],
         responses={200: "Successful response",
-                   404: "Error: The requested Practitioner resource cannot be found."}
+                   404: "Error: The requested PractitionerRole resource cannot be found."}
     )
     def list(self, request):
         """
-        Return a list of all providers as FHIR Practitioner resources
+        Query a list of relationships between providers, healthcare organizations, and practice locations, represented as a bundle of FHIR PractitionerRole resources
 
-        Sorts the list by the name of the location
+        Default sort order: aschending by location name
         """
         page_size = default_page_size
 
@@ -454,7 +453,7 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
 
     def retrieve(self, request, pk=None):
         """
-        Return a single provider as a FHIR Practitioner resource
+        Query a specific relationship between providers, healthcare organizations, and practice locations, represented as a FHIR PractitionerRole resource
         """
         try:
             UUID(pk)
@@ -500,9 +499,9 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
     )
     def list(self, request):
         """
-        Return a list of all providers as FHIR Practitioner resources
+        Query a list of organizations, represented as a bundle of FHIR Practitioner resources
 
-        Sorts by the name of the organization
+        Default sort order: ascending by organization name
         """
         page_size = default_page_size
 
@@ -637,7 +636,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
 
     def retrieve(self, request, pk=None):
         """
-        Return a single provider as a FHIR Practitioner resource
+        Query a specific organization, represented as a FHIR Organization resource
         """
         try:
             UUID(pk)
@@ -699,13 +698,13 @@ class FHIRLocationViewSet(viewsets.ViewSet):
                               enum=addressUseMapping.keys())
         ],
         responses={200: "Successful response",
-                   404: "Error: The requested Organization resource cannot be found."}
+                   404: "Error: The requested Location resource cannot be found."}
     )
     def list(self, request):
         """
-        Return a list of all providers as FHIR Practitioner resources
+        Query a list of healthcare practice locations, represented as bundle of FHIR Location resources
 
-        Sorts by the name of the location
+        Default sort order: ascending by location name
         """
         page_size = default_page_size
 
@@ -781,7 +780,7 @@ class FHIRLocationViewSet(viewsets.ViewSet):
 
     def retrieve(self, request, pk=None):
         """
-        Return a single provider as a FHIR Practitioner resource
+        Query a specific healthcare practice location as a FHIR Location resource
         """
         try:
             UUID(pk)
@@ -798,6 +797,7 @@ class FHIRLocationViewSet(viewsets.ViewSet):
 
         return response
 
+
 class FHIRCapabilityStatementView(APIView):
     """
     ViewSet for FHIR Practitioner resources
@@ -810,9 +810,10 @@ class FHIRCapabilityStatementView(APIView):
     )
     def get(self, request):
         """
-        Return a list of all CapabilityStatement as FHIR CapabilityStatement resources
+        Query metadata about this FHIR instance, represented as FHIR CapabilityStatement resource
         """
-        serializer = CapabilityStatementSerializer(context={"request": request})
+        serializer = CapabilityStatementSerializer(
+            context={"request": request})
         response = serializer.to_representation(None)
 
         return Response(response)
