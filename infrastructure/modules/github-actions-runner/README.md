@@ -8,7 +8,7 @@
 4. give ec2-user ownership of /opt/actions-runner
 
 ```bash
-sudo chown -R ec2-user:ec2-user /opt/github-runner
+sudo chown -R ec2-user:ec2-user /opt/actions-runner
 ```
 
 5. Create a github action service using this template:
@@ -34,7 +34,7 @@ WantedBy=multi-user.target
 EOF
 ```
 
-6. enable service `systemctl start github-runner.service`
+6. Enable and start service `sudo systemctl enable --now github-runner.service`
 7. Configure Docker
 
 ```bash
@@ -53,4 +53,4 @@ sudo yum install git -y
 ```
 
 9. Restart the instance
-10. Confirm GH Runner is available on GH
+10. Confirm GH Runner is still available on GH
