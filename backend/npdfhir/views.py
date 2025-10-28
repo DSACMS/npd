@@ -6,8 +6,9 @@ from django.db.models import Q, OuterRef, Subquery
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.utils.html import escape
-from drf_yasg import openapi
-from drf_yasg.utils import swagger_auto_schema
+from django_filters.rest_framework import DjangoFilterBackend
+from drf_spectacular.utils import extend_schema, OpenApiExample, OpenApiParameter
+from drf_spectacular.types import OpenApiTypes
 from rest_framework import generics, viewsets
 from rest_framework.views import APIView
 from rest_framework.pagination import PageNumberPagination
@@ -36,45 +37,13 @@ from .serializers import (
     PractitionerSerializer,
     CapabilityStatementSerializer
 )
+from .utils import parse_identifier
+from .filters import (
+    EndpointFilterSet
+)
 
 default_page_size = 10
 max_page_size = 1000
-page_size_param = openapi.Parameter(
-    'page_size',
-    openapi.IN_QUERY,
-    description="Limit the number of results returned per page",
-    type=openapi.TYPE_STRING,
-    minimum=1,
-    maximum=max_page_size,
-    default=default_page_size
-)
-
-
-def createFilterParam(field: str, display: str = None, enum: list = None):
-    if display is None:
-        display = field.replace('_', ' ').replace('.', ' ')
-    param = openapi.Parameter(
-        field,
-        openapi.IN_QUERY,
-        description=f"Filter by {display}",
-        type=openapi.TYPE_STRING,
-    )
-    if enum is not None:
-        param.enum = enum
-    return param
-
-
-def parse_identifier(identifier_value):
-    """
-    Parse an identifier search parameter that should be in the format of "value" OR "system|value".
-    Currently only supporting NPI search "NPI|123455".
-    """
-    if '|' in identifier_value:
-        parts = identifier_value.split('|', 1)
-        return (parts[0], parts[1])
-
-    return (None, identifier_value)
-
 
 def index(request):
     return HttpResponse("Connection to npd database: successful")
@@ -84,24 +53,15 @@ def health(request):
     return HttpResponse("healthy")
 
 
-class FHIREndpointViewSet(viewsets.ViewSet):
+class FHIREndpointViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Endpoint Resources
     """
+    queryset = EndpointInstance.objects.all()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+    filter_backends = [DjangoFilterBackend]
+    filterset_class = EndpointFilterSet
 
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('name'),
-            createFilterParam('connection_type'),
-            createFilterParam('payload_type'),
-            createFilterParam('status'),
-            createFilterParam('organization')
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested Endpoint resource cannot be found."}
-    )
     def list(self, request):
         """
         Query a list of interoperability endpoints, represented as a bundle of FHIR Endpoint resources
@@ -112,38 +72,18 @@ class FHIREndpointViewSet(viewsets.ViewSet):
         page_size = default_page_size
         all_params = request.query_params
 
-        endpoints = EndpointInstance.objects.all().prefetch_related(
+        endpoints = EndpointInstance.objects.all().select_related(
             'endpoint_connection_type',
-            'environment_type',
+            'environment_type'
+        ).prefetch_related(
             'endpointinstancetopayload_set',
             'endpointinstancetopayload_set__payload_type',
             'endpointinstancetopayload_set__mime_type',
             'endpointinstancetootherid_set'
         ).order_by('name')
 
-        for param, value in all_params.items():
-            match param:
-                case 'page_size':
-                    try:
-                        value = int(value)
-                        if value <= max_page_size:
-                            page_size = value
-                    except:
-                        page_size = page_size
-                case 'name':
-                    endpoints = endpoints.filter(name__icontains=value)
-                case 'connection_type':
-                    endpoints = endpoints.filter(
-                        endpoint_connection_type__id__icontains=value)
-                case 'payload_type':
-                    endpoints = endpoints.filter(
-                        endpointinstancetopayload__payload_type__id__icontains=value
-                    ).distinct()
-                case 'status':
-                    pass
-                case 'organization':
-                    pass
-
+        backend_instance = self.filter_backends[0]()
+        endpoints = backend_instance.filter_queryset(request, endpoints, self)
         paginator = PageNumberPagination()
         paginator.page_size = page_size
         paginated_endpoints = paginator.paginate_queryset(endpoints, request)
@@ -193,25 +133,6 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
 
     # permission_classes = [permissions.IsAuthenticated]
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam(
-                'value (for any type of identifier) OR NPI|value (if searching for an NPI) -> 12345567 OR NPI|12345567'),
-            createFilterParam('name'),
-            createFilterParam('gender', enum=genderMapping.keys()),
-            createFilterParam('practitioner_type'),
-            createFilterParam('address'),
-            createFilterParam('address-city', 'city'),
-            createFilterParam('address-postalcode', "zip code"),
-            createFilterParam(
-                'address-state', '2 letter US State abbreviation'),
-            createFilterParam('address-use', 'address use',
-                              enum=addressUseMapping.keys())
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested Practitioner resource cannot be found."}
-    )
     def list(self, request):
         """
         Query a list of healthcare providers, represented as a bundle of FHIR Practitioner resources
@@ -379,20 +300,6 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
 
     # permission_classes = [permissions.IsAuthenticated]
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('active'),
-            createFilterParam('role'),
-            createFilterParam('practitioner.name'),
-            createFilterParam('practitioner.gender', enum=[
-                              'Female', 'Male', 'Other']),
-            createFilterParam('practitioner.practitioner_type'),
-            createFilterParam('organization.name')
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested PractitionerRole resource cannot be found."}
-    )
     def list(self, request):
         """
         Query a list of relationships between providers, healthcare organizations, and practice locations, represented as a bundle of FHIR PractitionerRole resources
@@ -485,24 +392,6 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
 
     # permission_classes = [permissions.IsAuthenticated]
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('name'),
-            createFilterParam(
-                'identifier', 'format: value (for any type of identifier) OR NPI|value (if searching for an NPI) -> 12345567 OR NPI|12345567'),
-            createFilterParam('organization_type'),
-            createFilterParam('address'),
-            createFilterParam('address-city', 'city'),
-            createFilterParam('address-postalcode', "zip code"),
-            createFilterParam(
-                'address-state', '2 letter US State abbreviation'),
-            createFilterParam('address-use', 'address use',
-                              enum=addressUseMapping.keys())
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested Organization resource cannot be found."}
-    )
     def list(self, request):
         """
         Query a list of organizations, represented as a bundle of FHIR Practitioner resources
@@ -695,21 +584,6 @@ class FHIRLocationViewSet(viewsets.ViewSet):
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
 
     # permission_classes = [permissions.IsAuthenticated]
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('name'),
-            createFilterParam('address'),
-            createFilterParam('address-city', 'city'),
-            createFilterParam('address-postalcode', "zip code"),
-            createFilterParam(
-                'address-state', '2 letter US State abbreviation'),
-            createFilterParam('address-use', 'address use',
-                              enum=addressUseMapping.keys())
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested Location resource cannot be found."}
-    )
     def list(self, request):
         """
         Query a list of healthcare practice locations, represented as bundle of FHIR Location resources
@@ -810,14 +684,10 @@ class FHIRLocationViewSet(viewsets.ViewSet):
 
 class FHIRCapabilityStatementView(APIView):
     """
-    ViewSet for FHIR Practitioner resources
+    ViewSet for FHIR CapabilityStatement resource
     """
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
 
-    @swagger_auto_schema(
-        responses={200: "Successful response",
-                   404: "Error: The requested CapabilityStatement resource cannot be found."}
-    )
     def get(self, request):
         """
         Query metadata about this FHIR instance, represented as FHIR CapabilityStatement resource
