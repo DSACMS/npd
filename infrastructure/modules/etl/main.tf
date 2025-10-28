@@ -163,6 +163,18 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
         {
           name  = "FLYWAY_PLACEHOLDERS_apiSchema"
           value = "npd"
+        },
+        {
+          name = "FLYWAY_TABLE"
+          value = "npd-api-flyway"
+        },
+        {
+          name = "FLYWAY_BASELINE_VERSION"
+          value = "0"
+        },
+        {
+          name = "FLYWAY_BASELINE_ON_MIGRATE"
+          value = true
         }
       ]
       secrets = [
