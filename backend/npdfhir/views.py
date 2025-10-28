@@ -2,7 +2,7 @@ from uuid import UUID
 
 from django.contrib.postgres.search import SearchVector
 from django.core.cache import cache
-from django.db.models import Q
+from django.db.models import Q, OuterRef, Subquery
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.utils.html import escape
@@ -17,10 +17,14 @@ from rest_framework.response import Response
 from .mappings import addressUseMapping, genderMapping
 from .models import (
     EndpointInstance,
+    ClinicalOrganization,
     Location,
     Organization,
+    OrganizationToName,
     Provider,
     ProviderToLocation,
+    Individual,
+    IndividualToName,
 )
 from .renderers import FHIRRenderer
 from .serializers import (
@@ -100,7 +104,9 @@ class FHIREndpointViewSet(viewsets.ViewSet):
     )
     def list(self, request):
         """
-        Returns a list of all endpoints as FHIR Endpoint resources
+        Query a list of interoperability endpoints, represented as a bundle of FHIR Endpoint resources
+
+        Default sort order: ascending endpoint instance name
         """
 
         page_size = default_page_size
@@ -113,7 +119,7 @@ class FHIREndpointViewSet(viewsets.ViewSet):
             'endpointinstancetopayload_set__payload_type',
             'endpointinstancetopayload_set__mime_type',
             'endpointinstancetootherid_set'
-        )
+        ).order_by('name')
 
         for param, value in all_params.items():
             match param:
@@ -155,7 +161,7 @@ class FHIREndpointViewSet(viewsets.ViewSet):
 
     def retrieve(self, request, pk=None):
         """
-        Return a single endpoint as a FHIR Endpoint resource
+        Query a specific endpoint as a FHIR Endpoint resource
         """
 
         try:
@@ -208,18 +214,39 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
     )
     def list(self, request):
         """
-        Return a list of all providers as FHIR Practitioner resources
+        Query a list of healthcare providers, represented as a bundle of FHIR Practitioner resources
+
+        Default sort order: ascending last name, first name
         """
         page_size = default_page_size
 
         all_params = request.query_params
+
+        # Subqueries for last_name and first_name of the individual
+        primary_last_name_subquery = (
+            IndividualToName.objects
+            .filter(individual=OuterRef('individual'))
+            .order_by('last_name')
+            .values('last_name')[:1]
+        )
+
+        primary_first_name_subquery = (
+            IndividualToName.objects
+            .filter(individual=OuterRef('individual'))
+            .order_by('first_name')
+            .values('first_name')[:1]
+        )
 
         providers = Provider.objects.all().prefetch_related(
             'npi', 'individual', 'individual__individualtoname_set', 'individual__individualtoaddress_set',
             'individual__individualtoaddress_set__address__address_us',
             'individual__individualtoaddress_set__address__address_us__state_code',
             'individual__individualtoaddress_set__address_use', 'individual__individualtophone_set',
-            'individual__individualtoemail_set', 'providertootherid_set', 'providertotaxonomy_set')
+            'individual__individualtoemail_set', 'providertootherid_set', 'providertotaxonomy_set'
+        ).annotate(
+            primary_last_name=Subquery(primary_last_name_subquery),
+            primary_first_name=Subquery(primary_first_name_subquery)
+        ).order_by('primary_last_name', 'primary_first_name')
 
         for param, value in all_params.items():
             match param:
@@ -313,7 +340,7 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
 
     def retrieve(self, request, pk=None):
         """
-        Return a single provider as a FHIR Practitioner resource
+        Query a specific provider as a FHIR Practitioner resource
         """
         try:
             UUID(pk)
@@ -364,18 +391,24 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
             createFilterParam('organization.name')
         ],
         responses={200: "Successful response",
-                   404: "Error: The requested Practitioner resource cannot be found."}
+                   404: "Error: The requested PractitionerRole resource cannot be found."}
     )
     def list(self, request):
         """
-        Return a list of all providers as FHIR Practitioner resources
+        Query a list of relationships between providers, healthcare organizations, and practice locations, represented as a bundle of FHIR PractitionerRole resources
+
+        Default sort order: aschending by location name
         """
         page_size = default_page_size
 
         all_params = request.query_params
 
-        practitionerroles = ProviderToLocation.objects.all().prefetch_related('provider_to_organization',
-                                                                              'location').all()
+        practitionerroles = (
+            ProviderToLocation.objects
+            .select_related('location')
+            .prefetch_related('provider_to_organization')
+            .order_by('location__name')
+        ).all()
 
         for param, value in all_params.items():
             match param:
@@ -426,7 +459,7 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
 
     def retrieve(self, request, pk=None):
         """
-        Return a single provider as a FHIR Practitioner resource
+        Query a specific relationship between providers, healthcare organizations, and practice locations, represented as a FHIR PractitionerRole resource
         """
         try:
             UUID(pk)
@@ -472,11 +505,25 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
     )
     def list(self, request):
         """
-        Return a list of all providers as FHIR Practitioner resources
+        Query a list of organizations, represented as a bundle of FHIR Practitioner resources
+
+        Default sort order: ascending by organization name
         """
         page_size = default_page_size
 
         all_params = request.query_params
+
+        primary_name_subquery = (
+            OrganizationToName.objects
+            .filter(organization=OuterRef('pk'), is_primary=True)
+            .values('name')[:1]
+        )
+
+        primary_name_subquery = (
+            OrganizationToName.objects
+            .filter(organization=OuterRef('pk'), is_primary=True)
+            .values('name')[:1]
+        )
 
         organizations = Organization.objects.all().prefetch_related(
             'authorized_official',
@@ -501,7 +548,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
             'clinicalorganization__organizationtootherid_set__other_id_type',
             'clinicalorganization__organizationtotaxonomy_set',
             'clinicalorganization__organizationtotaxonomy_set__nucc_code'
-        )
+        ).annotate(primary_name=Subquery(primary_name_subquery)).order_by('primary_name')
 
         for param, value in all_params.items():
             match param:
@@ -600,7 +647,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
 
     def retrieve(self, request, pk=None):
         """
-        Return a single provider as a FHIR Practitioner resource
+        Query a specific organization, represented as a FHIR Organization resource
         """
         try:
             UUID(pk)
@@ -661,18 +708,21 @@ class FHIRLocationViewSet(viewsets.ViewSet):
                               enum=addressUseMapping.keys())
         ],
         responses={200: "Successful response",
-                   404: "Error: The requested Organization resource cannot be found."}
+                   404: "Error: The requested Location resource cannot be found."}
     )
     def list(self, request):
         """
-        Return a list of all providers as FHIR Practitioner resources
+        Query a list of healthcare practice locations, represented as bundle of FHIR Location resources
+
+        Default sort order: ascending by location name
         """
         page_size = default_page_size
 
         all_params = request.query_params
 
         locations = Location.objects.all().prefetch_related(
-            'address__address_us', 'address__address_us__state_code')
+            'address__address_us', 'address__address_us__state_code'
+        ).order_by('name')
 
         for param, value in all_params.items():
             match param:
@@ -740,7 +790,7 @@ class FHIRLocationViewSet(viewsets.ViewSet):
 
     def retrieve(self, request, pk=None):
         """
-        Return a single provider as a FHIR Practitioner resource
+        Query a specific healthcare practice location as a FHIR Location resource
         """
         try:
             UUID(pk)
@@ -770,7 +820,7 @@ class FHIRCapabilityStatementView(APIView):
     )
     def get(self, request):
         """
-        Return a list of all CapabilityStatement as FHIR CapabilityStatement resources
+        Query metadata about this FHIR instance, represented as FHIR CapabilityStatement resource
         """
         serializer = CapabilityStatementSerializer(
             context={"request": request})

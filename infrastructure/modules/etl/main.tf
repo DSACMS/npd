@@ -150,7 +150,7 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
       name      = "${var.account_name}-fhir-api-migration"
       image     = var.fhir_api_migration_image
       essential = false
-      command   = [ "migrate" ]
+      command   = ["migrate"]
       environment = [
         {
           name  = "FLYWAY_URL"
@@ -159,13 +159,13 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
         {
           name  = "FLYWAY_LOCATIONS"
           value = "filesystem:./sql/migrations,filesystem:./sql/reference_data"
-        }
-      ],
-      secrets = [
-        {
-          name      = "FLYWAY_PLACEHOLDERS_apiSchema"
-          value     = "npd_gold"
         },
+        {
+          name  = "FLYWAY_PLACEHOLDERS_apiSchema"
+          value = "npd"
+        }
+      ]
+      secrets = [
         {
           name      = "FLYWAY_USER"
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
@@ -173,12 +173,12 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
         {
           name      = "FLYWAY_PASSWORD"
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:password::"
-        },
+        }
       ]
       logConfiguration = {
         logDriver = "awslogs"
         options = {
-          "awslogs-group"         = aws_cloudwatch_log_group.etl_db_migration_log_group
+          "awslogs-group"         = aws_cloudwatch_log_group.etl_db_migration_log_group.name
           "awslogs-region"        = "us-east-1"
           "awslogs-stream-prefix" = var.account_name
         }
@@ -191,7 +191,7 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
       logConfiguration = {
         logDriver = "awslogs"
         options = {
-          "awslogs-group"         = "/ecs/${var.account_name}"
+          "awslogs-group"         = aws_cloudwatch_log_group.dagster_daemon_log_group.name
           "awslogs-region"        = "us-east-1"
           "awslogs-stream-prefix" = var.account_name
         }
@@ -249,7 +249,7 @@ resource "aws_ecs_task_definition" "dagster_ui" {
       logConfiguration = {
         logDriver = "awslogs"
         options = {
-          "awslogs-group"         = "/ecs/${var.account_name}"
+          "awslogs-group"         = aws_cloudwatch_log_group.dagster_ui_log_group.name
           "awslogs-region"        = "us-east-1"
           "awslogs-stream-prefix" = var.account_name
         }
@@ -307,7 +307,7 @@ resource "aws_ecs_service" "dagster-ui" {
 
 resource "aws_lb" "dagster_ui_alb" {
   name               = "${var.account_name}-dagster-ui-alb"
-  internal           = false # TODO I don't know what this means
+  internal           = true
   load_balancer_type = "application"
   security_groups    = [var.networking.etl_alb_security_group_id]
   subnets            = var.networking.public_subnet_ids
