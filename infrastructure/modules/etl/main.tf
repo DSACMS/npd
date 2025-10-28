@@ -174,7 +174,7 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
         },
         {
           name = "FLYWAY_BASELINE_ON_MIGRATE"
-          value = true
+          value = "true"
         }
       ]
       secrets = [
@@ -214,6 +214,7 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
         { name = "SKIP_TESTS", value = "True" },
         { name = "S3_DATA_BUCKET", value = aws_s3_bucket.etl_bronze.bucket },
         { name = "DB_PORT", value = "5432" },
+        { name = "DB_HOST", value = var.db.db_instance_address },
         { name = "DB_NAME", value = "npd_etl" },
         { name = "DB_DATABASE", value = "npd_etl" },
         { name = "SMARTY_STREETS_URL", value = "https://address.api.healthcare.gov/street-address" },
@@ -358,6 +359,7 @@ resource "aws_ecs_task_definition" "dagster_ui" {
         { name = "S3_REGION", value = "us-east-1" },
         { name = "S3_DATA_BUCKET", value = aws_s3_bucket.etl_bronze.bucket },
         { name = "DB_PORT", value = "5432" },
+        { name = "DB_HOST", value = var.db.db_instance_address },
         { name = "DB_NAME", value = "npd_etl" },
         { name = "DB_DATABASE", value = "npd_etl" },
         { name = "SMARTY_STREETS_URL", value = "https://address.api.healthcare.gov/street-address" },
