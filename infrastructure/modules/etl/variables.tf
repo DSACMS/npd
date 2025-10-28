@@ -3,6 +3,7 @@ variable "dagster_home" { default = "/opt/dagster/dagster_home" }
 variable "dagster_image" {}
 variable "fhir_api_migration_image" {}
 variable "ecs_cluster_id" {}
+variable "npd_sync_task_arn" {}
 variable "db" {
   type = object({
     db_instance_master_user_secret_arn = string

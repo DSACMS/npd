@@ -210,6 +210,7 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
       }
       command = ["dagster-daemon", "run"]
       environment = [
+        { name = "NPD_SYNC_REPLICATION_TASK_ARN", value = var.npd_sync_task_arn },
         { name = "S3_REGION", value = "us-east-1" },
         { name = "SKIP_TESTS", value = "True" },
         { name = "S3_DATA_BUCKET", value = aws_s3_bucket.etl_bronze.bucket },
@@ -355,6 +356,7 @@ resource "aws_ecs_task_definition" "dagster_ui" {
       ]
       command = ["dagster-webserver", "--host", "0.0.0.0", "--port", "80"]
       environment = [
+        { name = "NPD_SYNC_REPLICATION_TASK_ARN", value = var.npd_sync_task_arn },
         { name = "SKIP_TESTS", value = "True" },
         { name = "S3_REGION", value = "us-east-1" },
         { name = "S3_DATA_BUCKET", value = aws_s3_bucket.etl_bronze.bucket },
