@@ -54,3 +54,22 @@ sudo yum install git -y
 
 9. Restart the instance
 10. Confirm GH Runner is still available on GH
+11. Check service status on EC2 instance
+
+```commandline
+sh-5.2$ sudo systemctl status github-runner.service
+● github-runner.service - GitHub Actions Runner
+     Loaded: loaded (/etc/systemd/system/github-runner.service; enabled; preset: disabled)
+     Active: active (running) since Tue 2025-10-28 15:34:31 EDT; 9min ago
+   Main PID: 2543 (run.sh)
+      Tasks: 14 (limit: 18894)
+     Memory: 115.7M
+        CPU: 3.879s
+     CGroup: /system.slice/github-runner.service
+             ├─2543 /bin/bash /opt/actions-runner/run.sh
+             ├─2593 /bin/bash /opt/actions-runner/run-helper.sh
+             └─2598 /opt/actions-runner/bin/Runner.Listener run
+
+Oct 28 15:36:41 ip-10-204-107-24.ec2.internal run.sh[2598]: Current runner version: '2.329.0'
+Oct 28 15:36:41 ip-10-204-107-24.ec2.internal run.sh[2598]: 2025-10-28 19:36:41Z: Listening for Jobs
+```
