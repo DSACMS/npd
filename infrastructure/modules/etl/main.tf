@@ -174,7 +174,7 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
         },
         {
           name = "FLYWAY_BASELINE_ON_MIGRATE"
-          value = true
+          value = "true"
         }
       ]
       secrets = [
@@ -210,9 +210,17 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
       }
       command = ["dagster-daemon", "run"]
       environment = [
+        { name = "S3_REGION", value = "us-east-1" },
+        { name = "SKIP_TESTS", value = "True" },
+        { name = "S3_DATA_BUCKET", value = aws_s3_bucket.etl_bronze.bucket },
+        { name = "DB_PORT", value = "5432" },
+        { name = "DB_HOST", value = var.db.db_instance_address },
+        { name = "DB_NAME", value = "npd_etl" },
+        { name = "DB_DATABASE", value = "npd_etl" },
+        { name = "SMARTY_STREETS_URL", value = "https://address.api.healthcare.gov/street-address" },
         { name = "DAGSTER_POSTGRES_HOST", value = var.db.db_instance_address },
         { name = "DAGSTER_POSTGRES_DB", value = var.db.db_instance_name },
-        { name = "S3_REGION", value = "us-east-1" }
+        { name = "DAGSTER_POSTGRES_SCHEMA", value = "dagster" },
       ],
       secrets = [
         {
@@ -222,6 +230,22 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
         {
           name      = "DAGSTER_POSTGRES_PASSWORD",
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:password::"
+        },
+        {
+          name      = "DB_USER",
+          valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
+        },
+        {
+          name      = "DB_PASSWORD",
+          valueFrom = "${var.db.db_instance_master_user_secret_arn}:password::"
+        },
+        {
+          name      = "SECRET_KEY",
+          valueFrom = aws_secretsmanager_secret_version.dagster_secret_version.arn
+        },
+        {
+          name      = "SMARTY_STREETS_API_KEY",
+          valueFrom = aws_secretsmanager_secret_version.smartystreets_secret_version.arn
         }
       ]
     }
@@ -242,6 +266,61 @@ resource "aws_ecs_service" "dagster_daemon" {
   }
 
   force_new_deployment = true
+}
+
+# Dagster Secrets
+
+data "aws_secretsmanager_random_password" "dagster_secret_value" {
+  password_length = 20
+}
+
+resource "aws_secretsmanager_secret" "dagster_secret" {
+  name_prefix = "${var.account_name}-dagster-secret"
+  description = "Secret value to use with the Dagster UI"
+}
+
+resource "aws_secretsmanager_secret_version" "dagster_secret_version" {
+  secret_id                = aws_secretsmanager_secret.dagster_secret.id
+  secret_string_wo         = data.aws_secretsmanager_random_password.dagster_secret_value.random_password
+  secret_string_wo_version = 1
+}
+
+data "aws_secretsmanager_random_password" "smartystreets_secret_value" {
+  password_length = 20
+}
+
+resource "aws_secretsmanager_secret" "smartystreets_secret" {
+  name_prefix = "${var.account_name}-smartystreets-secret"
+  description = "Dagster SmartyStreets API KEY"
+}
+
+resource "aws_secretsmanager_secret_version" "smartystreets_secret_version" {
+  secret_id                = aws_secretsmanager_secret.dagster_secret.id
+  secret_string_wo         = data.aws_secretsmanager_random_password.smartystreets_secret_value.random_password
+  secret_string_wo_version = 1
+}
+
+resource "aws_iam_policy" "dagster_can_access_dagster_secrets" {
+  name        = "${var.account_name}-dagster-can-access-dagster-secret"
+  description = "Allows ECS to access the RDS secret"
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = "secretsmanager:GetSecretValue",
+        Effect = "Allow"
+        Resource = [
+          aws_secretsmanager_secret_version.dagster_secret_version.arn,
+          aws_secretsmanager_secret_version.smartystreets_secret_version.arn
+        ]
+      }
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "dagster_secret_attachment" {
+  policy_arn = aws_iam_policy.dagster_can_access_dagster_secrets.arn
+  role = aws_iam_role.dagster_execution_role.name
 }
 
 resource "aws_ecs_task_definition" "dagster_ui" {
@@ -276,10 +355,17 @@ resource "aws_ecs_task_definition" "dagster_ui" {
       ]
       command = ["dagster-webserver", "--host", "0.0.0.0", "--port", "80"]
       environment = [
+        { name = "SKIP_TESTS", value = "True" },
+        { name = "S3_REGION", value = "us-east-1" },
+        { name = "S3_DATA_BUCKET", value = aws_s3_bucket.etl_bronze.bucket },
+        { name = "DB_PORT", value = "5432" },
+        { name = "DB_HOST", value = var.db.db_instance_address },
+        { name = "DB_NAME", value = "npd_etl" },
+        { name = "DB_DATABASE", value = "npd_etl" },
+        { name = "SMARTY_STREETS_URL", value = "https://address.api.healthcare.gov/street-address" },
         { name = "DAGSTER_POSTGRES_HOST", value = var.db.db_instance_address },
         { name = "DAGSTER_POSTGRES_DB", value = var.db.db_instance_name },
-        { name = "S3_DATA_BUCKET", value = aws_s3_bucket.etl_bronze.bucket },
-        { name = "S3_REGION", value = "us-east-1" }
+        { name = "DAGSTER_POSTGRES_SCHEMA", value = "dagster" },
       ],
       secrets = [
         {
@@ -289,6 +375,22 @@ resource "aws_ecs_task_definition" "dagster_ui" {
         {
           name      = "DAGSTER_POSTGRES_PASSWORD",
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:password::"
+        },
+        {
+          name      = "DB_USER",
+          valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
+        },
+        {
+          name      = "DB_PASSWORD",
+          valueFrom = "${var.db.db_instance_master_user_secret_arn}:password::"
+        },
+        {
+          name      = "SECRET_KEY",
+          valueFrom = aws_secretsmanager_secret_version.dagster_secret_version.arn
+        },
+        {
+          name      = "SMARTY_STREETS_API_KEY",
+          valueFrom = aws_secretsmanager_secret_version.smartystreets_secret_version.arn
         }
       ]
     }
