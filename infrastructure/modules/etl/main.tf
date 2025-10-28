@@ -130,6 +130,31 @@ resource "aws_iam_role_policy_attachment" "dagster_can_read_bronze_bucket_attach
   role       = aws_iam_role.dagster_task_role.id
 }
 
+resource "aws_iam_policy" "dagster_can_start_dms_task" {
+  name = "${var.account_name}-dagster-can-start-dms-tasks"
+  description = "Allows Dagster to start a specified DMS migration task"
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = [
+          "dms:StartReplicationTask"
+        ]
+        Effect = "Allow"
+        Resource = [
+          var.npd_sync_task_arn
+        ]
+      },
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "dagster_can_start_dms_task_attachment" {
+  policy_arn = aws_iam_policy.dagster_can_start_dms_task.arn
+  role = aws_iam_role.dagster_task_role.name
+}
+
 resource "aws_ecs_task_definition" "dagster_daemon" {
   family                   = "${var.account_name}-dagster-daemon"
   network_mode             = "awsvpc"
