@@ -20,7 +20,7 @@ Feedback in all areas is welcome during the beta, including the following:
 - Supporting documentation and resources
 
 Feedback and questions may be submitted via [email](npd@cms.hhs.gov) or [Slack](). The team may request a meeting to follow-up on your feedback.
-Developers may also participate in our [open source project](open source code section). 
+Developers may also participate in our [open source project](#open-source-project). 
 
 ## About the data
 
