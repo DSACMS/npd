@@ -56,7 +56,7 @@ The initial beta release of the National Provider Directory API makes the follow
 | /fhir/PractitionerRole/<id> | lists relationships between individuals that provide healthcare services, the organizations within which they provide healthcare services, the locations at which they practice, and the interoperability endpoints that pertain to those relationships; supplying an id allows developers to retrieve a single practitioner role record |
 
 ## Developer sandbox
-To explore the data in an interactive developer sandbox integrated with detailed documentation, please visit the National Provider Directory [Swagger documentation](/fhir/docs).
+To explore the data in an interactive developer sandbox integrated with detailed documentation, please visit the National Provider Directory [Swagger documentation](http://ndh-alb-1866093491.us-gov-west-1.elb.amazonaws.com/fhir/docs/).
 
 
 ## Open source project
