@@ -1,5 +1,7 @@
 import re
 import unicodedata
+import uuid
+
 from functools import cmp_to_key
 from django.urls import reverse
 from rest_framework import status
@@ -14,10 +16,12 @@ from fhir.resources.R4B.capabilitystatement import CapabilityStatement
 from pydantic import ValidationError
 from rest_framework import status
 from rest_framework.test import APIClient, APITestCase
-from .models import ProviderToLocation
+
+from .models import Organization, ProviderToLocation
 
 # I can't explain why, but we need to import cacheData here. I think we can remove this once we move to the docker db setup
 from .cache import cacheData
+
 
 def get_female_npis(npi_list):
     """
@@ -75,17 +79,17 @@ class EndpointViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
         self.assertIn("results", response.data)
-    
+
     def test_list_in_proper_order(self):
         url = self.list_url
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
 
-        #print(response.data["results"]["entry"][0]['resource']['name'])
+        # print(response.data["results"]["entry"][0]['resource']['name'])
 
         # Extract names
-        #Note: have to normalize the names to have python sorting match sql
+        # Note: have to normalize the names to have python sorting match sql
         names = [
             d['resource'].get('name', {})
             for d in response.data["results"]["entry"]
@@ -104,9 +108,9 @@ class EndpointViewSetTestCase(APITestCase):
             'Advanced Cardiovascular Center'
         ]
 
-        self.assertEqual(names, sorted_names, f"Expected endpoints list sorted by name but got {names}\n Sorted: {sorted_names}")
+        self.assertEqual(
+            names, sorted_names, f"Expected endpoints list sorted by name but got {names}\n Sorted: {sorted_names}")
 
-    
     def test_list_returns_fhir_bundle(self):
         response = self.client.get(self.list_url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -235,6 +239,8 @@ class BasicViewsTestCase(APITestCase):
 class OrganizationViewSetTestCase(APITestCase):
     def setUp(self):
         self.client = APIClient()
+        self.org_without_authorized_official = Organization.objects.create(
+            id='26708690-19d6-499e-b481-cebe05b98f08', authorized_official_id=None)
 
     def test_list_default(self):
         url = reverse("fhir-organization-list")
@@ -249,7 +255,7 @@ class OrganizationViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
 
-        #print(response.data["results"]["entry"][0]['resource']['name'])
+        # print(response.data["results"]["entry"][0]['resource']['name'])
 
         # Extract names
         names = [
@@ -269,8 +275,8 @@ class OrganizationViewSetTestCase(APITestCase):
             'A BEAUTIFUL SMILE DENTISTRY, L.L.C.',
             'A & B HEALTH CARE, INC.'
         ]
-        self.assertEqual(names, sorted_names, f"Expected fhir orgs sorted by org name but got {names}\n Sorted: {sorted_names}")
-
+        self.assertEqual(
+            names, sorted_names, f"Expected fhir orgs sorted by org name but got {names}\n Sorted: {sorted_names}")
 
     def test_list_with_custom_page_size(self):
         url = reverse("fhir-organization-list")
@@ -371,6 +377,14 @@ class OrganizationViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['id'], id)
 
+    def test_organization_without_authorized_official(self):
+        id = self.org_without_authorized_official.pk
+        url = reverse("fhir-organization-detail",
+                      args=[id])
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data['id'], id)
+
 
 class LocationViewSetTestCase(APITestCase):
     def setUp(self):
@@ -382,14 +396,14 @@ class LocationViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
         self.assertIn("results", response.data)
-    
+
     def test_list_in_proper_order(self):
         url = reverse("fhir-location-list")
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
 
-        #print(response.data["results"]["entry"][0]['resource']['name'])
+        # print(response.data["results"]["entry"][0]['resource']['name'])
 
         # Extract names
         names = [
@@ -410,8 +424,8 @@ class LocationViewSetTestCase(APITestCase):
             'ABILENE HELPING HANDS INC'
         ]
 
-        self.assertEqual(names, sorted_names, f"Expected fhir orgs sorted by org name but got {names}\n Sorted: {sorted_names}")
-
+        self.assertEqual(
+            names, sorted_names, f"Expected fhir orgs sorted by org name but got {names}\n Sorted: {sorted_names}")
 
     def test_list_with_custom_page_size(self):
         url = reverse("fhir-location-list")
@@ -456,22 +470,22 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
         self.assertIn("results", response.data)
-    
+
     def test_list_in_proper_order(self):
-        url = reverse("fhir-practitioner-list") 
+        url = reverse("fhir-practitioner-list")
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
 
-        #print(response.data["results"]["entry"][0]['resource']['name'][0])
+        # print(response.data["results"]["entry"][0]['resource']['name'][0])
 
-        #for name in response.data["results"]["entry"]:
+        # for name in response.data["results"]["entry"]:
         #    print(name['resource']['name'][-1])
 
         # Extract names
         names = [
             (d['resource']['name'][-1].get('family', {}),
-            d['resource']['name'][-1]['given'][0])
+             d['resource']['name'][-1]['given'][0])
             for d in response.data["results"]["entry"]
         ]
 
@@ -488,7 +502,8 @@ class PractitionerViewSetTestCase(APITestCase):
             ('ABELSON', 'MARK')
         ]
 
-        self.assertEqual(names, sorted_names, f"Expected fhir orgs sorted by org name but got {names}\n Sorted: {sorted_names}")
+        self.assertEqual(
+            names, sorted_names, f"Expected fhir orgs sorted by org name but got {names}\n Sorted: {sorted_names}")
 
     def test_list_with_custom_page_size(self):
         url = reverse("fhir-practitioner-list")
@@ -623,7 +638,7 @@ class CapabilityStatementViewSetTestCase(APITestCase):
     def test_capability_statement_has_required_fields(self):
         response = self.client.get(self.url)
         data = response.data
-        
+
         self.assertIn("status", data)
         self.assertIn("fhirVersion", data)
         self.assertIn("format", data)
@@ -632,5 +647,7 @@ class CapabilityStatementViewSetTestCase(APITestCase):
     def test_capability_statement_is_valid_fhir(self):
         response = self.client.get(self.url)
 
-        capability_statement = CapabilityStatement.model_validate(response.data)
-        self.assertEqual(capability_statement.__resource_type__, "CapabilityStatement")
+        capability_statement = CapabilityStatement.model_validate(
+            response.data)
+        self.assertEqual(capability_statement.__resource_type__,
+                         "CapabilityStatement")
