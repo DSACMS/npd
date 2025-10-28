@@ -1,10 +1,15 @@
-import logging
+import structlog
 from django.conf import settings
 from django.contrib.staticfiles.finders import find
-from django.core.files.storage import default_storage
 from django.shortcuts import redirect, render
+from pydantic import BaseModel
 
-logger = logging.getLogger(__name__)
+logger = structlog.get_logger(__name__)
+
+
+class IndexContext(BaseModel):
+    title: str
+
 
 def index(request, path: str | None = None):
     """
@@ -15,14 +20,17 @@ def index(request, path: str | None = None):
     will end up here and will be handled by the React application built from the
     npd/frontend/ project.
     """
-    context = {
-        "title": "National Provider Directory"
-    }
 
-    if (settings.DEBUG or settings.TESTING) and not find('index.html'):
-        return redirect('http://localhost:3000/')
+    context = IndexContext.model_validate({ "title": "National Provider Directory" })
+
+    if not request.user.is_anonymous:
+        context.user_data.username = request.user.username
+        context.user_data.is_anonymous = False
+
+    if (settings.DEBUG or settings.TESTING) and not find("index.html"):
+        return redirect("http://localhost:3000/")
 
     # NOTE: (@abachman-dsac) to test this path in development requires that
     # `static/index.html` is present. You can build it locally by running
     # `npm run build` or `npm run watch` in the frontend project.
-    return render(request, "index.html", context)
+    return render(request, "index.html", context.model_dump())

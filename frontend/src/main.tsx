@@ -15,19 +15,27 @@ import "@uswds/uswds"
 
 import "./i18n.ts"
 
+import { AuthenticatedRoute } from "./components/AuthenticatedRoute.tsx"
 import { Developers } from "./pages/Developers"
 import { Landing } from "./pages/Landing"
 import { Layout } from "./pages/Layout"
+import { Login } from "./pages/Login.tsx"
+import { FrontendSettingsProvider } from "./state/FrontendSettingsProvider.tsx"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route index element={<Landing />} />
-          <Route path="/developers" element={<Developers />} />
-        </Route>
-      </Routes>
+      <FrontendSettingsProvider>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/accounts/login/" element={<Login />} />
+            <Route element={<AuthenticatedRoute />}>
+              <Route index element={<Landing />} />
+              <Route path="/developers" element={<Developers />} />
+            </Route>
+          </Route>
+        </Routes>
+      </FrontendSettingsProvider>
     </BrowserRouter>
   </StrictMode>,
 )

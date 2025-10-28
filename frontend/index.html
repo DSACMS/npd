@@ -8,11 +8,12 @@
       src="/node_modules/@uswds/uswds/dist/js/uswds-init.min.js"
       type="module"
     ></script>
-
+    {{ form_errors|json_script:"form-errors" }}
     <title>{{ title }}</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <template id="csrf-token-input">{% csrf_token %}</template>
   </body>
 </html>

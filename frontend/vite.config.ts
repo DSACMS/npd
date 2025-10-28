@@ -2,14 +2,34 @@
 
 import react from "@vitejs/plugin-react"
 import process from "node:process"
-import { defineConfig } from "vite"
+import { defineConfig, type Plugin } from "vite"
 
 const outDir =
   process.env.BUILD_OUTPUT_DIR || "../backend/provider_directory/static/"
 
-export default defineConfig(({ mode }) => {
+// replace Django {{ ... }} template strings with nothing
+const stripTemplateStrings = (data: Record<string, string>): Plugin => ({
+  name: "strip-template-strings",
+  transformIndexHtml: {
+    order: "pre",
+    handler(html: string) {
+      return html.replace(
+        /\{\{(.*)\}\}/gi,
+        (_match, key: string) => data[key.trim()] || "",
+      )
+    },
+  },
+})
+
+export default defineConfig(({ mode, command }) => {
+  const plugins: (Plugin | Plugin[])[] = [react()]
+
+  if (command === "serve") {
+    plugins.push(stripTemplateStrings({ title: "NPD Dev Service" }))
+  }
+
   return {
-    plugins: [react()],
+    plugins,
     base: mode === "development" ? "" : "/static/",
     build: {
       outDir,
