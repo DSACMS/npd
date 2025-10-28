@@ -1,9 +1,9 @@
 from django.http import JsonResponse
 from django.db import connection
-import logging
 from datetime import datetime, timezone
+import structlog
 
-logger = logging.getLogger(__name__)
+logger = structlog.get_logger(__name__)
 
 
 class HealthCheckMiddleware:
@@ -29,7 +29,7 @@ class HealthCheckMiddleware:
                 return JsonResponse(health_status, status=200)
 
             except Exception as e:
-                logger.error(f"Database health check failed: {str(e)}")
+                logger.error("Database health check failed")
                 health_status.update({
                     'status': 'unhealthy',
                     'database': 'disconnected',
