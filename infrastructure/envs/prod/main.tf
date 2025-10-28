@@ -154,3 +154,12 @@ module "frontend" {
   source       = "../../modules/frontend"
   account_name = local.account_name
 }
+
+# CI/CD
+module "github-actions" {
+  source = "../../modules/github-actions-runner"
+
+  account_name = local.account_name
+  vpc_id       = module.networking.vpc_id
+  subnet_id    = module.networking.private_subnet_ids[0]
+}
