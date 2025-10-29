@@ -1,0 +1,62 @@
+.header {
+  --shadow: 10px;
+
+  background-color: var(--color-background);
+
+  box-shadow: 0 var(--shadow) var(--shadow) var(--color-gray-light);
+  position: relative;
+
+  /* NOTE: (@abachman-dsac) we have to override the uswds default max-width because
+     it conflicts with the CMS Design System's grid system max-width  */
+  & :global(.usa-nav-container) {
+    margin-inline: auto;
+    max-width: var(--site-max-width);
+  }
+}
+
+.title {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.logo {
+  margin-right: 0.5rem;
+  width: 8.875rem;
+}
+
+.logoText {
+  color: var(--theme-color-primary-darkest, #00395e);
+
+  /* Headings/2xl/2xl - all breakpoints */
+  font-family: var(--theme-font-family-heading, "Open Sans");
+  font-size: var(--theme-font-size-2xl, 1.5rem);
+  font-style: normal;
+  font-weight: var(--theme-font-weight-heading-2xl, 700);
+  line-height: 130%; /* 1.95rem */
+}
+
+.betaBadge {
+  align-items: center;
+  background: #0071bc;
+  display: inline-flex !important;
+  gap: 0.625rem;
+  justify-content: center;
+  margin-left: 0.5rem;
+  padding: var(--spacer-half, 0.25rem) var(--spacer-1, 0.5rem);
+
+  /* typeography */
+  color: var(--component-badge-font-color--info, #fff);
+  /* Body/Small */
+  font-family: var(--theme-font-family-body, "Open Sans");
+  font-size: var(--theme-font-size-sm, 0.875rem);
+  font-style: normal;
+  font-weight: var(--theme-font-weight-body-sm, 400);
+  line-height: 150%; /* 1.3125rem */
+}
+
+.submenuList a:focus {
+  background-color: transparent !important;
+  outline: 0.25rem solid #2591ff !important;
+}

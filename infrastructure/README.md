@@ -1,64 +1,72 @@
-# Terraform ECS Postgres App
+# NPD Infrastructure
 
-Terraform configuration for provisioning the NPD AWS infrastructure. This will be added to as we build out more of the infrastructure. To read more about Terraform for AWS and explore a "Getting Started Guide," go [here](https://developer.hashicorp.com/terraform/tutorials/aws-get-started).
+## Infrastructure Diagram
 
-## Dependencies
+![npd-infrastructure-diagram-prod.drawio.png](npd-infrastructure-diagram-prod.drawio.png)
 
-* [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-* [Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
-* [CTKey CLI Tool](https://cloud.cms.gov/getting-started-access-key-cli-tool) (n.b. ensure you add CTKey to PATH)
+## Update Cadence
 
+- `sandbox` will be updated whenever `main` is updated until it is torn down
+- The `dev` environment is to be updated whenever updates to `main` are merged
+- `test` / `uat` is updated whenever a release is cut
+- Releasing to `prod` is manual, requires sign-off from the PM and eng team
 
-## Setup
+## Naming Conventions
 
-### Authentication
-Follow these setup steps to set and/or refresh your stored AWS credentials for this project.
-1. Update the variables in `ctkey.sh` to match your application and AWS account.
-  * Ensure that the IAM role aligns with a role you have access to (may be ct-ado-dsac-developer-admin instead of ct-ado-dsac-application-admin, depending on how your AWS perms were provisioned)
-2. Run `./ctkey.sh`
-3. Set the AWS_PROFILE environment variable with the profile name you chose
+The naming scheme for resources should be consistent but not too verbose.
+Sandbox resources do not follow a consistent naming scheme.
 
-### Provision Resources
-1. Create a `terraform.tfvars` file to pass custom values for the variables contained in `variables.tf`
-2. Run
+`{project-name}-${region}-${tier}-${description}-${index?}`
 
-```sh
-terraform init
-terraform apply
+Non-prod is divided into two tiers:
+- `dev`
+- `test`
+
+Production is `prod`.
+
+Some examples:
+
+```bash
+npd-east-dev-fhir-api
+npd-east-test-fhir-api
+npd-east-dev-fhir-database
+npd-east-test-fhir-database-replica-1
+npd-east-dev-load-fips-bronze-job
 ```
 
-Provisions the following:
+## Usage
 
-- ECS cluster, service, and task definitions
-- ECR repository to publish custom container images to
-- ALB to direct traffic to ECS on port 80
-- RDS database with public connectivity to 5432 (**for local dev, be careful**). Note: Refer to AWS Secrets Manager to find the password of the provisioned database user.
-3. Create a [cloud service request ticket](https://jiraent.cms.gov/plugins/servlet/desk/portal/22) to have the db instance added to the ZScaler Private Segment. Note: Unil this is completed, you will only be able to connect locally with ZScaler fully disabled (turning off Private Access is not sufficient).
+### Deploy (manual)
 
-### Modify Provisioned Resources
-1. Change the settings in `main.tf`
-2. Run
-
-```sh
-terraform apply
+1. Create an environment specific `.env` file, using `.env.template` as a reference
 ```
-
-## Development
-
-- Build a Docker container locally
-- Push the Docker container to ECR, following the included instructions on the AWS console
-- Update the container image variable by setting the `TF_VAR_container_image` environment variable as well as any other differences like `TF_VAR_container_port`
-  - You can also specify these in a `.tfvars` file ignored by git
-- Update any task definition parameters that are different for your container
-
-## Notes
-
-- This is **not a production configuration**, in particular when it comes to security. It mostly focuses on handling a lot of the annoying footguns when getting started with a deployed dev environment
-- This is a starting point that we will build off of
-- This is very coupled to running in the DSAC sandbox environment
-- In order to connect to the database, it is recommended that you set a connection timeout of 300 seconds.
-
-
-## Notional Infrastructure Diagram
-The below diagram is a rough hypothesis of the infrastructure components that will make up the National Provider Directory MVP.
-![Notional architecture diagram](<Notional NPD System Diagram_2025-08-26_19-37-04.png>)
+   (one of)
+   .env.sandbox
+   .env.dev
+   .env.test
+   .env.prod
+```
+2. Assume an AWS Role using `./ctkey.sh`
+```
+    (one of)
+    ./ctkey.sh sandbox
+    ./ctkey.sh dev
+    ./ctkey.sh test
+    ./ctkey.sh prod
+```
+3. Initialize terraform
+```
+    (one of)
+    terraform -chdir=envs/sandbox init
+    terraform -chdir=envs/dev init
+    terraform -chdir=envs/test init
+    terraform -chdir=envs/prod init
+```
+4. Deploy resources using terraform
+```
+    (one of)
+    terraform -chdir=envs/sandbox apply
+    terraform -chdir=envs/dev apply
+    terraform -chdir=envs/test apply
+    terraform -chdir=envs/prod apply
+```

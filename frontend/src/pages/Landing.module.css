@@ -1,0 +1,91 @@
+.hero {
+  background: linear-gradient(
+    93deg,
+    rgba(144, 255, 244, 0.1) 1.46%,
+    rgba(0, 153, 255, 0.1) 97.1%
+  );
+}
+
+.heroSpacing {
+  display: flex;
+  width: var(--spacer-7, 3.5rem);
+  height: var(--spacer-7, 3.5rem);
+  justify-content: center;
+  align-items: center;
+}
+
+.heroBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacer-2, 1rem);
+  align-self: stretch;
+
+  & h1 {
+    color: var(--theme-color-primary-darkest, #00395e);
+
+    /* Headings/4xl/4xl - LG breakpoint */
+    font-family: var(--theme-font-family-heading, "Open Sans");
+    font-size: var(--theme-font-size-4xl, 3rem);
+    font-style: normal;
+    font-weight: var(--theme-font-weight-heading-4xl, 700);
+    line-height: 130%; /* 3.9rem */
+  }
+}
+
+.heroBadge {
+  padding: 0.5rem;
+}
+
+.tagline {
+  color: var(--theme-color-base, #262626);
+
+  /* Headings/3xl/3xl - LG breakpoint */
+  font-family: var(--theme-font-family-heading, "Open Sans");
+  font-size: var(--theme-font-size-3xl, 2.25rem);
+  font-style: normal;
+  font-weight: var(--theme-font-weight-heading-3xl, 400);
+  line-height: 130%; /* 2.925rem */
+}
+
+.primaryActions {
+  display: flex;
+  padding: var(--spacer-2, 1rem) 0;
+  align-items: center;
+  gap: var(--spacer-2, 1rem);
+}
+
+/* About */
+.secondary {
+  display: flex;
+  padding: var(--spacer-7, 3.5rem) 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacer-3, 1.5rem);
+  align-self: stretch;
+
+  & h2 {
+    color: var(--theme-color-primary-darkest, #00395e);
+
+    /* Headings/3xl/3xl - LG breakpoint */
+    font-family: var(--theme-font-family-heading, "Open Sans");
+    font-size: var(--theme-font-size-3xl, 2.25rem);
+    font-style: normal;
+    font-weight: var(--theme-font-weight-heading-3xl, 700);
+    line-height: 130%; /* 2.925rem */
+  }
+
+  & .secondaryDescription {
+    max-width: var(--media-width-md, 48rem);
+    align-self: stretch;
+
+    color: var(--theme-color-base, #262626);
+
+    /* Links/Body/Large */
+    font-family: var(--theme-font-family-link, "Open Sans");
+    font-size: var(--theme-font-size-lg, 1.125rem);
+    font-style: normal;
+    font-weight: var(--theme-font-weight-body-lg, 400);
+    line-height: 150%; /* 1.6875rem */
+  }
+}

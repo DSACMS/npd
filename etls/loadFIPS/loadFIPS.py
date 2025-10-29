@@ -2,24 +2,68 @@ import requests
 import os
 import time
 import pandas as pd
+from pangres import upsert
 import logging
+import sys
 
 from typing import Optional
 from io import StringIO
 from sqlalchemy import create_engine
-from dotenv import load_dotenv
-
-load_dotenv()
 
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 
 class FIPSCountyETL:
     def __init__(self, table_name: str = "fips_county"):
         self.table_name = table_name
-        self.max_retries = int(os.getenv("MAX_RETRIES", "3"))
+
+        # Get environment variables from os or from aws glue context
+        # TODO: We could abstract this into a python module that works either locally or in AWS
+        # e.g. configuration.get("MAX_RETRIES") or configuration.get("DB_PASSWORD")
+        MAX_RETRIES_KEY = "MAX_RETRIES"
+        DB_SECRET_ARN = "DB_SECRET_ARN"
+        DB_USER_KEY = "DB_USER"
+        DB_PASSWORD_KEY = "DB_PASSWORD"
+        DB_NAME_KEY = "DB_NAME"
+        DB_HOST_KEY = "DB_HOST"
+        DB_PORT_KEY = "DB_PORT"
+
+        try:
+            # AWS-specific flow for fetching configuration information
+            from awsglue.utils import getResolvedOptions
+            import boto3
+            import json
+            args = getResolvedOptions(sys.argv, [
+                MAX_RETRIES_KEY,
+                DB_SECRET_ARN,
+                DB_NAME_KEY,
+                DB_HOST_KEY,
+                DB_PORT_KEY
+            ])
+            # Fetch sensitive values from secretsmanager directly
+            secrets_client = boto3.client("secretsmanager", region_name="us-gov-west-1")
+            db_secret = json.loads(secrets_client.get_secret_value(SecretId=args[DB_SECRET_ARN])["SecretString"])
+            self.db_user = db_secret["username"] # because the key is "username" on the secret payload
+            self.db_password = db_secret["password"] # because the key is "password" on the secret payload
+            # Retrieve non-sensitive data from getResolvedOptions
+            self.max_retries = int(os.getenv(args[MAX_RETRIES_KEY], "3"))
+            self.db_name = args[DB_NAME_KEY]
+            self.db_host = args[DB_HOST_KEY]
+            self.db_port = args[DB_PORT_KEY]
+
+        except ImportError:
+            from dotenv import load_dotenv
+            load_dotenv()
+            # Fallback to fetching information from a local .env using dotenv
+            self.max_retries = int(os.getenv(MAX_RETRIES_KEY, "3"))
+            self.db_user = os.getenv(DB_USER_KEY)
+            self.db_password = os.getenv(DB_PASSWORD_KEY)
+            self.db_name = os.getenv(DB_NAME_KEY)
+            self.db_host = os.getenv(DB_HOST_KEY)
+            self.db_port = os.getenv(DB_PORT_KEY)
 
     def handle_request(self, url: str) -> Optional[requests.Response]:
         for attempt in range(self.max_retries):
@@ -91,6 +135,7 @@ class FIPSCountyETL:
             df["fips_state_id"] = df["STATEFP"]
 
             df = df[["id", "name", "fips_state_id"]].drop_duplicates()
+            df = df.set_index("id")
 
         except Exception as e:
             logger.error(
@@ -106,21 +151,20 @@ class FIPSCountyETL:
         transformed_data = self.transform()
 
         connection_string = (
-            f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@"
-            f"{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}"
+            f"postgresql://{self.db_user}:{self.db_password}@"
+            f"{self.db_host}:{self.db_port}/{self.db_name}"
         )
 
         engine = create_engine(connection_string)
 
         try:
             with engine.begin() as con:
-                transformed_data.to_sql(
-                    name=self.table_name,
+                upsert(
                     con=con,
-                    if_exists="append",
-                    index=False,
-                    method="multi",
-                    schema='npd'
+                    df=transformed_data,
+                    table_name=self.table_name,
+                    if_row_exists="update",
+                    schema = "ndh"
                 )
 
             logger.info("Phase 3 - Loading has finished")

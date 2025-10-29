@@ -1,0 +1,95 @@
+title = "Custom Gitleaks Config for Common Secrets + Terraform.tfstate"
+version = "2"
+
+[allowlist]
+description = "Global allowlist"
+paths = [
+  '''\.gitignore''',
+  '''\.gitleaks\.toml''',
+  '''\backend/.env'''
+]
+commits = [
+  "841f5fc02cc5f3e5bc086b645e1fa8ac49fa1a8e", #Old violation of terraform secret upload
+  "67e511279680f31cbf8de98b3fc6701670068135"
+]
+
+# --- Common Secrets ---
+[[rules]]
+id = "github-pat"
+description = "GitHub Personal Access Token"
+regex = '''ghp_[0-9A-Za-z]{36}'''
+tags = ["key", "GitHub"]
+
+[[rules]]
+id = "slack-token"
+description = "Slack Token"
+regex = '''xox[baprs]-[0-9A-Za-z]{10,48}'''
+tags = ["key", "slack"]
+
+[[rules]]
+id = "google-api-key"
+description = "Google API Key"
+regex = '''AIza[0-9A-Za-z\-_]{35}'''
+tags = ["key", "Google"]
+
+[[rules]]
+id = "aws-access-key"
+description = "AWS Access Key"
+regex = '''(A3T[A-Z0-9]|AKIA|ASIA|AGPA|AIDA|AROA|AIPA|ANPA)[A-Z0-9]{16}'''
+tags = ["AWS"]
+
+[[rules]]
+id = "aws-secret-key"
+description = "AWS Secret Key"
+regex = '''(?i)aws(.{0,20})?(?-i)['"][0-9a-zA-Z/+]{40}['"]'''
+tags = ["AWS"]
+
+[[rules]]
+id = "private-key"
+description = "Private Key"
+regex = '''-----BEGIN( RSA| EC| DSA)? PRIVATE KEY-----'''
+tags = ["private"]
+
+# --- Terraform.tfstate Specific ---
+
+[[rules]]
+id = "tfstate-access-key"
+description = "Terraform tfstate Access Key"
+regex = '''"access_key"\s*:\s*"[^"]{16,}'''
+tags = ["terraform", "AWS"]
+
+[[rules]]
+id = "tfstate-secret-key"
+description = "Terraform tfstate Secret Key"
+regex = '''"secret_key"\s*:\s*"[^"]{32,}'''
+tags = ["terraform", "AWS"]
+
+[[rules]]
+id = "tfstate-client-secret"
+description = "Terraform tfstate Client Secret"
+regex = '''"client_secret"\s*:\s*"[^"]{8,}'''
+tags = ["terraform", "oidc", "azure", "gcp"]
+
+[[rules]]
+id = "tfstate-password"
+description = "Terraform tfstate Password"
+regex = '''"password"\s*:\s*"[^"]{6,}'''
+tags = ["terraform", "password"]
+
+[[rules]]
+id = "tfstate-token"
+description = "Terraform tfstate Token"
+regex = '''"token"\s*:\s*"[^"]{8,}'''
+tags = ["terraform", "token"]
+
+[[rules]]
+id = "tfstate-private-key"
+description = "Terraform tfstate Private Key"
+regex = '''"private_key"\s*:\s*"-----BEGIN'''
+tags = ["terraform", "private-key"]
+
+[[rules]]
+id = "tfstate-provider-ids"
+description = "Terraform tfstate Provider IDs (username, client_id, subscription_id, tenant_id)"
+regex = '''(?i)(username|client_id|subscription_id|tenant_id)"\s*:\s*"[^"]{4,}'''
+tags = ["terraform", "provider"]

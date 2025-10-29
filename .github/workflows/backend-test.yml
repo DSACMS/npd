@@ -1,0 +1,50 @@
+name: Django Tests
+permissions:
+  contents: read
+  checks: write
+  pull-requests: write
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend/
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Compose
+        uses: docker/setup-compose-action@v1
+
+      - name: Ensure test directories have appropriate permissions for writing
+        run: |
+          mkdir -p ./artifacts/test-reports
+          chmod 777 ./artifacts/test-reports
+          chmod 777 ./provider_directory/static
+
+      - name: Build and run tests
+        run: |
+          make test
+
+      - name: Upload test results as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: backend/artifacts/test-reports/*.xml
+
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: (!cancelled())
+        with:
+          check_name: "Backend Django Test Results"
+          comment_mode: changes in failures
+          files: |
+            backend/artifacts/test-reports/*.xml

@@ -1,0 +1,17 @@
+{
+  "skip": "Skip navigation",
+  "title": "National Provider Directory",
+  "badge": "Under Development",
+  "link": {
+    "search": "Search the data",
+    "developers": "For developers",
+    "providers": "For providers"
+  },
+  "menu": {
+    "developers": {
+      "overview": "Overview",
+      "about": "About the data",
+      "api": "API documentation"
+    }
+  }
+}

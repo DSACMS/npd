@@ -1,0 +1,67 @@
+name: Deploy to Sandbox
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@main
+        with:
+          role-to-assume: arn:aws-us-gov:iam::250902968334:role/GithubActionsDeployRole
+          aws-region: us-gov-west-1
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+      - name: Build, tag, push migration image to Amazon ECR
+        working-directory: flyway
+        env:
+          REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          REPOSITORY: ndh-migrations
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
+          docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
+          docker tag $REGISTRY/$REPOSITORY:$IMAGE_TAG $REGISTRY/$REPOSITORY
+          docker push $REGISTRY/$REPOSITORY:latest
+          echo "TF_VAR_migration_image=$REGISTRY/$REPOSITORY:$IMAGE_TAG" >> "$GITHUB_ENV"
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+      - name: Build Frontend Assets
+        working-directory: frontend
+        env:
+          VITE_API_BASE_URL: ""
+        run: |
+          npm install
+          npm run build
+      - name: Build, tag, and push docker image to Amazon ECR
+        working-directory: backend
+        env:
+          REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          REPOSITORY: ndh
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
+          docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
+          docker tag $REGISTRY/$REPOSITORY:$IMAGE_TAG $REGISTRY/$REPOSITORY
+          docker push $REGISTRY/$REPOSITORY:latest
+          echo "TF_VAR_container_image=$REGISTRY/$REPOSITORY:$IMAGE_TAG" >> "$GITHUB_ENV"
+      - name: Configure Terraform
+        uses: hashicorp/setup-terraform@v3
+      - name: Update Infrastructure, Deploy API
+        working-directory: infrastructure
+        env:
+          REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          REPOSITORY: ndh
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          terraform -chdir=envs/sandbox init
+          terraform -chdir=envs/sandbox apply -auto-approve
