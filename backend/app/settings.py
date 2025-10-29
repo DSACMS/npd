@@ -36,7 +36,7 @@ TESTING = 'test' in sys.argv
 REQUIRE_AUTHENTICATION = config("NPD_REQUIRE_AUTHENTICATION", default=False, cast=bool)
 
 if DEBUG:
-    ALLOWED_HOSTS = ['localhost','127.0.0.1','0.0.0.0','testserver']
+    ALLOWED_HOSTS = ['localhost','127.0.0.1','0.0.0.0','testserver','django-web']
 else:
     ALLOWED_HOSTS = config("DJANGO_ALLOWED_HOSTS").split(',')
 
@@ -82,6 +82,11 @@ if REQUIRE_AUTHENTICATION:
 if not TESTING:
     MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
     # This must come at the end.
+
+# We want the fhir urls to be entirely open
+CORS_URLS_REGEX = r'^/fhir/.*$'
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_METHODS = ['GET']
 
 ROOT_URLCONF = 'app.urls'
 APPEND_SLASH = True # this is default, but we're making sure it's explicit

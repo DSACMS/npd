@@ -38,6 +38,20 @@ export default defineConfig(({ mode, command }) => {
     server: {
       port: 3000,
       host: true,
+      proxy: {
+        "/frontend_settings": {
+          target: process.env.IN_DOCKER
+            ? "http://django-web:8000"
+            : "http://localhost:8000",
+          changeOrigin: true,
+        },
+        "^/fhir/.*": {
+          target: process.env.IN_DOCKER
+            ? "http://django-web:8000"
+            : "http://localhost:8000",
+          changeOrigin: true,
+        },
+      },
       watch: {
         usePolling: true,
       },

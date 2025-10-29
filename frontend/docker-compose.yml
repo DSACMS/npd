@@ -15,6 +15,7 @@ services:
     environment:
       CHOKIDAR_USEPOLLING: "true" # For file watching in Docker
       BUILD_OUTPUT_DIR: "/app/dist"
+      IN_DOCKER: 1
 
 volumes:
   node_modules:
