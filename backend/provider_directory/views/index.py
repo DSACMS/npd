@@ -23,10 +23,6 @@ def index(request, path: str | None = None):
 
     context = IndexContext.model_validate({ "title": "National Provider Directory" })
 
-    if not request.user.is_anonymous:
-        context.user_data.username = request.user.username
-        context.user_data.is_anonymous = False
-
     if (settings.DEBUG or settings.TESTING) and not find("index.html"):
         return redirect("http://localhost:3000/")
 
