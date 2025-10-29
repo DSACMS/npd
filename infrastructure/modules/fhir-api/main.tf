@@ -234,7 +234,7 @@ resource "aws_ecs_service" "app" {
   cluster         = var.ecs_cluster_id
   task_definition = aws_ecs_task_definition.app.arn
   launch_type     = "FARGATE"
-  desired_count   = 1
+  desired_count   = var.desired_task_count
 
   network_configuration {
     subnets          = var.networking.private_subnet_ids

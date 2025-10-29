@@ -54,10 +54,11 @@ module "api-db" {
   engine_version          = "17"
   family                  = "postgres17"
   instance_class          = "db.t3.micro"
-  allocated_storage       = 20
+  allocated_storage       = 100
   publicly_accessible     = false
   username                = "npd"
   db_name                 = "npd"
+  multi_az                = true
   vpc_security_group_ids  = [module.networking.db_security_group_id]
   db_subnet_group_name    = module.networking.private_subnet_group_name
   backup_retention_period = 7             # Remove automated snapshots after 7 days
@@ -73,11 +74,12 @@ module "etl-db" {
   engine                  = "postgres"
   engine_version          = "17"
   family                  = "postgres17"
-  instance_class          = "db.t3.micro"
+  instance_class          = "db.t3.large"
   allocated_storage       = 100
   publicly_accessible     = false
   username                = "npd_etl"
   db_name                 = "npd_etl"
+  multi_az                = true
   vpc_security_group_ids  = [module.networking.etl_db_security_group_id]
   db_subnet_group_name    = module.networking.private_subnet_group_name
   backup_retention_period = 7             # Remove automated snapshots after 7 days
@@ -105,12 +107,13 @@ module "ecs" {
 module "fhir-api" {
   source = "../../modules/fhir-api"
 
-  account_name              = local.account_name
-  fhir_api_migration_image  = var.migration_image
-  fhir_api_image            = var.fhir_api_image
-  redirect_to_strategy_page = var.redirect_to_strategy_page
+  account_name               = local.account_name
+  fhir_api_migration_image   = var.migration_image
+  fhir_api_image             = var.fhir_api_image
+  redirect_to_strategy_page  = var.redirect_to_strategy_page
   private_load_balancer      = var.fhir_api_private_load_balancer
-  ecs_cluster_id            = module.ecs.cluster_id
+  ecs_cluster_id             = module.ecs.cluster_id
+  desired_task_count         = 3
   db = {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address
