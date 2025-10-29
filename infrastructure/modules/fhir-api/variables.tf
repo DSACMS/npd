@@ -7,6 +7,7 @@ variable "fhir_api_port" {
 variable "redirect_to_strategy_page" {}
 variable "private_load_balancer" { default = true }
 variable "ecs_cluster_id" {}
+variable "desired_task_count" {}
 variable "db" {
   type = object({
     db_instance_master_user_secret_arn = string

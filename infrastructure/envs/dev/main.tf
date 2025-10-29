@@ -112,6 +112,7 @@ module "fhir-api" {
   fhir_api_image            = var.fhir_api_image
   ecs_cluster_id            = module.ecs.cluster_id
   redirect_to_strategy_page = false
+  desired_task_count        = 2
   db = {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address
