@@ -205,3 +205,4 @@
 
 #False positive
 e1161fe24ddffc2afaac005126d2e21666d36dcc:db/sql/inserts/sample_data.sql:generic-api-key:27140
+20530ff1fcdaaccb9554bc511d21e09f09360750:frontend/index.html:tfstate-provider-ids:13
