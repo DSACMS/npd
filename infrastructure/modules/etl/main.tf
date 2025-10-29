@@ -130,6 +130,31 @@ resource "aws_iam_role_policy_attachment" "dagster_can_read_bronze_bucket_attach
   role       = aws_iam_role.dagster_task_role.id
 }
 
+resource "aws_iam_policy" "dagster_can_start_dms_task" {
+  name = "${var.account_name}-dagster-can-start-dms-tasks"
+  description = "Allows Dagster to start a specified DMS migration task"
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = [
+          "dms:StartReplicationTask"
+        ]
+        Effect = "Allow"
+        Resource = [
+          var.npd_sync_task_arn
+        ]
+      },
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "dagster_can_start_dms_task_attachment" {
+  policy_arn = aws_iam_policy.dagster_can_start_dms_task.arn
+  role = aws_iam_role.dagster_task_role.name
+}
+
 resource "aws_ecs_task_definition" "dagster_daemon" {
   family                   = "${var.account_name}-dagster-daemon"
   network_mode             = "awsvpc"
@@ -150,18 +175,34 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
       name      = "${var.account_name}-fhir-api-migration"
       image     = var.fhir_api_migration_image
       essential = false
-      command   = [ "migrate" ]
+      command   = ["migrate"]
       environment = [
         {
           name  = "FLYWAY_URL"
           value = "jdbc:postgresql://${var.db.db_instance_address}:${var.db.db_instance_port}/${var.db.db_instance_name}"
-        }
-      ],
-      secrets = [
-        {
-          name      = "FLYWAY_PLACEHOLDERS_apiSchema"
-          value     = "npd_gold"
         },
+        {
+          name  = "FLYWAY_LOCATIONS"
+          value = "filesystem:./sql/migrations,filesystem:./sql/reference_data"
+        },
+        {
+          name  = "FLYWAY_PLACEHOLDERS_apiSchema"
+          value = "npd"
+        },
+        {
+          name = "FLYWAY_TABLE"
+          value = "npd-api-flyway"
+        },
+        {
+          name = "FLYWAY_BASELINE_VERSION"
+          value = "0"
+        },
+        {
+          name = "FLYWAY_BASELINE_ON_MIGRATE"
+          value = "true"
+        }
+      ]
+      secrets = [
         {
           name      = "FLYWAY_USER"
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
@@ -169,12 +210,12 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
         {
           name      = "FLYWAY_PASSWORD"
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:password::"
-        },
+        }
       ]
       logConfiguration = {
         logDriver = "awslogs"
         options = {
-          "awslogs-group"         = aws_cloudwatch_log_group.etl_db_migration_log_group
+          "awslogs-group"         = aws_cloudwatch_log_group.etl_db_migration_log_group.name
           "awslogs-region"        = "us-east-1"
           "awslogs-stream-prefix" = var.account_name
         }
@@ -187,16 +228,26 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
       logConfiguration = {
         logDriver = "awslogs"
         options = {
-          "awslogs-group"         = "/ecs/${var.account_name}"
+          "awslogs-group"         = aws_cloudwatch_log_group.dagster_daemon_log_group.name
           "awslogs-region"        = "us-east-1"
           "awslogs-stream-prefix" = var.account_name
         }
       }
       command = ["dagster-daemon", "run"]
       environment = [
+        { name = "NPD_SYNC_REPLICATION_TASK_ARN", value = var.npd_sync_task_arn },
+        { name = "S3_REGION", value = "us-east-1" },
+        { name = "SKIP_TESTS", value = "True" },
+        { name = "S3_DATA_BUCKET", value = aws_s3_bucket.etl_bronze.bucket },
+        { name = "DB_PORT", value = "5432" },
+        { name = "DB_HOST", value = var.db.db_instance_address },
+        { name = "DB_NAME", value = "npd_etl" },
+        { name = "DB_TYPE", value = "POSTGRESQL" },
+        { name = "DB_DATABASE", value = "npd_etl" },
+        { name = "SMARTY_STREETS_URL", value = "https://address.api.healthcare.gov/street-address" },
         { name = "DAGSTER_POSTGRES_HOST", value = var.db.db_instance_address },
         { name = "DAGSTER_POSTGRES_DB", value = var.db.db_instance_name },
-        { name = "S3_REGION", value = "us-east-1" }
+        { name = "DAGSTER_POSTGRES_SCHEMA", value = "dagster" },
       ],
       secrets = [
         {
@@ -206,6 +257,22 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
         {
           name      = "DAGSTER_POSTGRES_PASSWORD",
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:password::"
+        },
+        {
+          name      = "DB_USER",
+          valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
+        },
+        {
+          name      = "DB_PASSWORD",
+          valueFrom = "${var.db.db_instance_master_user_secret_arn}:password::"
+        },
+        {
+          name      = "SECRET_KEY",
+          valueFrom = aws_secretsmanager_secret_version.dagster_secret_version.arn
+        },
+        {
+          name      = "SMARTY_STREETS_API_KEY",
+          valueFrom = aws_secretsmanager_secret_version.smartystreets_secret_version.arn
         }
       ]
     }
@@ -228,6 +295,61 @@ resource "aws_ecs_service" "dagster_daemon" {
   force_new_deployment = true
 }
 
+# Dagster Secrets
+
+data "aws_secretsmanager_random_password" "dagster_secret_value" {
+  password_length = 20
+}
+
+resource "aws_secretsmanager_secret" "dagster_secret" {
+  name_prefix = "${var.account_name}-dagster-secret"
+  description = "Secret value to use with the Dagster UI"
+}
+
+resource "aws_secretsmanager_secret_version" "dagster_secret_version" {
+  secret_id                = aws_secretsmanager_secret.dagster_secret.id
+  secret_string_wo         = data.aws_secretsmanager_random_password.dagster_secret_value.random_password
+  secret_string_wo_version = 1
+}
+
+data "aws_secretsmanager_random_password" "smartystreets_secret_value" {
+  password_length = 20
+}
+
+resource "aws_secretsmanager_secret" "smartystreets_secret" {
+  name_prefix = "${var.account_name}-smartystreets-secret"
+  description = "Dagster SmartyStreets API KEY"
+}
+
+resource "aws_secretsmanager_secret_version" "smartystreets_secret_version" {
+  secret_id                = aws_secretsmanager_secret.dagster_secret.id
+  secret_string_wo         = data.aws_secretsmanager_random_password.smartystreets_secret_value.random_password
+  secret_string_wo_version = 1
+}
+
+resource "aws_iam_policy" "dagster_can_access_dagster_secrets" {
+  name        = "${var.account_name}-dagster-can-access-dagster-secret"
+  description = "Allows ECS to access the RDS secret"
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = "secretsmanager:GetSecretValue",
+        Effect = "Allow"
+        Resource = [
+          aws_secretsmanager_secret_version.dagster_secret_version.arn,
+          aws_secretsmanager_secret_version.smartystreets_secret_version.arn
+        ]
+      }
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "dagster_secret_attachment" {
+  policy_arn = aws_iam_policy.dagster_can_access_dagster_secrets.arn
+  role = aws_iam_role.dagster_execution_role.name
+}
+
 resource "aws_ecs_task_definition" "dagster_ui" {
   family                   = "${var.account_name}-dagster-ui"
   network_mode             = "awsvpc"
@@ -245,7 +367,7 @@ resource "aws_ecs_task_definition" "dagster_ui" {
       logConfiguration = {
         logDriver = "awslogs"
         options = {
-          "awslogs-group"         = "/ecs/${var.account_name}"
+          "awslogs-group"         = aws_cloudwatch_log_group.dagster_ui_log_group.name
           "awslogs-region"        = "us-east-1"
           "awslogs-stream-prefix" = var.account_name
         }
@@ -260,10 +382,19 @@ resource "aws_ecs_task_definition" "dagster_ui" {
       ]
       command = ["dagster-webserver", "--host", "0.0.0.0", "--port", "80"]
       environment = [
+        { name = "NPD_SYNC_REPLICATION_TASK_ARN", value = var.npd_sync_task_arn },
+        { name = "SKIP_TESTS", value = "True" },
+        { name = "S3_REGION", value = "us-east-1" },
+        { name = "S3_DATA_BUCKET", value = aws_s3_bucket.etl_bronze.bucket },
+        { name = "DB_PORT", value = "5432" },
+        { name = "DB_HOST", value = var.db.db_instance_address },
+        { name = "DB_NAME", value = "npd_etl" },
+        { name = "DB_TYPE", value = "POSTGRESQL" },
+        { name = "DB_DATABASE", value = "npd_etl" },
+        { name = "SMARTY_STREETS_URL", value = "https://address.api.healthcare.gov/street-address" },
         { name = "DAGSTER_POSTGRES_HOST", value = var.db.db_instance_address },
         { name = "DAGSTER_POSTGRES_DB", value = var.db.db_instance_name },
-        { name = "S3_DATA_BUCKET", value = aws_s3_bucket.etl_bronze.bucket },
-        { name = "S3_REGION", value = "us-east-1" }
+        { name = "DAGSTER_POSTGRES_SCHEMA", value = "dagster" },
       ],
       secrets = [
         {
@@ -273,6 +404,22 @@ resource "aws_ecs_task_definition" "dagster_ui" {
         {
           name      = "DAGSTER_POSTGRES_PASSWORD",
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:password::"
+        },
+        {
+          name      = "DB_USER",
+          valueFrom = "${var.db.db_instance_master_user_secret_arn}:username::"
+        },
+        {
+          name      = "DB_PASSWORD",
+          valueFrom = "${var.db.db_instance_master_user_secret_arn}:password::"
+        },
+        {
+          name      = "SECRET_KEY",
+          valueFrom = aws_secretsmanager_secret_version.dagster_secret_version.arn
+        },
+        {
+          name      = "SMARTY_STREETS_API_KEY",
+          valueFrom = aws_secretsmanager_secret_version.smartystreets_secret_version.arn
         }
       ]
     }
@@ -303,7 +450,7 @@ resource "aws_ecs_service" "dagster-ui" {
 
 resource "aws_lb" "dagster_ui_alb" {
   name               = "${var.account_name}-dagster-ui-alb"
-  internal           = false # TODO I don't know what this means
+  internal           = true
   load_balancer_type = "application"
   security_groups    = [var.networking.etl_alb_security_group_id]
   subnets            = var.networking.public_subnet_ids

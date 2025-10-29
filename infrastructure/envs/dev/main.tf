@@ -24,6 +24,8 @@ locals {
   account_name = "npd-east-${var.tier}"
 }
 
+data "aws_caller_identity" "current" {}
+
 data "aws_vpc" "default" {
   filter {
     name   = "tag:Name"
@@ -54,7 +56,7 @@ module "api-db" {
   engine_version          = "17"
   family                  = "postgres17"
   instance_class          = "db.t3.micro"
-  allocated_storage       = 20
+  allocated_storage       = 100
   publicly_accessible     = false
   username                = "npd"
   db_name                 = "npd"
@@ -73,7 +75,7 @@ module "etl-db" {
   engine                  = "postgres"
   engine_version          = "17"
   family                  = "postgres17"
-  instance_class          = "db.t3.micro"
+  instance_class          = "db.t3.large"
   allocated_storage       = 100
   publicly_accessible     = false
   username                = "npd_etl"
@@ -110,6 +112,7 @@ module "fhir-api" {
   fhir_api_image            = var.fhir_api_image
   ecs_cluster_id            = module.ecs.cluster_id
   redirect_to_strategy_page = false
+  desired_task_count        = 2
   db = {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address
@@ -133,6 +136,7 @@ module "etl" {
   dagster_image  = var.dagster_image
   fhir_api_migration_image = var.migration_image
   ecs_cluster_id = module.ecs.cluster_id
+  npd_sync_task_arn = "arn:aws:dms:us-east-1:${data.aws_caller_identity.current.account_id}:replication-config:57J6Z4LH2JAUNKC3LS7RUETZUE"
   db = {
     db_instance_master_user_secret_arn = module.etl-db.db_instance_master_user_secret_arn
     db_instance_address                = module.etl-db.db_instance_address

@@ -1,5 +1,9 @@
 # Makefile
 
+# set NPD_DEVELOPMENT to "True" in your shell to skip dangerous action
+# confirmation steps
+NPD_DEVELOPMENT ?= no
+
 # Default target
 .PHONY: build create-db setup migrate up down test test-setup clean help
 
@@ -21,6 +25,9 @@ help:
 	@echo "  test         Run the full test suite (includes test-setup)"
 	@echo "  clean        Remove cache files and artifacts directory"
 	@echo ""
+	@echo "  drop-db      \033[31m[DANGEROUS]\033[0m Drop the development database"
+	@echo "  reset-db     \033[31m[DANGEROUS]\033[0m Drop and fully recreate the development database"
+	@echo ""
 	@echo "  help         Show this help message"
 	@echo ""
 	@echo "Common workflows:"
@@ -32,6 +39,14 @@ help:
 build:
 	@docker compose build
 
+drop-db:
+ifneq ($(NPD_DEVELOPMENT), True)
+	@printf "Are you sure you want to drop your local database? [y/N] " && read ans && ( [[ "$${ans:-N}" == y ]] || ( echo "cancelling changes" && exit 1 ) )
+endif
+	@echo "Dropping development database..."
+	@docker compose up -d db
+	@docker compose run --rm db sh -c 'echo "dropping $$POSTGRES_DB"; PGPASSWORD=$$POSTGRES_PASSWORD psql -h db -U $$POSTGRES_USER -d postgres -c "DROP DATABASE IF EXISTS $$POSTGRES_DB" || echo "failed to drop $$POSTGRES_DB"'
+
 create-db:
 	@echo "Creating development database..."
 	@docker compose up -d db
@@ -42,7 +57,14 @@ migrate:
 	@echo "Migrating the development database..."
 	@docker compose up -d db
 # run all flyway migrations for the development environment
-	@docker compose run --rm db-migrations migrate 
+	@docker compose run --rm db-migrations migrate
+
+reset-db:
+	@echo "Resetting the development database..."
+	@docker compose down db
+	@$(MAKE) drop-db
+	@$(MAKE) create-db
+	@$(MAKE) migrate
 
 setup: build create-db migrate
 # pass

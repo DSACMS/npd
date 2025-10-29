@@ -1,0 +1,1 @@
+ALTER TABLE ${apiSchema}.organization ALTER COLUMN authorized_official_id DROP NOT NULL;

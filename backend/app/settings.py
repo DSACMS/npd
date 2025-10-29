@@ -15,6 +15,7 @@ from decouple import config
 import os
 import sys
 import logging
+import structlog
 from npdfhir.middleware import HealthCheckMiddleware
 
 # Detect if tests are being run
@@ -36,7 +37,7 @@ TESTING = sys.argv[1:2] == ['test']
 
 
 if DEBUG:
-    ALLOWED_HOSTS = ['localhost','127.0.0.1','0.0.0.0']
+    ALLOWED_HOSTS = ['localhost','127.0.0.1','0.0.0.0','testserver']
 else:
     ALLOWED_HOSTS = config("DJANGO_ALLOWED_HOSTS").split(',')
 
@@ -57,12 +58,14 @@ INSTALLED_APPS = [
     'django_filters',
     'drf_yasg',
     'xmlrunner',
+    'django_structlog',
 ]
 
 if not TESTING:
     INSTALLED_APPS.append('debug_toolbar')
 
 MIDDLEWARE = [
+    'django_structlog.middlewares.RequestMiddleware',
     'npdfhir.middleware.HealthCheckMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -204,23 +207,64 @@ SWAGGER_SETTINGS = {
     'USE_SESSION_AUTH': False
 }
 
-LOG_LEVEL = os.environ.get("LOG_LEVEL", logging.INFO)
+if TESTING:
+    LOG_LEVEL = logging.ERROR
+else:
+    LOG_LEVEL = os.environ.get("LOG_LEVEL", logging.INFO)
+
 LOGGING = {
     "version": 1,
     # This will leave the default Django logging behavior in place
     "disable_existing_loggers": False,
+    "formatters": {
+        "json_formatter": {
+            "()": structlog.stdlib.ProcessorFormatter,
+            "processor": structlog.processors.JSONRenderer(),
+            "foreign_pre_chain": [
+                structlog.contextvars.merge_contextvars,
+                structlog.processors.TimeStamper(fmt="iso"),
+                structlog.stdlib.add_logger_name,
+                structlog.stdlib.add_log_level,
+                structlog.stdlib.PositionalArgumentsFormatter(),
+            ],
+        },
+        "plain_console": {
+            "()": structlog.stdlib.ProcessorFormatter,
+            "processor": structlog.dev.ConsoleRenderer(),
+        },
+        "key_value": {
+            "()": structlog.stdlib.ProcessorFormatter,
+            "processor": structlog.processors.KeyValueRenderer(key_order=['timestamp', 'level', 'event', 'logger']),
+        },
+    },
     # Custom handler config that gets log messages and outputs them to console
     "handlers": {
         "console": {
             "class": "logging.StreamHandler",
-            "level": LOG_LEVEL,
+            "formatter": "json_formatter",
         },
     },
     "loggers": {
-        # Send everything to console
         "": {
             "handlers": ["console"],
             "level": LOG_LEVEL,
         },
     },
 }
+
+structlog.configure(
+    processors=[
+        structlog.contextvars.merge_contextvars,
+        structlog.stdlib.filter_by_level,
+        structlog.stdlib.add_logger_name,
+        structlog.stdlib.add_log_level,
+        structlog.stdlib.PositionalArgumentsFormatter(),
+        structlog.processors.TimeStamper(fmt="iso"),
+        structlog.processors.StackInfoRenderer(),
+        structlog.processors.format_exc_info,
+        structlog.processors.UnicodeDecoder(),
+        structlog.stdlib.ProcessorFormatter.wrap_for_formatter,
+    ],
+    logger_factory=structlog.stdlib.LoggerFactory(),
+    cache_logger_on_first_use=True,
+)
