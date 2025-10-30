@@ -1,0 +1,33 @@
+# https://pre-commit.com/#installation
+#
+# in the root of the project:
+#
+#   pip install pre-commit
+#   pre-commit install
+#
+
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.24.2
+    hooks:
+      - id: gitleaks
+
+  # pre-commit is opinionated about javascript in general and prettier in
+  # particular so we have to do this manually
+  - repo: local
+    hooks:
+      - id: app-prettier
+        name: run prettier
+        language: system
+        files: ^frontend/.*$
+        types_or: [ts, tsx, jsx, javascript, json]
+        entry: |
+          bash -c 'cd frontend; npx prettier --write "${@##frontend/}"' --
+
+  # https://docs.astral.sh/ruff/integrations/#pre-commit
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.14.2
+    hooks:
+      - id: ruff-check
+        args: [--fix]
+      - id: ruff-format
