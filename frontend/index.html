@@ -8,7 +8,7 @@
       src="/node_modules/@uswds/uswds/dist/js/uswds-init.min.js"
       type="module"
     ></script>
-    {{ form_errors|json_script:"form-errors" }}
+    {{ form.errors|json_script:"form-errors" }}
     <title>{{ title }}</title>
   </head>
   <body>
