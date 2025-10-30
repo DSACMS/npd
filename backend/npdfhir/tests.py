@@ -586,8 +586,6 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
 
-        #print(response.data["results"]["entry"])
-
         # Extract ids
         ids = [
             d['resource'].get('id', {})
