@@ -1,6 +1,6 @@
 line-length = 100
 
 [format]
-quote-style = "double"
+quote-style = "single"
 indent-style = "space"
 docstring-code-format = true

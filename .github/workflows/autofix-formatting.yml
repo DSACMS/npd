@@ -1,0 +1,36 @@
+name: autofix.ci
+permissions:
+  contents: read
+  pull-requests: write
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  autofix-formatting:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # frontend
+      - uses: actions/setup-node@v4
+      - name: Format frontend
+        working-directory: frontend
+        run: |
+          npm ci
+          npm run format
+
+      # backend
+      - name: Format backend
+        uses: astral-sh/ruff-action@v3
+        with:
+          args: format --output-format=github .
+          src: "./backend"
+
+      # commit
+      - name: Save formatting
+        uses: autofix-ci/action@v1
