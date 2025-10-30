@@ -2,13 +2,9 @@ import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
 import { BrowserRouter, Route, Routes } from "react-router"
 
-import "@cmsgov/design-system/css/core-theme.css"
-import "@cmsgov/design-system/css/index.css"
 import "@cmsgov/design-system/dist/fonts/opensans-bold-webfont.woff2"
 import "@cmsgov/design-system/dist/fonts/opensans-regular-webfont.woff2"
-
-// raw USWDS styles
-import "@uswds/uswds/css/uswds.css"
+import "./index.css"
 
 // USWDS javascript behaviors
 import "@uswds/uswds"
