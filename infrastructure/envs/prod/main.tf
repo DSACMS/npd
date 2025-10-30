@@ -6,6 +6,10 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 6.0"
     }
+    postgresql = {
+      source = "cyrilgdn/postgresql"
+      version = "~> 1.21"
+    }
   }
 
   backend "s3" {
@@ -66,6 +70,10 @@ module "api-db" {
 }
 
 # ETL Database
+data aws_secretsmanager_secret_version "rds_secret" {
+  secret_id = module.etl-db.db_instance_master_user_secret_arn
+}
+
 module "etl-db" {
   source  = "terraform-aws-modules/rds/aws"
   version = "6.12.0"
@@ -87,9 +95,28 @@ module "etl-db" {
 
   parameters = [
     # Parameters altered to enable DMS to perform database replication
+    # Need to install the pglogical extension on the server after creation:
+    # create extension pglogical;
+    # select * FROM pg_catalog.pg_extension
     { name = "rds.logical_replication", value = "1", apply_method = "pending-reboot" },
-    { name = "wal_sender_timeout", value = "0" }
+    { name = "wal_sender_timeout", value = "0" },
+    { name = "shared_preload_libraries", value = "pglogical"}
   ]
+}
+
+provider "postgresql" {
+  host            = module.etl-db.db_instance_address
+  port            = module.etl-db.db_instance_port
+  database        = module.etl-db.db_instance_name
+  username        = module.etl-db.db_instance_username
+  password        = jsondecode(data.aws_secretsmanager_secret_version.rds_secret.secret_string).password
+  sslmode         = "require"
+  connect_timeout = 15
+}
+
+resource "postgresql_extension" "install_pglogical" {
+  depends_on = [module.etl-db]
+  name = "pglogical"
 }
 
 # ECS Cluster
