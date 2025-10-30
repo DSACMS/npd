@@ -57,6 +57,7 @@ module "api-db" {
   family                  = "postgres17"
   instance_class          = "db.t3.micro"
   allocated_storage       = 100
+  storage_type            = "gp3"
   publicly_accessible     = false
   username                = "npd"
   db_name                 = "npd"
