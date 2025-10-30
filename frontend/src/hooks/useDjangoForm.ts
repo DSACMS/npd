@@ -11,7 +11,7 @@ type DjangoForm = {
 export const useDjangoForm = () => {
   // if an element with id=form-errors exists, parse it as JSON
   const form: DjangoForm = {}
-  const errorsEl = document.getElementById("form-errors")
+  const errorsEl = document.getElementById("form-errors-json")
 
   if (errorsEl && errorsEl.textContent.startsWith("{")) {
     let errors = null

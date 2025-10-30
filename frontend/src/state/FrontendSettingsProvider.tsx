@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react"
+import { apiUrl } from "./api"
 
 export type FrontendSettingsState = {
   settings: FrontendSettings
@@ -47,7 +48,7 @@ export const FrontendSettingsProvider = ({
       setLoading(true)
       setError(null)
 
-      const response = await fetch("/frontend_settings")
+      const response = await fetch(apiUrl("/frontend_settings"))
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
       }

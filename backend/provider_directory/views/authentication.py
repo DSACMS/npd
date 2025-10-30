@@ -3,6 +3,7 @@ from django.conf import settings
 from django.contrib.auth.decorators import login_not_required
 from django.contrib.auth.views import LoginView as ContribLoginView
 from django.http import JsonResponse
+from django.middleware.csrf import get_token
 from django.utils.decorators import method_decorator
 from pydantic import BaseModel
 
@@ -25,16 +26,6 @@ class LoginView(ContribLoginView):
     template_name = "index.html"
     redirect_authenticated_user = True
 
-    # FIXME: how do we handle authentication form errors?
-    # def get_context_data(self, **kwargs):
-    #     context = super().get_context_data(**kwargs)
-    #     form = self.get_form()
-    #     self.extra_context = {
-    #         "form_errors": form.errors.as_data()
-    #     }
-    #     logger.info('login.get_context_view', form=form.data)
-    #     return context
-
 
 class FrontendSettingsPayload(BaseModel):
     require_authentication: bool = settings.REQUIRE_AUTHENTICATION
@@ -48,6 +39,7 @@ class FrontendSettingsPayload(BaseModel):
 
 @login_not_required
 def frontend_settings(request):
+    get_token(request) # always set the CSRF token cookie
     payload = FrontendSettingsPayload()
     payload.populate_user_data(request)
     return JsonResponse(payload.model_dump())

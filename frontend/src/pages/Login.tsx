@@ -1,11 +1,11 @@
 import classNames from "classnames"
 
-import { useCsrfInput } from "../hooks/useCsrfInput"
+import { CsrfInput } from "../components/forms/CsrfInput"
 import { useDjangoForm } from "../hooks/useDjangoForm"
+import { apiUrl } from "../state/api"
 import styles from "./Login.module.css"
 
 export const Login = () => {
-  const attachCsrfInput = useCsrfInput()
   const nextUrl = null
   const mainClasses = classNames(
     styles.main,
@@ -23,15 +23,10 @@ export const Login = () => {
           <div className={styles.card}>
             <form
               method="post"
-              action="/accounts/login/"
+              action={apiUrl("/accounts/login/")}
               className="usa-form"
-              ref={attachCsrfInput}
             >
-              {/* <input
-                type="hidden"
-                value={getCookie("csrftoken") || ""}
-                name="csrfmiddlewaretoken"
-              /> */}
+              <CsrfInput />
               <fieldset className="usa-fieldset">
                 <legend className="usa-legend usa-legend--large __h1">
                   Sign in

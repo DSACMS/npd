@@ -4,14 +4,14 @@ import { useTranslation } from "react-i18next"
 
 import close from "@uswds/uswds/img/usa-icons/close.svg"
 import cmsLogo from "../assets/cms-gov-logo.svg"
-import { useCsrfInput } from "../hooks/useCsrfInput"
+import { apiUrl } from "../state/api"
 import { useFrontendSettings } from "../state/FrontendSettingsProvider"
+import { CsrfInput } from "./forms/CsrfInput"
 import { getCookie } from "./getCookie"
 import styles from "./Header.module.css"
 import { slugId } from "./markdown/slug"
 
 const AuthenticationControl = () => {
-  const attachCsrfInput = useCsrfInput()
   const { t } = useTranslation()
   const {
     settings: { user },
@@ -38,7 +38,8 @@ const AuthenticationControl = () => {
   }
   return (
     <li className="usa-nav__primary-item">
-      <form action={path} method="POST" ref={attachCsrfInput}>
+      <form action={apiUrl(path)} method="POST">
+        <CsrfInput />
         <input
           type="hidden"
           value={getCookie("csrftoken") || ""}
