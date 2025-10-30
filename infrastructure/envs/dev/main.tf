@@ -85,6 +85,12 @@ module "etl-db" {
   vpc_security_group_ids  = [module.networking.etl_db_security_group_id]
   backup_retention_period = 7             # Remove automated snapshots after 7 days
   backup_window           = "03:00-04:00" # 11PM EST
+
+  parameters = [
+    # Parameters altered to enable DMS to perform database replication
+    { name = "rds.logical_replication", value = "1", apply_method = "pending-reboot" },
+    { name = "wal_sender_timeout", value = "0" }
+  ]
 }
 
 # ECS Cluster
@@ -133,11 +139,11 @@ module "fhir-api" {
 module "etl" {
   source = "../../modules/etl"
 
-  account_name   = local.account_name
-  dagster_image  = var.dagster_image
+  account_name             = local.account_name
+  dagster_image            = var.dagster_image
   fhir_api_migration_image = var.migration_image
-  ecs_cluster_id = module.ecs.cluster_id
-  npd_sync_task_arn = "arn:aws:dms:us-east-1:${data.aws_caller_identity.current.account_id}:replication-config:57J6Z4LH2JAUNKC3LS7RUETZUE"
+  ecs_cluster_id           = module.ecs.cluster_id
+  npd_sync_task_arn        = "arn:aws:dms:us-east-1:${data.aws_caller_identity.current.account_id}:replication-config:57J6Z4LH2JAUNKC3LS7RUETZUE"
   db = {
     db_instance_master_user_secret_arn = module.etl-db.db_instance_master_user_secret_arn
     db_instance_address                = module.etl-db.db_instance_address
