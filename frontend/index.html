@@ -10,6 +10,7 @@
       type="module"
     ></script>
     {{ form.errors|json_script:"form-errors-json" }}
+    {{ next|json_script:"next-json" }}
     <title>{{ title }}</title>
   </head>
   <body>

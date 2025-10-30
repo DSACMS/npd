@@ -1,9 +1,6 @@
-body {
-  background-color: var(--color-primary-lightest);
-}
-
 .main {
   min-height: calc(100vh - (82px + 32px + 98px));
+  background-color: var(--color-primary-lightest);
 }
 
 .spacer {

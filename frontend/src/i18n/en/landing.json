@@ -10,5 +10,11 @@
     "developers": "Developer resources",
     "providers": "Provider resources",
     "learn": "Learn how it works"
+  },
+  "authentication": {
+    "error": {
+      "heading": "Username and password combination not found",
+      "description": "If the problem persists, please notify your organization's point of contact with the National Provider Directory."
+    }
   }
 }
