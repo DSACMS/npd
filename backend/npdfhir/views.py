@@ -6,6 +6,7 @@ from django.db.models import Q, OuterRef, Subquery
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.utils.html import escape
+from django_filters.rest_framework import DjangoFilterBackend
 from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework import generics, viewsets
@@ -36,6 +37,12 @@ from .serializers import (
     PractitionerSerializer,
     CapabilityStatementSerializer
 )
+from .utils import (
+    parse_identifier
+)
+from .filters import (
+    EndpointFilterSet
+)
 
 default_page_size = 10
 max_page_size = 1000
@@ -64,18 +71,6 @@ def createFilterParam(field: str, display: str = None, enum: list = None):
     return param
 
 
-def parse_identifier(identifier_value):
-    """
-    Parse an identifier search parameter that should be in the format of "value" OR "system|value".
-    Currently only supporting NPI search "NPI|123455".
-    """
-    if '|' in identifier_value:
-        parts = identifier_value.split('|', 1)
-        return (parts[0], parts[1])
-
-    return (None, identifier_value)
-
-
 def index(request):
     return HttpResponse("Connection to npd database: successful")
 
@@ -84,11 +79,13 @@ def health(request):
     return HttpResponse("healthy")
 
 
-class FHIREndpointViewSet(viewsets.ViewSet):
+class FHIREndpointViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Endpoint Resources
     """
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+    filter_backends = [DjangoFilterBackend]
+    filterset_class = EndpointFilterSet
 
     @swagger_auto_schema(
         manual_parameters=[
@@ -110,8 +107,7 @@ class FHIREndpointViewSet(viewsets.ViewSet):
         """
 
         page_size = default_page_size
-        all_params = request.query_params
-
+        
         endpoints = EndpointInstance.objects.all().prefetch_related(
             'endpoint_connection_type',
             'environment_type',
@@ -120,29 +116,6 @@ class FHIREndpointViewSet(viewsets.ViewSet):
             'endpointinstancetopayload_set__mime_type',
             'endpointinstancetootherid_set'
         ).order_by('name')
-
-        for param, value in all_params.items():
-            match param:
-                case 'page_size':
-                    try:
-                        value = int(value)
-                        if value <= max_page_size:
-                            page_size = value
-                    except:
-                        page_size = page_size
-                case 'name':
-                    endpoints = endpoints.filter(name__icontains=value)
-                case 'connection_type':
-                    endpoints = endpoints.filter(
-                        endpoint_connection_type__id__icontains=value)
-                case 'payload_type':
-                    endpoints = endpoints.filter(
-                        endpointinstancetopayload__payload_type__id__icontains=value
-                    ).distinct()
-                case 'status':
-                    pass
-                case 'organization':
-                    pass
 
         paginator = PageNumberPagination()
         paginator.page_size = page_size
