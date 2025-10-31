@@ -7,8 +7,7 @@ from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.utils.html import escape
 from django_filters.rest_framework import DjangoFilterBackend
-from drf_spectacular.utils import extend_schema, OpenApiExample, OpenApiParameter
-from drf_spectacular.types import OpenApiTypes
+from drf_spectacular.utils import extend_schema
 from rest_framework import generics, viewsets
 from rest_framework.views import APIView
 from rest_framework.pagination import PageNumberPagination
@@ -37,7 +36,7 @@ from .serializers import (
     PractitionerSerializer,
     CapabilityStatementSerializer
 )
-from .utils import parse_identifier
+from .utils import parse_identifier, get_filter_parameters
 from .filters import (
     EndpointFilterSet
 )
@@ -57,11 +56,13 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Endpoint Resources
     """
-    queryset = EndpointInstance.objects.all()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     filter_backends = [DjangoFilterBackend]
     filterset_class = EndpointFilterSet
 
+    @extend_schema(
+        parameters=get_filter_parameters(filterset_class)
+    )
     def list(self, request):
         """
         Query a list of interoperability endpoints, represented as a bundle of FHIR Endpoint resources
@@ -70,7 +71,6 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
         """
 
         page_size = default_page_size
-        all_params = request.query_params
 
         endpoints = EndpointInstance.objects.all().select_related(
             'endpoint_connection_type',
