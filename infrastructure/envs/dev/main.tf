@@ -193,7 +193,10 @@ module "github-actions" {
   source = "../../modules/github-actions-runner"
 
   account_name = local.account_name
-  vpc_id       = module.networking.vpc_id
   subnet_id    = module.networking.private_subnet_ids[0]
+  security_group_ids = concat(
+    module.networking.cmscloud_security_group_ids,
+    [module.networking.github_action_runner_security_group_id]
+  )
 }
 
