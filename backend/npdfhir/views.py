@@ -40,6 +40,9 @@ from .utils import parse_identifier, get_filter_parameters
 from .filters import (
     EndpointFilterSet
 )
+from .response_examples import (
+    get_endpoint_response_example
+)
 
 default_page_size = 10
 max_page_size = 1000
@@ -61,7 +64,8 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
     filterset_class = EndpointFilterSet
 
     @extend_schema(
-        parameters=get_filter_parameters(filterset_class)
+        parameters=get_filter_parameters(filterset_class),
+        responses=get_endpoint_response_example()
     )
     def list(self, request):
         """
