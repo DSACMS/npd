@@ -6,10 +6,6 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 6.0"
     }
-    postgresql = {
-      source = "cyrilgdn/postgresql"
-      version = "~> 1.21"
-    }
   }
 
   backend "s3" {
@@ -102,21 +98,6 @@ module "etl-db" {
     { name = "wal_sender_timeout", value = "0" },
     { name = "shared_preload_libraries", value = "pglogical"}
   ]
-}
-
-provider "postgresql" {
-  host            = module.etl-db.db_instance_address
-  port            = module.etl-db.db_instance_port
-  database        = module.etl-db.db_instance_name
-  username        = module.etl-db.db_instance_username
-  password        = jsondecode(data.aws_secretsmanager_secret_version.rds_secret.secret_string).password
-  sslmode         = "require"
-  connect_timeout = 15
-}
-
-resource "postgresql_extension" "install_pglogical" {
-  depends_on = [module.etl-db]
-  name = "pglogical"
 }
 
 # ECS Cluster
