@@ -47,7 +47,6 @@ resource "aws_iam_role_policy_attachment" "github_runner_has_user_creation_restr
   policy_arn = "arn:aws:iam::${local.account_id}:policy/ct-iamCreateUserRestrictionPolicy"
 }
 
-## TODO need to update this security group to also be able to access database instances for plugin installation
 resource "aws_instance" "github_actions_instance" {
   ami           = "ami-04345af6ff8317b5e"
   instance_type = "m5.xlarge"
