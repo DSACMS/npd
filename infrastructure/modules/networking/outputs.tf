@@ -43,6 +43,16 @@ output "etl_security_group_id" {
   value       = aws_security_group.etl_sg.id
 }
 
+output "github_action_runner_security_group_id" {
+  description = "The security group for the GitHub Actions runner"
+  value  = aws_security_group.github_runner_security_group.id
+}
+
+output "cmscloud_security_group_ids" {
+  description = "The security groups for CMSCloud"
+  value = data.aws_security_groups.cms_cloud_sg.ids
+}
+
 output "vpc_id" {
   value = var.vpc_id
 }

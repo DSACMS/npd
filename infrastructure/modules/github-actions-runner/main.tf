@@ -4,18 +4,6 @@ locals {
   account_id = data.aws_caller_identity.current.account_id
 }
 
-data "aws_security_groups" "cms_cloud_sg" {
-  filter {
-    name   = "group-name"
-    values = ["cmscloud*"]
-  }
-
-  filter {
-    name   = "vpc-id"
-    values = [var.vpc_id]
-  }
-}
-
 resource "aws_iam_role" "github_runner_resource_creation_role" {
   description = "Role to be assumed for resource creation"
   name        = "${var.account_name}-github-actions-runner-creation-role"
@@ -59,26 +47,10 @@ resource "aws_iam_role_policy_attachment" "github_runner_has_user_creation_restr
   policy_arn = "arn:aws:iam::${local.account_id}:policy/ct-iamCreateUserRestrictionPolicy"
 }
 
-resource "aws_security_group" "github_runner_security_group" {
-  description = "Defines traffic flows to/from the GitHub Action runner"
-  name        = "${var.account_name}-github-actions-runner-sg"
-  vpc_id      = var.vpc_id
-}
-
-resource "aws_vpc_security_group_egress_rule" "github_runner_can_make_outgoing_requests" {
-  description       = "Allows the GitHub Runner instance to make outgoing requests"
-  ip_protocol       = "-1"
-  cidr_ipv4         = "0.0.0.0/0"
-  security_group_id = aws_security_group.github_runner_security_group.id
-}
-
 resource "aws_instance" "github_actions_instance" {
   ami           = "ami-04345af6ff8317b5e"
   instance_type = "m5.xlarge"
-  vpc_security_group_ids = concat(
-    data.aws_security_groups.cms_cloud_sg.ids,
-    [aws_security_group.github_runner_security_group.id]
-  )
+  vpc_security_group_ids = var.security_group_ids
   subnet_id            = var.subnet_id
   iam_instance_profile = "cms-cloud-base-ec2-profile-v4"
   tags = {
