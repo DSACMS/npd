@@ -9,17 +9,17 @@ data "aws_caller_identity" "current" {}
 # Log Groups
 
 resource "aws_cloudwatch_log_group" "dagster_ui_log_group" {
-  name              = "/ecs/${var.account_name}-dagster-ui-logs"
+  name              = "/custom/${var.account_name}-dagster-ui-logs"
   retention_in_days = 30
 }
 
 resource "aws_cloudwatch_log_group" "dagster_daemon_log_group" {
-  name              = "/ecs/${var.account_name}-dagster-daemon-logs"
+  name              = "/custom/${var.account_name}-dagster-daemon-logs"
   retention_in_days = 30
 }
 
 resource "aws_cloudwatch_log_group" "etl_db_migration_log_group" {
-  name              = "/ecs/${var.account_name}-etl-db-migration-logs"
+  name              = "/custom/${var.account_name}-etl-db-migration-logs#_json"
   retention_in_days = 30
 }
 
@@ -175,7 +175,7 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
       name      = "${var.account_name}-fhir-api-migration"
       image     = var.fhir_api_migration_image
       essential = false
-      command   = ["migrate"]
+      command   = ["migrate", "-outputType=json"]
       environment = [
         {
           name  = "FLYWAY_URL"

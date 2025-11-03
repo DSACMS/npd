@@ -118,7 +118,7 @@ resource "aws_ecs_task_definition" "app" {
       name      = "${var.account_name}-fhir-api-migration"
       image     = var.fhir_api_migration_image
       essential = false
-      command   = ["migrate"]
+      command   = ["migrate", "-outputType=json"]
       environment = [
         {
           name  = "FLYWAY_URL"
