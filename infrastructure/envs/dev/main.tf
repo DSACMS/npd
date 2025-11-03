@@ -87,6 +87,10 @@ module "etl-db" {
   backup_window           = "03:00-04:00" # 11PM EST
 
   parameters = [
+    # Parameters altered to enable DMS to perform database replication
+    # Need to install the pglogical extension on the server after creation:
+    # create extension pglogical;
+    # select * FROM pg_catalog.pg_extension
     { name = "rds.logical_replication", value = "1", apply_method = "pending-reboot" },
     { name = "wal_sender_timeout", value = "0" },
     { name = "shared_preload_libraries", value = "pglogical", apply_method = "pending-reboot" }
