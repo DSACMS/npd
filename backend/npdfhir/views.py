@@ -15,6 +15,7 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.renderers import BrowsableAPIRenderer
 from rest_framework.response import Response
 
+from .pagination import CustomPaginator
 from .mappings import addressUseMapping, genderMapping
 from .models import (
     EndpointInstance,
@@ -86,16 +87,9 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     filter_backends = [DjangoFilterBackend]
     filterset_class = EndpointFilterSet
+    pagination_class = CustomPaginator  
 
     @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('name'),
-            createFilterParam('connection_type'),
-            createFilterParam('payload_type'),
-            createFilterParam('status'),
-            createFilterParam('organization')
-        ],
         responses={200: "Successful response",
                    404: "Error: The requested Endpoint resource cannot be found."}
     )
@@ -106,8 +100,6 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
         Default sort order: ascending endpoint instance name
         """
 
-        page_size = default_page_size
-        
         endpoints = EndpointInstance.objects.all().prefetch_related(
             'endpoint_connection_type',
             'environment_type',
@@ -117,19 +109,14 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
             'endpointinstancetootherid_set'
         ).order_by('name')
 
-        paginator = PageNumberPagination()
-        paginator.page_size = page_size
-        paginated_endpoints = paginator.paginate_queryset(endpoints, request)
+        endpoints = self.filter_queryset(endpoints)
+        paginated_endpoints = self.paginate_queryset(endpoints)
 
-        # Serialize the bundle
-        serialized_endpoints = EndpointSerializer(
-            paginated_endpoints, many=True)
+        serialized_endpoints = EndpointSerializer(paginated_endpoints, many=True)
         bundle = BundleSerializer(
             serialized_endpoints, context={"request": request})
 
-        # Set appropriate content type for FHIR responses
-        response = paginator.get_paginated_response(bundle.data)
-
+        response = self.get_paginated_response(bundle.data)
         return response
 
     def retrieve(self, request, pk=None):
