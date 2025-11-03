@@ -3,9 +3,9 @@ module "database_migration_service" {
   version = "~> 2.0"
 
   # Subnet group
-  repl_subnet_group_name        = "example"
-  repl_subnet_group_description = "DMS Subnet group"
-  repl_subnet_group_subnet_ids  = ["subnet-1fe3d837", "subnet-129d66ab", "subnet-1211eef5"]
+  repl_subnet_group_name        = module.networking.private_subnet_group_name # check is this correct?
+  repl_subnet_group_description = "The name of the subnet group used with the databases"
+  repl_subnet_group_subnet_ids  = module.networking.private_subnet_ids
 
   endpoints = {
     source = {
@@ -37,15 +37,22 @@ module "database_migration_service" {
     test-dms-task = {
       replication_task_id       = "test-dms-task"
       migration_type            = "cdc"
-      replication_task_settings = file("task_settings.json")
-      table_mappings            = file("mapping_rules.json")
+      replication_task_settings = file("configs/task_settings.json")
+      table_mappings            = file("configs/table_mappings.json")
       source_endpoint_key       = "npd-east-dev-etl-db"
       target_endpoint_key       = "npd-east-dev-fhir-api-db"
+
+      serverless_config = {
+        max_capacity_units     = 8
+        min_capacity_units     = 4
+        multi_az               = false # should be true for prod?
+        vpc_security_group_ids = [module.networking.etl_db_security_group_id] # or [module.networking.db_security_group_id] ?
+      }
     }
   }
 
   tags = {
     Terraform   = "true"
-    Environment = "dev"
+    Environment = "dev" # what's the variable for the env?
   }
 }
