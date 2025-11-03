@@ -1,11 +1,13 @@
 import pandas as pd
 import requests
 import uuid
-import json
-from dbHelpers import createEngine
+import numpy as np
+# dbHelpers import createEngine
 
-org_to_endpoint_url = 'https://lantern.healthit.gov/api/organizations/v1'
-endpoint_url = 'https://lantern.healthit.gov/api/daily/download'
+# 'https://lantern.healthit.gov/api/organizations/v1'
+org_to_endpoint_url = '/Users/pr0i/Downloads/fhir_endpoint_organizations.csv'
+# 'https://lantern.healthit.gov/api/daily/download'
+endpoint_url = '/Users/pr0i/Downloads/fhir_endpoints.csv'
 
 
 def loadSampleEndpointInfo(url):
@@ -70,7 +72,7 @@ def loadSampleEndpointInfo(url):
             identifiers.append({'endpoint_instance_id': row['id'], 'other_id': ident['value'],
                                'system': row['source'], 'issuer_id': list_to_dev[row['source']]})
     identifiers_df = pd.DataFrame(identifiers)
-    engine = createEngine()
+    # engine = createEngine()
 
     api_devs.to_sql('ehr_vendor', if_exists='append',
                     index=False, schema='npd', con=engine)
@@ -78,14 +80,12 @@ def loadSampleEndpointInfo(url):
     sampled_endpoints['environment_type_id'] = 'prod'
     sampled_endpoints['ehr_vendor_id'] = sampled_endpoints['source'].apply(
         lambda x: list_to_dev[x])
-    sampled_endpoints[['id', 'ehr_vendor_id', 'address', 'endpoint_connection_type_id', 'name']].to_sql(
-        'endpoint_instance', if_exists='append', index=False, schema='npd', con=engine)
+    sampled_endpoints.to_csv('endpoint_details.csv')
+    # sampled_endpoints[['id', 'ehr_vendor_id', 'address', 'endpoint_connection_type_id', 'name']].to_sql('endpoint_instance', if_exists='append', index=False, schema='npd', con=engine)
 
-    payload_df.loc[payload_df['payload_type_id'].apply(lambda x: x not in ['NA', 'hl7-fhir-rest', 'Endpoint', 'CapabilityStatement'])].to_sql(
-        'endpoint_instance_to_payload', if_exists='append', index=False, schema='npd', con=engine)
+    # payload_df.loc[payload_df['payload_type_id'].apply(lambda x: x not in ['NA', 'hl7-fhir-rest', 'Endpoint', 'CapabilityStatement'])].to_sql('endpoint_instance_to_payload', if_exists='append', index=False, schema='npd', con=engine)
 
-    identifiers_df.to_sql(
-        'endpoint_instance_to_other_id', if_exists='append', index=False, schema='npd', con=engine)
+    # identifiers_df.to_sql('endpoint_instance_to_other_id', if_exists='append', index=False, schema='npd', con=engine)
 
 
 loadSampleEndpointInfo(endpoint_url)
@@ -105,6 +105,7 @@ def getOrgToEndpoint(url):
     normalized_npis['fhir_endpoint_url'] = normalized_npis['fhir_endpoint_url'].str.split(
         '\n')
     normalized_endpoints = normalized_npis.explode('fhir_endpoint_url')
+    normalized_endpoints.to_csv('endpoint_list.csv')
 
-# TODO
-# getOrgToEndpoint(org_to_endpoint_url)
+
+getOrgToEndpoint(org_to_endpoint_url)
