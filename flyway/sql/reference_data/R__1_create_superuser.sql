@@ -18,10 +18,10 @@ INSERT INTO
 SELECT
     '${superuserDefaultPassword}',
     true,
-    'npd@cms.hhs.gov',
-    'npd@cms.hhs.gov',
+    'npd+deploy@cms.hhs.gov',
+    'npd+deploy@cms.hhs.gov',
     'NPD',
-    'Superuser',
+    'Deployment',
     true,
     true,
     now()
