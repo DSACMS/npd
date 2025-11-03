@@ -1,0 +1,27 @@
+{
+    "rules": [
+        {
+            "rule-id": 2122718802,
+            "rule-name": "mhaqg2qt-2b2v60",
+            "rule-type": "selection",
+            "rule-action": "include",
+            "object-locator": {
+                "schema-name": "npd",
+                "table-name": "%"
+            },
+            "filters": []
+        },
+        {
+            "rule-id": 733828293,
+            "rule-name": "mhdlhs8h-od97g1",
+            "rule-type": "transformation",
+            "rule-target": "table",
+            "rule-action": "rename",
+            "object-locator": {
+                "schema-name": "npd",
+                "table-name": "%"
+            },
+            "value": "npd-dms-test"
+        }
+    ]
+}
