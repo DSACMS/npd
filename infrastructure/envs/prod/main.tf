@@ -75,7 +75,7 @@ module "etl-db" {
   engine_version          = "17"
   family                  = "postgres17"
   instance_class          = "db.t3.large"
-  allocated_storage       = 100
+  allocated_storage       = 250
   publicly_accessible     = false
   username                = "npd_etl"
   db_name                 = "npd_etl"
