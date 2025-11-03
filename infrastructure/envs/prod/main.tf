@@ -66,10 +66,6 @@ module "api-db" {
 }
 
 # ETL Database
-data aws_secretsmanager_secret_version "rds_secret" {
-  secret_id = module.etl-db.db_instance_master_user_secret_arn
-}
-
 module "etl-db" {
   source  = "terraform-aws-modules/rds/aws"
   version = "6.12.0"
