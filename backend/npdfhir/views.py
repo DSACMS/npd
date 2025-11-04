@@ -2,7 +2,7 @@ from uuid import UUID
 
 from django.contrib.postgres.search import SearchVector
 from django.core.cache import cache
-from django.db.models import Q, OuterRef, Subquery
+from django.db.models import Q, F, OuterRef, Subquery
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.utils.html import escape
@@ -119,6 +119,8 @@ class FHIREndpointViewSet(viewsets.ViewSet):
             'endpointinstancetopayload_set__payload_type',
             'endpointinstancetopayload_set__mime_type',
             'endpointinstancetootherid_set'
+        ).annotate(
+            ehr_vendor_name=F('ehr_vendor__name')
         ).order_by('name')
 
         for param, value in all_params.items():
@@ -139,6 +141,23 @@ class FHIREndpointViewSet(viewsets.ViewSet):
                     endpoints = endpoints.filter(
                         endpointinstancetopayload__payload_type__id__icontains=value
                     ).distinct()
+                case 'sort':
+                    valid_sorts = [
+                        'name',
+                        'address',
+                        'ehr_vendor_name'
+                    ]
+
+                    sort_fields = []
+
+                    for fields in value.split(','):
+                        cleaned = field.lstrip('-')
+                        if cleaned in valid_sorts:
+                            sort_fields.append(field)
+
+                    #Sort data
+                    if sort_fields:
+                        endpoints = endpoints.order_by(*sort_fields)
                 case 'status':
                     pass
                 case 'organization':
