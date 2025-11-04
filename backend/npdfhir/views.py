@@ -38,11 +38,12 @@ from .serializers import (
     PractitionerSerializer,
     CapabilityStatementSerializer
 )
-from .utils import (
-    parse_identifier
-)
 from .filters import (
-    EndpointFilterSet
+    EndpointFilterSet,
+    PractitionerFilterSet,
+    PractitionerRoleFilterSet,
+    OrganizationFilterSet,
+    LocationFilterSet
 )
 
 default_page_size = 10
@@ -90,6 +91,14 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
     pagination_class = CustomPaginator  
 
     @swagger_auto_schema(
+        manual_parameters=[
+            page_size_param,
+            createFilterParam('name'),
+            createFilterParam('connection_type'),
+            createFilterParam('payload_type'),
+            createFilterParam('status'),
+            createFilterParam('organization')
+        ],
         responses={200: "Successful response",
                    404: "Error: The requested Endpoint resource cannot be found."}
     )
@@ -146,11 +155,14 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
         return response
 
 
-class FHIRPractitionerViewSet(viewsets.ViewSet):
+class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Practitioner resources
     """
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+    filter_backends = [DjangoFilterBackend]
+    filterset_class = PractitionerFilterSet
+    pagination_class = CustomPaginator
 
     # permission_classes = [permissions.IsAuthenticated]
     @swagger_auto_schema(
@@ -178,10 +190,6 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
 
         Default sort order: ascending last name, first name
         """
-        page_size = default_page_size
-
-        all_params = request.query_params
-
         # Subqueries for last_name and first_name of the individual
         primary_last_name_subquery = (
             IndividualToName.objects
@@ -208,94 +216,15 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
             primary_first_name=Subquery(primary_first_name_subquery)
         ).order_by('primary_last_name', 'primary_first_name')
 
-        for param, value in all_params.items():
-            match param:
-                case 'page_size':
-                    try:
-                        value = int(value)
-                        if value <= max_page_size:
-                            page_size = value
-                    except:
-                        page_size = page_size
-                case 'identifier':
-                    system, identifier_id = parse_identifier(value)
-                    queries = Q(pk__isnull=True)
+        providers = self.filter_queryset(providers)
+        paginated_providers = self.paginate_queryset(providers)
 
-                    if system:  # specific identifier search requested
-                        if system == 'NPI':
-                            try:
-                                queries = Q(npi__npi=identifier_id)
-                            except (ValueError, TypeError):
-                                pass
-                    else:  # general identifier search requested
-                        try:
-                            queries |= Q(npi__npi=int(identifier_id))
-                        except (ValueError, TypeError):
-                            pass
-
-                        queries |= Q(providertootherid__other_id=identifier_id)
-
-                    providers = providers.filter(queries).distinct()
-                case 'name':
-                    providers = providers.annotate(
-                        search=SearchVector('individual__individualtoname__last_name',
-                                            'individual__individualtoname__first_name',
-                                            'individual__individualtoname__middle_name')
-                    ).filter(search=value)
-                case 'gender':
-                    if value in genderMapping.keys():
-                        value = genderMapping.toNPD(value)
-                    providers = providers.filter(individual__gender=value)
-                case 'practitioner_type':
-                    providers = providers.annotate(
-                        search=SearchVector(
-                            'providertotaxonomy__nucc_code__display_name')
-                    ).filter(search=value)
-                case 'address':
-                    providers = providers.annotate(
-                        search=SearchVector(
-                            'individual__individualtoaddress__address__address_us__delivery_line_1',
-                            'individual__individualtoaddress__address__address_us__delivery_line_2',
-                            'individual__individualtoaddress__address__address_us__city_name',
-                            'individual__individualtoaddress__address__address_us__state_code__abbreviation',
-                            'individual__individualtoaddress__address__address_us__zipcode', )
-                    ).filter(search=value)
-                case 'address-city':
-                    providers = providers.annotate(
-                        search=SearchVector(
-                            'individual__individualtoaddress__address__address_us__city_name')
-                    ).filter(search=value)
-                case 'address-state':
-                    providers = providers.annotate(
-                        search=SearchVector(
-                            'individual__individualtoaddress__address__address_us__state_code__abbreviation')
-                    ).filter(search=value)
-                case 'address-postalcode':
-                    providers = providers.annotate(
-                        search=SearchVector(
-                            'individual__individualtoaddress__address__address_us__zipcode')
-                    ).filter(search=value)
-                case 'address-use':
-                    if value in addressUseMapping.keys():
-                        value = addressUseMapping.toNPD(value)
-                    else:
-                        value = -1
-                    providers = providers.filter(
-                        individual__individualtoaddress__address_use_id=value)
-
-        paginator = PageNumberPagination()
-        paginator.page_size = page_size
-        paginated_providers = paginator.paginate_queryset(providers, request)
-
-        # Serialize the bundle
         serialized_providers = PractitionerSerializer(
             paginated_providers, many=True)
         bundle = BundleSerializer(
             serialized_providers, context={"request": request})
 
-        # Set appropriate content type for FHIR responses
-        response = paginator.get_paginated_response(bundle.data)
-
+        response = self.get_paginated_response(bundle.data)
         return response
 
     def retrieve(self, request, pk=None):
@@ -332,11 +261,14 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
         return response
 
 
-class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
+class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR PractitionerRole resources
     """
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+    filter_backends = [DjangoFilterBackend]
+    filterset_class = PractitionerRoleFilterSet
+    pagination_class = CustomPaginator
 
     # permission_classes = [permissions.IsAuthenticated]
     @swagger_auto_schema(
@@ -359,10 +291,6 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
 
         Default sort order: aschending by location name
         """
-        page_size = default_page_size
-
-        all_params = request.query_params
-
         practitionerroles = (
             ProviderToLocation.objects
             .select_related('location')
@@ -370,51 +298,15 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
             .order_by('location__name')
         ).all()
 
-        for param, value in all_params.items():
-            match param:
-                case 'page_size':
-                    try:
-                        value = int(value)
-                        if value <= max_page_size:
-                            page_size = value
-                    except:
-                        page_size = page_size
-                case 'practitioner.name':
-                    practitionerroles = practitionerroles.annotate(
-                        search=SearchVector(
-                            'provider_to_organization__individual__individual__individualtoname__first_name',
-                            'provider_to_organization__individual__individual__individualtoname__last_name',
-                            'provider_to_organization__individual__individual__individualtoname__middle_name')).filter(search=value)
-                case 'practitioner.gender':
-                    gender = genderMapping.toNPD(value)
-                    practitionerroles = practitionerroles.filter(
-                        provider__individual__gender=gender)
-                case 'practitioner.practitioner_type':
-                    practitionerroles = practitionerroles.annotate(
-                        search=SearchVector(
-                            'provider_to_organization__providertotaxonomy__nucc_code__display_name')
-                    ).filter(search=value)
-                case 'organization.name':
-                    practitionerroles = practitionerroles.annotate(
-                        search=SearchVector(
-                            'provider_to_organization__organization__organizationtoname__name')
-                    ).filter(search=value)
+        practitionerroles = self.filter_queryset(practitionerroles)
+        paginated_practitionerroles = self.paginate_queryset(practitionerroles)
 
-        paginator = PageNumberPagination()
-        paginator.page_size = page_size
-        paginated_practitionerroles = paginator.paginate_queryset(
-            practitionerroles, request)
-
-        # Serialize the bundle
         serialized_practitionerroles = PractitionerRoleSerializer(
             paginated_practitionerroles, many=True, context={"request": request})
         bundle = BundleSerializer(
             serialized_practitionerroles, context={"request": request})
 
-        # Set appropriate content type for FHIR responses
-        response = paginator.get_paginated_response(bundle.data)
-        response["Content-Type"] = "application/fhir+json"
-
+        response = self.get_paginated_response(bundle.data)
         return response
 
     def retrieve(self, request, pk=None):
@@ -433,16 +325,18 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
 
         # Set appropriate content type for FHIR responses
         response = Response(serialized_practitionerrole.data)
-        response["Content-Type"] = "application/fhir+json"
 
         return response
 
 
-class FHIROrganizationViewSet(viewsets.ViewSet):
+class FHIROrganizationViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Organization resources
     """
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+    filter_backends = [DjangoFilterBackend]
+    filterset_class = OrganizationFilterSet
+    pagination_class = CustomPaginator
 
     # permission_classes = [permissions.IsAuthenticated]
     @swagger_auto_schema(
@@ -469,16 +363,6 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
 
         Default sort order: ascending by organization name
         """
-        page_size = default_page_size
-
-        all_params = request.query_params
-
-        primary_name_subquery = (
-            OrganizationToName.objects
-            .filter(organization=OuterRef('pk'), is_primary=True)
-            .values('name')[:1]
-        )
-
         primary_name_subquery = (
             OrganizationToName.objects
             .filter(organization=OuterRef('pk'), is_primary=True)
@@ -510,99 +394,15 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
             'clinicalorganization__organizationtotaxonomy_set__nucc_code'
         ).annotate(primary_name=Subquery(primary_name_subquery)).order_by('primary_name')
 
-        for param, value in all_params.items():
-            match param:
-                case 'page_size':
-                    try:
-                        value = int(value)
-                        if value <= max_page_size:
-                            page_size = value
-                    except:
-                        page_size = page_size
-                case 'name':
-                    organizations = organizations.annotate(
-                        search=SearchVector(
-                            'organizationtoname__name')
-                    ).filter(search=value)
-                case 'identifier':
-                    system, identifier_id = parse_identifier(value)
-                    queries = Q(pk__isnull=True)
+        organizations = self.filter_queryset(organizations)
+        paginated_organizations = self.paginate_queryset(organizations)
 
-                    if system:  # specific identifier search requested
-                        if system == 'NPI':
-                            try:
-                                queries = Q(
-                                    clinicalorganization__npi__npi=int(identifier_id))
-                            except (ValueError, TypeError):
-                                pass  # TODO: implement validationerror to show users that NPI must be an int
-                    else:  # general identifier search requested
-                        try:
-                            queries |= Q(
-                                clinicalorganization__npi__npi=int(identifier_id))
-                        except (ValueError, TypeError):
-                            pass
-
-                        try:  # need this block in order to pass pydantic validation
-                            UUID(identifier_id)
-                            queries |= Q(ein__ein_id=identifier_id)
-                        except (ValueError, TypeError):
-                            pass
-
-                        queries |= Q(
-                            clinicalorganization__organizationtootherid__other_id=identifier_id)
-
-                    organizations = organizations.filter(queries).distinct()
-                case 'organization_type':
-                    organizations = organizations.annotate(
-                        search=SearchVector(
-                            'clinicalorganization__organizationtotaxonomy__nucc_code__display_name')
-                    ).filter(search=value)
-                case 'address':
-                    organizations = organizations.annotate(
-                        search=SearchVector(
-                            'organization__organizationtoaddress__address__address_us__delivery_line_1',
-                            'organization__organizationtoaddress__address__address_us__delivery_line_2',
-                            'organization__organizationtoaddress__address__address_us__city_name',
-                            'organization__organizationtoaddress__address__address_us__state_code__abbreviation',
-                            'organization__organizationtoaddress__address__address_us__zipcode', )
-                    ).filter(search=value)
-                case 'address-city':
-                    organizations = organizations.annotate(
-                        search=SearchVector(
-                            'organization__organizationtoaddress__address__address_us__city_name')
-                    ).filter(search=value)
-                case 'address-state':
-                    organizations = organizations.annotate(
-                        search=SearchVector(
-                            'organization__organizationtoaddress__address__address_us__state_code__abbreviation')
-                    ).filter(search=value)
-                case 'address-postalcode':
-                    organizations = organizations.annotate(
-                        search=SearchVector(
-                            'organization__organizationtoaddress__address__address_us__zipcode')
-                    ).filter(search=value)
-                case 'address-use':
-                    if value in addressUseMapping.keys():
-                        value = addressUseMapping.toNPD(value)
-                    else:
-                        value = -1
-                    organizations = organizations.filter(
-                        organization__organizationtoaddress__address_use_id=value)
-
-        paginator = PageNumberPagination()
-        paginator.page_size = page_size
-        paginated_organizations = paginator.paginate_queryset(
-            organizations, request)
-
-        # Serialize the bundle
         serialized_organizations = OrganizationSerializer(
             paginated_organizations, many=True)
         bundle = BundleSerializer(
             serialized_organizations, context={"request": request})
 
-        # Set appropriate content type for FHIR responses
-        response = paginator.get_paginated_response(bundle.data)
-
+        response = self.get_paginated_response(bundle.data)
         return response
 
     def retrieve(self, request, pk=None):
@@ -648,11 +448,14 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
         return response
 
 
-class FHIRLocationViewSet(viewsets.ViewSet):
+class FHIRLocationViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Location resources
     """
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+    filter_backends = [DjangoFilterBackend]
+    filterset_class = LocationFilterSet
+    pagination_class = CustomPaginator
 
     # permission_classes = [permissions.IsAuthenticated]
     @swagger_auto_schema(
@@ -676,66 +479,12 @@ class FHIRLocationViewSet(viewsets.ViewSet):
 
         Default sort order: ascending by location name
         """
-        page_size = default_page_size
-
-        all_params = request.query_params
-
         locations = Location.objects.all().prefetch_related(
             'address__address_us', 'address__address_us__state_code'
         ).order_by('name')
 
-        for param, value in all_params.items():
-            match param:
-                case 'page_size':
-                    try:
-                        value = int(value)
-                        if value <= max_page_size:
-                            page_size = value
-                    except:
-                        page_size = page_size
-                case 'name':
-                    locations = locations.filter(
-                        name=value)
-                case 'organization_type':
-                    locations = locations.annotate(
-                        search=SearchVector(
-                            'organizationtotaxonomy__nucc_code__display_name')
-                    ).filter(search=value)
-                case 'address':
-                    locations = locations.annotate(
-                        search=SearchVector(
-                            'address__address_us__delivery_line_1',
-                            'address__address_us__delivery_line_2',
-                            'address__address_us__city_name',
-                            'address__address_us__state_code__abbreviation',
-                            'address__address_us__zipcode',)
-                    ).filter(search=value)
-                case 'address-city':
-                    locations = locations.annotate(
-                        search=SearchVector(
-                            'address__address_us__city_name')
-                    ).filter(search=value)
-                case 'address-state':
-                    locations = locations.annotate(
-                        search=SearchVector(
-                            'address__address_us__state_code__abbreviation')
-                    ).filter(search=value)
-                case 'address-postalcode':
-                    locations = locations.annotate(
-                        search=SearchVector(
-                            'address__address_us__zipcode')
-                    ).filter(search=value)
-                case 'address-use':
-                    if value in addressUseMapping.keys():
-                        value = addressUseMapping.toNPD(value)
-                    else:
-                        value = -1
-                    locations = locations.filter(
-                        address_use_id=value)
-
-        paginator = PageNumberPagination()
-        paginator.page_size = page_size
-        paginated_locations = paginator.paginate_queryset(locations, request)
+        locations = self.filter_queryset(locations)
+        paginated_locations = self.paginate_queryset(locations)
 
         # Serialize the bundle
         serialized_locations = LocationSerializer(
@@ -743,9 +492,7 @@ class FHIRLocationViewSet(viewsets.ViewSet):
         bundle = BundleSerializer(
             serialized_locations, context={"request": request})
 
-        # Set appropriate content type for FHIR responses
-        response = paginator.get_paginated_response(bundle.data)
-
+        response = self.get_paginated_response(bundle.data)
         return response
 
     def retrieve(self, request, pk=None):
