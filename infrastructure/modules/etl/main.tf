@@ -200,10 +200,6 @@ resource "aws_ecs_task_definition" "dagster_daemon" {
         {
           name = "FLYWAY_BASELINE_ON_MIGRATE"
           value = "true"
-        },
-        {
-          name  = "FLYWAY_PLACEHOLDERS_superuserDefaultPassword"
-          value = ""
         }
       ]
       secrets = [
