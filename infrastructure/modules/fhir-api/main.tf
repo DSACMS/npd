@@ -5,12 +5,12 @@ data "aws_caller_identity" "current" {}
 # Log Groups
 
 resource "aws_cloudwatch_log_group" "fhir_api_log_group" {
-  name              = "/ecs/${var.account_name}-fhir-api-logs"
+  name              = "/custom/${var.account_name}-fhir-api-logs/#_json"
   retention_in_days = 30
 }
 
 resource "aws_cloudwatch_log_group" "fhir_api_migrations_log_group" {
-  name              = "/ecs/${var.account_name}-fhir-api-migrations-logs"
+  name              = "/custom/${var.account_name}-fhir-api-migrations-logs/#_json"
   retention_in_days = 30
 }
 

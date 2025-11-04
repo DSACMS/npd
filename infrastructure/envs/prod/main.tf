@@ -75,7 +75,7 @@ module "etl-db" {
   engine_version          = "17"
   family                  = "postgres17"
   instance_class          = "db.t3.large"
-  allocated_storage       = 100
+  allocated_storage       = 250
   publicly_accessible     = false
   username                = "npd_etl"
   db_name                 = "npd_etl"
@@ -84,6 +84,16 @@ module "etl-db" {
   db_subnet_group_name    = module.networking.private_subnet_group_name
   backup_retention_period = 7             # Remove automated snapshots after 7 days
   backup_window           = "03:00-04:00" # 11PM EST
+
+  parameters = [
+    # Parameters altered to enable DMS to perform database replication
+    # Need to install the pglogical extension on the server after creation:
+    # create extension pglogical;
+    # select * FROM pg_catalog.pg_extension
+    { name = "rds.logical_replication", value = "1", apply_method = "pending-reboot" },
+    { name = "wal_sender_timeout", value = "0" },
+    { name = "shared_preload_libraries", value = "pglogical"}
+  ]
 }
 
 # ECS Cluster
@@ -107,13 +117,13 @@ module "ecs" {
 module "fhir-api" {
   source = "../../modules/fhir-api"
 
-  account_name               = local.account_name
-  fhir_api_migration_image   = var.migration_image
-  fhir_api_image             = var.fhir_api_image
-  redirect_to_strategy_page  = var.redirect_to_strategy_page
-  private_load_balancer      = var.fhir_api_private_load_balancer
-  ecs_cluster_id             = module.ecs.cluster_id
-  desired_task_count         = 3
+  account_name              = local.account_name
+  fhir_api_migration_image  = var.migration_image
+  fhir_api_image            = var.fhir_api_image
+  redirect_to_strategy_page = var.redirect_to_strategy_page
+  private_load_balancer     = var.fhir_api_private_load_balancer
+  ecs_cluster_id            = module.ecs.cluster_id
+  desired_task_count        = 3
   db = {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address
@@ -133,11 +143,11 @@ module "fhir-api" {
 module "etl" {
   source = "../../modules/etl"
 
-  account_name   = local.account_name
-  dagster_image  = var.dagster_image
+  account_name             = local.account_name
+  dagster_image            = var.dagster_image
   fhir_api_migration_image = var.migration_image
-  ecs_cluster_id = module.ecs.cluster_id
-  npd_sync_task_arn = "*"
+  ecs_cluster_id           = module.ecs.cluster_id
+  npd_sync_task_arn        = "*"
   db = {
     db_instance_master_user_secret_arn = module.etl-db.db_instance_master_user_secret_arn
     db_instance_address                = module.etl-db.db_instance_address
@@ -164,6 +174,9 @@ module "github-actions" {
   source = "../../modules/github-actions-runner"
 
   account_name = local.account_name
-  vpc_id       = module.networking.vpc_id
   subnet_id    = module.networking.private_subnet_ids[0]
+  security_group_ids = concat(
+    module.networking.cmscloud_security_group_ids,
+    [module.networking.github_action_runner_security_group_id]
+  )
 }
