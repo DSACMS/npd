@@ -1,4 +1,4 @@
--- upsert a bootstrap / default superuser account if and only if a variable has
+-- Upsert a bootstrap / default superuser account if and only if a variable has
 -- been passed into the `flyway migrate` script
 --
 -- WARNING: any time this script is run with a new value for
