@@ -16,7 +16,15 @@ from rest_framework.renderers import BrowsableAPIRenderer
 from rest_framework.response import Response
 
 from .pagination import CustomPaginator
+from .renderers import FHIRRenderer
 from .mappings import addressUseMapping, genderMapping
+
+from .filters.endpoint_filter_set import EndpointFilterSet
+from .filters.location_filter_set import LocationFilterSet
+from .filters.organization_filter_set import OrganizationFilterSet
+from .filters.practitioner_filter_set import PractitionerFilterSet
+from .filters.practitioner_role_filter_set import PractitionerRoleFilterSet
+
 from .models import (
     EndpointInstance,
     ClinicalOrganization,
@@ -28,7 +36,7 @@ from .models import (
     Individual,
     IndividualToName,
 )
-from .renderers import FHIRRenderer
+
 from .serializers import (
     BundleSerializer,
     EndpointSerializer,
@@ -37,13 +45,6 @@ from .serializers import (
     PractitionerRoleSerializer,
     PractitionerSerializer,
     CapabilityStatementSerializer
-)
-from .filters import (
-    EndpointFilterSet,
-    PractitionerFilterSet,
-    PractitionerRoleFilterSet,
-    OrganizationFilterSet,
-    LocationFilterSet
 )
 
 default_page_size = 10

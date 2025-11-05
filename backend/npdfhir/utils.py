@@ -26,7 +26,7 @@ def genReference(url_name, identifier, request):
         reference=reference)
     return reference
 
-def parse_identifier(identifier_value):
+def parse_identifier_query(identifier_value):
     """
     Parse an identifier search parameter that should be in the format of "value" OR "system|value".
     Currently only supporting NPI search "NPI|123455".
