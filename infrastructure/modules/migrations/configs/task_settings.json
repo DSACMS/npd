@@ -83,9 +83,7 @@
         "LogConfiguration": {
             "TraceOnErrorMb": 10,
             "EnableTraceOnError": false
-        },
-        "CloudWatchLogGroup": "dms-serverless-replication-57J6Z4LH2JAUNKC3LS7RUETZUE",
-        "CloudWatchLogStream": "dms-serverless-serv-res-id-1761840201151-lqz"
+        }
     },
     "StreamBufferSettings": {
         "StreamBufferCount": 3,
