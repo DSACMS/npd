@@ -48,8 +48,7 @@ urlpatterns = [
     # inside npdfhir.urls don't break our routing configuration.
     path('fhir/', include("npdfhir.urls")),
     path('fhir', npdfhir_router.get_api_root_view, name='api-root'),
-    ##
-
     path('admin/', admin.site.urls),
+    # everything else goes to provider_directory
     path('', include('provider_directory.urls')),
 ] + debug_toolbar_urls()

@@ -2,17 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="The National Provider Directory uses data from multiple publicly-available data sources and combines them to create a trusted source of truth for information about healthcare providers.">
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="/node_modules/@uswds/uswds/dist/js/uswds-init.min.js"
       type="module"
     ></script>
-
+    {{ form.errors|json_script:"form-errors-json" }}
+    {{ next|json_script:"next-json" }}
     <title>{{ title }}</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <template id="csrf-token-input">{% csrf_token %}</template>
   </body>
 </html>

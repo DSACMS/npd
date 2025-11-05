@@ -1,26 +1,17 @@
-import re
-import unicodedata
-import uuid
-
-from functools import cmp_to_key
 from django.urls import reverse
 from rest_framework import status
-from rest_framework.test import APITestCase, APIClient
-from django.test.runner import DiscoverRunner
+from rest_framework.test import APITestCase as DrfAPITestCase, APIClient
 from django.db import connection
-from django.db.models import F
-from django.test.runner import DiscoverRunner
-from django.urls import reverse
+from django.contrib.auth.models import User
 from fhir.resources.R4B.bundle import Bundle
 from fhir.resources.R4B.capabilitystatement import CapabilityStatement
-from pydantic import ValidationError
-from rest_framework import status
-from rest_framework.test import APIClient, APITestCase
 
-from .models import Organization, ProviderToLocation
+from .models import Organization
 
-# I can't explain why, but we need to import cacheData here. I think we can remove this once we move to the docker db setup
-from .cache import cacheData
+# I can't explain why, but we need to import cacheData here. I think we can
+# remove this once we move to the docker db setup. By using "import thing as
+# thing", we silence "imported but unused" and "not accessed" warnings.
+from .cache import cacheData as cacheData
 
 
 def get_female_npis(npi_list):
@@ -40,11 +31,19 @@ def get_female_npis(npi_list):
 
     return results
 
+class APITestCase(DrfAPITestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.user = User.objects.create(username="testuser")
+        cls.user.set_password('nothing')
+        return super().setUpTestData()
 
-class DocumentationViewSetTestCase(APITestCase):
     def setUp(self):
         self.client = APIClient()
+        self.client.force_authenticate(user=self.user)
 
+
+class DocumentationViewSetTestCase(APITestCase):
     def test_get_swagger_docs(self):
         swagger_url = reverse("schema-swagger-ui")
         response = self.client.get(swagger_url)
@@ -70,7 +69,7 @@ class DocumentationViewSetTestCase(APITestCase):
 
 class EndpointViewSetTestCase(APITestCase):
     def setUp(self):
-        self.client = APIClient()
+        super().setUp()
         self.list_url = reverse("fhir-endpoint-list")
 
     def test_list_default(self):
@@ -227,7 +226,6 @@ class EndpointViewSetTestCase(APITestCase):
 
 
 class BasicViewsTestCase(APITestCase):
-
     def test_health_view(self):
         url = reverse("healthCheck")  # maps to "/healthCheck"
         response = self.client.get(url)
@@ -238,7 +236,7 @@ class BasicViewsTestCase(APITestCase):
 
 class OrganizationViewSetTestCase(APITestCase):
     def setUp(self):
-        self.client = APIClient()
+        super().setUp()
         self.org_without_authorized_official = Organization.objects.create(
             id='26708690-19d6-499e-b481-cebe05b98f08', authorized_official_id=None)
 
@@ -387,8 +385,6 @@ class OrganizationViewSetTestCase(APITestCase):
 
 
 class LocationViewSetTestCase(APITestCase):
-    def setUp(self):
-        self.client = APIClient()
 
     def test_list_default(self):
         url = reverse("fhir-location-list")
@@ -461,8 +457,6 @@ class LocationViewSetTestCase(APITestCase):
 
 
 class PractitionerViewSetTestCase(APITestCase):
-    def setUp(self):
-        self.client = APIClient()
 
     def test_list_default(self):
         url = reverse("fhir-practitioner-list")  # /Practitioner/
@@ -570,8 +564,6 @@ class PractitionerViewSetTestCase(APITestCase):
 
 
 class PractitionerRoleViewSetTestCase(APITestCase):
-    def setUp(self):
-        self.client = APIClient()
 
     def test_list_default(self):
         url = reverse("fhir-practitionerrole-list")
@@ -665,7 +657,7 @@ class PractitionerRoleViewSetTestCase(APITestCase):
 
 class CapabilityStatementViewSetTestCase(APITestCase):
     def setUp(self):
-        self.client = APIClient()
+        super().setUp()
         self.url = reverse("fhir-metadata")
 
     def test_capability_statement_returns_200(self):

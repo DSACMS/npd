@@ -1,0 +1,27 @@
+@import "@cmsgov/design-system/css/core-theme.css";
+@import "@cmsgov/design-system/css/index.css";
+@import "@uswds/uswds/css/uswds.css";
+
+:root {
+  --theme-color-primary-lightest: var(--color-primary-lightest);
+}
+
+/*
+  @cmsgov/design-system breakpoints:
+    xs: Width: 360
+    sm: Width: 544
+    md: Width: 768
+    lg: Width: 1024
+    xl: Width: 1280
+*/
+
+@media (min-width: 360px) {
+}
+@media (min-width: 544px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1280px) {
+}

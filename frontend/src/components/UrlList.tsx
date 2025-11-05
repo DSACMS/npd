@@ -6,7 +6,7 @@ import {
   TableHead,
   TableRow,
 } from "@cmsgov/design-system"
-import useGetFhirPoc from "../hooks/getFhirPoc.ts"
+import { useGetFhirPoc } from "../hooks/getFhirPoc"
 
 function UrlList() {
   const urlList = useGetFhirPoc()

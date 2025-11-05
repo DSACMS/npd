@@ -185,3 +185,4 @@ scratch/
 
 # tool version management
 mise.toml
+.pre-commit-config.yaml
