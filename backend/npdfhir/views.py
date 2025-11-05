@@ -63,6 +63,27 @@ def createFilterParam(field: str, display: str = None, enum: list = None):
         param.enum = enum
     return param
 
+def get_sort_fields(allowed_sorts, sorts_value):
+    sort_fields = []
+
+    for field in sorts_value.split(','):
+        cleaned = field.lstrip('-')
+        if cleaned in allowed_sorts:
+            sort_fields.append(field)
+    
+    return sort_fields
+
+def get_data_sorted(data,allowed_sorts,sorts_value):
+    sort_fields = get_sort_fields(allowed_sorts,sorts_value)
+
+    #Sort data
+    if sort_fields:
+        return data.order_by(*sort_fields)
+    else 
+        return data
+
+
+
 
 def parse_identifier(identifier_value):
     """
@@ -148,16 +169,7 @@ class FHIREndpointViewSet(viewsets.ViewSet):
                         'ehr_vendor_name'
                     ]
 
-                    sort_fields = []
-
-                    for fields in value.split(','):
-                        cleaned = field.lstrip('-')
-                        if cleaned in valid_sorts:
-                            sort_fields.append(field)
-
-                    #Sort data
-                    if sort_fields:
-                        endpoints = endpoints.order_by(*sort_fields)
+                    endpoints = get_data_sorted(endpoints,valid_sorts,value)
                 case 'status':
                     pass
                 case 'organization':
@@ -264,7 +276,8 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
             'individual__individualtoemail_set', 'providertootherid_set', 'providertotaxonomy_set'
         ).annotate(
             primary_last_name=Subquery(primary_last_name_subquery),
-            primary_first_name=Subquery(primary_first_name_subquery)
+            primary_first_name=Subquery(primary_first_name_subquery),
+            npi_value=F('npi__npi')
         ).order_by('primary_last_name', 'primary_first_name')
 
         for param, value in all_params.items():
@@ -341,6 +354,15 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
                         value = -1
                     providers = providers.filter(
                         individual__individualtoaddress__address_use_id=value)
+                case 'sort':
+                    valid_sorts [
+                        'primary_last_name',
+                        'primary_first_name',
+                        'npi_value'
+                    ]
+                    providers = get_data_sorted(providers,valid_sorts,value)
+
+
 
         paginator = PageNumberPagination()
         paginator.page_size = page_size
@@ -422,10 +444,30 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
 
         all_params = request.query_params
 
+        primary_last_name_subquery = (
+            IndividualToName.objects
+                .filter(individual=OuterRef('provider_to_organization__individual__individual'))
+                .order_by('last_name')
+                .values('last_name')[:1]
+        )
+
+        primary_first_name_subquery = (
+            IndividualToName.objects
+                .filter(individual=OuterRef('provider_to_organization__individual__individual'))
+                .order_by('first_name')
+                .values('first_name')[:1]
+        )
+
+
         practitionerroles = (
             ProviderToLocation.objects
             .select_related('location')
             .prefetch_related('provider_to_organization')
+            .annotate(
+                location_name=F('location__name'),
+                practitioner_first_name=Subquery(primary_first_name_subquery),
+                practitioner_last_name=Subquery(primary_last_name_subquery),
+            )
             .order_by('location__name')
         ).all()
 
@@ -458,6 +500,13 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
                         search=SearchVector(
                             'provider_to_organization__organization__organizationtoname__name')
                     ).filter(search=value)
+                case 'sort':
+                    valid_sorts [
+                        'location__name',
+                        'practitioner_first_name',
+                        'practitioner_last_name'
+                    ]
+                    practitionerroles = get_data_sorted(practitionerroles,valid_sorts,value)
 
         paginator = PageNumberPagination()
         paginator.page_size = page_size
