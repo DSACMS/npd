@@ -56,7 +56,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'django_filters',
-    'drf_yasg',
+    'drf_spectacular',
     'xmlrunner',
     'django_structlog',
 ]
@@ -190,6 +190,17 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'NPD FHIR API',
+    'DESCRIPTION': 'Developers can query and retrieve National Provider Directory data via a REST API. The API structure conforms to the HL7 Fast Healthcare Interoperability Resources (FHIR) standard and it returns JSON responses following the FHIR specification.',
+    'VERSION': 'beta',
+    'CONTACT': {'email': 'npd@cms.hhs.gov'},
+    'LICENSE': {'name': 'CC0-1.0 License'},
+    'SERVE_INCLUDE_SCHEMA': False,
+    'COMPONENT_SPLIT_REQUEST': True
 }
 
 DEBUG_TOOLBAR_CONFIG = {
@@ -201,10 +212,6 @@ CACHES = {
         "BACKEND": "django.core.cache.backends.filebased.FileBasedCache",
         "LOCATION": "/var/tmp/django_cache",
     }
-}
-
-SWAGGER_SETTINGS = {
-    'USE_SESSION_AUTH': False
 }
 
 if TESTING:

@@ -6,6 +6,10 @@ from ..mappings import genderMapping
 
 
 class PractitionerRoleFilterSet(filters.FilterSet):
+    filter_mappings = {
+        'practitioner_gender': genderMapping
+    }
+    
     practitioner_name = filters.CharFilter(
         method='filter_practitioner_name',
         help_text='Filter by practitioner name (first, last, or full name)'

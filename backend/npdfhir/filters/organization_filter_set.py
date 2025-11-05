@@ -6,7 +6,12 @@ from ..models import Organization
 from ..mappings import addressUseMapping
 from ..utils import parse_identifier_query
 
+
 class OrganizationFilterSet(filters.FilterSet):
+    filter_mappings = {
+        'address_use': addressUseMapping
+    }
+    
     name = filters.CharFilter(
         method='filter_name',
         help_text='Filter by organization name'

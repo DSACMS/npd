@@ -2,6 +2,8 @@ from fhir.resources.R4B.address import Address
 from fhir.resources.R4B.reference import Reference
 from rest_framework.test import APIClient
 from django.urls import reverse
+from drf_spectacular.utils import OpenApiParameter
+from drf_spectacular.types import OpenApiTypes
 
 def SmartyStreetstoFHIR(address):
     addressLine1 = f"{address.address_us.primary_number} {address.address_us.street_predirection} {address.address_us.street_name} {address.address_us.postdirection} {address.address_us.street_suffix}"
@@ -13,9 +15,9 @@ def SmartyStreetstoFHIR(address):
         use=address.address_type.value
     )
 
-def get_schema_data(url_name, additional_args=None):
+def get_schema_data(url_name):
     client = APIClient()
-    schema_url = reverse(url_name, kwargs=additional_args)
+    schema_url = reverse(url_name)
     response = client.get(schema_url)
     return response.data
 
@@ -36,3 +38,39 @@ def parse_identifier_query(identifier_value):
         return (parts[0], parts[1])
 
     return (None, identifier_value)
+
+def generate_filter_parameters(filterset_class):
+    parameters = []
+    mappings = getattr(filterset_class, 'filter_mappings', {})
+
+    # Implement page related parameters
+    parameters.extend([
+        OpenApiParameter(
+            name='page',
+            type=OpenApiTypes.INT,
+            description='Page number for pagination'
+        ),
+        OpenApiParameter(
+            name='page_size',
+            type=OpenApiTypes.INT,
+            description='Number of results per page (max 100)'
+        ),
+    ])
+    
+    # Get declared filters from the FilterSet
+    for filter_name, filter_field in filterset_class.declared_filters.items():
+        help_text = getattr(filter_field, 'help_text', None) or f'Filter by {filter_name}'
+        
+        enum_values = None
+        if filter_name in mappings:
+            enum_values = list(mappings[filter_name].keys('fhir'))
+        
+        param = OpenApiParameter(
+            name=filter_name,
+            type=OpenApiTypes.STR,
+            description=help_text,
+            enum=enum_values
+        )
+        parameters.append(param)
+    
+    return parameters

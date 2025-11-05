@@ -7,17 +7,16 @@ from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.utils.html import escape
 from django_filters.rest_framework import DjangoFilterBackend
-from drf_yasg import openapi
-from drf_yasg.utils import swagger_auto_schema
+from drf_spectacular.utils import extend_schema
 from rest_framework import generics, viewsets
 from rest_framework.views import APIView
-from rest_framework.pagination import PageNumberPagination
 from rest_framework.renderers import BrowsableAPIRenderer
 from rest_framework.response import Response
 
 from .pagination import CustomPaginator
 from .renderers import FHIRRenderer
 from .mappings import addressUseMapping, genderMapping
+from .utils import generate_filter_parameters
 
 from .filters.endpoint_filter_set import EndpointFilterSet
 from .filters.location_filter_set import LocationFilterSet
@@ -47,32 +46,6 @@ from .serializers import (
     CapabilityStatementSerializer
 )
 
-default_page_size = 10
-max_page_size = 1000
-page_size_param = openapi.Parameter(
-    'page_size',
-    openapi.IN_QUERY,
-    description="Limit the number of results returned per page",
-    type=openapi.TYPE_STRING,
-    minimum=1,
-    maximum=max_page_size,
-    default=default_page_size
-)
-
-
-def createFilterParam(field: str, display: str = None, enum: list = None):
-    if display is None:
-        display = field.replace('_', ' ').replace('.', ' ')
-    param = openapi.Parameter(
-        field,
-        openapi.IN_QUERY,
-        description=f"Filter by {display}",
-        type=openapi.TYPE_STRING,
-    )
-    if enum is not None:
-        param.enum = enum
-    return param
-
 
 def index(request):
     return HttpResponse("Connection to npd database: successful")
@@ -91,17 +64,8 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
     filterset_class = EndpointFilterSet
     pagination_class = CustomPaginator  
 
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('name'),
-            createFilterParam('connection_type'),
-            createFilterParam('payload_type'),
-            createFilterParam('status'),
-            createFilterParam('organization')
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested Endpoint resource cannot be found."}
+    @extend_schema(
+        parameters=generate_filter_parameters(EndpointFilterSet)
     )
     def list(self, request):
         """
@@ -165,25 +129,8 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     filterset_class = PractitionerFilterSet
     pagination_class = CustomPaginator
 
-    # permission_classes = [permissions.IsAuthenticated]
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam(
-                'value (for any type of identifier) OR NPI|value (if searching for an NPI) -> 12345567 OR NPI|12345567'),
-            createFilterParam('name'),
-            createFilterParam('gender', enum=genderMapping.keys()),
-            createFilterParam('practitioner_type'),
-            createFilterParam('address'),
-            createFilterParam('address-city', 'city'),
-            createFilterParam('address-postalcode', "zip code"),
-            createFilterParam(
-                'address-state', '2 letter US State abbreviation'),
-            createFilterParam('address-use', 'address use',
-                              enum=addressUseMapping.keys())
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested Practitioner resource cannot be found."}
+    @extend_schema(
+        parameters=generate_filter_parameters(PractitionerFilterSet)
     )
     def list(self, request):
         """
@@ -271,20 +218,8 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     filterset_class = PractitionerRoleFilterSet
     pagination_class = CustomPaginator
 
-    # permission_classes = [permissions.IsAuthenticated]
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('active'),
-            createFilterParam('role'),
-            createFilterParam('practitioner.name'),
-            createFilterParam('practitioner.gender', enum=[
-                              'Female', 'Male', 'Other']),
-            createFilterParam('practitioner.practitioner_type'),
-            createFilterParam('organization.name')
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested PractitionerRole resource cannot be found."}
+    @extend_schema(
+        parameters=generate_filter_parameters(PractitionerRoleFilterSet)
     )
     def list(self, request):
         """
@@ -339,24 +274,8 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     filterset_class = OrganizationFilterSet
     pagination_class = CustomPaginator
 
-    # permission_classes = [permissions.IsAuthenticated]
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('name'),
-            createFilterParam(
-                'identifier', 'format: value (for any type of identifier) OR NPI|value (if searching for an NPI) -> 12345567 OR NPI|12345567'),
-            createFilterParam('organization_type'),
-            createFilterParam('address'),
-            createFilterParam('address-city', 'city'),
-            createFilterParam('address-postalcode', "zip code"),
-            createFilterParam(
-                'address-state', '2 letter US State abbreviation'),
-            createFilterParam('address-use', 'address use',
-                              enum=addressUseMapping.keys())
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested Organization resource cannot be found."}
+    @extend_schema(
+        parameters=generate_filter_parameters(OrganizationFilterSet)
     )
     def list(self, request):
         """
@@ -458,21 +377,8 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
     filterset_class = LocationFilterSet
     pagination_class = CustomPaginator
 
-    # permission_classes = [permissions.IsAuthenticated]
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('name'),
-            createFilterParam('address'),
-            createFilterParam('address-city', 'city'),
-            createFilterParam('address-postalcode', "zip code"),
-            createFilterParam(
-                'address-state', '2 letter US State abbreviation'),
-            createFilterParam('address-use', 'address use',
-                              enum=addressUseMapping.keys())
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested Location resource cannot be found."}
+    @extend_schema(
+        parameters=generate_filter_parameters(LocationFilterSet)
     )
     def list(self, request):
         """
@@ -522,10 +428,6 @@ class FHIRCapabilityStatementView(APIView):
     """
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
 
-    @swagger_auto_schema(
-        responses={200: "Successful response",
-                   404: "Error: The requested CapabilityStatement resource cannot be found."}
-    )
     def get(self, request):
         """
         Query metadata about this FHIR instance, represented as FHIR CapabilityStatement resource

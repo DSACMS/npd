@@ -1,6 +1,7 @@
 from django_filters import rest_framework as filters
 from ..models import EndpointInstance
 
+
 class EndpointFilterSet(filters.FilterSet):
     name = filters.CharFilter(
         field_name='name',

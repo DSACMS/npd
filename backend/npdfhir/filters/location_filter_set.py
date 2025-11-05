@@ -5,7 +5,12 @@ from django.db.models import Q
 from ..models import Location
 from ..mappings import addressUseMapping
 
+
 class LocationFilterSet(filters.FilterSet):
+    filter_mappings = {
+        'address_use': addressUseMapping
+    }
+    
     name = filters.CharFilter(
         field_name='name',
         lookup_expr='exact',

@@ -8,6 +8,11 @@ from ..utils import parse_identifier_query
 
 
 class PractitionerFilterSet(filters.FilterSet):
+    filter_mappings = {
+        'gender': genderMapping,
+        'address_use': addressUseMapping
+    }
+    
     identifier = filters.CharFilter(
         method='filter_identifier',
         help_text='Filter by identifier (NPI or other). Format: value or system|value'
