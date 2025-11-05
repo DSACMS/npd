@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "watch": "vite build --watch",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "format": "npx prettier . --write",
