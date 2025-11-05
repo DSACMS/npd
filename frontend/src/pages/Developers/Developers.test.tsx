@@ -24,7 +24,7 @@ describe("Developers", () => {
       ),
     ).toBeInTheDocument()
     expect(
-      screen.getByText("Participating in the test", {
+      screen.getByText("Participating in the beta", {
         selector: "h3",
       }),
     ).toBeInTheDocument()

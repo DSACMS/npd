@@ -6,6 +6,9 @@
     "title": "About the directory",
     "description": "The National Provider Directory uses data from multiple publicly-available data sources and combines them to create a trusted source of truth for information about healthcare providers."
   },
+  "beta": {
+    "heading": "This project is in beta"
+  },
   "links": {
     "developers": "Developer resources",
     "providers": "Provider resources",
