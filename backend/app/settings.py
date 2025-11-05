@@ -10,20 +10,16 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
-from pathlib import Path
-from decouple import config
+import logging
 import os
 import sys
-import logging
-import structlog
-from npdfhir.middleware import HealthCheckMiddleware
+from pathlib import Path
 
-# Detect if tests are being run
-TESTING = 'test' in sys.argv
+import structlog
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
@@ -32,12 +28,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('NPD_DJANGO_SECRET')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(config('DEBUG'))
-TESTING = sys.argv[1:2] == ['test']
+DEBUG = config('DEBUG', cast=bool)
 
+# Detect if tests are being run
+TESTING = 'test' in sys.argv
+
+REQUIRE_AUTHENTICATION = config("NPD_REQUIRE_AUTHENTICATION", default=False, cast=bool)
 
 if DEBUG:
-    ALLOWED_HOSTS = ['localhost','127.0.0.1','0.0.0.0','testserver']
+    ALLOWED_HOSTS = ['localhost','127.0.0.1','0.0.0.0','testserver','django-web']
 else:
     ALLOWED_HOSTS = config("DJANGO_ALLOWED_HOSTS").split(',')
 
@@ -77,6 +76,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+if REQUIRE_AUTHENTICATION:
+    MIDDLEWARE.append('django.contrib.auth.middleware.LoginRequiredMiddleware')
+
 if not TESTING:
     MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
     # This must come at the end.
@@ -86,6 +88,10 @@ CORS_URLS_REGEX = r'^/fhir/.*$'
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_METHODS = ['GET']
 
+if DEBUG:
+    # in development, allow the frontend app to POST forms to the backend
+    CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'http://localhost:3000']
+
 ROOT_URLCONF = 'app.urls'
 APPEND_SLASH = True # this is default, but we're making sure it's explicit
 
@@ -93,6 +99,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
             # NOTE: (@abachman-dsac) this setup allows frontend/ to build directly
             # into provider_directory/static/ and provider_directory.views.landing to
             # reference the resulting index.html
@@ -137,6 +144,9 @@ DATABASES = {
 TEST_RUNNER = 'xmlrunner.extra.djangotestrunner.XMLTestRunner'
 # Directory where XML reports will be written
 TEST_OUTPUT_DIR = './artifacts/test-reports'
+FIXTURE_DIRS = [
+    os.path.join(BASE_DIR, 'provider_directory', 'fixtures'),
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -168,7 +178,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
@@ -189,8 +198,19 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
-    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+    "DEFAULT_FILTER_BACKENDS": ["django_filters.rest_framework.DjangoFilterBackend"],
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework.authentication.BasicAuthentication",
+        "rest_framework.authentication.SessionAuthentication",
+    ],
 }
+
+if REQUIRE_AUTHENTICATION:
+    REST_FRAMEWORK["DEFAULT_PERMISSION_CLASSES"] = ["rest_framework.permissions.IsAuthenticated"]
+
+LOGIN_REDIRECT_URL = "/"
+LOGIN_URL = "/accounts/login/"
+LOGOUT_REDIRECT_URL = LOGIN_URL
 
 DEBUG_TOOLBAR_CONFIG = {
     'SHOW_TOOLBAR_CALLBACK': lambda request: DEBUG
@@ -214,8 +234,8 @@ else:
 
 LOGGING = {
     "version": 1,
-    # This will leave the default Django logging behavior in place
-    "disable_existing_loggers": False,
+    # stop default django and library logging, structlog all the things
+    "disable_existing_loggers": True,
     "formatters": {
         "json_formatter": {
             "()": structlog.stdlib.ProcessorFormatter,

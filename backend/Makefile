@@ -25,6 +25,12 @@ help:
 	@echo "  test         Run the full test suite (includes test-setup)"
 	@echo "  clean        Remove cache files and artifacts directory"
 	@echo ""
+	@echo "  createsuperuser  Interactively set up a Django superuser account."
+	@echo "                   Pass env vars to run automatically:"
+	@echo "                     DJANGO_SUPERUSER_EMAIL"
+	@echo "                     DJANGO_SUPERUSER_USERNAME"
+	@echo "                     DJANGO_SUPERUSER_PASSWORD"
+	@echo ""
 	@echo "  drop-db      \033[31m[DANGEROUS]\033[0m Drop the development database"
 	@echo "  reset-db     \033[31m[DANGEROUS]\033[0m Drop and fully recreate the development database"
 	@echo ""
@@ -96,3 +102,18 @@ clean:
 	@rm -rf artifacts/
 	@echo "Cleanup done."
 
+createsuperuser:
+ifeq ($(and $(DJANGO_SUPERUSER_EMAIL),$(DJANGO_SUPERUSER_USERNAME),$(DJANGO_SUPERUSER_PASSWORD)),)
+	@docker compose run --rm django-web python manage.py createsuperuser
+else
+	@docker compose run -e DJANGO_SUPERUSER_EMAIL="$(DJANGO_SUPERUSER_EMAIL)" \
+						-e DJANGO_SUPERUSER_USERNAME="$(DJANGO_SUPERUSER_USERNAME)" \
+						-e DJANGO_SUPERUSER_PASSWORD="$(DJANGO_SUPERUSER_PASSWORD)" \
+						--rm django-web python manage.py createsuperuser --no-input
+endif
+
+seed-users:
+	@docker compose run -e DJANGO_SUPERUSER_EMAIL="npd.admin@cms.hhs.gov" \
+						-e DJANGO_SUPERUSER_USERNAME="npdadmin" \
+						-e DJANGO_SUPERUSER_PASSWORD="password123" \
+						--rm django-web python manage.py createsuperuser --no-input

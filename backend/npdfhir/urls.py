@@ -1,9 +1,7 @@
 from django.urls import path, include, re_path
-from rest_framework.schemas import get_schema_view
 from debug_toolbar.toolbar import debug_toolbar_urls
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
-from django.urls import path
 
 from . import views
 from .router import router
