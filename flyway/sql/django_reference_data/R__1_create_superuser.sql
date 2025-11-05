@@ -4,7 +4,7 @@
 -- WARNING: any time this script is run with a new value for
 -- `superuserDefaultPassword`, the INSERT will be attempted.
 INSERT INTO
-    public.auth_user (
+    auth_user (
         password,
         is_superuser,
         username,
