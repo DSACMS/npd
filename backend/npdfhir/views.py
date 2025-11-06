@@ -587,12 +587,6 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
             .values('name')[:1]
         )
 
-        primary_name_subquery = (
-            OrganizationToName.objects
-            .filter(organization=OuterRef('pk'), is_primary=True)
-            .values('name')[:1]
-        )
-
         organizations = Organization.objects.all().prefetch_related(
             'authorized_official',
             'ein',
@@ -696,6 +690,12 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
                         value = -1
                     organizations = organizations.filter(
                         organization__organizationtoaddress__address_use_id=value)
+                case 'sort':
+                    valid_sorts [
+                        'primary_name'
+                    ]
+
+                    organizations = get_data_sorted(organizations,valid_sorts,value)
 
         paginator = PageNumberPagination()
         paginator.page_size = page_size
@@ -788,9 +788,33 @@ class FHIRLocationViewSet(viewsets.ViewSet):
 
         all_params = request.query_params
 
-        locations = Location.objects.all().prefetch_related(
-            'address__address_us', 'address__address_us__state_code'
-        ).order_by('name')
+        locations = locations = (
+            Location.objects.all()
+            .select_related(
+                "organization",
+                "address__address_us",
+                "address__address_us__state_code",
+            )
+            .prefetch_related(
+                "organization__organizationtoname_set",
+            )
+            .annotate(
+                organization_name=F(
+                    "organization__organizationtoname__name"
+                ),
+                address_full=Concat(
+                    F("address__address_us__street"),
+                    Value(" "),
+                    F("address__address_us__city"),
+                    Value(", "),
+                    F("address__address_us__state_code__code"),
+                    Value(" "),
+                    F("address__address_us__postal_code"),
+                    output_field=CharField(),
+                ),
+            )
+            .order_by("name")
+        )
 
         for param, value in all_params.items():
             match param:
@@ -840,6 +864,14 @@ class FHIRLocationViewSet(viewsets.ViewSet):
                         value = -1
                     locations = locations.filter(
                         address_use_id=value)
+                case 'sort':
+                    valid_sorts [
+                        'organization_name',
+                        'address',
+                        'name'
+                    ]
+
+                    locations = get_data_sorted(locations,valid_sorts,value)
 
         paginator = PageNumberPagination()
         paginator.page_size = page_size
