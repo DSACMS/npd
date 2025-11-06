@@ -1,49 +1,42 @@
-  data "aws_secretsmanager_secret_version" "etl_db" {
-      secret_id = var.etl_db.db_instance_master_user_secret_arn
-  }
-  data "aws_secretsmanager_secret_version" "fhir_db" {
-      secret_id = var.fhir_db.db_instance_master_user_secret_arn
-  }
+data "aws_secretsmanager_secret_version" "etl_db" {
+  secret_id = var.etl_db.db_instance_master_user_secret_arn
+}
+data "aws_secretsmanager_secret_version" "fhir_db" {
+  secret_id = var.fhir_db.db_instance_master_user_secret_arn
+}
 
-  locals {
-    etl_db_password  = jsondecode(data.aws_secretsmanager_secret_version.etl_db.secret_string).password
-    fhir_db_password = jsondecode(data.aws_secretsmanager_secret_version.fhir_db.secret_string).password
-    account_name     = "${var.region}-${var.tier}"
-    multi_az         = var.multi_az
-    table_mappings   = jsonencode({
-      "rules": [
-          {
-              "rule-id": 1,
-              "rule-name": "etl-selection-rule",
-              "rule-type": "selection",
-              "rule-action": "include",
-              "object-locator": {
-                  "schema-name": "npd",
-                  "table-name": "%"
-              },
-              "filters": []
-          },
-          {
-              "rule-id": 2,
-              "rule-name": "etl-transformation-rule",
-              "rule-type": "transformation",
-              "rule-target": "table",
-              "rule-action": "rename",
-              "object-locator": {
-                  "schema-name": "npd",
-                  "table-name": "%"
-              },
-            "value": "npd-${var.region}-${var.tier}-${module.database_migration_service.endpoints["fhir-api-destination"].database_name}-migrated"
-          }
-      ]
-    })
-  }
-
-  module "networking" {
-  source = "../../modules/networking"
-
-  vpc_id       = var.networking.vpc_id
-  account_name = local.account_name
+locals {
+  etl_db_password  = jsondecode(data.aws_secretsmanager_secret_version.etl_db.secret_string).password
+  fhir_db_password = jsondecode(data.aws_secretsmanager_secret_version.fhir_db.secret_string).password
+  account_name     = "${var.region}-${var.tier}"
+  multi_az         = var.multi_az
+  table_mappings = jsonencode({
+    "rules" : [
+      {
+        "rule-id" : 1,
+        "rule-name" : "etl-selection-rule",
+        "rule-type" : "selection",
+        "rule-action" : "include",
+        "object-locator" : {
+          "schema-name" : "npd",
+          "table-name" : "%"
+        },
+        "filters" : []
+      },
+      {
+        "rule-id" : 2,
+        "rule-name" : "etl-transformation-rule",
+        "rule-type" : "transformation",
+        "rule-target" : "table",
+        "rule-action" : "rename",
+        "object-locator" : {
+          "schema-name" : "npd",
+          "table-name" : "%"
+        },
+        "value" : "npd-${var.region}-${var.tier}-${module.database_migration_service.endpoints["fhir-api-destination"].database_name}-migrated"
+      }
+    ]
+  })
 }
 
 module "database_migration_service" {
@@ -51,9 +44,9 @@ module "database_migration_service" {
   version = "~> 2.6.0"
 
   # Subnet group
-  repl_subnet_group_name        = module.networking.private_subnet_group_name
+  repl_subnet_group_name        = var.networking.private_subnet_group_name
   repl_subnet_group_description = "The DMS ETL replication subnet group"
-  repl_subnet_group_subnet_ids  = module.networking.private_subnet_ids
+  repl_subnet_group_subnet_ids  = var.networking.private_subnet_ids
 
   endpoints = {
     etl-source = {
@@ -96,7 +89,7 @@ module "database_migration_service" {
         max_capacity_units     = 8
         min_capacity_units     = 4
         multi_az               = var.multi_az
-        vpc_security_group_ids = [module.networking.etl_db_security_group_id, module.networking.db_security_group_id]
+        vpc_security_group_ids = [var.networking.etl_db_security_group_id, var.networking.api_db_security_group_id]
       }
     }
   }

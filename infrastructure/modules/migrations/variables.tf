@@ -1,7 +1,7 @@
 variable "account_name" {}
 variable "region" {}
 variable "tier" {}
-variable "multi_az" {type = bool}
+variable "multi_az" { type = bool }
 
 variable "fhir_db" {
   type = object({
@@ -23,10 +23,10 @@ variable "etl_db" {
 
 variable "networking" {
   type = object({
-    private_subnet_ids    = list(string)
-    public_subnet_ids     = list(string)
-    # alb_security_group_id = string
-    # api_security_group_id = string
-    vpc_id                = string
+    private_subnet_group_name = string
+    private_subnet_ids        = list(string)
+    api_db_security_group_id  = string
+    etl_db_security_group_id  = string
+    vpc_id                    = string
   })
 }
