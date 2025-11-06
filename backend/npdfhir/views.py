@@ -1,21 +1,18 @@
 from uuid import UUID
 
-from django.contrib.postgres.search import SearchVector
-from django.core.cache import cache
 from django.db.models import Q, OuterRef, Subquery
 from django.http import HttpResponse
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404
 from django.utils.html import escape
 from django_filters.rest_framework import DjangoFilterBackend
 from drf_spectacular.utils import extend_schema
-from rest_framework import generics, viewsets
+from rest_framework import viewsets
 from rest_framework.views import APIView
 from rest_framework.renderers import BrowsableAPIRenderer
 from rest_framework.response import Response
 
 from .pagination import CustomPaginator
 from .renderers import FHIRRenderer
-from .mappings import addressUseMapping, genderMapping
 from .utils import generate_filter_parameters
 
 from .filters.endpoint_filter_set import EndpointFilterSet
@@ -26,13 +23,11 @@ from .filters.practitioner_role_filter_set import PractitionerRoleFilterSet
 
 from .models import (
     EndpointInstance,
-    ClinicalOrganization,
     Location,
     Organization,
     OrganizationToName,
     Provider,
     ProviderToLocation,
-    Individual,
     IndividualToName,
 )
 
@@ -44,6 +39,15 @@ from .serializers import (
     PractitionerRoleSerializer,
     PractitionerSerializer,
     CapabilityStatementSerializer
+)
+
+from .fhir_schemas import (
+    ENDPOINT_SCHEMA,
+    PRACTITIONER_SCHEMA,
+    PRACTITIONER_ROLE_SCHEMA,
+    ORGANIZATION_SCHEMA,
+    LOCATION_SCHEMA,
+    CAPABILITY_STATEMENT_SCHEMA
 )
 
 
@@ -59,13 +63,14 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Endpoint Resources
     """
+    queryset = EndpointInstance.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     filter_backends = [DjangoFilterBackend]
     filterset_class = EndpointFilterSet
     pagination_class = CustomPaginator  
 
     @extend_schema(
-        parameters=generate_filter_parameters(EndpointFilterSet)
+        responses={200: EndpointSerializer}
     )
     def list(self, request):
         """
@@ -93,6 +98,9 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
         response = self.get_paginated_response(bundle.data)
         return response
 
+    @extend_schema(
+        responses={200: ENDPOINT_SCHEMA}
+    )
     def retrieve(self, request, pk=None):
         """
         Query a specific endpoint as a FHIR Endpoint resource
@@ -124,13 +132,14 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Practitioner resources
     """
+    queryset = Provider.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     filter_backends = [DjangoFilterBackend]
     filterset_class = PractitionerFilterSet
     pagination_class = CustomPaginator
 
     @extend_schema(
-        parameters=generate_filter_parameters(PractitionerFilterSet)
+        responses={200: PRACTITIONER_SCHEMA}
     )
     def list(self, request):
         """
@@ -175,6 +184,9 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
         response = self.get_paginated_response(bundle.data)
         return response
 
+    @extend_schema(
+        responses={200: PRACTITIONER_SCHEMA}
+    )
     def retrieve(self, request, pk=None):
         """
         Query a specific provider as a FHIR Practitioner resource
@@ -213,13 +225,14 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR PractitionerRole resources
     """
+    queryset = ProviderToLocation.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     filter_backends = [DjangoFilterBackend]
     filterset_class = PractitionerRoleFilterSet
     pagination_class = CustomPaginator
 
     @extend_schema(
-        parameters=generate_filter_parameters(PractitionerRoleFilterSet)
+        responses={200: PRACTITIONER_ROLE_SCHEMA}
     )
     def list(self, request):
         """
@@ -245,6 +258,9 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
         response = self.get_paginated_response(bundle.data)
         return response
 
+    @extend_schema(
+        responses={200: PRACTITIONER_ROLE_SCHEMA}
+    )
     def retrieve(self, request, pk=None):
         """
         Query a specific relationship between providers, healthcare organizations, and practice locations, represented as a FHIR PractitionerRole resource
@@ -269,13 +285,14 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Organization resources
     """
+    queryset = Organization.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     filter_backends = [DjangoFilterBackend]
     filterset_class = OrganizationFilterSet
     pagination_class = CustomPaginator
 
     @extend_schema(
-        parameters=generate_filter_parameters(OrganizationFilterSet)
+        responses={200: ORGANIZATION_SCHEMA}
     )
     def list(self, request):
         """
@@ -325,6 +342,9 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
         response = self.get_paginated_response(bundle.data)
         return response
 
+    @extend_schema(
+        responses={200: ORGANIZATION_SCHEMA}
+    )
     def retrieve(self, request, pk=None):
         """
         Query a specific organization, represented as a FHIR Organization resource
@@ -372,13 +392,14 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Location resources
     """
+    queryset = Location.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     filter_backends = [DjangoFilterBackend]
     filterset_class = LocationFilterSet
     pagination_class = CustomPaginator
 
     @extend_schema(
-        parameters=generate_filter_parameters(LocationFilterSet)
+        responses={200: LOCATION_SCHEMA}
     )
     def list(self, request):
         """
@@ -402,6 +423,9 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
         response = self.get_paginated_response(bundle.data)
         return response
 
+    @extend_schema(
+        responses={200: LOCATION_SCHEMA}
+    )
     def retrieve(self, request, pk=None):
         """
         Query a specific healthcare practice location as a FHIR Location resource
@@ -428,6 +452,9 @@ class FHIRCapabilityStatementView(APIView):
     """
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
 
+    @extend_schema(
+        responses={200: CAPABILITY_STATEMENT_SCHEMA}
+    )
     def get(self, request):
         """
         Query metadata about this FHIR instance, represented as FHIR CapabilityStatement resource
