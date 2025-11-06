@@ -3,6 +3,7 @@
 @import "@uswds/uswds/css/uswds.css";
 
 :root {
+  --theme-color-base: var(--color-gray-darkest);
   --theme-color-primary-lightest: var(--color-primary-lightest);
 }
 

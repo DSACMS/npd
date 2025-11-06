@@ -30,3 +30,26 @@
   font-weight: var(--theme-font-weight-heading-xl, 700);
   line-height: 130%; /* 1.70625rem */
 }
+
+.code {
+  color: var(--color-success-darker);
+  background: var(--color-gray-lightest);
+  border-radius: var(--radius-default);
+  font-family: monospace;
+  padding: 0 0.25rem;
+}
+
+.pre {
+  background-color: var(--color-gray-lightest);
+  color: var(--color-gray-darker);
+  padding: 1em;
+  border: 1px solid var(--color-gray-lighter);
+  overflow-x: auto; /* horizontal scrollbar instead of expanding */
+
+  & .code {
+    color: var(--color-gray-darker);
+    background: inherit;
+    border-radius: 0;
+    padding: inherit;
+  }
+}

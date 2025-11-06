@@ -38,7 +38,24 @@ You can find comprehensive information on the datasets integrated into the Natio
 Developers can query and retrieve National Provider Directory data via a REST API. The API structure conforms to the HL7 Fast Healthcare Interoperability Resources (FHIR) standard and it returns JSON responses following the FHIR specification.
 
 ### Authentication
-TODO: Add authentication instructions.
+
+While it is not a long term goal for this API to require authentication for all requests, we currently require user accounts and [HTTP Basic Access Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) for all API requests.
+
+To authenticate, each request should include a header field in the form of:
+
+```
+Authorization: Basic <credentials>
+```
+
+Where `<credentials>` is the Base64 encoded value of a string with the format “username:password”.
+
+For example, if my username is `npd.user@cms.hhs.gov` and the password for my account is `toomanysecrets543`, then the un-encoded string is `npd.user@cms.hhs.gov:toomanysecrets543`, the base64 encoding is `bnBkLnVzZXJAY21zLmhocy5nb3Y6dG9vbWFueXNlY3JldHM1NDM=` and as part of a cURL request, that would look like:
+
+```
+curl -H "Authorization: Basic bnBkLnVzZXJAY21zLmhocy5nb3Y6dG9vbWFueXNlY3JldHM1NDM=" .../fhir/...
+```
+
+If you’re using the [interactive Swagger / OpenAPI documentation](/fhir/docs/) to make requests while signed-in, your authentication will automatically pass through via a secure session cookie.
 
 ### Available endpoints
 The initial beta release of the National Provider Directory API makes the following endpoints available. For a detailed description of the endpoints, query string parameters, and response bodies, please refer to the National Provider Directory [API documentation](http://ndh-alb-1866093491.us-gov-west-1.elb.amazonaws.com/fhir/docs/redoc).
