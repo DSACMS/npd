@@ -64,7 +64,7 @@ resource "aws_vpc_security_group_ingress_rule" "http_to_fhir_api_alb" {
   ip_protocol = "TCP"
   from_port = 80
   to_port = 80
-  cidr_ipv4 = "0.0.0.0/*"
+  cidr_ipv4 = "0.0.0.0/0"
 }
 
 resource "aws_vpc_security_group_ingress_rule" "https_to_fhir_api_alb" {
@@ -73,7 +73,7 @@ resource "aws_vpc_security_group_ingress_rule" "https_to_fhir_api_alb" {
   ip_protocol = "TCP"
   from_port = 443
   to_port = 443
-  cidr_ipv4 = "0.0.0.0/*"
+  cidr_ipv4 = "0.0.0.0/0"
 }
 
 resource "aws_vpc_security_group_egress_rule" "fhir_api_alb_can_make_outbound_requests" {
@@ -209,7 +209,7 @@ resource "aws_vpc_security_group_ingress_rule" "http_to_etl_webserver_alb" {
   ip_protocol = "TCP"
   from_port = 80
   to_port = 80
-  cidr_ipv4 = "0.0.0.0/*"
+  cidr_ipv4 = "0.0.0.0/0"
 }
 
 resource "aws_vpc_security_group_ingress_rule" "https_to_etl_webserver_alb" {
@@ -218,7 +218,7 @@ resource "aws_vpc_security_group_ingress_rule" "https_to_etl_webserver_alb" {
   ip_protocol = "TCP"
   from_port = 443
   to_port = 443
-  cidr_ipv4 = "0.0.0.0/*"
+  cidr_ipv4 = "0.0.0.0/0"
 }
 
 resource "aws_vpc_security_group_egress_rule" "etl_webserver_alb_can_make_outbound_connections" {
