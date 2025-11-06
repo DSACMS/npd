@@ -92,7 +92,7 @@ module "etl-db" {
     # select * FROM pg_catalog.pg_extension
     { name = "rds.logical_replication", value = "1", apply_method = "pending-reboot" },
     { name = "wal_sender_timeout", value = "0" },
-    { name = "shared_preload_libraries", value = "pglogical"}
+    { name = "shared_preload_libraries", value = "pglogical", apply_method = "pending-reboot" }
   ]
 }
 
