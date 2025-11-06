@@ -182,6 +182,23 @@ class EndpointViewSetTestCase(APITestCase):
         code = first_endpoint["connectionType"]["code"]
         self.assertEqual(connection_type, code)
 
+    def test_filter_by_payload_type(self):
+        payload_type = "ccda-structuredBody:1.1"
+        response = self.client.get(
+            self.list_url, {"payload_type": payload_type})
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        bundle = response.data["results"]
+
+        entries = bundle.get("entry", [])
+        self.assertGreater(len(entries), 0)
+
+        first_endpoint = entries[0]["resource"]
+        self.assertIn("payloadType", first_endpoint)
+
+        code = first_endpoint["payloadType"][0]["coding"][0]["display"]
+        self.assertEqual(payload_type, code)
+
     def test_filter_returns_empty_for_nonexistent_name(self):
         response = self.client.get(
             self.list_url, {"name": "NonexistentEndpointName12345"})
@@ -383,6 +400,36 @@ class OrganizationViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['id'], id)
 
+    def test_list_filter_by_address(self):
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url, {"address": "Main"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_address_city(self):
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url, {"address_city": "Boston"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_address_state(self):
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url, {"address_state": "NY"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_address_postalcode(self):
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url, {"address_postalcode": "10001"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_address_use(self):
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url, {"address_use": "work"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
 
 class LocationViewSetTestCase(APITestCase):
 
@@ -438,6 +485,36 @@ class LocationViewSetTestCase(APITestCase):
     def test_list_filter_by_name(self):
         url = reverse("fhir-location-list")
         response = self.client.get(url, {"name": "Cumberland"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_address(self):
+        url = reverse("fhir-location-list")
+        response = self.client.get(url, {"address": "Avenue"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_address_city(self):
+        url = reverse("fhir-location-list")
+        response = self.client.get(url, {"address_city": "Seattle"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_address_state(self):
+        url = reverse("fhir-location-list")
+        response = self.client.get(url, {"address_state": "TX"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_address_postalcode(self):
+        url = reverse("fhir-location-list")
+        response = self.client.get(url, {"address_postalcode": "90210"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_address_use(self):
+        url = reverse("fhir-location-list")
+        response = self.client.get(url, {"address_use": "work"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("results", response.data)
 
@@ -543,6 +620,48 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("results", response.data)
 
+    def test_list_filter_by_npi_general(self):
+        url = reverse("fhir-practitioner-list")
+        response = self.client.get(url, {"identifier": "1234567890"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_npi_specific(self):
+        url = reverse("fhir-practitioner-list")
+        response = self.client.get(url, {"identifier": "NPI|1234567890"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_address(self):
+        url = reverse("fhir-practitioner-list")
+        response = self.client.get(url, {"address": "Street"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_address_city(self):
+        url = reverse("fhir-practitioner-list")
+        response = self.client.get(url, {"address_city": "Springfield"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_address_state(self):
+        url = reverse("fhir-practitioner-list")
+        response = self.client.get(url, {"address_state": "CA"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_address_postalcode(self):
+        url = reverse("fhir-practitioner-list")
+        response = self.client.get(url, {"address_postalcode": "12345"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_address_use(self):
+        url = reverse("fhir-practitioner-list")
+        response = self.client.get(url, {"address_use": "home"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
     def test_retrieve_nonexistent(self):
         url = reverse("fhir-practitioner-detail", args=['999999'])
         response = self.client.get(url)
@@ -632,6 +751,18 @@ class PractitionerRoleViewSetTestCase(APITestCase):
     def test_list_filter_by_name(self):
         url = reverse("fhir-practitionerrole-list")
         response = self.client.get(url, {"name": "Cumberland"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_practitioner_gender(self):
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(url, {"practitioner_gender": "Female"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("results", response.data)
+
+    def test_list_filter_by_organization_name(self):
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(url, {"organization_name": "Hospital"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("results", response.data)
 
