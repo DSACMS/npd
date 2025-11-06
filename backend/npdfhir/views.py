@@ -2,7 +2,8 @@ from uuid import UUID
 
 from django.contrib.postgres.search import SearchVector
 from django.core.cache import cache
-from django.db.models import Q, F, OuterRef, Subquery
+from django.db.models import Q, F, OuterRef, Subquery, Value, CharField
+from django.db.models.functions import Concat
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.utils.html import escape
@@ -79,7 +80,7 @@ def get_data_sorted(data,allowed_sorts,sorts_value):
     #Sort data
     if sort_fields:
         return data.order_by(*sort_fields)
-    else 
+    else: 
         return data
 
 
@@ -788,32 +789,26 @@ class FHIRLocationViewSet(viewsets.ViewSet):
 
         all_params = request.query_params
 
-        locations = locations = (
+        locations = (
             Location.objects.all()
             .select_related(
                 "organization",
                 "address__address_us",
                 "address__address_us__state_code",
             )
-            .prefetch_related(
-                "organization__organizationtoname_set",
-            )
             .annotate(
-                organization_name=F(
-                    "organization__organizationtoname__name"
-                ),
+                organization_name=F("organization__organizationtoname__name"),
                 address_full=Concat(
-                    F("address__address_us__street"),
-                    Value(" "),
-                    F("address__address_us__city"),
+                    F("address__address_us__delivery_line_1"),
                     Value(", "),
-                    F("address__address_us__state_code__code"),
+                    F("address__address_us__city_name"),
+                    Value(", "),
+                    F("address__address_us__state_code__abbreviation"),
                     Value(" "),
-                    F("address__address_us__postal_code"),
+                    F("address__address_us__zipcode"),
                     output_field=CharField(),
                 ),
-            )
-            .order_by("name")
+            ).order_by('name')
         )
 
         for param, value in all_params.items():
