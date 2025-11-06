@@ -203,18 +203,18 @@ resource "aws_security_group" "etl_webserver_alb_sg" {
   vpc_id      = var.vpc_id
 }
 
-resource "aws_vpc_security_group_ingress_rule" "http_to_fhir_api_alb" {
+resource "aws_vpc_security_group_ingress_rule" "http_to_etl_webserver_alb" {
   description       = "Accepts connections from the CMS VPN"
-  security_group_id = aws_security_group.fhir_api_alb_sg.id
+  security_group_id = aws_security_group.etl_webserver_alb_sg.id
   ip_protocol = "TCP"
   from_port = 80
   to_port = 80
   cidr_ipv4 = "0.0.0.0/*"
 }
 
-resource "aws_vpc_security_group_ingress_rule" "https_to_fhir_api_alb" {
+resource "aws_vpc_security_group_ingress_rule" "https_to_etl_webserver_alb" {
   description       = "Accepts connections from the CMS VPN"
-  security_group_id = aws_security_group.fhir_api_alb_sg.id
+  security_group_id = aws_security_group.etl_webserver_alb_sg.id
   ip_protocol = "TCP"
   from_port = 443
   to_port = 443
