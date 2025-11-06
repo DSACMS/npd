@@ -165,13 +165,18 @@ module "etl" {
 
 module "migrations" {
   source      = "../../modules/migrations"
-  fhir-db = {
+
+  multi_az = true
+  account_name = local.account_name
+  region = var.region
+  tier = var.tier
+  fhir_db = {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address
     db_instance_port                   = module.api-db.db_instance_port
     db_instance_name                   = module.api-db.db_instance_name
   }
-  etl-db = {
+  etl_db = {
     db_instance_master_user_secret_arn = module.etl-db.db_instance_master_user_secret_arn
     db_instance_address                = module.etl-db.db_instance_address
     db_instance_port                   = module.etl-db.db_instance_port

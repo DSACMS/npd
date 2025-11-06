@@ -6,8 +6,8 @@
   }
 
   locals {
-    etl_db_password  = data.aws_secretsmanager_secret_version.etl_db.secret_string
-    fhir_db_password = data.aws_secretsmanager_secret_version.fhir_db.secret_string
+    etl_db_password  = jsondecode(data.aws_secretsmanager_secret_version.etl_db.secret_string).password
+    fhir_db_password = jsondecode(data.aws_secretsmanager_secret_version.fhir_db.secret_string).password
     account_name     = "${var.region}-${var.tier}"
     multi_az         = var.multi_az
     table_mappings   = jsonencode({
@@ -33,7 +33,7 @@
                   "schema-name": "npd",
                   "table-name": "%"
               },
-            "value": "${module.database_migration_service.endpoints["fhir-api-destination"].database_name}-migrated" # naming scheme suggestion
+            "value": "npd-${var.region}-${var.tier}-${module.database_migration_service.endpoints["fhir-api-destination"].database_name}-migrated"
           }
       ]
     })
@@ -48,7 +48,7 @@
 
 module "database_migration_service" {
   source  = "terraform-aws-modules/dms/aws"
-  version = "~> 2.0"
+  version = "~> 2.6.0"
 
   # Subnet group
   repl_subnet_group_name        = module.networking.private_subnet_group_name
@@ -57,35 +57,35 @@ module "database_migration_service" {
 
   endpoints = {
     etl-source = {
-      database_name = "npd_etl" # possible to reference this by env?
+      database_name = var.etl_db.db_instance_name
       endpoint_id   = "npd-east-${var.tier}-etl-source"
       endpoint_type = "source"
       engine_name   = "postgresql"
-      username      = "npd_etl" # possible to reference this by env?
+      username      = var.etl_db.db_instance_name
       password      = local.etl_db_password
       port          = 5432
-      server_name   = var.etl_db.db_instance_name # host name of the server - the correct value is npd-east-dev-etl-db.cc3asw0omsvl.us-east-1.rds.amazonaws.com
+      server_name   = var.etl_db.db_instance_address
       ssl_mode      = "require"
     }
 
     fhir-api-destination = {
-      database_name = "npd" # possible to reference this by env?
-      endpoint_id   = "npd-east-${var.tier}-fhir-api-destination"
+      database_name = var.fhir_db.db_instance_name
+      endpoint_id   = "npd-${var.region}-${var.tier}-fhir-api-destination"
       endpoint_type = "target"
       engine_name   = "postgresql"
-      username      = "npd" # possible to reference this by env?
+      username      = var.fhir_db.db_instance_name
       password      = local.fhir_db_password
       port          = 5432
-      server_name   = var.fhir_db.db_instance_name # host name of the server - the correct value is npd-east-dev-fhir-api-db.cc3asw0omsvl.us-east-1.rds.amazonaws.com
+      server_name   = var.fhir_db.db_instance_address
       ssl_mode      = "require"
     }
   }
 
   replication_tasks = {
     etl_replication_task = {
-      replication_task_id       = "${var.tier}-etl-replication-task" # suggestion for naming scheme
+      replication_task_id       = "npd-${var.region}-${var.tier}-etl-replication-task"
       migration_type            = "cdc"
-      replication_task_settings = file("configs/task_settings.json")
+      replication_task_settings = file("${path.module}/configs/task_settings.json")
       table_mappings            = local.table_mappings
       source_endpoint_arn       = module.database_migration_service.endpoints["etl-source"].endpoint_arn
       source_endpoint_key       = "etl-source"

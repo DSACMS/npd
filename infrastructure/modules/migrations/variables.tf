@@ -25,8 +25,8 @@ variable "networking" {
   type = object({
     private_subnet_ids    = list(string)
     public_subnet_ids     = list(string)
-    alb_security_group_id = string
-    api_security_group_id = string
+    # alb_security_group_id = string
+    # api_security_group_id = string
     vpc_id                = string
   })
 }

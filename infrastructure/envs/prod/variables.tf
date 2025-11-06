@@ -6,10 +6,6 @@ variable "tier" {
   default = "prod"
 }
 
-variable "multi_az" {
-  default = true
-}
-
 variable "migration_image" { default = "596240962403.dkr.ecr.us-east-1.amazonaws.com/npd-east-prod-fhir-api-migrations:latest" }
 variable "fhir_api_image" { default = "596240962403.dkr.ecr.us-east-1.amazonaws.com/npd-east-prod-fhir-api:latest" }
 variable "dagster_image" { default = "596240962403.dkr.ecr.us-east-1.amazonaws.com/npd-east-prod-dagster:latest" }
