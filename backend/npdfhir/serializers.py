@@ -506,17 +506,6 @@ class PractitionerRoleSerializer(serializers.Serializer):
 
 
 class EndpointSerializer(serializers.Serializer):
-    resourceType = serializers.CharField(default="Endpoint")
-    id = serializers.CharField()
-    name = serializers.CharField(required=False)
-    address = serializers.URLField()
-    status = serializers.CharField(required=False)
-    connectionType = serializers.CharField(source="endpoint_connection_type.name", required=False)
-    description = serializers.CharField(required=False)
-    managingOrganization = serializers.CharField(required=False)
-    payload = serializers.ListField(child=serializers.DictField(), required=False)
-    identifier = serializers.ListField(child=serializers.DictField(), required=False)
-
     payload = EndpointPayloadSeriazlier(
         source='endpointinstancetopayload_set', many=True, read_only=True)
     identifier = EndpointIdentifierSerialzier(
@@ -659,11 +648,6 @@ class BundleSerializer(serializers.Serializer):
     """
     Serializer for FHIR Bundle resource
     """
-    resourceType = serializers.CharField(default="Bundle")
-    type = serializers.CharField(default="searchset")
-    total = serializers.IntegerField()
-    entry = serializers.ListField(child=EndpointSerializer())
-
     class Meta:
         model = Bundle
 

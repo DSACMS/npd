@@ -22,7 +22,10 @@ class Mapping():
             return list(self.mapping.keys())
         else:
             return list(self.mapping.inverse.keys())
-
+        
+    def to_choices(self):
+        fhir_values = self.keys(which='fhir')
+        return [(v, v) for v in fhir_values]
 
 genderMapping = Mapping(
     {

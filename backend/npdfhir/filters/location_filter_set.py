@@ -6,11 +6,7 @@ from ..models import Location
 from ..mappings import addressUseMapping
 
 
-class LocationFilterSet(filters.FilterSet):
-    filter_mappings = {
-        'address_use': addressUseMapping
-    }
-    
+class LocationFilterSet(filters.FilterSet):  
     name = filters.CharFilter(
         field_name='name',
         lookup_expr='exact',
@@ -42,9 +38,10 @@ class LocationFilterSet(filters.FilterSet):
         help_text='Filter by postal code/zip code'
     )
     
-    address_use = filters.CharFilter(
+    address_use = filters.ChoiceFilter(
         method='filter_address_use',
-        help_text='Filter by address use type'
+        choices=addressUseMapping.to_choices(),
+        help_text='Filter by address use type',
     )
 
     class Meta:

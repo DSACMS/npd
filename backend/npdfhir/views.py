@@ -5,7 +5,7 @@ from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
 from django.utils.html import escape
 from django_filters.rest_framework import DjangoFilterBackend
-from drf_spectacular.utils import extend_schema
+from drf_spectacular.utils import extend_schema, OpenApiResponse
 from rest_framework import viewsets
 from rest_framework.views import APIView
 from rest_framework.renderers import BrowsableAPIRenderer
@@ -41,15 +41,6 @@ from .serializers import (
     CapabilityStatementSerializer
 )
 
-from .fhir_schemas import (
-    ENDPOINT_SCHEMA,
-    PRACTITIONER_SCHEMA,
-    PRACTITIONER_ROLE_SCHEMA,
-    ORGANIZATION_SCHEMA,
-    LOCATION_SCHEMA,
-    CAPABILITY_STATEMENT_SCHEMA
-)
-
 
 def index(request):
     return HttpResponse("Connection to npd database: successful")
@@ -70,7 +61,12 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
     pagination_class = CustomPaginator  
 
     @extend_schema(
-        responses={200: EndpointSerializer}
+        responses={
+            200: OpenApiResponse(
+                response=BundleSerializer,
+                description='Successfully retrieved FHIR Bundle resource of FHIR Endpoint resources'
+            )
+        }
     )
     def list(self, request):
         """
@@ -99,7 +95,12 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
         return response
 
     @extend_schema(
-        responses={200: ENDPOINT_SCHEMA}
+        responses={
+            200: OpenApiResponse(
+                response=EndpointSerializer,
+                description='Successfully retrieved FHIR Endpoint resource'
+            )
+        }
     )
     def retrieve(self, request, pk=None):
         """
@@ -139,7 +140,12 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     pagination_class = CustomPaginator
 
     @extend_schema(
-        responses={200: PRACTITIONER_SCHEMA}
+        responses={
+            200: OpenApiResponse(
+                response=BundleSerializer,
+                description='Successfully retrieved FHIR Bundle resource of FHIR Practitioner resources'
+            )
+        }
     )
     def list(self, request):
         """
@@ -185,7 +191,12 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
         return response
 
     @extend_schema(
-        responses={200: PRACTITIONER_SCHEMA}
+        responses={
+            200: OpenApiResponse(
+                response=PractitionerSerializer,
+                description='Successfully retrieved FHIR Practitioner resource'
+            )
+        }
     )
     def retrieve(self, request, pk=None):
         """
@@ -232,7 +243,12 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     pagination_class = CustomPaginator
 
     @extend_schema(
-        responses={200: PRACTITIONER_ROLE_SCHEMA}
+        responses={
+            200: OpenApiResponse(
+                response=BundleSerializer,
+                description='Successfully retrieved FHIR Bundle resource of FHIR PractitionerRole resources'
+            )
+        }
     )
     def list(self, request):
         """
@@ -259,7 +275,12 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
         return response
 
     @extend_schema(
-        responses={200: PRACTITIONER_ROLE_SCHEMA}
+        responses={
+            200: OpenApiResponse(
+                response=PractitionerRoleSerializer,
+                description='Successfully retrieved FHIR PractitionerRole resource'
+            )
+        }
     )
     def retrieve(self, request, pk=None):
         """
@@ -292,7 +313,12 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     pagination_class = CustomPaginator
 
     @extend_schema(
-        responses={200: ORGANIZATION_SCHEMA}
+        responses={
+            200: OpenApiResponse(
+                response=BundleSerializer,
+                description='Successfully retrieved FHIR Bundle resource of FHIR Organization resources'
+            )
+        }
     )
     def list(self, request):
         """
@@ -343,7 +369,12 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
         return response
 
     @extend_schema(
-        responses={200: ORGANIZATION_SCHEMA}
+        responses={
+            200: OpenApiResponse(
+                response=OrganizationSerializer,
+                description='Successfully retrieved FHIR Organization resource'
+            )
+        }
     )
     def retrieve(self, request, pk=None):
         """
@@ -399,7 +430,12 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
     pagination_class = CustomPaginator
 
     @extend_schema(
-        responses={200: LOCATION_SCHEMA}
+        responses={
+            200: OpenApiResponse(
+                response=BundleSerializer,
+                description='Successfully retrieved FHIR Bundle resource of FHIR Location resources'
+            )
+        }
     )
     def list(self, request):
         """
@@ -424,7 +460,12 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
         return response
 
     @extend_schema(
-        responses={200: LOCATION_SCHEMA}
+        responses={
+            200: OpenApiResponse(
+                response=LocationSerializer,
+                description='Successfully retrieved FHIR Location resource'
+            )
+        }
     )
     def retrieve(self, request, pk=None):
         """
@@ -453,7 +494,12 @@ class FHIRCapabilityStatementView(APIView):
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
 
     @extend_schema(
-        responses={200: CAPABILITY_STATEMENT_SCHEMA}
+        responses={
+            200: OpenApiResponse(
+                response=CapabilityStatementSerializer,
+                description='Successfully retrieved FHIR CapabilityStatement resource'
+            )
+        }
     )
     def get(self, request):
         """

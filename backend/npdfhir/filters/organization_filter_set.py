@@ -8,10 +8,6 @@ from ..utils import parse_identifier_query
 
 
 class OrganizationFilterSet(filters.FilterSet):
-    filter_mappings = {
-        'address_use': addressUseMapping
-    }
-    
     name = filters.CharFilter(
         method='filter_name',
         help_text='Filter by organization name'
@@ -47,8 +43,9 @@ class OrganizationFilterSet(filters.FilterSet):
         help_text='Filter by postal code/zip code'
     )
     
-    address_use = filters.CharFilter(
+    address_use = filters.ChoiceFilter(
         method='filter_address_use',
+        choices=addressUseMapping.to_choices(),
         help_text='Filter by address use type'
     )
 
