@@ -30,8 +30,6 @@ The initial dataset combines data from NPPES, PECOS, AHRQ, CEHRT, and other CMS 
 
 The NPD will use an iterative approach to expand data sources over time. This will include additional internal provider, payer, claims, and network data, as well as incorporating external data from the industry.  
 
-You can find comprehensive information on the datasets integrated into the National Provider Directory in the [ETL code repository](https://github.com/DSACMS/npd_Puffin) on GitHub. 
-
 ## Accessing the data
 
 ### Overview
