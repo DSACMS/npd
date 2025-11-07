@@ -33,7 +33,7 @@ locals {
           "schema-name" : "npd",
           "table-name" : "%"
         },
-        "value" : "${var.etl_db.database_instance_name}-migrated"
+        "value" : "${var.etl_db.db_instance_name}-migrated"
       }
     ]
   })
