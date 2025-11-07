@@ -78,7 +78,7 @@ module "database_migration_service" {
 
   replication_tasks = {
     etl_replication_task = {
-      replication_task_id       = "npd-${var.region}-${var.tier}-etl-replication-task"
+      replication_task_id       = "${local.account_name}-db-repl-task"
       migration_type            = "cdc"
       replication_task_settings = file("${path.module}/configs/task_settings.json")
       table_mappings            = local.table_mappings
