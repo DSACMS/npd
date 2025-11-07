@@ -561,7 +561,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
         request = self.context.get('request')
         baseURL = request.build_absolute_uri('/fhir')
         metadataURL = request.build_absolute_uri(reverse('fhir-metadata'))
-        schemaData = get_schema_data('schema')
+        schemaData = get_schema_data(request, 'schema')
 
         capability_statement = CapabilityStatement(
             url=metadataURL,
