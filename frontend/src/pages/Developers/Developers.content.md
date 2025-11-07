@@ -35,13 +35,32 @@ You can find comprehensive information on the datasets integrated into the Natio
 ## Accessing the data
 
 ### Overview
+
 Developers can query and retrieve National Provider Directory data via a REST API. The API structure conforms to the HL7 Fast Healthcare Interoperability Resources (FHIR) standard and it returns JSON responses following the FHIR specification.
 
 ### Authentication
-TODO: Add authentication instructions.
+
+While it is not a long term goal for this API to require authentication for all requests, we currently require user accounts and [HTTP Basic Access Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) for all API requests.
+
+To authenticate, each request should include a header field in the form of:
+
+```
+Authorization: Basic <credentials>
+```
+
+Where `<credentials>` is the Base64 encoded value of a string with the format “username:password”.
+
+For example, if my username is `npd.user@cms.hhs.gov` and the password for my account is `toomanysecrets543`, then the un-encoded string is `npd.user@cms.hhs.gov:toomanysecrets543`, the base64 encoding is `bnBkLnVzZXJAY21zLmhocy5nb3Y6dG9vbWFueXNlY3JldHM1NDM=` and as part of a cURL request, that would look like:
+
+```
+curl -H "Authorization: Basic bnBkLnVzZXJAY21zLmhocy5nb3Y6dG9vbWFueXNlY3JldHM1NDM=" .../fhir/...
+```
+
+If you’re using the [developer sandbox](#developer-sandbox) to make requests while signed-in, your authentication will automatically pass through via a secure session cookie.
 
 ### Available endpoints
-The initial beta release of the National Provider Directory API makes the following endpoints available. For a detailed description of the endpoints, query string parameters, and response bodies, please refer to the National Provider Directory [API documentation](http://ndh-alb-1866093491.us-gov-west-1.elb.amazonaws.com/fhir/docs/redoc).
+
+The initial beta release of the National Provider Directory API makes the following endpoints available. For a detailed description of the endpoints, query string parameters, and response bodies, please refer to the National Provider Directory [searchable API documentation](/fhir/docs/redoc).
 
 &nbsp;
 
@@ -56,12 +75,14 @@ The initial beta release of the National Provider Directory API makes the follow
 | /fhir/PractitionerRole/<id> | lists relationships between individuals that provide healthcare services, the organizations within which they provide healthcare services, the locations at which they practice, and the interoperability endpoints that pertain to those relationships; supplying an id allows developers to retrieve a single practitioner role record |
 
 ## Developer sandbox
-To explore the data in an interactive developer sandbox integrated with detailed documentation, please visit the National Provider Directory [Swagger documentation](http://ndh-alb-1866093491.us-gov-west-1.elb.amazonaws.com/fhir/docs/).
+
+To explore the data in an interactive developer sandbox integrated with detailed documentation, please visit the National Provider Directory [Swagger documentation](/fhir/docs/).
 
 
 ## Open source project
 
 The National Provider Directory team is taking a community-first and open source approach to the product development of this tool. We believe government software should be made in the open and be built and licensed such that anyone can download the code, run it themselves without paying money to third parties or using proprietary software, and use it as they will.
+
 We know that we can learn from a wide variety of communities, including those who will use or will be impacted by the tool, who are experts in technology, or who have experience with similar technologies deployed in other spaces. We are dedicated to creating forums for continuous conversation and feedback to help shape the design and development of the tool.
 
 To learn more, visit the [primary code repository](https://github.com/DSACMS/npd) on GitHub. Visit the [CMS Open Source Program Office](https://go.cms.gov/ospo) to learn more about their work.

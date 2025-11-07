@@ -1,5 +1,6 @@
 import type { Components } from "react-markdown"
 import { SluggedHeading } from "./SluggedHeading"
+import { StyledComponent } from "./StyledComponent"
 import { StyledTable, StyledTd, StyledTh } from "./StyledTableComponents"
 
 export const MdComponents: Components = {
@@ -10,4 +11,6 @@ export const MdComponents: Components = {
   table: StyledTable,
   th: StyledTh,
   td: StyledTd,
+  pre: StyledComponent("pre"),
+  code: StyledComponent("code"),
 }
