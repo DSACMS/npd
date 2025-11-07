@@ -33,7 +33,7 @@ locals {
           "schema-name" : "npd",
           "table-name" : "%"
         },
-        "value" : "npd-${var.region}-${var.tier}-${module.database_migration_service.endpoints["fhir-api-destination"].database_name}-migrated"
+        "value" : "${var.etl_db.database_instance_name}-migrated"
       }
     ]
   })
@@ -53,7 +53,7 @@ module "database_migration_service" {
   endpoints = {
     etl-source = {
       database_name = var.etl_db.db_instance_name
-      endpoint_id   = "npd-east-${var.tier}-etl-source"
+      endpoint_id   = "${var.account_name}-etl-source"
       endpoint_type = "source"
       engine_name   = "postgres"
       username      = var.etl_db.db_instance_name
@@ -65,7 +65,7 @@ module "database_migration_service" {
 
     fhir-api-destination = {
       database_name = var.fhir_db.db_instance_name
-      endpoint_id   = "npd-${var.region}-${var.tier}-fhir-api-destination"
+      endpoint_id   = "${var.account_name}-fhir-api-destination"
       endpoint_type = "target"
       engine_name   = "postgres"
       username      = var.fhir_db.db_instance_name
@@ -94,10 +94,5 @@ module "database_migration_service" {
         vpc_security_group_ids = [var.networking.etl_db_security_group_id, var.networking.api_db_security_group_id]
       }
     }
-  }
-
-  tags = {
-    Terraform   = "true"
-    Environment = var.tier
   }
 }

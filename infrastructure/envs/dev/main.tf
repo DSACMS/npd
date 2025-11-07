@@ -168,7 +168,7 @@ module "migrations" {
   source      = "../../modules/migrations"
 
   multi_az = false
-  account_name = local.account_name
+  account_name = var.account_name
   region = var.region
   tier = var.tier
   fhir_db = {
