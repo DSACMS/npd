@@ -48,12 +48,14 @@ module "database_migration_service" {
   repl_subnet_group_description = "The DMS ETL replication subnet group"
   repl_subnet_group_subnet_ids  = var.networking.private_subnet_ids
 
+  create_repl_instance = false
+
   endpoints = {
     etl-source = {
       database_name = var.etl_db.db_instance_name
       endpoint_id   = "npd-east-${var.tier}-etl-source"
       endpoint_type = "source"
-      engine_name   = "postgresql"
+      engine_name   = "postgres"
       username      = var.etl_db.db_instance_name
       password      = local.etl_db_password
       port          = 5432
@@ -65,7 +67,7 @@ module "database_migration_service" {
       database_name = var.fhir_db.db_instance_name
       endpoint_id   = "npd-${var.region}-${var.tier}-fhir-api-destination"
       endpoint_type = "target"
-      engine_name   = "postgresql"
+      engine_name   = "postgres"
       username      = var.fhir_db.db_instance_name
       password      = local.fhir_db_password
       port          = 5432

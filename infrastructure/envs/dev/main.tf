@@ -188,6 +188,7 @@ module "migrations" {
     private_subnet_ids        = module.networking.private_subnet_ids
     api_db_security_group_id = module.networking.db_security_group_id
     etl_db_security_group_id = module.networking.etl_db_security_group_id
+    public_subnet_ids         = module.networking.public_subnet_ids
     vpc_id                    = module.networking.vpc_id
   }
 }
