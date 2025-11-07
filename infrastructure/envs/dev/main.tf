@@ -163,6 +163,36 @@ module "etl" {
   }
 }
 
+# Migrations module
+module "migrations" {
+  source      = "../../modules/migrations"
+
+  multi_az = false
+  account_name = local.account_name
+  region = var.region
+  tier = var.tier
+  fhir_db = {
+    db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
+    db_instance_address                = module.api-db.db_instance_address
+    db_instance_port                   = module.api-db.db_instance_port
+    db_instance_name                   = module.api-db.db_instance_name
+  }
+  etl_db = {
+    db_instance_master_user_secret_arn = module.etl-db.db_instance_master_user_secret_arn
+    db_instance_address                = module.etl-db.db_instance_address
+    db_instance_port                   = module.etl-db.db_instance_port
+    db_instance_name                   = module.etl-db.db_instance_name
+  }
+  networking = {
+    private_subnet_group_name = module.networking.private_subnet_group_name
+    private_subnet_ids        = module.networking.private_subnet_ids
+    api_db_security_group_id = module.networking.db_security_group_id
+    etl_db_security_group_id = module.networking.etl_db_security_group_id
+    public_subnet_ids         = module.networking.public_subnet_ids
+    vpc_id                    = module.networking.vpc_id
+  }
+}
+
 # Frontend Module
 module "frontend" {
   source       = "../../modules/frontend"
