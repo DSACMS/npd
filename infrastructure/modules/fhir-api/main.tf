@@ -5,12 +5,12 @@ data "aws_caller_identity" "current" {}
 # Log Groups
 
 resource "aws_cloudwatch_log_group" "fhir_api_log_group" {
-  name              = "/ecs/${var.account_name}-fhir-api-logs"
+  name              = "/custom/${var.account_name}-fhir-api-logs/#_json"
   retention_in_days = 30
 }
 
 resource "aws_cloudwatch_log_group" "fhir_api_migrations_log_group" {
-  name              = "/ecs/${var.account_name}-fhir-api-migrations-logs"
+  name              = "/custom/${var.account_name}-fhir-api-migrations-logs/#_json"
   retention_in_days = 30
 }
 
@@ -44,7 +44,8 @@ resource "aws_iam_policy" "fhir_api_can_access_fhir_api_db_secret" {
         Effect = "Allow"
         Resource = [
           var.db.db_instance_master_user_secret_arn,
-          aws_secretsmanager_secret_version.django_secret_version.arn
+          aws_secretsmanager_secret_version.django_secret_version.arn,
+          aws_secretsmanager_secret_version.fhir_api_superuser_default_password_version.arn
         ]
       }
     ]
@@ -54,6 +55,32 @@ resource "aws_iam_policy" "fhir_api_can_access_fhir_api_db_secret" {
 resource "aws_iam_role_policy_attachment" "fhir_api_can_access_database_secret_attachment" {
   role       = aws_iam_role.fhir_api_execution_role.name
   policy_arn = aws_iam_policy.fhir_api_can_access_fhir_api_db_secret.arn
+}
+
+data "aws_secretsmanager_random_password" "fhir_api_superuser_default_password_value" {
+  password_length = 20
+}
+
+resource "aws_secretsmanager_secret" "fhir_api_superuser_default_password" {
+  name_prefix = "${var.account_name}-fhir-api-superuser-default-password"
+  description = "Initial FHIR API superuser account password"
+}
+
+data "external" "fhir_api_superuser_default_password_hash" {
+  program = ["python3", "${path.module}/generate_hash.py"]
+
+  query = {
+    password_input = data.aws_secretsmanager_random_password.fhir_api_superuser_default_password_value.random_password
+  }
+}
+
+resource "aws_secretsmanager_secret_version" "fhir_api_superuser_default_password_version" {
+  secret_id = aws_secretsmanager_secret.fhir_api_superuser_default_password.id
+  secret_string_wo = jsonencode({
+    password        = data.aws_secretsmanager_random_password.fhir_api_superuser_default_password_value.random_password
+    hashed_password = data.external.fhir_api_superuser_default_password_hash.result.hashed_password
+  })
+  secret_string_wo_version = 1
 }
 
 resource "aws_iam_policy" "fhir_api_logs_policy" {
@@ -118,7 +145,7 @@ resource "aws_ecs_task_definition" "app" {
       name      = "${var.account_name}-fhir-api-migration"
       image     = var.fhir_api_migration_image
       essential = false
-      command   = ["migrate"]
+      command   = ["migrate", "-outputType=json"]
       environment = [
         {
           name  = "FLYWAY_URL"
@@ -137,6 +164,10 @@ resource "aws_ecs_task_definition" "app" {
         {
           name      = "FLYWAY_PASSWORD"
           valueFrom = "${var.db.db_instance_master_user_secret_arn}:password::"
+        },
+        {
+          name      = "FLYWAY_PLACEHOLDERS_superuserDefaultPassword"
+          valueFrom = "${aws_secretsmanager_secret_version.fhir_api_superuser_default_password_version.arn}:hashed_password::"
         },
       ]
       logConfiguration = {

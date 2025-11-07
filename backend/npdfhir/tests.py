@@ -1,26 +1,17 @@
-import re
-import unicodedata
-import uuid
-
-from functools import cmp_to_key
 from django.urls import reverse
 from rest_framework import status
-from rest_framework.test import APITestCase, APIClient
-from django.test.runner import DiscoverRunner
+from rest_framework.test import APITestCase as DrfAPITestCase, APIClient
 from django.db import connection
-from django.db.models import F
-from django.test.runner import DiscoverRunner
-from django.urls import reverse
+from django.contrib.auth.models import User
 from fhir.resources.R4B.bundle import Bundle
 from fhir.resources.R4B.capabilitystatement import CapabilityStatement
-from pydantic import ValidationError
-from rest_framework import status
-from rest_framework.test import APIClient, APITestCase
 
-from .models import Organization, ProviderToLocation
+from .models import Organization
 
-# I can't explain why, but we need to import cacheData here. I think we can remove this once we move to the docker db setup
-from .cache import cacheData
+# I can't explain why, but we need to import cacheData here. I think we can
+# remove this once we move to the docker db setup. By using "import thing as
+# thing", we silence "imported but unused" and "not accessed" warnings.
+from .cache import cacheData as cacheData
 
 
 def get_female_npis(npi_list):
@@ -40,11 +31,19 @@ def get_female_npis(npi_list):
 
     return results
 
+class APITestCase(DrfAPITestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.user = User.objects.create(username="testuser")
+        cls.user.set_password('nothing')
+        return super().setUpTestData()
 
-class DocumentationViewSetTestCase(APITestCase):
     def setUp(self):
         self.client = APIClient()
+        self.client.force_authenticate(user=self.user)
 
+
+class DocumentationViewSetTestCase(APITestCase):
     def test_get_swagger_docs(self):
         swagger_url = reverse("schema-swagger-ui")
         response = self.client.get(swagger_url)
@@ -70,7 +69,7 @@ class DocumentationViewSetTestCase(APITestCase):
 
 class EndpointViewSetTestCase(APITestCase):
     def setUp(self):
-        self.client = APIClient()
+        super().setUp()
         self.list_url = reverse("fhir-endpoint-list")
 
     def test_list_default(self):
@@ -244,7 +243,6 @@ class EndpointViewSetTestCase(APITestCase):
 
 
 class BasicViewsTestCase(APITestCase):
-
     def test_health_view(self):
         url = reverse("healthCheck")  # maps to "/healthCheck"
         response = self.client.get(url)
@@ -255,7 +253,7 @@ class BasicViewsTestCase(APITestCase):
 
 class OrganizationViewSetTestCase(APITestCase):
     def setUp(self):
-        self.client = APIClient()
+        super().setUp()
         self.org_without_authorized_official = Organization.objects.create(
             id='26708690-19d6-499e-b481-cebe05b98f08', authorized_official_id=None)
 
@@ -434,8 +432,6 @@ class OrganizationViewSetTestCase(APITestCase):
 
 
 class LocationViewSetTestCase(APITestCase):
-    def setUp(self):
-        self.client = APIClient()
 
     def test_list_default(self):
         url = reverse("fhir-location-list")
@@ -538,8 +534,6 @@ class LocationViewSetTestCase(APITestCase):
 
 
 class PractitionerViewSetTestCase(APITestCase):
-    def setUp(self):
-        self.client = APIClient()
 
     def test_list_default(self):
         url = reverse("fhir-practitioner-list")  # /Practitioner/
@@ -689,8 +683,6 @@ class PractitionerViewSetTestCase(APITestCase):
 
 
 class PractitionerRoleViewSetTestCase(APITestCase):
-    def setUp(self):
-        self.client = APIClient()
 
     def test_list_default(self):
         url = reverse("fhir-practitionerrole-list")
@@ -698,6 +690,51 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
         self.assertIn("results", response.data)
+    
+    def test_list_in_proper_order(self):
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response["Content-Type"], "application/fhir+json")
+
+        # Extract ids
+        ids = [
+            d['resource'].get('id', {})
+            for d in response.data["results"]["entry"]
+        ]
+
+
+        #Corresponds to the following location name order
+        """
+        A BEAUTIFUL SMILE DENTISTRY, L.L.C.
+        ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC
+        ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC
+        ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC
+        ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC
+        ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC
+        ADR LLC
+        ADR LLC
+        ADR LLC
+        ADR LLC
+        """
+
+        sorted_ids = [
+            'e9554c87-6e4e-4df6-93fb-88ee4bc4e5be',
+            '9f50dfd8-098a-4e6d-a4ad-ded2175a5321',
+            '90011f74-1c0d-4461-95b5-cb346cdbc64b',
+            '874c25e0-44fd-48e9-832a-a80f1d07491a',
+            '0ba12b55-05e1-450f-8a2c-454a93425a34',
+            '38eac005-9373-44ab-bf5d-57b84bca7cb4',
+            'cd3fe6b7-02b0-4136-8db8-4c3867aab131',
+            '093091b7-aba7-4acb-8338-65996de10813',
+            '2e18cd31-4a89-475b-82be-71ad75011713',
+            '59ef9dd6-60e8-4a64-a52c-6f44c540184f'
+        ]
+        
+
+        self.assertEqual(
+            ids, sorted_ids, f"Expected Practitioner roles sorted by order of location name but got {ids}\n Sorted: {sorted_ids}")
+
 
     def test_list_with_custom_page_size(self):
         url = reverse("fhir-practitionerrole-list")
@@ -751,7 +788,7 @@ class PractitionerRoleViewSetTestCase(APITestCase):
 
 class CapabilityStatementViewSetTestCase(APITestCase):
     def setUp(self):
-        self.client = APIClient()
+        super().setUp()
         self.url = reverse("fhir-metadata")
 
     def test_capability_statement_returns_200(self):

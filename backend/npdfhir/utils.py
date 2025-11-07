@@ -15,9 +15,13 @@ def SmartyStreetstoFHIR(address):
         use=address.address_type.value
     )
 
-def get_schema_data(url_name):
+def get_schema_data(request, url_name, additional_args=None):
     client = APIClient()
-    schema_url = reverse(url_name)
+    if request.user:
+        # reuse the authenticated user from the active request to make the
+        # internal request to retrieve the current schema
+        client.force_authenticate(user=request.user)
+    schema_url = reverse(url_name, kwargs=additional_args)
     response = client.get(schema_url)
     return response.data
 

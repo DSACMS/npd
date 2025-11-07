@@ -2,6 +2,10 @@
   "skip": "Skip navigation",
   "title": "National Provider Directory",
   "badge": "Under Development",
+  "auth": {
+    "login": "Sign in",
+    "logout": "Sign out"
+  },
   "link": {
     "search": "Search the data",
     "developers": "For developers",
