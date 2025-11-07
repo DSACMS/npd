@@ -8,7 +8,7 @@
 -- Name: django_migrations; Type: TABLE; Schema: npd; Owner: postgres
 --
 CREATE TABLE IF NOT EXISTS
-    npd.django_migrations (
+    ${apiSchema}.django_migrations (
         id SERIAL PRIMARY KEY,
         app character varying(255) NOT NULL,
         name character varying(255) NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS
     );
 
 INSERT INTO
-    npd.django_migrations (app, name, applied)
+    ${apiSchema}.django_migrations (app, name, applied)
 VALUES
     ('contenttypes', '0001_initial', now()),
     ('auth', '0001_initial', now()),

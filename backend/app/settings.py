@@ -36,7 +36,7 @@ TESTING = 'test' in sys.argv
 REQUIRE_AUTHENTICATION = config("NPD_REQUIRE_AUTHENTICATION", default=False, cast=bool)
 
 if DEBUG:
-    ALLOWED_HOSTS = ['localhost','127.0.0.1','0.0.0.0','testserver','django-web']
+    ALLOWED_HOSTS = ['localhost', 'localhost:8000','127.0.0.1','0.0.0.0','testserver','django-web']
 else:
     ALLOWED_HOSTS = config("DJANGO_ALLOWED_HOSTS").split(',')
 
@@ -45,7 +45,6 @@ INTERNAL_APIS = config("DJANGO_ALLOWED_HOSTS").split(',')
 # Application definition
 
 INSTALLED_APPS = [
-    'npdfhir.apps.NPDFHIRConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -58,6 +57,9 @@ INSTALLED_APPS = [
     'drf_spectacular',
     'xmlrunner',
     'django_structlog',
+    'flags',
+    'npdfhir.apps.NPDFHIRConfig',
+    'provider_directory.apps.ProviderDirectoryConfig'
 ]
 
 if not TESTING:
@@ -242,6 +244,32 @@ CACHES = {
         "LOCATION": "/var/tmp/django_cache",
     }
 }
+
+SWAGGER_SETTINGS = {
+    'USE_SESSION_AUTH': False
+}
+
+# feature flags
+FLAGS = {
+    'SEARCH_APP': [], # can see the search app at all
+
+    'PROVIDER_LOOKUP': [], # can reach the provider lookup page
+    'PROVIDER_LOOKUP_DETAILS': [], # can reach all details in the provider lookup page
+
+    'ORGANIZATION_LOOKUP': [],
+    'ORGANIZATION_LOOKUP_DETAILS': [],
+
+    # sttic conditions can be defined in this file or through the Admin interface
+    # see the list of built-in conditions here: https://cfpb.github.io/django-flags/conditions/
+    # 'ANONYMOUS_USER': [
+    #     {"condition": "anonymous", "value": True}
+    # ],
+    # 'FLAG_WITH_ANY_CONDITIONS': [
+    #     {'condition': 'condition name', 'value': 'expected value to be enabled'},
+    #     {'condition': 'user', 'value': 'npd@cms.hhs.gov'},
+    # ],
+}
+
 
 if TESTING:
     LOG_LEVEL = logging.ERROR
