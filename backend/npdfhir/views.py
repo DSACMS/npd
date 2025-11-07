@@ -13,7 +13,6 @@ from rest_framework.response import Response
 
 from .pagination import CustomPaginator
 from .renderers import FHIRRenderer
-from .utils import generate_filter_parameters
 
 from .filters.endpoint_filter_set import EndpointFilterSet
 from .filters.location_filter_set import LocationFilterSet
@@ -84,40 +83,14 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
             'endpointinstancetootherid_set'
         ).order_by('name')
 
-        for param, value in all_params.items():
-            match param:
-                case 'page_size':
-                    try:
-                        value = int(value)
-                        if value <= max_page_size:
-                            page_size = value
-                    except:
-                        page_size = page_size
-                case 'name':
-                    endpoints = endpoints.filter(name__icontains=value)
-                case 'connection_type':
-                    endpoints = endpoints.filter(
-                        endpoint_connection_type__id__icontains=value)
-                case 'payload_type':
-                    endpoints = endpoints.filter(
-                        endpointinstancetopayload__payload_type__id__icontains=value
-                    ).distinct()
-                case 'status':
-                    pass
-                case 'organization':
-                    pass
-
-        paginator = PageNumberPagination()
-        paginator.page_size = page_size
-        paginated_endpoints = paginator.paginate_queryset(endpoints, request)
+        endpoints = self.filter_queryset(endpoints)
+        paginated_endpoints = self.paginate_queryset(endpoints)
 
         serialized_endpoints = EndpointSerializer(paginated_endpoints, many=True)
         bundle = BundleSerializer(
             serialized_endpoints, context={"request": request})
 
-        # Set appropriate content type for FHIR responses
-        response = paginator.get_paginated_response(bundle.data)
-
+        response = self.get_paginated_response(bundle.data)
         return response
 
     @extend_schema(
