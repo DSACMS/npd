@@ -12,6 +12,7 @@ import "@uswds/uswds"
 import "./i18n.ts"
 
 import { AuthenticatedRoute } from "./components/AuthenticatedRoute.tsx"
+import { FeatureFlagRoute } from "./components/FeatureFlagRoute.tsx"
 import { Developers } from "./pages/Developers"
 import { Landing } from "./pages/Landing"
 import { Layout } from "./pages/Layout"
@@ -25,9 +26,14 @@ createRoot(document.getElementById("root")!).render(
         <Routes>
           <Route element={<Layout />}>
             <Route path="/accounts/login/" element={<Login />} />
+
             <Route element={<AuthenticatedRoute />}>
               <Route index element={<Landing />} />
               <Route path="/developers" element={<Developers />} />
+
+              <Route element={<FeatureFlagRoute name="SEARCH_APP" />}>
+                <Route path="/search" element={<h1>Search</h1>} />
+              </Route>
             </Route>
           </Route>
         </Routes>

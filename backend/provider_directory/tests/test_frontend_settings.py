@@ -5,7 +5,7 @@ from django.urls import reverse
 from flags.models import FlagState
 
 
-class WithoutStaticIndex(TestCase):
+class TestFeatureFlags(TestCase):
     """
     Visiting the index route when no static/index.html asset exists.
     """
@@ -23,10 +23,11 @@ class WithoutStaticIndex(TestCase):
         """
         When static/index.html doesn't exist, route redirects
         """
-        response = self.client.get(reverse("provider_directory:feature_flags_api"))
+        response = self.client.get(reverse("provider_directory:frontend_settings"))
         self.assertEqual(response.status_code, 200)
 
-        data = response.json()
+        data = response.json()["feature_flags"]
+
         self.assertIn("ORGANIZATION_LOOKUP", data)
         self.assertIn("ORGANIZATION_LOOKUP_DETAILS", data)
 
@@ -41,8 +42,8 @@ class WithoutStaticIndex(TestCase):
         user.groups.add(group)
 
         # act
-        response = self.client.get(reverse("provider_directory:feature_flags_api"))
+        response = self.client.get(reverse("provider_directory:frontend_settings"))
 
         # assert
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json()["SEARCH_APP"], True)
+        self.assertEqual(response.json()["feature_flags"]["SEARCH_APP"], True)
