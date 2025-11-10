@@ -80,7 +80,7 @@ class EndpointViewSetTestCase(APITestCase):
         self.assertEqual(response["Content-Type"], "application/fhir+json")
         self.assertIn("results", response.data)
 
-    def test_list_in_proper_order(self):
+    def test_list_in_default_order(self):
         url = self.list_url
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -110,6 +110,69 @@ class EndpointViewSetTestCase(APITestCase):
 
         self.assertEqual(
             names, sorted_names, f"Expected endpoints list sorted by name but got {names}\n Sorted: {sorted_names}")
+
+    def test_list_in_descending_order(self):
+        url = self.list_url
+        #Note:
+        #The name filter with the empty string filters out null names for testing
+        response = self.client.get(url,  {"sort": '-name', "name": ''})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response["Content-Type"], "application/fhir+json")
+
+        # Extract names
+        # Note: have to normalize the names to have python sorting match sql
+        names = [
+            d['resource'].get('name', {})
+            for d in response.data["results"]["entry"]
+        ]
+
+        sorted_names = [
+            'YFA Connections',
+            'Wright Directions Family Services',
+            'Woodlands Medical Specialists, FL',
+            'Womens Specialists of New Mexico',
+            'Womens Health Advantage',
+            "Women's Center of Greater Lansing",
+            'Womens Care Center',
+            'WNY Wellness Associates',
+            'WNY Immediate Care',
+            'Wisdom Traditions Counseling Services LLC'
+        ]
+
+        self.assertEqual(
+            names, sorted_names, f"Expected endpoints list sorted descending by name but got {names}\n Sorted: {sorted_names}")
+
+    def test_list_in_ehr_vendor_name_order(self):
+        url = self.list_url
+        #Note:
+        #The name filter with the empty string filters out null names for testing
+        response = self.client.get(url,  {"sort": 'ehr_vendor_name', "name": ''})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response["Content-Type"], "application/fhir+json")
+
+        # Extract names
+        # Note: have to normalize the names to have python sorting match sql
+        names = [
+            d['resource'].get('name', {})
+            for d in response.data["results"]["entry"]
+        ]
+
+        sorted_names = [
+            'Agilon health SOF server',
+            'Houston Physicians Hospital',
+            'Cookeville Reg Medical Center',
+            'Sarasota Memorial Health Care',
+            'Wayne Memorial Hospital',
+            'Primary Care Partners',
+            'UBMD Physicians Group',
+            'Jefferson Regional Medical Center',
+            'KPC Healthcare',
+            'Washington Hospital'
+        ]
+
+        self.assertEqual(
+            names, sorted_names, f"Expected endpoints list sorted by ehr vendor name but got {names}\n Sorted: {sorted_names}")
+
 
     def test_list_returns_fhir_bundle(self):
         response = self.client.get(self.list_url)
@@ -249,7 +312,7 @@ class OrganizationViewSetTestCase(APITestCase):
         self.assertEqual(response["Content-Type"], "application/fhir+json")
         self.assertIn("results", response.data)
 
-    def test_list_in_proper_order(self):
+    def test_list_in_default_order(self):
         url = reverse("fhir-organization-list")
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -277,6 +340,35 @@ class OrganizationViewSetTestCase(APITestCase):
         ]
         self.assertEqual(
             names, sorted_names, f"Expected fhir orgs sorted by org name but got {names}\n Sorted: {sorted_names}")
+
+    def test_list_in_descending_order(self):
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url,  {"sort": '-primary_name'})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response["Content-Type"], "application/fhir+json")
+
+        # Extract names
+        # Note: have to normalize the names to have python sorting match sql
+        names = [
+            d['resource'].get('name', {})
+            for d in response.data["results"]["entry"]
+        ]
+
+        sorted_names = [
+            {},
+            'ZUNI HOME HEALTH CARE AGENCY',
+            'ZEELAND COMMUNITY HOSPITAL',
+            'YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD',
+            'YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD',
+            'YOUNG C. BAE, M.D.',
+            'YORKTOWN EMERGENCY MEDICAL SERVICE',
+            'YODORINCMISSIONPLAZAPHARMACY',
+            'YOAKUM COMMUNITY HOSPITAL',
+            'YARMOUTH AUDIOLOGY'
+        ]
+
+        self.assertEqual(
+            names, sorted_names, f"Expected fhir org list sorted descending by name but got {names}\n Sorted: {sorted_names}")
 
     def test_list_with_custom_page_size(self):
         url = reverse("fhir-organization-list")
@@ -397,7 +489,7 @@ class LocationViewSetTestCase(APITestCase):
         self.assertEqual(response["Content-Type"], "application/fhir+json")
         self.assertIn("results", response.data)
 
-    def test_list_in_proper_order(self):
+    def test_list_in_default_order(self):
         url = reverse("fhir-location-list")
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -425,7 +517,78 @@ class LocationViewSetTestCase(APITestCase):
         ]
 
         self.assertEqual(
-            names, sorted_names, f"Expected fhir orgs sorted by org name but got {names}\n Sorted: {sorted_names}")
+            names, sorted_names, f"Expected fhir locations sorted by name but got {names}\n Sorted: {sorted_names}")
+
+    def test_list_in_descending_order(self):
+        url = reverse("fhir-location-list")
+        response = self.client.get(url,  {"sort": '-name'})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response["Content-Type"], "application/fhir+json")
+
+        # Extract names
+        # Note: have to normalize the names to have python sorting match sql
+        names = [
+            d['resource'].get('name', {})
+            for d in response.data["results"]["entry"]
+        ]
+
+        sorted_names = [
+            'ZEELAND COMMUNITY HOSPITAL',
+            'YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD',
+            'YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD',
+            'YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD',
+            'YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD',
+            'YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD',
+            'YOUNG C. BAE, M.D.',
+            'YORKTOWN EMERGENCY MEDICAL SERVICE',
+            'YODORINCMISSIONPLAZAPHARMACY',
+            'YOAKUM COMMUNITY HOSPITAL'
+        ]
+
+        self.assertEqual(
+            names, sorted_names, f"Expected locations list sorted by name in descending but got {names}\n Sorted: {sorted_names}")
+
+    def test_list_in_order_by_address(self):
+        url = reverse("fhir-location-list")
+        response = self.client.get(url,  {"sort": 'address_full'})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response["Content-Type"], "application/fhir+json")
+
+        # Extract names
+        # Note: have to normalize the names to have python sorting match sql
+        names = [
+            d['resource'].get('name', {})
+            for d in response.data["results"]["entry"]
+        ]
+
+        #Names correspond to following addresses
+        #10000 W Bluemound Rd, Wauwatosa, WI 53226
+        #10004 S 152nd St, Omaha, NE 68138
+        #1000 5th St, International Falls, MN 56649
+        #1000 Airport Rd, Lakewood, NJ 8701
+        #1000 E Center St, Kingsport, TN 37660
+        #1000 E Main St, Danville, IN 46122
+        #1000 Greenley Rd, Sonora, CA 95370
+        #1000 Regency Ct, Toledo, OH 43623
+
+
+        sorted_names = [
+            'FROEDTERT MEMORIAL LUTHERAN HOSPITAL, INC.',
+            'FROEDTERT MEMORIAL LUTHERAN HOSPITAL, INC.',
+            'AMBER ENTERPRISES INC.',
+            'COUNTY OF KOOCHICHING',
+            'OCEAN HOME HEALTH SUPPLY, LLC',
+            'PULMONARY MANAGEMENT, INC.',
+            'MEDICATION MANAGEMENT CENTER, LLC.',
+            'HENDRICKS COUNTY HOSPITAL',
+            'BAY AREA REHABILITATION MEDICAL GROUP',
+            'PROHAB REHABILITATION SERVICES, INC.'
+        ]
+
+        self.assertEqual(
+            names, sorted_names, f"Expected locations list sorted by address ascending but got {names}\n Sorted: {sorted_names}")
+
+
 
     def test_list_with_custom_page_size(self):
         url = reverse("fhir-location-list")
@@ -471,7 +634,7 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response["Content-Type"], "application/fhir+json")
         self.assertIn("results", response.data)
 
-    def test_list_in_proper_order(self):
+    def test_list_in_default_order(self):
         url = reverse("fhir-practitioner-list")
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -503,8 +666,76 @@ class PractitionerViewSetTestCase(APITestCase):
         ]
 
         self.assertEqual(
-            names, sorted_names, f"Expected fhir orgs sorted by org name but got {names}\n Sorted: {sorted_names}")
+            names, sorted_names, f"Expected fhir practitioners sorted by family then first name but got {names}\n Sorted: {sorted_names}")
 
+    def test_list_in_alternate_order(self):
+        url = reverse("fhir-practitioner-list")
+        response = self.client.get(url,  {"sort": 'primary_first_name,primary_last_name'})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response["Content-Type"], "application/fhir+json")
+
+        # print(response.data["results"]["entry"][0]['resource']['name'][0])
+
+        # for name in response.data["results"]["entry"]:
+        #    print(name['resource']['name'][-1])
+
+        # Extract names
+        names = [
+            (d['resource']['name'][-1].get('family', {}),
+             d['resource']['name'][-1]['given'][0])
+            for d in response.data["results"]["entry"]
+        ]
+
+        sorted_names = [
+            ('CUTLER', 'A'),
+            ('NIZAM', 'A'),
+            ('SALAIS', 'A'),
+            ('JANOS', 'AARON'),
+            ('NOONBERG', 'AARON'),
+            ('PITNEY', 'AARON'),
+            ('SOLOMON', 'AARON'),
+            ('STEIN', 'AARON'),
+            ('ALI', 'ABBAS'),
+            ('JAFRI', 'ABBAS')
+        ]
+
+        self.assertEqual(
+            names, sorted_names, f"Expected fhir practitioners sorted by first then family name but got {names}\n Sorted: {sorted_names}")
+
+
+
+    def test_list_in_descending_order(self):
+        url = reverse("fhir-practitioner-list")
+        response = self.client.get(url,  {"sort": '-primary_last_name,-primary_first_name'})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response["Content-Type"], "application/fhir+json")
+
+        # Extract names
+        # Note: have to normalize the names to have python sorting match sql
+        names = [
+            (d['resource']['name'][-1].get('family', {}),
+             d['resource']['name'][-1]['given'][0])
+            for d in response.data["results"]["entry"]
+        ]
+
+        sorted_names = [
+            ('ZWERLING', 'HAYWARD'),
+            ('ZUROSKE', 'GLEN'),
+            ('ZUCKERBERG', 'EDWARD'),
+            ('ZUCKER', 'WILLIAM'),
+            ('ZUCCALA', 'SCOTT'),
+            ('ZOVE', 'DANIEL'),
+            ('ZORN', 'GUNNAR'),
+            ('ZOOG', 'EUGENE'),
+            ('ZOLMAN', 'MARK'),
+            ('ZOLLER', 'DAVID')
+        ]
+
+        self.assertEqual(
+            names, sorted_names, f"Expected fhir practitioners sorted by family then first name in descending but got {names}\n Sorted: {sorted_names}")
+
+
+    
     def test_list_with_custom_page_size(self):
         url = reverse("fhir-practitioner-list")
         response = self.client.get(url, {"page_size": 2})

@@ -356,7 +356,7 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
                     providers = providers.filter(
                         individual__individualtoaddress__address_use_id=value)
                 case 'sort':
-                    valid_sorts [
+                    valid_sorts = [
                         'primary_last_name',
                         'primary_first_name',
                         'npi_value'
@@ -692,7 +692,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
                     organizations = organizations.filter(
                         organization__organizationtoaddress__address_use_id=value)
                 case 'sort':
-                    valid_sorts [
+                    valid_sorts = [
                         'primary_name'
                     ]
 
@@ -860,9 +860,9 @@ class FHIRLocationViewSet(viewsets.ViewSet):
                     locations = locations.filter(
                         address_use_id=value)
                 case 'sort':
-                    valid_sorts [
+                    valid_sorts = [
                         'organization_name',
-                        'address',
+                        'address_full',
                         'name'
                     ]
 
