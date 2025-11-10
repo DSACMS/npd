@@ -115,7 +115,7 @@ class EndpointViewSetTestCase(APITestCase):
         url = self.list_url
         #Note:
         #The name filter with the empty string filters out null names for testing
-        response = self.client.get(url,  {"sort": '-name', "name": ''})
+        response = self.client.get(url,  {"_sort": '-name', "name": ''})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
 
@@ -146,7 +146,7 @@ class EndpointViewSetTestCase(APITestCase):
         url = self.list_url
         #Note:
         #The name filter with the empty string filters out null names for testing
-        response = self.client.get(url,  {"sort": 'ehr_vendor_name', "name": ''})
+        response = self.client.get(url,  {"_sort": 'ehr_vendor_name', "name": ''})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
 
@@ -343,7 +343,7 @@ class OrganizationViewSetTestCase(APITestCase):
 
     def test_list_in_descending_order(self):
         url = reverse("fhir-organization-list")
-        response = self.client.get(url,  {"sort": '-primary_name'})
+        response = self.client.get(url,  {"_sort": '-primary_name'})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
 
@@ -521,7 +521,7 @@ class LocationViewSetTestCase(APITestCase):
 
     def test_list_in_descending_order(self):
         url = reverse("fhir-location-list")
-        response = self.client.get(url,  {"sort": '-name'})
+        response = self.client.get(url,  {"_sort": '-name'})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
 
@@ -550,7 +550,7 @@ class LocationViewSetTestCase(APITestCase):
 
     def test_list_in_order_by_address(self):
         url = reverse("fhir-location-list")
-        response = self.client.get(url,  {"sort": 'address_full'})
+        response = self.client.get(url,  {"_sort": 'address_full'})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
 
@@ -670,7 +670,7 @@ class PractitionerViewSetTestCase(APITestCase):
 
     def test_list_in_alternate_order(self):
         url = reverse("fhir-practitioner-list")
-        response = self.client.get(url,  {"sort": 'primary_first_name,primary_last_name'})
+        response = self.client.get(url,  {"_sort": 'primary_first_name,primary_last_name'})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
 
@@ -706,7 +706,7 @@ class PractitionerViewSetTestCase(APITestCase):
 
     def test_list_in_descending_order(self):
         url = reverse("fhir-practitioner-list")
-        response = self.client.get(url,  {"sort": '-primary_last_name,-primary_first_name'})
+        response = self.client.get(url,  {"_sort": '-primary_last_name,-primary_first_name'})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response["Content-Type"], "application/fhir+json")
 

@@ -163,7 +163,7 @@ class FHIREndpointViewSet(viewsets.ViewSet):
                     endpoints = endpoints.filter(
                         endpointinstancetopayload__payload_type__id__icontains=value
                     ).distinct()
-                case 'sort':
+                case '_sort':
                     valid_sorts = [
                         'name',
                         'address',
@@ -355,7 +355,7 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
                         value = -1
                     providers = providers.filter(
                         individual__individualtoaddress__address_use_id=value)
-                case 'sort':
+                case '_sort':
                     valid_sorts = [
                         'primary_last_name',
                         'primary_first_name',
@@ -501,7 +501,7 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
                         search=SearchVector(
                             'provider_to_organization__organization__organizationtoname__name')
                     ).filter(search=value)
-                case 'sort':
+                case '_sort':
                     valid_sorts [
                         'location__name',
                         'practitioner_first_name',
@@ -691,7 +691,7 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
                         value = -1
                     organizations = organizations.filter(
                         organization__organizationtoaddress__address_use_id=value)
-                case 'sort':
+                case '_sort':
                     valid_sorts = [
                         'primary_name'
                     ]
@@ -859,7 +859,7 @@ class FHIRLocationViewSet(viewsets.ViewSet):
                         value = -1
                     locations = locations.filter(
                         address_use_id=value)
-                case 'sort':
+                case '_sort':
                     valid_sorts = [
                         'organization_name',
                         'address_full',
