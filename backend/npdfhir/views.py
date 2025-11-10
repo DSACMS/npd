@@ -50,6 +50,18 @@ page_size_param = openapi.Parameter(
     default=default_page_size
 )
 
+def createSortParam(allowed_sorts):
+    return openapi.Parameter(
+        '_sort',
+        openapi.IN_QUERY,
+        description=(
+            "Comma-separated list of fields to sort by. "
+            "Prefix with `-` for descending order.\n\n"
+            f"Allowed fields: {', '.join(allowed_sorts)}"
+        ),
+        type=openapi.TYPE_STRING,
+        required=False,
+    )
 
 def createFilterParam(field: str, display: str = None, enum: list = None):
     if display is None:
@@ -119,7 +131,8 @@ class FHIREndpointViewSet(viewsets.ViewSet):
             createFilterParam('connection_type'),
             createFilterParam('payload_type'),
             createFilterParam('status'),
-            createFilterParam('organization')
+            createFilterParam('organization'),
+            createSortParam(['name', 'address', 'ehr_vendor_name'])
         ],
         responses={200: "Successful response",
                    404: "Error: The requested Endpoint resource cannot be found."}
@@ -239,7 +252,8 @@ class FHIRPractitionerViewSet(viewsets.ViewSet):
             createFilterParam(
                 'address-state', '2 letter US State abbreviation'),
             createFilterParam('address-use', 'address use',
-                              enum=addressUseMapping.keys())
+                              enum=addressUseMapping.keys()),
+            createSortParam(['primary_last_name', 'primary_first_name', 'npi_value'])
         ],
         responses={200: "Successful response",
                    404: "Error: The requested Practitioner resource cannot be found."}
@@ -430,7 +444,8 @@ class FHIRPractitionerRoleViewSet(viewsets.ViewSet):
             createFilterParam('practitioner.gender', enum=[
                               'Female', 'Male', 'Other']),
             createFilterParam('practitioner.practitioner_type'),
-            createFilterParam('organization.name')
+            createFilterParam('organization.name'),
+            createSortParam(['location__name','practitioner_first_name','practitioner_last_name'])
         ],
         responses={200: "Successful response",
                    404: "Error: The requested PractitionerRole resource cannot be found."}
@@ -567,7 +582,8 @@ class FHIROrganizationViewSet(viewsets.ViewSet):
             createFilterParam(
                 'address-state', '2 letter US State abbreviation'),
             createFilterParam('address-use', 'address use',
-                              enum=addressUseMapping.keys())
+                              enum=addressUseMapping.keys()),
+            createSortParam(['primary_name'])
         ],
         responses={200: "Successful response",
                    404: "Error: The requested Organization resource cannot be found."}
@@ -774,7 +790,8 @@ class FHIRLocationViewSet(viewsets.ViewSet):
             createFilterParam(
                 'address-state', '2 letter US State abbreviation'),
             createFilterParam('address-use', 'address use',
-                              enum=addressUseMapping.keys())
+                              enum=addressUseMapping.keys()),
+            createSortParam(['organization_name','address_full','name'])
         ],
         responses={200: "Successful response",
                    404: "Error: The requested Location resource cannot be found."}
