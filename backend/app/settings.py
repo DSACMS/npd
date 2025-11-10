@@ -85,8 +85,8 @@ if not TESTING:
     MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
     # This must come at the end.
 
-# We want the fhir urls to be entirely open
-CORS_URLS_REGEX = r'^/fhir/.*$'
+# We want the fhir and frontend API urls to be entirely open
+CORS_URLS_REGEX = r'^/(fhir|api)/.*$'
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_METHODS = ['GET']
 
