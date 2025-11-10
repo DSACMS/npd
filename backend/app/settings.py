@@ -36,7 +36,7 @@ TESTING = 'test' in sys.argv
 REQUIRE_AUTHENTICATION = config("NPD_REQUIRE_AUTHENTICATION", default=False, cast=bool)
 
 if DEBUG:
-    ALLOWED_HOSTS = ['localhost', 'localhost:8000','127.0.0.1','0.0.0.0','testserver','django-web']
+    ALLOWED_HOSTS = ['localhost','127.0.0.1','0.0.0.0','testserver','django-web']
 else:
     ALLOWED_HOSTS = config("DJANGO_ALLOWED_HOSTS").split(',')
 
