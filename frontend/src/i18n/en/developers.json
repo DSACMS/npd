@@ -1,13 +1,14 @@
 {
   "title": "Documentation",
   "subtitle": "For developers",
+  "backtotop": "Back to top",
   "nav": {
     "overview": "Overview",
-    "test": "Test release",
-    "participating": "Participating in the test",
-
+    "participating": "Participating in the beta",
+    "feedback": "Providing feedback",
     "about": "About the data",
-    "accessing": "Accessing the API",
-    "opensource": "Open source code"
+    "accessing": "Accessing the data",
+    "sandbox": "Developer sandbox",
+    "opensource": "Open source project"
   }
 }

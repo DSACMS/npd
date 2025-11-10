@@ -1,0 +1,45 @@
+.main {
+  min-height: calc(100vh - (82px + 32px + 98px));
+  background-color: var(--theme-color-primary-lightest);
+}
+
+.spacer {
+  display: flex;
+  width: var(--spacer-7, 3.5rem);
+  height: var(--spacer-7, 3.5rem);
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.card {
+  display: flex;
+  width: 31.0625rem;
+  padding: var(--spacer-3, 1.5rem);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacer-2, 1rem);
+  background: var(--color-white-solid, #fff);
+
+  & h1 {
+    color: #1e3c70;
+
+    /* Headings/3xl/3xl - LG breakpoint */
+    font-family: var(--theme-font-family-heading, "Open Sans");
+    font-size: var(--theme-font-size-3xl, 2.25rem);
+    font-style: normal;
+    font-weight: var(--theme-font-weight-heading-3xl, 700);
+    line-height: 130%; /* 2.925rem */
+  }
+
+  & .description {
+    color: #000;
+
+    /* Body/Medium */
+    font-family: var(--theme-font-family-body, "Open Sans");
+    font-size: var(--theme-font-size-md, 1rem);
+    font-style: normal;
+    font-weight: var(--theme-font-weight-body-md, 400);
+    line-height: 150%; /* 1.5rem */
+  }
+}

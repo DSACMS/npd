@@ -13,8 +13,12 @@ def SmartyStreetstoFHIR(address):
         use=address.address_type.value
     )
 
-def get_schema_data(url_name, additional_args=None):
+def get_schema_data(request, url_name, additional_args=None):
     client = APIClient()
+    if request.user:
+        # reuse the authenticated user from the active request to make the
+        # internal request to retrieve the current schema
+        client.force_authenticate(user=request.user)
     schema_url = reverse(url_name, kwargs=additional_args)
     response = client.get(schema_url)
     return response.data
@@ -25,3 +29,14 @@ def genReference(url_name, identifier, request):
     reference = Reference(
         reference=reference)
     return reference
+
+def parse_identifier_query(identifier_value):
+    """
+    Parse an identifier search parameter that should be in the format of "value" OR "system|value".
+    Currently only supporting NPI search "NPI|123455".
+    """
+    if '|' in identifier_value:
+        parts = identifier_value.split('|', 1)
+        return (parts[0], parts[1])
+
+    return (None, identifier_value)

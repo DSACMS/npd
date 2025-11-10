@@ -55,25 +55,30 @@ export const SidebarMenu = () => {
       items: [
         {
           id: "description-link",
-          label: t("developers.nav.test"),
-          url: slugId(t("developers.nav.test")),
+          label: t("developers.nav.participating"),
+          url: slugId(t("developers.nav.participating")),
         },
         {
           id: "participating-link",
-          label: t("developers.nav.participating"),
-          url: slugId(t("developers.nav.participating")),
+          label: t("developers.nav.feedback"),
+          url: slugId(t("developers.nav.feedback")),
         },
       ],
     },
     {
       id: "about-link",
       label: t("developers.nav.about"),
-      url: slugId(t("developers.nav.test")),
+      url: slugId(t("developers.nav.about")),
     },
     {
       id: "accessing-link",
       label: t("developers.nav.accessing"),
       url: slugId(t("developers.nav.accessing")),
+    },
+    {
+      id: "sandbox-link",
+      label: t("developers.nav.sandbox"),
+      url: slugId(t("developers.nav.sandbox")),
     },
     {
       id: "opensource-link",

@@ -6,9 +6,18 @@
     "title": "About the directory",
     "description": "The National Provider Directory uses data from multiple publicly-available data sources and combines them to create a trusted source of truth for information about healthcare providers."
   },
+  "beta": {
+    "heading": "This project is in beta"
+  },
   "links": {
     "developers": "Developer resources",
     "providers": "Provider resources",
     "learn": "Learn how it works"
+  },
+  "authentication": {
+    "error": {
+      "heading": "Username and password combination not found",
+      "description": "If the problem persists, please notify your organization's point of contact with the National Provider Directory."
+    }
   }
 }

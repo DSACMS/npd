@@ -5,23 +5,52 @@
   },
 
   "section": {
-    "npd": {
-      "title": "National Provider Directory",
-      "link": {
-        "demo": "Footer link"
-      }
+    "support": {
+      "title": "Support",
+      "links": [
+        {
+          "text": "Email us at npd@cms.hhs.gov",
+          "url": "mailto:npd@cms.hhs.gov"
+        }
+      ]
     },
     "cms": {
-      "title": "CMS & HHS Websites",
-      "link": {
-        "demo": "Footer link"
-      }
+      "title": "CMS & HHS",
+      "links": [
+        {
+          "text": "CMS.gov",
+          "url": "http://CMS.gov"
+        },
+        {
+          "text": "About CMS",
+          "url": "https://www.cms.gov/about-cms"
+        },
+        {
+          "text": "HHS.gov",
+          "url": "http://HHS.gov"
+        }
+      ]
     },
     "info": {
-      "title": "Additional Information",
-      "link": {
-        "demo": "Footer link"
-      }
+      "title": "Additional resources",
+      "links": [
+        {
+          "text": "Freedom of Information Act",
+          "url": "https://www.cms.gov/medicare/regulations-guidance/legislation/freedom-information-act-foia-service-center"
+        },
+        {
+          "text": "Nondiscrimination & Accessibility",
+          "url": "https://www.cms.gov/about-cms/web-policies-important-links/accessibility-nondiscrimination-disabilities-notice"
+        },
+        {
+          "text": "Vulnerability Disclosure Policy",
+          "url": "https://www.cms.gov/about-cms/information-systems/privacy/vulnerability-disclosure-policy"
+        },
+        {
+          "text": "CMS Privacy Program",
+          "url": "https://www.cms.gov/about-cms/information-systems/privacy"
+        }
+      ]
     }
   }
 }
