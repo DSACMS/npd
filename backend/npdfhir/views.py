@@ -62,7 +62,6 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
     @extend_schema(
         responses={
             200: OpenApiResponse(
-                response=BundleSerializer,
                 description='Successfully retrieved FHIR Bundle resource of FHIR Endpoint resources'
             )
         }
@@ -96,7 +95,6 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
     @extend_schema(
         responses={
             200: OpenApiResponse(
-                response=EndpointSerializer,
                 description='Successfully retrieved FHIR Endpoint resource'
             )
         }
@@ -141,7 +139,6 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     @extend_schema(
         responses={
             200: OpenApiResponse(
-                response=BundleSerializer,
                 description='Successfully retrieved FHIR Bundle resource of FHIR Practitioner resources'
             )
         }
@@ -192,7 +189,6 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     @extend_schema(
         responses={
             200: OpenApiResponse(
-                response=PractitionerSerializer,
                 description='Successfully retrieved FHIR Practitioner resource'
             )
         }
@@ -244,7 +240,6 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     @extend_schema(
         responses={
             200: OpenApiResponse(
-                response=BundleSerializer,
                 description='Successfully retrieved FHIR Bundle resource of FHIR PractitionerRole resources'
             )
         }
@@ -276,7 +271,6 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     @extend_schema(
         responses={
             200: OpenApiResponse(
-                response=PractitionerRoleSerializer,
                 description='Successfully retrieved FHIR PractitionerRole resource'
             )
         }
@@ -314,7 +308,6 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     @extend_schema(
         responses={
             200: OpenApiResponse(
-                response=BundleSerializer,
                 description='Successfully retrieved FHIR Bundle resource of FHIR Organization resources'
             )
         }
@@ -370,7 +363,6 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     @extend_schema(
         responses={
             200: OpenApiResponse(
-                response=OrganizationSerializer,
                 description='Successfully retrieved FHIR Organization resource'
             )
         }
@@ -431,7 +423,6 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
     @extend_schema(
         responses={
             200: OpenApiResponse(
-                response=BundleSerializer,
                 description='Successfully retrieved FHIR Bundle resource of FHIR Location resources'
             )
         }
@@ -461,7 +452,6 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
     @extend_schema(
         responses={
             200: OpenApiResponse(
-                response=LocationSerializer,
                 description='Successfully retrieved FHIR Location resource'
             )
         }
@@ -495,7 +485,6 @@ class FHIRCapabilityStatementView(APIView):
     @extend_schema(
         responses={
             200: OpenApiResponse(
-                response=CapabilityStatementSerializer,
                 description='Successfully retrieved FHIR CapabilityStatement resource'
             )
         }
