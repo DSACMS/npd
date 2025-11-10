@@ -10,17 +10,3 @@ export const useFrontendSettings = () => {
   }
   return context
 }
-
-export const useFeatureFlags = () => {
-  const {
-    settings: { feature_flags },
-  } = useFrontendSettings()
-  return feature_flags
-}
-
-export const useAuthenticatedUser = () => {
-  const {
-    settings: { user },
-  } = useFrontendSettings()
-  return user
-}

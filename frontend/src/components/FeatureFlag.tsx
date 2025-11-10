@@ -1,26 +1,28 @@
 // Example in a React component
-import { useEffect, useState } from "react"
 
-function MyApp() {
-  const [featureFlags, setFeatureFlags] = useState<Record<string, boolean>>({})
+import { useFrontendSettings } from "../hooks/useFrontendSettings"
 
-  useEffect(() => {
-    fetch("/api/flags/") // Replace with your actual API endpoint
-      .then((response) => response.json())
-      .then((data) => setFeatureFlags(data))
-      .catch((error) => console.error("Error fetching flags:", error))
-  }, [])
+// render the
+export const FeatureFlag = ({
+  name,
+  children,
+  inverse,
+}: React.PropsWithChildren<{ name: string; inverse?: boolean }>) => {
+  const {
+    settings: { feature_flags },
+    loading,
+  } = useFrontendSettings()
 
-  return (
-    <div>
-      {featureFlags.my_new_feature && <p>This is the new feature!</p>}
-      {featureFlags.beta_testing ? (
-        <p>Welcome to beta testing!</p>
-      ) : (
-        <p>Beta testing is not available for you.</p>
-      )}
-    </div>
-  )
+  if (loading) return null
+  // flags haven't loaded
+  if (!feature_flags) return null
+
+  // inverse flag
+  if (inverse && !feature_flags[name]) return children
+
+  // flag unset
+  if (!feature_flags[name]) return null
+
+  // flag set
+  return children
 }
-
-export default MyApp
