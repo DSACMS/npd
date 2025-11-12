@@ -11,3 +11,4 @@ variable "fhir_api_image" { default = "596240962403.dkr.ecr.us-east-1.amazonaws.
 variable "dagster_image" { default = "596240962403.dkr.ecr.us-east-1.amazonaws.com/npd-east-prod-dagster:latest" }
 variable "redirect_to_strategy_page" { default = true }
 variable "fhir_api_private_load_balancer" { default = false }
+variable "require_authentication" { default = "True" }

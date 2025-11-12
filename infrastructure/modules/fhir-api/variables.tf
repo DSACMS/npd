@@ -25,3 +25,4 @@ variable "networking" {
     vpc_id                = string
   })
 }
+variable "require_authentication" { default = "True" }

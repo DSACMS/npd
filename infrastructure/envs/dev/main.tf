@@ -124,6 +124,7 @@ module "fhir-api" {
   ecs_cluster_id            = module.ecs.cluster_id
   redirect_to_strategy_page = false
   desired_task_count        = 2
+  require_authentication    = var.require_authentication
   db = {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address
@@ -165,13 +166,13 @@ module "etl" {
 
 # Migrations module
 module "migrations" {
-  count       = 0
-  source      = "../../modules/migrations"
+  count  = 0
+  source = "../../modules/migrations"
 
-  multi_az = false
+  multi_az     = false
   account_name = local.account_name
-  region = var.region
-  tier = var.tier
+  region       = var.region
+  tier         = var.tier
   fhir_db = {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address
@@ -187,8 +188,8 @@ module "migrations" {
   networking = {
     private_subnet_group_name = module.networking.private_subnet_group_name
     private_subnet_ids        = module.networking.private_subnet_ids
-    api_db_security_group_id = module.networking.db_security_group_id
-    etl_db_security_group_id = module.networking.etl_db_security_group_id
+    api_db_security_group_id  = module.networking.db_security_group_id
+    etl_db_security_group_id  = module.networking.etl_db_security_group_id
     public_subnet_ids         = module.networking.public_subnet_ids
     vpc_id                    = module.networking.vpc_id
   }
