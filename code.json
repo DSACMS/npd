@@ -1,78 +1,164 @@
 {
-  "name": "NPD",
-  "description": "The National Provider and Payer Directory at CMS",
-  "longDescription": "A new Provider and Payer Directory service that will eventually grow to encompass (and probably replace) the functionality of NPPES.",
-  "status": "development",
+  "name": "npd",
+  "version": "",
+  "description": "A modern provider and payer directory serving as a single source of truth for healthcare provider information nationwide",
+  "longDescription": "The CMS National Provider Directory addresses fragmented healthcare provider data that costs the industry an estimated $2.76 billion annually. Currently, provider information is duplicated and corrected across over 5,000 systems, leading to widespread inaccuracy. NPD creates a unified FHIR-compliant directory combining data from CMS sources (NPPES, PECOS) and industry partners into a single authoritative source. Built with Django REST Framework and React, the system provides APIs and a search interface for accessing provider practices, addresses, specialties, licenses, quality scores, insurance plan participation, and interoperability endpoints. By serving as the definitive provider directory, NPD reduces data collection burden on providers and payers while improving accuracy for over 100 million Medicare and Medicaid beneficiaries.",
+  "status": "Development",
   "permissions": {
     "licenses": [
       {
-        "URL": "LICENSE",
-        "name": "CC0-1.0"
+        "name": "CC0-1.0",
+        "URL": "https://github.com/DSACMS/npd/blob/main/LICENSE"
+
       }
     ],
-    "usageType": "openSource"
+    "usageType": ["openSource"],
+    "exemptionText": ""
   },
   "organization": "Centers for Medicare & Medicaid Services",
   "repositoryURL": "https://github.com/DSACMS/npd",
   "repositoryHost": "github.com/DSACMS",
   "repositoryVisibility": "public",
+  "homepageURL": "",
+  "downloadURL": "",
+  "disclaimerURL": "",
+  "disclaimerText": "",
   "vcs": "git",
-  "laborHours": 7140.95,
+  "laborHours": 17012,
   "reuseFrequency": {
-    "forks": 0
+    "forks": 1,
+    "clones": 0
   },
   "platforms": [
-    "windows",
-    "mac",
-    "linux"
+    "web",
+    "linux",
+    "mac"
   ],
   "categories": [
-    "healthcare",
-    "collaboration",
-    "knowledge-management"
+    "application-development"
   ],
-  "softwareType": "standalone/desktop",
+  "softwareType": "standalone/web",
   "languages": [
-    "HTML",
     "Python",
-    "CSS",
+    "TypeScript",
     "JavaScript",
+    "SQL",
+    "HCL",
+    "HTML",
+    "CSS",
+    "Makefile",
+    "Dockerfile",
     "Shell"
   ],
   "maintenance": "internal",
-  "contractNumber": "0",
+  "contractNumber": [
+    "0"
+  ],
+  "SBOM": "https://github.com/DSACMS/npd/network/dependencies",
+  "relatedCode": [
+    {
+      "name": "Puffin",
+      "URL": "https://github.com/DSACMS/npd_Puffin",
+      "isGovernmentRepo": true
+    },
+    {
+      "name": "VEINHasher",
+      "URL": "https://github.com/DSACMS/npd_VEINHasher",
+      "isGovernmentRepo": true
+    },
+    {
+      "name": "CSViper",
+      "URL": "https://github.com/DSACMS/npd_csviper",
+      "isGovernmentRepo": true
+    },
+    {
+      "name": "Cicadence",
+      "URL": "https://github.com/DSACMS/npd_cicadence",
+      "isGovernmentRepo": true
+    },
+    {
+      "name": "PlainerFlow",
+      "URL": "https://github.com/DSACMS/npd_plainerflow",
+      "isGovernmentRepo": true
+    },
+    {
+      "name": "Plan Scrape",
+      "URL": "https://github.com/DSACMS/npd_plan_scrape",
+      "isGovernmentRepo": true
+    },
+    {
+      "name": "NUCC Slurp",
+      "URL": "https://github.com/DSACMS/npd_nucc_slurp",
+      "isGovernmentRepo": true
+    },
+    {
+      "name": "Endpoint API Validator",
+      "URL": "https://github.com/DSACMS/npd-endpoint-api-validator",
+      "isGovernmentRepo": true
+    },
+    {
+      "name": "DURC is CRUD",
+      "URL": "https://github.com/DSACMS/npd_durc_is_crud",
+      "isGovernmentRepo": true
+    },
+    {
+      "name": "VRDC Python Projects",
+      "URL": "https://github.com/DSACMS/npd_vrdc_python_projects",
+      "isGovernmentRepo": true
+    },
+    {
+      "name": "NPD EHR FHIR NPI Slurp",
+      "URL": "https://github.com/DSACMS/npd_ehr_fhir_npi_slurp",
+      "isGovernmentRepo": true
+    }
+  ],
+  "reusedCode": [],
+  "partners": [],
   "date": {
-    "created": "2025-07-01T08:03:32-04:00",
-    "lastModified": "2025-07-28T15:29:39+0000",
-    "metadataLastUpdated": "2025-07-28T15:29:39+0000"
+    "created": "2025-06-13T17:11:32Z",
+    "lastModified": "2025-11-12T17:59:42Z",
+    "metadataLastUpdated": "2025-11-12T18:02:12.503Z"
   },
   "tags": [
-    "Providers",
+    "providers",
     "NPPES",
-    "Directory"
+    "directory",
+    "FHIR",
+    "healthcare-interoperability",
+    "Django",
+    "REST-API",
+    "provider-data",
+    "PECOS",
+    "Medicare",
+    "Medicaid"
   ],
   "contact": {
     "email": "opensource@cms.hhs.gov",
     "name": "CMS Open Source Program Office"
   },
-  "feedbackMechanisms": [
-    "https://github.com/DSACMS/npd/issues"
-  ],
-  "localisation": "false",
-  "repositoryType": "Tools",
-  "userInput": "Yes",
-  "fismaLevel": "Moderate",
+  "feedbackMechanism": "https://github.com/DSACMS/npd/issues",
+  "AIUseCaseID": "0",
+  "localisation": false,
+  "repositoryType": "tools",
+  "userInput": true,
+  "fismaLevel": "",
   "group": "CMS/OA/DSAC",
   "projects": [
     "NPPES"
   ],
-  "systems": [],
-  "upstream": [],
+  "systems": [
+    "NPPES",
+    "PECOS"
+  ],
   "subsetInHealthcare": [
-    "Operational"
+    "operational",
+    "medicare",
+    "medicaid"
   ],
   "userType": [
-    "Providers"
+    "providers",
+    "patients",
+    "government"
   ],
   "maturityModelTier": 3
 }
