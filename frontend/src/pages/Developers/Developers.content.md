@@ -9,28 +9,29 @@ This limited beta release provides a select group of early adopters the opportun
 As we continue to develop the directory, you can expect performance improvements, API changes, and additional data incorporated into the data model to improve and streamline the directory output. 
 
 Please note the following: 
-- This site and API are available to you for testing purposes, the data should not be integrated into production systems
-- Frequent updates and API changes are possible
-- Feedback is encouraged
+
+* This site and API are available to you for testing purposes, the data should not be integrated into production systems  
+* Frequent updates and API changes are possible  
+* Feedback is encouraged
 
 #### Providing feedback
 Feedback in all areas is welcome during the beta, including the following: 
-- The latest dataset
-- API implementation
-- Supporting documentation and resources
 
-Feedback and questions may be submitted via [email](npd@cms.hhs.gov) or [Slack](). The team may request a meeting to follow-up on your feedback.
+* The latest dataset  
+* API implementation  
+* Supporting documentation and resources
+
+Feedback and questions may be submitted via [email](mailto:npd@cms.hhs.gov). Early adopters of the Health Tech Ecosystem can also share their feedback in the provider directory Slack channel. The CMS team may reach out to follow-up and ask for additional feedback.
+
 Developers may also participate in our [open source project](#open-source-project). 
 
 ## About the data
 
 For the first time, CMS is aligning its internal provider data resources to establish a new dataset available through the National Provider Directory API. 
 
-The initial dataset combines data from NPPES, PECOS, AHRQ, CEHRT, and other CMS data sources. 
+The initial dataset combines data from NPPES, PECOS, CEHRT, and other CMS data sources. 
 
 The NPD will use an iterative approach to expand data sources over time. This will include additional internal provider, payer, claims, and network data, as well as incorporating external data from the industry.  
-
-You can find comprehensive information on the datasets integrated into the National Provider Directory in the [ETL code repository](https://github.com/DSACMS/npd_Puffin) on GitHub. 
 
 ## Accessing the data
 
@@ -50,7 +51,7 @@ Authorization: Basic <credentials>
 
 Where `<credentials>` is the Base64 encoded value of a string with the format “username:password”.
 
-For example, if my username is `npd.user@cms.hhs.gov` and the password for my account is `toomanysecrets543`, then the un-encoded string is `npd.user@cms.hhs.gov:toomanysecrets543`, the base64 encoding is `bnBkLnVzZXJAY21zLmhocy5nb3Y6dG9vbWFueXNlY3JldHM1NDM=` and as part of a cURL request, that would look like:
+For example, if your username is `npd.user@cms.hhs.gov` and the password for your account is `toomanysecrets543`, then the un-encoded string is `npd.user@cms.hhs.gov:toomanysecrets543`, the base64 encoding is `bnBkLnVzZXJAY21zLmhocy5nb3Y6dG9vbWFueXNlY3JldHM1NDM=` and as part of a cURL request, that would look like:
 
 ```
 curl -H "Authorization: Basic bnBkLnVzZXJAY21zLmhocy5nb3Y6dG9vbWFueXNlY3JldHM1NDM=" .../fhir/...
@@ -60,14 +61,14 @@ If you’re using the [developer sandbox](#developer-sandbox) to make requests w
 
 ### Available endpoints
 
-The initial beta release of the National Provider Directory API makes the following endpoints available. For a detailed description of the endpoints, query string parameters, and response bodies, please refer to the National Provider Directory [searchable API documentation](/fhir/docs/redoc).
+The initial beta release of the National Provider Directory API makes the following endpoints available. For a detailed description of the endpoints, query string parameters, and response bodies, please refer to the National Provider Directory [API documentation](/fhir/docs/redoc).
 
 &nbsp;
 
 | Endpoint | Description |
 |----------|-------------|
 | /fhir | lists all available endpoints |
-| /fhir/metadata | provides a CapabIlityStatement resource with metadata about the API implementation |
+| /fhir/metadata | provides a CapabilityStatement resource with metadata about the API implementation |
 | /fhir/Endpoint/<id> | lists URIs and addresses relevant to the exchange of information between entities (e.g. urls to other FHIR implementations), as well as details about those endpoints; supplying an id allows developers to retrieve a single endpoint record |
 | /fhir/Location/<id> | lists locations at which healthcare services are provided, as well as details about those locations; supplying an id allows developers to retrieve a single location record |
 | /fhir/Organization/<id> | lists both organizations that provide healthcare services (i.e. organizations having a Type 2 National Provider Identifier) and non-provider organizations that interact with the healthcare system (e.g. EHR vendors and data interoperability networks), as well as details about those organizations; supplying an id allows developers to retrieve a single organization record |
@@ -81,8 +82,8 @@ To explore the data in an interactive developer sandbox integrated with detailed
 
 ## Open source project
 
-The National Provider Directory team is taking a community-first and open source approach to the product development of this tool. We believe government software should be made in the open and be built and licensed such that anyone can download the code, run it themselves without paying money to third parties or using proprietary software, and use it as they will.
+The National Provider Directory team is taking an open source approach to the product development of this tool, operating as a [Tier 3 CMS Open Source Repository](https://github.com/DSACMS/repo-scaffolder/blob/main/tier3/README.md). We believe government software should be made in the open and be built and licensed such that anyone can download the code, run it themselves without paying money to third parties or using proprietary software, and use it as they will.
 
-We know that we can learn from a wide variety of communities, including those who will use or will be impacted by the tool, who are experts in technology, or who have experience with similar technologies deployed in other spaces. We are dedicated to creating forums for continuous conversation and feedback to help shape the design and development of the tool.
+Although this project is led by a CMS team, we know that we can learn from a wide variety of communities, including those who will use or will be impacted by the tool, who are experts in technology, or who have experience with similar technologies deployed in other spaces. We are dedicated to creating forums for continuous conversation and feedback to help shape the design and development of the tool and welcome external contributions to our project.
 
 To learn more, visit the [primary code repository](https://github.com/DSACMS/npd) on GitHub. Visit the [CMS Open Source Program Office](https://go.cms.gov/ospo) to learn more about their work.
