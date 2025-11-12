@@ -24,7 +24,9 @@ Jinja2==3.1.6
 markdown-it-py==3.0.0
 MarkupSafe==3.0.2
 mdurl==0.1.2
-psycopg2-binary==2.9.10
+psycopg==3.2.12
+psycopg_binary==3.2.12
+psycopg-pool==3.2.7
 Pygments==2.19.2
 python-dateutil==2.9.0.post0
 python-decouple==3.8
