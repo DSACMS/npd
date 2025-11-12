@@ -164,6 +164,7 @@ module "etl" {
 }
 
 module "migrations" {
+  count       = 0
   source      = "../../modules/migrations"
 
   multi_az = true
