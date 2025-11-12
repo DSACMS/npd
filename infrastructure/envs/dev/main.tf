@@ -55,7 +55,7 @@ module "api-db" {
   engine                  = "postgres"
   engine_version          = "17"
   family                  = "postgres17"
-  instance_class          = "db.t3.micro"
+  instance_class          = "db.t3.large"
   allocated_storage       = 100
   storage_type            = "gp3"
   publicly_accessible     = false
