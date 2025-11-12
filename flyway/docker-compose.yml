@@ -1,0 +1,26 @@
+# service:
+#   image: or build:
+#   env_file:
+#   environment:
+#   ports:
+#   volumes:
+#   networks:
+#   depends_on:
+#   command:
+name: npd
+
+services:
+    db-migrations-halloween2:
+      image: 'flyway/flyway:10'
+      env_file:
+        - path: .env
+          required: false
+      environment:
+        FLYWAY_URL: jdbc:postgresql://${NPD_DB_HOST}:5432/${NPD_DB_NAME}
+        FLYWAY_USER: ${NPD_DB_USER}
+        FLYWAY_PASSWORD: ${NPD_DB_PASSWORD}
+        FLYWAY_PLACEHOLDERS_apiSchema: ${NPD_DB_SCHEMA}
+        FLYWAY_PLACEHOLDERS_superuserDefaultPassword: ""
+      volumes:
+        - '../flyway/sql:/flyway/sql'
+      command: migrate -environment=development -outputType=json
