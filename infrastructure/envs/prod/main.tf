@@ -184,10 +184,11 @@ module "migrations" {
     db_instance_name                   = module.etl-db.db_instance_name
   }
   networking = {
+    private_subnet_group_name = module.networking.private_subnet_group_name
     private_subnet_ids        = module.networking.private_subnet_ids
+    api_db_security_group_id  = module.networking.db_security_group_id
+    etl_db_security_group_id  = module.networking.etl_db_security_group_id
     public_subnet_ids         = module.networking.public_subnet_ids
-    etl_alb_security_group_id = module.networking.etl_alb_security_group_id
-    etl_security_group_id     = module.networking.etl_security_group_id
     vpc_id                    = module.networking.vpc_id
   }
 }
