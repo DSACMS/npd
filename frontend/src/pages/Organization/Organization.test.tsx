@@ -3,11 +3,26 @@ import { beforeEach, describe, expect, it } from "vitest"
 import {
   DEFAULT_FRONTEND_SETTINGS,
   mockGlobalFetch,
+  type MockResponse,
 } from "../../../tests/mockGlobalFetch"
 import { render } from "../../../tests/render"
 import { Organization } from "./Organization"
 
+const mockOrgResponse: MockResponse = [
+  "^/api/frontend_settings$",
+  {
+    ...DEFAULT_FRONTEND_SETTINGS,
+    feature_flags: {
+      ORGANIZATION_LOOKUP_DETAILS: true,
+    },
+  },
+]
+
 describe("Organization", () => {
+  beforeEach(() => {
+    mockGlobalFetch([mockOrgResponse])
+  })
+
   it("does not render content when feature flag is unset", async () => {
     render(<Organization />)
     await waitFor(() => {
@@ -20,6 +35,7 @@ describe("Organization", () => {
     beforeEach(() => {
       // update /api/frontend_settings mocked response
       mockGlobalFetch([
+        mockOrgResponse,
         [
           "^/api/frontend_settings$",
           {
