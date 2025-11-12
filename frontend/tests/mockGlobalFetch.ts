@@ -9,7 +9,7 @@ export const DEFAULT_FRONTEND_SETTINGS: FrontendSettings = {
 type UrlMatch = string
 // new API response types should be added as a union to ApiResponseType
 type ApiResponseType = FrontendSettings
-type MockResponse = [UrlMatch, ApiResponseType]
+export type MockResponse = [UrlMatch, ApiResponseType]
 
 // Mock the global fetch function, allow tests to define custom responses
 export const mockGlobalFetch = (requests?: MockResponse[]) => {

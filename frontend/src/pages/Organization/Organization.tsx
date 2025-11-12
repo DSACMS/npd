@@ -1,9 +1,22 @@
 import { Alert } from "@cmsgov/design-system"
 import classNames from "classnames"
+import { useParams } from "react-router"
 import { FeatureFlag } from "../../components/FeatureFlag"
+import { LoadingIndicator } from "../../components/LoadingIndicator"
+import {
+  organizationNpiSelector,
+  useOrganizationAPI,
+} from "../../state/requests/organizations"
 import layout from "../Layout.module.css"
 
 export const Organization = () => {
+  const { organizationId } = useParams()
+  const { data, isLoading } = useOrganizationAPI(organizationId)
+
+  if (isLoading) {
+    return <LoadingIndicator />
+  }
+
   const contentClass = classNames(layout.content, "ds-l-container")
 
   return (
@@ -14,9 +27,11 @@ export const Organization = () => {
             <div className={layout.leader}>
               <span className={layout.subtitle}>Provider group</span>
               <div role="heading" aria-level={1} className={layout.title}>
-                Lorem Mental Health Group LLC
+                {data?.name}
               </div>
-              <span className={layout.subtitle}>NPI: 1234567891</span>
+              <span className={layout.subtitle}>
+                NPI: {organizationNpiSelector(data)}
+              </span>
             </div>
           </div>
         </div>
@@ -33,6 +48,8 @@ export const Organization = () => {
             Details go here.
           </p>
         </FeatureFlag>
+
+        <div className="ds-u-margin-top--7"></div>
       </main>
     </>
   )
