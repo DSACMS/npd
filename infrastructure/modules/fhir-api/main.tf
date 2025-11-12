@@ -335,3 +335,28 @@ resource "aws_lb_listener" "forward_to_strategy_page" {
     }
   }
 }
+
+resource "aws_alb" "fhir_api_alb_redirect" {
+  name               = "${var.account_name}-fhir-redirect"
+  internal           = var.private_load_balancer
+  load_balancer_type = "application"
+  security_groups    = [var.networking.alb_security_group_id]
+  subnets            = var.networking.public_subnet_ids
+}
+
+resource "aws_alb_listener" "forward_to_directory_slash_fhir" {
+  count             = var.redirect_to_strategy_page ? 0 : 1
+  load_balancer_arn = aws_alb.fhir_api_alb_redirect.arn
+  port              = 80
+  protocol          = "HTTP"
+
+  default_action {
+    type = "redirect"
+    redirect {
+      status_code = "HTTP_302"
+      port        = 80
+      host        = aws_lb.fhir_api_alb.dns_name # TODO replace this with a domain name not dns name
+      path        = "/fhir/#{path}"
+    }
+  }
+}
