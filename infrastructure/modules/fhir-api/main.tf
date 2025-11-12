@@ -355,8 +355,9 @@ resource "aws_alb_listener" "forward_to_directory_slash_fhir" {
     redirect {
       status_code = "HTTP_302"
       port        = 80
-      host        = aws_lb.fhir_api_alb.dns_name # TODO replace this with a domain name not dns name
-      path        = "/fhir/#{path}"
+      # TODO replace this with a domain name not dns name
+      host = aws_lb.fhir_api_alb.dns_name
+      path = "/fhir/#{path}"
     }
   }
 }
