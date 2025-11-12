@@ -1,3 +1,3 @@
-This is an early release of the National Provider Directory that combines data from multiple CMS data sources to create a new dataset of healthcare providers, accessible through a FHIR API.
+This is an early release of the National Provider Directory that combines data from multiple CMS data systems to create a new dataset of healthcare providers, accessible through a REST API. 
 
-CMS is building the directory in the open by collaborating with early adopters of the [CMS Digital Health Ecosystem](https://www.cms.gov/priorities/health-technology-ecosystem/overview).
+**This data is for feedback and technical discussions only and is not to be loaded into a production system or used for any production purposes at this time.** This information is being shared with a limited set of initial users for feedback. Please do not share this site or data with others.
