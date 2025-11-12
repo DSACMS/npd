@@ -1,6 +1,7 @@
 {
-  "name": "NPD",
-  "description": "The National Provider and Payer Directory at CMS",
+  "name": "npd",
+  "version": "",
+  "description": "A modern version of a health provider directory to serve as a single source of truth for the benefit of all",
   "longDescription": "A new Provider and Payer Directory service that will eventually grow to encompass (and probably replace) the functionality of NPPES.",
   "status": "development",
   "permissions": {
@@ -16,10 +17,15 @@
   "repositoryURL": "https://github.com/DSACMS/npd",
   "repositoryHost": "github.com/DSACMS",
   "repositoryVisibility": "public",
+  "homepageURL": "",
+  "downloadURL": "",
+  "disclaimerURL": "",
+  "disclaimerText": "",
   "vcs": "git",
-  "laborHours": 7140.95,
+  "laborHours": 17012,
   "reuseFrequency": {
-    "forks": 0
+    "forks": 1,
+    "clones": 0
   },
   "platforms": [
     "windows",
@@ -33,18 +39,28 @@
   ],
   "softwareType": "standalone/desktop",
   "languages": [
-    "HTML",
     "Python",
+    "HCL",
+    "TypeScript",
+    "HTML",
     "CSS",
-    "JavaScript",
-    "Shell"
+    "Makefile",
+    "Dockerfile",
+    "Shell",
+    "JavaScript"
   ],
   "maintenance": "internal",
-  "contractNumber": "0",
+  "contractNumber": [
+    "0"
+  ],
+  "SBOM": "https://github.com/DSACMS/npd/network/dependencies",
+  "relatedCode": [],
+  "reusedCode": [],
+  "partners": [],
   "date": {
-    "created": "2025-07-01T08:03:32-04:00",
-    "lastModified": "2025-07-28T15:29:39+0000",
-    "metadataLastUpdated": "2025-07-28T15:29:39+0000"
+    "created": "2025-06-13T17:11:32Z",
+    "lastModified": "2025-11-12T17:59:42Z",
+    "metadataLastUpdated": "2025-11-12T18:02:12.503Z"
   },
   "tags": [
     "Providers",
@@ -55,9 +71,8 @@
     "email": "opensource@cms.hhs.gov",
     "name": "CMS Open Source Program Office"
   },
-  "feedbackMechanisms": [
-    "https://github.com/DSACMS/npd/issues"
-  ],
+  "feedbackMechanism": "https://github.com/DSACMS/npd/issues",
+  "AIUseCaseID": "0",
   "localisation": "false",
   "repositoryType": "Tools",
   "userInput": "Yes",
@@ -67,7 +82,6 @@
     "NPPES"
   ],
   "systems": [],
-  "upstream": [],
   "subsetInHealthcare": [
     "Operational"
   ],
