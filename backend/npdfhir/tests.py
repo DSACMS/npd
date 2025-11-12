@@ -52,19 +52,19 @@ class DocumentationViewSetTestCase(APITestCase):
         self.assertIn('id="swagger-ui"', response.text)
 
     def test_get_redoc_docs(self):
-        redoc_url = reverse("schema-redoc-ui")
+        redoc_url = reverse("schema-redoc")
         response = self.client.get(redoc_url)
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertIn('id="redoc-placeholder"', response.text)
+        self.assertIn('redoc spec-url', response.text)
 
     def test_get_json_docs(self):
-        json_docs_url = reverse("schema-json", kwargs={'format': 'json'})
+        json_docs_url = reverse("schema")
         response = self.client.get(json_docs_url)
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertIn("application/json", response["Content-Type"])
-        self.assertIn("swagger", response.data.keys())
+        self.assertIn("application/vnd.oai.openapi+json", response["Content-Type"])
+        self.assertIn("openapi", response.data.keys())
 
 
 class EndpointViewSetTestCase(APITestCase):

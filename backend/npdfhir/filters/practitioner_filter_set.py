@@ -18,8 +18,9 @@ class PractitionerFilterSet(filters.FilterSet):
         help_text='Filter by practitioner name (first, last, or full name)'
     )
     
-    gender = filters.CharFilter(
+    gender = filters.ChoiceFilter(
         method='filter_gender',
+        choices=genderMapping.to_choices(),
         help_text='Filter by gender'
     )
     
@@ -48,8 +49,9 @@ class PractitionerFilterSet(filters.FilterSet):
         help_text='Filter by postal code/zip code'
     )
     
-    address_use = filters.CharFilter(
+    address_use = filters.ChoiceFilter(
         method='filter_address_use',
+        choices=addressUseMapping.to_choices(),
         help_text='Filter by address use type'
     )
 

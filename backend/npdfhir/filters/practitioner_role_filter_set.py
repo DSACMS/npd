@@ -11,8 +11,9 @@ class PractitionerRoleFilterSet(filters.FilterSet):
         help_text='Filter by practitioner name (first, last, or full name)'
     )
     
-    practitioner_gender = filters.CharFilter(
+    practitioner_gender = filters.ChoiceFilter(
         method='filter_practitioner_gender',
+        choices=genderMapping.to_choices(),
         help_text='Filter by practitioner gender'
     )
     

@@ -2,6 +2,8 @@ from fhir.resources.R4B.address import Address
 from fhir.resources.R4B.reference import Reference
 from rest_framework.test import APIClient
 from django.urls import reverse
+from drf_spectacular.utils import OpenApiParameter
+from drf_spectacular.types import OpenApiTypes
 
 def SmartyStreetstoFHIR(address):
     addressLine1 = f"{address.address_us.primary_number} {address.address_us.street_predirection} {address.address_us.street_name} {address.address_us.postdirection} {address.address_us.street_suffix}"

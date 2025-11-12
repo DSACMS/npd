@@ -1,23 +1,18 @@
 from uuid import UUID
 
-from django.contrib.postgres.search import SearchVector
-from django.core.cache import cache
 from django.db.models import Q, OuterRef, Subquery
 from django.http import HttpResponse
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404
 from django.utils.html import escape
 from django_filters.rest_framework import DjangoFilterBackend
-from drf_yasg import openapi
-from drf_yasg.utils import swagger_auto_schema
-from rest_framework import generics, viewsets
+from drf_spectacular.utils import extend_schema, OpenApiResponse
+from rest_framework import viewsets
 from rest_framework.views import APIView
-from rest_framework.pagination import PageNumberPagination
 from rest_framework.renderers import BrowsableAPIRenderer
 from rest_framework.response import Response
 
 from .pagination import CustomPaginator
 from .renderers import FHIRRenderer
-from .mappings import addressUseMapping, genderMapping
 
 from .filters.endpoint_filter_set import EndpointFilterSet
 from .filters.location_filter_set import LocationFilterSet
@@ -27,13 +22,11 @@ from .filters.practitioner_role_filter_set import PractitionerRoleFilterSet
 
 from .models import (
     EndpointInstance,
-    ClinicalOrganization,
     Location,
     Organization,
     OrganizationToName,
     Provider,
     ProviderToLocation,
-    Individual,
     IndividualToName,
 )
 
@@ -46,32 +39,6 @@ from .serializers import (
     PractitionerSerializer,
     CapabilityStatementSerializer
 )
-
-default_page_size = 10
-max_page_size = 1000
-page_size_param = openapi.Parameter(
-    'page_size',
-    openapi.IN_QUERY,
-    description="Limit the number of results returned per page",
-    type=openapi.TYPE_STRING,
-    minimum=1,
-    maximum=max_page_size,
-    default=default_page_size
-)
-
-
-def createFilterParam(field: str, display: str = None, enum: list = None):
-    if display is None:
-        display = field.replace('_', ' ').replace('.', ' ')
-    param = openapi.Parameter(
-        field,
-        openapi.IN_QUERY,
-        description=f"Filter by {display}",
-        type=openapi.TYPE_STRING,
-    )
-    if enum is not None:
-        param.enum = enum
-    return param
 
 
 def index(request):
@@ -86,22 +53,18 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Endpoint Resources
     """
+    queryset = EndpointInstance.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     filter_backends = [DjangoFilterBackend]
     filterset_class = EndpointFilterSet
     pagination_class = CustomPaginator  
 
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('name'),
-            createFilterParam('connection_type'),
-            createFilterParam('payload_type'),
-            createFilterParam('status'),
-            createFilterParam('organization')
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested Endpoint resource cannot be found."}
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Bundle resource of FHIR Endpoint resources'
+            )
+        }
     )
     def list(self, request):
         """
@@ -129,6 +92,13 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
         response = self.get_paginated_response(bundle.data)
         return response
 
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Endpoint resource'
+            )
+        }
+    )
     def retrieve(self, request, pk=None):
         """
         Query a specific endpoint as a FHIR Endpoint resource
@@ -160,30 +130,18 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Practitioner resources
     """
+    queryset = Provider.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     filter_backends = [DjangoFilterBackend]
     filterset_class = PractitionerFilterSet
     pagination_class = CustomPaginator
 
-    # permission_classes = [permissions.IsAuthenticated]
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam(
-                'value (for any type of identifier) OR NPI|value (if searching for an NPI) -> 12345567 OR NPI|12345567'),
-            createFilterParam('name'),
-            createFilterParam('gender', enum=genderMapping.keys()),
-            createFilterParam('practitioner_type'),
-            createFilterParam('address'),
-            createFilterParam('address-city', 'city'),
-            createFilterParam('address-postalcode', "zip code"),
-            createFilterParam(
-                'address-state', '2 letter US State abbreviation'),
-            createFilterParam('address-use', 'address use',
-                              enum=addressUseMapping.keys())
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested Practitioner resource cannot be found."}
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Bundle resource of FHIR Practitioner resources'
+            )
+        }
     )
     def list(self, request):
         """
@@ -228,6 +186,13 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
         response = self.get_paginated_response(bundle.data)
         return response
 
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Practitioner resource'
+            )
+        }
+    )
     def retrieve(self, request, pk=None):
         """
         Query a specific provider as a FHIR Practitioner resource
@@ -266,25 +231,18 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR PractitionerRole resources
     """
+    queryset = ProviderToLocation.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     filter_backends = [DjangoFilterBackend]
     filterset_class = PractitionerRoleFilterSet
     pagination_class = CustomPaginator
 
-    # permission_classes = [permissions.IsAuthenticated]
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('active'),
-            createFilterParam('role'),
-            createFilterParam('practitioner.name'),
-            createFilterParam('practitioner.gender', enum=[
-                              'Female', 'Male', 'Other']),
-            createFilterParam('practitioner.practitioner_type'),
-            createFilterParam('organization.name')
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested PractitionerRole resource cannot be found."}
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Bundle resource of FHIR PractitionerRole resources'
+            )
+        }
     )
     def list(self, request):
         """
@@ -310,6 +268,13 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
         response = self.get_paginated_response(bundle.data)
         return response
 
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR PractitionerRole resource'
+            )
+        }
+    )
     def retrieve(self, request, pk=None):
         """
         Query a specific relationship between providers, healthcare organizations, and practice locations, represented as a FHIR PractitionerRole resource
@@ -334,29 +299,18 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Organization resources
     """
+    queryset = Organization.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     filter_backends = [DjangoFilterBackend]
     filterset_class = OrganizationFilterSet
     pagination_class = CustomPaginator
 
-    # permission_classes = [permissions.IsAuthenticated]
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('name'),
-            createFilterParam(
-                'identifier', 'format: value (for any type of identifier) OR NPI|value (if searching for an NPI) -> 12345567 OR NPI|12345567'),
-            createFilterParam('organization_type'),
-            createFilterParam('address'),
-            createFilterParam('address-city', 'city'),
-            createFilterParam('address-postalcode', "zip code"),
-            createFilterParam(
-                'address-state', '2 letter US State abbreviation'),
-            createFilterParam('address-use', 'address use',
-                              enum=addressUseMapping.keys())
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested Organization resource cannot be found."}
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Bundle resource of FHIR Organization resources'
+            )
+        }
     )
     def list(self, request):
         """
@@ -406,6 +360,13 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
         response = self.get_paginated_response(bundle.data)
         return response
 
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Organization resource'
+            )
+        }
+    )
     def retrieve(self, request, pk=None):
         """
         Query a specific organization, represented as a FHIR Organization resource
@@ -453,26 +414,18 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Location resources
     """
+    queryset = Location.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     filter_backends = [DjangoFilterBackend]
     filterset_class = LocationFilterSet
     pagination_class = CustomPaginator
 
-    # permission_classes = [permissions.IsAuthenticated]
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('name'),
-            createFilterParam('address'),
-            createFilterParam('address-city', 'city'),
-            createFilterParam('address-postalcode', "zip code"),
-            createFilterParam(
-                'address-state', '2 letter US State abbreviation'),
-            createFilterParam('address-use', 'address use',
-                              enum=addressUseMapping.keys())
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested Location resource cannot be found."}
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Bundle resource of FHIR Location resources'
+            )
+        }
     )
     def list(self, request):
         """
@@ -496,6 +449,13 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
         response = self.get_paginated_response(bundle.data)
         return response
 
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Location resource'
+            )
+        }
+    )
     def retrieve(self, request, pk=None):
         """
         Query a specific healthcare practice location as a FHIR Location resource
@@ -522,9 +482,12 @@ class FHIRCapabilityStatementView(APIView):
     """
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
 
-    @swagger_auto_schema(
-        responses={200: "Successful response",
-                   404: "Error: The requested CapabilityStatement resource cannot be found."}
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR CapabilityStatement resource'
+            )
+        }
     )
     def get(self, request):
         """
