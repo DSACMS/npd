@@ -274,7 +274,7 @@ resource "aws_ecs_service" "app" {
   }
 
   load_balancer {
-    target_group_arn = aws_lb_target_group.fhir_api_tg[0].arn
+    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
     container_name   = "${var.account_name}-fhir-api"
     container_port   = var.fhir_api_port
   }
@@ -315,7 +315,7 @@ resource "aws_lb_listener" "forward_to_task_group" {
 
   default_action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.fhir_api_tg[0].arn
+    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
   }
 }
 
@@ -333,7 +333,7 @@ resource "aws_lb_listener" "forward_to_task_group_https" {
 
   default_action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.fhir_api_tg[0].arn
+    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
   }
 }
 
