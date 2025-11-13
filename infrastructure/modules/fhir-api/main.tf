@@ -368,7 +368,7 @@ resource "aws_lb_listener" "forward_to_strategy_page_https" {
   count             = var.redirect_to_strategy_page && var.networking.enable_ssl_directory ? 1 : 0
   load_balancer_arn = aws_lb.fhir_api_alb.arn
   port              = 443
-  protocol          = "HTTP"
+  protocol          = "HTTPS"
   certificate_arn = data.aws_acm_certificate.directory_ssl_cert[0].arn
 
   default_action {
@@ -401,8 +401,7 @@ resource "aws_alb_listener" "forward_to_directory_slash_fhir" {
     redirect {
       status_code = "HTTP_302"
       port        = 80
-      # TODO replace this with a domain name not dns name
-      host = aws_lb.fhir_api_alb.dns_name
+      host = var.networking.directory_domain
       path = "/fhir/#{path}"
     }
   }
@@ -426,7 +425,6 @@ resource "aws_alb_listener" "forward_to_directory_slash_fhir_https" {
     redirect {
       status_code = "HTTP_302"
       port        = 443
-      # TODO replace this with a domain name not dns name
       host = var.networking.directory_domain
       path = "/fhir/#{path}"
     }
