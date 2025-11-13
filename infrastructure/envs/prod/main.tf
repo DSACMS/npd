@@ -125,6 +125,7 @@ module "fhir-api" {
   private_load_balancer     = var.fhir_api_private_load_balancer
   ecs_cluster_id            = module.ecs.cluster_id
   desired_task_count        = 3
+  require_authentication    = var.require_authentication
   db = {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address
@@ -165,13 +166,13 @@ module "etl" {
 }
 
 module "migrations" {
-  count       = 0
-  source      = "../../modules/migrations"
+  count  = 0
+  source = "../../modules/migrations"
 
-  multi_az = true
+  multi_az     = true
   account_name = local.account_name
-  region = var.region
-  tier = var.tier
+  region       = var.region
+  tier         = var.tier
   fhir_db = {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address

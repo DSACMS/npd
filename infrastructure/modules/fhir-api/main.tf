@@ -219,6 +219,10 @@ resource "aws_ecs_task_definition" "app" {
         {
           name  = "CACHE_LOCATION",
           value = ""
+        },
+        {
+          name  = "NPD_REQUIRE_AUTHENTICATION",
+          value = var.require_authentication
         }
       ]
       secrets = [
