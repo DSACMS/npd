@@ -19,12 +19,13 @@ services:
       POSTGRES_DB: ${NPD_DB_NAME:-npd_development}
       POSTGRES_USER: ${NPD_DB_USER:-postgres}
       POSTGRES_PASSWORD: ${NPD_DB_PASSWORD:-postgres}
+      PGUSER: ${NPD_DB_USER:-postgres}
     ports:
       - '${NPD_DB_PORT:-5432}:5432'
     volumes:
       - 'postgres_data:/var/lib/postgresql/data'
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready", "-U ${NPD_DB_USER:-postgres}", "-d ${NPD_DB_NAME:-npd_development}"]
+      test: ["CMD-SHELL", "pg_isready", "-d",  "${NPD_DB_NAME:-npd_development}"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -39,11 +40,12 @@ services:
       FLYWAY_USER: ${NPD_DB_USER:-postgres}
       FLYWAY_PASSWORD: ${NPD_DB_PASSWORD:-postgres}
       FLYWAY_PLACEHOLDERS_apiSchema: ${NPD_DB_SCHEMA:-npd}
+      FLYWAY_PLACEHOLDERS_superuserDefaultPassword: ""
     volumes:
       - '../flyway/sql:/flyway/sql'
     depends_on:
       - db
-    command: migrate -environment=development
+    command: migrate -environment=development -outputType=json
 
   django-web:
     build: .
@@ -62,6 +64,7 @@ services:
       NPD_DB_PASSWORD: ${NPD_DB_PASSWORD:-postgres}
       NPD_DB_HOST: ${NPD_DB_HOST:-db}
       NPD_DB_PORT: ${NPD_DB_PORT:-5432}
+      NPD_REQUIRE_AUTHENTICATION: False
     ports:
       - '8000:8000'
     volumes:

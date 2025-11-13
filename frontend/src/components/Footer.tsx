@@ -40,10 +40,12 @@ export const Footer = () => {
           </div>
           <div className="ds-l-col--2">
             <h4 className={linkHeaderClasses}>
-              {t("footer.section.npd.title")}
+              {t("footer.section.support.title")}
             </h4>
             <ul className="usa-list usa-list--unstyled">
-              <a href="#">{t("footer.section.npd.link.demo")}</a>
+              {(t("footer.section.support.links", { returnObjects: true }) as Array<{text: string, url: string}>).map((link, i) => (
+                <li key={i}><a href={link.url}>{link.text}</a></li>
+              ))}
             </ul>
           </div>
           <div className="ds-l-col--2">
@@ -51,7 +53,9 @@ export const Footer = () => {
               {t("footer.section.cms.title")}
             </h4>
             <ul className="usa-list usa-list--unstyled">
-              <a href="#">{t("footer.section.cms.link.demo")}</a>
+              {(t("footer.section.cms.links", { returnObjects: true }) as Array<{text: string, url: string}>).map((link, i) => (
+                <li key={i}><a href={link.url}>{link.text}</a></li>
+              ))}
             </ul>
           </div>
           <div className="ds-l-col--2">
@@ -59,7 +63,9 @@ export const Footer = () => {
               {t("footer.section.info.title")}
             </h4>
             <ul className="usa-list usa-list--unstyled">
-              <a href="#">{t("footer.section.info.link.demo")}</a>
+              {(t("footer.section.info.links", { returnObjects: true }) as Array<{text: string, url: string}>).map((link, i) => (
+                <li key={i}><a href={link.url}>{link.text}</a></li>
+              ))}
             </ul>
           </div>
         </div>

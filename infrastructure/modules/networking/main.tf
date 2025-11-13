@@ -10,6 +10,21 @@ data "aws_subnets" "private_subnets" {
   }
 }
 
+## Preconfigured CMSCloud Security Groups
+data "aws_security_groups" "cms_cloud_sg" {
+  filter {
+    name   = "group-name"
+    values = ["cmscloud*"]
+  }
+
+  filter {
+    name   = "vpc-id"
+    values = [var.vpc_id]
+  }
+}
+
+
+
 resource "aws_db_subnet_group" "private_subnets" {
   name       = "${var.account_name}-private-subnets"
   subnet_ids = data.aws_subnets.private_subnets.ids
@@ -43,11 +58,22 @@ resource "aws_security_group" "fhir_api_alb_sg" {
   vpc_id      = var.vpc_id
 }
 
-resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_fhir_api_alb" {
-  description       = "Accepts connections from the CMS VPN"
+resource "aws_vpc_security_group_ingress_rule" "http_to_fhir_api_alb" {
+  description       = "Accepts HTTP connections"
   security_group_id = aws_security_group.fhir_api_alb_sg.id
-  ip_protocol       = "-1"
-  prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
+  ip_protocol = "TCP"
+  from_port = 80
+  to_port = 80
+  cidr_ipv4 = "0.0.0.0/0"
+}
+
+resource "aws_vpc_security_group_ingress_rule" "https_to_fhir_api_alb" {
+  description       = "Accepts HTTPS connections"
+  security_group_id = aws_security_group.fhir_api_alb_sg.id
+  ip_protocol = "TCP"
+  from_port = 443
+  to_port = 443
+  cidr_ipv4 = "0.0.0.0/0"
 }
 
 resource "aws_vpc_security_group_egress_rule" "fhir_api_alb_can_make_outbound_requests" {
@@ -125,6 +151,15 @@ resource "aws_vpc_security_group_ingress_rule" "etl_sg_can_connect_to_fhir_api_d
   referenced_security_group_id = aws_security_group.fhir_etl_db_sg.id
 }
 
+resource "aws_vpc_security_group_ingress_rule" "github_runner_can_connect_to_api_db" {
+  description = "Allows the CI runner to access the API database"
+  security_group_id = aws_security_group.fhir_api_db_sg.id
+  ip_protocol = "TCP"
+  from_port = 5432
+  to_port = 5432
+  referenced_security_group_id = aws_security_group.github_runner_security_group.id
+}
+
 ### ETL Database
 
 resource "aws_security_group" "fhir_etl_db_sg" {
@@ -151,6 +186,15 @@ resource "aws_vpc_security_group_ingress_rule" "etl_sg_can_connect_to_etl_db" {
   referenced_security_group_id = aws_security_group.etl_sg.id
 }
 
+resource "aws_vpc_security_group_ingress_rule" "github_runner_can_connect_to_etl_db" {
+  description = "Allows the CI runner to access the ETL database"
+  security_group_id = aws_security_group.fhir_etl_db_sg.id
+  ip_protocol = "TCP"
+  from_port = 5432
+  to_port = 5432
+  referenced_security_group_id = aws_security_group.github_runner_security_group.id
+}
+
 ### ETL ALB Security Group
 
 resource "aws_security_group" "etl_webserver_alb_sg" {
@@ -159,11 +203,22 @@ resource "aws_security_group" "etl_webserver_alb_sg" {
   vpc_id      = var.vpc_id
 }
 
-resource "aws_vpc_security_group_ingress_rule" "cmsvpn_to_etl_webserver_alb_sg" {
-  description       = "Allows connections to the dagster ui application load balancer dashboard from the VPN"
+resource "aws_vpc_security_group_ingress_rule" "http_to_etl_webserver_alb" {
+  description       = "Accepts HTTP connections"
   security_group_id = aws_security_group.etl_webserver_alb_sg.id
-  ip_protocol       = "-1"
-  prefix_list_id    = data.aws_ec2_managed_prefix_list.cmsvpn.id
+  ip_protocol = "TCP"
+  from_port = 80
+  to_port = 80
+  cidr_ipv4 = "0.0.0.0/0"
+}
+
+resource "aws_vpc_security_group_ingress_rule" "https_to_etl_webserver_alb" {
+  description       = "Accepts HTTPS connections"
+  security_group_id = aws_security_group.etl_webserver_alb_sg.id
+  ip_protocol = "TCP"
+  from_port = 443
+  to_port = 443
+  cidr_ipv4 = "0.0.0.0/0"
 }
 
 resource "aws_vpc_security_group_egress_rule" "etl_webserver_alb_can_make_outbound_connections" {
@@ -200,4 +255,19 @@ resource "aws_vpc_security_group_egress_rule" "dagster_can_make_outgoing_request
   security_group_id = aws_security_group.etl_sg.id
   ip_protocol       = "-1"
   cidr_ipv4         = "0.0.0.0/0"
+}
+
+### CI Runner Group
+
+resource "aws_security_group" "github_runner_security_group" {
+  description = "Defines traffic flows to/from the GitHub Action runner"
+  name        = "${var.account_name}-github-actions-runner-sg"
+  vpc_id      = var.vpc_id
+}
+
+resource "aws_vpc_security_group_egress_rule" "github_runner_can_make_outgoing_requests" {
+  description       = "Allows the GitHub Runner instance to make outgoing requests"
+  ip_protocol       = "-1"
+  cidr_ipv4         = "0.0.0.0/0"
+  security_group_id = aws_security_group.github_runner_security_group.id
 }

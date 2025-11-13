@@ -1,0 +1,2 @@
+alter table ${apiSchema}.provider_to_credential drop constraint if exists pk_provider_to_credential;
+alter table ${apiSchema}.provider_to_credential add constraint pk_provider_to_credential primary key (provider_to_taxonomy_id, credential_type_id, license_number, state_code);

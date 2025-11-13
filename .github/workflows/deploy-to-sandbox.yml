@@ -40,7 +40,7 @@ jobs:
         env:
           VITE_API_BASE_URL: ""
         run: |
-          npm install
+          npm ci
           npm run build
       - name: Build, tag, and push docker image to Amazon ECR
         working-directory: backend

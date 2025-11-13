@@ -732,6 +732,8 @@ class ProviderRole(models.Model):
 
 
 class ProviderToCredential(models.Model):
+    pk = models.CompositePrimaryKey(
+        'provider_to_taxonomy_id', 'credential_type_id', 'license_number', 'state_code')
     credential_type = models.ForeignKey(CredentialType, models.DO_NOTHING)
     license_number = models.CharField(max_length=20)
     state_code = models.ForeignKey(
