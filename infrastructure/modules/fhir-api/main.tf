@@ -290,7 +290,6 @@ resource "aws_lb" "fhir_api_alb" {
 }
 
 resource "aws_lb_target_group" "fhir_api_tg" {
-  count       = var.redirect_to_strategy_page ? 0 : 1
   name        = "${var.account_name}-fhir-api-tg"
   port        = var.fhir_api_port
   protocol    = "HTTP"
@@ -320,11 +319,45 @@ resource "aws_lb_listener" "forward_to_task_group" {
   }
 }
 
+data "aws_acm_certificate" "directory_ssl_cert" {
+  domain   = "directory.cms.gov"
+  statuses = ["ISSUED"]
+}
+
+resource "aws_lb_listener" "forward_to_task_group_https" {
+  count             = var.redirect_to_strategy_page ? 0 : 1
+  load_balancer_arn = aws_lb.fhir_api_alb.arn
+  port              = 443
+  protocol          = "HTTPS"
+  certificate_arn   = data.aws_acm_certificate.directory_ssl_cert.arn
+
+  default_action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.fhir_api_tg[0].arn
+  }
+}
+
 resource "aws_lb_listener" "forward_to_strategy_page" {
   count             = var.redirect_to_strategy_page ? 1 : 0
   load_balancer_arn = aws_lb.fhir_api_alb.arn
   port              = 80
   protocol          = "HTTP"
+
+  default_action {
+    type = "redirect"
+    redirect {
+      status_code = "HTTP_302"
+      host        = "www.cms.gov"
+      path        = "/priorities/health-technology-ecosystem/overview"
+    }
+  }
+}
+
+resource "aws_lb_listener" "forward_to_strategy_page_https" {
+  count             = var.redirect_to_strategy_page ? 1 : 0
+  load_balancer_arn = aws_lb.fhir_api_alb.arn
+  port              = 443
+  protocol          = "HTTPS"
 
   default_action {
     type = "redirect"
@@ -355,6 +388,30 @@ resource "aws_alb_listener" "forward_to_directory_slash_fhir" {
     redirect {
       status_code = "HTTP_302"
       port        = 80
+      # TODO replace this with a domain name not dns name
+      host = aws_lb.fhir_api_alb.dns_name
+      path = "/fhir/#{path}"
+    }
+  }
+}
+
+data "aws_acm_certificate" "api_directory_ssl_cert" {
+  domain   = "api.directory.cms.gov"
+  statuses = ["ISSUED"]
+}
+
+resource "aws_alb_listener" "forward_to_directory_slash_fhir_https" {
+  count             = var.redirect_to_strategy_page ? 0 : 1
+  load_balancer_arn = aws_alb.fhir_api_alb_redirect.arn
+  port              = 443
+  protocol          = "HTTPS"
+  certificate_arn   = data.aws_acm_certificate.api_directory_ssl_cert.arn
+
+  default_action {
+    type = "redirect"
+    redirect {
+      status_code = "HTTP_302"
+      port        = 443
       # TODO replace this with a domain name not dns name
       host = aws_lb.fhir_api_alb.dns_name
       path = "/fhir/#{path}"
