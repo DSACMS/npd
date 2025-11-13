@@ -319,21 +319,25 @@ resource "aws_lb_listener" "forward_to_task_group" {
   port              = 80
   protocol          = "HTTP"
 
-  # If we are redirecting to the strategy page, this is the default action
   default_action {
-    count = var.redirect_to_strategy_page ? 1 : 0
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.fhir_api_tg[0].arn
+  }
+}
+
+resource "aws_lb_listener" "forward_to_strategy_page" {
+  count             = var.redirect_to_strategy_page ? 1 : 0
+  load_balancer_arn = aws_lb.fhir_api_alb.arn
+  port              = 80
+  protocol          = "HTTP"
+
+  default_action {
     type = "redirect"
     redirect {
       status_code = "HTTP_302"
       host        = "www.cms.gov"
       path        = "/priorities/health-technology-ecosystem/overview"
     }
-  }
-
-  # In all other cases, redirect to the task group
-  default_action {
-    type             = "forward"
-    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
   }
 }
 
@@ -349,28 +353,31 @@ data "aws_acm_certificate" "directory_ssl_cert" {
 }
 
 resource "aws_lb_listener" "forward_to_task_group_https" {
-  count             = var.networking.enable_ssl_directory ? 1 : 0
+  count             = var.redirect_to_strategy_page && var.networking.enable_ssl_directory ? 0 : 1
   load_balancer_arn = aws_lb.fhir_api_alb.arn
   port              = 443
-  protocol          = "HTTPS"
-  certificate_arn   = data.aws_acm_certificate.directory_ssl_cert.arn
+  protocol          = "HTTP"
 
-  # If we are redirecting to the strategy page, this is the default action
   default_action {
-    count = var.redirect_to_strategy_page ? 1 : 0
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.fhir_api_tg[0].arn
+  }
+}
+
+resource "aws_lb_listener" "forward_to_strategy_page" {
+  count             = var.redirect_to_strategy_page && var.networking.enable_ssl_directory ? 1 : 0
+  load_balancer_arn = aws_lb.fhir_api_alb.arn
+  port              = 443
+  protocol          = "HTTP"
+  certificate_arn = data.aws_acm_certificate
+
+  default_action {
     type = "redirect"
     redirect {
       status_code = "HTTP_302"
       host        = "www.cms.gov"
       path        = "/priorities/health-technology-ecosystem/overview"
     }
-  }
-
-  # In all other cases, redirect to the task group
-  default_action {
-    count = var.redirect_to_strategy_page ? 0 : 1
-    type             = "forward"
-    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
   }
 }
 
