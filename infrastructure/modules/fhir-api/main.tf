@@ -206,7 +206,7 @@ resource "aws_ecs_task_definition" "app" {
         },
         {
           name  = "DJANGO_ALLOWED_HOSTS"
-          value = jsonencode([aws_lb.fhir_api_alb.dns_name, var.networking.api_domain, var.networking.directory_domain])
+          value = "${aws_lb.fhir_api_alb.dns_name},${var.networking.api_domain},${var.networking.directory_domain}"
         },
         {
           name  = "DJANGO_LOGLEVEL"
