@@ -260,7 +260,6 @@ resource "aws_ecs_task_definition" "app" {
 
 # API ECS Service
 resource "aws_ecs_service" "app" {
-  count           = var.redirect_to_strategy_page == true ? 0 : 1
   name            = "${var.account_name}-fhir-api-service"
   cluster         = var.ecs_cluster_id
   task_definition = aws_ecs_task_definition.app.arn
@@ -369,7 +368,7 @@ resource "aws_lb_listener" "forward_to_strategy_page_https" {
   load_balancer_arn = aws_lb.fhir_api_alb.arn
   port              = 443
   protocol          = "HTTPS"
-  certificate_arn = data.aws_acm_certificate.directory_ssl_cert[0].arn
+  certificate_arn   = data.aws_acm_certificate.directory_ssl_cert[0].arn
 
   default_action {
     type = "redirect"
@@ -401,8 +400,8 @@ resource "aws_alb_listener" "forward_to_directory_slash_fhir" {
     redirect {
       status_code = "HTTP_302"
       port        = 80
-      host = var.networking.directory_domain
-      path = "/fhir/#{path}"
+      host        = var.networking.directory_domain
+      path        = "/fhir/#{path}"
     }
   }
 }
@@ -414,7 +413,7 @@ data "aws_acm_certificate" "api_directory_ssl_cert" {
 }
 
 resource "aws_alb_listener" "forward_to_directory_slash_fhir_https" {
-  count    = var.networking.enable_ssl_api ? 1 : 0
+  count             = var.networking.enable_ssl_api ? 1 : 0
   load_balancer_arn = aws_alb.fhir_api_alb_redirect.arn
   port              = 443
   protocol          = "HTTPS"
@@ -425,8 +424,8 @@ resource "aws_alb_listener" "forward_to_directory_slash_fhir_https" {
     redirect {
       status_code = "HTTP_302"
       port        = 443
-      host = var.networking.directory_domain
-      path = "/fhir/#{path}"
+      host        = var.networking.directory_domain
+      path        = "/fhir/#{path}"
     }
   }
 }
