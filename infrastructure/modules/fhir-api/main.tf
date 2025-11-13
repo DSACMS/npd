@@ -321,7 +321,7 @@ resource "aws_lb_listener" "forward_to_task_group" {
 
   default_action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.fhir_api_tg[0].arn
+    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
   }
 }
 
@@ -360,16 +360,16 @@ resource "aws_lb_listener" "forward_to_task_group_https" {
 
   default_action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.fhir_api_tg[0].arn
+    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
   }
 }
 
-resource "aws_lb_listener" "forward_to_strategy_page" {
+resource "aws_lb_listener" "forward_to_strategy_page_https" {
   count             = var.redirect_to_strategy_page && var.networking.enable_ssl_directory ? 1 : 0
   load_balancer_arn = aws_lb.fhir_api_alb.arn
   port              = 443
   protocol          = "HTTP"
-  certificate_arn = data.aws_acm_certificate
+  certificate_arn = data.aws_acm_certificate.directory_ssl_cert[0].arn
 
   default_action {
     type = "redirect"
@@ -419,7 +419,7 @@ resource "aws_alb_listener" "forward_to_directory_slash_fhir_https" {
   load_balancer_arn = aws_alb.fhir_api_alb_redirect.arn
   port              = 443
   protocol          = "HTTPS"
-  certificate_arn   = data.aws_acm_certificate.api_directory_ssl_cert.arn
+  certificate_arn   = data.aws_acm_certificate.api_directory_ssl_cert[0].arn
 
   default_action {
     type = "redirect"
