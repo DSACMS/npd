@@ -340,6 +340,23 @@ resource "aws_lb_listener" "forward_to_strategy_page" {
   }
 }
 
+resource "aws_lb_listener_rule" "preview_flag" {
+  count        = var.redirect_to_strategy_page ? 1 : 0
+  listener_arn = aws_lb_listener.forward_to_strategy_page[0].arn
+
+  condition {
+    query_string {
+      key   = "preview"
+      value = "true"
+    }
+  }
+
+  action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
+  }
+}
+
 # Port 443 Traffic
 # TODO: upgrade all incoming traffic to HTTPS after:
 # - internal domain names are registered
@@ -377,6 +394,23 @@ resource "aws_lb_listener" "forward_to_strategy_page_https" {
       host        = "www.cms.gov"
       path        = "/priorities/health-technology-ecosystem/overview"
     }
+  }
+}
+
+resource "aws_lb_listener_rule" "preview_flag_https" {
+  count        = var.redirect_to_strategy_page ? 1 : 0
+  listener_arn = aws_lb_listener.forward_to_strategy_page_https[0].arn
+
+  condition {
+    query_string {
+      key   = "preview"
+      value = "true"
+    }
+  }
+
+  action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
   }
 }
 
