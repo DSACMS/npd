@@ -18,6 +18,8 @@ variable "db" {
 }
 variable "networking" {
   type = object({
+    api_domain            = string
+    directory_domain      = string
     private_subnet_ids    = list(string)
     public_subnet_ids     = list(string)
     alb_security_group_id = string

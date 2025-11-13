@@ -320,7 +320,7 @@ resource "aws_lb_listener" "forward_to_task_group" {
 }
 
 data "aws_acm_certificate" "directory_ssl_cert" {
-  domain   = "directory.cms.gov"
+  domain   = var.networking.directory_domain
   statuses = ["ISSUED"]
 }
 
@@ -396,7 +396,7 @@ resource "aws_alb_listener" "forward_to_directory_slash_fhir" {
 }
 
 data "aws_acm_certificate" "api_directory_ssl_cert" {
-  domain   = "api.directory.cms.gov"
+  domain   = var.networking.api_domain
   statuses = ["ISSUED"]
 }
 
@@ -413,7 +413,7 @@ resource "aws_alb_listener" "forward_to_directory_slash_fhir_https" {
       status_code = "HTTP_302"
       port        = 443
       # TODO replace this with a domain name not dns name
-      host = aws_lb.fhir_api_alb.dns_name
+      host = var.networking.directory_domain
       path = "/fhir/#{path}"
     }
   }
