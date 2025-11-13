@@ -305,7 +305,6 @@ class OrganizationSerializer(serializers.Serializer):
         )
         identifiers = []
         taxonomies = []
-        print(instance.ein)
         # if instance.ein:
         #    ein_identifier = Identifier(
         #        system="https://terminology.hl7.org/NamingSystem-USEIN.html",
