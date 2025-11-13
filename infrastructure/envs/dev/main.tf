@@ -33,6 +33,12 @@ data "aws_vpc" "default" {
   }
 }
 
+module "domains" {
+  source = "../../modules/domains"
+
+  tier = var.tier
+}
+
 module "repositories" {
   source = "../../modules/repositories"
 
@@ -137,6 +143,10 @@ module "fhir-api" {
     alb_security_group_id = module.networking.alb_security_group_id
     api_security_group_id = module.networking.api_security_group_id
     vpc_id                = module.networking.vpc_id
+    directory_domain      = module.domains.directory_domain
+    enable_ssl_directory  = false
+    api_domain            = module.domains.api_domain
+    enable_ssl_api        = false
   }
 }
 

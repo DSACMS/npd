@@ -18,6 +18,10 @@ variable "db" {
 }
 variable "networking" {
   type = object({
+    api_domain            = string
+    enable_ssl_api        = bool
+    directory_domain      = string
+    enable_ssl_directory  = bool
     private_subnet_ids    = list(string)
     public_subnet_ids     = list(string)
     alb_security_group_id = string

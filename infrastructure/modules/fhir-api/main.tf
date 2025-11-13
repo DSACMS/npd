@@ -264,7 +264,6 @@ resource "aws_ecs_task_definition" "app" {
 
 # API ECS Service
 resource "aws_ecs_service" "app" {
-  count           = var.redirect_to_strategy_page == true ? 0 : 1
   name            = "${var.account_name}-fhir-api-service"
   cluster         = var.ecs_cluster_id
   task_definition = aws_ecs_task_definition.app.arn
@@ -278,13 +277,14 @@ resource "aws_ecs_service" "app" {
   }
 
   load_balancer {
-    target_group_arn = aws_lb_target_group.fhir_api_tg[0].arn
+    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
     container_name   = "${var.account_name}-fhir-api"
     container_port   = var.fhir_api_port
   }
 }
 
-# API Load Balancer Configuration
+# ALB directory.cms.gov traffic
+
 resource "aws_lb" "fhir_api_alb" {
   name               = "${var.account_name}-fhir-api-alb"
   internal           = var.private_load_balancer
@@ -294,7 +294,6 @@ resource "aws_lb" "fhir_api_alb" {
 }
 
 resource "aws_lb_target_group" "fhir_api_tg" {
-  count       = var.redirect_to_strategy_page ? 0 : 1
   name        = "${var.account_name}-fhir-api-tg"
   port        = var.fhir_api_port
   protocol    = "HTTP"
@@ -312,6 +311,11 @@ resource "aws_lb_target_group" "fhir_api_tg" {
   }
 }
 
+# Port 80 traffic
+# TODO: upgrade all incoming traffic to HTTPS after:
+# - internal domain names are registered
+# - ssl certs are requested and validated
+
 resource "aws_lb_listener" "forward_to_task_group" {
   count             = var.redirect_to_strategy_page ? 0 : 1
   load_balancer_arn = aws_lb.fhir_api_alb.arn
@@ -320,7 +324,7 @@ resource "aws_lb_listener" "forward_to_task_group" {
 
   default_action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.fhir_api_tg[0].arn
+    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
   }
 }
 
@@ -340,6 +344,82 @@ resource "aws_lb_listener" "forward_to_strategy_page" {
   }
 }
 
+resource "aws_lb_listener_rule" "preview_flag" {
+  count        = var.redirect_to_strategy_page ? 1 : 0
+  listener_arn = aws_lb_listener.forward_to_strategy_page[0].arn
+
+  condition {
+    query_string {
+      key   = "preview"
+      value = "true"
+    }
+  }
+
+  action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
+  }
+}
+
+# Port 443 Traffic
+# TODO: upgrade all incoming traffic to HTTPS after:
+# - internal domain names are registered
+# - ssl certs are requested and validated
+
+data "aws_acm_certificate" "directory_ssl_cert" {
+  count    = var.networking.enable_ssl_directory ? 1 : 0
+  domain   = var.networking.directory_domain
+  statuses = ["ISSUED"]
+}
+
+resource "aws_lb_listener" "forward_to_task_group_https" {
+  count             = var.redirect_to_strategy_page && var.networking.enable_ssl_directory ? 0 : 1
+  load_balancer_arn = aws_lb.fhir_api_alb.arn
+  port              = 443
+  protocol          = "HTTP"
+
+  default_action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
+  }
+}
+
+resource "aws_lb_listener" "forward_to_strategy_page_https" {
+  count             = var.redirect_to_strategy_page && var.networking.enable_ssl_directory ? 1 : 0
+  load_balancer_arn = aws_lb.fhir_api_alb.arn
+  port              = 443
+  protocol          = "HTTPS"
+  certificate_arn   = data.aws_acm_certificate.directory_ssl_cert[0].arn
+
+  default_action {
+    type = "redirect"
+    redirect {
+      status_code = "HTTP_302"
+      host        = "www.cms.gov"
+      path        = "/priorities/health-technology-ecosystem/overview"
+    }
+  }
+}
+
+resource "aws_lb_listener_rule" "preview_flag_https" {
+  count        = var.redirect_to_strategy_page ? 1 : 0
+  listener_arn = aws_lb_listener.forward_to_strategy_page_https[0].arn
+
+  condition {
+    query_string {
+      key   = "preview"
+      value = "true"
+    }
+  }
+
+  action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
+  }
+}
+
+# api.directory.cms.gov and friends
+
 resource "aws_alb" "fhir_api_alb_redirect" {
   name               = "${var.account_name}-fhir-redirect"
   internal           = var.private_load_balancer
@@ -349,7 +429,6 @@ resource "aws_alb" "fhir_api_alb_redirect" {
 }
 
 resource "aws_alb_listener" "forward_to_directory_slash_fhir" {
-  count             = var.redirect_to_strategy_page ? 0 : 1
   load_balancer_arn = aws_alb.fhir_api_alb_redirect.arn
   port              = 80
   protocol          = "HTTP"
@@ -359,9 +438,32 @@ resource "aws_alb_listener" "forward_to_directory_slash_fhir" {
     redirect {
       status_code = "HTTP_302"
       port        = 80
-      # TODO replace this with a domain name not dns name
-      host = aws_lb.fhir_api_alb.dns_name
-      path = "/fhir/#{path}"
+      host        = var.networking.directory_domain
+      path        = "/fhir/#{path}"
+    }
+  }
+}
+
+data "aws_acm_certificate" "api_directory_ssl_cert" {
+  count    = var.networking.enable_ssl_api ? 1 : 0
+  domain   = var.networking.api_domain
+  statuses = ["ISSUED"]
+}
+
+resource "aws_alb_listener" "forward_to_directory_slash_fhir_https" {
+  count             = var.networking.enable_ssl_api ? 1 : 0
+  load_balancer_arn = aws_alb.fhir_api_alb_redirect.arn
+  port              = 443
+  protocol          = "HTTPS"
+  certificate_arn   = data.aws_acm_certificate.api_directory_ssl_cert[0].arn
+
+  default_action {
+    type = "redirect"
+    redirect {
+      status_code = "HTTP_302"
+      port        = 443
+      host        = var.networking.directory_domain
+      path        = "/fhir/#{path}"
     }
   }
 }
