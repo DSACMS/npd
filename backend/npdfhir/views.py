@@ -57,7 +57,7 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     filter_backends = [DjangoFilterBackend]
     filterset_class = EndpointFilterSet
-    pagination_class = CustomPaginator  
+    pagination_class = CustomPaginator
 
     @extend_schema(
         responses={
@@ -85,7 +85,8 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
         endpoints = self.filter_queryset(endpoints)
         paginated_endpoints = self.paginate_queryset(endpoints)
 
-        serialized_endpoints = EndpointSerializer(paginated_endpoints, many=True)
+        serialized_endpoints = EndpointSerializer(
+            paginated_endpoints, many=True, context={"request": request})
         bundle = BundleSerializer(
             serialized_endpoints, context={"request": request})
 
@@ -118,7 +119,8 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
             'endpointinstancetootherid_set'
         ), pk=pk)
 
-        serialized_endpoint = EndpointSerializer(endpoint)
+        serialized_endpoint = EndpointSerializer(
+            endpoint, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = Response(serialized_endpoint.data)
@@ -150,30 +152,14 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
         Default sort order: ascending last name, first name
         """
         # Subqueries for last_name and first_name of the individual
-        primary_last_name_subquery = (
-            IndividualToName.objects
-            .filter(individual=OuterRef('individual'))
-            .order_by('last_name')
-            .values('last_name')[:1]
-        )
-
-        primary_first_name_subquery = (
-            IndividualToName.objects
-            .filter(individual=OuterRef('individual'))
-            .order_by('first_name')
-            .values('first_name')[:1]
-        )
 
         providers = Provider.objects.all().prefetch_related(
-            'npi', 'individual', 'individual__individualtoname_set', 'individual__individualtoaddress_set',
+            'npi', 'individual', 'individual__individualtoaddress_set',
             'individual__individualtoaddress_set__address__address_us',
             'individual__individualtoaddress_set__address__address_us__state_code',
             'individual__individualtoaddress_set__address_use', 'individual__individualtophone_set',
             'individual__individualtoemail_set', 'providertootherid_set', 'providertotaxonomy_set'
-        ).annotate(
-            primary_last_name=Subquery(primary_last_name_subquery),
-            primary_first_name=Subquery(primary_first_name_subquery)
-        ).order_by('primary_last_name', 'primary_first_name')
+        ).order_by('individual__individualtoname__last_name', 'individual__individualtoname__first_name')
 
         providers = self.filter_queryset(providers)
         paginated_providers = self.paginate_queryset(providers)
@@ -318,11 +304,6 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
 
         Default sort order: ascending by organization name
         """
-        primary_name_subquery = (
-            OrganizationToName.objects
-            .filter(organization=OuterRef('pk'), is_primary=True)
-            .values('name')[:1]
-        )
 
         organizations = Organization.objects.all().prefetch_related(
             'authorized_official',
@@ -347,7 +328,7 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
             'clinicalorganization__organizationtootherid_set__other_id_type',
             'clinicalorganization__organizationtotaxonomy_set',
             'clinicalorganization__organizationtotaxonomy_set__nucc_code'
-        ).annotate(primary_name=Subquery(primary_name_subquery)).order_by('primary_name')
+        ).order_by('organizationtoname__name', '-organizationtoname__is_primary')
 
         organizations = self.filter_queryset(organizations)
         paginated_organizations = self.paginate_queryset(organizations)
