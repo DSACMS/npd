@@ -514,7 +514,7 @@ class EndpointSerializer(serializers.Serializer):
 
     class Meta:
         fields = ['id', 'ehr_vendor', 'address', 'endpoint_connection_type',
-                  'name', 'description' 'endpoint_instance']
+                  'name', 'description', 'endpoint_instance']
 
     def to_representation(self, instance):
         representation = super().to_representation(instance)
@@ -561,13 +561,13 @@ class CapabilityStatementSerializer(serializers.Serializer):
         request = self.context.get('request')
         baseURL = request.build_absolute_uri('/fhir')
         metadataURL = request.build_absolute_uri(reverse('fhir-metadata'))
-        schemaData = get_schema_data(request, 'schema-json', {'format': '.json'})
+        schemaData = get_schema_data(request, 'schema')
 
         capability_statement = CapabilityStatement(
             url=metadataURL,
-            version=schemaData.info.version,
+            version=schemaData['info']['version'],
             name="FHIRCapablityStatement",
-            title=f"{schemaData.info.title} -  FHIR Capablity Statement",
+            title=f"{schemaData['info']['title']} -  FHIR Capablity Statement",
             status="active",
             date=datetime.now(timezone.utc),
             publisher="CMS",
@@ -584,7 +584,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
             description="This CapabilityStatement describes the capabilities of the National Provider Directory FHIR API, including supported resources, search parameters, and operations.",
             kind="instance",
             implementation=CapabilityStatementImplementation(
-                description=schemaData.info.description,
+                description=schemaData['info']['description'],
                 url=baseURL
             ),
             fhirVersion="4.0.1",
@@ -597,21 +597,23 @@ class CapabilityStatementSerializer(serializers.Serializer):
     def build_rest_components(self, schemaData):
         """
         Building out each REST component describing our endpoint capabilities
+        
+        To support a new Endpoint, just add it to the dictionary below following the same format 
         """
         resources = {
-            "Practitioner": "/Practitioner/",
-            "Organization": "/Organization/",
-            "Endpoint": "/Endpoint/",
-            "Location": "/Location/",
-            "PractitionerRole": "/PractitionerRole/"
+            "Practitioner": "/fhir/Practitioner/",
+            "Organization": "/fhir/Organization/",
+            "Endpoint": "/fhir/Endpoint/",
+            "Location": "/fhir/Location/",
+            "PractitionerRole": "/fhir/PractitionerRole/"
         }
 
         resource_capabilities = []
         for resource_type, path in resources.items():
-            if path in schemaData.paths:
+            if path in schemaData['paths']:
                 resource_capabilities.append(
                     self.build_resource_capabilities(
-                        resource_type, schemaData.paths[path])
+                        resource_type, schemaData['paths'][path])
                 )
 
         return CapabilityStatementRest(
@@ -627,7 +629,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
             searchParams.append(
                 CapabilityStatementRestResourceSearchParam(
                     name=param["name"],
-                    type=param["type"],
+                    type=param["schema"]["type"],
                     documentation=param["description"]
                 )
             )

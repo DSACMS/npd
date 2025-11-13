@@ -5,21 +5,18 @@ from django.core.cache import cache
 from django.db.models import Q, F, OuterRef, Subquery, Value, CharField
 from django.db.models.functions import Concat
 from django.http import HttpResponse
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404
 from django.utils.html import escape
 from django_filters.rest_framework import DjangoFilterBackend
-from drf_yasg import openapi
-from drf_yasg.utils import swagger_auto_schema
-from rest_framework import generics, viewsets
+from drf_spectacular.utils import extend_schema, OpenApiResponse
+from rest_framework import viewsets
 from rest_framework.views import APIView
-from rest_framework.pagination import PageNumberPagination
 from rest_framework.renderers import BrowsableAPIRenderer
 from rest_framework.response import Response
 from rest_framework.filters import SearchFilter, OrderingFilter
 
 from .pagination import CustomPaginator
 from .renderers import FHIRRenderer
-from .mappings import addressUseMapping, genderMapping
 
 from .filters.endpoint_filter_set import EndpointFilterSet
 from .filters.location_filter_set import LocationFilterSet
@@ -29,13 +26,11 @@ from .filters.practitioner_role_filter_set import PractitionerRoleFilterSet
 
 from .models import (
     EndpointInstance,
-    ClinicalOrganization,
     Location,
     Organization,
     OrganizationToName,
     Provider,
     ProviderToLocation,
-    Individual,
     IndividualToName,
 )
 
@@ -49,65 +44,6 @@ from .serializers import (
     CapabilityStatementSerializer
 )
 
-default_page_size = 10
-max_page_size = 1000
-page_size_param = openapi.Parameter(
-    'page_size',
-    openapi.IN_QUERY,
-    description="Limit the number of results returned per page",
-    type=openapi.TYPE_STRING,
-    minimum=1,
-    maximum=max_page_size,
-    default=default_page_size
-)
-
-def createSortParam(allowed_sorts):
-    return openapi.Parameter(
-        '_sort',
-        openapi.IN_QUERY,
-        description=(
-            "Comma-separated list of fields to sort by. "
-            "Prefix with `-` for descending order.\n\n"
-            f"Allowed fields: {', '.join(allowed_sorts)}"
-        ),
-        type=openapi.TYPE_STRING,
-        required=False,
-    )
-
-def createFilterParam(field: str, display: str = None, enum: list = None):
-    if display is None:
-        display = field.replace('_', ' ').replace('.', ' ')
-    param = openapi.Parameter(
-        field,
-        openapi.IN_QUERY,
-        description=f"Filter by {display}",
-        type=openapi.TYPE_STRING,
-    )
-    if enum is not None:
-        param.enum = enum
-    return param
-
-def get_sort_fields(allowed_sorts, sorts_value):
-    sort_fields = []
-
-    for field in sorts_value.split(','):
-        cleaned = field.lstrip('-')
-        if cleaned in allowed_sorts:
-            sort_fields.append(field)
-    
-    return sort_fields
-
-def get_data_sorted(data,allowed_sorts,sorts_value):
-    sort_fields = get_sort_fields(allowed_sorts,sorts_value)
-
-    #Sort data
-    if sort_fields:
-        return data.order_by(*sort_fields)
-    else: 
-        return data
-
-
-
 
 def index(request):
     return HttpResponse("Connection to npd database: successful")
@@ -117,38 +53,28 @@ def health(request):
     return HttpResponse("healthy")
 
 
+class ParamOrderingFilter(OrderingFilter):
+    ordering_param = '_sort'
+
+
 class FHIREndpointViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Endpoint Resources
     """
+    queryset = EndpointInstance.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
-    filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
+    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
     filterset_class = EndpointFilterSet
-    allowed_sorts = ['name', 'address', 'ehr_vendor_name']
+    ordering_fields = ['name', 'address', 'ehr_vendor_name']
+    ordering = ['name']
     pagination_class = CustomPaginator  
 
-
-    def filter_queryset(self, queryset):
-        queryset = super().filter_queryset(queryset)
-
-        sorts_value = self.request.query_params.get('_sort')
-        if sorts_value:
-            queryset = get_data_sorted(queryset, self.allowed_sorts, sorts_value)
-
-        return queryset
-
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('name'),
-            createFilterParam('connection_type'),
-            createFilterParam('payload_type'),
-            createFilterParam('status'),
-            createFilterParam('organization'),
-            createSortParam(['name', 'address', 'ehr_vendor_name'])
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested Endpoint resource cannot be found."}
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Bundle resource of FHIR Endpoint resources'
+            )
+        }
     )
     def list(self, request):
         """
@@ -178,6 +104,13 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
         response = self.get_paginated_response(bundle.data)
         return response
 
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Endpoint resource'
+            )
+        }
+    )
     def retrieve(self, request, pk=None):
         """
         Query a specific endpoint as a FHIR Endpoint resource
@@ -209,44 +142,23 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Practitioner resources
     """
+    queryset = Provider.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
-    filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
+    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
     filterset_class = PractitionerFilterSet
     pagination_class = CustomPaginator
     
 
-    allowed_sorts = ['primary_last_name', 'primary_first_name', 'npi_value']
-
-
-    def filter_queryset(self, queryset):
-        queryset = super().filter_queryset(queryset)
-
-        sorts_value = self.request.query_params.get('_sort')
-        if sorts_value:
-            queryset = get_data_sorted(queryset, self.allowed_sorts, sorts_value)
-
-        return queryset
+    ordering_fields = ['primary_last_name', 'primary_first_name', 'npi_value']
+    ordering = ['primary_last_name', 'primary_first_name']
 
     # permission_classes = [permissions.IsAuthenticated]
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam(
-                'value (for any type of identifier) OR NPI|value (if searching for an NPI) -> 12345567 OR NPI|12345567'),
-            createFilterParam('name'),
-            createFilterParam('gender', enum=genderMapping.keys()),
-            createFilterParam('practitioner_type'),
-            createFilterParam('address'),
-            createFilterParam('address-city', 'city'),
-            createFilterParam('address-postalcode', "zip code"),
-            createFilterParam(
-                'address-state', '2 letter US State abbreviation'),
-            createFilterParam('address-use', 'address use',
-                              enum=addressUseMapping.keys()),
-            createSortParam(['primary_last_name', 'primary_first_name', 'npi_value'])
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested Practitioner resource cannot be found."}
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Bundle resource of FHIR Practitioner resources'
+            )
+        }
     )
     def list(self, request):
         """
@@ -292,6 +204,13 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
         response = self.get_paginated_response(bundle.data)
         return response
 
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Practitioner resource'
+            )
+        }
+    )
     def retrieve(self, request, pk=None):
         """
         Query a specific provider as a FHIR Practitioner resource
@@ -330,38 +249,22 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR PractitionerRole resources
     """
+    queryset = ProviderToLocation.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
-    filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
+    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
     filterset_class = PractitionerRoleFilterSet
     pagination_class = CustomPaginator
 
-    allowed_sorts = ['location_name','practitioner_first_name','practitioner_last_name']
-
-
-    def filter_queryset(self, queryset):
-        queryset = super().filter_queryset(queryset)
-
-        sorts_value = self.request.query_params.get('_sort')
-        if sorts_value:
-            queryset = get_data_sorted(queryset, self.allowed_sorts, sorts_value)
-
-        return queryset
+    ordering_fields = ['location_name','practitioner_first_name','practitioner_last_name']
+    ordering = ['location__name']
 
     # permission_classes = [permissions.IsAuthenticated]
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('active'),
-            createFilterParam('role'),
-            createFilterParam('practitioner.name'),
-            createFilterParam('practitioner.gender', enum=[
-                              'Female', 'Male', 'Other']),
-            createFilterParam('practitioner.practitioner_type'),
-            createFilterParam('organization.name'),
-            createSortParam(['location_name','practitioner_first_name','practitioner_last_name'])
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested PractitionerRole resource cannot be found."}
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Bundle resource of FHIR PractitionerRole resources'
+            )
+        }
     )
     def list(self, request):
         """
@@ -369,8 +272,6 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
 
         Default sort order: aschending by location name
         """
-        page_size = default_page_size
-
         all_params = request.query_params
 
         primary_last_name_subquery = (
@@ -411,6 +312,13 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
         response = self.get_paginated_response(bundle.data)
         return response
 
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR PractitionerRole resource'
+            )
+        }
+    )
     def retrieve(self, request, pk=None):
         """
         Query a specific relationship between providers, healthcare organizations, and practice locations, represented as a FHIR PractitionerRole resource
@@ -435,42 +343,22 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Organization resources
     """
+    queryset = Organization.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
-    filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
+    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
     filterset_class = OrganizationFilterSet
     pagination_class = CustomPaginator
 
-    allowed_sorts = ['primary_name']
-
-
-    def filter_queryset(self, queryset):
-        queryset = super().filter_queryset(queryset)
-
-        sorts_value = self.request.query_params.get('_sort')
-        if sorts_value:
-            queryset = get_data_sorted(queryset, self.allowed_sorts, sorts_value)
-
-        return queryset
+    ordering_fields = ['primary_name']
+    ordering = ['primary_name']
 
     # permission_classes = [permissions.IsAuthenticated]
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('name'),
-            createFilterParam(
-                'identifier', 'format: value (for any type of identifier) OR NPI|value (if searching for an NPI) -> 12345567 OR NPI|12345567'),
-            createFilterParam('organization_type'),
-            createFilterParam('address'),
-            createFilterParam('address-city', 'city'),
-            createFilterParam('address-postalcode', "zip code"),
-            createFilterParam(
-                'address-state', '2 letter US State abbreviation'),
-            createFilterParam('address-use', 'address use',
-                              enum=addressUseMapping.keys()),
-            createSortParam(['primary_name'])
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested Organization resource cannot be found."}
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Bundle resource of FHIR Organization resources'
+            )
+        }
     )
     def list(self, request):
         """
@@ -520,6 +408,13 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
         response = self.get_paginated_response(bundle.data)
         return response
 
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Organization resource'
+            )
+        }
+    )
     def retrieve(self, request, pk=None):
         """
         Query a specific organization, represented as a FHIR Organization resource
@@ -567,39 +462,23 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Location resources
     """
+    queryset = Location.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
-    filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
+    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
     filterset_class = LocationFilterSet
     pagination_class = CustomPaginator
 
-    allowed_sorts = ['organization_name','address_full','name']
+    ordering_fields = ['organization_name','address_full','name']
+    ordering = ['name']
 
-
-    def filter_queryset(self, queryset):
-        queryset = super().filter_queryset(queryset)
-
-        sorts_value = self.request.query_params.get('_sort')
-        if sorts_value:
-            queryset = get_data_sorted(queryset, self.allowed_sorts, sorts_value)
-
-        return queryset
 
     # permission_classes = [permissions.IsAuthenticated]
-    @swagger_auto_schema(
-        manual_parameters=[
-            page_size_param,
-            createFilterParam('name'),
-            createFilterParam('address'),
-            createFilterParam('address-city', 'city'),
-            createFilterParam('address-postalcode', "zip code"),
-            createFilterParam(
-                'address-state', '2 letter US State abbreviation'),
-            createFilterParam('address-use', 'address use',
-                              enum=addressUseMapping.keys()),
-            createSortParam(['primary_name'])
-        ],
-        responses={200: "Successful response",
-                   404: "Error: The requested Location resource cannot be found."}
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Bundle resource of FHIR Location resources'
+            )
+        }
     )
     def list(self, request):
         """
@@ -641,6 +520,13 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
         response = self.get_paginated_response(bundle.data)
         return response
 
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR Location resource'
+            )
+        }
+    )
     def retrieve(self, request, pk=None):
         """
         Query a specific healthcare practice location as a FHIR Location resource
@@ -667,9 +553,12 @@ class FHIRCapabilityStatementView(APIView):
     """
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
 
-    @swagger_auto_schema(
-        responses={200: "Successful response",
-                   404: "Error: The requested CapabilityStatement resource cannot be found."}
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description='Successfully retrieved FHIR CapabilityStatement resource'
+            )
+        }
     )
     def get(self, request):
         """
