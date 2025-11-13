@@ -206,7 +206,7 @@ resource "aws_ecs_task_definition" "app" {
         },
         {
           name  = "DJANGO_ALLOWED_HOSTS"
-          value = aws_lb.fhir_api_alb.dns_name
+          value = jsonencode([aws_lb.fhir_api_alb.dns_name, var.networking.api_domain, var.networking.directory_domain])
         },
         {
           name  = "DJANGO_LOGLEVEL"
@@ -376,7 +376,8 @@ resource "aws_lb_listener" "forward_to_task_group_https" {
   count             = var.redirect_to_strategy_page && var.networking.enable_ssl_directory ? 0 : 1
   load_balancer_arn = aws_lb.fhir_api_alb.arn
   port              = 443
-  protocol          = "HTTP"
+  protocol          = "HTTPS"
+  certificate_arn   = data.aws_acm_certificate.directory_ssl_cert[0].arn
 
   default_action {
     type             = "forward"
