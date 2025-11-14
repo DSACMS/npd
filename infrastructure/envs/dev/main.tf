@@ -232,4 +232,3 @@ module "github-actions" {
     [module.networking.github_action_runner_security_group_id]
   )
 }
-
