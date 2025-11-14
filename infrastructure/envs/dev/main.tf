@@ -128,7 +128,6 @@ module "fhir-api" {
   fhir_api_migration_image  = var.migration_image
   fhir_api_image            = var.fhir_api_image
   ecs_cluster_id            = module.ecs.cluster_id
-  redirect_to_strategy_page = false
   desired_task_count        = 2
   require_authentication    = var.require_authentication
   db = {

@@ -317,7 +317,6 @@ resource "aws_lb_target_group" "fhir_api_tg" {
 # - ssl certs are requested and validated
 
 resource "aws_lb_listener" "forward_to_task_group" {
-  count             = var.redirect_to_strategy_page ? 0 : 1
   load_balancer_arn = aws_lb.fhir_api_alb.arn
   port              = 80
   protocol          = "HTTP"

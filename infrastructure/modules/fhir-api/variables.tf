@@ -4,7 +4,6 @@ variable "fhir_api_migration_image" {}
 variable "fhir_api_port" {
   default = 8000
 }
-variable "redirect_to_strategy_page" {}
 variable "private_load_balancer" { default = true }
 variable "ecs_cluster_id" {}
 variable "desired_task_count" {}
