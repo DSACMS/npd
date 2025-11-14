@@ -124,13 +124,12 @@ module "ecs" {
 module "fhir-api" {
   source = "../../modules/fhir-api"
 
-  account_name              = local.account_name
-  fhir_api_migration_image  = var.migration_image
-  fhir_api_image            = var.fhir_api_image
-  ecs_cluster_id            = module.ecs.cluster_id
-  redirect_to_strategy_page = false
-  desired_task_count        = 2
-  require_authentication    = var.require_authentication
+  account_name             = local.account_name
+  fhir_api_migration_image = var.migration_image
+  fhir_api_image           = var.fhir_api_image
+  ecs_cluster_id           = module.ecs.cluster_id
+  desired_task_count       = 2
+  require_authentication   = var.require_authentication
   db = {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address
