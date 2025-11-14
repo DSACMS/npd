@@ -39,15 +39,16 @@ module "domains" {
   tier = var.tier
 }
 
-module dns {
+module "dns" {
   source = "../../modules/dns"
 
-  api_domain = module.domains.api_domain
-  api_alb_dns_name = module.fhir-api.api_alb_dns_name
-  directory_domain = module.domains.directory_domain
-  directory_alb_dns_name = module.fhir-api.api_dot_alb_dns_name
-  etl_domain = module.domains.etl_domain
-  etl_alb_dns_name = module.etl.dagster_ui_alb_dns_name
+  enable_internal_domain_for_directory = true
+  api_domain                           = module.domains.api_domain
+  api_alb_dns_name                     = module.fhir-api.api_alb_dns_name
+  directory_domain                     = module.domains.directory_domain
+  directory_alb_dns_name               = module.fhir-api.api_dot_alb_dns_name
+  etl_domain                           = module.domains.etl_domain
+  etl_alb_dns_name                     = module.etl.dagster_ui_alb_dns_name
 }
 
 module "repositories" {

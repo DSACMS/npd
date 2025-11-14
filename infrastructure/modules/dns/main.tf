@@ -11,6 +11,7 @@ resource "aws_route53_record" "ns" {
 }
 
 resource "aws_route53_record" "directory" {
+  count   = var.enable_internal_domain_for_directory ? 1 : 0
   zone_id = aws_route53_zone.internal_dns.zone_id
   name    = var.directory_domain
   type    = "CNAME"
@@ -19,6 +20,7 @@ resource "aws_route53_record" "directory" {
 }
 
 resource "aws_route53_record" "api" {
+  count   = var.enable_internal_domain_for_directory ? 1 : 0
   zone_id = aws_route53_zone.internal_dns.zone_id
   name    = var.api_domain
   type    = "CNAME"
