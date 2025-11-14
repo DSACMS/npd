@@ -232,15 +232,3 @@ module "github-actions" {
     [module.networking.github_action_runner_security_group_id]
   )
 }
-
-module "dns" {
-  source = "../../modules/dns"
-
-  prod_dagster_ui_dns_name = module.etl.dagster_ui_alb_dns_name
-  # impl_directory_dns_name  = "TODO"
-  # impl_etl_ui_dns_name = "TODO"
-  # impl_api_dns_name        = "TODO"
-  dev_directory_dns_name = "internal-npd-east-dev-fhir-api-alb-1737284012.us-east-1.elb.amazonaws.com"
-  dev_api_dns_name = "internal-npd-east-dev-fhir-redirect-675635420.us-east-1.elb.amazonaws.com"
-  dev_etl_ui_dns_name = "internal-npd-east-dev-dagster-ui-alb-1365409857.us-east-1.elb.amazonaws.com"
-}
