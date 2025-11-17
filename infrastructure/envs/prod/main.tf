@@ -45,6 +45,7 @@ module "dns" {
   api_alb_dns_name                     = module.fhir-api.api_alb_dns_name
   directory_domain                     = module.domains.directory_domain
   directory_alb_dns_name               = module.fhir-api.api_dot_alb_dns_name
+  directory_alb_zone_id                = module.fhir-api.api_alb_zone_id
   etl_domain                           = module.domains.etl_domain
   etl_alb_dns_name                     = module.etl.dagster_ui_alb_dns_name
 }
