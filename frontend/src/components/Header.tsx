@@ -8,8 +8,9 @@ import { apiUrl } from "../state/api"
 import { useFrontendSettings } from "../state/FrontendSettingsProvider"
 import { CsrfInput } from "./forms/CsrfInput"
 import { getCookie } from "./getCookie"
-import styles from "./Header.module.css"
 import { slugId } from "./markdown/slug"
+
+import styles from "./Header.module.css"
 
 const AuthenticationControl = () => {
   const { t } = useTranslation()
@@ -63,6 +64,12 @@ export const Header = ({ hideLinks }: HeaderProps) => {
     settings: { user },
   } = useFrontendSettings()
   const classes = classnames("usa-header", "usa-header--basic", styles.header)
+  const badgeClasses = classnames(styles.betaBadge)
+  const textContainerClasses = classnames(
+    "ds-u-md-display--flex",
+    "ds-u-display--none",
+    styles.textContainer,
+  )
 
   return (
     <>
@@ -74,16 +81,18 @@ export const Header = ({ hideLinks }: HeaderProps) => {
             <div className={`usa-logo ${styles.title}`}>
               <a
                 href="/"
-                className="ds-u-display--flex ds-l-col--6 ds-u-align-items--center ds-u-padding-left--0"
+                className="ds-u-display--flex ds-u-flex-direction--row ds-u-padding-left--0"
                 title="Return to the homepage"
               >
                 <img src={cmsLogo} className={styles.logo} alt="CMS.gov" />
-                <em className={`${styles.logoText} usa-logo__text `}>
-                  {t("header.title")}
-                </em>
-                <Badge variation="info" className={styles.betaBadge}>
-                  {t("header.badge")}
-                </Badge>
+                <div className={textContainerClasses}>
+                  <em className={`${styles.logoText} usa-logo__text`}>
+                    {t("header.title")}
+                  </em>
+                  <Badge variation="info" className={badgeClasses}>
+                    {t("header.badge")}
+                  </Badge>
+                </div>
               </a>
             </div>
             {!hideLinks && (
