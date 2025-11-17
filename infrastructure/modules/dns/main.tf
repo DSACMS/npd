@@ -14,9 +14,13 @@ resource "aws_route53_record" "directory" {
   count   = var.enable_internal_domain_for_directory ? 1 : 0
   zone_id = aws_route53_zone.internal_dns.zone_id
   name    = var.directory_domain
-  type    = "CNAME"
-  ttl     = "300"
-  records = [var.directory_alb_dns_name]
+  type    = "A"
+
+  alias {
+    name                   = var.directory_alb_dns_name
+    zone_id                = var.directory_alb_zone_id
+    evaluate_target_health = true
+  }
 }
 
 resource "aws_route53_record" "api" {
