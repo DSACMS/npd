@@ -13,10 +13,10 @@ locals {
     prod = {
       etl       = "etl.directory.internal.cms.gov"
       api       = "api.directory.cms.gov" # public route
-      directory = "directory.cms.gov" # public route
+      directory = "directory.cms.gov"     # public route
     }
   }
-  api_domain = local.domains[var.tier]["api"]
+  api_domain       = local.domains[var.tier]["api"]
   directory_domain = local.domains[var.tier]["directory"]
-  etl_domain = local.domains[var.tier]["etl"]
+  etl_domain       = local.domains[var.tier]["etl"]
 }
