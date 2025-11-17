@@ -1,6 +1,9 @@
 from uuid import UUID
 
-from django.db.models import Q, OuterRef, Subquery
+from django.contrib.postgres.search import SearchVector
+from django.core.cache import cache
+from django.db.models import Q, F, OuterRef, Subquery, Value, CharField
+from django.db.models.functions import Concat
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
 from django.utils.html import escape
@@ -10,6 +13,7 @@ from rest_framework import viewsets
 from rest_framework.views import APIView
 from rest_framework.renderers import BrowsableAPIRenderer
 from rest_framework.response import Response
+from rest_framework.filters import SearchFilter, OrderingFilter
 
 from .pagination import CustomPaginator
 from .renderers import FHIRRenderer
@@ -49,14 +53,20 @@ def health(request):
     return HttpResponse("healthy")
 
 
+class ParamOrderingFilter(OrderingFilter):
+    ordering_param = '_sort'
+
+
 class FHIREndpointViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR Endpoint Resources
     """
     queryset = EndpointInstance.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
-    filter_backends = [DjangoFilterBackend]
+    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
     filterset_class = EndpointFilterSet
+    ordering_fields = ['name', 'address', 'ehr_vendor_name']
+    ordering = ['name']
     pagination_class = CustomPaginator  
 
     @extend_schema(
@@ -80,6 +90,8 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
             'endpointinstancetopayload_set__payload_type',
             'endpointinstancetopayload_set__mime_type',
             'endpointinstancetootherid_set'
+        ).annotate(
+            ehr_vendor_name=F('ehr_vendor__name')
         ).order_by('name')
 
         endpoints = self.filter_queryset(endpoints)
@@ -132,10 +144,15 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     """
     queryset = Provider.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
-    filter_backends = [DjangoFilterBackend]
+    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
     filterset_class = PractitionerFilterSet
     pagination_class = CustomPaginator
+    
 
+    ordering_fields = ['primary_last_name', 'primary_first_name', 'npi_value']
+    ordering = ['primary_last_name', 'primary_first_name']
+
+    # permission_classes = [permissions.IsAuthenticated]
     @extend_schema(
         responses={
             200: OpenApiResponse(
@@ -172,7 +189,8 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
             'individual__individualtoemail_set', 'providertootherid_set', 'providertotaxonomy_set'
         ).annotate(
             primary_last_name=Subquery(primary_last_name_subquery),
-            primary_first_name=Subquery(primary_first_name_subquery)
+            primary_first_name=Subquery(primary_first_name_subquery),
+            npi_value=F('npi__npi')
         ).order_by('primary_last_name', 'primary_first_name')
 
         providers = self.filter_queryset(providers)
@@ -233,10 +251,14 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     """
     queryset = ProviderToLocation.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
-    filter_backends = [DjangoFilterBackend]
+    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
     filterset_class = PractitionerRoleFilterSet
     pagination_class = CustomPaginator
 
+    ordering_fields = ['location_name','practitioner_first_name','practitioner_last_name']
+    ordering = ['location__name']
+
+    # permission_classes = [permissions.IsAuthenticated]
     @extend_schema(
         responses={
             200: OpenApiResponse(
@@ -250,10 +272,32 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
 
         Default sort order: aschending by location name
         """
+        all_params = request.query_params
+
+        primary_last_name_subquery = (
+            IndividualToName.objects
+                .filter(individual=OuterRef('provider_to_organization__individual__individual'))
+                .order_by('last_name')
+                .values('last_name')[:1]
+        )
+
+        primary_first_name_subquery = (
+            IndividualToName.objects
+                .filter(individual=OuterRef('provider_to_organization__individual__individual'))
+                .order_by('first_name')
+                .values('first_name')[:1]
+        )
+
+
         practitionerroles = (
             ProviderToLocation.objects
             .select_related('location')
             .prefetch_related('provider_to_organization')
+            .annotate(
+                location_name=F('location__name'),
+                practitioner_first_name=Subquery(primary_first_name_subquery),
+                practitioner_last_name=Subquery(primary_last_name_subquery),
+            )
             .order_by('location__name')
         ).all()
 
@@ -301,10 +345,14 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     """
     queryset = Organization.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
-    filter_backends = [DjangoFilterBackend]
+    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
     filterset_class = OrganizationFilterSet
     pagination_class = CustomPaginator
 
+    ordering_fields = ['primary_name']
+    ordering = ['primary_name']
+
+    # permission_classes = [permissions.IsAuthenticated]
     @extend_schema(
         responses={
             200: OpenApiResponse(
@@ -416,10 +464,15 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
     """
     queryset = Location.objects.none()
     renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
-    filter_backends = [DjangoFilterBackend]
+    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
     filterset_class = LocationFilterSet
     pagination_class = CustomPaginator
 
+    ordering_fields = ['organization_name','address_full','name']
+    ordering = ['name']
+
+
+    # permission_classes = [permissions.IsAuthenticated]
     @extend_schema(
         responses={
             200: OpenApiResponse(
@@ -433,9 +486,27 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
 
         Default sort order: ascending by location name
         """
-        locations = Location.objects.all().prefetch_related(
-            'address__address_us', 'address__address_us__state_code'
-        ).order_by('name')
+        locations = (
+            Location.objects.all()
+            .select_related(
+                "organization",
+                "address__address_us",
+                "address__address_us__state_code",
+            )
+            .annotate(
+                organization_name=F("organization__organizationtoname__name"),
+                address_full=Concat(
+                    F("address__address_us__delivery_line_1"),
+                    Value(", "),
+                    F("address__address_us__city_name"),
+                    Value(", "),
+                    F("address__address_us__state_code__abbreviation"),
+                    Value(" "),
+                    F("address__address_us__zipcode"),
+                    output_field=CharField(),
+                ),
+            ).order_by('name')
+        )
 
         locations = self.filter_queryset(locations)
         paginated_locations = self.paginate_queryset(locations)
