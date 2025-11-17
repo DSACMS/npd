@@ -73,6 +73,7 @@ module "api-db" {
   family                  = "postgres17"
   instance_class          = "db.t3.large"
   allocated_storage       = 100
+  max_allocated_storage   = 1000
   storage_type            = "gp3"
   publicly_accessible     = false
   username                = "npd"
@@ -95,6 +96,7 @@ module "etl-db" {
   family                  = "postgres17"
   instance_class          = "db.t3.large"
   allocated_storage       = 500
+  max_allocated_storage   = 1000
   publicly_accessible     = false
   username                = "npd_etl"
   db_name                 = "npd_etl"
