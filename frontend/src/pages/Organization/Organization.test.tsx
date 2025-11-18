@@ -1,32 +1,47 @@
-import { screen, waitFor } from "@testing-library/react"
+import { screen } from "@testing-library/react"
+import { MemoryRouter, Route, Routes } from "react-router"
 import { beforeEach, describe, expect, it } from "vitest"
+import { DEFAULT_ORGANIZATION } from "../../../tests/fixtures"
 import {
-  DEFAULT_FRONTEND_SETTINGS,
   mockGlobalFetch,
+  settingsResponseWithFeature,
   type MockResponse,
 } from "../../../tests/mockGlobalFetch"
 import { render } from "../../../tests/render"
 import { Organization } from "./Organization"
 
-const mockOrgResponse: MockResponse = [
-  "^/api/frontend_settings$",
-  {
-    ...DEFAULT_FRONTEND_SETTINGS,
-    feature_flags: {
-      ORGANIZATION_LOOKUP_DETAILS: true,
-    },
-  },
+const orgApiResponse: MockResponse = [
+  "^/fhir/Organization/.*",
+  DEFAULT_ORGANIZATION,
 ]
 
-describe("Organization", () => {
-  beforeEach(() => {
-    mockGlobalFetch([mockOrgResponse])
-  })
+const RoutedOrganization = ({ path }: { path: string }) => {
+  return (
+    <MemoryRouter initialEntries={[path]}>
+      <Routes>
+        <Route
+          path="/organizations/:organizationId"
+          element={<Organization />}
+        />
+      </Routes>
+    </MemoryRouter>
+  )
+}
 
-  it("does not render content when feature flag is unset", async () => {
-    render(<Organization />)
-    await waitFor(() => {
-      expect(screen.queryByText("Provider group")).toBeInTheDocument()
+describe("Organization", () => {
+  describe("without ORGANIZATION_LOOKUP_DETAILS feature flag", () => {
+    beforeEach(() => {
+      mockGlobalFetch([
+        settingsResponseWithFeature({ ORGANIZATION_LOOKUP_DETAILS: false }),
+        orgApiResponse,
+      ])
+    })
+
+    it("does not render content when feature flag is unset", async () => {
+      render(<RoutedOrganization path="/organizations/12345" />)
+
+      // ensure loading has finished
+      await screen.findByText("Provider group")
       expect(screen.queryByText("Details go here.")).toBeNull()
     })
   })
@@ -35,25 +50,16 @@ describe("Organization", () => {
     beforeEach(() => {
       // update /api/frontend_settings mocked response
       mockGlobalFetch([
-        mockOrgResponse,
-        [
-          "^/api/frontend_settings$",
-          {
-            ...DEFAULT_FRONTEND_SETTINGS,
-            feature_flags: {
-              ORGANIZATION_LOOKUP_DETAILS: true,
-            },
-          },
-        ],
+        settingsResponseWithFeature({ ORGANIZATION_LOOKUP_DETAILS: true }),
+        orgApiResponse,
       ])
     })
 
     it("shows detailed content", async () => {
-      render(<Organization />)
-      await waitFor(() => {
-        expect(screen.queryByText("Provider group")).toBeInTheDocument()
-        expect(screen.queryByText("Details go here.")).toBeInTheDocument()
-      })
+      render(<RoutedOrganization path="/organizations/12345" />)
+
+      await screen.findByText("Provider group")
+      expect(screen.queryByText("Details go here.")).toBeInTheDocument()
     })
   })
 })
