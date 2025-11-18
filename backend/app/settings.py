@@ -259,7 +259,7 @@ FLAGS = {
     'ORGANIZATION_LOOKUP': [],
     'ORGANIZATION_LOOKUP_DETAILS': [],
 
-    # sttic conditions can be defined in this file or through the Admin interface
+    # static conditions can be defined in this file or through the Admin interface
     # see the list of built-in conditions here: https://cfpb.github.io/django-flags/conditions/
     # 'ANONYMOUS_USER': [
     #     {"condition": "anonymous", "value": True}
