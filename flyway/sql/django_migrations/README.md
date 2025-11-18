@@ -20,7 +20,7 @@ docker compose run --rm django-web python manage.py sqlmigrate contenttypes 0001
 
 <details>
 
-<summary>Here's a Python script that will prcess `sqlmigrate` output to clean up the SQL.</summary>
+<summary>Here's a Python script that will process `sqlmigrate` output to clean up the SQL.</summary>
 
 ```python
 from datetime import datetime
