@@ -1,7 +1,7 @@
 from django.urls import reverse
 from rest_framework import status
 from fhir.resources.R4B.capabilitystatement import CapabilityStatement
-from .test_base import APITestCase
+from .api_test_case import APITestCase
 
 
 class CapabilityStatementViewSetTestCase(APITestCase):

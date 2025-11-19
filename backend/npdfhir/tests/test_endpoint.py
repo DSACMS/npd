@@ -1,8 +1,8 @@
 from django.urls import reverse
 from rest_framework import status
 from fhir.resources.R4B.bundle import Bundle
-from .test_base import APITestCase
-from .test_helpers import (
+from .api_test_case import APITestCase
+from .helpers import (
     assert_fhir_response,
     assert_has_results,
     assert_pagination_limit,

@@ -1,6 +1,6 @@
 from django.urls import reverse
 from rest_framework import status
-from .test_base import APITestCase
+from .api_test_case import APITestCase
 
 
 class BasicViewsTestCase(APITestCase):
