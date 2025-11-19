@@ -138,6 +138,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for more details on the release process.
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/rmillergv">
+                    <img src="https://avatars.githubusercontent.com/u/244575051?v=4" width="100;" alt="rmillergv"/>
+                    <br />
+                    <sub><b>rmillergv</b></sub>
+                </a>
+            </td>
+		</tr>
+		<tr>
+            <td align="center">
                 <a href="https://github.com/sman-dsac">
                     <img src="https://avatars.githubusercontent.com/u/242507394?v=4" width="100;" alt="sman-dsac"/>
                     <br />
