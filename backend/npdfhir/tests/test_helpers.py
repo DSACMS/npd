@@ -27,12 +27,6 @@ def assert_fhir_response(test_case, response, expected_status=200):
 def assert_has_results(test_case, response):
     test_case.assertIn("results", response.data)
 
-def assert_fhir_bundle_structure(test_case, response):
-    assert_fhir_response(test_case, response)
-    bundle = response.data["results"]
-    test_case.assertIn("entry", bundle)
-    return bundle
-
 def assert_pagination_limit(test_case, response, max_size=100):
     bundle = response.data["results"]
     test_case.assertLessEqual(len(bundle["entry"]), max_size)
