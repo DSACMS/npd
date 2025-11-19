@@ -84,6 +84,6 @@ export default defineConfig({
     cwd: "../backend",
     command: "make test-server",
     url: "http://localhost:8008",
-    reuseExistingServer: !process.env.CI && !!process.env.REUSE_EXISTING_SERVER,
+    reuseExistingServer: !process.env.CI,
   },
 })
