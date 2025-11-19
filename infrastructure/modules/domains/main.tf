@@ -5,10 +5,10 @@ locals {
       api       = "api.dev.directory.internal.cms.gov"
       directory = "dev.directory.internal.cms.gov"
     }
-    impl = {
-      etl       = "etl.impl.directory.internal.cms.gov"
-      api       = "api.impl.directory.internal.cms.gov"
-      directory = "impl.directory.internal.cms.gov"
+    test = {
+      etl       = "etl.test.directory.internal.cms.gov"
+      api       = "api.test.directory.internal.cms.gov"
+      directory = "test.directory.internal.cms.gov"
     }
     prod = {
       etl       = "etl.directory.internal.cms.gov"

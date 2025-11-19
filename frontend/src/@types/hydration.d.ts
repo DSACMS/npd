@@ -1,6 +1,7 @@
 interface FrontendSettings {
   require_authentication?: boolean
   user?: AuthenticatedUser
+  feature_flags?: Record<string, boolean>
 }
 
 interface AuthenticatedUser {

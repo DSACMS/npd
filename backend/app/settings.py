@@ -45,7 +45,6 @@ INTERNAL_APIS = config("DJANGO_ALLOWED_HOSTS").split(',')
 # Application definition
 
 INSTALLED_APPS = [
-    'npdfhir.apps.NPDFHIRConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -58,6 +57,9 @@ INSTALLED_APPS = [
     'drf_spectacular',
     'xmlrunner',
     'django_structlog',
+    'flags',
+    'npdfhir.apps.NPDFHIRConfig',
+    'provider_directory.apps.ProviderDirectoryConfig'
 ]
 
 if not TESTING:
@@ -83,8 +85,8 @@ if not TESTING:
     MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
     # This must come at the end.
 
-# We want the fhir urls to be entirely open
-CORS_URLS_REGEX = r'^/fhir/.*$'
+# We want the fhir and frontend API urls to be entirely open
+CORS_URLS_REGEX = r'^/(fhir|api)/.*$'
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_METHODS = ['GET']
 
@@ -242,6 +244,32 @@ CACHES = {
         "LOCATION": "/var/tmp/django_cache",
     }
 }
+
+SWAGGER_SETTINGS = {
+    'USE_SESSION_AUTH': False
+}
+
+# feature flags
+FLAGS = {
+    'SEARCH_APP': [], # can see the search app at all
+
+    'PROVIDER_LOOKUP': [], # can reach the provider lookup page
+    'PROVIDER_LOOKUP_DETAILS': [], # can reach all details in the provider lookup page
+
+    'ORGANIZATION_LOOKUP': [],
+    'ORGANIZATION_LOOKUP_DETAILS': [],
+
+    # static conditions can be defined in this file or through the Admin interface
+    # see the list of built-in conditions here: https://cfpb.github.io/django-flags/conditions/
+    # 'ANONYMOUS_USER': [
+    #     {"condition": "anonymous", "value": True}
+    # ],
+    # 'FLAG_WITH_ANY_CONDITIONS': [
+    #     {'condition': 'condition name', 'value': 'expected value to be enabled'},
+    #     {'condition': 'user', 'value': 'npd@cms.hhs.gov'},
+    # ],
+}
+
 
 if TESTING:
     LOG_LEVEL = logging.ERROR
