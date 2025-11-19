@@ -1,3 +1,6 @@
+> [!TIP]
+> All shell commands shown assume you are cd'd into the `playwright/` directory
+
 ### Local setup
 
 Setup playwright project dependencies:
@@ -15,14 +18,12 @@ If you are using VS Code, it is also recommended that you [install the Playwrigh
 Before running any tests, you will have to start the backend test-server:
 
 ```sh
-cd backend
-make test-server
+make -C ../backend test-server
 ```
 
 Now, in another shell, you can run the end-to-end test suite:
 
 ```sh
-cd playwright
 npx playwright test
 ```
 
@@ -32,11 +33,10 @@ By default, Playwright assumes the test server is already running. You can disab
 
 ```sh
 cd playwright
-CI=True npx playwright test
+CI=true npx playwright test
 ```
 
 This command will cause Playwright to launch the test-server (including rebuilding the database and compiling frontend assets) in docker and then shut it down at the end of the test suite.
-
 
 ## Writing new tests
 
