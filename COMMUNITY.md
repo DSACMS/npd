@@ -14,7 +14,7 @@ NPD is supported by a dedicated team of individuals fulfilling various roles to 
 | Engineer | Blaine Price | DSAC |
 | Engineer | Sachin Panayil | USDC @ DSAC |
 | Engineer | Isaac Milarsky | USDC @ DSAC |
-| Engineer | Ross Miller | USDC @ DSAC |
+| Engineer | Ross Miller | DSAC |
 
 See [CODEOWNERS.md](.github/CODEOWNERS.md) for a list of those responsible for the code and documentation in this repository.
 
