@@ -17,6 +17,12 @@ services:
       service: db-migrations
     environment:
       FLYWAY_URL: jdbc:postgresql://${NPD_DB_HOST:-db}:${NPD_DB_PORT:-5432}/npd_test
+      FLYWAY_LOCATIONS: |
+        filesystem:/flyway/sql/migrations
+        filesystem:/flyway/sql/django_migrations
+        filesystem:/flyway/sql/reference_data
+        filesystem:/flyway/sql/django_reference_data
+
 
   django-web:
     extends:
