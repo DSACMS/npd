@@ -36,7 +36,7 @@ class TestFeatureFlags(TestCase):
 
     def test_permits_flag_with_group_membership(self):
         # arrange
-        FlagState.objects.create(name="SEARCH_APP", condition="in_group", value="Developers")
+        FlagState.objects.get_or_create(name="SEARCH_APP", condition="in_group", value="Developers")
         group, _created = Group.objects.get_or_create(name="Developers")
         user = User.objects.get(username="testuser")
         user.groups.add(group)
