@@ -21,7 +21,7 @@
   flex-wrap: nowrap;
 }
 
-@media (max-width: 63.99em) {
+@media (min-width: 34em) and (max-width: 63.99em) {
   .title {
     margin-left: var(--grid-gutter-width);
   }
