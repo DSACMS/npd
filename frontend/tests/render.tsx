@@ -1,4 +1,3 @@
-// test-utils.js
 import {
   render as originalRender,
   type RenderOptions,
