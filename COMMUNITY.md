@@ -80,17 +80,17 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for more details on the release process.
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/sachin-panayil">
-                    <img src="https://avatars.githubusercontent.com/u/79382140?v=4" width="100;" alt="sachin-panayil"/>
-                    <br />
-                    <sub><b>Sachin Panayil</b></sub>
-                </a>
-            </td>
-            <td align="center">
                 <a href="https://github.com/IsaacMilarky">
                     <img src="https://avatars.githubusercontent.com/u/24639268?v=4" width="100;" alt="IsaacMilarky"/>
                     <br />
                     <sub><b>Isaac Milarsky</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/sachin-panayil">
+                    <img src="https://avatars.githubusercontent.com/u/79382140?v=4" width="100;" alt="sachin-panayil"/>
+                    <br />
+                    <sub><b>Sachin Panayil</b></sub>
                 </a>
             </td>
             <td align="center">
