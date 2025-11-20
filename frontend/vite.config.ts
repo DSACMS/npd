@@ -28,27 +28,31 @@ export default defineConfig(({ mode, command }) => {
     plugins.push(stripTemplateStrings({ title: "NPD Dev Service" }))
   }
 
+  // server.proxy settings
+  const target = process.env.VITE_API_BASE_URL
+    ? process.env.VITE_API_BASE_URL
+    : process.env.IN_DOCKER
+      ? "http://django-web:8000"
+      : "http://localhost:8000"
+
   return {
     plugins,
     base: mode === "development" ? "" : "/static/",
     build: {
       outDir,
       emptyOutDir: false,
+      manifest: true,
     },
     server: {
       port: 3000,
       host: true,
       proxy: {
         "/frontend_settings": {
-          target: process.env.IN_DOCKER
-            ? "http://django-web:8000"
-            : "http://localhost:8000",
+          target,
           changeOrigin: true,
         },
         "^/fhir/.*": {
-          target: process.env.IN_DOCKER
-            ? "http://django-web:8000"
-            : "http://localhost:8000",
+          target,
           changeOrigin: true,
         },
       },

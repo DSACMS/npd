@@ -39,7 +39,7 @@ const AuthenticationControl = () => {
   }
   return (
     <li className="usa-nav__primary-item">
-      <form action={apiUrl(path)} method="POST">
+      <form action={apiUrl(path)} id="authentication-form" method="POST">
         <CsrfInput />
         <input
           type="hidden"
