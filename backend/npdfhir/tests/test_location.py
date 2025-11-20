@@ -71,7 +71,7 @@ class LocationViewSetTestCase(APITestCase):
 
     def test_list_in_order_by_address(self):
         url = reverse("fhir-location-list")
-        response = self.client.get(url,  {"_sort": 'address_full'})
+        response = self.client.get(url,  {"_sort": 'address_full,name'})
         assert_fhir_response(self, response)
 
         # Extract names
