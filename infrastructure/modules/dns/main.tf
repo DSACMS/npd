@@ -3,10 +3,14 @@ resource "aws_route53_zone" "internal_dns" {
 }
 
 resource "aws_route53_record" "ns" {
+  # creating a zone automatically creates an NS record
+  # setting allow_overwrite to true updates the automatically
+  # created record as a separate entity from the zone
+  allow_overwrite = true
   zone_id = aws_route53_zone.internal_dns.zone_id
   name    = var.directory_domain
   type    = "NS"
-  ttl     = "30"
+  ttl     = 172800
   records = aws_route53_zone.internal_dns.name_servers
 }
 

@@ -1,19 +1,19 @@
 locals {
   domains = {
     dev = {
-      etl       = "etl.dev.directory.internal.cms.gov"
-      api       = "api.dev.directory.internal.cms.gov"
-      directory = "dev.directory.internal.cms.gov"
+      etl       = "etl.dev.cnpd.internal.cms.gov"
+      api       = "api.dev.cnpd.internal.cms.gov"
+      directory = "dev.cnpd.internal.cms.gov"
     }
     test = {
-      etl       = "etl.test.directory.internal.cms.gov"
-      api       = "api.test.directory.internal.cms.gov"
-      directory = "test.directory.internal.cms.gov"
+      etl       = "etl.test.cnpd.internal.cms.gov"
+      api       = "api.test.cnpd.internal.cms.gov"
+      directory = "test.cnpd.internal.cms.gov"
     }
     prod = {
-      etl       = "etl.directory.internal.cms.gov"
-      api       = "api.directory.cms.gov" # public route
-      directory = "directory.cms.gov"     # public route
+      etl       = "etl.cnpd.internal.cms.gov"
+      api       = "api.cnpd.cms.gov" # public route
+      directory = "cnpd.cms.gov"     # public route
     }
   }
   api_domain       = local.domains[var.tier]["api"]
