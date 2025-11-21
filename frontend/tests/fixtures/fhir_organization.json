@@ -1,0 +1,54 @@
+{
+  "resourceType": "Organization",
+  "id": "12345",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NPI",
+            "display": "National Provider Identifier"
+          }
+        ]
+      },
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1234567890",
+      "period": {
+        "start": "2020-01-01"
+      }
+    }
+  ],
+  "name": "Acme Healthcare System",
+  "contact": [
+    {
+      "name": {
+        "use": "official",
+        "text": "Dr. Jane Smith, MD",
+        "family": "Smith",
+        "given": ["Jane", "Marie"],
+        "prefix": ["Dr."],
+        "suffix": ["MD"],
+        "period": {}
+      },
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+1-555-123-4567",
+          "use": "work"
+        },
+        {
+          "system": "email",
+          "value": "jane.smith@acmehealthcare.com",
+          "use": "work"
+        }
+      ]
+    }
+  ]
+}
