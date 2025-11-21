@@ -9,6 +9,7 @@ from django.urls import reverse
 TEST_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
 STATIC_INDEX = TEST_DIR / ".." / "static" / "index.html"
 
+
 class WithoutStaticIndex(TestCase):
     """
     Visiting the index route when no static/index.html asset exists.

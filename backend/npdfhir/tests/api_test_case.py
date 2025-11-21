@@ -10,7 +10,7 @@ class APITestCase(DrfAPITestCase):
     @classmethod
     def setUpTestData(cls):
         cls.user = User.objects.create(username="testuser")
-        cls.user.set_password('nothing')
+        cls.user.set_password("nothing")
         return super().setUpTestData()
 
     def setUp(self):

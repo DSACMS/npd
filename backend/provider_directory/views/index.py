@@ -21,7 +21,7 @@ def index(request, path: str | None = None):
     npd/frontend/ project.
     """
 
-    context = IndexContext.model_validate({ "title": "National Provider Directory" })
+    context = IndexContext.model_validate({"title": "National Provider Directory"})
 
     if (settings.DEBUG or settings.TESTING) and not find("index.html"):
         return redirect("http://localhost:3000/")

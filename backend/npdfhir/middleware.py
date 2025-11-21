@@ -11,14 +11,10 @@ class HealthCheckMiddleware:
         self.get_response = get_response
 
     def __call__(self, request):
-        if request.path == '/fhir/healthCheck':
+        if request.path == "/fhir/healthCheck":
             utc_now = datetime.now(timezone.utc).isoformat()
 
-            health_status = {
-                'status': 'healthy',
-                'database': 'connected',
-                'timestamp': utc_now
-            }
+            health_status = {"status": "healthy", "database": "connected", "timestamp": utc_now}
 
             try:
                 # Test database connection
@@ -28,12 +24,14 @@ class HealthCheckMiddleware:
 
                 return JsonResponse(health_status, status=200)
 
-            except Exception as e:
+            except Exception:
                 logger.error("Database health check failed")
-                health_status.update({
-                    'status': 'unhealthy',
-                    'database': 'disconnected',
-                })
+                health_status.update(
+                    {
+                        "status": "unhealthy",
+                        "database": "disconnected",
+                    }
+                )
                 return JsonResponse(health_status, status=502)
 
         return self.get_response(request)

@@ -17,6 +17,7 @@ help:
 	@echo "  create-db    Start the database server and create a development database"
 	@echo "  migrate      Apply migrations to the development database"
 	@echo "  setup        Set up development environment (build + create-db + migrate)"
+	@echo "  install-tools  Install Python development tools"
 	@echo ""
 	@echo "  up           Start the backend web application (available at http://localhost:8000)"
 	@echo "  down         Stop all running backend services"
@@ -24,6 +25,9 @@ help:
 	@echo "  test-setup   Set up test database (drop/create test DB + run test migrations)"
 	@echo "  test         Run the full test suite (includes test-setup)"
 	@echo "  clean        Remove cache files and artifacts directory"
+	@echo ""
+	@echo "  lint         Check Python code against the ruff linter"
+	@echo "  format       Format Python code with ruff"
 	@echo ""
 	@echo "  createsuperuser  Interactively set up a Django superuser account."
 	@echo "                   Pass env vars to run automatically:"
@@ -37,10 +41,27 @@ help:
 	@echo "  help         Show this help message"
 	@echo ""
 	@echo "Common workflows:"
-	@echo "  First time setup:   make setup && make up"
+	@echo "  First time setup:   make setup && make install-tools && make up"
 	@echo "  Daily development:  git pull && make migrate && make up"
+	@echo "  Before committing:  make test && make lint
 	@echo "  Run tests:          make test"
 	@echo "  Clean shutdown:     make down && make clean"
+
+.PHONY: install-tools
+install-tools:
+	@echo "Setting up local development tools using $(shell which pip)"
+	@pip install ruff; \
+		pip install pre-commit; \
+		cd ..; \
+		pre-commit install
+
+.PHONY: lint
+lint:
+	@ruff check .
+
+.PHONY: format
+format:
+	@ruff format
 
 build:
 	@docker compose build
@@ -72,8 +93,8 @@ reset-db:
 	@$(MAKE) create-db
 	@$(MAKE) migrate
 
+# prepare the local working space for NPD development
 setup: build create-db migrate
-# pass
 
 up:
 	@echo "Running backend..."
