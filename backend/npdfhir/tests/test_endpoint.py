@@ -6,7 +6,7 @@ from .helpers import (
     assert_fhir_response,
     assert_has_results,
     assert_pagination_limit,
-    extract_resource_names
+    extract_resource_names,
 )
 
 
@@ -35,20 +35,23 @@ class EndpointViewSetTestCase(APITestCase):
         names = extract_resource_names(response)
 
         sorted_names = [
-            '88 MEDICINE LLC',
-            'AAIA of Tampa Bay, LLC',
-            'ABC Healthcare Service Base URL',
-            'A Better Way LLC',
-            'Abington Surgical Center',
-            'Access Mental Health Agency',
-            'ADHD & Autism Psychological Services PLLC',
-            'Adolfo C FernandezObregon Md',
-            'Advanced Anesthesia, LLC',
-            'Advanced Cardiovascular Center'
+            "88 MEDICINE LLC",
+            "AAIA of Tampa Bay, LLC",
+            "ABC Healthcare Service Base URL",
+            "A Better Way LLC",
+            "Abington Surgical Center",
+            "Access Mental Health Agency",
+            "ADHD & Autism Psychological Services PLLC",
+            "Adolfo C FernandezObregon Md",
+            "Advanced Anesthesia, LLC",
+            "Advanced Cardiovascular Center",
         ]
 
         self.assertEqual(
-            names, sorted_names, f"Expected endpoints list sorted by name but got {names}\n Sorted: {sorted_names}")
+            names,
+            sorted_names,
+            f"Expected endpoints list sorted by name but got {names}\n Sorted: {sorted_names}",
+        )
 
     # Bundle Validation tests
     def test_list_returns_fhir_bundle(self):
@@ -56,7 +59,7 @@ class EndpointViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
         data = response.json()
-        bundle = Bundle.model_validate(data['results'])
+        bundle = Bundle.model_validate(data["results"])
 
         self.assertEqual(bundle.__resource_type__, "Bundle")
 
@@ -93,8 +96,7 @@ class EndpointViewSetTestCase(APITestCase):
 
     # Filter tests
     def test_filter_by_name(self):
-        response = self.client.get(
-            self.list_url, {"name": "Kansas City Psychiatric Group"})
+        response = self.client.get(self.list_url, {"name": "Kansas City Psychiatric Group"})
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         bundle = response.data["results"]
@@ -108,8 +110,7 @@ class EndpointViewSetTestCase(APITestCase):
 
     def test_filter_by_connection_type(self):
         connection_type = "hl7-fhir-rest"
-        response = self.client.get(
-            self.list_url, {"endpoint_connection_type": connection_type})
+        response = self.client.get(self.list_url, {"endpoint_connection_type": connection_type})
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         bundle = response.data["results"]
@@ -125,8 +126,7 @@ class EndpointViewSetTestCase(APITestCase):
 
     def test_filter_by_payload_type(self):
         payload_type = "ccda-structuredBody:1.1"
-        response = self.client.get(
-            self.list_url, {"payload_type": payload_type})
+        response = self.client.get(self.list_url, {"payload_type": payload_type})
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         bundle = response.data["results"]
@@ -141,8 +141,7 @@ class EndpointViewSetTestCase(APITestCase):
         self.assertEqual(payload_type, code)
 
     def test_filter_returns_empty_for_nonexistent_name(self):
-        response = self.client.get(
-            self.list_url, {"name": "NonexistentEndpointName12345"})
+        response = self.client.get(self.list_url, {"name": "NonexistentEndpointName12345"})
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
@@ -169,16 +168,14 @@ class EndpointViewSetTestCase(APITestCase):
         self.assertIn("address", endpoint)
 
     def test_retrieve_nonexistent_endpoint(self):
-        detail_url = reverse("fhir-endpoint-detail",
-                             args=["12300000-0000-0000-0000-000000000123"])
+        detail_url = reverse("fhir-endpoint-detail", args=["12300000-0000-0000-0000-000000000123"])
         response = self.client.get(detail_url)
 
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
     def test_retrieve_single_endpoint(self):
         id = "82cc98bb-afd0-4835-ada9-1437dfca8255"
-        url = reverse("fhir-endpoint-detail",
-                      args=[id])
+        url = reverse("fhir-endpoint-detail", args=[id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data['id'], id)
+        self.assertEqual(response.data["id"], id)

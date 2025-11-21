@@ -6,7 +6,7 @@ from .helpers import (
     assert_fhir_response,
     assert_has_results,
     assert_pagination_limit,
-    extract_resource_names
+    extract_resource_names,
 )
 
 
@@ -14,7 +14,8 @@ class OrganizationViewSetTestCase(APITestCase):
     def setUp(self):
         super().setUp()
         self.org_without_authorized_official = Organization.objects.create(
-            id='26708690-19d6-499e-b481-cebe05b98f08', authorized_official_id=None)
+            id="26708690-19d6-499e-b481-cebe05b98f08", authorized_official_id=None
+        )
 
     # Basic tests
     def test_list_default(self):
@@ -35,23 +36,26 @@ class OrganizationViewSetTestCase(APITestCase):
         names = extract_resource_names(response)
 
         sorted_names = [
-            '1ST CHOICE HOME HEALTH CARE INC',
-            '1ST CHOICE MEDICAL DISTRIBUTORS, LLC',
-            '986 INFUSION PHARMACY #1 INC.',
-            'A & A MEDICAL SUPPLY COMPANY',
-            'ABACUS BUSINESS CORPORATION GROUP INC.',
-            'ABBY D CENTER, INC.',
-            'ABC DURABLE MEDICAL EQUIPMENT INC',
-            'ABC HOME MEDICAL SUPPLY, INC.',
-            'A BEAUTIFUL SMILE DENTISTRY, L.L.C.',
-            'A & B HEALTH CARE, INC.'
+            "1ST CHOICE HOME HEALTH CARE INC",
+            "1ST CHOICE MEDICAL DISTRIBUTORS, LLC",
+            "986 INFUSION PHARMACY #1 INC.",
+            "A & A MEDICAL SUPPLY COMPANY",
+            "ABACUS BUSINESS CORPORATION GROUP INC.",
+            "ABBY D CENTER, INC.",
+            "ABC DURABLE MEDICAL EQUIPMENT INC",
+            "ABC HOME MEDICAL SUPPLY, INC.",
+            "A BEAUTIFUL SMILE DENTISTRY, L.L.C.",
+            "A & B HEALTH CARE, INC.",
         ]
         self.assertEqual(
-            names, sorted_names, f"Expected fhir orgs sorted by org name but got {names}\n Sorted: {sorted_names}")
+            names,
+            sorted_names,
+            f"Expected fhir orgs sorted by org name but got {names}\n Sorted: {sorted_names}",
+        )
 
     def test_list_in_descending_order(self):
         url = reverse("fhir-organization-list")
-        response = self.client.get(url,  {"_sort": '-primary_name'})
+        response = self.client.get(url, {"_sort": "-primary_name"})
         assert_fhir_response(self, response)
 
         # Extract names
@@ -60,19 +64,22 @@ class OrganizationViewSetTestCase(APITestCase):
 
         sorted_names = [
             {},
-            'ZUNI HOME HEALTH CARE AGENCY',
-            'ZEELAND COMMUNITY HOSPITAL',
-            'YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD',
-            'YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD',
-            'YOUNG C. BAE, M.D.',
-            'YORKTOWN EMERGENCY MEDICAL SERVICE',
-            'YODORINCMISSIONPLAZAPHARMACY',
-            'YOAKUM COMMUNITY HOSPITAL',
-            'YARMOUTH AUDIOLOGY'
+            "ZUNI HOME HEALTH CARE AGENCY",
+            "ZEELAND COMMUNITY HOSPITAL",
+            "YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD",
+            "YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD",
+            "YOUNG C. BAE, M.D.",
+            "YORKTOWN EMERGENCY MEDICAL SERVICE",
+            "YODORINCMISSIONPLAZAPHARMACY",
+            "YOAKUM COMMUNITY HOSPITAL",
+            "YARMOUTH AUDIOLOGY",
         ]
 
         self.assertEqual(
-            names, sorted_names, f"Expected fhir org list sorted descending by name but got {names}\n Sorted: {sorted_names}")
+            names,
+            sorted_names,
+            f"Expected fhir org list sorted descending by name but got {names}\n Sorted: {sorted_names}",
+        )
 
     # Pagination tests
     def test_list_with_custom_page_size(self):
@@ -102,7 +109,7 @@ class OrganizationViewSetTestCase(APITestCase):
         assert_has_results(self, response)
         self.assertGreaterEqual(response.data["results"]["total"], 1)
 
-    # Identifiers Filter tests 
+    # Identifiers Filter tests
     def test_list_filter_by_npi_general(self):
         url = reverse("fhir-organization-list")
         response = self.client.get(url, {"identifier": "1427051473"})
@@ -133,8 +140,7 @@ class OrganizationViewSetTestCase(APITestCase):
 
     def test_list_filter_by_ein_general(self):
         url = reverse("fhir-organization-list")
-        response = self.client.get(
-            url, {"identifier": "22222222-2222-2222-2222-222222222222"})
+        response = self.client.get(url, {"identifier": "22222222-2222-2222-2222-222222222222"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
         self.assertGreaterEqual(response.data["results"]["total"], 1)
@@ -178,20 +184,17 @@ class OrganizationViewSetTestCase(APITestCase):
 
     # Retrieve tests
     def test_retrieve_non_clinical_organization(self):
-        url = reverse("fhir-organization-detail",
-                      args=["33333333-3333-3333-3333-333333333333"])
+        url = reverse("fhir-organization-detail", args=["33333333-3333-3333-3333-333333333333"])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
         org = response.data
         self.assertEqual(org["resourceType"], "Organization")
         self.assertEqual(org["name"], "Joe Health Incorporated")
-        self.assertEqual(org["identifier"][0]["type"]
-                         ["coding"][0]["code"], "TAX")
+        self.assertEqual(org["identifier"][0]["type"]["coding"][0]["code"], "TAX")
 
     def test_retrieve_nonexistent_uuid(self):
-        url = reverse("fhir-organization-detail",
-                      args=["12300000-0000-0000-0000-000000000123"])
+        url = reverse("fhir-organization-detail", args=["12300000-0000-0000-0000-000000000123"])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
@@ -202,17 +205,15 @@ class OrganizationViewSetTestCase(APITestCase):
 
     def test_retrieve_single_organization(self):
         id = "501a620e-8521-4610-9717-b35a0597292e"
-        url = reverse("fhir-organization-detail",
-                      args=[id])
+        url = reverse("fhir-organization-detail", args=[id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data['id'], id)
+        self.assertEqual(response.data["id"], id)
 
     # Edge cases tests
     def test_organization_without_authorized_official(self):
         id = self.org_without_authorized_official.pk
-        url = reverse("fhir-organization-detail",
-                      args=[id])
+        url = reverse("fhir-organization-detail", args=[id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data['id'], id)
+        self.assertEqual(response.data["id"], id)

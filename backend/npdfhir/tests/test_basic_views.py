@@ -9,4 +9,4 @@ class BasicViewsTestCase(APITestCase):
         response = self.client.get(url)
         res_obj = response.json()
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(res_obj['status'], "healthy")
+        self.assertEqual(res_obj["status"], "healthy")
