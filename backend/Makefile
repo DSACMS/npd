@@ -43,7 +43,7 @@ help:
 	@echo "Common workflows:"
 	@echo "  First time setup:   make setup && make install-tools && make up"
 	@echo "  Daily development:  git pull && make migrate && make up"
-	@echo "  Before committing:  make test && make lint
+	@echo "  Before committing:  make test && make lint"
 	@echo "  Run tests:          make test"
 	@echo "  Clean shutdown:     make down && make clean"
 
