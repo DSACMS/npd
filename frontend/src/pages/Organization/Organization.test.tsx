@@ -42,7 +42,8 @@ describe("Organization", () => {
 
       // ensure loading has finished
       await screen.findByText("Provider group")
-      expect(screen.queryByText("Details go here.")).toBeNull()
+
+      expect(screen.queryByText("About", { selector: "section h2" })).toBeNull()
     })
   })
 
@@ -59,7 +60,18 @@ describe("Organization", () => {
       render(<RoutedOrganization path="/organizations/12345" />)
 
       await screen.findByText("Provider group")
-      expect(screen.queryByText("Details go here.")).toBeInTheDocument()
+      expect(
+        screen.queryByText("About", { selector: "section h2" }),
+      ).toBeInTheDocument()
+      expect(
+        screen.queryByText("Contact information", { selector: "section h2" }),
+      ).toBeInTheDocument()
+      expect(
+        screen.queryByText("Identifiers", { selector: "section h2" }),
+      ).toBeInTheDocument()
+      expect(
+        screen.queryByText("Taxonomy", { selector: "section h2" }),
+      ).toBeInTheDocument()
     })
   })
 })
