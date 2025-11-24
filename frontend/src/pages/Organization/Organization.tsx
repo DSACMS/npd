@@ -40,10 +40,6 @@ export const Organization = () => {
         </div>
       </section>
       <main className={contentClass}>
-        <Alert heading="Are you the practitioner listed?">
-          Learn how to <a href="#">update your information</a>.
-        </Alert>
-
         <FeatureFlag inverse name="ORGANIZATION_LOOKUP_DETAILS">
           <Alert variation="warn" heading="Content not available">
             This content is not currently available.
@@ -51,6 +47,10 @@ export const Organization = () => {
         </FeatureFlag>
 
         <FeatureFlag name="ORGANIZATION_LOOKUP_DETAILS">
+          <Alert heading="Are you the practitioner listed?">
+            Learn how to <a href="#">update your information</a>.
+          </Alert>
+
           <section className={layout.section}>
             <h2>About</h2>
             <p>[demographic information]</p>
