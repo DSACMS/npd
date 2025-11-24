@@ -244,9 +244,9 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
     def test_retrieve_single_pracitioner(self):
-        id = "b7a4ab09-3207-49c1-9f59-c1c07c75dfb5"
+        id = self.prac1.individual.id
         url = reverse("fhir-practitioner-detail",
                       args=[id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data['id'], id)
+        self.assertEqual(response.data['id'], str(id))

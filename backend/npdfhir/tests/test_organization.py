@@ -1,6 +1,6 @@
 from django.urls import reverse
 from rest_framework import status
-from ..models import Organization
+from ..models import Organization, OtherIdType
 from .api_test_case import APITestCase
 from .helpers import (
     assert_fhir_response,
@@ -9,7 +9,7 @@ from .helpers import (
     extract_resource_names
 )
 
-from .fixtures import create_organization
+from .fixtures import create_organization, create_legal_entity, create_other_id_type
 
 class OrganizationViewSetTestCase(APITestCase):
     @classmethod
@@ -34,6 +34,19 @@ class OrganizationViewSetTestCase(APITestCase):
         cls.org16 = create_organization(name='YODORINCMISSIONPLAZAPHARMACY')
         cls.org17 = create_organization(name='YOAKUM COMMUNITY HOSPITAL')
         cls.org18 = create_organization(name='YARMOUTH AUDIOLOGY')
+
+        cls.joe_legal_entity = create_legal_entity(dba_name='Joe Administrative Services LLC')
+        cls.joe_name = 'Joe Health Incorporated'
+        cls.joe_health_org = create_organization(name=cls.joe_name,legal_entity=cls.joe_legal_entity)
+
+        cls.other_id = OtherIdType.objects.first()
+        cls.other_id_org = create_organization(name='Beaver Clinicals',other_id_type=cls.other_id)
+
+        cls.hospital_nucc_org = create_organization(name='TestNuccOrg',organization_type="Hospital")
+
+        cls.org_with_npi = create_organization(name='Custom NPI General',npi_value=1427051473)
+
+        cls.org_cumberland = create_organization(name='Cumberland')
 
         return super().setUpTestData()
 
@@ -85,15 +98,16 @@ class OrganizationViewSetTestCase(APITestCase):
         names = extract_resource_names(response)
 
         sorted_names = [
+            {},
             'ZUNI HOME HEALTH CARE AGENCY',
             'ZEELAND COMMUNITY HOSPITAL',
-            'YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD',
             'YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD',
             'YOUNG C. BAE, M.D.',
             'YORKTOWN EMERGENCY MEDICAL SERVICE',
             'YODORINCMISSIONPLAZAPHARMACY',
             'YOAKUM COMMUNITY HOSPITAL',
-            'YARMOUTH AUDIOLOGY'
+            'YARMOUTH AUDIOLOGY',
+            'Joe Health Incorporated'
         ]
 
         self.assertEqual(
@@ -158,8 +172,11 @@ class OrganizationViewSetTestCase(APITestCase):
 
     def test_list_filter_by_ein_general(self):
         url = reverse("fhir-organization-list")
+
+        id = self.joe_legal_entity.ein_id
+
         response = self.client.get(
-            url, {"identifier": "22222222-2222-2222-2222-222222222222"})
+            url, {"identifier": str(id)})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
         self.assertGreaterEqual(response.data["results"]["total"], 1)
@@ -203,14 +220,16 @@ class OrganizationViewSetTestCase(APITestCase):
 
     # Retrieve tests
     def test_retrieve_non_clinical_organization(self):
+        id = self.joe_health_org.id
+
         url = reverse("fhir-organization-detail",
-                      args=["33333333-3333-3333-3333-333333333333"])
+                      args=[id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
         org = response.data
         self.assertEqual(org["resourceType"], "Organization")
-        self.assertEqual(org["name"], "Joe Health Incorporated")
+        self.assertEqual(org["name"], self.joe_name)
         self.assertEqual(org["identifier"][0]["type"]
                          ["coding"][0]["code"], "TAX")
 
@@ -226,12 +245,12 @@ class OrganizationViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
     def test_retrieve_single_organization(self):
-        id = "501a620e-8521-4610-9717-b35a0597292e"
+        id = self.org1.id
         url = reverse("fhir-organization-detail",
                       args=[id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data['id'], id)
+        self.assertEqual(response.data['id'], str(id))
 
     # Edge cases tests
     def test_organization_without_authorized_official(self):

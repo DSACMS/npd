@@ -135,16 +135,16 @@ class LocationViewSetTestCase(APITestCase):
 
 
         sorted_names = [
-            'FROEDTERT MEMORIAL LUTHERAN HOSPITAL, INC.',
-            'FROEDTERT MEMORIAL LUTHERAN HOSPITAL, INC.',
-            'AMBER ENTERPRISES INC.',
-            'COUNTY OF KOOCHICHING',
             'OCEAN HOME HEALTH SUPPLY, LLC',
-            'PULMONARY MANAGEMENT, INC.',
-            'MEDICATION MANAGEMENT CENTER, LLC.',
-            'HENDRICKS COUNTY HOSPITAL',
-            'BAY AREA REHABILITATION MEDICAL GROUP',
-            'PROHAB REHABILITATION SERVICES, INC.'
+            'COUNTY OF KOOCHICHING',
+            'AMBER ENTERPRISES INC.',
+            'YOAKUM COMMUNITY HOSPITAL',
+            'YODORINCMISSIONPLAZAPHARMACY',
+            'YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD',
+            'ZEELAND COMMUNITY HOSPITAL',
+            'ABILENE HELPING HANDS INC',
+            'A & B HEALTH CARE, INC.',
+            'PULMONARY MANAGEMENT, INC.'
         ]
 
         self.assertEqual(
@@ -208,9 +208,9 @@ class LocationViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
     def test_retrieve_single_location(self):
-        id = "527c8a79-1294-47ab-afce-b571c89a4f2b"
+        id = self.loc1.id
         url = reverse("fhir-location-detail",
                       args=[id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data['id'], id)
+        self.assertEqual(response.data['id'], str(id))

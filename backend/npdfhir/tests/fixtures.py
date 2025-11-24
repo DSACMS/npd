@@ -21,6 +21,12 @@ from ..models import (
     EndpointConnectionType,
     EndpointType,
     PayloadType,
+    LegalEntity,
+    OtherIdType,
+    OrganizationToOtherId,
+    OrganizationToTaxonomy,
+    ClinicalOrganization,
+    Nucc
 )
 
 def _ensure_name_use():
@@ -64,7 +70,34 @@ def create_practitioner(
 
     return provider
 
-def create_organization(name="Test Org"):
+def create_legal_entity(dba_name="Sample Legal Entity"):
+    
+    legal_entity = LegalEntity.objects.create(
+        ein_id=uuid.uuid4(),
+        dba_name=dba_name
+    )
+
+    return legal_entity
+
+def create_other_id_type(name="Sample Other ID"):
+    other_id = OtherIdType.objects.create(
+        value=name
+    )
+
+    return other_id
+
+def create_organization(
+    name="Test Org",
+    authorized_official_first_name="Alice",
+    authorized_official_last_name="Smith",
+    legal_entity=None,
+    other_id_type=None,
+    npi_value=None,
+    other_id_name='testMBI',
+    other_state_code='NY',
+    other_issuer='New York State Medicaid',
+    organization_type=None
+):
     """
     Creates an Organization + OrganizationToName.
     """
@@ -75,11 +108,57 @@ def create_organization(name="Test Org"):
         birth_date=datetime.date(1980, 1, 1),
     )
 
-    org = Organization.objects.create(
-        id=uuid.uuid4(),
-        authorized_official=ind,
+
+    IndividualToName.objects.create(
+        individual=ind,
+        first_name=authorized_official_first_name,
+        last_name=authorized_official_last_name,
+        name_use=_ensure_name_use(),
     )
 
+    org = Organization.objects.create(
+            id=uuid.uuid4(),
+            authorized_official=ind,
+            ein=legal_entity,
+        )
+
+    if other_id_type or organization_type or npi_value:
+        
+
+        npi = Npi.objects.create(
+            npi=npi_value or int(str(uuid.uuid4().int)[:10]),
+            entity_type_code=1,
+            enumeration_date=datetime.date(2000, 1, 1),
+            last_update_date=datetime.date(2020, 1, 1),
+        )
+
+        clinical_organization = ClinicalOrganization.objects.create(
+            organization=org,
+            npi=npi
+        )
+
+        if other_id_type:
+            org_other_id = OrganizationToOtherId.objects.create(
+                npi=clinical_organization,
+                other_id=other_id_name,
+                other_id_type=other_id_type,
+                state_code=other_state_code,
+                issuer=other_issuer
+            )
+
+        if organization_type:
+            code = Nucc.objects.create(
+                code='TEST',
+                display_name=organization_type,
+                definition='SAMPLE'
+            )
+
+            taxonomy = OrganizationToTaxonomy.objects.create(
+                npi = clinical_organization,
+                nucc_code=code
+            )
+
+    
     OrganizationToName.objects.create(
         organization=org,
         name=name,

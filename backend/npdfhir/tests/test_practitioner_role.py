@@ -51,6 +51,8 @@ class PractitionerRoleViewSetTestCase(APITestCase):
 
             cls.roles.append(role)
         
+
+        cls.first_prac_id = cls.roles[0].id
         return super().setUpTestData()
 
 
@@ -119,9 +121,9 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
     def test_retrieve_single_pracitionerrole(self):
-        id = "3ac7bd1e-a698-4905-9731-ca650de2dcb0"
+        id = self.first_prac_id
         url = reverse("fhir-practitionerrole-detail",
                       args=[id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data['id'], id)
+        self.assertEqual(response.data['id'], str(id))
