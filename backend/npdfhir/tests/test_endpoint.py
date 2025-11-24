@@ -9,8 +9,27 @@ from .helpers import (
     extract_resource_names
 )
 
+from .fixtures import create_endpoint
+
 
 class EndpointViewSetTestCase(APITestCase):
+
+    @classmethod
+    def setUpTestData(cls):
+        cls.endpoint1 = create_endpoint(name='88 MEDICINE LLC')
+        cls.endpoint2 = create_endpoint(name='AAIA of Tampa Bay, LLC')
+        cls.endpoint3 = create_endpoint(name='ABC Healthcare Service Base URL')
+        cls.endpoint4 = create_endpoint(name='A Better Way LLC')
+        cls.endpoint5 = create_endpoint(name='Abington Surgical Center')
+        cls.endpoint6 = create_endpoint(name='Access Mental Health Agency')
+        cls.endpoint7 = create_endpoint(name='Abington Surgical Center')
+        cls.endpoint8 = create_endpoint(name='ADHD & Autism Psychological Services PLLC')
+        cls.endpoint9 = create_endpoint(name='Adolfo C FernandezObregon Md')
+        cls.endpoint10 = create_endpoint(name='Advanced Anesthesia, LLC')
+        cls.endpoint11 = create_endpoint(name='Advanced Cardiovascular Center')
+
+        return super().setUpTestData()
+
     # Basic tests
     def setUp(self):
         super().setUp()

@@ -1,270 +1,242 @@
 import uuid
 import datetime
 
-from .models import (
-    Organization, Individual, LegalEntity,
-    Address, AddressUs, FipsState, FipsCounty, FhirAddressUse,
-    Location, OrganizationToName, OrganizationToAddress,
-    Endpoint, EndpointInstance, EndpointType, EndpointConnectionType,
-    EhrVendor, EnvironmentType, PayloadType, MimeType,
-    EndpointInstanceToPayload,
-    Npi, Provider, IndividualToName, FhirNameUse,
-    PractitionerRole, Nucc, NuccClassification, NuccGrouping,
+from ..models import (
+    Individual,
+    IndividualToName,
+    FhirNameUse,
+    Npi,
+    Provider,
+    Organization,
+    OrganizationToName,
+    Address,
+    AddressUs,
+    Location,
+    ProviderToOrganization,
+    RelationshipType,
+    ProviderToLocation,
+    ProviderRole,
+    Endpoint,
+    EndpointInstance,
+    EndpointConnectionType,
+    EndpointType,
+    PayloadType,
 )
 
-def guid():
-    return uuid.uuid4()
-
-def today():
-    return datetime.date.today()
-
-def create_state_and_county(state_code: str):
-    state_obj, _ = FipsState.objects.get_or_create(
-        id=state_code,
-        defaults={"name": state_code, "abbreviation": state_code},
-    )
-
-    county_obj, _ = FipsCounty.objects.get_or_create(
-        id=f"{state_code}-001",
-        defaults={"name": f"{state_code} County", "fips_state": state_obj},
-    )
-
-    return state_obj, county_obj
+def _ensure_name_use():
+    return FhirNameUse.objects.get_or_create(value="usual")[0]
 
 
-def create_address(city: str = "Boston", state: str = "MA", postal: str = "02118", street: str = "1 Main St"):
-    state_obj, _ = FipsState.objects.get_or_create(
-        id=state, defaults={"name": state, "abbreviation": state}
-    )
-
-    addr_us = AddressUs.objects.create(
-        id=str(uuid.uuid4())[:10],
-        delivery_line_1=street,
-        city_name=city,
-        state_code=state_obj,
-        zipcode=postal,
-    )
-    return Address.objects.create(id=guid(), address_us=addr_us)
-
-
-def create_organization(
-    name: str = "Test Org",
-    city: str = "Boston",
-    state: str = "MA",
-    postal: str = "02118",
-    primary: bool = True,
-    address_use: str = "work",
-    org_id=None,
+def create_practitioner(
+    first_name="Alice",
+    last_name="Smith",
+    gender="F",
+    birth_date=datetime.date(1990, 1, 1),
+    npi_value=None,
 ):
+    """
+    Creates an Individual, Name (via IndividualToName), Npi, Provider.
+    """
+    individual = Individual.objects.create(
+        id=uuid.uuid4(),
+        gender=gender,
+        birth_date=birth_date,
+    )
 
-    address = create_address(city=city, state=state, postal=postal)
+    IndividualToName.objects.create(
+        individual=individual,
+        first_name=first_name,
+        last_name=last_name,
+        name_use=_ensure_name_use(),
+    )
 
-    indiv = Individual.objects.create(
-        id=guid(),
-        gender="M",
+    npi = Npi.objects.create(
+        npi=npi_value or int(str(uuid.uuid4().int)[:10]),
+        entity_type_code=1,
+        enumeration_date=datetime.date(2000, 1, 1),
+        last_update_date=datetime.date(2020, 1, 1),
+    )
+
+    provider = Provider.objects.create(
+        npi=npi,
+        individual=individual,
+    )
+
+    return provider
+
+def create_organization(name="Test Org"):
+    """
+    Creates an Organization + OrganizationToName.
+    """
+    # authorized_official cannot be null → create a dummy individual
+    ind = Individual.objects.create(
+        id=uuid.uuid4(),
+        gender="U",
         birth_date=datetime.date(1980, 1, 1),
     )
 
-    legal = LegalEntity.objects.create(
-        ein_id=guid(),
-        dba_name=name,
-    )
-
     org = Organization.objects.create(
-        id=org_id or guid(),
-        authorized_official=indiv,
-        ein=legal,
+        id=uuid.uuid4(),
+        authorized_official=ind,
     )
 
     OrganizationToName.objects.create(
         organization=org,
         name=name,
-        is_primary=primary,
-    )
-
-    use_obj, _ = FhirAddressUse.objects.get_or_create(value=address_use)
-
-    OrganizationToAddress.objects.create(
-        organization=org,
-        address=address,
-        address_use=use_obj,
+        is_primary=True,
     )
 
     return org
 
 def create_location(
-    name: str = "Test Location",
-    org: Organization | None = None,
-    city: str = "Seattle",
-    state: str = "WA",
-    postal: str = "98001",
-    location_id=None,
+    organization=None,
+    name="Test Location",
+    city="Albany",
+    state="NY",
+    zipcode="12207",
 ):
+    """
+    Creates AddressUs → Address → Location.
+    """
+    organization = organization or create_organization()
 
-    if org is None:
-        org = create_organization()
+    addr_us = AddressUs.objects.create(
+        id=str(uuid.uuid4())[:10],
+        delivery_line_1="123 Main St",
+        city_name=city,
+        state_code_id='36',
+        zipcode=zipcode,
+    )
 
-    address = create_address(city=city, state=state, postal=postal)
+    address = Address.objects.create(
+        id=uuid.uuid4(),
+        address_us=addr_us,
+    )
 
-    return Location.objects.create(
-        id=location_id or guid(),
+    loc = Location.objects.create(
+        id=uuid.uuid4(),
         name=name,
-        organization=org,
+        organization=organization,
         address=address,
         active=True,
     )
 
+    return loc
+
+def _ensure_endpoint_base_types():
+    """
+    Flyway inserts some reference values, but ensure minimal ones exist.
+    """
+    etype, _ = EndpointType.objects.get_or_create(value="rest")
+    ctype, _ = EndpointConnectionType.objects.get_or_create(
+        id="hl7-fhir-rest",
+        defaults={"display": "FHIR REST", "definition": "FHIR REST endpoint"},
+    )
+    payload, _ = PayloadType.objects.get_or_create(
+        id="fhir-json",
+        defaults={"value": "application/fhir+json", "description": "FHIR JSON"},
+    )
+    return etype, ctype, payload
+
+
 def create_endpoint(
-    name: str = "Test Endpoint",
-    address: str = "https://example.org/fhir",
-    connection_type: str = "hl7-fhir-rest",
-    payload: str = "ccda-structuredBody:1.1",
-    env: str = "prod",
-    vendor_name: str = "Test Vendor",
-    endpoint_id=None,
+    organization=None,
+    url="https://example.org/fhir",
+    name="Test Endpoint",
 ):
+    """
+    Creates EndpointType, EndpointConnectionType, EndpointInstance, Endpoint.
+    """
+    organization = organization or create_organization()
 
-    conn_type, _ = EndpointConnectionType.objects.get_or_create(
-        id=connection_type,
-        defaults={"display": connection_type},
-    )
-
-    payload_type, _ = PayloadType.objects.get_or_create(
-        id=payload,
-        defaults={"value": payload},
-    )
-
-    mime_type, _ = MimeType.objects.get_or_create(value="application/json")
-
-    env_type, _ = EnvironmentType.objects.get_or_create(
-        id=env,
-        defaults={"display": env},
-    )
-
-    vendor, _ = EhrVendor.objects.get_or_create(
-        id=guid(),
-        defaults={"name": vendor_name, "is_cms_aligned_network": False},
-    )
+    etype, ctype, payload = _ensure_endpoint_base_types()
 
     instance = EndpointInstance.objects.create(
-        id=guid(),
-        ehr_vendor=vendor,
-        address=address,
-        endpoint_connection_type=conn_type,
+        id=uuid.uuid4(),
+        ehr_vendor_id=uuid.uuid4(),  # fake vendor
+        address=url,
+        endpoint_connection_type=ctype,
         name=name,
-        environment_type=env_type,
     )
 
-    EndpointInstanceToPayload.objects.create(
-        endpoint_instance=instance,
-        mime_type=mime_type,
-        payload_type=payload_type,
-    )
-
-    endpoint_type, _ = EndpointType.objects.get_or_create(value="fhir")
-
-    return Endpoint.objects.create(
-        id=endpoint_id or guid(),
-        address=address,
-        endpoint_type=endpoint_type,
+    ep = Endpoint.objects.create(
+        id=uuid.uuid4(),
+        address=url,
+        endpoint_type=etype,
         endpoint_instance=instance,
         name=name,
     )
 
-def create_practitioner(
-    first: str = "John",
-    last: str = "Smith",
-    gender: str = "M",
-    npi_value: int = 1234567890,
+    return ep
+
+def _ensure_relationship_type():
+    """
+    Retrieve an existing relationship_type inserted by Flyway.
+    Default: 'assigning' (id=2)
+    """
+    try:
+        return RelationshipType.objects.get(value="assigning")
+    except RelationshipType.DoesNotExist:
+        # If Flyway hasn’t run (edge/dev case), create one safely
+        return RelationshipType.objects.create(value="assigning")
+
+
+def _ensure_provider_role(code="PRV", display="Provider Role"):
+    return ProviderRole.objects.get_or_create(
+        code=code,
+        defaults={
+            "system": "http://hl7.org/fhir/practitionerrole",
+            "display": display,
+        },
+    )[0]
+
+
+def create_full_practitionerrole(
+    first_name="Alice",
+    last_name="Smith",
+    gender="F",
+    npi_value=None,
+    org_name="Test Org",
+    location_name="Test Location",
+    role_code="PRV",
+    role_display="Provider Role",
 ):
-
-    indiv = Individual.objects.create(
-        id=guid(),
+    """
+    Creates:
+        Practitioner (Provider)
+        Organization
+        Location
+        ProviderToOrganization
+        ProviderToLocation
+    """
+    provider = create_practitioner(
+        first_name=first_name,
+        last_name=last_name,
         gender=gender,
-        birth_date=datetime.date(1977, 7, 7),
+        npi_value=npi_value,
     )
 
-    name_use, _ = FhirNameUse.objects.get_or_create(value="official")
+    org = create_organization(name=org_name)
+    loc = create_location(organization=org, name=location_name)
 
-    IndividualToName.objects.create(
-        individual=indiv,
-        first_name=first,
-        last_name=last,
-        name_use=name_use,
+    # Ensure relationship + role codes exist
+    rel_type = _ensure_relationship_type()
+    _ensure_provider_role(role_code, role_display)
+
+    pto_org = ProviderToOrganization.objects.create(
+        id=uuid.uuid4(),
+        individual=provider,   # special FK uses Provider.individual_id
+        organization=org,
+        relationship_type=rel_type,
+        active=True,
     )
 
-    npi = Npi.objects.create(
-        npi=npi_value,
-        entity_type_code=1,
-        enumeration_date=today(),
-        last_update_date=today(),
+    pr = ProviderToLocation.objects.create(
+        id=uuid.uuid4(),
+        provider_to_organization=pto_org,
+        location=loc,
+        provider_role_code=role_code,
+        active=True,
     )
 
-    provider = Provider.objects.create(
-        npi=npi,
-        individual=indiv,
-    )
-
-    return provider
-
-
-def create_practitioner_role(
-    practitioner: Provider | None = None,
-    location: Location | None = None,
-    role_display: str = "Physician",
-    code: str = "MD",
-    role_id=None,
-):
-
-    if practitioner is None:
-        practitioner = create_practitioner()
-
-    if location is None:
-        location = create_location()
-
-    grouping, _ = NuccGrouping.objects.get_or_create(display_name="Group")
-
-    nucc_code, _ = Nucc.objects.get_or_create(
-        code="207Q00000X",
-        defaults={"display_name": role_display},
-    )
-
-    NuccClassification.objects.get_or_create(
-        nucc_code=nucc_code,
-        nucc_grouping=grouping,
-        defaults={"display_name": role_display},
-    )
-
-    return PractitionerRole.objects.create(
-        id=role_id or guid(),
-        value=code,
-    )
-
-
-def create_multiple_organizations(count: int, name_prefix="Org"):
-    return [
-        create_organization(name=f"{name_prefix} {i}")
-        for i in range(count)
-    ]
-
-
-def create_multiple_endpoints(count: int, name_prefix="Endpoint"):
-    return [
-        create_endpoint(name=f"{name_prefix} {i}")
-        for i in range(count)
-    ]
-
-
-def create_sorted_endpoints(names: list[str]):
-    return [create_endpoint(name=n) for n in names]
-
-
-def create_multiple_practitioners(count: int, first_prefix="John", last_prefix="Smith"):
-    return [
-        create_practitioner(
-            first=f"{first_prefix}{i}",
-            last=f"{last_prefix}{i}",
-            npi_value=1000000000 + i,
-        )
-        for i in range(count)
-    ]
+    return pr

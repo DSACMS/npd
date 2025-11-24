@@ -9,8 +9,34 @@ from .helpers import (
     extract_resource_names
 )
 
+from .fixtures import create_organization
 
 class OrganizationViewSetTestCase(APITestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.org1 = create_organization(name='1ST CHOICE HOME HEALTH CARE INC')
+        cls.org2 = create_organization(name='1ST CHOICE MEDICAL DISTRIBUTORS, LLC')
+        cls.org3 = create_organization(name='986 INFUSION PHARMACY #1 INC.')
+        cls.org4 = create_organization(name='A & A MEDICAL SUPPLY COMPANY')
+        cls.org5 = create_organization(name='ABACUS BUSINESS CORPORATION GROUP INC.')
+        cls.org6 = create_organization(name='ABBY D CENTER, INC.')
+        cls.org7 = create_organization(name='ABC DURABLE MEDICAL EQUIPMENT INC')
+        cls.org8 = create_organization(name='ABC HOME MEDICAL SUPPLY, INC.')
+        cls.org9 = create_organization(name='A BEAUTIFUL SMILE DENTISTRY, L.L.C.')
+        cls.org10 = create_organization(name='A & B HEALTH CARE, INC.')
+
+
+        cls.org11 = create_organization(name='ZUNI HOME HEALTH CARE AGENCY')
+        cls.org12 = create_organization(name='ZEELAND COMMUNITY HOSPITAL')
+        cls.org13 = create_organization(name='YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD')
+        cls.org14 = create_organization(name='YOUNG C. BAE, M.D.')
+        cls.org15 = create_organization(name='YORKTOWN EMERGENCY MEDICAL SERVICE')
+        cls.org16 = create_organization(name='YODORINCMISSIONPLAZAPHARMACY')
+        cls.org17 = create_organization(name='YOAKUM COMMUNITY HOSPITAL')
+        cls.org18 = create_organization(name='YARMOUTH AUDIOLOGY')
+
+        return super().setUpTestData()
+
     def setUp(self):
         super().setUp()
         self.org_without_authorized_official = Organization.objects.create(
@@ -59,7 +85,6 @@ class OrganizationViewSetTestCase(APITestCase):
         names = extract_resource_names(response)
 
         sorted_names = [
-            {},
             'ZUNI HOME HEALTH CARE AGENCY',
             'ZEELAND COMMUNITY HOSPITAL',
             'YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD',

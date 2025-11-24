@@ -8,8 +8,53 @@ from .helpers import (
     extract_resource_names
 )
 
+from .fixtures import create_location, create_organization
+
+
 
 class LocationViewSetTestCase(APITestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.org1 = create_organization(name="Alpha Org")
+        cls.org2 = create_organization(name="Beta Org")
+
+        cls.loc1 = create_location(name="Main Clinic", organization=cls.org1)
+        cls.loc2 = create_location(name='1ST CHOICE MEDICAL DISTRIBUTORS, LLC', organization=cls.org1)
+        cls.loc3 = create_location(name='986 INFUSION PHARMACY #1 INC.', organization=cls.org2)
+        cls.loc4 = create_location(name='A & A MEDICAL SUPPLY COMPANY', organization=cls.org2)
+        cls.loc5 = create_location(name='ABACUS BUSINESS CORPORATION GROUP INC.', organization=cls.org1)
+        cls.loc6 = create_location(name='ABBY D CENTER, INC.', organization=cls.org2)
+        cls.loc7 = create_location(name='ABC DURABLE MEDICAL EQUIPMENT INC', organization=cls.org1)
+        cls.loc8 = create_location(name='ABC HOME MEDICAL SUPPLY, INC.', organization=cls.org1)
+        cls.loc9 = create_location(name='A BEAUTIFUL SMILE DENTISTRY, L.L.C.', organization=cls.org1)
+        cls.loc10 = create_location(name='A & B HEALTH CARE, INC.', organization=cls.org1)
+        cls.loc11 = create_location(name='ABILENE HELPING HANDS INC', organization=cls.org1)
+
+
+        cls.loc12 = create_location(name='ZEELAND COMMUNITY HOSPITAL', organization=cls.org1)
+        cls.loc13 = create_location(name='YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD', organization=cls.org1)
+        cls.loc14 = create_location(name='YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD', organization=cls.org2)
+        cls.loc15 = create_location(name='YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD', organization=cls.org2)
+        cls.loc16 = create_location(name='YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD', organization=cls.org2)
+        cls.loc17 = create_location(name='YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD', organization=cls.org2)
+        cls.loc18 = create_location(name='YOUNG C. BAE, M.D.')
+        cls.loc19 = create_location(name='YORKTOWN EMERGENCY MEDICAL SERVICE')
+        cls.loc20 = create_location(name='YODORINCMISSIONPLAZAPHARMACY', organization=cls.org1)
+        cls.loc21 = create_location(name='YOAKUM COMMUNITY HOSPITAL', organization=cls.org1)
+
+        cls.loc22 = create_location(name='FROEDTERT MEMORIAL LUTHERAN HOSPITAL, INC.', organization=cls.org2)
+        cls.loc23 = create_location(name='AMBER ENTERPRISES INC.', organization=cls.org1)
+        cls.loc24 = create_location(name='COUNTY OF KOOCHICHING', organization=cls.org1)
+        cls.loc25 = create_location(name='OCEAN HOME HEALTH SUPPLY, LLC', organization=cls.org1)
+        cls.loc26 = create_location(name='PULMONARY MANAGEMENT, INC.', organization=cls.org1)
+        cls.loc27 = create_location(name='MEDICATION MANAGEMENT CENTER, LLC.', organization=cls.org2)
+        cls.loc28 = create_location(name='HENDRICKS COUNTY HOSPITAL', organization=cls.org2)
+        cls.loc29 = create_location(name='BAY AREA REHABILITATION MEDICAL GROUP', organization=cls.org2)
+        cls.loc30 = create_location(name='PROHAB REHABILITATION SERVICES, INC.', organization=cls.org2)
+
+        return super().setUpTestData()
+
+
     # Basic tests
     def test_list_default(self):
         url = reverse("fhir-location-list")
