@@ -16,7 +16,7 @@ class DocumentationViewSetTestCase(APITestCase):
         response = self.client.get(redoc_url)
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertIn('redoc spec-url', response.text)
+        self.assertIn("redoc spec-url", response.text)
 
     def test_get_json_docs(self):
         json_docs_url = reverse("schema")
