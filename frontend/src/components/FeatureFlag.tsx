@@ -14,11 +14,15 @@ export const FeatureFlag = ({
   } = useFrontendSettings()
 
   if (loading) return null
+
   // flags haven't loaded
   if (!feature_flags) return null
 
   // inverse flag
-  if (inverse && !feature_flags[name]) return children
+  if (inverse) {
+    if (!feature_flags[name]) return children
+    else return null
+  }
 
   // flag unset
   if (!feature_flags[name]) return null

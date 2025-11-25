@@ -49,5 +49,16 @@ describe("FeatureFlag", () => {
         expect(screen.queryByText("Some content")).toBeInTheDocument()
       })
     })
+
+    it("does not render inverse content", async () => {
+      render(
+        <FeatureFlag inverse name="SOMETHING">
+          Some content
+        </FeatureFlag>,
+      )
+      await waitFor(() => {
+        expect(screen.queryByText("Some content")).toBeNull()
+      })
+    })
   })
 })
