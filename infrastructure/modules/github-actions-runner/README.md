@@ -151,14 +151,21 @@ nvme0n1                  259:0    0   250G  0 disk
   └─VolGroup00-vartmpVol 253:6    0   1.5G  0 lvm  /var/tmp
 ```
 
-12. Restart the instance
+12. Create a cron job to clear out Docker artifacts nightly
+
+```commandline
+crontab -e
+00 00 * * * /usr/bin/docker system prune -af
+```
+
+13. Restart the instance
 
 ```commandline
 sudo reboot
 ```
 
-13. In GitHub, confirm that a runner matching the IP address of the instance is live 
-14. Confirm that the github-runner.service is loaded and active in systemd 
+14. In GitHub, confirm that a runner matching the IP address of the instance is live 
+15. Confirm that the github-runner.service is loaded and active in systemd 
 
 ```commandline
 sh-5.2$ sudo systemctl status github-runner.service
@@ -178,7 +185,7 @@ Oct 28 15:36:41 ip-10-204-107-24.ec2.internal run.sh[2598]: Current runner versi
 Oct 28 15:36:41 ip-10-204-107-24.ec2.internal run.sh[2598]: 2025-10-28 19:36:41Z: Listening for Jobs
 ```
 
-15. Confirm that github-runner.service is configured and connecting to GitHub.
+16. Confirm that github-runner.service is configured and connecting to GitHub.
 
 ```
 journalctl -u github-runner.service -f
