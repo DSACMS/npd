@@ -54,7 +54,7 @@ resource "aws_instance" "github_actions_instance" {
   subnet_id            = var.subnet_id
   iam_instance_profile = "cms-cloud-base-ec2-profile-v4"
   root_block_device {
-    volume_size = 250
+    volume_size = 100
   }
   tags = {
     Name = "github-actions-runner-instance"
