@@ -31,7 +31,7 @@ SECRET_KEY = config("NPD_DJANGO_SECRET")
 DEBUG = config("DEBUG", cast=bool)
 
 # Detect if tests are being run
-TESTING = "test" in sys.argv
+TESTING = "test" in sys.argv or config("TESTING", default=False, cast=bool)
 
 REQUIRE_AUTHENTICATION = config("NPD_REQUIRE_AUTHENTICATION", default=False, cast=bool)
 
@@ -234,7 +234,9 @@ LOGIN_REDIRECT_URL = "/"
 LOGIN_URL = "/accounts/login/"
 LOGOUT_REDIRECT_URL = LOGIN_URL
 
-DEBUG_TOOLBAR_CONFIG = {"SHOW_TOOLBAR_CALLBACK": lambda request: DEBUG}
+DEBUG_TOOLBAR_CONFIG = {
+    "SHOW_TOOLBAR_CALLBACK": lambda request: DEBUG and not TESTING
+}
 
 CACHES = {
     "default": {
