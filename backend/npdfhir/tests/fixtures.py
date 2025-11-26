@@ -19,7 +19,10 @@ from ..models import (
     Endpoint,
     EndpointInstance,
     EndpointConnectionType,
+    EndpointInstanceToPayload,
     EndpointType,
+    EnvironmentType,
+    EhrVendor,
     PayloadType,
     LegalEntity,
     OtherIdType,
@@ -219,6 +222,8 @@ def create_endpoint(
     organization=None,
     url="https://example.org/fhir",
     name="Test Endpoint",
+    ehr=None,
+    payload_type=None
 ):
     """
     Creates EndpointType, EndpointConnectionType, EndpointInstance, Endpoint.
@@ -227,13 +232,36 @@ def create_endpoint(
 
     etype, ctype, payload = _ensure_endpoint_base_types()
 
+
+    if not ehr:
+
+        new_vendor_id = uuid.uuid4()
+        ehr_vendor = EhrVendor.objects.create(
+            id=new_vendor_id,
+            name=f"My Sample{new_vendor_id}",
+            is_cms_aligned_network=True
+        )
+    else:
+        ehr_vendor = ehr
+
+    et = EnvironmentType.objects.get(pk='prod')
+
+    pt = PayloadType.objects.get(pk=payload_type or 'urn:hl7-org:sdwg:ccda-structuredBody:1.1')
+
     instance = EndpointInstance.objects.create(
         id=uuid.uuid4(),
-        ehr_vendor_id=uuid.uuid4(),  # fake vendor
+        ehr_vendor_id=ehr_vendor.id,
         address=url,
         endpoint_connection_type=ctype,
         name=name,
+        environment_type=et
     )
+
+    endpoint_to_pt = EndpointInstanceToPayload.objects.create(
+        endpoint_instance=instance,
+        payload_type=pt
+    )
+
 
     ep = Endpoint.objects.create(
         id=uuid.uuid4(),

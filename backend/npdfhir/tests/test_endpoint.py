@@ -22,11 +22,12 @@ class EndpointViewSetTestCase(APITestCase):
         cls.endpoint4 = create_endpoint(name='A Better Way LLC')
         cls.endpoint5 = create_endpoint(name='Abington Surgical Center')
         cls.endpoint6 = create_endpoint(name='Access Mental Health Agency')
-        cls.endpoint7 = create_endpoint(name='Abington Surgical Center')
+        cls.endpoint7 = create_endpoint(name='Abington Center Surgical')
         cls.endpoint8 = create_endpoint(name='ADHD & Autism Psychological Services PLLC')
         cls.endpoint9 = create_endpoint(name='Adolfo C FernandezObregon Md')
         cls.endpoint10 = create_endpoint(name='Advanced Anesthesia, LLC')
         cls.endpoint11 = create_endpoint(name='Advanced Cardiovascular Center')
+        cls.endpoint12 = create_endpoint(name='Kansas City Psychiatric Group')
 
         return super().setUpTestData()
 
@@ -58,12 +59,12 @@ class EndpointViewSetTestCase(APITestCase):
             'AAIA of Tampa Bay, LLC',
             'ABC Healthcare Service Base URL',
             'A Better Way LLC',
+            'Abington Center Surgical',
             'Abington Surgical Center',
             'Access Mental Health Agency',
             'ADHD & Autism Psychological Services PLLC',
             'Adolfo C FernandezObregon Md',
             'Advanced Anesthesia, LLC',
-            'Advanced Cardiovascular Center'
         ]
 
         self.assertEqual(
@@ -195,9 +196,9 @@ class EndpointViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
     def test_retrieve_single_endpoint(self):
-        id = "82cc98bb-afd0-4835-ada9-1437dfca8255"
+        id = self.endpoint1.endpoint_instance.id
         url = reverse("fhir-endpoint-detail",
                       args=[id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data['id'], id)
+        self.assertEqual(response.data['id'], str(id))
