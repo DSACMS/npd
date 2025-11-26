@@ -14,39 +14,45 @@ from .fixtures import create_organization, create_legal_entity, create_other_id_
 class OrganizationViewSetTestCase(APITestCase):
     @classmethod
     def setUpTestData(cls):
-        cls.org1 = create_organization(name='1ST CHOICE HOME HEALTH CARE INC')
-        cls.org2 = create_organization(name='1ST CHOICE MEDICAL DISTRIBUTORS, LLC')
-        cls.org3 = create_organization(name='986 INFUSION PHARMACY #1 INC.')
-        cls.org4 = create_organization(name='A & A MEDICAL SUPPLY COMPANY')
-        cls.org5 = create_organization(name='ABACUS BUSINESS CORPORATION GROUP INC.')
-        cls.org6 = create_organization(name='ABBY D CENTER, INC.')
-        cls.org7 = create_organization(name='ABC DURABLE MEDICAL EQUIPMENT INC')
-        cls.org8 = create_organization(name='ABC HOME MEDICAL SUPPLY, INC.')
-        cls.org9 = create_organization(name='A BEAUTIFUL SMILE DENTISTRY, L.L.C.')
-        cls.org10 = create_organization(name='A & B HEALTH CARE, INC.')
-
-
-        cls.org11 = create_organization(name='ZUNI HOME HEALTH CARE AGENCY')
-        cls.org12 = create_organization(name='ZEELAND COMMUNITY HOSPITAL')
-        cls.org13 = create_organization(name='YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD')
-        cls.org14 = create_organization(name='YOUNG C. BAE, M.D.')
-        cls.org15 = create_organization(name='YORKTOWN EMERGENCY MEDICAL SERVICE')
-        cls.org16 = create_organization(name='YODORINCMISSIONPLAZAPHARMACY')
-        cls.org17 = create_organization(name='YOAKUM COMMUNITY HOSPITAL')
-        cls.org18 = create_organization(name='YARMOUTH AUDIOLOGY')
+        cls.orgs = [
+            create_organization(name='1ST CHOICE HOME HEALTH CARE INC'),
+            create_organization(name='1ST CHOICE MEDICAL DISTRIBUTORS, LLC'),
+            create_organization(name='986 INFUSION PHARMACY #1 INC.'),
+            create_organization(name='A & A MEDICAL SUPPLY COMPANY'),
+            create_organization(name='ABACUS BUSINESS CORPORATION GROUP INC.'),
+            create_organization(name='ABBY D CENTER, INC.'),
+            create_organization(name='ABC DURABLE MEDICAL EQUIPMENT INC'),
+            create_organization(name='ABC HOME MEDICAL SUPPLY, INC.'),
+            create_organization(name='A BEAUTIFUL SMILE DENTISTRY, L.L.C.'),
+            create_organization(name='A & B HEALTH CARE, INC.'),
+            create_organization(name='ZUNI HOME HEALTH CARE AGENCY'),
+            create_organization(name='ZEELAND COMMUNITY HOSPITAL'),
+            create_organization(name='YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD'),
+            create_organization(name='YOUNG C. BAE, M.D.'),
+            create_organization(name='YORKTOWN EMERGENCY MEDICAL SERVICE'),
+            create_organization(name='YODORINCMISSIONPLAZAPHARMACY'),
+            create_organization(name='YOAKUM COMMUNITY HOSPITAL'),
+            create_organization(name='YARMOUTH AUDIOLOGY')
+        ]
+        
 
         cls.joe_legal_entity = create_legal_entity(dba_name='Joe Administrative Services LLC')
         cls.joe_name = 'Joe Health Incorporated'
         cls.joe_health_org = create_organization(name=cls.joe_name,legal_entity=cls.joe_legal_entity)
+        cls.orgs.append(cls.joe_health_org)
 
         cls.other_id = OtherIdType.objects.first()
         cls.other_id_org = create_organization(name='Beaver Clinicals',other_id_type=cls.other_id)
+        cls.orgs.append(cls.other_id_org)
 
         cls.hospital_nucc_org = create_organization(name='TestNuccOrg',organization_type='283Q00000X')
+        cls.orgs.append(cls.hospital_nucc_org)
 
         cls.org_with_npi = create_organization(name='Custom NPI General',npi_value=1427051473)
+        cls.orgs.append(cls.org_with_npi)
 
         cls.org_cumberland = create_organization(name='Cumberland')
+        cls.orgs.append(cls.org_cumberland)
 
         return super().setUpTestData()
 
@@ -245,7 +251,7 @@ class OrganizationViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
     def test_retrieve_single_organization(self):
-        id = self.org1.id
+        id = self.orgs[0].id
         url = reverse("fhir-organization-detail",
                       args=[id])
         response = self.client.get(url)

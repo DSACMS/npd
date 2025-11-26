@@ -15,38 +15,38 @@ from .fixtures import create_practitioner
 class PractitionerViewSetTestCase(APITestCase):
     @classmethod
     def setUpTestData(cls):
-        cls.prac1 = create_practitioner(last_name='AADALEN', first_name='KIRK')
-        cls.prac2 = create_practitioner(last_name='ABBAS', first_name='ASAD')
-        cls.prac3 = create_practitioner(last_name='ABBOTT', first_name='BRUCE')
-        cls.prac4 = create_practitioner(last_name='ABBOTT', first_name='PHILIP')
-        cls.prac5 = create_practitioner(last_name='ABDELHALIM', first_name='AHMED')
-        cls.prac6 = create_practitioner(last_name='ABDELHAMED', first_name='ABDELHAMED')
-        cls.prac7 = create_practitioner(last_name='ABDEL NOUR', first_name='MAGDY')
-        cls.prac8 = create_practitioner(last_name='ABEL', first_name='MICHAEL')
-        cls.prac9 = create_practitioner(last_name='ABELES', first_name='JENNIFER')
-        cls.prac10 = create_practitioner(last_name='ABELSON', first_name='MARK')
-
-        cls.prac11 = create_practitioner(last_name='CUTLER', first_name='A')
-        cls.prac12 = create_practitioner(last_name='NIZAM', first_name='A')
-        cls.prac13 = create_practitioner(last_name='SALAIS', first_name='A')
-        cls.prac14 = create_practitioner(last_name='JANOS', first_name='AARON')
-        cls.prac15 = create_practitioner(last_name='NOONBERG', first_name='AARON')
-        cls.prac16 = create_practitioner(last_name='PITNEY', first_name='AARON')
-        cls.prac17 = create_practitioner(last_name='SOLOMON', first_name='AARON')
-        cls.prac18 = create_practitioner(last_name='STEIN', first_name='AARON')
-        cls.prac19 = create_practitioner(last_name='ALI', first_name='ABBAS')
-        cls.prac20 = create_practitioner(last_name='JAFRI', first_name='ABBAS')
-
-        cls.prac21 = create_practitioner(last_name='ZWERLING', first_name='HAYWARD')
-        cls.prac22 = create_practitioner(last_name='ZUROSKE', first_name='GLEN')
-        cls.prac23 = create_practitioner(last_name='ZUCKERBERG', first_name='EDWARD')
-        cls.prac24 = create_practitioner(last_name='ZUCKER', first_name='WILLIAM')
-        cls.prac25 = create_practitioner(last_name='ZUCCALA', first_name='SCOTT')
-        cls.prac26 = create_practitioner(last_name='ZOVE', first_name='DANIEL')
-        cls.prac27 = create_practitioner(last_name='ZORN', first_name='GUNNAR')
-        cls.prac28 = create_practitioner(last_name='ZOOG', first_name='EUGENE')
-        cls.prac29 = create_practitioner(last_name='ZOLMAN', first_name='MARK')
-        cls.prac30 = create_practitioner(last_name='ZOLLER', first_name='DAVID')
+        cls.pracs = [
+            create_practitioner(last_name='AADALEN', first_name='KIRK'),
+            create_practitioner(last_name='ABBAS', first_name='ASAD'),
+            create_practitioner(last_name='ABBOTT', first_name='BRUCE'),
+            create_practitioner(last_name='ABBOTT', first_name='PHILIP'),
+            create_practitioner(last_name='ABDELHALIM', first_name='AHMED'),
+            create_practitioner(last_name='ABDELHAMED', first_name='ABDELHAMED'),
+            create_practitioner(last_name='ABDEL NOUR', first_name='MAGDY'),
+            create_practitioner(last_name='ABEL', first_name='MICHAEL'),
+            create_practitioner(last_name='ABELES', first_name='JENNIFER'),
+            create_practitioner(last_name='ABELSON', first_name='MARK'),
+            create_practitioner(last_name='CUTLER', first_name='A'),
+            create_practitioner(last_name='NIZAM', first_name='A'),
+            create_practitioner(last_name='SALAIS', first_name='A'),
+            create_practitioner(last_name='JANOS', first_name='AARON'),
+            create_practitioner(last_name='NOONBERG', first_name='AARON'),
+            create_practitioner(last_name='PITNEY', first_name='AARON'),
+            create_practitioner(last_name='SOLOMON', first_name='AARON'),
+            create_practitioner(last_name='STEIN', first_name='AARON'),
+            create_practitioner(last_name='ALI', first_name='ABBAS'),
+            create_practitioner(last_name='JAFRI', first_name='ABBAS'),
+            create_practitioner(last_name='ZWERLING', first_name='HAYWARD'),
+            create_practitioner(last_name='ZUROSKE', first_name='GLEN'),
+            create_practitioner(last_name='ZUCKERBERG', first_name='EDWARD'),
+            create_practitioner(last_name='ZUCKER', first_name='WILLIAM'),
+            create_practitioner(last_name='ZUCCALA', first_name='SCOTT'),
+            create_practitioner(last_name='ZOVE', first_name='DANIEL'),
+            create_practitioner(last_name='ZORN', first_name='GUNNAR'),
+            create_practitioner(last_name='ZOOG', first_name='EUGENE'),
+            create_practitioner(last_name='ZOLMAN', first_name='MARK'),
+            create_practitioner(last_name='ZOLLER', first_name='DAVID')
+        ]
 
         return super().setUpTestData()
 
@@ -244,7 +244,7 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
     def test_retrieve_single_pracitioner(self):
-        id = self.prac1.individual.id
+        id = self.pracs[0].individual.id
         url = reverse("fhir-practitioner-detail",
                       args=[id])
         response = self.client.get(url)

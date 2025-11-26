@@ -16,18 +16,21 @@ class EndpointViewSetTestCase(APITestCase):
 
     @classmethod
     def setUpTestData(cls):
-        cls.endpoint1 = create_endpoint(name='88 MEDICINE LLC')
-        cls.endpoint2 = create_endpoint(name='AAIA of Tampa Bay, LLC')
-        cls.endpoint3 = create_endpoint(name='ABC Healthcare Service Base URL')
-        cls.endpoint4 = create_endpoint(name='A Better Way LLC')
-        cls.endpoint5 = create_endpoint(name='Abington Surgical Center')
-        cls.endpoint6 = create_endpoint(name='Access Mental Health Agency')
-        cls.endpoint7 = create_endpoint(name='Abington Center Surgical')
-        cls.endpoint8 = create_endpoint(name='ADHD & Autism Psychological Services PLLC')
-        cls.endpoint9 = create_endpoint(name='Adolfo C FernandezObregon Md')
-        cls.endpoint10 = create_endpoint(name='Advanced Anesthesia, LLC')
-        cls.endpoint11 = create_endpoint(name='Advanced Cardiovascular Center')
-        cls.endpoint12 = create_endpoint(name='Kansas City Psychiatric Group')
+
+        cls.endpoints =[
+            create_endpoint(name='88 MEDICINE LLC'),
+            create_endpoint(name='AAIA of Tampa Bay, LLC'),
+            create_endpoint(name='ABC Healthcare Service Base URL'),
+            create_endpoint(name='A Better Way LLC'),
+            create_endpoint(name='Abington Surgical Center'),
+            create_endpoint(name='Access Mental Health Agency'),
+            create_endpoint(name='Abington Center Surgical'),
+            create_endpoint(name='ADHD & Autism Psychological Services PLLC'),
+            create_endpoint(name='Adolfo C FernandezObregon Md'),
+            create_endpoint(name='Advanced Anesthesia, LLC'),
+            create_endpoint(name='Advanced Cardiovascular Center'),
+            create_endpoint(name='Kansas City Psychiatric Group')
+        ]
 
         return super().setUpTestData()
 
@@ -196,7 +199,7 @@ class EndpointViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
     def test_retrieve_single_endpoint(self):
-        id = self.endpoint1.endpoint_instance.id
+        id = self.endpoints[0].endpoint_instance.id
         url = reverse("fhir-endpoint-detail",
                       args=[id])
         response = self.client.get(url)
