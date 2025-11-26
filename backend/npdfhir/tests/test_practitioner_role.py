@@ -5,7 +5,7 @@ from .helpers import (
     assert_fhir_response,
     assert_has_results,
     assert_pagination_limit,
-    extract_resource_ids
+    extract_resource_ids,
 )
 
 from .fixtures import create_full_practitionerrole
@@ -63,7 +63,7 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         response = self.client.get(url)
         assert_fhir_response(self, response)
         assert_has_results(self, response)
-    
+
     # Sorting tests
     def test_list_in_proper_order(self):
         url = reverse("fhir-practitionerrole-list")
@@ -110,8 +110,7 @@ class PractitionerRoleViewSetTestCase(APITestCase):
 
     # Retrieve tests
     def test_retrieve_nonexistent_uuid(self):
-        url = reverse("fhir-practitionerrole-detail",
-                      args=["12300000-0000-0000-0000-000000000124"])
+        url = reverse("fhir-practitionerrole-detail", args=["12300000-0000-0000-0000-000000000124"])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 

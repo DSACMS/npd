@@ -31,3 +31,4 @@ services:
       service: django-web
     environment:
       NPD_DB_NAME: npd_test
+      TESTING: True

@@ -26,6 +26,7 @@ export const Login = () => {
                 method="post"
                 action={apiUrl("/accounts/login/")}
                 className="usa-form"
+                id="login-form"
               >
                 <CsrfInput />
                 <fieldset className="usa-fieldset">
