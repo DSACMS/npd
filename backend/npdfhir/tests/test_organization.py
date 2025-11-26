@@ -42,7 +42,7 @@ class OrganizationViewSetTestCase(APITestCase):
         cls.other_id = OtherIdType.objects.first()
         cls.other_id_org = create_organization(name='Beaver Clinicals',other_id_type=cls.other_id)
 
-        cls.hospital_nucc_org = create_organization(name='TestNuccOrg',organization_type="Hospital")
+        cls.hospital_nucc_org = create_organization(name='TestNuccOrg',organization_type='208M00000X')
 
         cls.org_with_npi = create_organization(name='Custom NPI General',npi_value=1427051473)
 

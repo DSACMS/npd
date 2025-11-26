@@ -147,11 +147,8 @@ def create_organization(
             )
 
         if organization_type:
-            code = Nucc.objects.create(
-                code='TEST',
-                display_name=organization_type,
-                definition='SAMPLE'
-            )
+            #Get 208M00000X 'Hospitalist'
+            code = Nucc.objects.get(pk=organization_type)
 
             taxonomy = OrganizationToTaxonomy.objects.create(
                 npi = clinical_organization,
