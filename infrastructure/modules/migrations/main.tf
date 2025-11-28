@@ -1,39 +1,48 @@
 data "aws_secretsmanager_secret_version" "etl_db" {
   secret_id = var.etl_db.db_instance_master_user_secret_arn
 }
+
 data "aws_secretsmanager_secret_version" "fhir_db" {
   secret_id = var.fhir_db.db_instance_master_user_secret_arn
 }
 
 locals {
-  etl_db_password  = jsondecode(data.aws_secretsmanager_secret_version.etl_db.secret_string).password
-  fhir_db_password = jsondecode(data.aws_secretsmanager_secret_version.fhir_db.secret_string).password
-  account_name     = "${var.region}-${var.tier}"
-  multi_az         = var.multi_az
+  etl_db_password = try(
+    jsondecode(data.aws_secretsmanager_secret_version.etl_db.secret_string).password,
+    ""
+  )
+  fhir_db_password = try(
+    jsondecode(data.aws_secretsmanager_secret_version.fhir_db.secret_string).password,
+    ""
+  )
+
+  account_name = "${var.region}-${var.tier}"
+  multi_az     = var.multi_az
+
+  # Simplify table mappings to reduce complexity and potential parsing issues
   table_mappings = jsonencode({
-    "rules" : [
+    rules = [
       {
-        "rule-id" : 1,
-        "rule-name" : "etl-selection-rule",
-        "rule-type" : "selection",
-        "rule-action" : "include",
-        "object-locator" : {
-          "schema-name" : "npd",
-          "table-name" : "%"
-        },
-        "filters" : []
+        rule-id = 1
+        rule-name = "etl-selection-rule"
+        rule-type = "selection"
+        rule-action = "include"
+        object-locator = {
+          schema-name = "npd"
+          table-name = "%"
+        }
+        filters = []
       },
       {
-        "rule-id" : 2,
-        "rule-name" : "etl-transformation-rule",
-        "rule-type" : "transformation",
-        "rule-target" : "table",
-        "rule-action" : "rename",
-        "object-locator" : {
-          "schema-name" : "npd",
-          "table-name" : "%"
-        },
-        "value" : "${var.etl_db.db_instance_name}-migrated"
+        rule-id = 2
+        rule-name = "schema-transformation-rule"
+        rule-type = "transformation"
+        rule-target = "schema"
+        rule-action = "rename"
+        object-locator = {
+          schema-name = "npd"
+        }
+        value = "npd_staging"
       }
     ]
   })
@@ -90,9 +99,17 @@ module "database_migration_service" {
       serverless_config = {
         max_capacity_units     = 8
         min_capacity_units     = 4
-        multi_az               = var.multi_az
-        vpc_security_group_ids = [var.networking.etl_db_security_group_id, var.networking.api_db_security_group_id]
+        multi_az               = local.multi_az
+        vpc_security_group_ids = [
+          var.networking.etl_db_security_group_id,
+          var.networking.api_db_security_group_id
+        ]
       }
     }
   }
+
+  depends_on = [
+    data.aws_secretsmanager_secret_version.etl_db,
+    data.aws_secretsmanager_secret_version.fhir_db
+  ]
 }

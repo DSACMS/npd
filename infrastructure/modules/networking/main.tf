@@ -142,6 +142,13 @@ resource "aws_vpc_security_group_ingress_rule" "fhir_api_can_access_fhir_api_db"
   referenced_security_group_id = aws_security_group.fhir_api_sg.id
 }
 
+resource "aws_vpc_security_group_ingress_rule" "fhir_api_db_can_access_fhir_api_db" {
+  description                  = "Allows workers within the FHIR API DB security group to talk to each other"
+  security_group_id            = aws_security_group.fhir_api_db_sg.id
+  ip_protocol                  = "-1"
+  referenced_security_group_id = aws_security_group.fhir_api_db_sg.id
+}
+
 resource "aws_vpc_security_group_ingress_rule" "etl_sg_can_connect_to_fhir_api_db" {
   description                  = "Accepts Postgres connections from ETL security group"
   security_group_id            = aws_security_group.fhir_api_db_sg.id
@@ -184,6 +191,13 @@ resource "aws_vpc_security_group_ingress_rule" "etl_sg_can_connect_to_etl_db" {
   from_port                    = 5432
   to_port                      = 5432
   referenced_security_group_id = aws_security_group.etl_sg.id
+}
+
+resource "aws_vpc_security_group_ingress_rule" "etl_db_sg_can_access_etl_db_sg" {
+  description                  = "Allows workers within the ETL DB security group to talk to each other"
+  security_group_id            = aws_security_group.fhir_etl_db_sg.id
+  ip_protocol                  = "-1"
+  referenced_security_group_id = aws_security_group.fhir_etl_db_sg.id
 }
 
 resource "aws_vpc_security_group_ingress_rule" "github_runner_can_connect_to_etl_db" {
