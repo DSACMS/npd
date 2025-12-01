@@ -8,33 +8,24 @@ import argparse
 """
 npr is an NPd Runner
 
-Run commands in the npd project directory (https://github.com/DSACMS/npd)
+Run docker compose commands in the npd project directory (https://github.com/DSACMS/npd)
 """
 
 EPILOG_TEXT = """
 examples:
-  ## Backend
-
-  %(prog)s make [COMMAND]
-    Run backend make command on host
-
-  %(prog)s make tests
-    Run backend tests on host, with full db setup
+  \033[36;1m[ Backend ]\033[0m service: django-web
 
   %(prog)s -t python manage.py test
-    Run backend tests in container, with backend/compose.test.yml configuration,
-    without db setup
+    Run backend tests in the "django-web" container, with
+    backend/compose.test.yml configuration, without db setup
 
   %(prog)s -e DJANGO_SETTINGS_MODULE=app.settings.test python manage.py shell
-    Open Django shell with custom settings
+    Open Django shell with test settings using an environment variable
 
-  %(prog)s make migrate
-    Run database migrations using the backend make migrate command on host
-
-  ## Frontend
+  \033[36;1m[ Frontend ]\033[0m service: web
 
   %(prog)s npm [COMMAND]
-    Run frontend npm command in web service container
+    Run frontend npm commands in the "web" service container
 
   %(prog)s npm test
     Run frontend tests
@@ -45,26 +36,20 @@ examples:
   %(prog)s npm install --save react-whatever
     Add an npm package to the frontend project
 
-  ## Playwright
-
-  %(prog)s playwright test
-    Run playwright test suite on host from inside the playwright/ folder
-
-  ## Database
+  \033[36;1m[ Database ]\033[0m service: db
 
   %(prog)s -e PGPASSWORD=postgres -s db psql -U postgres -h db
     Connect to PostgreSQL database in the db service with default user/pass
 
-  ## Migrations
+  \033[36;1m[ Flyway ]\033[0m service: db-migrations
 
   %(prog)s migrate
     Run database migrations using the db-migrations service
 
-  ## Setup Development Environment
+  \033[36;1m[ Playwright ]\033[0m  on host, in playwright/
 
-  docker compose build
-  %(prog)s make setup
-  %(prog)s make install-tools
+  %(prog)s playwright test
+    Run playwright test suite on host from inside the playwright/ folder
 """
 
 
@@ -77,15 +62,6 @@ def determine_service(command: list[str]) -> str | None:
         return None
 
     first_arg = command[0].lower()
-
-    unified_test_commands = ["test"]
-    if first_arg in unified_test_commands:
-        return "test:all"
-
-    backend_host_shell_commands = ["make"]
-    if first_arg in backend_host_shell_commands:
-        # when running a host command, return `host:$folder`
-        return "host:backend"
 
     if first_arg == "playwright":
         return "host:playwright"
@@ -138,6 +114,7 @@ def argument_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--debug", action="store_true", default=False, help="Show verbose debug output"
     )
+
     # after all known options have been parsed, expect a command with its own arguments
     parser.add_argument(
         "command",
@@ -186,7 +163,7 @@ def main():
     known_args, command_args = parse_arguments()
 
     if known_args.debug:
-        dprint("known_args:", known_args)
+        dprint("known_args:  ", known_args)
         dprint("command_args:", command_args)
 
     # Determine service
@@ -203,43 +180,26 @@ def main():
 
     # Build runnable command
     cwd = os.getcwd()
-    on_host = False
-    run_env = {}
 
-    if service.startswith("host"):
-        _, cwd = service.split(":")
-        on_host = True
-        if cwd == "playwright":
-            run_cmd = ["npx"]
-        else:
-            run_cmd = []
-    else:
-        run_cmd = [
-            "docker",
-            "compose",
-        ]
+    run_cmd = [
+        "docker",
+        "compose",
+    ]
 
     # Add optional test configuration
-    if not on_host and service == "django-web" and known_args.test:
+    if service == "django-web" and known_args.test:
         run_cmd.extend(("-f", "backend/docker-compose.yml"))
         run_cmd.extend(("-f", "backend/compose.test.yml"))
 
-    if not on_host:
-        run_cmd.extend(("run", "--rm"))
+    run_cmd.extend(("run", "--rm"))
 
     # Add environment variables
     if known_args.env_vars:
-        if not on_host:
-            for env_var in known_args.env_vars:
-                run_cmd.extend(["-e", env_var])
-        else:
-            for env_var in known_args.env_vars:
-                key, value = env_var.split("=", 1)
-                run_env[key] = value
+        for env_var in known_args.env_vars:
+            run_cmd.extend(["-e", env_var])
 
     # Add service name
-    if not on_host:
-        run_cmd.append(service)
+    run_cmd.append(service)
 
     # Add the actual command
     run_cmd.extend(command_args)
