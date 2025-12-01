@@ -47,7 +47,8 @@ help:
 	@echo "  First time setup:   make setup && make install-tools && make up"
 	@echo "  Daily development:  git pull && make update && make up"
 	@echo "  Before committing:  make test && make lint"
-	@echo "  Run tests:          make test"
+	@echo "  Run isolated tests: make test"
+	@echo "  Run e2e tests:      make test-server &; make playwright"
 	@echo "  Run some tests:     make test-fast ARGS=npdfhir.tests"
 	@echo "  Run one test:       make test-fast ARGS=provider_directory.tests.test_frontend_settings.TestFeatureFlags.test_returns_flags_json"
 	@echo "  Clean shutdown:     make down && make clean"
@@ -141,6 +142,7 @@ build-frontend-assets: clean-frontend
 		$(MAKE) backend/provider_directory/static/.vite/manifest.json
 
 # build frontend assets and ensure the backend application is running
+.PHONY: up
 up:
 	@echo "Staring django-web and web services..."
 	@docker compose up -d django-web web
@@ -148,11 +150,12 @@ up:
 	@echo "  site: http://localhost:8000/"
 	@echo "  docs: http://localhost:8000/fhir/docs/"
 
-
+.PHONY: down
 down:
 	@echo "Shutting down all docker compose services..."
 	@docker compose down
 
+.PHONY: test-setup
 test-setup:
 	@echo "Setting up test database..."
 	@docker compose -f compose.test.yml up -d --wait db
@@ -161,6 +164,7 @@ test-setup:
 	@docker compose -f compose.test.yml exec db sh -c 'echo "CREATE $$POSTGRES_DB"; PGPASSWORD=$$POSTGRES_PASSWORD psql -q -h localhost -U "$$POSTGRES_USER" -d postgres -c "CREATE DATABASE $$POSTGRES_DB"'
 	@docker compose -f compose.test.yml run --rm db-migrations migrate
 
+.PHONY: test
 test: test-setup
 	@echo "Running backend tests..."
 	@docker compose -f compose.yml -f compose.test.yml run --rm django-web python manage.py test
@@ -168,9 +172,15 @@ test: test-setup
 	@echo "Running frontend tests..."
 	@docker compose run --rm web npm test
 
+.PHONY: test-fast
 test-fast:
 	@echo "Rerunning backend tests..."
 	@docker compose -f compose.test.yml run --rm django-web python manage.py test $(ARGS)
+
+.PHONY: playwright
+playwright:
+	@cd playwright; \
+		npx playwright test
 
 # clean up test artifacts
 .PHONY: clean
@@ -203,10 +213,12 @@ seed-users:
 # end-to-end test support
 ##
 
+.PHONY: build-frontend-test-assets
 build-frontend-test-assets: clean-frontend
 	export VITE_API_BASE_URL=http://localhost:8008; \
 		$(MAKE) backend/provider_directory/static/.vite/manifest.json
 
+.PHONY: test-server
 test-server: test-setup build-frontend-test-assets
 	@docker compose -f compose.test.yml run --rm --publish 8008:8008 django-web python manage.py runserver 0.0.0.0:8008
 
@@ -220,4 +232,5 @@ setup: build create-db migrate
 	@$(MAKE) -C backend setup
 
 # bring local working copy up to date
+.PHONY: update
 update: build migrate build-frontend-assets
