@@ -142,7 +142,7 @@
     },
     "FullLoadSettings": {
         "CommitRate": 10000,
-        "StopTaskCachedChangesApplied": false,
+        "StopTaskCachedChangesApplied": true,
         "StopTaskCachedChangesNotApplied": false,
         "MaxFullLoadSubTasks": 8,
         "TransactionConsistencyTimeout": 600,
