@@ -19,13 +19,14 @@ export const Login = () => {
     <main className={mainClasses}>
       <div className="ds-base ds-l-container">
         <div className="ds-l-row">
-          <div className="ds-l-md-col--8 ds-l-sm-col--12">
+          <div className="ds-l-lg-col--6 ds-l-md-col--8">
             <div className={styles.spacer}></div>
             <div className={styles.card}>
               <form
                 method="post"
                 action={apiUrl("/accounts/login/")}
                 className="usa-form"
+                id="login-form"
               >
                 <CsrfInput />
                 <fieldset className="usa-fieldset">

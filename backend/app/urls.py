@@ -14,6 +14,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
 from django.urls import include, path
 from debug_toolbar.toolbar import debug_toolbar_urls
@@ -46,9 +47,9 @@ urlpatterns = [
     #
     # See app/tests/test_routing.py for validation tests to ensure that changes
     # inside npdfhir.urls don't break our routing configuration.
-    path('fhir/', include("npdfhir.urls")),
-    path('fhir', npdfhir_router.get_api_root_view, name='api-root'),
-    path('admin/', admin.site.urls),
+    path("fhir/", include("npdfhir.urls")),
+    path("fhir", npdfhir_router.get_api_root_view, name="api-root"),
+    path("admin/", admin.site.urls),
     # everything else goes to provider_directory
-    path('', include('provider_directory.urls')),
+    path("", include("provider_directory.urls")),
 ] + debug_toolbar_urls()

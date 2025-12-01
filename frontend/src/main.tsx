@@ -11,12 +11,14 @@ import "@uswds/uswds"
 
 import "./i18n.ts"
 
-import { AuthenticatedRoute } from "./components/AuthenticatedRoute.tsx"
+import { AuthenticatedRoute } from "./components/AuthenticatedRoute"
+import { FeatureFlagRoute } from "./components/FeatureFlagRoute"
 import { Developers } from "./pages/Developers"
 import { Landing } from "./pages/Landing"
 import { Layout } from "./pages/Layout"
-import { Login } from "./pages/Login.tsx"
-import { FrontendSettingsProvider } from "./state/FrontendSettingsProvider.tsx"
+import { Login } from "./pages/Login"
+import { Search } from "./pages/Search"
+import { FrontendSettingsProvider } from "./state/FrontendSettingsProvider"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -25,9 +27,14 @@ createRoot(document.getElementById("root")!).render(
         <Routes>
           <Route element={<Layout />}>
             <Route path="/accounts/login/" element={<Login />} />
+
             <Route element={<AuthenticatedRoute />}>
               <Route index element={<Landing />} />
               <Route path="/developers" element={<Developers />} />
+
+              <Route element={<FeatureFlagRoute name="SEARCH_APP" />}>
+                <Route path="/search" element={<Search />} />
+              </Route>
             </Route>
           </Route>
         </Routes>

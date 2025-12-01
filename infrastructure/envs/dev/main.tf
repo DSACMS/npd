@@ -33,6 +33,25 @@ data "aws_vpc" "default" {
   }
 }
 
+module "domains" {
+  source = "../../modules/domains"
+
+  tier = var.tier
+}
+
+module "dns" {
+  source = "../../modules/dns"
+
+  enable_internal_domain_for_directory = true
+  api_domain                           = module.domains.api_domain
+  api_alb_dns_name                     = module.fhir-api.api_alb_dns_name
+  directory_domain                     = module.domains.directory_domain
+  directory_alb_dns_name               = module.fhir-api.api_dot_alb_dns_name
+  directory_alb_zone_id                = module.fhir-api.api_alb_zone_id
+  etl_domain                           = module.domains.etl_domain
+  etl_alb_dns_name                     = module.etl.dagster_ui_alb_dns_name
+}
+
 module "repositories" {
   source = "../../modules/repositories"
 
@@ -57,6 +76,7 @@ module "api-db" {
   family                  = "postgres17"
   instance_class          = "db.t3.large"
   allocated_storage       = 100
+  max_allocated_storage   = 1000
   storage_type            = "gp3"
   publicly_accessible     = false
   username                = "npd"
@@ -77,7 +97,8 @@ module "etl-db" {
   engine_version          = "17"
   family                  = "postgres17"
   instance_class          = "db.t3.large"
-  allocated_storage       = 500
+  allocated_storage       = 2000
+  max_allocated_storage   = 4000
   publicly_accessible     = false
   username                = "npd_etl"
   db_name                 = "npd_etl"
@@ -118,12 +139,12 @@ module "ecs" {
 module "fhir-api" {
   source = "../../modules/fhir-api"
 
-  account_name              = local.account_name
-  fhir_api_migration_image  = var.migration_image
-  fhir_api_image            = var.fhir_api_image
-  ecs_cluster_id            = module.ecs.cluster_id
-  redirect_to_strategy_page = false
-  desired_task_count        = 2
+  account_name             = local.account_name
+  fhir_api_migration_image = var.migration_image
+  fhir_api_image           = var.fhir_api_image
+  ecs_cluster_id           = module.ecs.cluster_id
+  desired_task_count       = 2
+  require_authentication   = var.require_authentication
   db = {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address
@@ -136,6 +157,10 @@ module "fhir-api" {
     alb_security_group_id = module.networking.alb_security_group_id
     api_security_group_id = module.networking.api_security_group_id
     vpc_id                = module.networking.vpc_id
+    directory_domain      = module.domains.directory_domain
+    enable_ssl_directory  = false
+    api_domain            = module.domains.api_domain
+    enable_ssl_api        = false
   }
 }
 
@@ -165,13 +190,12 @@ module "etl" {
 
 # Migrations module
 module "migrations" {
-  count       = 0
-  source      = "../../modules/migrations"
+  source = "../../modules/migrations"
 
-  multi_az = false
+  multi_az     = false
   account_name = local.account_name
-  region = var.region
-  tier = var.tier
+  region       = var.region
+  tier         = var.tier
   fhir_db = {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address
@@ -187,8 +211,8 @@ module "migrations" {
   networking = {
     private_subnet_group_name = module.networking.private_subnet_group_name
     private_subnet_ids        = module.networking.private_subnet_ids
-    api_db_security_group_id = module.networking.db_security_group_id
-    etl_db_security_group_id = module.networking.etl_db_security_group_id
+    api_db_security_group_id  = module.networking.db_security_group_id
+    etl_db_security_group_id  = module.networking.etl_db_security_group_id
     public_subnet_ids         = module.networking.public_subnet_ids
     vpc_id                    = module.networking.vpc_id
   }
@@ -211,4 +235,3 @@ module "github-actions" {
     [module.networking.github_action_runner_security_group_id]
   )
 }
-

@@ -22,7 +22,7 @@ from fhir.resources.R4B.capabilitystatement import (
     CapabilityStatementRest,
     CapabilityStatementRestResource,
     CapabilityStatementRestResourceSearchParam,
-    CapabilityStatementImplementation
+    CapabilityStatementImplementation,
 )
 from datetime import datetime, timezone
 from rest_framework import serializers
@@ -37,7 +37,7 @@ from .models import (
     ProviderToOrganization,
 )
 
-if 'runserver' or 'test' in sys.argv:
+if "runserver" or "test" in sys.argv:
     from .cache import (
         fhir_name_use,
         fhir_phone_use,
@@ -48,25 +48,31 @@ if 'runserver' or 'test' in sys.argv:
 
 class AddressSerializer(serializers.Serializer):
     delivery_line_1 = serializers.CharField(
-        source='addressus__delivery_line_1', read_only=True)
+        source="addressus__delivery_line_1", read_only=True)
     delivery_line_2 = serializers.CharField(
-        source='addressus__delivery_line_2', read_only=True)
+        source="addressus__delivery_line_2", read_only=True)
     city_name = serializers.CharField(
-        source='addressus__city_name', read_only=True)
+        source="addressus__city_name", read_only=True)
     state_abbreviation = serializers.CharField(
-        source='addressus__fipsstate__abbrev', read_only=True)
+        source="addressus__fipsstate__abbrev", read_only=True
+    )
     zipcode = serializers.CharField(
-        source='addressus__zipcode', read_only=True)
-    use = serializers.CharField(
-        source='address_use__value', read_only=True)
+        source="addressus__zipcode", read_only=True)
+    use = serializers.CharField(source="address_use__value", read_only=True)
 
     class Meta:
-        fields = ['delivery_line_1', 'delivery_line_2',
-                  'city_name', 'state_abbreviation', 'zipcode', 'use']
+        fields = [
+            "delivery_line_1",
+            "delivery_line_2",
+            "city_name",
+            "state_abbreviation",
+            "zipcode",
+            "use",
+        ]
 
     def to_representation(self, instance):
         representation = super().to_representation(instance)
-        if hasattr(instance, 'address'):
+        if hasattr(instance, "address"):
             address = instance.address.address_us
         else:
             address = instance.address_us
@@ -78,10 +84,10 @@ class AddressSerializer(serializers.Serializer):
             city=address.city_name,
             state=address.state_code.abbreviation,
             postalCode=address.zipcode,
-            country='US'
+            country="US",
         )
-        if 'use' in representation.keys():
-            address.use = representation['use'],
+        if "use" in representation.keys():
+            address.use = (representation["use"],)
         return address.model_dump()
 
 
@@ -89,7 +95,7 @@ class EmailSerializer(serializers.Serializer):
     email_address = serializers.CharField(read_only=True)
 
     class Meta:
-        fields = ['email_address']
+        fields = ["email_address"]
 
     def to_representation(self, instance):
         email_contact = ContactPoint(
@@ -101,45 +107,48 @@ class EmailSerializer(serializers.Serializer):
 
 
 class PhoneSerializer(serializers.Serializer):
-
     class Meta:
         model = IndividualToPhone
-        fields = ['phone_number', 'phone_use_id', 'extension']
+        fields = ["phone_number", "phone_use_id", "extension"]
 
     def to_representation(self, instance):
         phone_contact = ContactPoint(
-            system='phone',
+            system="phone",
             use=fhir_phone_use[str(instance.phone_use_id)],
-            value=f"{instance.phone_number}"
+            value=f"{instance.phone_number}",
         )
         if instance.extension is not None:
-            phone_contact.value += f'ext. {instance.extension}'
+            phone_contact.value += f"ext. {instance.extension}"
         return phone_contact.model_dump()
 
 
 class TaxonomySerializer(serializers.Serializer):
-    id = serializers.CharField(source='nucc__code', read_only=True)
+    id = serializers.CharField(source="nucc__code", read_only=True)
     display_name = serializers.CharField(
-        source='nucc__display_name', read_only=True)
+        source="nucc__display_name", read_only=True)
 
     class Meta:
-        fields = ['id', 'display_name']
+        fields = ["id", "display_name"]
 
     def to_representation(self, instance):
         code = CodeableConcept(
-            coding=[Coding(
-                system="http://nucc.org/provider-taxonomy",
-                code=instance.nucc_code_id,
-                display=nucc_taxonomy_codes[str(instance.nucc_code_id)]
-            )]
+            coding=[
+                Coding(
+                    system="http://nucc.org/provider-taxonomy",
+                    code=instance.nucc_code_id,
+                    display=nucc_taxonomy_codes[str(instance.nucc_code_id)],
+                )
+            ]
         )
         qualification = PractitionerQualification(
-            identifier=[Identifier(
-                value="test",
-                type=code,  # TODO: Replace
-                period=Period()
-            )],
-            code=code
+            identifier=[
+                Identifier(
+                    value="test",
+                    type=code,  # TODO: Replace
+                    period=Period(),
+                )
+            ],
+            code=code,
         )
         return qualification.model_dump()
 
@@ -150,28 +159,32 @@ class OtherIdentifierSerializer(serializers.Serializer):
     expiry_date = serializers.DateField(read_only=True)
 
     class Meta:
-        fields = ['value', 'issue_date', 'expiry_date', 'other_identifier_type',
-                  'other_identifier_type_id', 'other_identifier_type_value']
+        fields = [
+            "value",
+            "issue_date",
+            "expiry_date",
+            "other_identifier_type",
+            "other_identifier_type_id",
+            "other_identifier_type_value",
+        ]
 
     def to_representation(self, id):
-
         other_identifier_type_id = id.other_identifier_type_id
         license_identifier = Identifier(
             # system="", TODO: Figure out how to associate a system with each identifier
             value=id.value,
             type=CodeableConcept(
-                coding=[Coding(
-                    system="http://terminology.hl7.org/CodeSystem/v2-0203",
-                    code=str(other_identifier_type_id),
-                    display=other_identifier_type[str(
-                        other_identifier_type_id)]
-                )]
+                coding=[
+                    Coding(
+                        system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                        code=str(other_identifier_type_id),
+                        display=other_identifier_type[str(
+                            other_identifier_type_id)],
+                    )
+                ]
             ),
             # use="" TODO: Add use for other identifier
-            period=Period(
-                start=id.issue_date,
-                end=id.expiry_date
-            )
+            period=Period(start=id.issue_date, end=id.expiry_date),
         )
         return license_identifier.model_dump()
 
@@ -186,24 +199,36 @@ class NameSerializer(serializers.Serializer):
     suffix = serializers.CharField(read_only=True)
 
     class Meta:
-        fields = ['last_name', 'first_name', 'middle_name',
-                  'start_date', 'end_date', 'prefix', 'suffix']
+        fields = [
+            "last_name",
+            "first_name",
+            "middle_name",
+            "start_date",
+            "end_date",
+            "prefix",
+            "suffix",
+        ]
 
     def to_representation(self, name):
-
-        name_parts = [part for part in [name.prefix, name.first_name,
-                                        name.middle_name, name.last_name, name.suffix] if part != '' and part is not None]
+        name_parts = [
+            part
+            for part in [
+                name.prefix,
+                name.first_name,
+                name.middle_name,
+                name.last_name,
+                name.suffix,
+            ]
+            if part != "" and part is not None
+        ]
         human_name = HumanName(
             use=fhir_name_use[str(name.name_use_id)],
-            text=' '.join(name_parts),
+            text=" ".join(name_parts),
             family=name.last_name,
             given=[name.first_name, name.middle_name],
             prefix=[name.prefix],
             suffix=[name.suffix],
-            period=Period(
-                start=name.start_date,
-                end=name.end_date
-            )
+            period=Period(start=name.start_date, end=name.end_date),
         )
         return human_name.model_dump()
 
@@ -211,35 +236,33 @@ class NameSerializer(serializers.Serializer):
 class NPISerializer(serializers.ModelSerializer):
     class Meta:
         model = Npi
-        fields = '__all__'
+        fields = "__all__"
 
 
 class IndividualSerializer(serializers.Serializer):
-    name = NameSerializer(
-        source='individualtoname_set', read_only=True, many=True)
+    name = NameSerializer(source="individualtoname_set",
+                          read_only=True, many=True)
     email = EmailSerializer(
-        source='individualtoemail_set', read_only=True, many=True)
+        source="individualtoemail_set", read_only=True, many=True)
     phone = PhoneSerializer(
-        source='individualtophone_set', many=True, read_only=True)
+        source="individualtophone_set", many=True, read_only=True)
     address = AddressSerializer(
-        source='individualtoaddress_set', many=True, read_only=True)
+        source="individualtoaddress_set", many=True, read_only=True)
 
     class Meta:
-        fields = ['name', 'email', 'phone']
+        fields = ["name", "email", "phone"]
 
     def to_representation(self, instance):
         representation = super().to_representation(instance)
-        individual = {
-            'name': representation['name']
-        }
+        individual = {"name": representation["name"]}
         telecom = []
-        if 'phone' in representation.keys():
-            telecom += representation['phone']
-        if 'email' in representation.keys():
-            telecom += representation['email']
-        individual['telecom'] = telecom
-        if representation['address'] != []:
-            individual['address'] = representation['address']
+        if "phone" in representation.keys():
+            telecom += representation["phone"]
+        if "email" in representation.keys():
+            telecom += representation["email"]
+        individual["telecom"] = telecom
+        if representation["address"] != []:
+            individual["address"] = representation["address"]
         return individual
 
 
@@ -249,20 +272,22 @@ class OrganizationNameSerializer(serializers.Serializer):
 
     class Meta:
         model = OrganizationToName
-        fields = ['name', 'is_primary']
+        fields = ["name", "is_primary"]
 
 
 class EndpointPayloadSeriazlier(serializers.Serializer):
     class Meta:
-        fields = ['type', 'mime_type']
+        fields = ["type", "mime_type"]
 
     def to_representation(self, instance):
         payload_type = CodeableConcept(
-            coding=[Coding(
-                system="http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
-                code=instance.payload_type.id,
-                display=instance.payload_type.value
-            )]
+            coding=[
+                Coding(
+                    system="http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
+                    code=instance.payload_type.id,
+                    display=instance.payload_type.value,
+                )
+            ]
         )
 
         return payload_type
@@ -270,7 +295,7 @@ class EndpointPayloadSeriazlier(serializers.Serializer):
 
 class EndpointIdentifierSerialzier(serializers.Serializer):
     class Meta:
-        fields = ['identifier', 'system', 'value', 'assigner']
+        fields = ["identifier", "system", "value", "assigner"]
 
     def to_representation(self, instance):
         endpoint_identifier = Identifier(
@@ -278,7 +303,7 @@ class EndpointIdentifierSerialzier(serializers.Serializer):
             system=instance.system,
             value=instance.other_id,
             # TODO: Replace with Organization reference
-            assigner=Reference(display=str(instance.issuer_id))
+            assigner=Reference(display=str(instance.issuer_id)),
         )
 
         return endpoint_identifier.model_dump()
@@ -286,14 +311,14 @@ class EndpointIdentifierSerialzier(serializers.Serializer):
 
 class OrganizationSerializer(serializers.Serializer):
     name = OrganizationNameSerializer(
-        source='organizationtoname_set', many=True, read_only=True)
+        source="organizationtoname_set", many=True, read_only=True)
     authorized_official = IndividualSerializer(read_only=True)
     address = AddressSerializer(
-        source='organizationtoaddress_set', many=True, read_only=True)
+        source="organizationtoaddress_set", many=True, read_only=True)
 
     class Meta:
         model = Organization
-        fields = '__all__'
+        fields = "__all__"
 
     def to_representation(self, instance):
         representation = super().to_representation(instance)
@@ -326,17 +351,19 @@ class OrganizationSerializer(serializers.Serializer):
                     system="http://terminology.hl7.org/NamingSystem/npi",
                     value=str(clinical_org.npi.npi),
                     type=CodeableConcept(
-                        coding=[Coding(
-                            system="http://terminology.hl7.org/CodeSystem/v2-0203",
-                            code="PRN",
-                            display="Provider number"
-                        )]
+                        coding=[
+                            Coding(
+                                system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                                code="PRN",
+                                display="Provider number",
+                            )
+                        ]
                     ),
-                    use='official',
+                    use="official",
                     period=Period(
                         start=clinical_org.npi.enumeration_date,
-                        end=clinical_org.npi.deactivation_date
-                    )
+                        end=clinical_org.npi.deactivation_date,
+                    ),
                 )
                 identifiers.append(npi_identifier)
 
@@ -345,31 +372,37 @@ class OrganizationSerializer(serializers.Serializer):
                         system=str(other_id.other_id_type_id),
                         value=other_id.other_id,
                         type=CodeableConcept(
-                            coding=[Coding(
-                                system="http://terminology.hl7.org/CodeSystem/v2-0203",
-                                code="test",  # do we define this based on the type of id it is?
-                                display="test"  # same as above ^
-                            )]
-                        )
+                            coding=[
+                                Coding(
+                                    system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    code="test",  # do we define this based on the type of id it is?
+                                    display="test",  # same as above ^
+                                )
+                            ]
+                        ),
                     )
                     identifiers.append(other_identifier)
 
                 for taxonomy in clinical_org.organizationtotaxonomy_set.all():
                     code = CodeableConcept(
-                        coding=[Coding(
-                            system="http://nucc.org/provider-taxonomy",
-                            code=taxonomy.nucc_code_id,
-                            display=nucc_taxonomy_codes[str(
-                                taxonomy.nucc_code_id)]
-                        )]
+                        coding=[
+                            Coding(
+                                system="http://nucc.org/provider-taxonomy",
+                                code=taxonomy.nucc_code_id,
+                                display=nucc_taxonomy_codes[str(
+                                    taxonomy.nucc_code_id)],
+                            )
+                        ]
                     )
                     qualification = PractitionerQualification(
-                        identifier=[Identifier(
-                            value="test",
-                            type=code,  # TODO: Replace
-                            period=Period()
-                        )],
-                        code=code
+                        identifier=[
+                            Identifier(
+                                value="test",
+                                type=code,  # TODO: Replace
+                                period=Period(),
+                            )
+                        ],
+                        code=code,
                     )
                     taxonomies.append(qualification.model_dump())
                 # TODO extend based on US core
@@ -378,9 +411,9 @@ class OrganizationSerializer(serializers.Serializer):
 
         organization.identifier = identifiers
 
-        names = representation.get('name', [])
-        primary_names = [n['name'] for n in names if n['is_primary']]
-        alias_names = [n['name'] for n in names if not n['is_primary']]
+        names = representation.get("name", [])
+        primary_names = [n["name"] for n in names if n["is_primary"]]
+        alias_names = [n["name"] for n in names if not n["is_primary"]]
 
         if primary_names:
             organization.name = primary_names[0]
@@ -392,15 +425,15 @@ class OrganizationSerializer(serializers.Serializer):
             organization.alias = alias_names
 
         if hasattr(instance, "authorized_official"):
-            authorized_official = representation['authorized_official']
+            authorized_official = representation["authorized_official"]
             # r4 only allows one name for contact. TODO update to ndh
-            authorized_official['name'] = authorized_official['name'][0]
+            authorized_official["name"] = authorized_official["name"][0]
 
-            if representation['address'] != []:
-                authorized_official['address'] = representation['address'][0]
+            if representation["address"] != []:
+                authorized_official["address"] = representation["address"][0]
             else:
-                if 'address' in authorized_official.keys():
-                    del authorized_official['address']
+                if "address" in authorized_official.keys():
+                    del authorized_official["address"]
             organization.contact = [authorized_official]
 
         return organization.model_dump()
@@ -410,12 +443,13 @@ class PractitionerSerializer(serializers.Serializer):
     npi = NPISerializer()
     individual = IndividualSerializer(read_only=True)
     identifier = OtherIdentifierSerializer(
-        source='providertootheridentifier_set', many=True, read_only=True)
+        source="providertootheridentifier_set", many=True, read_only=True
+    )
     taxonomy = TaxonomySerializer(
-        source='providertotaxonomy_set', many=True, read_only=True)
+        source="providertotaxonomy_set", many=True, read_only=True)
 
     class Meta:
-        fields = ['npi', 'name', 'email', 'phone', 'identifier', 'taxonomy']
+        fields = ["npi", "name", "email", "phone", "identifier", "taxonomy"]
 
     def to_representation(self, instance):
         representation = super().to_representation(instance)
@@ -429,28 +463,31 @@ class PractitionerSerializer(serializers.Serializer):
             system="http://terminology.hl7.org/NamingSystem/npi",
             value=str(instance.npi.npi),
             type=CodeableConcept(
-                coding=[Coding(
-                    system="http://terminology.hl7.org/CodeSystem/v2-0203",
-                    code="PRN",
-                    display="Provider number"
-                )]
+                coding=[
+                    Coding(
+                        system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                        code="PRN",
+                        display="Provider number",
+                    )
+                ]
             ),
-            use='official',
-            period=Period(
-                start=instance.npi.enumeration_date,
-                end=instance.npi.deactivation_date
-            )
+            use="official",
+            period=Period(start=instance.npi.enumeration_date,
+                          end=instance.npi.deactivation_date),
         )
-        if representation['individual']['telecom'] != []:
-            practitioner.telecom = representation['individual']['telecom']
-        if 'address' in representation['individual'].keys() and representation['individual']['address'] != []:
-            practitioner.address = representation['individual']['address']
+        if representation["individual"]["telecom"] != []:
+            practitioner.telecom = representation["individual"]["telecom"]
+        if (
+            "address" in representation["individual"].keys()
+            and representation["individual"]["address"] != []
+        ):
+            practitioner.address = representation["individual"]["address"]
         practitioner.identifier = [npi_identifier]
-        if 'identifier' in representation.keys():
-            practitioner.identifier += representation['identifier']
-        practitioner.name = representation['individual']['name']
-        if 'taxonomy' in representation.keys():
-            practitioner.qualification = representation['taxonomy']
+        if "identifier" in representation.keys():
+            practitioner.identifier += representation["identifier"]
+        practitioner.name = representation["individual"]["name"]
+        if "taxonomy" in representation.keys():
+            practitioner.qualification = representation["taxonomy"]
         return practitioner.model_dump()
 
 
@@ -462,21 +499,22 @@ class LocationSerializer(serializers.Serializer):
         model = Location
 
     def to_representation(self, instance):
-        request = self.context.get('request')
+        request = self.context.get("request")
         representation = super().to_representation(instance)
         location = FHIRLocation()
         location.id = str(instance.id)
         if instance.active:
-            location.status = 'active'
+            location.status = "active"
         else:
-            location.status = 'inactive'
+            location.status = "inactive"
         location.name = instance.name
         # if 'phone' in representation.keys():
         #    location.telecom = representation['phone']
-        if 'address' in representation.keys():
-            location.address = representation['address']
+        if "address" in representation.keys():
+            location.address = representation["address"]
         location.managingOrganization = genReference(
-            'fhir-organization-detail', instance.organization_id, request)
+            "fhir-organization-detail", instance.organization_id, request
+        )
         return location.model_dump()
 
 
@@ -487,17 +525,20 @@ class PractitionerRoleSerializer(serializers.Serializer):
         model = ProviderToOrganization
 
     def to_representation(self, instance):
-        request = self.context.get('request')
-        representation = super().to_representation(instance)
+        request = self.context.get("request")
+        # representation = super().to_representation(instance)
         practitioner_role = PractitionerRole()
         practitioner_role.id = str(instance.id)
         practitioner_role.active = instance.active
         practitioner_role.practitioner = genReference(
-            'fhir-practitioner-detail', instance.provider_to_organization.individual_id, request)
+            "fhir-practitioner-detail", instance.provider_to_organization.individual_id, request
+        )
         practitioner_role.organization = genReference(
-            'fhir-organization-detail', instance.provider_to_organization.organization_id, request)
-        practitioner_role.location = [genReference(
-            'fhir-location-detail', instance.location.id, request)]
+            "fhir-organization-detail", instance.provider_to_organization.organization_id, request
+        )
+        practitioner_role.location = [
+            genReference("fhir-location-detail", instance.location.id, request)
+        ]
         # These lines rely on the fhir.resources.R4B representation of PractitionerRole to be expanded to match the ndh FHIR definition. This is a TODO with an open ticket.
         # if 'other_phone' in representation.keys():
         #    practitioner_role.telecom = representation['other_phone']
@@ -507,14 +548,22 @@ class PractitionerRoleSerializer(serializers.Serializer):
 
 class EndpointSerializer(serializers.Serializer):
     payload = EndpointPayloadSeriazlier(
-        source='endpointinstancetopayload_set', many=True, read_only=True)
+        source="endpointinstancetopayload_set", many=True, read_only=True
+    )
     identifier = EndpointIdentifierSerialzier(
-        source='endpointinstancetootherid_set', many=True, read_only=True
+        source="endpointinstancetootherid_set", many=True, read_only=True
     )
 
     class Meta:
-        fields = ['id', 'ehr_vendor', 'address', 'endpoint_connection_type',
-                  'name', 'description', 'endpoint_instance']
+        fields = [
+            "id",
+            "ehr_vendor",
+            "address",
+            "endpoint_connection_type",
+            "name",
+            "description",
+            "endpoint_instance",
+        ]
 
     def to_representation(self, instance):
         request = self.context.get('request')
@@ -568,38 +617,31 @@ class CapabilityStatementSerializer(serializers.Serializer):
     """
 
     def to_representation(self, instance):
-        request = self.context.get('request')
-        baseURL = request.build_absolute_uri('/fhir')
-        metadataURL = request.build_absolute_uri(reverse('fhir-metadata'))
-        schemaData = get_schema_data(request, 'schema')
+        request = self.context.get("request")
+        baseURL = request.build_absolute_uri("/fhir")
+        metadataURL = request.build_absolute_uri(reverse("fhir-metadata"))
+        schemaData = get_schema_data(request, "schema")
 
         capability_statement = CapabilityStatement(
             url=metadataURL,
-            version=schemaData['info']['version'],
+            version=schemaData["info"]["version"],
             name="FHIRCapablityStatement",
             title=f"{schemaData['info']['title']} -  FHIR Capablity Statement",
             status="active",
             date=datetime.now(timezone.utc),
             publisher="CMS",
             contact=[
-                ContactDetail(
-                    telecom=[
-                        ContactPoint(
-                            system="email",
-                            value="npd@cms.hhs.gov"
-                        )
-                    ]
-                )
+                ContactDetail(telecom=[ContactPoint(
+                    system="email", value="npd@cms.hhs.gov")])
             ],
             description="This CapabilityStatement describes the capabilities of the National Provider Directory FHIR API, including supported resources, search parameters, and operations.",
             kind="instance",
             implementation=CapabilityStatementImplementation(
-                description=schemaData['info']['description'],
-                url=baseURL
+                description=schemaData["info"]["description"], url=baseURL
             ),
             fhirVersion="4.0.1",
             format=["fhir+json"],
-            rest=[self.build_rest_components(schemaData)]
+            rest=[self.build_rest_components(schemaData)],
         )
 
         return capability_statement.model_dump()
@@ -615,21 +657,21 @@ class CapabilityStatementSerializer(serializers.Serializer):
             "Organization": "/fhir/Organization/",
             "Endpoint": "/fhir/Endpoint/",
             "Location": "/fhir/Location/",
-            "PractitionerRole": "/fhir/PractitionerRole/"
+            "PractitionerRole": "/fhir/PractitionerRole/",
         }
 
         resource_capabilities = []
         for resource_type, path in resources.items():
-            if path in schemaData['paths']:
+            if path in schemaData["paths"]:
                 resource_capabilities.append(
                     self.build_resource_capabilities(
-                        resource_type, schemaData['paths'][path])
+                        resource_type, schemaData["paths"][path])
                 )
 
         return CapabilityStatementRest(
             mode="server",
             documentation="All FHIR endpoints for the National Provider Directory",
-            resource=resource_capabilities
+            resource=resource_capabilities,
         )
 
     def build_resource_capabilities(self, resource_type, schemaData):
@@ -640,17 +682,14 @@ class CapabilityStatementSerializer(serializers.Serializer):
                 CapabilityStatementRestResourceSearchParam(
                     name=param["name"],
                     type=param["schema"]["type"],
-                    documentation=param["description"]
+                    documentation=param["description"],
                 )
             )
 
         return CapabilityStatementRestResource(
             type=resource_type,
-            interaction=[
-                {"code": "read"},
-                {"code": "search-type"}
-            ],
-            searchParam=searchParams
+            interaction=[{"code": "read"}, {"code": "search-type"}],
+            searchParam=searchParams,
         )
 
 
@@ -658,6 +697,7 @@ class BundleSerializer(serializers.Serializer):
     """
     Serializer for FHIR Bundle resource
     """
+
     class Meta:
         model = Bundle
 
@@ -665,13 +705,13 @@ class BundleSerializer(serializers.Serializer):
         entries = []
 
         for resource in instance.data:
-            request = self.context.get('request')
+            request = self.context.get("request")
             # Get the resource type (Patient, Practitioner, etc.)
-            resource_type = resource['resourceType']
-            id = resource['id']
-            url_name = f'fhir-{resource_type.lower()}-detail'
+            resource_type = resource["resourceType"]
+            id = resource["id"]
+            url_name = f"fhir-{resource_type.lower()}-detail"
             full_url = request.build_absolute_uri(
-                reverse(url_name, kwargs={'pk': id}))
+                reverse(url_name, kwargs={"pk": id}))
             # Create an entry for this resource
             entry = {
                 "fullUrl": full_url,
@@ -681,10 +721,6 @@ class BundleSerializer(serializers.Serializer):
             entries.append(entry)
 
         # Create the bundle
-        bundle = Bundle(
-            type="searchset",
-            entry=entries,
-            total=len(entries)
-        )
+        bundle = Bundle(type="searchset", entry=entries, total=len(entries))
 
         return bundle.model_dump()
