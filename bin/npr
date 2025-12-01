@@ -45,11 +45,6 @@ examples:
 
   %(prog)s migrate
     Run database migrations using the db-migrations service
-
-  \033[36;1m[ Playwright ]\033[0m  on host, in playwright/
-
-  %(prog)s playwright test
-    Run playwright test suite on host from inside the playwright/ folder
 """
 
 
@@ -64,7 +59,11 @@ def determine_service(command: list[str]) -> str | None:
     first_arg = command[0].lower()
 
     if first_arg == "playwright":
-        return "host:playwright"
+        rest = " ".join(command[1:])
+        eprint(
+            f"Unsupported command. Run `npx playwright {rest}` directly in the playwright/ directory instead"
+        )
+        sys.exit(1)
 
     # Python-related commands go to django-web
     python_commands = ["python", "python3", "pip", "pip3", "django-admin", "manage.py"]
@@ -80,7 +79,7 @@ def determine_service(command: list[str]) -> str | None:
         return "db-migrations"
 
     # npm commands go to web
-    frontend_commands = ["npm", "node"]
+    frontend_commands = ["npm", "node", "npx"]
     if first_arg in frontend_commands:
         return "web"
 
@@ -89,6 +88,10 @@ def determine_service(command: list[str]) -> str | None:
 
 def dprint(*msg: list[str]):
     sys.stderr.write(f"\033[2m> {' '.join(str(m) for m in msg)}\033[0m\n")
+
+
+def eprint(*msg: list[str]):
+    sys.stderr.write(f"\033[31m[Error] {' '.join(str(m) for m in msg)}\033[0m\n")
 
 
 def argument_parser() -> argparse.ArgumentParser:
@@ -109,7 +112,7 @@ def argument_parser() -> argparse.ArgumentParser:
         "--test",
         action="store_true",
         default=False,
-        help="Use backend/compose.test.yml compose file",
+        help="Use compose.test.yml compose file",
     )
     parser.add_argument(
         "--debug", action="store_true", default=False, help="Show verbose debug output"
@@ -189,7 +192,7 @@ def main():
     # Add optional test configuration
     if service == "django-web" and known_args.test:
         run_cmd.extend(("-f", "backend/docker-compose.yml"))
-        run_cmd.extend(("-f", "backend/compose.test.yml"))
+        run_cmd.extend(("-f", "compose.test.yml"))
 
     run_cmd.extend(("run", "--rm"))
 
