@@ -18,14 +18,17 @@ help:
 	@echo "  create-db      Start postgres, create and populate a development DB"
 	@echo "  migrate        Apply pending migrations to the development database"
 	@echo ""
-	@echo "  up             Start the backend web application at http://localhost:8000 with static assets"
-	@echo "  down           Stop all running backend services"
+	@echo "  up             Start the NPD application at http://localhost:8000"
+	@echo "  down           Stop all running docker compose services"
 	@echo ""
-	@echo "  test           Run the full backend test suite with setup"
+	@echo "  test           Run the full frontend and backend test suites with DB setup"
 	@echo "  test-setup     Set up test database (drop/create test DB + run test migrations)"
-	@echo "  test-fast      Run the backend test suite without rerunning database setup"
-	@echo "                 Use ARGS=... to pass arguments."
+	@echo "  test-backend   Run the backend test suite without rerunning database setup"
+	@echo "                 Use ARGS=... to pass arguments"
+	@echo "  test-frontend  Run the frontend test suite"
+	@echo "                 Use ARGS=... to pass arguments"
 	@echo "  test-server    Start a test server for e2e testing with Playwright"
+	@echo "  playwright     Run the playwright e2e test suite (on host)"
 	@echo ""
 	@echo "  clean          Remove cache files, test artifacts, and transient frontend assets"
 	@echo ""
@@ -49,8 +52,8 @@ help:
 	@echo "  Before committing:  make test && make lint"
 	@echo "  Run isolated tests: make test"
 	@echo "  Run e2e tests:      make test-server &; make playwright"
-	@echo "  Run some tests:     make test-fast ARGS=npdfhir.tests"
-	@echo "  Run one test:       make test-fast ARGS=provider_directory.tests.test_frontend_settings.TestFeatureFlags.test_returns_flags_json"
+	@echo "  Run some tests:     make test-backend ARGS=npdfhir.tests"
+	@echo "  Run one test:       make test-backend ARGS=provider_directory.tests.test_frontend_settings.TestFeatureFlags.test_returns_flags_json"
 	@echo "  Clean shutdown:     make down && make clean"
 
 .PHONY: build
@@ -76,14 +79,14 @@ lint:
 	@echo "\033[2m[ lint backend ]\033[0m"
 	@$(MAKE) -C backend lint
 	@echo "\033[2m[ lint frontend ]\033[0m"
-	@docker compose run --rm web npm run lint
+	@bin/npr npm run lint
 
 .PHONY: format
 format:
 	@echo "\033[2m[ format backend ]\033[0m"
 	@$(MAKE) -C backend format
 	@echo "\033[2m[ format frontend ]\033[0m"
-	@docker compose run --rm web npm run format
+	@bin/npr npm run format
 
 ###
 ## Database management
@@ -110,7 +113,7 @@ create-db:
 migrate:
 	@echo "Migrating the development database..."
 	@docker compose up -d db
-	@docker compose run --rm db-migrations migrate
+	@bin/npr migrate
 
 # drop, create, and then run all flyway migrations for the development environment
 .PHONY: reset-db
@@ -134,7 +137,8 @@ clean-frontend:
 # only rebuild frontend assets if they don't already exist
 backend/provider_directory/static/.vite/manifest.json:
 	@echo "Building frontend assets with VITE_API_BASE_URL=$(VITE_API_BASE_URL)"
-	@docker compose run --rm -e VITE_API_BASE_URL=$(VITE_API_BASE_URL) web sh -c "npm install && npm run build"
+	@bin/npr npm install
+	@bin/npr -e VITE_API_BASE_URL=$(VITE_API_BASE_URL) npm run build
 
 .PHONY: build-frontend-assets
 build-frontend-assets: clean-frontend
@@ -162,20 +166,22 @@ test-setup:
 # drop, create, and migrate test database
 	@docker compose -f compose.test.yml exec db sh -c 'echo "DROP   $$POSTGRES_DB"; PGPASSWORD=$$POSTGRES_PASSWORD psql -q -h localhost -U "$$POSTGRES_USER" -d postgres -c "DROP DATABASE IF EXISTS $$POSTGRES_DB"'
 	@docker compose -f compose.test.yml exec db sh -c 'echo "CREATE $$POSTGRES_DB"; PGPASSWORD=$$POSTGRES_PASSWORD psql -q -h localhost -U "$$POSTGRES_USER" -d postgres -c "CREATE DATABASE $$POSTGRES_DB"'
-	@docker compose -f compose.test.yml run --rm db-migrations migrate
+	@bin/npr -t migrate
+
+.PHONY: test-backend
+test-backend:
+	@echo "Running backend tests..."
+	@bin/npr -t python manage.py test $(ARGS)
+
+.PHONY: test-frontend
+test-frontend:
+	@echo "Running frontend tests..."
+	@bin/npr npm test $(ARGS)
 
 .PHONY: test
 test: test-setup
-	@echo "Running backend tests..."
-	@docker compose -f compose.yml -f compose.test.yml run --rm django-web python manage.py test
-
-	@echo "Running frontend tests..."
-	@docker compose run --rm web npm test
-
-.PHONY: test-fast
-test-fast:
-	@echo "Rerunning backend tests..."
-	@docker compose -f compose.test.yml run --rm django-web python manage.py test $(ARGS)
+	@$(MAKE) test-backend
+	@$(MAKE) test-frontend
 
 .PHONY: playwright
 playwright:
@@ -194,20 +200,22 @@ clean: clean-frontend
 .PHONY: createsuperuser
 createsuperuser:
 ifeq ($(and $(DJANGO_SUPERUSER_EMAIL),$(DJANGO_SUPERUSER_USERNAME),$(DJANGO_SUPERUSER_PASSWORD)),)
-	@docker compose run --rm django-web python manage.py createsuperuser
+	@bin/npr python manage.py createsuperuser
 else
-	@docker compose run -e DJANGO_SUPERUSER_EMAIL="$(DJANGO_SUPERUSER_EMAIL)" \
-						-e DJANGO_SUPERUSER_USERNAME="$(DJANGO_SUPERUSER_USERNAME)" \
-						-e DJANGO_SUPERUSER_PASSWORD="$(DJANGO_SUPERUSER_PASSWORD)" \
-						--rm django-web python manage.py createsuperuser --no-input
+	@bin/npr \
+		-e DJANGO_SUPERUSER_EMAIL="$(DJANGO_SUPERUSER_EMAIL)" \
+		-e DJANGO_SUPERUSER_USERNAME="$(DJANGO_SUPERUSER_USERNAME)" \
+		-e DJANGO_SUPERUSER_PASSWORD="$(DJANGO_SUPERUSER_PASSWORD)" \
+		python manage.py createsuperuser --no-input
 endif
 
 .PHONY: seed-users
 seed-users:
-	@docker compose run -e DJANGO_SUPERUSER_EMAIL="npd.admin@cms.hhs.gov" \
-						-e DJANGO_SUPERUSER_USERNAME="npdadmin" \
-						-e DJANGO_SUPERUSER_PASSWORD="password123" \
-						--rm django-web python manage.py createsuperuser --no-input
+	@bin/npr \
+		-e DJANGO_SUPERUSER_EMAIL="npd.admin@cms.hhs.gov" \
+		-e DJANGO_SUPERUSER_USERNAME="npdadmin" \
+		-e DJANGO_SUPERUSER_PASSWORD="password123" \
+		python manage.py createsuperuser --no-input
 
 ##
 # end-to-end test support
