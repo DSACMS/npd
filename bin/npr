@@ -191,7 +191,6 @@ def main():
 
     # Add optional test configuration
     if service == "django-web" and known_args.test:
-        run_cmd.extend(("-f", "backend/docker-compose.yml"))
         run_cmd.extend(("-f", "compose.test.yml"))
 
     run_cmd.extend(("run", "--rm"))
