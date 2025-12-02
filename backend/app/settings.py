@@ -234,9 +234,7 @@ LOGIN_REDIRECT_URL = "/"
 LOGIN_URL = "/accounts/login/"
 LOGOUT_REDIRECT_URL = LOGIN_URL
 
-DEBUG_TOOLBAR_CONFIG = {
-    "SHOW_TOOLBAR_CALLBACK": lambda request: DEBUG and not TESTING
-}
+DEBUG_TOOLBAR_CONFIG = {"SHOW_TOOLBAR_CALLBACK": lambda request: DEBUG and not TESTING}
 
 CACHES = {
     "default": {
