@@ -13,23 +13,21 @@ from .fixtures import create_endpoint
 
 
 class EndpointViewSetTestCase(APITestCase):
-
     @classmethod
     def setUpTestData(cls):
-
-        cls.endpoints =[
-            create_endpoint(name='88 MEDICINE LLC'),
-            create_endpoint(name='AAIA of Tampa Bay, LLC'),
-            create_endpoint(name='ABC Healthcare Service Base URL'),
-            create_endpoint(name='A Better Way LLC'),
-            create_endpoint(name='Abington Surgical Center'),
-            create_endpoint(name='Access Mental Health Agency'),
-            create_endpoint(name='Abington Center Surgical'),
-            create_endpoint(name='ADHD & Autism Psychological Services PLLC'),
-            create_endpoint(name='Adolfo C FernandezObregon Md'),
-            create_endpoint(name='Advanced Anesthesia, LLC'),
-            create_endpoint(name='Advanced Cardiovascular Center'),
-            create_endpoint(name='Kansas City Psychiatric Group')
+        cls.endpoints = [
+            create_endpoint(name="88 MEDICINE LLC"),
+            create_endpoint(name="AAIA of Tampa Bay, LLC"),
+            create_endpoint(name="ABC Healthcare Service Base URL"),
+            create_endpoint(name="A Better Way LLC"),
+            create_endpoint(name="Abington Surgical Center"),
+            create_endpoint(name="Access Mental Health Agency"),
+            create_endpoint(name="Abington Center Surgical"),
+            create_endpoint(name="ADHD & Autism Psychological Services PLLC"),
+            create_endpoint(name="Adolfo C FernandezObregon Md"),
+            create_endpoint(name="Advanced Anesthesia, LLC"),
+            create_endpoint(name="Advanced Cardiovascular Center"),
+            create_endpoint(name="Kansas City Psychiatric Group"),
         ]
 
         return super().setUpTestData()
@@ -58,16 +56,16 @@ class EndpointViewSetTestCase(APITestCase):
         names = extract_resource_names(response)
 
         sorted_names = [
-            '88 MEDICINE LLC',
-            'AAIA of Tampa Bay, LLC',
-            'ABC Healthcare Service Base URL',
-            'A Better Way LLC',
-            'Abington Center Surgical',
-            'Abington Surgical Center',
-            'Access Mental Health Agency',
-            'ADHD & Autism Psychological Services PLLC',
-            'Adolfo C FernandezObregon Md',
-            'Advanced Anesthesia, LLC',
+            "88 MEDICINE LLC",
+            "AAIA of Tampa Bay, LLC",
+            "ABC Healthcare Service Base URL",
+            "A Better Way LLC",
+            "Abington Center Surgical",
+            "Abington Surgical Center",
+            "Access Mental Health Agency",
+            "ADHD & Autism Psychological Services PLLC",
+            "Adolfo C FernandezObregon Md",
+            "Advanced Anesthesia, LLC",
         ]
 
         self.assertEqual(
@@ -198,8 +196,7 @@ class EndpointViewSetTestCase(APITestCase):
 
     def test_retrieve_single_endpoint(self):
         id = self.endpoints[0].endpoint_instance.id
-        url = reverse("fhir-endpoint-detail",
-                      args=[id])
+        url = reverse("fhir-endpoint-detail", args=[id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data['id'], str(id))
+        self.assertEqual(response.data["id"], str(id))

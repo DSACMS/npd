@@ -29,8 +29,9 @@ from ..models import (
     OrganizationToOtherId,
     OrganizationToTaxonomy,
     ClinicalOrganization,
-    Nucc
+    Nucc,
 )
+
 
 def _ensure_name_use():
     return FhirNameUse.objects.get_or_create(value="usual")[0]
@@ -73,21 +74,18 @@ def create_practitioner(
 
     return provider
 
+
 def create_legal_entity(dba_name="Sample Legal Entity"):
-    
-    legal_entity = LegalEntity.objects.create(
-        ein_id=uuid.uuid4(),
-        dba_name=dba_name
-    )
+    legal_entity = LegalEntity.objects.create(ein_id=uuid.uuid4(), dba_name=dba_name)
 
     return legal_entity
 
+
 def create_other_id_type(name="Sample Other ID"):
-    other_id = OtherIdType.objects.create(
-        value=name
-    )
+    other_id = OtherIdType.objects.create(value=name)
 
     return other_id
+
 
 def create_organization(
     name="Test Org",
@@ -96,10 +94,10 @@ def create_organization(
     legal_entity=None,
     other_id_type=None,
     npi_value=None,
-    other_id_name='testMBI',
-    other_state_code='NY',
-    other_issuer='New York State Medicaid',
-    organization_type=None
+    other_id_name="testMBI",
+    other_state_code="NY",
+    other_issuer="New York State Medicaid",
+    organization_type=None,
 ):
     """
     Creates an Organization + OrganizationToName.
@@ -111,7 +109,6 @@ def create_organization(
         birth_date=datetime.date(1980, 1, 1),
     )
 
-
     IndividualToName.objects.create(
         individual=ind,
         first_name=authorized_official_first_name,
@@ -120,14 +117,12 @@ def create_organization(
     )
 
     org = Organization.objects.create(
-            id=uuid.uuid4(),
-            authorized_official=ind,
-            ein=legal_entity,
-        )
+        id=uuid.uuid4(),
+        authorized_official=ind,
+        ein=legal_entity,
+    )
 
     if other_id_type or organization_type or npi_value:
-        
-
         npi = Npi.objects.create(
             npi=npi_value or int(str(uuid.uuid4().int)[:10]),
             entity_type_code=1,
@@ -135,10 +130,7 @@ def create_organization(
             last_update_date=datetime.date(2020, 1, 1),
         )
 
-        clinical_organization = ClinicalOrganization.objects.create(
-            organization=org,
-            npi=npi
-        )
+        clinical_organization = ClinicalOrganization.objects.create(organization=org, npi=npi)
 
         if other_id_type:
             org_other_id = OrganizationToOtherId.objects.create(
@@ -146,19 +138,17 @@ def create_organization(
                 other_id=other_id_name,
                 other_id_type=other_id_type,
                 state_code=other_state_code,
-                issuer=other_issuer
+                issuer=other_issuer,
             )
 
         if organization_type:
-            #Get 208M00000X 'Hospitalist'
+            # Get 208M00000X 'Hospitalist'
             code = Nucc.objects.get(pk=organization_type)
 
             taxonomy = OrganizationToTaxonomy.objects.create(
-                npi = clinical_organization,
-                nucc_code=code
+                npi=clinical_organization, nucc_code=code
             )
 
-    
     OrganizationToName.objects.create(
         organization=org,
         name=name,
@@ -166,6 +156,7 @@ def create_organization(
     )
 
     return org
+
 
 def create_location(
     organization=None,
@@ -183,7 +174,7 @@ def create_location(
         id=str(uuid.uuid4())[:10],
         delivery_line_1="123 Main St",
         city_name=city,
-        state_code_id='36',
+        state_code_id="36",
         zipcode=zipcode,
     )
 
@@ -201,6 +192,7 @@ def create_location(
     )
 
     return loc
+
 
 def _ensure_endpoint_base_types():
     """
@@ -223,7 +215,7 @@ def create_endpoint(
     url="https://example.org/fhir",
     name="Test Endpoint",
     ehr=None,
-    payload_type=None
+    payload_type=None,
 ):
     """
     Creates EndpointType, EndpointConnectionType, EndpointInstance, Endpoint.
@@ -232,21 +224,17 @@ def create_endpoint(
 
     etype, ctype, payload = _ensure_endpoint_base_types()
 
-
     if not ehr:
-
         new_vendor_id = uuid.uuid4()
         ehr_vendor = EhrVendor.objects.create(
-            id=new_vendor_id,
-            name=f"My Sample{new_vendor_id}",
-            is_cms_aligned_network=True
+            id=new_vendor_id, name=f"My Sample{new_vendor_id}", is_cms_aligned_network=True
         )
     else:
         ehr_vendor = ehr
 
-    et = EnvironmentType.objects.get(pk='prod')
+    et = EnvironmentType.objects.get(pk="prod")
 
-    pt = PayloadType.objects.get(pk=payload_type or 'urn:hl7-org:sdwg:ccda-structuredBody:1.1')
+    pt = PayloadType.objects.get(pk=payload_type or "urn:hl7-org:sdwg:ccda-structuredBody:1.1")
 
     instance = EndpointInstance.objects.create(
         id=uuid.uuid4(),
@@ -254,14 +242,12 @@ def create_endpoint(
         address=url,
         endpoint_connection_type=ctype,
         name=name,
-        environment_type=et
+        environment_type=et,
     )
 
     endpoint_to_pt = EndpointInstanceToPayload.objects.create(
-        endpoint_instance=instance,
-        payload_type=pt
+        endpoint_instance=instance, payload_type=pt
     )
-
 
     ep = Endpoint.objects.create(
         id=uuid.uuid4(),
@@ -272,6 +258,7 @@ def create_endpoint(
     )
 
     return ep
+
 
 def _ensure_relationship_type():
     """
@@ -329,7 +316,7 @@ def create_full_practitionerrole(
 
     pto_org = ProviderToOrganization.objects.create(
         id=uuid.uuid4(),
-        individual=provider,   # special FK uses Provider.individual_id
+        individual=provider,  # special FK uses Provider.individual_id
         organization=org,
         relationship_type=rel_type,
         active=True,

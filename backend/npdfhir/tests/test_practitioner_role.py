@@ -11,11 +11,9 @@ from .helpers import (
 from .fixtures import create_full_practitionerrole
 
 
-
 class PractitionerRoleViewSetTestCase(APITestCase):
     @classmethod
     def setUpTestData(cls):
-
         # (location_name, uuid)
         test_records = [
             "A BEAUTIFUL SMILE DENTISTRY, L.L.C.",
@@ -33,7 +31,6 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         cls.roles = []
 
         for i, loc_name in enumerate(test_records):
-
             # You can vary practitioner data a bit to avoid collisions
             first = f"Test{i}"
             last = f"Practitioner{i}"
@@ -46,16 +43,13 @@ class PractitionerRoleViewSetTestCase(APITestCase):
                 npi_value=npi,
                 location_name=loc_name,
                 role_display="Clinician",
-                role_code="MD"
+                role_code="MD",
             )
 
             cls.roles.append(role)
-        
 
         cls.first_prac_id = cls.roles[0].id
         return super().setUpTestData()
-
-
 
     # Basic tests
     def test_list_default(self):
@@ -72,8 +66,8 @@ class PractitionerRoleViewSetTestCase(APITestCase):
 
         # Extract ids
         ids = extract_resource_ids(response)
-        
-        #self.assertEqual(
+
+        # self.assertEqual(
         #    ids, sorted_ids, f"Expected Practitioner roles sorted by order of location name but got {ids}\n Sorted: {sorted_ids}")
 
     # Pagination tests
@@ -121,8 +115,7 @@ class PractitionerRoleViewSetTestCase(APITestCase):
 
     def test_retrieve_single_pracitionerrole(self):
         id = self.first_prac_id
-        url = reverse("fhir-practitionerrole-detail",
-                      args=[id])
+        url = reverse("fhir-practitionerrole-detail", args=[id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data['id'], str(id))
+        self.assertEqual(response.data["id"], str(id))
