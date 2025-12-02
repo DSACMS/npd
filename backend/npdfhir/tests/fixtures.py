@@ -144,9 +144,7 @@ def create_organization(
         if organization_type:
             code = Nucc.objects.get(pk=organization_type)
 
-            OrganizationToTaxonomy.objects.create(
-                npi=clinical_organization, nucc_code=code
-            )
+            OrganizationToTaxonomy.objects.create(npi=clinical_organization, nucc_code=code)
 
     OrganizationToName.objects.create(
         organization=org,
@@ -244,9 +242,7 @@ def create_endpoint(
         environment_type=et,
     )
 
-    EndpointInstanceToPayload.objects.create(
-        endpoint_instance=instance, payload_type=pt
-    )
+    EndpointInstanceToPayload.objects.create(endpoint_instance=instance, payload_type=pt)
 
     ep = Endpoint.objects.create(
         id=uuid.uuid4(),

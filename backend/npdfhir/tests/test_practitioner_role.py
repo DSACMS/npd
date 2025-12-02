@@ -15,7 +15,7 @@ class PractitionerRoleViewSetTestCase(APITestCase):
     @classmethod
     def setUpTestData(cls):
         # (location_name, uuid)
-        test_records = [
+        cls.test_records_name = [
             "A BEAUTIFUL SMILE DENTISTRY, L.L.C.",
             "ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC",
             "ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC",
@@ -30,7 +30,7 @@ class PractitionerRoleViewSetTestCase(APITestCase):
 
         cls.roles = []
 
-        for i, loc_name in enumerate(test_records):
+        for i, loc_name in enumerate(cls.test_records_name):
             # You can vary practitioner data a bit to avoid collisions
             first = f"Test{i}"
             last = f"Practitioner{i}"
@@ -67,8 +67,13 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         # Extract ids
         ids = extract_resource_ids(response)
 
-        # self.assertEqual(
-        #    ids, sorted_ids, f"Expected Practitioner roles sorted by order of location name but got {ids}\n Sorted: {sorted_ids}")
+        sorted_ids = [str(role.id) for role in self.roles]
+
+        self.assertEqual(
+            ids,
+            sorted_ids,
+            f"Expected Practitioner roles sorted by order of location name but got {ids}\n Sorted: {sorted_ids}",
+        )
 
     # Pagination tests
     def test_list_with_custom_page_size(self):
