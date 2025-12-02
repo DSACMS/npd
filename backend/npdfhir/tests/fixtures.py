@@ -133,7 +133,7 @@ def create_organization(
         clinical_organization = ClinicalOrganization.objects.create(organization=org, npi=npi)
 
         if other_id_type:
-            org_other_id = OrganizationToOtherId.objects.create(
+            OrganizationToOtherId.objects.create(
                 npi=clinical_organization,
                 other_id=other_id_name,
                 other_id_type=other_id_type,
@@ -142,10 +142,9 @@ def create_organization(
             )
 
         if organization_type:
-            # Get 208M00000X 'Hospitalist'
             code = Nucc.objects.get(pk=organization_type)
 
-            taxonomy = OrganizationToTaxonomy.objects.create(
+            OrganizationToTaxonomy.objects.create(
                 npi=clinical_organization, nucc_code=code
             )
 
@@ -245,7 +244,7 @@ def create_endpoint(
         environment_type=et,
     )
 
-    endpoint_to_pt = EndpointInstanceToPayload.objects.create(
+    EndpointInstanceToPayload.objects.create(
         endpoint_instance=instance, payload_type=pt
     )
 
