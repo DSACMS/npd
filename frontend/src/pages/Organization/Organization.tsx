@@ -7,6 +7,9 @@ import { InfoItem } from "../../components/InfoItem"
 import {
   organizationNpiSelector,
   useOrganizationAPI,
+  organizationMailingAddressSelector,
+  organizationAuthorizedOfficialSelector,
+  organizationAuthorizedPhoneSelector,
 } from "../../state/requests/organizations"
 import layout from "../Layout.module.css"
 import styles from "./Organization.module.css"
@@ -25,6 +28,9 @@ export const Organization = () => {
   const bannerClass = classNames(layout.banner)
 
   const npi = organizationNpiSelector(data)
+  const mailingAddress = organizationMailingAddressSelector(data)
+  const authorizedOfficial = organizationAuthorizedOfficialSelector(data)
+  const authorizedPhone = organizationAuthorizedPhoneSelector(data)
 
   return (
     <>
@@ -75,7 +81,17 @@ export const Organization = () => {
 
           <section className={layout.section}>
             <h2>{t("organizations.contact")}</h2>
-            <p className={styles.emptyState}>No contact available</p>
+            <div className="ds-l-row">
+              <div className="ds-l-col--12 ds-l-md-col--4 ds-u-margin-bottom--2">
+                <InfoItem label="Mailing address" value={mailingAddress} />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--4 ds-u-margin-bottom--2">
+                <InfoItem label="Authorized official" value={authorizedOfficial} />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--4 ds-u-margin-bottom--2">
+                <InfoItem label="Authorized official phone" value={authorizedPhone} />
+              </div>
+            </div>
           </section>
 
           <section className={layout.section}>

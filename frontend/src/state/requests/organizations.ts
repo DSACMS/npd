@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query"
 import { apiUrl } from "../api"
+import { formatAddress} from "../../helpers/org_helpers"
 
 const fetchOrganization = async (
   organizationId: string,
@@ -45,4 +46,33 @@ export const organizationNpiSelector = (org?: FhirOrganization) => {
   )
 
   return npiIdentifier?.value || "n/a"
+}
+
+export const organizationMailingAddressSelector = (org?: FhirOrganization) => {
+  if (!org || !org.contact?.length) return ""
+
+  const contact = org.contact[0]
+  if (!contact.address) return ""
+
+  return formatAddress(contact.address)
+}
+
+export const organizationAuthorizedOfficialSelector = (
+  org?: FhirOrganization,
+) => {
+  if (!org || !org.contact?.length) return ""
+
+  const contact = org.contact[0]
+  if (!contact.name) return ""
+
+  return contact.name.text
+}
+
+export const organizationAuthorizedPhoneSelector = (org?: FhirOrganization) => {
+  if (!org || !org.contact?.length) return ""
+
+  const contact = org.contact[0]
+  const phone = contact.telecom?.find((t) => t.system === "phone")
+
+  return phone?.value || ""
 }
