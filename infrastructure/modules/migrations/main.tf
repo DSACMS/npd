@@ -7,17 +7,10 @@ data "aws_secretsmanager_secret_version" "fhir_db" {
 }
 
 locals {
-  etl_db_password = try(
-    jsondecode(data.aws_secretsmanager_secret_version.etl_db.secret_string).password,
-    ""
-  )
-  fhir_db_password = try(
-    jsondecode(data.aws_secretsmanager_secret_version.fhir_db.secret_string).password,
-    ""
-  )
+  etl_db_password = jsondecode(data.aws_secretsmanager_secret_version.etl_db.secret_string).password
+  fhir_db_password = jsondecode(data.aws_secretsmanager_secret_version.fhir_db.secret_string).password
 
   account_name = "${var.region}-${var.tier}"
-  multi_az     = var.multi_az
 
   # Simplify table mappings to reduce complexity and potential parsing issues
   table_mappings = jsonencode({
@@ -99,7 +92,7 @@ module "database_migration_service" {
       serverless_config = {
         max_capacity_units     = 8
         min_capacity_units     = 4
-        multi_az               = local.multi_az
+        multi_az               = var.multi_az
         vpc_security_group_ids = [
           var.networking.etl_db_security_group_id,
           var.networking.api_db_security_group_id
