@@ -228,7 +228,7 @@ build-frontend-test-assets: clean-frontend
 
 .PHONY: test-server
 test-server: test-setup build-frontend-test-assets
-	@docker compose -f compose.test.yml run --rm --publish 8008:8008 django-web python manage.py runserver 0.0.0.0:8008
+	@bin/npr --test --publish 8008:8008 python manage.py runserver 0.0.0.0:8008
 
 ###
 # whole project concerns

@@ -108,7 +108,7 @@ There are two options for running the frontend application in development. Each 
 From the `npd` project root:
 
 1. Run the frontend vite dev server
-    - in docker with: `docker compose up web`
+    - in docker with: `bin/npr npm run dev`
     - on host with: `cd frontend; npm run dev`
 3. Visit http://localhost:3000 in your browser
 

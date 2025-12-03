@@ -118,6 +118,13 @@ def argument_parser() -> argparse.ArgumentParser:
         "--debug", action="store_true", default=False, help="Show verbose debug output"
     )
 
+    parser.add_argument(
+        "--publish",
+        action="append",
+        dest="publishes",
+        help="Expose ports from the running command",
+    )
+
     # after all known options have been parsed, expect a command with its own arguments
     parser.add_argument(
         "command",
@@ -199,6 +206,10 @@ def main():
     if known_args.env_vars:
         for env_var in known_args.env_vars:
             run_cmd.extend(["-e", env_var])
+
+    if known_args.publishes:
+        for publish in known_args.publishes:
+            run_cmd.extend(["--publish", publish])
 
     # Add service name
     run_cmd.append(service)
