@@ -2,18 +2,20 @@ from fhir.resources.R4B.address import Address
 from fhir.resources.R4B.reference import Reference
 from rest_framework.test import APIClient
 from django.urls import reverse
-from drf_spectacular.utils import OpenApiParameter
-from drf_spectacular.types import OpenApiTypes
+
 
 def SmartyStreetstoFHIR(address):
     addressLine1 = f"{address.address_us.primary_number} {address.address_us.street_predirection} {address.address_us.street_name} {address.address_us.postdirection} {address.address_us.street_suffix}"
-    addressLine2 = f"{address.address_us.secondary_designator} {address.address_us.secondary_number}"
+    addressLine2 = (
+        f"{address.address_us.secondary_designator} {address.address_us.secondary_number}"
+    )
     addressLine3 = f"{address.address_us.extra_secondary_designator} {address.address_us.extra_secondary_number}"
     cityStateZip = f"f{address.address_us.city_name}, {address.address_us.fips_state.state_abbreviation} {address.address_us.zipcode}"
     return Address(
         line=[addressLine1, addressLine2, addressLine3, cityStateZip],
-        use=address.address_type.value
+        use=address.address_type.value,
     )
+
 
 def get_schema_data(request, url_name, additional_args=None):
     client = APIClient()
@@ -25,20 +27,20 @@ def get_schema_data(request, url_name, additional_args=None):
     response = client.get(schema_url)
     return response.data
 
+
 def genReference(url_name, identifier, request):
-    reference = request.build_absolute_uri(
-        reverse(url_name, kwargs={'pk': identifier}))
-    reference = Reference(
-        reference=reference)
+    reference = request.build_absolute_uri(reverse(url_name, kwargs={"pk": identifier}))
+    reference = Reference(reference=reference)
     return reference
+
 
 def parse_identifier_query(identifier_value):
     """
     Parse an identifier search parameter that should be in the format of "value" OR "system|value".
     Currently only supporting NPI search "NPI|123455".
     """
-    if '|' in identifier_value:
-        parts = identifier_value.split('|', 1)
+    if "|" in identifier_value:
+        parts = identifier_value.split("|", 1)
         return (parts[0], parts[1])
 
     return (None, identifier_value)

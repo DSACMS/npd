@@ -11,27 +11,44 @@ import "@uswds/uswds"
 
 import "./i18n.ts"
 
-import { AuthenticatedRoute } from "./components/AuthenticatedRoute.tsx"
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+import { AuthenticatedRoute } from "./components/AuthenticatedRoute"
+import { FeatureFlagRoute } from "./components/FeatureFlagRoute"
 import { Developers } from "./pages/Developers"
 import { Landing } from "./pages/Landing"
 import { Layout } from "./pages/Layout"
-import { Login } from "./pages/Login.tsx"
-import { FrontendSettingsProvider } from "./state/FrontendSettingsProvider.tsx"
+import { Login } from "./pages/Login"
+import { Organization } from "./pages/Organization"
+import { Search } from "./pages/Search"
+import { FrontendSettingsProvider } from "./state/FrontendSettingsProvider"
+
+const queryClient = new QueryClient()
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
-      <FrontendSettingsProvider>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path="/accounts/login/" element={<Login />} />
-            <Route element={<AuthenticatedRoute />}>
-              <Route index element={<Landing />} />
-              <Route path="/developers" element={<Developers />} />
+      <QueryClientProvider client={queryClient}>
+        <FrontendSettingsProvider>
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path="/accounts/login/" element={<Login />} />
+
+              <Route element={<AuthenticatedRoute />}>
+                <Route index element={<Landing />} />
+                <Route path="/developers" element={<Developers />} />
+
+                <Route element={<FeatureFlagRoute name="SEARCH_APP" />}>
+                  <Route path="/search" element={<Search />} />
+                  <Route
+                    path="/organizations/:organizationId"
+                    element={<Organization />}
+                  />
+                </Route>
+              </Route>
             </Route>
-          </Route>
-        </Routes>
-      </FrontendSettingsProvider>
+          </Routes>
+        </FrontendSettingsProvider>
+      </QueryClientProvider>
     </BrowserRouter>
   </StrictMode>,
 )

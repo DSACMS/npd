@@ -1,7 +1,7 @@
 {
   "name": "npd",
   "version": "",
-  "description": "A modern provider and payer directory serving as a single source of truth for healthcare provider information nationwide",
+  "description": "A modern version of a health provider directory to serve as a single source of truth for the benefit of all",
   "longDescription": "The CMS National Provider Directory addresses fragmented healthcare provider data that costs the industry an estimated $2.76 billion annually. Currently, provider information is duplicated and corrected across over 5,000 systems, leading to widespread inaccuracy. NPD creates a unified FHIR-compliant directory combining data from CMS sources (NPPES, PECOS) and industry partners into a single authoritative source. Built with Django REST Framework and React, the system provides APIs and a search interface for accessing provider practices, addresses, specialties, licenses, quality scores, insurance plan participation, and interoperability endpoints. By serving as the definitive provider directory, NPD reduces data collection burden on providers and payers while improving accuracy for over 100 million Medicare and Medicaid beneficiaries.",
   "status": "Development",
   "permissions": {
@@ -9,10 +9,11 @@
       {
         "name": "CC0-1.0",
         "URL": "https://github.com/DSACMS/npd/blob/main/LICENSE"
-
       }
     ],
-    "usageType": ["openSource"],
+    "usageType": [
+      "openSource"
+    ],
     "exemptionText": ""
   },
   "organization": "Centers for Medicare & Medicaid Services",
@@ -24,7 +25,7 @@
   "disclaimerURL": "",
   "disclaimerText": "",
   "vcs": "git",
-  "laborHours": 17012,
+  "laborHours": 17062,
   "reuseFrequency": {
     "forks": 1,
     "clones": 0
@@ -40,15 +41,14 @@
   "softwareType": "standalone/web",
   "languages": [
     "Python",
-    "TypeScript",
-    "JavaScript",
-    "SQL",
     "HCL",
+    "TypeScript",
     "HTML",
     "CSS",
     "Makefile",
     "Dockerfile",
-    "Shell"
+    "Shell",
+    "JavaScript"
   ],
   "maintenance": "internal",
   "contractNumber": [
@@ -116,8 +116,8 @@
   "partners": [],
   "date": {
     "created": "2025-06-13T17:11:32Z",
-    "lastModified": "2025-11-12T17:59:42Z",
-    "metadataLastUpdated": "2025-11-12T18:02:12.503Z"
+    "lastModified": "2025-11-25T18:43:50Z",
+    "metadataLastUpdated": "2025-12-01T02:23:38.823Z"
   },
   "tags": [
     "providers",

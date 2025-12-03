@@ -4,7 +4,6 @@ variable "fhir_api_migration_image" {}
 variable "fhir_api_port" {
   default = 8000
 }
-variable "redirect_to_strategy_page" {}
 variable "private_load_balancer" { default = true }
 variable "ecs_cluster_id" {}
 variable "desired_task_count" {}
@@ -18,6 +17,10 @@ variable "db" {
 }
 variable "networking" {
   type = object({
+    api_domain            = string
+    enable_ssl_api        = bool
+    directory_domain      = string
+    enable_ssl_directory  = bool
     private_subnet_ids    = list(string)
     public_subnet_ids     = list(string)
     alb_security_group_id = string
@@ -25,3 +28,4 @@ variable "networking" {
     vpc_id                = string
   })
 }
+variable "require_authentication" { default = "True" }
