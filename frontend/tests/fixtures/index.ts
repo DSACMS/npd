@@ -1,3 +1,4 @@
+import type { Organization } from "../../src/@types/fhir/Organization"
 import fhirOrganization from "./fhir_organization.json"
 
 export const DEFAULT_FRONTEND_SETTINGS: FrontendSettings = {
@@ -6,5 +7,4 @@ export const DEFAULT_FRONTEND_SETTINGS: FrontendSettings = {
   feature_flags: {},
 }
 
-export const DEFAULT_ORGANIZATION: FhirOrganization =
-  fhirOrganization as unknown as FhirOrganization
+export const DEFAULT_ORGANIZATION: Organization = fhirOrganization
