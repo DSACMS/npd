@@ -555,6 +555,7 @@ class FHIRCapabilityStatementView(APIView):
     """
     ViewSet for FHIR Practitioner resources
     """
+
     renderer_classes = [FHIRRenderer]
 
     @extend_schema(

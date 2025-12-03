@@ -9,8 +9,47 @@ from .helpers import (
     get_female_npis,
 )
 
+from .fixtures import create_practitioner
+
 
 class PractitionerViewSetTestCase(APITestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.pracs = [
+            create_practitioner(last_name="AADALEN", first_name="KIRK"),
+            create_practitioner(last_name="ABBAS", first_name="ASAD"),
+            create_practitioner(last_name="ABBOTT", first_name="BRUCE"),
+            create_practitioner(last_name="ABBOTT", first_name="PHILIP"),
+            create_practitioner(last_name="ABDELHALIM", first_name="AHMED"),
+            create_practitioner(last_name="ABDELHAMED", first_name="ABDELHAMED"),
+            create_practitioner(last_name="ABDEL NOUR", first_name="MAGDY"),
+            create_practitioner(last_name="ABEL", first_name="MICHAEL"),
+            create_practitioner(last_name="ABELES", first_name="JENNIFER"),
+            create_practitioner(last_name="ABELSON", first_name="MARK"),
+            create_practitioner(last_name="CUTLER", first_name="A"),
+            create_practitioner(last_name="NIZAM", first_name="A"),
+            create_practitioner(last_name="SALAIS", first_name="A"),
+            create_practitioner(last_name="JANOS", first_name="AARON"),
+            create_practitioner(last_name="NOONBERG", first_name="AARON"),
+            create_practitioner(last_name="PITNEY", first_name="AARON"),
+            create_practitioner(last_name="SOLOMON", first_name="AARON"),
+            create_practitioner(last_name="STEIN", first_name="AARON"),
+            create_practitioner(last_name="ALI", first_name="ABBAS"),
+            create_practitioner(last_name="JAFRI", first_name="ABBAS"),
+            create_practitioner(last_name="ZWERLING", first_name="HAYWARD"),
+            create_practitioner(last_name="ZUROSKE", first_name="GLEN"),
+            create_practitioner(last_name="ZUCKERBERG", first_name="EDWARD"),
+            create_practitioner(last_name="ZUCKER", first_name="WILLIAM"),
+            create_practitioner(last_name="ZUCCALA", first_name="SCOTT"),
+            create_practitioner(last_name="ZOVE", first_name="DANIEL"),
+            create_practitioner(last_name="ZORN", first_name="GUNNAR"),
+            create_practitioner(last_name="ZOOG", first_name="EUGENE"),
+            create_practitioner(last_name="ZOLMAN", first_name="MARK"),
+            create_practitioner(last_name="ZOLLER", first_name="DAVID"),
+        ]
+
+        return super().setUpTestData()
+
     # Basic tests
     def test_list_default(self):
         url = reverse("fhir-practitioner-list")  # /Practitioner/
@@ -213,8 +252,8 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
     def test_retrieve_single_pracitioner(self):
-        id = "b7a4ab09-3207-49c1-9f59-c1c07c75dfb5"
+        id = self.pracs[0].individual.id
         url = reverse("fhir-practitioner-detail", args=[id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data["id"], id)
+        self.assertEqual(response.data["id"], str(id))

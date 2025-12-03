@@ -1,6 +1,6 @@
 from django.urls import reverse
 from rest_framework import status
-from ..models import Organization
+from ..models import Organization, OtherIdType
 from .api_test_case import APITestCase
 from .helpers import (
     assert_fhir_response,
@@ -9,8 +9,57 @@ from .helpers import (
     extract_resource_names,
 )
 
+from .fixtures import create_organization, create_legal_entity
+
 
 class OrganizationViewSetTestCase(APITestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.orgs = [
+            create_organization(name="1ST CHOICE HOME HEALTH CARE INC"),
+            create_organization(name="1ST CHOICE MEDICAL DISTRIBUTORS, LLC"),
+            create_organization(name="986 INFUSION PHARMACY #1 INC."),
+            create_organization(name="A & A MEDICAL SUPPLY COMPANY"),
+            create_organization(name="ABACUS BUSINESS CORPORATION GROUP INC."),
+            create_organization(name="ABBY D CENTER, INC."),
+            create_organization(name="ABC DURABLE MEDICAL EQUIPMENT INC"),
+            create_organization(name="ABC HOME MEDICAL SUPPLY, INC."),
+            create_organization(name="A BEAUTIFUL SMILE DENTISTRY, L.L.C."),
+            create_organization(name="A & B HEALTH CARE, INC."),
+            create_organization(name="ZUNI HOME HEALTH CARE AGENCY"),
+            create_organization(name="ZEELAND COMMUNITY HOSPITAL"),
+            create_organization(name="YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD"),
+            create_organization(name="YOUNG C. BAE, M.D."),
+            create_organization(name="YORKTOWN EMERGENCY MEDICAL SERVICE"),
+            create_organization(name="YODORINCMISSIONPLAZAPHARMACY"),
+            create_organization(name="YOAKUM COMMUNITY HOSPITAL"),
+            create_organization(name="YARMOUTH AUDIOLOGY"),
+        ]
+
+        cls.joe_legal_entity = create_legal_entity(dba_name="Joe Administrative Services LLC")
+        cls.joe_name = "Joe Health Incorporated"
+        cls.joe_health_org = create_organization(
+            name=cls.joe_name, legal_entity=cls.joe_legal_entity
+        )
+        cls.orgs.append(cls.joe_health_org)
+
+        cls.other_id = OtherIdType.objects.first()
+        cls.other_id_org = create_organization(name="Beaver Clinicals", other_id_type=cls.other_id)
+        cls.orgs.append(cls.other_id_org)
+
+        cls.hospital_nucc_org = create_organization(
+            name="TestNuccOrg", organization_type="283Q00000X"
+        )
+        cls.orgs.append(cls.hospital_nucc_org)
+
+        cls.org_with_npi = create_organization(name="Custom NPI General", npi_value=1427051473)
+        cls.orgs.append(cls.org_with_npi)
+
+        cls.org_cumberland = create_organization(name="Cumberland")
+        cls.orgs.append(cls.org_cumberland)
+
+        return super().setUpTestData()
+
     def setUp(self):
         super().setUp()
         self.org_without_authorized_official = Organization.objects.create(
@@ -67,12 +116,12 @@ class OrganizationViewSetTestCase(APITestCase):
             "ZUNI HOME HEALTH CARE AGENCY",
             "ZEELAND COMMUNITY HOSPITAL",
             "YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD",
-            "YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD",
             "YOUNG C. BAE, M.D.",
             "YORKTOWN EMERGENCY MEDICAL SERVICE",
             "YODORINCMISSIONPLAZAPHARMACY",
             "YOAKUM COMMUNITY HOSPITAL",
             "YARMOUTH AUDIOLOGY",
+            "TestNuccOrg",
         ]
 
         self.assertEqual(
@@ -140,7 +189,10 @@ class OrganizationViewSetTestCase(APITestCase):
 
     def test_list_filter_by_ein_general(self):
         url = reverse("fhir-organization-list")
-        response = self.client.get(url, {"identifier": "22222222-2222-2222-2222-222222222222"})
+
+        id = self.joe_legal_entity.ein_id
+
+        response = self.client.get(url, {"identifier": str(id)})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
         self.assertGreaterEqual(response.data["results"]["total"], 1)
@@ -184,13 +236,15 @@ class OrganizationViewSetTestCase(APITestCase):
 
     # Retrieve tests
     def test_retrieve_non_clinical_organization(self):
-        url = reverse("fhir-organization-detail", args=["33333333-3333-3333-3333-333333333333"])
+        id = self.joe_health_org.id
+
+        url = reverse("fhir-organization-detail", args=[id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
         org = response.data
         self.assertEqual(org["resourceType"], "Organization")
-        self.assertEqual(org["name"], "Joe Health Incorporated")
+        self.assertEqual(org["name"], self.joe_name)
         self.assertEqual(org["identifier"][0]["type"]["coding"][0]["code"], "TAX")
 
     def test_retrieve_nonexistent_uuid(self):
@@ -204,11 +258,11 @@ class OrganizationViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
     def test_retrieve_single_organization(self):
-        id = "501a620e-8521-4610-9717-b35a0597292e"
+        id = self.orgs[0].id
         url = reverse("fhir-organization-detail", args=[id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data["id"], id)
+        self.assertEqual(response.data["id"], str(id))
 
     # Edge cases tests
     def test_organization_without_authorized_official(self):
