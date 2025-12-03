@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-import os
-import sys
-import subprocess
 import argparse
+import os
+import subprocess
+import sys
 
 """
 npr is an NPd Runner
@@ -190,7 +190,7 @@ def main():
     ]
 
     # Add optional test configuration
-    if service == "django-web" and known_args.test:
+    if service in ("django-web", "db", "db-migrations") and known_args.test:
         run_cmd.extend(("-f", "compose.test.yml"))
 
     run_cmd.extend(("run", "--rm"))
