@@ -8,8 +8,10 @@ import {
   useOrganizationAPI,
 } from "../../state/requests/organizations"
 import layout from "../Layout.module.css"
+import { useTranslation } from "react-i18next"
 
 export const Organization = () => {
+  const { t } = useTranslation()
   const { organizationId } = useParams()
   const { data, isLoading } = useOrganizationAPI(organizationId)
 
@@ -27,7 +29,7 @@ export const Organization = () => {
           <div className="ds-l-row">
             <div className="ds-l-col--12">
               <div className={layout.leader}>
-                <span className={layout.subtitle}>Provider group</span>
+                <span className={layout.subtitle}>{t("organizations.title")}</span>
                 <div role="heading" aria-level={1} className={layout.title}>
                   {data?.name}
                 </div>
@@ -42,48 +44,48 @@ export const Organization = () => {
       <main className={contentClass}>
         <FeatureFlag inverse name="ORGANIZATION_LOOKUP_DETAILS">
           <Alert variation="warn" heading="Content not available">
-            This content is not currently available.
+            {t("organizations.unavailable")}
           </Alert>
         </FeatureFlag>
 
         <FeatureFlag name="ORGANIZATION_LOOKUP_DETAILS">
-          <Alert heading="Are you the practitioner listed?">
-            Learn how to <a href="#">update your information</a>.
+          <Alert heading={t("organizations.update.title")}>
+          {t("organizations.update.subtitle")}<a href="#">{t("organizations.update.link")}</a>
           </Alert>
 
           <section className={layout.section}>
-            <h2>About</h2>
-            <p>[demographic information]</p>
+            <h2>{t("organizations.about.text")}</h2>
+            <p>{t("organizations.about.placeholder")}</p>
           </section>
 
           <section className={layout.section}>
-            <h2>Contact information</h2>
-            <p>[contact information]</p>
+            <h2>{t("organizations.contact.text")}</h2>
+            <p>{t("organizations.contact.placeholder")}</p>
           </section>
 
           <section className={layout.section}>
-            <h2>Identifiers</h2>
-            <p>[identifier information]</p>
+            <h2>{t("organizations.identifiers.text")}</h2>
+            <p>{t("organizations.identifiers.placeholder")}</p>
           </section>
 
           <section className={layout.section}>
-            <h2>Taxonomy</h2>
-            <p>[taxonomy information]</p>
+            <h2>{t("organizations.taxonomy.text")}</h2>
+            <p>{t("organizations.taxonomy.placeholder")}</p>
           </section>
 
           <section className={layout.section}>
-            <h2>Endpoints</h2>
-            <p>[endpoint information]</p>
+            <h2>{t("organizations.endpoints.text")}</h2>
+            <p>{t("organizations.endpoints.placeholder")}</p>
           </section>
 
           <section className={layout.section}>
-            <h2>Locations</h2>
-            <p>[location information]</p>
+            <h2>{t("organizations.locations.text")}</h2>
+            <p>{t("organizations.locations.placeholder")}</p>
           </section>
 
           <section className={layout.section}>
-            <h2>Practitioners</h2>
-            <p>[practitioner information]</p>
+            <h2>{t("organizations.practitioners.text")}</h2>
+            <p>{t("organizations.practitioners.placeholder")}</p>
           </section>
         </FeatureFlag>
 

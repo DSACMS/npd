@@ -1,0 +1,37 @@
+{
+    "title": "Provider Group",
+    "unavailable": "This content is not currently available.",
+    "update": {
+        "title": "Are you the practitioner listed?",
+        "subtitle" : "Learn how to ",
+        "link": "update your information."
+    },
+    "about": {
+        "text": "About",
+        "placeholder": "[demographic information]"
+    },
+    "contact": {
+        "text": "Contact Information",
+        "placeholder": "[contact information]"
+    },
+    "identifiers": {
+        "text": "Identifiers",
+        "placeholder": "[identifier information]"
+    },
+    "taxonomy": {
+        "text": "Taxonomy",
+        "placeholder": "[taxonomy information]"
+    },
+    "endpoints": {
+        "text": "Endpoints",
+        "placeholder": "[endpoint information]"
+    },
+    "locations": {
+        "text": "Locations",
+        "placeholder": "[location information]"
+    },
+    "practitioners": {
+        "text": "Practitioners",
+        "placeholder": "[practitioner information]"
+    }
+}
