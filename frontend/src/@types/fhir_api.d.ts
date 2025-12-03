@@ -60,3 +60,4 @@ interface FhirOrganization {
   name: string
   contact: Contact[]
 }
+
