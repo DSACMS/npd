@@ -20,9 +20,18 @@ interface Coding {
   display: string
 }
 
+interface Address {
+  line: string[]
+  city: string
+  state: string
+  postalCode: string
+  country: string
+}
+
 interface Contact {
   name: ContactName
   telecom: Telecom[]
+  address?: Address
 }
 
 interface ContactName {
