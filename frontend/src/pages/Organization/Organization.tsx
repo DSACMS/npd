@@ -3,11 +3,13 @@ import classNames from "classnames"
 import { useParams } from "react-router"
 import { FeatureFlag } from "../../components/FeatureFlag"
 import { LoadingIndicator } from "../../components/LoadingIndicator"
+import { InfoItem } from "../../components/InfoItem"
 import {
   organizationNpiSelector,
   useOrganizationAPI,
 } from "../../state/requests/organizations"
 import layout from "../Layout.module.css"
+import styles from "./Organization.module.css"
 import { useTranslation } from "react-i18next"
 
 export const Organization = () => {
@@ -22,6 +24,8 @@ export const Organization = () => {
   const contentClass = classNames(layout.content, "ds-l-container")
   const bannerClass = classNames(layout.banner)
 
+  const npi = organizationNpiSelector(data)
+
   return (
     <>
       <section className={bannerClass}>
@@ -34,7 +38,7 @@ export const Organization = () => {
                   {data?.name}
                 </div>
                 <span className={layout.subtitle}>
-                  NPI: {organizationNpiSelector(data)}
+                  NPI: {npi}
                 </span>
               </div>
             </div>
@@ -50,42 +54,53 @@ export const Organization = () => {
 
         <FeatureFlag name="ORGANIZATION_LOOKUP_DETAILS">
           <Alert heading={t("organizations.update.title")}>
-          {t("organizations.update.subtitle")}<a href="#">{t("organizations.update.link")}</a>
+          {t("organizations.update.subtitle")}
+          <a href="#">{t("organizations.update.link")}</a>
           </Alert>
 
           <section className={layout.section}>
-            <h2>{t("organizations.about.text")}</h2>
-            <p>{t("organizations.about.placeholder")}</p>
+            <h2>{t("organizations.about")}</h2>
+            <div className="ds-l-row">
+              <div className="ds-l-col--12 ds-l-md-col--4 ds-u-margin-bottom--2">
+                <InfoItem label="Other name(s)" value={data?.name} />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--4 ds-u-margin-bottom--2">
+                <InfoItem label="Type" value="Provider Group" />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--4 ds-u-margin-bottom--2">
+                <InfoItem label="Parent organization" value={null} />
+              </div>
+            </div>
           </section>
 
           <section className={layout.section}>
-            <h2>{t("organizations.contact.text")}</h2>
-            <p>{t("organizations.contact.placeholder")}</p>
+            <h2>{t("organizations.contact")}</h2>
+            <p className={styles.emptyState}>No contact available</p>
           </section>
 
           <section className={layout.section}>
-            <h2>{t("organizations.identifiers.text")}</h2>
-            <p>{t("organizations.identifiers.placeholder")}</p>
+            <h2>{t("organizations.identifiers")}</h2>
+            <p className={styles.emptyState}>No identifiers available</p>
           </section>
 
           <section className={layout.section}>
-            <h2>{t("organizations.taxonomy.text")}</h2>
-            <p>{t("organizations.taxonomy.placeholder")}</p>
+            <h2>{t("organizations.taxonomy")}</h2>
+            <p className={styles.emptyState}>No taxonomy available</p>
           </section>
 
           <section className={layout.section}>
-            <h2>{t("organizations.endpoints.text")}</h2>
-            <p>{t("organizations.endpoints.placeholder")}</p>
+            <h2>{t("organizations.endpoints")}</h2>
+            <p className={styles.emptyState}>No endpoints available</p>
           </section>
 
           <section className={layout.section}>
-            <h2>{t("organizations.locations.text")}</h2>
-            <p>{t("organizations.locations.placeholder")}</p>
+            <h2>{t("organizations.locations")}</h2>
+            <p className={styles.emptyState}>No locations available</p>
           </section>
 
           <section className={layout.section}>
-            <h2>{t("organizations.practitioners.text")}</h2>
-            <p>{t("organizations.practitioners.placeholder")}</p>
+            <h2>{t("organizations.practitioners")}</h2>
+            <p className={styles.emptyState}>No practitioners available</p>
           </section>
         </FeatureFlag>
 

@@ -41,7 +41,7 @@ describe("Organization", () => {
       render(<RoutedOrganization path="/organizations/12345" />)
 
       // ensure loading has finished
-      await screen.findByText("Provider group")
+      await screen.findByText("Provider Group")
 
       expect(screen.queryByText("About", { selector: "section h2" })).toBeNull()
     })
@@ -59,7 +59,7 @@ describe("Organization", () => {
     it("shows detailed content", async () => {
       render(<RoutedOrganization path="/organizations/12345" />)
 
-      await screen.findByText("Provider group")
+      await screen.findByText("Provider Group")
       expect(
         screen.queryByText("About", { selector: "section h2" }),
       ).toBeInTheDocument()
