@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query"
 import { apiUrl } from "../api"
-import { formatAddress} from "../../helpers/org_helpers"
+import { formatAddress, formatDate } from "../../helpers/org_helpers"
 
 const fetchOrganization = async (
   organizationId: string,
@@ -75,4 +75,17 @@ export const organizationAuthorizedPhoneSelector = (org?: FhirOrganization) => {
   const phone = contact.telecom?.find((t) => t.system === "phone")
 
   return phone?.value || ""
+}
+
+export const organizationIdentifiersSelector = (org?: FhirOrganization) => {
+  if (!org || !org.identifier.length) return []
+
+  return org.identifier.map((identity) => ({
+    type: identity.type?.coding?.[0]?.display || "Unknown",
+    number: identity.value,
+    details: identity.period?.start
+      ? `Active, Received ${formatDate(identity.period.start)}` // hardcoding active and recieved if we get a response?
+      : "",
+    system: identity.system,
+  }))
 }

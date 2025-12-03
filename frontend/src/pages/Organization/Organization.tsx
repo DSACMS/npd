@@ -1,19 +1,30 @@
-import { Alert } from "@cmsgov/design-system"
-import classNames from "classnames"
-import { useParams } from "react-router"
-import { FeatureFlag } from "../../components/FeatureFlag"
-import { LoadingIndicator } from "../../components/LoadingIndicator"
-import { InfoItem } from "../../components/InfoItem"
+import {
+  Alert,
+  Table,
+  TableHead,
+  TableRow,
+  TableCell,
+  TableBody,
+} from "@cmsgov/design-system"
+
 import {
   organizationNpiSelector,
   useOrganizationAPI,
   organizationMailingAddressSelector,
   organizationAuthorizedOfficialSelector,
   organizationAuthorizedPhoneSelector,
+  organizationIdentifiersSelector
 } from "../../state/requests/organizations"
+
+import classNames from "classnames"
+import { useParams } from "react-router"
+import { FeatureFlag } from "../../components/FeatureFlag"
+import { LoadingIndicator } from "../../components/LoadingIndicator"
+import { InfoItem } from "../../components/InfoItem"
 import layout from "../Layout.module.css"
 import styles from "./Organization.module.css"
 import { useTranslation } from "react-i18next"
+import { getIdentifierTypeDisplay } from "../../helpers/org_helpers"
 
 export const Organization = () => {
   const { t } = useTranslation()
@@ -31,6 +42,7 @@ export const Organization = () => {
   const mailingAddress = organizationMailingAddressSelector(data)
   const authorizedOfficial = organizationAuthorizedOfficialSelector(data)
   const authorizedPhone = organizationAuthorizedPhoneSelector(data)
+  const identifiers = organizationIdentifiersSelector(data)
 
   return (
     <>
@@ -96,7 +108,31 @@ export const Organization = () => {
 
           <section className={layout.section}>
             <h2>{t("organizations.identifiers")}</h2>
-            <p className={styles.emptyState}>No identifiers available</p>
+            {/* TODO: look into modularizing table creation to reduce code duplication */}
+            {identifiers.length > 0 ? (
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <TableCell>Type</TableCell>
+                    <TableCell>Number</TableCell>
+                    <TableCell>Details</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {identifiers.map((identifier, index) => (
+                    <TableRow key={index}>
+                      <TableCell>
+                        {getIdentifierTypeDisplay(identifier.system)}
+                      </TableCell>
+                      <TableCell>{identifier.number}</TableCell>
+                      <TableCell>{identifier.details}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            ) : (
+              <p className="ds-u-color--gray">No identifiers available</p>
+            )}
           </section>
 
           <section className={layout.section}>
