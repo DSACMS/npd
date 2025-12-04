@@ -448,8 +448,8 @@ resource "aws_ecs_service" "dagster-ui" {
   force_new_deployment = true
 }
 
-resource "aws_lb" "dagster_ui_alb" {
-  name               = "${var.account_name}-dagster-ui-alb"
+resource "aws_lb" "etl_ui_alb" {
+  name               = "${var.account_name}-etl-ui-alb"
   internal           = true
   load_balancer_type = "application"
   security_groups    = [var.networking.etl_alb_security_group_id]
