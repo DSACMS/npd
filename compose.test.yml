@@ -24,7 +24,6 @@ services:
       - ./flyway/sql/django_reference_data:/flyway/sql/django_reference_data
       - ./flyway/sql/migrations:/flyway/sql/migrations
       - ./flyway/sql/reference_data:/flyway/sql/reference_data
-      - ./flyway/sql/local_dev:/flyway/sql/local_dev
 
   django-web:
     extends:
