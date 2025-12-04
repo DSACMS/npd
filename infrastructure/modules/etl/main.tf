@@ -475,7 +475,7 @@ resource "aws_lb_target_group" "dagster_ui" {
 }
 
 resource "aws_alb_listener" "http" {
-  load_balancer_arn = aws_lb.dagster_ui_alb.arn
+  load_balancer_arn = aws_lb.etl_ui_alb.arn
   port              = 80
   protocol          = "HTTP"
 
