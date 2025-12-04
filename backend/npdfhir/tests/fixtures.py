@@ -43,6 +43,7 @@ def create_practitioner(
     gender="F",
     birth_date=datetime.date(1990, 1, 1),
     npi_value=None,
+    nucc=None
 ):
     """
     Creates an Individual, Name (via IndividualToName), Npi, Provider.

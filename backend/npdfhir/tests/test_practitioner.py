@@ -15,8 +15,12 @@ from .fixtures import create_practitioner
 class PractitionerViewSetTestCase(APITestCase):
     @classmethod
     def setUpTestData(cls):
+
+        cls.code = Nucc.objects.get(pk=organization_type)
+
+        cls.sample_last_name = "SOLOMON"
         cls.pracs = [
-            create_practitioner(last_name="AADALEN", first_name="KIRK"),
+            create_practitioner(last_name="AADALEN", first_name="KIRK",npi_value=1234567890),
             create_practitioner(last_name="ABBAS", first_name="ASAD"),
             create_practitioner(last_name="ABBOTT", first_name="BRUCE"),
             create_practitioner(last_name="ABBOTT", first_name="PHILIP"),
@@ -32,7 +36,7 @@ class PractitionerViewSetTestCase(APITestCase):
             create_practitioner(last_name="JANOS", first_name="AARON"),
             create_practitioner(last_name="NOONBERG", first_name="AARON"),
             create_practitioner(last_name="PITNEY", first_name="AARON"),
-            create_practitioner(last_name="SOLOMON", first_name="AARON"),
+            create_practitioner(last_name=cls.sample_last_name, first_name="AARON"),
             create_practitioner(last_name="STEIN", first_name="AARON"),
             create_practitioner(last_name="ALI", first_name="ABBAS"),
             create_practitioner(last_name="JAFRI", first_name="ABBAS"),
@@ -186,9 +190,11 @@ class PractitionerViewSetTestCase(APITestCase):
 
     def test_list_filter_by_name(self):
         url = reverse("fhir-practitioner-list")
-        response = self.client.get(url, {"name": "Smith"})
+        response = self.client.get(url, {"name": self.sample_last_name})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
+
+        self.assertEqual(response.data["results"]["entry"][0]['resource']["name"][-1]["family"],self.sample_last_name)
 
     def test_list_filter_by_practitioner_type(self):
         url = reverse("fhir-practitioner-list")
@@ -203,11 +209,18 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
 
+        result_npi = response.data['results']['entry'][0]['resource']['identifier'][0]['value']
+        self.assertEqual(self.pracs[0].npi.npi,int(result_npi))
+        
+
     def test_list_filter_by_npi_specific(self):
         url = reverse("fhir-practitioner-list")
         response = self.client.get(url, {"identifier": "NPI|1234567890"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
+
+        result_npi = response.data['results']['entry'][0]['resource']['identifier'][0]['value']
+        self.assertEqual(self.pracs[0].npi.npi,int(result_npi))
 
     # Address Filter tests
     def test_list_filter_by_address(self):
