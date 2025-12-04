@@ -81,7 +81,7 @@ export default defineConfig({
 
   /* Run your local dev server before starting the tests */
   webServer: {
-    cwd: "../backend",
+    cwd: "../",
     command: "make test-server",
     url: "http://localhost:8008",
     reuseExistingServer: !process.env.CI,
