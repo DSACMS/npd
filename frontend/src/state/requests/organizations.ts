@@ -1,16 +1,8 @@
 import { useQuery } from "@tanstack/react-query"
-import type { Address } from "../../@types/fhir/Address"
-import type { Identifier } from "../../@types/fhir/Identifier"
-import type { Organization as FhirOrganization } from "../../@types/fhir/Organization"
+import type { Organization } from "../../@types/fhir/Organization"
 import { apiUrl } from "../api"
 import { formatAddress, formatDate } from "../../helpers/org_helpers"
-
-// NOTE: (@abachman-dsac) due to limitations in the fhir.resource.R4B model
-// definitions, we cannot fully generate response types automatically
-export interface Organization extends FhirOrganization {
-  identifier?: Identifier[] | null
-  address?: Address[] | null
-}
+import type { FHIROrganization } from "../../@types/fhir"
 
 const fetchOrganization = async (
   organizationId: string,
@@ -44,7 +36,7 @@ export const useOrganizationAPI = (organizationId: string | undefined) => {
 // Selectors unpack the API responses
 ////
 
-export const organizationNpiSelector = (org?: Organization) => {
+export const organizationNpiSelector = (org?: FHIROrganization) => {
   if (!org) return ""
 
   if (!org.identifier?.length) {
@@ -58,7 +50,7 @@ export const organizationNpiSelector = (org?: Organization) => {
   return npiIdentifier?.value || "n/a"
 }
 
-export const organizationMailingAddressSelector = (org?: FhirOrganization) => {
+export const organizationMailingAddressSelector = (org?: FHIROrganization) => {
   if (!org || !org.contact?.length) return ""
 
   const contact = org.contact[0]
@@ -68,7 +60,7 @@ export const organizationMailingAddressSelector = (org?: FhirOrganization) => {
 }
 
 export const organizationAuthorizedOfficialSelector = (
-  org?: FhirOrganization,
+  org?: FHIROrganization,
 ) => {
   if (!org || !org.contact?.length) return ""
 
@@ -78,17 +70,17 @@ export const organizationAuthorizedOfficialSelector = (
   return contact.name.text
 }
 
-export const organizationAuthorizedPhoneSelector = (org?: FhirOrganization) => {
+export const organizationAuthorizedPhoneSelector = (org?: FHIROrganization) => {
   if (!org || !org.contact?.length) return ""
 
   const contact = org.contact[0]
-  const phone = contact.telecom?.find((t) => t.system === "phone")
+  const phone = contact?.telecom?.find((t) => t.system === "phone")
 
   return phone?.value || ""
 }
 
-export const organizationIdentifiersSelector = (org?: FhirOrganization) => {
-  if (!org || !org.identifier.length) return []
+export const organizationIdentifiersSelector = (org?: FHIROrganization) => {
+  if (!org || !org.identifier?.length) return []
 
   return org.identifier.map((identity) => ({
     type: identity.type?.coding?.[0]?.display || "Unknown",

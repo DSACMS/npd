@@ -1,3 +1,5 @@
+import type { Address } from "../@types/fhir/Address"
+
 export const formatAddress = (address?: Address): string => {
     if (!address) return ""
   
