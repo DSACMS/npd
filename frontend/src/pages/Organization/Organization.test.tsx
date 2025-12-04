@@ -40,8 +40,8 @@ describe("Organization", () => {
     it("does not render content when feature flag is unset", async () => {
       render(<RoutedOrganization path="/organizations/12345" />)
 
-      // ensure loading has finished
-      await screen.findByText("Provider group")
+      // ensure FeatureFlag components have finished loading
+      await screen.findByText("Content not available")
 
       expect(screen.queryByText("About", { selector: "section h2" })).toBeNull()
     })
@@ -59,7 +59,9 @@ describe("Organization", () => {
     it("shows detailed content", async () => {
       render(<RoutedOrganization path="/organizations/12345" />)
 
-      await screen.findByText("Provider group")
+      // ensure FeatureFlag components have finished loading
+      await screen.findByText("Are you the practitioner listed?")
+
       expect(
         screen.queryByText("About", { selector: "section h2" }),
       ).toBeInTheDocument()
