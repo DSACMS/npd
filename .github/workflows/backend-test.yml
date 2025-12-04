@@ -23,9 +23,6 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: backend/
 
     steps:
       - name: Checkout repo
@@ -36,13 +33,17 @@ jobs:
 
       - name: Ensure test directories have appropriate permissions for writing
         run: |
-          mkdir -p ./artifacts/test-reports
-          chmod 777 ./artifacts/test-reports
-          chmod 777 ./provider_directory/static
+          mkdir -p ./backend/artifacts/test-reports
+          chmod 777 ./backend/artifacts/test-reports
+          chmod 777 ./backend/provider_directory/static
 
-      - name: Build and run tests
+      - name: Setup test environment
         run: |
-          make test
+          make test-setup
+
+      - name: Run tests
+        run: |
+          make test-backend
 
       - name: Upload test results as artifact
         uses: actions/upload-artifact@v4
