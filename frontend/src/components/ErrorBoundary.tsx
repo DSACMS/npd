@@ -1,22 +1,55 @@
+import { Button } from "@cmsgov/design-system"
 import React from "react"
+import { Footer } from "./Footer"
+import { Header } from "./Header"
+
+import classNames from "classnames"
+import layout from "../pages/Layout.module.css"
 
 interface ErrorFallbackProps {
   error: Error
   resetErrorBoundary?: () => void
 }
 
+// a basic, totally unwrapped error reporting page
 export const ErrorFallback: React.FC<ErrorFallbackProps> = ({
   error,
   resetErrorBoundary,
-}) => (
-  <div>
-    <h2>Something went wrong!</h2>
-    <p>{error.message}</p>
-    {resetErrorBoundary && (
-      <button onClick={resetErrorBoundary}>Try again</button>
-    )}
-  </div>
-)
+}) => {
+  const eclass = classNames(
+    "ds-u-fill--accent-primary-lightest",
+    "ds-u-padding--2",
+    "ds-u-border--1",
+    "ds-u-border--error",
+    "ds-u-margin-y--7",
+  )
+  return (
+    <>
+      <Header />
+      <div className={layout.main}>
+        <div className="ds-base ds-l-container">
+          <div className="ds-l-row">
+            <div className="ds-l-lg-col--8 ds-l-md-col--8">
+              <div className={layout.spacer}></div>
+              <section className={layout.section}>
+                <h2>Something went wrong!</h2>
+
+                <div className={eclass}>{error.message}</div>
+
+                {resetErrorBoundary && (
+                  <p>
+                    <Button onClick={resetErrorBoundary}>Reset page</Button>
+                  </p>
+                )}
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </>
+  )
+}
 
 interface Props {
   children?: React.ReactNode
@@ -41,7 +74,6 @@ export class ErrorBoundary extends React.Component<Props, State> {
 
   public componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
     console.error("Uncaught error:", error, errorInfo)
-    console.error(React.captureOwnerStack())
   }
 
   resetErrorBoundary = () => {
