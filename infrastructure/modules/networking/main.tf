@@ -257,7 +257,7 @@ resource "aws_vpc_security_group_ingress_rule" "etl_processes_can_reach_themselv
   referenced_security_group_id = aws_security_group.etl_sg.id
 }
 
-resource "aws_vpc_security_group_ingress_rule" "dagster_ui_alb_can_access_dagster_ui" {
+resource "aws_vpc_security_group_ingress_rule" "etl_ui_alb_can_access_dagster_ui" {
   description                  = "Accepts traffic from the Dagster ALB"
   security_group_id            = aws_security_group.etl_sg.id
   ip_protocol                  = "-1"

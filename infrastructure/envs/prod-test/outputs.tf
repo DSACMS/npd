@@ -22,6 +22,6 @@ output "dagster_repository_name" {
   value = module.repositories.dagster_repository_name
 }
 
-output "dagster_ui_alb_dns_name" {
-  value = module.etl.dagster_ui_alb_dns_name
+output "etl_ui_alb_dns_name" {
+  value = module.etl.etl_ui_alb_dns_name
 }
