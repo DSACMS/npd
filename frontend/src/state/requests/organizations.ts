@@ -1,9 +1,19 @@
 import { useQuery } from "@tanstack/react-query"
+import type { Address } from "../../@types/fhir/Address"
+import type { Identifier } from "../../@types/fhir/Identifier"
+import type { Organization as FhirOrganization } from "../../@types/fhir/Organization"
 import { apiUrl } from "../api"
+
+// NOTE: (@abachman-dsac) due to limitations in the fhir.resource.R4B model
+// definitions, we cannot fully generate response types automatically
+export interface Organization extends FhirOrganization {
+  identifier?: Identifier[] | null
+  address?: Address[] | null
+}
 
 const fetchOrganization = async (
   organizationId: string,
-): Promise<FhirOrganization> => {
+): Promise<Organization> => {
   const url = apiUrl("/fhir/Organization/:organizationId/", { organizationId })
 
   const response = await fetch(url)
@@ -13,11 +23,11 @@ const fetchOrganization = async (
     return Promise.reject(`error in ${url} request`)
   }
 
-  return response.json() as Promise<FhirOrganization>
+  return response.json() as Promise<Organization>
 }
 
 export const useOrganizationAPI = (organizationId: string | undefined) => {
-  return useQuery<FhirOrganization>({
+  return useQuery<Organization>({
     queryKey: ["organization", organizationId],
     queryFn: () => {
       if (!organizationId) {
@@ -33,10 +43,10 @@ export const useOrganizationAPI = (organizationId: string | undefined) => {
 // Selectors unpack the API responses
 ////
 
-export const organizationNpiSelector = (org?: FhirOrganization) => {
+export const organizationNpiSelector = (org?: Organization) => {
   if (!org) return ""
 
-  if (!org.identifier.length) {
+  if (!org.identifier?.length) {
     return "n/a"
   }
 

@@ -12,8 +12,8 @@ locals {
     }
     prod = {
       etl       = "etl.cnpd.internal.cms.gov"
-      api       = "api.cnpd.cms.gov" # public route
-      directory = "cnpd.cms.gov"     # public route
+      api       = "api.directory.cms.gov" # public route
+      directory = "directory.cms.gov"     # public route
     }
   }
   api_domain       = local.domains[var.tier]["api"]
