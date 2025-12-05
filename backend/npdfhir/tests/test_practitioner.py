@@ -9,12 +9,18 @@ from .helpers import (
     get_female_npis,
 )
 
-from .fixtures import create_practitioner
+from .fixtures import create_practitioner, create_location
 
 
 class PractitionerViewSetTestCase(APITestCase):
     @classmethod
     def setUpTestData(cls):
+
+        cls.locs = [
+            create_location(name="California Location A", city="Springfield",state="CA",zipcode="12345"),
+            create_location(name="California Location B", city="Sacramento",state="CA",zipcode="54321"),
+            create_location(name="New York Location A", city="Rochester",state="NY",zipcode="33333")
+        ]
 
         cls.nurse_code = '363L00000X'
         cls.nurse_prac = create_practitioner(last_name="ZOLLER", first_name="DAVID",practitioner_type=cls.nurse_code)
@@ -28,7 +34,7 @@ class PractitionerViewSetTestCase(APITestCase):
             create_practitioner(last_name="ABDELHALIM", first_name="AHMED"),
             create_practitioner(last_name="ABDELHAMED", first_name="ABDELHAMED"),
             create_practitioner(last_name="ABDEL NOUR", first_name="MAGDY"),
-            create_practitioner(last_name="ABEL", first_name="MICHAEL"),
+            create_practitioner(last_name="ABEL", first_name="MICHAEL",location=cls.locs[0]),
             create_practitioner(last_name="ABELES", first_name="JENNIFER"),
             create_practitioner(last_name="ABELSON", first_name="MARK"),
             create_practitioner(last_name="CUTLER", first_name="A"),

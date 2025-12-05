@@ -4,7 +4,9 @@ import datetime
 from ..models import (
     Individual,
     IndividualToName,
+    IndividualToAddress,
     FhirNameUse,
+    FhirAddressUse,
     Npi,
     Provider,
     Organization,
@@ -44,7 +46,8 @@ def create_practitioner(
     gender="F",
     birth_date=datetime.date(1990, 1, 1),
     npi_value=None,
-    practitioner_type=None
+    practitioner_type=None,
+    location=None
 ):
     """
     Creates an Individual, Name (via IndividualToName), Npi, Provider.
@@ -61,6 +64,15 @@ def create_practitioner(
         last_name=last_name,
         name_use=_ensure_name_use(),
     )
+
+    if location:
+        use = FhirAddressUse.objects.get(value='work')
+
+        IndividualToAddress.objects.create(
+            individual=individual,
+            address=location.address,
+            address_use=use
+        )
 
     npi = Npi.objects.create(
         npi=npi_value or int(str(uuid.uuid4().int)[:10]),
