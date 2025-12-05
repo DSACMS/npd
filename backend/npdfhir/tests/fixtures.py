@@ -7,6 +7,7 @@ from ..models import (
     IndividualToAddress,
     FhirNameUse,
     FhirAddressUse,
+    FipsState,
     Npi,
     Provider,
     Organization,
@@ -47,7 +48,8 @@ def create_practitioner(
     birth_date=datetime.date(1990, 1, 1),
     npi_value=None,
     practitioner_type=None,
-    location=None
+    location=None,
+    address_use="work"
 ):
     """
     Creates an Individual, Name (via IndividualToName), Npi, Provider.
@@ -66,7 +68,7 @@ def create_practitioner(
     )
 
     if location:
-        use = FhirAddressUse.objects.get(value='work')
+        use = FhirAddressUse.objects.get(value=address_use)
 
         IndividualToAddress.objects.create(
             individual=individual,
@@ -190,17 +192,19 @@ def create_location(
     city="Albany",
     state="NY",
     zipcode="12207",
+    addr_line_1="123 Main St"
 ):
     """
     Creates AddressUs → Address → Location.
     """
     organization = organization or create_organization()
 
+    fips_code = FipsState.objects.get(abbreviation=state)
     addr_us = AddressUs.objects.create(
         id=str(uuid.uuid4())[:10],
-        delivery_line_1="123 Main St",
+        delivery_line_1=addr_line_1,
         city_name=city,
-        state_code_id="36",
+        state_code_id=fips_code.id,
         zipcode=zipcode,
     )
 
