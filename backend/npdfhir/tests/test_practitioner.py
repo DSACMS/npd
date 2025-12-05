@@ -16,7 +16,8 @@ class PractitionerViewSetTestCase(APITestCase):
     @classmethod
     def setUpTestData(cls):
 
-        cls.code = Nucc.objects.get(pk=organization_type)
+        cls.nurse_code = '363L00000X'
+        cls.nurse_prac = create_practitioner(last_name="ZOLLER", first_name="DAVID",practitioner_type=cls.nurse_code)
 
         cls.sample_last_name = "SOLOMON"
         cls.pracs = [
@@ -49,7 +50,7 @@ class PractitionerViewSetTestCase(APITestCase):
             create_practitioner(last_name="ZORN", first_name="GUNNAR"),
             create_practitioner(last_name="ZOOG", first_name="EUGENE"),
             create_practitioner(last_name="ZOLMAN", first_name="MARK"),
-            create_practitioner(last_name="ZOLLER", first_name="DAVID"),
+            cls.nurse_prac,
         ]
 
         return super().setUpTestData()
@@ -201,6 +202,9 @@ class PractitionerViewSetTestCase(APITestCase):
         response = self.client.get(url, {"practitioner_type": "Nurse"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
+
+        nurse_code = response.data["results"]["entry"][0]['resource']['qualification'][0]['code']['coding'][0]['code']
+        self.assertEqual(self.nurse_code,nurse_code)
 
     # Identifiers Filter tests
     def test_list_filter_by_npi_general(self):

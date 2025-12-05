@@ -16,6 +16,7 @@ from ..models import (
     RelationshipType,
     ProviderToLocation,
     ProviderRole,
+    ProviderToTaxonomy,
     Endpoint,
     EndpointInstance,
     EndpointConnectionType,
@@ -43,7 +44,7 @@ def create_practitioner(
     gender="F",
     birth_date=datetime.date(1990, 1, 1),
     npi_value=None,
-    nucc=None
+    practitioner_type=None
 ):
     """
     Creates an Individual, Name (via IndividualToName), Npi, Provider.
@@ -68,10 +69,25 @@ def create_practitioner(
         last_update_date=datetime.date(2020, 1, 1),
     )
 
+
     provider = Provider.objects.create(
         npi=npi,
         individual=individual,
     )
+
+    if practitioner_type:
+        code = Nucc.objects.get(pk=practitioner_type)
+
+        ProviderToTaxonomy.objects.create(
+            npi=provider,
+            nucc_code=code,
+            id=uuid.uuid4()
+        )
+
+        #display name
+        #Nucc
+
+
 
     return provider
 
