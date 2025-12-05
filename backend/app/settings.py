@@ -92,7 +92,11 @@ CORS_ALLOWED_METHODS = ["GET"]
 
 if DEBUG:
     # in development, allow the frontend app to POST forms to the backend
-    CSRF_TRUSTED_ORIGINS = ["http://localhost:8000", "http://localhost:3000"]
+    CSRF_TRUSTED_ORIGINS = [
+        "http://localhost:8000",
+        "http://localhost:8008",
+        "http://localhost:3000",
+    ]
 
 ROOT_URLCONF = "app.urls"
 APPEND_SLASH = True  # this is default, but we're making sure it's explicit

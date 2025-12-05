@@ -42,9 +42,14 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+    { name: "setup", testMatch: /.*\.setup\.ts/ },
+
     {
       name: "chromium",
-      use: { ...devices["Desktop Chrome"] },
+      use: {
+        ...devices["Desktop Chrome"],
+      },
+      dependencies: ["setup"],
     },
 
     // {
@@ -85,5 +90,6 @@ export default defineConfig({
     command: "make test-server",
     url: "http://localhost:8008",
     reuseExistingServer: !process.env.CI,
+    timeout: 300000, // give at least 5 minutes to download all container dependencies
   },
 })

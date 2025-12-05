@@ -1,4 +1,8 @@
 /* CSS classes for common page elements */
+.main {
+  min-height: calc(100vh - (82px + 32px + 98px));
+  background-color: var(--theme-color-primary-lightest);
+}
 
 .leader {
   display: flex;
