@@ -49,7 +49,7 @@ module "dns" {
   directory_alb_dns_name               = module.fhir-api.api_dot_alb_dns_name
   directory_alb_zone_id                = module.fhir-api.api_alb_zone_id
   etl_domain                           = module.domains.etl_domain
-  etl_alb_dns_name                     = module.etl.dagster_ui_alb_dns_name
+  etl_alb_dns_name                     = module.etl.etl_ui_alb_dns_name
 }
 
 module "repositories" {
