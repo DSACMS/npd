@@ -33,10 +33,12 @@ DEBUG = config("DEBUG", cast=bool)
 # Detect if tests are being run
 TESTING = "test" in sys.argv or config("TESTING", default=False, cast=bool)
 
-REQUIRE_AUTHENTICATION = config("NPD_REQUIRE_AUTHENTICATION", default=False, cast=bool)
+REQUIRE_AUTHENTICATION = config(
+    "NPD_REQUIRE_AUTHENTICATION", default=False, cast=bool)
 
 if DEBUG:
-    ALLOWED_HOSTS = ["localhost", "127.0.0.1", "0.0.0.0", "testserver", "django-web"]
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1',
+                     '0.0.0.0', 'testserver', 'django-web']
 else:
     ALLOWED_HOSTS = config("DJANGO_ALLOWED_HOSTS").split(",")
 
@@ -94,7 +96,7 @@ if DEBUG:
     # in development, allow the frontend app to POST forms to the backend
     CSRF_TRUSTED_ORIGINS = ["http://localhost:8000", "http://localhost:3000"]
 
-ROOT_URLCONF = "app.urls"
+ROOT_URLCONF = 'app.urls'
 APPEND_SLASH = True  # this is default, but we're making sure it's explicit
 
 TEMPLATES = [
@@ -228,7 +230,8 @@ SPECTACULAR_SETTINGS = {
 }
 
 if REQUIRE_AUTHENTICATION:
-    REST_FRAMEWORK["DEFAULT_PERMISSION_CLASSES"] = ["rest_framework.permissions.IsAuthenticated"]
+    REST_FRAMEWORK["DEFAULT_PERMISSION_CLASSES"] = [
+        "rest_framework.permissions.IsAuthenticated"]
 
 LOGIN_REDIRECT_URL = "/"
 LOGIN_URL = "/accounts/login/"

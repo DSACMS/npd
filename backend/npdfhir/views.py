@@ -66,6 +66,7 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
     ordering_fields = ["name", "address", "ehr_vendor_name"]
     ordering = ["name"]
     pagination_class = CustomPaginator
+    pagination_class = CustomPaginator
 
     @extend_schema(
         responses={
@@ -98,8 +99,10 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
         endpoints = self.filter_queryset(endpoints)
         paginated_endpoints = self.paginate_queryset(endpoints)
 
-        serialized_endpoints = EndpointSerializer(paginated_endpoints, many=True)
-        bundle = BundleSerializer(serialized_endpoints, context={"request": request})
+        serialized_endpoints = EndpointSerializer(
+            paginated_endpoints, many=True, context={"request": request})
+        bundle = BundleSerializer(
+            serialized_endpoints, context={"request": request})
 
         response = self.get_paginated_response(bundle.data)
         return response
@@ -131,7 +134,8 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
             pk=pk,
         )
 
-        serialized_endpoint = EndpointSerializer(endpoint)
+        serialized_endpoint = EndpointSerializer(
+            endpoint, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = Response(serialized_endpoint.data)
@@ -168,46 +172,22 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
         Default sort order: ascending last name, first name
         """
         # Subqueries for last_name and first_name of the individual
-        primary_last_name_subquery = (
-            IndividualToName.objects.filter(individual=OuterRef("individual"))
-            .order_by("last_name")
-            .values("last_name")[:1]
-        )
 
-        primary_first_name_subquery = (
-            IndividualToName.objects.filter(individual=OuterRef("individual"))
-            .order_by("first_name")
-            .values("first_name")[:1]
-        )
-
-        providers = (
-            Provider.objects.all()
-            .prefetch_related(
-                "npi",
-                "individual",
-                "individual__individualtoname_set",
-                "individual__individualtoaddress_set",
-                "individual__individualtoaddress_set__address__address_us",
-                "individual__individualtoaddress_set__address__address_us__state_code",
-                "individual__individualtoaddress_set__address_use",
-                "individual__individualtophone_set",
-                "individual__individualtoemail_set",
-                "providertootherid_set",
-                "providertotaxonomy_set",
-            )
-            .annotate(
-                primary_last_name=Subquery(primary_last_name_subquery),
-                primary_first_name=Subquery(primary_first_name_subquery),
-                npi_value=F("npi__npi"),
-            )
-            .order_by("primary_last_name", "primary_first_name")
-        )
+        providers = Provider.objects.all().prefetch_related(
+            'npi', 'individual', 'individual__individualtoaddress_set',
+            'individual__individualtoaddress_set__address__address_us',
+            'individual__individualtoaddress_set__address__address_us__state_code',
+            'individual__individualtoaddress_set__address_use', 'individual__individualtophone_set',
+            'individual__individualtoemail_set', 'providertootherid_set', 'providertotaxonomy_set'
+        ).order_by('individual__individualtoname__last_name', 'individual__individualtoname__first_name')
 
         providers = self.filter_queryset(providers)
         paginated_providers = self.paginate_queryset(providers)
 
-        serialized_providers = PractitionerSerializer(paginated_providers, many=True)
-        bundle = BundleSerializer(serialized_providers, context={"request": request})
+        serialized_providers = PractitionerSerializer(
+            paginated_providers, many=True)
+        bundle = BundleSerializer(
+            serialized_providers, context={"request": request})
 
         response = self.get_paginated_response(bundle.data)
         return response
@@ -262,7 +242,8 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     filterset_class = PractitionerRoleFilterSet
     pagination_class = CustomPaginator
 
-    ordering_fields = ["location_name", "practitioner_first_name", "practitioner_last_name"]
+    ordering_fields = ["location_name",
+                       "practitioner_first_name", "practitioner_last_name"]
     ordering = ["location__name"]
 
     # permission_classes = [permissions.IsAuthenticated]
@@ -283,7 +264,8 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
 
         primary_last_name_subquery = (
             IndividualToName.objects.filter(
-                individual=OuterRef("provider_to_organization__individual__individual")
+                individual=OuterRef(
+                    "provider_to_organization__individual__individual")
             )
             .order_by("last_name")
             .values("last_name")[:1]
@@ -291,7 +273,8 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
 
         primary_first_name_subquery = (
             IndividualToName.objects.filter(
-                individual=OuterRef("provider_to_organization__individual__individual")
+                individual=OuterRef(
+                    "provider_to_organization__individual__individual")
             )
             .order_by("first_name")
             .values("first_name")[:1]
@@ -314,7 +297,8 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
         serialized_practitionerroles = PractitionerRoleSerializer(
             paginated_practitionerroles, many=True, context={"request": request}
         )
-        bundle = BundleSerializer(serialized_practitionerroles, context={"request": request})
+        bundle = BundleSerializer(
+            serialized_practitionerroles, context={"request": request})
 
         response = self.get_paginated_response(bundle.data)
         return response
@@ -375,43 +359,39 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
 
         Default sort order: ascending by organization name
         """
-        primary_name_subquery = OrganizationToName.objects.filter(
-            organization=OuterRef("pk"), is_primary=True
-        ).values("name")[:1]
 
-        organizations = (
-            Organization.objects.all()
-            .prefetch_related(
-                "authorized_official",
-                "ein",
-                "organizationtoname_set",
-                "organizationtoaddress_set",
-                "organizationtoaddress_set__address",
-                "organizationtoaddress_set__address__address_us",
-                "organizationtoaddress_set__address__address_us__state_code",
-                "organizationtoaddress_set__address_use",
-                "authorized_official__individualtophone_set",
-                "authorized_official__individualtoname_set",
-                "authorized_official__individualtoemail_set",
-                "authorized_official__individualtoaddress_set",
-                "authorized_official__individualtoaddress_set__address__address_us",
-                "authorized_official__individualtoaddress_set__address__address_us__state_code",
-                "clinicalorganization",
-                "clinicalorganization__npi",
-                "clinicalorganization__organizationtootherid_set",
-                "clinicalorganization__organizationtootherid_set__other_id_type",
-                "clinicalorganization__organizationtotaxonomy_set",
-                "clinicalorganization__organizationtotaxonomy_set__nucc_code",
-            )
-            .annotate(primary_name=Subquery(primary_name_subquery))
-            .order_by("primary_name")
-        )
+        organizations = Organization.objects.all().prefetch_related(
+            'authorized_official',
+            'ein',
+            'organizationtoname_set',
+            'organizationtoaddress_set',
+            'organizationtoaddress_set__address',
+            'organizationtoaddress_set__address__address_us',
+            'organizationtoaddress_set__address__address_us__state_code',
+            'organizationtoaddress_set__address_use',
+
+            'authorized_official__individualtophone_set',
+            'authorized_official__individualtoname_set',
+            'authorized_official__individualtoemail_set',
+            'authorized_official__individualtoaddress_set',
+            'authorized_official__individualtoaddress_set__address__address_us',
+            'authorized_official__individualtoaddress_set__address__address_us__state_code',
+
+            'clinicalorganization',
+            'clinicalorganization__npi',
+            'clinicalorganization__organizationtootherid_set',
+            'clinicalorganization__organizationtootherid_set__other_id_type',
+            'clinicalorganization__organizationtotaxonomy_set',
+            'clinicalorganization__organizationtotaxonomy_set__nucc_code'
+        ).order_by('organizationtoname__name', '-organizationtoname__is_primary')
 
         organizations = self.filter_queryset(organizations)
         paginated_organizations = self.paginate_queryset(organizations)
 
-        serialized_organizations = OrganizationSerializer(paginated_organizations, many=True)
-        bundle = BundleSerializer(serialized_organizations, context={"request": request})
+        serialized_organizations = OrganizationSerializer(
+            paginated_organizations, many=True)
+        bundle = BundleSerializer(
+            serialized_organizations, context={"request": request})
 
         response = self.get_paginated_response(bundle.data)
         return response
@@ -522,7 +502,8 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
         serialized_locations = LocationSerializer(
             paginated_locations, many=True, context={"request": request}
         )
-        bundle = BundleSerializer(serialized_locations, context={"request": request})
+        bundle = BundleSerializer(
+            serialized_locations, context={"request": request})
 
         response = self.get_paginated_response(bundle.data)
         return response
@@ -543,7 +524,8 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
 
         location = get_object_or_404(Location, pk=pk)
 
-        serialized_location = LocationSerializer(location, context={"request": request})
+        serialized_location = LocationSerializer(
+            location, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = Response(serialized_location.data)
@@ -569,7 +551,8 @@ class FHIRCapabilityStatementView(APIView):
         """
         Query metadata about this FHIR instance, represented as FHIR CapabilityStatement resource
         """
-        serializer = CapabilityStatementSerializer(context={"request": request})
+        serializer = CapabilityStatementSerializer(
+            context={"request": request})
         response = serializer.to_representation(None)
 
         return Response(response)

@@ -47,13 +47,17 @@ if "runserver" or "test" in sys.argv:
 
 
 class AddressSerializer(serializers.Serializer):
-    delivery_line_1 = serializers.CharField(source="addressus__delivery_line_1", read_only=True)
-    delivery_line_2 = serializers.CharField(source="addressus__delivery_line_2", read_only=True)
-    city_name = serializers.CharField(source="addressus__city_name", read_only=True)
+    delivery_line_1 = serializers.CharField(
+        source="addressus__delivery_line_1", read_only=True)
+    delivery_line_2 = serializers.CharField(
+        source="addressus__delivery_line_2", read_only=True)
+    city_name = serializers.CharField(
+        source="addressus__city_name", read_only=True)
     state_abbreviation = serializers.CharField(
         source="addressus__fipsstate__abbrev", read_only=True
     )
-    zipcode = serializers.CharField(source="addressus__zipcode", read_only=True)
+    zipcode = serializers.CharField(
+        source="addressus__zipcode", read_only=True)
     use = serializers.CharField(source="address_use__value", read_only=True)
 
     class Meta:
@@ -120,7 +124,8 @@ class PhoneSerializer(serializers.Serializer):
 
 class TaxonomySerializer(serializers.Serializer):
     id = serializers.CharField(source="nucc__code", read_only=True)
-    display_name = serializers.CharField(source="nucc__display_name", read_only=True)
+    display_name = serializers.CharField(
+        source="nucc__display_name", read_only=True)
 
     class Meta:
         fields = ["id", "display_name"]
@@ -173,7 +178,8 @@ class OtherIdentifierSerializer(serializers.Serializer):
                     Coding(
                         system="http://terminology.hl7.org/CodeSystem/v2-0203",
                         code=str(other_identifier_type_id),
-                        display=other_identifier_type[str(other_identifier_type_id)],
+                        display=other_identifier_type[str(
+                            other_identifier_type_id)],
                     )
                 ]
             ),
@@ -234,10 +240,14 @@ class NPISerializer(serializers.ModelSerializer):
 
 
 class IndividualSerializer(serializers.Serializer):
-    name = NameSerializer(source="individualtoname_set", read_only=True, many=True)
-    email = EmailSerializer(source="individualtoemail_set", read_only=True, many=True)
-    phone = PhoneSerializer(source="individualtophone_set", many=True, read_only=True)
-    address = AddressSerializer(source="individualtoaddress_set", many=True, read_only=True)
+    name = NameSerializer(source="individualtoname_set",
+                          read_only=True, many=True)
+    email = EmailSerializer(
+        source="individualtoemail_set", read_only=True, many=True)
+    phone = PhoneSerializer(
+        source="individualtophone_set", many=True, read_only=True)
+    address = AddressSerializer(
+        source="individualtoaddress_set", many=True, read_only=True)
 
     class Meta:
         fields = ["name", "email", "phone"]
@@ -300,9 +310,11 @@ class EndpointIdentifierSerialzier(serializers.Serializer):
 
 
 class OrganizationSerializer(serializers.Serializer):
-    name = OrganizationNameSerializer(source="organizationtoname_set", many=True, read_only=True)
+    name = OrganizationNameSerializer(
+        source="organizationtoname_set", many=True, read_only=True)
     authorized_official = IndividualSerializer(read_only=True)
-    address = AddressSerializer(source="organizationtoaddress_set", many=True, read_only=True)
+    address = AddressSerializer(
+        source="organizationtoaddress_set", many=True, read_only=True)
 
     class Meta:
         model = Organization
@@ -313,26 +325,24 @@ class OrganizationSerializer(serializers.Serializer):
         organization = FHIROrganization()
         organization.id = str(instance.id)
         organization.meta = Meta(
-            profile=["http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"]
+            profile=[
+                "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"]
         )
         identifiers = []
         taxonomies = []
-
-        if instance.ein:
-            ein_identifier = Identifier(
-                system="https://terminology.hl7.org/NamingSystem-USEIN.html",
-                value=str(instance.ein.ein_id),
-                type=CodeableConcept(
-                    coding=[
-                        Coding(
-                            system="http://terminology.hl7.org/CodeSystem/v2-0203",
-                            code="TAX",
-                            display="Tax ID number",
-                        )
-                    ]
-                ),
-            )
-            identifiers.append(ein_identifier)
+        # if instance.ein:
+        #    ein_identifier = Identifier(
+        #        system="https://terminology.hl7.org/NamingSystem-USEIN.html",
+        #        value=str(instance.ein.ein_id),
+        #        type=CodeableConcept(
+        #            coding=[Coding(
+        #                system="http://terminology.hl7.org/CodeSystem/v2-0203",
+        #                code="TAX",
+        #                display="Tax ID number"
+        #            )]
+        #        )
+        #    )
+        #    identifiers.append(ein_identifier)
 
         if hasattr(instance, "clinicalorganization"):
             clinical_org = instance.clinicalorganization
@@ -379,7 +389,8 @@ class OrganizationSerializer(serializers.Serializer):
                             Coding(
                                 system="http://nucc.org/provider-taxonomy",
                                 code=taxonomy.nucc_code_id,
-                                display=nucc_taxonomy_codes[str(taxonomy.nucc_code_id)],
+                                display=nucc_taxonomy_codes[str(
+                                    taxonomy.nucc_code_id)],
                             )
                         ]
                     )
@@ -407,7 +418,8 @@ class OrganizationSerializer(serializers.Serializer):
         if primary_names:
             organization.name = primary_names[0]
         elif names:
-            organization.name = names[0]["name"]
+            organization.name = alias_names[0]
+            del alias_names[0]
 
         if alias_names:
             organization.alias = alias_names
@@ -433,7 +445,8 @@ class PractitionerSerializer(serializers.Serializer):
     identifier = OtherIdentifierSerializer(
         source="providertootheridentifier_set", many=True, read_only=True
     )
-    taxonomy = TaxonomySerializer(source="providertotaxonomy_set", many=True, read_only=True)
+    taxonomy = TaxonomySerializer(
+        source="providertotaxonomy_set", many=True, read_only=True)
 
     class Meta:
         fields = ["npi", "name", "email", "phone", "identifier", "taxonomy"]
@@ -443,7 +456,8 @@ class PractitionerSerializer(serializers.Serializer):
         practitioner = Practitioner()
         practitioner.id = str(instance.individual.id)
         practitioner.meta = Meta(
-            profile=["http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"]
+            profile=[
+                "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"]
         )
         npi_identifier = Identifier(
             system="http://terminology.hl7.org/NamingSystem/npi",
@@ -458,7 +472,8 @@ class PractitionerSerializer(serializers.Serializer):
                 ]
             ),
             use="official",
-            period=Period(start=instance.npi.enumeration_date, end=instance.npi.deactivation_date),
+            period=Period(start=instance.npi.enumeration_date,
+                          end=instance.npi.deactivation_date),
         )
         if representation["individual"]["telecom"] != []:
             practitioner.telecom = representation["individual"]["telecom"]
@@ -551,36 +566,46 @@ class EndpointSerializer(serializers.Serializer):
         ]
 
     def to_representation(self, instance):
+        request = self.context.get('request')
         representation = super().to_representation(instance)
 
-        connection_type = Coding(
-            system="http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
-            code=instance.endpoint_connection_type.id,
-            display=instance.endpoint_connection_type.display,
-        )
+        if instance.endpoint_connection_type:
+            connection_type = Coding(
+                system="http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+                code=instance.endpoint_connection_type.id,
+                display=instance.endpoint_connection_type.display
+            )
+        # TODO THIS IS TEMPORARY DUE TO INSUFFICIENT DATA
+        else:
+            connection_type = Coding(
+                system="http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+                code='hl7-fhir-rest',
+                display='HL7 FHIR'
+            )
 
-        # environment_type = [CodeableConcept(
-        #     coding=[Coding(
-        #         system="https://hl7.org/fhir/valueset-endpoint-environment.html",
-        #         code=instance.environment_type.id,
-        #         display=instance.environment_type.display
-        #     )]
-        # )]
+        if instance.environment_type:
+            environment_type = [CodeableConcept(
+                coding=[Coding(
+                    system="https://hl7.org/fhir/valueset-endpoint-environment.html",
+                    code=instance.environment_type.id,
+                    display=instance.environment_type.display
+                )]
+            )]
 
         endpoint = Endpoint(
             id=str(instance.id),
-            identifier=representation["identifier"],
-            status="active",  # hardcoded for now
+            identifier=representation['identifier'],
+            status="active",  # TODO hardcoded for now
             connectionType=connection_type,
             name=instance.name,
             # TODO extend base fhir spec to ndh spec description=instance.description,
             # TODO extend base fhir spec to ndh spec environmentType=environment_type,
-            # managingOrganization=Reference(managing_organization), ~ organization/npi or whatever we use as the organization identifier
+            # managingOrganization=genReference(
+            #    'fhir-organization-detail', instance.location.organization_id, request),
             # contact=ContactPoint(contact), ~ still gotta figure this out
             # period=Period(period), ~ still gotta figure this out
-            payloadType=representation["payload"],
-            address=instance.address,
-            header=["application/fhir"],  # hardcoded for now
+            payloadType=representation['payload'],
+            address=instance.address
         )
 
         return endpoint.model_dump()
@@ -606,7 +631,8 @@ class CapabilityStatementSerializer(serializers.Serializer):
             date=datetime.now(timezone.utc),
             publisher="CMS",
             contact=[
-                ContactDetail(telecom=[ContactPoint(system="email", value="npd@cms.hhs.gov")])
+                ContactDetail(telecom=[ContactPoint(
+                    system="email", value="npd@cms.hhs.gov")])
             ],
             description="This CapabilityStatement describes the capabilities of the National Provider Directory FHIR API, including supported resources, search parameters, and operations.",
             kind="instance",
@@ -624,7 +650,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
         """
         Building out each REST component describing our endpoint capabilities
 
-        To support a new Endpoint, just add it to the dictionary below following the same format
+        To support a new Endpoint, just add it to the dictionary below following the same format 
         """
         resources = {
             "Practitioner": "/fhir/Practitioner/",
@@ -638,7 +664,8 @@ class CapabilityStatementSerializer(serializers.Serializer):
         for resource_type, path in resources.items():
             if path in schemaData["paths"]:
                 resource_capabilities.append(
-                    self.build_resource_capabilities(resource_type, schemaData["paths"][path])
+                    self.build_resource_capabilities(
+                        resource_type, schemaData["paths"][path])
                 )
 
         return CapabilityStatementRest(
@@ -683,7 +710,8 @@ class BundleSerializer(serializers.Serializer):
             resource_type = resource["resourceType"]
             id = resource["id"]
             url_name = f"fhir-{resource_type.lower()}-detail"
-            full_url = request.build_absolute_uri(reverse(url_name, kwargs={"pk": id}))
+            full_url = request.build_absolute_uri(
+                reverse(url_name, kwargs={"pk": id}))
             # Create an entry for this resource
             entry = {
                 "fullUrl": full_url,
