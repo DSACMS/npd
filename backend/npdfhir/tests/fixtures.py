@@ -4,7 +4,10 @@ import datetime
 from ..models import (
     Individual,
     IndividualToName,
+    IndividualToAddress,
     FhirNameUse,
+    FhirAddressUse,
+    FipsState,
     Npi,
     Provider,
     Organization,
@@ -16,6 +19,7 @@ from ..models import (
     RelationshipType,
     ProviderToLocation,
     ProviderRole,
+    ProviderToTaxonomy,
     Endpoint,
     EndpointInstance,
     EndpointConnectionType,
@@ -43,6 +47,9 @@ def create_practitioner(
     gender="F",
     birth_date=datetime.date(1990, 1, 1),
     npi_value=None,
+    practitioner_type=None,
+    location=None,
+    address_use="work",
 ):
     """
     Creates an Individual, Name (via IndividualToName), Npi, Provider.
@@ -60,6 +67,13 @@ def create_practitioner(
         name_use=_ensure_name_use(),
     )
 
+    if location:
+        use = FhirAddressUse.objects.get(value=address_use)
+
+        IndividualToAddress.objects.create(
+            individual=individual, address=location.address, address_use=use
+        )
+
     npi = Npi.objects.create(
         npi=npi_value or int(str(uuid.uuid4().int)[:10]),
         entity_type_code=1,
@@ -71,6 +85,14 @@ def create_practitioner(
         npi=npi,
         individual=individual,
     )
+
+    if practitioner_type:
+        code = Nucc.objects.get(pk=practitioner_type)
+
+        ProviderToTaxonomy.objects.create(npi=provider, nucc_code=code, id=uuid.uuid4())
+
+        # display name
+        # Nucc
 
     return provider
 
@@ -161,17 +183,19 @@ def create_location(
     city="Albany",
     state="NY",
     zipcode="12207",
+    addr_line_1="123 Main St",
 ):
     """
     Creates AddressUs → Address → Location.
     """
     organization = organization or create_organization()
 
+    fips_code = FipsState.objects.get(abbreviation=state)
     addr_us = AddressUs.objects.create(
         id=str(uuid.uuid4())[:10],
-        delivery_line_1="123 Main St",
+        delivery_line_1=addr_line_1,
         city_name=city,
-        state_code_id="36",
+        state_code_id=fips_code.id,
         zipcode=zipcode,
     )
 
