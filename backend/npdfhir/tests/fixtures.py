@@ -49,7 +49,7 @@ def create_practitioner(
     npi_value=None,
     practitioner_type=None,
     location=None,
-    address_use="work"
+    address_use="work",
 ):
     """
     Creates an Individual, Name (via IndividualToName), Npi, Provider.
@@ -71,9 +71,7 @@ def create_practitioner(
         use = FhirAddressUse.objects.get(value=address_use)
 
         IndividualToAddress.objects.create(
-            individual=individual,
-            address=location.address,
-            address_use=use
+            individual=individual, address=location.address, address_use=use
         )
 
     npi = Npi.objects.create(
@@ -83,7 +81,6 @@ def create_practitioner(
         last_update_date=datetime.date(2020, 1, 1),
     )
 
-
     provider = Provider.objects.create(
         npi=npi,
         individual=individual,
@@ -92,16 +89,10 @@ def create_practitioner(
     if practitioner_type:
         code = Nucc.objects.get(pk=practitioner_type)
 
-        ProviderToTaxonomy.objects.create(
-            npi=provider,
-            nucc_code=code,
-            id=uuid.uuid4()
-        )
+        ProviderToTaxonomy.objects.create(npi=provider, nucc_code=code, id=uuid.uuid4())
 
-        #display name
-        #Nucc
-
-
+        # display name
+        # Nucc
 
     return provider
 
@@ -192,7 +183,7 @@ def create_location(
     city="Albany",
     state="NY",
     zipcode="12207",
-    addr_line_1="123 Main St"
+    addr_line_1="123 Main St",
 ):
     """
     Creates AddressUs → Address → Location.
