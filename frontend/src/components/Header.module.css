@@ -15,15 +15,28 @@
 }
 
 .title {
-  align-items: center;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   flex-wrap: nowrap;
-  white-space: nowrap;
+}
+
+@media (min-width: 34em) and (max-width: 63.99em) {
+  .title {
+    margin-left: var(--grid-gutter-width);
+  }
 }
 
 .logo {
   margin-right: 0.5rem;
   width: 8.875rem;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .logoText {
@@ -35,14 +48,13 @@
   font-style: normal;
   font-weight: var(--theme-font-weight-heading-2xl, 700);
   line-height: 130%; /* 1.95rem */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .betaBadge {
   align-items: center;
   background: #0071bc;
-  display: inline-flex !important;
-  gap: 0.625rem;
-  justify-content: center;
   margin-left: 0.5rem;
   padding: var(--spacer-half, 0.25rem) var(--spacer-1, 0.5rem);
 

@@ -13,12 +13,7 @@
 }
 
 .card {
-  display: flex;
-  width: 31.0625rem;
   padding: var(--spacer-3, 1.5rem);
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--spacer-2, 1rem);
   background: var(--color-white-solid, #fff);
 
   & h1 {

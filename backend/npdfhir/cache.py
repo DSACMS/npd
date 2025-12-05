@@ -12,7 +12,7 @@ def cacheData(model):
     if not data:
         data = {}
         for obj in model.objects.all():
-            if hasattr(obj, 'display_name'):
+            if hasattr(obj, "display_name"):
                 data[str(obj.code)] = obj.display_name
             else:
                 data[str(obj.id)] = obj.value
@@ -23,7 +23,7 @@ def cacheData(model):
     return data
 
 
-if 'runserver' or 'test' in sys.argv:
+if "runserver" or "test" in sys.argv:
     other_identifier_type = cacheData(OtherIdType)
     fhir_name_use = cacheData(FhirNameUse)
     nucc_taxonomy_codes = cacheData(Nucc)

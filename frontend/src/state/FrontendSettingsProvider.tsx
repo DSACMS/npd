@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react"
+import { createContext, useEffect, useState } from "react"
 import { apiUrl } from "./api"
 
 export type FrontendSettingsState = {
@@ -9,31 +9,12 @@ export type FrontendSettingsState = {
 }
 
 // Create the context
-const FrontendSettingsContext = createContext<FrontendSettingsState>({
+// eslint-disable-next-line react-refresh/only-export-components
+export const FrontendSettingsContext = createContext<FrontendSettingsState>({
   settings: {},
   loading: true,
   refetch: () => {},
 })
-
-// Custom hook to use the context
-// eslint-disable-next-line react-refresh/only-export-components
-export const useFrontendSettings = () => {
-  const context = useContext(FrontendSettingsContext)
-  if (!context) {
-    throw new Error(
-      "useFrontendSettings must be used within a FrontendSettingsProvider",
-    )
-  }
-  return context
-}
-
-// eslint-disable-next-line react-refresh/only-export-components
-export const useAuthenticatedUser = () => {
-  const {
-    settings: { user },
-  } = useFrontendSettings()
-  return user
-}
 
 // Provider component
 export const FrontendSettingsProvider = ({
@@ -48,7 +29,7 @@ export const FrontendSettingsProvider = ({
       setLoading(true)
       setError(null)
 
-      const response = await fetch(apiUrl("/frontend_settings"))
+      const response = await fetch(apiUrl("/api/frontend_settings"))
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
       }
