@@ -21,6 +21,7 @@ import { Layout } from "./pages/Layout"
 import { Login } from "./pages/Login"
 import { NotFound } from "./pages/NotFound.tsx"
 import { Organization } from "./pages/Organization"
+import { Practitioner } from "./pages/Practitioner/Practitioner.tsx"
 import { Search } from "./pages/Search"
 import { FrontendSettingsProvider } from "./state/FrontendSettingsProvider"
 
@@ -45,6 +46,10 @@ createRoot(document.getElementById("root")!).render(
                     <Route
                       path="/organizations/:organizationId"
                       element={<Organization />}
+                    />
+                    <Route
+                      path="/practitioners/:practitionerId"
+                      element={<Practitioner />}
                     />
                   </Route>
                 </Route>

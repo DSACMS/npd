@@ -252,8 +252,8 @@ SWAGGER_SETTINGS = {"USE_SESSION_AUTH": False}
 # feature flags
 FLAGS = {
     "SEARCH_APP": [],  # can see the search app at all
-    "PROVIDER_LOOKUP": [],  # can reach the provider lookup page
-    "PROVIDER_LOOKUP_DETAILS": [],  # can reach all details in the provider lookup page
+    "PRACTITIONER_LOOKUP": [],  # can reach the provider lookup page
+    "PRACTITIONER_LOOKUP_DETAILS": [],  # can reach all details in the provider lookup page
     "ORGANIZATION_LOOKUP": [],
     "ORGANIZATION_LOOKUP_DETAILS": [],
     # static conditions can be defined in this file or through the Admin interface

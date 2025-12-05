@@ -30,7 +30,6 @@ export const usePractitionerAPI = (practitionerId: string | undefined) => {
   return useQuery<Practitioner>({
     queryKey: ["practitioner", practitionerId],
     queryFn: () => {
-      console.log("fetch practitioner?", practitionerId)
       if (!practitionerId) {
         return Promise.reject("no practitionerId was provided")
       }
@@ -47,9 +46,18 @@ export const usePractitionerAPI = (practitionerId: string | undefined) => {
 export const practitionerNameSelector = (
   record: Practitioner,
 ): string | null => {
-  if (!record.name || record.name?.length === 0) return null
+  if (!record.name || record.name?.length === 0) return "No name available"
 
   const name: HumanName = record.name[0] as unknown as HumanName
 
   return name.text || ""
+}
+
+export const practitionerAddressOneline = (
+  record: Practitioner,
+): string | null => {
+  if (!record.address || record.address.length === 0)
+    return "No address available"
+
+  return ""
 }
