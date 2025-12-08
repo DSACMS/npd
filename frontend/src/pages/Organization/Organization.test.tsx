@@ -66,7 +66,7 @@ describe("Organization", () => {
         screen.queryByText("About", { selector: "section h2" }),
       ).toBeInTheDocument()
       expect(
-        screen.queryByText("Contact Information", { selector: "section h2" }),
+        screen.queryByText("Contact information", { selector: "section h2" }),
       ).toBeInTheDocument()
       expect(
         screen.queryByText("Identifiers", { selector: "section h2" }),
