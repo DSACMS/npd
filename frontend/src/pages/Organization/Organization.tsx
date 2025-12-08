@@ -72,7 +72,7 @@ export const Organization = () => {
 
         <FeatureFlag name="ORGANIZATION_LOOKUP_DETAILS">
           <Alert heading={t("organizations.update.title")}>
-          {t("organizations.update.subtitle")}
+          {t("organizations.update.subtitle")}{' '}
           <a href="#">{t("organizations.update.link")}</a>
           </Alert>
 
@@ -122,7 +122,7 @@ export const Organization = () => {
                   {identifiers.map((identifier, index) => (
                     <TableRow key={index}>
                       <TableCell>
-                        {getIdentifierTypeDisplay(identifier.system)}
+                        {getIdentifierTypeDisplay(identifier.system ?? "Unknown")}
                       </TableCell>
                       <TableCell>{identifier.number}</TableCell>
                       <TableCell>{identifier.details}</TableCell>
