@@ -1,12 +1,11 @@
 import { useQuery } from "@tanstack/react-query"
-import type { Organization } from "../../@types/fhir/Organization"
 import { apiUrl } from "../api"
 import { formatAddress, formatDate } from "../../helpers/org_helpers"
 import type { FHIROrganization } from "../../@types/fhir"
 
 const fetchOrganization = async (
   organizationId: string,
-): Promise<Organization> => {
+): Promise<FHIROrganization> => {
   const url = apiUrl("/fhir/Organization/:organizationId/", { organizationId })
 
   const response = await fetch(url)
@@ -16,11 +15,11 @@ const fetchOrganization = async (
     return Promise.reject(`error in ${url} request`)
   }
 
-  return response.json() as Promise<Organization>
+  return response.json() as Promise<FHIROrganization>
 }
 
 export const useOrganizationAPI = (organizationId: string | undefined) => {
-  return useQuery<Organization>({
+  return useQuery<FHIROrganization>({
     queryKey: ["organization", organizationId],
     queryFn: () => {
       if (!organizationId) {
@@ -37,7 +36,7 @@ export const useOrganizationAPI = (organizationId: string | undefined) => {
 ////
 
 export const organizationNpiSelector = (
-  org?: Pick<Organization, "identifier">,
+  org?: Pick<FHIROrganization, "identifier">,
 ) => {
   if (!org) return ""
 
