@@ -7,3 +7,6 @@ output "directory_domain" {
 output "etl_domain" {
   value = local.etl_domain
 }
+output "namespace_domain" {
+  value = local.namespace_domain
+}
