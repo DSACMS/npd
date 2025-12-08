@@ -238,3 +238,19 @@ module "github-actions" {
   github_runner_image         = var.github_runner_image
   enable_containerized_runner = true
 }
+
+data "archive_file" "lambda_zip" {
+  type        = "zip"
+  source_file = "postgres-rotation-lambda/lambda_function.py"
+  output_path = "lambda_function.zip"
+}
+
+# Define the AWS Lambda function
+resource "aws_lambda_function" "my_lambda_function" {
+  function_name    = "MyTerraformLambda"
+  handler          = "lambda_function.handler" # Replace with your handler
+  runtime          = "python3.10"
+  role             = aws_iam_role.lambda_exec_role.arn
+  filename         = data.archive_file.lambda_zip.output_path
+  source_code_hash = data.archive_file.lambda_zip.output_base64sha256
+}
