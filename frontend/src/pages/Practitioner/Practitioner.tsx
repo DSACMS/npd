@@ -9,9 +9,12 @@ import {
   practitionerNameSelector,
   usePractitionerAPI,
 } from "../../state/requests/practitioners"
+import { useTranslation } from "react-i18next"
+import { InfoItem } from "../../components/InfoItem"
 import layout from "../Layout.module.css"
 
 export const Practitioner = () => {
+  const { t } = useTranslation()
   const { practitionerId } = useParams()
   const { data, error, isLoading } = usePractitionerAPI(practitionerId)
 
@@ -63,13 +66,27 @@ export const Practitioner = () => {
         </FeatureFlag>
 
         <FeatureFlag name="PRACTITIONER_LOOKUP_DETAILS">
-          <Alert heading="Are you the practitioner listed?">
-            Learn how to <a href="#">update your information</a>.
+          <Alert heading={t("practitioners.update.title")}>
+          {t("practitioners.update.subtitle")}{' '}
+          <a href="#">{t("practitioners.update.link")}</a>
           </Alert>
 
           <section className={layout.section}>
-            <h2>About</h2>
-            <p>[demographic information]</p>
+            <h2>{t("organizations.about")}</h2>
+            <div className="ds-l-row">
+              <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
+                <InfoItem label="Name(s)" value={null} />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
+                <InfoItem label="Gender" value={null} />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
+                <InfoItem label="Deceased" value={null} />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
+                <InfoItem label="Active status" value={null} />
+              </div>
+            </div>
           </section>
 
           <section className={layout.section}>
