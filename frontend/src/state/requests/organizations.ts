@@ -43,7 +43,9 @@ export const useOrganizationAPI = (organizationId: string | undefined) => {
 // Selectors unpack the API responses
 ////
 
-export const organizationNpiSelector = (org?: Organization) => {
+export const organizationNpiSelector = (
+  org?: Pick<Organization, "identifier">,
+) => {
   if (!org) return ""
 
   if (!org.identifier?.length) {
@@ -51,7 +53,9 @@ export const organizationNpiSelector = (org?: Organization) => {
   }
 
   const npiIdentifier = org.identifier.find(
-    (ident) => ident.system === "http://terminology.hl7.org/NamingSystem/npi",
+    (ident) =>
+      ident.system === "http://terminology.hl7.org/NamingSystem/npi" ||
+      ident.system === "http://hl7.org/fhir/sid/us-npi",
   )
 
   return npiIdentifier?.value || "n/a"
