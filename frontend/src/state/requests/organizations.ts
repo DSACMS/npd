@@ -1,19 +1,11 @@
 import { useQuery } from "@tanstack/react-query"
-import type { Address } from "../../@types/fhir/Address"
-import type { Identifier } from "../../@types/fhir/Identifier"
-import type { Organization as FhirOrganization } from "../../@types/fhir/Organization"
 import { apiUrl } from "../api"
-
-// NOTE: (@abachman-dsac) due to limitations in the fhir.resource.R4B model
-// definitions, we cannot fully generate response types automatically
-export interface Organization extends FhirOrganization {
-  identifier?: Identifier[] | null
-  address?: Address[] | null
-}
+import { formatAddress, formatDate } from "../../helpers/org_helpers"
+import type { FHIROrganization } from "../../@types/fhir"
 
 const fetchOrganization = async (
   organizationId: string,
-): Promise<Organization> => {
+): Promise<FHIROrganization> => {
   const url = apiUrl("/fhir/Organization/:organizationId/", { organizationId })
 
   const response = await fetch(url)
@@ -23,11 +15,11 @@ const fetchOrganization = async (
     return Promise.reject(`error in ${url} request`)
   }
 
-  return response.json() as Promise<Organization>
+  return response.json() as Promise<FHIROrganization>
 }
 
 export const useOrganizationAPI = (organizationId: string | undefined) => {
-  return useQuery<Organization>({
+  return useQuery<FHIROrganization>({
     queryKey: ["organization", organizationId],
     queryFn: () => {
       if (!organizationId) {
@@ -44,7 +36,7 @@ export const useOrganizationAPI = (organizationId: string | undefined) => {
 ////
 
 export const organizationNpiSelector = (
-  org?: Pick<Organization, "identifier">,
+  org?: Pick<FHIROrganization, "identifier">,
 ) => {
   if (!org) return ""
 
@@ -59,4 +51,46 @@ export const organizationNpiSelector = (
   )
 
   return npiIdentifier?.value || "n/a"
+}
+
+export const organizationMailingAddressSelector = (org?: FHIROrganization) => {
+  if (!org || !org.contact?.length) return ""
+
+  const contact = org.contact[0]
+  if (!contact.address) return ""
+
+  return formatAddress(contact.address)
+}
+
+export const organizationAuthorizedOfficialSelector = (
+  org?: FHIROrganization,
+) => {
+  if (!org || !org.contact?.length) return ""
+
+  const contact = org.contact[0]
+  if (!contact.name) return ""
+
+  return contact.name.text
+}
+
+export const organizationAuthorizedPhoneSelector = (org?: FHIROrganization) => {
+  if (!org || !org.contact?.length) return ""
+
+  const contact = org.contact[0]
+  const phone = contact?.telecom?.find((t) => t.system === "phone")
+
+  return phone?.value || ""
+}
+
+export const organizationIdentifiersSelector = (org?: FHIROrganization) => {
+  if (!org || !org.identifier?.length) return []
+
+  return org.identifier.map((identity) => ({
+    type: identity.type?.coding?.[0]?.display || "Unknown",
+    number: identity.value,
+    details: identity.period?.start
+      ? `Active, Received ${formatDate(identity.period.start)}` // hardcoding active and recieved if we get a response?
+      : "",
+    system: identity.system,
+  }))
 }

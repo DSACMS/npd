@@ -6,6 +6,7 @@ import header from "./header.json"
 // pages
 import developers from "./developers.json"
 import landing from "./landing.json"
+import organizations from "./organizations.json"
 
 /*
  * NOTE: (@abachman-dsac) a word about i18n usage in react components and the
@@ -34,4 +35,5 @@ export const translations = {
   landing,
   developers,
   errors,
+  organizations
 }
