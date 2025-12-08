@@ -10,6 +10,11 @@ locals {
       api       = "api.test.cnpd.internal.cms.gov"
       directory = "test.cnpd.internal.cms.gov"
     }
+    prod-test = {
+      etl       = "etl.prod-test.cnpd.internal.cms.gov"
+      api       = "api.prod-test.cnpd.internal.cms.gov"
+      directory = "prod-test.cnpd.internal.cms.gov"
+    }
     prod = {
       etl       = "etl.cnpd.internal.cms.gov"
       api       = "api.directory.cms.gov" # public route

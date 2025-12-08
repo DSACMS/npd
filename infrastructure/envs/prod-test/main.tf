@@ -9,8 +9,8 @@ terraform {
   }
 
   backend "s3" {
-    bucket       = "npd-east-nonprod-terraform"
-    key          = "terraform.test.tfstate"
+    bucket       = "npd-east-prod-terraform"
+    key          = "terraform.prod-test.tfstate"
     region       = "us-east-1"
     use_lockfile = true
   }
@@ -40,7 +40,7 @@ module "domains" {
 module "dns" {
   source = "../../modules/dns"
 
-  enable_internal_domain_for_directory = true
+  enable_internal_domain_for_directory = false
   api_domain                           = module.domains.api_domain
   api_alb_dns_name                     = module.fhir-api.api_alb_dns_name
   directory_domain                     = module.domains.directory_domain
@@ -74,6 +74,7 @@ module "api-db" {
   family                  = "postgres17"
   instance_class          = "db.t3.large"
   allocated_storage       = 100
+  max_allocated_storage   = 1000
   storage_type            = "gp3"
   publicly_accessible     = false
   username                = "npd"
@@ -96,6 +97,7 @@ module "etl-db" {
   family                  = "postgres17"
   instance_class          = "db.t3.large"
   allocated_storage       = 500
+  max_allocated_storage   = 1000
   publicly_accessible     = false
   username                = "npd_etl"
   db_name                 = "npd_etl"
@@ -109,7 +111,7 @@ module "etl-db" {
     # Parameters altered to enable DMS to perform database replication
     # Need to install the pglogical extension on the server after creation:
     # create extension pglogical;
-    # select * FROM pg_catalog.pg_extension
+    # select * FROM pg_catalog.pg_extension;
     { name = "rds.logical_replication", value = "1", apply_method = "pending-reboot" },
     { name = "wal_sender_timeout", value = "0" },
     { name = "shared_preload_libraries", value = "pglogical", apply_method = "pending-reboot" }

@@ -1,4 +1,5 @@
 // components
+import errors from "./errors.json"
 import footer from "./footer.json"
 import header from "./header.json"
 
@@ -33,5 +34,6 @@ export const translations = {
   footer,
   landing,
   developers,
+  errors,
   organizations
 }
