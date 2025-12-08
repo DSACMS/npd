@@ -94,7 +94,11 @@ CORS_ALLOWED_METHODS = ["GET"]
 
 if DEBUG:
     # in development, allow the frontend app to POST forms to the backend
-    CSRF_TRUSTED_ORIGINS = ["http://localhost:8000", "http://localhost:3000"]
+    CSRF_TRUSTED_ORIGINS = [
+        "http://localhost:8000",
+        "http://localhost:8008",
+        "http://localhost:3000",
+    ]
 
 ROOT_URLCONF = 'app.urls'
 APPEND_SLASH = True  # this is default, but we're making sure it's explicit
@@ -237,9 +241,7 @@ LOGIN_REDIRECT_URL = "/"
 LOGIN_URL = "/accounts/login/"
 LOGOUT_REDIRECT_URL = LOGIN_URL
 
-DEBUG_TOOLBAR_CONFIG = {
-    "SHOW_TOOLBAR_CALLBACK": lambda request: DEBUG and not TESTING
-}
+DEBUG_TOOLBAR_CONFIG = {"SHOW_TOOLBAR_CALLBACK": lambda request: DEBUG and not TESTING}
 
 CACHES = {
     "default": {

@@ -12,8 +12,8 @@ test.describe("authentication", () => {
     await expect(page.locator("form legend")).toContainText("Sign in")
 
     // act: sign in
-    await page.locator("#username").fill("developer@cms.hhs.gov")
-    await page.locator("#password-sign-in").fill("password123")
+    await page.getByLabel("Username").fill("developer@cms.hhs.gov")
+    await page.getByLabel("Password").fill("password123")
     await page.getByRole("button", { name: "Sign in" }).click()
 
     // assert: redirection after successful sign-in sends user to the landing
@@ -25,5 +25,18 @@ test.describe("authentication", () => {
     await expect(page.locator("h1")).toContainText(
       "National Provider Directory",
     )
+  })
+
+  test.describe("signing out", () => {
+    test.use({ storageState: "tests/.auth/user.json" })
+
+    test("local dev can sign out", async ({ page }) => {
+      await page.goto("")
+      await page.getByRole("button", { name: "Sign out" }).click()
+      await page.waitForURL("/accounts/login/")
+      await expect(page.locator("nav [role=navigation] a")).toContainText(
+        "Sign in",
+      )
+    })
   })
 })

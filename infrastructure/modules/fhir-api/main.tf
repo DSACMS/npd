@@ -312,11 +312,14 @@ resource "aws_lb_target_group" "fhir_api_tg" {
 }
 
 # Port 80 traffic
-# TODO: upgrade all incoming traffic to HTTPS after:
+# TODO: upgrade all incoming traffic to HTTPS as:
 # - internal domain names are registered
 # - ssl certs are requested and validated
+# Right now, this is only true of production but lower envs
+# dev, test, prod-test will get domains and SSL certs of their own
 
 resource "aws_lb_listener" "forward_to_task_group" {
+  count             = var.networking.enable_ssl_directory ? 0 : 1
   load_balancer_arn = aws_lb.fhir_api_alb.arn
   port              = 80
   protocol          = "HTTP"
@@ -324,6 +327,22 @@ resource "aws_lb_listener" "forward_to_task_group" {
   default_action {
     type             = "forward"
     target_group_arn = aws_lb_target_group.fhir_api_tg.arn
+  }
+}
+
+resource "aws_alb_listener" "forward_to_https" {
+  count             = var.networking.enable_ssl_directory ? 1 : 0
+  load_balancer_arn = aws_lb.fhir_api_alb.arn
+  port              = 80
+  protocol          = "HTTP"
+
+  default_action {
+    type = "redirect"
+    redirect {
+      status_code = "HTTP_302"
+      port        = 443
+      protocol    = "HTTPS"
+    }
   }
 }
 

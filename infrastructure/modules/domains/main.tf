@@ -10,10 +10,15 @@ locals {
       api       = "api.test.cnpd.internal.cms.gov"
       directory = "test.cnpd.internal.cms.gov"
     }
+    prod-test = {
+      etl       = "etl.prod-test.cnpd.internal.cms.gov"
+      api       = "api.prod-test.cnpd.internal.cms.gov"
+      directory = "prod-test.cnpd.internal.cms.gov"
+    }
     prod = {
       etl       = "etl.cnpd.internal.cms.gov"
-      api       = "api.cnpd.cms.gov" # public route
-      directory = "cnpd.cms.gov"     # public route
+      api       = "api.directory.cms.gov" # public route
+      directory = "directory.cms.gov"     # public route
     }
   }
   api_domain       = local.domains[var.tier]["api"]

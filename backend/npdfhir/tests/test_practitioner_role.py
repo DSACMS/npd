@@ -8,8 +8,49 @@ from .helpers import (
     extract_resource_ids,
 )
 
+from .fixtures import create_full_practitionerrole
+
 
 class PractitionerRoleViewSetTestCase(APITestCase):
+    @classmethod
+    def setUpTestData(cls):
+        # (location_name, uuid)
+        cls.test_records_name = [
+            "A BEAUTIFUL SMILE DENTISTRY, L.L.C.",
+            "ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC",
+            "ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC",
+            "ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC",
+            "ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC",
+            "ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC",
+            "ADR LLC",
+            "ADR LLC",
+            "ADR LLC",
+            "ADR LLC",
+        ]
+
+        cls.roles = []
+
+        for i, loc_name in enumerate(cls.test_records_name):
+            # You can vary practitioner data a bit to avoid collisions
+            first = f"Test{i}"
+            last = f"Practitioner{i}"
+            npi = 1000000000 + i
+
+            role = create_full_practitionerrole(
+                first_name=first,
+                last_name=last,
+                gender="M" if i % 2 == 0 else "F",
+                npi_value=npi,
+                location_name=loc_name,
+                role_display="Clinician",
+                role_code="MD",
+            )
+
+            cls.roles.append(role)
+
+        cls.first_prac_id = cls.roles[0].id
+        return super().setUpTestData()
+
     # Basic tests
     def test_list_default(self):
         url = reverse("fhir-practitionerrole-list")
@@ -26,31 +67,7 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         # Extract ids
         ids = extract_resource_ids(response)
 
-        # Corresponds to the following location name order
-        """
-        A BEAUTIFUL SMILE DENTISTRY, L.L.C.
-        ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC
-        ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC
-        ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC
-        ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC
-        ADIRONDACK MEDICAL HEALTH CARE ASSOCIATES PLLC
-        ADR LLC
-        ADR LLC
-        ADR LLC
-        ADR LLC
-        """
-        sorted_ids = [
-            "e9554c87-6e4e-4df6-93fb-88ee4bc4e5be",
-            "9f50dfd8-098a-4e6d-a4ad-ded2175a5321",
-            "90011f74-1c0d-4461-95b5-cb346cdbc64b",
-            "874c25e0-44fd-48e9-832a-a80f1d07491a",
-            "0ba12b55-05e1-450f-8a2c-454a93425a34",
-            "38eac005-9373-44ab-bf5d-57b84bca7cb4",
-            "cd3fe6b7-02b0-4136-8db8-4c3867aab131",
-            "093091b7-aba7-4acb-8338-65996de10813",
-            "2e18cd31-4a89-475b-82be-71ad75011713",
-            "59ef9dd6-60e8-4a64-a52c-6f44c540184f",
-        ]
+        sorted_ids = [str(role.id) for role in self.roles]
 
         self.assertEqual(
             ids,
@@ -102,8 +119,8 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
     def test_retrieve_single_pracitionerrole(self):
-        id = "3ac7bd1e-a698-4905-9731-ca650de2dcb0"
+        id = self.first_prac_id
         url = reverse("fhir-practitionerrole-detail", args=[id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data["id"], id)
+        self.assertEqual(response.data["id"], str(id))

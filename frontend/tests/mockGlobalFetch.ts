@@ -1,4 +1,5 @@
 import { vi } from "vitest"
+import type { Organization } from "../src/@types/fhir/Organization"
 
 export const DEFAULT_FRONTEND_SETTINGS: FrontendSettings = {
   require_authentication: false,
@@ -6,10 +7,28 @@ export const DEFAULT_FRONTEND_SETTINGS: FrontendSettings = {
   feature_flags: {},
 }
 
+export const settingsResponseWithFeature = (
+  flagValues: Record<string, boolean>,
+  previous?: FrontendSettings,
+): MockResponse => {
+  const settings = previous || DEFAULT_FRONTEND_SETTINGS
+  return [
+    "^/api/frontend_settings$",
+    {
+      ...settings,
+      feature_flags: {
+        ...settings.feature_flags,
+        ...flagValues,
+      },
+    },
+  ]
+}
+
 type UrlMatch = string
 // new API response types should be added as a union to ApiResponseType
-type ApiResponseType = FrontendSettings
-type MockResponse = [UrlMatch, ApiResponseType]
+type ApiResponseType = FrontendSettings | Organization
+
+export type MockResponse = [UrlMatch, ApiResponseType]
 
 // Mock the global fetch function, allow tests to define custom responses
 export const mockGlobalFetch = (requests?: MockResponse[]) => {

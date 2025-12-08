@@ -144,7 +144,7 @@
         "CommitRate": 10000,
         "StopTaskCachedChangesApplied": false,
         "StopTaskCachedChangesNotApplied": false,
-        "MaxFullLoadSubTasks": 8,
+        "MaxFullLoadSubTasks": 2,
         "TransactionConsistencyTimeout": 600,
         "CreatePkAfterFullLoad": false,
         "TargetTablePrepMode": "DO_NOTHING"

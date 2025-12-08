@@ -448,8 +448,8 @@ resource "aws_ecs_service" "dagster-ui" {
   force_new_deployment = true
 }
 
-resource "aws_lb" "dagster_ui_alb" {
-  name               = "${var.account_name}-dagster-ui-alb"
+resource "aws_lb" "etl_ui_alb" {
+  name               = "${var.account_name}-etl-ui-alb"
   internal           = true
   load_balancer_type = "application"
   security_groups    = [var.networking.etl_alb_security_group_id]
@@ -475,7 +475,7 @@ resource "aws_lb_target_group" "dagster_ui" {
 }
 
 resource "aws_alb_listener" "http" {
-  load_balancer_arn = aws_lb.dagster_ui_alb.arn
+  load_balancer_arn = aws_lb.etl_ui_alb.arn
   port              = 80
   protocol          = "HTTP"
 

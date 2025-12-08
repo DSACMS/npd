@@ -8,8 +8,55 @@ from .helpers import (
     extract_resource_names,
 )
 
+from .fixtures import create_location, create_organization
+
 
 class LocationViewSetTestCase(APITestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.orgs = [
+            create_organization(name="Alpha Org"),
+            create_organization(name="Beta Org"),
+        ]
+
+        cls.locs = [
+            create_location(name="Main Clinic", organization=cls.orgs[0]),
+            create_location(name="1ST CHOICE MEDICAL DISTRIBUTORS, LLC", organization=cls.orgs[0]),
+            create_location(name="986 INFUSION PHARMACY #1 INC.", organization=cls.orgs[1]),
+            create_location(name="A & A MEDICAL SUPPLY COMPANY", organization=cls.orgs[1]),
+            create_location(
+                name="ABACUS BUSINESS CORPORATION GROUP INC.", organization=cls.orgs[0]
+            ),
+            create_location(name="ABBY D CENTER, INC.", organization=cls.orgs[1]),
+            create_location(name="ABC DURABLE MEDICAL EQUIPMENT INC", organization=cls.orgs[0]),
+            create_location(name="ABC HOME MEDICAL SUPPLY, INC.", organization=cls.orgs[0]),
+            create_location(name="A BEAUTIFUL SMILE DENTISTRY, L.L.C.", organization=cls.orgs[0]),
+            create_location(name="A & B HEALTH CARE, INC.", organization=cls.orgs[0]),
+            create_location(name="ABILENE HELPING HANDS INC", organization=cls.orgs[0]),
+            create_location(name="ZEELAND COMMUNITY HOSPITAL", organization=cls.orgs[0]),
+            create_location(name="YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD", organization=cls.orgs[0]),
+            create_location(name="YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD", organization=cls.orgs[1]),
+            create_location(name="YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD", organization=cls.orgs[1]),
+            create_location(name="YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD", organization=cls.orgs[1]),
+            create_location(name="YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD", organization=cls.orgs[1]),
+            create_location(name="YOUNG C. BAE, M.D."),
+            create_location(name="YORKTOWN EMERGENCY MEDICAL SERVICE"),
+            create_location(name="YODORINCMISSIONPLAZAPHARMACY", organization=cls.orgs[0]),
+            create_location(name="YOAKUM COMMUNITY HOSPITAL", organization=cls.orgs[0]),
+            create_location(
+                name="FROEDTERT MEMORIAL LUTHERAN HOSPITAL, INC.", organization=cls.orgs[1]
+            ),
+            create_location(name="AMBER ENTERPRISES INC.", organization=cls.orgs[0]),
+            create_location(name="COUNTY OF KOOCHICHING", organization=cls.orgs[0]),
+            create_location(name="OCEAN HOME HEALTH SUPPLY, LLC", organization=cls.orgs[0]),
+            create_location(name="PULMONARY MANAGEMENT, INC.", organization=cls.orgs[0]),
+            create_location(name="MEDICATION MANAGEMENT CENTER, LLC.", organization=cls.orgs[1]),
+            create_location(name="HENDRICKS COUNTY HOSPITAL", organization=cls.orgs[1]),
+            create_location(name="BAY AREA REHABILITATION MEDICAL GROUP", organization=cls.orgs[1]),
+            create_location(name="PROHAB REHABILITATION SERVICES, INC.", organization=cls.orgs[1]),
+        ]
+        return super().setUpTestData()
+
     # Basic tests
     def test_list_default(self):
         url = reverse("fhir-location-list")
@@ -95,16 +142,16 @@ class LocationViewSetTestCase(APITestCase):
         # 1000 Regency Ct, Toledo, OH 43623
 
         sorted_names = [
-            "FROEDTERT MEMORIAL LUTHERAN HOSPITAL, INC.",
-            "FROEDTERT MEMORIAL LUTHERAN HOSPITAL, INC.",
-            "AMBER ENTERPRISES INC.",
-            "COUNTY OF KOOCHICHING",
-            "OCEAN HOME HEALTH SUPPLY, LLC",
-            "PULMONARY MANAGEMENT, INC.",
-            "MEDICATION MANAGEMENT CENTER, LLC.",
-            "HENDRICKS COUNTY HOSPITAL",
-            "BAY AREA REHABILITATION MEDICAL GROUP",
-            "PROHAB REHABILITATION SERVICES, INC.",
+            "1ST CHOICE MEDICAL DISTRIBUTORS, LLC",
+            "986 INFUSION PHARMACY #1 INC.",
+            "A & A MEDICAL SUPPLY COMPANY",
+            "ABACUS BUSINESS CORPORATION GROUP INC.",
+            "ABBY D CENTER, INC.",
+            "ABC DURABLE MEDICAL EQUIPMENT INC",
+            "ABC HOME MEDICAL SUPPLY, INC.",
+            "A BEAUTIFUL SMILE DENTISTRY, L.L.C.",
+            "A & B HEALTH CARE, INC.",
+            "ABILENE HELPING HANDS INC",
         ]
 
         self.assertEqual(
@@ -170,8 +217,8 @@ class LocationViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
     def test_retrieve_single_location(self):
-        id = "527c8a79-1294-47ab-afce-b571c89a4f2b"
+        id = self.locs[0].id
         url = reverse("fhir-location-detail", args=[id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data["id"], id)
+        self.assertEqual(response.data["id"], str(id))
