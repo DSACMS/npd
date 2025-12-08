@@ -1,5 +1,6 @@
 import { vi } from "vitest"
 import type { Organization } from "../src/@types/fhir/Organization"
+import type { Practitioner } from "../src/@types/fhir/Practitioner"
 
 export const DEFAULT_FRONTEND_SETTINGS: FrontendSettings = {
   require_authentication: false,
@@ -26,7 +27,7 @@ export const settingsResponseWithFeature = (
 
 type UrlMatch = string
 // new API response types should be added as a union to ApiResponseType
-type ApiResponseType = FrontendSettings | Organization
+type ApiResponseType = FrontendSettings | Organization | Practitioner
 
 export type MockResponse = [UrlMatch, ApiResponseType]
 
