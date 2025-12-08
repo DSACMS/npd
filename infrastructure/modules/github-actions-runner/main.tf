@@ -75,25 +75,25 @@ resource "aws_ecr_repository" "github_actions_runner" {
   }
 }
 
-data "aws_secretsmanager_random_password" "github_pat_random" {
+data "aws_secretsmanager_random_password" "github_actions_runner_token_random" {
   password_length = 20
 }
 
-resource "aws_secretsmanager_secret" "github_pat" {
-  name_prefix = "${var.account_name}-github-pat"
+resource "aws_secretsmanager_secret" "github_actions_runner_token_secret" {
+  name_prefix = "${var.account_name}-github-runner-token-secret"
   description = "GitHub Runner PAT"
 }
 
-resource "aws_secretsmanager_secret_version" "github_pat_version" {
-  secret_id                = aws_secretsmanager_secret.github_pat.id
-  secret_string_wo         = data.aws_secretsmanager_random_password.github_pat_random.random_password
+resource "aws_secretsmanager_secret_version" "github_runner_token_secret_version" {
+  secret_id                = aws_secretsmanager_secret.github_actions_runner_token_secret.id
+  secret_string_wo         = data.aws_secretsmanager_random_password.github_actions_runner_token_random.random_password
   secret_string_wo_version = 1
 }
 
 # ECS Roles and Policies
 resource "aws_iam_role" "github_runner_execution_role" {
-  name        = "${var.account_name}-github-runner-execution-role"
-  description = "Defines what AWS actions the GitHub Runner task execution environment is allowed to make"
+  name        = "${var.account_name}-github-actions-runner-execution-role"
+  description = "Defines what AWS actions the GitHub Actions Runner task execution environment is allowed to make"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
@@ -109,7 +109,7 @@ resource "aws_iam_role_policy_attachment" "ecs_task_execution" {
   policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
 }
 
-resource "aws_iam_policy" "github_runner_can_access_github_pat_secret" {
+resource "aws_iam_policy" "github_runner_can_access_github_runner_secret" {
   name        = "${var.account_name}-github-runner-can-access-github-pat-secret"
   description = "Allows ECS to access the GitHub PAT secret"
   policy = jsonencode({
@@ -119,16 +119,16 @@ resource "aws_iam_policy" "github_runner_can_access_github_pat_secret" {
         Action = "secretsmanager:GetSecretValue",
         Effect = "Allow"
         Resource = [
-          aws_secretsmanager_secret_version.github_pat_version.arn
+          aws_secretsmanager_secret_version.github_runner_token_secret_version.arn
         ]
       }
     ]
   })
 }
 
-resource "aws_iam_role_policy_attachment" "github_runner_can_access_github_pat_attachment" {
+resource "aws_iam_role_policy_attachment" "github_runner_can_access_github_action_runner_secret_attachment" {
   role       = aws_iam_role.github_runner_execution_role.name
-  policy_arn = aws_iam_policy.github_runner_can_access_github_pat_secret.arn
+  policy_arn = aws_iam_policy.github_runner_can_access_github_runner_secret.arn
 }
 
 # FHIR API Task Configuration
@@ -142,9 +142,9 @@ resource "aws_ecs_task_definition" "github_actions_runner_task" {
 
   container_definitions = jsonencode([
     {
-      name      = "${var.account_name}-github-runner"
+      name      = "${var.account_name}-github-actions-runner"
       image     = var.github_runner_image
-      essential = false
+      essential = true
       environment = [
         {
           name  = "GITHUB_ORG"
@@ -153,8 +153,8 @@ resource "aws_ecs_task_definition" "github_actions_runner_task" {
       ]
       secrets = [
         {
-          name      = "GITHUB_PAT"
-          valueFrom = aws_secretsmanager_secret_version.github_pat_version.secret_string
+          name      = "GITHUB_RUNNER_TOKEN"
+          valueFrom = aws_secretsmanager_secret_version.github_runner_token_secret_version.arn
         },
       ]
       logConfiguration = {
@@ -171,7 +171,7 @@ resource "aws_ecs_task_definition" "github_actions_runner_task" {
 
 # API ECS Service
 resource "aws_ecs_service" "app" {
-  name            = "${var.account_name}-fhir-api-service"
+  name            = "${var.account_name}-github-actions-runner-service"
   cluster         = var.ecs_cluster_id
   task_definition = aws_ecs_task_definition.github_actions_runner_task.arn
   launch_type     = "FARGATE"
