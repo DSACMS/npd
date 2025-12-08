@@ -51,7 +51,7 @@ resource "aws_instance" "github_actions_instance" {
   ami                    = "ami-04345af6ff8317b5e"
   instance_type          = "m5.xlarge"
   vpc_security_group_ids = var.security_group_ids
-  subnet_id              = var.subnet_id
+  subnet_id              = var.subnet_ids[0]
   iam_instance_profile   = "cms-cloud-base-ec2-profile-v4"
   root_block_device {
     volume_size = 100
@@ -61,7 +61,7 @@ resource "aws_instance" "github_actions_instance" {
   }
 }
 
-### A GitHub Actions Runner ECS
+# Exploratory work on a containerized GHA runner
 
 resource "aws_cloudwatch_log_group" "github_runner_log_group" {
   name              = "/custom/${var.account_name}-github-runner-logs"
@@ -171,6 +171,7 @@ resource "aws_ecs_task_definition" "github_actions_runner_task" {
 
 # API ECS Service
 resource "aws_ecs_service" "app" {
+  count           = var.enable_containerized_runner ? 1 : 0
   name            = "${var.account_name}-github-actions-runner-service"
   cluster         = var.ecs_cluster_id
   task_definition = aws_ecs_task_definition.github_actions_runner_task.arn
