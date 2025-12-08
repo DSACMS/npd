@@ -20,6 +20,8 @@ Non-prod is divided into two tiers:
 - `dev`
 - `test`
 
+`prod-test` is in the same AWS account as prod, and is used for testing with [a copy of] production data when testing requires this.
+
 Production is `prod`.
 
 Some examples:
@@ -41,6 +43,7 @@ npd-east-dev-load-fips-bronze-job
    (one of)
    .env.dev
    .env.test
+   .env.prod-test
    .env.prod
 ```
 2. Assume an AWS Role using `./ctkey.sh`
@@ -48,6 +51,7 @@ npd-east-dev-load-fips-bronze-job
     (one of)
     ./ctkey.sh dev
     ./ctkey.sh test
+    ./ctkey.sh prod-test
     ./ctkey.sh prod
 ```
 3. Initialize terraform
@@ -55,6 +59,7 @@ npd-east-dev-load-fips-bronze-job
     (one of)
     terraform -chdir=envs/dev init
     terraform -chdir=envs/test init
+    terraform -chdir=envs/prod-test init
     terraform -chdir=envs/prod init
 ```
 4. Deploy resources using terraform
@@ -62,5 +67,6 @@ npd-east-dev-load-fips-bronze-job
     (one of)
     terraform -chdir=envs/dev apply
     terraform -chdir=envs/test apply
+    terraform -chdir=envs/prod-test apply
     terraform -chdir=envs/prod apply
 ```

@@ -228,6 +228,7 @@ build-frontend-test-assets: clean-frontend
 
 .PHONY: test-server
 test-server: test-setup build-frontend-test-assets
+	@bin/npr --test python manage.py seeduser
 	@bin/npr --test --publish 8008:8008 python manage.py runserver 0.0.0.0:8008
 
 ###
