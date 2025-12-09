@@ -16,8 +16,14 @@ class OrganizationViewSetTestCase(APITestCase):
     @classmethod
     def setUpTestData(cls):
         cls.orgs = [
-            create_organization(name="1ST CHOICE HOME HEALTH CARE INC"),
-            create_organization(name="1ST CHOICE MEDICAL DISTRIBUTORS, LLC"),
+            create_organization(
+                name="1ST CHOICE HOME HEALTH CARE INC", id="c591bfc5-b4ed-49af-926f-569056b5b1aa"
+            ),
+            create_organization(
+                name="1ST CHOICE MEDICAL DISTRIBUTORS, LLC",
+                id="5f56f3f0-3bd6-42ce-b275-f12f92a4ba40",
+                parent_id="c591bfc5-b4ed-49af-926f-569056b5b1aa",
+            ),
             create_organization(name="986 INFUSION PHARMACY #1 INC."),
             create_organization(name="A & A MEDICAL SUPPLY COMPANY"),
             create_organization(name="ABACUS BUSINESS CORPORATION GROUP INC."),
@@ -172,6 +178,21 @@ class OrganizationViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
         self.assertGreaterEqual(response.data["results"]["total"], 1)
+
+    def test_parent_id(self):
+        parent_id = self.orgs[1].parent_id
+        id = self.orgs[1].id
+        url = reverse("fhir-organization-detail", args=[parent_id])
+        response = self.client.get(url)
+        # check that the parentless organization does not have a parent listed
+        self.assertNotIn(response.data["results"]["entry"], "parent_id")
+
+        url = reverse("fhir-organization-detail", args=[id])
+        response = self.client.get(url)
+        # check that the child organization has a parent_id listed
+        self.assertIn(response.data["results"]["entry"], "parent_id")
+        # check that the child organization has the correct parent_id listed
+        self.assertEqual(response.data["results"]["entry"]["parent_id"], parent_id)
 
     def test_list_filter_by_otherID_general(self):
         url = reverse("fhir-organization-list")

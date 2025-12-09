@@ -108,9 +108,9 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
         paginated_endpoints = self.paginate_queryset(endpoints)
 
         serialized_endpoints = EndpointSerializer(
-            paginated_endpoints, many=True, context={"request": request})
-        bundle = BundleSerializer(
-            serialized_endpoints, context={"request": request})
+            paginated_endpoints, many=True, context={"request": request}
+        )
+        bundle = BundleSerializer(serialized_endpoints, context={"request": request})
 
         response = self.get_paginated_response(bundle.data)
         return response
@@ -142,8 +142,7 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
             pk=pk,
         )
 
-        serialized_endpoint = EndpointSerializer(
-            endpoint, context={"request": request})
+        serialized_endpoint = EndpointSerializer(endpoint, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = Response(serialized_endpoint.data)
@@ -165,10 +164,15 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     filterset_class = PractitionerFilterSet
     pagination_class = CustomPaginator
 
-    ordering_fields = ["individual__individualtoname__last_name",
-                       "individual__individualtoname__first_name", "npi_value"]
-    ordering = ["individual__individualtoname__last_name",
-                "individual__individualtoname__first_name"]
+    ordering_fields = [
+        "individual__individualtoname__last_name",
+        "individual__individualtoname__first_name",
+        "npi_value",
+    ]
+    ordering = [
+        "individual__individualtoname__last_name",
+        "individual__individualtoname__first_name",
+    ]
 
     # permission_classes = [permissions.IsAuthenticated]
     @extend_schema(
@@ -187,20 +191,23 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
         # Subqueries for last_name and first_name of the individual
 
         providers = Provider.objects.all().prefetch_related(
-            'npi', 'individual', 'individual__individualtoaddress_set',
-            'individual__individualtoaddress_set__address__address_us',
-            'individual__individualtoaddress_set__address__address_us__state_code',
-            'individual__individualtoaddress_set__address_use', 'individual__individualtophone_set',
-            'individual__individualtoemail_set', 'providertootherid_set', 'providertotaxonomy_set'
+            "npi",
+            "individual",
+            "individual__individualtoaddress_set",
+            "individual__individualtoaddress_set__address__address_us",
+            "individual__individualtoaddress_set__address__address_us__state_code",
+            "individual__individualtoaddress_set__address_use",
+            "individual__individualtophone_set",
+            "individual__individualtoemail_set",
+            "providertootherid_set",
+            "providertotaxonomy_set",
         )
 
         providers = self.filter_queryset(providers)
         paginated_providers = self.paginate_queryset(providers)
 
-        serialized_providers = PractitionerSerializer(
-            paginated_providers, many=True)
-        bundle = BundleSerializer(
-            serialized_providers, context={"request": request})
+        serialized_providers = PractitionerSerializer(paginated_providers, many=True)
+        bundle = BundleSerializer(serialized_providers, context={"request": request})
 
         response = self.get_paginated_response(bundle.data)
         return response
@@ -258,8 +265,7 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     filterset_class = PractitionerRoleFilterSet
     pagination_class = CustomPaginator
 
-    ordering_fields = ["location_name",
-                       "practitioner_first_name", "practitioner_last_name"]
+    ordering_fields = ["location_name", "practitioner_first_name", "practitioner_last_name"]
     ordering = ["location__name"]
 
     # permission_classes = [permissions.IsAuthenticated]
@@ -281,9 +287,7 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
         practitionerroles = (
             ProviderToLocation.objects.select_related("location")
             .prefetch_related("provider_to_organization")
-            .annotate(
-                location_name=F("location__name")
-            )
+            .annotate(location_name=F("location__name"))
             .order_by("location__name")
         ).all()
 
@@ -293,8 +297,7 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
         serialized_practitionerroles = PractitionerRoleSerializer(
             paginated_practitionerroles, many=True, context={"request": request}
         )
-        bundle = BundleSerializer(
-            serialized_practitionerroles, context={"request": request})
+        bundle = BundleSerializer(serialized_practitionerroles, context={"request": request})
 
         response = self.get_paginated_response(bundle.data)
         return response
@@ -341,8 +344,8 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     filterset_class = OrganizationFilterSet
     pagination_class = CustomPaginator
 
-    ordering_fields = ['organizationtoname__name']
-    ordering = ['organizationtoname__name', '-organizationtoname__is_primary']
+    ordering_fields = ["organizationtoname__name"]
+    ordering = ["organizationtoname__name", "-organizationtoname__is_primary"]
 
     # permission_classes = [permissions.IsAuthenticated]
     @extend_schema(
@@ -360,37 +363,35 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
         """
 
         organizations = Organization.objects.all().prefetch_related(
-            'authorized_official',
-            'ein',
-            'organizationtoname_set',
-            'organizationtoaddress_set',
-            'organizationtoaddress_set__address',
-            'organizationtoaddress_set__address__address_us',
-            'organizationtoaddress_set__address__address_us__state_code',
-            'organizationtoaddress_set__address_use',
-
-            'authorized_official__individualtophone_set',
-            'authorized_official__individualtoname_set',
-            'authorized_official__individualtoemail_set',
-            'authorized_official__individualtoaddress_set',
-            'authorized_official__individualtoaddress_set__address__address_us',
-            'authorized_official__individualtoaddress_set__address__address_us__state_code',
-
-            'clinicalorganization',
-            'clinicalorganization__npi',
-            'clinicalorganization__organizationtootherid_set',
-            'clinicalorganization__organizationtootherid_set__other_id_type',
-            'clinicalorganization__organizationtotaxonomy_set',
-            'clinicalorganization__organizationtotaxonomy_set__nucc_code'
+            "authorized_official",
+            "ein",
+            "organizationtoname_set",
+            "organizationtoaddress_set",
+            "organizationtoaddress_set__address",
+            "organizationtoaddress_set__address__address_us",
+            "organizationtoaddress_set__address__address_us__state_code",
+            "organizationtoaddress_set__address_use",
+            "authorized_official__individualtophone_set",
+            "authorized_official__individualtoname_set",
+            "authorized_official__individualtoemail_set",
+            "authorized_official__individualtoaddress_set",
+            "authorized_official__individualtoaddress_set__address__address_us",
+            "authorized_official__individualtoaddress_set__address__address_us__state_code",
+            "clinicalorganization",
+            "clinicalorganization__npi",
+            "clinicalorganization__organizationtootherid_set",
+            "clinicalorganization__organizationtootherid_set__other_id_type",
+            "clinicalorganization__organizationtotaxonomy_set",
+            "clinicalorganization__organizationtotaxonomy_set__nucc_code",
         )
 
         organizations = self.filter_queryset(organizations)
         paginated_organizations = self.paginate_queryset(organizations)
 
         serialized_organizations = OrganizationSerializer(
-            paginated_organizations, many=True)
-        bundle = BundleSerializer(
-            serialized_organizations, context={"request": request})
+            paginated_organizations, many=True, context={"request": request}
+        )
+        bundle = BundleSerializer(serialized_organizations, context={"request": request})
 
         response = self.get_paginated_response(bundle.data)
         return response
@@ -435,7 +436,7 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
             pk=pk,
         )
 
-        serialized_organization = OrganizationSerializer(organization)
+        serialized_organization = OrganizationSerializer(organization, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = Response(serialized_organization.data)
@@ -504,8 +505,7 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
         serialized_locations = LocationSerializer(
             paginated_locations, many=True, context={"request": request}
         )
-        bundle = BundleSerializer(
-            serialized_locations, context={"request": request})
+        bundle = BundleSerializer(serialized_locations, context={"request": request})
 
         response = self.get_paginated_response(bundle.data)
         return response
@@ -526,8 +526,7 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
 
         location = get_object_or_404(Location, pk=pk)
 
-        serialized_location = LocationSerializer(
-            location, context={"request": request})
+        serialized_location = LocationSerializer(location, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = Response(serialized_location.data)
@@ -556,8 +555,7 @@ class FHIRCapabilityStatementView(APIView):
         """
         Query metadata about this FHIR instance, represented as FHIR CapabilityStatement resource
         """
-        serializer = CapabilityStatementSerializer(
-            context={"request": request})
+        serializer = CapabilityStatementSerializer(context={"request": request})
         response = serializer.to_representation(None)
 
         return Response(response)
