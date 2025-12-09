@@ -20,7 +20,7 @@ export const formatDate = (dateString: string): string => {
     })
 } 
 
-export const getIdentifierTypeDisplay = (system: string): string => {
+export const formatIdentifierType = (system: string): string => {
   // prolly will fill up as we get more data
   const systemMap: Record<string, string> = {
     "http://terminology.hl7.org/NamingSystem/npi": "NPI"

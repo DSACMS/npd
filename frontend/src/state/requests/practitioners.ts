@@ -1,7 +1,6 @@
 import { useQuery } from "@tanstack/react-query"
 import type { FHIRPractioner } from "../../@types/fhir"
 import { apiUrl } from "../api"
-import { formatAddress, formatDate } from "../../helpers/org_helpers"
 
 // NOTE: (@abachman-dsac) due to limitations in the fhir.resource.R4B model
 // definitions, we cannot fully generate response types automatically
@@ -32,78 +31,4 @@ export const usePractitionerAPI = (practitionerId: string | undefined) => {
       return fetchPractitioner(practitionerId)
     },
   })
-}
-
-////
-// Selectors unpack the API responses
-////
-
-export const practitionerNameSelector = (
-  record: FHIRPractioner,
-): string | null => {
-  if (!record.name || record.name?.length === 0) return "No name available"
-
-  const name = record.name[0]
-
-  return name.text || ""
-}
-
-export const practitionerAddressSelector = (
-  record: FHIRPractioner,
-): string | null => {
-  if (!record || !record.address?.length) return ""
-
-  const contact = record.address[0]
-  if (!contact) return ""
-
-  return formatAddress(contact)
-}
-
-export const practitionerGenderSelector = (
-  record: FHIRPractioner,
-): string | null => {
-  return record?.gender ?? null
-}
-
-export const practitionerDeceasedSelector = (
-  record: FHIRPractioner,
-): string | null => {
-  return record.deceasedBoolean ? "Yes" : "No"
-}
-
-export const practitionerActiveSelector = (
-  record: FHIRPractioner,
-): string | null => {
-  return record.active ? "Yes" : "No"
-}
-
-export const practitionerPhoneSelector = ( //use logic to find phone specifically throught system === phone
-  record: FHIRPractioner,
-): string | null => {
-  if (!record || record.telecom?.length) return ""
-
-  const contact = record.telecom?.[0]
-  return contact?.value ?? null
-}
-
-export const practitionerFaxSelector = ( //use logic to find phone specifically throught system === fax
-  record: FHIRPractioner,
-): string | null => {
-  if (!record || record.telecom?.length) return ""
-
-  const contact = record.telecom?.[0]
-  return contact?.value ?? null
-}
-
-export const practitionerIdentifiersSelector = (org?: FHIRPractioner) => {
-  if (!org || !org.identifier?.length) return []
-
-  return org.identifier.map((identity) => ({
-    type: identity.type?.coding?.[0]?.display || "Unknown",
-    number: identity.value,
-    details: identity.period?.start
-      ? `Active, Received ${formatDate(identity.period.start)}` // hardcoding active and recieved if we get a response?
-      : "",
-    system: identity.system,
-  }))
 }
