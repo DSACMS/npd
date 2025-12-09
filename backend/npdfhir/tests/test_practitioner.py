@@ -1,6 +1,9 @@
 from django.urls import reverse
 from rest_framework import status
+
 from .api_test_case import APITestCase
+from .fixtures.location import create_location
+from .fixtures.practitioner import create_practitioner
 from .helpers import (
     assert_fhir_response,
     assert_has_results,
@@ -8,8 +11,6 @@ from .helpers import (
     extract_practitioner_names,
     get_female_npis,
 )
-
-from .fixtures import create_practitioner, create_location
 
 
 class PractitionerViewSetTestCase(APITestCase):
@@ -40,14 +41,17 @@ class PractitionerViewSetTestCase(APITestCase):
         ]
 
         cls.nurse_code = "363L00000X"
+        cls.non_nurse_code = "364SP0200X"
         cls.nurse_prac = create_practitioner(
-            last_name="ZOLLER", first_name="DAVID", practitioner_type=cls.nurse_code
+            last_name="ZOLLER",
+            first_name="DAVID",
+            practitioner_types=[cls.nurse_code, cls.non_nurse_code],
         )
 
         cls.sample_last_name = "SOLOMON"
         cls.pracs = [
             create_practitioner(last_name="AADALEN", first_name="KIRK", npi_value=1234567890),
-            create_practitioner(last_name="ABBAS", first_name="ASAD"),
+            create_practitioner(last_name="ABBAS", first_name="ASAD", other_id=1234567890),
             create_practitioner(last_name="ABBOTT", first_name="BRUCE"),
             create_practitioner(last_name="ABBOTT", first_name="PHILIP"),
             create_practitioner(last_name="ABDELHALIM", first_name="AHMED"),
@@ -222,10 +226,11 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
 
-        self.assertEqual(
-            response.data["results"]["entry"][0]["resource"]["name"][-1]["family"],
-            self.sample_last_name,
-        )
+        for entry in response.data["results"]["entry"]:
+            self.assertEqual(
+                entry["resource"]["name"][-1]["family"],
+                self.sample_last_name,
+            )
 
     def test_list_filter_by_practitioner_type(self):
         url = reverse("fhir-practitioner-list")
@@ -233,10 +238,11 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
 
-        nurse_code = response.data["results"]["entry"][0]["resource"]["qualification"][0]["code"][
-            "coding"
-        ][0]["code"]
-        self.assertEqual(self.nurse_code, nurse_code)
+        for entry in response.data["results"]["entry"]:
+            nurse_codes = [
+                nc["code"] for nc in entry["resource"]["qualification"][0]["code"]["coding"]
+            ]
+            self.assertIn(self.nurse_code, nurse_codes)
 
     # Identifiers Filter tests
     def test_list_filter_by_npi_general(self):
@@ -245,8 +251,9 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
 
-        result_npi = response.data["results"]["entry"][0]["resource"]["identifier"][0]["value"]
-        self.assertEqual(self.pracs[0].npi.npi, int(result_npi))
+        for entry in response.data["results"]["entry"]:
+            values = [int(v["value"]) for v in entry["resource"]["identifier"]]
+            self.assertIn(self.pracs[0].npi.npi, values)
 
     def test_list_filter_by_npi_specific(self):
         url = reverse("fhir-practitioner-list")
@@ -254,19 +261,25 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
 
-        result_npi = response.data["results"]["entry"][0]["resource"]["identifier"][0]["value"]
-        self.assertEqual(self.pracs[0].npi.npi, int(result_npi))
+        for entry in response.data["results"]["entry"]:
+            values = [int(v["value"]) for v in entry["resource"]["identifier"]]
+            self.assertIn(self.pracs[0].npi.npi, values)
 
     # Address Filter tests
     def test_list_filter_by_address(self):
         url = reverse("fhir-practitioner-list")
         city_string = self.locs[2].address.address_us.city_name
-        response = self.client.get(url, {"address": "Street"})
+        address_line = self.locs[2].address.address_us.delivery_line_1
+        response = self.client.get(url, {"address": "123 Street R. Rochester"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
 
-        result_city_string = response.data["results"]["entry"][0]["resource"]["address"][0]["city"]
-        self.assertEqual(city_string, result_city_string)
+        for entry in response.data["results"]["entry"]:
+            result_city_string = entry["resource"]["address"][0]["city"]
+            self.assertEqual(city_string, result_city_string)
+            result_addr_string = entry["resource"]["address"][0]["line"][0]
+            # print(result_addr_string)
+            self.assertEqual(address_line, result_addr_string)
 
     def test_list_filter_by_address_city(self):
         url = reverse("fhir-practitioner-list")
@@ -275,8 +288,9 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
 
-        result_city_string = response.data["results"]["entry"][0]["resource"]["address"][0]["city"]
-        self.assertEqual(city_string, result_city_string)
+        for entry in response.data["results"]["entry"]:
+            result_city_string = entry["resource"]["address"][0]["city"]
+            self.assertEqual(city_string, result_city_string)
 
     def test_list_filter_by_address_state(self):
         url = reverse("fhir-practitioner-list")
@@ -298,23 +312,22 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
 
-        result_zip = response.data["results"]["entry"][0]["resource"]["address"][0]["postalCode"]
-        self.assertEqual(postal_code_string, result_zip)
+        for entry in response.data["results"]["entry"]:
+            result_zip = entry["resource"]["address"][0]["postalCode"]
+            self.assertEqual(postal_code_string, result_zip)
 
     def test_list_filter_by_address_use(self):
         url = reverse("fhir-practitioner-list")
 
-        city_string = self.locs[1].address.address_us.city_name
-        zip_string = self.locs[1].address.address_us.zipcode
         response = self.client.get(url, {"address_use": "home"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
 
-        result_zip = response.data["results"]["entry"][0]["resource"]["address"][0]["postalCode"]
-        self.assertEqual(zip_string, result_zip)
-
-        result_city_string = response.data["results"]["entry"][0]["resource"]["address"][0]["city"]
-        self.assertEqual(city_string, result_city_string)
+        for entry in response.data["results"]["entry"]:
+            # assert the address use is in the data
+            self.assertIn("use", entry["resource"]["address"][0])
+            result_use = entry["resource"]["address"][0]["use"]
+            self.assertEqual("home", result_use)
 
     # Retrieve tests
     def test_retrieve_nonexistent(self):

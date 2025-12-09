@@ -1,15 +1,15 @@
 from django.urls import reverse
 from rest_framework import status
+
 from ..models import Organization, OtherIdType
 from .api_test_case import APITestCase
+from .fixtures.organization import create_legal_entity, create_organization
 from .helpers import (
     assert_fhir_response,
     assert_has_results,
     assert_pagination_limit,
     extract_resource_names,
 )
-
-from .fixtures import create_organization, create_legal_entity
 
 
 class OrganizationViewSetTestCase(APITestCase):
