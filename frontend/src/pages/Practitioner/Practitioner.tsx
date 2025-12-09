@@ -5,9 +5,14 @@ import { FeatureFlag } from "../../components/FeatureFlag"
 import { LoadingIndicator } from "../../components/LoadingIndicator"
 import { organizationNpiSelector } from "../../state/requests/organizations"
 import {
-  practitionerAddressOneline,
+  practitionerAddressSelector,
   practitionerNameSelector,
+  practitionerGenderSelector,
   usePractitionerAPI,
+  practitionerDeceasedSelector,
+  practitionerActiveSelector,
+  practitionerPhoneSelector,
+  practitionerFaxSelector,
 } from "../../state/requests/practitioners"
 import { useTranslation } from "react-i18next"
 import { InfoItem } from "../../components/InfoItem"
@@ -29,6 +34,15 @@ export const Practitioner = () => {
   const contentClass = classNames(layout.content, "ds-l-container")
   const bannerClass = classNames(layout.banner)
 
+  const name = practitionerNameSelector(data)
+  const npi = organizationNpiSelector(data)
+  const address = practitionerAddressSelector(data)
+  const gender = practitionerGenderSelector(data)
+  const deceased = practitionerDeceasedSelector(data)
+  const active = practitionerActiveSelector(data)
+  const phone = practitionerPhoneSelector(data)
+  const fax = practitionerFaxSelector(data)
+
   return (
     <>
       <section className={bannerClass}>
@@ -37,20 +51,20 @@ export const Practitioner = () => {
             <div className="ds-l-col--12">
               <div className={layout.leader}>
                 <h1 role="heading" aria-level={1} className={layout.title}>
-                  {practitionerNameSelector(data)}
+                  {name}
                 </h1>
                 <span
                   data-testid="practitioner-npi"
                   className={layout.subtitle}
                 >
-                  NPI: {organizationNpiSelector(data)}
+                  NPI: {npi}
                 </span>
                 {data.address && (
                   <span
                     data-testid="practitioner-npi"
                     className={layout.subtitle}
                   >
-                    {practitionerAddressOneline(data)}
+                    {address}
                   </span>
                 )}
               </div>
@@ -59,39 +73,49 @@ export const Practitioner = () => {
         </div>
       </section>
       <main className={contentClass}>
-        <FeatureFlag inverse name="PRACTITIONER_LOOKUP_DETAILS">
+        <FeatureFlag  name="PRACTITIONER_LOOKUP_DETAILS">
           <Alert variation="warn" heading="Content not available">
             This content is not currently available.
           </Alert>
         </FeatureFlag>
 
-        <FeatureFlag name="PRACTITIONER_LOOKUP_DETAILS">
+        <FeatureFlag inverse name="PRACTITIONER_LOOKUP_DETAILS">
           <Alert heading={t("practitioners.update.title")}>
           {t("practitioners.update.subtitle")}{' '}
           <a href="#">{t("practitioners.update.link")}</a>
           </Alert>
 
           <section className={layout.section}>
-            <h2>{t("organizations.about")}</h2>
+            <h2>{t("practitioners.about")}</h2>
             <div className="ds-l-row">
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label="Name(s)" value={null} />
+                <InfoItem label="Name(s)" value={name} />
               </div>
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label="Gender" value={null} />
+                <InfoItem label="Gender" value={gender} />
               </div>
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label="Deceased" value={null} />
+                <InfoItem label="Deceased" value={deceased} />
               </div>
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label="Active status" value={null} />
+                <InfoItem label="Active status" value={active} />
               </div>
             </div>
           </section>
 
           <section className={layout.section}>
-            <h2>Contact information</h2>
-            <p>[contact information]</p>
+            <h2>{t("practitioners.contact")}</h2>
+            <div className="ds-l-row">
+              <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
+                <InfoItem label="Mailing address" value={address} />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
+                <InfoItem label="Phone" value={phone} />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
+                <InfoItem label="Fax" value={fax} />
+              </div>
+            </div>
           </section>
 
           <section className={layout.section}>

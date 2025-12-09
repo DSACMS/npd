@@ -1,19 +1,14 @@
 import { useQuery } from "@tanstack/react-query"
-import type { HumanName } from "../../@types/fhir/HumanName"
-import type { Identifier } from "../../@types/fhir/Identifier"
-import type { Practitioner as FhirPractitioner } from "../../@types/fhir/Practitioner"
+import type { FHIRPractioner } from "../../@types/fhir"
 import { apiUrl } from "../api"
+import { formatAddress } from "../../helpers/org_helpers"
 
 // NOTE: (@abachman-dsac) due to limitations in the fhir.resource.R4B model
 // definitions, we cannot fully generate response types automatically
-export interface Practitioner extends FhirPractitioner {
-  name?: HumanName[] | null
-  identifier?: Identifier[] | null
-}
 
 const fetchPractitioner = async (
   practitionerId: string,
-): Promise<Practitioner> => {
+): Promise<FHIRPractioner> => {
   const url = apiUrl("/fhir/Practitioner/:practitionerId/", { practitionerId })
 
   const response = await fetch(url)
@@ -23,11 +18,11 @@ const fetchPractitioner = async (
     return Promise.reject(`error in ${url} request`)
   }
 
-  return response.json() as Promise<Practitioner>
+  return response.json() as Promise<FHIRPractioner>
 }
 
 export const usePractitionerAPI = (practitionerId: string | undefined) => {
-  return useQuery<Practitioner>({
+  return useQuery<FHIRPractioner>({
     queryKey: ["practitioner", practitionerId],
     queryFn: () => {
       if (!practitionerId) {
@@ -44,20 +39,58 @@ export const usePractitionerAPI = (practitionerId: string | undefined) => {
 ////
 
 export const practitionerNameSelector = (
-  record: Practitioner,
+  record: FHIRPractioner,
 ): string | null => {
   if (!record.name || record.name?.length === 0) return "No name available"
 
-  const name: HumanName = record.name[0] as unknown as HumanName
+  const name = record.name[0]
 
   return name.text || ""
 }
 
-export const practitionerAddressOneline = (
-  record: Practitioner,
+export const practitionerAddressSelector = (
+  record: FHIRPractioner,
 ): string | null => {
-  if (!record.address || record.address.length === 0)
-    return "No address available"
+  if (!record || !record.address?.length) return ""
 
-  return ""
+  const contact = record.address[0]
+  if (!contact) return ""
+
+  return formatAddress(contact)
+}
+
+export const practitionerGenderSelector = (
+  record: FHIRPractioner,
+): string | null => {
+  return record?.gender ?? null
+}
+
+export const practitionerDeceasedSelector = (
+  record: FHIRPractioner,
+): string | null => {
+  return record.deceasedBoolean ? "Yes" : "No"
+}
+
+export const practitionerActiveSelector = (
+  record: FHIRPractioner,
+): string | null => {
+  return record.active ? "Yes" : "No"
+}
+
+export const practitionerPhoneSelector = ( //use logic to find phone specifically throught system === phone
+  record: FHIRPractioner,
+): string | null => {
+  if (!record || record.telecom?.length) return ""
+
+  const contact = record.telecom?.[0]
+  return contact?.value ?? null
+}
+
+export const practitionerFaxSelector = ( //use logic to find phone specifically throught system === fax
+  record: FHIRPractioner,
+): string | null => {
+  if (!record || record.telecom?.length) return ""
+
+  const contact = record.telecom?.[0]
+  return contact?.value ?? null
 }

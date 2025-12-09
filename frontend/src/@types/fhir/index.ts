@@ -6,6 +6,8 @@ import type { Period } from "./Period"
 import type { Coding } from "./Coding"
 import type { ExtendedContactDetail } from "./ExtendedContactDetail"
 import type { Practitioner  } from "./Practitioner"
+import type { HumanName } from "./HumanName"
+import type { ContactPoint } from "./ContactPoint"
 
 // NOTE: (@abachman-dsac) due to limitations in the fhir.resource.R4B model
 // definitions, we cannot fully generate response types automatically
@@ -25,5 +27,7 @@ export interface FHIRCodeableConcept extends CodeableConcept {
 }
 
 export interface FHIRPractioner extends Practitioner {
+    name?: HumanName[] | null
     identifier?: FHIRIdentifer[] | null
+    telecom?: ContactPoint[] | null
 }
