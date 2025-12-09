@@ -41,6 +41,7 @@ module "dns" {
   source = "../../modules/dns"
 
   enable_internal_domain_for_directory = true
+  namespace_domain                     = module.domains.namespace_domain
   api_domain                           = module.domains.api_domain
   api_alb_dns_name                     = module.fhir-api.api_alb_dns_name
   directory_domain                     = module.domains.directory_domain
