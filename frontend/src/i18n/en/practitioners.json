@@ -17,9 +17,15 @@
         "title": "Contact information",
         "address": "Mailing address",
         "phone": "Phone",
-        "Fax": "Fax"
+        "fax": "Fax"
     },
-    "identifiers": "Identifiers",
+    "identifiers": {
+        "title": "Identifiers",
+        "type": "Type",
+        "number": "Number",
+        "details": "Details",
+        "fallback": "No identifiers available"
+    },
     "taxonomy": "Taxonomy",
     "organizations": "Organization(s)",
     "endpoints": "Endpoint(s)",

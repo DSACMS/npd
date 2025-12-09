@@ -105,15 +105,15 @@ export const Practitioner = () => {
           </section>
 
           <section className={layout.section}>
-            <h2>{t("organizations.identifiers")}</h2>
+            <h2>{t("practitioners.identifiers.title")}</h2>
             {/* TODO: look into modularizing table creation to reduce code duplication */}
             {practitioner.identifiers.length > 0 ? (
               <Table>
                 <TableHead>
                   <TableRow>
-                    <TableCell>Type</TableCell>
-                    <TableCell>Number</TableCell>
-                    <TableCell>Details</TableCell>
+                    <TableCell>{t("practitioners.identifiers.type")}</TableCell>
+                    <TableCell>{t("practitioners.identifiers.number")}</TableCell>
+                    <TableCell>{t("practitioners.identifiers.details")}</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -129,7 +129,7 @@ export const Practitioner = () => {
                 </TableBody>
               </Table>
             ) : (
-              <p className="ds-u-color--gray">No identifiers available</p>
+              <p className="ds-u-color--gray">{t("practitioners.identifiers.fallback")}</p>
             )}
           </section>
 
