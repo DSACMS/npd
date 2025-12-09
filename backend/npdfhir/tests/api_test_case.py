@@ -1,6 +1,9 @@
-from rest_framework.test import APITestCase as DrfAPITestCase, APIClient
 from django.contrib.auth.models import User
+from rest_framework.test import APIClient
+from rest_framework.test import APITestCase as DrfAPITestCase
+
 from ..cache import cacheData as cacheData
+
 # I can't explain why, but we need to import cacheData here. I think we can
 # remove this once we move to the docker db setup. By using "import thing as
 # thing", we silence "imported but unused" and "not accessed" warnings.

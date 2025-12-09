@@ -1,15 +1,15 @@
 from django.urls import reverse
-from rest_framework import status
 from fhir.resources.R4B.bundle import Bundle
+from rest_framework import status
+
 from .api_test_case import APITestCase
+from .fixtures.endpoint import create_endpoint
 from .helpers import (
     assert_fhir_response,
     assert_has_results,
     assert_pagination_limit,
     extract_resource_names,
 )
-
-from .fixtures.endpoint import create_endpoint
 
 
 class EndpointViewSetTestCase(APITestCase):

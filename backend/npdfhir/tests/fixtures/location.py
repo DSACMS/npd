@@ -1,14 +1,9 @@
-import uuid
 import datetime
+import uuid
 
-from ...models import (
-    FipsState,
-    Address,
-    AddressUs,
-    Location
-)
-
+from ...models import Address, AddressUs, FipsState, Location
 from .organization import create_organization
+
 
 def create_location(
     organization=None,

@@ -1,19 +1,18 @@
-import uuid
 import datetime
+import uuid
 
 from ...models import (
+    ClinicalOrganization,
     Individual,
     IndividualToName,
+    LegalEntity,
     Npi,
+    Nucc,
     Organization,
     OrganizationToName,
-    LegalEntity,
     OrganizationToOtherId,
     OrganizationToTaxonomy,
-    ClinicalOrganization,
-    Nucc,
 )
-
 from .utils import _ensure_name_use
 
 
@@ -21,6 +20,7 @@ def create_legal_entity(dba_name="Sample Legal Entity"):
     legal_entity = LegalEntity.objects.create(ein_id=uuid.uuid4(), dba_name=dba_name)
 
     return legal_entity
+
 
 def create_organization(
     name="Test Org",

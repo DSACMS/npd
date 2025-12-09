@@ -1,7 +1,7 @@
+from django.urls import reverse
 from fhir.resources.R4B.address import Address
 from fhir.resources.R4B.reference import Reference
 from rest_framework.test import APIClient
-from django.urls import reverse
 
 
 def SmartyStreetstoFHIR(address):

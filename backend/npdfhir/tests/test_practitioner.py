@@ -1,6 +1,9 @@
 from django.urls import reverse
 from rest_framework import status
+
 from .api_test_case import APITestCase
+from .fixtures.location import create_location
+from .fixtures.practitioner import create_practitioner
 from .helpers import (
     assert_fhir_response,
     assert_has_results,
@@ -8,9 +11,6 @@ from .helpers import (
     extract_practitioner_names,
     get_female_npis,
 )
-
-from .fixtures.practitioner import create_practitioner
-from .fixtures.location import create_location
 
 
 class PractitionerViewSetTestCase(APITestCase):
@@ -43,13 +43,15 @@ class PractitionerViewSetTestCase(APITestCase):
         cls.nurse_code = "363L00000X"
         cls.non_nurse_code = "364SP0200X"
         cls.nurse_prac = create_practitioner(
-            last_name="ZOLLER", first_name="DAVID", practitioner_types=[cls.nurse_code, cls.non_nurse_code]
+            last_name="ZOLLER",
+            first_name="DAVID",
+            practitioner_types=[cls.nurse_code, cls.non_nurse_code],
         )
 
         cls.sample_last_name = "SOLOMON"
         cls.pracs = [
             create_practitioner(last_name="AADALEN", first_name="KIRK", npi_value=1234567890),
-            create_practitioner(last_name="ABBAS", first_name="ASAD",other_id=1234567890),
+            create_practitioner(last_name="ABBAS", first_name="ASAD", other_id=1234567890),
             create_practitioner(last_name="ABBOTT", first_name="BRUCE"),
             create_practitioner(last_name="ABBOTT", first_name="PHILIP"),
             create_practitioner(last_name="ABDELHALIM", first_name="AHMED"),
@@ -237,8 +239,10 @@ class PractitionerViewSetTestCase(APITestCase):
         assert_has_results(self, response)
 
         for entry in response.data["results"]["entry"]:
-            nurse_codes = [nc["code"] for nc in entry["resource"]["qualification"][0]["code"]["coding"]]
-            self.assertIn(self.nurse_code,nurse_codes)
+            nurse_codes = [
+                nc["code"] for nc in entry["resource"]["qualification"][0]["code"]["coding"]
+            ]
+            self.assertIn(self.nurse_code, nurse_codes)
 
     # Identifiers Filter tests
     def test_list_filter_by_npi_general(self):
@@ -274,7 +278,7 @@ class PractitionerViewSetTestCase(APITestCase):
             result_city_string = entry["resource"]["address"][0]["city"]
             self.assertEqual(city_string, result_city_string)
             result_addr_string = entry["resource"]["address"][0]["line"][0]
-            #print(result_addr_string)
+            # print(result_addr_string)
             self.assertEqual(address_line, result_addr_string)
 
     def test_list_filter_by_address_city(self):
@@ -321,11 +325,9 @@ class PractitionerViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
 
-        
         for entry in response.data["results"]["entry"]:
-            
-            #assert the address use is in the data
-            self.assertIn('use', entry["resource"]["address"][0])
+            # assert the address use is in the data
+            self.assertIn("use", entry["resource"]["address"][0])
             result_use = entry["resource"]["address"][0]["use"]
             self.assertEqual("home", result_use)
 

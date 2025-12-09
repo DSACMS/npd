@@ -1,27 +1,27 @@
-import uuid
 import datetime
+import uuid
 
 from ...models import (
-    Individual,
-    IndividualToName,
-    IndividualToAddress,
     FhirAddressUse,
     FipsState,
+    Individual,
+    IndividualToAddress,
+    IndividualToName,
     Npi,
-    Provider,
-    ProviderToOrganization,
-    RelationshipType,
-    ProviderToLocation,
-    ProviderRole,
-    ProviderToTaxonomy,
-    ProviderToOtherId,
-    OtherIdType,
     Nucc,
+    OtherIdType,
+    Provider,
+    ProviderRole,
+    ProviderToLocation,
+    ProviderToOrganization,
+    ProviderToOtherId,
+    ProviderToTaxonomy,
+    RelationshipType,
 )
-
-from .utils import _ensure_name_use
-from .organization import create_organization
 from .location import create_location
+from .organization import create_organization
+from .utils import _ensure_name_use
+
 
 def _ensure_provider_role(code="PRV", display="Provider Role"):
     return ProviderRole.objects.get_or_create(
@@ -31,6 +31,7 @@ def _ensure_provider_role(code="PRV", display="Provider Role"):
             "display": display,
         },
     )[0]
+
 
 def _ensure_relationship_type():
     """
@@ -42,7 +43,6 @@ def _ensure_relationship_type():
     except RelationshipType.DoesNotExist:
         # If Flyway hasn’t run (edge/dev case), create one safely
         return RelationshipType.objects.create(value="assigning")
-
 
 
 def create_practitioner(
@@ -94,15 +94,14 @@ def create_practitioner(
     )
 
     if other_id:
-
-        other_id_type = OtherIdType.objects.get(value=(other_id_type or 'OTHER'))
-        fips_code = FipsState.objects.get(abbreviation=(state or 'NY'))
+        other_id_type = OtherIdType.objects.get(value=(other_id_type or "OTHER"))
+        fips_code = FipsState.objects.get(abbreviation=(state or "NY"))
         ProviderToOtherId.objects.create(
             npi=provider,
             other_id=other_id,
             other_id_type=other_id_type,
             state_code=fips_code,
-            issuer='TEST'
+            issuer="TEST",
         )
 
     if practitioner_types:
@@ -115,6 +114,7 @@ def create_practitioner(
         # Nucc
 
     return provider
+
 
 def create_full_practitionerrole(
     first_name="Alice",

@@ -1,7 +1,8 @@
+import os
 from datetime import datetime
 from http import HTTPStatus
-import os
 from pathlib import Path
+
 from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse
