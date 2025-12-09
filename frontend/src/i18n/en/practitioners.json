@@ -6,8 +6,19 @@
         "subtitle" : "Learn how to",
         "link": "update your information."
     },
-    "about": "About",
-    "contact": "Contact information",
+    "about": {
+        "title": "About",
+        "name": "Name(s)",
+        "gender": "Gender",
+        "deceased": "Deceased",
+        "status": "Active status"
+    },
+    "contact": {
+        "title": "Contact information",
+        "address": "Mailing address",
+        "phone": "Phone",
+        "Fax": "Fax"
+    },
     "identifiers": "Identifiers",
     "taxonomy": "Taxonomy",
     "organizations": "Organization(s)",

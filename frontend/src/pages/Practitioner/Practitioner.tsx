@@ -72,34 +72,34 @@ export const Practitioner = () => {
           </Alert>
 
           <section className={layout.section}>
-            <h2>{t("practitioners.about")}</h2>
+            <h2>{t("practitioners.about.title")}</h2>
             <div className="ds-l-row">
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label="Name(s)" value={practitioner.name} />
+                <InfoItem label={t("practitioners.about.name")} value={practitioner.name} />
               </div>
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label="Gender" value={practitioner.gender} />
+                <InfoItem label={t("practitioners.about.gender")} value={practitioner.gender} />
               </div>
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label="Deceased" value={practitioner.isDeceased} />
+                <InfoItem label={t("practitioners.about.deceased")} value={practitioner.isDeceased} />
               </div>
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label="Active status" value={practitioner.isActive} />
+                <InfoItem label={t("practitioners.about.status")} value={practitioner.isActive} />
               </div>
             </div>
           </section>
 
           <section className={layout.section}>
-            <h2>{t("practitioners.contact")}</h2>
+            <h2>{t("practitioners.contact.title")}</h2>
             <div className="ds-l-row">
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label="Mailing address" value={practitioner.address} />
+                <InfoItem label={t("practitioners.contact.address")} value={practitioner.address} />
               </div>
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label="Phone" value={practitioner.phone} />
+                <InfoItem label={t("practitioners.contact.phone")} value={practitioner.phone} />
               </div>
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label="Fax" value={practitioner.fax} />
+                <InfoItem label={t("practitioners.contact.fax")} value={practitioner.fax} />
               </div>
             </div>
           </section>
