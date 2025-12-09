@@ -20,6 +20,7 @@ from ..models import (
     ProviderToLocation,
     ProviderRole,
     ProviderToTaxonomy,
+    ProviderToOtherId,
     Endpoint,
     EndpointInstance,
     EndpointConnectionType,
@@ -47,6 +48,9 @@ def create_practitioner(
     gender="F",
     birth_date=datetime.date(1990, 1, 1),
     npi_value=None,
+    other_id=None,
+    other_id_type=None,
+    state=None,
     practitioner_type=None,
     location=None,
     address_use="work",
@@ -85,6 +89,18 @@ def create_practitioner(
         npi=npi,
         individual=individual,
     )
+
+    if other_id:
+
+        other_id_type = OtherIdType.objects.get(value=(other_id_type or 'OTHER'))
+        fips_code = FipsState.objects.get(abbreviation=(state or 'NY'))
+        ProviderToOtherId.objects.create(
+            npi=provider,
+            other_id=other_id,
+            other_id_type=other_id_type,
+            state_code=fips_code,
+            issuer='TEST'
+        )
 
     if practitioner_type:
         code = Nucc.objects.get(pk=practitioner_type)
