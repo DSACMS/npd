@@ -9,6 +9,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from drf_spectacular.utils import extend_schema, OpenApiResponse
 from rest_framework import viewsets
 from rest_framework.views import APIView
+from rest_framework.renderers import BrowsableAPIRenderer
 from rest_framework.response import Response
 from rest_framework.filters import SearchFilter, OrderingFilter
 
@@ -41,6 +42,10 @@ from .serializers import (
     CapabilityStatementSerializer,
 )
 
+from django.conf import settings
+
+DEBUG = settings.DEBUG
+
 
 def index(request):
     return HttpResponse("Connection to npd database: successful")
@@ -60,7 +65,10 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
     """
 
     queryset = EndpointInstance.objects.none()
-    renderer_classes = [FHIRRenderer]
+    if DEBUG:
+        renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+    else:
+        renderer_classes = [FHIRRenderer]
     filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
     filterset_class = EndpointFilterSet
     ordering_fields = ["name", "address", "ehr_vendor_name"]
@@ -149,13 +157,18 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     """
 
     queryset = Provider.objects.none()
-    renderer_classes = [FHIRRenderer]
+    if DEBUG:
+        renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+    else:
+        renderer_classes = [FHIRRenderer]
     filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
     filterset_class = PractitionerFilterSet
     pagination_class = CustomPaginator
 
-    ordering_fields = ["primary_last_name", "primary_first_name", "npi_value"]
-    ordering = ["primary_last_name", "primary_first_name"]
+    ordering_fields = ["individual__individualtoname__last_name",
+                       "individual__individualtoname__first_name", "npi_value"]
+    ordering = ["individual__individualtoname__last_name",
+                "individual__individualtoname__first_name"]
 
     # permission_classes = [permissions.IsAuthenticated]
     @extend_schema(
@@ -179,7 +192,7 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
             'individual__individualtoaddress_set__address__address_us__state_code',
             'individual__individualtoaddress_set__address_use', 'individual__individualtophone_set',
             'individual__individualtoemail_set', 'providertootherid_set', 'providertotaxonomy_set'
-        ).order_by('individual__individualtoname__last_name', 'individual__individualtoname__first_name')
+        )
 
         providers = self.filter_queryset(providers)
         paginated_providers = self.paginate_queryset(providers)
@@ -237,7 +250,10 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     """
 
     queryset = ProviderToLocation.objects.none()
-    renderer_classes = [FHIRRenderer]
+    if DEBUG:
+        renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+    else:
+        renderer_classes = [FHIRRenderer]
     filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
     filterset_class = PractitionerRoleFilterSet
     pagination_class = CustomPaginator
@@ -262,31 +278,11 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
         """
         # all_params = request.query_params
 
-        primary_last_name_subquery = (
-            IndividualToName.objects.filter(
-                individual=OuterRef(
-                    "provider_to_organization__individual__individual")
-            )
-            .order_by("last_name")
-            .values("last_name")[:1]
-        )
-
-        primary_first_name_subquery = (
-            IndividualToName.objects.filter(
-                individual=OuterRef(
-                    "provider_to_organization__individual__individual")
-            )
-            .order_by("first_name")
-            .values("first_name")[:1]
-        )
-
         practitionerroles = (
             ProviderToLocation.objects.select_related("location")
             .prefetch_related("provider_to_organization")
             .annotate(
-                location_name=F("location__name"),
-                practitioner_first_name=Subquery(primary_first_name_subquery),
-                practitioner_last_name=Subquery(primary_last_name_subquery),
+                location_name=F("location__name")
             )
             .order_by("location__name")
         ).all()
@@ -337,13 +333,16 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     """
 
     queryset = Organization.objects.none()
-    renderer_classes = [FHIRRenderer]
+    if DEBUG:
+        renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+    else:
+        renderer_classes = [FHIRRenderer]
     filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
     filterset_class = OrganizationFilterSet
     pagination_class = CustomPaginator
 
-    ordering_fields = ["primary_name"]
-    ordering = ["primary_name"]
+    ordering_fields = ['organizationtoname__name']
+    ordering = ['organizationtoname__name', '-organizationtoname__is_primary']
 
     # permission_classes = [permissions.IsAuthenticated]
     @extend_schema(
@@ -383,7 +382,7 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
             'clinicalorganization__organizationtootherid_set__other_id_type',
             'clinicalorganization__organizationtotaxonomy_set',
             'clinicalorganization__organizationtotaxonomy_set__nucc_code'
-        ).order_by('organizationtoname__name', '-organizationtoname__is_primary')
+        )
 
         organizations = self.filter_queryset(organizations)
         paginated_organizations = self.paginate_queryset(organizations)
@@ -450,7 +449,10 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
     """
 
     queryset = Location.objects.none()
-    renderer_classes = [FHIRRenderer]
+    if DEBUG:
+        renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+    else:
+        renderer_classes = [FHIRRenderer]
     filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
     filterset_class = LocationFilterSet
     pagination_class = CustomPaginator
@@ -538,7 +540,10 @@ class FHIRCapabilityStatementView(APIView):
     ViewSet for FHIR Practitioner resources
     """
 
-    renderer_classes = [FHIRRenderer]
+    if DEBUG:
+        renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+    else:
+        renderer_classes = [FHIRRenderer]
 
     @extend_schema(
         responses={
