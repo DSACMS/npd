@@ -1,4 +1,4 @@
-import { screen } from "@testing-library/react"
+import { screen, within } from "@testing-library/react"
 import { MemoryRouter, Route, Routes } from "react-router"
 import { beforeEach, describe, expect, it } from "vitest"
 import { DEFAULT_ORGANIZATION } from "../../../tests/fixtures"
@@ -77,3 +77,31 @@ describe("Organization", () => {
     })
   })
 })
+
+  describe("identifiers section", () => {
+    beforeEach(() => {
+      mockGlobalFetch([
+        settingsResponseWithFeature({ ORGANIZATION_LOOKUP_DETAILS: true }),
+        orgApiResponse,
+      ])
+    })
+
+    it("displays identifiers table when identifiers exist", async () => {
+      render(<RoutedOrganization path="/organizations/12345" />)
+
+      await screen.findByText("Are you the practitioner listed?")
+
+      const table = screen.getByRole("table")
+      expect(table).toBeInTheDocument()
+
+      expect(
+        within(table).getByText("Type", { selector: "th" }),
+      ).toBeInTheDocument()
+      expect(
+        within(table).getByText("Number", { selector: "th" }),
+      ).toBeInTheDocument()
+      expect(
+        within(table).getByText("Details", { selector: "th" }),
+      ).toBeInTheDocument()
+    })
+  })
