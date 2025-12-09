@@ -1,4 +1,3 @@
-import datetime
 import uuid
 
 from ...models import Address, AddressUs, FipsState, Location

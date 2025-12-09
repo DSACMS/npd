@@ -319,8 +319,6 @@ class PractitionerViewSetTestCase(APITestCase):
     def test_list_filter_by_address_use(self):
         url = reverse("fhir-practitioner-list")
 
-        city_string = self.locs[1].address.address_us.city_name
-        zip_string = self.locs[1].address.address_us.zipcode
         response = self.client.get(url, {"address_use": "home"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
