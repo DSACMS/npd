@@ -9,7 +9,7 @@ from .helpers import (
     extract_resource_names,
 )
 
-from .fixtures import create_endpoint
+from .fixtures.endpoint import create_endpoint
 
 
 class EndpointViewSetTestCase(APITestCase):

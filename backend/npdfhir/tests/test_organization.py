@@ -9,7 +9,7 @@ from .helpers import (
     extract_resource_names,
 )
 
-from .fixtures import create_organization, create_legal_entity
+from .fixtures.organization import create_organization, create_legal_entity
 
 
 class OrganizationViewSetTestCase(APITestCase):

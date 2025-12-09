@@ -9,7 +9,8 @@ from .helpers import (
     get_female_npis,
 )
 
-from .fixtures import create_practitioner, create_location
+from .fixtures.practitioner import create_practitioner
+from .fixtures.location import create_location
 
 
 class PractitionerViewSetTestCase(APITestCase):

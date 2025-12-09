@@ -8,7 +8,8 @@ from .helpers import (
     extract_resource_names,
 )
 
-from .fixtures import create_location, create_organization
+from .fixtures.location import create_location
+from .fixtures.organization import  create_organization
 
 
 class LocationViewSetTestCase(APITestCase):

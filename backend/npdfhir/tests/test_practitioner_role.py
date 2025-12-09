@@ -8,7 +8,7 @@ from .helpers import (
     extract_resource_ids,
 )
 
-from .fixtures import create_full_practitionerrole
+from .fixtures.practitioner import create_full_practitionerrole
 
 
 class PractitionerRoleViewSetTestCase(APITestCase):
