@@ -54,7 +54,7 @@ def create_practitioner(
     other_id=None,
     other_id_type=None,
     state=None,
-    practitioner_type=None,
+    practitioner_types=None,
     location=None,
     address_use="work",
 ):
@@ -105,10 +105,11 @@ def create_practitioner(
             issuer='TEST'
         )
 
-    if practitioner_type:
-        code = Nucc.objects.get(pk=practitioner_type)
+    if practitioner_types:
+        for type in practitioner_types:
+            code = Nucc.objects.get(pk=type)
 
-        ProviderToTaxonomy.objects.create(npi=provider, nucc_code=code, id=uuid.uuid4())
+            ProviderToTaxonomy.objects.create(npi=provider, nucc_code=code, id=uuid.uuid4())
 
         # display name
         # Nucc

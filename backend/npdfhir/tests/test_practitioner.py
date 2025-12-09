@@ -41,8 +41,9 @@ class PractitionerViewSetTestCase(APITestCase):
         ]
 
         cls.nurse_code = "363L00000X"
+        cls.non_nurse_code = "364SP0200X"
         cls.nurse_prac = create_practitioner(
-            last_name="ZOLLER", first_name="DAVID", practitioner_type=cls.nurse_code
+            last_name="ZOLLER", first_name="DAVID", practitioner_types=[cls.nurse_code, cls.non_nurse_code]
         )
 
         cls.sample_last_name = "SOLOMON"
