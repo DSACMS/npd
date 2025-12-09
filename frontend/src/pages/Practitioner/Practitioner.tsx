@@ -13,10 +13,19 @@ import {
   practitionerActiveSelector,
   practitionerPhoneSelector,
   practitionerFaxSelector,
+  practitionerIdentifiersSelector,
 } from "../../state/requests/practitioners"
 import { useTranslation } from "react-i18next"
 import { InfoItem } from "../../components/InfoItem"
 import layout from "../Layout.module.css"
+import {
+  Table,
+  TableRow,
+  TableHead,
+  TableCell,
+  TableBody
+} from "@cmsgov/design-system"
+import { getIdentifierTypeDisplay } from "../../helpers/org_helpers"
 
 export const Practitioner = () => {
   const { t } = useTranslation()
@@ -42,6 +51,7 @@ export const Practitioner = () => {
   const active = practitionerActiveSelector(data)
   const phone = practitionerPhoneSelector(data)
   const fax = practitionerFaxSelector(data)
+  const identifiers = practitionerIdentifiersSelector(data)
 
   return (
     <>
@@ -59,14 +69,6 @@ export const Practitioner = () => {
                 >
                   NPI: {npi}
                 </span>
-                {data.address && (
-                  <span
-                    data-testid="practitioner-npi"
-                    className={layout.subtitle}
-                  >
-                    {address}
-                  </span>
-                )}
               </div>
             </div>
           </div>
@@ -119,8 +121,32 @@ export const Practitioner = () => {
           </section>
 
           <section className={layout.section}>
-            <h2>Identifiers</h2>
-            <p>[identifier information]</p>
+            <h2>{t("organizations.identifiers")}</h2>
+            {/* TODO: look into modularizing table creation to reduce code duplication */}
+            {identifiers.length > 0 ? (
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <TableCell>Type</TableCell>
+                    <TableCell>Number</TableCell>
+                    <TableCell>Details</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {identifiers.map((identifier, index) => (
+                    <TableRow key={index}>
+                      <TableCell>
+                        {getIdentifierTypeDisplay(identifier.system ?? "Unknown")}
+                      </TableCell>
+                      <TableCell>{identifier.number}</TableCell>
+                      <TableCell>{identifier.details}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            ) : (
+              <p className="ds-u-color--gray">No identifiers available</p>
+            )}
           </section>
 
           <section className={layout.section}>

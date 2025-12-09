@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query"
 import type { FHIRPractioner } from "../../@types/fhir"
 import { apiUrl } from "../api"
-import { formatAddress } from "../../helpers/org_helpers"
+import { formatAddress, formatDate } from "../../helpers/org_helpers"
 
 // NOTE: (@abachman-dsac) due to limitations in the fhir.resource.R4B model
 // definitions, we cannot fully generate response types automatically
@@ -93,4 +93,17 @@ export const practitionerFaxSelector = ( //use logic to find phone specifically 
 
   const contact = record.telecom?.[0]
   return contact?.value ?? null
+}
+
+export const practitionerIdentifiersSelector = (org?: FHIRPractioner) => {
+  if (!org || !org.identifier?.length) return []
+
+  return org.identifier.map((identity) => ({
+    type: identity.type?.coding?.[0]?.display || "Unknown",
+    number: identity.value,
+    details: identity.period?.start
+      ? `Active, Received ${formatDate(identity.period.start)}` // hardcoding active and recieved if we get a response?
+      : "",
+    system: identity.system,
+  }))
 }
