@@ -1,19 +1,13 @@
 import { useQuery } from "@tanstack/react-query"
-import type { HumanName } from "../../@types/fhir/HumanName"
-import type { Identifier } from "../../@types/fhir/Identifier"
-import type { Practitioner as FhirPractitioner } from "../../@types/fhir/Practitioner"
+import type { FHIRPractioner } from "../../@types/fhir"
 import { apiUrl } from "../api"
 
 // NOTE: (@abachman-dsac) due to limitations in the fhir.resource.R4B model
 // definitions, we cannot fully generate response types automatically
-export interface Practitioner extends FhirPractitioner {
-  name?: HumanName[] | null
-  identifier?: Identifier[] | null
-}
 
 const fetchPractitioner = async (
   practitionerId: string,
-): Promise<Practitioner> => {
+): Promise<FHIRPractioner> => {
   const url = apiUrl("/fhir/Practitioner/:practitionerId/", { practitionerId })
 
   const response = await fetch(url)
@@ -23,11 +17,11 @@ const fetchPractitioner = async (
     return Promise.reject(`error in ${url} request`)
   }
 
-  return response.json() as Promise<Practitioner>
+  return response.json() as Promise<FHIRPractioner>
 }
 
 export const usePractitionerAPI = (practitionerId: string | undefined) => {
-  return useQuery<Practitioner>({
+  return useQuery<FHIRPractioner>({
     queryKey: ["practitioner", practitionerId],
     queryFn: () => {
       if (!practitionerId) {
@@ -37,27 +31,4 @@ export const usePractitionerAPI = (practitionerId: string | undefined) => {
       return fetchPractitioner(practitionerId)
     },
   })
-}
-
-////
-// Selectors unpack the API responses
-////
-
-export const practitionerNameSelector = (
-  record: Practitioner,
-): string | null => {
-  if (!record.name || record.name?.length === 0) return "No name available"
-
-  const name: HumanName = record.name[0] as unknown as HumanName
-
-  return name.text || ""
-}
-
-export const practitionerAddressOneline = (
-  record: Practitioner,
-): string | null => {
-  if (!record.address || record.address.length === 0)
-    return "No address available"
-
-  return ""
 }

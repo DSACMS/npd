@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query"
 import { apiUrl } from "../api"
-import { formatAddress, formatDate } from "../../helpers/org_helpers"
+import { formatAddress, formatDate } from "../../helpers/formatters"
 import type { FHIROrganization } from "../../@types/fhir"
 
 const fetchOrganization = async (

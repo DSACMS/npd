@@ -24,7 +24,7 @@ import { InfoItem } from "../../components/InfoItem"
 import layout from "../Layout.module.css"
 import styles from "./Organization.module.css"
 import { useTranslation } from "react-i18next"
-import { getIdentifierTypeDisplay } from "../../helpers/org_helpers"
+import { formatIdentifierType } from "../../helpers/formatters"
 
 export const Organization = () => {
   const { t } = useTranslation()
@@ -122,7 +122,7 @@ export const Organization = () => {
                   {identifiers.map((identifier, index) => (
                     <TableRow key={index}>
                       <TableCell>
-                        {getIdentifierTypeDisplay(identifier.system ?? "Unknown")}
+                        {formatIdentifierType(identifier.system ?? "Unknown")}
                       </TableCell>
                       <TableCell>{identifier.number}</TableCell>
                       <TableCell>{identifier.details}</TableCell>
