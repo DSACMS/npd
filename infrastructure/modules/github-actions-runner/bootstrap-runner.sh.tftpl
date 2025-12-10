@@ -1,0 +1,94 @@
+cat << EOF > bootstrap-runner.sh
+#!/usr/bin/env bash
+set -euo pipefail
+
+RUNNER_VERSION="2.329.0"
+RUNNER_DIR="/opt/actions-runner"
+GITHUB_URL="https://github.com/CMS-Enterprise/NPD"
+TOKEN="${1:-}"
+
+if [[ -z "$TOKEN" ]]; then
+  echo "ERROR: You must provide the GitHub runner token as the first argument."
+  echo "Usage: ./bootstrap-runner.sh <TOKEN>"
+  exit 1
+fi
+
+echo "==> Creating GitHub Actions runner directory"
+sudo mkdir -p "$RUNNER_DIR"
+sudo chown ec2-user:ec2-user "$RUNNER_DIR"
+
+echo "==> Downloading GitHub runner $RUNNER_VERSION"
+curl -L -o "$RUNNER_DIR/actions-runner-linux-x64-${RUNNER_VERSION}.tar.gz" \
+  "https://github.com/actions/runner/releases/download/v${RUNNER_VERSION}/actions-runner-linux-x64-${RUNNER_VERSION}.tar.gz"
+
+echo "==> Extracting runner"
+cd "$RUNNER_DIR"
+tar xzf "actions-runner-linux-x64-${RUNNER_VERSION}.tar.gz"
+
+echo "==> Configuring runner"
+./config.sh --url "$GITHUB_URL" --token "$TOKEN" --unattended
+
+echo "==> Creating systemd service"
+sudo tee /etc/systemd/system/github-runner.service > /dev/null <<'EOT'
+[Unit]
+Description=GitHub Actions Runner
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=ec2-user
+WorkingDirectory=/opt/actions-runner
+ExecStart=/opt/actions-runner/run.sh
+Restart=always
+RestartSec=5s
+KillMode=process
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+[Install]
+WantedBy=multi-user.target
+EOT
+
+echo "==> Enabling GitHub runner service"
+sudo systemctl enable --now github-runner.service
+
+echo "==> Installing Docker"
+sudo yum update -y
+sudo yum install docker -y
+sudo service docker start
+sudo usermod -a -G docker ec2-user
+sudo systemctl enable docker
+
+echo "==> Installing Git"
+sudo yum install git -y
+
+#echo "==> Resizing partition nvme0n1p3"
+#sudo parted /dev/nvme0n1 ---pretend-input-tty <<EOF
+#print
+#resizepart 3 100%
+#Yes
+#quit
+#EOF
+#
+#echo "==> Reloading partition table"
+#sudo partprobe /dev/nvme0n1
+#
+#echo "==> Resizing physical volume"
+#sudo pvresize /dev/nvme0n1p3
+#
+#echo "==> Extending rootVol by 50% of free PV space"
+#sudo lvextend -l +50%FREE /dev/VolGroup00/rootVol -r
+#
+#echo "==> Extending varVol by remaining free PV space"
+#sudo lvextend -l +100%FREE /dev/VolGroup00/varVol -r
+
+echo "==> Adding nightly docker prune cron job"
+( crontab -l 2>/dev/null; echo "00 00 * * * /usr/bin/docker system prune -af" ) | crontab -
+
+echo "==> Bootstrap complete."
+echo "You should now reboot the instance:"
+echo "  sudo reboot"
+
+sudo reboot
+EOF
+chmod +x bootstrap-runner.sh
+./bootstrap-runner.sh ${ TOKEN }
