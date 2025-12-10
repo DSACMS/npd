@@ -553,7 +553,7 @@ class EndpointSerializer(serializers.Serializer):
         ]
 
     def to_representation(self, instance):
-        request = self.context.get("request")
+        # request = self.context.get("request")
         representation = super().to_representation(instance)
 
         if instance.endpoint_connection_type:
@@ -570,18 +570,19 @@ class EndpointSerializer(serializers.Serializer):
                 display="HL7 FHIR",
             )
 
-        if instance.environment_type:
-            environment_type = [
-                CodeableConcept(
-                    coding=[
-                        Coding(
-                            system="https://hl7.org/fhir/valueset-endpoint-environment.html",
-                            code=instance.environment_type.id,
-                            display=instance.environment_type.display,
-                        )
-                    ]
-                )
-            ]
+        ## TODO extend base fhir spec to ndh spec
+        # if instance.environment_type:
+        #    environment_type = [
+        #        CodeableConcept(
+        #            coding=[
+        #                Coding(
+        #                    system="https://hl7.org/fhir/valueset-endpoint-environment.html",
+        #                    code=instance.environment_type.id,
+        #                    display=instance.environment_type.display,
+        #                )
+        #            ]
+        #        )
+        #    ]
 
         endpoint = Endpoint(
             id=str(instance.id),
@@ -593,8 +594,8 @@ class EndpointSerializer(serializers.Serializer):
             # TODO extend base fhir spec to ndh spec environmentType=environment_type,
             # managingOrganization=genReference(
             #    'fhir-organization-detail', instance.location.organization_id, request),
-            # contact=ContactPoint(contact), ~ still gotta figure this out
-            # period=Period(period), ~ still gotta figure this out
+            # contact=ContactPoint(contact),
+            # period=Period(period),
             payloadType=representation["payload"],
             address=instance.address,
         )
