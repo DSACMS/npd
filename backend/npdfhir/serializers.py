@@ -398,16 +398,23 @@ class OrganizationSerializer(serializers.Serializer):
 
         organization.identifier = identifiers
 
+        # The NPPES data that we would be ingesting and storing in the core data model has a concept of a primary organization name and other organization names, which maps to the fhir concept of organization.name (1:1) and organization.alias(1:M).
+        # The Halloween data do not have these concepts, so the intent of this code is to try to assign an organization name with or without the concept of "is_primary" and then to assign any other names (if present) to organization.alias
         names = representation.get("name", [])
-        primary_names = [n["name"] for n in names if n["is_primary"]]
-        alias_names = [n["name"] for n in names if not n["is_primary"]]
+        primary_names = [(i, n) for i, n in enumerate(names) if n["is_primary"]]
+        aliases = []
 
         if primary_names:
-            organization.name = primary_names[0]
-        elif alias_names:
-            organization.name = alias_names[0]
-            del alias_names[0]
-            organization.alias = alias_names
+            organization.name = primary_names[0][1]["name"]
+            primary_name_index = primary_names[0][0]
+            del names[primary_name_index]
+            aliases = names
+        elif names:
+            organization.name = names[0]
+            if len(names) > 1:
+                aliases = names[1:]
+        if aliases:
+            organization.alias = aliases
 
         if instance.parent_id is not None:
             organization.partOf = genReference(
