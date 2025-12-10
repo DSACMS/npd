@@ -150,6 +150,10 @@ resource "aws_ecs_task_definition" "github_actions_runner_task" {
           name  = "GITHUB_ORG"
           value = "CMS-Enterprise/npd"
         },
+        {
+          name = "ENV_LABEL",
+          value = var.tier
+        }
       ]
       secrets = [
         {

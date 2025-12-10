@@ -1,7 +1,8 @@
 FROM amd64/ubuntu:22.04
 RUN apt-get update && apt-get install -y curl sudo jq buildah
 
-RUN curl -o runner.tar.gz -L https://github.com/actions/runner/releases/download/v2.329.0/actions-runner-linux-x64-2.329.0.tar.gz
+# RUN curl -o runner.tar.gz -L https://github.com/actions/runner/releases/download/v2.329.0/actions-runner-linux-x64-2.329.0.tar.gz
+COPY runner.tar.gz .
 
 RUN newuser=runner && \
     adduser --disabled-password --gecos "" $newuser && \

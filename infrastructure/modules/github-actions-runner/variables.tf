@@ -1,4 +1,5 @@
 variable "account_name" {}
+variable "tier" {}
 variable "subnet_ids" {}
 variable "security_group_ids" {}
 variable "github_runner_image" {}
