@@ -1,5 +1,5 @@
 resource "aws_route53_zone" "internal_dns" {
-  name = var.directory_domain
+  name = var.namespace_domain
 }
 
 resource "aws_route53_record" "ns" {
@@ -8,7 +8,7 @@ resource "aws_route53_record" "ns" {
   # created record as a separate entity from the zone
   allow_overwrite = true
   zone_id = aws_route53_zone.internal_dns.zone_id
-  name    = var.directory_domain
+  name    = var.namespace_domain
   type    = "NS"
   ttl     = 172800
   records = aws_route53_zone.internal_dns.name_servers

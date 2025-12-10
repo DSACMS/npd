@@ -43,6 +43,7 @@ module "dns" {
   source = "../../modules/dns"
 
   enable_internal_domain_for_directory = true
+  namespace_domain                     = module.domains.namespace_domain
   api_domain                           = module.domains.api_domain
   api_alb_dns_name                     = module.fhir-api.api_alb_dns_name
   directory_domain                     = module.domains.directory_domain
@@ -229,9 +230,12 @@ module "github-actions" {
   source = "../../modules/github-actions-runner"
 
   account_name = local.account_name
-  subnet_id    = module.networking.private_subnet_ids[0]
   security_group_ids = concat(
     module.networking.cmscloud_security_group_ids,
     [module.networking.github_action_runner_security_group_id]
   )
+  subnet_ids                  = module.networking.private_subnet_ids
+  ecs_cluster_id              = module.ecs.cluster_id
+  github_runner_image         = var.github_runner_image
+  enable_containerized_runner = true
 }
