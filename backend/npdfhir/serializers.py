@@ -309,6 +309,7 @@ class OrganizationSerializer(serializers.Serializer):
         fields = "__all__"
 
     def to_representation(self, instance):
+        request = self.context.get("request")
         representation = super().to_representation(instance)
         organization = FHIROrganization()
         organization.id = str(instance.id)
@@ -317,22 +318,19 @@ class OrganizationSerializer(serializers.Serializer):
         )
         identifiers = []
         taxonomies = []
-
-        if instance.ein:
-            ein_identifier = Identifier(
-                system="https://terminology.hl7.org/NamingSystem-USEIN.html",
-                value=str(instance.ein.ein_id),
-                type=CodeableConcept(
-                    coding=[
-                        Coding(
-                            system="http://terminology.hl7.org/CodeSystem/v2-0203",
-                            code="TAX",
-                            display="Tax ID number",
-                        )
-                    ]
-                ),
-            )
-            identifiers.append(ein_identifier)
+        # if instance.ein:
+        #    ein_identifier = Identifier(
+        #        system="https://terminology.hl7.org/NamingSystem-USEIN.html",
+        #        value=str(instance.ein.ein_id),
+        #        type=CodeableConcept(
+        #            coding=[Coding(
+        #                system="http://terminology.hl7.org/CodeSystem/v2-0203",
+        #                code="TAX",
+        #                display="Tax ID number"
+        #            )]
+        #        )
+        #    )
+        #    identifiers.append(ein_identifier)
 
         if hasattr(instance, "clinicalorganization"):
             clinical_org = instance.clinicalorganization
@@ -400,17 +398,28 @@ class OrganizationSerializer(serializers.Serializer):
 
         organization.identifier = identifiers
 
+        # The NPPES data that we would be ingesting and storing in the core data model has a concept of a primary organization name and other organization names, which maps to the fhir concept of organization.name (1:1) and organization.alias(1:M).
+        # The Halloween data do not have these concepts, so the intent of this code is to try to assign an organization name with or without the concept of "is_primary" and then to assign any other names (if present) to organization.alias
         names = representation.get("name", [])
-        primary_names = [n["name"] for n in names if n["is_primary"]]
-        alias_names = [n["name"] for n in names if not n["is_primary"]]
+        primary_names = [(i, n) for i, n in enumerate(names) if n["is_primary"]]
+        aliases = []
 
         if primary_names:
-            organization.name = primary_names[0]
+            organization.name = primary_names[0][1]["name"]
+            primary_name_index = primary_names[0][0]
+            del names[primary_name_index]
+            aliases = names
         elif names:
-            organization.name = names[0]["name"]
+            organization.name = names[0]
+            if len(names) > 1:
+                aliases = names[1:]
+        if aliases:
+            organization.alias = aliases
 
-        if alias_names:
-            organization.alias = alias_names
+        if instance.parent_id is not None:
+            organization.partOf = genReference(
+                "fhir-organization-detail", instance.parent_id, request
+            )
 
         if hasattr(instance, "authorized_official"):
             authorized_official = representation["authorized_official"]
@@ -551,36 +560,51 @@ class EndpointSerializer(serializers.Serializer):
         ]
 
     def to_representation(self, instance):
+        # request = self.context.get("request")
         representation = super().to_representation(instance)
 
-        connection_type = Coding(
-            system="http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
-            code=instance.endpoint_connection_type.id,
-            display=instance.endpoint_connection_type.display,
-        )
+        if instance.endpoint_connection_type:
+            connection_type = Coding(
+                system="http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+                code=instance.endpoint_connection_type.id,
+                display=instance.endpoint_connection_type.display,
+            )
+        # TODO THIS IS TEMPORARY DUE TO INSUFFICIENT DATA
+        else:
+            connection_type = Coding(
+                system="http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+                code="hl7-fhir-rest",
+                display="HL7 FHIR",
+            )
 
-        # environment_type = [CodeableConcept(
-        #     coding=[Coding(
-        #         system="https://hl7.org/fhir/valueset-endpoint-environment.html",
-        #         code=instance.environment_type.id,
-        #         display=instance.environment_type.display
-        #     )]
-        # )]
+        ## TODO extend base fhir spec to ndh spec
+        # if instance.environment_type:
+        #    environment_type = [
+        #        CodeableConcept(
+        #            coding=[
+        #                Coding(
+        #                    system="https://hl7.org/fhir/valueset-endpoint-environment.html",
+        #                    code=instance.environment_type.id,
+        #                    display=instance.environment_type.display,
+        #                )
+        #            ]
+        #        )
+        #    ]
 
         endpoint = Endpoint(
             id=str(instance.id),
             identifier=representation["identifier"],
-            status="active",  # hardcoded for now
+            status="active",  # TODO hardcoded for now
             connectionType=connection_type,
             name=instance.name,
             # TODO extend base fhir spec to ndh spec description=instance.description,
             # TODO extend base fhir spec to ndh spec environmentType=environment_type,
-            # managingOrganization=Reference(managing_organization), ~ organization/npi or whatever we use as the organization identifier
-            # contact=ContactPoint(contact), ~ still gotta figure this out
-            # period=Period(period), ~ still gotta figure this out
+            # managingOrganization=genReference(
+            #    'fhir-organization-detail', instance.location.organization_id, request),
+            # contact=ContactPoint(contact),
+            # period=Period(period),
             payloadType=representation["payload"],
             address=instance.address,
-            header=["application/fhir"],  # hardcoded for now
         )
 
         return endpoint.model_dump()
