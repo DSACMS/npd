@@ -124,7 +124,12 @@ class PractitionerViewSetTestCase(APITestCase):
 
     def test_list_in_alternate_order(self):
         url = reverse("fhir-practitioner-list")
-        response = self.client.get(url, {"_sort": "primary_first_name,primary_last_name"})
+        response = self.client.get(
+            url,
+            {
+                "_sort": "individual__individualtoname__first_name,individual__individualtoname__last_name"
+            },
+        )
         assert_fhir_response(self, response)
 
         # print(response.data["results"]["entry"][0]['resource']['name'][0])
@@ -156,7 +161,12 @@ class PractitionerViewSetTestCase(APITestCase):
 
     def test_list_in_descending_order(self):
         url = reverse("fhir-practitioner-list")
-        response = self.client.get(url, {"_sort": "-primary_last_name,-primary_first_name"})
+        response = self.client.get(
+            url,
+            {
+                "_sort": "-individual__individualtoname__last_name,-individual__individualtoname__first_name"
+            },
+        )
         assert_fhir_response(self, response)
 
         # Extract names

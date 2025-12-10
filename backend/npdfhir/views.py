@@ -1,6 +1,6 @@
 from uuid import UUID
 
-from django.db.models import F, OuterRef, Subquery, Value, CharField
+from django.db.models import F, Value, CharField
 from django.db.models.functions import Concat
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
@@ -26,10 +26,8 @@ from .models import (
     EndpointInstance,
     Location,
     Organization,
-    OrganizationToName,
     Provider,
     ProviderToLocation,
-    IndividualToName,
 )
 
 from .serializers import (
@@ -72,7 +70,6 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
     filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
     filterset_class = EndpointFilterSet
     ordering_fields = ["name", "address", "ehr_vendor_name"]
-    ordering = ["name"]
     pagination_class = CustomPaginator
     pagination_class = CustomPaginator
 
@@ -169,10 +166,6 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
         "individual__individualtoname__first_name",
         "npi_value",
     ]
-    ordering = [
-        "individual__individualtoname__last_name",
-        "individual__individualtoname__first_name",
-    ]
 
     # permission_classes = [permissions.IsAuthenticated]
     @extend_schema(
@@ -190,17 +183,24 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
         """
         # Subqueries for last_name and first_name of the individual
 
-        providers = Provider.objects.all().prefetch_related(
-            "npi",
-            "individual",
-            "individual__individualtoaddress_set",
-            "individual__individualtoaddress_set__address__address_us",
-            "individual__individualtoaddress_set__address__address_us__state_code",
-            "individual__individualtoaddress_set__address_use",
-            "individual__individualtophone_set",
-            "individual__individualtoemail_set",
-            "providertootherid_set",
-            "providertotaxonomy_set",
+        providers = (
+            Provider.objects.all()
+            .prefetch_related(
+                "npi",
+                "individual",
+                "individual__individualtoaddress_set",
+                "individual__individualtoaddress_set__address__address_us",
+                "individual__individualtoaddress_set__address__address_us__state_code",
+                "individual__individualtoaddress_set__address_use",
+                "individual__individualtophone_set",
+                "individual__individualtoemail_set",
+                "providertootherid_set",
+                "providertotaxonomy_set",
+            )
+            .order_by(
+                "individual__individualtoname__last_name",
+                "individual__individualtoname__first_name",
+            )
         )
 
         providers = self.filter_queryset(providers)
@@ -265,8 +265,7 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     filterset_class = PractitionerRoleFilterSet
     pagination_class = CustomPaginator
 
-    ordering_fields = ["location_name", "practitioner_first_name", "practitioner_last_name"]
-    ordering = ["location__name"]
+    ordering_fields = ["location__name", "practitioner_first_name", "practitioner_last_name"]
 
     # permission_classes = [permissions.IsAuthenticated]
     @extend_schema(
@@ -345,7 +344,6 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     pagination_class = CustomPaginator
 
     ordering_fields = ["organizationtoname__name"]
-    ordering = ["organizationtoname__name", "-organizationtoname__is_primary"]
 
     # permission_classes = [permissions.IsAuthenticated]
     @extend_schema(
@@ -362,27 +360,31 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
         Default sort order: ascending by organization name
         """
 
-        organizations = Organization.objects.all().prefetch_related(
-            "authorized_official",
-            "ein",
-            "organizationtoname_set",
-            "organizationtoaddress_set",
-            "organizationtoaddress_set__address",
-            "organizationtoaddress_set__address__address_us",
-            "organizationtoaddress_set__address__address_us__state_code",
-            "organizationtoaddress_set__address_use",
-            "authorized_official__individualtophone_set",
-            "authorized_official__individualtoname_set",
-            "authorized_official__individualtoemail_set",
-            "authorized_official__individualtoaddress_set",
-            "authorized_official__individualtoaddress_set__address__address_us",
-            "authorized_official__individualtoaddress_set__address__address_us__state_code",
-            "clinicalorganization",
-            "clinicalorganization__npi",
-            "clinicalorganization__organizationtootherid_set",
-            "clinicalorganization__organizationtootherid_set__other_id_type",
-            "clinicalorganization__organizationtotaxonomy_set",
-            "clinicalorganization__organizationtotaxonomy_set__nucc_code",
+        organizations = (
+            Organization.objects.all()
+            .prefetch_related(
+                "authorized_official",
+                "ein",
+                "organizationtoname_set",
+                "organizationtoaddress_set",
+                "organizationtoaddress_set__address",
+                "organizationtoaddress_set__address__address_us",
+                "organizationtoaddress_set__address__address_us__state_code",
+                "organizationtoaddress_set__address_use",
+                "authorized_official__individualtophone_set",
+                "authorized_official__individualtoname_set",
+                "authorized_official__individualtoemail_set",
+                "authorized_official__individualtoaddress_set",
+                "authorized_official__individualtoaddress_set__address__address_us",
+                "authorized_official__individualtoaddress_set__address__address_us__state_code",
+                "clinicalorganization",
+                "clinicalorganization__npi",
+                "clinicalorganization__organizationtootherid_set",
+                "clinicalorganization__organizationtootherid_set__other_id_type",
+                "clinicalorganization__organizationtotaxonomy_set",
+                "clinicalorganization__organizationtotaxonomy_set__nucc_code",
+            )
+            .order_by("organizationtoname__name")
         )
 
         organizations = self.filter_queryset(organizations)
@@ -459,7 +461,6 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
     pagination_class = CustomPaginator
 
     ordering_fields = ["organization_name", "address_full", "name"]
-    ordering = ["name"]
 
     # permission_classes = [permissions.IsAuthenticated]
     @extend_schema(

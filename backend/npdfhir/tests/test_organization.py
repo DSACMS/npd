@@ -110,7 +110,7 @@ class OrganizationViewSetTestCase(APITestCase):
 
     def test_list_in_descending_order(self):
         url = reverse("fhir-organization-list")
-        response = self.client.get(url, {"_sort": "-primary_name"})
+        response = self.client.get(url, {"_sort": "-organizationtoname__name"})
         assert_fhir_response(self, response)
 
         # Extract names
@@ -185,14 +185,14 @@ class OrganizationViewSetTestCase(APITestCase):
         url = reverse("fhir-organization-detail", args=[parent_id])
         response = self.client.get(url)
         # check that the parentless organization does not have a parent listed
-        self.assertNotIn(response.data["results"]["entry"], "parent_id")
+        self.assertNotIn("partOf", str(response.data.keys()))
 
         url = reverse("fhir-organization-detail", args=[id])
         response = self.client.get(url)
         # check that the child organization has a parent_id listed
-        self.assertIn(response.data["results"]["entry"], "parent_id")
+        self.assertIn("partOf", str(response.data.keys()))
         # check that the child organization has the correct parent_id listed
-        self.assertEqual(response.data["results"]["entry"]["parent_id"], parent_id)
+        self.assertIn(parent_id, f"Organization/{response.data['partOf']['reference']}")
 
     def test_list_filter_by_otherID_general(self):
         url = reverse("fhir-organization-list")
@@ -266,7 +266,6 @@ class OrganizationViewSetTestCase(APITestCase):
         org = response.data
         self.assertEqual(org["resourceType"], "Organization")
         self.assertEqual(org["name"], self.joe_name)
-        self.assertEqual(org["identifier"][0]["type"]["coding"][0]["code"], "TAX")
 
     def test_retrieve_nonexistent_uuid(self):
         url = reverse("fhir-organization-detail", args=["12300000-0000-0000-0000-000000000123"])

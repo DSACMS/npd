@@ -10,6 +10,9 @@ services:
     extends:
       file: compose.yml
       service: db
+    env_file:
+      - path: .env.test
+        required: false
     environment:
       POSTGRES_DB: npd_test
 
@@ -17,6 +20,9 @@ services:
     extends:
       file: compose.yml
       service: db-migrations
+    env_file:
+      - path: .env.test
+        required: false
     environment:
       FLYWAY_URL: jdbc:postgresql://${NPD_DB_HOST:-db}:${NPD_DB_PORT:-5432}/npd_test
     volumes: !override
@@ -29,6 +35,9 @@ services:
     extends:
       file: compose.yml
       service: django-web
+    env_file:
+      - path: .env.test
+        required: false
     environment:
       NPD_DB_NAME: npd_test
       TESTING: True
