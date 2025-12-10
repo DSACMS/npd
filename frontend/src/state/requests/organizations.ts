@@ -36,7 +36,7 @@ export const useOrganizationAPI = (organizationId: string | undefined) => {
 const fetchOrganizations = async (): Promise<
   FHIRCollection<FHIROrganization>
 > => {
-  const url = apiUrl("/fhir/Organization/?page=2&page_size=25", {})
+  const url = apiUrl("/fhir/Organization/?page_size=25", {})
 
   const response = await fetch(url)
   if (!response.ok) {
