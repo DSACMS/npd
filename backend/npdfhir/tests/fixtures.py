@@ -110,7 +110,7 @@ def create_other_id_type(name="Sample Other ID"):
 
 
 def create_organization(
-    id=uuid.uuid4(),
+    id=None,
     name="Test Org",
     parent_id=None,
     authorized_official_first_name="Alice",
@@ -139,6 +139,9 @@ def create_organization(
         last_name=authorized_official_last_name,
         name_use=_ensure_name_use(),
     )
+
+    if id is None:
+        id = uuid.uuid4()
 
     org = Organization.objects.create(
         id=id, authorized_official=ind, ein=legal_entity, parent_id=parent_id
