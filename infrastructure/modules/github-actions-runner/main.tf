@@ -61,6 +61,24 @@ resource "aws_instance" "github_actions_instance" {
   }
 }
 
+resource "aws_instance" "github_actions_instance" {
+  count = var.enable_preconfigured_ec2_instance ? 1 : 0
+  ami                    = "ami-04345af6ff8317b5e"
+  instance_type          = "m5.xlarge"
+  vpc_security_group_ids = var.security_group_ids
+  subnet_id              = var.subnet_ids[0]
+  iam_instance_profile   = "cms-cloud-base-ec2-profile-v4"
+  root_block_device {
+    volume_size = 100
+  }
+  tags = {
+    Name = "github-actions-runner-instance-user-data"
+  }
+  user_data = templatefile("bootstrap-runner.sh.tftpl", {
+    TOKEN = aws_secretsmanager_secret_version.github_runner_token_secret_version.secret_string
+  })
+}
+
 # Exploratory work on a containerized GHA runner
 
 resource "aws_cloudwatch_log_group" "github_runner_log_group" {
@@ -81,7 +99,7 @@ data "aws_secretsmanager_random_password" "github_actions_runner_token_random" {
 
 resource "aws_secretsmanager_secret" "github_actions_runner_token_secret" {
   name_prefix = "${var.account_name}-github-runner-token-secret"
-  description = "GitHub Runner PAT"
+  description = "GitHub Runner token"
 }
 
 resource "aws_secretsmanager_secret_version" "github_runner_token_secret_version" {
