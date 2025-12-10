@@ -186,7 +186,7 @@ resource "aws_ecs_task_definition" "app" {
       environment = [
         {
           name  = "NPD_DB_NAME"
-          value = "npd_halloween_sjp"
+          value = var.db.db_instance_name
         },
         {
           name  = "NPD_DB_HOST"
