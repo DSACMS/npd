@@ -3,15 +3,24 @@ import classNames from "classnames"
 import { useParams } from "react-router"
 import { FeatureFlag } from "../../components/FeatureFlag"
 import { LoadingIndicator } from "../../components/LoadingIndicator"
-import { organizationNpiSelector } from "../../state/requests/organizations"
-import {
-  practitionerAddressOneline,
-  practitionerNameSelector,
-  usePractitionerAPI,
-} from "../../state/requests/practitioners"
+import { PractitionerPresenter } from "../../presenters/PractitionerPresenter"
+import { formatIdentifierType } from "../../helpers/formatters"
+import { usePractitionerAPI } from "../../state/requests/practitioners"
+import { useTranslation } from "react-i18next"
+import { InfoItem } from "../../components/InfoItem"
 import layout from "../Layout.module.css"
 
+import {
+  Table,
+  TableRow,
+  TableHead,
+  TableCell,
+  TableBody
+} from "@cmsgov/design-system"
+
+
 export const Practitioner = () => {
+  const { t } = useTranslation()
   const { practitionerId } = useParams()
   const { data, error, isLoading } = usePractitionerAPI(practitionerId)
 
@@ -26,6 +35,8 @@ export const Practitioner = () => {
   const contentClass = classNames(layout.content, "ds-l-container")
   const bannerClass = classNames(layout.banner)
 
+  const practitioner = new PractitionerPresenter(data)
+
   return (
     <>
       <section className={bannerClass}>
@@ -34,22 +45,14 @@ export const Practitioner = () => {
             <div className="ds-l-col--12">
               <div className={layout.leader}>
                 <h1 role="heading" aria-level={1} className={layout.title}>
-                  {practitionerNameSelector(data)}
+                  {practitioner.name}
                 </h1>
                 <span
                   data-testid="practitioner-npi"
                   className={layout.subtitle}
                 >
-                  NPI: {organizationNpiSelector(data)}
+                  NPI: {practitioner.npi}
                 </span>
-                {data.address && (
-                  <span
-                    data-testid="practitioner-npi"
-                    className={layout.subtitle}
-                  >
-                    {practitionerAddressOneline(data)}
-                  </span>
-                )}
               </div>
             </div>
           </div>
@@ -63,23 +66,71 @@ export const Practitioner = () => {
         </FeatureFlag>
 
         <FeatureFlag name="PRACTITIONER_LOOKUP_DETAILS">
-          <Alert heading="Are you the practitioner listed?">
-            Learn how to <a href="#">update your information</a>.
+          <Alert heading={t("practitioners.update.title")}>
+          {t("practitioners.update.subtitle")}{' '}
+          <a href="#">{t("practitioners.update.link")}</a>
           </Alert>
 
           <section className={layout.section}>
-            <h2>About</h2>
-            <p>[demographic information]</p>
+            <h2>{t("practitioners.about.title")}</h2>
+            <div className="ds-l-row">
+              <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
+                <InfoItem label={t("practitioners.about.name")} value={practitioner.name} />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
+                <InfoItem label={t("practitioners.about.gender")} value={practitioner.gender} />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
+                <InfoItem label={t("practitioners.about.deceased")} value={practitioner.isDeceased} />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
+                <InfoItem label={t("practitioners.about.status")} value={practitioner.isActive} />
+              </div>
+            </div>
           </section>
 
           <section className={layout.section}>
-            <h2>Contact information</h2>
-            <p>[contact information]</p>
+            <h2>{t("practitioners.contact.title")}</h2>
+            <div className="ds-l-row">
+              <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
+                <InfoItem label={t("practitioners.contact.address")} value={practitioner.address} />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
+                <InfoItem label={t("practitioners.contact.phone")} value={practitioner.phone} />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
+                <InfoItem label={t("practitioners.contact.fax")} value={practitioner.fax} />
+              </div>
+            </div>
           </section>
 
           <section className={layout.section}>
-            <h2>Identifiers</h2>
-            <p>[identifier information]</p>
+            <h2>{t("practitioners.identifiers.title")}</h2>
+            {/* TODO: look into modularizing table creation to reduce code duplication */}
+            {practitioner.identifiers.length > 0 ? (
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <TableCell>{t("practitioners.identifiers.type")}</TableCell>
+                    <TableCell>{t("practitioners.identifiers.number")}</TableCell>
+                    <TableCell>{t("practitioners.identifiers.details")}</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {practitioner.identifiers.map((identifier, index) => (
+                    <TableRow key={index}>
+                      <TableCell>
+                        {formatIdentifierType(identifier.system ?? "Unknown")}
+                      </TableCell>
+                      <TableCell>{identifier.number}</TableCell>
+                      <TableCell>{identifier.details}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            ) : (
+              <p className="ds-u-color--gray">{t("practitioners.identifiers.fallback")}</p>
+            )}
           </section>
 
           <section className={layout.section}>
