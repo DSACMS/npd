@@ -61,10 +61,19 @@ resource "aws_instance" "github_actions_instance" {
   }
 }
 
+resource "aws_secretsmanager_secret" "github_actions_runner_token" {
+  name = "${var.account_name}-github-runner-token-secret"
+  description = "GitHub Runner token"
+}
+
+data "aws_secretsmanager_secret_version" "github_actions_runner_token_version" {
+  secret_id = aws_secretsmanager_secret.github_actions_runner_token.id
+}
+
 data "template_file" "bootstrap_runner" {
-  template = file("${path.module}/bootstrap-runner.sh.tpl")
+  template = file("${path.module} /bootstrap-runner.sh.tpl"
   vars = {
-    TOKEN = "AATYNVTBARDZKOSZMP4H2ADJHH57W"
+    TOKEN = data.aws_secretsmanager_secret_version.github_actions_runner_token_version.secret_string
     RUNNER_VERSION="2.329.0"
     RUNNER_DIR="/opt/actions-runner"
     GITHUB_URL="https://github.com/CMS-Enterprise/NPD"
@@ -88,130 +97,4 @@ resource "aws_instance" "github_actions_instance_user_data" {
   user_data = data.template_file.bootstrap_runner.rendered
 }
 
-# Exploratory work on a containerized GHA runner
 
-resource "aws_cloudwatch_log_group" "github_runner_log_group" {
-  name              = "/custom/${var.account_name}-github-runner-logs"
-  retention_in_days = 30
-}
-
-resource "aws_ecr_repository" "github_actions_runner" {
-  name = "${var.account_name}-github-actions-runner"
-  image_scanning_configuration {
-    scan_on_push = true
-  }
-}
-
-data "aws_secretsmanager_random_password" "github_actions_runner_token_random" {
-  password_length = 20
-}
-
-resource "aws_secretsmanager_secret" "github_actions_runner_token_secret" {
-  name_prefix = "${var.account_name}-github-runner-token-secret"
-  description = "GitHub Runner token"
-}
-
-resource "aws_secretsmanager_secret_version" "github_runner_token_secret_version" {
-  secret_id                = aws_secretsmanager_secret.github_actions_runner_token_secret.id
-  secret_string_wo         = data.aws_secretsmanager_random_password.github_actions_runner_token_random.random_password
-  secret_string_wo_version = 1
-}
-
-# ECS Roles and Policies
-resource "aws_iam_role" "github_runner_execution_role" {
-  name        = "${var.account_name}-github-actions-runner-execution-role"
-  description = "Defines what AWS actions the GitHub Actions Runner task execution environment is allowed to make"
-  assume_role_policy = jsonencode({
-    Version = "2012-10-17"
-    Statement = [{
-      Effect    = "Allow"
-      Principal = { Service = "ecs-tasks.amazonaws.com" }
-      Action    = "sts:AssumeRole"
-    }]
-  })
-}
-
-resource "aws_iam_role_policy_attachment" "ecs_task_execution" {
-  role       = aws_iam_role.github_runner_execution_role.name
-  policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
-}
-
-resource "aws_iam_policy" "github_runner_can_access_github_runner_secret" {
-  name        = "${var.account_name}-github-runner-can-access-github-pat-secret"
-  description = "Allows ECS to access the GitHub PAT secret"
-  policy = jsonencode({
-    Version = "2012-10-17"
-    Statement = [
-      {
-        Action = "secretsmanager:GetSecretValue",
-        Effect = "Allow"
-        Resource = [
-          aws_secretsmanager_secret_version.github_runner_token_secret_version.arn
-        ]
-      }
-    ]
-  })
-}
-
-resource "aws_iam_role_policy_attachment" "github_runner_can_access_github_action_runner_secret_attachment" {
-  role       = aws_iam_role.github_runner_execution_role.name
-  policy_arn = aws_iam_policy.github_runner_can_access_github_runner_secret.arn
-}
-
-# FHIR API Task Configuration
-resource "aws_ecs_task_definition" "github_actions_runner_task" {
-  family                   = "${var.account_name}-github-actions-runner-task"
-  requires_compatibilities = ["FARGATE"]
-  network_mode             = "awsvpc"
-  cpu                      = "512"
-  memory                   = "1024"
-  execution_role_arn       = aws_iam_role.github_runner_execution_role.arn
-
-  container_definitions = jsonencode([
-    {
-      name      = "${var.account_name}-github-actions-runner"
-      image     = var.github_runner_image
-      essential = true
-      environment = [
-        {
-          name  = "GITHUB_ORG"
-          value = "CMS-Enterprise/npd"
-        },
-        {
-          name = "ENV_LABEL",
-          value = var.tier
-        }
-      ]
-      secrets = [
-        {
-          name      = "GITHUB_RUNNER_TOKEN"
-          valueFrom = aws_secretsmanager_secret_version.github_runner_token_secret_version.arn
-        },
-      ]
-      logConfiguration = {
-        logDriver = "awslogs"
-        options = {
-          "awslogs-group"         = aws_cloudwatch_log_group.github_runner_log_group.name
-          "awslogs-region"        = "us-east-1"
-          "awslogs-stream-prefix" = var.account_name
-        }
-      }
-    }
-  ])
-}
-
-# API ECS Service
-resource "aws_ecs_service" "app" {
-  count           = var.enable_containerized_runner ? 1 : 0
-  name            = "${var.account_name}-github-actions-runner-service"
-  cluster         = var.ecs_cluster_id
-  task_definition = aws_ecs_task_definition.github_actions_runner_task.arn
-  launch_type     = "FARGATE"
-  desired_count   = 1
-
-  network_configuration {
-    subnets          = var.subnet_ids
-    security_groups  = var.security_group_ids
-    assign_public_ip = false
-  }
-}
