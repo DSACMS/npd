@@ -75,6 +75,7 @@ module "database_migration_service" {
       port          = 5432
       server_name   = var.fhir_db.db_instance_address
       ssl_mode      = "require"
+      options       = "--search_path=npd,public"
     }
   }
 
