@@ -77,6 +77,7 @@ data "template_file" "bootstrap_runner" {
     RUNNER_VERSION="2.329.0"
     RUNNER_DIR="/opt/actions-runner"
     GITHUB_URL="https://github.com/CMS-Enterprise/NPD"
+    TIER=var.tier
   }
 }
 
