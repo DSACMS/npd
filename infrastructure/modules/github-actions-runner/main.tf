@@ -61,7 +61,17 @@ resource "aws_instance" "github_actions_instance" {
   }
 }
 
-resource "aws_instance" "github_actions_instance" {
+data "template_file" "bootstrap_runner" {
+  template = file("${path.module}/bootstrap-runner.sh.tpl")
+  vars = {
+    TOKEN = "AATYNVTBARDZKOSZMP4H2ADJHH57W"
+    RUNNER_VERSION="2.329.0"
+    RUNNER_DIR="/opt/actions-runner"
+    GITHUB_URL="https://github.com/CMS-Enterprise/NPD"
+  }
+}
+
+resource "aws_instance" "github_actions_instance_user_data" {
   count = var.enable_preconfigured_ec2_instance ? 1 : 0
   ami                    = "ami-04345af6ff8317b5e"
   instance_type          = "m5.xlarge"
@@ -74,9 +84,8 @@ resource "aws_instance" "github_actions_instance" {
   tags = {
     Name = "github-actions-runner-instance-user-data"
   }
-  user_data = templatefile("bootstrap-runner.sh.tftpl", {
-    TOKEN = aws_secretsmanager_secret_version.github_runner_token_secret_version.secret_string
-  })
+  user_data_replace_on_change = true
+  user_data = data.template_file.bootstrap_runner.rendered
 }
 
 # Exploratory work on a containerized GHA runner

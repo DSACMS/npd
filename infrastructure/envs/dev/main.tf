@@ -238,4 +238,6 @@ module "github-actions" {
   subnet_ids                  = module.networking.private_subnet_ids
   ecs_cluster_id              = module.ecs.cluster_id
   github_runner_image         = var.github_runner_image
+  enable_containerized_runner = false
+  enable_preconfigured_ec2_instance = true
 }
