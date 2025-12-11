@@ -75,7 +75,7 @@ class AddressNonstandard(models.Model):
 
 
 class AddressUs(models.Model):
-    id = models.CharField(primary_key=True, max_length=10)
+    id = models.BigIntegerField(primary_key=True)
     delivery_line_1 = models.CharField(max_length=64)
     delivery_line_2 = models.CharField(max_length=64, blank=True, null=True)
     last_line = models.CharField(max_length=64, blank=True, null=True)
@@ -486,7 +486,7 @@ class MimeType(models.Model):
 class Npi(models.Model):
     npi = models.BigIntegerField(primary_key=True)
     entity_type_code = models.SmallIntegerField()
-    replacement_npi = models.CharField(max_length=11, blank=True, null=True)
+    replacement_npi = models.BigIntegerField(blank=True, null=True)
     enumeration_date = models.DateField()
     last_update_date = models.DateField()
     deactivation_reason_code = models.CharField(max_length=3, blank=True, null=True)
@@ -558,7 +558,7 @@ class NuccToMedicareProviderType(models.Model):
 
 class Organization(models.Model):
     id = models.UUIDField(primary_key=True)
-    authorized_official = models.ForeignKey(Individual, models.DO_NOTHING)
+    authorized_official = models.ForeignKey(Individual, models.DO_NOTHING, blank=True, null=True)
     ein = models.ForeignKey(LegalEntity, models.DO_NOTHING, blank=True, null=True)
     parent = models.ForeignKey("self", models.DO_NOTHING, blank=True, null=True)
 
