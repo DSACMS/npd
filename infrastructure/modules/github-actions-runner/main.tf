@@ -71,9 +71,9 @@ data "aws_secretsmanager_secret_version" "github_actions_runner_token_version" {
 }
 
 data "template_file" "bootstrap_runner" {
-  template = file("${path.module} /bootstrap-runner.sh.tpl"
+  template = file("${path.module}/bootstrap-runner.sh.tpl")
   vars = {
-    TOKEN = data.aws_secretsmanager_secret_version.github_actions_runner_token_version.secret_string
+    TOKEN=data.aws_secretsmanager_secret_version.github_actions_runner_token_version.secret_string
     RUNNER_VERSION="2.329.0"
     RUNNER_DIR="/opt/actions-runner"
     GITHUB_URL="https://github.com/CMS-Enterprise/NPD"
