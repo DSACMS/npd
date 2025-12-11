@@ -13,6 +13,7 @@ from fhir.resources.R4B.location import Location as FHIRLocation
 from fhir.resources.R4B.contactdetail import ContactDetail
 from fhir.resources.R4B.meta import Meta
 from fhir.resources.R4B.organization import Organization as FHIROrganization
+from fhir.resource.R4B.organization_affiliations import OrganizationAffiliation as FHIROrganizationAffiliation
 from fhir.resources.R4B.period import Period
 from fhir.resources.R4B.practitioner import Practitioner, PractitionerQualification
 from fhir.resources.R4B.practitionerrole import PractitionerRole
@@ -434,6 +435,93 @@ class OrganizationSerializer(serializers.Serializer):
             organization.contact = [authorized_official]
 
         return organization.model_dump()
+
+class OrganizationAffiliationSerializer(serializers.Serializer):
+    identifier = OtherIdentifierSerializer(source="organizationtootheridentifier_set", many=True, read_only=True)
+
+    class Meta:
+        fields = [
+            "identifier",
+            "active",
+            "period",
+            "organization",
+            "participatingOrganization",
+            "network",
+            "code",
+            "specialty",
+            "location",
+            "healthcareService",
+            "telecom",
+            "endpoint"
+        ]
+
+    def to_representation(self, instance):
+        request = self.context.get("request")
+        representation = super().to_representation(instance)
+        organization_affiliation = FHIROrganizationAffiliation()
+        organization_affiliation.active = instance.is_active_affiliation
+
+        identifiers = []
+
+        #Get npis of all orgs
+
+        # if instance.ein:
+        #    ein_identifier = Identifier(
+        #        system="https://terminology.hl7.org/NamingSystem-USEIN.html",
+        #        value=str(instance.ein.ein_id),
+        #        type=CodeableConcept(
+        #            coding=[Coding(
+        #                system="http://terminology.hl7.org/CodeSystem/v2-0203",
+        #                code="TAX",
+        #                display="Tax ID number"
+        #            )]
+        #        )
+        #    )
+        #    identifiers.append(ein_identifier)
+
+        if hasattr(instance, "clinicalorganization"):
+            clinical_org = instance.clinicalorganization
+            if clinical_org and clinical_org.npi:
+                for npi in clinical_org.npi.all():
+                    npi_identifier = Identifier(
+                        system="http://terminology.hl7.org/NamingSystem/npi",
+                        value=str(npi),
+                        type=CodeableConcept(
+                            coding=[
+                                Coding(
+                                    system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    code="PRN",
+                                    display="Provider number",
+                                )
+                            ]
+                        ),
+                        use="official",
+                        period=Period(
+                            start=npi.enumeration_date,
+                            end=npi.deactivation_date,
+                        ),
+                    )
+                    identifiers.append(npi_identifier)
+
+                for other_id in clinical_org.organizationtootherid_set.all():
+                    other_identifier = Identifier(
+                        system=str(other_id.other_id_type_id),
+                        value=other_id.other_id,
+                        type=CodeableConcept(
+                            coding=[
+                                Coding(
+                                    system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    code="test",  # do we define this based on the type of id it is?
+                                    display="test",  # same as above ^
+                                )
+                            ]
+                        ),
+                    )
+                    identifiers.append(other_identifier)
+        
+        organization_affiliation.identifiers = identifiers
+        
+
 
 
 class PractitionerSerializer(serializers.Serializer):

@@ -560,3 +560,140 @@ class FHIRCapabilityStatementView(APIView):
         response = serializer.to_representation(None)
 
         return Response(response)
+
+class OrganizationAffiliation(viewsets.GenericViewSet):
+    """
+    ViewSet for FHIR EHR Vendor to Organizaton relationships
+    """
+
+    queryset = Organization.objects.none()
+    if DEBUG:
+        renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
+    else:
+        renderer_classes = [FHIRRenderer]
+    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
+    filterset_class = OrganizationFilterSet
+    pagination_class = CustomPaginator
+
+    ordering_fields = ["ehr_vendor_name","organization_name"]
+
+    # permission_classes = [permissions.IsAuthenticated]
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(
+                description="Successfully retrieved FHIR Bundle resource of FHIR OrganizationAffiliation resources"
+            )
+        }
+    )
+    def list(self, request):
+        """
+        Query a list of organizations, represented as a bundle of FHIR Practitioner resources
+
+        Default sort order: ascending by organization name
+        """
+
+        organization_affiliations = (
+            Organization.objects.all()
+            .prefetch_related(
+                "authorized_official",
+                "ein",
+                "organizationtoname_set",
+                "organizationtoaddress_set",
+                "organizationtoaddress_set__address",
+                "organizationtoaddress_set__address__address_us",
+                "organizationtoaddress_set__address__address_us__state_code",
+                "organizationtoaddress_set__address_use",
+                "authorized_official__individualtophone_set",
+                "authorized_official__individualtoname_set",
+                "authorized_official__individualtoemail_set",
+                "authorized_official__individualtoaddress_set",
+                "authorized_official__individualtoaddress_set__address__address_us",
+                "authorized_official__individualtoaddress_set__address__address_us__state_code",
+                "clinicalorganization",
+                "clinicalorganization__npi",
+                "clinicalorganization__organizationtootherid_set",
+                "clinicalorganization__organizationtootherid_set__other_id_type",
+                "clinicalorganization__organizationtotaxonomy_set",
+                "clinicalorganization__organizationtotaxonomy_set__nucc_code",
+                "location_set",
+                "location_set__locationtoendpointinstance_set",
+                "location_set__locationtoendpointinstance_set__endpoint_instance",
+                "location_set__locationtoendpointinstance_set__endpoint_instance__ehr_vendor",
+            )
+            .annotate(
+                organization_name=F("organizationtoname__name"),
+                endpoint_name=F(
+                    "location_set__locationtoendpointinstance_set__endpoint_instance__name"
+                ),
+                ehr_vendor_name=F(
+                    "location_set__locationtoendpointinstance_set__endpoint_instance__ehr_vendor__name"
+                ),
+                is_active_affiliation=F("clinicalorganization__is_active"),
+            )
+            .order_by("organization_name")
+            .distinct()
+        )
+
+        organization_affiliations = self.filter_queryset(organization_affiliations)
+        paginated_organizations = self.paginate_queryset(organization_affiliations)
+        
+        #TODO: serialize the organization affiliations
+        #serialized_organizations = OrganizationSerializer(
+        #    paginated_organizations, many=True, context={"request": request}
+        #)
+        #bundle = BundleSerializer(serialized_organizations, context={"request": request})
+
+        #response = self.get_paginated_response(bundle.data)
+        #return response
+
+    @extend_schema(
+        responses={
+            200: OpenApiResponse(description="Successfully retrieved FHIR Organization resource")
+        }
+    )
+    def retrieve(self, request, pk=None):
+        """
+        Query a specific organization, represented as a FHIR Organization resource
+        """
+        try:
+            UUID(pk)
+        except (ValueError, TypeError):
+            return HttpResponse(f"Organization {escape(pk)} not found", status=404)
+
+        organization = get_object_or_404(
+            Organization.objects.prefetch_related(
+                "authorized_official",
+                "ein",
+                "organizationtoname_set",
+                "organizationtoaddress_set",
+                "organizationtoaddress_set__address",
+                "organizationtoaddress_set__address__address_us",
+                "organizationtoaddress_set__address__address_us__state_code",
+                "organizationtoaddress_set__address_use",
+                "authorized_official__individualtophone_set",
+                "authorized_official__individualtoname_set",
+                "authorized_official__individualtoemail_set",
+                "authorized_official__individualtoaddress_set",
+                "authorized_official__individualtoaddress_set__address__address_us",
+                "authorized_official__individualtoaddress_set__address__address_us__state_code",
+                "clinicalorganization",
+                "clinicalorganization__npi",
+                "clinicalorganization__organizationtootherid_set",
+                "clinicalorganization__organizationtootherid_set__other_id_type",
+                "clinicalorganization__organizationtotaxonomy_set",
+                "clinicalorganization__organizationtotaxonomy_set__nucc_code",
+                "location_set",
+                "location_set__locationtoendpointinstance_set",
+                "location_set__locationtoendpointinstance_set__endpoint_instance",
+                "location_set__locationtoendpointinstance_set__endpoint_instance__ehr_vendor",
+            ),
+            pk=pk,
+        )
+
+        #TODO: serialize the organization affiliations
+        #serialized_organization = OrganizationSerializer(organization, context={"request": request})
+
+        # Set appropriate content type for FHIR responses
+        #response = Response(serialized_organization.data)
+
+        #return response
