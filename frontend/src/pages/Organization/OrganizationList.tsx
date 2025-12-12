@@ -6,10 +6,13 @@ import {
 
 import classNames from "classnames"
 import { useTranslation } from "react-i18next"
-import type { FHIRCollection, FHIROrganization } from "../../@types/fhir"
+import type { FHIROrganization } from "../../@types/fhir"
 import { LoadingIndicator } from "../../components/LoadingIndicator"
 
+import { Pagination } from "@cmsgov/design-system"
 import { Link } from "react-router"
+import { usePagination, usePaginationParams } from "../../hooks/usePagination"
+import { apiUrl } from "../../state/api"
 import layout from "../Layout.module.css"
 import search from "../Search.module.css"
 
@@ -45,32 +48,23 @@ const ListedOrganization = ({ data }: { data: FHIROrganization }) => {
 }
 
 const PaginationCaption = ({
-  searchParams,
-  response,
+  pagination: { page, page_size, total, count },
 }: {
-  searchParams: URLSearchParams
-  response: FHIRCollection<FHIROrganization>
+  pagination: PaginationState
 }) => {
-  const searchPage = searchParams.get("page")
-  let page = 1
-  if (searchPage !== null && !isNaN(parseInt(searchPage))) {
-    page = parseInt(searchPage)
-  }
-
+  const start = page * page_size
   return (
     <span>
-      Showing {page} - {page + (response.results.total - 1)} of {response.count}
+      Showing {start} - {start + total} of {count}
     </span>
   )
 }
 
 export const OrganizationList = () => {
   const { t } = useTranslation()
-  const { data, isLoading } = useOrganizationsAPI()
-
-  if (isLoading) {
-    return <LoadingIndicator />
-  }
+  const params = usePaginationParams()
+  const { data, isLoading, isSuccess } = useOrganizationsAPI(params)
+  const pagination = usePagination(params, data)
 
   const contentClass = classNames(layout.content, "ds-l-container")
   const bannerClass = classNames(layout.banner)
@@ -90,28 +84,51 @@ export const OrganizationList = () => {
           </div>
         </div>
       </section>
-      <main className={contentClass}>
-        {data && (
-          <PaginationCaption
-            searchParams={new URLSearchParams("page=1&page_size=25")}
-            response={data}
-          />
-        )}
 
-        <div className="ds-l-row">
-          <div className="ds-l-col--12 ds-u-margin-bottom--2">
-            {data?.results?.entry?.map((entry, idx) => {
-              if (!entry) return null
-              return (
-                <ListedOrganization
-                  data={entry.resource}
-                  key={entry.resource.id || idx}
-                />
-              )
-            })}
+      {isLoading && <LoadingIndicator />}
+
+      {isSuccess && data && (
+        <main className={contentClass}>
+          <div className="ds-l-row">
+            <div className="ds-l-col--12 ds-u-margin-bottom--2">
+              {data && <PaginationCaption pagination={pagination} />}
+              <Pagination
+                currentPage={pagination.page}
+                onPageChange={() => {}}
+                renderHref={(pageNumber) =>
+                  apiUrl(`/organizations?page=${pageNumber}`)
+                }
+                totalPages={pagination.totalPages}
+              />
+            </div>
           </div>
-        </div>
-      </main>
+
+          <div className="ds-l-row">
+            <div className="ds-l-col--12 ds-u-margin-bottom--2">
+              {data?.results?.entry?.map((entry, idx) => {
+                if (!entry) return null
+                return (
+                  <ListedOrganization
+                    data={entry.resource}
+                    key={entry.resource.id || idx}
+                  />
+                )
+              })}
+            </div>
+
+            <div className="ds-l-col--12 ds-u-margin-bottom--2">
+              <Pagination
+                currentPage={pagination.page}
+                onPageChange={() => {}}
+                renderHref={(pageNumber) =>
+                  apiUrl(`/organizations?page=${pageNumber}`)
+                }
+                totalPages={pagination.totalPages}
+              />
+            </div>
+          </div>
+        </main>
+      )}
     </>
   )
 }

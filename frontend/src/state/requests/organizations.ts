@@ -33,10 +33,16 @@ export const useOrganizationAPI = (organizationId: string | undefined) => {
 
 /// list
 
-const fetchOrganizations = async (): Promise<
-  FHIRCollection<FHIROrganization>
-> => {
-  const url = apiUrl("/fhir/Organization/?page_size=25", {})
+const fetchOrganizations = async (
+  params: PaginationParams,
+): Promise<FHIRCollection<FHIROrganization>> => {
+  const url = new URL(apiUrl("/fhir/Organization/"))
+  if (params.page) {
+    url.searchParams.set("page", params.page.toString())
+  }
+  if (params.page_size) {
+    url.searchParams.set("page_size", params.page_size.toString())
+  }
 
   const response = await fetch(url)
   if (!response.ok) {
@@ -47,11 +53,11 @@ const fetchOrganizations = async (): Promise<
   return response.json()
 }
 
-export const useOrganizationsAPI = () => {
+export const useOrganizationsAPI = (params: PaginationParams) => {
   return useQuery<FHIRCollection<FHIROrganization>>({
-    queryKey: ["organization", "listing"],
+    queryKey: ["organizations", params.page || 1],
     queryFn: () => {
-      return fetchOrganizations()
+      return fetchOrganizations(params)
     },
   })
 }
