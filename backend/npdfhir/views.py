@@ -38,6 +38,7 @@ from .serializers import (
     PractitionerRoleSerializer,
     PractitionerSerializer,
     CapabilityStatementSerializer,
+    OrganizationAffiliationSerializer
 )
 
 from django.conf import settings
@@ -657,16 +658,15 @@ class OrganizationAffiliation(viewsets.GenericViewSet):
 
 
         organization_affiliations = self.filter_queryset(organization_affiliations)
-        paginated_organizations = self.paginate_queryset(organization_affiliations)
+        paginated_organization_affiliations = self.paginate_queryset(organization_affiliations)
         
-        #TODO: serialize the organization affiliations
-        #serialized_organizations = OrganizationSerializer(
-        #    paginated_organizations, many=True, context={"request": request}
-        #)
-        #bundle = BundleSerializer(serialized_organizations, context={"request": request})
+        serialized_organization_affiliations = OrganizationAffiliationSerializer(
+            paginated_organization_affiliations, many=True, context={"request": request}
+        )
+        bundle = BundleSerializer(serialized_organization_affiliations, context={"request": request})
 
-        #response = self.get_paginated_response(bundle.data)
-        #return response
+        response = self.get_paginated_response(bundle.data)
+        return response
 
     @extend_schema(
         responses={
@@ -682,40 +682,57 @@ class OrganizationAffiliation(viewsets.GenericViewSet):
         except (ValueError, TypeError):
             return HttpResponse(f"Organization {escape(pk)} not found", status=404)
 
-        organization = get_object_or_404(
-            Organization.objects.prefetch_related(
-                "authorized_official",
+        organization_affiliation = get_object_or_404(
+            Organization.objects.filter(
+                location__locationtoendpointinstance_set__endpoint_instance__ehr_vendor__isnull=False
+            ).prefetch_related(
                 "ein",
-                "organizationtoname_set",
-                "organizationtoaddress_set",
-                "organizationtoaddress_set__address",
-                "organizationtoaddress_set__address__address_us",
-                "organizationtoaddress_set__address__address_us__state_code",
-                "organizationtoaddress_set__address_use",
-                "authorized_official__individualtophone_set",
-                "authorized_official__individualtoname_set",
-                "authorized_official__individualtoemail_set",
-                "authorized_official__individualtoaddress_set",
-                "authorized_official__individualtoaddress_set__address__address_us",
-                "authorized_official__individualtoaddress_set__address__address_us__state_code",
+
+                # Clinical organization (participating org)
                 "clinicalorganization",
                 "clinicalorganization__npi",
                 "clinicalorganization__organizationtootherid_set",
                 "clinicalorganization__organizationtootherid_set__other_id_type",
                 "clinicalorganization__organizationtotaxonomy_set",
                 "clinicalorganization__organizationtotaxonomy_set__nucc_code",
+
+                # --- NUCC CLASSIFICATIONS ---
+                "clinicalorganization__organizationtotaxonomy_set",
+                "clinicalorganization__organizationtotaxonomy_set__nucc_code",
+
+                # --- OTHER CODE CLASSIFICATIONS ---
+                "clinicalorganization__organizationtootherid_set",
+                "clinicalorganization__organizationtootherid_set__other_id_type",
+
+                # Names and addresses
+                "organizationtoname_set",
+                "organizationtoaddress_set",
+                "organizationtoaddress_set__address",
+                "organizationtoaddress_set__address__address_us",
+                "organizationtoaddress_set__address__address_us__state_code",
+                "organizationtoaddress_set__address_use",
+
+                # Authorized official chain
+                "authorized_official",
+                "authorized_official__individualtophone_set",
+                "authorized_official__individualtoname_set",
+                "authorized_official__individualtoemail_set",
+                "authorized_official__individualtoaddress_set",
+                "authorized_official__individualtoaddress_set__address__address_us",
+                "authorized_official__individualtoaddress_set__address__address_us__state_code",
+
+                # Endpoint + vendor relationship
                 "location_set",
                 "location_set__locationtoendpointinstance_set",
                 "location_set__locationtoendpointinstance_set__endpoint_instance",
                 "location_set__locationtoendpointinstance_set__endpoint_instance__ehr_vendor",
-            ),
+            ).distinct(),
             pk=pk,
         )
 
-        #TODO: serialize the organization affiliations
-        #serialized_organization = OrganizationSerializer(organization, context={"request": request})
+        serialized_organization_affiliation = OrganizationAffiliationSerializer(organization_affiliation, context={"request": request})
 
         # Set appropriate content type for FHIR responses
-        #response = Response(serialized_organization.data)
+        response = Response(serialized_organization_affiliation.data)
 
-        #return response
+        return response
