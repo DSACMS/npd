@@ -1,16 +1,22 @@
 {
-    "title": "Provider group",
-    "unavailable": "This content is not currently available.",
-    "update": {
-        "title": "Are you the practitioner listed?",
-        "subtitle" : "Learn how to",
-        "link": "update your information."
-    },
-    "about": "About",
-    "contact": "Contact information",
-    "identifiers": "Identifiers",
-    "taxonomy": "Taxonomy",
-    "endpoints": "Endpoints",
-    "locations": "Locations",
-    "practitioners": "Practitioners"
+  "title": "Provider group",
+  "unavailable": "This content is not currently available.",
+  "update": {
+    "title": "Are you the practitioner listed?",
+    "subtitle": "Learn how to",
+    "link": "update your information."
+  },
+  "about": "About",
+  "contact": "Contact information",
+  "identifiers": "Identifiers",
+  "taxonomy": "Taxonomy",
+  "endpoints": "Endpoints",
+  "locations": "Locations",
+  "practitioners": "Practitioners",
+
+  "listing": {
+    "title": "All Organizations",
+    "taxonomy": "Primary taxonomy",
+    "location": "Location"
+  }
 }

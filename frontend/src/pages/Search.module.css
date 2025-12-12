@@ -1,0 +1,19 @@
+.entry {
+  & .name {
+    color: #1e3c70;
+
+    font-family: var(--theme-font-family-body, "Open Sans");
+    font-size: var(--theme-font-size-lg, 1.5rem);
+    font-style: normal;
+    font-weight: var(--theme-font-weight-heading-md, 700);
+    line-height: 130%; /* 1.3rem */
+
+    text-decoration: none;
+  }
+
+  & .head {
+    display: flex;
+    align-items: bottom;
+    justify-content: space-between;
+  }
+}
