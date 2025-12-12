@@ -13,6 +13,7 @@ from fhir.resources.R4B.location import Location as FHIRLocation
 from fhir.resources.R4B.contactdetail import ContactDetail
 from fhir.resources.R4B.meta import Meta
 from fhir.resources.R4B.organization import Organization as FHIROrganization
+from fhir.resources.R4B.organizationaffiliation import OrganizationAffiliation as FHIROrganizationAffiliation
 from fhir.resources.R4B.period import Period
 from fhir.resources.R4B.practitioner import Practitioner, PractitionerQualification
 from fhir.resources.R4B.practitionerrole import PractitionerRole
@@ -434,6 +435,162 @@ class OrganizationSerializer(serializers.Serializer):
             organization.contact = [authorized_official]
 
         return organization.model_dump()
+
+class OrganizationAffiliationSerializer(serializers.Serializer):
+    identifier = OtherIdentifierSerializer(source="organizationtootheridentifier_set", many=True, read_only=True)
+
+    class Meta:
+        fields = [
+            "identifier",
+            "active",
+            "period",
+            "organization",
+            "participatingOrganization",
+            "network",
+            "code",
+            "specialty",
+            "location",
+            "healthcareService",
+            "telecom",
+            "endpoint"
+        ]
+
+    def to_representation(self, instance):
+        request = self.context.get("request")
+        representation = super().to_representation(instance)
+        organization_affiliation = FHIROrganizationAffiliation()
+        #organization_affiliation.active = instance.is_active_affiliation
+
+        organization_affiliation.id = str(instance.id)
+
+        identifiers = []
+        codes = []
+        locations = []
+
+        #Get npis of all orgs
+
+        # if instance.ein:
+        #    ein_identifier = Identifier(
+        #        system="https://terminology.hl7.org/NamingSystem-USEIN.html",
+        #        value=str(instance.ein.ein_id),
+        #        type=CodeableConcept(
+        #            coding=[Coding(
+        #                system="http://terminology.hl7.org/CodeSystem/v2-0203",
+        #                code="TAX",
+        #                display="Tax ID number"
+        #            )]
+        #        )
+        #    )
+        #    identifiers.append(ein_identifier)
+
+        if hasattr(instance, "clinicalorganization"):
+            clinical_org = instance.clinicalorganization
+            if clinical_org and clinical_org.npi:
+                npi_identifier = Identifier(
+                    system="http://terminology.hl7.org/NamingSystem/npi",
+                    value=str(clinical_org.npi.npi),
+                    type=CodeableConcept(
+                        coding=[
+                            Coding(
+                                system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                                code="PRN",
+                                display="Provider number",
+                            )
+                        ]
+                    ),
+                    use="official",
+                    period=Period(
+                        start=clinical_org.npi.enumeration_date,
+                        end=clinical_org.npi.deactivation_date,
+                    ),
+                )
+                identifiers.append(npi_identifier)
+
+                for taxonomy in clinical_org.organizationtotaxonomy_set.all():
+                    nucc_code = CodeableConcept(
+                        coding=[
+                            Coding(
+                                system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                                code=taxonomy.nucc_code.code,
+                                display=taxonomy.nucc_code.display_name,
+                            )
+                        ]
+                    )
+                    codes.append(nucc_code)
+                
+                for other_id in clinical_org.organizationtootherid_set.all():
+                    other_code = CodeableConcept(
+                        coding=[
+                            Coding(
+                                system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                                code=other_id.other_id,
+                                display=other_id.other_id_type.value,
+                            )
+                        ]
+                    )
+
+                    codes.append(other_code)
+
+                for other_id in clinical_org.organizationtootherid_set.all():
+                    other_identifier = Identifier(
+                        system=str(other_id.other_id_type_id),
+                        value=other_id.other_id,
+                        type=CodeableConcept(
+                            coding=[
+                                Coding(
+                                    system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    code="test",  # do we define this based on the type of id it is?
+                                    display="test",  # same as above ^
+                                )
+                            ]
+                        ),
+                    )
+                    identifiers.append(other_identifier)
+                
+
+
+        organization_affiliation.identifier = identifiers
+
+        organization_affiliation.organization = Reference(
+            display=str(instance.ehr_vendor_name)
+        )
+
+        organization_affiliation.participatingOrganization = Reference(
+            display=str(instance.organization_name)
+        )
+
+        #NOTE: Period for OrganizationAffiliation cannot currently be fetched so its blank 
+        
+        organization_affiliation.network = [
+            Reference(
+                display=str(instance.organization_name)
+            )
+        ]
+
+        organization_affiliation.code = codes
+
+        #NOTE: not sure how to do specialty yet
+
+        endpoints = []
+
+        for location in instance.location_set.all():
+            locations.append(
+                genReference("fhir-location-detail", location.id, request)
+            )
+
+            for link in location.locationtoendpointinstance_set.all():
+                endpoint = link.endpoint_instance
+
+                endpoints.append(
+                    genReference("fhir-endpoint-detail", endpoint.id, request)
+                )
+        
+        organization_affiliation.location = locations
+
+        #TODO: healthcare services
+        #TODO: contact info
+
+        return organization_affiliation.model_dump()
 
 
 class PractitionerSerializer(serializers.Serializer):
