@@ -31,4 +31,4 @@ router.register(
     r"PractitionerRole", views.FHIRPractitionerRoleViewSet, basename="fhir-practitionerrole"
 )
 router.register(r"Location", views.FHIRLocationViewSet, basename="fhir-location")
-router.register(r"OrganizationAffiliation", views.OrganizationAffiliation, basename="fhir-organizationaffiliation")
+router.register(r"OrganizationAffiliation", views.FHIROrganizationAffiliationViewSet, basename="fhir-organizationaffiliation")

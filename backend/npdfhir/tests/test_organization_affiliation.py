@@ -136,5 +136,3 @@ class OrganizationAffiliationViewSetTestCase(APITestCase):
         response = self.client.get(url)
         assert_fhir_response(self, response)
         assert_has_results(self, response)
-
-        print(response.data)

@@ -563,7 +563,7 @@ class FHIRCapabilityStatementView(APIView):
 
         return Response(response)
 
-class OrganizationAffiliation(viewsets.GenericViewSet):
+class FHIROrganizationAffiliationViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR EHR Vendor to Organizaton relationships
     """
