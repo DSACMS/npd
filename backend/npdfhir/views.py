@@ -594,45 +594,67 @@ class OrganizationAffiliation(viewsets.GenericViewSet):
 
         organization_affiliations = (
             Organization.objects.all()
+            .filter(
+                location__locationtoendpointinstance_set__endpoint_instance__ehr_vendor__isnull=False
+            )
             .prefetch_related(
-                "authorized_official",
                 "ein",
-                "organizationtoname_set",
-                "organizationtoaddress_set",
-                "organizationtoaddress_set__address",
-                "organizationtoaddress_set__address__address_us",
-                "organizationtoaddress_set__address__address_us__state_code",
-                "organizationtoaddress_set__address_use",
-                "authorized_official__individualtophone_set",
-                "authorized_official__individualtoname_set",
-                "authorized_official__individualtoemail_set",
-                "authorized_official__individualtoaddress_set",
-                "authorized_official__individualtoaddress_set__address__address_us",
-                "authorized_official__individualtoaddress_set__address__address_us__state_code",
+
+                # Clinical organization (participating org)
                 "clinicalorganization",
                 "clinicalorganization__npi",
                 "clinicalorganization__organizationtootherid_set",
                 "clinicalorganization__organizationtootherid_set__other_id_type",
                 "clinicalorganization__organizationtotaxonomy_set",
                 "clinicalorganization__organizationtotaxonomy_set__nucc_code",
+
+                # --- NUCC CLASSIFICATIONS ---
+                "clinicalorganization__organizationtotaxonomy_set",
+                "clinicalorganization__organizationtotaxonomy_set__nucc_code",
+
+                # --- OTHER CODE CLASSIFICATIONS ---
+                "clinicalorganization__organizationtootherid_set",
+                "clinicalorganization__organizationtootherid_set__other_id_type",
+
+                # Names and addresses
+                "organizationtoname_set",
+                "organizationtoaddress_set",
+                "organizationtoaddress_set__address",
+                "organizationtoaddress_set__address__address_us",
+                "organizationtoaddress_set__address__address_us__state_code",
+                "organizationtoaddress_set__address_use",
+
+                # Authorized official chain
+                "authorized_official",
+                "authorized_official__individualtophone_set",
+                "authorized_official__individualtoname_set",
+                "authorized_official__individualtoemail_set",
+                "authorized_official__individualtoaddress_set",
+                "authorized_official__individualtoaddress_set__address__address_us",
+                "authorized_official__individualtoaddress_set__address__address_us__state_code",
+
+                # Endpoint + vendor relationship
                 "location_set",
                 "location_set__locationtoendpointinstance_set",
                 "location_set__locationtoendpointinstance_set__endpoint_instance",
                 "location_set__locationtoendpointinstance_set__endpoint_instance__ehr_vendor",
             )
             .annotate(
+                # Organization name
                 organization_name=F("organizationtoname__name"),
+                ein_value=F("ein__ein"),
                 endpoint_name=F(
-                    "location_set__locationtoendpointinstance_set__endpoint_instance__name"
+                    "location__locationtoendpointinstance_set__endpoint_instance__name"
                 ),
                 ehr_vendor_name=F(
-                    "location_set__locationtoendpointinstance_set__endpoint_instance__ehr_vendor__name"
+                    "location__locationtoendpointinstance_set__endpoint_instance__ehr_vendor__name"
                 ),
-                is_active_affiliation=F("clinicalorganization__is_active"),
+                participating_npi=F("clinicalorganization__npi__npi"),
             )
-            .order_by("organization_name")
             .distinct()
+            .order_by("organization_name")
         )
+
 
         organization_affiliations = self.filter_queryset(organization_affiliations)
         paginated_organizations = self.paginate_queryset(organization_affiliations)

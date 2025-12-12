@@ -462,6 +462,8 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
         organization_affiliation.active = instance.is_active_affiliation
 
         identifiers = []
+        codes = []
+        locations = []
 
         #Get npis of all orgs
 
@@ -503,6 +505,31 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
                     )
                     identifiers.append(npi_identifier)
 
+                for taxonomy in clinical_org.organizationtotaxonomy_set.all():
+                    nucc_code = CodeableConcept(
+                        coding=[
+                            Coding(
+                                system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                                code=taxonomy.nucc_code.code,
+                                display=taxonomy.nucc_code.display_name,
+                            )
+                        ]
+                    )
+                    codes.append(nucc_code)
+                
+                for other_id in clinical_org.organizationtootherid_set.all():
+                    other_code = CodeableConcept(
+                        coding=[
+                            Coding(
+                                system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                                code=other_id.other_id,
+                                display=other_id.type,
+                            )
+                        ]
+                    )
+
+                    codes.append(other_code)
+
                 for other_id in clinical_org.organizationtootherid_set.all():
                     other_identifier = Identifier(
                         system=str(other_id.other_id_type_id),
@@ -518,10 +545,51 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
                         ),
                     )
                     identifiers.append(other_identifier)
-        
-        organization_affiliation.identifiers = identifiers
-        
+                
 
+
+        organization_affiliation.identifiers = identifiers
+
+        organization_affiliation.organization = Reference(
+            display=str(instance.ehr_vendor_name)
+        )
+
+        organization_affiliation.participatingOrganization = Reference(
+            display=str(instance.organization_name)
+        )
+
+        #NOTE: Period for OrganizationAffiliation cannot currently be fetched so its blank 
+        
+        organization_affiliation.network = [
+            Reference(
+                display=str(instance.organization_name)
+            )
+        ]
+
+        organization_affiliation.code = codes
+
+        #NOTE: not sure how to do specialty yet
+
+        endpoints = []
+
+        for location in instance.location_set.all():
+            locations.append(
+                genReference("fhir-location-detail", location.id, request)
+            )
+
+            for link in location.locationtoendpointinstance_set.all():
+                endpoint = link.endpoint_instance
+
+                endpoints.append(
+                    genReference("fhir-endpoint-detail", endpoint.id, request)
+                )
+        
+        organization_affiliation.location = locations
+
+        #TODO: healthcare services
+        #TODO: contact info
+
+        return organization_affiliation.model_dump()
 
 
 class PractitionerSerializer(serializers.Serializer):
