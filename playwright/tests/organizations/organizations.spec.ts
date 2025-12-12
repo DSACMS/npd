@@ -39,6 +39,6 @@ test.describe("Organizations", () => {
       "All Organizations",
     )
 
-    expect(page.getByText("NPI: 1679576367")).not.toBeNull()
+    expect(page.getByText("NPI: 1234567890")).not.toBeNull()
   })
 })
