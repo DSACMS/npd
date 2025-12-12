@@ -4,8 +4,6 @@ import fhir_organization from "../../../frontend/tests/fixtures/fhir_organizatio
 import fhir_organizations from "../../../frontend/tests/fixtures/fhir_organizations.json"
 
 test.describe("Organizations", () => {
-  test.use({ storageState: "tests/.auth/user.json" })
-
   test("visit an Organization page", async ({ page }) => {
     // mock the API using the existing test fixture from frontend/
     await page.route("*/**/fhir/Organization/12345/", async (route) => {
@@ -39,6 +37,6 @@ test.describe("Organizations", () => {
       "All Organizations",
     )
 
-    expect(page.getByText("NPI: 1679576367")).not.toBeNull()
+    await expect(page.getByText("NPI: 1679576367")).toBeInViewport()
   })
 })
