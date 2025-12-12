@@ -1,6 +1,6 @@
 from uuid import UUID
 
-from django.db.models import F, Value, CharField
+from django.db.models import F, Value, CharField, OuterRef, Exists, Subquery
 from django.db.models.functions import Concat
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
@@ -28,6 +28,7 @@ from .models import (
     Organization,
     Provider,
     ProviderToLocation,
+    LocationToEndpointInstance
 )
 
 from .serializers import (
@@ -576,7 +577,7 @@ class OrganizationAffiliation(viewsets.GenericViewSet):
     filterset_class = OrganizationFilterSet
     pagination_class = CustomPaginator
 
-    ordering_fields = ["ehr_vendor_name","organization_name"]
+    ordering_fields = ["ehr_vendor_name","organization_name","endpoint_name"]
 
     # permission_classes = [permissions.IsAuthenticated]
     @extend_schema(
@@ -593,10 +594,28 @@ class OrganizationAffiliation(viewsets.GenericViewSet):
         Default sort order: ascending by organization name
         """
 
+        endpoint_subquery = LocationToEndpointInstance.objects.filter(
+            location__organization=OuterRef('pk'),
+            endpoint_instance__ehr_vendor__isnull=False
+        )
+
+        # Subquery for endpoint name (take first matching)
+        endpoint_name_subquery = LocationToEndpointInstance.objects.filter(
+            location__organization=OuterRef('pk'),
+            endpoint_instance__ehr_vendor__isnull=False
+        ).values('endpoint_instance__name')[:1]
+
+        # Subquery for ehr_vendor name (take first matching)
+        ehr_vendor_name_subquery = LocationToEndpointInstance.objects.filter(
+            location__organization=OuterRef('pk'),
+            endpoint_instance__ehr_vendor__isnull=False
+        ).values('endpoint_instance__ehr_vendor__name')[:1]
+
+
         organization_affiliations = (
             Organization.objects.all()
             .filter(
-                location__locationtoendpointinstance_set__endpoint_instance__ehr_vendor__isnull=False
+                Exists(endpoint_subquery)
             )
             .prefetch_related(
                 "ein",
@@ -643,13 +662,9 @@ class OrganizationAffiliation(viewsets.GenericViewSet):
             .annotate(
                 # Organization name
                 organization_name=F("organizationtoname__name"),
-                ein_value=F("ein__ein"),
-                endpoint_name=F(
-                    "location__locationtoendpointinstance_set__endpoint_instance__name"
-                ),
-                ehr_vendor_name=F(
-                    "location__locationtoendpointinstance_set__endpoint_instance__ehr_vendor__name"
-                ),
+                ein_value=F("ein__ein_id"),
+                endpoint_name=Subquery(endpoint_name_subquery),
+                ehr_vendor_name=Subquery(ehr_vendor_name_subquery),
                 participating_npi=F("clinicalorganization__npi__npi"),
             )
             .distinct()
@@ -682,9 +697,14 @@ class OrganizationAffiliation(viewsets.GenericViewSet):
         except (ValueError, TypeError):
             return HttpResponse(f"Organization {escape(pk)} not found", status=404)
 
+        endpoint_subquery = LocationToEndpointInstance.objects.filter(
+            location__organization=OuterRef('pk'),
+            endpoint_instance__ehr_vendor__isnull=False
+        )
+
         organization_affiliation = get_object_or_404(
             Organization.objects.filter(
-                location__locationtoendpointinstance_set__endpoint_instance__ehr_vendor__isnull=False
+                Exists(endpoint_subquery)
             ).prefetch_related(
                 "ein",
 

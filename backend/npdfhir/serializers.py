@@ -13,7 +13,7 @@ from fhir.resources.R4B.location import Location as FHIRLocation
 from fhir.resources.R4B.contactdetail import ContactDetail
 from fhir.resources.R4B.meta import Meta
 from fhir.resources.R4B.organization import Organization as FHIROrganization
-from fhir.resource.R4B.organization_affiliations import OrganizationAffiliation as FHIROrganizationAffiliation
+from fhir.resources.R4B.organizationaffiliation import OrganizationAffiliation as FHIROrganizationAffiliation
 from fhir.resources.R4B.period import Period
 from fhir.resources.R4B.practitioner import Practitioner, PractitionerQualification
 from fhir.resources.R4B.practitionerrole import PractitionerRole
@@ -459,7 +459,9 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
         request = self.context.get("request")
         representation = super().to_representation(instance)
         organization_affiliation = FHIROrganizationAffiliation()
-        organization_affiliation.active = instance.is_active_affiliation
+        #organization_affiliation.active = instance.is_active_affiliation
+
+        organization_affiliation.id = str(instance.id)
 
         identifiers = []
         codes = []
@@ -484,26 +486,25 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
         if hasattr(instance, "clinicalorganization"):
             clinical_org = instance.clinicalorganization
             if clinical_org and clinical_org.npi:
-                for npi in clinical_org.npi.all():
-                    npi_identifier = Identifier(
-                        system="http://terminology.hl7.org/NamingSystem/npi",
-                        value=str(npi),
-                        type=CodeableConcept(
-                            coding=[
-                                Coding(
-                                    system="http://terminology.hl7.org/CodeSystem/v2-0203",
-                                    code="PRN",
-                                    display="Provider number",
-                                )
-                            ]
-                        ),
-                        use="official",
-                        period=Period(
-                            start=npi.enumeration_date,
-                            end=npi.deactivation_date,
-                        ),
-                    )
-                    identifiers.append(npi_identifier)
+                npi_identifier = Identifier(
+                    system="http://terminology.hl7.org/NamingSystem/npi",
+                    value=str(clinical_org.npi.npi),
+                    type=CodeableConcept(
+                        coding=[
+                            Coding(
+                                system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                                code="PRN",
+                                display="Provider number",
+                            )
+                        ]
+                    ),
+                    use="official",
+                    period=Period(
+                        start=clinical_org.npi.enumeration_date,
+                        end=clinical_org.npi.deactivation_date,
+                    ),
+                )
+                identifiers.append(npi_identifier)
 
                 for taxonomy in clinical_org.organizationtotaxonomy_set.all():
                     nucc_code = CodeableConcept(
@@ -523,7 +524,7 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
                             Coding(
                                 system="http://terminology.hl7.org/CodeSystem/v2-0203",
                                 code=other_id.other_id,
-                                display=other_id.type,
+                                display=other_id.other_id_type.value,
                             )
                         ]
                     )
@@ -548,7 +549,7 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
                 
 
 
-        organization_affiliation.identifiers = identifiers
+        organization_affiliation.identifier = identifiers
 
         organization_affiliation.organization = Reference(
             display=str(instance.ehr_vendor_name)
