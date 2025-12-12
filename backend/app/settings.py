@@ -25,118 +25,124 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('NPD_DJANGO_SECRET')
+SECRET_KEY = config("NPD_DJANGO_SECRET")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', cast=bool)
+DEBUG = config("DEBUG", cast=bool)
 
 # Detect if tests are being run
-TESTING = 'test' in sys.argv
+TESTING = "test" in sys.argv or config("TESTING", default=False, cast=bool)
 
 REQUIRE_AUTHENTICATION = config("NPD_REQUIRE_AUTHENTICATION", default=False, cast=bool)
 
 if DEBUG:
-    ALLOWED_HOSTS = ['localhost','127.0.0.1','0.0.0.0','testserver','django-web']
+    ALLOWED_HOSTS = ["localhost", "127.0.0.1", "0.0.0.0", "testserver", "django-web"]
 else:
-    ALLOWED_HOSTS = config("DJANGO_ALLOWED_HOSTS").split(',')
+    ALLOWED_HOSTS = config("DJANGO_ALLOWED_HOSTS").split(",")
 
-INTERNAL_APIS = config("DJANGO_ALLOWED_HOSTS").split(',')
+INTERNAL_APIS = config("DJANGO_ALLOWED_HOSTS").split(",")
 
 # Application definition
 
 INSTALLED_APPS = [
-    'npdfhir.apps.NPDFHIRConfig',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'corsheaders',
-    'rest_framework',
-    'django_filters',
-    'drf_spectacular',
-    'xmlrunner',
-    'django_structlog',
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    "corsheaders",
+    "rest_framework",
+    "django_filters",
+    "drf_spectacular",
+    "xmlrunner",
+    "django_structlog",
+    "flags",
+    "npdfhir.apps.NPDFHIRConfig",
+    "provider_directory.apps.ProviderDirectoryConfig",
 ]
 
 if not TESTING:
-    INSTALLED_APPS.append('debug_toolbar')
+    INSTALLED_APPS.append("debug_toolbar")
 
 MIDDLEWARE = [
-    'django_structlog.middlewares.RequestMiddleware',
-    'npdfhir.middleware.HealthCheckMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "django_structlog.middlewares.RequestMiddleware",
+    "npdfhir.middleware.HealthCheckMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.security.SecurityMiddleware",
+    "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.common.CommonMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.contrib.messages.middleware.MessageMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
 if REQUIRE_AUTHENTICATION:
-    MIDDLEWARE.append('django.contrib.auth.middleware.LoginRequiredMiddleware')
+    MIDDLEWARE.append("django.contrib.auth.middleware.LoginRequiredMiddleware")
 
 if not TESTING:
-    MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
+    MIDDLEWARE.append("debug_toolbar.middleware.DebugToolbarMiddleware")
     # This must come at the end.
 
-# We want the fhir urls to be entirely open
-CORS_URLS_REGEX = r'^/fhir/.*$'
+# We want the fhir and frontend API urls to be entirely open
+CORS_URLS_REGEX = r"^/(fhir|api)/.*$"
 CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOWED_METHODS = ['GET']
+CORS_ALLOWED_METHODS = ["GET"]
 
 if DEBUG:
     # in development, allow the frontend app to POST forms to the backend
-    CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'http://localhost:3000']
+    CSRF_TRUSTED_ORIGINS = [
+        "http://localhost:8000",
+        "http://localhost:8008",
+        "http://localhost:3000",
+    ]
 
-ROOT_URLCONF = 'app.urls'
-APPEND_SLASH = True # this is default, but we're making sure it's explicit
+ROOT_URLCONF = "app.urls"
+APPEND_SLASH = True  # this is default, but we're making sure it's explicit
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            os.path.join(BASE_DIR, 'templates'),
+        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        "DIRS": [
+            os.path.join(BASE_DIR, "templates"),
             # NOTE: (@abachman-dsac) this setup allows frontend/ to build directly
             # into provider_directory/static/ and provider_directory.views.landing to
             # reference the resulting index.html
-            os.path.join(BASE_DIR, 'provider_directory', 'static'),
+            os.path.join(BASE_DIR, "provider_directory", "static"),
         ],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "context_processors": [
+                "django.template.context_processors.request",
+                "django.contrib.auth.context_processors.auth",
+                "django.contrib.messages.context_processors.messages",
             ],
         },
     },
 ]
 
-WSGI_APPLICATION = 'app.wsgi.application'
+WSGI_APPLICATION = "app.wsgi.application"
 
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': config('NPD_DB_ENGINE'),
-        'USER': config('NPD_DB_USER'),
-        'PASSWORD': config('NPD_DB_PASSWORD'),
-        'HOST': config('NPD_DB_HOST'),
-        'NAME': config('NPD_DB_NAME'),
-        'PORT': config('NPD_DB_PORT'),
+    "default": {
+        "ENGINE": config("NPD_DB_ENGINE"),
+        "USER": config("NPD_DB_USER"),
+        "PASSWORD": config("NPD_DB_PASSWORD"),
+        "HOST": config("NPD_DB_HOST"),
+        "NAME": config("NPD_DB_NAME"),
+        "PORT": config("NPD_DB_PORT"),
         "TEST": {
             # Django will create a new test DB with this name prefix
             "NAME": f"{os.getenv('NPD_DB_NAME', 'npd')}",
-            "MIRROR": "default",                 # optional: avoids creating a test DB
+            "MIRROR": "default",  # optional: avoids creating a test DB
         },
-        'OPTIONS': {
-            'options': '-c search_path=npd,public',
+        "OPTIONS": {
+            "options": "-c search_path=npd,public",
             "pool": {
                 # our default gunicorn container configuration only spins up 3 workerse
                 "min_size": 2,
@@ -146,15 +152,15 @@ DATABASES = {
                 # after 2 clients are waiting for connections, subsequent requests should immediately fail
                 "max_waiting": 2,
             },
-        }
+        },
     }
 }
 
-TEST_RUNNER = 'xmlrunner.extra.djangotestrunner.XMLTestRunner'
+TEST_RUNNER = "xmlrunner.extra.djangotestrunner.XMLTestRunner"
 # Directory where XML reports will be written
-TEST_OUTPUT_DIR = './artifacts/test-reports'
+TEST_OUTPUT_DIR = "./artifacts/test-reports"
 FIXTURE_DIRS = [
-    os.path.join(BASE_DIR, 'provider_directory', 'fixtures'),
+    os.path.join(BASE_DIR, "provider_directory", "fixtures"),
 ]
 
 # Password validation
@@ -162,16 +168,16 @@ FIXTURE_DIRS = [
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
 ]
 
@@ -179,9 +185,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = "UTC"
 
 USE_I18N = True
 
@@ -190,11 +196,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = "static/"
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-    os.path.join(BASE_DIR, 'provider_directory', 'static'),
+    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "provider_directory", "static"),
 ]
 
 # STATICFILES_DIRS = [
@@ -204,7 +210,7 @@ STATICFILES_DIRS = [
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 REST_FRAMEWORK = {
     "DEFAULT_FILTER_BACKENDS": ["django_filters.rest_framework.DjangoFilterBackend"],
@@ -212,17 +218,17 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.BasicAuthentication",
         "rest_framework.authentication.SessionAuthentication",
     ],
-    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }
 
 SPECTACULAR_SETTINGS = {
-    'TITLE': 'NPD FHIR API',
-    'DESCRIPTION': 'Developers can query and retrieve National Provider Directory data via a REST API. The API structure conforms to the HL7 Fast Healthcare Interoperability Resources (FHIR) standard and it returns JSON responses following the FHIR specification.',
-    'VERSION': 'beta',
-    'CONTACT': {'email': 'npd@cms.hhs.gov'},
-    'LICENSE': {'name': 'CC0-1.0 License'},
-    'SERVE_INCLUDE_SCHEMA': False,
-    'COMPONENT_SPLIT_REQUEST': True
+    "TITLE": "NPD FHIR API",
+    "DESCRIPTION": "Developers can query and retrieve National Provider Directory data via a REST API. The API structure conforms to the HL7 Fast Healthcare Interoperability Resources (FHIR) standard and it returns JSON responses following the FHIR specification.",
+    "VERSION": "beta",
+    "CONTACT": {"email": "npd@cms.hhs.gov"},
+    "LICENSE": {"name": "CC0-1.0 License"},
+    "SERVE_INCLUDE_SCHEMA": False,
+    "COMPONENT_SPLIT_REQUEST": True,
 }
 
 if REQUIRE_AUTHENTICATION:
@@ -232,9 +238,7 @@ LOGIN_REDIRECT_URL = "/"
 LOGIN_URL = "/accounts/login/"
 LOGOUT_REDIRECT_URL = LOGIN_URL
 
-DEBUG_TOOLBAR_CONFIG = {
-    'SHOW_TOOLBAR_CALLBACK': lambda request: DEBUG
-}
+DEBUG_TOOLBAR_CONFIG = {"SHOW_TOOLBAR_CALLBACK": lambda request: DEBUG and not TESTING}
 
 CACHES = {
     "default": {
@@ -242,6 +246,27 @@ CACHES = {
         "LOCATION": "/var/tmp/django_cache",
     }
 }
+
+SWAGGER_SETTINGS = {"USE_SESSION_AUTH": False}
+
+# feature flags
+FLAGS = {
+    "SEARCH_APP": [],  # can see the search app at all
+    "PRACTITIONER_LOOKUP": [],  # can reach the provider lookup page
+    "PRACTITIONER_LOOKUP_DETAILS": [],  # can reach all details in the provider lookup page
+    "ORGANIZATION_LOOKUP": [],
+    "ORGANIZATION_LOOKUP_DETAILS": [],
+    # static conditions can be defined in this file or through the Admin interface
+    # see the list of built-in conditions here: https://cfpb.github.io/django-flags/conditions/
+    # 'ANONYMOUS_USER': [
+    #     {"condition": "anonymous", "value": True}
+    # ],
+    # 'FLAG_WITH_ANY_CONDITIONS': [
+    #     {'condition': 'condition name', 'value': 'expected value to be enabled'},
+    #     {'condition': 'user', 'value': 'npd@cms.hhs.gov'},
+    # ],
+}
+
 
 if TESTING:
     LOG_LEVEL = logging.ERROR
@@ -270,7 +295,9 @@ LOGGING = {
         },
         "key_value": {
             "()": structlog.stdlib.ProcessorFormatter,
-            "processor": structlog.processors.KeyValueRenderer(key_order=['timestamp', 'level', 'event', 'logger']),
+            "processor": structlog.processors.KeyValueRenderer(
+                key_order=["timestamp", "level", "event", "logger"]
+            ),
         },
     },
     # Custom handler config that gets log messages and outputs them to console

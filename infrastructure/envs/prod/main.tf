@@ -37,6 +37,20 @@ module "domains" {
   tier = var.tier
 }
 
+module "dns" {
+  source = "../../modules/dns"
+
+  enable_internal_domain_for_directory = false
+  namespace_domain                     = module.domains.namespace_domain
+  api_domain                           = module.domains.api_domain
+  api_alb_dns_name                     = module.fhir-api.api_alb_dns_name
+  directory_domain                     = module.domains.directory_domain
+  directory_alb_dns_name               = module.fhir-api.api_dot_alb_dns_name
+  directory_alb_zone_id                = module.fhir-api.api_alb_zone_id
+  etl_domain                           = module.domains.etl_domain
+  etl_alb_dns_name                     = module.etl.etl_ui_alb_dns_name
+}
+
 module "repositories" {
   source = "../../modules/repositories"
 
@@ -61,6 +75,7 @@ module "api-db" {
   family                  = "postgres17"
   instance_class          = "db.t3.large"
   allocated_storage       = 100
+  max_allocated_storage   = 1000
   storage_type            = "gp3"
   publicly_accessible     = false
   username                = "npd"
@@ -83,6 +98,7 @@ module "etl-db" {
   family                  = "postgres17"
   instance_class          = "db.t3.large"
   allocated_storage       = 500
+  max_allocated_storage   = 1000
   publicly_accessible     = false
   username                = "npd_etl"
   db_name                 = "npd_etl"
@@ -124,19 +140,18 @@ module "ecs" {
 module "fhir-api" {
   source = "../../modules/fhir-api"
 
-  account_name              = local.account_name
-  fhir_api_migration_image  = var.migration_image
-  fhir_api_image            = var.fhir_api_image
-  redirect_to_strategy_page = var.redirect_to_strategy_page
-  private_load_balancer     = var.fhir_api_private_load_balancer
-  ecs_cluster_id            = module.ecs.cluster_id
-  desired_task_count        = 3
-  require_authentication    = var.require_authentication
+  account_name             = local.account_name
+  fhir_api_migration_image = var.migration_image
+  fhir_api_image           = var.fhir_api_image
+  private_load_balancer    = var.fhir_api_private_load_balancer
+  ecs_cluster_id           = module.ecs.cluster_id
+  desired_task_count       = 3
+  require_authentication   = var.require_authentication
   db = {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address
     db_instance_port                   = module.api-db.db_instance_port
-    db_instance_name                   = module.api-db.db_instance_name
+    db_instance_name                   = "npd_halloween_sjp"
   }
   networking = {
     private_subnet_ids    = module.networking.private_subnet_ids
@@ -216,9 +231,11 @@ module "github-actions" {
   source = "../../modules/github-actions-runner"
 
   account_name = local.account_name
-  subnet_id    = module.networking.private_subnet_ids[0]
   security_group_ids = concat(
     module.networking.cmscloud_security_group_ids,
     [module.networking.github_action_runner_security_group_id]
   )
+  subnet_ids                  = module.networking.private_subnet_ids
+  ecs_cluster_id              = module.ecs.cluster_id
+  github_runner_image         = var.github_runner_image
 }

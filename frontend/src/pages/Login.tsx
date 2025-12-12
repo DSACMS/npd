@@ -19,13 +19,14 @@ export const Login = () => {
     <main className={mainClasses}>
       <div className="ds-base ds-l-container">
         <div className="ds-l-row">
-          <div className="ds-l-md-col--8 ds-l-sm-col--12">
+          <div className="ds-l-lg-col--6 ds-l-md-col--8">
             <div className={styles.spacer}></div>
             <div className={styles.card}>
               <form
                 method="post"
                 action={apiUrl("/accounts/login/")}
                 className="usa-form"
+                id="login-form"
               >
                 <CsrfInput />
                 <fieldset className="usa-fieldset">
@@ -36,7 +37,7 @@ export const Login = () => {
                     The National Provider Directory is under development with
                     limited access for test users.
                   </p>
-                  <label className="usa-label" htmlFor="email">
+                  <label className="usa-label" htmlFor="username">
                     Username
                   </label>
                   <input
@@ -50,12 +51,12 @@ export const Login = () => {
                     autoFocus
                     required
                   />
-                  <label className="usa-label" htmlFor="password-sign-in">
+                  <label className="usa-label" htmlFor="password">
                     Password
                   </label>
                   <input
                     className="usa-input"
-                    id="password-sign-in"
+                    id="password"
                     name="password"
                     type="password"
                     required
@@ -64,7 +65,7 @@ export const Login = () => {
                     title="Toggle password"
                     type="button"
                     className="usa-show-password"
-                    aria-controls="password-sign-in"
+                    aria-controls="password"
                     data-show-text="Show password"
                     data-hide-text="Hide password"
                   >

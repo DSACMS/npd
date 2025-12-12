@@ -149,11 +149,12 @@ resource "aws_ecs_task_definition" "app" {
       environment = [
         {
           name  = "FLYWAY_URL"
-          value = "jdbc:postgresql://${var.db.db_instance_address}:${var.db.db_instance_port}/${var.db.db_instance_name}"
+          value = "jdbc:postgresql://${var.db.db_instance_address}:${var.db.db_instance_port}/${var.db.db_instance_name}?options=--search_path%3Dnpd%2Cpublic"
         },
         {
           name  = "FLYWAY_PLACEHOLDERS_apiSchema"
-          value = var.db.db_instance_name
+          # value = var.db.db_instance_name
+          value = "npd"
         },
       ]
       secrets = [
@@ -206,7 +207,7 @@ resource "aws_ecs_task_definition" "app" {
         },
         {
           name  = "DJANGO_ALLOWED_HOSTS"
-          value = aws_lb.fhir_api_alb.dns_name
+          value = "${aws_lb.fhir_api_alb.dns_name},${var.networking.api_domain},${var.networking.directory_domain}"
         },
         {
           name  = "DJANGO_LOGLEVEL"
@@ -312,12 +313,14 @@ resource "aws_lb_target_group" "fhir_api_tg" {
 }
 
 # Port 80 traffic
-# TODO: upgrade all incoming traffic to HTTPS after:
+# TODO: upgrade all incoming traffic to HTTPS as:
 # - internal domain names are registered
 # - ssl certs are requested and validated
+# Right now, this is only true of production but lower envs
+# dev, test, prod-test will get domains and SSL certs of their own
 
 resource "aws_lb_listener" "forward_to_task_group" {
-  count             = var.redirect_to_strategy_page ? 0 : 1
+  count             = var.networking.enable_ssl_directory ? 0 : 1
   load_balancer_arn = aws_lb.fhir_api_alb.arn
   port              = 80
   protocol          = "HTTP"
@@ -328,8 +331,8 @@ resource "aws_lb_listener" "forward_to_task_group" {
   }
 }
 
-resource "aws_lb_listener" "forward_to_strategy_page" {
-  count             = var.redirect_to_strategy_page ? 1 : 0
+resource "aws_alb_listener" "forward_to_https" {
+  count             = var.networking.enable_ssl_directory ? 1 : 0
   load_balancer_arn = aws_lb.fhir_api_alb.arn
   port              = 80
   protocol          = "HTTP"
@@ -338,26 +341,9 @@ resource "aws_lb_listener" "forward_to_strategy_page" {
     type = "redirect"
     redirect {
       status_code = "HTTP_302"
-      host        = "www.cms.gov"
-      path        = "/priorities/health-technology-ecosystem/overview"
+      port        = 443
+      protocol    = "HTTPS"
     }
-  }
-}
-
-resource "aws_lb_listener_rule" "preview_flag" {
-  count        = var.redirect_to_strategy_page ? 1 : 0
-  listener_arn = aws_lb_listener.forward_to_strategy_page[0].arn
-
-  condition {
-    query_string {
-      key   = "preview"
-      value = "true"
-    }
-  }
-
-  action {
-    type             = "forward"
-    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
   }
 }
 
@@ -373,46 +359,13 @@ data "aws_acm_certificate" "directory_ssl_cert" {
 }
 
 resource "aws_lb_listener" "forward_to_task_group_https" {
-  count             = var.redirect_to_strategy_page && var.networking.enable_ssl_directory ? 0 : 1
-  load_balancer_arn = aws_lb.fhir_api_alb.arn
-  port              = 443
-  protocol          = "HTTP"
-
-  default_action {
-    type             = "forward"
-    target_group_arn = aws_lb_target_group.fhir_api_tg.arn
-  }
-}
-
-resource "aws_lb_listener" "forward_to_strategy_page_https" {
-  count             = var.redirect_to_strategy_page && var.networking.enable_ssl_directory ? 1 : 0
+  count             = var.networking.enable_ssl_directory ? 1 : 0
   load_balancer_arn = aws_lb.fhir_api_alb.arn
   port              = 443
   protocol          = "HTTPS"
   certificate_arn   = data.aws_acm_certificate.directory_ssl_cert[0].arn
 
   default_action {
-    type = "redirect"
-    redirect {
-      status_code = "HTTP_302"
-      host        = "www.cms.gov"
-      path        = "/priorities/health-technology-ecosystem/overview"
-    }
-  }
-}
-
-resource "aws_lb_listener_rule" "preview_flag_https" {
-  count        = var.redirect_to_strategy_page ? 1 : 0
-  listener_arn = aws_lb_listener.forward_to_strategy_page_https[0].arn
-
-  condition {
-    query_string {
-      key   = "preview"
-      value = "true"
-    }
-  }
-
-  action {
     type             = "forward"
     target_group_arn = aws_lb_target_group.fhir_api_tg.arn
   }

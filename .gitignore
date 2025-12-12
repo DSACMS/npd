@@ -135,6 +135,7 @@ celerybeat.pid
 
 # Environments
 .env
+.env.test
 .venv
 env/
 venv/
@@ -185,4 +186,4 @@ scratch/
 
 # tool version management
 mise.toml
-.pre-commit-config.yaml
+

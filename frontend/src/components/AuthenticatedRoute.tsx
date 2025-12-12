@@ -1,5 +1,5 @@
 import { Navigate, Outlet } from "react-router"
-import { useFrontendSettings } from "../state/FrontendSettingsProvider"
+import { useFrontendSettings } from "../hooks/useFrontendSettings"
 
 export const AuthenticatedRoute = () => {
   const { settings, loading } = useFrontendSettings()
