@@ -1,15 +1,33 @@
-import { Alert } from "@cmsgov/design-system"
+import {
+  Alert,
+  Table,
+  TableHead,
+  TableRow,
+  TableCell,
+  TableBody,
+} from "@cmsgov/design-system"
+
+import {
+  organizationNpiSelector,
+  useOrganizationAPI,
+  organizationMailingAddressSelector,
+  organizationAuthorizedOfficialSelector,
+  organizationAuthorizedPhoneSelector,
+  organizationIdentifiersSelector
+} from "../../state/requests/organizations"
+
 import classNames from "classnames"
 import { useParams } from "react-router"
 import { FeatureFlag } from "../../components/FeatureFlag"
 import { LoadingIndicator } from "../../components/LoadingIndicator"
-import {
-  organizationNpiSelector,
-  useOrganizationAPI,
-} from "../../state/requests/organizations"
+import { InfoItem } from "../../components/InfoItem"
 import layout from "../Layout.module.css"
+import styles from "./Organization.module.css"
+import { useTranslation } from "react-i18next"
+import { formatIdentifierType } from "../../helpers/formatters"
 
 export const Organization = () => {
+  const { t } = useTranslation()
   const { organizationId } = useParams()
   const { data, isLoading } = useOrganizationAPI(organizationId)
 
@@ -20,6 +38,12 @@ export const Organization = () => {
   const contentClass = classNames(layout.content, "ds-l-container")
   const bannerClass = classNames(layout.banner)
 
+  const npi = organizationNpiSelector(data)
+  const mailingAddress = organizationMailingAddressSelector(data)
+  const authorizedOfficial = organizationAuthorizedOfficialSelector(data)
+  const authorizedPhone = organizationAuthorizedPhoneSelector(data)
+  const identifiers = organizationIdentifiersSelector(data)
+
   return (
     <>
       <section className={bannerClass}>
@@ -27,12 +51,12 @@ export const Organization = () => {
           <div className="ds-l-row">
             <div className="ds-l-col--12">
               <div className={layout.leader}>
-                <span className={layout.subtitle}>Provider group</span>
+                <span className={layout.subtitle}>{t("organizations.title")}</span>
                 <div role="heading" aria-level={1} className={layout.title}>
                   {data?.name}
                 </div>
                 <span className={layout.subtitle}>
-                  NPI: {organizationNpiSelector(data)}
+                  NPI: {npi}
                 </span>
               </div>
             </div>
@@ -42,48 +66,93 @@ export const Organization = () => {
       <main className={contentClass}>
         <FeatureFlag inverse name="ORGANIZATION_LOOKUP_DETAILS">
           <Alert variation="warn" heading="Content not available">
-            This content is not currently available.
+            {t("organizations.unavailable")}
           </Alert>
         </FeatureFlag>
 
         <FeatureFlag name="ORGANIZATION_LOOKUP_DETAILS">
-          <Alert heading="Are you the practitioner listed?">
-            Learn how to <a href="#">update your information</a>.
+          <Alert heading={t("organizations.update.title")}>
+          {t("organizations.update.subtitle")}{' '}
+          <a href="#">{t("organizations.update.link")}</a>
           </Alert>
 
           <section className={layout.section}>
-            <h2>About</h2>
-            <p>[demographic information]</p>
+            <h2>{t("organizations.about")}</h2>
+            <div className="ds-l-row">
+              <div className="ds-l-col--12 ds-l-md-col--4 ds-u-margin-bottom--2">
+                <InfoItem label="Other name(s)" value={data?.name} />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--4 ds-u-margin-bottom--2">
+                <InfoItem label="Type" value="Provider Group" />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--4 ds-u-margin-bottom--2">
+                <InfoItem label="Parent organization" value={null} />
+              </div>
+            </div>
           </section>
 
           <section className={layout.section}>
-            <h2>Contact information</h2>
-            <p>[contact information]</p>
+            <h2>{t("organizations.contact")}</h2>
+            <div className="ds-l-row">
+              <div className="ds-l-col--12 ds-l-md-col--4 ds-u-margin-bottom--2">
+                <InfoItem label="Mailing address" value={mailingAddress} />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--4 ds-u-margin-bottom--2">
+                <InfoItem label="Authorized official" value={authorizedOfficial} />
+              </div>
+              <div className="ds-l-col--12 ds-l-md-col--4 ds-u-margin-bottom--2">
+                <InfoItem label="Authorized official phone" value={authorizedPhone} />
+              </div>
+            </div>
           </section>
 
           <section className={layout.section}>
-            <h2>Identifiers</h2>
-            <p>[identifier information]</p>
+            <h2>{t("organizations.identifiers")}</h2>
+            {/* TODO: look into modularizing table creation to reduce code duplication */}
+            {identifiers.length > 0 ? (
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <TableCell>Type</TableCell>
+                    <TableCell>Number</TableCell>
+                    <TableCell>Details</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {identifiers.map((identifier, index) => (
+                    <TableRow key={index}>
+                      <TableCell>
+                        {formatIdentifierType(identifier.system ?? "Unknown")}
+                      </TableCell>
+                      <TableCell>{identifier.number}</TableCell>
+                      <TableCell>{identifier.details}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            ) : (
+              <p className="ds-u-color--gray">No identifiers available</p>
+            )}
           </section>
 
           <section className={layout.section}>
-            <h2>Taxonomy</h2>
-            <p>[taxonomy information]</p>
+            <h2>{t("organizations.taxonomy")}</h2>
+            <p className={styles.emptyState}>No taxonomy available</p>
           </section>
 
           <section className={layout.section}>
-            <h2>Endpoints</h2>
-            <p>[endpoint information]</p>
+            <h2>{t("organizations.endpoints")}</h2>
+            <p className={styles.emptyState}>No endpoints available</p>
           </section>
 
           <section className={layout.section}>
-            <h2>Locations</h2>
-            <p>[location information]</p>
+            <h2>{t("organizations.locations")}</h2>
+            <p className={styles.emptyState}>No locations available</p>
           </section>
 
           <section className={layout.section}>
-            <h2>Practitioners</h2>
-            <p>[practitioner information]</p>
+            <h2>{t("organizations.practitioners")}</h2>
+            <p className={styles.emptyState}>No practitioners available</p>
           </section>
         </FeatureFlag>
 

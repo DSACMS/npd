@@ -129,7 +129,7 @@ sudo xfs_growfs /
 Grow the logical volume backing /var (where Docker stores build artifacts)  by the remaining space
 
 ```bash
-sudo lvextend -l +100%FREE /dev/VolGroup00/rootVol
+sudo lvextend -l +100%FREE /dev/VolGroup00/varVol
 sudo xfs_growfs /var
 ```
 

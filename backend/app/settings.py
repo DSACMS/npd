@@ -92,7 +92,11 @@ CORS_ALLOWED_METHODS = ["GET"]
 
 if DEBUG:
     # in development, allow the frontend app to POST forms to the backend
-    CSRF_TRUSTED_ORIGINS = ["http://localhost:8000", "http://localhost:3000"]
+    CSRF_TRUSTED_ORIGINS = [
+        "http://localhost:8000",
+        "http://localhost:8008",
+        "http://localhost:3000",
+    ]
 
 ROOT_URLCONF = "app.urls"
 APPEND_SLASH = True  # this is default, but we're making sure it's explicit
@@ -248,8 +252,8 @@ SWAGGER_SETTINGS = {"USE_SESSION_AUTH": False}
 # feature flags
 FLAGS = {
     "SEARCH_APP": [],  # can see the search app at all
-    "PROVIDER_LOOKUP": [],  # can reach the provider lookup page
-    "PROVIDER_LOOKUP_DETAILS": [],  # can reach all details in the provider lookup page
+    "PRACTITIONER_LOOKUP": [],  # can reach the provider lookup page
+    "PRACTITIONER_LOOKUP_DETAILS": [],  # can reach all details in the provider lookup page
     "ORGANIZATION_LOOKUP": [],
     "ORGANIZATION_LOOKUP_DETAILS": [],
     # static conditions can be defined in this file or through the Admin interface

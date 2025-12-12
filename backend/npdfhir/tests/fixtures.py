@@ -1,10 +1,14 @@
 import uuid
 import datetime
+import random
 
 from ..models import (
     Individual,
     IndividualToName,
+    IndividualToAddress,
     FhirNameUse,
+    FhirAddressUse,
+    FipsState,
     Npi,
     Provider,
     Organization,
@@ -16,6 +20,7 @@ from ..models import (
     RelationshipType,
     ProviderToLocation,
     ProviderRole,
+    ProviderToTaxonomy,
     Endpoint,
     EndpointInstance,
     EndpointConnectionType,
@@ -43,6 +48,9 @@ def create_practitioner(
     gender="F",
     birth_date=datetime.date(1990, 1, 1),
     npi_value=None,
+    practitioner_type=None,
+    location=None,
+    address_use="work",
 ):
     """
     Creates an Individual, Name (via IndividualToName), Npi, Provider.
@@ -60,6 +68,13 @@ def create_practitioner(
         name_use=_ensure_name_use(),
     )
 
+    if location:
+        use = FhirAddressUse.objects.get(value=address_use)
+
+        IndividualToAddress.objects.create(
+            individual=individual, address=location.address, address_use=use
+        )
+
     npi = Npi.objects.create(
         npi=npi_value or int(str(uuid.uuid4().int)[:10]),
         entity_type_code=1,
@@ -71,6 +86,14 @@ def create_practitioner(
         npi=npi,
         individual=individual,
     )
+
+    if practitioner_type:
+        code = Nucc.objects.get(pk=practitioner_type)
+
+        ProviderToTaxonomy.objects.create(npi=provider, nucc_code=code, id=uuid.uuid4())
+
+        # display name
+        # Nucc
 
     return provider
 
@@ -88,7 +111,9 @@ def create_other_id_type(name="Sample Other ID"):
 
 
 def create_organization(
+    id=None,
     name="Test Org",
+    parent_id=None,
     authorized_official_first_name="Alice",
     authorized_official_last_name="Smith",
     legal_entity=None,
@@ -116,10 +141,11 @@ def create_organization(
         name_use=_ensure_name_use(),
     )
 
+    if id is None:
+        id = uuid.uuid4()
+
     org = Organization.objects.create(
-        id=uuid.uuid4(),
-        authorized_official=ind,
-        ein=legal_entity,
+        id=id, authorized_official=ind, ein=legal_entity, parent_id=parent_id
     )
 
     if other_id_type or organization_type or npi_value:
@@ -161,17 +187,19 @@ def create_location(
     city="Albany",
     state="NY",
     zipcode="12207",
+    addr_line_1="123 Main St",
 ):
     """
     Creates AddressUs → Address → Location.
     """
     organization = organization or create_organization()
 
+    fips_code = FipsState.objects.get(abbreviation=state)
     addr_us = AddressUs.objects.create(
-        id=str(uuid.uuid4())[:10],
-        delivery_line_1="123 Main St",
+        id=random.randint(-100000000000, 100000000000),
+        delivery_line_1=addr_line_1,
         city_name=city,
-        state_code_id="36",
+        state_code_id=fips_code.id,
         zipcode=zipcode,
     )
 

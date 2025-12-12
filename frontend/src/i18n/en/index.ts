@@ -1,10 +1,13 @@
 // components
+import errors from "./errors.json"
 import footer from "./footer.json"
 import header from "./header.json"
 
 // pages
 import developers from "./developers.json"
 import landing from "./landing.json"
+import organizations from "./organizations.json"
+import practitioners from "./practitioners.json"
 
 /*
  * NOTE: (@abachman-dsac) a word about i18n usage in react components and the
@@ -32,4 +35,7 @@ export const translations = {
   footer,
   landing,
   developers,
+  errors,
+  organizations,
+  practitioners
 }
