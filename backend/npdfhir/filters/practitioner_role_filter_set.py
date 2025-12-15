@@ -74,19 +74,23 @@ class PractitionerRoleFilterSet(filters.FilterSet):
     )
 
     location_address = filters.CharFilter(
-        method="filter_address"
+        method="filter_address",
+        help_text="Filter by the location address"
     )
 
     location_city = filters.CharFilter(
-        method="filter_address_city"
+        method="filter_address_city",
+        help_text="Filter by the location city"
     )
 
     location_state = filters.CharFilter(
-        method="filter_address_state"
+        method="filter_address_state",
+        help_text="Filter by the location state"
     )
 
     location_zip_code = filters.CharFilter(
-        method="filter_address_postalcode"
+        method="filter_address_postalcode",
+        help_text="Filter by the location postal code"
     )
 
 
@@ -130,7 +134,7 @@ class PractitionerRoleFilterSet(filters.FilterSet):
     def filter_practitioner_type(self, queryset, name, value):
         return queryset.annotate(
             search=SearchVector(
-                "provider_to_organization__providertotaxonomy__nucc_code__display_name"
+                "provider_to_organization__individual__providertotaxonomy__nucc_code__display_name"
             )
         ).filter(search=value)
 
@@ -141,11 +145,11 @@ class PractitionerRoleFilterSet(filters.FilterSet):
     
     def filter_organization_type(self, queryset, name, value):
         return queryset.filter(
-            Q(provider_to_organization__organization__clinicalorganization__organizationtotaxonomy_set__nucc_code__code=value) 
+            Q(provider_to_organization__organization__clinicalorganization__organizationtotaxonomy__nucc_code__code=value) 
             | Q(
-                provider_to_organization__organization__clinicalorganization__organizationtootherid_set__other_id=value
-            ).distinct()
-        )
+                provider_to_organization__organization__clinicalorganization__organizationtootherid__other_id=value
+            )
+        ).distinct()
 
     def filter_practitioner_identifer(self, queryset, name, value):
         return queryset.filter(
@@ -171,7 +175,7 @@ class PractitionerRoleFilterSet(filters.FilterSet):
     def filter_payload_type(self, queryset, name, value):
         return queryset.annotate(
             search=SearchVector(
-                "location__locationtoendpointinstance__endpoint_instance__endpoint_instance_type__value"
+                "location__locationtoendpointinstance__endpoint_instance__endpoint__endpoint_type__value"
             )
         ).filter(search=value)
     
