@@ -11,6 +11,7 @@ import { LoadingIndicator } from "../../components/LoadingIndicator"
 
 import { Pagination } from "@cmsgov/design-system"
 import { Link } from "react-router"
+import { PaginationCaption } from "../../components/PaginationCaption"
 import { usePagination, usePaginationParams } from "../../hooks/usePagination"
 import { apiUrl } from "../../state/api"
 import layout from "../Layout.module.css"
@@ -20,7 +21,7 @@ const ListedOrganization = ({ data }: { data: FHIROrganization }) => {
   const { t } = useTranslation()
 
   return (
-    <div className="ds-u-border-top--1 ds-u-padding-y--2">
+    <div role="listitem" className="ds-u-border-top--1 ds-u-padding-y--2">
       <div className={search.entry}>
         <div className={search.head}>
           <Link className={search.name} to={`/organizations/${data.id}`}>
@@ -44,19 +45,6 @@ const ListedOrganization = ({ data }: { data: FHIROrganization }) => {
         </div>
       </div>
     </div>
-  )
-}
-
-const PaginationCaption = ({
-  pagination: { page, page_size, total, count },
-}: {
-  pagination: PaginationState
-}) => {
-  const start = page * page_size
-  return (
-    <span>
-      Showing {start} - {start + total} of {count}
-    </span>
   )
 }
 
@@ -104,7 +92,11 @@ export const OrganizationList = () => {
           </div>
 
           <div className="ds-l-row">
-            <div className="ds-l-col--12 ds-u-margin-bottom--2">
+            <div
+              data-testid="searchresults"
+              role="list"
+              className="ds-l-col--12 ds-u-margin-bottom--2"
+            >
               {data?.results?.entry?.map((entry, idx) => {
                 if (!entry) return null
                 return (

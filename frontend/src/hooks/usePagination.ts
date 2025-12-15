@@ -32,11 +32,11 @@ export const usePagination = (
 ): PaginationState => {
   return useMemo(() => {
     let totalPages = 1
-    let total = pagination.page_size
-    let count = 1
+    let total = 0
+    let count = 0
 
     if (data) {
-      totalPages = Math.floor(data.count / pagination.page_size)
+      totalPages = Math.ceil(data.count / pagination.page_size)
       total = data.results.total
       count = data.count
     }

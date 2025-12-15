@@ -6,7 +6,7 @@ let organization: { npi: string; id: string; name: string } = {
   name: "UNSET",
 }
 
-// load an organization record from the API before running tests
+// load a known organization record from the API before running tests
 test.beforeAll(async ({ request }) => {
   // expects a FhirCollection<FhirOrganization> API response
   const response = await request.get(
@@ -26,13 +26,13 @@ test.beforeAll(async ({ request }) => {
   expect(organization).toMatchObject(
     expect.objectContaining({
       id: expect.stringMatching(/[\d-]+/),
-      name: "Test Org",
+      name: "AAA Test Org",
       npi: "1234567893",
     }),
   )
 })
 
-test.describe("Organizations", () => {
+test.describe("Organization listing", () => {
   test("visit the Organizations listing page", async ({ page }) => {
     await page.goto("/organizations")
 
@@ -45,6 +45,46 @@ test.describe("Organizations", () => {
     await expect(page.getByText(`NPI: ${organization?.npi}`)).toBeVisible()
   })
 
+  test("paging through Organizations", async ({ page }) => {
+    await page.goto("/organizations")
+
+    await expect(page).toHaveURL("/organizations")
+
+    // assert
+    await expect(page.getByRole("caption")).toContainText(
+      "Showing 1 - 10 of 26",
+    )
+    await expect(
+      page.locator("[data-testid='searchresults']").getByRole("listitem"),
+    ).toHaveCount(10)
+
+    // act
+    await page.getByLabel("Next Page").first().click()
+
+    // assert
+    await expect(page).toHaveURL("/organizations?page=2")
+    await expect(page.getByRole("caption")).toContainText(
+      "Showing 11 - 20 of 26",
+    )
+    await expect(
+      page.locator("[data-testid='searchresults']").getByRole("listitem"),
+    ).toHaveCount(10)
+
+    // act
+    await page.getByLabel("Next Page").first().click()
+
+    // assert
+    await expect(page).toHaveURL("/organizations?page=3")
+    await expect(page.locator("span[role='caption']")).toContainText(
+      "Showing 21 - 26 of 26",
+    )
+    await expect(
+      page.locator("[data-testid='searchresults']").getByRole("listitem"),
+    ).toHaveCount(6)
+  })
+})
+
+test.describe("Organization show", () => {
   test("visit an Organization page", async ({ page }) => {
     // visit listing page
     await page.goto("/organizations")
