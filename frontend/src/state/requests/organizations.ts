@@ -33,15 +33,25 @@ export const useOrganizationAPI = (organizationId: string | undefined) => {
 
 /// list
 
-const fetchOrganizations = async (
-  params: PaginationParams,
+export const fetchOrganizations = async (
+  params: PaginationParams & SearchParams,
 ): Promise<FHIRCollection<FHIROrganization>> => {
   const url = new URL(apiUrl("/fhir/Organization/"))
+
+  // Pagination
   if (params.page) {
     url.searchParams.set("page", params.page.toString())
   }
   if (params.page_size) {
     url.searchParams.set("page_size", params.page_size.toString())
+  }
+
+  // Search
+  if (params.identifier) {
+    url.searchParams.set("identifier", params.identifier.toString())
+  }
+  if (params.name) {
+    url.searchParams.set("name", params.name.toString())
   }
 
   const response = await fetch(url)

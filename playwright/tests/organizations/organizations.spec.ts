@@ -84,6 +84,53 @@ test.describe("Organization listing", () => {
   })
 })
 
+test.describe("Organization search", () => {
+  test("search for an Organization by NPI", async ({ page }) => {
+    await page.goto("/organizations/search")
+    await expect(page).toHaveURL("/organizations/search")
+    await expect(page.getByText("Search Organizations")).toBeVisible()
+
+    await page
+      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .click()
+    await page
+      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .fill("1234567893")
+    await page.getByRole("button", { name: "Search" }).click()
+    await expect(page.getByRole("link", { name: "AAA Test Org" })).toBeVisible()
+  })
+
+  test("search for an Organization by exact name", async ({ page }) => {
+    await page.goto("/organizations/search")
+    await expect(page).toHaveURL("/organizations/search")
+    await expect(page.getByText("Search Organizations")).toBeVisible()
+
+    await page
+      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .click()
+    await page
+      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .fill("AAA Test Org")
+    await page.getByRole("button", { name: "Search" }).click()
+    await expect(page.getByRole("link", { name: "AAA Test Org" })).toBeVisible()
+  })
+
+  test("search for an Organization by partial name", async ({ page }) => {
+    await page.goto("/organizations/search")
+    await expect(page).toHaveURL("/organizations/search")
+    await expect(page.getByText("Search Organizations")).toBeVisible()
+
+    await page
+      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .click()
+    await page
+      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .fill("AAA")
+    await page.getByRole("button", { name: "Search" }).click()
+    await expect(page.getByRole("link", { name: "AAA Test Org" })).toBeVisible()
+  })
+})
+
 test.describe("Organization show", () => {
   test("visit an Organization page", async ({ page }) => {
     // visit listing page
