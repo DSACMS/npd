@@ -147,22 +147,17 @@ class PractitionerRoleFilterSet(filters.FilterSet):
             ).distinct()
         )
 
-    def filter_practitioner_idef filter_connection_type(self, queryset, name, value):
-        return queryset.annotate(
-            search=SearchVector(
-                "other_endpoint__endpoint_instance__endpoint_connection_type__id"
-            )
-        ).filter(search=value)dentifer(self, queryset, name, value):
+    def filter_practitioner_identifer(self, queryset, name, value):
         return queryset.filter(
             Q(provider_to_organization__individual__npi__npi=value)
             | Q(
                 provider_to_organization__individual__providertootherid__other_id__icontains=value
             )
-        ).distinct()filter_organization_type
+        ).distinct()
     
     def filter_code(self, queryset, name, value):
         return queryset.filter(
-            Q(provider_to_organization__individual__providertotaxonomy__nucc_code__code__iexact=value=value)
+            Q(provider_to_organization__individual__providertotaxonomy__nucc_code__code__iexact=value)
             | Q(provider_role_code__iexact=value)
         ).distinct()
 
