@@ -2,7 +2,9 @@
 sudo -u ec2-user -i << EOF
 set -euo pipefail
 
-whoami
+# WEEKLY_REFRESH is a token that changes once a week
+# Changing it recreates the runner instance
+echo "${ WEEKLY_REFRESH }" > /dev/null
 
 echo "==> Creating GitHub Actions runner directory"
 sudo mkdir -p "${ RUNNER_DIR }"
