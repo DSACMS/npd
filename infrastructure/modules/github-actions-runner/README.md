@@ -2,7 +2,6 @@
 
 ## Manual Work After Deploy
 
-
 1. Create `/opt/actions-runner` directory
 
 ```commandline
@@ -201,3 +200,13 @@ Nov 25 12:12:26 ip-10-152-23-22.ec2.internal run.sh[2594]: 2025-11-25 17:12:26Z:
 Nov 25 12:12:26 ip-10-152-23-22.ec2.internal run.sh[2594]: Current runner version: '2.329.0'
 Nov 25 12:12:26 ip-10-152-23-22.ec2.internal run.sh[2594]: 2025-11-25 17:12:26Z: Listening for Jobs
 ```
+
+## Preconfigured GitHub Runner Instance
+
+An EC2 instance with some of the above steps preconfigured is available.
+It requires that a GitHub Actions Runner token be stored in the secret with prefix
+e.g. `npd-east-dev-github-runner-token-secret`.
+
+Terraform automatically configures the EC2 instance to pick up GitHub Actions workloads for `dev` or `prod`.
+The setup script template is [here](./bootstrap-runner.sh.tpl). The preconfigured EC2 instance is destroyed and
+recreated on a weekly basis.
