@@ -19,7 +19,7 @@ cd "${ RUNNER_DIR }"
 tar xzf "actions-runner-linux-x64-${ RUNNER_VERSION }.tar.gz"
 
 echo "==> Configuring runner"
-./config.sh --url "${ GITHUB_URL }" --token "${ TOKEN }" --unattended --labels experimental
+./config.sh --url "${ GITHUB_URL }" --token "${ TOKEN }" --unattended --labels experimental,${ TIER }
 
 echo "==> Creating systemd service"
 sudo tee /etc/systemd/system/github-runner.service > /dev/null <<'EOT'
