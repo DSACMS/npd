@@ -73,6 +73,22 @@ class PractitionerRoleFilterSet(filters.FilterSet):
         help_text="Filter by the name of the organization associated with endpoints"
     )
 
+    location_address = filters.CharFilter(
+        method="filter_address"
+    )
+
+    location_city = filters.CharFilter(
+        method="filter_address_city"
+    )
+
+    location_state = filters.CharFilter(
+        method="filter_address_state"
+    )
+
+    location_zip_code = filters.CharFilter(
+        method="filter_address_postalcode"
+    )
+
 
     class Meta:
         model = ProviderToLocation
@@ -89,7 +105,11 @@ class PractitionerRoleFilterSet(filters.FilterSet):
             "endpoint_connection_type",
             "endpoint_payload_type",
             "endpoint_organization_id",
-            "endpoint_organization_name"
+            "endpoint_organization_name",
+            "location_address",
+            "location_city",
+            "location_state",
+            "location_zip_code"
         ]
 
     def filter_practitioner_name(self, queryset, name, value):
@@ -138,7 +158,7 @@ class PractitionerRoleFilterSet(filters.FilterSet):
             | Q(
                 provider_to_organization__individual__providertootherid__other_id__icontains=value
             )
-        ).distinct()
+        ).distinct()filter_organization_type
     
     def filter_code(self, queryset, name, value):
         return queryset.filter(
@@ -171,3 +191,31 @@ class PractitionerRoleFilterSet(filters.FilterSet):
         return queryset.filter(
             location__organization__parent__organizationtoname__name=value
         )
+    
+    def filter_address(self, queryset, name, value):
+        return queryset.annotate(
+            search=SearchVector(
+                "location__address__address_us__delivery_line_1",
+                "location__address__address_us__delivery_line_2",
+                "location__address__address_us__city_name",
+                "location__address__address_us__state_code__abbreviation",
+                "location__address__address_us__zipcode",
+            )
+        ).filter(search=value)
+    
+    def filter_address_city(self, queryset, name, value):
+        return queryset.annotate(
+            search=SearchVector("location__address__address_us__city_name")
+        ).filter(search=value)
+
+    def filter_address_state(self, queryset, name, value):
+        return queryset.annotate(
+            search=SearchVector(
+                "location__address__address_us__state_code__abbreviation"
+            )
+        ).filter(search=value)
+
+    def filter_address_postalcode(self, queryset, name, value):
+        return queryset.annotate(
+            search=SearchVector("location__address__address_us__zipcode")
+        ).filter(search=value)
