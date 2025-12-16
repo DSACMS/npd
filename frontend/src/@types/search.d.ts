@@ -1,4 +1,3 @@
 interface SearchParams {
-  identifier?: string
-  name?: string
+  query?: string
 }

@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query"
+import { skipToken, useQuery } from "@tanstack/react-query"
 import type { FHIRCollection, FHIROrganization } from "../../@types/fhir"
 import { formatAddress, formatDate } from "../../helpers/formatters"
 import { apiUrl } from "../api"
@@ -31,6 +31,10 @@ export const useOrganizationAPI = (organizationId: string | undefined) => {
   })
 }
 
+const detectQueryKey = (value: string): "identifier" | "name" => {
+  return /^\d+$/.test(value) ? "identifier" : "name"
+}
+
 /// list
 
 export const fetchOrganizations = async (
@@ -47,11 +51,10 @@ export const fetchOrganizations = async (
   }
 
   // Search
-  if (params.identifier) {
-    url.searchParams.set("identifier", params.identifier.toString())
-  }
-  if (params.name) {
-    url.searchParams.set("name", params.name.toString())
+  if (params.query) {
+    const query = params.query
+    const key = detectQueryKey(query)
+    url.searchParams.set(key, query)
   }
 
   const response = await fetch(url)
@@ -63,12 +66,25 @@ export const fetchOrganizations = async (
   return response.json()
 }
 
-export const useOrganizationsAPI = (params: PaginationParams) => {
+type QueryOptions = {
+  enabled?: boolean
+  requireQuery?: boolean
+}
+
+export const useOrganizationsAPI = (
+  params: PaginationParams & SearchParams,
+  options?: QueryOptions,
+) => {
+  console.debug("[useOrganizationsAPI]", { params, options })
+
   return useQuery<FHIRCollection<FHIROrganization>>({
-    queryKey: ["organizations", params.page || 1],
-    queryFn: () => {
-      return fetchOrganizations(params)
-    },
+    queryKey: ["organizations", params.query, params.page || 1],
+    queryFn:
+      options?.requireQuery && (!params.query || params.query.length === 0)
+        ? skipToken
+        : () => {
+            return fetchOrganizations(params)
+          },
   })
 }
 

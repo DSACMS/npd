@@ -1,84 +1,65 @@
 import React, { useState, type ReactNode } from "react"
-import { fetchOrganizations } from "../requests/organizations"
+import { usePagination, usePaginationParams } from "../../hooks/usePagination"
+import { useOrganizationsAPI } from "../requests/organizations"
 import {
   SearchContext,
+  SearchDispatchContext,
   type SearchContextValue,
-  type SearchResult,
+  type SearchDispatchContextValue,
 } from "./SearchContext"
 
-// Provider props
 interface SearchProviderProps {
   children: ReactNode
 }
 
-// SearchProvider component
 export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
-  const [searchResult, setSearchResult] = useState<SearchResult>({
-    data: null,
-    loading: false,
-    error: null,
+  const [params, setParams] = usePaginationParams()
+  const [query, setQueryValue] = useState<string>(params.query || "")
+  const { data, isLoading, error } = useOrganizationsAPI(params, {
+    requireQuery: true,
   })
+  const pagination = usePagination(params, data)
 
-  const searchByNameOrIdentifier = async (nameOrId: string): Promise<void> => {
-    if (!/^.+$/.test(nameOrId)) {
-      setSearchResult({
-        data: null,
-        loading: false,
-        error: "Search value must not be blank",
-      })
-      return
-    }
-
-    setSearchResult({
-      data: null,
-      loading: true,
-      error: null,
-    })
-
-    try {
-      const query: SearchParams = /^\d+$/.test(nameOrId)
-        ? {
-            identifier: nameOrId,
-          }
-        : { name: nameOrId }
-      const data = await fetchOrganizations(query)
-
-      const records = data.results.entry
-        ? data.results.entry.map((entry) => entry.resource)
-        : []
-
-      setSearchResult({
-        data: records,
-        loading: false,
-        error: null,
-      })
-    } catch (error) {
-      setSearchResult({
-        data: null,
-        loading: false,
-        error:
-          error instanceof Error
-            ? error.message
-            : "An error occurred during search",
-      })
-    }
+  const setQuery = (nextQuery: string) => {
+    setQueryValue(nextQuery)
+    const next = { page: params.page.toString(), query: nextQuery }
+    setParams(next, { preventScrollReset: true })
   }
 
-  const clearSearch = (): void => {
-    setSearchResult({
-      data: null,
-      loading: false,
-      error: null,
+  const navigateToPage = (toPage: number) => {
+    const next = { page: toPage.toString(), query: query || params.query || "" }
+    setParams(next, {
+      preventScrollReset: true,
     })
   }
 
-  const value: SearchContextValue = {
-    searchResult,
-    searchByNameOrIdentifier,
-    clearSearch,
+  const state: SearchContextValue = {
+    initialQuery: query,
+    data: data?.results?.entry
+      ? data.results.entry.map((entry) => entry.resource)
+      : null,
+    isLoading,
+    error: error
+      ? error instanceof Error
+        ? error.message
+        : "An error occurred during search"
+      : null,
+    pagination,
+    query,
+  }
+
+  const dispatch: SearchDispatchContextValue = {
+    setQuery,
+    navigateToPage,
+    clearSearch: () => {
+      setQueryValue("")
+      setParams({})
+    },
   }
 
   return (
-    <SearchContext.Provider value={value}>{children}</SearchContext.Provider>
+    <SearchDispatchContext.Provider value={dispatch}>
+      <SearchContext.Provider value={state}>{children}</SearchContext.Provider>
+    </SearchDispatchContext.Provider>
   )
 }

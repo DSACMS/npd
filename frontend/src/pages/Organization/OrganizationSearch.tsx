@@ -1,38 +1,50 @@
-import { Button } from "@cmsgov/design-system"
+import { Alert, Button, Pagination } from "@cmsgov/design-system"
 import classNames from "classnames"
 import React, { type ChangeEvent, type FormEvent, useState } from "react"
 import { useTranslation } from "react-i18next"
+import { NpdMarkdown } from "../../components/markdown/NpdMarkdown"
+import { PaginationCaption } from "../../components/PaginationCaption"
 import { TitlePanel } from "../../components/TitlePanel"
+import { apiUrl } from "../../state/api"
 import { SearchProvider } from "../../state/Search/SearchProvider"
-import { useSearch } from "../../state/Search/useSearch"
+import { useSearchDispatch, useSearchState } from "../../state/Search/useSearch"
 import layout from "../Layout.module.css"
 import search from "../Search.module.css"
 import { ListedOrganization } from "./ListedOrganization"
 
 const OrganizationSearchForm: React.FC = () => {
   const { t } = useTranslation()
-  const [query, setQuery] = useState<string>("")
-  const { searchResult, searchByNameOrIdentifier, clearSearch } = useSearch()
+  const { setQuery, navigateToPage, clearSearch } = useSearchDispatch()
+  const {
+    isLoading,
+    initialQuery,
+    query: searchQuery,
+    error: searchError,
+    data,
+    pagination,
+  } = useSearchState()
+
+  const [query, setQueryValue] = useState<string>(initialQuery || "")
 
   const contentClass = classNames(layout.content, "ds-l-container")
   const inputClass = classNames(search.input)
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    await searchByNameOrIdentifier(query)
+    setQuery(query)
+  }
+
+  const handleClear = () => {
+    setQueryValue("")
+    clearSearch()
   }
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>): void => {
     const value = e.target.value
     // require some amount of input
     if (/.+/.test(value)) {
-      setQuery(value)
+      setQueryValue(value)
     }
-  }
-
-  const handleClear = (): void => {
-    setQuery("")
-    clearSearch()
   }
 
   return (
@@ -44,24 +56,26 @@ const OrganizationSearchForm: React.FC = () => {
         <div className="ds-l-row">
           <div className="ds-l-col--12 ds-u-padding-bottom--4">
             <form onSubmit={handleSubmit}>
+              <input type="hidden" name="page" value={pagination?.page} />
               <div className="ds-u-clearfix">
-                <label className="ds-c-label" htmlFor="query-input">
+                <label className="ds-c-label" htmlFor="query">
                   {t("organizations.search.inputLabel")}
                 </label>
                 <div className={inputClass}>
                   <input
                     className="ds-c-field"
                     type="text"
-                    name="query-input"
-                    id="query-input"
+                    name="query"
+                    id="query"
+                    value={query}
                     onChange={handleInputChange}
                   />
                   <Button
                     type="submit"
                     variation="solid"
-                    disabled={query.length < 1 || searchResult.loading}
+                    disabled={query.length < 1 || isLoading}
                   >
-                    {searchResult.loading ? "Searching..." : "Search"}
+                    {isLoading ? "Searching..." : "Search"}
                   </Button>
                   <Button onClick={handleClear}>Clear</Button>
                 </div>
@@ -73,35 +87,53 @@ const OrganizationSearchForm: React.FC = () => {
 
       <main className={contentClass}>
         <div className="ds-l-row">
-          {searchResult.error && (
+          {searchError && (
             <div className="error-message">
-              <strong>Error:</strong> {searchResult.error}
+              <strong>Error:</strong> {searchError}
             </div>
           )}
 
-          {searchResult.data && searchResult.data.length > 0 && (
-            <div
-              data-testid="searchresults"
-              role="list"
-              className="ds-l-col--12 ds-u-margin-bottom--2"
-            >
-              {searchResult.data.map((org) => (
-                <ListedOrganization data={org} key={org.id} />
-              ))}
-            </div>
-          )}
+          <div className="ds-l-col--12 ds-u-margin-bottom--7">
+            {data && data.length > 0 && (
+              <>
+                {pagination && (
+                  <>
+                    <PaginationCaption pagination={pagination} />
+                    <Pagination
+                      currentPage={pagination.page}
+                      onPageChange={(evt, page) => {
+                        evt.preventDefault()
+                        evt.stopPropagation()
+                        navigateToPage(page)
+                      }}
+                      renderHref={(pageNumber) => {
+                        const nextParams = new URLSearchParams()
+                        nextParams.set("page", pageNumber.toString())
+                        if (searchQuery) nextParams.set("query", searchQuery)
+                        return apiUrl(`/organizations?${nextParams.toString()}`)
+                      }}
+                      totalPages={pagination.totalPages}
+                    />
+                  </>
+                )}
+                <div data-testid="searchresults" role="list">
+                  {data.map((org) => (
+                    <ListedOrganization data={org} key={org.id} />
+                  ))}
+                </div>
+              </>
+            )}
 
-          {searchResult.data && searchResult.data.length === 0 && (
-            <div className="ds-l-col--12 ds-u-margin-bottom--2">
-              No Organizations found for query: {query}
-            </div>
-          )}
+            {data && data.length === 0 && (
+              <p>No Organizations found for query: {query}</p>
+            )}
 
-          {!searchResult.data && (
-            <div className="ds-l-col--12 ds-u-margin-bottom--2">
-              <p>No results available</p>
-            </div>
-          )}
+            {!data && (
+              <Alert heading={t("patients.alert.heading")}>
+                <NpdMarkdown content={t("patients.alert.body")} />
+              </Alert>
+            )}
+          </div>
         </div>
       </main>
     </>

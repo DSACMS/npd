@@ -1,17 +1,19 @@
 import { createContext } from "react"
 import type { FHIROrganization } from "../../@types/fhir"
 
-// Define the search result structure
-export interface SearchResult {
-  data: FHIROrganization[] | null
-  loading: boolean
-  error: string | null
-}
-
 // Define the context value type
 export interface SearchContextValue {
-  searchResult: SearchResult
-  searchByNameOrIdentifier: (nameOrId: string) => Promise<void>
+  initialQuery?: string
+  data: FHIROrganization[] | null
+  isLoading: boolean
+  error: string | null
+  pagination?: PaginationState
+  query?: string
+}
+
+export interface SearchDispatchContextValue {
+  setQuery: (nameOrId: string) => void
+  navigateToPage: (page: number) => void
   clearSearch: () => void
 }
 
@@ -19,3 +21,6 @@ export interface SearchContextValue {
 export const SearchContext = createContext<SearchContextValue | undefined>(
   undefined,
 )
+export const SearchDispatchContext = createContext<
+  SearchDispatchContextValue | undefined
+>(undefined)
