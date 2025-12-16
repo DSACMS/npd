@@ -231,11 +231,10 @@ module "github-actions" {
   source = "../../modules/github-actions-runner"
 
   account_name = local.account_name
+  tier = var.tier
   security_group_ids = concat(
     module.networking.cmscloud_security_group_ids,
     [module.networking.github_action_runner_security_group_id]
   )
   subnet_ids                  = module.networking.private_subnet_ids
-  ecs_cluster_id              = module.ecs.cluster_id
-  github_runner_image         = var.github_runner_image
 }
