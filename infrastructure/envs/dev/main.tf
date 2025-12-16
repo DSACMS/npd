@@ -150,7 +150,7 @@ module "fhir-api" {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address
     db_instance_port                   = module.api-db.db_instance_port
-    db_instance_name                   = module.api-db.db_instance_name
+    db_instance_name                   = "npd_halloween_sjp"
   }
   networking = {
     private_subnet_ids    = module.networking.private_subnet_ids
@@ -178,7 +178,7 @@ module "etl" {
     db_instance_master_user_secret_arn = module.etl-db.db_instance_master_user_secret_arn
     db_instance_address                = module.etl-db.db_instance_address
     db_instance_port                   = module.etl-db.db_instance_port
-    db_instance_name                   = "npd_halloween_sjp"
+    db_instance_name                   = module.etl-db.db_instance_name
   }
   networking = {
     private_subnet_ids        = module.networking.private_subnet_ids
@@ -237,5 +237,4 @@ module "github-actions" {
   subnet_ids                  = module.networking.private_subnet_ids
   ecs_cluster_id              = module.ecs.cluster_id
   github_runner_image         = var.github_runner_image
-  enable_containerized_runner = true
 }

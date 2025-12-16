@@ -1,23 +1,22 @@
 import { Alert } from "@cmsgov/design-system"
 import classNames from "classnames"
+import { useTranslation } from "react-i18next"
 import { useParams } from "react-router"
 import { FeatureFlag } from "../../components/FeatureFlag"
-import { LoadingIndicator } from "../../components/LoadingIndicator"
-import { PractitionerPresenter } from "../../presenters/PractitionerPresenter"
-import { formatIdentifierType } from "../../helpers/formatters"
-import { usePractitionerAPI } from "../../state/requests/practitioners"
-import { useTranslation } from "react-i18next"
 import { InfoItem } from "../../components/InfoItem"
+import { LoadingIndicator } from "../../components/LoadingIndicator"
+import { formatIdentifierType } from "../../helpers/formatters"
+import { PractitionerPresenter } from "../../presenters/PractitionerPresenter"
+import { usePractitionerAPI } from "../../state/requests/practitioners"
 import layout from "../Layout.module.css"
 
 import {
   Table,
-  TableRow,
-  TableHead,
+  TableBody,
   TableCell,
-  TableBody
+  TableHead,
+  TableRow,
 } from "@cmsgov/design-system"
-
 
 export const Practitioner = () => {
   const { t } = useTranslation()
@@ -44,7 +43,12 @@ export const Practitioner = () => {
           <div className="ds-l-row">
             <div className="ds-l-col--12">
               <div className={layout.leader}>
-                <h1 role="heading" aria-level={1} className={layout.title}>
+                <h1
+                  role="heading"
+                  data-testid="practitioner-name"
+                  aria-level={1}
+                  className={layout.title}
+                >
                   {practitioner.name}
                 </h1>
                 <span
@@ -67,24 +71,36 @@ export const Practitioner = () => {
 
         <FeatureFlag name="PRACTITIONER_LOOKUP_DETAILS">
           <Alert heading={t("practitioners.update.title")}>
-          {t("practitioners.update.subtitle")}{' '}
-          <a href="#">{t("practitioners.update.link")}</a>
+            {t("practitioners.update.subtitle")}{" "}
+            <a href="#">{t("practitioners.update.link")}</a>
           </Alert>
 
           <section className={layout.section}>
             <h2>{t("practitioners.about.title")}</h2>
             <div className="ds-l-row">
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label={t("practitioners.about.name")} value={practitioner.name} />
+                <InfoItem
+                  label={t("practitioners.about.name")}
+                  value={practitioner.name}
+                />
               </div>
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label={t("practitioners.about.gender")} value={practitioner.gender} />
+                <InfoItem
+                  label={t("practitioners.about.gender")}
+                  value={practitioner.gender}
+                />
               </div>
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label={t("practitioners.about.deceased")} value={practitioner.isDeceased} />
+                <InfoItem
+                  label={t("practitioners.about.deceased")}
+                  value={practitioner.isDeceased}
+                />
               </div>
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label={t("practitioners.about.status")} value={practitioner.isActive} />
+                <InfoItem
+                  label={t("practitioners.about.status")}
+                  value={practitioner.isActive}
+                />
               </div>
             </div>
           </section>
@@ -93,13 +109,22 @@ export const Practitioner = () => {
             <h2>{t("practitioners.contact.title")}</h2>
             <div className="ds-l-row">
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label={t("practitioners.contact.address")} value={practitioner.address} />
+                <InfoItem
+                  label={t("practitioners.contact.address")}
+                  value={practitioner.address}
+                />
               </div>
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label={t("practitioners.contact.phone")} value={practitioner.phone} />
+                <InfoItem
+                  label={t("practitioners.contact.phone")}
+                  value={practitioner.phone}
+                />
               </div>
               <div className="ds-l-col--12 ds-l-md-col--3 ds-u-margin-bottom--2">
-                <InfoItem label={t("practitioners.contact.fax")} value={practitioner.fax} />
+                <InfoItem
+                  label={t("practitioners.contact.fax")}
+                  value={practitioner.fax}
+                />
               </div>
             </div>
           </section>
@@ -112,8 +137,12 @@ export const Practitioner = () => {
                 <TableHead>
                   <TableRow>
                     <TableCell>{t("practitioners.identifiers.type")}</TableCell>
-                    <TableCell>{t("practitioners.identifiers.number")}</TableCell>
-                    <TableCell>{t("practitioners.identifiers.details")}</TableCell>
+                    <TableCell>
+                      {t("practitioners.identifiers.number")}
+                    </TableCell>
+                    <TableCell>
+                      {t("practitioners.identifiers.details")}
+                    </TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -129,7 +158,9 @@ export const Practitioner = () => {
                 </TableBody>
               </Table>
             ) : (
-              <p className="ds-u-color--gray">{t("practitioners.identifiers.fallback")}</p>
+              <p className="ds-u-color--gray">
+                {t("practitioners.identifiers.fallback")}
+              </p>
             )}
           </section>
 

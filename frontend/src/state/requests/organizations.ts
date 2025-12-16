@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query"
-import { apiUrl } from "../api"
+import type { FHIRCollection, FHIROrganization } from "../../@types/fhir"
 import { formatAddress, formatDate } from "../../helpers/formatters"
-import type { FHIROrganization } from "../../@types/fhir"
+import { apiUrl } from "../api"
 
 const fetchOrganization = async (
   organizationId: string,
@@ -27,6 +27,37 @@ export const useOrganizationAPI = (organizationId: string | undefined) => {
       }
 
       return fetchOrganization(organizationId)
+    },
+  })
+}
+
+/// list
+
+const fetchOrganizations = async (
+  params: PaginationParams,
+): Promise<FHIRCollection<FHIROrganization>> => {
+  const url = new URL(apiUrl("/fhir/Organization/"))
+  if (params.page) {
+    url.searchParams.set("page", params.page.toString())
+  }
+  if (params.page_size) {
+    url.searchParams.set("page_size", params.page_size.toString())
+  }
+
+  const response = await fetch(url)
+  if (!response.ok) {
+    console.error(await response.text())
+    return Promise.reject(`error in ${url} request`)
+  }
+
+  return response.json()
+}
+
+export const useOrganizationsAPI = (params: PaginationParams) => {
+  return useQuery<FHIRCollection<FHIROrganization>>({
+    queryKey: ["organizations", params.page || 1],
+    queryFn: () => {
+      return fetchOrganizations(params)
     },
   })
 }
