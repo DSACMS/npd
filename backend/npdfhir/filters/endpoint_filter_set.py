@@ -25,6 +25,11 @@ class EndpointFilterSet(filters.FilterSet):
         method="filter_organization", help_text="Filter by organization"
     )
 
+    organization_id = filters.UUIDFilter(
+        method="filter_endpoint_organization_id",
+        help_text="Filter by the UUID of the organization associated with endpoints"
+    )
+
     class Meta:
         model = EndpointInstance
         fields = ["name", "connection_type", "payload_type", "status", "organization"]
@@ -34,5 +39,11 @@ class EndpointFilterSet(filters.FilterSet):
         return queryset
 
     def filter_organization(self, queryset, name, value):
-        # needs to be implemented
-        return queryset
+        return queryset.filter(
+            locationtoendpointinstance__location__organization__organizationtoname__name=value
+        )
+
+    def filter_endpoint_organization_id(self, queryset, name, value):
+        return queryset.filter(
+            locationtoendpointinstance__location__organization__id=value
+        )
