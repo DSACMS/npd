@@ -58,8 +58,8 @@ export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
   }
 
   return (
-    <SearchDispatchContext.Provider value={dispatch}>
-      <SearchContext.Provider value={state}>{children}</SearchContext.Provider>
-    </SearchDispatchContext.Provider>
+    <SearchContext value={state}>
+      <SearchDispatchContext value={dispatch}>{children}</SearchDispatchContext>
+    </SearchContext>
   )
 }
