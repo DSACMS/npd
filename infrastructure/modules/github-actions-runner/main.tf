@@ -70,18 +70,6 @@ data "aws_secretsmanager_secret_version" "github_actions_runner_token_version" {
   secret_id = aws_secretsmanager_secret.github_actions_runner_token.id
 }
 
-data "template_file" "bootstrap_runner" {
-  template = file("${path.module}/bootstrap-runner.sh.tpl")
-  vars = {
-    TOKEN          = data.aws_secretsmanager_secret_version.github_actions_runner_token_version.secret_string
-    RUNNER_VERSION = "2.329.0"
-    RUNNER_DIR     = "/opt/actions-runner"
-    GITHUB_URL     = "https://github.com/CMS-Enterprise/NPD"
-    TIER           = var.tier
-    WEEKLY_REFRESH = floor(tonumber(formatdate("DD", timestamp()) / 7))
-  }
-}
-
 resource "aws_instance" "github_actions_instance_user_data" {
   count                  = var.enable_preconfigured_ec2_instance ? 1 : 0
   ami                    = "ami-04345af6ff8317b5e"
@@ -96,7 +84,16 @@ resource "aws_instance" "github_actions_instance_user_data" {
     Name = "github-actions-runner-instance-user-data"
   }
   user_data_replace_on_change = true
-  user_data                   = data.template_file.bootstrap_runner.rendered
+  user_data = templatefile("${path.module}/bootstrap-runner.sh.tpl",
+    {
+      TOKEN          = data.aws_secretsmanager_secret_version.github_actions_runner_token_version.secret_string
+      RUNNER_VERSION = "2.329.0"
+      RUNNER_DIR     = "/opt/actions-runner"
+      GITHUB_URL     = "https://github.com/CMS-Enterprise/NPD"
+      TIER           = var.tier
+      WEEKLY_REFRESH = floor(tonumber(formatdate("X", timestamp())) / 604800)
+    }
+  )
 }
 
 
