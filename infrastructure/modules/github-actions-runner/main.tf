@@ -17,7 +17,7 @@ resource "aws_iam_role" "github_runner_resource_creation_role" {
           "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"
         }
         StringLike = {
-          "token.actions.githubusercontent.com:sub" = "repo:CMS-Enterprise/NPD:*"
+          "token.actions.githubusercontent.com:sub" = "repo:CMS-Enterprise/npd-ops:*"
         }
       }
       Principal = {
