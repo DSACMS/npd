@@ -149,7 +149,7 @@ module "fhir-api" {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address
     db_instance_port                   = module.api-db.db_instance_port
-    db_instance_name                   = module.api-db.db_instance_name
+    db_instance_name                   = "npd_halloween_sjp"
   }
   networking = {
     private_subnet_ids    = module.networking.private_subnet_ids

@@ -149,11 +149,12 @@ resource "aws_ecs_task_definition" "app" {
       environment = [
         {
           name  = "FLYWAY_URL"
-          value = "jdbc:postgresql://${var.db.db_instance_address}:${var.db.db_instance_port}/${var.db.db_instance_name}"
+          value = "jdbc:postgresql://${var.db.db_instance_address}:${var.db.db_instance_port}/${var.db.db_instance_name}?options=--search_path%3Dnpd%2Cpublic"
         },
         {
           name  = "FLYWAY_PLACEHOLDERS_apiSchema"
-          value = var.db.db_instance_name
+          # value = var.db.db_instance_name
+          value = "npd"
         },
       ]
       secrets = [

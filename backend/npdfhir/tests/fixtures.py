@@ -1,5 +1,6 @@
 import uuid
 import datetime
+import random
 
 from ..models import (
     Individual,
@@ -110,7 +111,9 @@ def create_other_id_type(name="Sample Other ID"):
 
 
 def create_organization(
+    id=None,
     name="Test Org",
+    parent_id=None,
     authorized_official_first_name="Alice",
     authorized_official_last_name="Smith",
     legal_entity=None,
@@ -138,10 +141,11 @@ def create_organization(
         name_use=_ensure_name_use(),
     )
 
+    if id is None:
+        id = uuid.uuid4()
+
     org = Organization.objects.create(
-        id=uuid.uuid4(),
-        authorized_official=ind,
-        ein=legal_entity,
+        id=id, authorized_official=ind, ein=legal_entity, parent_id=parent_id
     )
 
     if other_id_type or organization_type or npi_value:
@@ -192,7 +196,7 @@ def create_location(
 
     fips_code = FipsState.objects.get(abbreviation=state)
     addr_us = AddressUs.objects.create(
-        id=str(uuid.uuid4())[:10],
+        id=random.randint(-100000000000, 100000000000),
         delivery_line_1=addr_line_1,
         city_name=city,
         state_code_id=fips_code.id,
