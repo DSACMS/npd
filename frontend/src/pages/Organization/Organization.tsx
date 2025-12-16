@@ -1,30 +1,30 @@
 import {
   Alert,
   Table,
+  TableBody,
+  TableCell,
   TableHead,
   TableRow,
-  TableCell,
-  TableBody,
 } from "@cmsgov/design-system"
 
 import {
-  organizationNpiSelector,
-  useOrganizationAPI,
-  organizationMailingAddressSelector,
   organizationAuthorizedOfficialSelector,
   organizationAuthorizedPhoneSelector,
-  organizationIdentifiersSelector
+  organizationIdentifiersSelector,
+  organizationMailingAddressSelector,
+  organizationNpiSelector,
+  useOrganizationAPI,
 } from "../../state/requests/organizations"
 
 import classNames from "classnames"
+import { useTranslation } from "react-i18next"
 import { useParams } from "react-router"
 import { FeatureFlag } from "../../components/FeatureFlag"
-import { LoadingIndicator } from "../../components/LoadingIndicator"
 import { InfoItem } from "../../components/InfoItem"
+import { LoadingIndicator } from "../../components/LoadingIndicator"
+import { formatIdentifierType } from "../../helpers/formatters"
 import layout from "../Layout.module.css"
 import styles from "./Organization.module.css"
-import { useTranslation } from "react-i18next"
-import { formatIdentifierType } from "../../helpers/formatters"
 
 export const Organization = () => {
   const { t } = useTranslation()
@@ -36,7 +36,7 @@ export const Organization = () => {
   }
 
   const contentClass = classNames(layout.content, "ds-l-container")
-  const bannerClass = classNames(layout.banner)
+  const bannerClass = classNames(layout.banner, "banner")
 
   const npi = organizationNpiSelector(data)
   const mailingAddress = organizationMailingAddressSelector(data)
@@ -51,13 +51,13 @@ export const Organization = () => {
           <div className="ds-l-row">
             <div className="ds-l-col--12">
               <div className={layout.leader}>
-                <span className={layout.subtitle}>{t("organizations.title")}</span>
+                <span className={layout.subtitle}>
+                  {t("organizations.title")}
+                </span>
                 <div role="heading" aria-level={1} className={layout.title}>
                   {data?.name}
                 </div>
-                <span className={layout.subtitle}>
-                  NPI: {npi}
-                </span>
+                <span className={layout.subtitle}>NPI: {npi}</span>
               </div>
             </div>
           </div>
@@ -72,8 +72,8 @@ export const Organization = () => {
 
         <FeatureFlag name="ORGANIZATION_LOOKUP_DETAILS">
           <Alert heading={t("organizations.update.title")}>
-          {t("organizations.update.subtitle")}{' '}
-          <a href="#">{t("organizations.update.link")}</a>
+            {t("organizations.update.subtitle")}{" "}
+            <a href="#">{t("organizations.update.link")}</a>
           </Alert>
 
           <section className={layout.section}>
@@ -98,10 +98,16 @@ export const Organization = () => {
                 <InfoItem label="Mailing address" value={mailingAddress} />
               </div>
               <div className="ds-l-col--12 ds-l-md-col--4 ds-u-margin-bottom--2">
-                <InfoItem label="Authorized official" value={authorizedOfficial} />
+                <InfoItem
+                  label="Authorized official"
+                  value={authorizedOfficial}
+                />
               </div>
               <div className="ds-l-col--12 ds-l-md-col--4 ds-u-margin-bottom--2">
-                <InfoItem label="Authorized official phone" value={authorizedPhone} />
+                <InfoItem
+                  label="Authorized official phone"
+                  value={authorizedPhone}
+                />
               </div>
             </div>
           </section>

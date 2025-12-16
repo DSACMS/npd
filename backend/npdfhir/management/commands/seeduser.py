@@ -2,8 +2,6 @@ from django.contrib.auth.models import Group, User
 from django.core.management.base import BaseCommand
 from flags.models import FlagState
 
-# from fhir.resources.R4B import organization, practitioner
-
 
 class Command(BaseCommand):
     help = "Create a developer@cms.hhs.gov in the Developers group"
