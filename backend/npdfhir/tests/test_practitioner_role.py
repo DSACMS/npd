@@ -1,14 +1,14 @@
 from django.urls import reverse
 from rest_framework import status
+
 from .api_test_case import APITestCase
+from .fixtures import create_full_practitionerrole
 from .helpers import (
     assert_fhir_response,
     assert_has_results,
     assert_pagination_limit,
     extract_resource_ids,
 )
-
-from .fixtures import create_full_practitionerrole
 
 
 class PractitionerRoleViewSetTestCase(APITestCase):
@@ -62,8 +62,8 @@ class PractitionerRoleViewSetTestCase(APITestCase):
             location_name="Close NY LLC",
             role_display="Clinician",
             role_code="MD",
-            latitude=42.6530, 
-            longitude=-73.7560
+            latitude=42.6530,
+            longitude=-73.7560,
         )
 
         cls.far_from_ny = create_full_practitionerrole(
@@ -74,8 +74,8 @@ class PractitionerRoleViewSetTestCase(APITestCase):
             location_name="Far NY Ltd.",
             role_display="Clinician",
             role_code="MD",
-            latitude=43.0000, 
-            longitude=-74.2000
+            latitude=43.0000,
+            longitude=-74.2000,
         )
         return super().setUpTestData()
 
@@ -170,11 +170,11 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         ids = extract_resource_ids(response)
         self.assertIn(str(self.close_to_ny.id), ids)
         self.assertNotIn(str(self.far_from_ny.id), ids)
-    
+
     def test_filter_by_lat_long_outside_distance_returns_empty(self):
         url = reverse("fhir-practitionerrole-list")
 
-        #Use coordinates of Chicago
+        # Use coordinates of Chicago
         response = self.client.get(
             url,
             {
@@ -187,13 +187,13 @@ class PractitionerRoleViewSetTestCase(APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data["results"]["entry"]), 0)
-    
+
     def test_filter_by_lat_long_requires_all_parameters(self):
         url = reverse("fhir-practitionerrole-list")
 
         response = self.client.get(url, {"latitude": 42.6526})
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-    
+
     def test_filter_by_lat_long_miles(self):
         url = reverse("fhir-practitionerrole-list")
         response = self.client.get(
@@ -209,5 +209,3 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         ids = extract_resource_ids(response)
         self.assertIn(str(self.close_to_ny.id), ids)
-
-

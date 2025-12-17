@@ -1,4 +1,5 @@
 from django_filters import rest_framework as filters
+
 from ..models import EndpointInstance
 
 
@@ -27,7 +28,7 @@ class EndpointFilterSet(filters.FilterSet):
 
     organization_id = filters.UUIDFilter(
         method="filter_endpoint_organization_id",
-        help_text="Filter by the UUID of the organization associated with endpoints"
+        help_text="Filter by the UUID of the organization associated with endpoints",
     )
 
     class Meta:
@@ -44,6 +45,4 @@ class EndpointFilterSet(filters.FilterSet):
         )
 
     def filter_endpoint_organization_id(self, queryset, name, value):
-        return queryset.filter(
-            locationtoendpointinstance__location__organization__id=value
-        )
+        return queryset.filter(locationtoendpointinstance__location__organization__id=value)

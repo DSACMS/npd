@@ -1,43 +1,42 @@
-import uuid
 import datetime
 import random
-
+import uuid
 from math import radians
 
 from ..models import (
-    Individual,
-    IndividualToName,
-    IndividualToAddress,
-    FhirNameUse,
-    FhirAddressUse,
-    FipsState,
-    Npi,
-    Provider,
-    Organization,
-    OrganizationToName,
     Address,
     AddressUs,
-    Location,
-    ProviderToOrganization,
-    RelationshipType,
-    ProviderToLocation,
-    ProviderRole,
-    ProviderToTaxonomy,
+    ClinicalOrganization,
+    EhrVendor,
     Endpoint,
-    EndpointInstance,
     EndpointConnectionType,
+    EndpointInstance,
     EndpointInstanceToPayload,
     EndpointType,
     EnvironmentType,
-    EhrVendor,
-    PayloadType,
+    FhirAddressUse,
+    FhirNameUse,
+    FipsState,
+    Individual,
+    IndividualToAddress,
+    IndividualToName,
     LegalEntity,
-    OtherIdType,
+    Location,
+    LocationToEndpointInstance,
+    Npi,
+    Nucc,
+    Organization,
+    OrganizationToName,
     OrganizationToOtherId,
     OrganizationToTaxonomy,
-    ClinicalOrganization,
-    Nucc,
-    LocationToEndpointInstance
+    OtherIdType,
+    PayloadType,
+    Provider,
+    ProviderRole,
+    ProviderToLocation,
+    ProviderToOrganization,
+    ProviderToTaxonomy,
+    RelationshipType,
 )
 
 
@@ -183,6 +182,7 @@ def create_organization(
 
     return org
 
+
 def _set_location_coords(location, lat, lon):
     """
     Utility to force lat/lon on a role's location.
@@ -193,6 +193,7 @@ def _set_location_coords(location, lat, lon):
     address_us.longitude = lon
     address_us.save(update_fields=["latitude", "longitude"])
 
+
 def create_location(
     organization=None,
     name="Test Location",
@@ -201,7 +202,7 @@ def create_location(
     zipcode="12207",
     addr_line_1="123 Main St",
     latitude=None,
-    longitude=None
+    longitude=None,
 ):
     """
     Creates AddressUs → Address → Location.
@@ -288,10 +289,7 @@ def create_endpoint(
         environment_type=et,
     )
 
-    LocationToEndpointInstance.objects.create(
-        location=loc,
-        endpoint_instance=instance
-    )
+    LocationToEndpointInstance.objects.create(location=loc, endpoint_instance=instance)
 
     EndpointInstanceToPayload.objects.create(endpoint_instance=instance, payload_type=pt)
 
@@ -338,7 +336,7 @@ def create_full_practitionerrole(
     role_code="PRV",
     role_display="Provider Role",
     latitude=None,
-    longitude=None
+    longitude=None,
 ):
     """
     Creates:

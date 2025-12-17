@@ -1,15 +1,15 @@
-from django_filters import rest_framework as filters
 from django.contrib.postgres.search import SearchVector
-
+from django_filters import rest_framework as filters
 from geopy.distance import geodesic
 
-from ..models import ProviderToLocation
 from ..mappings import genderMapping
+from ..models import ProviderToLocation
+
 
 def _bounding_box(lat, lon, distance_km):
-    #Get a box defined by the provided distance from the given lat/long
+    # Get a box defined by the provided distance from the given lat/long
 
-    #Lat and long lines are every 111 km
+    # Lat and long lines are every 111 km
     delta = distance_km / 111.0
 
     return {
@@ -40,17 +40,17 @@ class PractitionerRoleFilterSet(filters.FilterSet):
         method="filter_organization_name", help_text="Filter by organization name"
     )
 
-    latitude = filters.NumberFilter(method="filter_by_distance",
-        help_text="Filter by latitude for lat/long filter"
+    latitude = filters.NumberFilter(
+        method="filter_by_distance", help_text="Filter by latitude for lat/long filter"
     )
-    longitude = filters.NumberFilter(method="filter_by_distance",
-        help_text="Filter by longitude for lat/long filter"
+    longitude = filters.NumberFilter(
+        method="filter_by_distance", help_text="Filter by longitude for lat/long filter"
     )
-    distance = filters.NumberFilter(method="filter_by_distance",
-        help_text="Filter by distance for lat/long filter"
+    distance = filters.NumberFilter(
+        method="filter_by_distance", help_text="Filter by distance for lat/long filter"
     )
-    units = filters.CharFilter(method="filter_by_distance",
-        help_text="Specify distance units for lat/long filter"
+    units = filters.CharFilter(
+        method="filter_by_distance", help_text="Specify distance units for lat/long filter"
     )
 
     class Meta:
@@ -100,9 +100,7 @@ class PractitionerRoleFilterSet(filters.FilterSet):
 
         # If ANY are supplied, ALL must be supplied
         if any(supplied) and not all(supplied):
-            raise ValueError(
-                "latitude, longitude, and distance must be provided together"
-            )
+            raise ValueError("latitude, longitude, and distance must be provided together")
 
         try:
             lat = float(lat)
@@ -117,7 +115,7 @@ class PractitionerRoleFilterSet(filters.FilterSet):
 
         max_km = distance * 1.60934 if units == "mi" else distance
 
-        #Filter by all locations in a box defined by the given lat and long
+        # Filter by all locations in a box defined by the given lat and long
         box = _bounding_box(lat, lon, max_km)
 
         qs = queryset.filter(
@@ -129,7 +127,7 @@ class PractitionerRoleFilterSet(filters.FilterSet):
             location__address__address_us__longitude__lte=box["max_lon"],
         )
 
-        #Use geopy to get the more precise distance inside the bounding box
+        # Use geopy to get the more precise distance inside the bounding box
         ids = []
         for obj in qs.select_related("location__address__address_us"):
             addr = obj.location.address.address_us

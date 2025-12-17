@@ -1,7 +1,9 @@
 from django.urls import reverse
-from rest_framework import status
 from fhir.resources.R4B.bundle import Bundle
+from rest_framework import status
+
 from .api_test_case import APITestCase
+from .fixtures import create_endpoint, create_organization
 from .helpers import (
     assert_fhir_response,
     assert_has_results,
@@ -9,13 +11,10 @@ from .helpers import (
     extract_resource_names,
 )
 
-from .fixtures import create_endpoint, create_organization
-
 
 class EndpointViewSetTestCase(APITestCase):
     @classmethod
     def setUpTestData(cls):
-
         cls.search_org_name = "Searchable"
         cls.searchable_org = create_organization(name=cls.search_org_name)
 
@@ -204,7 +203,7 @@ class EndpointViewSetTestCase(APITestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data["id"], str(id))
-    
+
     def test_filter_by_organization_name(self):
         response = self.client.get(
             self.list_url,
@@ -218,10 +217,10 @@ class EndpointViewSetTestCase(APITestCase):
 
         self.assertGreater(len(entries), 0)
 
-        result_ids = [entry['resource']['id'] for entry in entries]
+        result_ids = [entry["resource"]["id"] for entry in entries]
 
-        self.assertIn(str(self.endpoints[0].endpoint_instance.id),result_ids)
-    
+        self.assertIn(str(self.endpoints[0].endpoint_instance.id), result_ids)
+
     def test_filter_by_organization_id(self):
         response = self.client.get(
             self.list_url,
@@ -235,6 +234,6 @@ class EndpointViewSetTestCase(APITestCase):
 
         self.assertGreater(len(entries), 0)
 
-        result_ids = [entry['resource']['id'] for entry in entries]
+        result_ids = [entry["resource"]["id"] for entry in entries]
 
-        self.assertIn(str(self.endpoints[0].endpoint_instance.id),result_ids)
+        self.assertIn(str(self.endpoints[0].endpoint_instance.id), result_ids)
