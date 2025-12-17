@@ -1,7 +1,6 @@
 import datetime
 import random
 import uuid
-from math import radians
 
 from ..models import (
     Address,

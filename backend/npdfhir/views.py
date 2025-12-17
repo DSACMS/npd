@@ -288,7 +288,7 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
 
         try:
             practitionerroles = self.filter_queryset(practitionerroles)
-        except ValueError as e:
+        except ValueError:
             return HttpResponse("Invalid request parameters.", status=400)
 
         paginated_practitionerroles = self.paginate_queryset(practitionerroles)
