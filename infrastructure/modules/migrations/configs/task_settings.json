@@ -128,7 +128,7 @@
         "TableFailureMaxCount": 1000,
         "RecordFailureDelayInMinutes": 5,
         "MaxKeyColumnSize": 8096,
-        "EnableValidation": true,
+        "EnableValidation": false,
         "ThreadCount": 5,
         "RecordSuspendDelayInMinutes": 30,
         "ValidationS3Mask": 0,
@@ -141,10 +141,10 @@
         "EnableTT": false
     },
     "FullLoadSettings": {
-        "CommitRate": 10000,
+        "CommitRate": 50000,
         "StopTaskCachedChangesApplied": false,
         "StopTaskCachedChangesNotApplied": false,
-        "MaxFullLoadSubTasks": 2,
+        "MaxFullLoadSubTasks": 16,
         "TransactionConsistencyTimeout": 600,
         "CreatePkAfterFullLoad": false,
         "TargetTablePrepMode": "DO_NOTHING"
@@ -154,7 +154,7 @@
         "ParallelApplyQueuesPerThread": 0,
         "ParallelApplyThreads": 0,
         "TargetSchema": "",
-        "InlineLobMaxSize": 0,
+        "InlineLobMaxSize": 32,
         "ParallelLoadQueuesPerThread": 0,
         "SupportLobs": true,
         "LobChunkSize": 64,

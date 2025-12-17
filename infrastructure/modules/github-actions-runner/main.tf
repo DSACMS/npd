@@ -91,9 +91,8 @@ resource "aws_instance" "github_actions_instance_user_data" {
       RUNNER_DIR     = "/opt/actions-runner"
       GITHUB_URL     = "https://github.com/CMS-Enterprise/NPD"
       TIER           = var.tier
-      WEEKLY_REFRESH = floor(tonumber(formatdate("X", timestamp())) / 604800)
-    }
-  )
+      WEEKLY_REFRESH = floor(tonumber(formatdate("DD", timestamp()) / 7))
+  })
 }
 
 
