@@ -92,10 +92,22 @@ class PractitionerRoleFilterSet(filters.FilterSet):
     def filter_by_distance(self, queryset, name, value):
         data = self.data
 
+        lat = data.get("latitude")
+        lon = data.get("longitude")
+        dist = data.get("distance")
+
+        supplied = [lat is not None, lon is not None, dist is not None]
+
+        # If ANY are supplied, ALL must be supplied
+        if any(supplied) and not all(supplied):
+            raise ValueError(
+                "latitude, longitude, and distance must be provided together"
+            )
+
         try:
-            lat = float(data.get("latitude"))
-            lon = float(data.get("longitude"))
-            distance = float(data.get("distance"))
+            lat = float(lat)
+            lon = float(lon)
+            distance = float(dist)
         except (TypeError, ValueError):
             return queryset
 

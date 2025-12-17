@@ -187,3 +187,27 @@ class PractitionerRoleViewSetTestCase(APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data["results"]["entry"]), 0)
+    
+    def test_filter_by_lat_long_requires_all_parameters(self):
+        url = reverse("fhir-practitionerrole-list")
+
+        response = self.client.get(url, {"latitude": 42.6526})
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+    
+    def test_filter_by_lat_long_miles(self):
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(
+            url,
+            {
+                "latitude": 42.6526,
+                "longitude": -73.7562,
+                "distance": 3,  # ~4.8km
+                "units": "mi",
+            },
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        ids = extract_resource_ids(response)
+        self.assertIn(str(self.close_to_ny.id), ids)
+
+

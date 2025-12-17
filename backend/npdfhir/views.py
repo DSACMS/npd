@@ -290,7 +290,11 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
             .order_by("location__name")
         ).all()
 
-        practitionerroles = self.filter_queryset(practitionerroles)
+        try:
+            practitionerroles = self.filter_queryset(practitionerroles)
+        except ValueError as e:
+            return HttpResponse(f"Error processing parameters: {e}", status=400)
+
         paginated_practitionerroles = self.paginate_queryset(practitionerroles)
 
         serialized_practitionerroles = PractitionerRoleSerializer(
