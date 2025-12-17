@@ -37,6 +37,7 @@ from ..models import (
     OrganizationToTaxonomy,
     ClinicalOrganization,
     Nucc,
+    LocationToEndpointInstance
 )
 
 
@@ -262,6 +263,7 @@ def create_endpoint(
     Creates EndpointType, EndpointConnectionType, EndpointInstance, Endpoint.
     """
     organization = organization or create_organization()
+    loc = create_location(organization=organization)
 
     etype, ctype, payload = _ensure_endpoint_base_types()
 
@@ -284,6 +286,11 @@ def create_endpoint(
         endpoint_connection_type=ctype,
         name=name,
         environment_type=et,
+    )
+
+    LocationToEndpointInstance.objects.create(
+        location=loc,
+        endpoint_instance=instance
     )
 
     EndpointInstanceToPayload.objects.create(endpoint_instance=instance, payload_type=pt)

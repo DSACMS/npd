@@ -9,14 +9,18 @@ from .helpers import (
     extract_resource_names,
 )
 
-from .fixtures import create_endpoint
+from .fixtures import create_endpoint, create_organization
 
 
 class EndpointViewSetTestCase(APITestCase):
     @classmethod
     def setUpTestData(cls):
+
+        cls.search_org_name = "Searchable"
+        cls.searchable_org = create_organization(name=cls.search_org_name)
+
         cls.endpoints = [
-            create_endpoint(name="88 MEDICINE LLC"),
+            create_endpoint(name="88 MEDICINE LLC", organization=cls.searchable_org),
             create_endpoint(name="AAIA of Tampa Bay, LLC"),
             create_endpoint(name="ABC Healthcare Service Base URL"),
             create_endpoint(name="A Better Way LLC"),
@@ -200,3 +204,37 @@ class EndpointViewSetTestCase(APITestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data["id"], str(id))
+    
+    def test_filter_by_organization_name(self):
+        response = self.client.get(
+            self.list_url,
+            {"organization": self.search_org_name},
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        bundle = response.data["results"]
+        entries = bundle.get("entry", [])
+
+        self.assertGreater(len(entries), 0)
+
+        result_ids = [entry['resource']['id'] for entry in entries]
+
+        self.assertIn(str(self.endpoints[0].endpoint_instance.id),result_ids)
+    
+    def test_filter_by_organization_id(self):
+        response = self.client.get(
+            self.list_url,
+            {"organization_id": self.searchable_org.id},
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        bundle = response.data["results"]
+        entries = bundle.get("entry", [])
+
+        self.assertGreater(len(entries), 0)
+
+        result_ids = [entry['resource']['id'] for entry in entries]
+
+        self.assertIn(str(self.endpoints[0].endpoint_instance.id),result_ids)
