@@ -40,10 +40,18 @@ class PractitionerRoleFilterSet(filters.FilterSet):
         method="filter_organization_name", help_text="Filter by organization name"
     )
 
-    latitude = filters.NumberFilter(method="filter_by_distance")
-    longitude = filters.NumberFilter(method="filter_by_distance")
-    distance = filters.NumberFilter(method="filter_by_distance")
-    units = filters.CharFilter(method="filter_by_distance")
+    latitude = filters.NumberFilter(method="filter_by_distance",
+        help_text="Filter by latitude for lat/long filter"
+    )
+    longitude = filters.NumberFilter(method="filter_by_distance",
+        help_text="Filter by longitude for lat/long filter"
+    )
+    distance = filters.NumberFilter(method="filter_by_distance",
+        help_text="Filter by distance for lat/long filter"
+    )
+    units = filters.CharFilter(method="filter_by_distance",
+        help_text="Specify distance units for lat/long filter"
+    )
 
     class Meta:
         model = ProviderToLocation

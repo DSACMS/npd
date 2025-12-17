@@ -2,6 +2,8 @@ import uuid
 import datetime
 import random
 
+from math import radians
+
 from ..models import (
     Individual,
     IndividualToName,
@@ -180,6 +182,15 @@ def create_organization(
 
     return org
 
+def _set_location_coords(location, lat, lon):
+    """
+    Utility to force lat/lon on a role's location.
+    """
+
+    address_us = location.address.address_us
+    address_us.latitude = lat
+    address_us.longitude = lon
+    address_us.save(update_fields=["latitude", "longitude"])
 
 def create_location(
     organization=None,
@@ -188,6 +199,8 @@ def create_location(
     state="NY",
     zipcode="12207",
     addr_line_1="123 Main St",
+    latitude=None,
+    longitude=None
 ):
     """
     Creates AddressUs → Address → Location.
@@ -215,6 +228,9 @@ def create_location(
         address=address,
         active=True,
     )
+
+    if latitude and longitude:
+        _set_location_coords(loc, latitude, longitude)
 
     return loc
 
@@ -314,6 +330,8 @@ def create_full_practitionerrole(
     location_name="Test Location",
     role_code="PRV",
     role_display="Provider Role",
+    latitude=None,
+    longitude=None
 ):
     """
     Creates:
@@ -344,6 +362,9 @@ def create_full_practitionerrole(
         relationship_type=rel_type,
         active=True,
     )
+
+    if latitude and longitude:
+        _set_location_coords(loc, latitude, longitude)
 
     pr = ProviderToLocation.objects.create(
         id=uuid.uuid4(),

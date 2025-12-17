@@ -49,6 +49,34 @@ class PractitionerRoleViewSetTestCase(APITestCase):
             cls.roles.append(role)
 
         cls.first_prac_id = cls.roles[0].id
+
+        # Albany-ish
+        cls.center_lat = 42.6526
+        cls.center_lon = -73.7562
+
+        cls.close_to_albany = create_full_practitionerrole(
+            first_name="Ben",
+            last_name="Close",
+            gender="M",
+            npi_value=1000000300,
+            location_name="Close Albany LLC",
+            role_display="Clinician",
+            role_code="MD",
+            latitude=42.6530, 
+            longitude=-73.7560
+        )
+
+        cls.far_from_albany = create_full_practitionerrole(
+            first_name="Far",
+            last_name="Distance",
+            gender="F",
+            npi_value=1000000700,
+            location_name="Far Albany Ltd.",
+            role_display="Clinician",
+            role_code="MD",
+            latitude=43.0000, 
+            longitude=-74.2000
+        )
         return super().setUpTestData()
 
     # Basic tests
@@ -124,3 +152,21 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data["id"], str(id))
+
+    def test_retrieve_based_on_lat_long(self):
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(
+            url,
+            {
+                "latitude": self.center_lat,
+                "longitude": self.center_lon,
+                "distance": 5,
+                "units": "km",
+            },
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        ids = extract_resource_ids(response)
+        self.assertIn(str(self.close_to_albany.id), ids)
+        self.assertNotIn(str(self.far_from_albany.id), ids)
