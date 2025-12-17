@@ -50,28 +50,28 @@ class PractitionerRoleViewSetTestCase(APITestCase):
 
         cls.first_prac_id = cls.roles[0].id
 
-        # Albany-ish
+        # New York coordinates
         cls.center_lat = 42.6526
         cls.center_lon = -73.7562
 
-        cls.close_to_albany = create_full_practitionerrole(
+        cls.close_to_ny = create_full_practitionerrole(
             first_name="Ben",
             last_name="Close",
             gender="M",
             npi_value=1000000300,
-            location_name="Close Albany LLC",
+            location_name="Close NY LLC",
             role_display="Clinician",
             role_code="MD",
             latitude=42.6530, 
             longitude=-73.7560
         )
 
-        cls.far_from_albany = create_full_practitionerrole(
+        cls.far_from_ny = create_full_practitionerrole(
             first_name="Far",
             last_name="Distance",
             gender="F",
             npi_value=1000000700,
-            location_name="Far Albany Ltd.",
+            location_name="Far NY Ltd.",
             role_display="Clinician",
             role_code="MD",
             latitude=43.0000, 
@@ -168,5 +168,22 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
         ids = extract_resource_ids(response)
-        self.assertIn(str(self.close_to_albany.id), ids)
-        self.assertNotIn(str(self.far_from_albany.id), ids)
+        self.assertIn(str(self.close_to_ny.id), ids)
+        self.assertNotIn(str(self.far_from_ny.id), ids)
+    
+    def test_filter_by_lat_long_outside_distance_returns_empty(self):
+        url = reverse("fhir-practitionerrole-list")
+
+        #Use coordinates of Chicago
+        response = self.client.get(
+            url,
+            {
+                "latitude": 41.875562,
+                "longitude": -87.6244212,
+                "distance": 0.1,
+                "units": "km",
+            },
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.data["results"]["entry"]), 0)
