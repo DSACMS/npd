@@ -153,7 +153,6 @@ resource "aws_ecs_task_definition" "app" {
         },
         {
           name  = "FLYWAY_DEFAULT_SCHEMA",
-          # value = var.db.db_instance_name
           value = "npd"
         },
         {
