@@ -1,8 +1,8 @@
-from django_filters import rest_framework as filters
 from django.contrib.postgres.search import SearchVector
+from django_filters import rest_framework as filters
 
-from ..models import Location
 from ..mappings import addressUseMapping
+from ..models import Location
 
 
 class LocationFilterSet(filters.FilterSet):

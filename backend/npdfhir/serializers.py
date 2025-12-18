@@ -1,32 +1,31 @@
 import sys
+from datetime import datetime, timezone
 
 from django.urls import reverse
 from fhir.resources.R4B.address import Address
 from fhir.resources.R4B.bundle import Bundle
+from fhir.resources.R4B.capabilitystatement import (
+    CapabilityStatement,
+    CapabilityStatementImplementation,
+    CapabilityStatementRest,
+    CapabilityStatementRestResource,
+    CapabilityStatementRestResourceSearchParam,
+)
 from fhir.resources.R4B.codeableconcept import CodeableConcept
 from fhir.resources.R4B.coding import Coding
+from fhir.resources.R4B.contactdetail import ContactDetail
 from fhir.resources.R4B.contactpoint import ContactPoint
 from fhir.resources.R4B.endpoint import Endpoint
 from fhir.resources.R4B.humanname import HumanName
 from fhir.resources.R4B.identifier import Identifier
 from fhir.resources.R4B.location import Location as FHIRLocation
-from fhir.resources.R4B.contactdetail import ContactDetail
 from fhir.resources.R4B.meta import Meta
 from fhir.resources.R4B.organization import Organization as FHIROrganization
 from fhir.resources.R4B.period import Period
 from fhir.resources.R4B.practitioner import Practitioner, PractitionerQualification
 from fhir.resources.R4B.practitionerrole import PractitionerRole
 from fhir.resources.R4B.reference import Reference
-from fhir.resources.R4B.capabilitystatement import (
-    CapabilityStatement,
-    CapabilityStatementRest,
-    CapabilityStatementRestResource,
-    CapabilityStatementRestResourceSearchParam,
-    CapabilityStatementImplementation,
-)
-from datetime import datetime, timezone
 from rest_framework import serializers
-from .utils import get_schema_data, genReference
 
 from .models import (
     IndividualToPhone,
@@ -36,6 +35,7 @@ from .models import (
     OrganizationToName,
     ProviderToOrganization,
 )
+from .utils import genReference, get_schema_data
 
 if "runserver" or "test" in sys.argv:
     from .cache import (
