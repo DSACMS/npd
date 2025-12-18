@@ -1,15 +1,15 @@
 from django.urls import reverse
 from rest_framework import status
-from ..models import Organization, OtherIdType
+
+from ..models import Organization, OrganizationByName, OtherIdType
 from .api_test_case import APITestCase
+from .fixtures import create_legal_entity, create_organization
 from .helpers import (
     assert_fhir_response,
     assert_has_results,
     assert_pagination_limit,
     extract_resource_names,
 )
-
-from .fixtures import create_organization, create_legal_entity
 
 
 class OrganizationViewSetTestCase(APITestCase):
@@ -64,6 +64,9 @@ class OrganizationViewSetTestCase(APITestCase):
         cls.org_cumberland = create_organization(name="Cumberland")
         cls.orgs.append(cls.org_cumberland)
 
+        # refresh the sorting view used in FHIROrganizationViewSet
+        OrganizationByName.refresh_materialized_view()
+
         return super().setUpTestData()
 
     def setUp(self):
@@ -110,7 +113,7 @@ class OrganizationViewSetTestCase(APITestCase):
 
     def test_list_in_descending_order(self):
         url = reverse("fhir-organization-list")
-        response = self.client.get(url, {"_sort": "-organizationtoname__name"})
+        response = self.client.get(url, {"_sort": "-name"})
         assert_fhir_response(self, response)
 
         # Extract names
@@ -118,7 +121,6 @@ class OrganizationViewSetTestCase(APITestCase):
         names = extract_resource_names(response)
 
         sorted_names = [
-            {},
             "ZUNI HOME HEALTH CARE AGENCY",
             "ZEELAND COMMUNITY HOSPITAL",
             "YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD",
@@ -128,6 +130,7 @@ class OrganizationViewSetTestCase(APITestCase):
             "YOAKUM COMMUNITY HOSPITAL",
             "YARMOUTH AUDIOLOGY",
             "TestNuccOrg",
+            "Joe Health Incorporated",
         ]
 
         self.assertEqual(

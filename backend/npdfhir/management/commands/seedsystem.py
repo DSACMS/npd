@@ -6,6 +6,7 @@ from django.core.serializers.json import DjangoJSONEncoder
 from django.db import IntegrityError
 from faker import Faker
 
+from npdfhir.models import OrganizationByName
 from npdfhir.tests.fixtures import create_endpoint, create_organization, create_practitioner
 
 
@@ -66,3 +67,5 @@ class Command(BaseCommand):
             self.stdout.write(f"created Endpoint: {self.to_json(id=endpoint.id)}")
 
         self.generate_sample_organizations(25)
+
+        OrganizationByName.refresh_materialized_view()

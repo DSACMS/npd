@@ -1,46 +1,43 @@
 from uuid import UUID
 
-from django.db.models import F, Value, CharField
+from django.conf import settings
+from django.db.models import CharField, F, Value
 from django.db.models.functions import Concat
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
 from django.utils.html import escape
 from django_filters.rest_framework import DjangoFilterBackend
-from drf_spectacular.utils import extend_schema, OpenApiResponse
+from drf_spectacular.utils import OpenApiResponse, extend_schema
 from rest_framework import viewsets
-from rest_framework.views import APIView
+from rest_framework.filters import OrderingFilter, SearchFilter
 from rest_framework.renderers import BrowsableAPIRenderer
 from rest_framework.response import Response
-from rest_framework.filters import SearchFilter, OrderingFilter
-
-from .pagination import CustomPaginator
-from .renderers import FHIRRenderer
+from rest_framework.views import APIView
 
 from .filters.endpoint_filter_set import EndpointFilterSet
 from .filters.location_filter_set import LocationFilterSet
 from .filters.organization_filter_set import OrganizationFilterSet
 from .filters.practitioner_filter_set import PractitionerFilterSet
 from .filters.practitioner_role_filter_set import PractitionerRoleFilterSet
-
 from .models import (
     EndpointInstance,
     Location,
     Organization,
+    OrganizationByName,
     Provider,
     ProviderToLocation,
 )
-
+from .pagination import CustomPaginator
+from .renderers import FHIRRenderer
 from .serializers import (
     BundleSerializer,
+    CapabilityStatementSerializer,
     EndpointSerializer,
     LocationSerializer,
     OrganizationSerializer,
     PractitionerRoleSerializer,
     PractitionerSerializer,
-    CapabilityStatementSerializer,
 )
-
-from django.conf import settings
 
 DEBUG = settings.DEBUG
 
@@ -334,7 +331,7 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     ViewSet for FHIR Organization resources
     """
 
-    queryset = Organization.objects.none()
+    queryset = OrganizationByName.objects.none()
     if DEBUG:
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     else:
@@ -343,7 +340,7 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     filterset_class = OrganizationFilterSet
     pagination_class = CustomPaginator
 
-    ordering_fields = ["organizationtoname__name"]
+    ordering_fields = ["name"]
 
     # permission_classes = [permissions.IsAuthenticated]
     @extend_schema(
@@ -361,30 +358,31 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
         """
 
         organizations = (
-            Organization.objects.all()
+            OrganizationByName.objects.all()
             .prefetch_related(
-                "authorized_official",
-                "ein",
-                "organizationtoname_set",
-                "organizationtoaddress_set",
-                "organizationtoaddress_set__address",
-                "organizationtoaddress_set__address__address_us",
-                "organizationtoaddress_set__address__address_us__state_code",
-                "organizationtoaddress_set__address_use",
-                "authorized_official__individualtophone_set",
-                "authorized_official__individualtoname_set",
-                "authorized_official__individualtoemail_set",
-                "authorized_official__individualtoaddress_set",
-                "authorized_official__individualtoaddress_set__address__address_us",
-                "authorized_official__individualtoaddress_set__address__address_us__state_code",
-                "clinicalorganization",
-                "clinicalorganization__npi",
-                "clinicalorganization__organizationtootherid_set",
-                "clinicalorganization__organizationtootherid_set__other_id_type",
-                "clinicalorganization__organizationtotaxonomy_set",
-                "clinicalorganization__organizationtotaxonomy_set__nucc_code",
+                "organization",
+                "organization__authorized_official",
+                "organization__ein",
+                "organization__organizationtoname_set",
+                "organization__organizationtoaddress_set",
+                "organization__organizationtoaddress_set__address",
+                "organization__organizationtoaddress_set__address__address_us",
+                "organization__organizationtoaddress_set__address__address_us__state_code",
+                "organization__organizationtoaddress_set__address_use",
+                "organization__authorized_official__individualtophone_set",
+                "organization__authorized_official__individualtoname_set",
+                "organization__authorized_official__individualtoemail_set",
+                "organization__authorized_official__individualtoaddress_set",
+                "organization__authorized_official__individualtoaddress_set__address__address_us",
+                "organization__authorized_official__individualtoaddress_set__address__address_us__state_code",
+                "organization__clinicalorganization",
+                "organization__clinicalorganization__npi",
+                "organization__clinicalorganization__organizationtootherid_set",
+                "organization__clinicalorganization__organizationtootherid_set__other_id_type",
+                "organization__clinicalorganization__organizationtotaxonomy_set",
+                "organization__clinicalorganization__organizationtotaxonomy_set__nucc_code",
             )
-            .order_by("organizationtoname__name")
+            .order_by("name")
         )
 
         organizations = self.filter_queryset(organizations)
