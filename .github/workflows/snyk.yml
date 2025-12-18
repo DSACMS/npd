@@ -1,5 +1,7 @@
 name: Scan Project with Snyk Python Workflow
 on: push
+permissions:
+  contents: read
 jobs:
     security:
         runs-on: ubuntu-latest
