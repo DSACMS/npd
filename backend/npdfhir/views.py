@@ -19,8 +19,11 @@ from .renderers import FHIRRenderer
 from .filters.endpoint_filter_set import EndpointFilterSet
 from .filters.location_filter_set import LocationFilterSet
 from .filters.organization_filter_set import OrganizationFilterSet
+from .filters.ehr_vendor_filter_set import EhrVendorFilterSet
 from .filters.practitioner_filter_set import PractitionerFilterSet
 from .filters.practitioner_role_filter_set import PractitionerRoleFilterSet
+
+from .utils import FHIROrganizationSource
 
 from .models import (
     EndpointInstance,
@@ -28,7 +31,8 @@ from .models import (
     Organization,
     Provider,
     ProviderToLocation,
-    LocationToEndpointInstance
+    LocationToEndpointInstance,
+    EhrVendor
 )
 
 from .serializers import (
@@ -342,7 +346,7 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     else:
         renderer_classes = [FHIRRenderer]
     filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
-    filterset_class = OrganizationFilterSet
+    #filterset_class = OrganizationFilterSet
     pagination_class = CustomPaginator
 
     ordering_fields = ["organizationtoname__name"]
@@ -389,8 +393,31 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
             .order_by("organizationtoname__name")
         )
 
-        organizations = self.filter_queryset(organizations)
-        paginated_organizations = self.paginate_queryset(organizations)
+        vendors = EhrVendor.objects.all()
+
+        # Apply Organization filters
+        org_filterset = OrganizationFilterSet(
+            request.GET, queryset=organizations, request=request
+        )
+        organizations = org_filterset.qs
+
+        # Apply Vendor filters
+        vendor_filterset = EhrVendorFilterSet(
+            request.GET, queryset=vendors, request=request
+        )
+        vendors = vendor_filterset.qs
+
+        sources = [
+            *[FHIROrganizationSource(organization=o) for o in organizations],
+            *[FHIROrganizationSource(ehr_vendor=v) for v in vendors],
+        ]
+
+        #sources.sort(key=lambda s: s.organizationtoname_set[0]["name"]
+        #            if isinstance(s.organizationtoname_set, list)
+        #            else s.organizationtoname_set.first().name
+        #)
+
+        paginated_organizations = self.paginate_queryset(sources)
 
         serialized_organizations = OrganizationSerializer(
             paginated_organizations, many=True, context={"request": request}
@@ -414,33 +441,39 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
         except (ValueError, TypeError):
             return HttpResponse(f"Organization {escape(pk)} not found", status=404)
 
-        organization = get_object_or_404(
-            Organization.objects.prefetch_related(
-                "authorized_official",
-                "ein",
-                "organizationtoname_set",
-                "organizationtoaddress_set",
-                "organizationtoaddress_set__address",
-                "organizationtoaddress_set__address__address_us",
-                "organizationtoaddress_set__address__address_us__state_code",
-                "organizationtoaddress_set__address_use",
-                "authorized_official__individualtophone_set",
-                "authorized_official__individualtoname_set",
-                "authorized_official__individualtoemail_set",
-                "authorized_official__individualtoaddress_set",
-                "authorized_official__individualtoaddress_set__address__address_us",
-                "authorized_official__individualtoaddress_set__address__address_us__state_code",
-                "clinicalorganization",
-                "clinicalorganization__npi",
-                "clinicalorganization__organizationtootherid_set",
-                "clinicalorganization__organizationtootherid_set__other_id_type",
-                "clinicalorganization__organizationtotaxonomy_set",
-                "clinicalorganization__organizationtotaxonomy_set__nucc_code",
-            ),
-            pk=pk,
-        )
+        try:
+            organization = get_object_or_404(
+                Organization.objects.prefetch_related(
+                    "authorized_official",
+                    "ein",
+                    "organizationtoname_set",
+                    "organizationtoaddress_set",
+                    "organizationtoaddress_set__address",
+                    "organizationtoaddress_set__address__address_us",
+                    "organizationtoaddress_set__address__address_us__state_code",
+                    "organizationtoaddress_set__address_use",
+                    "authorized_official__individualtophone_set",
+                    "authorized_official__individualtoname_set",
+                    "authorized_official__individualtoemail_set",
+                    "authorized_official__individualtoaddress_set",
+                    "authorized_official__individualtoaddress_set__address__address_us",
+                    "authorized_official__individualtoaddress_set__address__address_us__state_code",
+                    "clinicalorganization",
+                    "clinicalorganization__npi",
+                    "clinicalorganization__organizationtootherid_set",
+                    "clinicalorganization__organizationtootherid_set__other_id_type",
+                    "clinicalorganization__organizationtotaxonomy_set",
+                    "clinicalorganization__organizationtotaxonomy_set__nucc_code",
+                ),
+                pk=pk,
+            )
+            source = FHIROrganizationSource(organization=organization)
+        except Organization.DoesNotExist:
+            vendor = get_object_or_404(EhrVendor, pk=pk)
+            source = FHIROrganizationSource(ehr_vendor=vendor)
 
-        serialized_organization = OrganizationSerializer(organization, context={"request": request})
+
+        serialized_organization = OrganizationSerializer(source, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = Response(serialized_organization.data)

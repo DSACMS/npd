@@ -311,13 +311,37 @@ class OrganizationSerializer(serializers.Serializer):
 
     def to_representation(self, instance):
         request = self.context.get("request")
-        representation = super().to_representation(instance)
+
+        # unwrap adapter
+        source = instance
+        instance = instance.organization if instance.organization else instance.ehr_vendor
+
+
         organization = FHIROrganization()
         organization.id = str(instance.id)
         organization.meta = Meta(
             profile=["http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"]
         )
         identifiers = []
+
+        #Serialize EHRVendor as an Organization
+        if source.is_ehr_vendor:
+            identifiers.append(
+                Identifier(
+                    system="urn:ndh:ehr-vendor",
+                    value=str(source.id),
+                    type=CodeableConcept(
+                        coding=[Coding(code="EHR", display="EHR Vendor")]
+                    ),
+                )
+            )
+
+            organization.name = source.organizationtoname_set[0]["name"]
+            organization.identifier = identifiers
+
+            return organization.model_dump()
+
+        representation = super().to_representation(instance)
         taxonomies = []
         # if instance.ein:
         #    ein_identifier = Identifier(
