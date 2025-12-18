@@ -311,12 +311,6 @@ LOGGING = {
             "class": "logging.StreamHandler",
             "formatter": "json_formatter",
         },
-        "queries_file": {
-            "level": LOG_LEVEL,
-            "class": "logging.FileHandler",
-            "filename": "django_queries.log",
-            "formatter": "json_formatter",
-        },
     },
     "loggers": {
         "": {
@@ -337,6 +331,12 @@ if SQL_TRACING:
     )
 
     # write SQL query logs to backend/django_queries.log
+    LOGGING["handlers"]["queries_file"] = {
+        "level": LOG_LEVEL,
+        "class": "logging.FileHandler",
+        "filename": "django_queries.log",
+        "formatter": "json_formatter",
+    }
     LOGGING["loggers"]["django.db.backends"] = {
         "handlers": ["queries_file"],
         "level": "DEBUG",
