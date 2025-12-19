@@ -17,10 +17,11 @@ from .helpers import (
     assert_fhir_response,
     assert_has_results,
     assert_pagination_limit,
-    extract_resource_names,
     extract_resource_fields,
-    extract_resource_ids
+    extract_resource_ids,
+    extract_resource_names,
 )
+
 
 class OrganizationAffiliationViewSetTestCase(APITestCase):
     @classmethod
@@ -30,7 +31,6 @@ class OrganizationAffiliationViewSetTestCase(APITestCase):
         - Some that SHOULD match the query
         - Some that SHOULD NOT match the query
         """
-
 
         cls.orgs = []
 
@@ -196,88 +196,88 @@ class OrganizationAffiliationViewSetTestCase(APITestCase):
         response = self.client.get(url)
         assert_fhir_response(self, response)
         assert_has_results(self, response)
-    
+
     def test_list_in_default_order(self):
         url = reverse("fhir-organizationaffiliation-list")
         response = self.client.get(url)
         assert_fhir_response(self, response)
-        
-        particpiationg_orgs = extract_resource_fields(response,"participatingOrganization")
-        participating_org_names = [org['display'] for org in particpiationg_orgs]
 
-        sorted = ['A Good Clinical Org', 'B Good Clinical Org', 'C Good Clinical Org']
+        particpiationg_orgs = extract_resource_fields(response, "participatingOrganization")
+        participating_org_names = [org["display"] for org in particpiationg_orgs]
+
+        sorted = ["A Good Clinical Org", "B Good Clinical Org", "C Good Clinical Org"]
 
         self.assertEqual(
             participating_org_names,
             sorted,
-            f"Expected fhir org affilations sorted by participating org name but got {participating_org_names}\n Sorted: {sorted}"
+            f"Expected fhir org affilations sorted by participating org name but got {participating_org_names}\n Sorted: {sorted}",
         )
 
     def test_list_in_descending_order(self):
         url = reverse("fhir-organizationaffiliation-list")
         response = self.client.get(url, {"_sort": "-organization_name"})
         assert_fhir_response(self, response)
-        
-        particpiationg_orgs = extract_resource_fields(response,"participatingOrganization")
-        participating_org_names = [org['display'] for org in particpiationg_orgs]
 
-        sorted = ['C Good Clinical Org', 'B Good Clinical Org', 'A Good Clinical Org']
+        particpiationg_orgs = extract_resource_fields(response, "participatingOrganization")
+        participating_org_names = [org["display"] for org in particpiationg_orgs]
+
+        sorted = ["C Good Clinical Org", "B Good Clinical Org", "A Good Clinical Org"]
 
         self.assertEqual(
             participating_org_names,
             sorted,
-            f"Expected fhir org affilations sorted in descending order by participating org name but got {participating_org_names}\n Sorted: {sorted}"
+            f"Expected fhir org affilations sorted in descending order by participating org name but got {participating_org_names}\n Sorted: {sorted}",
         )
-    
+
     def test_list_in_ehr_vendor_order(self):
         url = reverse("fhir-organizationaffiliation-list")
         response = self.client.get(url, {"_sort": "ehr_vendor_name"})
         assert_fhir_response(self, response)
-        
-        ehr_orgs = extract_resource_fields(response,"organization")
-        ehr_org_names = [org['display'] for org in ehr_orgs]
 
-        sorted = ['Epic', 'Legendary', 'Zod']
+        ehr_orgs = extract_resource_fields(response, "organization")
+        ehr_org_names = [org["display"] for org in ehr_orgs]
+
+        sorted = ["Epic", "Legendary", "Zod"]
 
         self.assertEqual(
             ehr_org_names,
             sorted,
-            f"Expected fhir org affilations sorted in descending order by ehr org name but got {ehr_org_names}\n Sorted: {sorted}"
+            f"Expected fhir org affilations sorted in descending order by ehr org name but got {ehr_org_names}\n Sorted: {sorted}",
         )
 
     def test_list_has_correct_orgs(self):
         url = reverse("fhir-organizationaffiliation-list")
         response = self.client.get(url)
-        
+
         ids = extract_resource_ids(response)
 
-
         valid_ids = [str(org.id) for org in self.orgs]
-        
-        self.assertEqual(ids,valid_ids)
-    
+
+        self.assertEqual(ids, valid_ids)
+
     def test_list_does_not_have_incorrect_orgs(self):
         url = reverse("fhir-organizationaffiliation-list")
         response = self.client.get(url)
-        
+
         ids = extract_resource_ids(response)
 
-
         self.assertNotIn(str(self.invalid_1.id), ids)
-        self.assertNotIn(str(self.org_no_endpoint.id),ids)
-        self.assertNotIn(str(self.org_unlinked.id),ids)
-    
+        self.assertNotIn(str(self.org_no_endpoint.id), ids)
+        self.assertNotIn(str(self.org_unlinked.id), ids)
+
     def test_retrieve_single_organization_affil(self):
         url = reverse("fhir-organizationaffiliation-detail", args=[self.orgs[0].id])
         response = self.client.get(url)
 
-        self.assertEqual(str(self.orgs[0].id),response.data['id'])
-    
+        self.assertEqual(str(self.orgs[0].id), response.data["id"])
+
     def test_retrieve_non_existant_organization_affil(self):
-        url = reverse("fhir-organizationaffiliation-detail", args=["12300000-0000-0000-0000-000000000123"])
+        url = reverse(
+            "fhir-organizationaffiliation-detail", args=["12300000-0000-0000-0000-000000000123"]
+        )
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
-    
+
     def test_retrieve_non_valid_organization_affil(self):
         url = reverse("fhir-organizationaffiliation-detail", args=[self.invalid_1.id])
         response = self.client.get(url)
