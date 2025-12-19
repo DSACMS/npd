@@ -21,7 +21,7 @@ SET row_security = off;
 -- Name: npd; Type: SCHEMA; Schema: -; Owner: -
 --
 
-CREATE SCHEMA IF NOT EXISTS npd;
+CREATE SCHEMA npd;
 
 
 --

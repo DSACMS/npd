@@ -153,7 +153,7 @@ resource "aws_ecs_task_definition" "app" {
         },
         {
           name  = "FLYWAY_DEFAULT_SCHEMA",
-          value = "npd"
+          value = "public"
         },
         {
           name  = "FLYWAY_PLACEHOLDERS_apiSchema"
