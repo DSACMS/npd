@@ -23,7 +23,9 @@ def create_legal_entity(dba_name="Sample Legal Entity"):
 
 
 def create_organization(
+    id=None,
     name="Test Org",
+    parent_id=None,
     authorized_official_first_name="Alice",
     authorized_official_last_name="Smith",
     legal_entity=None,
@@ -51,10 +53,11 @@ def create_organization(
         name_use=_ensure_name_use(),
     )
 
+    if id is None:
+        id = uuid.uuid4()
+
     org = Organization.objects.create(
-        id=uuid.uuid4(),
-        authorized_official=ind,
-        ein=legal_entity,
+        id=id, authorized_official=ind, ein=legal_entity, parent_id=parent_id
     )
 
     if other_id_type or organization_type or npi_value:
