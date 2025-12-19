@@ -60,6 +60,7 @@ services:
       FLYWAY_PASSWORD: ${NPD_DB_PASSWORD:-postgres}
       FLYWAY_PLACEHOLDERS_apiSchema: ${NPD_DB_SCHEMA:-npd}
       FLYWAY_PLACEHOLDERS_superuserDefaultPassword: ""
+      FLYWAY_DEFAULT_SCHEMA: public
     volumes:
       - ./flyway/sql:/flyway/sql
     depends_on:
