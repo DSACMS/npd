@@ -298,18 +298,26 @@ class PractitionerViewSetTestCase(APITestCase):
     # Address Filter tests
     def test_list_filter_by_address(self):
         url = reverse("fhir-practitioner-list")
+        test_search = "123 Street R. Rochester"
         city_string = self.locs[2].address.address_us.city_name
         address_line = self.locs[2].address.address_us.delivery_line_1
-        response = self.client.get(url, {"address": "123 Street R. Rochester"})
+        response = self.client.get(url, {"address": test_search})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
 
         for entry in response.data["results"]["entry"]:
-            result_city_string = entry["resource"]["address"][0]["city"]
-            self.assertEqual(city_string, result_city_string)
-            result_addr_string = entry["resource"]["address"][0]["line"][0]
-            # print(result_addr_string)
-            self.assertEqual(address_line, result_addr_string)
+            for address in entry["resource"]["address"]:
+                #print(address)
+                address_string = ""
+
+                for line in address["line"]:
+                    address_string += line + ' '
+                
+                address_string += address['city'] + ' '
+                address_string += address['state'] + ' '
+                address_string += address['postalCode']
+
+                self.assertIn(test_search, address_string)
 
     def test_list_filter_by_address_city(self):
         url = reverse("fhir-practitioner-list")
