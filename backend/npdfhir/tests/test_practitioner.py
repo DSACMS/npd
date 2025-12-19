@@ -327,8 +327,11 @@ class PractitionerViewSetTestCase(APITestCase):
         assert_has_results(self, response)
 
         for entry in response.data["results"]["entry"]:
-            result_city_string = entry["resource"]["address"][0]["city"]
-            self.assertEqual(city_string, result_city_string)
+            cities = []
+            for address in entry["resource"]["address"]:
+                cities.append(address["city"])
+            
+            self.assertIn(city_string, cities)
 
     def test_list_filter_by_address_state(self):
         url = reverse("fhir-practitioner-list")
@@ -351,8 +354,10 @@ class PractitionerViewSetTestCase(APITestCase):
         assert_has_results(self, response)
 
         for entry in response.data["results"]["entry"]:
-            result_zip = entry["resource"]["address"][0]["postalCode"]
-            self.assertEqual(postal_code_string, result_zip)
+            zips = []
+            for address in entry["resource"]["address"]:
+                zips.append(address["postalCode"])
+            self.assertIn(postal_code_string, zips)
 
     def test_list_filter_by_address_use(self):
         url = reverse("fhir-practitioner-list")
@@ -362,10 +367,12 @@ class PractitionerViewSetTestCase(APITestCase):
         assert_has_results(self, response)
 
         for entry in response.data["results"]["entry"]:
-            # assert the address use is in the data
-            self.assertIn("use", entry["resource"]["address"][0])
-            result_use = entry["resource"]["address"][0]["use"]
-            self.assertEqual("home", result_use)
+            uses = []
+            for address in entry["resource"]["address"]:
+                # assert the address use is in the data
+                self.assertIn("use", address)
+                uses.append(address["use"])
+            self.assertIn("home", uses)
 
     # Retrieve tests
     def test_retrieve_nonexistent(self):
