@@ -272,7 +272,7 @@ class PractitionerViewSetTestCase(APITestCase):
             self.assertNotIn(self.transplant_code, nurse_codes)
 
     # Identifiers Filter tests
-    def test_list_filter_by_npi_general(self):
+    def test_list_filter_by_identifier_general(self):
         url = reverse("fhir-practitioner-list")
         response = self.client.get(url, {"identifier": "1234567890"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
