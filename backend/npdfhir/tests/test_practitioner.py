@@ -287,10 +287,13 @@ class PractitionerViewSetTestCase(APITestCase):
         response = self.client.get(url, {"identifier": "NPI|1234567890"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
+        
 
         for entry in response.data["results"]["entry"]:
             values = [int(v["value"]) for v in entry["resource"]["identifier"]]
             self.assertIn(self.pracs[0].npi.npi, values)
+        
+        self.assertEqual(len(response.data["results"]["entry"]), 1)
 
     # Address Filter tests
     def test_list_filter_by_address(self):
