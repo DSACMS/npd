@@ -5,19 +5,12 @@ from ...models import Address, AddressUs, FipsState, Location
 from .organization import create_organization
 
 
-def create_location(
-    organization=None,
-    name="Test Location",
+def create_address(
     city="Albany",
     state="NY",
     zipcode="12207",
     addr_line_1="123 Main St",
 ):
-    """
-    Creates AddressUs → Address → Location.
-    """
-    organization = organization or create_organization()
-
     fips_code = FipsState.objects.get(abbreviation=state)
     addr_us = AddressUs.objects.create(
         id=random.randint(-100000000000, 100000000000),
@@ -31,6 +24,28 @@ def create_location(
         id=uuid.uuid4(),
         address_us=addr_us,
     )
+
+    return address
+
+def create_location(
+    organization=None,
+    name="Test Location",
+    city="Albany",
+    state="NY",
+    zipcode="12207",
+    addr_line_1="123 Main St",
+):
+    """
+    Creates AddressUs → Address → Location.
+    """
+    organization = organization or create_organization()
+    address = create_address(
+        city=city,
+        state=state,
+        zipcode=zipcode,
+        addr_line_1=addr_line_1
+    )
+    
 
     loc = Location.objects.create(
         id=uuid.uuid4(),
