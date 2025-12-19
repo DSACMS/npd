@@ -164,22 +164,22 @@ class OtherIdentifierSerializer(serializers.Serializer):
             "other_identifier_type_value",
         ]
 
-    def to_representation(self, id):
-        other_identifier_type_id = id.other_identifier_type_id
+    def to_representation(self, instance):
+        other_identifier_type_id = instance.other_id
         license_identifier = Identifier(
             # system="", TODO: Figure out how to associate a system with each identifier
-            value=id.value,
+            value=instance.other_id,
             type=CodeableConcept(
                 coding=[
                     Coding(
                         system="http://terminology.hl7.org/CodeSystem/v2-0203",
-                        code=str(other_identifier_type_id),
-                        display=other_identifier_type[str(other_identifier_type_id)],
+                        code=str(instance.other_id_type.value),
+                        display=instance.other_id,
                     )
                 ]
             ),
             # use="" TODO: Add use for other identifier
-            period=Period(start=id.issue_date, end=id.expiry_date),
+            #period=Period(start=instance.issue_date, end=instance.expiry_date),
         )
         return license_identifier.model_dump()
 
@@ -441,7 +441,7 @@ class PractitionerSerializer(serializers.Serializer):
     npi = NPISerializer()
     individual = IndividualSerializer(read_only=True)
     identifier = OtherIdentifierSerializer(
-        source="providertootheridentifier_set", many=True, read_only=True
+        source="providertootherid_set", many=True, read_only=True
     )
     taxonomy = TaxonomySerializer(source="providertotaxonomy_set", many=True, read_only=True)
 
