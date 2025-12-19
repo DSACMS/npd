@@ -1,0 +1,33 @@
+{
+    "npi": "NPI",
+    "unavailable": "This content is not currently available.",
+    "update": {
+        "title": "Are you the practitioner listed?",
+        "subtitle" : "Learn how to",
+        "link": "update your information."
+    },
+    "about": {
+        "title": "About",
+        "name": "Name(s)",
+        "gender": "Gender",
+        "deceased": "Deceased",
+        "status": "Active status"
+    },
+    "contact": {
+        "title": "Contact information",
+        "address": "Mailing address",
+        "phone": "Phone",
+        "fax": "Fax"
+    },
+    "identifiers": {
+        "title": "Identifiers",
+        "type": "Type",
+        "number": "Number",
+        "details": "Details",
+        "fallback": "No identifiers available"
+    },
+    "taxonomy": "Taxonomy",
+    "organizations": "Organization(s)",
+    "endpoints": "Endpoint(s)",
+    "locations": "Locations"
+}
