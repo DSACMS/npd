@@ -82,8 +82,9 @@ class AddressSerializer(serializers.Serializer):
             postalCode=address.zipcode,
             country="US",
         )
-        if "use" in representation.keys():
-            address.use = (representation["use"],)
+
+        if hasattr(instance, "address_use"):
+            address.use = instance.address_use.value
         return address.model_dump()
 
 
