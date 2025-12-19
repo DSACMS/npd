@@ -40,6 +40,16 @@ class FHIROrganizationSource:
         }]
 
     @property
+    def name(self):
+        if self.organization:
+            # primary name first, fallback to first name
+            names = self.organization.organizationtoname_set.all()
+            primary = next((n for n in names if n.is_primary), None)
+            return (primary.name if primary else names[0].name).lower() if names else ""
+        
+        return self.ehr_vendor.name
+
+    @property
     def authorized_official(self):
         return self.organization.authorized_official if self.organization else None
 

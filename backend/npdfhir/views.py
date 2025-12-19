@@ -412,10 +412,13 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
             *[FHIROrganizationSource(ehr_vendor=v) for v in vendors],
         ]
 
-        #sources.sort(key=lambda s: s.organizationtoname_set[0]["name"]
-        #            if isinstance(s.organizationtoname_set, list)
-        #            else s.organizationtoname_set.first().name
-        #)
+        #Sort the data
+        ordering = ParamOrderingFilter().get_ordering(request, None, self) or self.ordering_fields[0]
+        reverse = ordering[0].startswith("-")
+        sources.sort(
+            key=lambda s: s.name,
+            reverse=reverse,
+        )
 
         paginated_organizations = self.paginate_queryset(sources)
 
@@ -441,36 +444,35 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
         except (ValueError, TypeError):
             return HttpResponse(f"Organization {escape(pk)} not found", status=404)
 
-        try:
-            organization = get_object_or_404(
-                Organization.objects.prefetch_related(
-                    "authorized_official",
-                    "ein",
-                    "organizationtoname_set",
-                    "organizationtoaddress_set",
-                    "organizationtoaddress_set__address",
-                    "organizationtoaddress_set__address__address_us",
-                    "organizationtoaddress_set__address__address_us__state_code",
-                    "organizationtoaddress_set__address_use",
-                    "authorized_official__individualtophone_set",
-                    "authorized_official__individualtoname_set",
-                    "authorized_official__individualtoemail_set",
-                    "authorized_official__individualtoaddress_set",
-                    "authorized_official__individualtoaddress_set__address__address_us",
-                    "authorized_official__individualtoaddress_set__address__address_us__state_code",
-                    "clinicalorganization",
-                    "clinicalorganization__npi",
-                    "clinicalorganization__organizationtootherid_set",
-                    "clinicalorganization__organizationtootherid_set__other_id_type",
-                    "clinicalorganization__organizationtotaxonomy_set",
-                    "clinicalorganization__organizationtotaxonomy_set__nucc_code",
-                ),
-                pk=pk,
-            )
-            source = FHIROrganizationSource(organization=organization)
-        except Organization.DoesNotExist:
+        
+        organization = Organization.objects.prefetch_related(
+            "authorized_official",
+            "ein",
+            "organizationtoname_set",
+            "organizationtoaddress_set",
+            "organizationtoaddress_set__address",
+            "organizationtoaddress_set__address__address_us",
+            "organizationtoaddress_set__address__address_us__state_code",
+            "organizationtoaddress_set__address_use",
+            "authorized_official__individualtophone_set",
+            "authorized_official__individualtoname_set",
+            "authorized_official__individualtoemail_set",
+            "authorized_official__individualtoaddress_set",
+            "authorized_official__individualtoaddress_set__address__address_us",
+            "authorized_official__individualtoaddress_set__address__address_us__state_code",
+            "clinicalorganization",
+            "clinicalorganization__npi",
+            "clinicalorganization__organizationtootherid_set",
+            "clinicalorganization__organizationtootherid_set__other_id_type",
+            "clinicalorganization__organizationtotaxonomy_set",
+            "clinicalorganization__organizationtotaxonomy_set__nucc_code",
+        ).filter(pk=pk).first()
+        
+        if not organization:
             vendor = get_object_or_404(EhrVendor, pk=pk)
             source = FHIROrganizationSource(ehr_vendor=vendor)
+        else:
+            source = FHIROrganizationSource(organization=organization)
 
 
         serialized_organization = OrganizationSerializer(source, context={"request": request})
