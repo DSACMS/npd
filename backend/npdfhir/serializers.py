@@ -1,33 +1,34 @@
 import sys
+from datetime import datetime, timezone
 
 from django.urls import reverse
 from fhir.resources.R4B.address import Address
 from fhir.resources.R4B.bundle import Bundle
+from fhir.resources.R4B.capabilitystatement import (
+    CapabilityStatement,
+    CapabilityStatementImplementation,
+    CapabilityStatementRest,
+    CapabilityStatementRestResource,
+    CapabilityStatementRestResourceSearchParam,
+)
 from fhir.resources.R4B.codeableconcept import CodeableConcept
 from fhir.resources.R4B.coding import Coding
+from fhir.resources.R4B.contactdetail import ContactDetail
 from fhir.resources.R4B.contactpoint import ContactPoint
 from fhir.resources.R4B.endpoint import Endpoint
 from fhir.resources.R4B.humanname import HumanName
 from fhir.resources.R4B.identifier import Identifier
 from fhir.resources.R4B.location import Location as FHIRLocation
-from fhir.resources.R4B.contactdetail import ContactDetail
 from fhir.resources.R4B.meta import Meta
 from fhir.resources.R4B.organization import Organization as FHIROrganization
-from fhir.resources.R4B.organizationaffiliation import OrganizationAffiliation as FHIROrganizationAffiliation
+from fhir.resources.R4B.organizationaffiliation import (
+    OrganizationAffiliation as FHIROrganizationAffiliation,
+)
 from fhir.resources.R4B.period import Period
 from fhir.resources.R4B.practitioner import Practitioner, PractitionerQualification
 from fhir.resources.R4B.practitionerrole import PractitionerRole
 from fhir.resources.R4B.reference import Reference
-from fhir.resources.R4B.capabilitystatement import (
-    CapabilityStatement,
-    CapabilityStatementRest,
-    CapabilityStatementRestResource,
-    CapabilityStatementRestResourceSearchParam,
-    CapabilityStatementImplementation,
-)
-from datetime import datetime, timezone
 from rest_framework import serializers
-from .utils import get_schema_data, genReference
 
 from .models import (
     IndividualToPhone,
@@ -37,6 +38,7 @@ from .models import (
     OrganizationToName,
     ProviderToOrganization,
 )
+from .utils import genReference, get_schema_data
 
 if "runserver" or "test" in sys.argv:
     from .cache import (
@@ -316,7 +318,6 @@ class OrganizationSerializer(serializers.Serializer):
         source = instance
         instance = instance.organization if instance.organization else instance.ehr_vendor
 
-
         organization = FHIROrganization()
         organization.id = str(instance.id)
         organization.meta = Meta(
@@ -324,15 +325,13 @@ class OrganizationSerializer(serializers.Serializer):
         )
         identifiers = []
 
-        #Serialize EHRVendor as an Organization
+        # Serialize EHRVendor as an Organization
         if source.is_ehr_vendor:
             identifiers.append(
                 Identifier(
                     system="urn:ndh:ehr-vendor",
                     value=str(source.id),
-                    type=CodeableConcept(
-                        coding=[Coding(code="EHR", display="EHR Vendor")]
-                    ),
+                    type=CodeableConcept(coding=[Coding(code="EHR", display="EHR Vendor")]),
                 )
             )
 
@@ -460,8 +459,11 @@ class OrganizationSerializer(serializers.Serializer):
 
         return organization.model_dump()
 
+
 class OrganizationAffiliationSerializer(serializers.Serializer):
-    identifier = OtherIdentifierSerializer(source="organizationtootheridentifier_set", many=True, read_only=True)
+    identifier = OtherIdentifierSerializer(
+        source="organizationtootheridentifier_set", many=True, read_only=True
+    )
 
     class Meta:
         fields = [
@@ -476,14 +478,13 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
             "location",
             "healthcareService",
             "telecom",
-            "endpoint"
+            "endpoint",
         ]
 
     def to_representation(self, instance):
         request = self.context.get("request")
-        representation = super().to_representation(instance)
         organization_affiliation = FHIROrganizationAffiliation()
-        #organization_affiliation.active = instance.is_active_affiliation
+        # organization_affiliation.active = instance.is_active_affiliation
 
         organization_affiliation.id = str(instance.id)
 
@@ -491,7 +492,7 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
         codes = []
         locations = []
 
-        #Get npis of all orgs
+        # Get npis of all orgs
 
         # if instance.ein:
         #    ein_identifier = Identifier(
@@ -541,7 +542,7 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
                         ]
                     )
                     codes.append(nucc_code)
-                
+
                 for other_id in clinical_org.organizationtootherid_set.all():
                     other_code = CodeableConcept(
                         coding=[
@@ -570,49 +571,37 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
                         ),
                     )
                     identifiers.append(other_identifier)
-                
-
 
         organization_affiliation.identifier = identifiers
 
-        organization_affiliation.organization = Reference(
-            display=str(instance.ehr_vendor_name)
-        )
+        organization_affiliation.organization = Reference(display=str(instance.ehr_vendor_name))
 
         organization_affiliation.participatingOrganization = Reference(
             display=str(instance.organization_name)
         )
 
-        #NOTE: Period for OrganizationAffiliation cannot currently be fetched so its blank 
-        
-        organization_affiliation.network = [
-            Reference(
-                display=str(instance.organization_name)
-            )
-        ]
+        # NOTE: Period for OrganizationAffiliation cannot currently be fetched so its blank
+
+        organization_affiliation.network = [Reference(display=str(instance.organization_name))]
 
         organization_affiliation.code = codes
 
-        #NOTE: not sure how to do specialty yet
+        # NOTE: not sure how to do specialty yet
 
         endpoints = []
 
         for location in instance.location_set.all():
-            locations.append(
-                genReference("fhir-location-detail", location.id, request)
-            )
+            locations.append(genReference("fhir-location-detail", location.id, request))
 
             for link in location.locationtoendpointinstance_set.all():
                 endpoint = link.endpoint_instance
 
-                endpoints.append(
-                    genReference("fhir-endpoint-detail", endpoint.id, request)
-                )
-        
+                endpoints.append(genReference("fhir-endpoint-detail", endpoint.id, request))
+
         organization_affiliation.location = locations
 
-        #TODO: healthcare services
-        #TODO: contact info
+        # TODO: healthcare services
+        # TODO: contact info
 
         return organization_affiliation.model_dump()
 

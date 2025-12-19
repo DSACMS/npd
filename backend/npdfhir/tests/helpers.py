@@ -49,3 +49,7 @@ def extract_practitioner_names(response):
 
 def extract_resource_ids(response):
     return [d["resource"].get("id", {}) for d in response.data["results"]["entry"]]
+
+
+def extract_resource_fields(response, field):
+    return [d["resource"].get(field, {}) for d in response.data["results"]["entry"]]

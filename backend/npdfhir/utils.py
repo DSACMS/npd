@@ -1,7 +1,7 @@
+from django.urls import reverse
 from fhir.resources.R4B.address import Address
 from fhir.resources.R4B.reference import Reference
 from rest_framework.test import APIClient
-from django.urls import reverse
 
 
 class FHIROrganizationSource:
@@ -34,10 +34,12 @@ class FHIROrganizationSource:
             return self.organization.organizationtoname_set.all()
 
         # Map EhrVendor.name → OrganizationToName-like dict
-        return [{
-            "name": self.ehr_vendor.name,
-            "is_primary": True,
-        }]
+        return [
+            {
+                "name": self.ehr_vendor.name,
+                "is_primary": True,
+            }
+        ]
 
     @property
     def name(self):
@@ -46,7 +48,7 @@ class FHIROrganizationSource:
             names = self.organization.organizationtoname_set.all()
             primary = next((n for n in names if n.is_primary), None)
             return (primary.name if primary else names[0].name).lower() if names else ""
-        
+
         return self.ehr_vendor.name
 
     @property
