@@ -42,7 +42,6 @@ if "runserver" or "test" in sys.argv:
         fhir_name_use,
         fhir_phone_use,
         nucc_taxonomy_codes,
-        other_identifier_type,
     )
 
 
@@ -67,7 +66,6 @@ class AddressSerializer(serializers.Serializer):
         ]
 
     def to_representation(self, instance):
-        representation = super().to_representation(instance)
         if hasattr(instance, "address"):
             address = instance.address.address_us
         else:
@@ -165,7 +163,6 @@ class OtherIdentifierSerializer(serializers.Serializer):
         ]
 
     def to_representation(self, instance):
-        other_identifier_type_id = instance.other_id
         license_identifier = Identifier(
             # system="", TODO: Figure out how to associate a system with each identifier
             value=instance.other_id,
@@ -179,7 +176,7 @@ class OtherIdentifierSerializer(serializers.Serializer):
                 ]
             ),
             # use="" TODO: Add use for other identifier
-            #period=Period(start=instance.issue_date, end=instance.expiry_date),
+            # period=Period(start=instance.issue_date, end=instance.expiry_date),
         )
         return license_identifier.model_dump()
 

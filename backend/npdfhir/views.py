@@ -1,6 +1,7 @@
 from uuid import UUID
 
-from django.db.models import CharField, F, OuterRef, Subquery, Value
+from django.conf import settings
+from django.db.models import CharField, F, Value
 from django.db.models.functions import Concat
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
@@ -9,7 +10,6 @@ from django_filters.rest_framework import DjangoFilterBackend
 from drf_spectacular.utils import OpenApiResponse, extend_schema
 from rest_framework import viewsets
 from rest_framework.filters import OrderingFilter, SearchFilter
-from rest_framework.views import APIView
 from rest_framework.renderers import BrowsableAPIRenderer
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -21,7 +21,6 @@ from .filters.practitioner_filter_set import PractitionerFilterSet
 from .filters.practitioner_role_filter_set import PractitionerRoleFilterSet
 from .models import (
     EndpointInstance,
-    IndividualToName,
     Location,
     Organization,
     Provider,
@@ -38,8 +37,6 @@ from .serializers import (
     PractitionerRoleSerializer,
     PractitionerSerializer,
 )
-
-from django.conf import settings
 
 DEBUG = settings.DEBUG
 

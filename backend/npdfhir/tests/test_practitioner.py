@@ -62,8 +62,6 @@ class PractitionerViewSetTestCase(APITestCase):
             practitioner_types=[cls.counselor],
         )
 
-        
-
         cls.sample_last_name = "SOLOMON"
         cls.pracs = [
             create_practitioner(last_name="AADALEN", first_name="KIRK", npi_value=1234567890),
@@ -287,35 +285,32 @@ class PractitionerViewSetTestCase(APITestCase):
         response = self.client.get(url, {"identifier": "NPI|1234567890"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
-        
 
         for entry in response.data["results"]["entry"]:
             values = [int(v["value"]) for v in entry["resource"]["identifier"]]
             self.assertIn(self.pracs[0].npi.npi, values)
-        
+
         self.assertEqual(len(response.data["results"]["entry"]), 1)
 
     # Address Filter tests
     def test_list_filter_by_address(self):
         url = reverse("fhir-practitioner-list")
         test_search = "123 Street R. Rochester"
-        city_string = self.locs[2].address.address_us.city_name
-        address_line = self.locs[2].address.address_us.delivery_line_1
         response = self.client.get(url, {"address": test_search})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
 
         for entry in response.data["results"]["entry"]:
             for address in entry["resource"]["address"]:
-                #print(address)
+                # print(address)
                 address_string = ""
 
                 for line in address["line"]:
-                    address_string += line + ' '
-                
-                address_string += address['city'] + ' '
-                address_string += address['state'] + ' '
-                address_string += address['postalCode']
+                    address_string += line + " "
+
+                address_string += address["city"] + " "
+                address_string += address["state"] + " "
+                address_string += address["postalCode"]
 
                 self.assertIn(test_search, address_string)
 
@@ -330,7 +325,7 @@ class PractitionerViewSetTestCase(APITestCase):
             cities = []
             for address in entry["resource"]["address"]:
                 cities.append(address["city"])
-            
+
             self.assertIn(city_string, cities)
 
     def test_list_filter_by_address_state(self):

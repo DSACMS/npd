@@ -1,5 +1,5 @@
-import uuid
 import random
+import uuid
 
 from ...models import Address, AddressUs, FipsState, Location
 from .organization import create_organization
@@ -27,6 +27,7 @@ def create_address(
 
     return address
 
+
 def create_location(
     organization=None,
     name="Test Location",
@@ -39,13 +40,7 @@ def create_location(
     Creates AddressUs → Address → Location.
     """
     organization = organization or create_organization()
-    address = create_address(
-        city=city,
-        state=state,
-        zipcode=zipcode,
-        addr_line_1=addr_line_1
-    )
-    
+    address = create_address(city=city, state=state, zipcode=zipcode, addr_line_1=addr_line_1)
 
     loc = Location.objects.create(
         id=uuid.uuid4(),
