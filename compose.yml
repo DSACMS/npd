@@ -67,6 +67,14 @@ services:
       - db
     command: migrate -environment=development -outputType=json
 
+  cdm-migrations:
+    extends:
+      service: db-migrations
+    environment:
+      FLYWAY_DEFAULT_SCHEMA: cdm
+    volumes:
+      - ./flyway/cdm:/flyway/sql
+
   ## frontend
 
   web:
