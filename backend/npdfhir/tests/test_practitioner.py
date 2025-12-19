@@ -48,6 +48,22 @@ class PractitionerViewSetTestCase(APITestCase):
             practitioner_types=[cls.nurse_code, cls.non_nurse_code],
         )
 
+        cls.transplant_code = "204F00000X"
+        cls.non_nurse_prac = create_practitioner(
+            last_name="MILLER",
+            first_name="STACY",
+            practitioner_types=[cls.transplant_code],
+        )
+
+        cls.counselor = "101Y00000X"
+        cls.non_nurse_prac = create_practitioner(
+            last_name="TROY",
+            first_name="DIANA",
+            practitioner_types=[cls.counselor],
+        )
+
+        
+
         cls.sample_last_name = "SOLOMON"
         cls.pracs = [
             create_practitioner(last_name="AADALEN", first_name="KIRK", npi_value=1234567890),
@@ -253,6 +269,7 @@ class PractitionerViewSetTestCase(APITestCase):
                 nc["code"] for nc in entry["resource"]["qualification"][0]["code"]["coding"]
             ]
             self.assertIn(self.nurse_code, nurse_codes)
+            self.assertNotIn(self.transplant_code, nurse_codes)
 
     # Identifiers Filter tests
     def test_list_filter_by_npi_general(self):
