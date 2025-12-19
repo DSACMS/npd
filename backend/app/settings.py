@@ -18,6 +18,8 @@ from pathlib import Path
 import structlog
 from decouple import config
 
+from app.logging import sql_trace_formatter
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -267,8 +269,11 @@ FLAGS = {
     # ],
 }
 
+SQL_TRACING = DEBUG and config("SQL_TRACING", default=False, cast=bool)
 
-if TESTING:
+if TESTING and SQL_TRACING:
+    LOG_LEVEL = logging.DEBUG
+elif TESTING:
     LOG_LEVEL = logging.ERROR
 else:
     LOG_LEVEL = os.environ.get("LOG_LEVEL", logging.INFO)
@@ -314,6 +319,34 @@ LOGGING = {
         },
     },
 }
+
+# DB query logging
+if SQL_TRACING:
+    # allow django libraries to log
+    LOGGING["disable_existing_loggers"] = False
+
+    # inject a django.db.backend message unpacker
+    LOGGING["formatters"]["json_formatter"]["foreign_pre_chain"].append(
+        sql_trace_formatter.unpack_sql_trace,
+    )
+
+    # write SQL query logs to backend/django_queries.log
+    LOGGING["handlers"]["queries_file"] = {
+        "level": LOG_LEVEL,
+        "class": "logging.FileHandler",
+        "filename": "django_queries.log",
+        "formatter": "json_formatter",
+    }
+    LOGGING["loggers"]["django.db.backends"] = {
+        "handlers": ["queries_file"],
+        "level": "DEBUG",
+        "propagate": False,
+    }
+
+    # ... keep these libraries quiet to avoid noisy test output
+    LOGGING["loggers"]["django_structlog"] = {"level": logging.ERROR, "propagate": False}
+    LOGGING["loggers"]["django.request"] = {"level": logging.ERROR, "propagate": False}
+
 
 structlog.configure(
     processors=[
