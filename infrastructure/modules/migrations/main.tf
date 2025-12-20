@@ -79,9 +79,9 @@ module "database_migration_service" {
   }
 
   replication_tasks = {
-    etl_replication_task = {
+    etl_replication_task_full_load = {
       replication_task_id       = "${local.account_name}-db-repl-task"
-      migration_type            = "full-load-and-cdc"
+      migration_type            = "full-load"
       replication_task_settings = file("${path.module}/configs/task_settings.json")
       table_mappings            = local.table_mappings
       source_endpoint_arn       = module.database_migration_service.endpoints["etl-source"].endpoint_arn
@@ -90,8 +90,8 @@ module "database_migration_service" {
       target_endpoint_key       = "fhir-api-destination"
 
       serverless_config = {
-        max_capacity_units     = 8
-        min_capacity_units     = 4
+        max_capacity_units     = 64
+        min_capacity_units     = 16
         multi_az               = var.multi_az
         vpc_security_group_ids = [
           var.networking.etl_db_security_group_id,
