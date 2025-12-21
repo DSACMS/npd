@@ -1,14 +1,14 @@
-element_name,type,parent_element,search_path,occurrence,description,search_path_str,COLUMN_NAME,DATA_TYPE,COLUMN_DEF
-UGE,,,[],"minOccurs=1, maxOccurs=1",<Element '{http://www.w3.org/2001/XMLSchema}documentation' at 0x10c5776f0>,[],,,
-HDR,,UGE,['UGE'],"minOccurs=0, maxOccurs=1",<Element '{http://www.w3.org/2001/XMLSchema}documentation' at 0x10c577920>,['UGE'],,,
+element_name,type,parent_element,search_path,occurrence,description,search_path_string,COLUMN_NAME,DATA_TYPE,COLUMN_DEF
+UGE,,,[],"minOccurs=1, maxOccurs=1",<Element '{http://www.w3.org/2001/XMLSchema}documentation' at 0x117614c70>,[],,,
+HDR,,UGE,['UGE'],"minOccurs=0, maxOccurs=1",<Element '{http://www.w3.org/2001/XMLSchema}documentation' at 0x117614ea0>,['UGE'],,,
 ASCT_CNT,String10,HDR,"['UGE', 'HDR']","minOccurs=0, maxOccurs=1",,"['UGE', 'HDR']",,,
 ENRLMT_CNT,String10,HDR,"['UGE', 'HDR']","minOccurs=0, maxOccurs=1",,"['UGE', 'HDR']",,,
 AFDVT_CNT,String10,HDR,"['UGE', 'HDR']","minOccurs=0, maxOccurs=1",,"['UGE', 'HDR']",,,
 ERR_LIST,,HDR,"['UGE', 'HDR']","minOccurs=0, maxOccurs=1",,"['UGE', 'HDR']",,,
 ERR_CD,ERR_CD_TYPE,ERR_LIST,"['UGE', 'HDR', 'ERR_LIST']","minOccurs=0, maxOccurs=1",,"['UGE', 'HDR', 'ERR_LIST']",,,
 ERR_DESC,String100,ERR_LIST,"['UGE', 'HDR', 'ERR_LIST']","minOccurs=0, maxOccurs=1",,"['UGE', 'HDR', 'ERR_LIST']",ERR_DESC,VARCHAR2,Error description for the error object_x000D_
-CNTNT,,UGE,['UGE'],"minOccurs=1, maxOccurs=1",<Element '{http://www.w3.org/2001/XMLSchema}documentation' at 0x10c577d30>,['UGE'],,,
-MDCR_PRVDR,,CNTNT,"['UGE', 'CNTNT']","minOccurs=1, maxOccurs=1",<Element '{http://www.w3.org/2001/XMLSchema}documentation' at 0x10c577ec0>,"['UGE', 'CNTNT']",,,
+CNTNT,,UGE,['UGE'],"minOccurs=1, maxOccurs=1",<Element '{http://www.w3.org/2001/XMLSchema}documentation' at 0x1176152b0>,['UGE'],,,
+MDCR_PRVDR,,CNTNT,"['UGE', 'CNTNT']","minOccurs=1, maxOccurs=1",<Element '{http://www.w3.org/2001/XMLSchema}documentation' at 0x117615440>,"['UGE', 'CNTNT']",,,
 PRVDR,,MDCR_PRVDR,"['UGE', 'CNTNT', 'MDCR_PRVDR']","minOccurs=0, maxOccurs=unbounded",,"['UGE', 'CNTNT', 'MDCR_PRVDR']",,,
 PRVDR_INFO,,PRVDR,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR']","minOccurs=0, maxOccurs=1",,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR']",,,
 INDVDL_INFO,INDVDL_INFO_TYPE,PRVDR_INFO,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'PRVDR_INFO']","minOccurs=0, maxOccurs=1",,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'PRVDR_INFO']",,,
@@ -234,7 +234,7 @@ RCV_BNFT_ENRLMT_ID,String15,REASGN_BNFT,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR',
 REASGNMT_MDCR_NPI,PEC_MDCR_NPI_TYPE,REASGN_BNFT,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855I', 'REASGN_BNFTS_LIST', 'REASGN_BNFT']","minOccurs=0, maxOccurs=unbounded",,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855I', 'REASGN_BNFTS_LIST', 'REASGN_BNFT']",,,
 PEC_INDVDL_PRCTNR_NAME,PEC_INDVDL_NAME_TYPE,PA_INDVDL_INFO,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855B', 'PA_INDVDL_INFO']","minOccurs=0, maxOccurs=unbounded",,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855B', 'PA_INDVDL_INFO']",,,
 REASGNMT_END_DT,DATE_TYPE,REASGN_BNFT,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855I', 'REASGN_BNFTS_LIST', 'REASGN_BNFT']","minOccurs=0, maxOccurs=1",,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855I', 'REASGN_BNFTS_LIST', 'REASGN_BNFT']",REASGNMT_END_DT,DATE,Date reassignment ends with an provider or supplier._x000D_
-PEC_REASGNMT_LCTN,PEC_REASGNMT_LCTN_Type,REASGN_BNFT,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855I', 'REASGN_BNFTS_LIST', 'REASGN_BNFT']","minOccurs=0, maxOccurs=unbounded",<Element '{http://www.w3.org/2001/XMLSchema}documentation' at 0x10c5c69d0>,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855I', 'REASGN_BNFTS_LIST', 'REASGN_BNFT']",,,
+PEC_REASGNMT_LCTN,PEC_REASGNMT_LCTN_Type,REASGN_BNFT,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855I', 'REASGN_BNFTS_LIST', 'REASGN_BNFT']","minOccurs=0, maxOccurs=unbounded",<Element '{http://www.w3.org/2001/XMLSchema}documentation' at 0x117647ec0>,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855I', 'REASGN_BNFTS_LIST', 'REASGN_BNFT']",,,
 LCTN_TYPE_SW,ChoiceYesNoData_TYPE,PEC_REASGNMT_LCTN,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855I', 'REASGN_BNFTS_LIST', 'REASGN_BNFT', 'PEC_REASGNMT_LCTN']","minOccurs=0, maxOccurs=1",,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855I', 'REASGN_BNFTS_LIST', 'REASGN_BNFT', 'PEC_REASGNMT_LCTN']",,,
 RCV_BNFTS,RCV_BNFTS_TYPE,CMS_855B,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855B']","minOccurs=0, maxOccurs=unbounded",,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855B']",,,
 RCV_BNFTSEffectiveDate,DATE_TYPE,RCV_BNFTS,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855B', 'RCV_BNFTS']","minOccurs=0, maxOccurs=1",,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855B', 'RCV_BNFTS']",,,
@@ -436,7 +436,7 @@ PEC_DME_NACRDTD_PROD,PEC_DME_NACRDTD_PROD_Type,CMS_855S,"['UGE', 'CNTNT', 'MDCR_
 NACRDTD_PROD_TYPE_CD,String2,PEC_DME_NACRDTD_PROD,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855S', 'PEC_DME_NACRDTD_PROD']","minOccurs=1, maxOccurs=1",,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855S', 'PEC_DME_NACRDTD_PROD']",,,
 NACRDTD_PROD_TYPE_DESC,String70,PEC_DME_NACRDTD_PROD,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855S', 'PEC_DME_NACRDTD_PROD']","minOccurs=1, maxOccurs=1",,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS', 'CMS_855S', 'PEC_DME_NACRDTD_PROD']",,,
 CMS_855O,,ENRLMTS,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS']","minOccurs=0, maxOccurs=unbounded",,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'ENRLMTS']",,,
-PEC_AFDVT_LIST,,PRVDR,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR']","minOccurs=0, maxOccurs=1",<Element '{http://www.w3.org/2001/XMLSchema}documentation' at 0x10c59e200>,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR']",,,
+PEC_AFDVT_LIST,,PRVDR,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR']","minOccurs=0, maxOccurs=1",<Element '{http://www.w3.org/2001/XMLSchema}documentation' at 0x117627740>,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR']",,,
 PEC_AFDVT,PEC_AFDVT_TYPE,PEC_AFDVT_LIST,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'PEC_AFDVT_LIST']","minOccurs=0, maxOccurs=unbounded",,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'PEC_AFDVT_LIST']",,,
 AFDVT_ID,String15,PEC_AFDVT,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'PEC_AFDVT_LIST', 'PEC_AFDVT']","minOccurs=0, maxOccurs=1",,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'PEC_AFDVT_LIST', 'PEC_AFDVT']",AFDVT_ID,CHAR,Unique number for an Opt-Out Affidavit. Opt Out is CMS term to mean  a physician or practitioner is not required to submit claims on behalf of beneficiaries and are also excluded from limits on charges for Medicare covered services._x000D_
 PEC_AFDVT_ADR,ADR_TYPE,PEC_AFDVT,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'PEC_AFDVT_LIST', 'PEC_AFDVT']","minOccurs=0, maxOccurs=unbounded",,"['UGE', 'CNTNT', 'MDCR_PRVDR', 'PRVDR', 'PEC_AFDVT_LIST', 'PEC_AFDVT']",,,
