@@ -1,5 +1,6 @@
 from django_filters import rest_framework as filters
 from django.contrib.postgres.search import SearchVector
+from django.db.models import Q
 
 from ..models import ProviderToLocation
 from ..mappings import genderMapping
@@ -25,6 +26,74 @@ class PractitionerRoleFilterSet(filters.FilterSet):
         method="filter_organization_name", help_text="Filter by organization name"
     )
 
+    organization_type = filters.CharFilter(
+        method="filter_organization_type",
+        help_text="Filter by organization type"
+    )
+
+    active = filters.BooleanFilter(
+        field_name="active",
+        help_text="Filter by active status"
+    )
+
+    identifier = filters.CharFilter(
+        method="filter_practitioner_identifer", help_text="Filter by practioner identifer"
+    )
+
+    role = filters.CharFilter(
+        field_name="provider_role_code",
+        lookup_expr="iexact",
+        help_text="Filter by provider role code"
+    )
+
+    specialty = filters.CharFilter(
+        method="filter_code",
+        help_text="Filter by Nucc/Snomed specialty code"
+    )
+
+    endpoint_connection_type = filters.CharFilter(
+        method="filter_connection_type",
+        help_text="Filter providers by endpoint connection type"
+    )
+
+    endpoint_payload_type = filters.CharFilter(
+        method="filter_payload_type",
+        help_text="Filter providers by endpoint payload type"
+    )
+
+    #TODO: endpoint status is currently not implemented
+
+    endpoint_organization_id = filters.UUIDFilter(
+        method="filter_endpoint_organization_id",
+        help_text="Filter by the UUID of the organization associated with endpoints"
+    )
+
+    endpoint_organization_name = filters.CharFilter(
+        method="filter_endpoint_organization_name",
+        help_text="Filter by the name of the organization associated with endpoints"
+    )
+
+    location_address = filters.CharFilter(
+        method="filter_address",
+        help_text="Filter by the location address"
+    )
+
+    location_city = filters.CharFilter(
+        method="filter_address_city",
+        help_text="Filter by the location city"
+    )
+
+    location_state = filters.CharFilter(
+        method="filter_address_state",
+        help_text="Filter by the location state"
+    )
+
+    location_zip_code = filters.CharFilter(
+        method="filter_address_postalcode",
+        help_text="Filter by the location postal code"
+    )
+
+
     class Meta:
         model = ProviderToLocation
         fields = [
@@ -32,6 +101,19 @@ class PractitionerRoleFilterSet(filters.FilterSet):
             "practitioner_gender",
             "practitioner_type",
             "organization_name",
+            "organization_type",
+            "active",
+            "identifier",
+            "role",
+            "specialty",
+            "endpoint_connection_type",
+            "endpoint_payload_type",
+            "endpoint_organization_id",
+            "endpoint_organization_name",
+            "location_address",
+            "location_city",
+            "location_state",
+            "location_zip_code"
         ]
 
     def filter_practitioner_name(self, queryset, name, value):
@@ -52,11 +134,87 @@ class PractitionerRoleFilterSet(filters.FilterSet):
     def filter_practitioner_type(self, queryset, name, value):
         return queryset.annotate(
             search=SearchVector(
-                "provider_to_organization__providertotaxonomy__nucc_code__display_name"
+                "provider_to_organization__individual__providertotaxonomy__nucc_code__display_name"
             )
         ).filter(search=value)
 
     def filter_organization_name(self, queryset, name, value):
         return queryset.annotate(
             search=SearchVector("provider_to_organization__organization__organizationtoname__name")
+        ).filter(search=value)
+    
+    def filter_organization_type(self, queryset, name, value):
+        return queryset.filter(
+            Q(provider_to_organization__organization__clinicalorganization__organizationtotaxonomy__nucc_code__code=value) 
+            | Q(
+                provider_to_organization__organization__clinicalorganization__organizationtootherid__other_id=value
+            )
+        ).distinct()
+
+    def filter_practitioner_identifer(self, queryset, name, value):
+        return queryset.filter(
+            Q(provider_to_organization__individual__npi__npi=value)
+            | Q(
+                provider_to_organization__individual__providertootherid__other_id__icontains=value
+            )
+        ).distinct()
+    
+    def filter_code(self, queryset, name, value):
+        return queryset.filter(
+            Q(provider_to_organization__individual__providertotaxonomy__nucc_code__code__iexact=value)
+            | Q(provider_role_code__iexact=value)
+        ).distinct()
+
+    def filter_connection_type(self, queryset, name, value):
+        return queryset.annotate(
+            search=SearchVector(
+                "other_endpoint__endpoint_instance__endpoint_connection_type__id"
+            )
+        ).filter(search=value)
+    
+    def filter_payload_type(self, queryset, name, value):
+        return queryset.annotate(
+            search=SearchVector(
+                "location__locationtoendpointinstance__endpoint_instance__endpoint__endpoint_type__value"
+            )
+        ).filter(search=value)
+    
+    def filter_endpoint_organization_id(self, queryset, name, value):
+        #The parent of the organization that owns the location the endpoint is attached to
+        return queryset.filter(
+            location__organization__parent__id=value
+        )
+    
+    def filter_endpoint_organization_name(self, queryset, name, value):
+        #The parent of the organization that owns the location the endpoint is attached to
+        return queryset.filter(
+            location__organization__parent__organizationtoname__name=value
+        )
+    
+    def filter_address(self, queryset, name, value):
+        return queryset.annotate(
+            search=SearchVector(
+                "location__address__address_us__delivery_line_1",
+                "location__address__address_us__delivery_line_2",
+                "location__address__address_us__city_name",
+                "location__address__address_us__state_code__abbreviation",
+                "location__address__address_us__zipcode",
+            )
+        ).filter(search=value)
+    
+    def filter_address_city(self, queryset, name, value):
+        return queryset.annotate(
+            search=SearchVector("location__address__address_us__city_name")
+        ).filter(search=value)
+
+    def filter_address_state(self, queryset, name, value):
+        return queryset.annotate(
+            search=SearchVector(
+                "location__address__address_us__state_code__abbreviation"
+            )
+        ).filter(search=value)
+
+    def filter_address_postalcode(self, queryset, name, value):
+        return queryset.annotate(
+            search=SearchVector("location__address__address_us__zipcode")
         ).filter(search=value)
