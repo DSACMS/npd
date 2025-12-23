@@ -1,6 +1,8 @@
 from django.urls import reverse
 from rest_framework import status
+
 from .api_test_case import APITestCase
+from .fixtures import create_location, create_practitioner
 from .helpers import (
     assert_fhir_response,
     assert_has_results,
@@ -8,8 +10,6 @@ from .helpers import (
     extract_practitioner_names,
     get_female_npis,
 )
-
-from .fixtures import create_practitioner, create_location
 
 
 class PractitionerViewSetTestCase(APITestCase):
