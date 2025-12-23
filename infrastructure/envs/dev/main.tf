@@ -239,3 +239,15 @@ module "github-actions" {
   github_runner_image         = var.github_runner_image
   enable_containerized_runner = true
 }
+
+# Secrets Rotation
+module "secrets_rotation" {
+  source = "../../modules/secrets-rotation"
+
+  account_name      = local.account_name
+  secret_arn        = "PLACEHOLDER_SECRET_ARN"  # arn:aws:secretsmanager:us-east-1:...:secret:npd_dev_fhir_api_db/npd_readonly-...
+  vpc_id            = data.aws_vpc.default.id
+  subnet_ids        = module.networking.private_subnet_ids
+  security_group_id = module.networking.db_security_group_id
+  rotation_days     = 7
+}

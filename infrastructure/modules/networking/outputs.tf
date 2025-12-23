@@ -56,3 +56,7 @@ output "cmscloud_security_group_ids" {
 output "vpc_id" {
   value = var.vpc_id
 }
+
+output "secrets_rotation_lambda_sg_id" {
+  value = aws_security_group.fhir_api_db_sg.id
+}
