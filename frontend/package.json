@@ -52,5 +52,8 @@
     "typescript-eslint": "^8.46.0",
     "vite": "^7.1.2",
     "vitest": "^3.2.4"
+  },
+  "overrides": {
+    "mdast-util-to-hast": "13.2.1"
   }
 }
