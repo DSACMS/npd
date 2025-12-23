@@ -1,8 +1,4 @@
-# Overview
-
-This is a brief overview of the National Provider Directory project.
-
-### Participating in the beta
+## Participating in the beta
 
 This limited beta release provides a select group of early adopters the opportunity to explore our approach to achieving an interoperable National Provider Directory (NPD), provide feedback, and help shape the future of the initiative. 
 
@@ -14,7 +10,7 @@ Please note the following:
 * Frequent updates and API changes are possible  
 * Feedback is encouraged
 
-#### Providing feedback
+### Providing feedback
 Feedback in all areas is welcome during the beta, including the following: 
 
 * The latest dataset  
