@@ -18,5 +18,10 @@
     "title": "All Organizations",
     "taxonomy": "Primary taxonomy",
     "location": "Location"
+  },
+
+  "search": {
+    "title": "Search Organizations",
+    "inputLabel": "Name or Identifier (NPI, EIN, or other)"
   }
 }
