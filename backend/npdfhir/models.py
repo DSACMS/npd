@@ -5,7 +5,7 @@
 #   * Make sure each ForeignKey and OneToOneField has `on_delete` set to the desired behavior
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
-from django.db import models
+from django.db import connection, models
 
 
 class Address(models.Model):
@@ -587,6 +587,35 @@ class OrganizationToName(models.Model):
     class Meta:
         managed = False
         db_table = "organization_to_name"
+
+
+class OrganizationByName(models.Model):
+    pk = models.CompositePrimaryKey("organization", "name")
+
+    # `id` may not actually be unique in this table due to the underlying
+    # materialized view query which uses `LEFT OUTER JOIN` to collect a row for
+    # each name the organization has in organization_to_name. We need to
+    # include primary_key=True, though, to make Django happy.
+    organization = models.ForeignKey(
+        Organization,
+        models.DO_NOTHING,
+        blank=False,
+        null=False,
+        db_column="id",
+        unique=False,
+    )
+
+    # the sorting field from organization_to_name
+    name = models.CharField(max_length=1000)
+
+    @classmethod
+    def refresh_materialized_view(cls):
+        with connection.cursor() as cursor:
+            cursor.execute(f"REFRESH MATERIALIZED VIEW {cls._meta.db_table};")
+
+    class Meta:
+        managed = False
+        db_table = "organization_by_name"
 
 
 class OrganizationToOtherId(models.Model):
