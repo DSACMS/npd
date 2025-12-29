@@ -54,7 +54,7 @@ resource "aws_iam_role_policy" "secrets_rotation_policy" {
 
 # Lambda
 resource "aws_lambda_function" "rotation" {
-  function_name = "${var.account_name}-postgres-rotation-lambda"
+  function_name = "${var.account_name}-secrets-manager-postgres-rotation-lambda"
   description   = "Rotates a Secrets Manager secret for Amazon RDS PostgreSQL credentials using the single user rotation strategy."
 
   # AWS-managed S3 bucket containing the official rotation function code
