@@ -1,5 +1,4 @@
 # Perms, Policies, and Roles
-
 resource "aws_iam_role" "rotation_lambda_role" {
   name = "${var.account_name}-secrets-rotation-role"
 
@@ -54,9 +53,8 @@ resource "aws_iam_role_policy" "secrets_rotation_policy" {
 }
 
 # Lambda
-
 resource "aws_lambda_function" "rotation" {
-  function_name = "${var.account_name}-secrets-rotation-lambda"
+  function_name = "${var.account_name}-postgres-rotation-lambda"
   description   = "Rotates a Secrets Manager secret for Amazon RDS PostgreSQL credentials using the single user rotation strategy."
 
   # AWS-managed S3 bucket containing the official rotation function code
@@ -88,10 +86,6 @@ resource "aws_lambda_function" "rotation" {
     }
   }
 
-  tags = {
-    SecretsManagerLambda = "Rotation"
-  }
-
   lifecycle {
     ignore_changes = [
       source_code_hash,
@@ -100,7 +94,6 @@ resource "aws_lambda_function" "rotation" {
 }
 
 # Lambda Permission
-
 resource "aws_lambda_permission" "allow_secrets_manager" {
   statement_id  = "AllowSecretsManagerInvocation"
   action        = "lambda:InvokeFunction"
@@ -109,7 +102,6 @@ resource "aws_lambda_permission" "allow_secrets_manager" {
 }
 
 # Secrets Manager Rotation Configuration
-
 resource "aws_secretsmanager_secret_rotation" "rotation" {
   secret_id           = var.secret_arn
   rotation_lambda_arn = aws_lambda_function.rotation.arn

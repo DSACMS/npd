@@ -33,6 +33,10 @@ data "aws_vpc" "default" {
   }
 }
 
+data "aws_secretsmanager_secret" "npd_readonly" {
+  name = "npd_dev_fhir_api_db/npd_readonly"
+}
+
 module "domains" {
   source = "../../modules/domains"
 
@@ -245,7 +249,7 @@ module "secrets_rotation" {
   source = "../../modules/secrets-rotation"
 
   account_name      = local.account_name
-  secret_arn        = "PLACEHOLDER_SECRET_ARN"  # arn:aws:secretsmanager:us-east-1:...:secret:npd_dev_fhir_api_db/npd_readonly-...
+  secret_arn        = data.aws_secretsmanager_secret.npd_readonly.arn
   vpc_id            = data.aws_vpc.default.id
   subnet_ids        = module.networking.private_subnet_ids
   security_group_id = module.networking.db_security_group_id
