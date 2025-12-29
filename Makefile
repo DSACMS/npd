@@ -226,10 +226,18 @@ build-frontend-test-assets: clean-frontend
 	export VITE_API_BASE_URL=http://localhost:8008; \
 		$(MAKE) backend/provider_directory/static/.vite/manifest.json
 
+.PHONY: watch-frontend-test-assets
+watch-frontend-test-assets:
+	bin/npr -e VITE_API_BASE_URL=http://localhost:8008 npm run watch
+
+.PHONY: test-system-setup
+test-system-setup: test-setup
+	bin/npr --test python manage.py seeduser
+	bin/npr --test python manage.py seedsystem
+
 .PHONY: test-server
-test-server: test-setup build-frontend-test-assets
-	@bin/npr --test python manage.py seeduser
-	@bin/npr --test --publish 8008:8008 python manage.py runserver 0.0.0.0:8008
+test-server: test-system-setup build-frontend-test-assets
+	bin/npr --test --publish 8008:8008 python manage.py runserver 0.0.0.0:8008
 
 ###
 # whole project concerns

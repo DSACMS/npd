@@ -154,7 +154,7 @@ module "fhir-api" {
     db_instance_master_user_secret_arn = module.api-db.db_instance_master_user_secret_arn
     db_instance_address                = module.api-db.db_instance_address
     db_instance_port                   = module.api-db.db_instance_port
-    db_instance_name                   = module.api-db.db_instance_name
+    db_instance_name                   = "npd_halloween_sjp"
   }
   networking = {
     private_subnet_ids    = module.networking.private_subnet_ids
@@ -182,7 +182,7 @@ module "etl" {
     db_instance_master_user_secret_arn = module.etl-db.db_instance_master_user_secret_arn
     db_instance_address                = module.etl-db.db_instance_address
     db_instance_port                   = module.etl-db.db_instance_port
-    db_instance_name                   = "npd_halloween_sjp"
+    db_instance_name                   = module.etl-db.db_instance_name
   }
   networking = {
     private_subnet_ids        = module.networking.private_subnet_ids
@@ -234,14 +234,13 @@ module "github-actions" {
   source = "../../modules/github-actions-runner"
 
   account_name = local.account_name
+  tier = var.tier
   security_group_ids = concat(
     module.networking.cmscloud_security_group_ids,
     [module.networking.github_action_runner_security_group_id]
   )
   subnet_ids                  = module.networking.private_subnet_ids
-  ecs_cluster_id              = module.ecs.cluster_id
-  github_runner_image         = var.github_runner_image
-  enable_containerized_runner = true
+  enable_preconfigured_ec2_instance = true
 }
 
 # Secrets Rotation

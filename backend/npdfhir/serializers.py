@@ -421,7 +421,7 @@ class OrganizationSerializer(serializers.Serializer):
                 "fhir-organization-detail", instance.parent_id, request
             )
 
-        if hasattr(instance, "authorized_official"):
+        if hasattr(instance, "authorized_official") and instance.authorized_official is not None:
             authorized_official = representation["authorized_official"]
             # r4 only allows one name for contact. TODO update to ndh
             authorized_official["name"] = authorized_official["name"][0]
