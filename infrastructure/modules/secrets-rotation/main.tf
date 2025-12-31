@@ -1,6 +1,6 @@
 # Perms, Policies, and Roles
 resource "aws_iam_role" "rotation_lambda_role" {
-  name = "${var.account_name}-secrets-rotation-role"
+  name = "SecretsManagerRDSPostgreS-SecretsManagerRDSPostgreS-1szk8Max0MbL"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -27,7 +27,7 @@ resource "aws_iam_role_policy_attachment" "lambda_vpc_access" {
 }
 
 resource "aws_iam_role_policy" "secrets_rotation_policy" {
-  name = "${var.account_name}-secrets-rotation-policy"
+  name = "SecretsManagerRDSPostgreSQLRotationSingleUserRolePolicy1"
   role = aws_iam_role.rotation_lambda_role.id
 
   policy = jsonencode({
@@ -54,7 +54,7 @@ resource "aws_iam_role_policy" "secrets_rotation_policy" {
 
 # Lambda
 resource "aws_lambda_function" "rotation" {
-  function_name = "${var.account_name}-secrets-manager-postgres-rotation-lambda"
+  function_name = "SecretsManager-postgres-rotation-lambda"
   description   = "Rotates a Secrets Manager secret for Amazon RDS PostgreSQL credentials using the single user rotation strategy."
 
   # AWS-managed S3 bucket containing the official rotation function code
@@ -105,8 +105,9 @@ resource "aws_lambda_permission" "allow_secrets_manager" {
 resource "aws_secretsmanager_secret_rotation" "rotation" {
   secret_id           = var.secret_arn
   rotation_lambda_arn = aws_lambda_function.rotation.arn
+  rotate_immediately = false
 
   rotation_rules {
-    automatically_after_days = var.rotation_days
+    schedule_expression = "rate(${var.rotation_days} days)"  
   }
 }
