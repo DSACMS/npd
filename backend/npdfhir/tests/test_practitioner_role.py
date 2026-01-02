@@ -1,3 +1,5 @@
+import uuid
+
 from django.urls import reverse
 from rest_framework import status
 from .api_test_case import APITestCase
@@ -8,7 +10,9 @@ from .helpers import (
     extract_resource_ids,
 )
 
-from .fixtures import create_full_practitionerrole
+from ..models import Nucc, ProviderToOrganization, ProviderToLocation, ProviderToTaxonomy
+
+from .fixtures import create_full_practitionerrole, create_endpoint, create_practitioner, create_organization, create_location, _ensure_relationship_type, _ensure_provider_role
 
 
 class PractitionerRoleViewSetTestCase(APITestCase):
@@ -49,6 +53,73 @@ class PractitionerRoleViewSetTestCase(APITestCase):
             cls.roles.append(role)
 
         cls.first_prac_id = cls.roles[0].id
+    
+        cls.roles_with_params = []
+
+        # Practitioner with taxonomy (practitioner_type) set separately
+        provider = create_practitioner(
+            first_name="Charlie",
+            last_name="Brown",
+            gender="M",
+            npi_value=3000000001,
+        )
+        taxonomy_code = Nucc.objects.first()  # pick any Nucc code for practitioner_type
+        if taxonomy_code:
+            from ..models import ProviderToTaxonomy
+            ProviderToTaxonomy.objects.create(
+                id=uuid.uuid4(),
+                npi=provider,
+                nucc_code=taxonomy_code,
+            )
+
+        # Create organization and location
+        cls.org_name = "Sunshine Health"
+        org = create_organization(name=cls.org_name, organization_type=taxonomy_code.code if taxonomy_code else None)
+        loc = create_location(
+            organization=org,
+            name="Sunshine Clinic",
+            city="Sunnyville",
+            state="CA",
+            zipcode="90001",
+            addr_line_1="123 Sunshine St",
+        )
+
+        role_code = "MD"
+        role_display = "Clinician"
+        # Create ProviderToOrganization & ProviderToLocation via full_practitionerrole
+        # Ensure relationship + role codes exist
+        rel_type = _ensure_relationship_type()
+        _ensure_provider_role(role_code, role_display)
+
+        pto_org = ProviderToOrganization.objects.create(
+            id=uuid.uuid4(),
+            individual=provider,  # special FK uses Provider.individual_id
+            organization=org,
+            relationship_type=rel_type,
+            active=True,
+        )
+
+        pr = ProviderToLocation.objects.create(
+            id=uuid.uuid4(),
+            provider_to_organization=pto_org,
+            location=loc,
+            provider_role_code=role_code,
+            active=True,
+        )
+        cls.roles_with_params.append(pr)
+
+        # Add endpoint
+        ep = create_endpoint(
+            organization=org,
+            url="https://sunshine.example.org/fhir",
+            name="Sunshine FHIR Endpoint",
+        )
+
+        # Save references for tests
+        cls.provider = provider
+        cls.organization = org
+        cls.location = loc
+        cls.endpoint = ep
         return super().setUpTestData()
 
     # Basic tests
@@ -124,3 +195,41 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data["id"], str(id))
+
+    def test_filter_by_practitioner_type(self):
+        taxonomy = ProviderToTaxonomy.objects.filter(npi=self.provider).first()
+        self.assertIsNotNone(taxonomy)
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(url, {"practitioner_type": str(taxonomy.nucc_code.pk)})
+        self.assertEqual(response.status_code, 200)
+        assert_has_results(self, response)
+
+    def test_filter_by_organization_type(self):
+        org_taxonomy = Nucc.objects.first()
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(url, {"organization_type": str(org_taxonomy.pk)})
+        self.assertEqual(response.status_code, 200)
+        assert_has_results(self, response)
+
+    def test_filter_by_location_city_state_zip(self):
+        url = reverse("fhir-practitionerrole-list")
+        for param, value in {
+            "location_city": self.location.address.address_us.city_name,
+            "location_state": self.location.address.address_us.state_code.abbreviation,
+            "location_zip_code": self.location.address.address_us.zipcode,
+        }.items():
+            resp = self.client.get(url, {param: value})
+            self.assertEqual(resp.status_code, 200)
+            assert_has_results(self, resp)
+
+    def test_filter_by_endpoint_fields(self):
+        url = reverse("fhir-practitionerrole-list")
+        for param, value in {
+            "endpoint_connection_type": self.endpoint.endpoint_instance.endpoint_connection_type.id,
+            "endpoint_payload_type": "urn:hl7-org:sdwg:ccda-structuredBody:1.1",
+            "endpoint_organization_id": str(self.organization.id),
+            "endpoint_organization_name": self.org_name,
+        }.items():
+            resp = self.client.get(url, {param: value})
+            self.assertEqual(resp.status_code, 200)
+            assert_has_results(self, resp)
