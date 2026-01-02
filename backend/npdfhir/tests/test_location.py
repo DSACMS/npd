@@ -1,14 +1,14 @@
 from django.urls import reverse
 from rest_framework import status
+
 from .api_test_case import APITestCase
+from .fixtures import create_location, create_organization
 from .helpers import (
     assert_fhir_response,
     assert_has_results,
     assert_pagination_limit,
     extract_resource_names,
 )
-
-from .fixtures import create_location, create_organization
 
 
 class LocationViewSetTestCase(APITestCase):

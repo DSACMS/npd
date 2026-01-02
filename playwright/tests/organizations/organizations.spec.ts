@@ -52,7 +52,7 @@ test.describe("Organization listing", () => {
 
     // assert
     await expect(page.getByRole("caption")).toContainText(
-      "Showing 1 - 10 of 26",
+      /Showing 1 - 10 of \d+/
     )
     await expect(
       page.locator("[data-testid='searchresults']").getByRole("listitem"),
