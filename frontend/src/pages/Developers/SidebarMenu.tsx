@@ -51,13 +51,8 @@ export const SidebarMenu = () => {
 
   const navItems: VerticalNavItemProps[] = [
     {
-      label: t("developers.nav.overview"),
+      label: t("developers.nav.participating"),
       items: [
-        {
-          id: "description-link",
-          label: t("developers.nav.participating"),
-          url: slugId(t("developers.nav.participating")),
-        },
         {
           id: "participating-link",
           label: t("developers.nav.feedback"),
