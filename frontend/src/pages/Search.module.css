@@ -17,3 +17,21 @@
     justify-content: space-between;
   }
 }
+
+.input {
+  --height: 2.8rem;
+
+  display: flex;
+  align-items: bottom;
+  justify-content: start;
+
+  & input {
+    height: var(--height);
+    margin: 0 !important;
+  }
+
+  & button {
+    height: var(--height);
+    margin-left: 1rem;
+  }
+}

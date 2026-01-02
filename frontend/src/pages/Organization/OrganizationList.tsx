@@ -1,77 +1,53 @@
-import {
-  organizationMailingAddressSelector,
-  organizationNpiSelector,
-  useOrganizationsAPI,
-} from "../../state/requests/organizations"
-
+import { Pagination } from "@cmsgov/design-system"
 import classNames from "classnames"
 import { useTranslation } from "react-i18next"
-import type { FHIROrganization } from "../../@types/fhir"
-import { LoadingIndicator } from "../../components/LoadingIndicator"
-
-import { Pagination } from "@cmsgov/design-system"
 import { Link } from "react-router"
+import { LoadingIndicator } from "../../components/LoadingIndicator"
 import { PaginationCaption } from "../../components/PaginationCaption"
+import { TitlePanel } from "../../components/TitlePanel"
 import { usePagination, usePaginationParams } from "../../hooks/usePagination"
 import { apiUrl } from "../../state/api"
+import { useOrganizationsAPI } from "../../state/requests/organizations"
 import layout from "../Layout.module.css"
-import search from "../Search.module.css"
-
-const ListedOrganization = ({ data }: { data: FHIROrganization }) => {
-  const { t } = useTranslation()
-
-  return (
-    <div role="listitem" className="ds-u-border-top--1 ds-u-padding-y--2">
-      <div className={search.entry}>
-        <div className={search.head}>
-          <Link className={search.name} to={`/organizations/${data.id}`}>
-            {data.name}
-          </Link>
-          <span>
-            <strong>NPI:</strong> {organizationNpiSelector(data)}
-          </span>
-        </div>
-        <div className="ds-l-row">
-          <div className="ds-l-col--4 ds-m-col--6">
-            <strong>{t("organizations.listing.taxonomy")}</strong>
-            <br />
-            TBD
-          </div>
-          <div className="ds-l-col--4 ds-m-col--6">
-            <strong>{t("organizations.listing.location")}</strong>
-            <br />
-            {organizationMailingAddressSelector(data)}
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
+import { ListedOrganization } from "./ListedOrganization"
 
 export const OrganizationList = () => {
   const { t } = useTranslation()
-  const params = usePaginationParams()
+  const [params, setParams] = usePaginationParams()
   const { data, isLoading, isSuccess } = useOrganizationsAPI(params)
   const pagination = usePagination(params, data)
 
   const contentClass = classNames(layout.content, "ds-l-container")
-  const bannerClass = classNames(layout.banner)
+
+  const onPageChange: React.ComponentProps<
+    typeof Pagination
+  >["onPageChange"] = (evt, page) => {
+    evt.preventDefault()
+    evt.stopPropagation()
+    setParams({ page: page.toString() }, { preventScrollReset: true })
+  }
+
+  const paginationComponent = (
+    <Pagination
+      currentPage={pagination.page}
+      onPageChange={onPageChange}
+      renderHref={(pageNumber) => apiUrl(`/organizations?page=${pageNumber}`)}
+      totalPages={pagination.totalPages}
+    />
+  )
 
   return (
     <>
-      <section className={bannerClass}>
-        <div className="ds-l-container">
-          <div className="ds-l-row">
-            <div className="ds-l-col--12">
-              <div className={layout.leader}>
-                <div role="heading" aria-level={1} className={layout.title}>
-                  {t("organizations.listing.title")}
-                </div>
-              </div>
-            </div>
+      <TitlePanel
+        title={t("organizations.listing.title")}
+        className={layout.compactLeader}
+      >
+        <div className="ds-l-row">
+          <div className="ds-l-col--12 ds-u-margin-bottom--4">
+            <Link to="/organizations/search">Search organizations</Link>
           </div>
         </div>
-      </section>
+      </TitlePanel>
 
       {isLoading && <LoadingIndicator />}
 
@@ -80,14 +56,7 @@ export const OrganizationList = () => {
           <div className="ds-l-row">
             <div className="ds-l-col--12 ds-u-margin-bottom--2">
               {data && <PaginationCaption pagination={pagination} />}
-              <Pagination
-                currentPage={pagination.page}
-                onPageChange={() => {}}
-                renderHref={(pageNumber) =>
-                  apiUrl(`/organizations?page=${pageNumber}`)
-                }
-                totalPages={pagination.totalPages}
-              />
+              {paginationComponent}
             </div>
           </div>
 
@@ -109,14 +78,7 @@ export const OrganizationList = () => {
             </div>
 
             <div className="ds-l-col--12 ds-u-margin-bottom--2">
-              <Pagination
-                currentPage={pagination.page}
-                onPageChange={() => {}}
-                renderHref={(pageNumber) =>
-                  apiUrl(`/organizations?page=${pageNumber}`)
-                }
-                totalPages={pagination.totalPages}
-              />
+              {paginationComponent}
             </div>
           </div>
         </main>
