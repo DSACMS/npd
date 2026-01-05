@@ -90,6 +90,11 @@ CORS_URLS_REGEX = r"^/(fhir|api)/.*$"
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_METHODS = ["GET"]
 
+CSRF_COOKIE_SECURE = config("DJANGO_CSRF_COOKIE_SECURE", cast=bool, default=False)  # Only if using HTTPS
+CSRF_COOKIE_HTTPONLY = config("DJANGO_CSRF_COOKIE_HTTPONLY", cast=bool, default=False) # Must be False for JavaScript access
+CSRF_COOKIE_SAMESITE = config("DJANGO_CSRF_COOKIE_SAMESITE", default="Lax")  # or 'Strict' or 'None'
+CSRF_TRUSTED_ORIGINS = config("DJANGO_CSRF_TRUSTED_DOMAINS", default="").split(",")  # Add your domains
+
 if DEBUG:
     # in development, allow the frontend app to POST forms to the backend
     CSRF_TRUSTED_ORIGINS = [
@@ -311,6 +316,11 @@ LOGGING = {
         "": {
             "handlers": ["console"],
             "level": LOG_LEVEL,
+        },
+        'django.security.csrf': {
+            'handlers': ['console'],
+            'level': LOG_LEVEL,
+            'propagate': False
         },
     },
 }
