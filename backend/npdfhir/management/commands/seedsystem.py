@@ -32,6 +32,19 @@ class Command(BaseCommand):
                 other_issuer=fake.company(),
             )
             self.stdout.write(f"created Organization: {org.id} {name}")
+    
+    def generate_sample_practitioners(self, qty: int = 25):
+        fake = Faker()
+        for i in range(qty):
+            first_name = fake.first_name()
+            last_name = fake.last_name()
+            practitioner = create_practitioner(
+                first_name=first_name,
+                last_name=last_name,
+                npi_value=self.generate_npi(),
+                gender=random.choice(["M", "F"]),
+            )
+            self.stdout.write(f"created Practitioner: {practitioner.individual.id} {first_name} {last_name}")
 
     def handle(self, *args, **options):
         if options.get("seed", None):
@@ -47,6 +60,19 @@ class Command(BaseCommand):
             npi__npi=provider.npi.npi,
         )
         self.stdout.write(f"created Provider: {provider_report}")
+
+        try:
+            known_practitioner = create_practitioner(
+                first_name="AAA",
+                last_name="Test Practitioner",
+                npi_value=1234567894,
+            )
+            individualtoname = known_practitioner.individual.individualtoname_set.first()
+            self.stdout.write(
+                f"created known Practitioner: {self.to_json(id=known_practitioner.individual.id, npi=known_practitioner.npi.npi, name=f'{individualtoname.first_name} {individualtoname.last_name}')}"
+            )
+        except IntegrityError:
+            self.stdout.write("(practitioner with NPI 1234567894 already exists)")
 
         try:
             # one known NPI
@@ -66,3 +92,4 @@ class Command(BaseCommand):
             self.stdout.write(f"created Endpoint: {self.to_json(id=endpoint.id)}")
 
         self.generate_sample_organizations(25)
+        self.generate_sample_practitioners(25)

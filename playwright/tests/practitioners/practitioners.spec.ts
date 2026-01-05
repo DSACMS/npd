@@ -1,28 +1,137 @@
 import { expect, test } from "@playwright/test"
 
-import fhir_practitioner from "../../../frontend/tests/fixtures/fhir_practitioner.json"
+let practitioner: { npi: string; id: string; name: string } = {
+  npi: "UNSET",
+  id: "UNSET",
+  name: "UNSET",
+}
 
-test.describe("Practitioners", () => {
-  test("visit a practitioner page", async ({ page }) => {
-    // mock the API using the existing test fixture from frontend/
-    await page.route(
-      "*/**/fhir/Practitioner/73768136-3d4e-453c-a761-1a13962a42eb/",
-      async (route) => {
-        const json = fhir_practitioner
-        await route.fulfill({ json })
-      },
+// load a known practitioner record from the API before running tests
+test.beforeAll(async ({ request }) => {
+  // expects a FhirCollection<FhirPractitioner> API response
+  const response = await request.get(
+    "/fhir/Practitioner/?identifier=1234567894",
+  )
+  const payload = await response.json()
+
+  const resource = payload.results.entry[0].resource
+
+  // Practitioner names are in resource.name[0].text or constructed from given/family
+  const nameRecord = resource.name?.[0]
+  const name = nameRecord?.text || `${nameRecord?.given?.[0] || ""} ${nameRecord?.family || ""}`.trim()
+
+  practitioner = {
+    id: resource.id,
+    name: name,
+    npi: resource.identifier?.find(
+      (i: { system?: string }) => 
+        i.system === "http://hl7.org/fhir/sid/us-npi" || 
+        i.system === "http://terminology.hl7.org/NamingSystem/npi"
+    )?.value || resource.identifier?.[0]?.value,
+  }
+
+  // it should look like the /fhir/Practitioner/ record created by seedsystem
+  expect(practitioner).toMatchObject(
+    expect.objectContaining({
+      id: expect.stringMatching(/[\d-]+/),
+      name: expect.stringContaining("AAA Test Practitioner"),
+      npi: "1234567894",
+    }),
+  )
+})
+
+test.describe("Practitioner listing", () => {
+  test("visit the Practitioners listing page", async ({ page }) => {
+    await page.goto("/practitioners")
+
+    await expect(page).toHaveURL("/practitioners")
+
+    await expect(page.locator("div[role='heading']")).toContainText(
+      "All Practitioners",
     )
 
-    await page.goto("/practitioners/73768136-3d4e-453c-a761-1a13962a42eb")
+    await expect(page.getByText(`NPI: ${practitioner?.npi}`)).toBeVisible()
+  })
 
-    await expect(page).toHaveURL(
-      "/practitioners/73768136-3d4e-453c-a761-1a13962a42eb",
-    )
+  test("paging through Practitioners", async ({ page }) => {
+    await page.goto("/practitioners")
 
-    await expect(page.getByTestId("practitioner-name")).toBeAttached()
-    await expect(page.getByTestId("practitioner-name")).toContainText(
-      "DR. KIRK AADALEN",
-      { useInnerText: true },
-    )
+    await expect(page).toHaveURL("/practitioners")
+
+    // assert - adjust counts based on your seeded data
+    await expect(page.getByRole("caption")).toBeVisible()
+    await expect(
+      page.locator("[data-testid='searchresults']").getByRole("listitem"),
+    ).toHaveCount(await page.locator("[data-testid='searchresults']").getByRole("listitem").count())
+
+    // act
+    await page.getByLabel("Next Page").first().click()
+
+    // assert
+    await expect(page).toHaveURL("/practitioners?page=2")
+  })
+})
+
+test.describe("Practitioner search", () => {
+  test("search for a Practitioner by NPI", async ({ page }) => {
+    await page.goto("/practitioners/search")
+    await expect(page).toHaveURL("/practitioners/search")
+    await expect(page.getByText("Search Practitioners")).toBeVisible()
+
+    await page
+      .getByRole("textbox", { name: "Name or Identifier (NPI" })
+      .click()
+    await page
+      .getByRole("textbox", { name: "Name or Identifier (NPI" })
+      .fill("1234567894")
+    await page.getByRole("button", { name: "Search" }).click()
+    await expect(page.getByRole("link", { name: /AAA Test Practitioner/i })).toBeVisible()
+  })
+
+  test("search for a Practitioner by exact name", async ({ page }) => {
+    await page.goto("/practitioners/search")
+    await expect(page).toHaveURL("/practitioners/search")
+    await expect(page.getByText("Search Practitioners")).toBeVisible()
+
+    await page
+      .getByRole("textbox", { name: "Name or Identifier (NPI" })
+      .click()
+    await page
+      .getByRole("textbox", { name: "Name or Identifier (NPI" })
+      .fill("AAA Test Practitioner")
+    await page.getByRole("button", { name: "Search" }).click()
+    await expect(page.getByRole("link", { name: /AAA Test Practitioner/i })).toBeVisible()
+  })
+
+  test("search for a Practitioner by partial name", async ({ page }) => {
+    await page.goto("/practitioners/search")
+    await expect(page).toHaveURL("/practitioners/search")
+    await expect(page.getByText("Search Practitioners")).toBeVisible()
+
+    await page
+      .getByRole("textbox", { name: "Name or Identifier (NPI" })
+      .click()
+    await page
+      .getByRole("textbox", { name: "Name or Identifier (NPI" })
+      .fill("AAA")
+    await page.getByRole("button", { name: "Search" }).click()
+    await expect(page.getByRole("link", { name: /AAA Test Practitioner/i })).toBeVisible()
+  })
+})
+
+test.describe("Practitioner show", () => {
+  test("visit a Practitioner page", async ({ page }) => {
+    // visit listing page
+    await page.goto("/practitioners")
+
+    // pick known practitioner
+    await page.getByText(practitioner.name).click()
+
+    // should be on the single practitioner show page
+    await expect(page).toHaveURL(`/practitioners/${practitioner.id}`)
+    await expect(page.getByTestId("practitioner-name")).toContainText(practitioner.name)
+
+    await expect(page.getByTestId("practitioner-name")).toContainText(practitioner.name)
+    await expect(page.getByTestId("practitioner-npi")).toContainText(`NPI: ${practitioner.npi}`)
   })
 })
