@@ -7,7 +7,6 @@ from ...models import (
     EndpointInstance,
     EndpointInstanceToPayload,
     EndpointType,
-    EnvironmentType,
     PayloadType,
 )
 from .organization import create_organization
