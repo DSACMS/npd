@@ -273,14 +273,23 @@ class PractitionerViewSetTestCase(APITestCase):
 
     # Identifiers Filter tests
     def test_list_filter_by_identifier_general(self):
+        identifier = "1234567890"
+
         url = reverse("fhir-practitioner-list")
-        response = self.client.get(url, {"identifier": "1234567890"})
+        response = self.client.get(url, {"identifier": identifier})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
 
+        all_values = []
         for entry in response.data["results"]["entry"]:
             values = [int(v["value"]) for v in entry["resource"]["identifier"]]
-            self.assertIn(self.pracs[0].npi.npi, values)
+            all_values.extend(values)
+            self.assertIn(int(identifier), values)
+        
+        #assert that Kirk Aadalen is in the data
+        self.assertIn(self.pracs[0].npi.npi,all_values)
+        #assert that Asad Abbas is in the data
+        self.assertIn(self.pracs[1].npi.npi,all_values)
 
     def test_list_filter_by_npi_specific(self):
         url = reverse("fhir-practitioner-list")
