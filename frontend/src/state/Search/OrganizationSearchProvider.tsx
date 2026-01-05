@@ -2,17 +2,18 @@ import React, { useState, type ReactNode } from "react"
 import { usePagination, usePaginationParams } from "../../hooks/usePagination"
 import { useOrganizationsAPI } from "../requests/organizations"
 import {
-  SearchContext,
+  OrganizationSearchContext,
   SearchDispatchContext,
   type SearchContextValue,
   type SearchDispatchContextValue,
 } from "./SearchContext"
+import type { FHIROrganization } from "../../@types/fhir"
 
 interface SearchProviderProps {
   children: ReactNode
 }
 
-export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
+export const OrganizationSearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
   const [params, setParams] = usePaginationParams()
   const [query, setQueryValue] = useState<string>(params.query || "")
   const { data, isLoading, error } = useOrganizationsAPI(params, {
@@ -33,7 +34,7 @@ export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
     })
   }
 
-  const state: SearchContextValue = {
+  const state: SearchContextValue<FHIROrganization> = {
     initialQuery: query,
     data: data?.results?.entry
       ? data.results.entry.map((entry) => entry.resource)
@@ -58,8 +59,8 @@ export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
   }
 
   return (
-    <SearchContext value={state}>
+    <OrganizationSearchContext value={state}>
       <SearchDispatchContext value={dispatch}>{children}</SearchDispatchContext>
-    </SearchContext>
+    </OrganizationSearchContext>
   )
 }

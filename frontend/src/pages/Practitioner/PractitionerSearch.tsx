@@ -6,13 +6,13 @@ import { NpdMarkdown } from "../../components/markdown/NpdMarkdown"
 import { PaginationCaption } from "../../components/PaginationCaption"
 import { TitlePanel } from "../../components/TitlePanel"
 import { apiUrl } from "../../state/api"
-import { OrganizationSearchProvider } from "../../state/Search/OrganizationSearchProvider"
-import { useSearchDispatch, useOrganizationSearchState } from "../../state/Search/useSearch"
+import { PractitionerSearchProvider } from "../../state/Search/PractitionerSearchProvider"
+import { useSearchDispatch, usePractitionerSearchState } from "../../state/Search/useSearch"
 import layout from "../Layout.module.css"
 import search from "../Search.module.css"
-import { ListedOrganization } from "./ListedOrganization"
+import { ListedPractitioner } from "./ListedPractitioner"
 
-const OrganizationSearchForm: React.FC = () => {
+const PractitionerSearchForm: React.FC = () => {
   const { t } = useTranslation()
   const { setQuery, navigateToPage, clearSearch } = useSearchDispatch()
   const {
@@ -22,7 +22,7 @@ const OrganizationSearchForm: React.FC = () => {
     error: searchError,
     data,
     pagination,
-  } = useOrganizationSearchState()
+  } = usePractitionerSearchState()
 
   const [query, setQueryValue] = useState<string>(initialQuery || "")
 
@@ -110,7 +110,7 @@ const OrganizationSearchForm: React.FC = () => {
                         const nextParams = new URLSearchParams()
                         nextParams.set("page", pageNumber.toString())
                         if (searchQuery) nextParams.set("query", searchQuery)
-                        return apiUrl(`/organizations?${nextParams.toString()}`)
+                        return apiUrl(`/practitioners?${nextParams.toString()}`)
                       }}
                       totalPages={pagination.totalPages}
                     />
@@ -118,14 +118,14 @@ const OrganizationSearchForm: React.FC = () => {
                 )}
                 <div data-testid="searchresults" role="list">
                   {data.map((org) => (
-                    <ListedOrganization data={org} key={org.id} />
+                    <ListedPractitioner data={org} key={org.id} />
                   ))}
                 </div>
               </>
             )}
 
             {data && data.length === 0 && (
-              <p>No Organizations found for query: {query}</p>
+              <p>No Practitioners found for query: {query}</p>
             )}
 
             {!data && (
@@ -140,10 +140,10 @@ const OrganizationSearchForm: React.FC = () => {
   )
 }
 
-export const OrganizationSearch = () => {
+export const PractitionerSearch = () => {
   return (
-    <OrganizationSearchProvider>
-      <OrganizationSearchForm />
-    </OrganizationSearchProvider>
+    <PractitionerSearchProvider>
+      <PractitionerSearchForm />
+    </PractitionerSearchProvider>
   )
 }

@@ -63,13 +63,13 @@ export const Practitioner = () => {
         </div>
       </section>
       <main className={contentClass}>
-        <FeatureFlag inverse name="PRACTITIONER_LOOKUP_DETAILS">
+        <FeatureFlag name="PRACTITIONER_LOOKUP_DETAILS">
           <Alert variation="warn" heading="Content not available">
             This content is not currently available.
           </Alert>
         </FeatureFlag>
 
-        <FeatureFlag name="PRACTITIONER_LOOKUP_DETAILS">
+        <FeatureFlag inverse name="PRACTITIONER_LOOKUP_DETAILS">
           <Alert heading={t("practitioners.update.title")}>
             {t("practitioners.update.subtitle")}{" "}
             <a href="#">{t("practitioners.update.link")}</a>
