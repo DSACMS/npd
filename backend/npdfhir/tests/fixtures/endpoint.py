@@ -51,8 +51,6 @@ def create_endpoint(
     else:
         ehr_vendor = ehr
 
-    et = EnvironmentType.objects.get(pk="prod")
-
     pt = PayloadType.objects.get(pk=payload_type or "urn:hl7-org:sdwg:ccda-structuredBody:1.1")
 
     instance = EndpointInstance.objects.create(
@@ -61,7 +59,7 @@ def create_endpoint(
         address=url,
         endpoint_connection_type=ctype,
         name=name,
-        environment_type=et,
+        environment_type_id="prod",
     )
 
     EndpointInstanceToPayload.objects.create(endpoint_instance=instance, payload_type=pt)

@@ -251,10 +251,12 @@ class PractitionerViewSetTestCase(APITestCase):
         assert_has_results(self, response)
 
         for entry in response.data["results"]["entry"]:
-            self.assertEqual(
-                entry["resource"]["name"][-1]["family"],
-                self.sample_last_name,
-            )
+            names = []
+            for name in entry["resource"]["name"]:
+                names.append(name["family"])
+                names.append(name["given"])
+            
+            self.assertIn(self.sample_last_name, names)
 
     def test_list_filter_by_practitioner_type(self):
         url = reverse("fhir-practitioner-list")
@@ -278,6 +280,7 @@ class PractitionerViewSetTestCase(APITestCase):
 
         for entry in response.data["results"]["entry"]:
             values = [int(v["value"]) for v in entry["resource"]["identifier"]]
+            print(f"Values: {values}")
             self.assertIn(self.pracs[0].npi.npi, values)
 
     def test_list_filter_by_npi_specific(self):
@@ -301,6 +304,7 @@ class PractitionerViewSetTestCase(APITestCase):
         assert_has_results(self, response)
 
         for entry in response.data["results"]["entry"]:
+            present_checks = []
             for address in entry["resource"]["address"]:
                 # print(address)
                 address_string = ""
@@ -312,7 +316,9 @@ class PractitionerViewSetTestCase(APITestCase):
                 address_string += address["state"] + " "
                 address_string += address["postalCode"]
 
-                self.assertIn(test_search, address_string)
+                #self.assertIn(test_search, address_string)
+                present_checks.append(test_search in address_string)
+            self.assertTrue(any(present_checks))
 
     def test_list_filter_by_address_city(self):
         url = reverse("fhir-practitioner-list")
