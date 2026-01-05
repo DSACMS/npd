@@ -280,7 +280,6 @@ class PractitionerViewSetTestCase(APITestCase):
 
         for entry in response.data["results"]["entry"]:
             values = [int(v["value"]) for v in entry["resource"]["identifier"]]
-            print(f"Values: {values}")
             self.assertIn(self.pracs[0].npi.npi, values)
 
     def test_list_filter_by_npi_specific(self):
