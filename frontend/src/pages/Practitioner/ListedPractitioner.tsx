@@ -21,12 +21,12 @@ export const ListedPractitioner = ({ data }: { data: FHIRPractioner }) => {
         </div>
         <div className="ds-l-row">
           <div className="ds-l-col--4 ds-m-col--6">
-            <strong>{t("organizations.listing.taxonomy")}</strong>
+            <strong>{t("practitioners.listing.taxonomy")}</strong>
             <br />
             TBD
           </div>
           <div className="ds-l-col--4 ds-m-col--6">
-            <strong>{t("organizations.listing.location")}</strong>
+            <strong>{t("practitioners.listing.location")}</strong>
             <br />
               {practitioner.address}
           </div>

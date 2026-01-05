@@ -50,7 +50,7 @@ const PractitionerSearchForm: React.FC = () => {
   return (
     <>
       <TitlePanel
-        title={t("organizations.search.title")}
+        title={t("practitioners.search.title")}
         className={layout.compactLeader}
       >
         <div className="ds-l-row">
@@ -59,7 +59,7 @@ const PractitionerSearchForm: React.FC = () => {
               <input type="hidden" name="page" value={pagination?.page} />
               <div className="ds-u-clearfix">
                 <label className="ds-c-label" htmlFor="query">
-                  {t("organizations.search.inputLabel")}
+                  {t("practitioners.search.inputLabel")}
                 </label>
                 <div className={inputClass}>
                   <input

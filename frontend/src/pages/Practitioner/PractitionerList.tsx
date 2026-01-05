@@ -7,14 +7,14 @@ import { PaginationCaption } from "../../components/PaginationCaption"
 import { TitlePanel } from "../../components/TitlePanel"
 import { usePagination, usePaginationParams } from "../../hooks/usePagination"
 import { apiUrl } from "../../state/api"
-import { useOrganizationsAPI } from "../../state/requests/organizations"
+import { usePractitionersAPI } from "../../state/requests/practitioners"
 import layout from "../Layout.module.css"
 import { ListedPractitioner } from "./ListedPractitioner"
 
 export const PractitionerList = () => {
   const { t } = useTranslation()
   const [params, setParams] = usePaginationParams()
-  const { data, isLoading, isSuccess } = useOrganizationsAPI(params)
+  const { data, isLoading, isSuccess } = usePractitionersAPI(params)
   const pagination = usePagination(params, data)
 
   const contentClass = classNames(layout.content, "ds-l-container")
@@ -31,7 +31,7 @@ export const PractitionerList = () => {
     <Pagination
       currentPage={pagination.page}
       onPageChange={onPageChange}
-      renderHref={(pageNumber) => apiUrl(`/organizations?page=${pageNumber}`)}
+      renderHref={(pageNumber) => apiUrl(`/practitioners?page=${pageNumber}`)}
       totalPages={pagination.totalPages}
     />
   )
@@ -39,12 +39,12 @@ export const PractitionerList = () => {
   return (
     <>
       <TitlePanel
-        title={t("organizations.listing.title")}
+        title={t("practitioners.listing.title")}
         className={layout.compactLeader}
       >
         <div className="ds-l-row">
           <div className="ds-l-col--12 ds-u-margin-bottom--4">
-            <Link to="/organizations/search">Search organizations</Link>
+            <Link to="/practitioners/search">Search practitioners</Link>
           </div>
         </div>
       </TitlePanel>
