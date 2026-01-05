@@ -66,9 +66,24 @@ export const SidebarMenu = () => {
       url: slugId(t("developers.nav.about")),
     },
     {
-      id: "accessing-link",
       label: t("developers.nav.accessing"),
-      url: slugId(t("developers.nav.accessing")),
+      items: [
+        {
+          id: "overview-link",
+          label: t("developers.nav.overview"),
+          url: slugId(t("developers.nav.overview")),
+        },
+        {
+          id: "authentication-link",
+          label: t("developers.nav.authentication"),
+          url: slugId(t("developers.nav.authentication")),
+        },
+        {
+          id: "endpoints-link",
+          label: t("developers.nav.endpoints"),
+          url: slugId(t("developers.nav.endpoints")),
+        },
+      ],
     },
     {
       id: "sandbox-link",
