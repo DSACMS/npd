@@ -10,3 +10,7 @@ class BasicViewsTestCase(APITestCase):
         res_obj = response.json()
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(res_obj["status"], "healthy")
+
+    def test_fhir_endpoint_list(self):
+        response = self.client.get("/fhir")
+        self.assertEqual(response.status_code, status.HTTP_200_OK)

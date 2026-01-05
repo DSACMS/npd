@@ -2,7 +2,7 @@ from uuid import UUID
 
 from django.db.models import F, Value, CharField
 from django.db.models.functions import Concat
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import get_object_or_404
 from django.utils.html import escape
 from django_filters.rest_framework import DjangoFilterBackend
@@ -559,4 +559,4 @@ class FHIRCapabilityStatementView(APIView):
         serializer = CapabilityStatementSerializer(context={"request": request})
         response = serializer.to_representation(None)
 
-        return Response(response)
+        return JsonResponse(response)
