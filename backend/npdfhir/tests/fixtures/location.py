@@ -3,6 +3,7 @@ import uuid
 
 from ...models import Address, AddressUs, FipsState, Location
 from .organization import create_organization
+from .utils import _set_location_coords
 
 
 def create_address(

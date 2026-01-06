@@ -20,7 +20,7 @@ from ...models import (
 )
 from .location import create_location
 from .organization import create_organization
-from .utils import _ensure_name_use
+from .utils import _ensure_name_use, _set_location_coords
 
 
 def _ensure_provider_role(code="PRV", display="Provider Role"):
@@ -114,17 +114,6 @@ def create_practitioner(
         # Nucc
 
     return provider
-
-def _set_location_coords(location, lat, lon):
-    """
-    Utility to force lat/lon on a role's location.
-    """
-
-    address_us = location.address.address_us
-    address_us.latitude = lat
-    address_us.longitude = lon
-    address_us.save(update_fields=["latitude", "longitude"])
-
 
 def create_full_practitionerrole(
     first_name="Alice",
