@@ -6,7 +6,9 @@ from django.core.serializers.json import DjangoJSONEncoder
 from django.db import IntegrityError
 from faker import Faker
 
-from npdfhir.tests.fixtures import create_endpoint, create_organization, create_practitioner
+from npdfhir.tests.fixtures.endpoint import create_endpoint
+from npdfhir.tests.fixtures.organization import create_organization
+from npdfhir.tests.fixtures.practitioner import create_practitioner
 
 
 class Command(BaseCommand):
