@@ -14,7 +14,6 @@
   - [Adding dependencies](#adding-dependencies)
     - [Example dependency addition](#example-dependency-addition)
 
-
 The NPD front end consists of React + TypeScript built by vite.dev, deployed as static assets and developed as part of the NPD `backend/` Django application.
 
 ## System description
@@ -53,7 +52,9 @@ const MyComponent = () => {
   return (
     <div className="ds-u-display--flex">
       <p>{t("component.disclaimer")}</p>
-      <p><a href="#">{t("component.link")}</a></p>
+      <p>
+        <a href="#">{t("component.link")}</a>
+      </p>
     </div>
   )
 }
@@ -62,15 +63,14 @@ const MyComponent = () => {
 For larger or full-page content, we're using Markdown files, conventionally named `*.content.md`, loaded with the `?raw` query supported by vite.
 
 ```tsx
-import Markdown from 'react-markdown'
+import Markdown from "react-markdown"
 
-import content from './MyPage.content.md?raw'
+import content from "./MyPage.content.md?raw"
 
 const MyPage = () => {
-
   return (
     <div className="usa-prose">
-      <Markdown>{ content }</Markdown>
+      <Markdown>{content}</Markdown>
     </div>
   )
 }
@@ -114,8 +114,8 @@ From the `npd` project root:
 
 0. Start the backend with `docker compose up -d django-web`
 1. Run the frontend server in build + watch mode:
-    - in docker with: `docker compose up web`
-    - on host with: `cd frontend; npm run watch`
+   - in docker with: `docker compose up web`
+   - on host with: `cd frontend; npm run watch`
 2. Visit http://localhost:8000 in your browser
 
 **Limitations:**
@@ -136,9 +136,9 @@ From the `npd` project root:
 From the `npd` project root:
 
 1. Run the frontend vite dev server
-    - in docker with: `bin/npr --publish 3000:3000 npm run dev`
-    - on host with: `cd frontend; npm run dev`
-3. Visit http://localhost:3000 in your browser
+   - in docker with: `bin/npr --publish 3000:3000 npm run dev`
+   - on host with: `cd frontend; npm run dev`
+2. Visit http://localhost:3000 in your browser
 
 **Limitations:**
 
@@ -147,7 +147,6 @@ From the `npd` project root:
 **Benefits**:
 
 - nearly instantaneous reloading of changed components and styles
-
 
 ## Adding dependencies
 
