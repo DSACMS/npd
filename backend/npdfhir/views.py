@@ -1,8 +1,10 @@
+import json
+
 from uuid import UUID
 
 from django.db.models import F, Value, CharField
 from django.db.models.functions import Concat
-from django.http import HttpResponse, JsonResponse
+from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
 from django.utils.html import escape
 from django_filters.rest_framework import DjangoFilterBackend
@@ -556,7 +558,10 @@ class FHIRCapabilityStatementView(APIView):
         """
         Query metadata about this FHIR instance, represented as FHIR CapabilityStatement resource
         """
-        serializer = CapabilityStatementSerializer(context={"request": request})
-        response = serializer.to_representation(None)
+        serialized_capability_statement = CapabilityStatementSerializer(
+            context={"request": request}
+        )
 
-        return JsonResponse(response)
+        response = Response(serialized_capability_statement.to_representation())
+
+        return response
