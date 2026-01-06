@@ -76,12 +76,8 @@ The initial beta release of the National Provider Directory API makes the follow
 
 To explore the data in an interactive developer sandbox integrated with detailed documentation, please visit the National Provider Directory [Swagger documentation](/fhir/docs/).
 
-<<<<<<< HEAD
-## Open source project
-=======
 
 # Open source project
->>>>>>> main
 
 The National Provider Directory team is taking an open source approach to the product development of this tool, operating as a [Tier 3 CMS Open Source Repository](https://github.com/DSACMS/repo-scaffolder/blob/main/tier3/README.md). We believe government software should be made in the open and be built and licensed such that anyone can download the code, run it themselves without paying money to third parties or using proprietary software, and use it as they will.
 
