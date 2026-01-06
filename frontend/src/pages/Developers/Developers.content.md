@@ -10,7 +10,7 @@ Please note the following:
 - Frequent updates and API changes are possible
 - Feedback is encouraged
 
-#### Providing feedback
+## Providing feedback
 
 Feedback in all areas is welcome during the beta, including the following:
 
