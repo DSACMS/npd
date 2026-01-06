@@ -552,7 +552,10 @@ class FHIRCapabilityStatementView(APIView):
         """
         Query metadata about this FHIR instance, represented as FHIR CapabilityStatement resource
         """
-        serializer = CapabilityStatementSerializer(context={"request": request})
-        response = serializer.to_representation(None)
+        serialized_capability_statement = CapabilityStatementSerializer(
+            context={"request": request}
+        )
 
-        return Response(response)
+        response = Response(serialized_capability_statement.to_representation())
+
+        return response
