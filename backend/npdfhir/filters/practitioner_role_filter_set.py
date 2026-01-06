@@ -1,9 +1,9 @@
-from django_filters import rest_framework as filters
 from django.contrib.postgres.search import SearchVector
 from django.db.models import Q
+from django_filters import rest_framework as filters
 
-from ..models import ProviderToLocation
 from ..mappings import genderMapping
+from ..models import ProviderToLocation
 
 
 class PractitionerRoleFilterSet(filters.FilterSet):

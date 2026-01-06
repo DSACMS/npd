@@ -2,7 +2,9 @@ import uuid
 
 from django.urls import reverse
 from rest_framework import status
+
 from .api_test_case import APITestCase
+from .fixtures.practitioner import create_full_practitionerrole
 from .helpers import (
     assert_fhir_response,
     assert_has_results,
@@ -12,8 +14,10 @@ from .helpers import (
 
 from ..models import Nucc, ProviderToOrganization, ProviderToLocation, ProviderToTaxonomy
 
-from .fixtures import create_full_practitionerrole, create_endpoint, create_practitioner, create_organization, create_location, _ensure_relationship_type, _ensure_provider_role
-
+from .fixtures.organization import create_organization
+from .fixtures.endpoint import create_endpoint
+from .fixtures.location import create_location
+from .fixtures.practitioner import create_practitioner, create_full_practitionerrole, _ensure_relationship_type, _ensure_provider_role
 
 class PractitionerRoleViewSetTestCase(APITestCase):
     @classmethod
