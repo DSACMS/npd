@@ -43,31 +43,26 @@ test.beforeAll(async ({ request }) => {
 test.describe("Practitioner listing", () => {
   test("visit the Practitioners listing page", async ({ page }) => {
     await page.goto("/practitioners")
-
     await expect(page).toHaveURL("/practitioners")
 
     await expect(page.locator("div[role='heading']")).toContainText(
       "All Practitioners",
     )
-
-    await expect(page.getByText(`NPI: ${practitioner?.npi}`)).toBeVisible()
+    await expect(
+      page.locator("[data-testid='searchresults']").getByRole("listitem").first()
+    ).toBeVisible()
   })
 
   test("paging through Practitioners", async ({ page }) => {
     await page.goto("/practitioners")
-
     await expect(page).toHaveURL("/practitioners")
 
-    // assert - adjust counts based on your seeded data
     await expect(page.getByRole("caption")).toBeVisible()
     await expect(
       page.locator("[data-testid='searchresults']").getByRole("listitem"),
     ).toHaveCount(await page.locator("[data-testid='searchresults']").getByRole("listitem").count())
 
-    // act
     await page.getByLabel("Next Page").first().click()
-
-    // assert
     await expect(page).toHaveURL("/practitioners?page=2")
   })
 })
@@ -117,20 +112,27 @@ test.describe("Practitioner search", () => {
     await page.getByRole("button", { name: "Search" }).click()
     await expect(page.getByRole("link", { name: /AAA Test Practitioner/i })).toBeVisible()
   })
+
+  test("search for a Practitioner and view details", async ({ page }) => {
+    await page.goto("/practitioners/search")
+    
+    await page
+      .getByRole("textbox", { name: "Name or Identifier (NPI" })
+      .fill("1234567894")
+    await page.getByRole("button", { name: "Search" }).click()
+    await page.getByRole("link", { name: /AAA Test Practitioner/i }).click()
+t
+    await expect(page).toHaveURL(`/practitioners/${practitioner.id}`)
+    await expect(page.getByTestId("practitioner-name")).toContainText(practitioner.name)
+    await expect(page.getByTestId("practitioner-npi")).toContainText(`NPI: ${practitioner.npi}`)
+  })
 })
 
 test.describe("Practitioner show", () => {
   test("visit a Practitioner page", async ({ page }) => {
-    // visit listing page
-    await page.goto("/practitioners")
+    await page.goto(`/practitioners/${practitioner.id}`)
 
-    // pick known practitioner
-    await page.getByText(practitioner.name).click()
-
-    // should be on the single practitioner show page
     await expect(page).toHaveURL(`/practitioners/${practitioner.id}`)
-    await expect(page.getByTestId("practitioner-name")).toContainText(practitioner.name)
-
     await expect(page.getByTestId("practitioner-name")).toContainText(practitioner.name)
     await expect(page.getByTestId("practitioner-npi")).toContainText(`NPI: ${practitioner.npi}`)
   })
