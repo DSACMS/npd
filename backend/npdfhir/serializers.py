@@ -615,7 +615,7 @@ class CapabilityStatementSerializer(serializers.Serializer):
     Serializer for FHIR CapablityStatement resource
     """
 
-    def to_representation(self, instance):
+    def to_representation(self):
         request = self.context.get("request")
         baseURL = request.build_absolute_uri("/fhir")
         metadataURL = request.build_absolute_uri(reverse("fhir-metadata"))
