@@ -97,6 +97,9 @@ CSRF_COOKIE_HTTPONLY = config(
     "DJANGO_CSRF_COOKIE_HTTPONLY", cast=bool, default=False
 )  # Must be False for JavaScript access
 CSRF_COOKIE_SAMESITE = config("DJANGO_CSRF_COOKIE_SAMESITE", default="Lax")  # or 'Strict' or 'None'
+CSRF_TRUSTED_ORIGINS = config("DJANGO_CSRF_TRUSTED_DOMAINS", default="").split(
+    ","
+)  # Add your domains
 
 if DEBUG:
     # in development, allow the frontend app to POST forms to the backend
