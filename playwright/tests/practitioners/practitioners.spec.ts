@@ -121,7 +121,7 @@ test.describe("Practitioner search", () => {
       .fill("1234567894")
     await page.getByRole("button", { name: "Search" }).click()
     await page.getByRole("link", { name: /AAA Test Practitioner/i }).click()
-t
+
     await expect(page).toHaveURL(`/practitioners/${practitioner.id}`)
     await expect(page.getByTestId("practitioner-name")).toContainText(practitioner.name)
     await expect(page.getByTestId("practitioner-npi")).toContainText(`NPI: ${practitioner.npi}`)
