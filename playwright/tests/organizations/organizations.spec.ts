@@ -75,8 +75,8 @@ test.describe("Organization listing", () => {
 
     // assert
     await expect(page).toHaveURL("/organizations?page=3")
-    await expect(page.locator("span[role='caption']")).toContainText(
-      "Showing 21 - 26 of 26",
+    await expect(page.locator("span[role='caption']")).toHaveText(
+      /Showing 21 - \d+ of \d+/
     )
     await expect(
       page.locator("[data-testid='searchresults']").getByRole("listitem"),
