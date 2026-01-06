@@ -18,5 +18,5 @@ urlpatterns = [
     re_path("metadata/?", views.FHIRCapabilityStatementView.as_view(), name="fhir-metadata"),
     # Router URLs
     # everything else is passed to the rest_framework router to manage
-    re_path("/?", include(router.urls), name="index"),
+    path("", include(router.urls), name="index"),
 ] + debug_toolbar_urls()

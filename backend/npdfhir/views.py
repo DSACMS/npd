@@ -1,5 +1,3 @@
-import json
-
 from uuid import UUID
 
 from django.db.models import F, Value, CharField
