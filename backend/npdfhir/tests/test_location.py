@@ -2,7 +2,8 @@ from django.urls import reverse
 from rest_framework import status
 
 from .api_test_case import APITestCase
-from .fixtures import create_location, create_organization
+from .fixtures.location import create_location
+from .fixtures.organization import create_organization
 from .helpers import (
     assert_fhir_response,
     assert_has_results,

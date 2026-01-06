@@ -11,7 +11,9 @@ from ..models import (
     OtherIdType,
 )
 from .api_test_case import APITestCase
-from .fixtures import create_endpoint, create_legal_entity, create_location, create_organization
+from .fixtures.endpoint import create_endpoint
+from .fixtures.location import create_location
+from .fixtures.organization import create_organization, create_legal_entity
 from .helpers import (
     assert_fhir_response,
     assert_has_results,
