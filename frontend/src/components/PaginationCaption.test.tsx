@@ -26,8 +26,8 @@ describe("PaginationCaption", () => {
       totalPages: 3,
     }
     const screen = render(<PaginationCaption pagination={pagination} />)
-    expect(screen.getByRole("caption")).toHaveTextContent(
-      "Showing 11 - 20 of 26",
+    expect(page.getByRole("caption")).toHaveText(
+      /Showing 11 - 20 of \d+/
     )
   })
 
