@@ -80,7 +80,7 @@ test.describe("Organization listing", () => {
     )
     await expect(
       page.locator("[data-testid='searchresults']").getByRole("listitem"),
-    ).toHaveCount(6)
+    ).toHaveCount(7)
   })
 })
 
