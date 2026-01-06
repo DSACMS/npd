@@ -17,6 +17,7 @@ const OrganizationSearchForm: React.FC = () => {
   const { setQuery, navigateToPage, clearSearch } = useSearchDispatch()
   const {
     isLoading,
+    isPaging,
     initialQuery,
     query: searchQuery,
     error: searchError,
@@ -41,10 +42,7 @@ const OrganizationSearchForm: React.FC = () => {
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>): void => {
     const value = e.target.value
-    // require some amount of input
-    if (/.+/.test(value)) {
-      setQueryValue(value)
-    }
+    setQueryValue(value)
   }
 
   return (
@@ -73,9 +71,9 @@ const OrganizationSearchForm: React.FC = () => {
                   <Button
                     type="submit"
                     variation="solid"
-                    disabled={query.length < 1 || isLoading}
+                    disabled={query.length < 1 || isLoading && !isPaging}
                   >
-                    {isLoading ? "Searching..." : "Search"}
+                    {isLoading && !isPaging ? "Searching..." : "Search"}
                   </Button>
                   <Button onClick={handleClear}>Clear</Button>
                 </div>

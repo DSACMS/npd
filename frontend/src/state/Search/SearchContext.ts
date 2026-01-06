@@ -6,6 +6,7 @@ export interface SearchContextValue<T> {
   initialQuery?: string
   data: T[] | null
   isLoading: boolean
+  isPaging: boolean
   error: string | null
   pagination?: PaginationState
   query?: string
