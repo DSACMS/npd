@@ -2,7 +2,7 @@ from django.urls import reverse
 from rest_framework import status
 
 from .api_test_case import APITestCase
-from .fixtures import create_full_practitionerrole
+from .fixtures.practitioner import create_full_practitionerrole
 from .helpers import (
     assert_fhir_response,
     assert_has_results,

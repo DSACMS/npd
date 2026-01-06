@@ -3,7 +3,8 @@ from fhir.resources.R4B.bundle import Bundle
 from rest_framework import status
 
 from .api_test_case import APITestCase
-from .fixtures import create_endpoint, create_organization
+from .fixtures.endpoint import create_endpoint
+from .fixtures.organization import create_organization
 from .helpers import (
     assert_fhir_response,
     assert_has_results,
