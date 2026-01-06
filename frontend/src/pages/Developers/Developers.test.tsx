@@ -18,31 +18,31 @@ describe("Developers", () => {
     render(<Developers />)
 
     expect(
-      screen.getByText("Participating in the beta", { selector: "h2" }),
+      screen.getByText("Participating in the beta", { selector: "h1" }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText("Providing feedback", { selector: "h3" }),
+      screen.getByText("Providing feedback", { selector: "h2" }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText("About the data", { selector: "h2" }),
+      screen.getByText("About the data", { selector: "h1" }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText("Accessing the data", { selector: "h2" }),
+      screen.getByText("Accessing the data", { selector: "h1" }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText("Overview", { selector: "h3" }),
+      screen.getByText("Overview", { selector: "h2" }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText("Authentication", { selector: "h3" }),
+      screen.getByText("Authentication", { selector: "h2" }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText("Available endpoints", { selector: "h3" }),
+      screen.getByText("Available endpoints", { selector: "h2" }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText("Developer sandbox", { selector: "h2" }),
+      screen.getByText("Developer sandbox", { selector: "h1" }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText("Open source project", { selector: "h2" }),
+      screen.getByText("Open source project", { selector: "h1" }),
     ).toBeInTheDocument()
   })
 

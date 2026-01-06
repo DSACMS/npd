@@ -1,4 +1,4 @@
-## Participating in the beta
+# Participating in the beta
 
 This limited beta release provides a select group of early adopters the opportunity to explore our approach to achieving an interoperable National Provider Directory (NPD), provide feedback, and help shape the future of the initiative.
 
@@ -22,7 +22,7 @@ Feedback and questions may be submitted via [email](mailto:npd@cms.hhs.gov). Ear
 
 Developers may also participate in our [open source project](#open-source-project).
 
-## About the data
+# About the data
 
 For the first time, CMS is aligning its internal provider data resources to establish a new dataset available through the National Provider Directory API.
 
@@ -30,13 +30,13 @@ The initial dataset combines data from NPPES, PECOS, CEHRT, and other CMS data s
 
 The NPD will use an iterative approach to expand data sources over time. This will include additional internal provider, payer, claims, and network data, as well as incorporating external data from the industry.
 
-## Accessing the data
+# Accessing the data
 
-### Overview
+## Overview
 
 Developers can query and retrieve National Provider Directory data via a REST API. The API structure conforms to the HL7 Fast Healthcare Interoperability Resources (FHIR) standard and it returns JSON responses following the FHIR specification.
 
-### Authentication
+## Authentication
 
 While it is not a long term goal for this API to require authentication for all requests, we currently require user accounts and [HTTP Basic Access Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) for all API requests.
 
@@ -56,7 +56,7 @@ curl -H "Authorization: Basic bnBkLnVzZXJAY21zLmhocy5nb3Y6dG9vbWFueXNlY3JldHM1ND
 
 If you’re using the [developer sandbox](#developer-sandbox) to make requests while signed-in, your authentication will automatically pass through via a secure session cookie.
 
-### Available endpoints
+## Available endpoints
 
 The initial beta release of the National Provider Directory API makes the following endpoints available. For a detailed description of the endpoints, query string parameters, and response bodies, please refer to the National Provider Directory [API documentation](/fhir/docs/redoc).
 
@@ -72,11 +72,16 @@ The initial beta release of the National Provider Directory API makes the follow
 | /fhir/Practitioner/<id>     | lists individuals that provide healthcare services (I.e. individuals having a type 1 National Provider Identifier), as well as details about those practitioners; supplying an id allows developers to retrieve a single practitioner record                                                                                                                                        |
 | /fhir/PractitionerRole/<id> | lists relationships between individuals that provide healthcare services, the organizations within which they provide healthcare services, the locations at which they practice, and the interoperability endpoints that pertain to those relationships; supplying an id allows developers to retrieve a single practitioner role record                                            |
 
-## Developer sandbox
+# Developer sandbox
 
 To explore the data in an interactive developer sandbox integrated with detailed documentation, please visit the National Provider Directory [Swagger documentation](/fhir/docs/).
 
+<<<<<<< HEAD
 ## Open source project
+=======
+
+# Open source project
+>>>>>>> main
 
 The National Provider Directory team is taking an open source approach to the product development of this tool, operating as a [Tier 3 CMS Open Source Repository](https://github.com/DSACMS/repo-scaffolder/blob/main/tier3/README.md). We believe government software should be made in the open and be built and licensed such that anyone can download the code, run it themselves without paying money to third parties or using proprietary software, and use it as they will.
 
