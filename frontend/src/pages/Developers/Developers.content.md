@@ -1,33 +1,34 @@
 # Participating in the beta
 
-This limited beta release provides a select group of early adopters the opportunity to explore our approach to achieving an interoperable National Provider Directory (NPD), provide feedback, and help shape the future of the initiative. 
+This limited beta release provides a select group of early adopters the opportunity to explore our approach to achieving an interoperable National Provider Directory (NPD), provide feedback, and help shape the future of the initiative.
 
-As we continue to develop the directory, you can expect performance improvements, API changes, and additional data incorporated into the data model to improve and streamline the directory output. 
+As we continue to develop the directory, you can expect performance improvements, API changes, and additional data incorporated into the data model to improve and streamline the directory output.
 
-Please note the following: 
+Please note the following:
 
-* This site and API are available to you for testing purposes, the data should not be integrated into production systems  
-* Frequent updates and API changes are possible  
-* Feedback is encouraged
+- This site and API are available to you for testing purposes, the data should not be integrated into production systems
+- Frequent updates and API changes are possible
+- Feedback is encouraged
 
 ## Providing feedback
-Feedback in all areas is welcome during the beta, including the following: 
 
-* The latest dataset  
-* API implementation  
-* Supporting documentation and resources
+Feedback in all areas is welcome during the beta, including the following:
+
+- The latest dataset
+- API implementation
+- Supporting documentation and resources
 
 Feedback and questions may be submitted via [email](mailto:npd@cms.hhs.gov). Early adopters of the Health Tech Ecosystem can also share their feedback in the provider directory Slack channel. The CMS team may reach out to follow-up and ask for additional feedback.
 
-Developers may also participate in our [open source project](#open-source-project). 
+Developers may also participate in our [open source project](#open-source-project).
 
 # About the data
 
-For the first time, CMS is aligning its internal provider data resources to establish a new dataset available through the National Provider Directory API. 
+For the first time, CMS is aligning its internal provider data resources to establish a new dataset available through the National Provider Directory API.
 
-The initial dataset combines data from NPPES, PECOS, CEHRT, and other CMS data sources. 
+The initial dataset combines data from NPPES, PECOS, CEHRT, and other CMS data sources.
 
-The NPD will use an iterative approach to expand data sources over time. This will include additional internal provider, payer, claims, and network data, as well as incorporating external data from the industry.  
+The NPD will use an iterative approach to expand data sources over time. This will include additional internal provider, payer, claims, and network data, as well as incorporating external data from the industry.
 
 # Accessing the data
 
@@ -61,15 +62,15 @@ The initial beta release of the National Provider Directory API makes the follow
 
 &nbsp;
 
-| Endpoint | Description |
-|----------|-------------|
-| /fhir | lists all available endpoints |
-| /fhir/metadata | provides a CapabilityStatement resource with metadata about the API implementation |
-| /fhir/Endpoint/<id> | lists URIs and addresses relevant to the exchange of information between entities (e.g. urls to other FHIR implementations), as well as details about those endpoints; supplying an id allows developers to retrieve a single endpoint record |
-| /fhir/Location/<id> | lists locations at which healthcare services are provided, as well as details about those locations; supplying an id allows developers to retrieve a single location record |
-| /fhir/Organization/<id> | lists both organizations that provide healthcare services (i.e. organizations having a Type 2 National Provider Identifier) and non-provider organizations that interact with the healthcare system (e.g. EHR vendors and data interoperability networks), as well as details about those organizations; supplying an id allows developers to retrieve a single organization record |
-| /fhir/Practitioner/<id> | lists individuals that provide healthcare services (I.e. individuals having a type 1 National Provider Identifier), as well as details about those practitioners; supplying an id allows developers to retrieve a single practitioner record |
-| /fhir/PractitionerRole/<id> | lists relationships between individuals that provide healthcare services, the organizations within which they provide healthcare services, the locations at which they practice, and the interoperability endpoints that pertain to those relationships; supplying an id allows developers to retrieve a single practitioner role record |
+| Endpoint                    | Description                                                                                                                                                                                                                                                                                                                                                                         |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| /fhir                       | lists all available endpoints                                                                                                                                                                                                                                                                                                                                                       |
+| /fhir/metadata              | provides a CapabilityStatement resource with metadata about the API implementation                                                                                                                                                                                                                                                                                                  |
+| /fhir/Endpoint/<id>         | lists URIs and addresses relevant to the exchange of information between entities (e.g. urls to other FHIR implementations), as well as details about those endpoints; supplying an id allows developers to retrieve a single endpoint record                                                                                                                                       |
+| /fhir/Location/<id>         | lists locations at which healthcare services are provided, as well as details about those locations; supplying an id allows developers to retrieve a single location record                                                                                                                                                                                                         |
+| /fhir/Organization/<id>     | lists both organizations that provide healthcare services (i.e. organizations having a Type 2 National Provider Identifier) and non-provider organizations that interact with the healthcare system (e.g. EHR vendors and data interoperability networks), as well as details about those organizations; supplying an id allows developers to retrieve a single organization record |
+| /fhir/Practitioner/<id>     | lists individuals that provide healthcare services (I.e. individuals having a type 1 National Provider Identifier), as well as details about those practitioners; supplying an id allows developers to retrieve a single practitioner record                                                                                                                                        |
+| /fhir/PractitionerRole/<id> | lists relationships between individuals that provide healthcare services, the organizations within which they provide healthcare services, the locations at which they practice, and the interoperability endpoints that pertain to those relationships; supplying an id allows developers to retrieve a single practitioner role record                                            |
 
 # Developer sandbox
 
