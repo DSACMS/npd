@@ -572,15 +572,16 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
 
         organization_affiliation.identifier = identifiers
 
-        organization_affiliation.organization = Reference(display=str(instance.ehr_vendor_name))
+        organization_affiliation.organization = genReference("fhir-organization-detail", instance.id, request)
+        organization_affiliation.organization.display = str(instance.ehr_vendor_name)
 
-        organization_affiliation.participatingOrganization = Reference(
-            display=str(instance.organization_name)
-        )
+        organization_affiliation.participatingOrganization = genReference("fhir-organization-detail", instance.id, request)
+        organization_affiliation.participatingOrganization.display = str(instance.organization_name)
 
         # NOTE: Period for OrganizationAffiliation cannot currently be fetched so its blank
 
-        organization_affiliation.network = [Reference(display=str(instance.organization_name))]
+        organization_affiliation.network = [genReference("fhir-organization-detail", instance.id, request)]
+        organization_affiliation.network[0].display = str(instance.organization_name)
 
         organization_affiliation.code = codes
 
