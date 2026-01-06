@@ -35,12 +35,27 @@ def create_location(
     state="NY",
     zipcode="12207",
     addr_line_1="123 Main St",
+    latitude=None,
+    longitude=None,
 ):
     """
     Creates AddressUs → Address → Location.
     """
     organization = organization or create_organization()
-    address = create_address(city=city, state=state, zipcode=zipcode, addr_line_1=addr_line_1)
+
+    fips_code = FipsState.objects.get(abbreviation=state)
+    addr_us = AddressUs.objects.create(
+        id=random.randint(-100000000000, 100000000000),
+        delivery_line_1=addr_line_1,
+        city_name=city,
+        state_code_id=fips_code.id,
+        zipcode=zipcode,
+    )
+
+    address = Address.objects.create(
+        id=uuid.uuid4(),
+        address_us=addr_us,
+    )
 
     loc = Location.objects.create(
         id=uuid.uuid4(),
@@ -49,5 +64,8 @@ def create_location(
         address=address,
         active=True,
     )
+
+    if latitude and longitude:
+        _set_location_coords(loc, latitude, longitude)
 
     return loc

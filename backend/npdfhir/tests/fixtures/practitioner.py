@@ -115,6 +115,16 @@ def create_practitioner(
 
     return provider
 
+def _set_location_coords(location, lat, lon):
+    """
+    Utility to force lat/lon on a role's location.
+    """
+
+    address_us = location.address.address_us
+    address_us.latitude = lat
+    address_us.longitude = lon
+    address_us.save(update_fields=["latitude", "longitude"])
+
 
 def create_full_practitionerrole(
     first_name="Alice",
@@ -125,6 +135,8 @@ def create_full_practitionerrole(
     location_name="Test Location",
     role_code="PRV",
     role_display="Provider Role",
+    latitude=None,
+    longitude=None,
 ):
     """
     Creates:
@@ -155,6 +167,9 @@ def create_full_practitionerrole(
         relationship_type=rel_type,
         active=True,
     )
+
+    if latitude and longitude:
+        _set_location_coords(loc, latitude, longitude)
 
     pr = ProviderToLocation.objects.create(
         id=uuid.uuid4(),

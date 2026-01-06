@@ -7,9 +7,12 @@ from ...models import (
     EndpointInstance,
     EndpointInstanceToPayload,
     EndpointType,
+    EnvironmentType,
+    LocationToEndpointInstance,
     PayloadType,
 )
 from .organization import create_organization
+from .location import create_location
 
 
 def _ensure_endpoint_base_types():
@@ -39,6 +42,7 @@ def create_endpoint(
     Creates EndpointType, EndpointConnectionType, EndpointInstance, Endpoint.
     """
     organization = organization or create_organization()
+    loc = create_location(organization=organization)
 
     etype, ctype, payload = _ensure_endpoint_base_types()
 
@@ -50,6 +54,8 @@ def create_endpoint(
     else:
         ehr_vendor = ehr
 
+    et = EnvironmentType.objects.get(pk="prod")
+
     pt = PayloadType.objects.get(pk=payload_type or "urn:hl7-org:sdwg:ccda-structuredBody:1.1")
 
     instance = EndpointInstance.objects.create(
@@ -58,8 +64,10 @@ def create_endpoint(
         address=url,
         endpoint_connection_type=ctype,
         name=name,
-        environment_type_id="prod",
+        environment_type=et,
     )
+
+    LocationToEndpointInstance.objects.create(location=loc, endpoint_instance=instance)
 
     EndpointInstanceToPayload.objects.create(endpoint_instance=instance, payload_type=pt)
 
