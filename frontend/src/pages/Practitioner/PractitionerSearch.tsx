@@ -18,7 +18,7 @@ const PractitionerSearchForm: React.FC = () => {
   const { setQuery, navigateToPage, setSort, clearSearch } = useSearchDispatch()
   const {
     isLoading,
-    isPaging,
+    isBackgroundLoading,
     initialQuery,
     query: searchQuery,
     error: searchError,
@@ -82,9 +82,9 @@ const PractitionerSearchForm: React.FC = () => {
                   <Button
                     type="submit"
                     variation="solid"
-                    disabled={query.length < 1 || isLoading && !isPaging}
+                    disabled={query.length < 1 || isLoading && !isBackgroundLoading}
                   >
-                    {isLoading && !isPaging ? "Searching..." : "Search"}
+                    {isLoading && !isBackgroundLoading ? "Searching..." : "Search"}
                   </Button>
                   <Button onClick={handleClear}>Clear</Button>
                 </div>
@@ -133,15 +133,15 @@ const PractitionerSearchForm: React.FC = () => {
                         const nextParams = new URLSearchParams()
                         nextParams.set("page", pageNumber.toString())
                         if (searchQuery) nextParams.set("query", searchQuery)
-                        return apiUrl(`/organizations?${nextParams.toString()}`)
+                        return apiUrl(`/practitioners?${nextParams.toString()}`)
                       }}
                       totalPages={pagination.totalPages}
                     />
                   </>
                 )}
                 <div data-testid="searchresults" role="list">
-                  {data.map((org) => (
-                    <ListedPractitioner data={org} key={org.id} />
+                  {data.map((practitioner) => (
+                    <ListedPractitioner data={practitioner} key={practitioner.id} />
                   ))}
                 </div>
               </>

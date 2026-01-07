@@ -14,7 +14,7 @@ interface SearchProviderProps {
 }
 
 export const PractitionerSearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
-  const [isPaging, setIsPaging] = useState(false)
+  const [isBackgroundLoading, setIsBackgroundLoading] = useState(false)
   const [params, setParams] = usePaginationParams()
   const [query, setQueryValue] = useState<string>(params.query || "")
   const { data, isLoading, error } = usePractitionersAPI(params, {
@@ -22,40 +22,61 @@ export const PractitionerSearchProvider: React.FC<SearchProviderProps> = ({ chil
   })
   const pagination = usePagination(params, data)
 
+  const buildParams = (overrides: { page?: string; query?: string; sort?: string }) => {
+    const currentQuery = overrides.query ?? params.query ?? query
+    const currentSort = overrides.sort ?? params.sort
+    
+    const next: Record<string, string> = {
+      page: overrides.page ?? "1",
+    }
+    
+    if (currentQuery) {
+      next.query = currentQuery
+    }
+    
+    if (currentSort) {
+      next.sort = currentSort
+    }
+    
+    return next
+  }
+
   const setQuery = (nextQuery: string) => {
-    setIsPaging(false)
+    setIsBackgroundLoading(false)
     setQueryValue(nextQuery)
-    const next = { page: "1", query: nextQuery }
+    const next = buildParams({ page: "1", query: nextQuery })
     setParams(next, { preventScrollReset: true })
   }
 
   const navigateToPage = (toPage: number) => {
-    setIsPaging(true)
-    const next = { page: toPage.toString(), query: params.query || query || "" }
+    setIsBackgroundLoading(true)
+    const next = buildParams({ page: toPage.toString() })
     setParams(next, {
       preventScrollReset: true,
     })
   }
 
   const setSort = (nextSort: string) => {
-    setIsPaging(false)
-    const next = { page: "1", query: params.query || query || "", sort: nextSort}
+    setIsBackgroundLoading(true)
+    const next = buildParams({ page: "1", sort: nextSort })
     setParams(next, { preventScrollReset: true })
   }
 
   useEffect(() => {
     if (!isLoading) {
-      setIsPaging(false)
+      setIsBackgroundLoading(false)
     }
   }, [isLoading])
 
+  const hasActiveQuery = params.query && params.query.length > 0
+  
   const state: SearchContextValue<FHIRPractioner> = {
     initialQuery: query,
-    data: data?.results?.entry
+    data: hasActiveQuery && data?.results?.entry
       ? data.results.entry.map((entry) => entry.resource)
       : null,
     isLoading,
-    isPaging,
+    isBackgroundLoading,
     error: error
       ? error instanceof Error
         ? error.message

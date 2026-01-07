@@ -18,7 +18,7 @@ const OrganizationSearchForm: React.FC = () => {
   const { setQuery, navigateToPage, setSort, clearSearch } = useSearchDispatch()
   const {
     isLoading,
-    isPaging,
+    isBackgroundLoading,
     initialQuery,
     query: searchQuery,
     error: searchError,
@@ -82,9 +82,9 @@ const OrganizationSearchForm: React.FC = () => {
                   <Button
                     type="submit"
                     variation="solid"
-                    disabled={query.length < 1 || isLoading && !isPaging}
+                    disabled={query.length < 1 || isLoading && !isBackgroundLoading}
                   >
-                    {isLoading && !isPaging ? "Searching..." : "Search"}
+                    {isLoading && !isBackgroundLoading ? "Searching..." : "Search"}
                   </Button>
                   <Button onClick={handleClear}>Clear</Button>
                 </div>
