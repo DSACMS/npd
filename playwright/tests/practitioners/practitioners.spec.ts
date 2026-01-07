@@ -137,3 +137,52 @@ test.describe("Practitioner show", () => {
     await expect(page.getByTestId("practitioner-npi")).toContainText(`NPI: ${practitioner.npi}`)
   })
 })
+
+test.describe("sort Practitioners", () => {
+  test("sort dropdown is visible on listing page", async ({ page }) => {
+    await page.goto("/practitioners")
+    
+    await expect(page.locator(".ds-c-dropdown__button")).toBeVisible()
+    await expect(page.locator(".ds-c-dropdown__label-text")).toHaveText("First Name (A-Z)")
+  })
+
+  test("sort listing results by last name", async ({ page }) => {
+    await page.goto("/practitioners")
+
+    await page.locator(".ds-c-dropdown__button").click()
+    await page.getByRole("option", { name: "Last Name (A-Z)" }).click()
+
+    await expect(page).toHaveURL(/sort=last-name-asc/)
+    await expect(page.locator(".ds-c-dropdown__label-text")).toHaveText("Last Name (A-Z)")
+  })
+
+  test("sort persists through pagination", async ({ page }) => {
+    await page.goto("/practitioners")
+
+    await page.locator(".ds-c-dropdown__button").click()
+    await page.getByRole("option", { name: "Last Name (Z-A)" }).click()
+    await expect(page).toHaveURL(/sort=last-name-desc/)
+
+    await page.getByLabel("Next Page").first().click()
+
+    await expect(page).toHaveURL(/page=2/)
+    await expect(page).toHaveURL(/sort=last-name-desc/)
+    await expect(page.locator(".ds-c-dropdown__label-text")).toHaveText("Last Name (Z-A)")
+  })
+
+  test("sort search results", async ({ page }) => {
+    await page.goto("/practitioners/search")
+
+    await page.getByRole("textbox", { name: "Name or Identifier (NPI" }).fill("AAA")
+    await page.getByRole("button", { name: "Search" }).click()
+
+    await expect(page.locator("[data-testid='searchresults']").getByRole("listitem").first()).toBeVisible()
+
+    await page.locator(".ds-c-dropdown__button").click()
+    await page.getByRole("option", { name: "Last Name (A-Z)" }).click()
+
+    await expect(page).toHaveURL(/query=AAA/)
+    await expect(page).toHaveURL(/sort=last-name-asc/)
+    await expect(page.locator(".ds-c-dropdown__label-text")).toHaveText("Last Name (A-Z)")
+  })
+})
