@@ -37,6 +37,12 @@ export const PractitionerSearchProvider: React.FC<SearchProviderProps> = ({ chil
     })
   }
 
+  const setSort = (nextSort: string) => {
+    setIsPaging(false)
+    const next = { page: "1", query: params.query || query || "", sort: nextSort}
+    setParams(next, { preventScrollReset: true })
+  }
+
   useEffect(() => {
     if (!isLoading) {
       setIsPaging(false)
@@ -62,6 +68,7 @@ export const PractitionerSearchProvider: React.FC<SearchProviderProps> = ({ chil
   const dispatch: SearchDispatchContextValue = {
     setQuery,
     navigateToPage,
+    setSort,
     clearSearch: () => {
       setQueryValue("")
       setParams({})
