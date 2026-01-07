@@ -250,6 +250,7 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
 class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR PractitionerRole resources
+    
     """
 
     queryset = ProviderToLocation.objects.none()
