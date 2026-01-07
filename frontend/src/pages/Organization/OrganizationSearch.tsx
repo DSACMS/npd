@@ -1,4 +1,4 @@
-import { Alert, Button, Pagination } from "@cmsgov/design-system"
+import { Alert, Button, Pagination, Dropdown, type DropdownChangeObject } from "@cmsgov/design-system"
 import classNames from "classnames"
 import React, { type ChangeEvent, type FormEvent, useState } from "react"
 import { useTranslation } from "react-i18next"
@@ -11,10 +11,11 @@ import { useSearchDispatch, useOrganizationSearchState } from "../../state/Searc
 import layout from "../Layout.module.css"
 import search from "../Search.module.css"
 import { ListedOrganization } from "./ListedOrganization"
+import { ORGANIZATION_SORT_OPTIONS } from "../../state/requests/organizations"
 
 const OrganizationSearchForm: React.FC = () => {
   const { t } = useTranslation()
-  const { setQuery, navigateToPage, clearSearch } = useSearchDispatch()
+  const { setQuery, navigateToPage, setSort, clearSearch } = useSearchDispatch()
   const {
     isLoading,
     isPaging,
@@ -44,6 +45,16 @@ const OrganizationSearchForm: React.FC = () => {
     const value = e.target.value
     setQueryValue(value)
   }
+
+  const handleSort = (change: DropdownChangeObject): void => {
+    const value = change.target.value
+    setSort(value)
+  }
+
+  const sortOptions = Object.entries(ORGANIZATION_SORT_OPTIONS).map(([value, { label }]) => ({
+    label,
+    value
+  }))
 
   return (
     <>
@@ -96,7 +107,21 @@ const OrganizationSearchForm: React.FC = () => {
               <>
                 {pagination && (
                   <>
-                    <PaginationCaption pagination={pagination} />
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <div style={{ display: 'flex', gap: '8px' }}>
+                      <PaginationCaption pagination={pagination} />
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      Sort by
+                      <Dropdown
+                          label=""
+                          name="sort-dropdown-field"
+                          labelClassName="ds-u-display--none"
+                          options={sortOptions}
+                          onChange={handleSort}
+                        />
+                      </div>
+                    </div>
                     <Pagination
                       currentPage={pagination.page}
                       onPageChange={(evt, page) => {

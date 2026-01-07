@@ -31,10 +31,16 @@ export const OrganizationSearchProvider: React.FC<SearchProviderProps> = ({ chil
 
   const navigateToPage = (toPage: number) => {
     setIsPaging(true)
-    const next = { page: toPage.toString(), query: params.query || query || "" }
+    const next = { page: toPage.toString(), query: params.query || query || "", sort: params.sort || "" }
     setParams(next, {
       preventScrollReset: true,
     })
+  }
+
+  const setSort = (nextSort: string) => {
+    setIsPaging(false)
+    const next = { page: "1", query: params.query || query || "", sort: nextSort}
+    setParams(next, { preventScrollReset: true })
   }
 
   useEffect(() => {
@@ -62,6 +68,7 @@ export const OrganizationSearchProvider: React.FC<SearchProviderProps> = ({ chil
   const dispatch: SearchDispatchContextValue = {
     setQuery,
     navigateToPage,
+    setSort,
     clearSearch: () => {
       setQueryValue("")
       setParams({})

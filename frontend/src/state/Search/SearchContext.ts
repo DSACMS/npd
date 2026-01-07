@@ -15,6 +15,7 @@ export interface SearchContextValue<T> {
 export interface SearchDispatchContextValue {
   setQuery: (nameOrId: string) => void
   navigateToPage: (page: number) => void
+  setSort: (sort: string) => void
   clearSearch: () => void
 }
 
