@@ -1,7 +1,7 @@
 from django.urls import reverse
 from fhir.resources.R4B.address import Address
 from fhir.resources.R4B.reference import Reference
-from rest_framework.test import APIClient
+from drf_spectacular.views import SpectacularJSONAPIView
 
 
 class FHIROrganizationSource:
@@ -82,15 +82,13 @@ def SmartyStreetstoFHIR(address):
     )
 
 
-def get_schema_data(request, url_name, additional_args=None):
-    client = APIClient()
-    if request.user:
-        # reuse the authenticated user from the active request to make the
-        # internal request to retrieve the current schema
-        client.force_authenticate(user=request.user)
-    schema_url = reverse(url_name, kwargs=additional_args)
-    response = client.get(schema_url)
-    return response.data
+def get_schema_data(request):
+    schema_view = SpectacularJSONAPIView.as_view()
+    response = schema_view(request._request)
+    # The response contains the schema data in its .data attribute
+    schema_data = response.data
+
+    return schema_data
 
 
 def genReference(url_name, identifier, request):
