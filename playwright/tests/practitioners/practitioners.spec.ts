@@ -186,3 +186,4 @@ test.describe("sort Practitioners", () => {
     await expect(page.locator(".ds-c-dropdown__label-text")).toHaveText("Last Name (A-Z)")
   })
 })
+ 
