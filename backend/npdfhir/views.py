@@ -7,7 +7,7 @@ from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
 from django.utils.html import escape
 from django_filters.rest_framework import DjangoFilterBackend
-from drf_spectacular.utils import OpenApiResponse, extend_schema
+from drf_spectacular.utils import OpenApiParameter, OpenApiResponse, extend_schema
 from rest_framework import viewsets
 from rest_framework.filters import OrderingFilter, SearchFilter
 from rest_framework.renderers import BrowsableAPIRenderer
@@ -209,6 +209,14 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
         return response
 
     @extend_schema(
+        parameters=[
+            OpenApiParameter(
+                name='npi',
+                type=str,
+                location=OpenApiParameter.PATH,
+                description='UUID of the practitioner',
+            ),
+        ],
         responses={
             200: OpenApiResponse(description="Successfully retrieved FHIR Practitioner resource")
         }
