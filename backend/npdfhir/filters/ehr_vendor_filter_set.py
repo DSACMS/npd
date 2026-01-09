@@ -1,0 +1,121 @@
+from django.contrib.postgres.search import SearchVector
+from django_filters import rest_framework as filters
+
+from ..mappings import addressUseMapping
+from ..models import EhrVendor
+from ..utils import parse_identifier_query
+
+
+class EhrVendorFilterSet(filters.FilterSet):
+    name = filters.CharFilter(method="filter_name", help_text="Filter by organization name")
+
+    identifier = filters.CharFilter(
+        method="filter_identifier",
+        help_text="Filter by identifier (NPI, EIN, or other). Format: value or system|value",
+    )
+
+    organization_type = filters.CharFilter(
+        method="filter_organization_type", help_text="Filter by organization type/taxonomy"
+    )
+
+    address = filters.CharFilter(method="filter_address", help_text="Filter by any part of address")
+
+    address_city = filters.CharFilter(method="filter_address_city", help_text="Filter by city name")
+
+    address_state = filters.CharFilter(
+        method="filter_address_state", help_text="Filter by state (2-letter abbreviation)"
+    )
+
+    address_postalcode = filters.CharFilter(
+        method="filter_address_postalcode", help_text="Filter by postal code/zip code"
+    )
+
+    address_use = filters.ChoiceFilter(
+        method="filter_address_use",
+        choices=addressUseMapping.to_choices(),
+        help_text="Filter by address use type",
+    )
+
+    class Meta:
+        model = EhrVendor
+        fields = [
+            "name",
+            "identifier",
+            "organization_type",
+            "address",
+            "address_city",
+            "address_state",
+            "address_postalcode",
+            "address_use",
+        ]
+
+    def filter_name(self, queryset, name, value):
+        return queryset.annotate(search=SearchVector("name")).filter(search=value).distinct()
+
+    def filter_identifier(self, queryset, name, value):
+        from uuid import UUID
+
+        system, identifier_id = parse_identifier_query(value)
+
+        if system:  # specific identifier search requested
+            if system.upper() == "NPI":
+                # EHRVendors don't have NPI
+                return queryset.none()
+
+        try:
+            UUID(identifier_id)
+            # Support EIN identifier
+            return queryset.filter(
+                endpointinstance__locationtoendpointinstance__location__organization__ein__ein_id=identifier_id
+            ).distinct()
+        except (ValueError, TypeError):
+            return queryset.none()
+
+    def filter_organization_type(self, queryset, name, value):
+        # Does not apply for EHRVendors
+        return queryset.none()
+
+    def filter_address(self, queryset, name, value):
+        return (
+            queryset.annotate(
+                search=SearchVector(
+                    "endpointinstance__locationtoendpointinstance__location__organization__organizationtoaddress__address__address_us__delivery_line_1",
+                    "endpointinstance__locationtoendpointinstance__location__organization__organizationtoaddress__address__address_us__delivery_line_2",
+                    "endpointinstance__locationtoendpointinstance__location__organization__organizationtoaddress__address__address_us__city_name",
+                    "endpointinstance__locationtoendpointinstance__location__organization__organizationtoaddress__address__address_us__state_code__abbreviation",
+                    "endpointinstance__locationtoendpointinstance__location__organization__organizationtoaddress__address__address_us__zipcode",
+                )
+            )
+            .filter(search=value)
+            .distinct()
+        )
+
+    def filter_address_city(self, queryset, name, value):
+        return queryset.annotate(
+            search=SearchVector(
+                "endpointinstance__locationtoendpointinstance__location__organization__organizationtoaddress__address__address_us__city_name"
+            )
+        ).filter(search=value)
+
+    def filter_address_state(self, queryset, name, value):
+        return queryset.annotate(
+            search=SearchVector(
+                "endpointinstance__locationtoendpointinstance__location__organization__organizationtoaddress__address__address_us__state_code__abbreviation"
+            )
+        ).filter(search=value)
+
+    def filter_address_postalcode(self, queryset, name, value):
+        return queryset.annotate(
+            search=SearchVector(
+                "endpointinstance__locationtoendpointinstance__location__organization__organizationtoaddress__address__address_us__zipcode"
+            )
+        ).filter(search=value)
+
+    def filter_address_use(self, queryset, name, value):
+        if value in addressUseMapping.keys():
+            value = addressUseMapping.toNPD(value)
+        else:
+            value = -1
+        return queryset.filter(
+            endpointinstance__locationtoendpointinstance__location__organization__organizationtoaddress__address_use_id=value
+        )
