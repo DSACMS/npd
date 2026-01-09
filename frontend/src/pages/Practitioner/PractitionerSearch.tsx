@@ -1,4 +1,4 @@
-import { Alert, Button, Pagination } from "@cmsgov/design-system"
+import { Alert, Button, Pagination, Dropdown, type DropdownChangeObject  } from "@cmsgov/design-system"
 import classNames from "classnames"
 import React, { type ChangeEvent, type FormEvent, useState } from "react"
 import { useTranslation } from "react-i18next"
@@ -11,13 +11,14 @@ import { useSearchDispatch, usePractitionerSearchState } from "../../state/Searc
 import layout from "../Layout.module.css"
 import search from "../Search.module.css"
 import { ListedPractitioner } from "./ListedPractitioner"
+import { PRACTITIONER_SORT_OPTIONS } from "../../state/requests/practitioners"
 
 const PractitionerSearchForm: React.FC = () => {
   const { t } = useTranslation()
-  const { setQuery, navigateToPage, clearSearch } = useSearchDispatch()
+  const { setQuery, navigateToPage, setSort, clearSearch } = useSearchDispatch()
   const {
     isLoading,
-    isPaging,
+    isBackgroundLoading,
     initialQuery,
     query: searchQuery,
     error: searchError,
@@ -45,6 +46,16 @@ const PractitionerSearchForm: React.FC = () => {
     setQueryValue(value)
   }
 
+  const handleSort = (change: DropdownChangeObject): void => {
+    const value = change.target.value
+    setSort(value)
+  }
+
+  const sortOptions = Object.entries(PRACTITIONER_SORT_OPTIONS).map(([value, { label }]) => ({
+    label,
+    value
+  }))
+
   return (
     <>
       <TitlePanel
@@ -71,9 +82,9 @@ const PractitionerSearchForm: React.FC = () => {
                   <Button
                     type="submit"
                     variation="solid"
-                    disabled={query.length < 1 || isLoading && !isPaging}
+                    disabled={query.length < 1 || isLoading && !isBackgroundLoading}
                   >
-                    {isLoading && !isPaging ? "Searching..." : "Search"}
+                    {isLoading && !isBackgroundLoading ? "Searching..." : "Search"}
                   </Button>
                   <Button onClick={handleClear}>Clear</Button>
                 </div>
@@ -96,7 +107,21 @@ const PractitionerSearchForm: React.FC = () => {
               <>
                 {pagination && (
                   <>
-                    <PaginationCaption pagination={pagination} />
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <div style={{ display: 'flex', gap: '8px' }}>
+                      <PaginationCaption pagination={pagination} />
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      Sort by
+                      <Dropdown
+                          label=""
+                          name="sort-dropdown-field"
+                          labelClassName="ds-u-display--none"
+                          options={sortOptions}
+                          onChange={handleSort}
+                        />
+                      </div>
+                    </div>
                     <Pagination
                       currentPage={pagination.page}
                       onPageChange={(evt, page) => {
@@ -115,8 +140,8 @@ const PractitionerSearchForm: React.FC = () => {
                   </>
                 )}
                 <div data-testid="searchresults" role="list">
-                  {data.map((org) => (
-                    <ListedPractitioner data={org} key={org.id} />
+                  {data.map((practitioner) => (
+                    <ListedPractitioner data={practitioner} key={practitioner.id} />
                   ))}
                 </div>
               </>

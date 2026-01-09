@@ -6,7 +6,7 @@ export interface SearchContextValue<T> {
   initialQuery?: string
   data: T[] | null
   isLoading: boolean
-  isPaging: boolean
+  isBackgroundLoading: boolean
   error: string | null
   pagination?: PaginationState
   query?: string
@@ -15,6 +15,7 @@ export interface SearchContextValue<T> {
 export interface SearchDispatchContextValue {
   setQuery: (nameOrId: string) => void
   navigateToPage: (page: number) => void
+  setSort: (sort: string) => void
   clearSearch: () => void
 }
 

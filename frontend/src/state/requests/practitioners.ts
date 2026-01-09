@@ -5,6 +5,27 @@ import { apiUrl } from "../api"
 // NOTE: (@abachman-dsac) due to limitations in the fhir.resource.R4B model
 // definitions, we cannot fully generate response types automatically
 
+export const PRACTITIONER_SORT_OPTIONS = {
+  'first-name-asc': {
+    label: 'First Name (A-Z)',
+    apiValue: 'individual__individualtoname__first_name'
+  },
+  'first-name-desc': {
+    label: 'First Name (Z-A)',
+    apiValue: '-individual__individualtoname__first_name'
+  },
+  'last-name-asc': {
+    label: 'Last Name (A-Z)',
+    apiValue: 'individual__individualtoname__last_name'
+  },
+  'last-name-desc': {
+    label: 'Last Name (Z-A)',
+    apiValue: '-individual__individualtoname__last_name'
+  }
+} as const
+
+type SortKey = keyof typeof PRACTITIONER_SORT_OPTIONS
+
 const fetchPractitioner = async (
   practitionerId: string,
 ): Promise<FHIRPractioner> => {
@@ -37,6 +58,10 @@ const detectQueryKey = (value: string): "identifier" | "name" => {
   return /^\d+$/.test(value) ? "identifier" : "name"
 }
 
+const detectSortKey = (value: SortKey): string => {
+  return PRACTITIONER_SORT_OPTIONS[value]?.apiValue
+}
+
 /// list
 
 export const fetchPractitioners = async (
@@ -57,6 +82,14 @@ export const fetchPractitioners = async (
     const query = params.query
     const key = detectQueryKey(query)
     url.searchParams.set(key, query)
+  }
+
+  // Sort
+  if (params.sort) {
+    const apiValue = detectSortKey(params.sort as SortKey)
+    if (apiValue) {
+      url.searchParams.set("_sort", apiValue)
+    }
   }
 
   const response = await fetch(url)
@@ -80,7 +113,7 @@ export const usePractitionersAPI = (
   console.debug("[usePractitionersAPI]", { params, options })
 
   return useQuery<FHIRCollection<FHIRPractioner>>({
-    queryKey: ["practitioners", params.query, params.page || 1],
+    queryKey: ["practitioners", params.sort, params.query, params.page || 1],
     queryFn:
       options?.requireQuery && (!params.query || params.query.length === 0)
         ? skipToken
