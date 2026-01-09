@@ -707,7 +707,7 @@ class BundleSerializer(serializers.Serializer):
             resource_type = resource["resourceType"]
             id = resource["id"]
             url_name = f"fhir-{resource_type.lower()}-detail"
-            full_url = request.build_absolute_uri(reverse(url_name, kwargs={"pk": id}))
+            full_url = request.build_absolute_uri(reverse(url_name, kwargs={"id": id}))
             # Create an entry for this resource
             entry = {
                 "fullUrl": full_url,
