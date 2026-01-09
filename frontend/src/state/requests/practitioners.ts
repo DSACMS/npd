@@ -1,9 +1,30 @@
-import { useQuery } from "@tanstack/react-query"
-import type { FHIRPractioner } from "../../@types/fhir"
+import { skipToken, useQuery } from "@tanstack/react-query"
+import type { FHIRCollection, FHIRPractioner } from "../../@types/fhir"
 import { apiUrl } from "../api"
 
 // NOTE: (@abachman-dsac) due to limitations in the fhir.resource.R4B model
 // definitions, we cannot fully generate response types automatically
+
+export const PRACTITIONER_SORT_OPTIONS = {
+  'first-name-asc': {
+    label: 'First Name (A-Z)',
+    apiValue: 'individual__individualtoname__first_name'
+  },
+  'first-name-desc': {
+    label: 'First Name (Z-A)',
+    apiValue: '-individual__individualtoname__first_name'
+  },
+  'last-name-asc': {
+    label: 'Last Name (A-Z)',
+    apiValue: 'individual__individualtoname__last_name'
+  },
+  'last-name-desc': {
+    label: 'Last Name (Z-A)',
+    apiValue: '-individual__individualtoname__last_name'
+  }
+} as const
+
+type SortKey = keyof typeof PRACTITIONER_SORT_OPTIONS
 
 const fetchPractitioner = async (
   practitionerId: string,
@@ -32,3 +53,73 @@ export const usePractitionerAPI = (practitionerId: string | undefined) => {
     },
   })
 }
+
+const detectQueryKey = (value: string): "identifier" | "name" => {
+  return /^\d+$/.test(value) ? "identifier" : "name"
+}
+
+const detectSortKey = (value: SortKey): string => {
+  return PRACTITIONER_SORT_OPTIONS[value]?.apiValue
+}
+
+/// list
+
+export const fetchPractitioners = async (
+  params: PaginationParams & SearchParams,
+): Promise<FHIRCollection<FHIRPractioner>> => {
+  const url = new URL(apiUrl("/fhir/Practitioner/"))
+
+  // Pagination
+  if (params.page) {
+    url.searchParams.set("page", params.page.toString())
+  }
+  if (params.page_size) {
+    url.searchParams.set("page_size", params.page_size.toString())
+  }
+
+  // Search
+  if (params.query) {
+    const query = params.query
+    const key = detectQueryKey(query)
+    url.searchParams.set(key, query)
+  }
+
+  // Sort
+  if (params.sort) {
+    const apiValue = detectSortKey(params.sort as SortKey)
+    if (apiValue) {
+      url.searchParams.set("_sort", apiValue)
+    }
+  }
+
+  const response = await fetch(url)
+  if (!response.ok) {
+    console.error(await response.text())
+    return Promise.reject(`error in ${url} request`)
+  }
+
+  return response.json()
+}
+
+type QueryOptions = {
+  enabled?: boolean
+  requireQuery?: boolean
+}
+
+export const usePractitionersAPI = (
+  params: PaginationParams & SearchParams,
+  options?: QueryOptions,
+) => {
+  console.debug("[usePractitionersAPI]", { params, options })
+
+  return useQuery<FHIRCollection<FHIRPractioner>>({
+    queryKey: ["practitioners", params.sort, params.query, params.page || 1],
+    queryFn:
+      options?.requireQuery && (!params.query || params.query.length === 0)
+        ? skipToken
+        : () => {
+            return fetchPractitioners(params)
+          },
+  })
+}
+

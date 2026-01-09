@@ -11,7 +11,7 @@ import { render } from "../../../tests/render"
 import type { Practitioner as FHIRPractitioner } from "../../state/requests/practitioners"
 import { Practitioner } from "./Practitioner"
 
-const orgApiResponse: MockResponse = [
+const practitionerApiResponse: MockResponse = [
   "^/fhir/Practitioner/.*",
   DEFAULT_PRACTITIONER,
 ]
@@ -41,7 +41,7 @@ describe("Practitioner", () => {
     beforeEach(() => {
       mockGlobalFetch([
         settingsResponseWithFeature({ PRACTITIONER_LOOKUP_DETAILS: false }),
-        orgApiResponse,
+        practitionerApiResponse,
       ])
     })
 
@@ -63,7 +63,7 @@ describe("Practitioner", () => {
       // update /api/frontend_settings mocked response
       mockGlobalFetch([
         settingsResponseWithFeature({ PRACTITIONER_LOOKUP_DETAILS: true }),
-        orgApiResponse,
+        practitionerApiResponse,
       ])
     })
 

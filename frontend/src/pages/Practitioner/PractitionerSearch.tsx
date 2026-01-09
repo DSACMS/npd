@@ -1,4 +1,4 @@
-import { Alert, Button, Pagination, Dropdown, type DropdownChangeObject } from "@cmsgov/design-system"
+import { Alert, Button, Pagination, Dropdown, type DropdownChangeObject  } from "@cmsgov/design-system"
 import classNames from "classnames"
 import React, { type ChangeEvent, type FormEvent, useState } from "react"
 import { useTranslation } from "react-i18next"
@@ -6,14 +6,14 @@ import { NpdMarkdown } from "../../components/markdown/NpdMarkdown"
 import { PaginationCaption } from "../../components/PaginationCaption"
 import { TitlePanel } from "../../components/TitlePanel"
 import { apiUrl } from "../../state/api"
-import { OrganizationSearchProvider } from "../../state/Search/OrganizationSearchProvider"
-import { useSearchDispatch, useOrganizationSearchState } from "../../state/Search/useSearch"
+import { PractitionerSearchProvider } from "../../state/Search/PractitionerSearchProvider"
+import { useSearchDispatch, usePractitionerSearchState } from "../../state/Search/useSearch"
 import layout from "../Layout.module.css"
 import search from "../Search.module.css"
-import { ListedOrganization } from "./ListedOrganization"
-import { ORGANIZATION_SORT_OPTIONS } from "../../state/requests/organizations"
+import { ListedPractitioner } from "./ListedPractitioner"
+import { PRACTITIONER_SORT_OPTIONS } from "../../state/requests/practitioners"
 
-const OrganizationSearchForm: React.FC = () => {
+const PractitionerSearchForm: React.FC = () => {
   const { t } = useTranslation()
   const { setQuery, navigateToPage, setSort, clearSearch } = useSearchDispatch()
   const {
@@ -24,7 +24,7 @@ const OrganizationSearchForm: React.FC = () => {
     error: searchError,
     data,
     pagination,
-  } = useOrganizationSearchState()
+  } = usePractitionerSearchState()
 
   const [query, setQueryValue] = useState<string>(initialQuery || "")
 
@@ -51,7 +51,7 @@ const OrganizationSearchForm: React.FC = () => {
     setSort(value)
   }
 
-  const sortOptions = Object.entries(ORGANIZATION_SORT_OPTIONS).map(([value, { label }]) => ({
+  const sortOptions = Object.entries(PRACTITIONER_SORT_OPTIONS).map(([value, { label }]) => ({
     label,
     value
   }))
@@ -59,7 +59,7 @@ const OrganizationSearchForm: React.FC = () => {
   return (
     <>
       <TitlePanel
-        title={t("organizations.search.title")}
+        title={t("practitioners.search.title")}
         className={layout.compactLeader}
       >
         <div className="ds-l-row">
@@ -68,7 +68,7 @@ const OrganizationSearchForm: React.FC = () => {
               <input type="hidden" name="page" value={pagination?.page} />
               <div className="ds-u-clearfix">
                 <label className="ds-c-label" htmlFor="query">
-                  {t("organizations.search.inputLabel")}
+                  {t("practitioners.search.inputLabel")}
                 </label>
                 <div className={inputClass}>
                   <input
@@ -133,22 +133,22 @@ const OrganizationSearchForm: React.FC = () => {
                         const nextParams = new URLSearchParams()
                         nextParams.set("page", pageNumber.toString())
                         if (searchQuery) nextParams.set("query", searchQuery)
-                        return apiUrl(`/organizations?${nextParams.toString()}`)
+                        return apiUrl(`/practitioners?${nextParams.toString()}`)
                       }}
                       totalPages={pagination.totalPages}
                     />
                   </>
                 )}
                 <div data-testid="searchresults" role="list">
-                  {data.map((org) => (
-                    <ListedOrganization data={org} key={org.id} />
+                  {data.map((practitioner) => (
+                    <ListedPractitioner data={practitioner} key={practitioner.id} />
                   ))}
                 </div>
               </>
             )}
 
             {data && data.length === 0 && (
-              <p>No Organizations found for query: {query}</p>
+              <p>No Practitioners found for query: {query}</p>
             )}
 
             {!data && (
@@ -163,10 +163,10 @@ const OrganizationSearchForm: React.FC = () => {
   )
 }
 
-export const OrganizationSearch = () => {
+export const PractitionerSearch = () => {
   return (
-    <OrganizationSearchProvider>
-      <OrganizationSearchForm />
-    </OrganizationSearchProvider>
+    <PractitionerSearchProvider>
+      <PractitionerSearchForm />
+    </PractitionerSearchProvider>
   )
 }

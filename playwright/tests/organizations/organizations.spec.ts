@@ -151,3 +151,52 @@ test.describe("Organization show", () => {
     await expect(banner.getByText(`NPI: ${organization.npi}`)).toBeVisible()
   })
 })
+
+test.describe("sort Organizations", () => {
+  test("sort dropdown is visible on listing page", async ({ page }) => {
+    await page.goto("/organizations")
+    
+    await expect(page.locator(".ds-c-dropdown__button")).toBeVisible()
+    await expect(page.locator(".ds-c-dropdown__label-text")).toHaveText("Name (A-Z)")
+  })
+
+  test("sort listing results by name descending", async ({ page }) => {
+    await page.goto("/organizations")
+
+    await page.locator(".ds-c-dropdown__button").click()
+    await page.getByRole("option", { name: "Name (Z-A)" }).click()
+
+    await expect(page).toHaveURL(/sort=name-desc/)
+    await expect(page.locator(".ds-c-dropdown__label-text")).toHaveText("Name (Z-A)")
+  })
+
+  test("sort persists through pagination", async ({ page }) => {
+    await page.goto("/organizations")
+
+    await page.locator(".ds-c-dropdown__button").click()
+    await page.getByRole("option", { name: "Name (Z-A)" }).click()
+    await expect(page).toHaveURL(/sort=name-desc/)
+
+    await page.getByLabel("Next Page").first().click()
+
+    await expect(page).toHaveURL(/page=2/)
+    await expect(page).toHaveURL(/sort=name-desc/)
+    await expect(page.locator(".ds-c-dropdown__label-text")).toHaveText("Name (Z-A)")
+  })
+
+  test("sort search results", async ({ page }) => {
+    await page.goto("/organizations/search")
+
+    await page.getByRole("textbox", { name: "Name or Identifier (NPI, EIN" }).fill("Test")
+    await page.getByRole("button", { name: "Search" }).click()
+
+    await expect(page.locator("[data-testid='searchresults']").getByRole("listitem").first()).toBeVisible()
+
+    await page.locator(".ds-c-dropdown__button").click()
+    await page.getByRole("option", { name: "Name (Z-A)" }).click()
+
+    await expect(page).toHaveURL(/query=Test/)
+    await expect(page).toHaveURL(/sort=name-desc/)
+    await expect(page.locator(".ds-c-dropdown__label-text")).toHaveText("Name (Z-A)")
+  })
+})

@@ -25,7 +25,11 @@ import {
   OrganizationList,
   OrganizationSearch,
 } from "./pages/Organization"
-import { Practitioner } from "./pages/Practitioner/Practitioner.tsx"
+import { 
+  Practitioner,
+  PractitionerList,
+  PractitionerSearch
+} from "./pages/Practitioner"
 import { Search } from "./pages/Search"
 import { FrontendSettingsProvider } from "./state/FrontendSettingsProvider"
 
@@ -55,10 +59,14 @@ createRoot(document.getElementById("root")!).render(
                         element={<Organization />}
                       />
                     </Route>
-                    <Route
-                      path="/practitioners/:practitionerId"
-                      element={<Practitioner />}
-                    />
+                    <Route path="/practitioners">
+                      <Route index element={<PractitionerList />} />
+                      <Route path="search" element={<PractitionerSearch />} />
+                      <Route
+                        path=":practitionerId"
+                        element={<Practitioner />}
+                      />
+                    </Route>
                   </Route>
                 </Route>
 

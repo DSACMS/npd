@@ -3,6 +3,19 @@ import type { FHIRCollection, FHIROrganization } from "../../@types/fhir"
 import { formatAddress, formatDate } from "../../helpers/formatters"
 import { apiUrl } from "../api"
 
+export const ORGANIZATION_SORT_OPTIONS = {
+  'name-asc': {
+    label: 'Name (A-Z)',
+    apiValue: 'organizationtoname__name'
+  },
+  'name-desc': {
+    label: 'Name (Z-A)',
+    apiValue: '-organizationtoname__name'
+  }
+} as const
+
+type SortKey = keyof typeof ORGANIZATION_SORT_OPTIONS
+
 const fetchOrganization = async (
   organizationId: string,
 ): Promise<FHIROrganization> => {
@@ -35,6 +48,10 @@ const detectQueryKey = (value: string): "identifier" | "name" => {
   return /^\d+$/.test(value) ? "identifier" : "name"
 }
 
+const detectSortKey = (value: SortKey): string => {
+  return ORGANIZATION_SORT_OPTIONS[value]?.apiValue
+}
+
 /// list
 
 export const fetchOrganizations = async (
@@ -55,6 +72,14 @@ export const fetchOrganizations = async (
     const query = params.query
     const key = detectQueryKey(query)
     url.searchParams.set(key, query)
+  }
+
+  // Sort
+  if (params.sort) {
+    const apiValue = detectSortKey(params.sort as SortKey)
+    if (apiValue) {
+      url.searchParams.set("_sort", apiValue)
+    }
   }
 
   const response = await fetch(url)
@@ -78,7 +103,7 @@ export const useOrganizationsAPI = (
   console.debug("[useOrganizationsAPI]", { params, options })
 
   return useQuery<FHIRCollection<FHIROrganization>>({
-    queryKey: ["organizations", params.query, params.page || 1],
+    queryKey: ["organizations", params.sort, params.query, params.page || 1],
     queryFn:
       options?.requireQuery && (!params.query || params.query.length === 0)
         ? skipToken
