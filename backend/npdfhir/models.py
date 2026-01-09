@@ -645,8 +645,8 @@ class PayloadType(models.Model):
 
 
 class Provider(models.Model):
-    npi = models.OneToOneField(Npi, models.DO_NOTHING, db_column="npi", primary_key=True)
-    individual = models.OneToOneField(Individual, models.DO_NOTHING, blank=True, null=True)
+    npi = models.OneToOneField(Npi, models.DO_NOTHING, db_column="npi")
+    individual = models.OneToOneField(Individual, models.DO_NOTHING, primary_key=True)
 
     class Meta:
         managed = False
@@ -655,7 +655,7 @@ class Provider(models.Model):
 
 class ProviderEducation(models.Model):
     pk = models.CompositePrimaryKey("npi", "school_id")
-    npi = models.ForeignKey(Provider, models.DO_NOTHING, db_column="npi")
+    npi = models.ForeignKey(Provider, models.DO_NOTHING, db_column="npi", to_field="npi")
     school_id = models.IntegerField()
     degree_type = models.ForeignKey(DegreeType, models.DO_NOTHING)
     start_date = models.DateField(blank=True, null=True)
@@ -711,7 +711,7 @@ class ProviderToLocation(models.Model):
 
 
 class ProviderToOrganization(models.Model):
-    individual = models.ForeignKey(Provider, models.DO_NOTHING, to_field="individual_id")
+    individual = models.ForeignKey(Provider, models.DO_NOTHING)
     organization = models.ForeignKey(Organization, models.DO_NOTHING)
     relationship_type = models.ForeignKey("RelationshipType", models.DO_NOTHING)
     id = models.UUIDField(primary_key=True)
@@ -725,7 +725,7 @@ class ProviderToOrganization(models.Model):
 
 class ProviderToOtherId(models.Model):
     pk = models.CompositePrimaryKey("npi", "other_id", "other_id_type_id", "issuer", "state_code")
-    npi = models.ForeignKey(Provider, models.DO_NOTHING, db_column="npi")
+    npi = models.ForeignKey(Provider, models.DO_NOTHING, db_column="npi", to_field="npi")
     other_id = models.CharField(max_length=100)
     other_id_type = models.ForeignKey(OtherIdType, models.DO_NOTHING)
     state_code = models.ForeignKey(FipsState, models.DO_NOTHING, db_column="state_code")
@@ -737,7 +737,7 @@ class ProviderToOtherId(models.Model):
 
 
 class ProviderToTaxonomy(models.Model):
-    npi = models.ForeignKey(Provider, models.DO_NOTHING, db_column="npi")
+    npi = models.ForeignKey(Provider, models.DO_NOTHING, db_column="npi", to_field="npi")
     nucc_code = models.ForeignKey(Nucc, models.DO_NOTHING, db_column="nucc_code")
     is_primary = models.BooleanField(blank=True, null=True)
     id = models.UUIDField(primary_key=True)
