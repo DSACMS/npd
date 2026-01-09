@@ -10,6 +10,7 @@ from .helpers import (
     assert_pagination_limit,
     extract_practitioner_names,
     get_female_npis,
+    concat_address_string
 )
 
 
@@ -315,14 +316,7 @@ class PractitionerViewSetTestCase(APITestCase):
             present_checks = []
             for address in entry["resource"]["address"]:
                 # print(address)
-                address_string = ""
-
-                for line in address["line"]:
-                    address_string += line + " "
-
-                address_string += address["city"] + " "
-                address_string += address["state"] + " "
-                address_string += address["postalCode"]
+                address_string = concat_address_string(address)
 
                 #self.assertIn(test_search, address_string)
                 present_checks.append(test_search in address_string)

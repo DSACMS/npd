@@ -49,3 +49,15 @@ def extract_practitioner_names(response):
 
 def extract_resource_ids(response):
     return [d["resource"].get("id", {}) for d in response.data["results"]["entry"]]
+
+def concat_address_string(address):
+    address_string = ""
+
+    for line in address["line"]:
+        address_string += line + " "
+    
+    address_string += address["city"] + " "
+    address_string += address["state"] + " "
+    address_string += address["postalCode"]
+
+    return address_string
