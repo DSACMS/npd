@@ -113,7 +113,7 @@ export const Header = ({ hideLinks }: HeaderProps) => {
                   <>
                     <li className="usa-nav__primary-item">
                       <a href="/search" className="usa-nav__link">
-                        <span>Search the Data</span>
+                        <span>{t("header.link.search")}</span>
                       </a>
                     </li>
                     <li className="usa-nav__primary-item">

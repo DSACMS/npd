@@ -6,6 +6,7 @@ import landing from "./landing.json"
 import organizations from "./organizations.json"
 import patients from "./patients.json"
 import practitioners from "./practitioners.json"
+import search from "./search.json"
 
 /*
  * NOTE: (@abachman-dsac) a word about i18n usage in react components and the
@@ -37,4 +38,5 @@ export const translations = {
   organizations,
   patients,
   practitioners,
+  search
 }
