@@ -45,7 +45,7 @@ class LocationFilterSet(filters.FilterSet):
 
     def filter_organization_type(self, queryset, name, value):
         return queryset.annotate(
-            search=SearchVector("organizationtotaxonomy__nucc_code__display_name")
+            search=SearchVector("organization__clinicalorganization__organizationtotaxonomy__nucc_code__code")
         ).filter(search=value)
 
     def filter_address(self, queryset, name, value):

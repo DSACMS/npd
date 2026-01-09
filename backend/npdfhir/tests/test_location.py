@@ -17,7 +17,7 @@ class LocationViewSetTestCase(APITestCase):
     @classmethod
     def setUpTestData(cls):
         cls.orgs = [
-            create_organization(name="Alpha Org"),
+            create_organization(name="Alpha Org", organization_type="283Q00000X"),
             create_organization(name="Beta Org"),
         ]
 
@@ -211,6 +211,32 @@ class LocationViewSetTestCase(APITestCase):
             self.assertIn("address", location_entry)
             self.assertIn("name", location_entry)
             self.assertIn(name, location_entry['name'])
+
+    def test_filter_by_org_type(self):
+        nucc_type = "283Q00000X"
+    
+        url = reverse("fhir-location-list")
+        response = self.client.get(url, {"organization_type": nucc_type})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        assert_has_results(self, response)
+
+        bundle = response.data["results"]
+
+        #print(bundle)
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+            location_entry = entry["resource"]
+            self.assertEqual(location_entry["resourceType"], "Location")
+            self.assertIn("id", location_entry)
+            self.assertIn("status", location_entry)
+            self.assertIn("managingOrganization", location_entry)
+            self.assertIn("address", location_entry)
+            self.assertIn("name", location_entry)
+
+            parsed_org_id = location_entry['managingOrganization']['reference'].split('/')[-1]
+
+            #Assert that correct org was referenced by org type
+            self.assertEqual(str(self.orgs[0].id), parsed_org_id)
 
     def test_list_filter_by_address(self):
         address_search = "Amazing Avenue"
