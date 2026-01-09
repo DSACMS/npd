@@ -343,18 +343,6 @@ class FipsState(models.Model):
         db_table = "fips_state"
 
 
-class FlagsFlagstate(models.Model):
-    name = models.CharField(max_length=64)
-    condition = models.CharField(max_length=64)
-    value = models.CharField(max_length=127)
-    required = models.BooleanField()
-
-    class Meta:
-        managed = False
-        db_table = "flags_flagstate"
-        unique_together = (("name", "condition", "value"),)
-
-
 class Individual(models.Model):
     id = models.UUIDField(primary_key=True)
     ssn_id = models.UUIDField(blank=True, null=True)
