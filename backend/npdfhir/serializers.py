@@ -613,11 +613,11 @@ class CapabilityStatementSerializer(serializers.Serializer):
     Serializer for FHIR CapablityStatement resource
     """
 
-    def to_representation(self, instance):
+    def to_representation(self):
         request = self.context.get("request")
         baseURL = request.build_absolute_uri("/fhir")
         metadataURL = request.build_absolute_uri(reverse("fhir-metadata"))
-        schemaData = get_schema_data(request, "schema")
+        schemaData = get_schema_data(request)
 
         capability_statement = CapabilityStatement(
             url=metadataURL,
@@ -705,7 +705,7 @@ class BundleSerializer(serializers.Serializer):
             resource_type = resource["resourceType"]
             id = resource["id"]
             url_name = f"fhir-{resource_type.lower()}-detail"
-            full_url = request.build_absolute_uri(reverse(url_name, kwargs={"pk": id}))
+            full_url = request.build_absolute_uri(reverse(url_name, kwargs={"id": id}))
             # Create an entry for this resource
             entry = {
                 "fullUrl": full_url,
