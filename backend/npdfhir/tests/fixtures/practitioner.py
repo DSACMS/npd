@@ -21,7 +21,7 @@ from ...models import (
 )
 from .location import create_location
 from .organization import create_organization
-from .utils import _ensure_name_use
+from .utils import _ensure_name_use, _set_location_coords
 
 
 def _ensure_provider_role(code="PRV", display="Provider Role"):
@@ -118,7 +118,6 @@ def create_practitioner(
 
     return provider
 
-
 def create_full_practitionerrole(
     first_name="Alice",
     last_name="Smith",
@@ -128,6 +127,8 @@ def create_full_practitionerrole(
     location_name="Test Location",
     role_code="PRV",
     role_display="Provider Role",
+    latitude=None,
+    longitude=None,
 ):
     """
     Creates:
@@ -158,6 +159,9 @@ def create_full_practitionerrole(
         relationship_type=rel_type,
         active=True,
     )
+
+    if latitude and longitude:
+        _set_location_coords(loc, latitude, longitude)
 
     pr = ProviderToLocation.objects.create(
         id=uuid.uuid4(),

@@ -49,6 +49,34 @@ class PractitionerRoleViewSetTestCase(APITestCase):
             cls.roles.append(role)
 
         cls.first_prac_id = cls.roles[0].id
+
+        # New York coordinates
+        cls.center_lat = 42.6526
+        cls.center_lon = -73.7562
+
+        cls.close_to_ny = create_full_practitionerrole(
+            first_name="Ben",
+            last_name="Close",
+            gender="M",
+            npi_value=1000000300,
+            location_name="Close NY LLC",
+            role_display="Clinician",
+            role_code="MD",
+            latitude=42.6530,
+            longitude=-73.7560,
+        )
+
+        cls.far_from_ny = create_full_practitionerrole(
+            first_name="Far",
+            last_name="Distance",
+            gender="F",
+            npi_value=1000000700,
+            location_name="Far NY Ltd.",
+            role_display="Clinician",
+            role_code="MD",
+            latitude=43.0000,
+            longitude=-74.2000,
+        )
         return super().setUpTestData()
 
     # Basic tests
@@ -124,3 +152,60 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data["id"], str(id))
+
+    def test_retrieve_based_on_lat_long(self):
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(
+            url,
+            {
+                "latitude": self.center_lat,
+                "longitude": self.center_lon,
+                "distance": 5,
+                "units": "km",
+            },
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        ids = extract_resource_ids(response)
+        self.assertIn(str(self.close_to_ny.id), ids)
+        self.assertNotIn(str(self.far_from_ny.id), ids)
+
+    def test_filter_by_lat_long_outside_distance_returns_empty(self):
+        url = reverse("fhir-practitionerrole-list")
+
+        # Use coordinates of Chicago
+        response = self.client.get(
+            url,
+            {
+                "latitude": 41.875562,
+                "longitude": -87.6244212,
+                "distance": 0.1,
+                "units": "km",
+            },
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.data["results"]["entry"]), 0)
+
+    def test_filter_by_lat_long_requires_all_parameters(self):
+        url = reverse("fhir-practitionerrole-list")
+
+        response = self.client.get(url, {"latitude": 42.6526})
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    def test_filter_by_lat_long_miles(self):
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(
+            url,
+            {
+                "latitude": 42.6526,
+                "longitude": -73.7562,
+                "distance": 3,  # ~4.8km
+                "units": "mi",
+            },
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        ids = extract_resource_ids(response)
+        self.assertIn(str(self.close_to_ny.id), ids)
