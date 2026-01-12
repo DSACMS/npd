@@ -4,6 +4,7 @@ from django_filters import rest_framework as filters
 
 from ..mappings import genderMapping
 from ..models import ProviderToLocation
+from ..utils import parse_identifier_query
 
 
 class PractitionerRoleFilterSet(filters.FilterSet):
@@ -146,23 +147,31 @@ class PractitionerRoleFilterSet(filters.FilterSet):
     def filter_organization_type(self, queryset, name, value):
         return queryset.filter(
             Q(provider_to_organization__organization__clinicalorganization__organizationtotaxonomy__nucc_code__code=value) 
-            | Q(
-                provider_to_organization__organization__clinicalorganization__organizationtootherid__other_id=value
-            )
         ).distinct()
 
     def filter_practitioner_identifer(self, queryset, name, value):
-        return queryset.filter(
-            Q(provider_to_organization__individual__npi__npi=value)
-            | Q(
-                provider_to_organization__individual__providertootherid__other_id__icontains=value
-            )
-        ).distinct()
+        system, identifier_id = parse_identifier_query(value)
+        queries = Q(pk__isnull=True)
+
+        if system:  # specific identifier search requested
+            if system.upper() == "NPI":
+                try:
+                    queries = Q(provider_to_organization__individual__npi__npi=int(identifier_id))
+                except (ValueError, TypeError):
+                    pass
+        else:  # general identifier search requested
+            try:
+                queries |= Q(provider_to_organization__individual__npi__npi=int(identifier_id))
+            except (ValueError, TypeError):
+                pass
+
+            queries |= Q(provider_to_organization__individual__providertootherid__other_id__icontains=identifier_id)
+
+        return queryset.filter(queries).distinct()
     
     def filter_code(self, queryset, name, value):
         return queryset.filter(
-            Q(provider_to_organization__individual__providertotaxonomy__nucc_code__code__iexact=value)
-            | Q(provider_role_code__iexact=value)
+            Q(provider_role_code__iexact=value)
         ).distinct()
 
     def filter_connection_type(self, queryset, name, value):
@@ -175,20 +184,20 @@ class PractitionerRoleFilterSet(filters.FilterSet):
     def filter_payload_type(self, queryset, name, value):
         return queryset.annotate(
             search=SearchVector(
-                "location__locationtoendpointinstance__endpoint_instance__endpoint__endpoint_type__value"
+                "location__locationtoendpointinstance__endpoint_instance__endpointinstancetopayload__payload_type__value"
             )
         ).filter(search=value)
     
     def filter_endpoint_organization_id(self, queryset, name, value):
         #The parent of the organization that owns the location the endpoint is attached to
         return queryset.filter(
-            location__organization__parent__id=value
+            location__organization__id=value
         )
     
     def filter_endpoint_organization_name(self, queryset, name, value):
         #The parent of the organization that owns the location the endpoint is attached to
         return queryset.filter(
-            location__organization__parent__organizationtoname__name=value
+            location__organization__organizationtoname__name=value
         )
     
     def filter_address(self, queryset, name, value):
