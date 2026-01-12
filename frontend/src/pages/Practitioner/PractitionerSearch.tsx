@@ -13,6 +13,7 @@ import search from "../Search.module.css"
 import { ListedPractitioner } from "./ListedPractitioner"
 import { PRACTITIONER_SORT_OPTIONS, type PractitionerSortKey } from "../../state/requests/practitioners"
 import { usePractitionersAPI } from "../../state/requests/practitioners"
+import type { FHIRPractitioner } from "../../@types/fhir"
 
 const PractitionerSearchForm: React.FC = () => {
   const { t } = useTranslation()
@@ -25,7 +26,8 @@ const PractitionerSearchForm: React.FC = () => {
     error: searchError,
     data,
     pagination,
-  } = useSearchState()
+    sort
+  } = useSearchState<FHIRPractitioner>()
 
   const [query, setQueryValue] = useState<string>(initialQuery || "")
 
@@ -121,6 +123,7 @@ const PractitionerSearchForm: React.FC = () => {
                         name="sort-dropdown-field"
                         labelClassName="ds-u-display--none"
                         options={sortOptions}
+                        value={sort}
                         onChange={handleSort}
                       />
                     </div>
@@ -168,7 +171,10 @@ const PractitionerSearchForm: React.FC = () => {
 
 export const PractitionerSearch = () => {
   return (
-    <SearchProvider useSearchAPI={usePractitionersAPI}>
+    <SearchProvider 
+      useSearchAPI={usePractitionersAPI}
+      defaultSort="first-name-asc"
+    >
       <PractitionerSearchForm />
     </SearchProvider>
   )

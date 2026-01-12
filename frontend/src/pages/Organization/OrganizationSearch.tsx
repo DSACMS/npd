@@ -13,6 +13,7 @@ import search from "../Search.module.css"
 import { ListedOrganization } from "./ListedOrganization"
 import { ORGANIZATION_SORT_OPTIONS, type OrganizationSortKey } from "../../state/requests/organizations"
 import { useOrganizationsAPI } from "../../state/requests/organizations"
+import type { FHIROrganization } from "../../@types/fhir"
 
 const OrganizationSearchForm: React.FC = () => {
   const { t } = useTranslation()
@@ -25,7 +26,7 @@ const OrganizationSearchForm: React.FC = () => {
     error: searchError,
     data,
     pagination,
-  } = useSearchState()
+  } = useSearchState<FHIROrganization>()
 
   const [query, setQueryValue] = useState<string>(initialQuery || "")
 
@@ -168,7 +169,10 @@ const OrganizationSearchForm: React.FC = () => {
 
 export const OrganizationSearch = () => {
   return (
-    <SearchProvider useSearchAPI={useOrganizationsAPI}>
+    <SearchProvider 
+      useSearchAPI={useOrganizationsAPI}
+      defaultSort="name-asc"
+    >
       <OrganizationSearchForm />
     </SearchProvider>
   )

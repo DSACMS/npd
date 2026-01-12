@@ -8,6 +8,7 @@ export interface SearchContextValue<T> {
   error: string | null
   pagination?: PaginationState
   query?: string
+  sort: string
 }
 
 export interface SearchDispatchContextValue {

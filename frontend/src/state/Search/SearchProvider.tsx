@@ -16,33 +16,40 @@ interface SearchProviderProps<T> {
     params: PaginationParams & SearchParams,
     options?: { requireQuery?: boolean }
   ) => UseQueryResult<FHIRCollection<T>>
+  defaultSort: string
 }
 
 export function SearchProvider<T>({ 
   children, 
-  useSearchAPI 
+  useSearchAPI,
+  defaultSort
 }: SearchProviderProps<T>) {
   const [isBackgroundLoading, setIsBackgroundLoading] = useState(false)
   const [params, setParams] = usePaginationParams()
   const [query, setQueryValue] = useState<string>(params.query || "")
+
+  const currentSort = params.sort || defaultSort
   
-  // The injected hook handles the actual fetching
-  const { data, isLoading, error } = useSearchAPI(params, {
-    requireQuery: true,
-  })
+  // the injected hook handles the actual fetching
+  const { data, isLoading, error } = useSearchAPI(
+    { ...params, sort: currentSort },
+    { requireQuery: true }
+  )
   
   const pagination = usePagination(params, data)
 
   const buildParams = (overrides: { page?: string; query?: string; sort?: string }) => {
-    const currentQuery = overrides.query ?? params.query ?? query
-    const currentSort = overrides.sort ?? params.sort
+    const nextQuery = overrides.query ?? params.query ?? query
+    const nextSort = overrides.sort ?? currentSort
     
     const next: Record<string, string> = {
       page: overrides.page ?? "1",
+      sort: nextSort
     }
     
-    if (currentQuery) next.query = currentQuery
-    if (currentSort) next.sort = currentSort
+    if (nextQuery) {
+      next.query = nextQuery
+    }
     
     return next
   }
@@ -93,6 +100,7 @@ export function SearchProvider<T>({
       : null,
     pagination,
     query,
+    sort: currentSort
   }
 
   const dispatch: SearchDispatchContextValue = {
