@@ -1,10 +1,10 @@
 import { createContext } from "react"
-import type { FHIROrganization, FHIRPractioner } from "../../@types/fhir"
+import type { FHIROrganization, FHIRPractitioner } from "../../@types/fhir"
 
 // Define the context value type
 export interface SearchContextValue {
   initialQuery?: string
-  data: FHIROrganization[] | FHIRPractioner[] | null
+  data: FHIROrganization[] | FHIRPractitioner[] | null
   isLoading: boolean
   isBackgroundLoading: boolean
   error: string | null

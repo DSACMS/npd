@@ -7,7 +7,7 @@ import { PaginationCaption } from "../../components/PaginationCaption"
 import { TitlePanel } from "../../components/TitlePanel"
 import { apiUrl } from "../../state/api"
 import { SearchProvider } from "../../state/Search/SearchProvider"
-import { useSearchDispatch, useOrganizationSearchState } from "../../state/Search/useSearch"
+import { useSearchDispatch, useSearchState } from "../../state/Search/useSearch"
 import layout from "../Layout.module.css"
 import search from "../Search.module.css"
 import { ListedOrganization } from "./ListedOrganization"
@@ -24,7 +24,7 @@ const OrganizationSearchForm: React.FC = () => {
     error: searchError,
     data,
     pagination,
-  } = useOrganizationSearchState()
+  } = useSearchState()
 
   const [query, setQueryValue] = useState<string>(initialQuery || "")
 

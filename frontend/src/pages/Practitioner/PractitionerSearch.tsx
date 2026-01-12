@@ -7,11 +7,11 @@ import { PaginationCaption } from "../../components/PaginationCaption"
 import { TitlePanel } from "../../components/TitlePanel"
 import { apiUrl } from "../../state/api"
 import { SearchProvider } from "../../state/Search/SearchProvider"
-import { useSearchDispatch, usePractitionerSearchState } from "../../state/Search/useSearch"
+import { useSearchDispatch, useSearchState } from "../../state/Search/useSearch"
 import layout from "../Layout.module.css"
 import search from "../Search.module.css"
 import { ListedPractitioner } from "./ListedPractitioner"
-import { PRACTITIONER_SORT_OPTIONS } from "../../state/requests/practitioners"
+import { PRACTITIONER_SORT_OPTIONS, type PractitionerSortKey } from "../../state/requests/practitioners"
 
 const PractitionerSearchForm: React.FC = () => {
   const { t } = useTranslation()
@@ -24,7 +24,7 @@ const PractitionerSearchForm: React.FC = () => {
     error: searchError,
     data,
     pagination,
-  } = usePractitionerSearchState()
+  } = useSearchState()
 
   const [query, setQueryValue] = useState<string>(initialQuery || "")
 
@@ -53,7 +53,7 @@ const PractitionerSearchForm: React.FC = () => {
 
   const sortOptions = Object.entries(PRACTITIONER_SORT_OPTIONS).map(
     ([value, option]) => ({
-      value,
+      value: value as PractitionerSortKey,
       label: t(option.labelKey),
     })
   )
