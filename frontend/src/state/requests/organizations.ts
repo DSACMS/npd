@@ -2,19 +2,20 @@ import { skipToken, useQuery } from "@tanstack/react-query"
 import type { FHIRCollection, FHIROrganization } from "../../@types/fhir"
 import { formatAddress, formatDate } from "../../helpers/formatters"
 import { apiUrl } from "../api"
+import type { SortOption } from "../../@types/search"
 
-export const ORGANIZATION_SORT_OPTIONS = {
+export const ORGANIZATION_SORT_OPTIONS: Record<string, SortOption>  = {
   'name-asc': {
-    label: 'Name (A-Z)',
+    labelKey: 'organizations.sort.name-asc',
     apiValue: 'organizationtoname__name'
   },
   'name-desc': {
-    label: 'Name (Z-A)',
+    labelKey: 'organizations.sort.name-desc',
     apiValue: '-organizationtoname__name'
   }
 } as const
 
-type SortKey = keyof typeof ORGANIZATION_SORT_OPTIONS
+export type OrganizationSortKey = keyof typeof ORGANIZATION_SORT_OPTIONS
 
 const fetchOrganization = async (
   organizationId: string,
@@ -48,7 +49,7 @@ const detectQueryKey = (value: string): "identifier" | "name" => {
   return /^\d+$/.test(value) ? "identifier" : "name"
 }
 
-const detectSortKey = (value: SortKey): string => {
+const detectSortKey = (value: OrganizationSortKey): string => {
   return ORGANIZATION_SORT_OPTIONS[value]?.apiValue
 }
 
@@ -76,7 +77,7 @@ export const fetchOrganizations = async (
 
   // Sort
   if (params.sort) {
-    const apiValue = detectSortKey(params.sort as SortKey)
+    const apiValue = detectSortKey(params.sort as OrganizationSortKey)
     if (apiValue) {
       url.searchParams.set("_sort", apiValue)
     }

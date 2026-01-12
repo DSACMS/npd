@@ -7,22 +7,22 @@ import type { SortOption } from "../../@types/search"
 // definitions, we cannot fully generate response types automatically
 
 export const PRACTITIONER_SORT_OPTIONS: Record<string, SortOption> = {
-  'first-name-asc': {
-    labelKey: 'First Name (A-Z)',
-    apiValue: 'individual__individualtoname__first_name'
+  "first-name-asc": {
+    labelKey: "practitioners.sort.first-asc",
+    apiValue: "individual__individualtoname__first_name",
   },
-  'first-name-desc': {
-    labelKey: 'First Name (Z-A)',
-    apiValue: '-individual__individualtoname__first_name'
+  "first-name-desc": {
+    labelKey: "practitioners.sort.first-desc",
+    apiValue: "-individual__individualtoname__first_name",
   },
-  'last-name-asc': {
-    labelKey: 'Last Name (A-Z)',
-    apiValue: 'individual__individualtoname__last_name'
+  "last-name-asc": {
+    labelKey: "practitioners.sort.last-asc",
+    apiValue: "individual__individualtoname__last_name",
   },
-  'last-name-desc': {
-    labelKey: 'Last Name (Z-A)',
-    apiValue: '-individual__individualtoname__last_name'
-  }
+  "last-name-desc": {
+    labelKey: "practitioners.sort.last-desc",
+    apiValue: "-individual__individualtoname__last_name",
+  },
 } as const
 
 export type PractitionerSortKey = keyof typeof PRACTITIONER_SORT_OPTIONS

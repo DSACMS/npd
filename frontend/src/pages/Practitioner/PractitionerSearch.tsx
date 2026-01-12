@@ -12,6 +12,7 @@ import layout from "../Layout.module.css"
 import search from "../Search.module.css"
 import { ListedPractitioner } from "./ListedPractitioner"
 import { PRACTITIONER_SORT_OPTIONS, type PractitionerSortKey } from "../../state/requests/practitioners"
+import { usePractitionersAPI } from "../../state/requests/practitioners"
 
 const PractitionerSearchForm: React.FC = () => {
   const { t } = useTranslation()
@@ -114,7 +115,7 @@ const PractitionerSearchForm: React.FC = () => {
                       <PaginationCaption pagination={pagination} />
                     </div>
                     <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                      {t("sort.by")}
+                      {t("practitioners.sort.by")}
                       <Dropdown
                         label=""
                         name="sort-dropdown-field"
@@ -167,7 +168,7 @@ const PractitionerSearchForm: React.FC = () => {
 
 export const PractitionerSearch = () => {
   return (
-    <SearchProvider>
+    <SearchProvider useSearchAPI={usePractitionersAPI}>
       <PractitionerSearchForm />
     </SearchProvider>
   )

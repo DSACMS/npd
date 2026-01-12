@@ -26,6 +26,7 @@
   },
 
   "sort": {
+    "by": "Sort by",
     "name-asc": "Name (A-Z)",
     "name-desc": "Name (Z-A)"
   }

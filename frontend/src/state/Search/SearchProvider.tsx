@@ -1,24 +1,36 @@
+// SearchProvider.tsx
 import React, { useEffect, useState, type ReactNode } from "react"
 import { usePagination, usePaginationParams } from "../../hooks/usePagination"
-import { usePractitionersAPI } from "../requests/practitioners"
 import {
   SearchContext,
   SearchDispatchContext,
   type SearchContextValue,
   type SearchDispatchContextValue,
 } from "./SearchContext"
+import type { FHIRCollection } from "../../@types/fhir"
+import type { UseQueryResult } from "@tanstack/react-query"
 
-interface SearchProviderProps {
+interface SearchProviderProps<T> {
   children: ReactNode
+  useSearchAPI: (
+    params: PaginationParams & SearchParams,
+    options?: { requireQuery?: boolean }
+  ) => UseQueryResult<FHIRCollection<T>>
 }
 
-export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
+export function SearchProvider<T>({ 
+  children, 
+  useSearchAPI 
+}: SearchProviderProps<T>) {
   const [isBackgroundLoading, setIsBackgroundLoading] = useState(false)
   const [params, setParams] = usePaginationParams()
   const [query, setQueryValue] = useState<string>(params.query || "")
-  const { data, isLoading, error } = usePractitionersAPI(params, {
+  
+  // The injected hook handles the actual fetching
+  const { data, isLoading, error } = useSearchAPI(params, {
     requireQuery: true,
   })
+  
   const pagination = usePagination(params, data)
 
   const buildParams = (overrides: { page?: string; query?: string; sort?: string }) => {
@@ -29,13 +41,8 @@ export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
       page: overrides.page ?? "1",
     }
     
-    if (currentQuery) {
-      next.query = currentQuery
-    }
-    
-    if (currentSort) {
-      next.sort = currentSort
-    }
+    if (currentQuery) next.query = currentQuery
+    if (currentSort) next.sort = currentSort
     
     return next
   }
@@ -50,15 +57,18 @@ export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
   const navigateToPage = (toPage: number) => {
     setIsBackgroundLoading(true)
     const next = buildParams({ page: toPage.toString() })
-    setParams(next, {
-      preventScrollReset: true,
-    })
+    setParams(next, { preventScrollReset: true })
   }
 
   const setSort = (nextSort: string) => {
     setIsBackgroundLoading(true)
     const next = buildParams({ page: "1", sort: nextSort })
     setParams(next, { preventScrollReset: true })
+  }
+
+  const clearSearch = () => {
+    setQueryValue("")
+    setParams({})
   }
 
   useEffect(() => {
@@ -69,7 +79,7 @@ export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
 
   const hasActiveQuery = params.query && params.query.length > 0
   
-  const state: SearchContextValue = {
+  const state: SearchContextValue<T> = {
     initialQuery: query,
     data: hasActiveQuery && data?.results?.entry
       ? data.results.entry.map((entry) => entry.resource)
@@ -89,15 +99,14 @@ export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
     setQuery,
     navigateToPage,
     setSort,
-    clearSearch: () => {
-      setQueryValue("")
-      setParams({})
-    },
+    clearSearch,
   }
 
   return (
     <SearchContext value={state}>
-      <SearchDispatchContext value={dispatch}>{children}</SearchDispatchContext>
+      <SearchDispatchContext value={dispatch}>
+        {children}
+      </SearchDispatchContext>
     </SearchContext>
   )
 }

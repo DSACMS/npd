@@ -11,7 +11,8 @@ import { useSearchDispatch, useSearchState } from "../../state/Search/useSearch"
 import layout from "../Layout.module.css"
 import search from "../Search.module.css"
 import { ListedOrganization } from "./ListedOrganization"
-import { ORGANIZATION_SORT_OPTIONS } from "../../state/requests/organizations"
+import { ORGANIZATION_SORT_OPTIONS, type OrganizationSortKey } from "../../state/requests/organizations"
+import { useOrganizationsAPI } from "../../state/requests/organizations"
 
 const OrganizationSearchForm: React.FC = () => {
   const { t } = useTranslation()
@@ -51,10 +52,12 @@ const OrganizationSearchForm: React.FC = () => {
     setSort(value)
   }
 
-  const sortOptions = Object.entries(ORGANIZATION_SORT_OPTIONS).map(([value, { label }]) => ({
-    label,
-    value
-  }))
+  const sortOptions = Object.entries(ORGANIZATION_SORT_OPTIONS).map(
+    ([value, option]) => ({
+      value: value as OrganizationSortKey,
+      label: t(option.labelKey),
+    })
+  )
 
   return (
     <>
@@ -112,7 +115,7 @@ const OrganizationSearchForm: React.FC = () => {
                       <PaginationCaption pagination={pagination} />
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      Sort by
+                      {t("organizations.sort.by")}
                       <Dropdown
                           label=""
                           name="sort-dropdown-field"
@@ -165,7 +168,7 @@ const OrganizationSearchForm: React.FC = () => {
 
 export const OrganizationSearch = () => {
   return (
-    <SearchProvider>
+    <SearchProvider useSearchAPI={useOrganizationsAPI}>
       <OrganizationSearchForm />
     </SearchProvider>
   )
