@@ -1,23 +1,22 @@
 import React, { useEffect, useState, type ReactNode } from "react"
 import { usePagination, usePaginationParams } from "../../hooks/usePagination"
-import { useOrganizationsAPI } from "../requests/organizations"
+import { usePractitionersAPI } from "../requests/practitioners"
 import {
-  OrganizationSearchContext,
+  SearchContext,
   SearchDispatchContext,
   type SearchContextValue,
   type SearchDispatchContextValue,
 } from "./SearchContext"
-import type { FHIROrganization } from "../../@types/fhir"
 
 interface SearchProviderProps {
   children: ReactNode
 }
 
-export const OrganizationSearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
+export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
   const [isBackgroundLoading, setIsBackgroundLoading] = useState(false)
   const [params, setParams] = usePaginationParams()
   const [query, setQueryValue] = useState<string>(params.query || "")
-  const { data, isLoading, error } = useOrganizationsAPI(params, {
+  const { data, isLoading, error } = usePractitionersAPI(params, {
     requireQuery: true,
   })
   const pagination = usePagination(params, data)
@@ -70,7 +69,7 @@ export const OrganizationSearchProvider: React.FC<SearchProviderProps> = ({ chil
 
   const hasActiveQuery = params.query && params.query.length > 0
   
-  const state: SearchContextValue<FHIROrganization> = {
+  const state: SearchContextValue = {
     initialQuery: query,
     data: hasActiveQuery && data?.results?.entry
       ? data.results.entry.map((entry) => entry.resource)
@@ -97,8 +96,8 @@ export const OrganizationSearchProvider: React.FC<SearchProviderProps> = ({ chil
   }
 
   return (
-    <OrganizationSearchContext value={state}>
+    <SearchContext value={state}>
       <SearchDispatchContext value={dispatch}>{children}</SearchDispatchContext>
-    </OrganizationSearchContext>
+    </SearchContext>
   )
 }

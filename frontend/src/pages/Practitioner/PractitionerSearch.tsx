@@ -6,7 +6,7 @@ import { NpdMarkdown } from "../../components/markdown/NpdMarkdown"
 import { PaginationCaption } from "../../components/PaginationCaption"
 import { TitlePanel } from "../../components/TitlePanel"
 import { apiUrl } from "../../state/api"
-import { PractitionerSearchProvider } from "../../state/Search/PractitionerSearchProvider"
+import { SearchProvider } from "../../state/Search/SearchProvider"
 import { useSearchDispatch, usePractitionerSearchState } from "../../state/Search/useSearch"
 import layout from "../Layout.module.css"
 import search from "../Search.module.css"
@@ -51,10 +51,12 @@ const PractitionerSearchForm: React.FC = () => {
     setSort(value)
   }
 
-  const sortOptions = Object.entries(PRACTITIONER_SORT_OPTIONS).map(([value, { label }]) => ({
-    label,
-    value
-  }))
+  const sortOptions = Object.entries(PRACTITIONER_SORT_OPTIONS).map(
+    ([value, option]) => ({
+      value,
+      label: t(option.labelKey),
+    })
+  )
 
   return (
     <>
@@ -111,17 +113,17 @@ const PractitionerSearchForm: React.FC = () => {
                     <div style={{ display: 'flex', gap: '8px' }}>
                       <PaginationCaption pagination={pagination} />
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      Sort by
+                    <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                      {t("sort.by")}
                       <Dropdown
-                          label=""
-                          name="sort-dropdown-field"
-                          labelClassName="ds-u-display--none"
-                          options={sortOptions}
-                          onChange={handleSort}
-                        />
-                      </div>
+                        label=""
+                        name="sort-dropdown-field"
+                        labelClassName="ds-u-display--none"
+                        options={sortOptions}
+                        onChange={handleSort}
+                      />
                     </div>
+                  </div>
                     <Pagination
                       currentPage={pagination.page}
                       onPageChange={(evt, page) => {
@@ -165,8 +167,8 @@ const PractitionerSearchForm: React.FC = () => {
 
 export const PractitionerSearch = () => {
   return (
-    <PractitionerSearchProvider>
+    <SearchProvider>
       <PractitionerSearchForm />
-    </PractitionerSearchProvider>
+    </SearchProvider>
   )
 }

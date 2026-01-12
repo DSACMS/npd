@@ -6,7 +6,7 @@ import { NpdMarkdown } from "../../components/markdown/NpdMarkdown"
 import { PaginationCaption } from "../../components/PaginationCaption"
 import { TitlePanel } from "../../components/TitlePanel"
 import { apiUrl } from "../../state/api"
-import { OrganizationSearchProvider } from "../../state/Search/OrganizationSearchProvider"
+import { SearchProvider } from "../../state/Search/SearchProvider"
 import { useSearchDispatch, useOrganizationSearchState } from "../../state/Search/useSearch"
 import layout from "../Layout.module.css"
 import search from "../Search.module.css"
@@ -165,8 +165,8 @@ const OrganizationSearchForm: React.FC = () => {
 
 export const OrganizationSearch = () => {
   return (
-    <OrganizationSearchProvider>
+    <SearchProvider>
       <OrganizationSearchForm />
-    </OrganizationSearchProvider>
+    </SearchProvider>
   )
 }

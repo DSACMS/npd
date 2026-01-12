@@ -42,6 +42,14 @@
     
       "search": {
         "title": "Search Practitioners",
-        "inputLabel": "Name or Identifier (NPI, EIN, or other)"
-    }
+        "inputLabel": "Name or Identifier (NPI or other)"
+    },
+
+    "sort": {
+        "by": "Sort by",
+        "first-asc": "First Name (A-Z)",
+        "first-desc": "First Name (Z-A)",
+        "last-asc": "Last Name (A-Z)",
+        "last-desc": "Last Name (Z-A)"
+      }
 }
