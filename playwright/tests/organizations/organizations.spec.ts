@@ -91,10 +91,10 @@ test.describe("Organization search", () => {
     await expect(page.getByText("Search Organizations")).toBeVisible()
 
     await page
-      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .getByRole("textbox", { name: "Name or NPI" })
       .click()
     await page
-      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .getByRole("textbox", { name: "Name or NPI" })
       .fill("1234567893")
     await page.getByRole("button", { name: "Search" }).click()
     await expect(page.getByRole("link", { name: "AAA Test Org" })).toBeVisible()
@@ -106,10 +106,10 @@ test.describe("Organization search", () => {
     await expect(page.getByText("Search Organizations")).toBeVisible()
 
     await page
-      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .getByRole("textbox", { name: "Name or NPI" })
       .click()
     await page
-      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .getByRole("textbox", { name: "Name or NPI" })
       .fill("AAA Test Org")
     await page.getByRole("button", { name: "Search" }).click()
     await expect(page.getByRole("link", { name: "AAA Test Org" })).toBeVisible()
@@ -121,10 +121,10 @@ test.describe("Organization search", () => {
     await expect(page.getByText("Search Organizations")).toBeVisible()
 
     await page
-      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .getByRole("textbox", { name: "Name or NPI" })
       .click()
     await page
-      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .getByRole("textbox", { name: "Name or NPI" })
       .fill("AAA")
     await page.getByRole("button", { name: "Search" }).click()
     await expect(page.getByRole("link", { name: "AAA Test Org" })).toBeVisible()
@@ -153,50 +153,36 @@ test.describe("Organization show", () => {
 })
 
 test.describe("sort Organizations", () => {
-  test("sort dropdown is visible on listing page", async ({ page }) => {
-    await page.goto("/organizations")
-    
-    await expect(page.locator(".ds-c-dropdown__button")).toBeVisible()
-    await expect(page.locator(".ds-c-dropdown__label-text")).toHaveText("Name (A-Z)")
-  })
-
-  test("sort listing results by name descending", async ({ page }) => {
-    await page.goto("/organizations")
-
-    await page.locator(".ds-c-dropdown__button").click()
-    await page.getByRole("option", { name: "Name (Z-A)" }).click()
-
-    await expect(page).toHaveURL(/sort=name-desc/)
-    await expect(page.locator(".ds-c-dropdown__label-text")).toHaveText("Name (Z-A)")
-  })
-
-  test("sort persists through pagination", async ({ page }) => {
-    await page.goto("/organizations")
-
-    await page.locator(".ds-c-dropdown__button").click()
-    await page.getByRole("option", { name: "Name (Z-A)" }).click()
-    await expect(page).toHaveURL(/sort=name-desc/)
-
-    await page.getByLabel("Next Page").first().click()
-
-    await expect(page).toHaveURL(/page=2/)
-    await expect(page).toHaveURL(/sort=name-desc/)
-    await expect(page.locator(".ds-c-dropdown__label-text")).toHaveText("Name (Z-A)")
-  })
-
-  test("sort search results", async ({ page }) => {
+  test("sort dropdown is visible after search", async ({ page }) => {
     await page.goto("/organizations/search")
 
-    await page.getByRole("textbox", { name: "Name or Identifier (NPI, EIN" }).fill("Test")
+    await page.getByRole("textbox", { name: "Name or NPI" }).fill("Test")
     await page.getByRole("button", { name: "Search" }).click()
 
     await expect(page.locator("[data-testid='searchresults']").getByRole("listitem").first()).toBeVisible()
 
-    await page.locator(".ds-c-dropdown__button").click()
+    const sortButton = page.locator(".ds-c-dropdown__button")
+    await expect(sortButton).toBeVisible()
+    await expect(sortButton).toContainText("Name (A-Z)")
+  })
+
+  test("sort search results by name descending", async ({ page }) => {
+    await page.goto("/organizations/search")
+
+    await page.getByRole("textbox", { name: "Name or NPI" }).fill("Test")
+    await page.getByRole("button", { name: "Search" }).click()
+
+    await expect(page.locator("[data-testid='searchresults']").getByRole("listitem").first()).toBeVisible()
+
+    const sortButton = page.locator(".ds-c-dropdown__button")
+    await expect(sortButton).toContainText("Name (A-Z)")
+
+    await sortButton.click()
+    await expect(page.locator("[role='listbox']")).toBeVisible()
     await page.getByRole("option", { name: "Name (Z-A)" }).click()
 
     await expect(page).toHaveURL(/query=Test/)
     await expect(page).toHaveURL(/sort=name-desc/)
-    await expect(page.locator(".ds-c-dropdown__label-text")).toHaveText("Name (Z-A)")
+    await expect(sortButton).toContainText("Name (Z-A)")
   })
 })

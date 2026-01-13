@@ -22,7 +22,7 @@
 
   "search": {
     "title": "Search Organizations",
-    "inputLabel": "Name or Identifier (NPI or other)"
+    "inputLabel": "Name or NPI"
   },
 
   "sort": {

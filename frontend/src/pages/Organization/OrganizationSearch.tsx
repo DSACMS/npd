@@ -26,6 +26,7 @@ const OrganizationSearchForm: React.FC = () => {
     error: searchError,
     data,
     pagination,
+    sort
   } = useSearchState<FHIROrganization>()
 
   const [query, setQueryValue] = useState<string>(initialQuery || "")
@@ -122,6 +123,7 @@ const OrganizationSearchForm: React.FC = () => {
                           name="sort-dropdown-field"
                           labelClassName="ds-u-display--none"
                           options={sortOptions}
+                          value={sort}
                           onChange={handleSort}
                         />
                       </div>
