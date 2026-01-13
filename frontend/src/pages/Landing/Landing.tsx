@@ -36,6 +36,9 @@ export const Landing = () => {
                   <Button variation="solid" href="/developers">
                     {t("landing.links.developers")}
                   </Button>
+                  <Button variation="solid" href="/search">
+                    Search the Data
+                  </Button>
                 </div>
               </div>
             </div>
