@@ -15,17 +15,10 @@ export const Search = () => {
         <p>
           Search the National Provider Directory to find practitioners and organizations.
         </p>
-      </TitlePanel>
 
-      <main className={contentClass}>
         <div className="ds-l-row">
-          <div className="ds-l-col--12 ds-u-display--flex ds-u-justify-content--center ds-u-margin-top--4">
-            <Button
-              variation="solid"
-              size="big"
-              href="/practitioners/search"
-              className="ds-u-margin-right--2"
-            >
+          <div className="ds-l-col--12 ds-u-display--flex ds-u-justify-content--center ds-u-margin-top--4 ds-u-margin-bottom--4">
+            <Button variation="solid" size="big" href="/practitioners/search" className="ds-u-margin-right--2">
               Practitioner
             </Button>
             <Button variation="solid" size="big" href="/organizations/search">
@@ -33,7 +26,7 @@ export const Search = () => {
             </Button>
           </div>
         </div>
-      </main>
+      </TitlePanel>
     </>
   )
 }
