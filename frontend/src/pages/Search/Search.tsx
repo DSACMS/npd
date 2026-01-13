@@ -1,5 +1,6 @@
 import { Button } from "@cmsgov/design-system"
 import classNames from "classnames"
+import { FaUserMd, FaHospital } from "react-icons/fa"
 import { TitlePanel } from "../../components/TitlePanel"
 import layout from "../Layout.module.css"
 
@@ -9,20 +10,31 @@ export const Search = () => {
   return (
     <>
       <TitlePanel
-        title="Search the Data"
+        title="Search the data"
         className={layout.compactLeader}
       >
         <p>
-          Search the National Provider Directory to find practitioners and organizations.
+          Search by name or NPI number to see the details of any practitioner or organization in the database.
         </p>
 
         <div className="ds-l-row">
-          <div className="ds-l-col--12 ds-u-display--flex ds-u-justify-content--center ds-u-margin-top--4 ds-u-margin-bottom--4">
-            <Button variation="solid" size="big" href="/practitioners/search" className="ds-u-margin-right--2">
-              Practitioner
+          <div className="ds-l-col--12 ds-u-display--flex ds-u-justify-content--start ds-u-margin-top--4 ds-u-margin-bottom--4">
+            <Button
+              variation="solid"
+              size="big"
+              href="/practitioners/search"
+              className="ds-u-margin-right--2"
+            >
+              <FaUserMd className="ds-u-margin-right--1" aria-hidden="true" />
+              Practitioner search
             </Button>
-            <Button variation="solid" size="big" href="/organizations/search">
-              Organization
+            <Button
+              variation="solid"
+              size="big"
+              href="/organizations/search"
+            >
+              <FaHospital className="ds-u-margin-right--1" aria-hidden="true" />
+              Organization search
             </Button>
           </div>
         </div>
