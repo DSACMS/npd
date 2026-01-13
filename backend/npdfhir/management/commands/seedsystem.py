@@ -76,6 +76,22 @@ class Command(BaseCommand):
         except IntegrityError:
             self.stdout.write("(practitioner with NPI 1234567894 already exists)")
 
+        # Practitioner with the known NPI value as an "other_id" (not as NPI)
+        # This tests that NPI-prefixed searches don't match other identifiers
+        try:
+            other_id_practitioner = create_practitioner(
+                first_name="BBB",
+                last_name="Other ID Practitioner",
+                npi_value=self.generate_npi(),
+                other_id="1234567894",
+            )
+            individualtoname = other_id_practitioner.individual.individualtoname_set.first()
+            self.stdout.write(
+                f"created other_id Practitioner: {self.to_json(id=other_id_practitioner.individual.id, npi=other_id_practitioner.npi.npi, other_id='1234567894', name=f'{individualtoname.first_name} {individualtoname.last_name}')}"
+            )
+        except IntegrityError:
+            self.stdout.write("(practitioner with other_id 1234567894 already exists)")
+
         try:
             # one known NPI
             organization = create_organization(
@@ -88,6 +104,22 @@ class Command(BaseCommand):
         except IntegrityError:
             organization = None
             self.stdout.write("(organization with NPI 1234567893 already exists)")
+
+        # Organization with the known NPI value as an "other_id" (not as NPI)
+        # This tests that NPI-prefixed searches don't match other identifiers
+        try:
+            other_id_organization = create_organization(
+                name="BBB Other ID Org",
+                npi_value=self.generate_npi(),
+                other_id_value="1234567893",
+                organization_type="261QP2000X",
+            )
+            organizationtoname = other_id_organization.organizationtoname_set.first()
+            self.stdout.write(
+                f"created other_id Organization: {self.to_json(id=other_id_organization.id, other_id='1234567893', organizationtoname__name=organizationtoname.name)}"
+            )
+        except IntegrityError:
+            self.stdout.write("(organization with other_id 1234567893 already exists)")
 
         if organization:
             endpoint = create_endpoint(organization=organization)
