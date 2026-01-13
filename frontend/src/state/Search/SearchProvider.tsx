@@ -1,4 +1,3 @@
-// SearchProvider.tsx
 import React, { useEffect, useState, type ReactNode } from "react"
 import { usePagination, usePaginationParams } from "../../hooks/usePagination"
 import {
