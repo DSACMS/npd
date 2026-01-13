@@ -2,16 +2,19 @@ import { Button } from "@cmsgov/design-system"
 import { FaUserMd, FaHospital } from "react-icons/fa"
 import { TitlePanel } from "../../components/TitlePanel"
 import layout from "../Layout.module.css"
+import { useTranslation } from "react-i18next"
 
 export const Search = () => {
+  const { t } = useTranslation()
+
   return (
     <>
       <TitlePanel
-        title="Search the data"
+        title={t("search.title")}
         className={layout.compactLeader}
       >
         <p>
-          Search by name or NPI number to see the details of any practitioner or organization in the database.
+        {t("search.subtitle")}
         </p>
 
         <div className="ds-l-row">
@@ -23,7 +26,7 @@ export const Search = () => {
               className="ds-u-margin-right--2"
             >
               <FaUserMd className="ds-u-margin-right--1" aria-hidden="true" />
-              Practitioner search
+              {t("search.practitioner")}
             </Button>
             <Button
               variation="solid"
@@ -31,7 +34,7 @@ export const Search = () => {
               href="/organizations/search"
             >
               <FaHospital className="ds-u-margin-right--1" aria-hidden="true" />
-              Organization search
+              {t("search.organization")}
             </Button>
           </div>
         </div>
