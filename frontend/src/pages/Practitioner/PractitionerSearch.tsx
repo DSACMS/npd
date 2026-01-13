@@ -18,7 +18,7 @@ import { FaUserMd } from "react-icons/fa"
 
 const PractitionerSearchForm: React.FC = () => {
   const { t } = useTranslation()
-  const { setQuery, navigateToPage, setSort, clearSearch } = useSearchDispatch()
+  const { setQuery, navigateToPage, setSort } = useSearchDispatch()
   const {
     isLoading,
     isBackgroundLoading,
@@ -38,11 +38,6 @@ const PractitionerSearchForm: React.FC = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setQuery(query)
-  }
-
-  const handleClear = () => {
-    setQueryValue("")
-    clearSearch()
   }
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>): void => {

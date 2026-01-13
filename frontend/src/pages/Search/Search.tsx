@@ -1,12 +1,9 @@
 import { Button } from "@cmsgov/design-system"
-import classNames from "classnames"
 import { FaUserMd, FaHospital } from "react-icons/fa"
 import { TitlePanel } from "../../components/TitlePanel"
 import layout from "../Layout.module.css"
 
 export const Search = () => {
-  const contentClass = classNames(layout.content, "ds-l-container")
-
   return (
     <>
       <TitlePanel
