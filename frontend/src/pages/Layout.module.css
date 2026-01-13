@@ -13,6 +13,12 @@
   align-self: stretch;
 }
 
+.compactLeader {
+  & .leader {
+    padding-bottom: var(--spacer-2, 1rem);
+  }
+}
+
 .title {
   color: var(--theme-color-primary-darkest, #00395e);
 
