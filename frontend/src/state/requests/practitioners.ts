@@ -82,7 +82,11 @@ export const fetchPractitioners = async (
   if (params.query) {
     const query = params.query
     const key = detectQueryKey(query)
-    url.searchParams.set(key, query)
+    if (key === "identifier") {
+      url.searchParams.set(key, `NPI|${query}`)
+    } else {
+      url.searchParams.set(key, query)
+    }
   }
 
   // Sort

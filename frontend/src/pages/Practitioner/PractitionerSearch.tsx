@@ -173,7 +173,7 @@ export const PractitionerSearch = () => {
   return (
     <SearchProvider 
       useSearchAPI={usePractitionersAPI}
-      defaultSort="first-name-asc"
+      defaultSort="last-name-asc"
     >
       <PractitionerSearchForm />
     </SearchProvider>
