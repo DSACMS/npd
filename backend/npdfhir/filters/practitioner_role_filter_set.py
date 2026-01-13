@@ -62,7 +62,10 @@ class PractitionerRoleFilterSet(filters.FilterSet):
         help_text="Filter providers by endpoint payload type"
     )
 
-    #TODO: endpoint status is currently not implemented
+    endpoint_status = filters.CharFilter(
+        method="filter_endpoint_status",
+        help_text="Filter providers by endpoint status"
+    )
 
     endpoint_organization_id = filters.UUIDFilter(
         method="filter_endpoint_organization_id",
@@ -178,6 +181,13 @@ class PractitionerRoleFilterSet(filters.FilterSet):
         return queryset.annotate(
             search=SearchVector(
                 "other_endpoint__endpoint_instance__endpoint_connection_type__id"
+            )
+        ).filter(search=value)
+
+    def filter_endpoint_status(self, queryset, name, value):
+        return queryset.annotate(
+            search=SearchVector(
+                "location__locationtoendpointinstance__endpoint_instance__endpoint_status"
             )
         ).filter(search=value)
     
