@@ -10,7 +10,7 @@ let practitioner: { npi: string; id: string; name: string } = {
 test.beforeAll(async ({ request }) => {
   // expects a FhirCollection<FhirPractitioner> API response
   const response = await request.get(
-    "/fhir/Practitioner/?identifier=1234567894",
+    "/fhir/Practitioner/?identifier=NPI|1234567894",
   )
   const payload = await response.json()
 
