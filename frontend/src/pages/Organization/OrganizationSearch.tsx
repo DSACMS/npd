@@ -14,6 +14,7 @@ import { ListedOrganization } from "./ListedOrganization"
 import { ORGANIZATION_SORT_OPTIONS, type OrganizationSortKey } from "../../state/requests/organizations"
 import { useOrganizationsAPI } from "../../state/requests/organizations"
 import type { FHIROrganization } from "../../@types/fhir"
+import { FaHospital } from "react-icons/fa"
 
 const OrganizationSearchForm: React.FC = () => {
   const { t } = useTranslation()
@@ -64,7 +65,8 @@ const OrganizationSearchForm: React.FC = () => {
   return (
     <>
       <TitlePanel
-        title={t("organizations.search.title")}
+        icon={<FaHospital size={42} aria-hidden="true" />}
+        title={t("practitioners.search.title")}
         className={layout.compactLeader}
       >
         <div className="ds-l-row">
@@ -91,7 +93,6 @@ const OrganizationSearchForm: React.FC = () => {
                   >
                     {isLoading && !isBackgroundLoading ? "Searching..." : "Search"}
                   </Button>
-                  <Button onClick={handleClear}>Clear</Button>
                 </div>
               </div>
             </form>
@@ -158,8 +159,8 @@ const OrganizationSearchForm: React.FC = () => {
             )}
 
             {!data && (
-              <Alert heading={t("patients.alert.heading")}>
-                <NpdMarkdown content={t("patients.alert.body")} />
+              <Alert heading={t("organizations.alert.heading")}>
+                <NpdMarkdown content={t("organizations.alert.body")} />
               </Alert>
             )}
           </div>

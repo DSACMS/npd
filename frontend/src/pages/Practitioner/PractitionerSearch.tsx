@@ -14,6 +14,7 @@ import { ListedPractitioner } from "./ListedPractitioner"
 import { PRACTITIONER_SORT_OPTIONS, type PractitionerSortKey } from "../../state/requests/practitioners"
 import { usePractitionersAPI } from "../../state/requests/practitioners"
 import type { FHIRPractitioner } from "../../@types/fhir"
+import { FaUserMd } from "react-icons/fa"
 
 const PractitionerSearchForm: React.FC = () => {
   const { t } = useTranslation()
@@ -64,6 +65,7 @@ const PractitionerSearchForm: React.FC = () => {
   return (
     <>
       <TitlePanel
+        icon={<FaUserMd size={42} aria-hidden="true" />}
         title={t("practitioners.search.title")}
         className={layout.compactLeader}
       >
@@ -89,9 +91,8 @@ const PractitionerSearchForm: React.FC = () => {
                     variation="solid"
                     disabled={query.length < 1 || isLoading && !isBackgroundLoading}
                   >
-                    {isLoading && !isBackgroundLoading ? "Searching..." : "Search"}
+                    {isLoading && !isBackgroundLoading ? "Searching..." : "Search practitioners"}
                   </Button>
-                  <Button onClick={handleClear}>Clear</Button>
                 </div>
               </div>
             </form>
@@ -158,8 +159,8 @@ const PractitionerSearchForm: React.FC = () => {
             )}
 
             {!data && (
-              <Alert heading={t("patients.alert.heading")}>
-                <NpdMarkdown content={t("patients.alert.body")} />
+              <Alert heading={t("practitioners.alert.heading")}>
+                <NpdMarkdown content={t("practitioners.alert.body")} />
               </Alert>
             )}
           </div>

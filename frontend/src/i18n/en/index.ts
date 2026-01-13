@@ -4,7 +4,6 @@ import footer from "./footer.json"
 import header from "./header.json"
 import landing from "./landing.json"
 import organizations from "./organizations.json"
-import patients from "./patients.json"
 import practitioners from "./practitioners.json"
 
 /*
@@ -35,6 +34,5 @@ export const translations = {
   header,
   landing,
   organizations,
-  patients,
   practitioners,
 }
