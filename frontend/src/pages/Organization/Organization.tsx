@@ -64,13 +64,13 @@ export const Organization = () => {
         </div>
       </section>
       <main className={contentClass}>
-        <FeatureFlag inverse name="ORGANIZATION_LOOKUP_DETAILS">
+        <FeatureFlag name="ORGANIZATION_LOOKUP_DETAILS">
           <Alert variation="warn" heading="Content not available">
             {t("organizations.unavailable")}
           </Alert>
         </FeatureFlag>
 
-        <FeatureFlag name="ORGANIZATION_LOOKUP_DETAILS">
+        <FeatureFlag inverse name="ORGANIZATION_LOOKUP_DETAILS">
           <Alert heading={t("organizations.update.title")}>
             {t("organizations.update.subtitle")}{" "}
             <a href="#">{t("organizations.update.link")}</a>
