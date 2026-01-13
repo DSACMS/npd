@@ -1,6 +1,6 @@
+from django.urls import reverse
 from fhir.resources.R4B.address import Address
 from fhir.resources.R4B.reference import Reference
-from django.urls import reverse
 from drf_spectacular.views import SpectacularJSONAPIView
 
 
