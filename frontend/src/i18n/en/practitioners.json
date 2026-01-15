@@ -41,7 +41,7 @@
     },
     
       "search": {
-        "title": "Search Practitioners",
+        "title": "Practitioner search",
         "inputLabel": "Name or NPI"
     },
 
@@ -51,5 +51,11 @@
         "first-desc": "First Name (Z-A)",
         "last-asc": "Last Name (A-Z)",
         "last-desc": "Last Name (Z-A)"
+    },
+
+    "alert": {
+        "heading": "Are you looking for an organization?",
+        "body": "Visit the [Organization search](/organizations/search) page."
       }
+
 }

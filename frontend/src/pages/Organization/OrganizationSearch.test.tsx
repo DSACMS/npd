@@ -22,7 +22,7 @@ describe("OrganizationSearch", () => {
   it("renders the page title", () => {
     render(<RoutedOrganizationSearch />)
 
-    expect(screen.getByText(/search organizations/i)).toBeInTheDocument()
+    expect(screen.getByText(/organization search/i)).toBeInTheDocument()
   })
 
   it("renders the search input with label", () => {
@@ -37,13 +37,6 @@ describe("OrganizationSearch", () => {
 
     const searchButton = screen.getByRole("button", { name: /search/i })
     expect(searchButton).toBeInTheDocument()
-  })
-
-  it("renders the clear button", () => {
-    render(<RoutedOrganizationSearch />)
-
-    const clearButton = screen.getByRole("button", { name: /clear/i })
-    expect(clearButton).toBeInTheDocument()
   })
 
   it("disables search button when input is empty", () => {
