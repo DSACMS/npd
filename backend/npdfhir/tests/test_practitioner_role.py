@@ -11,7 +11,7 @@ from .helpers import (
     extract_resource_ids,
 )
 
-from ..models import Nucc, EndpointInstanceToPayload, ProviderToOrganization, ProviderToLocation, ProviderToTaxonomy, PayloadType, Location, FipsState, LocationToEndpointInstance
+from ..models import Nucc, EndpointInstanceToPayload, ProviderToOrganization, ProviderToLocation, ProviderToTaxonomy, PayloadType, Location, LocationToEndpointInstance
 
 
 from .fixtures.organization import create_organization
@@ -394,7 +394,7 @@ class PractitionerRoleViewSetTestCase(APITestCase):
             self.assertIn("active", location_entry)
     
 
-    def test_list_filter_by_endpoint_organization_name(self):
+    def test_list_filter_by_specialty_code(self):
         url = reverse("fhir-practitionerrole-list")
         response = self.client.get(url, {"specialty": "7777"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
