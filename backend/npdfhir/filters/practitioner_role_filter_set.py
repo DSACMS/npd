@@ -48,7 +48,7 @@ class PractitionerRoleFilterSet(filters.FilterSet):
     )
 
     specialty = filters.CharFilter(
-        method="filter_code",
+        method="filter_specialty",
         help_text="Filter by Nucc/Snomed specialty code"
     )
 
@@ -172,9 +172,9 @@ class PractitionerRoleFilterSet(filters.FilterSet):
 
         return queryset.filter(queries).distinct()
     
-    def filter_code(self, queryset, name, value):
+    def filter_specialty(self, queryset, name, value):
         return queryset.filter(
-            Q(provider_role_code__iexact=value)
+            Q(specialty_id__iexact=value)
         ).distinct()
 
     def filter_connection_type(self, queryset, name, value):

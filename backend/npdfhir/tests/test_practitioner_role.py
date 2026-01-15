@@ -11,7 +11,8 @@ from .helpers import (
     extract_resource_ids,
 )
 
-from ..models import Nucc, ProviderToOrganization, ProviderToLocation, ProviderToTaxonomy
+from ..models import Nucc, EndpointInstanceToPayload, ProviderToOrganization, ProviderToLocation, ProviderToTaxonomy, PayloadType, Location, FipsState, LocationToEndpointInstance
+
 
 from .fixtures.organization import create_organization
 from .fixtures.endpoint import create_endpoint
@@ -102,14 +103,11 @@ class PractitionerRoleViewSetTestCase(APITestCase):
             active=True,
         )
 
-        pr = ProviderToLocation.objects.create(
-            id=uuid.uuid4(),
-            provider_to_organization=pto_org,
-            location=loc,
-            provider_role_code=role_code,
-            active=True,
+
+        payload = PayloadType.objects.create(
+            id="application/fhir+json",
+            value="FHIR JSON",
         )
-        cls.roles_with_params.append(pr)
 
         # Add endpoint
         ep = create_endpoint(
@@ -117,6 +115,27 @@ class PractitionerRoleViewSetTestCase(APITestCase):
             url="https://sunshine.example.org/fhir",
             name="Sunshine FHIR Endpoint",
         )
+
+        LocationToEndpointInstance.objects.create(
+            location=loc,
+            endpoint_instance=ep.endpoint_instance,
+        )
+
+        EndpointInstanceToPayload.objects.create(
+            endpoint_instance=ep.endpoint_instance,
+            payload_type=payload,
+        )
+
+        pr = ProviderToLocation.objects.create(
+            id=uuid.uuid4(),
+            provider_to_organization=pto_org,
+            location=loc,
+            provider_role_code=role_code,
+            other_endpoint=ep,
+            specialty_id=7777,
+            active=True,
+        )
+        cls.roles_with_params.append(pr)
 
         # Save references for tests
         cls.provider = provider
@@ -224,6 +243,73 @@ class PractitionerRoleViewSetTestCase(APITestCase):
             resp = self.client.get(url, {param: value})
             self.assertEqual(resp.status_code, 200)
             assert_has_results(self, resp)
+    
+    def test_list_filter_by_address_city(self):
+        city_search = "Sunnyville"
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(url, {"location_city": city_search})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        assert_has_results(self, response)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            location_id = entry["resource"]['location'][0]['reference'].split('/')[-1]
+            self.assertIn("resource", entry)
+            location_entry = entry["resource"]
+
+            self.assertEqual(location_entry["resourceType"], "PractitionerRole")
+            self.assertIn("id", location_entry)
+            self.assertIn("active", location_entry)
+
+            location_obj = Location.objects.get(pk=location_id)
+
+            self.assertEqual(city_search, location_obj.address.address_us.city_name)
+    
+    def test_list_filter_by_address_state(self):
+        state_search = "CA"
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(url, {"location_state": state_search})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        assert_has_results(self, response)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            location_id = entry["resource"]['location'][0]['reference'].split('/')[-1]
+            self.assertIn("resource", entry)
+            location_entry = entry["resource"]
+
+            self.assertEqual(location_entry["resourceType"], "PractitionerRole")
+            self.assertIn("id", location_entry)
+            self.assertIn("active", location_entry)
+
+            location_obj = Location.objects.get(pk=location_id)
+
+            self.assertEqual(state_search, location_obj.address.address_us.state_code.abbreviation)
+
+    def test_list_filter_by_address_zip(self):
+        zip_search = "90001"
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(url, {"location_zip_code": zip_search})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        assert_has_results(self, response)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            location_id = entry["resource"]['location'][0]['reference'].split('/')[-1]
+            self.assertIn("resource", entry)
+            location_entry = entry["resource"]
+
+            self.assertEqual(location_entry["resourceType"], "PractitionerRole")
+            self.assertIn("id", location_entry)
+            self.assertIn("active", location_entry)
+
+            location_obj = Location.objects.get(pk=location_id)
+
+            self.assertEqual(zip_search, location_obj.address.address_us.zipcode)
+
 
     def test_filter_by_endpoint_fields(self):
         url = reverse("fhir-practitionerrole-list")
@@ -236,3 +322,92 @@ class PractitionerRoleViewSetTestCase(APITestCase):
             resp = self.client.get(url, {param: value})
             self.assertEqual(resp.status_code, 200)
             assert_has_results(self, resp)
+    
+    def test_list_filter_by_endpoint_connection_type(self):
+        connection_type_id = self.endpoint.endpoint_instance.endpoint_connection_type.id
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(url, {"endpoint_connection_type": connection_type_id})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        assert_has_results(self, response)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            #print(entry["resource"])#['location'][0]['reference'].split('/')[-1])
+            self.assertIn("resource", entry)
+            location_entry = entry["resource"]
+
+            self.assertEqual(location_entry["resourceType"], "PractitionerRole")
+            self.assertIn("id", location_entry)
+            self.assertIn("active", location_entry)
+
+            #location_obj = Location.objects.get(pk=location_id)
+    
+    def test_list_filter_by_endpoint_payload_type(self):
+        payload_type = "urn:hl7-org:sdwg:ccda-structuredBody:1.1"
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(url, {"endpoint_payload_type": payload_type})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        assert_has_results(self, response)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+            location_entry = entry["resource"]
+
+            self.assertEqual(location_entry["resourceType"], "PractitionerRole")
+            self.assertIn("id", location_entry)
+            self.assertIn("active", location_entry)
+    
+    def test_list_filter_by_endpoint_organization_id(self):
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(url, {"filter_endpoint_organization_id": self.organization.id})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        assert_has_results(self, response)
+
+        bundle = response.data["results"]
+        #print(response.data)
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+            location_entry = entry["resource"]
+
+            self.assertEqual(location_entry["resourceType"], "PractitionerRole")
+            self.assertIn("id", location_entry)
+            self.assertIn("active", location_entry)
+    
+    def test_list_filter_by_endpoint_organization_name(self):
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(url, {"filter_endpoint_organization_name": self.org_name})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        assert_has_results(self, response)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+            location_entry = entry["resource"]
+
+            self.assertEqual(location_entry["resourceType"], "PractitionerRole")
+            self.assertIn("id", location_entry)
+            self.assertIn("active", location_entry)
+    
+
+    def test_list_filter_by_endpoint_organization_name(self):
+        url = reverse("fhir-practitionerrole-list")
+        response = self.client.get(url, {"specialty": "7777"})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        assert_has_results(self, response)
+
+        bundle = response.data["results"]
+
+        self.assertEqual(response.data['count'],1)
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+            location_entry = entry["resource"]
+
+            self.assertEqual(location_entry["resourceType"], "PractitionerRole")
+            self.assertIn("id", location_entry)
+            self.assertIn("active", location_entry)
+
