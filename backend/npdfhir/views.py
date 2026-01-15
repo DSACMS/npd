@@ -158,7 +158,7 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     else:
         renderer_classes = [FHIRRenderer]
-    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
+    filter_backends = [DjangoFilterBackend, ParamOrderingFilter]
     filterset_class = PractitionerFilterSet
     pagination_class = CustomPaginator
     lookup_url_kwarg = "id"
@@ -263,7 +263,7 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     else:
         renderer_classes = [FHIRRenderer]
-    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
+    filter_backends = [DjangoFilterBackend, ParamOrderingFilter]
     filterset_class = PractitionerRoleFilterSet
     pagination_class = CustomPaginator
     lookup_url_kwarg = "id"
@@ -342,7 +342,7 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     else:
         renderer_classes = [FHIRRenderer]
-    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
+    filter_backends = [DjangoFilterBackend, ParamOrderingFilter]
     filterset_class = OrganizationFilterSet
     pagination_class = CustomPaginator
     lookup_url_kwarg = "id"
@@ -460,7 +460,7 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     else:
         renderer_classes = [FHIRRenderer]
-    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
+    filter_backends = [DjangoFilterBackend, ParamOrderingFilter]
     filterset_class = LocationFilterSet
     pagination_class = CustomPaginator
     lookup_url_kwarg = "id"
