@@ -25,7 +25,7 @@
   "disclaimerURL": "",
   "disclaimerText": "",
   "vcs": "git",
-  "laborHours": 17280,
+  "laborHours": 17062,
   "reuseFrequency": {
     "forks": 1,
     "clones": 0
@@ -41,11 +41,13 @@
   "softwareType": "standalone/web",
   "languages": [
     "Python",
+    "HCL",
     "TypeScript",
     "HTML",
     "CSS",
     "Makefile",
     "Dockerfile",
+    "Shell",
     "JavaScript"
   ],
   "maintenance": "internal",
@@ -114,8 +116,8 @@
   "partners": [],
   "date": {
     "created": "2025-06-13T17:11:32Z",
-    "lastModified": "2025-12-31T16:34:25Z",
-    "metadataLastUpdated": "2026-01-01T02:23:10.003Z"
+    "lastModified": "2025-11-25T18:43:50Z",
+    "metadataLastUpdated": "2025-12-01T02:23:38.823Z"
   },
   "tags": [
     "providers",

@@ -1,7 +1,6 @@
 - [Local setup](#local-setup)
 - [Running tests](#running-tests)
   - [Locally](#locally)
-  - [Running tests in CI](#running-tests-in-ci)
 - [Writing new tests](#writing-new-tests)
 - [Troubleshooting](#troubleshooting)
   - [Debugging CI](#debugging-ci)
@@ -41,7 +40,6 @@ make watch-frontend-test-assets
 
 # shell 2, project root
 make test-server
-```
 
 ### Running tests in CI
 

@@ -1,5 +1,5 @@
+from django.urls import path, include, re_path
 from debug_toolbar.toolbar import debug_toolbar_urls
-from django.urls import include, path, re_path
 from drf_spectacular.views import (
     SpectacularJSONAPIView,
     SpectacularRedocView,
@@ -8,6 +8,7 @@ from drf_spectacular.views import (
 
 from . import views
 from .router import router
+
 
 urlpatterns = [
     path("docs/schema/", SpectacularJSONAPIView.as_view(), name="schema"),

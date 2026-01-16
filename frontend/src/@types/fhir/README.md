@@ -46,9 +46,9 @@ In the FHIR API we're serving from backend/npdfhir, the type of the API output i
 
 For example, in the case of `/fhir/Organization/{id}`:
 
-- the view is `npdfhir.views.FHIROrganizationViewSet`
-- the `retrieve` method on the view shows us the serializer is `npdfhir.serializers.OrganizationSerializer`
-- the `to_representation` method on the serializer shows us the base model is `fhir.resources.R4B.organization.Organization`
+* the view is `npdfhir.views.FHIROrganizationViewSet`
+* the `retrieve` method on the view shows us the serializer is `npdfhir.serializers.OrganizationSerializer`
+* the `to_representation` method on the serializer shows us the base model is `fhir.resources.R4B.organization.Organization`
 
 Conclusion, we need to convert `fhir.resources.R4B.organization.Organization` to a Typescript interface in order to correctly model the FHIR API in the frontend application.
 
