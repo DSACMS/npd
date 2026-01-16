@@ -233,7 +233,6 @@ watch-frontend-test-assets:
 .PHONY: test-system-setup
 test-system-setup: test-setup
 	bin/npr --test python manage.py seeduser
-	bin/npr --test python manage.py seedsystem
 
 .PHONY: test-server
 test-server: test-system-setup build-frontend-test-assets

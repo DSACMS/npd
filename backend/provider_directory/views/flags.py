@@ -1,8 +1,9 @@
 # Example API view in Django (using DRF)
 from django.conf import settings
-from flags.state import flag_enabled
-from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.response import Response
+from flags.state import flag_enabled
+
 
 API_FLAGS = settings.FLAGS.keys()
 

@@ -1,6 +1,5 @@
 import { expect, test } from "@playwright/test"
 
-// do not use / don't overwrite default authentication session
 test.use({ storageState: { cookies: [], origins: [] } })
 
 test("local dev default account can sign in and sign out", async ({ page }) => {

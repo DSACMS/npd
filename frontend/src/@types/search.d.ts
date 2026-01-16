@@ -1,3 +1,0 @@
-interface SearchParams {
-  query?: string
-}

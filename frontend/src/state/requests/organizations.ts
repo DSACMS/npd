@@ -1,7 +1,7 @@
-import { skipToken, useQuery } from "@tanstack/react-query"
-import type { FHIRCollection, FHIROrganization } from "../../@types/fhir"
-import { formatAddress, formatDate } from "../../helpers/formatters"
+import { useQuery } from "@tanstack/react-query"
 import { apiUrl } from "../api"
+import { formatAddress, formatDate } from "../../helpers/formatters"
+import type { FHIROrganization } from "../../@types/fhir"
 
 const fetchOrganization = async (
   organizationId: string,
@@ -28,63 +28,6 @@ export const useOrganizationAPI = (organizationId: string | undefined) => {
 
       return fetchOrganization(organizationId)
     },
-  })
-}
-
-const detectQueryKey = (value: string): "identifier" | "name" => {
-  return /^\d+$/.test(value) ? "identifier" : "name"
-}
-
-/// list
-
-export const fetchOrganizations = async (
-  params: PaginationParams & SearchParams,
-): Promise<FHIRCollection<FHIROrganization>> => {
-  const url = new URL(apiUrl("/fhir/Organization/"))
-
-  // Pagination
-  if (params.page) {
-    url.searchParams.set("page", params.page.toString())
-  }
-  if (params.page_size) {
-    url.searchParams.set("page_size", params.page_size.toString())
-  }
-
-  // Search
-  if (params.query) {
-    const query = params.query
-    const key = detectQueryKey(query)
-    url.searchParams.set(key, query)
-  }
-
-  const response = await fetch(url)
-  if (!response.ok) {
-    console.error(await response.text())
-    return Promise.reject(`error in ${url} request`)
-  }
-
-  return response.json()
-}
-
-type QueryOptions = {
-  enabled?: boolean
-  requireQuery?: boolean
-}
-
-export const useOrganizationsAPI = (
-  params: PaginationParams & SearchParams,
-  options?: QueryOptions,
-) => {
-  console.debug("[useOrganizationsAPI]", { params, options })
-
-  return useQuery<FHIRCollection<FHIROrganization>>({
-    queryKey: ["organizations", params.query, params.page || 1],
-    queryFn:
-      options?.requireQuery && (!params.query || params.query.length === 0)
-        ? skipToken
-        : () => {
-            return fetchOrganizations(params)
-          },
   })
 }
 

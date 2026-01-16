@@ -127,9 +127,9 @@ export const Header = ({ hideLinks }: HeaderProps) => {
                     >
                       <li className="usa-nav__submenu-item">
                         <a
-                          href={`/developers${slugId(t("developers.nav.participating"))}`}
+                          href={`/developers${slugId(t("developers.nav.overview"))}`}
                         >
-                          <span>{t("developers.nav.participating")}</span>
+                          <span>{t("developers.nav.overview")}</span>
                         </a>
                       </li>
                       <li className="usa-nav__submenu-item">
