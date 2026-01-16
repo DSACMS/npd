@@ -30,6 +30,7 @@ def create_organization(
     authorized_official_last_name="Smith",
     legal_entity=None,
     other_id_type=None,
+    other_id_value=None,
     npi_value=None,
     other_id_name="testMBI",
     other_state_code="NY",

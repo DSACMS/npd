@@ -22,6 +22,12 @@
 
   "search": {
     "title": "Search Organizations",
-    "inputLabel": "Name or Identifier (NPI, EIN, or other)"
+    "inputLabel": "Name or NPI"
+  },
+
+  "sort": {
+    "by": "Sort by",
+    "name-asc": "Name (A-Z)",
+    "name-desc": "Name (Z-A)"
   }
 }

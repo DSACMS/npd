@@ -1,4 +1,4 @@
-import { Alert, Button, Pagination, Dropdown, type DropdownChangeObject } from "@cmsgov/design-system"
+import { Alert, Button, Pagination, Dropdown, type DropdownChangeObject  } from "@cmsgov/design-system"
 import classNames from "classnames"
 import React, { type ChangeEvent, type FormEvent, useState } from "react"
 import { useTranslation } from "react-i18next"
@@ -10,12 +10,12 @@ import { SearchProvider } from "../../state/Search/SearchProvider"
 import { useSearchDispatch, useSearchState } from "../../state/Search/useSearch"
 import layout from "../Layout.module.css"
 import search from "../Search.module.css"
-import { ListedOrganization } from "./ListedOrganization"
-import { ORGANIZATION_SORT_OPTIONS, type OrganizationSortKey } from "../../state/requests/organizations"
-import { useOrganizationsAPI } from "../../state/requests/organizations"
-import type { FHIROrganization } from "../../@types/fhir"
+import { ListedPractitioner } from "./ListedPractitioner"
+import { PRACTITIONER_SORT_OPTIONS, type PractitionerSortKey } from "../../state/requests/practitioners"
+import { usePractitionersAPI } from "../../state/requests/practitioners"
+import type { FHIRPractitioner } from "../../@types/fhir"
 
-const OrganizationSearchForm: React.FC = () => {
+const PractitionerSearchForm: React.FC = () => {
   const { t } = useTranslation()
   const { setQuery, navigateToPage, setSort, clearSearch } = useSearchDispatch()
   const {
@@ -27,7 +27,7 @@ const OrganizationSearchForm: React.FC = () => {
     data,
     pagination,
     sort
-  } = useSearchState<FHIROrganization>()
+  } = useSearchState<FHIRPractitioner>()
 
   const [query, setQueryValue] = useState<string>(initialQuery || "")
 
@@ -54,9 +54,9 @@ const OrganizationSearchForm: React.FC = () => {
     setSort(value)
   }
 
-  const sortOptions = Object.entries(ORGANIZATION_SORT_OPTIONS).map(
+  const sortOptions = Object.entries(PRACTITIONER_SORT_OPTIONS).map(
     ([value, option]) => ({
-      value: value as OrganizationSortKey,
+      value: value as PractitionerSortKey,
       label: t(option.labelKey),
     })
   )
@@ -64,7 +64,7 @@ const OrganizationSearchForm: React.FC = () => {
   return (
     <>
       <TitlePanel
-        title={t("organizations.search.title")}
+        title={t("practitioners.search.title")}
         className={layout.compactLeader}
       >
         <div className="ds-l-row">
@@ -73,7 +73,7 @@ const OrganizationSearchForm: React.FC = () => {
               <input type="hidden" name="page" value={pagination?.page} />
               <div className="ds-u-clearfix">
                 <label className="ds-c-label" htmlFor="query">
-                  {t("organizations.search.inputLabel")}
+                  {t("practitioners.search.inputLabel")}
                 </label>
                 <div className={inputClass}>
                   <input
@@ -116,18 +116,18 @@ const OrganizationSearchForm: React.FC = () => {
                     <div style={{ display: 'flex', gap: '8px' }}>
                       <PaginationCaption pagination={pagination} />
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      {t("organizations.sort.by")}
+                    <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                      {t("practitioners.sort.by")}
                       <Dropdown
-                          label=""
-                          name="sort-dropdown-field"
-                          labelClassName="ds-u-display--none"
-                          options={sortOptions}
-                          value={sort}
-                          onChange={handleSort}
-                        />
-                      </div>
+                        label=""
+                        name="sort-dropdown-field"
+                        labelClassName="ds-u-display--none"
+                        options={sortOptions}
+                        value={sort}
+                        onChange={handleSort}
+                      />
                     </div>
+                  </div>
                     <Pagination
                       currentPage={pagination.page}
                       onPageChange={(evt, page) => {
@@ -139,22 +139,22 @@ const OrganizationSearchForm: React.FC = () => {
                         const nextParams = new URLSearchParams()
                         nextParams.set("page", pageNumber.toString())
                         if (searchQuery) nextParams.set("query", searchQuery)
-                        return apiUrl(`/organizations?${nextParams.toString()}`)
+                        return apiUrl(`/practitioners?${nextParams.toString()}`)
                       }}
                       totalPages={pagination.totalPages}
                     />
                   </>
                 )}
                 <div data-testid="searchresults" role="list">
-                  {data.map((org) => (
-                    <ListedOrganization data={org} key={org.id} />
+                  {data.map((practitioner) => (
+                    <ListedPractitioner data={practitioner} key={practitioner.id} />
                   ))}
                 </div>
               </>
             )}
 
             {data && data.length === 0 && (
-              <p>No Organizations found for query: {query}</p>
+              <p>No Practitioners found for query: {query}</p>
             )}
 
             {!data && (
@@ -169,13 +169,13 @@ const OrganizationSearchForm: React.FC = () => {
   )
 }
 
-export const OrganizationSearch = () => {
+export const PractitionerSearch = () => {
   return (
     <SearchProvider 
-      useSearchAPI={useOrganizationsAPI}
-      defaultSort="name-asc"
+      useSearchAPI={usePractitionersAPI}
+      defaultSort="last-name-asc"
     >
-      <OrganizationSearchForm />
+      <PractitionerSearchForm />
     </SearchProvider>
   )
 }
