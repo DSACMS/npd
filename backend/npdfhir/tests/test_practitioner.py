@@ -255,7 +255,7 @@ class PractitionerViewSetTestCase(APITestCase):
             for name in entry["resource"]["name"]:
                 names.append(name["family"])
                 names.append(name["given"])
-
+            
             self.assertIn(self.sample_last_name, names)
 
     def test_list_filter_by_practitioner_type(self):
@@ -285,7 +285,7 @@ class PractitionerViewSetTestCase(APITestCase):
             values = [int(v["value"]) for v in entry["resource"]["identifier"]]
             all_values.extend(values)
             self.assertIn(int(identifier), values)
-
+        
         #assert that Kirk Aadalen is in the data
         self.assertIn(self.pracs[0].npi.npi,all_values)
         #assert that Asad Abbas is in the data
