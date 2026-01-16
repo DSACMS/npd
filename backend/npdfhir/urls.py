@@ -14,7 +14,7 @@ urlpatterns = [
     re_path("docs/redoc/?", SpectacularRedocView.as_view(url_name="schema"), name="schema-redoc"),
     re_path("docs/?", SpectacularSwaggerView.as_view(url_name="schema"), name="schema-swagger-ui"),
     path("healthCheck", views.health, name="healthCheck"),
-    re_path("metadata/?", views.FHIRCapabilityStatementView.as_view(), name="fhir-metadata"),
+    path("metadata/?", views.FHIRCapabilityStatementView.as_view(), name="fhir-metadata"),
     # Router URLs
     # everything else is passed to the rest_framework router to manage
     path("", include(router.urls), name="index"),
