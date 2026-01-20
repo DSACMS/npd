@@ -325,13 +325,14 @@ class OrganizationSerializer(serializers.Serializer):
 
         # Serialize EHRVendor as an Organization
         if source.is_ehr_vendor:
-            identifiers.append(
-                Identifier(
-                    system="urn:ndh:ehr-vendor",
-                    value=str(source.id),
-                    type=CodeableConcept(coding=[Coding(code="EHR", display="EHR Vendor")]),
-                )
-            )
+            # We don't have any EHR Vendor identifiers, so we can omit this
+            #identifiers.append(
+            #    Identifier(
+            #        system="urn:ndh:ehr-vendor",
+            #        value=str(source.id),
+            #        type=CodeableConcept(coding=[Coding(code="EHR", display="EHR Vendor")]),
+            #    )
+            #)
 
             organization.name = source.organizationtoname_set[0]["name"]
             organization.identifier = identifiers
@@ -506,71 +507,8 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
         #    )
         #    identifiers.append(ein_identifier)
 
-        if hasattr(instance, "clinicalorganization"):
-            clinical_org = instance.clinicalorganization
-            if clinical_org and clinical_org.npi:
-                npi_identifier = Identifier(
-                    system="http://terminology.hl7.org/NamingSystem/npi",
-                    value=str(clinical_org.npi.npi),
-                    type=CodeableConcept(
-                        coding=[
-                            Coding(
-                                system="http://terminology.hl7.org/CodeSystem/v2-0203",
-                                code="PRN",
-                                display="Provider number",
-                            )
-                        ]
-                    ),
-                    use="official",
-                    period=Period(
-                        start=clinical_org.npi.enumeration_date,
-                        end=clinical_org.npi.deactivation_date,
-                    ),
-                )
-                identifiers.append(npi_identifier)
 
-                for taxonomy in clinical_org.organizationtotaxonomy_set.all():
-                    nucc_code = CodeableConcept(
-                        coding=[
-                            Coding(
-                                system="http://terminology.hl7.org/CodeSystem/v2-0203",
-                                code=taxonomy.nucc_code.code,
-                                display=taxonomy.nucc_code.display_name,
-                            )
-                        ]
-                    )
-                    codes.append(nucc_code)
-
-                for other_id in clinical_org.organizationtootherid_set.all():
-                    other_code = CodeableConcept(
-                        coding=[
-                            Coding(
-                                system="http://terminology.hl7.org/CodeSystem/v2-0203",
-                                code=other_id.other_id,
-                                display=other_id.other_id_type.value,
-                            )
-                        ]
-                    )
-
-                    codes.append(other_code)
-
-                for other_id in clinical_org.organizationtootherid_set.all():
-                    other_identifier = Identifier(
-                        system=str(other_id.other_id_type_id),
-                        value=other_id.other_id,
-                        type=CodeableConcept(
-                            coding=[
-                                Coding(
-                                    system="http://terminology.hl7.org/CodeSystem/v2-0203",
-                                    code="test",  # do we define this based on the type of id it is?
-                                    display="test",  # same as above ^
-                                )
-                            ]
-                        ),
-                    )
-                    identifiers.append(other_identifier)
-
-        organization_affiliation.identifier = identifiers
+        #organization_affiliation.identifier = identifiers
 
         organization_affiliation.organization = genReference("fhir-organization-detail", instance.id, request)
         organization_affiliation.organization.display = str(instance.ehr_vendor_name)
@@ -580,10 +518,20 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
 
         # NOTE: Period for OrganizationAffiliation cannot currently be fetched so its blank
 
-        organization_affiliation.network = [genReference("fhir-organization-detail", instance.id, request)]
+        # NOTE: Network here means insurance network, per the FHIR spec. We have not begun to incorporate insurance networks
+        #organization_affiliation.network = [genReference("fhir-organization-detail", instance.id, request)]
         organization_affiliation.network[0].display = str(instance.organization_name)
 
-        organization_affiliation.code = codes
+        organization_affiliation.code = CodeableConcept(
+            coding=[
+                Coding(
+                    system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                    code="HIE/HIO",
+                    display="HIE/HIO",
+                    definition="An organization that facilitates electronic clinical data exchange between entities"
+                )
+            ]
+        )
 
         # NOTE: not sure how to do specialty yet
 
@@ -598,9 +546,7 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
                 endpoints.append(genReference("fhir-endpoint-detail", endpoint.id, request))
 
         organization_affiliation.location = locations
-
-        # TODO: healthcare services
-        # TODO: contact info
+        organization_affiliation.endpoint = endpoints
 
         return organization_affiliation.model_dump()
 
