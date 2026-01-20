@@ -1,33 +1,55 @@
 {
     "npi": "NPI",
-    "unavailable": "This content is not currently available.",
-    "update": {
-        "title": "Are you the practitioner listed?",
-        "subtitle" : "Learn how to",
-        "link": "update your information."
+    
+    "detail": {
+        "unavailable": "This content is not currently available.",
+        "update": {
+            "title": "Are you the practitioner listed?",
+            "subtitle" : "Learn how to",
+            "link": "update your information."
+        },
+        "about": {
+            "title": "About",
+            "name": "Name(s)",
+            "gender": "Gender",
+            "deceased": "Deceased",
+            "status": "Active status"
+        },
+        "contact": {
+            "title": "Contact information",
+            "address": "Mailing address",
+            "phone": "Phone",
+            "fax": "Fax"
+        },
+        "identifiers": {
+            "title": "Identifiers",
+            "type": "Type",
+            "number": "Number",
+            "details": "Details",
+            "fallback": "No identifiers available"
+        },
+        "taxonomy": "Taxonomy",
+        "organizations": "Organization(s)",
+        "endpoints": "Endpoint(s)",
+        "locations": "Locations"
     },
-    "about": {
-        "title": "About",
-        "name": "Name(s)",
-        "gender": "Gender",
-        "deceased": "Deceased",
-        "status": "Active status"
+
+    "listing": {
+        "title": "All Practitioners",
+        "taxonomy": "Primary taxonomy",
+        "location": "Location"
     },
-    "contact": {
-        "title": "Contact information",
-        "address": "Mailing address",
-        "phone": "Phone",
-        "fax": "Fax"
+    
+      "search": {
+        "title": "Search Practitioners",
+        "inputLabel": "Name or NPI"
     },
-    "identifiers": {
-        "title": "Identifiers",
-        "type": "Type",
-        "number": "Number",
-        "details": "Details",
-        "fallback": "No identifiers available"
-    },
-    "taxonomy": "Taxonomy",
-    "organizations": "Organization(s)",
-    "endpoints": "Endpoint(s)",
-    "locations": "Locations"
+
+    "sort": {
+        "by": "Sort by",
+        "first-asc": "First Name (A-Z)",
+        "first-desc": "First Name (Z-A)",
+        "last-asc": "Last Name (A-Z)",
+        "last-desc": "Last Name (Z-A)"
+      }
 }
