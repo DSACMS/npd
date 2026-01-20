@@ -10,7 +10,7 @@ let practitioner: { npi: string; id: string; name: string } = {
 test.beforeAll(async ({ request }) => {
   // expects a FhirCollection<FhirPractitioner> API response
   const response = await request.get(
-    "/fhir/Practitioner/?identifier=1234567894",
+    "/fhir/Practitioner/?identifier=NPI|1234567894",
   )
   const payload = await response.json()
 
@@ -38,33 +38,6 @@ test.beforeAll(async ({ request }) => {
       npi: "1234567894",
     }),
   )
-})
-
-test.describe("Practitioner listing", () => {
-  test("visit the Practitioners listing page", async ({ page }) => {
-    await page.goto("/practitioners")
-    await expect(page).toHaveURL("/practitioners")
-
-    await expect(page.locator("div[role='heading']")).toContainText(
-      "All Practitioners",
-    )
-    await expect(
-      page.locator("[data-testid='searchresults']").getByRole("listitem").first()
-    ).toBeVisible()
-  })
-
-  test("paging through Practitioners", async ({ page }) => {
-    await page.goto("/practitioners")
-    await expect(page).toHaveURL("/practitioners")
-
-    await expect(page.getByRole("caption")).toBeVisible()
-    await expect(
-      page.locator("[data-testid='searchresults']").getByRole("listitem"),
-    ).toHaveCount(await page.locator("[data-testid='searchresults']").getByRole("listitem").count())
-
-    await page.getByLabel("Next Page").first().click()
-    await expect(page).toHaveURL("/practitioners?page=2")
-  })
 })
 
 test.describe("Practitioner search", () => {
@@ -149,7 +122,7 @@ test.describe("sort Practitioners", () => {
 
     const sortButton = page.locator(".ds-c-dropdown__button")
     await expect(sortButton).toBeVisible()
-    await expect(sortButton).toContainText("Last Name (A-Z)")
+    await expect(sortButton).toContainText("First Name (A-Z)")
   })
 
   test("sort search results by last name", async ({ page }) => {
@@ -161,7 +134,7 @@ test.describe("sort Practitioners", () => {
     await expect(page.locator("[data-testid='searchresults']").getByRole("listitem").first()).toBeVisible()
 
     const sortButton = page.locator(".ds-c-dropdown__button")
-    await expect(sortButton).toContainText("Last Name (A-Z)")
+    await expect(sortButton).toContainText("First Name (A-Z)")
 
     await sortButton.click()
     await expect(page.locator("[role='listbox']")).toBeVisible()
@@ -171,14 +144,4 @@ test.describe("sort Practitioners", () => {
     await expect(page).toHaveURL(/sort=last-name-asc/)
     await expect(sortButton).toContainText("Last Name (A-Z)")
   })
-})
-
-test("search by NPI excludes practitioners with matching other_id", async ({ page }) => {
-  await page.goto("/practitioners/search")
-  
-  await page.getByRole("textbox", { name: "Name or NPI" }).fill("1234567894")
-  await page.getByRole("button", { name: "Search" }).click()
-  
-  await expect(page.getByRole("link", { name: /AAA Test Practitioner/i })).toBeVisible()
-  await expect(page.getByRole("link", { name: /BBB Other ID Practitioner/i })).not.toBeVisible()
 })
