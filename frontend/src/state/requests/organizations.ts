@@ -2,6 +2,20 @@ import { skipToken, useQuery } from "@tanstack/react-query"
 import type { FHIRCollection, FHIROrganization } from "../../@types/fhir"
 import { formatAddress, formatDate } from "../../helpers/formatters"
 import { apiUrl } from "../api"
+import type { SortOption } from "../../@types/search"
+
+export const ORGANIZATION_SORT_OPTIONS: Record<string, SortOption>  = {
+  'name-asc': {
+    labelKey: 'organizations.sort.name-asc',
+    apiValue: 'organizationtoname__name'
+  },
+  'name-desc': {
+    labelKey: 'organizations.sort.name-desc',
+    apiValue: '-organizationtoname__name'
+  }
+} as const
+
+export type OrganizationSortKey = keyof typeof ORGANIZATION_SORT_OPTIONS
 
 const fetchOrganization = async (
   organizationId: string,
@@ -35,6 +49,10 @@ const detectQueryKey = (value: string): "identifier" | "name" => {
   return /^\d+$/.test(value) ? "identifier" : "name"
 }
 
+const detectSortKey = (value: OrganizationSortKey): string => {
+  return ORGANIZATION_SORT_OPTIONS[value]?.apiValue
+}
+
 /// list
 
 export const fetchOrganizations = async (
@@ -54,7 +72,19 @@ export const fetchOrganizations = async (
   if (params.query) {
     const query = params.query
     const key = detectQueryKey(query)
-    url.searchParams.set(key, query)
+    if (key === "identifier") {
+      url.searchParams.set(key, `NPI|${query}`)
+    } else {
+      url.searchParams.set(key, query)
+    }
+  }
+
+  // Sort
+  if (params.sort) {
+    const apiValue = detectSortKey(params.sort as OrganizationSortKey)
+    if (apiValue) {
+      url.searchParams.set("_sort", apiValue)
+    }
   }
 
   const response = await fetch(url)
@@ -78,7 +108,7 @@ export const useOrganizationsAPI = (
   console.debug("[useOrganizationsAPI]", { params, options })
 
   return useQuery<FHIRCollection<FHIROrganization>>({
-    queryKey: ["organizations", params.query, params.page || 1],
+    queryKey: ["organizations", params.sort, params.query, params.page || 1],
     queryFn:
       options?.requireQuery && (!params.query || params.query.length === 0)
         ? skipToken

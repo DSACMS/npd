@@ -7,14 +7,14 @@ import { PaginationCaption } from "../../components/PaginationCaption"
 import { TitlePanel } from "../../components/TitlePanel"
 import { usePagination, usePaginationParams } from "../../hooks/usePagination"
 import { apiUrl } from "../../state/api"
-import { useOrganizationsAPI, ORGANIZATION_SORT_OPTIONS } from "../../state/requests/organizations"
+import { usePractitionersAPI, PRACTITIONER_SORT_OPTIONS } from "../../state/requests/practitioners"
 import layout from "../Layout.module.css"
-import { ListedOrganization } from "./ListedOrganization"
+import { ListedPractitioner } from "./ListedPractitioner"
 
-export const OrganizationList = () => {
+export const PractitionerList = () => {
   const { t } = useTranslation()
   const [params, setParams] = usePaginationParams()
-  const { data, isLoading, isSuccess } = useOrganizationsAPI(params)
+  const { data, isLoading, isSuccess } = usePractitionersAPI(params)
   const pagination = usePagination(params, data)
 
   const contentClass = classNames(layout.content, "ds-l-container")
@@ -38,7 +38,7 @@ export const OrganizationList = () => {
     }, { preventScrollReset: true })
   }
 
-  const sortOptions = Object.entries(ORGANIZATION_SORT_OPTIONS).map(([value, { label }]) => ({
+  const sortOptions = Object.entries(PRACTITIONER_SORT_OPTIONS).map(([value, { label }]) => ({
     label,
     value
   }))
@@ -53,7 +53,7 @@ export const OrganizationList = () => {
         const hrefParams = new URLSearchParams()
         hrefParams.set("page", pageNumber.toString())
         if (params.sort) hrefParams.set("sort", params.sort)
-        return apiUrl(`/organizations?${hrefParams.toString()}`)
+        return apiUrl(`/practitioners?${hrefParams.toString()}`)
       }}
       totalPages={pagination.totalPages}
     />
@@ -62,12 +62,12 @@ export const OrganizationList = () => {
   return (
     <>
       <TitlePanel
-        title={t("organizations.listing.title")}
+        title={t("practitioners.listing.title")}
         className={layout.compactLeader}
       >
         <div className="ds-l-row">
           <div className="ds-l-col--12 ds-u-margin-bottom--4">
-            <Link to="/organizations/search">Search organizations</Link>
+            <Link to="/practitioners/search">Search practitioners</Link>
           </div>
         </div>
       </TitlePanel>
@@ -107,7 +107,7 @@ export const OrganizationList = () => {
               {data?.results?.entry?.map((entry, idx) => {
                 if (!entry) return null
                 return (
-                  <ListedOrganization
+                  <ListedPractitioner
                     data={entry.resource}
                     key={entry.resource.id || idx}
                   />
