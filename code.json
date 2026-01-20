@@ -139,7 +139,7 @@
   "localisation": false,
   "repositoryType": "tools",
   "userInput": true,
-  "fismaLevel": "",
+  "fismaLevel": "low",
   "group": "CMS/OA/DSAC",
   "projects": [
     "NPPES"
