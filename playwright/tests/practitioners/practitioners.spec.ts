@@ -145,3 +145,13 @@ test.describe("sort Practitioners", () => {
     await expect(sortButton).toContainText("Last Name (A-Z)")
   })
 })
+
+test("search by NPI excludes practitioners with matching other_id", async ({ page }) => {
+  await page.goto("/practitioners/search")
+  
+  await page.getByRole("textbox", { name: "Name or NPI" }).fill("1234567894")
+  await page.getByRole("button", { name: "Search" }).click()
+  
+  await expect(page.getByRole("link", { name: /AAA Test Practitioner/i })).toBeVisible()
+  await expect(page.getByRole("link", { name: /BBB Other ID Practitioner/i })).not.toBeVisible()
+})
