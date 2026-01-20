@@ -32,69 +32,17 @@ test.beforeAll(async ({ request }) => {
   )
 })
 
-test.describe("Organization listing", () => {
-  test("visit the Organizations listing page", async ({ page }) => {
-    await page.goto("/organizations")
-
-    await expect(page).toHaveURL("/organizations")
-
-    await expect(page.locator("div[role='heading']")).toContainText(
-      "All Organizations",
-    )
-
-    await expect(page.getByText(`NPI: ${organization?.npi}`)).toBeVisible()
-  })
-
-  test("paging through Organizations", async ({ page }) => {
-    await page.goto("/organizations")
-
-    await expect(page).toHaveURL("/organizations")
-
-    // assert
-    await expect(page.getByRole("caption")).toContainText(
-      /Showing 1 - 10 of \d+/
-    )
-    await expect(
-      page.locator("[data-testid='searchresults']").getByRole("listitem"),
-    ).toHaveCount(10)
-
-    // act
-    await page.getByLabel("Next Page").first().click()
-
-    // assert
-    await expect(page).toHaveURL("/organizations?page=2")
-    await expect(page.getByRole("caption")).toHaveText(
-      /Showing 11 - 20 of \d+/
-    )
-    await expect(
-      page.locator("[data-testid='searchresults']").getByRole("listitem"),
-    ).toHaveCount(10)
-
-    // act
-    await page.getByLabel("Next Page").first().click()
-
-    // assert
-    await expect(page).toHaveURL("/organizations?page=3")
-    await expect(page.locator("span[role='caption']")).toHaveText(
-      /Showing 21 - \d+ of \d+/
-    )
-    await expect(
-      page.locator("[data-testid='searchresults']").getByRole("listitem"),
-    ).toHaveCount(7)
-  })
-})
-
 test.describe("Organization search", () => {
   test("search for an Organization by NPI", async ({ page }) => {
     await page.goto("/organizations/search")
     await expect(page).toHaveURL("/organizations/search")
-    await expect(page.getByText("Search Organizations")).toBeVisible()
+    await expect(page.getByText("Organization search")).toBeVisible()
 
     await page
-      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .getByRole("textbox", { name: "Name or NPI" })
       .click()
     await page
-      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .getByRole("textbox", { name: "Name or NPI" })
       .fill("1234567893")
     await page.getByRole("button", { name: "Search" }).click()
     await expect(page.getByRole("link", { name: "AAA Test Org" })).toBeVisible()
@@ -103,13 +51,13 @@ test.describe("Organization search", () => {
   test("search for an Organization by exact name", async ({ page }) => {
     await page.goto("/organizations/search")
     await expect(page).toHaveURL("/organizations/search")
-    await expect(page.getByText("Search Organizations")).toBeVisible()
+    await expect(page.getByText("Organization search")).toBeVisible()
 
     await page
-      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .getByRole("textbox", { name: "Name or NPI" })
       .click()
     await page
-      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .getByRole("textbox", { name: "Name or NPI" })
       .fill("AAA Test Org")
     await page.getByRole("button", { name: "Search" }).click()
     await expect(page.getByRole("link", { name: "AAA Test Org" })).toBeVisible()
@@ -118,13 +66,13 @@ test.describe("Organization search", () => {
   test("search for an Organization by partial name", async ({ page }) => {
     await page.goto("/organizations/search")
     await expect(page).toHaveURL("/organizations/search")
-    await expect(page.getByText("Search Organizations")).toBeVisible()
+    await expect(page.getByText("Organization search")).toBeVisible()
 
     await page
-      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .getByRole("textbox", { name: "Name or NPI" })
       .click()
     await page
-      .getByRole("textbox", { name: "Name or Identifier (NPI, EIN" })
+      .getByRole("textbox", { name: "Name or NPI" })
       .fill("AAA")
     await page.getByRole("button", { name: "Search" }).click()
     await expect(page.getByRole("link", { name: "AAA Test Org" })).toBeVisible()
@@ -133,11 +81,11 @@ test.describe("Organization search", () => {
 
 test.describe("Organization show", () => {
   test("visit an Organization page", async ({ page }) => {
-    // visit listing page
-    await page.goto("/organizations")
-
-    // pick known organization
-    await page.getByText(organization.name).click()
+    await page.goto("/organizations/search")
+    
+    await page.getByRole("textbox", { name: "Name or NPI" }).fill(organization.name)
+    await page.getByRole("button", { name: "Search" }).click()
+    await page.getByRole("link", { name: organization.name }).click()
 
     // should be on the single organization show page
     await expect(page).toHaveURL(`/organizations/${organization.id}`)
@@ -150,4 +98,49 @@ test.describe("Organization show", () => {
     await expect(banner.getByText(organization.name)).toBeVisible()
     await expect(banner.getByText(`NPI: ${organization.npi}`)).toBeVisible()
   })
+})
+
+test.describe("sort Organizations", () => {
+  test("sort dropdown is visible after search", async ({ page }) => {
+    await page.goto("/organizations/search")
+
+    await page.getByRole("textbox", { name: "Name or NPI" }).fill("Test")
+    await page.getByRole("button", { name: "Search" }).click()
+
+    await expect(page.locator("[data-testid='searchresults']").getByRole("listitem").first()).toBeVisible()
+
+    const sortButton = page.locator(".ds-c-dropdown__button")
+    await expect(sortButton).toBeVisible()
+    await expect(sortButton).toContainText("Name (A-Z)")
+  })
+
+  test("sort search results by name descending", async ({ page }) => {
+    await page.goto("/organizations/search")
+
+    await page.getByRole("textbox", { name: "Name or NPI" }).fill("Test")
+    await page.getByRole("button", { name: "Search" }).click()
+
+    await expect(page.locator("[data-testid='searchresults']").getByRole("listitem").first()).toBeVisible()
+
+    const sortButton = page.locator(".ds-c-dropdown__button")
+    await expect(sortButton).toContainText("Name (A-Z)")
+
+    await sortButton.click()
+    await expect(page.locator("[role='listbox']")).toBeVisible()
+    await page.getByRole("option", { name: "Name (Z-A)" }).click()
+
+    await expect(page).toHaveURL(/query=Test/)
+    await expect(page).toHaveURL(/sort=name-desc/)
+    await expect(sortButton).toContainText("Name (Z-A)")
+  })
+})
+
+test("search by NPI excludes organizations with matching other_id", async ({ page }) => {
+  await page.goto("/organizations/search")
+  
+  await page.getByRole("textbox", { name: "Name or NPI" }).fill("1234567893")
+  await page.getByRole("button", { name: "Search" }).click()
+  
+  await expect(page.getByRole("link", { name: "AAA Test Org" })).toBeVisible()
+  await expect(page.getByRole("link", { name: "BBB Other ID Org" })).not.toBeVisible()
 })
