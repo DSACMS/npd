@@ -87,6 +87,14 @@ export const fetchOrganizations = async (
     }
   }
 
+  // Sort
+  if (params.sort) {
+    const apiValue = detectSortKey(params.sort as OrganizationSortKey)
+    if (apiValue) {
+      url.searchParams.set("_sort", apiValue)
+    }
+  }
+
   const response = await fetch(url)
   if (!response.ok) {
     console.error(await response.text())
