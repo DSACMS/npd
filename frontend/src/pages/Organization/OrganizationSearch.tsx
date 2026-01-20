@@ -14,10 +14,11 @@ import { ListedOrganization } from "./ListedOrganization"
 import { ORGANIZATION_SORT_OPTIONS, type OrganizationSortKey } from "../../state/requests/organizations"
 import { useOrganizationsAPI } from "../../state/requests/organizations"
 import type { FHIROrganization } from "../../@types/fhir"
+import { FaHospital } from "react-icons/fa"
 
 const OrganizationSearchForm: React.FC = () => {
   const { t } = useTranslation()
-  const { setQuery, navigateToPage, setSort, clearSearch } = useSearchDispatch()
+  const { setQuery, navigateToPage, setSort } = useSearchDispatch()
   const {
     isLoading,
     isBackgroundLoading,
@@ -37,11 +38,6 @@ const OrganizationSearchForm: React.FC = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setQuery(query)
-  }
-
-  const handleClear = () => {
-    setQueryValue("")
-    clearSearch()
   }
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>): void => {
@@ -64,7 +60,9 @@ const OrganizationSearchForm: React.FC = () => {
   return (
     <>
       <TitlePanel
+        icon={<FaHospital size={42} aria-hidden="true" />}
         title={t("organizations.search.title")}
+        color="var(--color-primary-darkest)"
         className={layout.compactLeader}
       >
         <div className="ds-l-row">
@@ -91,7 +89,6 @@ const OrganizationSearchForm: React.FC = () => {
                   >
                     {isLoading && !isBackgroundLoading ? "Searching..." : "Search"}
                   </Button>
-                  <Button onClick={handleClear}>Clear</Button>
                 </div>
               </div>
             </form>
@@ -158,8 +155,8 @@ const OrganizationSearchForm: React.FC = () => {
             )}
 
             {!data && (
-              <Alert heading={t("patients.alert.heading")}>
-                <NpdMarkdown content={t("patients.alert.body")} />
+              <Alert heading={t("organizations.alert.heading")}>
+                <NpdMarkdown content={t("organizations.alert.body")} />
               </Alert>
             )}
           </div>
