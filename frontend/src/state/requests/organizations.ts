@@ -72,7 +72,19 @@ export const fetchOrganizations = async (
   if (params.query) {
     const query = params.query
     const key = detectQueryKey(query)
-    url.searchParams.set(key, query)
+    if (key === "identifier") {
+      url.searchParams.set(key, `NPI|${query}`)
+    } else {
+      url.searchParams.set(key, query)
+    }
+  }
+
+  // Sort
+  if (params.sort) {
+    const apiValue = detectSortKey(params.sort as OrganizationSortKey)
+    if (apiValue) {
+      url.searchParams.set("_sort", apiValue)
+    }
   }
 
   // Sort
