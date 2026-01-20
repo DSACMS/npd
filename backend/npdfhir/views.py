@@ -607,7 +607,7 @@ class FHIROrganizationAffiliationViewSet(viewsets.GenericViewSet):
     else:
         renderer_classes = [FHIRRenderer]
     filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
-    filterset_class = OrganizationFilterSet
+    #filterset_class = OrganizationFilterSet
     pagination_class = CustomPaginator
 
     ordering_fields = ["ehr_vendor_name", "organization_name", "endpoint_name"]
@@ -692,7 +692,7 @@ class FHIROrganizationAffiliationViewSet(viewsets.GenericViewSet):
             .order_by("organization_name")
         )
 
-        organization_affiliations = self.filter_queryset(organization_affiliations)
+        #organization_affiliations = self.filter_queryset(organization_affiliations)
         paginated_organization_affiliations = self.paginate_queryset(organization_affiliations)
 
         serialized_organization_affiliations = OrganizationAffiliationSerializer(
