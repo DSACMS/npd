@@ -1,4 +1,5 @@
 import datetime
+import random
 import uuid
 
 from ...models import (
@@ -81,8 +82,10 @@ def create_practitioner(
             individual=individual, address=location.address, address_use=use
         )
 
+    npi_value = npi_value or random.randint(1000000000, 9999999999)
+
     npi = Npi.objects.create(
-        npi=npi_value or int(str(uuid.uuid4().int)[:10]),
+        npi=npi_value,
         entity_type_code=1,
         enumeration_date=datetime.date(2000, 1, 1),
         last_update_date=datetime.date(2020, 1, 1),
