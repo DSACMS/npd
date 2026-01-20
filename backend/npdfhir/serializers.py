@@ -520,18 +520,17 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
 
         # NOTE: Network here means insurance network, per the FHIR spec. We have not begun to incorporate insurance networks
         #organization_affiliation.network = [genReference("fhir-organization-detail", instance.id, request)]
-        organization_affiliation.network[0].display = str(instance.organization_name)
+        #organization_affiliation.network[0].display = str(instance.organization_name)
 
-        organization_affiliation.code = CodeableConcept(
+        organization_affiliation.code = [CodeableConcept(
             coding=[
                 Coding(
-                    system="http://terminology.hl7.org/CodeSystem/v2-0203",
+                    system="http://terminology.hl7.org/CodeSystem/codesystem-organization-role",
                     code="HIE/HIO",
-                    display="HIE/HIO",
-                    definition="An organization that facilitates electronic clinical data exchange between entities"
+                    display="HIE/HIO"
                 )
             ]
-        )
+        )]
 
         # NOTE: not sure how to do specialty yet
 
