@@ -62,6 +62,7 @@ const PractitionerSearchForm: React.FC = () => {
       <TitlePanel
         icon={<FaUserMd size={42} aria-hidden="true" />}
         title={t("practitioners.search.title")}
+        color="var(--color-primary-darkest)"
         className={layout.compactLeader}
       >
         <div className="ds-l-row">

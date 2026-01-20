@@ -62,6 +62,7 @@ const OrganizationSearchForm: React.FC = () => {
       <TitlePanel
         icon={<FaHospital size={42} aria-hidden="true" />}
         title={t("organizations.search.title")}
+        color="var(--color-primary-darkest)"
         className={layout.compactLeader}
       >
         <div className="ds-l-row">
