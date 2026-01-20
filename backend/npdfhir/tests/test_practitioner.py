@@ -256,7 +256,7 @@ class PractitionerViewSetTestCase(APITestCase):
             for name in entry["resource"]["name"]:
                 names.append(name["family"])
                 names.append(name["given"])
-            
+
             self.assertIn(self.sample_last_name, names)
 
     def test_list_filter_by_practitioner_type(self):
@@ -286,11 +286,11 @@ class PractitionerViewSetTestCase(APITestCase):
             values = [int(v["value"]) for v in entry["resource"]["identifier"]]
             all_values.extend(values)
             self.assertIn(int(identifier), values)
-        
-        #assert that Kirk Aadalen is in the data
-        self.assertIn(self.pracs[0].npi.npi,all_values)
-        #assert that Asad Abbas is in the data
-        self.assertIn(self.pracs[1].npi.npi,all_values)
+
+        # assert that Kirk Aadalen is in the data
+        self.assertIn(self.pracs[0].npi.npi, all_values)
+        # assert that Asad Abbas is in the data
+        self.assertIn(self.pracs[1].npi.npi, all_values)
 
     def test_list_filter_by_npi_specific(self):
         url = reverse("fhir-practitioner-list")
@@ -318,7 +318,7 @@ class PractitionerViewSetTestCase(APITestCase):
                 # print(address)
                 address_string = concat_address_string(address)
 
-                #self.assertIn(test_search, address_string)
+                # self.assertIn(test_search, address_string)
                 present_checks.append(test_search in address_string)
             self.assertTrue(any(present_checks))
 

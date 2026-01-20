@@ -27,7 +27,7 @@ def get_schema_data(request):
 
 
 def genReference(url_name, identifier, request):
-    reference = request.build_absolute_uri(reverse(url_name, kwargs={"pk": identifier}))
+    reference = request.build_absolute_uri(reverse(url_name, kwargs={"id": identifier}))
     reference = Reference(reference=reference)
     return reference
 
