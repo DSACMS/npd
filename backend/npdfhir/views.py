@@ -46,8 +46,6 @@ from .serializers import (
 )
 from .utils import FHIROrganizationSource
 
-from django.conf import settings
-
 DEBUG = settings.DEBUG
 
 

@@ -487,8 +487,8 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
 
         organization_affiliation.id = str(instance.id)
 
-        identifiers = []
-        codes = []
+        #identifiers = []
+        #codes = []
         locations = []
 
         # Get npis of all orgs

@@ -17,7 +17,6 @@ from .fixtures.organization import create_organization, create_legal_entity
 from .helpers import (
     assert_fhir_response,
     assert_has_results,
-    extract_resource_fields,
     extract_resource_ids,
 )
 
