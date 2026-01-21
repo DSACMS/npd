@@ -27,6 +27,23 @@ test.describe("Redoc", () => {
     }
   })
 
+  // regression test: "search" parameter should not appear in any endpoint
+  test("does not display invalid 'search' parameter", async ({ page }) => {
+    await page.goto("/fhir/docs/redoc/")
+    await expect(page.locator(".redoc-wrap")).toBeVisible()
+
+    // check Organization endpoint
+    const orgSection = page.locator("#tag\\/Organization\\/operation\\/Organization_list")
+    await expect(orgSection.getByText("query Parameters")).toBeVisible()
+    await expect(orgSection.locator("td").filter({ hasText: /^search$/ })).not.toBeVisible()
+
+    // check Practitioner endpoint
+    const practitionerSection = page.locator("#tag\\/Practitioner\\/operation\\/Practitioner_list")
+    await expect(practitionerSection.getByText("query Parameters")).toBeVisible()
+    await expect(practitionerSection.locator("td").filter({ hasText: /^search$/ })).not.toBeVisible()
+
+  })
+
   test("can navigate to Organization section", async ({ page }) => {
     await page.goto("/fhir/docs/redoc/")
     await expect(page.locator(".redoc-wrap")).toBeVisible()
