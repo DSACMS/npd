@@ -9,7 +9,7 @@ const FHIR_RESOURCES = [
   "metadata",
 ] as const
 
-test.describe("Swagger UI", () => {
+test.describe("Swagger", () => {
   test("loads successfully", async ({ page }) => {
     await page.goto("/fhir/docs/")
 
@@ -26,10 +26,28 @@ test.describe("Swagger UI", () => {
       await expect(tag).toBeVisible()
     }
   })
+
+  // regression test: "search" parameter should not appear in any endpoint
+  test("does not display invalid 'search' parameter", async ({ page }) => {
+    await page.goto("/fhir/docs/")
+    await expect(page.locator("#swagger-ui")).toBeVisible()
+
+    // check Organization endpoint
+    const orgOperation = page.locator("#operations-Organization-Organization_list")
+    await orgOperation.locator(".opblock-summary-control").click()
+    await expect(orgOperation.locator(".opblock-body")).toBeVisible()
+    await expect(orgOperation.locator("tr[data-param-name='search']")).not.toBeVisible()
+
+    // check Practitioner endpoint
+    const practitionerOperation = page.locator("#operations-Practitioner-Practitioner_list")
+    await practitionerOperation.locator(".opblock-summary-control").click()
+    await expect(practitionerOperation.locator(".opblock-body")).toBeVisible()
+    await expect(practitionerOperation.locator("tr[data-param-name='search']")).not.toBeVisible()
+  })
 })
 
-test.describe("Swagger UI - Organization", () => {
-  test("execute GET /fhir/Organization/", async ({ page }) => {
+test.describe("Swagger - Organization", () => {
+  test("GET /fhir/Organization/", async ({ page }) => {
     await page.goto("/fhir/docs/")
     await expect(page.locator("#swagger-ui")).toBeVisible()
 
@@ -42,7 +60,7 @@ test.describe("Swagger UI - Organization", () => {
     await expect(liveResponse).toContainText("200", { timeout: 10000 })
   })
 
-  test("execute GET /fhir/Organization/{id}/", async ({ page }) => {
+  test("GET /fhir/Organization/{id}/", async ({ page }) => {
     // First get a valid organization ID
     const orgResponse = await page.request.get("/fhir/Organization/?identifier=1234567893")
     const orgData = await orgResponse.json()
@@ -63,8 +81,8 @@ test.describe("Swagger UI - Organization", () => {
   })
 })
 
-test.describe("Swagger UI - Practitioner", () => {
-  test("execute GET /fhir/Practitioner/", async ({ page }) => {
+test.describe("Swagger - Practitioner", () => {
+  test("GET /fhir/Practitioner/", async ({ page }) => {
     await page.goto("/fhir/docs/")
     await expect(page.locator("#swagger-ui")).toBeVisible()
 
@@ -77,7 +95,7 @@ test.describe("Swagger UI - Practitioner", () => {
     await expect(liveResponse).toContainText("200", { timeout: 10000 })
   })
 
-  test("execute GET /fhir/Practitioner/{id}/", async ({ page }) => {
+  test("GET /fhir/Practitioner/{id}/", async ({ page }) => {
     // First get a valid practitioner ID
     const response = await page.request.get("/fhir/Practitioner/?identifier=1234567894")
     const data = await response.json()
@@ -98,8 +116,8 @@ test.describe("Swagger UI - Practitioner", () => {
   })
 })
 
-test.describe("Swagger UI - Location", () => {
-  test("execute GET /fhir/Location/", async ({ page }) => {
+test.describe("Swagger - Location", () => {
+  test("GET /fhir/Location/", async ({ page }) => {
     await page.goto("/fhir/docs/")
     await expect(page.locator("#swagger-ui")).toBeVisible()
 
@@ -112,13 +130,13 @@ test.describe("Swagger UI - Location", () => {
     await expect(liveResponse).toContainText("200", { timeout: 10000 })
   })
 
-//   test("execute GET /fhir/Location/{id}/", async ({ page }) => {
+//   test("GET /fhir/Location/{id}/", async ({ page }) => {
 //     we dont have any locations currently in test database
 //   })
 })
 
-test.describe("Swagger UI - Endpoint", () => {
-  test("execute GET /fhir/Endpoint/", async ({ page }) => {
+test.describe("Swagger - Endpoint", () => {
+  test("GET /fhir/Endpoint/", async ({ page }) => {
     await page.goto("/fhir/docs/")
     await expect(page.locator("#swagger-ui")).toBeVisible()
 
@@ -131,7 +149,7 @@ test.describe("Swagger UI - Endpoint", () => {
     await expect(liveResponse).toContainText("200", { timeout: 10000 })
   })
 
-  test("execute GET /fhir/Endpoint/{id}/", async ({ page }) => {
+  test("GET /fhir/Endpoint/{id}/", async ({ page }) => {
     // First get a valid endpoint ID
     const response = await page.request.get("/fhir/Endpoint/")
     const data = await response.json()
@@ -153,8 +171,8 @@ test.describe("Swagger UI - Endpoint", () => {
   })
 })
 
-test.describe("Swagger UI - PractitionerRole", () => {
-  test("execute GET /fhir/PractitionerRole/", async ({ page }) => {
+test.describe("Swagger - PractitionerRole", () => {
+  test("GET /fhir/PractitionerRole/", async ({ page }) => {
     await page.goto("/fhir/docs/")
     await expect(page.locator("#swagger-ui")).toBeVisible()
 
@@ -167,13 +185,13 @@ test.describe("Swagger UI - PractitionerRole", () => {
     await expect(liveResponse).toContainText("200", { timeout: 10000 })
   })
 
-//   test("execute GET /fhir/PractitionerRole/{id}/", async ({ page }) => {
+//   test("GET /fhir/PractitionerRole/{id}/", async ({ page }) => {
 //     // we dont have any PractitionerRoles currently in test database
 //   })
 })
 
-test.describe("Swagger UI - metadata", () => {
-  test("execute GET /fhir/metadata/", async ({ page }) => {
+test.describe("Swagger - metadata", () => {
+  test("GET /fhir/metadata/", async ({ page }) => {
     await page.goto("/fhir/docs/")
     await expect(page.locator("#swagger-ui")).toBeVisible()
 
