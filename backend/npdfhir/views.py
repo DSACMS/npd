@@ -12,7 +12,7 @@ from rest_framework import viewsets
 from rest_framework.views import APIView
 from rest_framework.renderers import BrowsableAPIRenderer
 from rest_framework.response import Response
-from rest_framework.filters import OrderingFilter
+from rest_framework.filters import OrderingFilter, SearchFilter
 
 from .pagination import CustomPaginator
 from .renderers import FHIRRenderer
@@ -469,12 +469,12 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
                 "clinicalorganization__organizationtotaxonomy_set",
                 "clinicalorganization__organizationtotaxonomy_set__nucc_code",
             )
-            .filter(pk=pk)
+            .filter(pk=id)
             .first()
         )
 
         if not organization:
-            vendor = get_object_or_404(EhrVendor, pk=pk)
+            vendor = get_object_or_404(EhrVendor, pk=id)
             source = FHIROrganizationSource(ehr_vendor=vendor)
         else:
             source = FHIROrganizationSource(organization=organization)
@@ -621,6 +621,7 @@ class FHIROrganizationAffiliationViewSet(viewsets.GenericViewSet):
     pagination_class = CustomPaginator
 
     ordering_fields = ["ehr_vendor_name", "organization_name", "endpoint_name"]
+    lookup_url_kwarg = "id"
 
     # permission_classes = [permissions.IsAuthenticated]
     @extend_schema(
@@ -720,14 +721,14 @@ class FHIROrganizationAffiliationViewSet(viewsets.GenericViewSet):
             200: OpenApiResponse(description="Successfully retrieved FHIR Organization resource")
         }
     )
-    def retrieve(self, request, pk=None):
+    def retrieve(self, request, id=None):
         """
         Query a specific organization, represented as a FHIR Organization resource
         """
         try:
-            UUID(pk)
+            UUID(id)
         except (ValueError, TypeError):
-            return HttpResponse(f"Organization {escape(pk)} not found", status=404)
+            return HttpResponse(f"Organization {escape(id)} not found", status=404)
 
         endpoint_subquery = LocationToEndpointInstance.objects.filter(
             location__organization=OuterRef("pk"), endpoint_instance__ehr_vendor__isnull=False
@@ -790,7 +791,7 @@ class FHIROrganizationAffiliationViewSet(viewsets.GenericViewSet):
                 participating_npi=F("clinicalorganization__npi__npi"),
             )
             .distinct(),
-            pk=pk,
+            pk=id,
         )
 
         serialized_organization_affiliation = OrganizationAffiliationSerializer(
