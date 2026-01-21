@@ -347,7 +347,6 @@ class LocationViewSetTestCase(APITestCase):
             self.assertIn("address", location_entry)
             self.assertIn("name", location_entry)
 
-            print(location_entry)
             self.assertIn(use_search, location_entry['address']['use'])
 
     # Retrieve tests

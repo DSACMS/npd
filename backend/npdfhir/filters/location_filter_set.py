@@ -1,5 +1,6 @@
 from django.contrib.postgres.search import SearchVector
 from django_filters import rest_framework as filters
+from django.db.models import F
 
 from ..mappings import addressUseMapping
 from ..models import Location
@@ -75,8 +76,7 @@ class LocationFilterSet(filters.FilterSet):
         )
 
     def filter_address_use(self, queryset, name, value):
-        if value in addressUseMapping.keys():
-            value = addressUseMapping.toNPD(value)
-        else:
-            value = -1
-        return queryset.filter(address_id=value)
+        return queryset.filter(
+            organization__organizationtoaddress__address=F("address"),
+            organization__organizationtoaddress__address_use__value=value,
+        ).distinct()

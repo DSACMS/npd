@@ -28,6 +28,7 @@ def assert_fhir_response(test_case, response, expected_status=200):
 
 def assert_has_results(test_case, response):
     test_case.assertIn("results", response.data)
+    test_case.assertGreater(len(response.data["results"]["entry"]),0)
 
 
 def assert_pagination_limit(test_case, response, max_size=100):
