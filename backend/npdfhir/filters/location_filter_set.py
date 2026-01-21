@@ -1,5 +1,7 @@
 from django.contrib.postgres.search import SearchVector
 from django_filters import rest_framework as filters
+from django.contrib.gis.geos import Point
+from django.contrib.gis.measure import D
 
 from ..mappings import addressUseMapping
 from ..models import Location
@@ -32,6 +34,11 @@ class LocationFilterSet(filters.FilterSet):
         help_text="Filter by address use type",
     )
 
+    near = filters.CharFilter(
+        method="filter_distance",
+        help_text="Filter by distance from a point expressed as [latitude]|[longitude]|[distance]|[units].",
+    )
+
     class Meta:
         model = Location
         fields = [
@@ -41,6 +48,7 @@ class LocationFilterSet(filters.FilterSet):
             "address_state",
             "address_postalcode",
             "address_use",
+            "near",
         ]
 
     def filter_organization_type(self, queryset, name, value):
@@ -80,3 +88,15 @@ class LocationFilterSet(filters.FilterSet):
         else:
             value = -1
         return queryset.filter(address_id=value)
+
+    def filter_distance(self, queryset, name, value):
+        print(value)
+        distance_components = value.split("|")
+        print(distance_components)
+        lat = float(distance_components[0])
+        lon = float(distance_components[1])
+        distance = float(distance_components[2])
+        user_location = Point(lat, lon, srid=4326)
+        return queryset.filter(
+            address__address_us__geolocation__distance_lte=(user_location, D(km=distance))
+        )
