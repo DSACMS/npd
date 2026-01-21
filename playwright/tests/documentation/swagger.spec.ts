@@ -57,7 +57,7 @@ test.describe("Swagger - Organization", () => {
     await operation.locator(".execute").click()
 
     const liveResponse = operation.locator(".live-responses-table tbody .response-col_status")
-    await expect(liveResponse).toContainText("200", { timeout: 10000 })
+    await expect(liveResponse).toContainText("200")
   })
 
   test("GET /fhir/Organization/{id}/", async ({ page }) => {
@@ -77,7 +77,7 @@ test.describe("Swagger - Organization", () => {
     await operation.locator(".execute").click()
 
     const liveResponse = operation.locator(".live-responses-table tbody .response-col_status")
-    await expect(liveResponse).toContainText("200", { timeout: 10000 })
+    await expect(liveResponse).toContainText("200")
   })
 })
 
@@ -92,7 +92,7 @@ test.describe("Swagger - Practitioner", () => {
     await operation.locator(".execute").click()
 
     const liveResponse = operation.locator(".live-responses-table tbody .response-col_status")
-    await expect(liveResponse).toContainText("200", { timeout: 10000 })
+    await expect(liveResponse).toContainText("200")
   })
 
   test("GET /fhir/Practitioner/{id}/", async ({ page }) => {
@@ -112,7 +112,7 @@ test.describe("Swagger - Practitioner", () => {
     await operation.locator(".execute").click()
 
     const liveResponse = operation.locator(".live-responses-table tbody .response-col_status")
-    await expect(liveResponse).toContainText("200", { timeout: 10000 })
+    await expect(liveResponse).toContainText("200")
   })
 })
 
@@ -127,7 +127,7 @@ test.describe("Swagger - Location", () => {
     await operation.locator(".execute").click()
 
     const liveResponse = operation.locator(".live-responses-table tbody .response-col_status")
-    await expect(liveResponse).toContainText("200", { timeout: 10000 })
+    await expect(liveResponse).toContainText("200")
   })
 
 //   test("GET /fhir/Location/{id}/", async ({ page }) => {
@@ -146,7 +146,7 @@ test.describe("Swagger - Endpoint", () => {
     await operation.locator(".execute").click()
 
     const liveResponse = operation.locator(".live-responses-table tbody .response-col_status")
-    await expect(liveResponse).toContainText("200", { timeout: 10000 })
+    await expect(liveResponse).toContainText("200")
   })
 
   test("GET /fhir/Endpoint/{id}/", async ({ page }) => {
@@ -167,7 +167,7 @@ test.describe("Swagger - Endpoint", () => {
     await operation.locator(".execute").click()
 
     const liveResponse = operation.locator(".live-responses-table tbody .response-col_status")
-    await expect(liveResponse).toContainText("200", { timeout: 10000 })
+    await expect(liveResponse).toContainText("200")
   })
 })
 
@@ -182,7 +182,7 @@ test.describe("Swagger - PractitionerRole", () => {
     await operation.locator(".execute").click()
 
     const liveResponse = operation.locator(".live-responses-table tbody .response-col_status")
-    await expect(liveResponse).toContainText("200", { timeout: 10000 })
+    await expect(liveResponse).toContainText("200")
   })
 
 //   test("GET /fhir/PractitionerRole/{id}/", async ({ page }) => {
@@ -201,6 +201,6 @@ test.describe("Swagger - metadata", () => {
     await operation.locator(".execute").click()
 
     const liveResponse = operation.locator(".live-responses-table tbody .response-col_status")
-    await expect(liveResponse).toContainText("200", { timeout: 10000 })
+    await expect(liveResponse).toContainText("200")
   })
 })
