@@ -62,7 +62,7 @@ test.describe("Practitioner Journey", () => {
     // then, click on practitioner to view details
     await page.getByRole("link", { name: /AAA Test Practitioner/i }).click()
 
-    // then, confirm detail page content
+    // finally, confirm detail page content
     await expect(page).toHaveURL(`/practitioners/${practitioner.id}`)
     await expect(page.getByTestId("practitioner-name")).toContainText(practitioner.name)
     await expect(page.getByTestId("practitioner-npi")).toContainText(`NPI: ${practitioner.npi}`)
