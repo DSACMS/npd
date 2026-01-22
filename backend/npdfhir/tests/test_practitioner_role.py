@@ -50,6 +50,7 @@ class PractitionerRoleViewSetTestCase(APITestCase):
                 gender="M" if i % 2 == 0 else "F",
                 npi_value=npi,
                 location_name=loc_name,
+                org_name="Hospital Group",
                 role_display="Clinician",
                 role_code="MD",
             )
