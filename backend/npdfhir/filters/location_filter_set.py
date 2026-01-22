@@ -3,7 +3,6 @@ from django.contrib.postgres.search import SearchVector
 from django_filters import rest_framework as filters
 from django.contrib.gis.geos import Point
 from django.contrib.gis.measure import D
-from django.db.models import F
 
 from ..mappings import addressUseMapping
 from ..models import Location

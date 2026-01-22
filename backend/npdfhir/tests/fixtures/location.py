@@ -39,6 +39,7 @@ def create_address(
 
 
 def create_location(
+    id=None,
     organization=None,
     name="Test Location",
     city="Albany",
@@ -63,8 +64,11 @@ def create_location(
         organization=organization, address=address, address_use=use
     )
 
+    if id is None:
+        id = uuid.uuid4()
+
     loc = Location.objects.create(
-        id=uuid.uuid4(),
+        id=id,
         name=name,
         organization=organization,
         address=address,
