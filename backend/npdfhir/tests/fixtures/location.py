@@ -3,7 +3,7 @@ import uuid
 
 from django.contrib.gis.geos import Point
 
-from ...models import Address, AddressUs, FipsState, Location
+from ...models import Address, AddressUs, FipsState, Location, FhirAddressUse, OrganizationToAddress
 from .organization import create_organization
 
 
@@ -47,6 +47,7 @@ def create_location(
     addr_line_1="123 Main St",
     x=42.6680771,
     y=-73.8518804,
+    address_use="work",
 ):
     """
     Creates AddressUs → Address → Location.
@@ -54,6 +55,12 @@ def create_location(
     organization = organization or create_organization()
     address = create_address(
         city=city, state=state, zipcode=zipcode, addr_line_1=addr_line_1, x=x, y=y
+    )
+
+    use = FhirAddressUse.objects.get(value=address_use)
+
+    OrganizationToAddress.objects.create(
+        organization=organization, address=address, address_use=use
     )
 
     loc = Location.objects.create(

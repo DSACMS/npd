@@ -3,6 +3,7 @@ from django.contrib.postgres.search import SearchVector
 from django_filters import rest_framework as filters
 from django.contrib.gis.geos import Point
 from django.contrib.gis.measure import D
+from django.db.models import F
 
 from ..mappings import addressUseMapping
 from ..models import Location
@@ -10,7 +11,7 @@ from ..models import Location
 
 class LocationFilterSet(filters.FilterSet):
     name = filters.CharFilter(
-        field_name="name", lookup_expr="exact", help_text="Filter by location name"
+        field_name="name", lookup_expr="contains", help_text="Filter by location name"
     )
 
     organization_type = filters.CharFilter(
@@ -54,7 +55,9 @@ class LocationFilterSet(filters.FilterSet):
 
     def filter_organization_type(self, queryset, name, value):
         return queryset.annotate(
-            search=SearchVector("organizationtotaxonomy__nucc_code__display_name")
+            search=SearchVector(
+                "organization__clinicalorganization__organizationtotaxonomy__nucc_code__code"
+            )
         ).filter(search=value)
 
     def filter_address(self, queryset, name, value):
