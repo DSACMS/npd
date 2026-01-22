@@ -1,9 +1,10 @@
 from django.urls import reverse
 from rest_framework import status
 
+
 from ..models import Organization, OrganizationByName, OtherIdType
 from .api_test_case import APITestCase
-from .fixtures import create_legal_entity, create_organization
+from .fixtures.organization import create_legal_entity, create_organization
 from .helpers import (
     assert_fhir_response,
     assert_has_results,

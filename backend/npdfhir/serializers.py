@@ -43,7 +43,6 @@ if "runserver" or "test" in sys.argv:
         fhir_name_use,
         fhir_phone_use,
         nucc_taxonomy_codes,
-        other_identifier_type,
     )
 
 
@@ -68,7 +67,6 @@ class AddressSerializer(serializers.Serializer):
         ]
 
     def to_representation(self, instance):
-        representation = super().to_representation(instance)
         if hasattr(instance, "address"):
             address = instance.address.address_us
         else:
@@ -83,8 +81,9 @@ class AddressSerializer(serializers.Serializer):
             postalCode=address.zipcode,
             country="US",
         )
-        if "use" in representation.keys():
-            address.use = (representation["use"],)
+
+        if hasattr(instance, "address_use"):
+            address.use = instance.address_use.value
         return address.model_dump()
 
 
@@ -164,22 +163,21 @@ class OtherIdentifierSerializer(serializers.Serializer):
             "other_identifier_type_value",
         ]
 
-    def to_representation(self, id):
-        other_identifier_type_id = id.other_identifier_type_id
+    def to_representation(self, instance):
         license_identifier = Identifier(
             # system="", TODO: Figure out how to associate a system with each identifier
-            value=id.value,
+            value=instance.other_id,
             type=CodeableConcept(
                 coding=[
                     Coding(
                         system="http://terminology.hl7.org/CodeSystem/v2-0203",
-                        code=str(other_identifier_type_id),
-                        display=other_identifier_type[str(other_identifier_type_id)],
+                        code=str(instance.other_id_type.value),
+                        display=instance.other_id,
                     )
                 ]
             ),
             # use="" TODO: Add use for other identifier
-            period=Period(start=id.issue_date, end=id.expiry_date),
+            # period=Period(start=instance.issue_date, end=instance.expiry_date),
         )
         return license_identifier.model_dump()
 
@@ -444,7 +442,7 @@ class PractitionerSerializer(serializers.Serializer):
     npi = NPISerializer()
     individual = IndividualSerializer(read_only=True)
     identifier = OtherIdentifierSerializer(
-        source="providertootheridentifier_set", many=True, read_only=True
+        source="providertootherid_set", many=True, read_only=True
     )
     taxonomy = TaxonomySerializer(source="providertotaxonomy_set", many=True, read_only=True)
 
@@ -619,11 +617,11 @@ class CapabilityStatementSerializer(serializers.Serializer):
     Serializer for FHIR CapablityStatement resource
     """
 
-    def to_representation(self, instance):
+    def to_representation(self):
         request = self.context.get("request")
         baseURL = request.build_absolute_uri("/fhir")
         metadataURL = request.build_absolute_uri(reverse("fhir-metadata"))
-        schemaData = get_schema_data(request, "schema")
+        schemaData = get_schema_data(request)
 
         capability_statement = CapabilityStatement(
             url=metadataURL,
@@ -711,7 +709,7 @@ class BundleSerializer(serializers.Serializer):
             resource_type = resource["resourceType"]
             id = resource["id"]
             url_name = f"fhir-{resource_type.lower()}-detail"
-            full_url = request.build_absolute_uri(reverse(url_name, kwargs={"pk": id}))
+            full_url = request.build_absolute_uri(reverse(url_name, kwargs={"id": id}))
             # Create an entry for this resource
             entry = {
                 "fullUrl": full_url,

@@ -72,10 +72,10 @@ A list of core team members responsible for the code and documentation in this r
 
 ## Repository Structure
 
-This is the main repository for the Naitonal Provider Directory (NPD) workstream. You will find more information about each component in a README.md file within its respective directory.
+This is the main repository for the National Provider Directory (NPD) workstream. You will find more information about each component in a README.md file within its respective directory.
 
 - [backend](./backend/): FHIR Provider Directory API and directory browser
-- [frontend](./backend/): Directory browser React application
+- [frontend](./frontend/): Directory browser React application
 - [flyway](./flyway/): Database migrations
 - [playwright](./playwright/): End-to-end test suite
 
@@ -134,3 +134,6 @@ For more information and resources about SBOMs, visit: https://www.cisa.gov/sbom
 This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/) as indicated in [LICENSE](LICENSE).
 
 All contributions to this project will be released under the CC0 dedication. By submitting a pull request or issue, you are agreeing to comply with this waiver of copyright interest.
+ 
+   
+ 

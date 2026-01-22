@@ -3,7 +3,7 @@ from django.db.models import Q
 from django_filters import rest_framework as filters
 
 from ..mappings import addressUseMapping
-from ..models import OrganizationByName
+from ..models import Organization, OrganizationByName
 from ..utils import parse_identifier_query
 
 

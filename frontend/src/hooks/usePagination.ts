@@ -1,6 +1,8 @@
 import { useMemo } from "react"
-import { useSearchParams } from "react-router"
+import { useSearchParams, type SetURLSearchParams } from "react-router"
 import type { FHIRCollection } from "../@types/fhir"
+
+type SupportedParams = RequiredPaginationParams & SearchParams
 
 const DEFAULT_PAGE_SIZE = 10
 
@@ -11,23 +13,36 @@ const toInt = (value: string | null | undefined, fallback: number): number => {
   return isNaN(pval) ? fallback : pval
 }
 
-const coercePaginationParams = (
-  params: URLSearchParams,
-): RequiredPaginationParams => {
-  return {
+const coercePaginationParams = (params: URLSearchParams): SupportedParams => {
+  const out: SupportedParams = {
     page: toInt(params.get("page"), 1),
     page_size: toInt(params.get("page_size"), DEFAULT_PAGE_SIZE),
   }
+
+  const query = params.get("query")
+  if (query !== null) {
+    out.query = query
+  }
+
+  const sort = params.get("sort")
+  if (sort !== null) {
+    out.sort = sort
+  }
+
+  return out
 }
 
-export const usePaginationParams = () => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [search, _setSearch] = useSearchParams()
-  return coercePaginationParams(search)
+export const usePaginationParams = (): [
+  SupportedParams,
+  SetURLSearchParams,
+] => {
+  const [search, setSearch] = useSearchParams()
+
+  return [coercePaginationParams(search), setSearch]
 }
 
 export const usePagination = (
-  pagination: RequiredPaginationParams,
+  pagination: SupportedParams,
   data: undefined | FHIRCollection<unknown>,
 ): PaginationState => {
   return useMemo(() => {
