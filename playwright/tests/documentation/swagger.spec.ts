@@ -1,13 +1,5 @@
 import { expect, test } from "@playwright/test"
-
-const FHIR_RESOURCES = [
-  "Endpoint",
-  "Location",
-  "Organization",
-  "Practitioner",
-  "PractitionerRole",
-  "metadata",
-] as const
+import { FHIR_RESOURCES } from "../constants"
 
 test.describe("Swagger", () => {
   test("loads successfully", async ({ page }) => {
@@ -27,8 +19,7 @@ test.describe("Swagger", () => {
     }
   })
 
-  // regression test: "search" parameter should not appear in any endpoint
-  test("does not display invalid 'search' parameter", async ({ page }) => {
+  test("regression test: 'search' parameter should not appear in any endpoint", async ({ page }) => {
     await page.goto("/fhir/docs/")
     await expect(page.locator("#swagger-ui")).toBeVisible()
 
@@ -36,13 +27,17 @@ test.describe("Swagger", () => {
     const orgOperation = page.locator("#operations-Organization-Organization_list")
     await orgOperation.locator(".opblock-summary-control").click()
     await expect(orgOperation.locator(".opblock-body")).toBeVisible()
-    await expect(orgOperation.locator("tr[data-param-name='search']")).not.toBeVisible()
 
+    await expect(orgOperation.locator("tr[data-param-name]").first()).toBeAttached()
+    await expect(orgOperation.locator("tr[data-param-name='search']")).not.toBeAttached()
+  
     // check Practitioner endpoint
     const practitionerOperation = page.locator("#operations-Practitioner-Practitioner_list")
     await practitionerOperation.locator(".opblock-summary-control").click()
     await expect(practitionerOperation.locator(".opblock-body")).toBeVisible()
-    await expect(practitionerOperation.locator("tr[data-param-name='search']")).not.toBeVisible()
+
+    await expect(practitionerOperation.locator("tr[data-param-name]").first()).toBeAttached()
+    await expect(practitionerOperation.locator("tr[data-param-name='search']")).not.toBeAttached()
   })
 })
 

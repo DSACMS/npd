@@ -1,13 +1,5 @@
 import { expect, test } from "@playwright/test"
-
-const FHIR_RESOURCES = [
-  "Endpoint",
-  "Location",
-  "Organization",
-  "Practitioner",
-  "PractitionerRole",
-  "metadata",
-] as const
+import { FHIR_RESOURCES } from "../constants"
 
 test.describe("Redoc", () => {
   test("loads successfully", async ({ page }) => {
