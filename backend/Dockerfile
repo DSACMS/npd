@@ -4,8 +4,6 @@ FROM python:3.13-slim AS builder
 # Create the app directory
 RUN mkdir /app
 
-
-
 # Set the working directory inside the container
 WORKDIR /app
  
@@ -26,12 +24,45 @@ RUN pip install --upgrade pip
 # Copy the Django project  and install dependencies
 COPY requirements.txt  /app/
     
-# run this command to install all dependencies 
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libgdal-dev \
+    python3-gdal \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set up a virtual environment in the builder stage
+ENV VIRTUAL_ENV=/opt/venv
+RUN python3 -m venv $VIRTUAL_ENV
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+
+# Install Python requirements into the virtual environment
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+
+ 
+# Stage 2: Production stage
+FROM python:3.13-slim
  
 RUN useradd -m -r appuser && \
+   mkdir /app && \
    chown -R appuser /app
 
+# Install only the *runtime* system dependencies for GDAL
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gdal-bin \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy the virtual environment from the builder stage
+COPY --from=builder /opt/venv /opt/venv
+
+# Set the PATH to include the virtual environment's bin directory
+ENV PATH="/opt/venv/bin:$PATH"
+
+# Set the working directory
+WORKDIR /app
+ 
+# Copy application code
+COPY --chown=appuser:appuser . .
  
 # Set environment variables to optimize Python
 ENV PYTHONDONTWRITEBYTECODE=1
