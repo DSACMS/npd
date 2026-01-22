@@ -53,6 +53,7 @@ class PractitionerRoleViewSetTestCase(APITestCase):
                 org_name="Hospital Group",
                 role_display="Clinician",
                 role_code="MD",
+                nucc_types=["101200000X"]
             )
 
             cls.roles.append(role)
@@ -223,7 +224,7 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         taxonomy = ProviderToTaxonomy.objects.filter(npi=self.provider).first()
         self.assertIsNotNone(taxonomy)
         url = reverse("fhir-practitionerrole-list")
-        response = self.client.get(url, {"practitioner_type": str(taxonomy.nucc_code.pk)})
+        response = self.client.get(url, {"practitioner_type": str(taxonomy.nucc_code.code)})
         self.assertEqual(response.status_code, 200)
         assert_has_results(self, response)
 
@@ -310,19 +311,6 @@ class PractitionerRoleViewSetTestCase(APITestCase):
             location_obj = Location.objects.get(pk=location_id)
 
             self.assertEqual(zip_search, location_obj.address.address_us.zipcode)
-
-
-    def test_filter_by_endpoint_fields(self):
-        url = reverse("fhir-practitionerrole-list")
-        for param, value in {
-            "endpoint_connection_type": self.endpoint.endpoint_instance.endpoint_connection_type.id,
-            "endpoint_payload_type": "urn:hl7-org:sdwg:ccda-structuredBody:1.1",
-            "endpoint_organization_id": str(self.organization.id),
-            "endpoint_organization_name": self.org_name,
-        }.items():
-            resp = self.client.get(url, {param: value})
-            self.assertEqual(resp.status_code, 200)
-            assert_has_results(self, resp)
     
     def test_list_filter_by_endpoint_connection_type(self):
         connection_type_id = self.endpoint.endpoint_instance.endpoint_connection_type.id
@@ -345,7 +333,7 @@ class PractitionerRoleViewSetTestCase(APITestCase):
             #location_obj = Location.objects.get(pk=location_id)
     
     def test_list_filter_by_endpoint_payload_type(self):
-        payload_type = "urn:hl7-org:sdwg:ccda-structuredBody:1.1"
+        payload_type = "application/fhir+json"
         url = reverse("fhir-practitionerrole-list")
         response = self.client.get(url, {"endpoint_payload_type": payload_type})
         self.assertEqual(response.status_code, status.HTTP_200_OK)

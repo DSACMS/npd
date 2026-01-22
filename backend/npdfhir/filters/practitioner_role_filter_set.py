@@ -136,11 +136,9 @@ class PractitionerRoleFilterSet(filters.FilterSet):
         return queryset
 
     def filter_practitioner_type(self, queryset, name, value):
-        return queryset.annotate(
-            search=SearchVector(
-                "provider_to_organization__individual__providertotaxonomy__nucc_code__display_name"
-            )
-        ).filter(search=value)
+        return queryset.filter(
+            provider_to_organization__individual__providertotaxonomy__nucc_code__code=value
+        ).distinct()
 
     def filter_organization_name(self, queryset, name, value):
         return queryset.annotate(
@@ -192,11 +190,10 @@ class PractitionerRoleFilterSet(filters.FilterSet):
         ).filter(search=value)
     
     def filter_payload_type(self, queryset, name, value):
-        return queryset.annotate(
-            search=SearchVector(
-                "location__locationtoendpointinstance__endpoint_instance__endpointinstancetopayload__payload_type__value"
-            )
-        ).filter(search=value)
+        return queryset.filter(
+            location__locationtoendpointinstance__endpoint_instance__endpointinstancetopayload__payload_type__id=value
+        ).distinct()
+
     
     def filter_endpoint_organization_id(self, queryset, name, value):
         #The parent of the organization that owns the location the endpoint is attached to
