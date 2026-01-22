@@ -1,1 +1,1 @@
-alter table npd.endpoint_instance add endpoint_status varchar(64);
+alter table npd.endpoint_instance add status varchar(64);

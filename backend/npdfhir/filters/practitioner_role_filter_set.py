@@ -37,8 +37,8 @@ class PractitionerRoleFilterSet(filters.FilterSet):
         help_text="Filter by active status"
     )
 
-    identifier = filters.CharFilter(
-        method="filter_practitioner_identifer", help_text="Filter by practioner identifer"
+    practitioner_identifier = filters.CharFilter(
+        method="filter_practitioner_identifier", help_text="Filter by practitioner identifier" 
     )
 
     role = filters.CharFilter(
@@ -107,7 +107,7 @@ class PractitionerRoleFilterSet(filters.FilterSet):
             "organization_name",
             "organization_type",
             "active",
-            "identifier",
+            "practitioner_identifier",
             "role",
             "specialty",
             "endpoint_connection_type",
@@ -152,7 +152,7 @@ class PractitionerRoleFilterSet(filters.FilterSet):
             Q(provider_to_organization__organization__clinicalorganization__organizationtotaxonomy__nucc_code__code=value) 
         ).distinct()
 
-    def filter_practitioner_identifer(self, queryset, name, value):
+    def filter_practitioner_identifier(self, queryset, name, value):
         system, identifier_id = parse_identifier_query(value)
         queries = Q(pk__isnull=True)
 
@@ -187,7 +187,7 @@ class PractitionerRoleFilterSet(filters.FilterSet):
     def filter_endpoint_status(self, queryset, name, value):
         return queryset.annotate(
             search=SearchVector(
-                "location__locationtoendpointinstance__endpoint_instance__endpoint_status"
+                "location__locationtoendpointinstance__endpoint_instance__status"
             )
         ).filter(search=value)
     

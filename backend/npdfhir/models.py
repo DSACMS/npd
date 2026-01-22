@@ -205,7 +205,7 @@ class EndpointInstance(models.Model):
         "EnvironmentType", models.DO_NOTHING, blank=True, null=True
     )
 
-    endpoint_status = models.CharField(max_length=64, blank=True, null=True)
+    status = models.CharField(max_length=64, blank=True, null=True)
 
     class Meta:
         managed = False
