@@ -91,7 +91,7 @@ class PractitionerViewSetTestCase(APITestCase):
             create_practitioner(last_name="ZUROSKE", first_name="GLEN"),
             create_practitioner(last_name="ZUCKERBERG", first_name="EDWARD"),
             create_practitioner(last_name="ZUCKER", first_name="WILLIAM"),
-            create_practitioner(last_name="ZUCCALA", first_name="SCOTT"),
+            create_practitioner(last_name="ZUCCALA", first_name="SCOTT", gender="M"),
             create_practitioner(last_name="ZOVE", first_name="DANIEL"),
             create_practitioner(last_name="ZORN", first_name="GUNNAR"),
             create_practitioner(last_name="ZOOG", first_name="EUGENE"),
@@ -238,7 +238,7 @@ class PractitionerViewSetTestCase(APITestCase):
         for practitioner_entry in response.data["results"]["entry"]:
             self.assertIn("resource", practitioner_entry)
             self.assertIn("id", practitioner_entry["resource"])
-            npi_id = practitioner_entry["resource"]["id"]
+            npi_id = practitioner_entry["resource"]['identifier'][0]['value']
             npi_ids.append(int(npi_id))
 
         # Check to make sure no female practitioners were fetched by mistake
