@@ -47,7 +47,7 @@ def create_location(
         value=address_use
     )
 
-    org_to_address = OrganizationToAddress.objects.create(
+    OrganizationToAddress.objects.create(
         organization=organization,
         address=address,
         address_use=use

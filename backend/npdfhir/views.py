@@ -42,8 +42,6 @@ from .serializers import (
     CapabilityStatementSerializer,
 )
 
-from django.conf import settings
-
 DEBUG = settings.DEBUG
 
 
