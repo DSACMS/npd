@@ -8,7 +8,7 @@ from ..models import Location
 
 class LocationFilterSet(filters.FilterSet):
     name = filters.CharFilter(
-        field_name="name", lookup_expr="exact", help_text="Filter by location name"
+        field_name="name", lookup_expr="contains", help_text="Filter by location name"
     )
 
     organization_type = filters.CharFilter(

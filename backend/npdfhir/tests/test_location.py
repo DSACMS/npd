@@ -211,6 +211,51 @@ class LocationViewSetTestCase(APITestCase):
             self.assertIn("address", location_entry)
             self.assertIn("name", location_entry)
             self.assertIn(name, location_entry['name'])
+    
+    def test_list_filter_by_name_partial(self):
+        name = "ABC"
+    
+        url = reverse("fhir-location-list")
+        response = self.client.get(url, {"name": name})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        assert_has_results(self, response)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+            location_entry = entry["resource"]
+
+            self.assertEqual(location_entry["resourceType"], "Location")
+            self.assertIn("id", location_entry)
+            self.assertIn("status", location_entry)
+            self.assertIn("managingOrganization", location_entry)
+            self.assertIn("address", location_entry)
+            self.assertIn("name", location_entry)
+            self.assertIn(name, location_entry['name'])
+    
+    def test_list_filter_by_name_whole(self):
+        name = "ABC HOME MEDICAL SUPPLY, INC."
+    
+        url = reverse("fhir-location-list")
+        response = self.client.get(url, {"name": name})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        assert_has_results(self, response)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+            location_entry = entry["resource"]
+
+            self.assertEqual(location_entry["resourceType"], "Location")
+            self.assertIn("id", location_entry)
+            self.assertIn("status", location_entry)
+            self.assertIn("managingOrganization", location_entry)
+            self.assertIn("address", location_entry)
+            self.assertIn("name", location_entry)
+            self.assertIn(name, location_entry['name'])
+            self.assertNotIn("ABC DURABLE MEDICAL EQUIPMENT INC", location_entry['name'])
 
     def test_filter_by_org_type(self):
         nucc_type = "283Q00000X"
