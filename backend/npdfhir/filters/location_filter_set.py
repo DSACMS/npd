@@ -1,3 +1,4 @@
+import re
 from django.contrib.postgres.search import SearchVector
 from django_filters import rest_framework as filters
 from django.contrib.gis.geos import Point
@@ -90,13 +91,22 @@ class LocationFilterSet(filters.FilterSet):
         return queryset.filter(address_id=value)
 
     def filter_distance(self, queryset, name, value):
-        print(value)
-        distance_components = value.split("|")
-        print(distance_components)
-        lat = float(distance_components[0])
-        lon = float(distance_components[1])
-        distance = float(distance_components[2])
-        user_location = Point(lat, lon, srid=4326)
-        return queryset.filter(
-            address__address_us__geolocation__distance_lte=(user_location, D(km=distance))
-        )
+        pattern = r"(-?\d+\.?\d+?)\|(-?\d+\.?\d+?)\|(\d+\.?\d+?)\|?(km|mi|ft)?"
+        match = re.fullmatch(pattern, value)
+        if match:
+            lon, lat, distance, units = match.groups()
+            lon = float(lon)
+            lat = float(lat)
+            distance = float(distance)
+            user_location = Point(lon, lat, srid=4326)
+            match units:
+                case "mi":
+                    distance_function = D(mi=distance)
+                case "ft":
+                    distance_function = D(ft=distance)
+                case _:
+                    distance_function = D(km=distance)
+            return queryset.filter(
+                address__address_us__geolocation__distance_lte=(user_location, distance_function)
+            )
+        return queryset
