@@ -3,6 +3,7 @@ from django.contrib.postgres.search import SearchVector
 from django_filters import rest_framework as filters
 from django.contrib.gis.geos import Point
 from django.contrib.gis.measure import D
+from django.db.models import F
 
 from ..mappings import addressUseMapping
 from ..models import Location
@@ -37,7 +38,7 @@ class LocationFilterSet(filters.FilterSet):
 
     near = filters.CharFilter(
         method="filter_distance",
-        help_text="Filter by distance from a point expressed as [latitude]|[longitude]|[distance]|[units].",
+        help_text="Filter by distance from a point expressed as [latitude]|[longitude]|[distance]|[units]. If no units are provided, km is assumed.",
     )
 
     class Meta:
@@ -86,17 +87,16 @@ class LocationFilterSet(filters.FilterSet):
         )
 
     def filter_address_use(self, queryset, name, value):
-        if value in addressUseMapping.keys():
-            value = addressUseMapping.toNPD(value)
-        else:
-            value = -1
-        return queryset.filter(address_id=value)
+        return queryset.filter(
+            organization__organizationtoaddress__address=F("address"),
+            organization__organizationtoaddress__address_use__value=value,
+        ).distinct()
 
     def filter_distance(self, queryset, name, value):
-        pattern = r"(-?\d+\.?\d+?)\|(-?\d+\.?\d+?)\|(\d+\.?\d+?)\|?(km|mi|ft)?"
+        pattern = r"(-?\d+\.?\d*)\|(-?\d+\.?\d*)\|(\d+\.?\d*)\|?(km|mi|ft)?"
         match = re.fullmatch(pattern, value)
         if match:
-            lon, lat, distance, units = match.groups()
+            lat, lon, distance, units = match.groups()
             lon = float(lon)
             lat = float(lat)
             distance = float(distance)
@@ -111,4 +111,5 @@ class LocationFilterSet(filters.FilterSet):
             return queryset.filter(
                 address__address_us__geolocation__distance_lte=(user_location, distance_function)
             )
-        return queryset
+        else:
+            return Location.objects.none()

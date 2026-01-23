@@ -41,6 +41,7 @@ def create_address(
 def create_location(
     id=None,
     organization=None,
+    organization_name="Test Organization",
     name="Test Location",
     city="Albany",
     state="NY",
@@ -53,7 +54,7 @@ def create_location(
     """
     Creates AddressUs → Address → Location.
     """
-    organization = organization or create_organization()
+    organization = organization or create_organization(name=organization_name)
     address = create_address(
         city=city, state=state, zipcode=zipcode, addr_line_1=addr_line_1, x=x, y=y
     )

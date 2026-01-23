@@ -1,7 +1,7 @@
 from django.urls import reverse
 from rest_framework import status
 
-from django.contrib.gis.geos import Point
+from geopy.distance import geodesic
 
 from .api_test_case import APITestCase
 from .fixtures.location import create_location
@@ -122,8 +122,6 @@ class LocationViewSetTestCase(APITestCase):
         url = reverse("fhir-location-list")
         response = self.client.get(url)
         assert_fhir_response(self, response)
-
-        # print(response.data["results"]["entry"][0]['resource']['name'])
 
         # Extract names
         names = extract_resource_names(response)
@@ -304,7 +302,6 @@ class LocationViewSetTestCase(APITestCase):
 
         bundle = response.data["results"]
 
-        # print(bundle)
         for entry in bundle["entry"]:
             self.assertIn("resource", entry)
             location_entry = entry["resource"]
@@ -434,13 +431,10 @@ class LocationViewSetTestCase(APITestCase):
     def test_filter_by_distance_with_km(self):
         lat = -90.194315
         lon = 38.629267
+        location = (lon, lat)
         distance = 3
         units = "km"
-        near_query = f"{lon}|{lat}|{distance}|{units}"
-        nearby_ids = [
-            "6df24407-ebe0-4f0b-9a75-bdfee486f0df",
-            "c1fc1ada-841a-4b92-9e8e-37f4d17b65d4",
-        ]
+        near_query = f"{lat}|{lon}|{distance}|{units}"
         url = reverse("fhir-location-list")
         response = self.client.get(url, {"near": near_query})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -448,19 +442,20 @@ class LocationViewSetTestCase(APITestCase):
 
         bundle = response.data["results"]
 
-        returned_ids = [entry["id"] for entry in bundle["entries"]]
-        self.assrertEqual(sorted(nearby_ids), sorted(returned_ids))
+        for entry in bundle["entry"]:
+            position = (
+                entry["resource"]["position"]["longitude"],
+                entry["resource"]["position"]["latitude"],
+            )
+            self.assertLessEqual(geodesic(location, position).km, distance)
 
     def test_filter_by_distance_with_mi(self):
         lat = -90.194315
         lon = 38.629267
+        location = (lon, lat)
         distance = 1
         units = "mi"
-        near_query = f"{lon}|{lat}|{distance}|{units}"
-        nearby_ids = [
-            "6df24407-ebe0-4f0b-9a75-bdfee486f0df",
-            "c1fc1ada-841a-4b92-9e8e-37f4d17b65d4",
-        ]
+        near_query = f"{lat}|{lon}|{distance}|{units}"
         url = reverse("fhir-location-list")
         response = self.client.get(url, {"near": near_query})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -468,15 +463,40 @@ class LocationViewSetTestCase(APITestCase):
 
         bundle = response.data["results"]
 
-        returned_ids = [entry["id"] for entry in bundle["entries"]]
-        self.assrertEqual(sorted(nearby_ids), sorted(returned_ids))
+        for entry in bundle["entry"]:
+            position = (
+                entry["resource"]["position"]["longitude"],
+                entry["resource"]["position"]["latitude"],
+            )
+            self.assertLessEqual(geodesic(location, position).miles, distance)
+
+    def test_filter_by_distance_with_ft(self):
+        lat = -90.194315
+        lon = 38.629267
+        location = (lon, lat)
+        distance = 5000
+        units = "ft"
+        near_query = f"{lat}|{lon}|{distance}|{units}"
+        url = reverse("fhir-location-list")
+        response = self.client.get(url, {"near": near_query})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        assert_has_results(self, response)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            position = (
+                entry["resource"]["position"]["longitude"],
+                entry["resource"]["position"]["latitude"],
+            )
+            self.assertLessEqual(geodesic(location, position).feet, distance)
 
     def test_filter_by_distance_witout_units(self):
         lat = -90.194315
         lon = 38.629267
-        location = (lat, lon)
+        location = (lon, lat)
         distance = 3
-        near_query = f"{lon}|{lat}|{distance}"
+        near_query = f"{lat}|{lon}|{distance}"
         url = reverse("fhir-location-list")
         response = self.client.get(url, {"near": near_query})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -484,20 +504,23 @@ class LocationViewSetTestCase(APITestCase):
 
         bundle = response.data["results"]
 
-        for entry in bundle["entries"]:
-            position = (entry["position"]["latitude"], entry["position"]["longitude"])
-            self.assertLessEqual(distance(location, position), distance)
+        for entry in bundle["entry"]:
+            position = (
+                entry["resource"]["position"]["longitude"],
+                entry["resource"]["position"]["latitude"],
+            )
+            self.assertLessEqual(geodesic(location, position).km, distance)
 
     def test_filter_by_distance_none_nearby(self):
-        lat = 0
-        lon = 0
-        distance = 30
+        lat = 64
+        lon = 12
+        distance = 30.5
         units = "km"
         near_query = f"{lon}|{lat}|{distance}|{units}"
         url = reverse("fhir-location-list")
         response = self.client.get(url, {"near": near_query})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(len(response["results"]["entries"]), 0)
+        self.assertEqual(len(response.data["results"]["entry"]), 0)
 
     # Retrieve tests
     def test_retrieve_nonexistent(self):

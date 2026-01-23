@@ -510,7 +510,6 @@ class LocationSerializer(serializers.Serializer):
         #    location.telecom = representation['phone']
         if "address" in representation.keys():
             location.address = representation["address"]
-            print(instance.address)
             if (
                 hasattr(instance, "address")
                 and hasattr(instance.address, "address_us")

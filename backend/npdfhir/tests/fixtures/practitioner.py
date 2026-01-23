@@ -125,7 +125,7 @@ def create_full_practitionerrole(
     gender="F",
     npi_value=None,
     org_name="Test Org",
-    location_name="Test Location",
+    location_id=None,
     role_code="PRV",
     role_display="Provider Role",
 ):
@@ -145,7 +145,9 @@ def create_full_practitionerrole(
     )
 
     org = create_organization(name=org_name)
-    loc = create_location(organization=org, name=location_name)
+    if location_id is None:
+        loc = create_location()
+        location_id = loc.id
 
     # Ensure relationship + role codes exist
     rel_type = _ensure_relationship_type()
@@ -162,7 +164,7 @@ def create_full_practitionerrole(
     pr = ProviderToLocation.objects.create(
         id=uuid.uuid4(),
         provider_to_organization=pto_org,
-        location=loc,
+        location_id=location_id,
         provider_role_code=role_code,
         active=True,
     )
