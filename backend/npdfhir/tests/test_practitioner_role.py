@@ -12,7 +12,7 @@ from .helpers import (
     assert_fhir_response,
     assert_has_results,
     assert_pagination_limit,
-    extract_resource_ids,
+    # extract_resource_ids,
 )
 
 
