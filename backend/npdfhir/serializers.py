@@ -325,15 +325,6 @@ class OrganizationSerializer(serializers.Serializer):
 
         # Serialize EHRVendor as an Organization
         if source.is_ehr_vendor:
-            # We don't have any EHR Vendor identifiers, so we can omit this
-            #identifiers.append(
-            #    Identifier(
-            #        system="urn:ndh:ehr-vendor",
-            #        value=str(source.id),
-            #        type=CodeableConcept(coding=[Coding(code="EHR", display="EHR Vendor")]),
-            #    )
-            #)
-
             organization.name = source.organizationtoname_set[0]["name"]
             organization.identifier = identifiers
 
@@ -487,28 +478,7 @@ class OrganizationAffiliationSerializer(serializers.Serializer):
 
         organization_affiliation.id = str(instance.id)
 
-        #identifiers = []
-        #codes = []
         locations = []
-
-        # Get npis of all orgs
-
-        # if instance.ein:
-        #    ein_identifier = Identifier(
-        #        system="https://terminology.hl7.org/NamingSystem-USEIN.html",
-        #        value=str(instance.ein.ein_id),
-        #        type=CodeableConcept(
-        #            coding=[Coding(
-        #                system="http://terminology.hl7.org/CodeSystem/v2-0203",
-        #                code="TAX",
-        #                display="Tax ID number"
-        #            )]
-        #        )
-        #    )
-        #    identifiers.append(ein_identifier)
-
-
-        #organization_affiliation.identifier = identifiers
 
         organization_affiliation.organization = genReference("fhir-organization-detail", instance.id, request)
         organization_affiliation.organization.display = str(instance.ehr_vendor_name)
