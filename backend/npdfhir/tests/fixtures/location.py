@@ -54,7 +54,8 @@ def create_location(
     """
     Creates AddressUs → Address → Location.
     """
-    organization = organization or create_organization(name=organization_name)
+    if organization is None:
+        organization = create_organization(name=organization_name)
     address = create_address(
         city=city, state=state, zipcode=zipcode, addr_line_1=addr_line_1, x=x, y=y
     )

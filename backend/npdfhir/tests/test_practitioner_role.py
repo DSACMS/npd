@@ -1,3 +1,5 @@
+import math
+
 from django.urls import reverse
 from rest_framework import status
 
@@ -106,7 +108,7 @@ class PractitionerRoleViewSetTestCase(APITestCase):
                 gender="M" if i % 2 == 0 else "F",
                 npi_value=npi,
                 location_id=location.id,
-                org_name=location.organization.organizationtoname_set.name,
+                org_name=cls.orgs[math.floor(i / 2)],
                 role_display="Clinician",
                 role_code="MD",
             )
@@ -188,9 +190,6 @@ class PractitionerRoleViewSetTestCase(APITestCase):
         for entry in bundle["entry"]:
             location_url = entry["resource"]["location"][0]["reference"]
             returned_location = self.client.get(location_url).data
-            org_url = entry["resource"]["organization"]["reference"]
-            rorg = self.client.get(location_url).data
-            print(rorg)
             position = (
                 returned_location["position"]["longitude"],
                 returned_location["position"]["latitude"],
