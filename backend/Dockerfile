@@ -25,10 +25,9 @@ RUN pip install --upgrade pip
 COPY requirements.txt  /app/
     
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
-    libgdal-dev \
-    python3-gdal \
-    && rm -rf /var/lib/apt/lists/*
+    binutils \
+    libproj-dev \
+    gdal-bin
 
 # Set up a virtual environment in the builder stage
 ENV VIRTUAL_ENV=/opt/venv
