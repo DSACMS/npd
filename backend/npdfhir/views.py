@@ -12,7 +12,7 @@ from rest_framework import viewsets
 from rest_framework.views import APIView
 from rest_framework.renderers import BrowsableAPIRenderer
 from rest_framework.response import Response
-from rest_framework.filters import OrderingFilter, SearchFilter
+from rest_framework.filters import OrderingFilter
 
 from .pagination import CustomPaginator
 from .renderers import FHIRRenderer
@@ -346,7 +346,7 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     else:
         renderer_classes = [FHIRRenderer]
-    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
+    filter_backends = [DjangoFilterBackend, ParamOrderingFilter]
     # filterset_class = OrganizationFilterSet
     pagination_class = CustomPaginator
     lookup_url_kwarg = "id"
@@ -614,7 +614,7 @@ class FHIROrganizationAffiliationViewSet(viewsets.GenericViewSet):
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     else:
         renderer_classes = [FHIRRenderer]
-    filter_backends = [DjangoFilterBackend, SearchFilter, ParamOrderingFilter]
+    filter_backends = [DjangoFilterBackend, ParamOrderingFilter]
     #filterset_class = OrganizationFilterSet
     pagination_class = CustomPaginator
 
