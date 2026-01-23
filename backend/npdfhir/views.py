@@ -1,7 +1,7 @@
 from uuid import UUID
 
 from django.conf import settings
-from django.db.models import CharField, Exists, F, OuterRef, Subquery, Value
+from django.db.models import CharField, Exists, F, OuterRef, Subquery, Value, Prefetch
 from django.db.models.functions import Concat
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
@@ -32,6 +32,7 @@ from .models import (
     Organization,
     Provider,
     ProviderToLocation,
+    OrganizationToAddress
 )
 
 from .serializers import (
@@ -520,8 +521,18 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
             Location.objects.all()
             .select_related(
                 "organization",
+                "address",
                 "address__address_us",
                 "address__address_us__state_code",
+            )
+            .prefetch_related(
+                Prefetch(
+                    "organization__organizationtoaddress_set",
+                    queryset=OrganizationToAddress.objects.select_related(
+                        "address_use",
+                        "address",
+                    ),
+                )
             )
             .annotate(
                 organization_name=F("organization__organizationtoname__name"),

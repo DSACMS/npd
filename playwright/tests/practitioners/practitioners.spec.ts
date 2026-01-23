@@ -1,10 +1,7 @@
 import { expect, test } from "@playwright/test"
+import { PRACTITIONER } from "../constants"
 
-let practitioner: { npi: string; id: string; name: string } = {
-  npi: "UNSET",
-  id: "UNSET",
-  name: "UNSET",
-}
+let practitioner = PRACTITIONER
 
 // load a known practitioner record from the API before running tests
 test.beforeAll(async ({ request }) => {
