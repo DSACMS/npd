@@ -36,50 +36,6 @@ from .fixtures.practitioner import (
     _ensure_provider_role,
 )
 
-from ..models import (
-    Nucc,
-    EndpointInstanceToPayload,
-    ProviderToOrganization,
-    ProviderToLocation,
-    ProviderToTaxonomy,
-    PayloadType,
-    Location,
-    LocationToEndpointInstance,
-)
-
-
-from .fixtures.organization import create_organization
-from .fixtures.endpoint import create_endpoint
-from .fixtures.location import create_location
-from .fixtures.practitioner import (
-    create_practitioner,
-    create_full_practitionerrole,
-    _ensure_relationship_type,
-    _ensure_provider_role,
-)
-
-from ..models import (
-    Nucc,
-    EndpointInstanceToPayload,
-    ProviderToOrganization,
-    ProviderToLocation,
-    ProviderToTaxonomy,
-    PayloadType,
-    Location,
-    LocationToEndpointInstance,
-)
-
-
-from .fixtures.organization import create_organization
-from .fixtures.endpoint import create_endpoint
-from .fixtures.location import create_location
-from .fixtures.practitioner import (
-    create_practitioner,
-    create_full_practitionerrole,
-    _ensure_relationship_type,
-    _ensure_provider_role,
-)
-
 
 class PractitionerRoleViewSetTestCase(APITestCase):
     @classmethod
