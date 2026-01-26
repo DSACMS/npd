@@ -158,11 +158,11 @@ DATABASES = {
             "pool": {
                 # our default gunicorn container configuration only spins up 3 workerse
                 "min_size": 2,
-                "max_size": 4,
+                "max_size": 10,
                 # boot clients if a pooled connection is not available within 10 seconds
                 "timeout": 10,
                 # after 2 clients are waiting for connections, subsequent requests should immediately fail
-                "max_waiting": 2,
+                "max_waiting": 10,
             },
         },
     }
