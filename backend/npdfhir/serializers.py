@@ -18,7 +18,7 @@ from fhir.resources.R4B.contactpoint import ContactPoint
 from fhir.resources.R4B.endpoint import Endpoint
 from fhir.resources.R4B.humanname import HumanName
 from fhir.resources.R4B.identifier import Identifier
-from fhir.resources.R4B.location import Location as FHIRLocation
+from fhir.resources.R4B.location import Location as FHIRLocation, LocationPosition
 from fhir.resources.R4B.meta import Meta
 from fhir.resources.R4B.organization import Organization as FHIROrganization
 from fhir.resources.R4B.period import Period
@@ -489,7 +489,7 @@ class LocationSerializer(serializers.Serializer):
 
     class Meta:
         model = Location
-    
+
     def get_address(self, instance):
         for ota in instance.organization.organizationtoaddress_set.all():
             if ota.address_id == instance.address_id:
@@ -510,6 +510,17 @@ class LocationSerializer(serializers.Serializer):
         #    location.telecom = representation['phone']
         if "address" in representation.keys():
             location.address = representation["address"]
+            if (
+                hasattr(instance, "address")
+                and hasattr(instance.address, "address_us")
+                and hasattr(instance.address.address_us, "latitude")
+                and hasattr(instance.address.address_us, "longitude")
+            ):
+                position = LocationPosition(
+                    latitude=instance.address.address_us.latitude,
+                    longitude=instance.address.address_us.longitude,
+                )
+                location.position = position
         location.managingOrganization = genReference(
             "fhir-organization-detail", instance.organization_id, request
         )

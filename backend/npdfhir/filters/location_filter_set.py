@@ -1,5 +1,8 @@
+import re
 from django.contrib.postgres.search import SearchVector
 from django_filters import rest_framework as filters
+from django.contrib.gis.geos import Point
+from django.contrib.gis.measure import D
 from django.db.models import F
 
 from ..mappings import addressUseMapping
@@ -33,6 +36,11 @@ class LocationFilterSet(filters.FilterSet):
         help_text="Filter by address use type",
     )
 
+    near = filters.CharFilter(
+        method="filter_distance",
+        help_text="Filter by distance from a point expressed as [latitude]|[longitude]|[distance]|[units]. If no units are provided, km is assumed.",
+    )
+
     class Meta:
         model = Location
         fields = [
@@ -42,11 +50,14 @@ class LocationFilterSet(filters.FilterSet):
             "address_state",
             "address_postalcode",
             "address_use",
+            "near",
         ]
 
     def filter_organization_type(self, queryset, name, value):
         return queryset.annotate(
-            search=SearchVector("organization__clinicalorganization__organizationtotaxonomy__nucc_code__code")
+            search=SearchVector(
+                "organization__clinicalorganization__organizationtotaxonomy__nucc_code__code"
+            )
         ).filter(search=value)
 
     def filter_address(self, queryset, name, value):
@@ -80,3 +91,25 @@ class LocationFilterSet(filters.FilterSet):
             organization__organizationtoaddress__address=F("address"),
             organization__organizationtoaddress__address_use__value=value,
         ).distinct()
+
+    def filter_distance(self, queryset, name, value):
+        pattern = r"(-?\d+\.?\d*)\|(-?\d+\.?\d*)\|(\d+\.?\d*)\|?(km|mi|ft)?"
+        match = re.fullmatch(pattern, value)
+        if match:
+            lat, lon, distance, units = match.groups()
+            lon = float(lon)
+            lat = float(lat)
+            distance = float(distance)
+            user_location = Point(lon, lat, srid=4326)
+            match units:
+                case "mi":
+                    distance_function = D(mi=distance)
+                case "ft":
+                    distance_function = D(ft=distance)
+                case _:
+                    distance_function = D(km=distance)
+            return queryset.filter(
+                address__address_us__geolocation__distance_lte=(user_location, distance_function)
+            )
+        else:
+            return Location.objects.none()
