@@ -189,7 +189,6 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
             Provider.objects.all()
             .prefetch_related(
                 "npi",
-                "provider",
                 "individual",
                 "individual__individualtoaddress_set",
                 "individual__individualtoaddress_set__address__address_us",
