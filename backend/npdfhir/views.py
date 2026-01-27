@@ -185,25 +185,21 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
         """
         # Subqueries for last_name and first_name of the individual
 
-        providers = (
-            Provider.objects.all()
-            .prefetch_related(
-                "npi",
-                "individual",
-                "individual__individualtoaddress_set",
-                "individual__individualtoaddress_set__address__address_us",
-                "individual__individualtoaddress_set__address__address_us__state_code",
-                "individual__individualtoaddress_set__address_use",
-                "individual__individualtophone_set",
-                "individual__individualtoemail_set",
-                "individual__individualtoname_set",
-                "providertootherid_set",
-                "providertotaxonomy_set",
-            )
-            .order_by(
-                "individual__individualtoname__last_name",
-                "individual__individualtoname__first_name",
-            )
+        providers = Provider.objects.prefetch_related(
+            "npi",
+            "individual",
+            "individual__individualtoaddress_set",
+            "individual__individualtoaddress_set__address__address_us",
+            "individual__individualtoaddress_set__address__address_us__state_code",
+            "individual__individualtoaddress_set__address_use",
+            "individual__individualtophone_set",
+            "individual__individualtoemail_set",
+            "individual__individualtoname_set",
+            "providertootherid_set",
+            "providertotaxonomy_set",
+        ).order_by(
+            "individual__individualtoname__last_name",
+            "individual__individualtoname__first_name",
         )
 
         providers = self.filter_queryset(providers)
