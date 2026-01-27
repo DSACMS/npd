@@ -29,7 +29,7 @@ from .models import (
     Organization,
     Provider,
     ProviderToLocation,
-    OrganizationToAddress
+    OrganizationToAddress,
 )
 
 from .serializers import (
@@ -164,8 +164,8 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     lookup_url_kwarg = "id"
 
     ordering_fields = [
-        "individual__individualtoname__last_name",
-        "individual__individualtoname__first_name",
+        "last_name",
+        "first_name",
         "npi_value",
     ]
 
@@ -189,6 +189,7 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
             Provider.objects.all()
             .prefetch_related(
                 "npi",
+                "provider",
                 "individual",
                 "individual__individualtoaddress_set",
                 "individual__individualtoaddress_set__address__address_us",
@@ -196,6 +197,7 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
                 "individual__individualtoaddress_set__address_use",
                 "individual__individualtophone_set",
                 "individual__individualtoemail_set",
+                "individual__individualtoname_set",
                 "providertootherid_set",
                 "providertotaxonomy_set",
             )
@@ -256,7 +258,7 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
 class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR PractitionerRole resources
-    
+
     """
 
     queryset = ProviderToLocation.objects.none()
