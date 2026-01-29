@@ -8,7 +8,8 @@ services:
     env_file:
       - path: .env
         required: false
-    entrypoint: python manage.py runserver --insecure 0.0.0.0:8000
+    entrypoint: [] # Don't run collectstatic in entrypoint.sh
+    command: python manage.py runserver --insecure 0.0.0.0:8000
     environment:
       NPD_DJANGO_SECRET: ${NPD_DJANGO_SECRET:-_pth2#=k8-wf-_^t%2))it+3..8la^@@97^#ock7.v=@792w7}
       DEBUG: ${DEBUG:-True}
