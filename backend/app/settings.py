@@ -18,11 +18,10 @@ from pathlib import Path
 import structlog
 from decouple import config
 
+from app.logging import sql_trace_formatter
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config("NPD_DJANGO_SECRET")
@@ -51,8 +50,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.gis",
     "corsheaders",
     "rest_framework",
+    "rest_framework_gis",
     "django_filters",
     "drf_spectacular",
     "xmlrunner",
@@ -89,6 +90,17 @@ if not TESTING:
 CORS_URLS_REGEX = r"^/(fhir|api)/.*$"
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_METHODS = ["GET"]
+
+CSRF_COOKIE_SECURE = config(
+    "DJANGO_CSRF_COOKIE_SECURE", cast=bool, default=False
+)  # Only if using HTTPS
+CSRF_COOKIE_HTTPONLY = config(
+    "DJANGO_CSRF_COOKIE_HTTPONLY", cast=bool, default=False
+)  # Must be False for JavaScript access
+CSRF_COOKIE_SAMESITE = config("DJANGO_CSRF_COOKIE_SAMESITE", default="Lax")  # or 'Strict' or 'None'
+CSRF_TRUSTED_ORIGINS = config("DJANGO_CSRF_TRUSTED_DOMAINS", default="").split(
+    ","
+)  # Add your domains
 
 if DEBUG:
     # in development, allow the frontend app to POST forms to the backend
@@ -146,11 +158,11 @@ DATABASES = {
             "pool": {
                 # our default gunicorn container configuration only spins up 3 workerse
                 "min_size": 2,
-                "max_size": 4,
+                "max_size": 10,
                 # boot clients if a pooled connection is not available within 10 seconds
                 "timeout": 10,
                 # after 2 clients are waiting for connections, subsequent requests should immediately fail
-                "max_waiting": 2,
+                "max_waiting": 10,
             },
         },
     }
@@ -219,6 +231,7 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.SessionAuthentication",
     ],
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+    "DEFAULT_RENDERER_CLASSES": ("rest_framework.renderers.JSONRenderer",),
 }
 
 SPECTACULAR_SETTINGS = {
@@ -267,8 +280,11 @@ FLAGS = {
     # ],
 }
 
+SQL_TRACING = DEBUG and config("SQL_TRACING", default=False, cast=bool)
 
-if TESTING:
+if TESTING and SQL_TRACING:
+    LOG_LEVEL = logging.DEBUG
+elif TESTING:
     LOG_LEVEL = logging.ERROR
 else:
     LOG_LEVEL = os.environ.get("LOG_LEVEL", logging.INFO)
@@ -312,8 +328,37 @@ LOGGING = {
             "handlers": ["console"],
             "level": LOG_LEVEL,
         },
+        "django.security.csrf": {"handlers": ["console"], "level": LOG_LEVEL, "propagate": False},
     },
 }
+
+# DB query logging
+if SQL_TRACING:
+    # allow django libraries to log
+    LOGGING["disable_existing_loggers"] = False
+
+    # inject a django.db.backend message unpacker
+    LOGGING["formatters"]["json_formatter"]["foreign_pre_chain"].append(
+        sql_trace_formatter.unpack_sql_trace,
+    )
+
+    # write SQL query logs to backend/django_queries.log
+    LOGGING["handlers"]["queries_file"] = {
+        "level": LOG_LEVEL,
+        "class": "logging.FileHandler",
+        "filename": "django_queries.log",
+        "formatter": "json_formatter",
+    }
+    LOGGING["loggers"]["django.db.backends"] = {
+        "handlers": ["queries_file"],
+        "level": "DEBUG",
+        "propagate": False,
+    }
+
+    # ... keep these libraries quiet to avoid noisy test output
+    LOGGING["loggers"]["django_structlog"] = {"level": logging.ERROR, "propagate": False}
+    LOGGING["loggers"]["django.request"] = {"level": logging.ERROR, "propagate": False}
+
 
 structlog.configure(
     processors=[

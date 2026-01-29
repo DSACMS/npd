@@ -105,9 +105,9 @@ endif
 create-db:
 	@echo "Creating development database..."
 	@docker compose up -d db
-# create development database only if it doesn't already exist
+	# create development database only if it doesn't already exist
 	@docker compose run --rm db sh -c 'echo "creating $$POSTGRES_DB"; PGPASSWORD=$$POSTGRES_PASSWORD psql -h db -U $$POSTGRES_USER -d postgres -c "CREATE DATABASE $$POSTGRES_DB" || echo "$$POSTGRES_DB already exists"'
-
+	
 # run all flyway migrations for the development environment
 .PHONY: migrate
 migrate:
@@ -233,6 +233,7 @@ watch-frontend-test-assets:
 .PHONY: test-system-setup
 test-system-setup: test-setup
 	bin/npr --test python manage.py seeduser
+	bin/npr --test python manage.py seedsystem
 
 .PHONY: test-server
 test-server: test-system-setup build-frontend-test-assets
