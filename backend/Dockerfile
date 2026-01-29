@@ -73,4 +73,5 @@ USER appuser
 # Expose the application port
 EXPOSE 8000 
 
+ENTRYPOINT ["./entrypoint.sh"]
 CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "3", "app.wsgi:application"]
