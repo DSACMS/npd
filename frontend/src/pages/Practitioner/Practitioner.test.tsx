@@ -66,7 +66,9 @@ describe("Practitioner", () => {
         settings: { feature_flags: { PRACTITIONER_LOOKUP_DETAILS: true } },
       })
 
-      await screen.findByTestId("practitioner-name")
+      const nameElement = await screen.findByTestId("practitioner-name")
+
+      expect(nameElement).toHaveTextContent(EXPECTED_NAME)
       await screen.findByText("About", { selector: "section h2" })
       await screen.findByText("Contact information", { selector: "section h2" })
       await screen.findByText("Identifiers", { selector: "section h2" })
