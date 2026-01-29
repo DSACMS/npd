@@ -153,7 +153,19 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     ViewSet for FHIR Practitioner resources
     """
 
-    queryset = Provider.objects.none()
+    queryset = Provider.objects.prefetch_related(
+        "npi",
+        "individual",
+        "individual__individualtoaddress_set",
+        "individual__individualtoaddress_set__address__address_us",
+        "individual__individualtoaddress_set__address__address_us__state_code",
+        "individual__individualtoaddress_set__address_use",
+        "individual__individualtophone_set",
+        "individual__individualtoemail_set",
+        "individual__individualtoname_set",
+        "providertootherid_set",
+        "providertotaxonomy_set",
+    )
     if DEBUG:
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     else:
@@ -183,26 +195,7 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
 
         Default sort order: ascending last name, first name
         """
-        # Subqueries for last_name and first_name of the individual
-
-        providers = Provider.objects.prefetch_related(
-            "npi",
-            "individual",
-            "individual__individualtoaddress_set",
-            "individual__individualtoaddress_set__address__address_us",
-            "individual__individualtoaddress_set__address__address_us__state_code",
-            "individual__individualtoaddress_set__address_use",
-            "individual__individualtophone_set",
-            "individual__individualtoemail_set",
-            "individual__individualtoname_set",
-            "providertootherid_set",
-            "providertotaxonomy_set",
-        ).order_by(
-            "individual__individualtoname__last_name",
-            "individual__individualtoname__first_name",
-        )
-
-        providers = self.filter_queryset(providers)
+        providers = self.filter_queryset(self.queryset)
         paginated_providers = self.paginate_queryset(providers)
 
         serialized_providers = PractitionerSerializer(paginated_providers, many=True)
@@ -226,19 +219,7 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
             return HttpResponse(f"Practitioner {escape(id)} not found", status=404)
 
         provider = get_object_or_404(
-            Provider.objects.prefetch_related(
-                "npi",
-                "individual",
-                "individual__individualtoname_set",
-                "individual__individualtoaddress_set",
-                "individual__individualtoaddress_set__address__address_us",
-                "individual__individualtoaddress_set__address__address_us__state_code",
-                "individual__individualtoaddress_set__address_use",
-                "individual__individualtophone_set",
-                "individual__individualtoemail_set",
-                "providertootherid_set",
-                "providertotaxonomy_set",
-            ),
+            self.queryset,
             individual_id=id,
         )
 

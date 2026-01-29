@@ -1,4 +1,4 @@
-from django.contrib.postgres.search import SearchVector
+from django.contrib.postgres.search import SearchVector, SearchQuery
 from django.db.models import Q
 from django_filters import rest_framework as filters
 
@@ -84,18 +84,16 @@ class PractitionerFilterSet(filters.FilterSet):
         return queryset.filter(queries).distinct()
 
     def filter_name(self, queryset, name, value):
-        return queryset.annotate(
-            search=SearchVector(
-                "individual__individualtoname__first_name",
-                "individual__individualtoname__last_name",
-                "individual__individualtoname__middle_name",
-            )
-        ).filter(search=value)
+        search_vector = SearchVector(
+            "individual__individualtoname__first_name",
+            "individual__individualtoname__last_name",
+            "individual__individualtoname__middle_name",
+        )
+        query = SearchQuery(value)
+        return queryset.annotate(search=search_vector).filter(search=query)
 
     def filter_practitioner_type(self, queryset, name, value):
-        return queryset.annotate(
-            search=SearchVector("providertotaxonomy__nucc_code__display_name")
-        ).filter(search=value)
+        return queryset.filter(providertotaxonomy__nucc_code__display_name=value)
 
     def filter_address(self, queryset, name, value):
         return queryset.annotate(
@@ -109,21 +107,17 @@ class PractitionerFilterSet(filters.FilterSet):
         ).filter(search=value)
 
     def filter_address_city(self, queryset, name, value):
-        return queryset.annotate(
-            search=SearchVector("individual__individualtoaddress__address__address_us__city_name")
-        ).filter(search=value)
+        return queryset.filter(
+            individual__individualtoaddress__address__address_us__city_name=value
+        )
 
     def filter_address_state(self, queryset, name, value):
-        return queryset.annotate(
-            search=SearchVector(
-                "individual__individualtoaddress__address__address_us__state_code__abbreviation"
-            )
-        ).filter(search=value)
+        return queryset.filter(
+            individual__individualtoaddress__address__address_us__state_code__abbreviation=value
+        )
 
     def filter_address_postalcode(self, queryset, name, value):
-        return queryset.annotate(
-            search=SearchVector("individual__individualtoaddress__address__address_us__zipcode")
-        ).filter(search=value)
+        return queryset.filter(individual__individualtoaddress__address__address_us__zipcode=value)
 
     def filter_address_use(self, queryset, name, value):
         if value in addressUseMapping.keys():

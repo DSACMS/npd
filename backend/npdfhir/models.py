@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.gis.db import models as geomodels
+from django.contrib.postgres.search import SearchVectorField
 
 
 class Address(models.Model):
@@ -397,6 +398,7 @@ class IndividualToName(models.Model):
     end_date = models.DateField(blank=True, null=True)
     name_use = models.ForeignKey(FhirNameUse, models.DO_NOTHING)
     suffix = models.CharField(max_length=10, blank=True, null=True)
+    # search_vector = SearchVectorField()
 
     class Meta:
         managed = False
