@@ -1,7 +1,9 @@
+import uuid
+
 from django.urls import reverse
 from rest_framework import status
 
-from ..models import Organization, OtherIdType
+from ..models import EhrVendor, Organization, OtherIdType
 from .api_test_case import APITestCase
 from .fixtures.organization import create_legal_entity, create_organization
 from .fixtures.location import create_location
@@ -9,6 +11,7 @@ from .helpers import (
     assert_fhir_response,
     assert_has_results,
     assert_pagination_limit,
+    extract_resource_ids,
     extract_resource_names,
 )
 
@@ -111,17 +114,18 @@ class OrganizationViewSetTestCase(APITestCase):
         names = extract_resource_names(response)
 
         sorted_names = [
-            "1ST CHOICE HOME HEALTH CARE INC",
-            "1ST CHOICE MEDICAL DISTRIBUTORS, LLC",
-            "986 INFUSION PHARMACY #1 INC.",
-            "A & A MEDICAL SUPPLY COMPANY",
-            "ABACUS BUSINESS CORPORATION GROUP INC.",
-            "ABBY D CENTER, INC.",
-            "ABC DURABLE MEDICAL EQUIPMENT INC",
-            "ABC HOME MEDICAL SUPPLY, INC.",
-            "A BEAUTIFUL SMILE DENTISTRY, L.L.C.",
-            "A & B HEALTH CARE, INC.",
+            '1ST CHOICE HOME HEALTH CARE INC',
+            '1ST CHOICE MEDICAL DISTRIBUTORS, LLC', 
+            '986 INFUSION PHARMACY #1 INC.',
+            'A & A MEDICAL SUPPLY COMPANY',
+            'ABACUS BUSINESS CORPORATION GROUP INC.',
+            'ABBY D CENTER, INC.',
+            'ABC DURABLE MEDICAL EQUIPMENT INC',
+            'ABC HOME MEDICAL SUPPLY, INC.',
+            'A BEAUTIFUL SMILE DENTISTRY, L.L.C.',
+            'A & B HEALTH CARE, INC.'
         ]
+
         self.assertEqual(
             names,
             sorted_names,
