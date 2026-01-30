@@ -32,7 +32,7 @@ from .models import (
     Organization,
     Provider,
     ProviderToLocation,
-    OrganizationToAddress
+    OrganizationToAddress,
 )
 
 from .serializers import (
@@ -67,13 +67,25 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
     ViewSet for FHIR Endpoint Resources
     """
 
-    queryset = EndpointInstance.objects.none()
+    queryset = (
+        EndpointInstance.objects.all()
+        .prefetch_related(
+            "endpoint_connection_type",
+            "environment_type",
+            "endpointinstancetopayload_set",
+            "endpointinstancetopayload_set__payload_type",
+            "endpointinstancetopayload_set__mime_type",
+            "endpointinstancetootherid_set",
+        )
+        .annotate(ehr_vendor_name=F("ehr_vendor__name"))
+    )
     if DEBUG:
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     else:
         renderer_classes = [FHIRRenderer]
     filter_backends = [DjangoFilterBackend, ParamOrderingFilter]
     filterset_class = EndpointFilterSet
+    ordering = ["name"]
     ordering_fields = ["name", "address", "ehr_vendor_name"]
     pagination_class = CustomPaginator
     pagination_class = CustomPaginator
@@ -93,21 +105,7 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
         Default sort order: ascending endpoint instance name
         """
 
-        endpoints = (
-            EndpointInstance.objects.all()
-            .prefetch_related(
-                "endpoint_connection_type",
-                "environment_type",
-                "endpointinstancetopayload_set",
-                "endpointinstancetopayload_set__payload_type",
-                "endpointinstancetopayload_set__mime_type",
-                "endpointinstancetootherid_set",
-            )
-            .annotate(ehr_vendor_name=F("ehr_vendor__name"))
-            .order_by("name")
-        )
-
-        endpoints = self.filter_queryset(endpoints)
+        endpoints = self.filter_queryset(self.queryset)
         paginated_endpoints = self.paginate_queryset(endpoints)
 
         serialized_endpoints = EndpointSerializer(
@@ -134,14 +132,7 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
             return HttpResponse(f"Endpoint {escape(id)} not found", status=404)
 
         endpoint = get_object_or_404(
-            EndpointInstance.objects.prefetch_related(
-                "endpoint_connection_type",
-                "environment_type",
-                "endpointinstancetopayload_set",
-                "endpointinstancetopayload_set__payload_type",
-                "endpointinstancetopayload_set__mime_type",
-                "endpointinstancetootherid_set",
-            ),
+            self.queryset,
             id=id,
         )
 
@@ -158,7 +149,19 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     ViewSet for FHIR Practitioner resources
     """
 
-    queryset = Provider.objects.none()
+    queryset = Provider.objects.all().prefetch_related(
+        "npi",
+        "individual",
+        "individual__individualtoaddress_set",
+        "individual__individualtoaddress_set__address__address_us",
+        "individual__individualtoaddress_set__address__address_us__state_code",
+        "individual__individualtoaddress_set__address_use",
+        "individual__individualtophone_set",
+        "individual__individualtoemail_set",
+        "individual__individualtoname_set",
+        "providertootherid_set__other_id_type",
+        "providertotaxonomy_set",
+    )
     if DEBUG:
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     else:
@@ -167,6 +170,11 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     filterset_class = PractitionerFilterSet
     pagination_class = CustomPaginator
     lookup_url_kwarg = "id"
+
+    ordering = [
+        "individual__individualtoname__last_name",
+        "individual__individualtoname__first_name",
+    ]
 
     ordering_fields = [
         "individual__individualtoname__last_name",
@@ -190,27 +198,7 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
         """
         # Subqueries for last_name and first_name of the individual
 
-        providers = (
-            Provider.objects.all()
-            .prefetch_related(
-                "npi",
-                "individual",
-                "individual__individualtoaddress_set",
-                "individual__individualtoaddress_set__address__address_us",
-                "individual__individualtoaddress_set__address__address_us__state_code",
-                "individual__individualtoaddress_set__address_use",
-                "individual__individualtophone_set",
-                "individual__individualtoemail_set",
-                "providertootherid_set",
-                "providertotaxonomy_set",
-            )
-            .order_by(
-                "individual__individualtoname__last_name",
-                "individual__individualtoname__first_name",
-            )
-        )
-
-        providers = self.filter_queryset(providers)
+        providers = self.filter_queryset(self.queryset)
         paginated_providers = self.paginate_queryset(providers)
 
         serialized_providers = PractitionerSerializer(paginated_providers, many=True)
@@ -234,19 +222,7 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
             return HttpResponse(f"Practitioner {escape(id)} not found", status=404)
 
         provider = get_object_or_404(
-            Provider.objects.prefetch_related(
-                "npi",
-                "individual",
-                "individual__individualtoname_set",
-                "individual__individualtoaddress_set",
-                "individual__individualtoaddress_set__address__address_us",
-                "individual__individualtoaddress_set__address__address_us__state_code",
-                "individual__individualtoaddress_set__address_use",
-                "individual__individualtophone_set",
-                "individual__individualtoemail_set",
-                "providertootherid_set",
-                "providertotaxonomy_set",
-            ),
+            self.queryset,
             individual_id=id,
         )
 
@@ -261,10 +237,15 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
 class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     """
     ViewSet for FHIR PractitionerRole resources
-    
+
     """
 
-    queryset = ProviderToLocation.objects.none()
+    queryset = (
+        ProviderToLocation.objects.all()
+        .select_related("location")
+        .prefetch_related("provider_to_organization")
+        .annotate(location_name=F("location__name"))
+    )
     if DEBUG:
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     else:
@@ -274,6 +255,7 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     pagination_class = CustomPaginator
     lookup_url_kwarg = "id"
 
+    ordering = ["location__name"]
     ordering_fields = ["location__name", "practitioner_first_name", "practitioner_last_name"]
 
     # permission_classes = [permissions.IsAuthenticated]
@@ -292,14 +274,7 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
         """
         # all_params = request.query_params
 
-        practitionerroles = (
-            ProviderToLocation.objects.select_related("location")
-            .prefetch_related("provider_to_organization")
-            .annotate(location_name=F("location__name"))
-            .order_by("location__name")
-        ).all()
-
-        practitionerroles = self.filter_queryset(practitionerroles)
+        practitionerroles = self.filter_queryset(self.queryset)
         paginated_practitionerroles = self.paginate_queryset(practitionerroles)
 
         serialized_practitionerroles = PractitionerRoleSerializer(
@@ -326,7 +301,7 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
         except (ValueError, TypeError):
             return HttpResponse(f"PractitionerRole {escape(id)} not found", status=404)
 
-        practitionerrole = get_object_or_404(ProviderToLocation, id=id)
+        practitionerrole = get_object_or_404(self.queryset, id=id)
 
         serialized_practitionerrole = PractitionerRoleSerializer(
             practitionerrole, context={"request": request}
@@ -343,7 +318,28 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     ViewSet for FHIR Organization resources
     """
 
-    queryset = Organization.objects.none()
+    queryset = Organization.objects.all().prefetch_related(
+        "authorized_official",
+        "ein",
+        "organizationtoname_set",
+        "organizationtoaddress_set",
+        "organizationtoaddress_set__address",
+        "organizationtoaddress_set__address__address_us",
+        "organizationtoaddress_set__address__address_us__state_code",
+        "organizationtoaddress_set__address_use",
+        "authorized_official__individualtophone_set",
+        "authorized_official__individualtoname_set",
+        "authorized_official__individualtoemail_set",
+        "authorized_official__individualtoaddress_set",
+        "authorized_official__individualtoaddress_set__address__address_us",
+        "authorized_official__individualtoaddress_set__address__address_us__state_code",
+        "clinicalorganization",
+        "clinicalorganization__npi",
+        "clinicalorganization__organizationtootherid_set",
+        "clinicalorganization__organizationtootherid_set__other_id_type",
+        "clinicalorganization__organizationtotaxonomy_set",
+        "clinicalorganization__organizationtotaxonomy_set__nucc_code",
+    )
     if DEBUG:
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     else:
@@ -352,7 +348,7 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     # filterset_class = OrganizationFilterSet
     pagination_class = CustomPaginator
     lookup_url_kwarg = "id"
-
+    ordering = ["organizationtoname__name"]
     ordering_fields = ["organizationtoname__name"]
 
     # permission_classes = [permissions.IsAuthenticated]
@@ -370,59 +366,8 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
         Default sort order: ascending by organization name
         """
 
-        organizations = (
-            Organization.objects.all()
-            .prefetch_related(
-                "authorized_official",
-                "ein",
-                "organizationtoname_set",
-                "organizationtoaddress_set",
-                "organizationtoaddress_set__address",
-                "organizationtoaddress_set__address__address_us",
-                "organizationtoaddress_set__address__address_us__state_code",
-                "organizationtoaddress_set__address_use",
-                "authorized_official__individualtophone_set",
-                "authorized_official__individualtoname_set",
-                "authorized_official__individualtoemail_set",
-                "authorized_official__individualtoaddress_set",
-                "authorized_official__individualtoaddress_set__address__address_us",
-                "authorized_official__individualtoaddress_set__address__address_us__state_code",
-                "clinicalorganization",
-                "clinicalorganization__npi",
-                "clinicalorganization__organizationtootherid_set",
-                "clinicalorganization__organizationtootherid_set__other_id_type",
-                "clinicalorganization__organizationtotaxonomy_set",
-                "clinicalorganization__organizationtotaxonomy_set__nucc_code",
-            )
-            .order_by("organizationtoname__name")
-        )
-
-        vendors = EhrVendor.objects.all()
-
-        # Apply Organization filters
-        org_filterset = OrganizationFilterSet(request.GET, queryset=organizations, request=request)
-        organizations = org_filterset.qs
-
-        # Apply Vendor filters
-        vendor_filterset = EhrVendorFilterSet(request.GET, queryset=vendors, request=request)
-        vendors = vendor_filterset.qs
-
-        sources = [
-            *[FHIROrganizationSource(organization=o) for o in organizations],
-            *[FHIROrganizationSource(ehr_vendor=v) for v in vendors],
-        ]
-
-        # Sort the data
-        ordering = (
-            ParamOrderingFilter().get_ordering(request, None, self) or self.ordering_fields[0]
-        )
-        reverse = ordering[0].startswith("-")
-        sources.sort(
-            key=lambda s: s.name,
-            reverse=reverse,
-        )
-
-        paginated_organizations = self.paginate_queryset(sources)
+        organizations = self.filter_queryset(self.queryset)
+        paginated_organizations = self.paginate_queryset(organizations)
 
         serialized_organizations = OrganizationSerializer(
             paginated_organizations, many=True, context={"request": request}
@@ -446,40 +391,12 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
         except (ValueError, TypeError):
             return HttpResponse(f"Organization {escape(id)} not found", status=404)
 
-        organization = (
-            Organization.objects.prefetch_related(
-                "authorized_official",
-                "ein",
-                "organizationtoname_set",
-                "organizationtoaddress_set",
-                "organizationtoaddress_set__address",
-                "organizationtoaddress_set__address__address_us",
-                "organizationtoaddress_set__address__address_us__state_code",
-                "organizationtoaddress_set__address_use",
-                "authorized_official__individualtophone_set",
-                "authorized_official__individualtoname_set",
-                "authorized_official__individualtoemail_set",
-                "authorized_official__individualtoaddress_set",
-                "authorized_official__individualtoaddress_set__address__address_us",
-                "authorized_official__individualtoaddress_set__address__address_us__state_code",
-                "clinicalorganization",
-                "clinicalorganization__npi",
-                "clinicalorganization__organizationtootherid_set",
-                "clinicalorganization__organizationtootherid_set__other_id_type",
-                "clinicalorganization__organizationtotaxonomy_set",
-                "clinicalorganization__organizationtotaxonomy_set__nucc_code",
-            )
-            .filter(pk=id)
-            .first()
+        organization = get_object_or_404(
+            self.queryset,
+            id=id,
         )
 
-        if not organization:
-            vendor = get_object_or_404(EhrVendor, pk=id)
-            source = FHIROrganizationSource(ehr_vendor=vendor)
-        else:
-            source = FHIROrganizationSource(organization=organization)
-
-        serialized_organization = OrganizationSerializer(source, context={"request": request})
+        serialized_organization = OrganizationSerializer(organization, context={"request": request})
 
         # Set appropriate content type for FHIR responses
         response = Response(serialized_organization.data)
@@ -492,7 +409,36 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
     ViewSet for FHIR Location resources
     """
 
-    queryset = Location.objects.none()
+    queryset = (
+        Location.objects.all()
+        .select_related(
+            "organization",
+            "address",
+            "address__address_us",
+            "address__address_us__state_code",
+        )
+        .prefetch_related(
+            Prefetch(
+                "organization__organizationtoaddress_set",
+                queryset=OrganizationToAddress.objects.select_related(
+                    "address_use", "address__address_us", "address__address_us__state_code"
+                ),
+            ),
+        )
+        .annotate(
+            organization_name=F("organization__organizationtoname__name"),
+            address_full=Concat(
+                F("address__address_us__delivery_line_1"),
+                Value(", "),
+                F("address__address_us__city_name"),
+                Value(", "),
+                F("address__address_us__state_code__abbreviation"),
+                Value(" "),
+                F("address__address_us__zipcode"),
+                output_field=CharField(),
+            ),
+        )
+    )
     if DEBUG:
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     else:
@@ -501,7 +447,7 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
     filterset_class = LocationFilterSet
     pagination_class = CustomPaginator
     lookup_url_kwarg = "id"
-
+    ordering = ["name"]
     ordering_fields = ["organization_name", "address_full", "name"]
 
     # permission_classes = [permissions.IsAuthenticated]
@@ -518,40 +464,7 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
 
         Default sort order: ascending by location name
         """
-        locations = (
-            Location.objects.all()
-            .select_related(
-                "organization",
-                "address",
-                "address__address_us",
-                "address__address_us__state_code",
-            )
-            .prefetch_related(
-                Prefetch(
-                    "organization__organizationtoaddress_set",
-                    queryset=OrganizationToAddress.objects.select_related(
-                        "address_use",
-                        "address",
-                    ),
-                )
-            )
-            .annotate(
-                organization_name=F("organization__organizationtoname__name"),
-                address_full=Concat(
-                    F("address__address_us__delivery_line_1"),
-                    Value(", "),
-                    F("address__address_us__city_name"),
-                    Value(", "),
-                    F("address__address_us__state_code__abbreviation"),
-                    Value(" "),
-                    F("address__address_us__zipcode"),
-                    output_field=CharField(),
-                ),
-            )
-            .order_by("name")
-        )
-
-        locations = self.filter_queryset(locations)
+        locations = self.filter_queryset(self.queryset)
         paginated_locations = self.paginate_queryset(locations)
 
         # Serialize the bundle
@@ -577,7 +490,7 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
         except (ValueError, TypeError):
             return HttpResponse(f"Location {escape(id)} not found", status=404)
 
-        location = get_object_or_404(Location, id=id)
+        location = get_object_or_404(self.queryset, id=id)
 
         serialized_location = LocationSerializer(location, context={"request": request})
 

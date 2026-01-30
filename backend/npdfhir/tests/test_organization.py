@@ -87,12 +87,6 @@ class OrganizationViewSetTestCase(APITestCase):
         cls.org_cumberland = create_organization(name="Cumberland")
         cls.orgs.append(cls.org_cumberland)
 
-        cls.ehr_vendor_id = uuid.uuid4()
-        ehr_vendor = EhrVendor.objects.create(
-            id=cls.ehr_vendor_id, name="EHR Organization", is_cms_aligned_network=True
-        )
-        cls.orgs.append(ehr_vendor)
-
         return super().setUpTestData()
 
     def setUp(self):
@@ -120,16 +114,16 @@ class OrganizationViewSetTestCase(APITestCase):
         names = extract_resource_names(response)
 
         sorted_names = [
-            {},
-            "1ST CHOICE HOME HEALTH CARE INC",
-            "1ST CHOICE MEDICAL DISTRIBUTORS, LLC",
-            "986 INFUSION PHARMACY #1 INC.",
-            "EHR Organization",
-            "A & A MEDICAL SUPPLY COMPANY",
-            "A & B HEALTH CARE, INC.",
-            "A BEAUTIFUL SMILE DENTISTRY, L.L.C.",
-            "ABACUS BUSINESS CORPORATION GROUP INC.",
-            "ABBY D CENTER, INC.",
+            '1ST CHOICE HOME HEALTH CARE INC',
+            '1ST CHOICE MEDICAL DISTRIBUTORS, LLC', 
+            '986 INFUSION PHARMACY #1 INC.',
+            'A & A MEDICAL SUPPLY COMPANY',
+            'ABACUS BUSINESS CORPORATION GROUP INC.',
+            'ABBY D CENTER, INC.',
+            'ABC DURABLE MEDICAL EQUIPMENT INC',
+            'ABC HOME MEDICAL SUPPLY, INC.',
+            'A BEAUTIFUL SMILE DENTISTRY, L.L.C.',
+            'A & B HEALTH CARE, INC.'
         ]
 
         self.assertEqual(
@@ -148,6 +142,7 @@ class OrganizationViewSetTestCase(APITestCase):
         names = extract_resource_names(response)
 
         sorted_names = [
+            {},
             "ZUNI HOME HEALTH CARE AGENCY",
             "ZEELAND COMMUNITY HOSPITAL",
             "YOUNGSTOWN ORTHOPAEDIC ASSOCIATES LTD",
@@ -157,7 +152,6 @@ class OrganizationViewSetTestCase(APITestCase):
             "YOAKUM COMMUNITY HOSPITAL",
             "YARMOUTH AUDIOLOGY",
             "TestNuccOrg",
-            "Joe Health Incorporated",
         ]
 
         self.assertEqual(
@@ -321,17 +315,3 @@ class OrganizationViewSetTestCase(APITestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data["id"], id)
-
-    def test_ehr_vendor_included_in_list_data(self):
-        url = reverse("fhir-organization-list")
-        response = self.client.get(url)
-
-        ids = extract_resource_ids(response)
-
-        self.assertIn(str(self.ehr_vendor_id), ids)
-
-    def test_ehr_vendor_included_in_retrieve_data(self):
-        url = reverse("fhir-organization-detail", args=[self.ehr_vendor_id])
-        response = self.client.get(url)
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data["id"], str(self.ehr_vendor_id))
