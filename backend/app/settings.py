@@ -206,22 +206,14 @@ USE_I18N = True
 
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
+# Static file collection (CSS, JavaScript, Images)
+# django.contrib.staticfiles collects static files in a consistent place
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
-
-# TODO: what is this used for? how does it interact with STATIC_ROOT?
 STATIC_URL = "static/"
-# TODO: what is this used for?
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    os.path.join(BASE_DIR, "provider_directory", "static"),
-]
-# TODO: what is this used for? Can it be removed?
-# STATICFILES_DIRS = [
-#        os.path.join(BASE_DIR, "static"),
-#    ]
-# This is used with the static asset delivery middleware "WhiteNoise"
-STATIC_ROOT = BASE_DIR / "staticfiles"
+# Static file hosting
+# whitenoise hosts static files collected by django.contrib.staticfiles
+# https://whitenoise.readthedocs.io/en/latest/
+STATIC_ROOT = STATIC_URL
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
