@@ -111,7 +111,7 @@ export const usePractitionersAPI = (
   params: PaginationParams & SearchParams,
   options?: QueryOptions,
 ) => {
-  console.debug("[usePractitionersAPI]", { params, options })
+  // console.debug("[usePractitionersAPI]", { params, options })
 
   return useQuery<FHIRCollection<FHIRPractitioner>>({
     queryKey: ["practitioners", params.sort, params.query, params.page || 1],
@@ -123,4 +123,3 @@ export const usePractitionersAPI = (
           },
   })
 }
-
