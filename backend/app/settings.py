@@ -23,9 +23,6 @@ from app.logging import sql_trace_formatter
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config("NPD_DJANGO_SECRET")
 
@@ -53,8 +50,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.gis",
     "corsheaders",
     "rest_framework",
+    "rest_framework_gis",
     "django_filters",
     "drf_spectacular",
     "xmlrunner",
@@ -159,11 +158,11 @@ DATABASES = {
             "pool": {
                 # our default gunicorn container configuration only spins up 3 workerse
                 "min_size": 2,
-                "max_size": 4,
+                "max_size": 10,
                 # boot clients if a pooled connection is not available within 10 seconds
                 "timeout": 10,
                 # after 2 clients are waiting for connections, subsequent requests should immediately fail
-                "max_waiting": 2,
+                "max_waiting": 10,
             },
         },
     }

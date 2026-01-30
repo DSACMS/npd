@@ -11,6 +11,7 @@
   - [Core Team](#core-team)
   - [Repository Structure](#repository-structure)
 - [Development and Software Delivery Lifecycle](#development-and-software-delivery-lifecycle)
+  - [Project Setup and Development](#project-setup-and-development) 
   - [Community](#community)
     - [Community Guidelines](#community-guidelines)
   - [Governance](#governance)
@@ -83,9 +84,11 @@ The [DSACMS/npd_etl](https://github.com/DSACMS/npd_etl) project on GitHub provid
 
 # Development and Software Delivery Lifecycle
 
-For more information on contributing, including notes on project setup and development, see: [CONTRIBUTING.md](./CONTRIBUTING.md).
-
 We are taking an iterative approach to the development of this project, starting first with an MVP and building additional functionality as we go.
+
+## Project Setup and Development
+
+**For more information on contributing, including notes on project setup and development, see: [CONTRIBUTING.md](./CONTRIBUTING.md).**
 
 ## Community
 
