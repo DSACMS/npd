@@ -60,7 +60,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for more details on the release process.
 
 ## Contributors
 
-![](https://img.shields.io/github/contributors/DSACMS/npd?style=flat-square&label=Contributor%20Count(incl.%20bots)) 
+![](https://img.shields.io/github/contributors/CMS-Enterprise/npd?style=flat-square&label=Contributor%20Count(incl.%20bots)) 
 
 <!-- readme: contributors -start -->
 <table>
