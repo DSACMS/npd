@@ -1,0 +1,4 @@
+
+alter table npd.individual_to_name add search_vector tsvector 
+GENERATED ALWAYS AS (to_tsvector('english', first_name || ' ' || COALESCE(middle_name, '') || ' ' || last_name)) STORED;
+create index idx_individual_to_name_search on npd.individual_to_name using GIN(search_vector);

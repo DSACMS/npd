@@ -174,6 +174,10 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     filterset_class = PractitionerFilterSet
     pagination_class = CustomPaginator
     lookup_url_kwarg = "id"
+    ordering = [
+        "individual__individualtoname__last_name",
+        "individual__individualtoname__first_name",
+    ]
 
     ordering_fields = [
         "last_name",
@@ -195,6 +199,7 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
 
         Default sort order: ascending last name, first name
         """
+        print(self.queryset.explain())
         providers = self.filter_queryset(self.queryset)
         paginated_providers = self.paginate_queryset(providers)
 

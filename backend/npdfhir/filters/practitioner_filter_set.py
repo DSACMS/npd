@@ -84,13 +84,8 @@ class PractitionerFilterSet(filters.FilterSet):
         return queryset.filter(queries).distinct()
 
     def filter_name(self, queryset, name, value):
-        search_vector = SearchVector(
-            "individual__individualtoname__first_name",
-            "individual__individualtoname__last_name",
-            "individual__individualtoname__middle_name",
-        )
-        query = SearchQuery(value)
-        return queryset.annotate(search=search_vector).filter(search=query)
+        query = SearchQuery(f"{value.upper()}:*", search_type="raw")
+        return queryset.filter(individual__individualtoname__search_vector=query).distinct()
 
     def filter_practitioner_type(self, queryset, name, value):
         return queryset.filter(providertotaxonomy__nucc_code__display_name=value)

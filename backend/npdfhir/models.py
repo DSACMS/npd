@@ -391,14 +391,14 @@ class IndividualToName(models.Model):
     pk = models.CompositePrimaryKey("individual_id", "first_name", "last_name", "name_use_id")
     individual = models.ForeignKey(Individual, models.DO_NOTHING)
     prefix = models.CharField(max_length=10, blank=True, null=True)
-    first_name = models.CharField(max_length=50)
+    first_name = models.CharField(max_length=50, db_index=True)
     middle_name = models.CharField(max_length=50, blank=True, null=True)
-    last_name = models.CharField(max_length=200)
+    last_name = models.CharField(max_length=200, db_index=True)
     start_date = models.DateField(blank=True, null=True)
     end_date = models.DateField(blank=True, null=True)
     name_use = models.ForeignKey(FhirNameUse, models.DO_NOTHING)
     suffix = models.CharField(max_length=10, blank=True, null=True)
-    # search_vector = SearchVectorField()
+    search_vector = SearchVectorField()
 
     class Meta:
         managed = False
