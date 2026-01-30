@@ -1,0 +1,2 @@
+# loadAddresses
+This is a TEMPORARY work in progress toward ETL-ing address data from the ETL database to the NPD database, but hopefully we will be able to scrap all of this given better data normalization on the ETL side.
