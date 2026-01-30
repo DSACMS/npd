@@ -10,6 +10,7 @@ from .helpers import (
     assert_has_results,
     assert_pagination_limit,
     extract_resource_names,
+    concat_address_string
 )
 
 
@@ -171,33 +172,116 @@ class OrganizationViewSetTestCase(APITestCase):
 
     # Basic Filter tests
     def test_list_filter_by_name(self):
+        filter_param_value = "Cumberland"
+
         url = reverse("fhir-organization-list")
-        response = self.client.get(url, {"name": "Cumberland"})
+        response = self.client.get(url, {"name": filter_param_value})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
         self.assertGreaterEqual(response.data["results"]["total"], 1)
 
-    def test_list_filter_by_organization_type(self):
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+
+            org_entry = entry["resource"]
+
+            self.assertIn(filter_param_value, org_entry['name'])
+    
+    def test_list_filter_by_name_broad(self):
+        filter_param_value = "ABC"
+
         url = reverse("fhir-organization-list")
-        response = self.client.get(url, {"organization_type": "Hospital"})
+        response = self.client.get(url, {"name": filter_param_value})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
         self.assertGreaterEqual(response.data["results"]["total"], 1)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+
+            org_entry = entry["resource"]
+
+            self.assertIn(filter_param_value, org_entry['name'])
+    
+    def test_list_filter_by_name_specific(self):
+        filter_param_value = "ABC HOME MEDICAL SUPPLY, INC."
+        ensure_not_in_results = "ABC DURABLE MEDICAL EQUIPMENT INC"
+
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url, {"name": filter_param_value})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        assert_has_results(self, response)
+        self.assertGreaterEqual(response.data["results"]["total"], 1)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+
+            org_entry = entry["resource"]
+
+            self.assertIn(filter_param_value, org_entry['name'])
+            self.assertNotIn(ensure_not_in_results, org_entry['name'])
+
+    def test_list_filter_by_organization_type(self):
+        filter_param_value = "Hospital"
+        url = reverse("fhir-organization-list")
+        response = self.client.get(url, {"organization_type": filter_param_value})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        assert_has_results(self, response)
+        self.assertGreaterEqual(response.data["results"]["total"], 1)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+
+            org_entry = entry["resource"]
+
+            self.assertEqual(org_entry['id'],str(self.hospital_nucc_org.id))
 
     # Identifiers Filter tests
     def test_list_filter_by_npi_general(self):
+        filter_param_value = "1427051473"
         url = reverse("fhir-organization-list")
-        response = self.client.get(url, {"identifier": "1427051473"})
+        response = self.client.get(url, {"identifier": filter_param_value})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
         self.assertGreaterEqual(response.data["results"]["total"], 1)
 
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+
+            org_entry = entry["resource"]
+            
+            identifiers = [identifier['value'] for identifier in org_entry['identifier']]
+            
+            self.assertIn(filter_param_value, identifiers)
+
     def test_list_filter_by_npi_specific(self):
+        filter_param_value = "1427051473"
         url = reverse("fhir-organization-list")
-        response = self.client.get(url, {"identifier": "NPI|1427051473"})
+        response = self.client.get(url, {"identifier": f"NPI|{filter_param_value}"})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
         self.assertGreaterEqual(response.data["results"]["total"], 1)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+
+            org_entry = entry["resource"]
+            
+            identifiers = [identifier['value'] for identifier in org_entry['identifier']]
+            
+            self.assertIn(filter_param_value, identifiers)
 
     def test_parent_id(self):
         parent_id = self.orgs[1].parent_id
@@ -215,11 +299,22 @@ class OrganizationViewSetTestCase(APITestCase):
         self.assertIn(parent_id, f"Organization/{response.data['partOf']['reference']}")
 
     def test_list_filter_by_otherID_general(self):
+        filter_param_value = "testMBI"
         url = reverse("fhir-organization-list")
-        response = self.client.get(url, {"identifier": "testMBI"})
+        response = self.client.get(url, {"identifier": filter_param_value})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
         self.assertGreaterEqual(response.data["results"]["total"], 1)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+
+            org_entry = entry["resource"]
+            identifiers = [identifier['value'] for identifier in org_entry['identifier']]
+
+            self.assertIn(filter_param_value,identifiers)
 
     # def test_list_filter_by_otherID_specific(self):
     #     url = reverse("fhir-organization-list")
@@ -238,6 +333,14 @@ class OrganizationViewSetTestCase(APITestCase):
         assert_has_results(self, response)
         self.assertGreaterEqual(response.data["results"]["total"], 1)
 
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+
+            org_entry = entry["resource"]
+            self.assertEqual(org_entry['id'],str(self.joe_health_org.id))
+
     # def test_list_filter_by_ein_specific(self):
     #     url = reverse("fhir-organization-list")
     #     response = self.client.get(url, {"identifier":"USEIN|12-3456789"})
@@ -246,34 +349,135 @@ class OrganizationViewSetTestCase(APITestCase):
 
     # Address Filter tests
     def test_list_filter_by_address(self):
+        address_search = "Main"
         url = reverse("fhir-organization-list")
-        response = self.client.get(url, {"address": "Main"})
+        response = self.client.get(url, {"address": address_search})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+            location_entry = entry["resource"]
+            self.assertIn("id", location_entry)
+            self.assertIn("contact", location_entry)
+            #self.assertIn("name", location_entry)
+
+            search_in_location_list = []
+
+            for address in location_entry['contact']:
+                self.assertIn('address', address)
+                address_string = concat_address_string(address['address'])
+                search_in_location_list.append(address_search in address_string)
+            
+            self.assertTrue(any(search_in_location_list))
+
+            self.assertEqual(location_entry["resourceType"], "Organization")
 
     def test_list_filter_by_address_city(self):
+        address_search = "Boston"
         url = reverse("fhir-organization-list")
-        response = self.client.get(url, {"address_city": "Boston"})
+        response = self.client.get(url, {"address_city": address_search})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+            location_entry = entry["resource"]
+            self.assertIn("id", location_entry)
+            self.assertIn("contact", location_entry)
+            #self.assertIn("name", location_entry)
+
+            search_in_location_list = []
+
+            for address in location_entry['contact']:
+                self.assertIn('address', address)
+                search_in_location_list.append(address_search in address['address']['city'])
+            
+            self.assertTrue(any(search_in_location_list))
+
+            self.assertEqual(location_entry["resourceType"], "Organization")
 
     def test_list_filter_by_address_state(self):
+        address_search = "NY"
         url = reverse("fhir-organization-list")
-        response = self.client.get(url, {"address_state": "NY"})
+        response = self.client.get(url, {"address_state": address_search})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+            location_entry = entry["resource"]
+            self.assertIn("id", location_entry)
+            self.assertIn("contact", location_entry)
+            #self.assertIn("name", location_entry)
+
+            search_in_location_list = []
+
+            for address in location_entry['contact']:
+                self.assertIn('address', address)
+                search_in_location_list.append(address_search in address['address']['state'])
+            
+            self.assertTrue(any(search_in_location_list))
+
+            self.assertEqual(location_entry["resourceType"], "Organization")
 
     def test_list_filter_by_address_postalcode(self):
+        address_search = "10001"
         url = reverse("fhir-organization-list")
-        response = self.client.get(url, {"address_postalcode": "10001"})
+        response = self.client.get(url, {"address_postalcode": address_search})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
 
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+            location_entry = entry["resource"]
+            self.assertIn("id", location_entry)
+            self.assertIn("contact", location_entry)
+            #self.assertIn("name", location_entry)
+
+            search_in_location_list = []
+
+            for address in location_entry['contact']:
+                self.assertIn('address', address)
+                search_in_location_list.append(address_search in address['address']['postalCode'])
+            
+            self.assertTrue(any(search_in_location_list))
+
+            self.assertEqual(location_entry["resourceType"], "Organization")
+
     def test_list_filter_by_address_use(self):
+        address_search = "work"
         url = reverse("fhir-organization-list")
-        response = self.client.get(url, {"address_use": "work"})
+        response = self.client.get(url, {"address_use": address_search})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         assert_has_results(self, response)
+
+        bundle = response.data["results"]
+
+        for entry in bundle["entry"]:
+            self.assertIn("resource", entry)
+            location_entry = entry["resource"]
+            self.assertIn("id", location_entry)
+            self.assertIn("contact", location_entry)
+            #self.assertIn("name", location_entry)
+
+            search_in_location_list = []
+
+            for address in location_entry['contact']:
+                self.assertIn('address', address)
+                search_in_location_list.append(address_search in address['address']['use'])
+            
+            self.assertTrue(any(search_in_location_list))
+
+            self.assertEqual(location_entry["resourceType"], "Organization")
 
     # Retrieve tests
     def test_retrieve_non_clinical_organization(self):
