@@ -63,7 +63,8 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
     """
 
     queryset = (
-        EndpointInstance.objects.prefetch_related(
+        EndpointInstance.objects.all()
+        .prefetch_related(
             "endpoint_connection_type",
             "environment_type",
             "endpointinstancetopayload_set",
@@ -72,7 +73,6 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
             "endpointinstancetootherid_set",
         )
         .annotate(ehr_vendor_name=F("ehr_vendor__name"))
-        .order_by("name")
     )
     if DEBUG:
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
@@ -80,6 +80,7 @@ class FHIREndpointViewSet(viewsets.GenericViewSet):
         renderer_classes = [FHIRRenderer]
     filter_backends = [DjangoFilterBackend, ParamOrderingFilter]
     filterset_class = EndpointFilterSet
+    ordering = ["name"]
     ordering_fields = ["name", "address", "ehr_vendor_name"]
     pagination_class = CustomPaginator
     pagination_class = CustomPaginator
@@ -143,24 +144,18 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     ViewSet for FHIR Practitioner resources
     """
 
-    queryset = (
-        Provider.objects.all()
-        .prefetch_related(
-            "npi",
-            "individual",
-            "individual__individualtoaddress_set",
-            "individual__individualtoaddress_set__address__address_us",
-            "individual__individualtoaddress_set__address__address_us__state_code",
-            "individual__individualtoaddress_set__address_use",
-            "individual__individualtophone_set",
-            "individual__individualtoemail_set",
-            "individual__individualtoname_setprovidertootherid_set",
-            "providertotaxonomy_set",
-        )
-        .order_by(
-            "individual__individualtoname__last_name",
-            "individual__individualtoname__first_name",
-        )
+    queryset = Provider.objects.all().prefetch_related(
+        "npi",
+        "individual",
+        "individual__individualtoaddress_set",
+        "individual__individualtoaddress_set__address__address_us",
+        "individual__individualtoaddress_set__address__address_us__state_code",
+        "individual__individualtoaddress_set__address_use",
+        "individual__individualtophone_set",
+        "individual__individualtoemail_set",
+        "individual__individualtoname_set",
+        "providertootherid_set__other_id_type",
+        "providertotaxonomy_set",
     )
     if DEBUG:
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
@@ -170,6 +165,11 @@ class FHIRPractitionerViewSet(viewsets.GenericViewSet):
     filterset_class = PractitionerFilterSet
     pagination_class = CustomPaginator
     lookup_url_kwarg = "id"
+
+    ordering = [
+        "individual__individualtoname__last_name",
+        "individual__individualtoname__first_name",
+    ]
 
     ordering_fields = [
         "individual__individualtoname__last_name",
@@ -236,10 +236,10 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     """
 
     queryset = (
-        ProviderToLocation.objects.select_related("location")
+        ProviderToLocation.objects.all()
+        .select_related("location")
         .prefetch_related("provider_to_organization")
         .annotate(location_name=F("location__name"))
-        .order_by("location__name")
     )
     if DEBUG:
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
@@ -250,6 +250,7 @@ class FHIRPractitionerRoleViewSet(viewsets.GenericViewSet):
     pagination_class = CustomPaginator
     lookup_url_kwarg = "id"
 
+    ordering = ["location__name"]
     ordering_fields = ["location__name", "practitioner_first_name", "practitioner_last_name"]
 
     # permission_classes = [permissions.IsAuthenticated]
@@ -312,31 +313,27 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     ViewSet for FHIR Organization resources
     """
 
-    queryset = (
-        Organization.objects.all()
-        .prefetch_related(
-            "authorized_official",
-            "ein",
-            "organizationtoname_set",
-            "organizationtoaddress_set",
-            "organizationtoaddress_set__address",
-            "organizationtoaddress_set__address__address_us",
-            "organizationtoaddress_set__address__address_us__state_code",
-            "organizationtoaddress_set__address_use",
-            "authorized_official__individualtophone_set",
-            "authorized_official__individualtoname_set",
-            "authorized_official__individualtoemail_set",
-            "authorized_official__individualtoaddress_set",
-            "authorized_official__individualtoaddress_set__address__address_us",
-            "authorized_official__individualtoaddress_set__address__address_us__state_code",
-            "clinicalorganization",
-            "clinicalorganization__npi",
-            "clinicalorganization__organizationtootherid_set",
-            "clinicalorganization__organizationtootherid_set__other_id_type",
-            "clinicalorganization__organizationtotaxonomy_set",
-            "clinicalorganization__organizationtotaxonomy_set__nucc_code",
-        )
-        .order_by("organizationtoname__name")
+    queryset = Organization.objects.all().prefetch_related(
+        "authorized_official",
+        "ein",
+        "organizationtoname_set",
+        "organizationtoaddress_set",
+        "organizationtoaddress_set__address",
+        "organizationtoaddress_set__address__address_us",
+        "organizationtoaddress_set__address__address_us__state_code",
+        "organizationtoaddress_set__address_use",
+        "authorized_official__individualtophone_set",
+        "authorized_official__individualtoname_set",
+        "authorized_official__individualtoemail_set",
+        "authorized_official__individualtoaddress_set",
+        "authorized_official__individualtoaddress_set__address__address_us",
+        "authorized_official__individualtoaddress_set__address__address_us__state_code",
+        "clinicalorganization",
+        "clinicalorganization__npi",
+        "clinicalorganization__organizationtootherid_set",
+        "clinicalorganization__organizationtootherid_set__other_id_type",
+        "clinicalorganization__organizationtotaxonomy_set",
+        "clinicalorganization__organizationtotaxonomy_set__nucc_code",
     )
     if DEBUG:
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
@@ -346,7 +343,7 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
     filterset_class = OrganizationFilterSet
     pagination_class = CustomPaginator
     lookup_url_kwarg = "id"
-
+    ordering = ["organizationtoname__name"]
     ordering_fields = ["organizationtoname__name"]
 
     # permission_classes = [permissions.IsAuthenticated]
@@ -364,9 +361,7 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
         Default sort order: ascending by organization name
         """
 
-        organizations = ()
-
-        organizations = self.filter_queryset(organizations)
+        organizations = self.filter_queryset(self.queryset)
         paginated_organizations = self.paginate_queryset(organizations)
 
         serialized_organizations = OrganizationSerializer(
@@ -392,28 +387,7 @@ class FHIROrganizationViewSet(viewsets.GenericViewSet):
             return HttpResponse(f"Organization {escape(id)} not found", status=404)
 
         organization = get_object_or_404(
-            Organization.objects.prefetch_related(
-                "authorized_official",
-                "ein",
-                "organizationtoname_set",
-                "organizationtoaddress_set",
-                "organizationtoaddress_set__address",
-                "organizationtoaddress_set__address__address_us",
-                "organizationtoaddress_set__address__address_us__state_code",
-                "organizationtoaddress_set__address_use",
-                "authorized_official__individualtophone_set",
-                "authorized_official__individualtoname_set",
-                "authorized_official__individualtoemail_set",
-                "authorized_official__individualtoaddress_set",
-                "authorized_official__individualtoaddress_set__address__address_us",
-                "authorized_official__individualtoaddress_set__address__address_us__state_code",
-                "clinicalorganization",
-                "clinicalorganization__npi",
-                "clinicalorganization__organizationtootherid_set",
-                "clinicalorganization__organizationtootherid_set__other_id_type",
-                "clinicalorganization__organizationtotaxonomy_set",
-                "clinicalorganization__organizationtotaxonomy_set__nucc_code",
-            ),
+            self.queryset,
             id=id,
         )
 
@@ -430,7 +404,36 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
     ViewSet for FHIR Location resources
     """
 
-    queryset = Location.objects.none()
+    queryset = (
+        Location.objects.all()
+        .select_related(
+            "organization",
+            "address",
+            "address__address_us",
+            "address__address_us__state_code",
+        )
+        .prefetch_related(
+            Prefetch(
+                "organization__organizationtoaddress_set",
+                queryset=OrganizationToAddress.objects.select_related(
+                    "address_use", "address__address_us", "address__address_us__state_code"
+                ),
+            ),
+        )
+        .annotate(
+            organization_name=F("organization__organizationtoname__name"),
+            address_full=Concat(
+                F("address__address_us__delivery_line_1"),
+                Value(", "),
+                F("address__address_us__city_name"),
+                Value(", "),
+                F("address__address_us__state_code__abbreviation"),
+                Value(" "),
+                F("address__address_us__zipcode"),
+                output_field=CharField(),
+            ),
+        )
+    )
     if DEBUG:
         renderer_classes = [FHIRRenderer, BrowsableAPIRenderer]
     else:
@@ -439,7 +442,7 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
     filterset_class = LocationFilterSet
     pagination_class = CustomPaginator
     lookup_url_kwarg = "id"
-
+    ordering = ["name"]
     ordering_fields = ["organization_name", "address_full", "name"]
 
     # permission_classes = [permissions.IsAuthenticated]
@@ -456,40 +459,7 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
 
         Default sort order: ascending by location name
         """
-        locations = (
-            Location.objects.all()
-            .select_related(
-                "organization",
-                "address",
-                "address__address_us",
-                "address__address_us__state_code",
-            )
-            .prefetch_related(
-                Prefetch(
-                    "organization__organizationtoaddress_set",
-                    queryset=OrganizationToAddress.objects.select_related(
-                        "address_use",
-                        "address",
-                    ),
-                )
-            )
-            .annotate(
-                organization_name=F("organization__organizationtoname__name"),
-                address_full=Concat(
-                    F("address__address_us__delivery_line_1"),
-                    Value(", "),
-                    F("address__address_us__city_name"),
-                    Value(", "),
-                    F("address__address_us__state_code__abbreviation"),
-                    Value(" "),
-                    F("address__address_us__zipcode"),
-                    output_field=CharField(),
-                ),
-            )
-            .order_by("name")
-        )
-
-        locations = self.filter_queryset(locations)
+        locations = self.filter_queryset(self.queryset)
         paginated_locations = self.paginate_queryset(locations)
 
         # Serialize the bundle
@@ -515,7 +485,7 @@ class FHIRLocationViewSet(viewsets.GenericViewSet):
         except (ValueError, TypeError):
             return HttpResponse(f"Location {escape(id)} not found", status=404)
 
-        location = get_object_or_404(Location, id=id)
+        location = get_object_or_404(self.queryset, id=id)
 
         serialized_location = LocationSerializer(location, context={"request": request})
 
